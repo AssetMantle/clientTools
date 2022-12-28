@@ -1,8 +1,6 @@
-ThisBuild / version := "0.1.0-SNAPSHOT"
-
-ThisBuild / scalaVersion := "2.13.10"
-
 name := "clientTools"
+
+version := "1.0.0"
 
 scalaVersion := "2.13.10"
 
