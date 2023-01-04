@@ -17,3 +17,15 @@ libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play-slick-evolutions" % "5.1.0",
   "org.postgresql" % "postgresql" % "42.5.1"
 )
+
+libraryDependencies ++= Seq(
+  "org.scodec" %% "scodec-bits" % "1.1.34",
+  "org.scorexfoundation" %% "scrypto" % "2.2.1",
+  "org.bitcoinj" % "bitcoinj-core" % "0.16.2",
+  "org.bouncycastle" % "bcpg-jdk15on" % "1.70"
+)
+
+libraryDependencies ++= Seq(
+  "com.amazonaws" % "aws-java-sdk-s3" % "1.12.368",
+  "com.amazonaws" % "aws-java-sdk" % "1.12.369"
+)
