@@ -1,4 +1,4 @@
-package constants
+package commonConstants
 
 import response.Failure
 

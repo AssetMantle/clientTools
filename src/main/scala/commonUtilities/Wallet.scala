@@ -1,4 +1,4 @@
-package utilities
+package commonUtilities
 
 import com.google.common.collect
 import com.google.common.collect.ImmutableList
@@ -22,7 +22,7 @@ object Wallet {
 
   private implicit val logger: Logger = Logger(this.getClass)
 
-  private implicit val module: String = constants.Module.UTILITIES_WALLET
+  private implicit val module: String = commonConstants.Module.UTILITIES_WALLET
 
   object BouncyHash {
     if (Security.getProvider("BC") == null) {
@@ -41,14 +41,14 @@ object Wallet {
   def getHDPath(account: Int, addressIndex: Int): ImmutableList[ChildNumber] = {
     collect.ImmutableList.of(
       new ChildNumber(44, true),
-      new ChildNumber(constants.Blockchain.CoinType, true),
+      new ChildNumber(commonConstants.Blockchain.CoinType, true),
       new ChildNumber(account, true),
       new ChildNumber(0, false),
       new ChildNumber(addressIndex, false)
     )
   }
 
-  def getWallet(mnemonics: Seq[String], hdPath: Seq[ChildNumber] = constants.Blockchain.DefaultHDPath, bip39Passphrase: Option[String] = None): Wallet = {
+  def getWallet(mnemonics: Seq[String], hdPath: Seq[ChildNumber] = commonConstants.Blockchain.DefaultHDPath, bip39Passphrase: Option[String] = None): Wallet = {
     val words = mnemonics.mkString(" ")
     val hdPathAsList = collect.ImmutableList.copyOf(scala.jdk.CollectionConverters.SeqHasAsJava(hdPath).asJava)
     if (Bip39.validate(mnemonics)) {
@@ -60,18 +60,18 @@ object Wallet {
       )
 
       Wallet(
-        address = utilities.Bech32.encode(constants.Blockchain.AccountPrefix, utilities.Bech32.to5Bit(BouncyHash.ripemd160.digest(MessageDigest.getInstance("SHA-256").digest(bitcoinWallet.getKeyByPath(hdPathAsList).getPubKey)))),
+        address = commonUtilities.Bech32.encode(commonConstants.Blockchain.AccountPrefix, commonUtilities.Bech32.to5Bit(BouncyHash.ripemd160.digest(MessageDigest.getInstance("SHA-256").digest(bitcoinWallet.getKeyByPath(hdPathAsList).getPubKey)))),
         hdPath = hdPath,
         publicKey = bitcoinWallet.getKeyByPath(hdPathAsList).getPubKey,
         privateKey = bitcoinWallet.getKeyByPath(hdPathAsList).getPrivKeyBytes,
         mnemonics = mnemonics)
-    } else constants.Response.INVALID_MNEMONICS.throwBaseException()
+    } else commonConstants.Response.INVALID_MNEMONICS.throwBaseException()
   }
 
   def getRandomWallet: Wallet = getWallet(Bip39.creatRandomMnemonics())
 
   def hashAndEcdsaSign(message: String, ecKey: ECKey): Array[Byte] = {
-    val ecdsaSignature = ecKey.sign(Sha256Hash.wrap(utilities.Secrets.sha256Hash(message.getBytes(StandardCharsets.UTF_8))))
+    val ecdsaSignature = ecKey.sign(Sha256Hash.wrap(commonUtilities.Secrets.sha256Hash(message.getBytes(StandardCharsets.UTF_8))))
     Utils.bigIntegerToBytes(ecdsaSignature.r, 32) ++ Utils.bigIntegerToBytes(ecdsaSignature.s, 32)
   }
 
@@ -79,7 +79,7 @@ object Wallet {
     val ecdsaSignature = ecKey.sign(Sha256Hash.wrap(data))
     Utils.bigIntegerToBytes(ecdsaSignature.r, 32) ++ Utils.bigIntegerToBytes(ecdsaSignature.s, 32)
   } catch {
-    case exception: Exception => constants.Response.SIGNING_FAILED.throwBaseException(exception)
+    case exception: Exception => commonConstants.Response.SIGNING_FAILED.throwBaseException(exception)
   }
 
 }

@@ -1,6 +1,6 @@
-package utilities
+package commonUtilities
 
-import utilities.Wallet.BouncyHash
+import commonUtilities.Wallet.BouncyHash
 
 import java.security.MessageDigest
 import java.util.Base64
@@ -23,20 +23,20 @@ object Crypto {
       .mkString.toUpperCase
   }
 
-  def convertAccountPublicKeyToAccountAddress(pubkey: String): String = Bech32.encode(constants.Blockchain.AccountPrefix, utilities.Bech32.to5Bit(BouncyHash.ripemd160.digest(MessageDigest.getInstance("SHA-256").digest(Base64.getUrlDecoder.decode(pubkey.replace("+", "-").replace("/", "_"))))))
+  def convertAccountPublicKeyToAccountAddress(pubkey: String): String = Bech32.encode(commonConstants.Blockchain.AccountPrefix, commonUtilities.Bech32.to5Bit(BouncyHash.ripemd160.digest(MessageDigest.getInstance("SHA-256").digest(Base64.getUrlDecoder.decode(pubkey.replace("+", "-").replace("/", "_"))))))
 
 
-  def convertAccountAddressToOperatorAddress(accountAddress: String, hrp: String = constants.Blockchain.ValidatorPrefix): String = {
+  def convertAccountAddressToOperatorAddress(accountAddress: String, hrp: String = commonConstants.Blockchain.ValidatorPrefix): String = {
     val byteSeq = Bech32.decode(accountAddress)._2
     Bech32.encode(hrp, byteSeq)
   }
 
   //probably byteSeq converts operatorAddress to hexAddress and then encode converts into wallet address
-  def convertOperatorAddressToAccountAddress(operatorAddress: String, hrp: String = constants.Blockchain.AccountPrefix): String = {
+  def convertOperatorAddressToAccountAddress(operatorAddress: String, hrp: String = commonConstants.Blockchain.AccountPrefix): String = {
     val byteSeq = Bech32.decode(operatorAddress)._2
     Bech32.encode(hrp, byteSeq)
   }
 
-  def pubKeyToBech32(pubKey: String): String = Bech32.convertAndEncode(constants.Blockchain.ValidatorConsensusPublicPrefix, "1624DE6420" + pubKey)
+  def pubKeyToBech32(pubKey: String): String = Bech32.convertAndEncode(commonConstants.Blockchain.ValidatorConsensusPublicPrefix, "1624DE6420" + pubKey)
 
 }

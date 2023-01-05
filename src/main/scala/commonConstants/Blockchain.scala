@@ -1,4 +1,4 @@
-package constants
+package commonConstants
 
 import org.bitcoinj.crypto.ChildNumber
 

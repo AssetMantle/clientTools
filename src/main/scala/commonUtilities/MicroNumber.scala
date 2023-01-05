@@ -1,4 +1,4 @@
-package utilities
+package commonUtilities
 
 import play.api.Logger
 import play.api.libs.json._
@@ -61,17 +61,17 @@ class MicroNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConver
 
   def isWhole: Boolean = this.value % MicroNumber.factor == 0
 
-  def roundedUp(precision: Int = 2): MicroNumber = new MicroNumber(utilities.NumericOperation.roundUp(this.toDouble, precision))
+  def roundedUp(precision: Int = 2): MicroNumber = new MicroNumber(commonUtilities.NumericOperation.roundUp(this.toDouble, precision))
 
-  def roundedDown(precision: Int = 2): MicroNumber = new MicroNumber(utilities.NumericOperation.roundDown(this.toDouble, precision))
+  def roundedDown(precision: Int = 2): MicroNumber = new MicroNumber(commonUtilities.NumericOperation.roundDown(this.toDouble, precision))
 
-  def roundedOff(precision: Int = 2): MicroNumber = new MicroNumber(utilities.NumericOperation.roundOff(this.toDouble, precision))
+  def roundedOff(precision: Int = 2): MicroNumber = new MicroNumber(commonUtilities.NumericOperation.roundOff(this.toDouble, precision))
 
-  def toRoundedUpString(precision: Int = 2): String = utilities.NumericOperation.roundUp(this.toDouble, precision).toString
+  def toRoundedUpString(precision: Int = 2): String = commonUtilities.NumericOperation.roundUp(this.toDouble, precision).toString
 
-  def toRoundedDownString(precision: Int = 2): String = utilities.NumericOperation.roundDown(this.toDouble, precision).toString
+  def toRoundedDownString(precision: Int = 2): String = commonUtilities.NumericOperation.roundDown(this.toDouble, precision).toString
 
-  def toRoundedOffString(precision: Int = 2): String = utilities.NumericOperation.roundOff(this.toDouble, precision).toString
+  def toRoundedOffString(precision: Int = 2): String = commonUtilities.NumericOperation.roundOff(this.toDouble, precision).toString
 
   def +(that: MicroNumber): MicroNumber = new MicroNumber(this.value + that.value)
 
@@ -100,7 +100,7 @@ class MicroNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConver
 
   def &~(that: MicroNumber): MicroNumber = new MicroNumber(this.value &~ that.value)
 
-  def gcd(that: MicroNumber): MicroNumber = if (this.isWhole && that.isWhole) new MicroNumber(this.value.gcd(that.value)) else constants.Response.NUMBER_FORMAT_EXCEPTION.throwBaseException()(MicroNumber.module, MicroNumber.logger)
+  def gcd(that: MicroNumber): MicroNumber = if (this.isWhole && that.isWhole) new MicroNumber(this.value.gcd(that.value)) else commonConstants.Response.NUMBER_FORMAT_EXCEPTION.throwBaseException()(MicroNumber.module, MicroNumber.logger)
 
   def mod(that: MicroNumber): MicroNumber = new MicroNumber(this.value.mod(that.value))
 
@@ -168,7 +168,7 @@ class MicroNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConver
 
   def bitCount: Int = this.value.bitCount
 
-  def isProbablePrime(certainty: Int): Boolean = if (this.isWhole) BigInt(this.toLong).isProbablePrime(certainty) else constants.Response.NUMBER_FORMAT_EXCEPTION.throwBaseException()(MicroNumber.module, MicroNumber.logger)
+  def isProbablePrime(certainty: Int): Boolean = if (this.isWhole) BigInt(this.toLong).isProbablePrime(certainty) else commonConstants.Response.NUMBER_FORMAT_EXCEPTION.throwBaseException()(MicroNumber.module, MicroNumber.logger)
 
   def +(that: String): String = this.toString + that
 
@@ -179,7 +179,7 @@ class MicroNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConver
 
 object MicroNumber {
 
-  private val module: String = constants.Module.UTILITIES_MICRO_NUMBER
+  private val module: String = commonConstants.Module.UTILITIES_MICRO_NUMBER
 
   private val logger: Logger = Logger(this.getClass)
 

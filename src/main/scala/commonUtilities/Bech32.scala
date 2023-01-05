@@ -1,4 +1,4 @@
-package utilities
+package commonUtilities
 
 import play.api.Logger
 
@@ -7,7 +7,7 @@ import scala.collection.mutable.ArrayBuffer
 object Bech32 {
   private implicit val logger: Logger = Logger(this.getClass)
 
-  private implicit val module: String = constants.Module.UTILITIES_BECH32
+  private implicit val module: String = commonConstants.Module.UTILITIES_BECH32
 
   type Int5 = Byte
   final val CHARSET = "qpzry9x8gf2tvdw0s3jn54khce6mua7l"
@@ -31,7 +31,7 @@ object Bech32 {
     hrp + SEP + (data ++ createChecksum(hrp, data)).map(CHARSET_REVERSE_MAP).mkString
   } catch {
     case exception: Exception => logger.error(s"requirement failed: Invalid hrp: $hrp or data: $data. " + exception.getLocalizedMessage)
-      constants.Response.INVALID_HRP_OR_BYTES.throwBaseException(exception)
+      commonConstants.Response.INVALID_HRP_OR_BYTES.throwBaseException(exception)
   }
 
   final def createChecksum(hrp: String, data: Seq[Int5]): Seq[Int5] = {
@@ -103,9 +103,9 @@ object Bech32 {
     (hrp, data.dropRight(6))
   } catch {
     case noSuchElementException: NoSuchElementException => logger.error(s"requirement failed: Invalid Bech32: $bech32. Invalid Character.")
-      constants.Response.INVALID_BECH32_ADDRESS.throwBaseException(noSuchElementException)
+      commonConstants.Response.INVALID_BECH32_ADDRESS.throwBaseException(noSuchElementException)
     case exception: Exception => logger.error(s"requirement failed: Invalid Bech32: $bech32. " + exception.getLocalizedMessage)
-      constants.Response.INVALID_BECH32_ADDRESS.throwBaseException(exception)
+      commonConstants.Response.INVALID_BECH32_ADDRESS.throwBaseException(exception)
   }
 
   final def verifyCheckSum(hrp: String, data: Seq[Int5]): Boolean =

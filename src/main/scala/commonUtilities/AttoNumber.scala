@@ -1,4 +1,4 @@
-package utilities
+package commonUtilities
 
 import exceptions.BaseException
 import play.api.Logger
@@ -62,17 +62,17 @@ class AttoNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConvers
 
   def isWhole: Boolean = this.value % AttoNumber.factor == 0
 
-  def roundedUp(precision: Int = 2): AttoNumber = new AttoNumber(utilities.NumericOperation.roundUp(this.toDouble, precision))
+  def roundedUp(precision: Int = 2): AttoNumber = new AttoNumber(commonUtilities.NumericOperation.roundUp(this.toDouble, precision))
 
-  def roundedDown(precision: Int = 2): AttoNumber = new AttoNumber(utilities.NumericOperation.roundDown(this.toDouble, precision))
+  def roundedDown(precision: Int = 2): AttoNumber = new AttoNumber(commonUtilities.NumericOperation.roundDown(this.toDouble, precision))
 
-  def roundedOff(precision: Int = 2): AttoNumber = new AttoNumber(utilities.NumericOperation.roundOff(this.toDouble, precision))
+  def roundedOff(precision: Int = 2): AttoNumber = new AttoNumber(commonUtilities.NumericOperation.roundOff(this.toDouble, precision))
 
-  def toRoundedUpString(precision: Int = 2): String = utilities.NumericOperation.roundUp(this.toDouble, precision).toString
+  def toRoundedUpString(precision: Int = 2): String = commonUtilities.NumericOperation.roundUp(this.toDouble, precision).toString
 
-  def toRoundedDownString(precision: Int = 2): String = utilities.NumericOperation.roundDown(this.toDouble, precision).toString
+  def toRoundedDownString(precision: Int = 2): String = commonUtilities.NumericOperation.roundDown(this.toDouble, precision).toString
 
-  def toRoundedOffString(precision: Int = 2): String = utilities.NumericOperation.roundOff(this.toDouble, precision).toString
+  def toRoundedOffString(precision: Int = 2): String = commonUtilities.NumericOperation.roundOff(this.toDouble, precision).toString
 
   def +(that: AttoNumber): AttoNumber = new AttoNumber(this.value + that.value)
 
@@ -101,7 +101,7 @@ class AttoNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConvers
 
   def &~(that: AttoNumber): AttoNumber = new AttoNumber(this.value &~ that.value)
 
-  def gcd(that: AttoNumber): AttoNumber = if (this.isWhole && that.isWhole) new AttoNumber(this.value.gcd(that.value)) else constants.Response.NUMBER_FORMAT_EXCEPTION.throwBaseException()(AttoNumber.module, AttoNumber.logger)
+  def gcd(that: AttoNumber): AttoNumber = if (this.isWhole && that.isWhole) new AttoNumber(this.value.gcd(that.value)) else commonConstants.Response.NUMBER_FORMAT_EXCEPTION.throwBaseException()(AttoNumber.module, AttoNumber.logger)
 
   def mod(that: AttoNumber): AttoNumber = new AttoNumber(this.value.mod(that.value))
 
@@ -169,7 +169,7 @@ class AttoNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConvers
 
   def bitCount: Int = this.value.bitCount
 
-  def isProbablePrime(certainty: Int): Boolean = if (this.isWhole) BigInt(this.toLong).isProbablePrime(certainty) else constants.Response.NUMBER_FORMAT_EXCEPTION.throwBaseException()(AttoNumber.module, AttoNumber.logger)
+  def isProbablePrime(certainty: Int): Boolean = if (this.isWhole) BigInt(this.toLong).isProbablePrime(certainty) else commonConstants.Response.NUMBER_FORMAT_EXCEPTION.throwBaseException()(AttoNumber.module, AttoNumber.logger)
 
   def +(that: String): String = this.toString + that
 
@@ -180,7 +180,7 @@ class AttoNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConvers
 
 object AttoNumber {
 
-  private implicit val module: String = constants.Module.UTILITIES_ATTO_NUMBER
+  private implicit val module: String = commonConstants.Module.UTILITIES_ATTO_NUMBER
 
   private implicit val logger: Logger = Logger(this.getClass)
 
