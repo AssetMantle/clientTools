@@ -1,7 +1,6 @@
 package commonUtilities
 
-import exceptions.BaseException
-import play.api.Logger
+import org.slf4j.{Logger, LoggerFactory}
 import play.api.libs.json._
 
 import java.sql.Timestamp
@@ -12,9 +11,9 @@ import java.util.{Date => javaDate}
 
 object Date {
 
-  private implicit val module: String = commonConstants.Module.UTILITIES_DATE
+  private implicit val module: String = commonConstants.Module.COMMON_UTILITIES_DATE
 
-  private implicit val logger: Logger = Logger(this.getClass)
+  private implicit val logger: Logger = LoggerFactory.getLogger(this.getClass)
 
   private val ddMMDateFormat = new SimpleDateFormat("dd/MM")
 

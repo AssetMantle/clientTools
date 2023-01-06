@@ -10,7 +10,7 @@ import org.bitcoinj.script.Script
 import org.bitcoinj.wallet.{DeterministicSeed, Wallet => bitcoinjWallet}
 import org.bouncycastle.jcajce.provider.digest.Keccak
 import org.bouncycastle.jce.provider.BouncyCastleProvider
-import play.api.Logger
+import org.slf4j.{Logger, LoggerFactory}
 import scodec.bits.ByteVector
 
 import java.nio.charset.StandardCharsets
@@ -20,9 +20,9 @@ case class Wallet(address: String, hdPath: Seq[ChildNumber], publicKey: Array[By
 
 object Wallet {
 
-  private implicit val logger: Logger = Logger(this.getClass)
+  private implicit val logger: Logger = LoggerFactory.getLogger(this.getClass)
 
-  private implicit val module: String = commonConstants.Module.UTILITIES_WALLET
+  private implicit val module: String = commonConstants.Module.COMMON_UTILITIES_WALLET
 
   object BouncyHash {
     if (Security.getProvider("BC") == null) {

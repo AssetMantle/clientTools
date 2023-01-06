@@ -1,7 +1,7 @@
 package response
 
 import exceptions.BaseException
-import play.api.Logger
+import org.slf4j.Logger
 
 import scala.concurrent.{ExecutionContext, Future}
 

@@ -1,26 +1,26 @@
 package commonUtilities
 
-import exceptions.BaseException
-import play.api.Logger
+import org.slf4j.{Logger, LoggerFactory}
 import play.api.libs.json._
 
+import java.math.MathContext
 import scala.language.implicitConversions
 import scala.math.{Integral, Ordering, ScalaNumber, ScalaNumericConversions}
 import scala.util.Try
 
 class AttoNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConversions with Ordered[AttoNumber] {
 
-  def this(value: String) = this((BigDecimal(value) * AttoNumber.factor).toBigInt)
+  def this(value: String) = this((BigDecimal(value, AttoNumber.precisionContext) * AttoNumber.factor).toBigInt)
 
   def this(value: Int) = this(BigInt(value) * AttoNumber.factor)
 
   def this(value: Long) = this(BigInt(value) * AttoNumber.factor)
 
-  def this(value: Double) = this((BigDecimal(value) * AttoNumber.factor).toBigInt)
+  def this(value: Double) = this((BigDecimal(value, AttoNumber.precisionContext) * AttoNumber.factor).toBigInt)
 
   def this(value: BigDecimal) = this((value * AttoNumber.factor).toBigInt)
 
-  def this(value: Float) = this((BigDecimal(value.toDouble) * AttoNumber.factor).toBigInt)
+  def this(value: Float) = this((BigDecimal(value.toString, AttoNumber.precisionContext) * AttoNumber.factor).toBigInt)
 
   def toAttoString: String = this.value.toString
 
@@ -40,17 +40,17 @@ class AttoNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConvers
 
   def toAttoByteArray: Array[Byte] = this.value.toByteArray
 
-  override def toString: String = (BigDecimal(this.value) / AttoNumber.factor).toString
+  override def toString: String = (BigDecimal(this.value, AttoNumber.precisionContext) / AttoNumber.factor).toString
 
   def intValue: Int = (this.value / AttoNumber.factor).toInt
 
   def longValue: Long = (this.value / AttoNumber.factor).toLong
 
-  def floatValue: Float = (BigDecimal(this.value) / AttoNumber.factor).toFloat
+  def floatValue: Float = (BigDecimal(this.value, AttoNumber.precisionContext) / AttoNumber.factor).toFloat
 
-  def doubleValue: Double = (BigDecimal(this.value) / AttoNumber.factor).toDouble
+  def doubleValue: Double = (BigDecimal(this.value, AttoNumber.precisionContext) / AttoNumber.factor).toDouble
 
-  def toBigDecimal: BigDecimal = BigDecimal(this.value) / AttoNumber.factor
+  def toBigDecimal: BigDecimal = BigDecimal(this.value, AttoNumber.precisionContext) / AttoNumber.factor
 
   override def byteValue: Byte = intValue.toByte
 
@@ -176,17 +176,39 @@ class AttoNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConvers
   def wholePart: BigInt = this.value / AttoNumber.factor
 
   def decimalPart: Int = (this.value - (wholePart * AttoNumber.factor)).toInt
+
+  def validSortable: Boolean = this.abs <= AttoNumber.maxValue
+
+  def getSortableDecBytes: Array[Byte] = {
+    if (!this.validSortable) commonConstants.Response.UNSORTABLE_ATTONUMBER.throwBaseException()(AttoNumber.module, AttoNumber.logger)
+    else {
+      if (this == AttoNumber.maxValue) "max".getBytes
+      else if (this == (-1 * AttoNumber.maxValue)) "--".getBytes
+      else {
+        val f = java.lang.String.format("%18s", this.abs.toString.split("\\.").head).replace(" ", "0")
+        val l = java.lang.String.format("%-18s", this.abs.toString.split("\\.").last).replace(" ", "0")
+        if (this < 0) "-".getBytes ++ (f + "." + l).getBytes
+        else (f + "." + l).getBytes
+      }
+    }
+  }
 }
 
 object AttoNumber {
 
-  private implicit val module: String = commonConstants.Module.UTILITIES_ATTO_NUMBER
+  private implicit val module: String = commonConstants.Module.COMMON_UTILITIES_ATTO_NUMBER
 
-  private implicit val logger: Logger = Logger(this.getClass)
+  private implicit val logger: Logger = LoggerFactory.getLogger(this.getClass)
+
+  val factor = 1000000000000000000L
+
+  val precisionContext = new MathContext(18)
 
   val zero = new AttoNumber(0)
 
-  val factor = 1000000000000000000L
+  val maxValue = new AttoNumber(factor)
+
+  val minValue: AttoNumber = new AttoNumber(1) / maxValue
 
   def apply(value: BigInt): AttoNumber = new AttoNumber(value)
 

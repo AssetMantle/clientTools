@@ -1,6 +1,6 @@
 package commonUtilities
 
-import play.api.Logger
+import org.slf4j.{Logger, LoggerFactory}
 import sun.nio.cs.ISO_8859_1
 
 import java.math.BigInteger
@@ -10,9 +10,9 @@ import java.util.Base64
 
 object Secrets {
 
-  private implicit val module: String = commonConstants.Module.UTILITIES_SECRETS
+  private implicit val module: String = commonConstants.Module.COMMON_UTILITIES_SECRETS
 
-  private implicit val logger: Logger = Logger(this.getClass)
+  private implicit val logger: Logger = LoggerFactory.getLogger(this.getClass)
 
   def sha256Hash(value: String): Array[Byte] = MessageDigest.getInstance("SHA-256").digest(value.getBytes(StandardCharsets.UTF_8))
 

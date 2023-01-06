@@ -31,3 +31,5 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies += "com.google.protobuf" % "protobuf-java" % "3.21.12"
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.14" % Test

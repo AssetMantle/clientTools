@@ -1,25 +1,26 @@
 package commonUtilities
 
-import play.api.Logger
+import org.slf4j.{Logger, LoggerFactory}
 import play.api.libs.json._
 
+import java.math.MathContext
 import scala.language.implicitConversions
 import scala.math.{Integral, Ordering, ScalaNumber, ScalaNumericConversions}
 import scala.util.Try
 
 class MicroNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConversions with Ordered[MicroNumber] {
 
-  def this(value: String) = this((BigDecimal(value) * MicroNumber.factor).toBigInt)
+  def this(value: String) = this((BigDecimal(value, MicroNumber.precisionContext) * MicroNumber.factor).toBigInt)
 
   def this(value: Int) = this(BigInt(value) * MicroNumber.factor)
 
   def this(value: Long) = this(BigInt(value) * MicroNumber.factor)
 
-  def this(value: Double) = this((BigDecimal(value) * MicroNumber.factor).toBigInt)
+  def this(value: Double) = this((BigDecimal(value, MicroNumber.precisionContext) * MicroNumber.factor).toBigInt)
 
   def this(value: BigDecimal) = this((value * MicroNumber.factor).toBigInt)
 
-  def this(value: Float) = this((BigDecimal(value.toDouble) * MicroNumber.factor).toBigInt)
+  def this(value: Float) = this((BigDecimal(value.toString, MicroNumber.precisionContext) * MicroNumber.factor).toBigInt)
 
   def toMicroString: String = this.value.toString
 
@@ -39,17 +40,17 @@ class MicroNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConver
 
   def toMicroByteArray: Array[Byte] = this.value.toByteArray
 
-  override def toString: String = (BigDecimal(this.value) / MicroNumber.factor).toString
+  override def toString: String = (BigDecimal(this.value, MicroNumber.precisionContext) / MicroNumber.factor).toString
 
   def intValue: Int = (this.value / MicroNumber.factor).toInt
 
   def longValue: Long = (this.value / MicroNumber.factor).toLong
 
-  def floatValue: Float = (BigDecimal(this.value) / MicroNumber.factor).toFloat
+  def floatValue: Float = (BigDecimal(this.value, MicroNumber.precisionContext) / MicroNumber.factor).toFloat
 
-  def doubleValue: Double = (BigDecimal(this.value) / MicroNumber.factor).toDouble
+  def doubleValue: Double = (BigDecimal(this.value, MicroNumber.precisionContext) / MicroNumber.factor).toDouble
 
-  def toBigDecimal: BigDecimal = BigDecimal(this.value) / MicroNumber.factor
+  def toBigDecimal: BigDecimal = BigDecimal(this.value, MicroNumber.precisionContext) / MicroNumber.factor
 
   override def byteValue: Byte = intValue.toByte
 
@@ -179,13 +180,15 @@ class MicroNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConver
 
 object MicroNumber {
 
-  private val module: String = commonConstants.Module.UTILITIES_MICRO_NUMBER
+  private val module: String = commonConstants.Module.COMMON_UTILITIES_MICRO_NUMBER
 
-  private val logger: Logger = Logger(this.getClass)
+  private val logger: Logger = LoggerFactory.getLogger(this.getClass)
 
   val zero = new MicroNumber(0)
 
   val factor = 1000000
+
+  val precisionContext = new MathContext(6)
 
   def apply(value: BigInt): MicroNumber = new MicroNumber(value)
 

@@ -15,4 +15,6 @@ object Blockchain {
     new ChildNumber(0, false),
     new ChildNumber(0, false)
   )
+
+  val IDSeparator = "."
 }

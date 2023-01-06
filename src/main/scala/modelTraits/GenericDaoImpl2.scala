@@ -2,7 +2,7 @@ package modelTraits
 
 import exceptions.BaseException
 import org.postgresql.util.PSQLException
-import play.api.Logger
+import org.slf4j.Logger
 import play.api.db.slick._
 import slick.jdbc.H2Profile.StreamingProfileAction
 import slick.jdbc.H2Profile.api._

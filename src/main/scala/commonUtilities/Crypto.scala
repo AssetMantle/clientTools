@@ -25,6 +25,7 @@ object Crypto {
 
   def convertAccountPublicKeyToAccountAddress(pubkey: String): String = Bech32.encode(commonConstants.Blockchain.AccountPrefix, commonUtilities.Bech32.to5Bit(BouncyHash.ripemd160.digest(MessageDigest.getInstance("SHA-256").digest(Base64.getUrlDecoder.decode(pubkey.replace("+", "-").replace("/", "_"))))))
 
+  def convertAccountAddressBytesToBech32Address(value: Array[Byte]): String = Bech32.encode(commonConstants.Blockchain.AccountPrefix, commonUtilities.Bech32.to5Bit(BouncyHash.ripemd160.digest(value)))
 
   def convertAccountAddressToOperatorAddress(accountAddress: String, hrp: String = commonConstants.Blockchain.ValidatorPrefix): String = {
     val byteSeq = Bech32.decode(accountAddress)._2
