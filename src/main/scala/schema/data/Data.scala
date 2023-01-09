@@ -1,16 +1,14 @@
-package commonAbstract
+package schema.data
 
 import data.AnyDataV1.AnyData
-import ids.HashIDV1.HashID
-import ids.StringIDV1.StringID
+import schema.id.DataID
+import schema.id.base.{HashID, StringID}
 
 abstract class Data {
 
   def getType: StringID
 
   def getID: DataID
-
-  def toString: String
 
   def zeroValue: Data
 

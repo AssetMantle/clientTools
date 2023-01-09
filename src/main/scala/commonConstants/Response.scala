@@ -16,6 +16,7 @@ object Response {
   val SIGNING_FAILED = new Failure("SIGNING_FAILED")
   val INVALID_DATA_TYPE = new Failure("INVALID_DATA_TYPE")
 
-  val UNSORTABLE_ATTONUMBER =new Failure("UNSORTABLE_ATTONUMBER")
+  val UNSORTABLE_ATTONUMBER = new Failure("UNSORTABLE_ATTONUMBER")
+  val UNKNOWN_ID_TYPE = new Failure("UNKNOWN_ID_TYPE")
 
 }

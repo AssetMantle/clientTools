@@ -2,9 +2,9 @@ package commonUtilities
 
 import com.google.protobuf.ByteString
 import commonConstants.DataTypeID._
-import ids.StringIDV1.StringID
-import ids._
+import ids.HashIDV1
 import org.slf4j.{Logger, LoggerFactory}
+import schema.id.base.{HashID, StringID}
 
 import java.math.BigInteger
 
@@ -37,10 +37,10 @@ object ID {
     case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
   }
 
-  def generateHashID(bytesList: Array[Byte]*): HashIDV1.HashID = {
-    HashIDV1.HashID.newBuilder().setIDBytes(ByteString.copyFrom(
+  def generateHashID(bytesList: Array[Byte]*): HashID = {
+    HashID(HashIDV1.HashID.newBuilder().setIDBytes(ByteString.copyFrom(
       commonUtilities.Secrets.sha256Hash(bytesList.filter(_.length != 0).sortWith((x, y) => new BigInteger(x).compareTo(new BigInteger(y)) == -1).toArray.flatten)
-    )).build()
+    )).build())
   }
 
 }
