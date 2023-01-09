@@ -4,7 +4,7 @@ import com.google.protobuf.ByteString
 import commonConstants.DataTypeID._
 import ids.HashIDV1
 import org.slf4j.{Logger, LoggerFactory}
-import schema.id.base.{HashID, StringID}
+import ids.base.{HashID, StringID}
 
 import java.math.BigInteger
 

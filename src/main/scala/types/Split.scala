@@ -1,6 +1,6 @@
 package types
 
-import schema.id.base.{IdentityID, OwnableID}
+import ids.base.{IdentityID, OwnableID}
 
 case class Split(ownerID: IdentityID, ownableID: OwnableID, value: BigDecimal) {
 
