@@ -19,7 +19,7 @@ abstract class Data {
 
   def getBytes: Array[Byte]
 
-  def getProtoBytes: Array[Byte]
+  def getProtoBytes: Array[Byte] = this.toAnyData.toByteString.toByteArray
 }
 
 object Data {

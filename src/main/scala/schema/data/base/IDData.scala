@@ -25,8 +25,6 @@ case class IDData(value: AnyID) extends Data {
   def asProtoIDData: protoIDData = protoIDData.newBuilder().setValue(this.value).build()
 
   def toAnyData: AnyData = AnyData.newBuilder().setIDData(this.asProtoIDData).build()
-
-  def getProtoBytes: Array[Byte] = this.asProtoIDData.toByteArray
 }
 
 object IDData {
