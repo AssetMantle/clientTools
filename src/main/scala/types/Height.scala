@@ -18,4 +18,6 @@ object Height {
 
   def apply(value: HeightV1.Height): Height = Height(value.getValue)
 
+  def apply(protoBytes: Array[Byte]): Height = Height(HeightV1.Height.parseFrom(protoBytes))
+
 }

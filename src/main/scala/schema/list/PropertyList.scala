@@ -31,4 +31,6 @@ object PropertyList {
 
   def apply(properties: PropertyListV1.PropertyList): PropertyList = PropertyList(properties.getPropertyListList.asScala.toSeq.map(x => Property(x)))
 
+  def apply(protoBytes: Array[Byte]): PropertyList = PropertyList(PropertyListV1.PropertyList.parseFrom(protoBytes))
+
 }

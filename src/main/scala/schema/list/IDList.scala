@@ -22,4 +22,6 @@ object IDList {
 
   def apply(idList: IdListV1.IDList): IDList = IDList(idList.getIDListList.asScala.toSeq.map(x => ID(x)))
 
+  def apply(protoBytes: Array[Byte]): IDList = IDList(IdListV1.IDList.parseFrom(protoBytes))
+
 }

@@ -30,4 +30,6 @@ object Document {
 
   def apply(document: DocumentV1.Document): Document = Document(classificationID = ClassificationID(document.getClassificationID), immutables = Immutables(document.getImmutables), mutables = Mutables(document.getMutables))
 
+  def apply(protoBytes: Array[Byte]): Document = Document(DocumentV1.Document.parseFrom(protoBytes))
+
 }

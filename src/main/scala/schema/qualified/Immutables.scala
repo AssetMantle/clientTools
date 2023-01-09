@@ -27,4 +27,6 @@ object Immutables {
 
   def apply(immutables: ImmutablesV1.Immutables): Immutables = Immutables(PropertyList(immutables.getPropertyList))
 
+  def apply(protoBytes: Array[Byte]): Immutables = Immutables(ImmutablesV1.Immutables.parseFrom(protoBytes))
+
 }

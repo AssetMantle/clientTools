@@ -20,4 +20,6 @@ object Split {
 
   def apply(split: SplitV1.Split): Split = Split(ownerID = IdentityID(split.getOwnerID), ownableID = OwnableID(split.getOwnableID), value = BigDecimal(split.getValue))
 
+  def apply(protoBytes: Array[Byte]): Split = Split(SplitV1.Split.parseFrom(protoBytes))
+
 }

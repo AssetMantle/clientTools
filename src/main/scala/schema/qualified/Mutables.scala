@@ -26,4 +26,6 @@ object Mutables {
 
   def apply(mutables: MutablesV1.Mutables): Mutables = Mutables(PropertyList(mutables.getPropertyList))
 
+  def apply(protoBytes: Array[Byte]): Mutables = Mutables(MutablesV1.Mutables.parseFrom(protoBytes))
+
 }

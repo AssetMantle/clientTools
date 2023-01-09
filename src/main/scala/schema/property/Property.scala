@@ -34,4 +34,6 @@ object Property {
     case 2 => MetaProperty(anyProperty.getMetaProperty)
     case _ => commonConstants.Response.INVALID_PROPERTY_TYPE.throwBaseException()
   }
+
+  def apply(protoBytes: Array[Byte]): Property = Property(AnyPropertyV1.AnyProperty.parseFrom(protoBytes))
 }

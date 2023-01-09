@@ -36,4 +36,6 @@ object ID {
     case 11 => StringID(anyID.getStringID)
     case _ => commonConstants.Response.UNKNOWN_ID_TYPE.throwBaseException()
   }
+
+  def apply(protoBytes: Array[Byte]): ID = ID(AnyIDV1.AnyID.parseFrom(protoBytes))
 }

@@ -40,4 +40,6 @@ object Data {
     case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
   }
 
+  def apply(protoBytes: Array[Byte]): Data = Data(AnyDataV1.AnyData.parseFrom(protoBytes))
+
 }
