@@ -1,7 +1,7 @@
 package schema.data.base
 
 import commonUtilities.AttoNumber
-import data.{AnyDataV1, DecDataV1}
+import data.{AnyDataV1, BooleanDataV1}
 import schema.data.Data
 import schema.id.DataID
 import schema.id.base.{DataID, HashID, StringID}
@@ -20,5 +20,12 @@ case class BooleanData(value: Boolean) extends Data {
 
   def generateHashID: HashID = commonUtilities.ID.generateHashID(this.getBytes)
 
-  def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setDecData(DecDataV1.DecData.newBuilder().setValue(this.value.toString).build()).build()
+  def asProtoBooleanData: BooleanDataV1.BooleanData = BooleanDataV1.BooleanData.newBuilder().setValue(this.value).build()
+
+  def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setBooleanData(this.asProtoBooleanData).build()
+}
+
+object BooleanData {
+
+  def apply(value: BooleanDataV1.BooleanData): BooleanData = BooleanData(value.getValue)
 }

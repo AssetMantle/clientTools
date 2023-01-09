@@ -27,3 +27,8 @@ case class IDData(value: AnyID) extends Data {
 
   def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setIDData(this.asProtoIDData).build()
 }
+
+object IDData {
+
+  def apply(value: IdDataV1.IDData): IDData = IDData(value.getValue)
+}

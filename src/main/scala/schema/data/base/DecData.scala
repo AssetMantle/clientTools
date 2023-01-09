@@ -17,5 +17,12 @@ case class DecData(value: AttoNumber) extends Data {
 
   def generateHashID: HashID = commonUtilities.ID.generateHashID(this.getBytes)
 
-  def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setDecData(DecDataV1.DecData.newBuilder().setValue(this.value.toString).build()).build()
+  def asProtoDecData: DecDataV1.DecData = DecDataV1.DecData.newBuilder().setValue(this.value.toString).build()
+
+  def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setDecData(this.asProtoDecData).build()
+}
+
+object DecData {
+
+  def apply(value: DecDataV1.DecData): DecData = DecData(AttoNumber(value.getValue))
 }

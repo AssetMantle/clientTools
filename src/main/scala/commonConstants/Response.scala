@@ -18,5 +18,6 @@ object Response {
 
   val UNSORTABLE_ATTONUMBER = new Failure("UNSORTABLE_ATTONUMBER")
   val UNKNOWN_ID_TYPE = new Failure("UNKNOWN_ID_TYPE")
+  val INVALID_PROPERTY_TYPE = new Failure("INVALID_PROPERTY_TYPE")
 
 }

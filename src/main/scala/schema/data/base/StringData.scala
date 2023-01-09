@@ -19,3 +19,8 @@ case class StringData(value: String) extends Data {
 
   def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setStringData(this.asProtoStringData).build()
 }
+
+object StringData {
+
+  def apply(value: StringDataV1.StringData): StringData = StringData(value.getValue)
+}

@@ -17,7 +17,14 @@ case class AccAddressData(value: Array[Byte]) extends Data {
 
   def generateHashID: HashID = commonUtilities.ID.generateHashID(this.getBytes)
 
-  def toWalletString: String = commonUtilities.Crypto.convertAccountAddressBytesToBech32Address(this.value)
+  def toBech32Address: String = commonUtilities.Crypto.convertAccountAddressBytesToBech32Address(this.value)
 
-  def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setAccAddressData(AccAddressDataV1.AccAddressData.newBuilder().setValue(ByteString.copyFrom(this.value)).build()).build()
+  def asProtoAccAddressData: AccAddressDataV1.AccAddressData = AccAddressDataV1.AccAddressData.newBuilder().setValue(ByteString.copyFrom(this.value)).build()
+
+  def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setAccAddressData(this.asProtoAccAddressData).build()
+}
+
+object AccAddressData {
+
+  def apply(value: AccAddressDataV1.AccAddressData): AccAddressData = AccAddressData(value.getValue.toByteArray)
 }

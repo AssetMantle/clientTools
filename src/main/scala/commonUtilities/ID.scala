@@ -43,4 +43,10 @@ object ID {
     )).build())
   }
 
+  def generateHashID(bytesList: Seq[Array[Byte]]): HashID = {
+    HashID(HashIDV1.HashID.newBuilder().setIDBytes(ByteString.copyFrom(
+      commonUtilities.Secrets.sha256Hash(bytesList.filter(_.length != 0).sortWith((x, y) => new BigInteger(x).compareTo(new BigInteger(y)) == -1).toArray.flatten)
+    )).build())
+  }
+
 }
