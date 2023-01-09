@@ -1,10 +1,10 @@
 package commonUtilities
 
 import com.google.protobuf.ByteString
+import com.ids.{HashID => protoHashID}
 import commonConstants.DataTypeID._
-import ids.HashIDV1
 import org.slf4j.{Logger, LoggerFactory}
-import ids.base.{HashID, StringID}
+import schema.id.base.{HashID, StringID}
 
 import java.math.BigInteger
 
@@ -38,13 +38,13 @@ object ID {
   }
 
   def generateHashID(bytesList: Array[Byte]*): HashID = {
-    HashID(HashIDV1.HashID.newBuilder().setIDBytes(ByteString.copyFrom(
+    HashID(protoHashID.newBuilder().setIDBytes(ByteString.copyFrom(
       commonUtilities.Secrets.sha256Hash(bytesList.filter(_.length != 0).sortWith((x, y) => new BigInteger(x).compareTo(new BigInteger(y)) == -1).toArray.flatten)
     )).build())
   }
 
   def generateHashIDFromList(bytesList: Seq[Array[Byte]]): HashID = {
-    HashID(HashIDV1.HashID.newBuilder().setIDBytes(ByteString.copyFrom(
+    HashID(protoHashID.newBuilder().setIDBytes(ByteString.copyFrom(
       commonUtilities.Secrets.sha256Hash(bytesList.filter(_.length != 0).sortWith((x, y) => new BigInteger(x).compareTo(new BigInteger(y)) == -1).toArray.flatten)
     )).build())
   }

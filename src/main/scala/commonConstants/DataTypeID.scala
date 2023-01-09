@@ -1,6 +1,6 @@
 package commonConstants
 
-import ids.base.StringID
+import schema.id.base.StringID
 
 object DataTypeID {
 

@@ -1,8 +1,6 @@
 package TestSchema.TestData
 
 import org.scalatest.funsuite.AnyFunSuite
-import data.base
-import data.base.BooleanData
 
 
 class BooleanDataTest extends AnyFunSuite {

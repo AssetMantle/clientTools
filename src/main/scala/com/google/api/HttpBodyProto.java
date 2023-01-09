@@ -3,8 +3,8 @@
 
 package com.google.api;
 
-public final class HttpBodyProto {
-  private HttpBodyProto() {}
+public final class HttpbodyProto {
+  private HttpbodyProto() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -29,12 +29,14 @@ public final class HttpBodyProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\031google/api/httpbody.proto\022\ngoogle.api\032" +
-      "\031google/protobuf/any.proto\"X\n\010HttpBody\022\024" +
-      "\n\014content_type\030\001 \001(\t\022\014\n\004data\030\002 \001(\014\022(\n\nex" +
-      "tensions\030\003 \003(\0132\024.google.protobuf.AnyBh\n\016" +
-      "com.google.apiB\rHttpBodyProtoP\001Z;google." +
-      "golang.org/genproto/googleapis/api/httpb" +
-      "ody;httpbody\370\001\001\242\002\004GAPIb\006proto3"
+      "\031google/protobuf/any.proto\"w\n\010HttpBody\022!" +
+      "\n\014content_type\030\001 \001(\tR\013contentType\022\022\n\004dat" +
+      "a\030\002 \001(\014R\004data\0224\n\nextensions\030\003 \003(\0132\024.goog" +
+      "le.protobuf.AnyR\nextensionsB\226\001\n\016com.goog" +
+      "le.apiB\rHttpbodyProtoP\001Z)github.com/Asse" +
+      "tMantle/modules/google/api\370\001\001\242\002\003GAX\252\002\nGo" +
+      "ogle.Api\312\002\nGoogle\\Api\342\002\026Google\\Api\\GPBMe" +
+      "tadata\352\002\013Google::Apib\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
