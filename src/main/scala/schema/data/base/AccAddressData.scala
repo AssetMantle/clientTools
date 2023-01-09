@@ -28,4 +28,6 @@ case class AccAddressData(value: Array[Byte]) extends Data {
 object AccAddressData {
 
   def apply(value: protoAccAddressData): AccAddressData = AccAddressData(value.getValue.toByteArray)
+
+  def apply(protoBytes: Array[Byte]): AccAddressData = AccAddressData(protoAccAddressData.parseFrom(protoBytes))
 }

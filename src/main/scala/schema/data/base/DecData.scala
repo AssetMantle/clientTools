@@ -26,4 +26,6 @@ case class DecData(value: AttoNumber) extends Data {
 object DecData {
 
   def apply(value: protoDecData): DecData = DecData(AttoNumber(value.getValue))
+
+  def apply(protoBytes: Array[Byte]): DecData = DecData(protoDecData.parseFrom(protoBytes))
 }

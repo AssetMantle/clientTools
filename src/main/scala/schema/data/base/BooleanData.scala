@@ -29,4 +29,6 @@ case class BooleanData(value: Boolean) extends Data {
 object BooleanData {
 
   def apply(value: protoBooleanData): BooleanData = BooleanData(value.getValue)
+
+  def apply(protoBytes: Array[Byte]): BooleanData = BooleanData(protoBooleanData.parseFrom(protoBytes))
 }

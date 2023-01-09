@@ -32,4 +32,6 @@ case class IDData(value: AnyID) extends Data {
 object IDData {
 
   def apply(value: protoIDData): IDData = IDData(value.getValue)
+
+  def apply(protoBytes: Array[Byte]): IDData = IDData(protoIDData.parseFrom(protoBytes))
 }

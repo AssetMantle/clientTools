@@ -28,4 +28,6 @@ case class HeightData(value: Height) extends Data {
 object HeightData {
 
   def apply(value: protoHeightData): HeightData = HeightData(Height(value.getValue))
+
+  def apply(protoBytes: Array[Byte]): HeightData = HeightData(protoHeightData.parseFrom(protoBytes))
 }

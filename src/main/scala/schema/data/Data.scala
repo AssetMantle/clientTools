@@ -39,6 +39,13 @@ object Data {
     case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
   }
 
-  def apply(dataType: String, protoBytes: Array[Byte]): Data = Data(AnyData.parseFrom(protoBytes))
+  def apply(dataType: String, protoBytes: Array[Byte]): Data = dataType match {
+    case commonConstants.DataTypeID.AccAddressDataTypeID.value => AccAddressData(protoBytes)
+    case commonConstants.DataTypeID.BooleanDataTypeID.value => BooleanData(protoBytes)
+    case commonConstants.DataTypeID.HeightDataTypeID.value => HeightData(protoBytes)
+    case commonConstants.DataTypeID.IDDataTypeID.value => IDData(protoBytes)
+    case commonConstants.DataTypeID.StringDataTypeID.value => StringData(protoBytes)
+    case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
+  }
 
 }

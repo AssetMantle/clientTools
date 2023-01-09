@@ -25,4 +25,6 @@ case class StringData(value: String) extends Data {
 object StringData {
 
   def apply(value: protoStringData): StringData = StringData(value.getValue)
+
+  def apply(protoBytes: Array[Byte]): StringData = StringData(protoStringData.parseFrom(protoBytes))
 }
