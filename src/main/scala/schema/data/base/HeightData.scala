@@ -3,7 +3,6 @@ package schema.data.base
 import commonUtilities.AttoNumber
 import data.{AnyDataV1, HeightDataV1}
 import schema.data.Data
-import schema.id.DataID
 import schema.id.base.{DataID, HashID, StringID}
 import types.Height
 

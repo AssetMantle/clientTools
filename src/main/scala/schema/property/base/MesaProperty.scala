@@ -1,8 +1,7 @@
 package schema.property.base
 
 import properties.{AnyPropertyV1, MesaPropertyV1}
-import schema.id.DataID
-import schema.id.base.{PropertyID, StringID}
+import schema.id.base.{DataID, PropertyID, StringID}
 import schema.property.Property
 
 case class MesaProperty(id: PropertyID, dataID: DataID) extends Property {
@@ -25,6 +24,6 @@ case class MesaProperty(id: PropertyID, dataID: DataID) extends Property {
 
 object MesaProperty {
 
-  def apply(value: MesaPropertyV1.MesaProperty) = MesaProperty(id = PropertyID(value.getId), dataID = schema.id.base.DataID(value.getDataID))
+  def apply(value: MesaPropertyV1.MesaProperty): MesaProperty = MesaProperty(id = PropertyID(value.getId), dataID = schema.id.base.DataID(value.getDataID))
 
 }

@@ -2,9 +2,9 @@ package schema.id.base
 
 import ids.AnyIDV1.AnyID
 import ids.DataIDV1
-import schema.id
+import schema.id.ID
 
-case class DataID(typeID: StringID, hashID: HashID) extends id.DataID {
+case class DataID(typeID: StringID, hashID: HashID) extends ID {
 
   def getTypeID: StringID = this.typeID
 

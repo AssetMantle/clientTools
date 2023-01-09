@@ -11,3 +11,9 @@ case class Split(ownerID: IdentityID, ownableID: OwnableID, value: BigDecimal) {
   def canSend(out: BigDecimal): Boolean = this.value >= out
 
 }
+
+object Split {
+
+  def apply(split: SplitV1.Split): Split = Split(ownerID = IdentityID(split.getOwnerID), ownableID = OwnableID(split.getOwnableID), value = BigDecimal(split.getValue))
+
+}

@@ -4,8 +4,7 @@ import data.AnyDataV1
 import data.AnyDataV1.AnyData
 import org.slf4j.{Logger, LoggerFactory}
 import schema.data.base._
-import schema.id.DataID
-import schema.id.base.{HashID, StringID}
+import schema.id.base.{DataID, HashID, StringID}
 
 abstract class Data {
 
@@ -35,7 +34,7 @@ object Data {
     case 4 => HeightData(anyData.getHeightData)
     case 5 => IDData(anyData.getIDData)
     case 6 => StringData(anyData.getStringData)
-//    case 7 => AccAddressData(anyData.getListData)
+    //    case 7 => AccAddressData(anyData.getListData)
     case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
   }
 

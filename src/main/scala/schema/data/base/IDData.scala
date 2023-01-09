@@ -4,8 +4,8 @@ import data.{AnyDataV1, IdDataV1}
 import ids.AnyIDV1.AnyID
 import ids.DataIDV1
 import schema.data.Data
-import schema.id.base.{HashID, StringID}
-import schema.id.{DataID, ID, base}
+import schema.id.base.{DataID, HashID, StringID}
+import schema.id.{ID, base}
 
 case class IDData(value: AnyID) extends Data {
 

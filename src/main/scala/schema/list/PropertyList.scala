@@ -28,8 +28,6 @@ case class PropertyList(propertyList: Seq[Property]) {
 
 object PropertyList {
 
-  def apply(properties: Seq[AnyPropertyV1.AnyProperty]): PropertyList = PropertyList(properties.map(x => Property(x)))
-
-  def apply(properties: PropertyListV1.PropertyList): PropertyList = PropertyList(properties.getPropertyListList.asScala.toSeq)
+  def apply(properties: PropertyListV1.PropertyList): PropertyList = PropertyList(properties.getPropertyListList.asScala.toSeq.map(x => Property(x)))
 
 }

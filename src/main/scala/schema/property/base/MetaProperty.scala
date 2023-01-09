@@ -3,8 +3,7 @@ package schema.property.base
 import data.AnyDataV1
 import properties.{AnyPropertyV1, MetaPropertyV1}
 import schema.data.Data
-import schema.id.DataID
-import schema.id.base.{PropertyID, StringID}
+import schema.id.base.{DataID, PropertyID, StringID}
 import schema.property.Property
 
 case class MetaProperty(id: PropertyID, data: AnyDataV1.AnyData) extends Property {
@@ -31,6 +30,6 @@ case class MetaProperty(id: PropertyID, data: AnyDataV1.AnyData) extends Propert
 
 object MetaProperty {
 
-  def apply(value: MetaPropertyV1.MetaProperty) = MetaProperty(id = PropertyID(value.getId), data = value.getAnyData)
+  def apply(value: MetaPropertyV1.MetaProperty): MetaProperty = MetaProperty(id = PropertyID(value.getId), data = value.getAnyData)
 
 }

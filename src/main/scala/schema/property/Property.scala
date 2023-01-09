@@ -2,8 +2,7 @@ package schema.property
 
 import org.slf4j.{Logger, LoggerFactory}
 import properties.AnyPropertyV1
-import schema.id.DataID
-import schema.id.base.{PropertyID, StringID}
+import schema.id.base.{DataID, PropertyID, StringID}
 import schema.property.base.{MesaProperty, MetaProperty}
 
 abstract class Property {
@@ -28,7 +27,7 @@ object Property {
 
   private implicit val logger: Logger = LoggerFactory.getLogger(this.getClass)
 
-  def apply(anyProperty: AnyPropertyV1.AnyProperty):Property = anyProperty.getImplCase.getNumber match {
+  def apply(anyProperty: AnyPropertyV1.AnyProperty): Property = anyProperty.getImplCase.getNumber match {
     case 1 => MesaProperty(anyProperty.getMesaProperty)
     case 2 => MetaProperty(anyProperty.getMetaProperty)
     case _ => commonConstants.Response.INVALID_PROPERTY_TYPE.throwBaseException()

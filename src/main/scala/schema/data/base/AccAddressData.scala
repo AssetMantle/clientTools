@@ -3,7 +3,6 @@ package schema.data.base
 import com.google.protobuf.ByteString
 import data.{AccAddressDataV1, AnyDataV1}
 import schema.data.Data
-import schema.id.DataID
 import schema.id.base.{DataID, HashID, StringID}
 
 case class AccAddressData(value: Array[Byte]) extends Data {
@@ -11,7 +10,7 @@ case class AccAddressData(value: Array[Byte]) extends Data {
 
   def getID: DataID = DataID(typeID = commonConstants.DataTypeID.AccAddressDataTypeID, hashID = this.generateHashID)
 
-  def zeroValue: Data = AccAddressData(Array())
+  def zeroValue: Data = AccAddressData(new Array[Byte](0))
 
   def getBytes: Array[Byte] = this.value
 

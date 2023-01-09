@@ -11,7 +11,7 @@ case class HashID(value: Array[Byte]) extends ID {
 
   def asString: String = commonUtilities.Secrets.base64URLEncoder(this.getBytes)
 
-  def asProtoHashID: HashIDV1.HashID = HashIDV1.HashID.newBuilder().setIDBytes(ByteString.copyFrom(this.getBytes)) build()
+  def asProtoHashID: HashIDV1.HashID = HashIDV1.HashID.newBuilder().setIDBytes(ByteString.copyFrom(this.getBytes)).build()
 
   def toAnyID: AnyID = AnyID.newBuilder().setHashID(this.asProtoHashID).build()
 

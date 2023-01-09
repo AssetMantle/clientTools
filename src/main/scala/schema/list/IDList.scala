@@ -6,16 +6,18 @@ import schema.id.ID
 
 import scala.jdk.CollectionConverters._
 
-case class IDList(idList: Seq[AnyIDV1.AnyID]) {
+case class IDList(idList: Seq[ID]) {
 
-  def getIDs: Seq[ID] = idList.map(x => ID(x))
+  def getIDs: Seq[ID] = this.idList
 
-  def asProtoIDList: IdListV1.IDList = IdListV1.IDList.newBuilder().addAllIDList(this.idList.asJava).build()
+  def getAnyIDs: Seq[AnyIDV1.AnyID] = this.getIDs.map(_.toAnyID)
+
+  def asProtoIDList: IdListV1.IDList = IdListV1.IDList.newBuilder().addAllIDList(this.idList.map(_.toAnyID).asJava).build()
 
 }
 
 object IDList {
 
-  def apply(ids: Seq[ID]): IDList = IDList(ids.map(_.toAnyID))
+  def apply(idList: IdListV1.IDList): IDList = IDList(idList.getIDListList.asScala.toSeq.map(x => ID(x)))
 
 }
