@@ -19,6 +19,8 @@ abstract class Property {
 
   def toAnyProperty: AnyPropertyV1.AnyProperty
 
+  def getProtoBytes: Array[Byte]
+
 }
 
 object Property {

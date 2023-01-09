@@ -12,6 +12,8 @@ abstract class ID {
 
   def toAnyID: AnyIDV1.AnyID
 
+  def getProtoBytes: Array[Byte]
+
 }
 
 object ID {
@@ -19,6 +21,7 @@ object ID {
   private implicit val module: String = commonConstants.Module.SCHEMA_ID
 
   private implicit val logger: Logger = LoggerFactory.getLogger(this.getClass)
+
   def apply(anyID: AnyIDV1.AnyID): ID = anyID.getImplCase.getNumber match {
     case 1 => AssetID(anyID.getAssetID)
     case 2 => ClassificationID(anyID.getClassificationID)

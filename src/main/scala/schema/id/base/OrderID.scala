@@ -14,6 +14,8 @@ case class OrderID(hashID: HashID) extends ID {
 
   def toAnyID: AnyID = AnyID.newBuilder().setOrderID(this.asProtoOrderID).build()
 
+  def getProtoBytes: Array[Byte] = this.asProtoOrderID.toByteArray
+
 }
 
 object OrderID {

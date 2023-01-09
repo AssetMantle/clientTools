@@ -19,6 +19,8 @@ abstract class Data {
   def toAnyData: AnyData
 
   def getBytes: Array[Byte]
+
+  def getProtoBytes: Array[Byte]
 }
 
 object Data {

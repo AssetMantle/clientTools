@@ -15,6 +15,8 @@ case class HashID(value: Array[Byte]) extends ID {
 
   def toAnyID: AnyID = AnyID.newBuilder().setHashID(this.asProtoHashID).build()
 
+  def getProtoBytes: Array[Byte] = this.asProtoHashID.toByteArray
+
 }
 
 object HashID {

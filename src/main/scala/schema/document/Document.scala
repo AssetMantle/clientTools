@@ -23,6 +23,7 @@ case class Document(classificationID: ClassificationID, immutables: Immutables, 
     .setMutables(this.mutables.asProtoMutables)
     .build()
 
+  def getProtoBytes: Array[Byte] = this.asProtoDocument.toByteArray
 }
 
 object Document {

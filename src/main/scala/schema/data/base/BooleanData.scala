@@ -22,6 +22,8 @@ case class BooleanData(value: Boolean) extends Data {
   def asProtoBooleanData: BooleanDataV1.BooleanData = BooleanDataV1.BooleanData.newBuilder().setValue(this.value).build()
 
   def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setBooleanData(this.asProtoBooleanData).build()
+
+  def getProtoBytes: Array[Byte] = this.asProtoBooleanData.toByteArray
 }
 
 object BooleanData {

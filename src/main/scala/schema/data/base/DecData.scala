@@ -19,6 +19,8 @@ case class DecData(value: AttoNumber) extends Data {
   def asProtoDecData: DecDataV1.DecData = DecDataV1.DecData.newBuilder().setValue(this.value.toString).build()
 
   def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setDecData(this.asProtoDecData).build()
+
+  def getProtoBytes: Array[Byte] = this.asProtoDecData.toByteArray
 }
 
 object DecData {

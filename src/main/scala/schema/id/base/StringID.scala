@@ -13,6 +13,8 @@ case class StringID(value: String) extends ID {
   def asProtoStringID: StringIDV1.StringID = StringIDV1.StringID.newBuilder().setIDString(this.value).build()
 
   def toAnyID: AnyID = AnyID.newBuilder().setStringID(this.asProtoStringID).build()
+
+  def getProtoBytes: Array[Byte] = this.asProtoStringID.toByteArray
 }
 
 object StringID {

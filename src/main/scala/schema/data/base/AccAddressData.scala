@@ -21,6 +21,8 @@ case class AccAddressData(value: Array[Byte]) extends Data {
   def asProtoAccAddressData: AccAddressDataV1.AccAddressData = AccAddressDataV1.AccAddressData.newBuilder().setValue(ByteString.copyFrom(this.value)).build()
 
   def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setAccAddressData(this.asProtoAccAddressData).build()
+
+  def getProtoBytes: Array[Byte] = this.asProtoAccAddressData.toByteArray
 }
 
 object AccAddressData {

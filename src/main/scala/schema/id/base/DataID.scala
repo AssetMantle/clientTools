@@ -19,6 +19,8 @@ case class DataID(typeID: StringID, hashID: HashID) extends ID {
   def asProtoDataID: DataIDV1.DataID = DataIDV1.DataID.newBuilder().setTypeID(this.typeID.asProtoStringID).setHashID(this.hashID.asProtoHashID).build()
 
   def toAnyID: AnyID = AnyID.newBuilder().setDataID(this.asProtoDataID).build()
+
+  def getProtoBytes: Array[Byte] = this.asProtoDataID.toByteArray
 }
 
 object DataID {

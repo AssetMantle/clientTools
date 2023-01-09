@@ -18,6 +18,7 @@ case class Mutables(propertyList: PropertyList) {
 
   def asProtoMutables: MutablesV1.Mutables = MutablesV1.Mutables.newBuilder().setPropertyList(this.getProtoPropertyList).build()
 
+  def getProtoBytes: Array[Byte] = this.asProtoMutables.toByteArray
 }
 
 

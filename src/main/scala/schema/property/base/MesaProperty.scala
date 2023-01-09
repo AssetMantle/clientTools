@@ -20,6 +20,7 @@ case class MesaProperty(id: PropertyID, dataID: DataID) extends Property {
 
   def toAnyProperty: AnyPropertyV1.AnyProperty = AnyPropertyV1.AnyProperty.newBuilder().setMesaProperty(this.asProtoMesaProperty).build()
 
+  def getProtoBytes: Array[Byte] = this.asProtoMesaProperty.toByteArray
 }
 
 object MesaProperty {

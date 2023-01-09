@@ -10,6 +10,10 @@ case class Split(ownerID: IdentityID, ownableID: OwnableID, value: BigDecimal) {
 
   def canSend(out: BigDecimal): Boolean = this.value >= out
 
+  def asProtoSplit: SplitV1.Split = SplitV1.Split.newBuilder().setOwnerID(ownerID.asProtoIdentityID).setOwnableID(ownableID.asProtoOwnableID).setValue(value.toString()).build()
+
+  def getProtoBytes: Array[Byte] = this.asProtoSplit.toByteArray
+
 }
 
 object Split {

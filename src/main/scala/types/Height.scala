@@ -10,6 +10,8 @@ case class Height(value: Long) {
 
   def asProtoHeight: HeightV1.Height = HeightV1.Height.newBuilder().setValue(this.value).build()
 
+  def getProtoBytes: Array[Byte] = this.asProtoHeight.toByteArray
+
 }
 
 object Height {

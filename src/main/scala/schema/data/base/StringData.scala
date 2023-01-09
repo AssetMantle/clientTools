@@ -18,6 +18,8 @@ case class StringData(value: String) extends Data {
   def asProtoStringData: StringDataV1.StringData = StringDataV1.StringData.newBuilder().setValue(this.value).build()
 
   def toAnyData: AnyDataV1.AnyData = AnyDataV1.AnyData.newBuilder().setStringData(this.asProtoStringData).build()
+
+  def getProtoBytes: Array[Byte] = this.asProtoStringData.toByteArray
 }
 
 object StringData {

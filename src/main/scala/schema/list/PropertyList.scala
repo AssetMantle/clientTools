@@ -24,6 +24,7 @@ case class PropertyList(propertyList: Seq[Property]) {
     if (property.isMeta) property.asInstanceOf[MetaProperty].scrub() else property
   })
 
+  def getProtoBytes: Array[Byte] = this.asProtoPropertyList.toByteArray
 }
 
 object PropertyList {

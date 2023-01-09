@@ -13,6 +13,8 @@ case class OwnableID(stringID: StringID) extends ID {
   def asProtoOwnableID: OwnableIDV1.OwnableID = OwnableIDV1.OwnableID.newBuilder().setStringID(this.stringID.asProtoStringID).build()
 
   def toAnyID: AnyID = AnyID.newBuilder().setOwnableID(this.asProtoOwnableID).build()
+
+  def getProtoBytes: Array[Byte] = this.asProtoOwnableID.toByteArray
 }
 
 object OwnableID {

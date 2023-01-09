@@ -14,6 +14,8 @@ case class ClassificationID(hashID: HashID) extends ID {
 
   def toAnyID: AnyID = AnyID.newBuilder().setClassificationID(this.asProtoClassificationID).build()
 
+  def getProtoBytes: Array[Byte] = this.asProtoClassificationID.toByteArray
+
 }
 
 object ClassificationID {
