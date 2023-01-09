@@ -1,7 +1,7 @@
 package schema.data.base
 
-import com.data.{AnyData, BooleanData => protoBooleanData}
 import commonUtilities.AttoNumber
+import com.data.{AnyData, BooleanData => protoBooleanData}
 import schema.data.Data
 import schema.id.base.{DataID, HashID, StringID}
 
@@ -22,6 +22,8 @@ case class BooleanData(value: Boolean) extends Data {
   def asProtoBooleanData: protoBooleanData = protoBooleanData.newBuilder().setValue(this.value).build()
 
   def toAnyData: AnyData = AnyData.newBuilder().setBooleanData(this.asProtoBooleanData).build()
+
+  def getProtoBytes: Array[Byte] = this.asProtoBooleanData.toByteArray
 }
 
 object BooleanData {

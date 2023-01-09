@@ -1,7 +1,7 @@
 package schema.data.base
 
-import com.data.{AnyData, DecData => protoDecData}
 import commonUtilities.AttoNumber
+import com.data.{AnyData, DecData => protoDecData}
 import schema.data.Data
 import schema.id.base.{DataID, HashID, StringID}
 
@@ -19,6 +19,8 @@ case class DecData(value: AttoNumber) extends Data {
   def asProtoDecData: protoDecData = protoDecData.newBuilder().setValue(this.value.toString).build()
 
   def toAnyData: AnyData = AnyData.newBuilder().setDecData(this.asProtoDecData).build()
+
+  def getProtoBytes: Array[Byte] = this.asProtoDecData.toByteArray
 }
 
 object DecData {

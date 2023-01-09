@@ -19,7 +19,7 @@ abstract class Data {
 
   def getBytes: Array[Byte]
 
-  def getProtoBytes: Array[Byte] = this.toAnyData.toByteString.toByteArray
+  def getProtoBytes: Array[Byte]
 }
 
 object Data {
@@ -39,6 +39,6 @@ object Data {
     case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
   }
 
-  def apply(protoBytes: Array[Byte]): Data = Data(AnyData.parseFrom(protoBytes))
+  def apply(dataType: String, protoBytes: Array[Byte]): Data = Data(AnyData.parseFrom(protoBytes))
 
 }
