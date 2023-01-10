@@ -15,7 +15,7 @@ case class ListData(value: AnyDataList) extends Data {
 
    def zeroValue: Data = ListData(value = AnyDataList(dataList = Seq()))
 
-   def generateHashID: HashID = ???
+   def generateHashID: HashID = commonUtilities.ID.generateHashID(this.getBytes)
 
    def asProtoListData: protoListData = protoListData.newBuilder().setValue(this.value.asProtoAnyDataList).build()
 
