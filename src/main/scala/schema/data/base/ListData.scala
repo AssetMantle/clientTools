@@ -12,7 +12,7 @@ case class ListData(value: AnyDataList) extends Data {
 
    def getID: DataID = DataID(typeID = commonConstants.DataTypeID.ListDataTypeID, hashID = this.generateHashID)
 
-   def zeroValue: Data = ListData(value = AnyDataList(dataList = Seq[Data]()))
+   def zeroValue: Data = ListData(value = AnyDataList(dataList = Seq()))
 
    def generateHashID: HashID = ???
 
