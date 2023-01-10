@@ -33,4 +33,6 @@ object PropertyList {
 
   def apply(protoBytes: Array[Byte]): PropertyList = PropertyList(protoPropertyList.parseFrom(protoBytes))
 
+  def apply(anyPropertyList: Seq[AnyProperty]): PropertyList = PropertyList(anyPropertyList.map(x => Property(x)))
+
 }
