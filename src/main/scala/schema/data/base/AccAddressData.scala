@@ -23,6 +23,8 @@ case class AccAddressData(value: Array[Byte]) extends Data {
   def toAnyData: AnyData = AnyData.newBuilder().setAccAddressData(this.asProtoAccAddressData).build()
 
   def getProtoBytes: Array[Byte] = this.asProtoAccAddressData.toByteArray
+
+  def viewString: String = this.toBech32Address
 }
 
 object AccAddressData {
