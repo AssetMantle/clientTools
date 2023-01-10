@@ -1,10 +1,13 @@
 package schema.data.base
-import com.data.{AnyData}
+import com.data.AnyData
 import schema.data.Data
 import schema.id.base.{DataID, HashID, StringID}
 import schema.list.AnyDataList
+import com.data.{ListData => protoListData}
 
-case class ListData(value: AnyDataList) extends schema.data.Data {
+import scala.collection.mutable.ArrayBuffer
+
+case class ListData(value: AnyDataList) extends Data {
   def getType: StringID = commonConstants.DataTypeID.ListDataTypeID
 
    def getID: DataID = DataID(typeID = commonConstants.DataTypeID.ListDataTypeID, hashID = this.generateHashID)
@@ -13,9 +16,23 @@ case class ListData(value: AnyDataList) extends schema.data.Data {
 
    def generateHashID: HashID = ???
 
-   def toAnyData: AnyData = ???
+   def asProtoListData: protoListData = protoListData.newBuilder().setValue(this.value.asProtoAnyDataList).build()
 
-   def getBytes: Array[Byte] = ???
+   def toAnyData: AnyData = AnyData.newBuilder().setListData(this.asProtoListData.toString).build()
 
-   def getProtoBytes: Array[Byte] = ???
+   def getBytes: Array[Byte] = {
+      var bytesList = Array[Byte]()
+      this.value.dataList.foreach(datum => if (datum != null ) bytesList.concat(datum.getBytes))
+      bytesList
+   }
+
+   def getProtoBytes: Array[Byte] = this.asProtoListData.toByteArray
+}
+
+object ListData {
+
+ def apply(value: protoListData): ListData = ListData(AnyDataList(value.getValue))
+
+ def apply(protoBytes: Array[Byte]): ListData = ListData(protoListData.parseFrom(protoBytes))
+
 }
