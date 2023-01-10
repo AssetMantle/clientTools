@@ -35,7 +35,7 @@ object Data {
     case 4 => HeightData(anyData.getHeightData)
     case 5 => IDData(anyData.getIDData)
     case 6 => StringData(anyData.getStringData)
-    //    case 7 => AccAddressData(anyData.getListData)
+    case 7 => ListData(anyData.getListData.getBytes())
     case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
   }
 
