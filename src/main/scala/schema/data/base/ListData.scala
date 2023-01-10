@@ -5,6 +5,7 @@ import schema.id.base.{DataID, HashID, StringID}
 import schema.list.AnyDataList
 import com.data.{ListData => protoListData}
 
+import java.math.BigInteger
 import scala.collection.mutable.ArrayBuffer
 
 case class ListData(value: AnyDataList) extends Data {
@@ -21,9 +22,7 @@ case class ListData(value: AnyDataList) extends Data {
    def toAnyData: AnyData = AnyData.newBuilder().setListData(this.asProtoListData.toString).build()
 
    def getBytes: Array[Byte] = {
-      var bytesList = Array[Byte]()
-      this.value.dataList.foreach(datum => if (datum != null ) bytesList.concat(datum.getBytes))
-      bytesList
+      this.value.dataList.map(x => Data(x).getBytes).filter(_.length != 0).sortWith((x, y) => new BigInteger(x).compareTo(new BigInteger(y)) == -1).toArray.flatten
    }
 
    def getProtoBytes: Array[Byte] = this.asProtoListData.toByteArray
