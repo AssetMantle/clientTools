@@ -65,34 +65,34 @@ public interface MessageOrBuilder extends
   com.ids.IdentityIDOrBuilder getTakerIDOrBuilder();
 
   /**
-   * <code>.ids.OwnableID maker_ownable_i_d = 5 [json_name = "makerOwnableID"];</code>
+   * <code>.ids.AnyOwnableID maker_ownable_i_d = 5 [json_name = "makerOwnableID"];</code>
    * @return Whether the makerOwnableID field is set.
    */
   boolean hasMakerOwnableID();
   /**
-   * <code>.ids.OwnableID maker_ownable_i_d = 5 [json_name = "makerOwnableID"];</code>
+   * <code>.ids.AnyOwnableID maker_ownable_i_d = 5 [json_name = "makerOwnableID"];</code>
    * @return The makerOwnableID.
    */
-  com.ids.OwnableID getMakerOwnableID();
+  com.ids.AnyOwnableID getMakerOwnableID();
   /**
-   * <code>.ids.OwnableID maker_ownable_i_d = 5 [json_name = "makerOwnableID"];</code>
+   * <code>.ids.AnyOwnableID maker_ownable_i_d = 5 [json_name = "makerOwnableID"];</code>
    */
-  com.ids.OwnableIDOrBuilder getMakerOwnableIDOrBuilder();
+  com.ids.AnyOwnableIDOrBuilder getMakerOwnableIDOrBuilder();
 
   /**
-   * <code>.ids.OwnableID taker_ownable_i_d = 6 [json_name = "takerOwnableID"];</code>
+   * <code>.ids.AnyOwnableID taker_ownable_i_d = 6 [json_name = "takerOwnableID"];</code>
    * @return Whether the takerOwnableID field is set.
    */
   boolean hasTakerOwnableID();
   /**
-   * <code>.ids.OwnableID taker_ownable_i_d = 6 [json_name = "takerOwnableID"];</code>
+   * <code>.ids.AnyOwnableID taker_ownable_i_d = 6 [json_name = "takerOwnableID"];</code>
    * @return The takerOwnableID.
    */
-  com.ids.OwnableID getTakerOwnableID();
+  com.ids.AnyOwnableID getTakerOwnableID();
   /**
-   * <code>.ids.OwnableID taker_ownable_i_d = 6 [json_name = "takerOwnableID"];</code>
+   * <code>.ids.AnyOwnableID taker_ownable_i_d = 6 [json_name = "takerOwnableID"];</code>
    */
-  com.ids.OwnableIDOrBuilder getTakerOwnableIDOrBuilder();
+  com.ids.AnyOwnableIDOrBuilder getTakerOwnableIDOrBuilder();
 
   /**
    * <code>.types.Height expires_in = 7 [json_name = "expiresIn"];</code>

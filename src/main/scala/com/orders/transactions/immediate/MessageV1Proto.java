@@ -32,39 +32,39 @@ public final class MessageV1Proto {
       "mmediate/message.v1.proto\022\035orders.transa" +
       "ctions.immediate\032\024gogoproto/gogo.proto\032)" +
       "schema/ids/base/classificationID.v1.prot" +
-      "o\032#schema/ids/base/identityID.v1.proto\032\"" +
-      "schema/ids/base/ownableID.v1.proto\032\'sche" +
-      "ma/lists/base/propertyList.v1.proto\032!sch" +
-      "ema/types/base/height.v1.proto\"\310\006\n\007Messa" +
-      "ge\022\022\n\004from\030\001 \001(\tR\004from\022)\n\010from_i_d\030\002 \001(\013" +
-      "2\017.ids.IdentityIDR\006fromID\022C\n\022classificat" +
-      "ion_i_d\030\003 \001(\0132\025.ids.ClassificationIDR\020cl" +
-      "assificationID\022+\n\ttaker_i_d\030\004 \001(\0132\017.ids." +
-      "IdentityIDR\007takerID\0229\n\021maker_ownable_i_d" +
-      "\030\005 \001(\0132\016.ids.OwnableIDR\016makerOwnableID\0229" +
-      "\n\021taker_ownable_i_d\030\006 \001(\0132\016.ids.OwnableI" +
-      "DR\016takerOwnableID\022,\n\nexpires_in\030\007 \001(\0132\r." +
-      "types.HeightR\texpiresIn\022^\n\023maker_ownable" +
-      "_split\030\010 \001(\tB.\310\336\037\000\332\336\037&github.com/cosmos/" +
-      "cosmos-sdk/types.DecR\021makerOwnableSplit\022" +
-      "^\n\023taker_ownable_split\030\t \001(\tB.\310\336\037\000\332\336\037&gi" +
-      "thub.com/cosmos/cosmos-sdk/types.DecR\021ta" +
-      "kerOwnableSplit\022O\n\031immutable_meta_proper" +
-      "ties\030\n \001(\0132\023.lists.PropertyListR\027immutab" +
-      "leMetaProperties\022F\n\024immutable_properties" +
-      "\030\013 \001(\0132\023.lists.PropertyListR\023immutablePr" +
-      "operties\022K\n\027mutable_meta_properties\030\014 \001(" +
-      "\0132\023.lists.PropertyListR\025mutableMetaPrope" +
-      "rties\022B\n\022mutable_properties\030\r \001(\0132\023.list" +
-      "s.PropertyListR\021mutablePropertiesB\230\002\n!co" +
-      "m.orders.transactions.immediateB\016Message" +
-      "V1ProtoP\001ZMgithub.com/AssetMantle/module" +
-      "s/modules/orders/internal/transactions/i" +
-      "mmediate\242\002\003OTI\252\002\035Orders.Transactions.Imm" +
-      "ediate\312\002\035Orders\\Transactions\\Immediate\342\002" +
-      ")Orders\\Transactions\\Immediate\\GPBMetada" +
-      "ta\352\002\037Orders::Transactions::Immediateb\006pr" +
-      "oto3"
+      "o\032#schema/ids/base/identityID.v1.proto\032%" +
+      "schema/ids/base/anyOwnableID.v1.proto\032\'s" +
+      "chema/lists/base/propertyList.v1.proto\032!" +
+      "schema/types/base/height.v1.proto\"\316\006\n\007Me" +
+      "ssage\022\022\n\004from\030\001 \001(\tR\004from\022)\n\010from_i_d\030\002 " +
+      "\001(\0132\017.ids.IdentityIDR\006fromID\022C\n\022classifi" +
+      "cation_i_d\030\003 \001(\0132\025.ids.ClassificationIDR" +
+      "\020classificationID\022+\n\ttaker_i_d\030\004 \001(\0132\017.i" +
+      "ds.IdentityIDR\007takerID\022<\n\021maker_ownable_" +
+      "i_d\030\005 \001(\0132\021.ids.AnyOwnableIDR\016makerOwnab" +
+      "leID\022<\n\021taker_ownable_i_d\030\006 \001(\0132\021.ids.An" +
+      "yOwnableIDR\016takerOwnableID\022,\n\nexpires_in" +
+      "\030\007 \001(\0132\r.types.HeightR\texpiresIn\022^\n\023make" +
+      "r_ownable_split\030\010 \001(\tB.\310\336\037\000\332\336\037&github.co" +
+      "m/cosmos/cosmos-sdk/types.DecR\021makerOwna" +
+      "bleSplit\022^\n\023taker_ownable_split\030\t \001(\tB.\310" +
+      "\336\037\000\332\336\037&github.com/cosmos/cosmos-sdk/type" +
+      "s.DecR\021takerOwnableSplit\022O\n\031immutable_me" +
+      "ta_properties\030\n \001(\0132\023.lists.PropertyList" +
+      "R\027immutableMetaProperties\022F\n\024immutable_p" +
+      "roperties\030\013 \001(\0132\023.lists.PropertyListR\023im" +
+      "mutableProperties\022K\n\027mutable_meta_proper" +
+      "ties\030\014 \001(\0132\023.lists.PropertyListR\025mutable" +
+      "MetaProperties\022B\n\022mutable_properties\030\r \001" +
+      "(\0132\023.lists.PropertyListR\021mutableProperti" +
+      "esB\230\002\n!com.orders.transactions.immediate" +
+      "B\016MessageV1ProtoP\001ZMgithub.com/AssetMant" +
+      "le/modules/modules/orders/internal/trans" +
+      "actions/immediate\242\002\003OTI\252\002\035Orders.Transac" +
+      "tions.Immediate\312\002\035Orders\\Transactions\\Im" +
+      "mediate\342\002)Orders\\Transactions\\Immediate\\" +
+      "GPBMetadata\352\002\037Orders::Transactions::Imme" +
+      "diateb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -72,7 +72,7 @@ public final class MessageV1Proto {
           com.gogoproto.GogoProto.getDescriptor(),
           com.ids.ClassificationIDV1Proto.getDescriptor(),
           com.ids.IdentityIDV1Proto.getDescriptor(),
-          com.ids.OwnableIDV1Proto.getDescriptor(),
+          com.ids.AnyOwnableIDV1Proto.getDescriptor(),
           com.lists.PropertyListV1Proto.getDescriptor(),
           com.types.HeightV1Proto.getDescriptor(),
         });
@@ -91,7 +91,7 @@ public final class MessageV1Proto {
     com.gogoproto.GogoProto.getDescriptor();
     com.ids.ClassificationIDV1Proto.getDescriptor();
     com.ids.IdentityIDV1Proto.getDescriptor();
-    com.ids.OwnableIDV1Proto.getDescriptor();
+    com.ids.AnyOwnableIDV1Proto.getDescriptor();
     com.lists.PropertyListV1Proto.getDescriptor();
     com.types.HeightV1Proto.getDescriptor();
   }

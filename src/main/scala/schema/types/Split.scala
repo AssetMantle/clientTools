@@ -1,7 +1,8 @@
 package schema.types
 
-import schema.id.base.{IdentityID, OwnableID}
 import com.types.{Split => protoSplit}
+import schema.id.OwnableID
+import schema.id.base.IdentityID
 
 case class Split(ownerID: IdentityID, ownableID: OwnableID, value: BigDecimal) {
 
@@ -11,7 +12,7 @@ case class Split(ownerID: IdentityID, ownableID: OwnableID, value: BigDecimal) {
 
   def canSend(out: BigDecimal): Boolean = this.value >= out
 
-  def asProtoSplit: protoSplit = protoSplit.newBuilder().setOwnerID(ownerID.asProtoIdentityID).setOwnableID(ownableID.asProtoOwnableID).setValue(value.toString()).build()
+  def asProtoSplit: protoSplit = protoSplit.newBuilder().setOwnerID(ownerID.asProtoIdentityID).setOwnableID(ownableID.toAnyOwnableID).setValue(value.toString()).build()
 
   def getProtoBytes: Array[Byte] = this.asProtoSplit.toByteArray
 

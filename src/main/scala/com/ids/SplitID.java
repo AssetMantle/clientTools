@@ -65,9 +65,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int OWNABLE_I_D_FIELD_NUMBER = 2;
-  private com.ids.OwnableID ownableID_;
+  private com.ids.AnyOwnableID ownableID_;
   /**
-   * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
    * @return Whether the ownableID field is set.
    */
   @java.lang.Override
@@ -75,19 +75,19 @@ private static final long serialVersionUID = 0L;
     return ownableID_ != null;
   }
   /**
-   * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
    * @return The ownableID.
    */
   @java.lang.Override
-  public com.ids.OwnableID getOwnableID() {
-    return ownableID_ == null ? com.ids.OwnableID.getDefaultInstance() : ownableID_;
+  public com.ids.AnyOwnableID getOwnableID() {
+    return ownableID_ == null ? com.ids.AnyOwnableID.getDefaultInstance() : ownableID_;
   }
   /**
-   * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
    */
   @java.lang.Override
-  public com.ids.OwnableIDOrBuilder getOwnableIDOrBuilder() {
-    return ownableID_ == null ? com.ids.OwnableID.getDefaultInstance() : ownableID_;
+  public com.ids.AnyOwnableIDOrBuilder getOwnableIDOrBuilder() {
+    return ownableID_ == null ? com.ids.AnyOwnableID.getDefaultInstance() : ownableID_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -581,31 +581,31 @@ private static final long serialVersionUID = 0L;
       return ownerIDBuilder_;
     }
 
-    private com.ids.OwnableID ownableID_;
+    private com.ids.AnyOwnableID ownableID_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.OwnableID, com.ids.OwnableID.Builder, com.ids.OwnableIDOrBuilder> ownableIDBuilder_;
+        com.ids.AnyOwnableID, com.ids.AnyOwnableID.Builder, com.ids.AnyOwnableIDOrBuilder> ownableIDBuilder_;
     /**
-     * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+     * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      * @return Whether the ownableID field is set.
      */
     public boolean hasOwnableID() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+     * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      * @return The ownableID.
      */
-    public com.ids.OwnableID getOwnableID() {
+    public com.ids.AnyOwnableID getOwnableID() {
       if (ownableIDBuilder_ == null) {
-        return ownableID_ == null ? com.ids.OwnableID.getDefaultInstance() : ownableID_;
+        return ownableID_ == null ? com.ids.AnyOwnableID.getDefaultInstance() : ownableID_;
       } else {
         return ownableIDBuilder_.getMessage();
       }
     }
     /**
-     * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+     * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      */
-    public Builder setOwnableID(com.ids.OwnableID value) {
+    public Builder setOwnableID(com.ids.AnyOwnableID value) {
       if (ownableIDBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -619,10 +619,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+     * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      */
     public Builder setOwnableID(
-        com.ids.OwnableID.Builder builderForValue) {
+        com.ids.AnyOwnableID.Builder builderForValue) {
       if (ownableIDBuilder_ == null) {
         ownableID_ = builderForValue.build();
       } else {
@@ -633,13 +633,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+     * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      */
-    public Builder mergeOwnableID(com.ids.OwnableID value) {
+    public Builder mergeOwnableID(com.ids.AnyOwnableID value) {
       if (ownableIDBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           ownableID_ != null &&
-          ownableID_ != com.ids.OwnableID.getDefaultInstance()) {
+          ownableID_ != com.ids.AnyOwnableID.getDefaultInstance()) {
           getOwnableIDBuilder().mergeFrom(value);
         } else {
           ownableID_ = value;
@@ -652,7 +652,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+     * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      */
     public Builder clearOwnableID() {
       bitField0_ = (bitField0_ & ~0x00000002);
@@ -665,33 +665,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+     * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      */
-    public com.ids.OwnableID.Builder getOwnableIDBuilder() {
+    public com.ids.AnyOwnableID.Builder getOwnableIDBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getOwnableIDFieldBuilder().getBuilder();
     }
     /**
-     * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+     * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      */
-    public com.ids.OwnableIDOrBuilder getOwnableIDOrBuilder() {
+    public com.ids.AnyOwnableIDOrBuilder getOwnableIDOrBuilder() {
       if (ownableIDBuilder_ != null) {
         return ownableIDBuilder_.getMessageOrBuilder();
       } else {
         return ownableID_ == null ?
-            com.ids.OwnableID.getDefaultInstance() : ownableID_;
+            com.ids.AnyOwnableID.getDefaultInstance() : ownableID_;
       }
     }
     /**
-     * <code>.ids.OwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
+     * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.OwnableID, com.ids.OwnableID.Builder, com.ids.OwnableIDOrBuilder> 
+        com.ids.AnyOwnableID, com.ids.AnyOwnableID.Builder, com.ids.AnyOwnableIDOrBuilder> 
         getOwnableIDFieldBuilder() {
       if (ownableIDBuilder_ == null) {
         ownableIDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.ids.OwnableID, com.ids.OwnableID.Builder, com.ids.OwnableIDOrBuilder>(
+            com.ids.AnyOwnableID, com.ids.AnyOwnableID.Builder, com.ids.AnyOwnableIDOrBuilder>(
                 getOwnableID(),
                 getParentForChildren(),
                 isClean());

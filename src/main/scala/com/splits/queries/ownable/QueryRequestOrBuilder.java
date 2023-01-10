@@ -8,17 +8,17 @@ public interface QueryRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.ids.OwnableID ownable_i_d = 1 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 1 [json_name = "ownableID"];</code>
    * @return Whether the ownableID field is set.
    */
   boolean hasOwnableID();
   /**
-   * <code>.ids.OwnableID ownable_i_d = 1 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 1 [json_name = "ownableID"];</code>
    * @return The ownableID.
    */
-  com.ids.OwnableID getOwnableID();
+  com.ids.AnyOwnableID getOwnableID();
   /**
-   * <code>.ids.OwnableID ownable_i_d = 1 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 1 [json_name = "ownableID"];</code>
    */
-  com.ids.OwnableIDOrBuilder getOwnableIDOrBuilder();
+  com.ids.AnyOwnableIDOrBuilder getOwnableIDOrBuilder();
 }

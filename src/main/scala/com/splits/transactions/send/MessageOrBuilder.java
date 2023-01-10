@@ -50,19 +50,19 @@ public interface MessageOrBuilder extends
   com.ids.IdentityIDOrBuilder getToIDOrBuilder();
 
   /**
-   * <code>.ids.OwnableID ownable_i_d = 4 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 4 [json_name = "ownableID"];</code>
    * @return Whether the ownableID field is set.
    */
   boolean hasOwnableID();
   /**
-   * <code>.ids.OwnableID ownable_i_d = 4 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 4 [json_name = "ownableID"];</code>
    * @return The ownableID.
    */
-  com.ids.OwnableID getOwnableID();
+  com.ids.AnyOwnableID getOwnableID();
   /**
-   * <code>.ids.OwnableID ownable_i_d = 4 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 4 [json_name = "ownableID"];</code>
    */
-  com.ids.OwnableIDOrBuilder getOwnableIDOrBuilder();
+  com.ids.AnyOwnableIDOrBuilder getOwnableIDOrBuilder();
 
   /**
    * <code>string value = 5 [json_name = "value", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>

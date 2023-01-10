@@ -35,28 +35,29 @@ public final class AnyIDV1Proto {
       "base/hashID.v1.proto\032#schema/ids/base/id" +
       "entityID.v1.proto\032%schema/ids/base/maint" +
       "ainerID.v1.proto\032 schema/ids/base/orderI" +
-      "D.v1.proto\032\"schema/ids/base/ownableID.v1" +
-      ".proto\032#schema/ids/base/propertyID.v1.pr" +
-      "oto\032 schema/ids/base/splitID.v1.proto\032!s" +
-      "chema/ids/base/stringID.v1.proto\032\024gogopr" +
-      "oto/gogo.proto\"\270\004\n\005AnyID\022*\n\tasset_i_d\030\001 " +
-      "\001(\0132\014.ids.AssetIDH\000R\007assetID\022E\n\022classifi" +
-      "cation_i_d\030\002 \001(\0132\025.ids.ClassificationIDH" +
-      "\000R\020classificationID\022\'\n\010data_i_d\030\003 \001(\0132\013." +
-      "ids.DataIDH\000R\006dataID\022\'\n\010hash_i_d\030\004 \001(\0132\013" +
-      ".ids.HashIDH\000R\006hashID\0223\n\014identity_i_d\030\005 " +
-      "\001(\0132\017.ids.IdentityIDH\000R\nidentityID\0229\n\016ma" +
-      "intainer_i_d\030\006 \001(\0132\021.ids.MaintainerIDH\000R" +
-      "\014maintainerID\022*\n\torder_i_d\030\007 \001(\0132\014.ids.O" +
-      "rderIDH\000R\007orderID\0220\n\013ownable_i_d\030\010 \001(\0132\016" +
-      ".ids.OwnableIDH\000R\townableID\0223\n\014property_" +
-      "i_d\030\t \001(\0132\017.ids.PropertyIDH\000R\npropertyID" +
-      "\022*\n\tsplit_i_d\030\n \001(\0132\014.ids.SplitIDH\000R\007spl" +
-      "itID\022-\n\nstring_i_d\030\013 \001(\0132\r.ids.StringIDH" +
-      "\000R\010stringID:\004\210\240\037\000B\006\n\004implBs\n\007com.idsB\014An" +
-      "yIDV1ProtoP\001Z.github.com/AssetMantle/mod" +
-      "ules/schema/ids/base\242\002\003IXX\252\002\003Ids\312\002\003Ids\342\002" +
-      "\017Ids\\GPBMetadata\352\002\003Idsb\006proto3"
+      "D.v1.proto\032\037schema/ids/base/coinID.v1.pr" +
+      "oto\032%schema/ids/base/anyOwnableID.v1.pro" +
+      "to\032#schema/ids/base/propertyID.v1.proto\032" +
+      " schema/ids/base/splitID.v1.proto\032!schem" +
+      "a/ids/base/stringID.v1.proto\032\024gogoproto/" +
+      "gogo.proto\"\273\004\n\005AnyID\022*\n\tasset_i_d\030\001 \001(\0132" +
+      "\014.ids.AssetIDH\000R\007assetID\022E\n\022classificati" +
+      "on_i_d\030\002 \001(\0132\025.ids.ClassificationIDH\000R\020c" +
+      "lassificationID\022\'\n\010data_i_d\030\003 \001(\0132\013.ids." +
+      "DataIDH\000R\006dataID\022\'\n\010hash_i_d\030\004 \001(\0132\013.ids" +
+      ".HashIDH\000R\006hashID\0223\n\014identity_i_d\030\005 \001(\0132" +
+      "\017.ids.IdentityIDH\000R\nidentityID\0229\n\016mainta" +
+      "iner_i_d\030\006 \001(\0132\021.ids.MaintainerIDH\000R\014mai" +
+      "ntainerID\022*\n\torder_i_d\030\007 \001(\0132\014.ids.Order" +
+      "IDH\000R\007orderID\0223\n\013ownable_i_d\030\010 \001(\0132\021.ids" +
+      ".AnyOwnableIDH\000R\townableID\0223\n\014property_i" +
+      "_d\030\t \001(\0132\017.ids.PropertyIDH\000R\npropertyID\022" +
+      "*\n\tsplit_i_d\030\n \001(\0132\014.ids.SplitIDH\000R\007spli" +
+      "tID\022-\n\nstring_i_d\030\013 \001(\0132\r.ids.StringIDH\000" +
+      "R\010stringID:\004\210\240\037\000B\006\n\004implBs\n\007com.idsB\014Any" +
+      "IDV1ProtoP\001Z.github.com/AssetMantle/modu" +
+      "les/schema/ids/base\242\002\003IXX\252\002\003Ids\312\002\003Ids\342\002\017" +
+      "Ids\\GPBMetadata\352\002\003Idsb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -68,7 +69,8 @@ public final class AnyIDV1Proto {
           com.ids.IdentityIDV1Proto.getDescriptor(),
           com.ids.MaintainerIDV1Proto.getDescriptor(),
           com.ids.OrderIDV1Proto.getDescriptor(),
-          com.ids.OwnableIDV1Proto.getDescriptor(),
+          com.ids.CoinIDV1Proto.getDescriptor(),
+          com.ids.AnyOwnableIDV1Proto.getDescriptor(),
           com.ids.PropertyIDV1Proto.getDescriptor(),
           com.ids.SplitIDV1Proto.getDescriptor(),
           com.ids.StringIDV1Proto.getDescriptor(),
@@ -92,7 +94,8 @@ public final class AnyIDV1Proto {
     com.ids.IdentityIDV1Proto.getDescriptor();
     com.ids.MaintainerIDV1Proto.getDescriptor();
     com.ids.OrderIDV1Proto.getDescriptor();
-    com.ids.OwnableIDV1Proto.getDescriptor();
+    com.ids.CoinIDV1Proto.getDescriptor();
+    com.ids.AnyOwnableIDV1Proto.getDescriptor();
     com.ids.PropertyIDV1Proto.getDescriptor();
     com.ids.SplitIDV1Proto.getDescriptor();
     com.ids.StringIDV1Proto.getDescriptor();

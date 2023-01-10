@@ -29,23 +29,23 @@ public final class SplitV1Proto {
   static {
     java.lang.String[] descriptorData = {
       "\n schema/types/base/split.v1.proto\022\005type" +
-      "s\032#schema/ids/base/identityID.v1.proto\032\"" +
-      "schema/ids/base/ownableID.v1.proto\032\024gogo" +
-      "proto/gogo.proto\"\260\001\n\005Split\022+\n\towner_i_d\030" +
-      "\001 \001(\0132\017.ids.IdentityIDR\007ownerID\022.\n\013ownab" +
-      "le_i_d\030\002 \001(\0132\016.ids.OwnableIDR\townableID\022" +
-      "D\n\005value\030\003 \001(\tB.\310\336\037\000\332\336\037&github.com/cosmo" +
-      "s/cosmos-sdk/types.DecR\005value:\004\210\240\037\000B\177\n\tc" +
-      "om.typesB\014SplitV1ProtoP\001Z0github.com/Ass" +
-      "etMantle/modules/schema/types/base\242\002\003TXX" +
-      "\252\002\005Types\312\002\005Types\342\002\021Types\\GPBMetadata\352\002\005T" +
-      "ypesb\006proto3"
+      "s\032#schema/ids/base/identityID.v1.proto\032%" +
+      "schema/ids/base/anyOwnableID.v1.proto\032\024g" +
+      "ogoproto/gogo.proto\"\263\001\n\005Split\022+\n\towner_i" +
+      "_d\030\001 \001(\0132\017.ids.IdentityIDR\007ownerID\0221\n\013ow" +
+      "nable_i_d\030\002 \001(\0132\021.ids.AnyOwnableIDR\towna" +
+      "bleID\022D\n\005value\030\003 \001(\tB.\310\336\037\000\332\336\037&github.com" +
+      "/cosmos/cosmos-sdk/types.DecR\005value:\004\210\240\037" +
+      "\000B\177\n\tcom.typesB\014SplitV1ProtoP\001Z0github.c" +
+      "om/AssetMantle/modules/schema/types/base" +
+      "\242\002\003TXX\252\002\005Types\312\002\005Types\342\002\021Types\\GPBMetada" +
+      "ta\352\002\005Typesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.ids.IdentityIDV1Proto.getDescriptor(),
-          com.ids.OwnableIDV1Proto.getDescriptor(),
+          com.ids.AnyOwnableIDV1Proto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_types_Split_descriptor =
@@ -62,7 +62,7 @@ public final class SplitV1Proto {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.ids.IdentityIDV1Proto.getDescriptor();
-    com.ids.OwnableIDV1Proto.getDescriptor();
+    com.ids.AnyOwnableIDV1Proto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 
