@@ -16,11 +16,11 @@ public interface AnyDataOrBuilder extends
    * <code>.data.AccAddressData acc_address_data = 1 [json_name = "accAddressData"];</code>
    * @return The accAddressData.
    */
-  AccAddressData getAccAddressData();
+  com.data.AccAddressData getAccAddressData();
   /**
    * <code>.data.AccAddressData acc_address_data = 1 [json_name = "accAddressData"];</code>
    */
-  AccAddressDataOrBuilder getAccAddressDataOrBuilder();
+  com.data.AccAddressDataOrBuilder getAccAddressDataOrBuilder();
 
   /**
    * <code>.data.BooleanData boolean_data = 2 [json_name = "booleanData"];</code>
@@ -31,11 +31,11 @@ public interface AnyDataOrBuilder extends
    * <code>.data.BooleanData boolean_data = 2 [json_name = "booleanData"];</code>
    * @return The booleanData.
    */
-  BooleanData getBooleanData();
+  com.data.BooleanData getBooleanData();
   /**
    * <code>.data.BooleanData boolean_data = 2 [json_name = "booleanData"];</code>
    */
-  BooleanDataOrBuilder getBooleanDataOrBuilder();
+  com.data.BooleanDataOrBuilder getBooleanDataOrBuilder();
 
   /**
    * <code>.data.DecData dec_data = 3 [json_name = "decData"];</code>
@@ -46,11 +46,11 @@ public interface AnyDataOrBuilder extends
    * <code>.data.DecData dec_data = 3 [json_name = "decData"];</code>
    * @return The decData.
    */
-  DecData getDecData();
+  com.data.DecData getDecData();
   /**
    * <code>.data.DecData dec_data = 3 [json_name = "decData"];</code>
    */
-  DecDataOrBuilder getDecDataOrBuilder();
+  com.data.DecDataOrBuilder getDecDataOrBuilder();
 
   /**
    * <code>.data.HeightData height_data = 4 [json_name = "heightData"];</code>
@@ -61,11 +61,11 @@ public interface AnyDataOrBuilder extends
    * <code>.data.HeightData height_data = 4 [json_name = "heightData"];</code>
    * @return The heightData.
    */
-  HeightData getHeightData();
+  com.data.HeightData getHeightData();
   /**
    * <code>.data.HeightData height_data = 4 [json_name = "heightData"];</code>
    */
-  HeightDataOrBuilder getHeightDataOrBuilder();
+  com.data.HeightDataOrBuilder getHeightDataOrBuilder();
 
   /**
    * <code>.data.IDData i_d_data = 5 [json_name = "iDData"];</code>
@@ -76,11 +76,11 @@ public interface AnyDataOrBuilder extends
    * <code>.data.IDData i_d_data = 5 [json_name = "iDData"];</code>
    * @return The iDData.
    */
-  IDData getIDData();
+  com.data.IDData getIDData();
   /**
    * <code>.data.IDData i_d_data = 5 [json_name = "iDData"];</code>
    */
-  IDDataOrBuilder getIDDataOrBuilder();
+  com.data.IDDataOrBuilder getIDDataOrBuilder();
 
   /**
    * <code>.data.StringData string_data = 6 [json_name = "stringData"];</code>
@@ -91,11 +91,11 @@ public interface AnyDataOrBuilder extends
    * <code>.data.StringData string_data = 6 [json_name = "stringData"];</code>
    * @return The stringData.
    */
-  StringData getStringData();
+  com.data.StringData getStringData();
   /**
    * <code>.data.StringData string_data = 6 [json_name = "stringData"];</code>
    */
-  StringDataOrBuilder getStringDataOrBuilder();
+  com.data.StringDataOrBuilder getStringDataOrBuilder();
 
   /**
    * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
@@ -106,11 +106,11 @@ public interface AnyDataOrBuilder extends
    * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
    * @return The listData.
    */
-  ListData getListData();
+  com.data.ListData getListData();
   /**
    * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
    */
-  ListDataOrBuilder getListDataOrBuilder();
+  com.data.ListDataOrBuilder getListDataOrBuilder();
 
-  public AnyData.ImplCase getImplCase();
+  public com.data.AnyData.ImplCase getImplCase();
 }

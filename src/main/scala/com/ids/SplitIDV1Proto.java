@@ -29,21 +29,21 @@ public final class SplitIDV1Proto {
   static {
     java.lang.String[] descriptorData = {
       "\n schema/ids/base/splitID.v1.proto\022\003ids\032" +
-      "#schema/ids/base/identityID.v1.proto\032\"sc" +
-      "hema/ids/base/ownableID.v1.proto\032\024gogopr" +
-      "oto/gogo.proto\"l\n\007SplitID\022+\n\towner_i_d\030\001" +
-      " \001(\0132\017.ids.IdentityIDR\007ownerID\022.\n\013ownabl" +
-      "e_i_d\030\002 \001(\0132\016.ids.OwnableIDR\townableID:\004" +
-      "\210\240\037\000Bu\n\007com.idsB\016SplitIDV1ProtoP\001Z.githu" +
-      "b.com/AssetMantle/modules/schema/ids/bas" +
-      "e\242\002\003IXX\252\002\003Ids\312\002\003Ids\342\002\017Ids\\GPBMetadata\352\002\003" +
-      "Idsb\006proto3"
+      "#schema/ids/base/identityID.v1.proto\032%sc" +
+      "hema/ids/base/anyOwnableID.v1.proto\032\024gog" +
+      "oproto/gogo.proto\"o\n\007SplitID\022+\n\towner_i_" +
+      "d\030\001 \001(\0132\017.ids.IdentityIDR\007ownerID\0221\n\013own" +
+      "able_i_d\030\002 \001(\0132\021.ids.AnyOwnableIDR\townab" +
+      "leID:\004\210\240\037\000Bu\n\007com.idsB\016SplitIDV1ProtoP\001Z" +
+      ".github.com/AssetMantle/modules/schema/i" +
+      "ds/base\242\002\003IXX\252\002\003Ids\312\002\003Ids\342\002\017Ids\\GPBMetad" +
+      "ata\352\002\003Idsb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.ids.IdentityIDV1Proto.getDescriptor(),
-          com.ids.OwnableIDV1Proto.getDescriptor(),
+          com.ids.AnyOwnableIDV1Proto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_ids_SplitID_descriptor =
@@ -58,7 +58,7 @@ public final class SplitIDV1Proto {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.ids.IdentityIDV1Proto.getDescriptor();
-    com.ids.OwnableIDV1Proto.getDescriptor();
+    com.ids.AnyOwnableIDV1Proto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 

@@ -26,6 +26,11 @@ private static final long serialVersionUID = 0L;
     return new TransactionResponse();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.orders.transactions.revoke.TransactionResponseV1Proto.internal_static_orders_transactions_revoke_TransactionResponse_descriptor;
@@ -40,7 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SUCCESS_FIELD_NUMBER = 1;
-  private boolean success_ = false;
+  private boolean success_;
   /**
    * <code>bool success = 1 [json_name = "success"];</code>
    * @return The success.
@@ -51,8 +56,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ERROR_FIELD_NUMBER = 2;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object error_ = "";
+  private volatile java.lang.Object error_;
   /**
    * <pre>
    * TODO define error object
@@ -296,9 +300,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       success_ = false;
+
       error_ = "";
+
       return this;
     }
 
@@ -325,19 +330,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.orders.transactions.revoke.TransactionResponse buildPartial() {
       com.orders.transactions.revoke.TransactionResponse result = new com.orders.transactions.revoke.TransactionResponse(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      result.success_ = success_;
+      result.error_ = error_;
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.orders.transactions.revoke.TransactionResponse result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.success_ = success_;
-      }
-      if (((from_bitField0_ & 0x00000002) != 0)) {
-        result.error_ = error_;
-      }
     }
 
     @java.lang.Override
@@ -389,7 +385,6 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getError().isEmpty()) {
         error_ = other.error_;
-        bitField0_ |= 0x00000002;
         onChanged();
       }
       this.mergeUnknownFields(other.getUnknownFields());
@@ -420,12 +415,12 @@ private static final long serialVersionUID = 0L;
               break;
             case 8: {
               success_ = input.readBool();
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 8
             case 18: {
               error_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000002;
+
               break;
             } // case 18
             default: {
@@ -443,7 +438,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private boolean success_ ;
     /**
@@ -460,9 +454,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSuccess(boolean value) {
-
+      
       success_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -471,7 +464,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearSuccess() {
-      bitField0_ = (bitField0_ & ~0x00000001);
+      
       success_ = false;
       onChanged();
       return this;
@@ -530,9 +523,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setError(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       error_ = value;
-      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -545,8 +540,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearError() {
+      
       error_ = getDefaultInstance().getError();
-      bitField0_ = (bitField0_ & ~0x00000002);
       onChanged();
       return this;
     }
@@ -561,10 +556,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setErrorBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       error_ = value;
-      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }

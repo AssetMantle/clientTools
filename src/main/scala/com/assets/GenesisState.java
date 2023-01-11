@@ -27,6 +27,11 @@ private static final long serialVersionUID = 0L;
     return new GenesisState();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.assets.GenesisStateV1Proto.internal_static_assets_GenesisState_descriptor;
@@ -41,7 +46,6 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int MAPPABLES_FIELD_NUMBER = 1;
-  @SuppressWarnings("serial")
   private java.util.List<com.assets.Mappable> mappables_;
   /**
    * <code>repeated .assets.Mappable mappables = 1 [json_name = "mappables"];</code>
@@ -82,7 +86,6 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PARAMETERS_FIELD_NUMBER = 2;
-  @SuppressWarnings("serial")
   private java.util.List<com.parameters.Parameter> parameters_;
   /**
    * <code>repeated .parameters.Parameter parameters = 2 [json_name = "parameters"];</code>
@@ -325,7 +328,6 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       if (mappablesBuilder_ == null) {
         mappables_ = java.util.Collections.emptyList();
       } else {
@@ -366,13 +368,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.assets.GenesisState buildPartial() {
       com.assets.GenesisState result = new com.assets.GenesisState(this);
-      buildPartialRepeatedFields(result);
-      if (bitField0_ != 0) { buildPartial0(result); }
-      onBuilt();
-      return result;
-    }
-
-    private void buildPartialRepeatedFields(com.assets.GenesisState result) {
+      int from_bitField0_ = bitField0_;
       if (mappablesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           mappables_ = java.util.Collections.unmodifiableList(mappables_);
@@ -391,10 +387,8 @@ private static final long serialVersionUID = 0L;
       } else {
         result.parameters_ = parametersBuilder_.build();
       }
-    }
-
-    private void buildPartial0(com.assets.GenesisState result) {
-      int from_bitField0_ = bitField0_;
+      onBuilt();
+      return result;
     }
 
     @java.lang.Override

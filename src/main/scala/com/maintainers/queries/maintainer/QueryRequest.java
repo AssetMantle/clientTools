@@ -25,6 +25,11 @@ private static final long serialVersionUID = 0L;
     return new QueryRequest();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.maintainers.queries.maintainer.QueryRequestV1Proto.internal_static_maintainers_queries_maintainer_QueryRequest_descriptor;
@@ -61,7 +66,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.ids.MaintainerIDOrBuilder getMaintainerIDOrBuilder() {
-    return maintainerID_ == null ? com.ids.MaintainerID.getDefaultInstance() : maintainerID_;
+    return getMaintainerID();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -257,10 +262,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
-      maintainerID_ = null;
-      if (maintainerIDBuilder_ != null) {
-        maintainerIDBuilder_.dispose();
+      if (maintainerIDBuilder_ == null) {
+        maintainerID_ = null;
+      } else {
+        maintainerID_ = null;
         maintainerIDBuilder_ = null;
       }
       return this;
@@ -289,18 +294,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.maintainers.queries.maintainer.QueryRequest buildPartial() {
       com.maintainers.queries.maintainer.QueryRequest result = new com.maintainers.queries.maintainer.QueryRequest(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      if (maintainerIDBuilder_ == null) {
+        result.maintainerID_ = maintainerID_;
+      } else {
+        result.maintainerID_ = maintainerIDBuilder_.build();
+      }
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.maintainers.queries.maintainer.QueryRequest result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.maintainerID_ = maintainerIDBuilder_ == null
-            ? maintainerID_
-            : maintainerIDBuilder_.build();
-      }
     }
 
     @java.lang.Override
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getMaintainerIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             default: {
@@ -398,7 +398,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private com.ids.MaintainerID maintainerID_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -408,7 +407,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the maintainerID field is set.
      */
     public boolean hasMaintainerID() {
-      return ((bitField0_ & 0x00000001) != 0);
+      return maintainerIDBuilder_ != null || maintainerID_ != null;
     }
     /**
      * <code>.ids.MaintainerID maintainer_i_d = 1 [json_name = "maintainerID"];</code>
@@ -430,11 +429,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         maintainerID_ = value;
+        onChanged();
       } else {
         maintainerIDBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
@@ -444,11 +443,11 @@ private static final long serialVersionUID = 0L;
         com.ids.MaintainerID.Builder builderForValue) {
       if (maintainerIDBuilder_ == null) {
         maintainerID_ = builderForValue.build();
+        onChanged();
       } else {
         maintainerIDBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
@@ -456,38 +455,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeMaintainerID(com.ids.MaintainerID value) {
       if (maintainerIDBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0) &&
-          maintainerID_ != null &&
-          maintainerID_ != com.ids.MaintainerID.getDefaultInstance()) {
-          getMaintainerIDBuilder().mergeFrom(value);
+        if (maintainerID_ != null) {
+          maintainerID_ =
+            com.ids.MaintainerID.newBuilder(maintainerID_).mergeFrom(value).buildPartial();
         } else {
           maintainerID_ = value;
         }
+        onChanged();
       } else {
         maintainerIDBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.MaintainerID maintainer_i_d = 1 [json_name = "maintainerID"];</code>
      */
     public Builder clearMaintainerID() {
-      bitField0_ = (bitField0_ & ~0x00000001);
-      maintainerID_ = null;
-      if (maintainerIDBuilder_ != null) {
-        maintainerIDBuilder_.dispose();
+      if (maintainerIDBuilder_ == null) {
+        maintainerID_ = null;
+        onChanged();
+      } else {
+        maintainerID_ = null;
         maintainerIDBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.MaintainerID maintainer_i_d = 1 [json_name = "maintainerID"];</code>
      */
     public com.ids.MaintainerID.Builder getMaintainerIDBuilder() {
-      bitField0_ |= 0x00000001;
+      
       onChanged();
       return getMaintainerIDFieldBuilder().getBuilder();
     }

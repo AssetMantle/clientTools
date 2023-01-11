@@ -27,6 +27,11 @@ private static final long serialVersionUID = 0L;
     return new Message();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.splits.transactions.wrap.MessageV1Proto.internal_static_splits_transactions_wrap_Message_descriptor;
@@ -41,8 +46,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FROM_FIELD_NUMBER = 1;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object from_ = "";
+  private volatile java.lang.Object from_;
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
@@ -102,11 +106,10 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.ids.IdentityIDOrBuilder getFromIDOrBuilder() {
-    return fromID_ == null ? com.ids.IdentityID.getDefaultInstance() : fromID_;
+    return getFromID();
   }
 
   public static final int COINS_FIELD_NUMBER = 3;
-  @SuppressWarnings("serial")
   private java.util.List<com.cosmos.base.v1beta1.Coin> coins_;
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin coins = 3 [json_name = "coins", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -362,11 +365,12 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       from_ = "";
-      fromID_ = null;
-      if (fromIDBuilder_ != null) {
-        fromIDBuilder_.dispose();
+
+      if (fromIDBuilder_ == null) {
+        fromID_ = null;
+      } else {
+        fromID_ = null;
         fromIDBuilder_ = null;
       }
       if (coinsBuilder_ == null) {
@@ -375,7 +379,7 @@ private static final long serialVersionUID = 0L;
         coins_ = null;
         coinsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000004);
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -402,34 +406,24 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.splits.transactions.wrap.Message buildPartial() {
       com.splits.transactions.wrap.Message result = new com.splits.transactions.wrap.Message(this);
-      buildPartialRepeatedFields(result);
-      if (bitField0_ != 0) { buildPartial0(result); }
-      onBuilt();
-      return result;
-    }
-
-    private void buildPartialRepeatedFields(com.splits.transactions.wrap.Message result) {
+      int from_bitField0_ = bitField0_;
+      result.from_ = from_;
+      if (fromIDBuilder_ == null) {
+        result.fromID_ = fromID_;
+      } else {
+        result.fromID_ = fromIDBuilder_.build();
+      }
       if (coinsBuilder_ == null) {
-        if (((bitField0_ & 0x00000004) != 0)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           coins_ = java.util.Collections.unmodifiableList(coins_);
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.coins_ = coins_;
       } else {
         result.coins_ = coinsBuilder_.build();
       }
-    }
-
-    private void buildPartial0(com.splits.transactions.wrap.Message result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.from_ = from_;
-      }
-      if (((from_bitField0_ & 0x00000002) != 0)) {
-        result.fromID_ = fromIDBuilder_ == null
-            ? fromID_
-            : fromIDBuilder_.build();
-      }
+      onBuilt();
+      return result;
     }
 
     @java.lang.Override
@@ -478,7 +472,6 @@ private static final long serialVersionUID = 0L;
       if (other == com.splits.transactions.wrap.Message.getDefaultInstance()) return this;
       if (!other.getFrom().isEmpty()) {
         from_ = other.from_;
-        bitField0_ |= 0x00000001;
         onChanged();
       }
       if (other.hasFromID()) {
@@ -488,7 +481,7 @@ private static final long serialVersionUID = 0L;
         if (!other.coins_.isEmpty()) {
           if (coins_.isEmpty()) {
             coins_ = other.coins_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureCoinsIsMutable();
             coins_.addAll(other.coins_);
@@ -501,7 +494,7 @@ private static final long serialVersionUID = 0L;
             coinsBuilder_.dispose();
             coinsBuilder_ = null;
             coins_ = other.coins_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000001);
             coinsBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getCoinsFieldBuilder() : null;
@@ -538,14 +531,14 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               from_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             case 18: {
               input.readMessage(
                   getFromIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000002;
+
               break;
             } // case 18
             case 26: {
@@ -619,9 +612,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFrom(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       from_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -630,8 +625,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFrom() {
+      
       from_ = getDefaultInstance().getFrom();
-      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -642,10 +637,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFromBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       from_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -658,7 +655,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the fromID field is set.
      */
     public boolean hasFromID() {
-      return ((bitField0_ & 0x00000002) != 0);
+      return fromIDBuilder_ != null || fromID_ != null;
     }
     /**
      * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
@@ -680,11 +677,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         fromID_ = value;
+        onChanged();
       } else {
         fromIDBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
@@ -694,11 +691,11 @@ private static final long serialVersionUID = 0L;
         com.ids.IdentityID.Builder builderForValue) {
       if (fromIDBuilder_ == null) {
         fromID_ = builderForValue.build();
+        onChanged();
       } else {
         fromIDBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
@@ -706,38 +703,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeFromID(com.ids.IdentityID value) {
       if (fromIDBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) != 0) &&
-          fromID_ != null &&
-          fromID_ != com.ids.IdentityID.getDefaultInstance()) {
-          getFromIDBuilder().mergeFrom(value);
+        if (fromID_ != null) {
+          fromID_ =
+            com.ids.IdentityID.newBuilder(fromID_).mergeFrom(value).buildPartial();
         } else {
           fromID_ = value;
         }
+        onChanged();
       } else {
         fromIDBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
      */
     public Builder clearFromID() {
-      bitField0_ = (bitField0_ & ~0x00000002);
-      fromID_ = null;
-      if (fromIDBuilder_ != null) {
-        fromIDBuilder_.dispose();
+      if (fromIDBuilder_ == null) {
+        fromID_ = null;
+        onChanged();
+      } else {
+        fromID_ = null;
         fromIDBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
      */
     public com.ids.IdentityID.Builder getFromIDBuilder() {
-      bitField0_ |= 0x00000002;
+      
       onChanged();
       return getFromIDFieldBuilder().getBuilder();
     }
@@ -772,9 +769,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<com.cosmos.base.v1beta1.Coin> coins_ =
       java.util.Collections.emptyList();
     private void ensureCoinsIsMutable() {
-      if (!((bitField0_ & 0x00000004) != 0)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         coins_ = new java.util.ArrayList<com.cosmos.base.v1beta1.Coin>(coins_);
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -924,7 +921,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearCoins() {
       if (coinsBuilder_ == null) {
         coins_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         coinsBuilder_.clear();
@@ -1001,7 +998,7 @@ private static final long serialVersionUID = 0L;
         coinsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.cosmos.base.v1beta1.Coin, com.cosmos.base.v1beta1.Coin.Builder, com.cosmos.base.v1beta1.CoinOrBuilder>(
                 coins_,
-                ((bitField0_ & 0x00000004) != 0),
+                ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
         coins_ = null;

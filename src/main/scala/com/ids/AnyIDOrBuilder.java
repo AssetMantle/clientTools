@@ -113,19 +113,19 @@ public interface AnyIDOrBuilder extends
   com.ids.OrderIDOrBuilder getOrderIDOrBuilder();
 
   /**
-   * <code>.ids.OwnableID ownable_i_d = 8 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 8 [json_name = "ownableID"];</code>
    * @return Whether the ownableID field is set.
    */
   boolean hasOwnableID();
   /**
-   * <code>.ids.OwnableID ownable_i_d = 8 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 8 [json_name = "ownableID"];</code>
    * @return The ownableID.
    */
-  com.ids.OwnableID getOwnableID();
+  com.ids.AnyOwnableID getOwnableID();
   /**
-   * <code>.ids.OwnableID ownable_i_d = 8 [json_name = "ownableID"];</code>
+   * <code>.ids.AnyOwnableID ownable_i_d = 8 [json_name = "ownableID"];</code>
    */
-  com.ids.OwnableIDOrBuilder getOwnableIDOrBuilder();
+  com.ids.AnyOwnableIDOrBuilder getOwnableIDOrBuilder();
 
   /**
    * <code>.ids.PropertyID property_i_d = 9 [json_name = "propertyID"];</code>
@@ -172,5 +172,5 @@ public interface AnyIDOrBuilder extends
    */
   com.ids.StringIDOrBuilder getStringIDOrBuilder();
 
-  com.ids.AnyID.ImplCase getImplCase();
+  public com.ids.AnyID.ImplCase getImplCase();
 }

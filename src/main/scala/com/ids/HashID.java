@@ -26,6 +26,11 @@ private static final long serialVersionUID = 0L;
     return new HashID();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.ids.HashIDV1Proto.internal_static_ids_HashID_descriptor;
@@ -40,7 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int I_D_BYTES_FIELD_NUMBER = 1;
-  private com.google.protobuf.ByteString iDBytes_ = com.google.protobuf.ByteString.EMPTY;
+  private com.google.protobuf.ByteString iDBytes_;
   /**
    * <code>bytes i_d_bytes = 1 [json_name = "iDBytes"];</code>
    * @return The iDBytes.
@@ -238,8 +243,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       iDBytes_ = com.google.protobuf.ByteString.EMPTY;
+
       return this;
     }
 
@@ -266,16 +271,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.ids.HashID buildPartial() {
       com.ids.HashID result = new com.ids.HashID(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      result.iDBytes_ = iDBytes_;
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.ids.HashID result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.iDBytes_ = iDBytes_;
-      }
     }
 
     @java.lang.Override
@@ -353,7 +351,7 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               iDBytes_ = input.readBytes();
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             default: {
@@ -371,7 +369,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private com.google.protobuf.ByteString iDBytes_ = com.google.protobuf.ByteString.EMPTY;
     /**
@@ -388,9 +385,11 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setIDBytes(com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       iDBytes_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -399,7 +398,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearIDBytes() {
-      bitField0_ = (bitField0_ & ~0x00000001);
+      
       iDBytes_ = getDefaultInstance().getIDBytes();
       onChanged();
       return this;

@@ -37,7 +37,7 @@ public final class AnyDataV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n!schema/data/base/anyData.v1.proto\022\004dat" +
       "a\032(schema/data/base/accAddressData.v1.pr" +
       "oto\032%schema/data/base/booleanData.v1.pro" +
@@ -66,12 +66,12 @@ public final class AnyDataV1Proto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          AccAddressDataV1Proto.getDescriptor(),
-          BooleanDataV1Proto.getDescriptor(),
-          DecDataV1Proto.getDescriptor(),
-          HeightDataV1Proto.getDescriptor(),
-          IdDataV1Proto.getDescriptor(),
-          StringDataV1Proto.getDescriptor(),
+          com.data.AccAddressDataV1Proto.getDescriptor(),
+          com.data.BooleanDataV1Proto.getDescriptor(),
+          com.data.DecDataV1Proto.getDescriptor(),
+          com.data.HeightDataV1Proto.getDescriptor(),
+          com.data.IdDataV1Proto.getDescriptor(),
+          com.data.StringDataV1Proto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_data_AnyData_descriptor =
@@ -79,31 +79,31 @@ public final class AnyDataV1Proto {
     internal_static_data_AnyData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_data_AnyData_descriptor,
-        new String[] { "AccAddressData", "BooleanData", "DecData", "HeightData", "IDData", "StringData", "ListData", "Impl", });
+        new java.lang.String[] { "AccAddressData", "BooleanData", "DecData", "HeightData", "IDData", "StringData", "ListData", "Impl", });
     internal_static_data_ListData_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_data_ListData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_data_ListData_descriptor,
-        new String[] { "Value", });
+        new java.lang.String[] { "Value", });
     internal_static_data_AnyDataList_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_data_AnyDataList_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_data_AnyDataList_descriptor,
-        new String[] { "DataList", });
+        new java.lang.String[] { "DataList", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customtype);
     registry.add(com.gogoproto.GogoProto.goprotoGetters);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    AccAddressDataV1Proto.getDescriptor();
-    BooleanDataV1Proto.getDescriptor();
-    DecDataV1Proto.getDescriptor();
-    HeightDataV1Proto.getDescriptor();
-    IdDataV1Proto.getDescriptor();
-    StringDataV1Proto.getDescriptor();
+    com.data.AccAddressDataV1Proto.getDescriptor();
+    com.data.BooleanDataV1Proto.getDescriptor();
+    com.data.DecDataV1Proto.getDescriptor();
+    com.data.HeightDataV1Proto.getDescriptor();
+    com.data.IdDataV1Proto.getDescriptor();
+    com.data.StringDataV1Proto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 

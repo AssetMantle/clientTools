@@ -16,9 +16,9 @@ public interface ListDataOrBuilder extends
    * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
    * @return The value.
    */
-  AnyDataList getValue();
+  com.data.AnyDataList getValue();
   /**
    * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
    */
-  AnyDataListOrBuilder getValueOrBuilder();
+  com.data.AnyDataListOrBuilder getValueOrBuilder();
 }

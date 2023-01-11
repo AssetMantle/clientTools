@@ -10,12 +10,12 @@ public interface AnyDataListOrBuilder extends
   /**
    * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
-  java.util.List<AnyData>
+  java.util.List<com.data.AnyData> 
       getDataListList();
   /**
    * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
-  AnyData getDataList(int index);
+  com.data.AnyData getDataList(int index);
   /**
    * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
@@ -23,11 +23,11 @@ public interface AnyDataListOrBuilder extends
   /**
    * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
-  java.util.List<? extends AnyDataOrBuilder>
+  java.util.List<? extends com.data.AnyDataOrBuilder> 
       getDataListOrBuilderList();
   /**
    * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
-  AnyDataOrBuilder getDataListOrBuilder(
+  com.data.AnyDataOrBuilder getDataListOrBuilder(
       int index);
 }

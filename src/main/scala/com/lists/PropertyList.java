@@ -26,6 +26,11 @@ private static final long serialVersionUID = 0L;
     return new PropertyList();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.lists.PropertyListV1Proto.internal_static_lists_PropertyList_descriptor;
@@ -40,7 +45,6 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PROPERTY_LIST_FIELD_NUMBER = 1;
-  @SuppressWarnings("serial")
   private java.util.List<com.properties.AnyProperty> propertyList_;
   /**
    * <code>repeated .properties.AnyProperty property_list = 1 [json_name = "propertyList"];</code>
@@ -270,7 +274,6 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       if (propertyListBuilder_ == null) {
         propertyList_ = java.util.Collections.emptyList();
       } else {
@@ -304,13 +307,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.lists.PropertyList buildPartial() {
       com.lists.PropertyList result = new com.lists.PropertyList(this);
-      buildPartialRepeatedFields(result);
-      if (bitField0_ != 0) { buildPartial0(result); }
-      onBuilt();
-      return result;
-    }
-
-    private void buildPartialRepeatedFields(com.lists.PropertyList result) {
+      int from_bitField0_ = bitField0_;
       if (propertyListBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           propertyList_ = java.util.Collections.unmodifiableList(propertyList_);
@@ -320,10 +317,8 @@ private static final long serialVersionUID = 0L;
       } else {
         result.propertyList_ = propertyListBuilder_.build();
       }
-    }
-
-    private void buildPartial0(com.lists.PropertyList result) {
-      int from_bitField0_ = bitField0_;
+      onBuilt();
+      return result;
     }
 
     @java.lang.Override
