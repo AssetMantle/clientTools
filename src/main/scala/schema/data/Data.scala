@@ -35,7 +35,7 @@ object Data {
     case 4 => HeightData(anyData.getHeightData)
     case 5 => IDData(anyData.getIDData)
     case 6 => StringData(anyData.getStringData)
-    case 7 => ListData(anyData.getListData.getBytes())
+    //case 7 => ListData(commonUtilities.ReadListData(anyData.getListDataBytes.toByteArray))
     case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
   }
 
@@ -45,6 +45,7 @@ object Data {
     case commonConstants.DataTypeID.HeightDataTypeID.value => HeightData(protoBytes)
     case commonConstants.DataTypeID.IDDataTypeID.value => IDData(protoBytes)
     case commonConstants.DataTypeID.StringDataTypeID.value => StringData(protoBytes)
+    case commonConstants.DataTypeID.ListDataTypeID.value => ListData(protoBytes)
     case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
   }
 
