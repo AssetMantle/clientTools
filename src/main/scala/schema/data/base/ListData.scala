@@ -19,7 +19,7 @@ case class ListData(value: AnyDataList) extends Data {
 
    def asProtoListData: protoListData = protoListData.newBuilder().setValue(this.value.asProtoAnyDataList).build()
 
-   def toAnyData: AnyData = AnyData.newBuilder().setListData(this.asProtoListData.toString).build()
+   def toAnyData: AnyData = AnyData.newBuilder().setListData(this.asProtoListData).build()
 
    def getBytes: Array[Byte] = {
       this.value.dataList.map(x => Data(x).getBytes).filter(_.length != 0).sortWith((x, y) => new BigInteger(x).compareTo(new BigInteger(y)) == -1).toArray.flatten
