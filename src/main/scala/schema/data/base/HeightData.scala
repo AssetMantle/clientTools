@@ -23,6 +23,8 @@ case class HeightData(value: Height) extends Data {
   def toAnyData: AnyData = AnyData.newBuilder().setHeightData(this.asProtoHeightData).build()
 
   def getProtoBytes: Array[Byte] = this.asProtoHeightData.toByteArray
+
+  def viewString: String = this.value.AsString
 }
 
 object HeightData {

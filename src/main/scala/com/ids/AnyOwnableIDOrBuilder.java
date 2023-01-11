@@ -37,5 +37,5 @@ public interface AnyOwnableIDOrBuilder extends
    */
   com.ids.CoinIDOrBuilder getCoinIDOrBuilder();
 
-  public com.ids.AnyOwnableID.ImplCase getImplCase();
+  com.ids.AnyOwnableID.ImplCase getImplCase();
 }

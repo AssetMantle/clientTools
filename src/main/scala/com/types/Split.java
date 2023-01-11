@@ -26,11 +26,6 @@ private static final long serialVersionUID = 0L;
     return new Split();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.types.SplitV1Proto.internal_static_types_Split_descriptor;
@@ -67,7 +62,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.ids.IdentityIDOrBuilder getOwnerIDOrBuilder() {
-    return getOwnerID();
+    return ownerID_ == null ? com.ids.IdentityID.getDefaultInstance() : ownerID_;
   }
 
   public static final int OWNABLE_I_D_FIELD_NUMBER = 2;
@@ -93,11 +88,12 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.ids.AnyOwnableIDOrBuilder getOwnableIDOrBuilder() {
-    return getOwnableID();
+    return ownableID_ == null ? com.ids.AnyOwnableID.getDefaultInstance() : ownableID_;
   }
 
   public static final int VALUE_FIELD_NUMBER = 3;
-  private volatile java.lang.Object value_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object value_ = "";
   /**
    * <code>string value = 3 [json_name = "value", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
    * @return The value.
@@ -353,20 +349,18 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (ownerIDBuilder_ == null) {
-        ownerID_ = null;
-      } else {
-        ownerID_ = null;
+      bitField0_ = 0;
+      ownerID_ = null;
+      if (ownerIDBuilder_ != null) {
+        ownerIDBuilder_.dispose();
         ownerIDBuilder_ = null;
       }
-      if (ownableIDBuilder_ == null) {
-        ownableID_ = null;
-      } else {
-        ownableID_ = null;
+      ownableID_ = null;
+      if (ownableIDBuilder_ != null) {
+        ownableIDBuilder_.dispose();
         ownableIDBuilder_ = null;
       }
       value_ = "";
-
       return this;
     }
 
@@ -393,19 +387,26 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.types.Split buildPartial() {
       com.types.Split result = new com.types.Split(this);
-      if (ownerIDBuilder_ == null) {
-        result.ownerID_ = ownerID_;
-      } else {
-        result.ownerID_ = ownerIDBuilder_.build();
-      }
-      if (ownableIDBuilder_ == null) {
-        result.ownableID_ = ownableID_;
-      } else {
-        result.ownableID_ = ownableIDBuilder_.build();
-      }
-      result.value_ = value_;
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
+    }
+
+    private void buildPartial0(com.types.Split result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.ownerID_ = ownerIDBuilder_ == null
+            ? ownerID_
+            : ownerIDBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.ownableID_ = ownableIDBuilder_ == null
+            ? ownableID_
+            : ownableIDBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.value_ = value_;
+      }
     }
 
     @java.lang.Override
@@ -460,6 +461,7 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getValue().isEmpty()) {
         value_ = other.value_;
+        bitField0_ |= 0x00000004;
         onChanged();
       }
       this.mergeUnknownFields(other.getUnknownFields());
@@ -492,19 +494,19 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getOwnerIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             case 18: {
               input.readMessage(
                   getOwnableIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000002;
               break;
             } // case 18
             case 26: {
               value_ = input.readStringRequireUtf8();
-
+              bitField0_ |= 0x00000004;
               break;
             } // case 26
             default: {
@@ -522,6 +524,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private com.ids.IdentityID ownerID_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -531,7 +534,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the ownerID field is set.
      */
     public boolean hasOwnerID() {
-      return ownerIDBuilder_ != null || ownerID_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>.ids.IdentityID owner_i_d = 1 [json_name = "ownerID"];</code>
@@ -553,11 +556,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         ownerID_ = value;
-        onChanged();
       } else {
         ownerIDBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -567,11 +570,11 @@ private static final long serialVersionUID = 0L;
         com.ids.IdentityID.Builder builderForValue) {
       if (ownerIDBuilder_ == null) {
         ownerID_ = builderForValue.build();
-        onChanged();
       } else {
         ownerIDBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -579,38 +582,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeOwnerID(com.ids.IdentityID value) {
       if (ownerIDBuilder_ == null) {
-        if (ownerID_ != null) {
-          ownerID_ =
-            com.ids.IdentityID.newBuilder(ownerID_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          ownerID_ != null &&
+          ownerID_ != com.ids.IdentityID.getDefaultInstance()) {
+          getOwnerIDBuilder().mergeFrom(value);
         } else {
           ownerID_ = value;
         }
-        onChanged();
       } else {
         ownerIDBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.IdentityID owner_i_d = 1 [json_name = "ownerID"];</code>
      */
     public Builder clearOwnerID() {
-      if (ownerIDBuilder_ == null) {
-        ownerID_ = null;
-        onChanged();
-      } else {
-        ownerID_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      ownerID_ = null;
+      if (ownerIDBuilder_ != null) {
+        ownerIDBuilder_.dispose();
         ownerIDBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.IdentityID owner_i_d = 1 [json_name = "ownerID"];</code>
      */
     public com.ids.IdentityID.Builder getOwnerIDBuilder() {
-      
+      bitField0_ |= 0x00000001;
       onChanged();
       return getOwnerIDFieldBuilder().getBuilder();
     }
@@ -650,7 +653,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the ownableID field is set.
      */
     public boolean hasOwnableID() {
-      return ownableIDBuilder_ != null || ownableID_ != null;
+      return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
@@ -672,11 +675,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         ownableID_ = value;
-        onChanged();
       } else {
         ownableIDBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -686,11 +689,11 @@ private static final long serialVersionUID = 0L;
         com.ids.AnyOwnableID.Builder builderForValue) {
       if (ownableIDBuilder_ == null) {
         ownableID_ = builderForValue.build();
-        onChanged();
       } else {
         ownableIDBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -698,38 +701,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeOwnableID(com.ids.AnyOwnableID value) {
       if (ownableIDBuilder_ == null) {
-        if (ownableID_ != null) {
-          ownableID_ =
-            com.ids.AnyOwnableID.newBuilder(ownableID_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000002) != 0) &&
+          ownableID_ != null &&
+          ownableID_ != com.ids.AnyOwnableID.getDefaultInstance()) {
+          getOwnableIDBuilder().mergeFrom(value);
         } else {
           ownableID_ = value;
         }
-        onChanged();
       } else {
         ownableIDBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      */
     public Builder clearOwnableID() {
-      if (ownableIDBuilder_ == null) {
-        ownableID_ = null;
-        onChanged();
-      } else {
-        ownableID_ = null;
+      bitField0_ = (bitField0_ & ~0x00000002);
+      ownableID_ = null;
+      if (ownableIDBuilder_ != null) {
+        ownableIDBuilder_.dispose();
         ownableIDBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
      */
     public com.ids.AnyOwnableID.Builder getOwnableIDBuilder() {
-      
+      bitField0_ |= 0x00000002;
       onChanged();
       return getOwnableIDFieldBuilder().getBuilder();
     }
@@ -802,11 +805,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setValue(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       value_ = value;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -815,8 +816,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearValue() {
-      
       value_ = getDefaultInstance().getValue();
+      bitField0_ = (bitField0_ & ~0x00000004);
       onChanged();
       return this;
     }
@@ -827,12 +828,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setValueBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       value_ = value;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }

@@ -25,11 +25,6 @@ private static final long serialVersionUID = 0L;
     return new AnyOwnableID();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.ids.AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_descriptor;
@@ -44,6 +39,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private int implCase_ = 0;
+  @SuppressWarnings("serial")
   private java.lang.Object impl_;
   public enum ImplCase
       implements com.google.protobuf.Internal.EnumLite,
@@ -362,6 +358,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (assetIDBuilder_ != null) {
         assetIDBuilder_.clear();
       }
@@ -396,23 +393,27 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.ids.AnyOwnableID buildPartial() {
       com.ids.AnyOwnableID result = new com.ids.AnyOwnableID(this);
-      if (implCase_ == 1) {
-        if (assetIDBuilder_ == null) {
-          result.impl_ = impl_;
-        } else {
-          result.impl_ = assetIDBuilder_.build();
-        }
-      }
-      if (implCase_ == 2) {
-        if (coinIDBuilder_ == null) {
-          result.impl_ = impl_;
-        } else {
-          result.impl_ = coinIDBuilder_.build();
-        }
-      }
-      result.implCase_ = implCase_;
+      if (bitField0_ != 0) { buildPartial0(result); }
+      buildPartialOneofs(result);
       onBuilt();
       return result;
+    }
+
+    private void buildPartial0(com.ids.AnyOwnableID result) {
+      int from_bitField0_ = bitField0_;
+    }
+
+    private void buildPartialOneofs(com.ids.AnyOwnableID result) {
+      result.implCase_ = implCase_;
+      result.impl_ = this.impl_;
+      if (implCase_ == 1 &&
+          assetIDBuilder_ != null) {
+        result.impl_ = assetIDBuilder_.build();
+      }
+      if (implCase_ == 2 &&
+          coinIDBuilder_ != null) {
+        result.impl_ = coinIDBuilder_.build();
+      }
     }
 
     @java.lang.Override
@@ -542,6 +543,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private int bitField0_;
 
     private com.google.protobuf.SingleFieldBuilderV3<
         com.ids.AssetID, com.ids.AssetID.Builder, com.ids.AssetIDOrBuilder> assetIDBuilder_;
@@ -681,7 +683,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 1;
-      onChanged();;
+      onChanged();
       return assetIDBuilder_;
     }
 
@@ -823,7 +825,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 2;
-      onChanged();;
+      onChanged();
       return coinIDBuilder_;
     }
     @java.lang.Override

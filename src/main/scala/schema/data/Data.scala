@@ -20,6 +20,8 @@ abstract class Data {
   def getBytes: Array[Byte]
 
   def getProtoBytes: Array[Byte]
+
+  def viewString: String
 }
 
 object Data {
