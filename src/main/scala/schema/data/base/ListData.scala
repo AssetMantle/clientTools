@@ -26,6 +26,8 @@ case class ListData(dataList: Seq[AnyData]) extends Data {
    }
 
    def getProtoBytes: Array[Byte] = this.asProtoListData.toByteArray
+
+ override def viewString: String = this.toString
 }
 
 object ListData {
