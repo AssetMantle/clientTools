@@ -25,6 +25,11 @@ private static final long serialVersionUID = 0L;
     return new AnyID();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.ids.AnyIDV1Proto.internal_static_ids_AnyID_descriptor;
@@ -39,7 +44,6 @@ private static final long serialVersionUID = 0L;
   }
 
   private int implCase_ = 0;
-  @SuppressWarnings("serial")
   private java.lang.Object impl_;
   public enum ImplCase
       implements com.google.protobuf.Internal.EnumLite,
@@ -790,7 +794,6 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       if (assetIDBuilder_ != null) {
         assetIDBuilder_.clear();
       }
@@ -852,63 +855,86 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.ids.AnyID buildPartial() {
       com.ids.AnyID result = new com.ids.AnyID(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
-      buildPartialOneofs(result);
+      if (implCase_ == 1) {
+        if (assetIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = assetIDBuilder_.build();
+        }
+      }
+      if (implCase_ == 2) {
+        if (classificationIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = classificationIDBuilder_.build();
+        }
+      }
+      if (implCase_ == 3) {
+        if (dataIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = dataIDBuilder_.build();
+        }
+      }
+      if (implCase_ == 4) {
+        if (hashIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = hashIDBuilder_.build();
+        }
+      }
+      if (implCase_ == 5) {
+        if (identityIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = identityIDBuilder_.build();
+        }
+      }
+      if (implCase_ == 6) {
+        if (maintainerIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = maintainerIDBuilder_.build();
+        }
+      }
+      if (implCase_ == 7) {
+        if (orderIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = orderIDBuilder_.build();
+        }
+      }
+      if (implCase_ == 8) {
+        if (ownableIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = ownableIDBuilder_.build();
+        }
+      }
+      if (implCase_ == 9) {
+        if (propertyIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = propertyIDBuilder_.build();
+        }
+      }
+      if (implCase_ == 10) {
+        if (splitIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = splitIDBuilder_.build();
+        }
+      }
+      if (implCase_ == 11) {
+        if (stringIDBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = stringIDBuilder_.build();
+        }
+      }
+      result.implCase_ = implCase_;
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.ids.AnyID result) {
-      int from_bitField0_ = bitField0_;
-    }
-
-    private void buildPartialOneofs(com.ids.AnyID result) {
-      result.implCase_ = implCase_;
-      result.impl_ = this.impl_;
-      if (implCase_ == 1 &&
-          assetIDBuilder_ != null) {
-        result.impl_ = assetIDBuilder_.build();
-      }
-      if (implCase_ == 2 &&
-          classificationIDBuilder_ != null) {
-        result.impl_ = classificationIDBuilder_.build();
-      }
-      if (implCase_ == 3 &&
-          dataIDBuilder_ != null) {
-        result.impl_ = dataIDBuilder_.build();
-      }
-      if (implCase_ == 4 &&
-          hashIDBuilder_ != null) {
-        result.impl_ = hashIDBuilder_.build();
-      }
-      if (implCase_ == 5 &&
-          identityIDBuilder_ != null) {
-        result.impl_ = identityIDBuilder_.build();
-      }
-      if (implCase_ == 6 &&
-          maintainerIDBuilder_ != null) {
-        result.impl_ = maintainerIDBuilder_.build();
-      }
-      if (implCase_ == 7 &&
-          orderIDBuilder_ != null) {
-        result.impl_ = orderIDBuilder_.build();
-      }
-      if (implCase_ == 8 &&
-          ownableIDBuilder_ != null) {
-        result.impl_ = ownableIDBuilder_.build();
-      }
-      if (implCase_ == 9 &&
-          propertyIDBuilder_ != null) {
-        result.impl_ = propertyIDBuilder_.build();
-      }
-      if (implCase_ == 10 &&
-          splitIDBuilder_ != null) {
-        result.impl_ = splitIDBuilder_.build();
-      }
-      if (implCase_ == 11 &&
-          stringIDBuilder_ != null) {
-        result.impl_ = stringIDBuilder_.build();
-      }
     }
 
     @java.lang.Override
@@ -1137,7 +1163,6 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int bitField0_;
 
     private com.google.protobuf.SingleFieldBuilderV3<
         com.ids.AssetID, com.ids.AssetID.Builder, com.ids.AssetIDOrBuilder> assetIDBuilder_;
@@ -1277,7 +1302,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 1;
-      onChanged();
+      onChanged();;
       return assetIDBuilder_;
     }
 
@@ -1419,7 +1444,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 2;
-      onChanged();
+      onChanged();;
       return classificationIDBuilder_;
     }
 
@@ -1561,7 +1586,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 3;
-      onChanged();
+      onChanged();;
       return dataIDBuilder_;
     }
 
@@ -1703,7 +1728,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 4;
-      onChanged();
+      onChanged();;
       return hashIDBuilder_;
     }
 
@@ -1845,7 +1870,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 5;
-      onChanged();
+      onChanged();;
       return identityIDBuilder_;
     }
 
@@ -1987,7 +2012,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 6;
-      onChanged();
+      onChanged();;
       return maintainerIDBuilder_;
     }
 
@@ -2129,7 +2154,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 7;
-      onChanged();
+      onChanged();;
       return orderIDBuilder_;
     }
 
@@ -2271,7 +2296,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 8;
-      onChanged();
+      onChanged();;
       return ownableIDBuilder_;
     }
 
@@ -2413,7 +2438,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 9;
-      onChanged();
+      onChanged();;
       return propertyIDBuilder_;
     }
 
@@ -2555,7 +2580,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 10;
-      onChanged();
+      onChanged();;
       return splitIDBuilder_;
     }
 
@@ -2697,7 +2722,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 11;
-      onChanged();
+      onChanged();;
       return stringIDBuilder_;
     }
     @java.lang.Override

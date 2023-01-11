@@ -19,6 +19,11 @@ public final class AnyDataV1Proto {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_data_AnyData_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_data_ListData_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_data_ListData_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -35,7 +40,7 @@ public final class AnyDataV1Proto {
       "chema/data/base/heightData.v1.proto\032 sch" +
       "ema/data/base/idData.v1.proto\032$schema/da" +
       "ta/base/stringData.v1.proto\032\024gogoproto/g" +
-      "ogo.proto\"\376\002\n\007AnyData\022@\n\020acc_address_dat" +
+      "ogo.proto\"\216\003\n\007AnyData\022@\n\020acc_address_dat" +
       "a\030\001 \001(\0132\024.data.AccAddressDataH\000R\016accAddr" +
       "essData\0226\n\014boolean_data\030\002 \001(\0132\021.data.Boo" +
       "leanDataH\000R\013booleanData\022*\n\010dec_data\030\003 \001(" +
@@ -43,12 +48,14 @@ public final class AnyDataV1Proto {
       "ta\030\004 \001(\0132\020.data.HeightDataH\000R\nheightData" +
       "\022(\n\010i_d_data\030\005 \001(\0132\014.data.IDDataH\000R\006iDDa" +
       "ta\0223\n\013string_data\030\006 \001(\0132\020.data.StringDat" +
-      "aH\000R\nstringData\022+\n\tlist_data\030\007 \001(\tB\014\332\336\037\010" +
-      "ListDataH\000R\010listData:\004\210\240\037\000B\006\n\004implB{\n\010co" +
-      "m.dataB\016AnyDataV1ProtoP\001Z/github.com/Ass" +
-      "etMantle/modules/schema/data/base\242\002\003DXX\252" +
-      "\002\004Data\312\002\004Data\342\002\020Data\\GPBMetadata\352\002\004Datab" +
-      "\006proto3"
+      "aH\000R\nstringData\022;\n\tlist_data\030\007 \001(\0132\016.dat" +
+      "a.ListDataB\014\332\336\037\010ListDataH\000R\010listData:\004\210\240" +
+      "\037\000B\006\n\004impl\"<\n\010ListData\022*\n\tdata_list\030\001 \003(" +
+      "\0132\r.data.AnyDataR\010dataList:\004\210\240\037\000B{\n\010com." +
+      "dataB\016AnyDataV1ProtoP\001Z/github.com/Asset" +
+      "Mantle/modules/schema/data/base\242\002\003DXX\252\002\004" +
+      "Data\312\002\004Data\342\002\020Data\\GPBMetadata\352\002\004Datab\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -67,6 +74,12 @@ public final class AnyDataV1Proto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_data_AnyData_descriptor,
         new java.lang.String[] { "AccAddressData", "BooleanData", "DecData", "HeightData", "IDData", "StringData", "ListData", "Impl", });
+    internal_static_data_ListData_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_data_ListData_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_data_ListData_descriptor,
+        new java.lang.String[] { "DataList", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customtype);

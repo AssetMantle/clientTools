@@ -37,6 +37,11 @@ private static final long serialVersionUID = 0L;
     return new TransactionRequest();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.orders.transactions.make.TransactionRequestV1Proto.internal_static_orders_transactions_make_TransactionRequest_descriptor;
@@ -51,8 +56,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FROM_FIELD_NUMBER = 1;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object from_ = "";
+  private volatile java.lang.Object from_;
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
@@ -90,8 +94,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FROM_I_D_FIELD_NUMBER = 2;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object fromID_ = "";
+  private volatile java.lang.Object fromID_;
   /**
    * <code>string from_i_d = 2 [json_name = "fromID"];</code>
    * @return The fromID.
@@ -129,8 +132,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CLASSIFICATION_I_D_FIELD_NUMBER = 3;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object classificationID_ = "";
+  private volatile java.lang.Object classificationID_;
   /**
    * <code>string classification_i_d = 3 [json_name = "classificationID"];</code>
    * @return The classificationID.
@@ -168,8 +170,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TAKER_I_D_FIELD_NUMBER = 4;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object takerID_ = "";
+  private volatile java.lang.Object takerID_;
   /**
    * <code>string taker_i_d = 4 [json_name = "takerID"];</code>
    * @return The takerID.
@@ -207,8 +208,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int MAKER_OWNABLE_I_D_FIELD_NUMBER = 5;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object makerOwnableID_ = "";
+  private volatile java.lang.Object makerOwnableID_;
   /**
    * <code>string maker_ownable_i_d = 5 [json_name = "makerOwnableID"];</code>
    * @return The makerOwnableID.
@@ -246,8 +246,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TAKER_OWNABLE_I_D_FIELD_NUMBER = 6;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object takerOwnableID_ = "";
+  private volatile java.lang.Object takerOwnableID_;
   /**
    * <code>string taker_ownable_i_d = 6 [json_name = "takerOwnableID"];</code>
    * @return The takerOwnableID.
@@ -285,7 +284,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int EXPIRES_IN_FIELD_NUMBER = 7;
-  private long expiresIn_ = 0L;
+  private long expiresIn_;
   /**
    * <code>int64 expires_in = 7 [json_name = "expiresIn"];</code>
    * @return The expiresIn.
@@ -296,8 +295,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int MAKER_OWNABLE_SPLIT_FIELD_NUMBER = 8;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object makerOwnableSplit_ = "";
+  private volatile java.lang.Object makerOwnableSplit_;
   /**
    * <code>string maker_ownable_split = 8 [json_name = "makerOwnableSplit"];</code>
    * @return The makerOwnableSplit.
@@ -335,8 +333,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TAKER_OWNABLE_SPLIT_FIELD_NUMBER = 9;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object takerOwnableSplit_ = "";
+  private volatile java.lang.Object takerOwnableSplit_;
   /**
    * <code>string taker_ownable_split = 9 [json_name = "takerOwnableSplit"];</code>
    * @return The takerOwnableSplit.
@@ -374,8 +371,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int IMMUTABLE_META_PROPERTIES_FIELD_NUMBER = 10;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object immutableMetaProperties_ = "";
+  private volatile java.lang.Object immutableMetaProperties_;
   /**
    * <code>string immutable_meta_properties = 10 [json_name = "immutableMetaProperties"];</code>
    * @return The immutableMetaProperties.
@@ -413,8 +409,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int IMMUTABLE_PROPERTIES_FIELD_NUMBER = 11;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object immutableProperties_ = "";
+  private volatile java.lang.Object immutableProperties_;
   /**
    * <code>string immutable_properties = 11 [json_name = "immutableProperties"];</code>
    * @return The immutableProperties.
@@ -452,8 +447,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int MUTABLE_META_PROPERTIES_FIELD_NUMBER = 12;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object mutableMetaProperties_ = "";
+  private volatile java.lang.Object mutableMetaProperties_;
   /**
    * <code>string mutable_meta_properties = 12 [json_name = "mutableMetaProperties"];</code>
    * @return The mutableMetaProperties.
@@ -491,8 +485,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int MUTABLE_PROPERTIES_FIELD_NUMBER = 13;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object mutableProperties_ = "";
+  private volatile java.lang.Object mutableProperties_;
   /**
    * <code>string mutable_properties = 13 [json_name = "mutableProperties"];</code>
    * @return The mutableProperties.
@@ -838,20 +831,32 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       from_ = "";
+
       fromID_ = "";
+
       classificationID_ = "";
+
       takerID_ = "";
+
       makerOwnableID_ = "";
+
       takerOwnableID_ = "";
+
       expiresIn_ = 0L;
+
       makerOwnableSplit_ = "";
+
       takerOwnableSplit_ = "";
+
       immutableMetaProperties_ = "";
+
       immutableProperties_ = "";
+
       mutableMetaProperties_ = "";
+
       mutableProperties_ = "";
+
       return this;
     }
 
@@ -878,52 +883,21 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.orders.transactions.make.TransactionRequest buildPartial() {
       com.orders.transactions.make.TransactionRequest result = new com.orders.transactions.make.TransactionRequest(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      result.from_ = from_;
+      result.fromID_ = fromID_;
+      result.classificationID_ = classificationID_;
+      result.takerID_ = takerID_;
+      result.makerOwnableID_ = makerOwnableID_;
+      result.takerOwnableID_ = takerOwnableID_;
+      result.expiresIn_ = expiresIn_;
+      result.makerOwnableSplit_ = makerOwnableSplit_;
+      result.takerOwnableSplit_ = takerOwnableSplit_;
+      result.immutableMetaProperties_ = immutableMetaProperties_;
+      result.immutableProperties_ = immutableProperties_;
+      result.mutableMetaProperties_ = mutableMetaProperties_;
+      result.mutableProperties_ = mutableProperties_;
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.orders.transactions.make.TransactionRequest result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.from_ = from_;
-      }
-      if (((from_bitField0_ & 0x00000002) != 0)) {
-        result.fromID_ = fromID_;
-      }
-      if (((from_bitField0_ & 0x00000004) != 0)) {
-        result.classificationID_ = classificationID_;
-      }
-      if (((from_bitField0_ & 0x00000008) != 0)) {
-        result.takerID_ = takerID_;
-      }
-      if (((from_bitField0_ & 0x00000010) != 0)) {
-        result.makerOwnableID_ = makerOwnableID_;
-      }
-      if (((from_bitField0_ & 0x00000020) != 0)) {
-        result.takerOwnableID_ = takerOwnableID_;
-      }
-      if (((from_bitField0_ & 0x00000040) != 0)) {
-        result.expiresIn_ = expiresIn_;
-      }
-      if (((from_bitField0_ & 0x00000080) != 0)) {
-        result.makerOwnableSplit_ = makerOwnableSplit_;
-      }
-      if (((from_bitField0_ & 0x00000100) != 0)) {
-        result.takerOwnableSplit_ = takerOwnableSplit_;
-      }
-      if (((from_bitField0_ & 0x00000200) != 0)) {
-        result.immutableMetaProperties_ = immutableMetaProperties_;
-      }
-      if (((from_bitField0_ & 0x00000400) != 0)) {
-        result.immutableProperties_ = immutableProperties_;
-      }
-      if (((from_bitField0_ & 0x00000800) != 0)) {
-        result.mutableMetaProperties_ = mutableMetaProperties_;
-      }
-      if (((from_bitField0_ & 0x00001000) != 0)) {
-        result.mutableProperties_ = mutableProperties_;
-      }
     }
 
     @java.lang.Override
@@ -972,32 +946,26 @@ private static final long serialVersionUID = 0L;
       if (other == com.orders.transactions.make.TransactionRequest.getDefaultInstance()) return this;
       if (!other.getFrom().isEmpty()) {
         from_ = other.from_;
-        bitField0_ |= 0x00000001;
         onChanged();
       }
       if (!other.getFromID().isEmpty()) {
         fromID_ = other.fromID_;
-        bitField0_ |= 0x00000002;
         onChanged();
       }
       if (!other.getClassificationID().isEmpty()) {
         classificationID_ = other.classificationID_;
-        bitField0_ |= 0x00000004;
         onChanged();
       }
       if (!other.getTakerID().isEmpty()) {
         takerID_ = other.takerID_;
-        bitField0_ |= 0x00000008;
         onChanged();
       }
       if (!other.getMakerOwnableID().isEmpty()) {
         makerOwnableID_ = other.makerOwnableID_;
-        bitField0_ |= 0x00000010;
         onChanged();
       }
       if (!other.getTakerOwnableID().isEmpty()) {
         takerOwnableID_ = other.takerOwnableID_;
-        bitField0_ |= 0x00000020;
         onChanged();
       }
       if (other.getExpiresIn() != 0L) {
@@ -1005,32 +973,26 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getMakerOwnableSplit().isEmpty()) {
         makerOwnableSplit_ = other.makerOwnableSplit_;
-        bitField0_ |= 0x00000080;
         onChanged();
       }
       if (!other.getTakerOwnableSplit().isEmpty()) {
         takerOwnableSplit_ = other.takerOwnableSplit_;
-        bitField0_ |= 0x00000100;
         onChanged();
       }
       if (!other.getImmutableMetaProperties().isEmpty()) {
         immutableMetaProperties_ = other.immutableMetaProperties_;
-        bitField0_ |= 0x00000200;
         onChanged();
       }
       if (!other.getImmutableProperties().isEmpty()) {
         immutableProperties_ = other.immutableProperties_;
-        bitField0_ |= 0x00000400;
         onChanged();
       }
       if (!other.getMutableMetaProperties().isEmpty()) {
         mutableMetaProperties_ = other.mutableMetaProperties_;
-        bitField0_ |= 0x00000800;
         onChanged();
       }
       if (!other.getMutableProperties().isEmpty()) {
         mutableProperties_ = other.mutableProperties_;
-        bitField0_ |= 0x00001000;
         onChanged();
       }
       this.mergeUnknownFields(other.getUnknownFields());
@@ -1061,67 +1023,67 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               from_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             case 18: {
               fromID_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000002;
+
               break;
             } // case 18
             case 26: {
               classificationID_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000004;
+
               break;
             } // case 26
             case 34: {
               takerID_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000008;
+
               break;
             } // case 34
             case 42: {
               makerOwnableID_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000010;
+
               break;
             } // case 42
             case 50: {
               takerOwnableID_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000020;
+
               break;
             } // case 50
             case 56: {
               expiresIn_ = input.readInt64();
-              bitField0_ |= 0x00000040;
+
               break;
             } // case 56
             case 66: {
               makerOwnableSplit_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000080;
+
               break;
             } // case 66
             case 74: {
               takerOwnableSplit_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000100;
+
               break;
             } // case 74
             case 82: {
               immutableMetaProperties_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000200;
+
               break;
             } // case 82
             case 90: {
               immutableProperties_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000400;
+
               break;
             } // case 90
             case 98: {
               mutableMetaProperties_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000800;
+
               break;
             } // case 98
             case 106: {
               mutableProperties_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00001000;
+
               break;
             } // case 106
             default: {
@@ -1139,7 +1101,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private java.lang.Object from_ = "";
     /**
@@ -1182,9 +1143,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFrom(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       from_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -1193,8 +1156,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFrom() {
+      
       from_ = getDefaultInstance().getFrom();
-      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -1205,10 +1168,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFromBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       from_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -1254,9 +1219,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFromID(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       fromID_ = value;
-      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -1265,8 +1232,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFromID() {
+      
       fromID_ = getDefaultInstance().getFromID();
-      bitField0_ = (bitField0_ & ~0x00000002);
       onChanged();
       return this;
     }
@@ -1277,10 +1244,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFromIDBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       fromID_ = value;
-      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -1326,9 +1295,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setClassificationID(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       classificationID_ = value;
-      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -1337,8 +1308,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearClassificationID() {
+      
       classificationID_ = getDefaultInstance().getClassificationID();
-      bitField0_ = (bitField0_ & ~0x00000004);
       onChanged();
       return this;
     }
@@ -1349,10 +1320,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setClassificationIDBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       classificationID_ = value;
-      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -1398,9 +1371,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setTakerID(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       takerID_ = value;
-      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -1409,8 +1384,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearTakerID() {
+      
       takerID_ = getDefaultInstance().getTakerID();
-      bitField0_ = (bitField0_ & ~0x00000008);
       onChanged();
       return this;
     }
@@ -1421,10 +1396,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setTakerIDBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       takerID_ = value;
-      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -1470,9 +1447,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMakerOwnableID(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       makerOwnableID_ = value;
-      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -1481,8 +1460,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearMakerOwnableID() {
+      
       makerOwnableID_ = getDefaultInstance().getMakerOwnableID();
-      bitField0_ = (bitField0_ & ~0x00000010);
       onChanged();
       return this;
     }
@@ -1493,10 +1472,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMakerOwnableIDBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       makerOwnableID_ = value;
-      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -1542,9 +1523,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setTakerOwnableID(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       takerOwnableID_ = value;
-      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -1553,8 +1536,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearTakerOwnableID() {
+      
       takerOwnableID_ = getDefaultInstance().getTakerOwnableID();
-      bitField0_ = (bitField0_ & ~0x00000020);
       onChanged();
       return this;
     }
@@ -1565,10 +1548,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setTakerOwnableIDBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       takerOwnableID_ = value;
-      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -1588,9 +1573,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setExpiresIn(long value) {
-
+      
       expiresIn_ = value;
-      bitField0_ |= 0x00000040;
       onChanged();
       return this;
     }
@@ -1599,7 +1583,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearExpiresIn() {
-      bitField0_ = (bitField0_ & ~0x00000040);
+      
       expiresIn_ = 0L;
       onChanged();
       return this;
@@ -1646,9 +1630,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMakerOwnableSplit(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       makerOwnableSplit_ = value;
-      bitField0_ |= 0x00000080;
       onChanged();
       return this;
     }
@@ -1657,8 +1643,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearMakerOwnableSplit() {
+      
       makerOwnableSplit_ = getDefaultInstance().getMakerOwnableSplit();
-      bitField0_ = (bitField0_ & ~0x00000080);
       onChanged();
       return this;
     }
@@ -1669,10 +1655,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMakerOwnableSplitBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       makerOwnableSplit_ = value;
-      bitField0_ |= 0x00000080;
       onChanged();
       return this;
     }
@@ -1718,9 +1706,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setTakerOwnableSplit(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       takerOwnableSplit_ = value;
-      bitField0_ |= 0x00000100;
       onChanged();
       return this;
     }
@@ -1729,8 +1719,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearTakerOwnableSplit() {
+      
       takerOwnableSplit_ = getDefaultInstance().getTakerOwnableSplit();
-      bitField0_ = (bitField0_ & ~0x00000100);
       onChanged();
       return this;
     }
@@ -1741,10 +1731,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setTakerOwnableSplitBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       takerOwnableSplit_ = value;
-      bitField0_ |= 0x00000100;
       onChanged();
       return this;
     }
@@ -1790,9 +1782,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setImmutableMetaProperties(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       immutableMetaProperties_ = value;
-      bitField0_ |= 0x00000200;
       onChanged();
       return this;
     }
@@ -1801,8 +1795,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearImmutableMetaProperties() {
+      
       immutableMetaProperties_ = getDefaultInstance().getImmutableMetaProperties();
-      bitField0_ = (bitField0_ & ~0x00000200);
       onChanged();
       return this;
     }
@@ -1813,10 +1807,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setImmutableMetaPropertiesBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       immutableMetaProperties_ = value;
-      bitField0_ |= 0x00000200;
       onChanged();
       return this;
     }
@@ -1862,9 +1858,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setImmutableProperties(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       immutableProperties_ = value;
-      bitField0_ |= 0x00000400;
       onChanged();
       return this;
     }
@@ -1873,8 +1871,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearImmutableProperties() {
+      
       immutableProperties_ = getDefaultInstance().getImmutableProperties();
-      bitField0_ = (bitField0_ & ~0x00000400);
       onChanged();
       return this;
     }
@@ -1885,10 +1883,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setImmutablePropertiesBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       immutableProperties_ = value;
-      bitField0_ |= 0x00000400;
       onChanged();
       return this;
     }
@@ -1934,9 +1934,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMutableMetaProperties(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       mutableMetaProperties_ = value;
-      bitField0_ |= 0x00000800;
       onChanged();
       return this;
     }
@@ -1945,8 +1947,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearMutableMetaProperties() {
+      
       mutableMetaProperties_ = getDefaultInstance().getMutableMetaProperties();
-      bitField0_ = (bitField0_ & ~0x00000800);
       onChanged();
       return this;
     }
@@ -1957,10 +1959,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMutableMetaPropertiesBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       mutableMetaProperties_ = value;
-      bitField0_ |= 0x00000800;
       onChanged();
       return this;
     }
@@ -2006,9 +2010,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMutableProperties(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       mutableProperties_ = value;
-      bitField0_ |= 0x00001000;
       onChanged();
       return this;
     }
@@ -2017,8 +2023,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearMutableProperties() {
+      
       mutableProperties_ = getDefaultInstance().getMutableProperties();
-      bitField0_ = (bitField0_ & ~0x00001000);
       onChanged();
       return this;
     }
@@ -2029,10 +2035,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMutablePropertiesBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       mutableProperties_ = value;
-      bitField0_ |= 0x00001000;
       onChanged();
       return this;
     }

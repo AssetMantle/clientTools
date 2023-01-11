@@ -25,6 +25,11 @@ private static final long serialVersionUID = 0L;
     return new Mappable();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.orders.MappableV1Proto.internal_static_orders_Mappable_descriptor;
@@ -61,7 +66,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.documents.DocumentOrBuilder getOrderOrBuilder() {
-    return order_ == null ? com.documents.Document.getDefaultInstance() : order_;
+    return getOrder();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -257,10 +262,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
-      order_ = null;
-      if (orderBuilder_ != null) {
-        orderBuilder_.dispose();
+      if (orderBuilder_ == null) {
+        order_ = null;
+      } else {
+        order_ = null;
         orderBuilder_ = null;
       }
       return this;
@@ -289,18 +294,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.orders.Mappable buildPartial() {
       com.orders.Mappable result = new com.orders.Mappable(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      if (orderBuilder_ == null) {
+        result.order_ = order_;
+      } else {
+        result.order_ = orderBuilder_.build();
+      }
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.orders.Mappable result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.order_ = orderBuilder_ == null
-            ? order_
-            : orderBuilder_.build();
-      }
     }
 
     @java.lang.Override
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getOrderFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             default: {
@@ -398,7 +398,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private com.documents.Document order_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -408,7 +407,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the order field is set.
      */
     public boolean hasOrder() {
-      return ((bitField0_ & 0x00000001) != 0);
+      return orderBuilder_ != null || order_ != null;
     }
     /**
      * <code>.documents.Document order = 1 [json_name = "order"];</code>
@@ -430,11 +429,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         order_ = value;
+        onChanged();
       } else {
         orderBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
@@ -444,11 +443,11 @@ private static final long serialVersionUID = 0L;
         com.documents.Document.Builder builderForValue) {
       if (orderBuilder_ == null) {
         order_ = builderForValue.build();
+        onChanged();
       } else {
         orderBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
@@ -456,38 +455,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeOrder(com.documents.Document value) {
       if (orderBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0) &&
-          order_ != null &&
-          order_ != com.documents.Document.getDefaultInstance()) {
-          getOrderBuilder().mergeFrom(value);
+        if (order_ != null) {
+          order_ =
+            com.documents.Document.newBuilder(order_).mergeFrom(value).buildPartial();
         } else {
           order_ = value;
         }
+        onChanged();
       } else {
         orderBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.documents.Document order = 1 [json_name = "order"];</code>
      */
     public Builder clearOrder() {
-      bitField0_ = (bitField0_ & ~0x00000001);
-      order_ = null;
-      if (orderBuilder_ != null) {
-        orderBuilder_.dispose();
+      if (orderBuilder_ == null) {
+        order_ = null;
+        onChanged();
+      } else {
+        order_ = null;
         orderBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.documents.Document order = 1 [json_name = "order"];</code>
      */
     public com.documents.Document.Builder getOrderBuilder() {
-      bitField0_ |= 0x00000001;
+      
       onChanged();
       return getOrderFieldBuilder().getBuilder();
     }

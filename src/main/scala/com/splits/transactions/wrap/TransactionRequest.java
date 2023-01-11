@@ -28,6 +28,11 @@ private static final long serialVersionUID = 0L;
     return new TransactionRequest();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.splits.transactions.wrap.TransactionRequestV1Proto.internal_static_splits_transactions_wrap_TransactionRequest_descriptor;
@@ -42,8 +47,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FROM_FIELD_NUMBER = 1;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object from_ = "";
+  private volatile java.lang.Object from_;
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
@@ -81,8 +85,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FROM_I_D_FIELD_NUMBER = 2;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object fromID_ = "";
+  private volatile java.lang.Object fromID_;
   /**
    * <code>string from_i_d = 2 [json_name = "fromID"];</code>
    * @return The fromID.
@@ -120,8 +123,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int COINS_FIELD_NUMBER = 3;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object coins_ = "";
+  private volatile java.lang.Object coins_;
   /**
    * <code>string coins = 3 [json_name = "coins"];</code>
    * @return The coins.
@@ -365,10 +367,12 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       from_ = "";
+
       fromID_ = "";
+
       coins_ = "";
+
       return this;
     }
 
@@ -395,22 +399,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.splits.transactions.wrap.TransactionRequest buildPartial() {
       com.splits.transactions.wrap.TransactionRequest result = new com.splits.transactions.wrap.TransactionRequest(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      result.from_ = from_;
+      result.fromID_ = fromID_;
+      result.coins_ = coins_;
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.splits.transactions.wrap.TransactionRequest result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.from_ = from_;
-      }
-      if (((from_bitField0_ & 0x00000002) != 0)) {
-        result.fromID_ = fromID_;
-      }
-      if (((from_bitField0_ & 0x00000004) != 0)) {
-        result.coins_ = coins_;
-      }
     }
 
     @java.lang.Override
@@ -459,17 +452,14 @@ private static final long serialVersionUID = 0L;
       if (other == com.splits.transactions.wrap.TransactionRequest.getDefaultInstance()) return this;
       if (!other.getFrom().isEmpty()) {
         from_ = other.from_;
-        bitField0_ |= 0x00000001;
         onChanged();
       }
       if (!other.getFromID().isEmpty()) {
         fromID_ = other.fromID_;
-        bitField0_ |= 0x00000002;
         onChanged();
       }
       if (!other.getCoins().isEmpty()) {
         coins_ = other.coins_;
-        bitField0_ |= 0x00000004;
         onChanged();
       }
       this.mergeUnknownFields(other.getUnknownFields());
@@ -500,17 +490,17 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               from_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             case 18: {
               fromID_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000002;
+
               break;
             } // case 18
             case 26: {
               coins_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000004;
+
               break;
             } // case 26
             default: {
@@ -528,7 +518,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private java.lang.Object from_ = "";
     /**
@@ -571,9 +560,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFrom(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       from_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -582,8 +573,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFrom() {
+      
       from_ = getDefaultInstance().getFrom();
-      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -594,10 +585,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFromBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       from_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -643,9 +636,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFromID(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       fromID_ = value;
-      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -654,8 +649,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFromID() {
+      
       fromID_ = getDefaultInstance().getFromID();
-      bitField0_ = (bitField0_ & ~0x00000002);
       onChanged();
       return this;
     }
@@ -666,10 +661,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFromIDBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       fromID_ = value;
-      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -715,9 +712,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setCoins(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       coins_ = value;
-      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -726,8 +725,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearCoins() {
+      
       coins_ = getDefaultInstance().getCoins();
-      bitField0_ = (bitField0_ & ~0x00000004);
       onChanged();
       return this;
     }
@@ -738,10 +737,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setCoinsBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       coins_ = value;
-      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }

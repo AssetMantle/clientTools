@@ -25,6 +25,11 @@ private static final long serialVersionUID = 0L;
     return new Mappable();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.assets.MappableV1Proto.internal_static_assets_Mappable_descriptor;
@@ -61,7 +66,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.documents.DocumentOrBuilder getAssetOrBuilder() {
-    return asset_ == null ? com.documents.Document.getDefaultInstance() : asset_;
+    return getAsset();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -257,10 +262,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
-      asset_ = null;
-      if (assetBuilder_ != null) {
-        assetBuilder_.dispose();
+      if (assetBuilder_ == null) {
+        asset_ = null;
+      } else {
+        asset_ = null;
         assetBuilder_ = null;
       }
       return this;
@@ -289,18 +294,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.assets.Mappable buildPartial() {
       com.assets.Mappable result = new com.assets.Mappable(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      if (assetBuilder_ == null) {
+        result.asset_ = asset_;
+      } else {
+        result.asset_ = assetBuilder_.build();
+      }
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.assets.Mappable result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.asset_ = assetBuilder_ == null
-            ? asset_
-            : assetBuilder_.build();
-      }
     }
 
     @java.lang.Override
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getAssetFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             default: {
@@ -398,7 +398,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private com.documents.Document asset_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -408,7 +407,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the asset field is set.
      */
     public boolean hasAsset() {
-      return ((bitField0_ & 0x00000001) != 0);
+      return assetBuilder_ != null || asset_ != null;
     }
     /**
      * <code>.documents.Document asset = 1 [json_name = "asset"];</code>
@@ -430,11 +429,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         asset_ = value;
+        onChanged();
       } else {
         assetBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
@@ -444,11 +443,11 @@ private static final long serialVersionUID = 0L;
         com.documents.Document.Builder builderForValue) {
       if (assetBuilder_ == null) {
         asset_ = builderForValue.build();
+        onChanged();
       } else {
         assetBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
@@ -456,38 +455,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeAsset(com.documents.Document value) {
       if (assetBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0) &&
-          asset_ != null &&
-          asset_ != com.documents.Document.getDefaultInstance()) {
-          getAssetBuilder().mergeFrom(value);
+        if (asset_ != null) {
+          asset_ =
+            com.documents.Document.newBuilder(asset_).mergeFrom(value).buildPartial();
         } else {
           asset_ = value;
         }
+        onChanged();
       } else {
         assetBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.documents.Document asset = 1 [json_name = "asset"];</code>
      */
     public Builder clearAsset() {
-      bitField0_ = (bitField0_ & ~0x00000001);
-      asset_ = null;
-      if (assetBuilder_ != null) {
-        assetBuilder_.dispose();
+      if (assetBuilder_ == null) {
+        asset_ = null;
+        onChanged();
+      } else {
+        asset_ = null;
         assetBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.documents.Document asset = 1 [json_name = "asset"];</code>
      */
     public com.documents.Document.Builder getAssetBuilder() {
-      bitField0_ |= 0x00000001;
+      
       onChanged();
       return getAssetFieldBuilder().getBuilder();
     }

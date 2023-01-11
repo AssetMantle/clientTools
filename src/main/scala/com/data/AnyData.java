@@ -25,6 +25,11 @@ private static final long serialVersionUID = 0L;
     return new AnyData();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.data.AnyDataV1Proto.internal_static_data_AnyData_descriptor;
@@ -39,7 +44,6 @@ private static final long serialVersionUID = 0L;
   }
 
   private int implCase_ = 0;
-  @SuppressWarnings("serial")
   private java.lang.Object impl_;
   public enum ImplCase
       implements com.google.protobuf.Internal.EnumLite,
@@ -278,54 +282,33 @@ private static final long serialVersionUID = 0L;
 
   public static final int LIST_DATA_FIELD_NUMBER = 7;
   /**
-   * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
+   * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
    * @return Whether the listData field is set.
    */
+  @java.lang.Override
   public boolean hasListData() {
     return implCase_ == 7;
   }
   /**
-   * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
+   * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
    * @return The listData.
    */
-  public java.lang.String getListData() {
-    java.lang.Object ref = "";
+  @java.lang.Override
+  public com.data.ListData getListData() {
     if (implCase_ == 7) {
-      ref = impl_;
+       return (com.data.ListData) impl_;
     }
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      if (implCase_ == 7) {
-        impl_ = s;
-      }
-      return s;
-    }
+    return com.data.ListData.getDefaultInstance();
   }
   /**
-   * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
-   * @return The bytes for listData.
+   * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
    */
-  public com.google.protobuf.ByteString
-      getListDataBytes() {
-    java.lang.Object ref = "";
+  @java.lang.Override
+  public com.data.ListDataOrBuilder getListDataOrBuilder() {
     if (implCase_ == 7) {
-      ref = impl_;
+       return (com.data.ListData) impl_;
     }
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      if (implCase_ == 7) {
-        impl_ = b;
-      }
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
+    return com.data.ListData.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -361,7 +344,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(6, (com.data.StringData) impl_);
     }
     if (implCase_ == 7) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 7, impl_);
+      output.writeMessage(7, (com.data.ListData) impl_);
     }
     getUnknownFields().writeTo(output);
   }
@@ -397,7 +380,8 @@ private static final long serialVersionUID = 0L;
         .computeMessageSize(6, (com.data.StringData) impl_);
     }
     if (implCase_ == 7) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, impl_);
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(7, (com.data.ListData) impl_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -618,7 +602,6 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       if (accAddressDataBuilder_ != null) {
         accAddressDataBuilder_.clear();
       }
@@ -636,6 +619,9 @@ private static final long serialVersionUID = 0L;
       }
       if (stringDataBuilder_ != null) {
         stringDataBuilder_.clear();
+      }
+      if (listDataBuilder_ != null) {
+        listDataBuilder_.clear();
       }
       implCase_ = 0;
       impl_ = null;
@@ -665,43 +651,58 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.data.AnyData buildPartial() {
       com.data.AnyData result = new com.data.AnyData(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
-      buildPartialOneofs(result);
+      if (implCase_ == 1) {
+        if (accAddressDataBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = accAddressDataBuilder_.build();
+        }
+      }
+      if (implCase_ == 2) {
+        if (booleanDataBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = booleanDataBuilder_.build();
+        }
+      }
+      if (implCase_ == 3) {
+        if (decDataBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = decDataBuilder_.build();
+        }
+      }
+      if (implCase_ == 4) {
+        if (heightDataBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = heightDataBuilder_.build();
+        }
+      }
+      if (implCase_ == 5) {
+        if (iDDataBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = iDDataBuilder_.build();
+        }
+      }
+      if (implCase_ == 6) {
+        if (stringDataBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = stringDataBuilder_.build();
+        }
+      }
+      if (implCase_ == 7) {
+        if (listDataBuilder_ == null) {
+          result.impl_ = impl_;
+        } else {
+          result.impl_ = listDataBuilder_.build();
+        }
+      }
+      result.implCase_ = implCase_;
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.data.AnyData result) {
-      int from_bitField0_ = bitField0_;
-    }
-
-    private void buildPartialOneofs(com.data.AnyData result) {
-      result.implCase_ = implCase_;
-      result.impl_ = this.impl_;
-      if (implCase_ == 1 &&
-          accAddressDataBuilder_ != null) {
-        result.impl_ = accAddressDataBuilder_.build();
-      }
-      if (implCase_ == 2 &&
-          booleanDataBuilder_ != null) {
-        result.impl_ = booleanDataBuilder_.build();
-      }
-      if (implCase_ == 3 &&
-          decDataBuilder_ != null) {
-        result.impl_ = decDataBuilder_.build();
-      }
-      if (implCase_ == 4 &&
-          heightDataBuilder_ != null) {
-        result.impl_ = heightDataBuilder_.build();
-      }
-      if (implCase_ == 5 &&
-          iDDataBuilder_ != null) {
-        result.impl_ = iDDataBuilder_.build();
-      }
-      if (implCase_ == 6 &&
-          stringDataBuilder_ != null) {
-        result.impl_ = stringDataBuilder_.build();
-      }
     }
 
     @java.lang.Override
@@ -774,9 +775,7 @@ private static final long serialVersionUID = 0L;
           break;
         }
         case LIST_DATA: {
-          implCase_ = 7;
-          impl_ = other.impl_;
-          onChanged();
+          mergeListData(other.getListData());
           break;
         }
         case IMPL_NOT_SET: {
@@ -852,9 +851,10 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 50
             case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
+              input.readMessage(
+                  getListDataFieldBuilder().getBuilder(),
+                  extensionRegistry);
               implCase_ = 7;
-              impl_ = s;
               break;
             } // case 58
             default: {
@@ -887,7 +887,6 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int bitField0_;
 
     private com.google.protobuf.SingleFieldBuilderV3<
         com.data.AccAddressData, com.data.AccAddressData.Builder, com.data.AccAddressDataOrBuilder> accAddressDataBuilder_;
@@ -1027,7 +1026,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 1;
-      onChanged();
+      onChanged();;
       return accAddressDataBuilder_;
     }
 
@@ -1169,7 +1168,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 2;
-      onChanged();
+      onChanged();;
       return booleanDataBuilder_;
     }
 
@@ -1311,7 +1310,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 3;
-      onChanged();
+      onChanged();;
       return decDataBuilder_;
     }
 
@@ -1453,7 +1452,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 4;
-      onChanged();
+      onChanged();;
       return heightDataBuilder_;
     }
 
@@ -1595,7 +1594,7 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 5;
-      onChanged();
+      onChanged();;
       return iDDataBuilder_;
     }
 
@@ -1737,12 +1736,14 @@ private static final long serialVersionUID = 0L;
         impl_ = null;
       }
       implCase_ = 6;
-      onChanged();
+      onChanged();;
       return stringDataBuilder_;
     }
 
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.data.ListData, com.data.ListData.Builder, com.data.ListDataOrBuilder> listDataBuilder_;
     /**
-     * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
+     * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
      * @return Whether the listData field is set.
      */
     @java.lang.Override
@@ -1750,88 +1751,135 @@ private static final long serialVersionUID = 0L;
       return implCase_ == 7;
     }
     /**
-     * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
+     * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
      * @return The listData.
      */
     @java.lang.Override
-    public java.lang.String getListData() {
-      java.lang.Object ref = "";
-      if (implCase_ == 7) {
-        ref = impl_;
-      }
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+    public com.data.ListData getListData() {
+      if (listDataBuilder_ == null) {
         if (implCase_ == 7) {
-          impl_ = s;
+          return (com.data.ListData) impl_;
         }
-        return s;
+        return com.data.ListData.getDefaultInstance();
       } else {
-        return (java.lang.String) ref;
+        if (implCase_ == 7) {
+          return listDataBuilder_.getMessage();
+        }
+        return com.data.ListData.getDefaultInstance();
       }
     }
     /**
-     * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
-     * @return The bytes for listData.
+     * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
      */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getListDataBytes() {
-      java.lang.Object ref = "";
-      if (implCase_ == 7) {
-        ref = impl_;
-      }
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        if (implCase_ == 7) {
-          impl_ = b;
+    public Builder setListData(com.data.ListData value) {
+      if (listDataBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
         }
-        return b;
+        impl_ = value;
+        onChanged();
       } else {
-        return (com.google.protobuf.ByteString) ref;
+        listDataBuilder_.setMessage(value);
       }
+      implCase_ = 7;
+      return this;
     }
     /**
-     * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
-     * @param value The listData to set.
-     * @return This builder for chaining.
+     * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
      */
     public Builder setListData(
-        java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+        com.data.ListData.Builder builderForValue) {
+      if (listDataBuilder_ == null) {
+        impl_ = builderForValue.build();
+        onChanged();
+      } else {
+        listDataBuilder_.setMessage(builderForValue.build());
+      }
       implCase_ = 7;
-      impl_ = value;
-      onChanged();
       return this;
     }
     /**
-     * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
-     * @return This builder for chaining.
+     * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
+     */
+    public Builder mergeListData(com.data.ListData value) {
+      if (listDataBuilder_ == null) {
+        if (implCase_ == 7 &&
+            impl_ != com.data.ListData.getDefaultInstance()) {
+          impl_ = com.data.ListData.newBuilder((com.data.ListData) impl_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          impl_ = value;
+        }
+        onChanged();
+      } else {
+        if (implCase_ == 7) {
+          listDataBuilder_.mergeFrom(value);
+        } else {
+          listDataBuilder_.setMessage(value);
+        }
+      }
+      implCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
      */
     public Builder clearListData() {
-      if (implCase_ == 7) {
-        implCase_ = 0;
-        impl_ = null;
-        onChanged();
+      if (listDataBuilder_ == null) {
+        if (implCase_ == 7) {
+          implCase_ = 0;
+          impl_ = null;
+          onChanged();
+        }
+      } else {
+        if (implCase_ == 7) {
+          implCase_ = 0;
+          impl_ = null;
+        }
+        listDataBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
-     * @param value The bytes for listData to set.
-     * @return This builder for chaining.
+     * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
      */
-    public Builder setListDataBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+    public com.data.ListData.Builder getListDataBuilder() {
+      return getListDataFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
+     */
+    @java.lang.Override
+    public com.data.ListDataOrBuilder getListDataOrBuilder() {
+      if ((implCase_ == 7) && (listDataBuilder_ != null)) {
+        return listDataBuilder_.getMessageOrBuilder();
+      } else {
+        if (implCase_ == 7) {
+          return (com.data.ListData) impl_;
+        }
+        return com.data.ListData.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.data.ListData, com.data.ListData.Builder, com.data.ListDataOrBuilder> 
+        getListDataFieldBuilder() {
+      if (listDataBuilder_ == null) {
+        if (!(implCase_ == 7)) {
+          impl_ = com.data.ListData.getDefaultInstance();
+        }
+        listDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.data.ListData, com.data.ListData.Builder, com.data.ListDataOrBuilder>(
+                (com.data.ListData) impl_,
+                getParentForChildren(),
+                isClean());
+        impl_ = null;
+      }
       implCase_ = 7;
-      impl_ = value;
-      onChanged();
-      return this;
+      onChanged();;
+      return listDataBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

@@ -172,5 +172,5 @@ public interface AnyIDOrBuilder extends
    */
   com.ids.StringIDOrBuilder getStringIDOrBuilder();
 
-  com.ids.AnyID.ImplCase getImplCase();
+  public com.ids.AnyID.ImplCase getImplCase();
 }
