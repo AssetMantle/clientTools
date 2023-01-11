@@ -24,11 +24,6 @@ public final class AnyDataV1Proto {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_data_ListData_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_data_AnyDataList_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_data_AnyDataList_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -55,13 +50,12 @@ public final class AnyDataV1Proto {
       "ta\0223\n\013string_data\030\006 \001(\0132\020.data.StringDat" +
       "aH\000R\nstringData\022;\n\tlist_data\030\007 \001(\0132\016.dat" +
       "a.ListDataB\014\332\336\037\010ListDataH\000R\010listData:\004\210\240" +
-      "\037\000B\006\n\004impl\"9\n\010ListData\022\'\n\005value\030\001 \001(\0132\021." +
-      "data.AnyDataListR\005value:\004\210\240\037\000\"?\n\013AnyData" +
-      "List\022*\n\tdata_list\030\001 \003(\0132\r.data.AnyDataR\010" +
-      "dataList:\004\210\240\037\000B{\n\010com.dataB\016AnyDataV1Pro" +
-      "toP\001Z/github.com/AssetMantle/modules/sch" +
-      "ema/data/base\242\002\003DXX\252\002\004Data\312\002\004Data\342\002\020Data" +
-      "\\GPBMetadata\352\002\004Datab\006proto3"
+      "\037\000B\006\n\004impl\"<\n\010ListData\022*\n\tdata_list\030\001 \003(" +
+      "\0132\r.data.AnyDataR\010dataList:\004\210\240\037\000B{\n\010com." +
+      "dataB\016AnyDataV1ProtoP\001Z/github.com/Asset" +
+      "Mantle/modules/schema/data/base\242\002\003DXX\252\002\004" +
+      "Data\312\002\004Data\342\002\020Data\\GPBMetadata\352\002\004Datab\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -85,12 +79,6 @@ public final class AnyDataV1Proto {
     internal_static_data_ListData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_data_ListData_descriptor,
-        new java.lang.String[] { "Value", });
-    internal_static_data_AnyDataList_descriptor =
-      getDescriptor().getMessageTypes().get(2);
-    internal_static_data_AnyDataList_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_data_AnyDataList_descriptor,
         new java.lang.String[] { "DataList", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();

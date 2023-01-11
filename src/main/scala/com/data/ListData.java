@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private ListData() {
+    dataList_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -43,30 +44,44 @@ private static final long serialVersionUID = 0L;
             com.data.ListData.class, com.data.ListData.Builder.class);
   }
 
-  public static final int VALUE_FIELD_NUMBER = 1;
-  private com.data.AnyDataList value_;
+  public static final int DATA_LIST_FIELD_NUMBER = 1;
+  private java.util.List<com.data.AnyData> dataList_;
   /**
-   * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
-   * @return Whether the value field is set.
+   * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
   @java.lang.Override
-  public boolean hasValue() {
-    return value_ != null;
+  public java.util.List<com.data.AnyData> getDataListList() {
+    return dataList_;
   }
   /**
-   * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
-   * @return The value.
+   * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
   @java.lang.Override
-  public com.data.AnyDataList getValue() {
-    return value_ == null ? com.data.AnyDataList.getDefaultInstance() : value_;
+  public java.util.List<? extends com.data.AnyDataOrBuilder> 
+      getDataListOrBuilderList() {
+    return dataList_;
   }
   /**
-   * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
+   * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
   @java.lang.Override
-  public com.data.AnyDataListOrBuilder getValueOrBuilder() {
-    return getValue();
+  public int getDataListCount() {
+    return dataList_.size();
+  }
+  /**
+   * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+   */
+  @java.lang.Override
+  public com.data.AnyData getDataList(int index) {
+    return dataList_.get(index);
+  }
+  /**
+   * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+   */
+  @java.lang.Override
+  public com.data.AnyDataOrBuilder getDataListOrBuilder(
+      int index) {
+    return dataList_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
@@ -83,8 +98,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (value_ != null) {
-      output.writeMessage(1, getValue());
+    for (int i = 0; i < dataList_.size(); i++) {
+      output.writeMessage(1, dataList_.get(i));
     }
     getUnknownFields().writeTo(output);
   }
@@ -95,9 +110,9 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (value_ != null) {
+    for (int i = 0; i < dataList_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getValue());
+        .computeMessageSize(1, dataList_.get(i));
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -114,11 +129,8 @@ private static final long serialVersionUID = 0L;
     }
     com.data.ListData other = (com.data.ListData) obj;
 
-    if (hasValue() != other.hasValue()) return false;
-    if (hasValue()) {
-      if (!getValue()
-          .equals(other.getValue())) return false;
-    }
+    if (!getDataListList()
+        .equals(other.getDataListList())) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -130,9 +142,9 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasValue()) {
-      hash = (37 * hash) + VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getValue().hashCode();
+    if (getDataListCount() > 0) {
+      hash = (37 * hash) + DATA_LIST_FIELD_NUMBER;
+      hash = (53 * hash) + getDataListList().hashCode();
     }
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
@@ -262,12 +274,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (valueBuilder_ == null) {
-        value_ = null;
+      if (dataListBuilder_ == null) {
+        dataList_ = java.util.Collections.emptyList();
       } else {
-        value_ = null;
-        valueBuilder_ = null;
+        dataList_ = null;
+        dataListBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -294,10 +307,15 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.data.ListData buildPartial() {
       com.data.ListData result = new com.data.ListData(this);
-      if (valueBuilder_ == null) {
-        result.value_ = value_;
+      int from_bitField0_ = bitField0_;
+      if (dataListBuilder_ == null) {
+        if (((bitField0_ & 0x00000001) != 0)) {
+          dataList_ = java.util.Collections.unmodifiableList(dataList_);
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.dataList_ = dataList_;
       } else {
-        result.value_ = valueBuilder_.build();
+        result.dataList_ = dataListBuilder_.build();
       }
       onBuilt();
       return result;
@@ -347,8 +365,31 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(com.data.ListData other) {
       if (other == com.data.ListData.getDefaultInstance()) return this;
-      if (other.hasValue()) {
-        mergeValue(other.getValue());
+      if (dataListBuilder_ == null) {
+        if (!other.dataList_.isEmpty()) {
+          if (dataList_.isEmpty()) {
+            dataList_ = other.dataList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureDataListIsMutable();
+            dataList_.addAll(other.dataList_);
+          }
+          onChanged();
+        }
+      } else {
+        if (!other.dataList_.isEmpty()) {
+          if (dataListBuilder_.isEmpty()) {
+            dataListBuilder_.dispose();
+            dataListBuilder_ = null;
+            dataList_ = other.dataList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+            dataListBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getDataListFieldBuilder() : null;
+          } else {
+            dataListBuilder_.addAllMessages(other.dataList_);
+          }
+        }
       }
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
@@ -377,10 +418,16 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              input.readMessage(
-                  getValueFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
+              com.data.AnyData m =
+                  input.readMessage(
+                      com.data.AnyData.parser(),
+                      extensionRegistry);
+              if (dataListBuilder_ == null) {
+                ensureDataListIsMutable();
+                dataList_.add(m);
+              } else {
+                dataListBuilder_.addMessage(m);
+              }
               break;
             } // case 10
             default: {
@@ -398,124 +445,246 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
-    private com.data.AnyDataList value_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.data.AnyDataList, com.data.AnyDataList.Builder, com.data.AnyDataListOrBuilder> valueBuilder_;
-    /**
-     * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
-     * @return Whether the value field is set.
-     */
-    public boolean hasValue() {
-      return valueBuilder_ != null || value_ != null;
+    private java.util.List<com.data.AnyData> dataList_ =
+      java.util.Collections.emptyList();
+    private void ensureDataListIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        dataList_ = new java.util.ArrayList<com.data.AnyData>(dataList_);
+        bitField0_ |= 0x00000001;
+       }
     }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        com.data.AnyData, com.data.AnyData.Builder, com.data.AnyDataOrBuilder> dataListBuilder_;
+
     /**
-     * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
-     * @return The value.
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
      */
-    public com.data.AnyDataList getValue() {
-      if (valueBuilder_ == null) {
-        return value_ == null ? com.data.AnyDataList.getDefaultInstance() : value_;
+    public java.util.List<com.data.AnyData> getDataListList() {
+      if (dataListBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(dataList_);
       } else {
-        return valueBuilder_.getMessage();
+        return dataListBuilder_.getMessageList();
       }
     }
     /**
-     * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
      */
-    public Builder setValue(com.data.AnyDataList value) {
-      if (valueBuilder_ == null) {
+    public int getDataListCount() {
+      if (dataListBuilder_ == null) {
+        return dataList_.size();
+      } else {
+        return dataListBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+     */
+    public com.data.AnyData getDataList(int index) {
+      if (dataListBuilder_ == null) {
+        return dataList_.get(index);
+      } else {
+        return dataListBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+     */
+    public Builder setDataList(
+        int index, com.data.AnyData value) {
+      if (dataListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        value_ = value;
+        ensureDataListIsMutable();
+        dataList_.set(index, value);
         onChanged();
       } else {
-        valueBuilder_.setMessage(value);
+        dataListBuilder_.setMessage(index, value);
       }
-
       return this;
     }
     /**
-     * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
      */
-    public Builder setValue(
-        com.data.AnyDataList.Builder builderForValue) {
-      if (valueBuilder_ == null) {
-        value_ = builderForValue.build();
+    public Builder setDataList(
+        int index, com.data.AnyData.Builder builderForValue) {
+      if (dataListBuilder_ == null) {
+        ensureDataListIsMutable();
+        dataList_.set(index, builderForValue.build());
         onChanged();
       } else {
-        valueBuilder_.setMessage(builderForValue.build());
+        dataListBuilder_.setMessage(index, builderForValue.build());
       }
-
       return this;
     }
     /**
-     * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
      */
-    public Builder mergeValue(com.data.AnyDataList value) {
-      if (valueBuilder_ == null) {
-        if (value_ != null) {
-          value_ =
-            com.data.AnyDataList.newBuilder(value_).mergeFrom(value).buildPartial();
-        } else {
-          value_ = value;
+    public Builder addDataList(com.data.AnyData value) {
+      if (dataListBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
         }
+        ensureDataListIsMutable();
+        dataList_.add(value);
         onChanged();
       } else {
-        valueBuilder_.mergeFrom(value);
+        dataListBuilder_.addMessage(value);
       }
-
       return this;
     }
     /**
-     * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
      */
-    public Builder clearValue() {
-      if (valueBuilder_ == null) {
-        value_ = null;
+    public Builder addDataList(
+        int index, com.data.AnyData value) {
+      if (dataListBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureDataListIsMutable();
+        dataList_.add(index, value);
         onChanged();
       } else {
-        value_ = null;
-        valueBuilder_ = null;
+        dataListBuilder_.addMessage(index, value);
       }
-
       return this;
     }
     /**
-     * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
      */
-    public com.data.AnyDataList.Builder getValueBuilder() {
-      
-      onChanged();
-      return getValueFieldBuilder().getBuilder();
+    public Builder addDataList(
+        com.data.AnyData.Builder builderForValue) {
+      if (dataListBuilder_ == null) {
+        ensureDataListIsMutable();
+        dataList_.add(builderForValue.build());
+        onChanged();
+      } else {
+        dataListBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
     }
     /**
-     * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
      */
-    public com.data.AnyDataListOrBuilder getValueOrBuilder() {
-      if (valueBuilder_ != null) {
-        return valueBuilder_.getMessageOrBuilder();
+    public Builder addDataList(
+        int index, com.data.AnyData.Builder builderForValue) {
+      if (dataListBuilder_ == null) {
+        ensureDataListIsMutable();
+        dataList_.add(index, builderForValue.build());
+        onChanged();
       } else {
-        return value_ == null ?
-            com.data.AnyDataList.getDefaultInstance() : value_;
+        dataListBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+     */
+    public Builder addAllDataList(
+        java.lang.Iterable<? extends com.data.AnyData> values) {
+      if (dataListBuilder_ == null) {
+        ensureDataListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, dataList_);
+        onChanged();
+      } else {
+        dataListBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+     */
+    public Builder clearDataList() {
+      if (dataListBuilder_ == null) {
+        dataList_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+      } else {
+        dataListBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+     */
+    public Builder removeDataList(int index) {
+      if (dataListBuilder_ == null) {
+        ensureDataListIsMutable();
+        dataList_.remove(index);
+        onChanged();
+      } else {
+        dataListBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+     */
+    public com.data.AnyData.Builder getDataListBuilder(
+        int index) {
+      return getDataListFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+     */
+    public com.data.AnyDataOrBuilder getDataListOrBuilder(
+        int index) {
+      if (dataListBuilder_ == null) {
+        return dataList_.get(index);  } else {
+        return dataListBuilder_.getMessageOrBuilder(index);
       }
     }
     /**
-     * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
      */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.data.AnyDataList, com.data.AnyDataList.Builder, com.data.AnyDataListOrBuilder> 
-        getValueFieldBuilder() {
-      if (valueBuilder_ == null) {
-        valueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.data.AnyDataList, com.data.AnyDataList.Builder, com.data.AnyDataListOrBuilder>(
-                getValue(),
+    public java.util.List<? extends com.data.AnyDataOrBuilder> 
+         getDataListOrBuilderList() {
+      if (dataListBuilder_ != null) {
+        return dataListBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(dataList_);
+      }
+    }
+    /**
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+     */
+    public com.data.AnyData.Builder addDataListBuilder() {
+      return getDataListFieldBuilder().addBuilder(
+          com.data.AnyData.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+     */
+    public com.data.AnyData.Builder addDataListBuilder(
+        int index) {
+      return getDataListFieldBuilder().addBuilder(
+          index, com.data.AnyData.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+     */
+    public java.util.List<com.data.AnyData.Builder> 
+         getDataListBuilderList() {
+      return getDataListFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        com.data.AnyData, com.data.AnyData.Builder, com.data.AnyDataOrBuilder> 
+        getDataListFieldBuilder() {
+      if (dataListBuilder_ == null) {
+        dataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            com.data.AnyData, com.data.AnyData.Builder, com.data.AnyDataOrBuilder>(
+                dataList_,
+                ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
-        value_ = null;
+        dataList_ = null;
       }
-      return valueBuilder_;
+      return dataListBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

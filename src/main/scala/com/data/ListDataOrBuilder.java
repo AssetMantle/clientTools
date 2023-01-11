@@ -8,17 +8,26 @@ public interface ListDataOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
-   * @return Whether the value field is set.
+   * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
-  boolean hasValue();
+  java.util.List<com.data.AnyData> 
+      getDataListList();
   /**
-   * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
-   * @return The value.
+   * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
-  com.data.AnyDataList getValue();
+  com.data.AnyData getDataList(int index);
   /**
-   * <code>.data.AnyDataList value = 1 [json_name = "value"];</code>
+   * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
    */
-  com.data.AnyDataListOrBuilder getValueOrBuilder();
+  int getDataListCount();
+  /**
+   * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+   */
+  java.util.List<? extends com.data.AnyDataOrBuilder> 
+      getDataListOrBuilderList();
+  /**
+   * <code>repeated .data.AnyData data_list = 1 [json_name = "dataList"];</code>
+   */
+  com.data.AnyDataOrBuilder getDataListOrBuilder(
+      int index);
 }
