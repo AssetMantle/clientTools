@@ -98,21 +98,19 @@ public interface AnyDataOrBuilder extends
   com.data.StringDataOrBuilder getStringDataOrBuilder();
 
   /**
-   * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
+   * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
    * @return Whether the listData field is set.
    */
   boolean hasListData();
   /**
-   * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
+   * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
    * @return The listData.
    */
-  java.lang.String getListData();
+  com.data.ListData getListData();
   /**
-   * <code>string list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
-   * @return The bytes for listData.
+   * <code>.data.ListData list_data = 7 [json_name = "listData", (.gogoproto.customtype) = "ListData"];</code>
    */
-  com.google.protobuf.ByteString
-      getListDataBytes();
+  com.data.ListDataOrBuilder getListDataOrBuilder();
 
-  com.data.AnyData.ImplCase getImplCase();
+  public com.data.AnyData.ImplCase getImplCase();
 }

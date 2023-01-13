@@ -25,6 +25,11 @@ private static final long serialVersionUID = 0L;
     return new Immutables();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.qualified.ImmutablesV1Proto.internal_static_qualified_Immutables_descriptor;
@@ -61,7 +66,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.lists.PropertyListOrBuilder getPropertyListOrBuilder() {
-    return propertyList_ == null ? com.lists.PropertyList.getDefaultInstance() : propertyList_;
+    return getPropertyList();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -257,10 +262,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
-      propertyList_ = null;
-      if (propertyListBuilder_ != null) {
-        propertyListBuilder_.dispose();
+      if (propertyListBuilder_ == null) {
+        propertyList_ = null;
+      } else {
+        propertyList_ = null;
         propertyListBuilder_ = null;
       }
       return this;
@@ -289,18 +294,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.qualified.Immutables buildPartial() {
       com.qualified.Immutables result = new com.qualified.Immutables(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      if (propertyListBuilder_ == null) {
+        result.propertyList_ = propertyList_;
+      } else {
+        result.propertyList_ = propertyListBuilder_.build();
+      }
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.qualified.Immutables result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.propertyList_ = propertyListBuilder_ == null
-            ? propertyList_
-            : propertyListBuilder_.build();
-      }
     }
 
     @java.lang.Override
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getPropertyListFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             default: {
@@ -398,7 +398,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private com.lists.PropertyList propertyList_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -408,7 +407,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the propertyList field is set.
      */
     public boolean hasPropertyList() {
-      return ((bitField0_ & 0x00000001) != 0);
+      return propertyListBuilder_ != null || propertyList_ != null;
     }
     /**
      * <code>.lists.PropertyList property_list = 1 [json_name = "propertyList"];</code>
@@ -430,11 +429,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         propertyList_ = value;
+        onChanged();
       } else {
         propertyListBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
@@ -444,11 +443,11 @@ private static final long serialVersionUID = 0L;
         com.lists.PropertyList.Builder builderForValue) {
       if (propertyListBuilder_ == null) {
         propertyList_ = builderForValue.build();
+        onChanged();
       } else {
         propertyListBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
@@ -456,38 +455,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePropertyList(com.lists.PropertyList value) {
       if (propertyListBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0) &&
-          propertyList_ != null &&
-          propertyList_ != com.lists.PropertyList.getDefaultInstance()) {
-          getPropertyListBuilder().mergeFrom(value);
+        if (propertyList_ != null) {
+          propertyList_ =
+            com.lists.PropertyList.newBuilder(propertyList_).mergeFrom(value).buildPartial();
         } else {
           propertyList_ = value;
         }
+        onChanged();
       } else {
         propertyListBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.lists.PropertyList property_list = 1 [json_name = "propertyList"];</code>
      */
     public Builder clearPropertyList() {
-      bitField0_ = (bitField0_ & ~0x00000001);
-      propertyList_ = null;
-      if (propertyListBuilder_ != null) {
-        propertyListBuilder_.dispose();
+      if (propertyListBuilder_ == null) {
+        propertyList_ = null;
+        onChanged();
+      } else {
+        propertyList_ = null;
         propertyListBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.lists.PropertyList property_list = 1 [json_name = "propertyList"];</code>
      */
     public com.lists.PropertyList.Builder getPropertyListBuilder() {
-      bitField0_ |= 0x00000001;
+      
       onChanged();
       return getPropertyListFieldBuilder().getBuilder();
     }

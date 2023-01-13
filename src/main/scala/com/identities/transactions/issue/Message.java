@@ -27,6 +27,11 @@ private static final long serialVersionUID = 0L;
     return new Message();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.identities.transactions.issue.MessageV1Proto.internal_static_identities_transactions_issue_Message_descriptor;
@@ -41,8 +46,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FROM_FIELD_NUMBER = 1;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object from_ = "";
+  private volatile java.lang.Object from_;
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
@@ -102,12 +106,11 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.ids.IdentityIDOrBuilder getFromIDOrBuilder() {
-    return fromID_ == null ? com.ids.IdentityID.getDefaultInstance() : fromID_;
+    return getFromID();
   }
 
   public static final int TO_FIELD_NUMBER = 3;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object to_ = "";
+  private volatile java.lang.Object to_;
   /**
    * <code>string to = 3 [json_name = "to"];</code>
    * @return The to.
@@ -167,7 +170,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.ids.ClassificationIDOrBuilder getClassificationIDOrBuilder() {
-    return classificationID_ == null ? com.ids.ClassificationID.getDefaultInstance() : classificationID_;
+    return getClassificationID();
   }
 
   public static final int IMMUTABLE_META_PROPERTIES_FIELD_NUMBER = 5;
@@ -193,7 +196,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.lists.PropertyListOrBuilder getImmutableMetaPropertiesOrBuilder() {
-    return immutableMetaProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : immutableMetaProperties_;
+    return getImmutableMetaProperties();
   }
 
   public static final int IMMUTABLE_PROPERTIES_FIELD_NUMBER = 6;
@@ -219,7 +222,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.lists.PropertyListOrBuilder getImmutablePropertiesOrBuilder() {
-    return immutableProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : immutableProperties_;
+    return getImmutableProperties();
   }
 
   public static final int MUTABLE_META_PROPERTIES_FIELD_NUMBER = 7;
@@ -245,7 +248,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.lists.PropertyListOrBuilder getMutableMetaPropertiesOrBuilder() {
-    return mutableMetaProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : mutableMetaProperties_;
+    return getMutableMetaProperties();
   }
 
   public static final int MUTABLE_PROPERTIES_FIELD_NUMBER = 8;
@@ -271,7 +274,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.lists.PropertyListOrBuilder getMutablePropertiesOrBuilder() {
-    return mutableProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : mutableProperties_;
+    return getMutableProperties();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -567,37 +570,44 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       from_ = "";
-      fromID_ = null;
-      if (fromIDBuilder_ != null) {
-        fromIDBuilder_.dispose();
+
+      if (fromIDBuilder_ == null) {
+        fromID_ = null;
+      } else {
+        fromID_ = null;
         fromIDBuilder_ = null;
       }
       to_ = "";
-      classificationID_ = null;
-      if (classificationIDBuilder_ != null) {
-        classificationIDBuilder_.dispose();
+
+      if (classificationIDBuilder_ == null) {
+        classificationID_ = null;
+      } else {
+        classificationID_ = null;
         classificationIDBuilder_ = null;
       }
-      immutableMetaProperties_ = null;
-      if (immutableMetaPropertiesBuilder_ != null) {
-        immutableMetaPropertiesBuilder_.dispose();
+      if (immutableMetaPropertiesBuilder_ == null) {
+        immutableMetaProperties_ = null;
+      } else {
+        immutableMetaProperties_ = null;
         immutableMetaPropertiesBuilder_ = null;
       }
-      immutableProperties_ = null;
-      if (immutablePropertiesBuilder_ != null) {
-        immutablePropertiesBuilder_.dispose();
+      if (immutablePropertiesBuilder_ == null) {
+        immutableProperties_ = null;
+      } else {
+        immutableProperties_ = null;
         immutablePropertiesBuilder_ = null;
       }
-      mutableMetaProperties_ = null;
-      if (mutableMetaPropertiesBuilder_ != null) {
-        mutableMetaPropertiesBuilder_.dispose();
+      if (mutableMetaPropertiesBuilder_ == null) {
+        mutableMetaProperties_ = null;
+      } else {
+        mutableMetaProperties_ = null;
         mutableMetaPropertiesBuilder_ = null;
       }
-      mutableProperties_ = null;
-      if (mutablePropertiesBuilder_ != null) {
-        mutablePropertiesBuilder_.dispose();
+      if (mutablePropertiesBuilder_ == null) {
+        mutableProperties_ = null;
+      } else {
+        mutableProperties_ = null;
         mutablePropertiesBuilder_ = null;
       }
       return this;
@@ -626,49 +636,40 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.identities.transactions.issue.Message buildPartial() {
       com.identities.transactions.issue.Message result = new com.identities.transactions.issue.Message(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      result.from_ = from_;
+      if (fromIDBuilder_ == null) {
+        result.fromID_ = fromID_;
+      } else {
+        result.fromID_ = fromIDBuilder_.build();
+      }
+      result.to_ = to_;
+      if (classificationIDBuilder_ == null) {
+        result.classificationID_ = classificationID_;
+      } else {
+        result.classificationID_ = classificationIDBuilder_.build();
+      }
+      if (immutableMetaPropertiesBuilder_ == null) {
+        result.immutableMetaProperties_ = immutableMetaProperties_;
+      } else {
+        result.immutableMetaProperties_ = immutableMetaPropertiesBuilder_.build();
+      }
+      if (immutablePropertiesBuilder_ == null) {
+        result.immutableProperties_ = immutableProperties_;
+      } else {
+        result.immutableProperties_ = immutablePropertiesBuilder_.build();
+      }
+      if (mutableMetaPropertiesBuilder_ == null) {
+        result.mutableMetaProperties_ = mutableMetaProperties_;
+      } else {
+        result.mutableMetaProperties_ = mutableMetaPropertiesBuilder_.build();
+      }
+      if (mutablePropertiesBuilder_ == null) {
+        result.mutableProperties_ = mutableProperties_;
+      } else {
+        result.mutableProperties_ = mutablePropertiesBuilder_.build();
+      }
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.identities.transactions.issue.Message result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.from_ = from_;
-      }
-      if (((from_bitField0_ & 0x00000002) != 0)) {
-        result.fromID_ = fromIDBuilder_ == null
-            ? fromID_
-            : fromIDBuilder_.build();
-      }
-      if (((from_bitField0_ & 0x00000004) != 0)) {
-        result.to_ = to_;
-      }
-      if (((from_bitField0_ & 0x00000008) != 0)) {
-        result.classificationID_ = classificationIDBuilder_ == null
-            ? classificationID_
-            : classificationIDBuilder_.build();
-      }
-      if (((from_bitField0_ & 0x00000010) != 0)) {
-        result.immutableMetaProperties_ = immutableMetaPropertiesBuilder_ == null
-            ? immutableMetaProperties_
-            : immutableMetaPropertiesBuilder_.build();
-      }
-      if (((from_bitField0_ & 0x00000020) != 0)) {
-        result.immutableProperties_ = immutablePropertiesBuilder_ == null
-            ? immutableProperties_
-            : immutablePropertiesBuilder_.build();
-      }
-      if (((from_bitField0_ & 0x00000040) != 0)) {
-        result.mutableMetaProperties_ = mutableMetaPropertiesBuilder_ == null
-            ? mutableMetaProperties_
-            : mutableMetaPropertiesBuilder_.build();
-      }
-      if (((from_bitField0_ & 0x00000080) != 0)) {
-        result.mutableProperties_ = mutablePropertiesBuilder_ == null
-            ? mutableProperties_
-            : mutablePropertiesBuilder_.build();
-      }
     }
 
     @java.lang.Override
@@ -717,7 +718,6 @@ private static final long serialVersionUID = 0L;
       if (other == com.identities.transactions.issue.Message.getDefaultInstance()) return this;
       if (!other.getFrom().isEmpty()) {
         from_ = other.from_;
-        bitField0_ |= 0x00000001;
         onChanged();
       }
       if (other.hasFromID()) {
@@ -725,7 +725,6 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getTo().isEmpty()) {
         to_ = other.to_;
-        bitField0_ |= 0x00000004;
         onChanged();
       }
       if (other.hasClassificationID()) {
@@ -771,54 +770,54 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               from_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             case 18: {
               input.readMessage(
                   getFromIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000002;
+
               break;
             } // case 18
             case 26: {
               to_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000004;
+
               break;
             } // case 26
             case 34: {
               input.readMessage(
                   getClassificationIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000008;
+
               break;
             } // case 34
             case 42: {
               input.readMessage(
                   getImmutableMetaPropertiesFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000010;
+
               break;
             } // case 42
             case 50: {
               input.readMessage(
                   getImmutablePropertiesFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000020;
+
               break;
             } // case 50
             case 58: {
               input.readMessage(
                   getMutableMetaPropertiesFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000040;
+
               break;
             } // case 58
             case 66: {
               input.readMessage(
                   getMutablePropertiesFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000080;
+
               break;
             } // case 66
             default: {
@@ -836,7 +835,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private java.lang.Object from_ = "";
     /**
@@ -879,9 +877,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFrom(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       from_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -890,8 +890,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFrom() {
+      
       from_ = getDefaultInstance().getFrom();
-      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -902,10 +902,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFromBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       from_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -918,7 +920,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the fromID field is set.
      */
     public boolean hasFromID() {
-      return ((bitField0_ & 0x00000002) != 0);
+      return fromIDBuilder_ != null || fromID_ != null;
     }
     /**
      * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
@@ -940,11 +942,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         fromID_ = value;
+        onChanged();
       } else {
         fromIDBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
@@ -954,11 +956,11 @@ private static final long serialVersionUID = 0L;
         com.ids.IdentityID.Builder builderForValue) {
       if (fromIDBuilder_ == null) {
         fromID_ = builderForValue.build();
+        onChanged();
       } else {
         fromIDBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
@@ -966,38 +968,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeFromID(com.ids.IdentityID value) {
       if (fromIDBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) != 0) &&
-          fromID_ != null &&
-          fromID_ != com.ids.IdentityID.getDefaultInstance()) {
-          getFromIDBuilder().mergeFrom(value);
+        if (fromID_ != null) {
+          fromID_ =
+            com.ids.IdentityID.newBuilder(fromID_).mergeFrom(value).buildPartial();
         } else {
           fromID_ = value;
         }
+        onChanged();
       } else {
         fromIDBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
      */
     public Builder clearFromID() {
-      bitField0_ = (bitField0_ & ~0x00000002);
-      fromID_ = null;
-      if (fromIDBuilder_ != null) {
-        fromIDBuilder_.dispose();
+      if (fromIDBuilder_ == null) {
+        fromID_ = null;
+        onChanged();
+      } else {
+        fromID_ = null;
         fromIDBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
      */
     public com.ids.IdentityID.Builder getFromIDBuilder() {
-      bitField0_ |= 0x00000002;
+      
       onChanged();
       return getFromIDFieldBuilder().getBuilder();
     }
@@ -1070,9 +1072,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setTo(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       to_ = value;
-      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -1081,8 +1085,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearTo() {
+      
       to_ = getDefaultInstance().getTo();
-      bitField0_ = (bitField0_ & ~0x00000004);
       onChanged();
       return this;
     }
@@ -1093,10 +1097,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setToBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       to_ = value;
-      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -1109,7 +1115,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the classificationID field is set.
      */
     public boolean hasClassificationID() {
-      return ((bitField0_ & 0x00000008) != 0);
+      return classificationIDBuilder_ != null || classificationID_ != null;
     }
     /**
      * <code>.ids.ClassificationID classification_i_d = 4 [json_name = "classificationID"];</code>
@@ -1131,11 +1137,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         classificationID_ = value;
+        onChanged();
       } else {
         classificationIDBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000008;
-      onChanged();
+
       return this;
     }
     /**
@@ -1145,11 +1151,11 @@ private static final long serialVersionUID = 0L;
         com.ids.ClassificationID.Builder builderForValue) {
       if (classificationIDBuilder_ == null) {
         classificationID_ = builderForValue.build();
+        onChanged();
       } else {
         classificationIDBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000008;
-      onChanged();
+
       return this;
     }
     /**
@@ -1157,38 +1163,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeClassificationID(com.ids.ClassificationID value) {
       if (classificationIDBuilder_ == null) {
-        if (((bitField0_ & 0x00000008) != 0) &&
-          classificationID_ != null &&
-          classificationID_ != com.ids.ClassificationID.getDefaultInstance()) {
-          getClassificationIDBuilder().mergeFrom(value);
+        if (classificationID_ != null) {
+          classificationID_ =
+            com.ids.ClassificationID.newBuilder(classificationID_).mergeFrom(value).buildPartial();
         } else {
           classificationID_ = value;
         }
+        onChanged();
       } else {
         classificationIDBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000008;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.ClassificationID classification_i_d = 4 [json_name = "classificationID"];</code>
      */
     public Builder clearClassificationID() {
-      bitField0_ = (bitField0_ & ~0x00000008);
-      classificationID_ = null;
-      if (classificationIDBuilder_ != null) {
-        classificationIDBuilder_.dispose();
+      if (classificationIDBuilder_ == null) {
+        classificationID_ = null;
+        onChanged();
+      } else {
+        classificationID_ = null;
         classificationIDBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.ClassificationID classification_i_d = 4 [json_name = "classificationID"];</code>
      */
     public com.ids.ClassificationID.Builder getClassificationIDBuilder() {
-      bitField0_ |= 0x00000008;
+      
       onChanged();
       return getClassificationIDFieldBuilder().getBuilder();
     }
@@ -1228,7 +1234,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the immutableMetaProperties field is set.
      */
     public boolean hasImmutableMetaProperties() {
-      return ((bitField0_ & 0x00000010) != 0);
+      return immutableMetaPropertiesBuilder_ != null || immutableMetaProperties_ != null;
     }
     /**
      * <code>.lists.PropertyList immutable_meta_properties = 5 [json_name = "immutableMetaProperties"];</code>
@@ -1250,11 +1256,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         immutableMetaProperties_ = value;
+        onChanged();
       } else {
         immutableMetaPropertiesBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000010;
-      onChanged();
+
       return this;
     }
     /**
@@ -1264,11 +1270,11 @@ private static final long serialVersionUID = 0L;
         com.lists.PropertyList.Builder builderForValue) {
       if (immutableMetaPropertiesBuilder_ == null) {
         immutableMetaProperties_ = builderForValue.build();
+        onChanged();
       } else {
         immutableMetaPropertiesBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000010;
-      onChanged();
+
       return this;
     }
     /**
@@ -1276,38 +1282,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeImmutableMetaProperties(com.lists.PropertyList value) {
       if (immutableMetaPropertiesBuilder_ == null) {
-        if (((bitField0_ & 0x00000010) != 0) &&
-          immutableMetaProperties_ != null &&
-          immutableMetaProperties_ != com.lists.PropertyList.getDefaultInstance()) {
-          getImmutableMetaPropertiesBuilder().mergeFrom(value);
+        if (immutableMetaProperties_ != null) {
+          immutableMetaProperties_ =
+            com.lists.PropertyList.newBuilder(immutableMetaProperties_).mergeFrom(value).buildPartial();
         } else {
           immutableMetaProperties_ = value;
         }
+        onChanged();
       } else {
         immutableMetaPropertiesBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000010;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.lists.PropertyList immutable_meta_properties = 5 [json_name = "immutableMetaProperties"];</code>
      */
     public Builder clearImmutableMetaProperties() {
-      bitField0_ = (bitField0_ & ~0x00000010);
-      immutableMetaProperties_ = null;
-      if (immutableMetaPropertiesBuilder_ != null) {
-        immutableMetaPropertiesBuilder_.dispose();
+      if (immutableMetaPropertiesBuilder_ == null) {
+        immutableMetaProperties_ = null;
+        onChanged();
+      } else {
+        immutableMetaProperties_ = null;
         immutableMetaPropertiesBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.lists.PropertyList immutable_meta_properties = 5 [json_name = "immutableMetaProperties"];</code>
      */
     public com.lists.PropertyList.Builder getImmutableMetaPropertiesBuilder() {
-      bitField0_ |= 0x00000010;
+      
       onChanged();
       return getImmutableMetaPropertiesFieldBuilder().getBuilder();
     }
@@ -1347,7 +1353,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the immutableProperties field is set.
      */
     public boolean hasImmutableProperties() {
-      return ((bitField0_ & 0x00000020) != 0);
+      return immutablePropertiesBuilder_ != null || immutableProperties_ != null;
     }
     /**
      * <code>.lists.PropertyList immutable_properties = 6 [json_name = "immutableProperties"];</code>
@@ -1369,11 +1375,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         immutableProperties_ = value;
+        onChanged();
       } else {
         immutablePropertiesBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000020;
-      onChanged();
+
       return this;
     }
     /**
@@ -1383,11 +1389,11 @@ private static final long serialVersionUID = 0L;
         com.lists.PropertyList.Builder builderForValue) {
       if (immutablePropertiesBuilder_ == null) {
         immutableProperties_ = builderForValue.build();
+        onChanged();
       } else {
         immutablePropertiesBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000020;
-      onChanged();
+
       return this;
     }
     /**
@@ -1395,38 +1401,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeImmutableProperties(com.lists.PropertyList value) {
       if (immutablePropertiesBuilder_ == null) {
-        if (((bitField0_ & 0x00000020) != 0) &&
-          immutableProperties_ != null &&
-          immutableProperties_ != com.lists.PropertyList.getDefaultInstance()) {
-          getImmutablePropertiesBuilder().mergeFrom(value);
+        if (immutableProperties_ != null) {
+          immutableProperties_ =
+            com.lists.PropertyList.newBuilder(immutableProperties_).mergeFrom(value).buildPartial();
         } else {
           immutableProperties_ = value;
         }
+        onChanged();
       } else {
         immutablePropertiesBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000020;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.lists.PropertyList immutable_properties = 6 [json_name = "immutableProperties"];</code>
      */
     public Builder clearImmutableProperties() {
-      bitField0_ = (bitField0_ & ~0x00000020);
-      immutableProperties_ = null;
-      if (immutablePropertiesBuilder_ != null) {
-        immutablePropertiesBuilder_.dispose();
+      if (immutablePropertiesBuilder_ == null) {
+        immutableProperties_ = null;
+        onChanged();
+      } else {
+        immutableProperties_ = null;
         immutablePropertiesBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.lists.PropertyList immutable_properties = 6 [json_name = "immutableProperties"];</code>
      */
     public com.lists.PropertyList.Builder getImmutablePropertiesBuilder() {
-      bitField0_ |= 0x00000020;
+      
       onChanged();
       return getImmutablePropertiesFieldBuilder().getBuilder();
     }
@@ -1466,7 +1472,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the mutableMetaProperties field is set.
      */
     public boolean hasMutableMetaProperties() {
-      return ((bitField0_ & 0x00000040) != 0);
+      return mutableMetaPropertiesBuilder_ != null || mutableMetaProperties_ != null;
     }
     /**
      * <code>.lists.PropertyList mutable_meta_properties = 7 [json_name = "mutableMetaProperties"];</code>
@@ -1488,11 +1494,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         mutableMetaProperties_ = value;
+        onChanged();
       } else {
         mutableMetaPropertiesBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000040;
-      onChanged();
+
       return this;
     }
     /**
@@ -1502,11 +1508,11 @@ private static final long serialVersionUID = 0L;
         com.lists.PropertyList.Builder builderForValue) {
       if (mutableMetaPropertiesBuilder_ == null) {
         mutableMetaProperties_ = builderForValue.build();
+        onChanged();
       } else {
         mutableMetaPropertiesBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000040;
-      onChanged();
+
       return this;
     }
     /**
@@ -1514,38 +1520,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeMutableMetaProperties(com.lists.PropertyList value) {
       if (mutableMetaPropertiesBuilder_ == null) {
-        if (((bitField0_ & 0x00000040) != 0) &&
-          mutableMetaProperties_ != null &&
-          mutableMetaProperties_ != com.lists.PropertyList.getDefaultInstance()) {
-          getMutableMetaPropertiesBuilder().mergeFrom(value);
+        if (mutableMetaProperties_ != null) {
+          mutableMetaProperties_ =
+            com.lists.PropertyList.newBuilder(mutableMetaProperties_).mergeFrom(value).buildPartial();
         } else {
           mutableMetaProperties_ = value;
         }
+        onChanged();
       } else {
         mutableMetaPropertiesBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000040;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.lists.PropertyList mutable_meta_properties = 7 [json_name = "mutableMetaProperties"];</code>
      */
     public Builder clearMutableMetaProperties() {
-      bitField0_ = (bitField0_ & ~0x00000040);
-      mutableMetaProperties_ = null;
-      if (mutableMetaPropertiesBuilder_ != null) {
-        mutableMetaPropertiesBuilder_.dispose();
+      if (mutableMetaPropertiesBuilder_ == null) {
+        mutableMetaProperties_ = null;
+        onChanged();
+      } else {
+        mutableMetaProperties_ = null;
         mutableMetaPropertiesBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.lists.PropertyList mutable_meta_properties = 7 [json_name = "mutableMetaProperties"];</code>
      */
     public com.lists.PropertyList.Builder getMutableMetaPropertiesBuilder() {
-      bitField0_ |= 0x00000040;
+      
       onChanged();
       return getMutableMetaPropertiesFieldBuilder().getBuilder();
     }
@@ -1585,7 +1591,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the mutableProperties field is set.
      */
     public boolean hasMutableProperties() {
-      return ((bitField0_ & 0x00000080) != 0);
+      return mutablePropertiesBuilder_ != null || mutableProperties_ != null;
     }
     /**
      * <code>.lists.PropertyList mutable_properties = 8 [json_name = "mutableProperties"];</code>
@@ -1607,11 +1613,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         mutableProperties_ = value;
+        onChanged();
       } else {
         mutablePropertiesBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000080;
-      onChanged();
+
       return this;
     }
     /**
@@ -1621,11 +1627,11 @@ private static final long serialVersionUID = 0L;
         com.lists.PropertyList.Builder builderForValue) {
       if (mutablePropertiesBuilder_ == null) {
         mutableProperties_ = builderForValue.build();
+        onChanged();
       } else {
         mutablePropertiesBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000080;
-      onChanged();
+
       return this;
     }
     /**
@@ -1633,38 +1639,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeMutableProperties(com.lists.PropertyList value) {
       if (mutablePropertiesBuilder_ == null) {
-        if (((bitField0_ & 0x00000080) != 0) &&
-          mutableProperties_ != null &&
-          mutableProperties_ != com.lists.PropertyList.getDefaultInstance()) {
-          getMutablePropertiesBuilder().mergeFrom(value);
+        if (mutableProperties_ != null) {
+          mutableProperties_ =
+            com.lists.PropertyList.newBuilder(mutableProperties_).mergeFrom(value).buildPartial();
         } else {
           mutableProperties_ = value;
         }
+        onChanged();
       } else {
         mutablePropertiesBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000080;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.lists.PropertyList mutable_properties = 8 [json_name = "mutableProperties"];</code>
      */
     public Builder clearMutableProperties() {
-      bitField0_ = (bitField0_ & ~0x00000080);
-      mutableProperties_ = null;
-      if (mutablePropertiesBuilder_ != null) {
-        mutablePropertiesBuilder_.dispose();
+      if (mutablePropertiesBuilder_ == null) {
+        mutableProperties_ = null;
+        onChanged();
+      } else {
+        mutableProperties_ = null;
         mutablePropertiesBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.lists.PropertyList mutable_properties = 8 [json_name = "mutableProperties"];</code>
      */
     public com.lists.PropertyList.Builder getMutablePropertiesBuilder() {
-      bitField0_ |= 0x00000080;
+      
       onChanged();
       return getMutablePropertiesFieldBuilder().getBuilder();
     }

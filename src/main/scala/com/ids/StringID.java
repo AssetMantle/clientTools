@@ -26,6 +26,11 @@ private static final long serialVersionUID = 0L;
     return new StringID();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.ids.StringIDV1Proto.internal_static_ids_StringID_descriptor;
@@ -40,8 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int I_D_STRING_FIELD_NUMBER = 1;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object iDString_ = "";
+  private volatile java.lang.Object iDString_;
   /**
    * <code>string i_d_string = 1 [json_name = "iDString"];</code>
    * @return The iDString.
@@ -265,8 +269,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       iDString_ = "";
+
       return this;
     }
 
@@ -293,16 +297,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.ids.StringID buildPartial() {
       com.ids.StringID result = new com.ids.StringID(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      result.iDString_ = iDString_;
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.ids.StringID result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.iDString_ = iDString_;
-      }
     }
 
     @java.lang.Override
@@ -351,7 +348,6 @@ private static final long serialVersionUID = 0L;
       if (other == com.ids.StringID.getDefaultInstance()) return this;
       if (!other.getIDString().isEmpty()) {
         iDString_ = other.iDString_;
-        bitField0_ |= 0x00000001;
         onChanged();
       }
       this.mergeUnknownFields(other.getUnknownFields());
@@ -382,7 +378,7 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               iDString_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             default: {
@@ -400,7 +396,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private java.lang.Object iDString_ = "";
     /**
@@ -443,9 +438,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setIDString(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       iDString_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -454,8 +451,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearIDString() {
+      
       iDString_ = getDefaultInstance().getIDString();
-      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -466,10 +463,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setIDStringBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       iDString_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }

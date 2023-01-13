@@ -25,6 +25,11 @@ private static final long serialVersionUID = 0L;
     return new MetaProperty();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.properties.MetaPropertyV1Proto.internal_static_properties_MetaProperty_descriptor;
@@ -61,7 +66,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.ids.PropertyIDOrBuilder getIdOrBuilder() {
-    return id_ == null ? com.ids.PropertyID.getDefaultInstance() : id_;
+    return getId();
   }
 
   public static final int ANY_DATA_FIELD_NUMBER = 2;
@@ -87,7 +92,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.data.AnyDataOrBuilder getAnyDataOrBuilder() {
-    return anyData_ == null ? com.data.AnyData.getDefaultInstance() : anyData_;
+    return getAnyData();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -299,15 +304,16 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
-      id_ = null;
-      if (idBuilder_ != null) {
-        idBuilder_.dispose();
+      if (idBuilder_ == null) {
+        id_ = null;
+      } else {
+        id_ = null;
         idBuilder_ = null;
       }
-      anyData_ = null;
-      if (anyDataBuilder_ != null) {
-        anyDataBuilder_.dispose();
+      if (anyDataBuilder_ == null) {
+        anyData_ = null;
+      } else {
+        anyData_ = null;
         anyDataBuilder_ = null;
       }
       return this;
@@ -336,23 +342,18 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.properties.MetaProperty buildPartial() {
       com.properties.MetaProperty result = new com.properties.MetaProperty(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      if (idBuilder_ == null) {
+        result.id_ = id_;
+      } else {
+        result.id_ = idBuilder_.build();
+      }
+      if (anyDataBuilder_ == null) {
+        result.anyData_ = anyData_;
+      } else {
+        result.anyData_ = anyDataBuilder_.build();
+      }
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.properties.MetaProperty result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.id_ = idBuilder_ == null
-            ? id_
-            : idBuilder_.build();
-      }
-      if (((from_bitField0_ & 0x00000002) != 0)) {
-        result.anyData_ = anyDataBuilder_ == null
-            ? anyData_
-            : anyDataBuilder_.build();
-      }
     }
 
     @java.lang.Override
@@ -435,14 +436,14 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getIdFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             case 18: {
               input.readMessage(
                   getAnyDataFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000002;
+
               break;
             } // case 18
             default: {
@@ -460,7 +461,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private com.ids.PropertyID id_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -470,7 +470,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the id field is set.
      */
     public boolean hasId() {
-      return ((bitField0_ & 0x00000001) != 0);
+      return idBuilder_ != null || id_ != null;
     }
     /**
      * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
@@ -492,11 +492,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         id_ = value;
+        onChanged();
       } else {
         idBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
@@ -506,11 +506,11 @@ private static final long serialVersionUID = 0L;
         com.ids.PropertyID.Builder builderForValue) {
       if (idBuilder_ == null) {
         id_ = builderForValue.build();
+        onChanged();
       } else {
         idBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
@@ -518,38 +518,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeId(com.ids.PropertyID value) {
       if (idBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0) &&
-          id_ != null &&
-          id_ != com.ids.PropertyID.getDefaultInstance()) {
-          getIdBuilder().mergeFrom(value);
+        if (id_ != null) {
+          id_ =
+            com.ids.PropertyID.newBuilder(id_).mergeFrom(value).buildPartial();
         } else {
           id_ = value;
         }
+        onChanged();
       } else {
         idBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000001;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
      */
     public Builder clearId() {
-      bitField0_ = (bitField0_ & ~0x00000001);
-      id_ = null;
-      if (idBuilder_ != null) {
-        idBuilder_.dispose();
+      if (idBuilder_ == null) {
+        id_ = null;
+        onChanged();
+      } else {
+        id_ = null;
         idBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
      */
     public com.ids.PropertyID.Builder getIdBuilder() {
-      bitField0_ |= 0x00000001;
+      
       onChanged();
       return getIdFieldBuilder().getBuilder();
     }
@@ -589,7 +589,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the anyData field is set.
      */
     public boolean hasAnyData() {
-      return ((bitField0_ & 0x00000002) != 0);
+      return anyDataBuilder_ != null || anyData_ != null;
     }
     /**
      * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
@@ -611,11 +611,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         anyData_ = value;
+        onChanged();
       } else {
         anyDataBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
@@ -625,11 +625,11 @@ private static final long serialVersionUID = 0L;
         com.data.AnyData.Builder builderForValue) {
       if (anyDataBuilder_ == null) {
         anyData_ = builderForValue.build();
+        onChanged();
       } else {
         anyDataBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
@@ -637,38 +637,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeAnyData(com.data.AnyData value) {
       if (anyDataBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) != 0) &&
-          anyData_ != null &&
-          anyData_ != com.data.AnyData.getDefaultInstance()) {
-          getAnyDataBuilder().mergeFrom(value);
+        if (anyData_ != null) {
+          anyData_ =
+            com.data.AnyData.newBuilder(anyData_).mergeFrom(value).buildPartial();
         } else {
           anyData_ = value;
         }
+        onChanged();
       } else {
         anyDataBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
      */
     public Builder clearAnyData() {
-      bitField0_ = (bitField0_ & ~0x00000002);
-      anyData_ = null;
-      if (anyDataBuilder_ != null) {
-        anyDataBuilder_.dispose();
+      if (anyDataBuilder_ == null) {
+        anyData_ = null;
+        onChanged();
+      } else {
+        anyData_ = null;
         anyDataBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
      */
     public com.data.AnyData.Builder getAnyDataBuilder() {
-      bitField0_ |= 0x00000002;
+      
       onChanged();
       return getAnyDataFieldBuilder().getBuilder();
     }

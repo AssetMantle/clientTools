@@ -26,6 +26,11 @@ private static final long serialVersionUID = 0L;
     return new Message();
   }
 
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet
+  getUnknownFields() {
+    return this.unknownFields;
+  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return com.identities.transactions.nub.MessageV1Proto.internal_static_identities_transactions_nub_Message_descriptor;
@@ -40,8 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FROM_FIELD_NUMBER = 1;
-  @SuppressWarnings("serial")
-  private volatile java.lang.Object from_ = "";
+  private volatile java.lang.Object from_;
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
@@ -101,7 +105,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.ids.StringIDOrBuilder getNubIDOrBuilder() {
-    return nubID_ == null ? com.ids.StringID.getDefaultInstance() : nubID_;
+    return getNubID();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -307,11 +311,12 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bitField0_ = 0;
       from_ = "";
-      nubID_ = null;
-      if (nubIDBuilder_ != null) {
-        nubIDBuilder_.dispose();
+
+      if (nubIDBuilder_ == null) {
+        nubID_ = null;
+      } else {
+        nubID_ = null;
         nubIDBuilder_ = null;
       }
       return this;
@@ -340,21 +345,14 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.identities.transactions.nub.Message buildPartial() {
       com.identities.transactions.nub.Message result = new com.identities.transactions.nub.Message(this);
-      if (bitField0_ != 0) { buildPartial0(result); }
+      result.from_ = from_;
+      if (nubIDBuilder_ == null) {
+        result.nubID_ = nubID_;
+      } else {
+        result.nubID_ = nubIDBuilder_.build();
+      }
       onBuilt();
       return result;
-    }
-
-    private void buildPartial0(com.identities.transactions.nub.Message result) {
-      int from_bitField0_ = bitField0_;
-      if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.from_ = from_;
-      }
-      if (((from_bitField0_ & 0x00000002) != 0)) {
-        result.nubID_ = nubIDBuilder_ == null
-            ? nubID_
-            : nubIDBuilder_.build();
-      }
     }
 
     @java.lang.Override
@@ -403,7 +401,6 @@ private static final long serialVersionUID = 0L;
       if (other == com.identities.transactions.nub.Message.getDefaultInstance()) return this;
       if (!other.getFrom().isEmpty()) {
         from_ = other.from_;
-        bitField0_ |= 0x00000001;
         onChanged();
       }
       if (other.hasNubID()) {
@@ -437,14 +434,14 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               from_ = input.readStringRequireUtf8();
-              bitField0_ |= 0x00000001;
+
               break;
             } // case 10
             case 18: {
               input.readMessage(
                   getNubIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-              bitField0_ |= 0x00000002;
+
               break;
             } // case 18
             default: {
@@ -462,7 +459,6 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    private int bitField0_;
 
     private java.lang.Object from_ = "";
     /**
@@ -505,9 +501,11 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFrom(
         java.lang.String value) {
-      if (value == null) { throw new NullPointerException(); }
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
       from_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -516,8 +514,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFrom() {
+      
       from_ = getDefaultInstance().getFrom();
-      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -528,10 +526,12 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFromBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) { throw new NullPointerException(); }
-      checkByteStringIsUtf8(value);
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       from_ = value;
-      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -544,7 +544,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the nubID field is set.
      */
     public boolean hasNubID() {
-      return ((bitField0_ & 0x00000002) != 0);
+      return nubIDBuilder_ != null || nubID_ != null;
     }
     /**
      * <code>.ids.StringID nub_i_d = 2 [json_name = "nubID"];</code>
@@ -566,11 +566,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         nubID_ = value;
+        onChanged();
       } else {
         nubIDBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
@@ -580,11 +580,11 @@ private static final long serialVersionUID = 0L;
         com.ids.StringID.Builder builderForValue) {
       if (nubIDBuilder_ == null) {
         nubID_ = builderForValue.build();
+        onChanged();
       } else {
         nubIDBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
@@ -592,38 +592,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeNubID(com.ids.StringID value) {
       if (nubIDBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) != 0) &&
-          nubID_ != null &&
-          nubID_ != com.ids.StringID.getDefaultInstance()) {
-          getNubIDBuilder().mergeFrom(value);
+        if (nubID_ != null) {
+          nubID_ =
+            com.ids.StringID.newBuilder(nubID_).mergeFrom(value).buildPartial();
         } else {
           nubID_ = value;
         }
+        onChanged();
       } else {
         nubIDBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000002;
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.StringID nub_i_d = 2 [json_name = "nubID"];</code>
      */
     public Builder clearNubID() {
-      bitField0_ = (bitField0_ & ~0x00000002);
-      nubID_ = null;
-      if (nubIDBuilder_ != null) {
-        nubIDBuilder_.dispose();
+      if (nubIDBuilder_ == null) {
+        nubID_ = null;
+        onChanged();
+      } else {
+        nubID_ = null;
         nubIDBuilder_ = null;
       }
-      onChanged();
+
       return this;
     }
     /**
      * <code>.ids.StringID nub_i_d = 2 [json_name = "nubID"];</code>
      */
     public com.ids.StringID.Builder getNubIDBuilder() {
-      bitField0_ |= 0x00000002;
+      
       onChanged();
       return getNubIDFieldBuilder().getBuilder();
     }
