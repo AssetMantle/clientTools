@@ -6,7 +6,17 @@ import com.cosmos.crypto.secp256k1
 import com.cosmos.tx.v1beta1._
 import com.data.AnyData
 import com.google.protobuf.{ByteString, Any => protoBufAny}
+
+import com.assets.transactions.define.{Message => DefineAssetMessage}
+import com.assets.transactions.burn.{Message => BurnAssetMessage}
+import com.assets.transactions.deputize.{Message => DeputizeAssetMessage}
+import com.assets.transactions.mint.{Message => MintAssetMessage}
+import com.assets.transactions.mutate.{Message => MutateAssetMessage}
+import com.assets.transactions.renumerate.{Message => RenumerateAssetMessage}
+import com.assets.transactions.revoke.{Message => RevokeAssetMessage}
+
 import com.metas.transactions.reveal.{Message => MetasMessage}
+
 import com.identities.transactions.nub.{Message => NubIDMessage}
 import com.identities.transactions.define.{Message => DefineIDMessage}
 import com.identities.transactions.issue.{Message => IssueIDMessage}
@@ -15,7 +25,8 @@ import com.identities.transactions.deputize.{Message => DeputizeIDMessage}
 import com.identities.transactions.quash.{Message => QuashIDMessage}
 import com.identities.transactions.revoke.{Message => RevokeIDMessage}
 import com.identities.transactions.unprovision.{Message => UnprovisionIDMessage}
-import com.ids.{ClassificationID, IdentityID, StringID}
+
+import com.ids.{AssetID, ClassificationID, IdentityID, StringID}
 import com.lists.PropertyList
 import org.bitcoinj.core.ECKey
 
@@ -97,6 +108,90 @@ object BlockchainTransaction {
     //      .addAllAmount(amount.map(_.toProtoCoin).asJava)
     //      .build().toByteString)
     .build()
+
+  //ASSETS
+  def getDefineAssetMsgAsAny(fromAddress: String, fromID: IdentityID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
+    .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ASSET_DEFINE)
+    .setValue(DefineAssetMessage.newBuilder()
+      .setFrom(fromAddress)
+      .setFromID(fromID)
+      .setImmutableMetaProperties(immutableMetaProperties)
+      .setImmutableProperties(immutableProperties)
+      .setMutableMetaProperties(mutableMetaProperties)
+      .setMutableProperties(mutableProperties)
+      .build().toByteString)
+    .build()
+
+  def getBurnAssetMsgAsAny(fromAddress: String, fromID: IdentityID, assetID: AssetID): protoBufAny = protoBufAny.newBuilder()
+    .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ASSET_BURN)
+    .setValue(BurnAssetMessage.newBuilder()
+      .setFrom(fromAddress)
+      .setFromID(fromID)
+      .setAssetID(assetID)
+      .build().toByteString)
+    .build()
+
+  def getDeputizeAssetMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID, maintainedProperties: PropertyList, canMintAsset: Boolean, canBurnAsset: Boolean, canRenumerateAsset: Boolean, canAddMaintainer: Boolean, canRemoveMaintainer: Boolean, canMutateMaintainer: Boolean): protoBufAny = protoBufAny.newBuilder()
+    .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ASSET_DEPUTIZE)
+    .setValue(DeputizeAssetMessage.newBuilder()
+      .setFrom(fromAddress)
+      .setFromID(fromID)
+      .setToID(toID)
+      .setClassificationID(classificationID)
+      .setMaintainedProperties(maintainedProperties)
+      .setCanMintAsset(canMintAsset)
+      .setCanBurnAsset(canBurnAsset)
+      .setCanRenumerateAsset(canRenumerateAsset)
+      .setCanAddMaintainer(canAddMaintainer)
+      .setCanRemoveMaintainer(canRemoveMaintainer)
+      .setCanMutateMaintainer(canMutateMaintainer)
+      .build().toByteString)
+    .build()
+
+  def getMintAssetMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
+    .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ASSET_MINT)
+    .setValue(MintAssetMessage.newBuilder()
+      .setFrom(fromAddress)
+      .setFromID(fromID)
+      .setToID(toID)
+      .setClassificationID(classificationID)
+      .setImmutableMetaProperties(immutableMetaProperties)
+      .setImmutableProperties(immutableProperties)
+      .setMutableMetaProperties(mutableMetaProperties)
+      .setMutableProperties(mutableProperties)
+      .build().toByteString)
+    .build()
+
+  def getMutateAssetMsgAsAny(fromAddress: String, fromID: IdentityID, assetID: AssetID, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
+    .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ASSET_MUTATE)
+    .setValue(MutateAssetMessage.newBuilder()
+      .setFrom(fromAddress)
+      .setFromID(fromID)
+      .setAssetID(assetID)
+      .setMutableMetaProperties(mutableMetaProperties)
+      .setMutableProperties(mutableProperties)
+      .build().toByteString)
+    .build()
+
+  def getRenumerateAssetMsgAsAny(fromAddress: String, fromID: IdentityID, assetID: AssetID): protoBufAny = protoBufAny.newBuilder()
+    .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ASSET_RENUMERATE)
+    .setValue(RenumerateAssetMessage.newBuilder()
+      .setFrom(fromAddress)
+      .setFromID(fromID)
+      .setAssetID(assetID)
+      .build().toByteString)
+    .build()
+
+  def getRevokeAssetMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID): protoBufAny = protoBufAny.newBuilder()
+    .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ASSET_REVOKE)
+    .setValue(RevokeAssetMessage.newBuilder()
+      .setFrom(fromAddress)
+      .setFromID(fromID)
+      .setToID(toID)
+      .setClassificationID(classificationID)
+      .build().toByteString)
+    .build()
+
 
   //IDENTITIES
   def getDefineIdentityMsgAsAny(fromAddress: String, fromID: IdentityID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
