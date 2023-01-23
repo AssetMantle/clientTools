@@ -6,7 +6,6 @@ import com.cosmos.crypto.secp256k1
 import com.cosmos.tx.v1beta1._
 import com.data.AnyData
 import com.google.protobuf.{ByteString, Any => protoBufAny}
-
 import com.assets.transactions.define.{Message => DefineAssetMessage}
 import com.assets.transactions.burn.{Message => BurnAssetMessage}
 import com.assets.transactions.deputize.{Message => DeputizeAssetMessage}
@@ -14,9 +13,7 @@ import com.assets.transactions.mint.{Message => MintAssetMessage}
 import com.assets.transactions.mutate.{Message => MutateAssetMessage}
 import com.assets.transactions.renumerate.{Message => RenumerateAssetMessage}
 import com.assets.transactions.revoke.{Message => RevokeAssetMessage}
-
 import com.metas.transactions.reveal.{Message => MetasMessage}
-
 import com.identities.transactions.nub.{Message => NubIDMessage}
 import com.identities.transactions.define.{Message => DefineIDMessage}
 import com.identities.transactions.issue.{Message => IssueIDMessage}
@@ -25,10 +22,18 @@ import com.identities.transactions.deputize.{Message => DeputizeIDMessage}
 import com.identities.transactions.quash.{Message => QuashIDMessage}
 import com.identities.transactions.revoke.{Message => RevokeIDMessage}
 import com.identities.transactions.unprovision.{Message => UnprovisionIDMessage}
-
-import com.ids.{AssetID, ClassificationID, IdentityID, StringID}
+import com.orders.transactions.define.{Message => DefineOrderMessage}
+import com.orders.transactions.make.{Message => MakeOrderMessage}
+import com.orders.transactions.cancel.{Message => CancelOrderMessage}
+import com.orders.transactions.modify.{Message => ModifyOrderMessage}
+import com.orders.transactions.revoke.{Message => RevokeOrderMessage}
+import com.orders.transactions.deputize.{Message => DeputizeOrderMessage}
+import com.orders.transactions.take.{Message => TakeOrderMessage}
+import com.orders.transactions.immediate.{Message => ImmediateOrderMessage}
+import com.ids.{AnyOwnableID, AssetID, ClassificationID, IdentityID, OrderID, StringID}
 import com.lists.PropertyList
 import org.bitcoinj.core.ECKey
+import com.types.Height
 
 import scala.jdk.CollectionConverters.IterableHasAsJava
 
@@ -291,3 +296,114 @@ object BlockchainTransaction {
       .build().toByteString)
     .build()
 }
+
+//ORDERS
+def getDefineOrderMsgAsAny(fromAddress: String, fromID: IdentityID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ORDER_DEFINE)
+  .setValue(DefineOrderMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .setImmutableMetaProperties(immutableMetaProperties)
+    .setImmutableProperties(immutableProperties)
+    .setMutableMetaProperties(mutableMetaProperties)
+    .setMutableProperties(mutableProperties)
+    .build().toByteString)
+  .build()
+
+def getCancelOrderMsgAsAny(fromAddress: String, fromID: IdentityID, orderID: OrderID): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ORDER_CANCEL)
+  .setValue(CancelOrderMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .setOrderID(orderID)
+    .build().toByteString)
+  .build()
+
+def getDeputizeOrderMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID, maintainedProperties: PropertyList, canMintAsset: Boolean, canBurnAsset: Boolean, canRenumerateAsset: Boolean, canAddMaintainer: Boolean, canRemoveMaintainer: Boolean, canMutateMaintainer: Boolean): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ORDER_DEPUTIZE)
+  .setValue(DeputizeOrderMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .setToID(toID)
+    .setClassificationID(classificationID)
+    .setMaintainedProperties(maintainedProperties)
+    .setCanMintAsset(canMintAsset)
+    .setCanBurnAsset(canBurnAsset)
+    .setCanRenumerateAsset(canRenumerateAsset)
+    .setCanAddMaintainer(canAddMaintainer)
+    .setCanRemoveMaintainer(canRemoveMaintainer)
+    .setCanMutateMaintainer(canMutateMaintainer)
+    .build().toByteString)
+  .build()
+
+def getMakeOrderMsgAsAny(fromAddress: String, fromID: IdentityID, classificationID: ClassificationID, takerID: IdentityID, makerOwnableID: AnyOwnableID, takerOwnableID: AnyOwnableID, expires: Height, makerOwnableSplit: String, takerOwnableSplit: String, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ORDER_MAKE)
+  .setValue(MakeOrderMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .setClassificationID(classificationID)
+    .setTakerID(takerID)
+    .setMakerOwnableID(makerOwnableID)
+    .setTakerOwnableID(takerOwnableID)
+    .setExpiresIn(expires)
+    .setMakerOwnableSplit(makerOwnableSplit)
+    .setTakerOwnableSplit(takerOwnableSplit)
+    .setImmutableMetaProperties(immutableMetaProperties)
+    .setImmutableProperties(immutableProperties)
+    .setMutableMetaProperties(mutableMetaProperties)
+    .setMutableProperties(mutableProperties)
+    .build().toByteString)
+  .build()
+
+def getImmediateOrderMsgAsAny(fromAddress: String, fromID: IdentityID, classificationID: ClassificationID, takerID: IdentityID, makerOwnableID: AnyOwnableID, takerOwnableID: AnyOwnableID, expires: Height, makerOwnableSplit: String, takerOwnableSplit: String, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ORDER_IMMEDIATE)
+  .setValue(ImmediateOrderMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .setClassificationID(classificationID)
+    .setTakerID(takerID)
+    .setMakerOwnableID(makerOwnableID)
+    .setTakerOwnableID(takerOwnableID)
+    .setExpiresIn(expires)
+    .setMakerOwnableSplit(makerOwnableSplit)
+    .setTakerOwnableSplit(takerOwnableSplit)
+    .setImmutableMetaProperties(immutableMetaProperties)
+    .setImmutableProperties(immutableProperties)
+    .setMutableMetaProperties(mutableMetaProperties)
+    .setMutableProperties(mutableProperties)
+    .build().toByteString)
+  .build()
+
+def getModifyOrderMsgAsAny(fromAddress: String, fromID: IdentityID, orderID: OrderID, makerOwnableSplit: String, takerOwnableSplit: String, expires: Height, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ORDER_MODIFY)
+  .setValue(ModifyOrderMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .setOrderID(orderID)
+    .setExpiresIn(expires)
+    .setMakerOwnableSplit(makerOwnableSplit)
+    .setTakerOwnableSplit(takerOwnableSplit)
+    .setMutableMetaProperties(mutableMetaProperties)
+    .setMutableProperties(mutableProperties)
+    .build().toByteString)
+  .build()
+
+def getRevokeOrdertMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ORDER_REVOKE)
+  .setValue(RevokeOrderMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .setToID(toID)
+    .setClassificationID(classificationID)
+    .build().toByteString)
+  .build()
+
+def getTakeOrderMsgAsAny(fromAddress: String, fromID: IdentityID, takerOwnableSplit: String, orderID: OrderID): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.ORDER_TAKE)
+  .setValue(TakeOrderMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .setTakerOwnableSplit(takerOwnableSplit)
+    .setOrderID(orderID)
+    .build().toByteString)
+  .build()
