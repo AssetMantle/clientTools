@@ -12,11 +12,15 @@ import schema.property.base.MetaProperty
 class Deputize extends AnyFunSuite{
   val setup = new Setup()
 
+  val fromID = setup.identityID
+
+  val toID = setup.secondaryIdentityID
+
   val maintainedProperties = PropertyList(Seq(MetaProperty(PropertyID(StringID("supply"), StringID("D")), DecData(AttoNumber.zero).toAnyData))).asProtoPropertyList
 
-  val identitiesDeputizeMsg = commonUtilities.BlockchainTransaction.getDeputizeIdentityMsgAsAny(setup.balanceAccount.address, setup.identityID.asProtoIdentityID, setup.identityID.asProtoIdentityID, setup.classificationID.asProtoClassificationID, maintainedProperties, true, true, true, true, true, true)
+  val identitiesDeputizeMsg = commonUtilities.BlockchainTransaction.getDeputizeIdentityMsgAsAny(setup.balanceAccount.address, fromID.asProtoIdentityID, toID.asProtoIdentityID, setup.classificationID.asProtoClassificationID, maintainedProperties, true, true, true, true, true, true)
 
-  val (txRawBytes, memo): (Array[Byte], String) = commonUtilities.BlockchainTransaction.getTxRawBytesWithSignedMemo(messages = Seq(identitiesDeputizeMsg), fee = setup.amount, gasLimit = 1000000, accountNumber = 11, sequence = 52, ecKey = ECKey.fromPrivate(setup.balanceAccount.privateKey), chainID = setup.chainId, memoSignerPrivateKey = setup.balanceAccount.privateKey)
+  val (txRawBytes, memo): (Array[Byte], String) = commonUtilities.BlockchainTransaction.getTxRawBytesWithSignedMemo(messages = Seq(identitiesDeputizeMsg), fee = setup.amount, gasLimit = 1000000, accountNumber = 11, sequence = 57, ecKey = ECKey.fromPrivate(setup.balanceAccount.privateKey), chainID = setup.chainId, memoSignerPrivateKey = setup.balanceAccount.privateKey)
 
   val txRawBytesString = commonUtilities.Secrets.byteArrayToString(txRawBytes)
   println("0x" + txRawBytesString)

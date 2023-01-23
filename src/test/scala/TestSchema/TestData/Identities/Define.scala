@@ -23,7 +23,7 @@ class Define extends AnyFunSuite{
 
   val identitiesDefineMsg = commonUtilities.BlockchainTransaction.getDefineIdentityMsgAsAny(setup.balanceAccount.address, setup.identityID.asProtoIdentityID, immutableMetaProperties, immutableProperties, mutableMetaProperties, mutableProperties)
 
-  val (txRawBytes, memo): (Array[Byte], String) = commonUtilities.BlockchainTransaction.getTxRawBytesWithSignedMemo(messages = Seq(identitiesDefineMsg), fee = setup.amount, gasLimit = 1000000, accountNumber = 11, sequence = 42, ecKey = ECKey.fromPrivate(setup.balanceAccount.privateKey), chainID = setup.chainId, memoSignerPrivateKey = setup.balanceAccount.privateKey)
+  val (txRawBytes, memo): (Array[Byte], String) = commonUtilities.BlockchainTransaction.getTxRawBytesWithSignedMemo(messages = Seq(identitiesDefineMsg), fee = setup.amount, gasLimit = 1000000, accountNumber = 11, sequence = 55, ecKey = ECKey.fromPrivate(setup.balanceAccount.privateKey), chainID = setup.chainId, memoSignerPrivateKey = setup.balanceAccount.privateKey)
 
   val txRawBytesString = commonUtilities.Secrets.byteArrayToString(txRawBytes)
   println("0x" + txRawBytesString)

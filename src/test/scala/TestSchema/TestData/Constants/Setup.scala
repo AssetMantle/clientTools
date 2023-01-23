@@ -19,6 +19,8 @@ class Setup {
 
   def accountPath = "cosmos/auth/v1beta1/accounts"
 
+  def secondaryIdentityID = IdentityID(HashID(base64Url().decode("BF4T-y714pGFqXC2zHI_McDZAdRhs-PNSolyu6MUEPo=")))
+
   def identityID = IdentityID(HashID(base64Url().decode("bi2i2mG0cJm61Soa9E3VzyYqmQDEcVs7DGAd4bkkqfk=")))
 
   def assetID = AssetID(HashID(base64Url().decode("mbil64D0TJZScClVWQLe8JlrmtqkTO6pMul9zfLFlBE=")))
