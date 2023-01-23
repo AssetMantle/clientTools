@@ -30,10 +30,14 @@ import com.orders.transactions.revoke.{Message => RevokeOrderMessage}
 import com.orders.transactions.deputize.{Message => DeputizeOrderMessage}
 import com.orders.transactions.take.{Message => TakeOrderMessage}
 import com.orders.transactions.immediate.{Message => ImmediateOrderMessage}
+import com.splits.transactions.send.{Message => SendSplitMessage}
+import com.splits.transactions.wrap.{Message => WrapSplitMessage}
+import com.splits.transactions.unwrap.{Message => UnwrapSplitMessage}
 import com.ids.{AnyOwnableID, AssetID, ClassificationID, IdentityID, OrderID, StringID}
 import com.lists.PropertyList
 import org.bitcoinj.core.ECKey
 import com.types.Height
+import java.lang.Iterable
 
 import scala.jdk.CollectionConverters.IterableHasAsJava
 
@@ -405,5 +409,37 @@ def getTakeOrderMsgAsAny(fromAddress: String, fromID: IdentityID, takerOwnableSp
     .setFromID(fromID)
     .setTakerOwnableSplit(takerOwnableSplit)
     .setOrderID(orderID)
+    .build().toByteString)
+  .build()
+
+//SPLITS
+
+def getSendSplitMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, ownableID: AnyOwnableID, value: String): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.SPLIT_SEND)
+  .setValue(SendSplitMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .setToID(toID)
+    .setOwnableID(ownableID)
+    .setValue(value)
+    .build().toByteString)
+  .build()
+
+def getWrapSplitMsgAsAny(fromAddress: String, fromID: IdentityID, coins: Iterable[Coin]): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.SPLIT_WRAP)
+  .setValue(WrapSplitMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .addAllCoins(coins)
+    .build().toByteString)
+  .build()
+
+def getUnwrapSplitMsgAsAny(fromAddress: String, fromID: IdentityID, ownableID: AnyOwnableID, value: String): protoBufAny = protoBufAny.newBuilder()
+  .setTypeUrl(commonConstants.Blockchain.TransactionMessage.SPLIT_UNWRAP)
+  .setValue(UnwrapSplitMessage.newBuilder()
+    .setFrom(fromAddress)
+    .setFromID(fromID)
+    .setOwnableID(ownableID)
+    .setValue(value)
     .build().toByteString)
   .build()
