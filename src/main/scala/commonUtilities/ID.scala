@@ -12,6 +12,7 @@ import schema.qualified.{Immutables, Mutables}
 import schema.types.Split
 
 import java.math.BigInteger
+import scala.util.Random
 
 
 object ID {
@@ -77,4 +78,6 @@ object ID {
   def getSplitID(split: Split): SplitID = SplitID(ownerID = split.ownerID, ownableID = split.ownableID)
 
   def getSplitID(ownerID: IdentityID, ownableID: OwnableID): SplitID = SplitID(ownerID = ownerID, ownableID = ownableID)
+
+  def getRandomHexadecimal: String = (-Math.abs(Random.nextLong)).toHexString.toUpperCase
 }
