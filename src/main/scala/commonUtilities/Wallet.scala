@@ -2,7 +2,6 @@ package commonUtilities
 
 import com.google.common.collect
 import com.google.common.collect.ImmutableList
-import exceptions.BaseException
 import org.bitcoinj.core.{ECKey, Sha256Hash, Utils}
 import org.bitcoinj.crypto.ChildNumber
 import org.bitcoinj.params.MainNetParams
@@ -65,7 +64,7 @@ object Wallet {
         publicKey = bitcoinWallet.getKeyByPath(hdPathAsList).getPubKey,
         privateKey = bitcoinWallet.getKeyByPath(hdPathAsList).getPrivKeyBytes,
         mnemonics = mnemonics)
-    } else commonConstants.Response.INVALID_MNEMONICS.throwBaseException()
+    } else throw new IllegalArgumentException("INVALID_MNEMONICS")
   }
 
   def getRandomWallet: Wallet = getWallet(Bip39.creatRandomMnemonics())
@@ -75,11 +74,9 @@ object Wallet {
     Utils.bigIntegerToBytes(ecdsaSignature.r, 32) ++ Utils.bigIntegerToBytes(ecdsaSignature.s, 32)
   }
 
-  def ecdsaSign(data: Array[Byte], ecKey: ECKey): Array[Byte] = try {
+  def ecdsaSign(data: Array[Byte], ecKey: ECKey): Array[Byte] = {
     val ecdsaSignature = ecKey.sign(Sha256Hash.wrap(data))
     Utils.bigIntegerToBytes(ecdsaSignature.r, 32) ++ Utils.bigIntegerToBytes(ecdsaSignature.s, 32)
-  } catch {
-    case exception: Exception => commonConstants.Response.SIGNING_FAILED.throwBaseException(exception)
   }
 
 }

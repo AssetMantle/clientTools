@@ -101,7 +101,7 @@ class AttoNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConvers
 
   def &~(that: AttoNumber): AttoNumber = new AttoNumber(this.value &~ that.value)
 
-  def gcd(that: AttoNumber): AttoNumber = if (this.isWhole && that.isWhole) new AttoNumber(this.value.gcd(that.value)) else commonConstants.Response.NUMBER_FORMAT_EXCEPTION.throwBaseException()(AttoNumber.module, AttoNumber.logger)
+  def gcd(that: AttoNumber): AttoNumber = if (this.isWhole && that.isWhole) new AttoNumber(this.value.gcd(that.value)) else throw new IllegalArgumentException("NUMBER_FORMAT_EXCEPTION")
 
   def mod(that: AttoNumber): AttoNumber = new AttoNumber(this.value.mod(that.value))
 
@@ -169,7 +169,7 @@ class AttoNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConvers
 
   def bitCount: Int = this.value.bitCount
 
-  def isProbablePrime(certainty: Int): Boolean = if (this.isWhole) BigInt(this.toLong).isProbablePrime(certainty) else commonConstants.Response.NUMBER_FORMAT_EXCEPTION.throwBaseException()(AttoNumber.module, AttoNumber.logger)
+  def isProbablePrime(certainty: Int): Boolean = if (this.isWhole) BigInt(this.toLong).isProbablePrime(certainty) else throw new IllegalArgumentException("NUMBER_FORMAT_EXCEPTION")
 
   def +(that: String): String = this.toString + that
 
@@ -180,7 +180,7 @@ class AttoNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConvers
   def validSortable: Boolean = this.abs <= AttoNumber.maxValue
 
   def getSortableDecBytes: Array[Byte] = {
-    if (!this.validSortable) commonConstants.Response.UNSORTABLE_ATTONUMBER.throwBaseException()(AttoNumber.module, AttoNumber.logger)
+    if (!this.validSortable) throw new IllegalArgumentException("UNSORTABLE_ATTONUMBER")
     else {
       if (this == AttoNumber.maxValue) "max".getBytes
       else if (this == (-1 * AttoNumber.maxValue)) "--".getBytes

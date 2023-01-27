@@ -31,7 +31,7 @@ object Bech32 {
     hrp + SEP + (data ++ createChecksum(hrp, data)).map(CHARSET_REVERSE_MAP).mkString
   } catch {
     case exception: Exception => logger.error(s"requirement failed: Invalid hrp: $hrp or data: $data. " + exception.getLocalizedMessage)
-      commonConstants.Response.INVALID_HRP_OR_BYTES.throwBaseException(exception)
+      throw new IllegalArgumentException("INVALID_HRP_OR_BYTES")
   }
 
   final def createChecksum(hrp: String, data: Seq[Int5]): Seq[Int5] = {
@@ -103,9 +103,9 @@ object Bech32 {
     (hrp, data.dropRight(6))
   } catch {
     case noSuchElementException: NoSuchElementException => logger.error(s"requirement failed: Invalid Bech32: $bech32. Invalid Character.")
-      commonConstants.Response.INVALID_BECH32_ADDRESS.throwBaseException(noSuchElementException)
+      throw new IllegalArgumentException("INVALID_BECH32_ADDRESS")
     case exception: Exception => logger.error(s"requirement failed: Invalid Bech32: $bech32. " + exception.getLocalizedMessage)
-      commonConstants.Response.INVALID_BECH32_ADDRESS.throwBaseException(exception)
+      throw new IllegalArgumentException("INVALID_BECH32_ADDRESS")
   }
 
   final def verifyCheckSum(hrp: String, data: Seq[Int5]): Boolean =

@@ -36,7 +36,7 @@ object Date {
       case "s" => time.dropRight(1).toLong
       case "m" => 60 * time.dropRight(1).toLong
       case "h" => 60 * 60 * time.dropRight(1).toLong
-      case _ => commonConstants.Response.DATE_FORMAT_ERROR.throwBaseException()
+      case _ => throw new IllegalArgumentException("DATE_FORMAT_ERROR")
     }
   }
 
@@ -51,7 +51,7 @@ object Date {
     true
   } catch {
     case exception: Exception => logger.error(exception.getMessage)
-      commonConstants.Response.DATE_FORMAT_ERROR.throwBaseException()
+      throw new IllegalArgumentException("DATE_FORMAT_ERROR")
   }
 
   class RFC3339(timestamp: String) {
@@ -66,14 +66,14 @@ object Date {
       this.zonedDateTime.isAfter(that.zonedDateTime)
     } catch {
       case exception: Exception => logger.error(exception.getMessage)
-        commonConstants.Response.DATE_FORMAT_ERROR.throwBaseException()
+        throw new IllegalArgumentException("DATE_FORMAT_ERROR")
     }
 
     def isBefore(that: RFC3339): Boolean = try {
       this.zonedDateTime.isBefore(that.zonedDateTime)
     } catch {
       case exception: Exception => logger.error(exception.getMessage)
-        commonConstants.Response.DATE_FORMAT_ERROR.throwBaseException()
+        throw new IllegalArgumentException("DATE_FORMAT_ERROR")
     }
 
     def isEqual(that: RFC3339): Boolean = this.zonedDateTime.isEqual(that.zonedDateTime)
@@ -84,7 +84,7 @@ object Date {
       thisTime.isEqual(thatTime) || thisTime.isAfter(thatTime)
     } catch {
       case exception: Exception => logger.error(exception.getMessage)
-        commonConstants.Response.DATE_FORMAT_ERROR.throwBaseException()
+        throw new IllegalArgumentException("DATE_FORMAT_ERROR")
     }
 
     def isBeforeOrEqual(that: RFC3339): Boolean = try {
@@ -93,21 +93,21 @@ object Date {
       thisTime.isEqual(thatTime) || thisTime.isBefore(thatTime)
     } catch {
       case exception: Exception => logger.error(exception.getMessage)
-        commonConstants.Response.DATE_FORMAT_ERROR.throwBaseException()
+        throw new IllegalArgumentException("DATE_FORMAT_ERROR")
     }
 
     def addEpoch(epoch: Long): RFC3339 = try {
       RFC3339(ZonedDateTime.ofInstant(Instant.ofEpochSecond(this.unix + epoch), ZoneId.of("UTC")).format(DateTimeFormatter.ISO_ZONED_DATE_TIME))
     } catch {
       case exception: Exception => logger.error(exception.getLocalizedMessage)
-        commonConstants.Response.DATE_FORMAT_ERROR.throwBaseException()
+        throw new IllegalArgumentException("DATE_FORMAT_ERROR")
     }
 
     def add(that: RFC3339): RFC3339 = try {
       RFC3339(ZonedDateTime.ofInstant(Instant.ofEpochSecond(this.unix + that.unix), ZoneId.of("UTC")).format(DateTimeFormatter.ISO_ZONED_DATE_TIME))
     } catch {
       case exception: Exception => logger.error(exception.getMessage)
-        commonConstants.Response.DATE_FORMAT_ERROR.throwBaseException()
+        throw new IllegalArgumentException("DATE_FORMAT_ERROR")
     }
 
     def difference(that: RFC3339): Duration = Duration.between(this.zonedDateTime, that.zonedDateTime)
@@ -120,7 +120,7 @@ object Date {
 
   object RFC3339 {
 
-    def apply(value: String): RFC3339 = if (isValidRFC3339(value)) new RFC3339(value) else commonConstants.Response.DATE_FORMAT_ERROR.throwBaseException()
+    def apply(value: String): RFC3339 = if (isValidRFC3339(value)) new RFC3339(value) else throw new IllegalArgumentException("DATE_FORMAT_ERROR")
 
     implicit val rfc3339Writes: Writes[RFC3339] = (rfc3339: RFC3339) => Json.toJson(rfc3339.toString)
 

@@ -18,7 +18,7 @@ object OwnableID {
   def apply(anyOwnableID: AnyOwnableID): OwnableID = anyOwnableID.getImplCase.getNumber match {
     case 1 => AssetID(anyOwnableID.getAssetID)
     case 2 => CoinID(anyOwnableID.getCoinID)
-    case _ => commonConstants.Response.INVALID_OWNABLE_ID_TYPE.throwBaseException()
+    case _ => throw new IllegalArgumentException("INVALID_OWNABLE_ID_TYPE")
   }
 
   def apply(protoBytes: Array[Byte]): OwnableID = OwnableID(AnyOwnableID.parseFrom(protoBytes))

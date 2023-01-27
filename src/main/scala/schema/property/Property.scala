@@ -32,6 +32,6 @@ object Property {
   def apply(anyProperty: AnyProperty): Property = anyProperty.getImplCase.getNumber match {
     case 1 => MesaProperty(anyProperty.getMesaProperty)
     case 2 => MetaProperty(anyProperty.getMetaProperty)
-    case _ => commonConstants.Response.INVALID_PROPERTY_TYPE.throwBaseException()
+    case _ => throw new IllegalArgumentException("INVALID_PROPERTY_TYPE")
   }
 }

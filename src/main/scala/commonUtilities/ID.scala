@@ -29,7 +29,7 @@ object ID {
     case "I" => IDDataTypeID
     case "L" => ListDataTypeID
     case "S" => StringDataTypeID
-    case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
+    case _ => throw new IllegalArgumentException("INVALID_DATA_TYPE")
   }
 
   def getDataTypeID(implNumber: Int): StringID = implNumber match {
@@ -40,7 +40,7 @@ object ID {
     case 5 => IDDataTypeID
     case 6 => StringDataTypeID
     case 7 => ListDataTypeID
-    case _ => commonConstants.Response.INVALID_DATA_TYPE.throwBaseException()
+    case _ => throw new IllegalArgumentException("INVALID_DATA_TYPE")
   }
 
   def generateHashID(bytesList: Array[Byte]*): HashID = {

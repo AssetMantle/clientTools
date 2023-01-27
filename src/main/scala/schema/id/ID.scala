@@ -34,7 +34,7 @@ object ID {
     case 9 => PropertyID(anyID.getPropertyID)
     case 10 => SplitID(anyID.getSplitID)
     case 11 => StringID(anyID.getStringID)
-    case _ => commonConstants.Response.UNKNOWN_ID_TYPE.throwBaseException()
+    case _ => throw new IllegalArgumentException("UNKNOWN_ID_TYPE")
   }
 
   def apply(protoBytes: Array[Byte]): ID = ID(AnyID.parseFrom(protoBytes))
