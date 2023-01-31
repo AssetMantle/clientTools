@@ -43,17 +43,23 @@ object ID {
     case _ => throw new IllegalArgumentException("INVALID_DATA_TYPE")
   }
 
-  def generateHashID(bytesList: Array[Byte]*): HashID = if (bytesList.nonEmpty) {
+  def generateHashID(bytesList: Array[Byte]*): HashID = if (bytesList.isEmpty || (bytesList.length == 1 && bytesList.head.length == 0)) {
+    HashID(value = Array[Byte]())
+  } else {
     HashID(protoHashID.newBuilder().setIDBytes(ByteString.copyFrom(
       commonUtilities.Secrets.sha256Hash(bytesList.filter(_.length != 0).sortWith((x, y) => new BigInteger(x).compareTo(new BigInteger(y)) == -1).toArray.flatten)
     )).build())
-  } else HashID(value = Array[Byte]())
+  }
 
-  def generateHashIDFromList(bytesList: Seq[Array[Byte]]): HashID = if (bytesList.nonEmpty) {
+  def generateHashIDFromList(bytesList: Seq[Array[Byte]]): HashID = if (bytesList.isEmpty || (bytesList.length == 1 && bytesList.head.length == 0)) {
+    HashID(value = Array[Byte]())
+  } else {
     HashID(protoHashID.newBuilder().setIDBytes(ByteString.copyFrom(
       commonUtilities.Secrets.sha256Hash(bytesList.filter(_.length != 0).sortWith((x, y) => new BigInteger(x).compareTo(new BigInteger(y)) == -1).toArray.flatten)
     )).build())
-  } else HashID(value = Array[Byte]())
+  }
+
+  else
 
   def getClassificationID(immutables: Immutables, mutables: Mutables): ClassificationID = {
     val immutablesHashID = generateHashIDFromList(immutables.propertyList.getProperties.map(_.getID.getBytes))
