@@ -17,5 +17,5 @@ case class PropertyID(keyID: StringID, typeID: StringID) extends ID {
 }
 
 object PropertyID {
-  def apply(anyID: protoPropertyID): PropertyID = PropertyID(keyID = StringID(anyID.getKeyID), typeID = StringID(anyID.getKeyID))
+  def apply(anyID: protoPropertyID): PropertyID = PropertyID(keyID = StringID(anyID.getKeyID), typeID = StringID(anyID.getTypeID))
 }
