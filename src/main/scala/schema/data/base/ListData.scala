@@ -25,7 +25,7 @@ case class ListData(dataList: Seq[AnyData]) extends Data {
       this.dataList.map(x => Data(x).getBytes).filter(_.length != 0).sortWith((x, y) => new BigInteger(x).compareTo(new BigInteger(y)) == -1).toArray.flatten
    }
 
-   def getProtoBytes: Array[Byte] = this.asProtoListData.toByteArray
+   def getProtoBytes: Array[Byte] = this.asProtoListData.toByteString.toByteArray
 
  override def viewString: String = this.toString
 }

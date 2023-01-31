@@ -14,7 +14,7 @@ case class IDList(idList: Seq[ID]) {
 
   def asProtoIDList: protoIDList = protoIDList.newBuilder().addAllIDList(this.idList.map(_.toAnyID).asJava).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoIDList.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoIDList.toByteString.toByteArray
 
 }
 

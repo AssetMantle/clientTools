@@ -15,7 +15,7 @@ case class CoinID(value: StringID) extends OwnableID {
 
   def toAnyID: AnyID = AnyID.newBuilder().setOwnableID(this.toAnyOwnableID).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoCoinID.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoCoinID.toByteString.toByteArray
 
 }
 

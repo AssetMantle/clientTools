@@ -23,7 +23,7 @@ case class BooleanData(value: Boolean) extends Data {
 
   def toAnyData: AnyData = AnyData.newBuilder().setBooleanData(this.asProtoBooleanData).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoBooleanData.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoBooleanData.toByteString.toByteArray
 
   def viewString: String = this.value.toString
 }

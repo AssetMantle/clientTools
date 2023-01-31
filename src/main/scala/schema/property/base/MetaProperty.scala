@@ -26,7 +26,7 @@ case class MetaProperty(id: PropertyID, data: AnyData) extends Property {
 
   def scrub(): MesaProperty = MesaProperty(id = this.id, dataID = this.getDataID)
 
-  def getProtoBytes: Array[Byte] = this.asProtoMetaProperty.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoMetaProperty.toByteString.toByteArray
 }
 
 object MetaProperty {

@@ -13,7 +13,7 @@ case class PropertyID(keyID: StringID, typeID: StringID) extends ID {
 
   def toAnyID: AnyID = AnyID.newBuilder().setPropertyID(this.asProtoPropertyID).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoPropertyID.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoPropertyID.toByteString.toByteArray
 }
 
 object PropertyID {

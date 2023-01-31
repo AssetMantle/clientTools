@@ -20,7 +20,7 @@ case class DecData(value: AttoNumber) extends Data {
 
   def toAnyData: AnyData = AnyData.newBuilder().setDecData(this.asProtoDecData).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoDecData.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoDecData.toByteString.toByteArray
 
   def viewString: String = this.value.toString
 }

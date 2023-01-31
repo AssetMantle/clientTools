@@ -13,7 +13,7 @@ case class IdentityID(hashID: HashID) extends ID {
 
   def toAnyID: AnyID = AnyID.newBuilder().setIdentityID(this.asProtoIdentityID).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoIdentityID.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoIdentityID.toByteString.toByteArray
 
 }
 

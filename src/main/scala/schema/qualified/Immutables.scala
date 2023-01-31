@@ -20,7 +20,7 @@ case class Immutables(propertyList: PropertyList) {
 
   def asProtoImmutables: protoImmutables = protoImmutables.newBuilder().setPropertyList(this.getProtoPropertyList).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoImmutables.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoImmutables.toByteString.toByteArray
 }
 
 object Immutables {

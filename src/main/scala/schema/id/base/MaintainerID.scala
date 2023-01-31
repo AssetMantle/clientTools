@@ -13,7 +13,7 @@ case class MaintainerID(hashID: HashID) extends ID {
 
   def toAnyID: AnyID = AnyID.newBuilder().setMaintainerID(this.asProtoMaintainerID).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoMaintainerID.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoMaintainerID.toByteString.toByteArray
 
 }
 

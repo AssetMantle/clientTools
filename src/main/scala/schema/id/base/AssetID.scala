@@ -15,7 +15,7 @@ case class AssetID(hashID: HashID) extends OwnableID {
 
   def toAnyID: AnyID = AnyID.newBuilder().setAssetID(this.asProtoAssetID).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoAssetID.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoAssetID.toByteString.toByteArray
 
 }
 

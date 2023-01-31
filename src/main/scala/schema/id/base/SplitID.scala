@@ -14,7 +14,7 @@ case class SplitID(ownerID: IdentityID, ownableID: OwnableID) extends ID {
 
   def toAnyID: AnyID = AnyID.newBuilder().setSplitID(this.asProtoSplitID).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoSplitID.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoSplitID.toByteString.toByteArray
 }
 
 object SplitID {

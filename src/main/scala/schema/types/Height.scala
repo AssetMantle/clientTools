@@ -12,7 +12,7 @@ case class Height(value: Long) {
 
   def asProtoHeight: protoHeight = protoHeight.newBuilder().setValue(this.value).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoHeight.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoHeight.toByteString.toByteArray
 
 }
 
