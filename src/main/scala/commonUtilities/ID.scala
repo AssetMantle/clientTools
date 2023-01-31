@@ -59,8 +59,6 @@ object ID {
     )).build())
   }
 
-  else
-
   def getClassificationID(immutables: Immutables, mutables: Mutables): ClassificationID = {
     val immutablesHashID = generateHashIDFromList(immutables.propertyList.getProperties.map(_.getID.getBytes))
     val mutablesHashID = generateHashIDFromList(mutables.propertyList.getProperties.map(_.getID.getBytes))
