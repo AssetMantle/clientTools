@@ -2,7 +2,6 @@ package commonUtilities
 
 import com.google.common.collect
 import com.google.common.collect.ImmutableList
-import exceptions.BaseException
 import org.bitcoinj.core.{ECKey, Sha256Hash, Utils}
 import org.bitcoinj.crypto.ChildNumber
 import org.bitcoinj.params.MainNetParams

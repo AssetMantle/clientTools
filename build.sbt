@@ -33,3 +33,15 @@ libraryDependencies ++= Seq(
 libraryDependencies += "com.google.protobuf" % "protobuf-java" % "3.21.12"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.14" % Test
+
+libraryDependencies += "org.scalaj" % "scalaj-http_2.11" % "2.3.0"
+
+libraryDependencies ++= Seq(
+  "com.typesafe.play" %% "play-mailer" % "8.0.1",
+  "com.typesafe.play" %% "play-mailer-guice" % "8.0.1"
+)
+
+libraryDependencies ++= Seq(
+  "org.slf4j" % "slf4j-api" % "2.0.6",
+  "org.slf4j" % "slf4j-simple" % "2.0.6"
+)

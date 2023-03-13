@@ -25,9 +25,7 @@ class Mint extends AnyFunSuite{
   val mutableProperties = PropertyList(Seq(MetaProperty(PropertyID(StringID("D"), StringID("S")), StringData("d").toAnyData))).asProtoPropertyList
 
   val assetMintMsg = commonUtilities.BlockchainTransaction.getMintAssetMsgAsAny(setup.balanceAccount.address, fromID.asProtoIdentityID, fromID.asProtoIdentityID, classificationID, immutableMetaProperties, immutableProperties, mutableMetaProperties, mutableProperties)
-
   val (txRawBytes, memo): (Array[Byte], String) = commonUtilities.BlockchainTransaction.getTxRawBytesWithSignedMemo(messages = Seq(assetMintMsg), fee = setup.amount, gasLimit = 1000000, accountNumber = 11, sequence = 51, ecKey = ECKey.fromPrivate(setup.balanceAccount.privateKey), chainID = setup.chainId, memoSignerPrivateKey = setup.balanceAccount.privateKey)
-
   val txRawBytesString = commonUtilities.Secrets.byteArrayToString(txRawBytes)
   println("0x" + txRawBytesString)
 }
