@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     value_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Pair();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.base.kv.v1beta1.KvProto.internal_static_cosmos_base_kv_v1beta1_Pair_descriptor;
+    return KvProto.internal_static_cosmos_base_kv_v1beta1_Pair_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.base.kv.v1beta1.KvProto.internal_static_cosmos_base_kv_v1beta1_Pair_fieldAccessorTable
+    return KvProto.internal_static_cosmos_base_kv_v1beta1_Pair_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.base.kv.v1beta1.Pair.class, com.cosmos.base.kv.v1beta1.Pair.Builder.class);
+            Pair.class, Builder.class);
   }
 
   public static final int KEY_FIELD_NUMBER = 1;
@@ -50,7 +50,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes key = 1 [json_name = "key"];</code>
    * @return The key.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getKey() {
     return key_;
   }
@@ -61,13 +61,13 @@ private static final long serialVersionUID = 0L;
    * <code>bytes value = 2 [json_name = "value"];</code>
    * @return The value.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getValue() {
     return value_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -77,7 +77,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!key_.isEmpty()) {
@@ -89,7 +89,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -108,15 +108,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.base.kv.v1beta1.Pair)) {
+    if (!(obj instanceof Pair)) {
       return super.equals(obj);
     }
-    com.cosmos.base.kv.v1beta1.Pair other = (com.cosmos.base.kv.v1beta1.Pair) obj;
+    Pair other = (Pair) obj;
 
     if (!getKey()
         .equals(other.getKey())) return false;
@@ -126,7 +126,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -142,69 +142,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.base.kv.v1beta1.Pair parseFrom(
+  public static Pair parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseFrom(
+  public static Pair parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseFrom(
+  public static Pair parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseFrom(
+  public static Pair parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseFrom(byte[] data)
+  public static Pair parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseFrom(
+  public static Pair parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseFrom(java.io.InputStream input)
+  public static Pair parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseFrom(
+  public static Pair parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseDelimitedFrom(java.io.InputStream input)
+  public static Pair parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseDelimitedFrom(
+  public static Pair parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseFrom(
+  public static Pair parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.kv.v1beta1.Pair parseFrom(
+  public static Pair parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -212,23 +212,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.base.kv.v1beta1.Pair prototype) {
+  public static Builder newBuilder(Pair prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -242,18 +242,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.kv.v1beta1.Pair)
-      com.cosmos.base.kv.v1beta1.PairOrBuilder {
+      PairOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.base.kv.v1beta1.KvProto.internal_static_cosmos_base_kv_v1beta1_Pair_descriptor;
+      return KvProto.internal_static_cosmos_base_kv_v1beta1_Pair_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.base.kv.v1beta1.KvProto.internal_static_cosmos_base_kv_v1beta1_Pair_fieldAccessorTable
+      return KvProto.internal_static_cosmos_base_kv_v1beta1_Pair_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.base.kv.v1beta1.Pair.class, com.cosmos.base.kv.v1beta1.Pair.Builder.class);
+              Pair.class, Builder.class);
     }
 
     // Construct using com.cosmos.base.kv.v1beta1.Pair.newBuilder()
@@ -262,11 +262,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -275,35 +275,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.base.kv.v1beta1.KvProto.internal_static_cosmos_base_kv_v1beta1_Pair_descriptor;
+      return KvProto.internal_static_cosmos_base_kv_v1beta1_Pair_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.kv.v1beta1.Pair getDefaultInstanceForType() {
-      return com.cosmos.base.kv.v1beta1.Pair.getDefaultInstance();
+    @Override
+    public Pair getDefaultInstanceForType() {
+      return Pair.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.base.kv.v1beta1.Pair build() {
-      com.cosmos.base.kv.v1beta1.Pair result = buildPartial();
+    @Override
+    public Pair build() {
+      Pair result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.kv.v1beta1.Pair buildPartial() {
-      com.cosmos.base.kv.v1beta1.Pair result = new com.cosmos.base.kv.v1beta1.Pair(this);
+    @Override
+    public Pair buildPartial() {
+      Pair result = new Pair(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.base.kv.v1beta1.Pair result) {
+    private void buildPartial0(Pair result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.key_ = key_;
@@ -313,50 +313,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.base.kv.v1beta1.Pair) {
-        return mergeFrom((com.cosmos.base.kv.v1beta1.Pair)other);
+      if (other instanceof Pair) {
+        return mergeFrom((Pair)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.base.kv.v1beta1.Pair other) {
-      if (other == com.cosmos.base.kv.v1beta1.Pair.getDefaultInstance()) return this;
+    public Builder mergeFrom(Pair other) {
+      if (other == Pair.getDefaultInstance()) return this;
       if (other.getKey() != com.google.protobuf.ByteString.EMPTY) {
         setKey(other.getKey());
       }
@@ -368,18 +368,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -421,7 +421,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes key = 1 [json_name = "key"];</code>
      * @return The key.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getKey() {
       return key_;
     }
@@ -453,7 +453,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes value = 2 [json_name = "value"];</code>
      * @return The value.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getValue() {
       return value_;
     }
@@ -479,13 +479,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -496,18 +496,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.kv.v1beta1.Pair)
-  private static final com.cosmos.base.kv.v1beta1.Pair DEFAULT_INSTANCE;
+  private static final Pair DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.base.kv.v1beta1.Pair();
+    DEFAULT_INSTANCE = new Pair();
   }
 
-  public static com.cosmos.base.kv.v1beta1.Pair getDefaultInstance() {
+  public static Pair getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Pair>
       PARSER = new com.google.protobuf.AbstractParser<Pair>() {
-    @java.lang.Override
+    @Override
     public Pair parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -531,13 +531,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Pair> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.base.kv.v1beta1.Pair getDefaultInstanceForType() {
+  @Override
+  public Pair getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

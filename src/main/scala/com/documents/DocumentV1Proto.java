@@ -27,7 +27,7 @@ public final class DocumentV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\'schema/documents/base/document.v1.prot" +
       "o\022\tdocuments\032)schema/ids/base/classifica" +
       "tionID.v1.proto\032)schema/qualified/base/i" +
@@ -56,7 +56,7 @@ public final class DocumentV1Proto {
     internal_static_documents_Document_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_documents_Document_descriptor,
-        new java.lang.String[] { "ClassificationID", "Immutables", "Mutables", });
+        new String[] { "ClassificationID", "Immutables", "Mutables", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

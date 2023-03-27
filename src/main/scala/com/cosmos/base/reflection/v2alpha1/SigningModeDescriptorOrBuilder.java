@@ -15,7 +15,7 @@ public interface SigningModeDescriptorOrBuilder extends
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <pre>
    * name defines the unique name of the signing mode
@@ -46,7 +46,7 @@ public interface SigningModeDescriptorOrBuilder extends
    * <code>string authn_info_provider_method_fullname = 3 [json_name = "authnInfoProviderMethodFullname"];</code>
    * @return The authnInfoProviderMethodFullname.
    */
-  java.lang.String getAuthnInfoProviderMethodFullname();
+  String getAuthnInfoProviderMethodFullname();
   /**
    * <pre>
    * authn_info_provider_method_fullname defines the fullname of the method to call to get

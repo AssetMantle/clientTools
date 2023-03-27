@@ -27,7 +27,7 @@ public final class KeyV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n(modules/orders/internal/key/key.v1.pro" +
       "to\022\006orders\032 schema/ids/base/orderID.v1.p" +
       "roto\"/\n\003Key\022(\n\torder_i_d\030\001 \001(\0132\014.ids.Ord" +
@@ -47,7 +47,7 @@ public final class KeyV1Proto {
     internal_static_orders_Key_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_orders_Key_descriptor,
-        new java.lang.String[] { "OrderID", });
+        new String[] { "OrderID", });
     com.ids.OrderIDV1Proto.getDescriptor();
   }
 

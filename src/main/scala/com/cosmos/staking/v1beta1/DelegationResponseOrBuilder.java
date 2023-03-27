@@ -16,11 +16,11 @@ public interface DelegationResponseOrBuilder extends
    * <code>.cosmos.staking.v1beta1.Delegation delegation = 1 [json_name = "delegation", (.gogoproto.nullable) = false];</code>
    * @return The delegation.
    */
-  com.cosmos.staking.v1beta1.Delegation getDelegation();
+  Delegation getDelegation();
   /**
    * <code>.cosmos.staking.v1beta1.Delegation delegation = 1 [json_name = "delegation", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.DelegationOrBuilder getDelegationOrBuilder();
+  DelegationOrBuilder getDelegationOrBuilder();
 
   /**
    * <code>.cosmos.base.v1beta1.Coin balance = 2 [json_name = "balance", (.gogoproto.nullable) = false];</code>

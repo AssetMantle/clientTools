@@ -37,7 +37,7 @@ public final class ValidatorProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n tendermint/types/validator.proto\022\020tend" +
       "ermint.types\032\024gogoproto/gogo.proto\032\034tend" +
       "ermint/crypto/keys.proto\"\262\001\n\014ValidatorSe" +
@@ -70,19 +70,19 @@ public final class ValidatorProto {
     internal_static_tendermint_types_ValidatorSet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_ValidatorSet_descriptor,
-        new java.lang.String[] { "Validators", "Proposer", "TotalVotingPower", });
+        new String[] { "Validators", "Proposer", "TotalVotingPower", });
     internal_static_tendermint_types_Validator_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_tendermint_types_Validator_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_Validator_descriptor,
-        new java.lang.String[] { "Address", "PubKey", "VotingPower", "ProposerPriority", });
+        new String[] { "Address", "PubKey", "VotingPower", "ProposerPriority", });
     internal_static_tendermint_types_SimpleValidator_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_tendermint_types_SimpleValidator_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_SimpleValidator_descriptor,
-        new java.lang.String[] { "PubKey", "VotingPower", });
+        new String[] { "PubKey", "VotingPower", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);

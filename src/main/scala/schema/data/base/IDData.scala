@@ -1,24 +1,24 @@
 package schema.data.base
 
-import com.data.{AnyData, IDData => protoIDData}
-import com.ids.{AnyID, DataID => protoDataID}
 import schema.data.Data
 import schema.id.base.{DataID, HashID, StringID}
 import schema.id.{ID, base}
 
 case class IDData(value: AnyID) extends Data {
 
-  def asID: ID = ID(this.value)
+  def getID: ID = ID(this.value)
 
-  def getType: StringID = commonConstants.DataTypeID.IDDataTypeID
+  def getBondWeight: Int = constants.Data.IDDataWeight
 
-  def getID: DataID = base.DataID(typeID = commonConstants.DataTypeID.IDDataTypeID, hashID = this.generateHashID)
+  def getType: StringID = constants.Data.IDDataTypeID
 
-  def getBytes: Array[Byte] = this.asID.getBytes
+  def getDataID: DataID = base.DataID(typeID = constants.Data.IDDataTypeID, hashID = this.generateHashID)
 
-  def generateHashID: HashID = commonUtilities.ID.generateHashID(this.getBytes)
+  def getBytes: Array[Byte] = this.getID.getBytes
 
-  def getProtoDataID: protoDataID = this.getID.asProtoDataID
+  def generateHashID: HashID = utilities.ID.generateHashID(this.getBytes)
+
+  def getProtoDataID: protoDataID = this.getDataID.asProtoDataID
 
   def zeroValue: Data = IDData(StringID("").toAnyID)
 
@@ -28,7 +28,9 @@ case class IDData(value: AnyID) extends Data {
 
   def getProtoBytes: Array[Byte] = this.asProtoIDData.toByteString.toByteArray
 
-  def viewString: String = this.asID.asString
+  def viewString: String = this.getID.asString
+
+  def getAnyID: AnyID = this.value
 }
 
 object IDData {

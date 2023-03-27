@@ -16,11 +16,11 @@ public interface SnapshotItemOrBuilder extends
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
    * @return The store.
    */
-  com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem getStore();
+  SnapshotStoreItem getStore();
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
    */
-  com.cosmos.base.snapshots.v1beta1.SnapshotStoreItemOrBuilder getStoreOrBuilder();
+  SnapshotStoreItemOrBuilder getStoreOrBuilder();
 
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
@@ -31,11 +31,11 @@ public interface SnapshotItemOrBuilder extends
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
    * @return The iavl.
    */
-  com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem getIavl();
+  SnapshotIAVLItem getIavl();
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
    */
-  com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItemOrBuilder getIavlOrBuilder();
+  SnapshotIAVLItemOrBuilder getIavlOrBuilder();
 
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
@@ -46,11 +46,11 @@ public interface SnapshotItemOrBuilder extends
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
    * @return The extension.
    */
-  com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta getExtension();
+  SnapshotExtensionMeta getExtension();
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
    */
-  com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMetaOrBuilder getExtensionOrBuilder();
+  SnapshotExtensionMetaOrBuilder getExtensionOrBuilder();
 
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
@@ -61,11 +61,11 @@ public interface SnapshotItemOrBuilder extends
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
    * @return The extensionPayload.
    */
-  com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload getExtensionPayload();
+  SnapshotExtensionPayload getExtensionPayload();
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
    */
-  com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayloadOrBuilder getExtensionPayloadOrBuilder();
+  SnapshotExtensionPayloadOrBuilder getExtensionPayloadOrBuilder();
 
-  com.cosmos.base.snapshots.v1beta1.SnapshotItem.ItemCase getItemCase();
+  SnapshotItem.ItemCase getItemCase();
 }

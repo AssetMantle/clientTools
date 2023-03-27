@@ -14,7 +14,7 @@ public interface SignatureDescriptorsOrBuilder extends
    *
    * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
    */
-  java.util.List<com.cosmos.tx.signing.v1beta1.SignatureDescriptor> 
+  java.util.List<SignatureDescriptor>
       getSignaturesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface SignatureDescriptorsOrBuilder extends
    *
    * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
    */
-  com.cosmos.tx.signing.v1beta1.SignatureDescriptor getSignatures(int index);
+  SignatureDescriptor getSignatures(int index);
   /**
    * <pre>
    * signatures are the signature descriptors
@@ -39,7 +39,7 @@ public interface SignatureDescriptorsOrBuilder extends
    *
    * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
    */
-  java.util.List<? extends com.cosmos.tx.signing.v1beta1.SignatureDescriptorOrBuilder> 
+  java.util.List<? extends SignatureDescriptorOrBuilder>
       getSignaturesOrBuilderList();
   /**
    * <pre>
@@ -48,6 +48,6 @@ public interface SignatureDescriptorsOrBuilder extends
    *
    * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
    */
-  com.cosmos.tx.signing.v1beta1.SignatureDescriptorOrBuilder getSignaturesOrBuilder(
+  SignatureDescriptorOrBuilder getSignaturesOrBuilder(
       int index);
 }

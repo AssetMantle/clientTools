@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n<modules/assets/internal/transactions/m" +
       "utate/message.v1.proto\022\032assets.transacti" +
       "ons.mutate\032 schema/ids/base/assetID.v1.p" +
@@ -60,7 +60,7 @@ public final class MessageV1Proto {
     internal_static_assets_transactions_mutate_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_assets_transactions_mutate_Message_descriptor,
-        new java.lang.String[] { "From", "FromID", "AssetID", "MutableMetaProperties", "MutableProperties", });
+        new String[] { "From", "FromID", "AssetID", "MutableMetaProperties", "MutableProperties", });
     com.ids.AssetIDV1Proto.getDescriptor();
     com.ids.IdentityIDV1Proto.getDescriptor();
     com.lists.PropertyListV1Proto.getDescriptor();

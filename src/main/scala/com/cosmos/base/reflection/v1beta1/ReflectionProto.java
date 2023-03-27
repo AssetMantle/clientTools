@@ -42,7 +42,7 @@ public final class ReflectionProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n/cosmos/base/reflection/v1beta1/reflect" +
       "ion.proto\022\036cosmos.base.reflection.v1beta" +
       "1\032\034google/api/annotations.proto\"\032\n\030ListA" +
@@ -82,25 +82,25 @@ public final class ReflectionProto {
     internal_static_cosmos_base_reflection_v1beta1_ListAllInterfacesRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v1beta1_ListAllInterfacesRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_base_reflection_v1beta1_ListAllInterfacesResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_base_reflection_v1beta1_ListAllInterfacesResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v1beta1_ListAllInterfacesResponse_descriptor,
-        new java.lang.String[] { "InterfaceNames", });
+        new String[] { "InterfaceNames", });
     internal_static_cosmos_base_reflection_v1beta1_ListImplementationsRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_base_reflection_v1beta1_ListImplementationsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v1beta1_ListImplementationsRequest_descriptor,
-        new java.lang.String[] { "InterfaceName", });
+        new String[] { "InterfaceName", });
     internal_static_cosmos_base_reflection_v1beta1_ListImplementationsResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_base_reflection_v1beta1_ListImplementationsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v1beta1_ListImplementationsResponse_descriptor,
-        new java.lang.String[] { "ImplementationMessageNames", });
+        new String[] { "ImplementationMessageNames", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.google.api.AnnotationsProto.http);

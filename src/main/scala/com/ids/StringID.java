@@ -19,46 +19,42 @@ private static final long serialVersionUID = 0L;
     iDString_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new StringID();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ids.StringIDV1Proto.internal_static_ids_StringID_descriptor;
+    return StringIDV1Proto.internal_static_ids_StringID_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ids.StringIDV1Proto.internal_static_ids_StringID_fieldAccessorTable
+    return StringIDV1Proto.internal_static_ids_StringID_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ids.StringID.class, com.ids.StringID.Builder.class);
+            StringID.class, Builder.class);
   }
 
   public static final int I_D_STRING_FIELD_NUMBER = 1;
-  private volatile java.lang.Object iDString_;
+  @SuppressWarnings("serial")
+  private volatile Object iDString_ = "";
   /**
    * <code>string i_d_string = 1 [json_name = "iDString"];</code>
    * @return The iDString.
    */
-  @java.lang.Override
-  public java.lang.String getIDString() {
-    java.lang.Object ref = iDString_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getIDString() {
+    Object ref = iDString_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       iDString_ = s;
       return s;
     }
@@ -67,14 +63,14 @@ private static final long serialVersionUID = 0L;
    * <code>string i_d_string = 1 [json_name = "iDString"];</code>
    * @return The bytes for iDString.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getIDStringBytes() {
-    java.lang.Object ref = iDString_;
-    if (ref instanceof java.lang.String) {
+    Object ref = iDString_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       iDString_ = b;
       return b;
     } else {
@@ -83,7 +79,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -93,7 +89,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(iDString_)) {
@@ -102,7 +98,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -116,15 +112,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ids.StringID)) {
+    if (!(obj instanceof StringID)) {
       return super.equals(obj);
     }
-    com.ids.StringID other = (com.ids.StringID) obj;
+    StringID other = (StringID) obj;
 
     if (!getIDString()
         .equals(other.getIDString())) return false;
@@ -132,7 +128,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -146,69 +142,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ids.StringID parseFrom(
+  public static StringID parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.StringID parseFrom(
+  public static StringID parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.StringID parseFrom(
+  public static StringID parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.StringID parseFrom(
+  public static StringID parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.StringID parseFrom(byte[] data)
+  public static StringID parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.StringID parseFrom(
+  public static StringID parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.StringID parseFrom(java.io.InputStream input)
+  public static StringID parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ids.StringID parseFrom(
+  public static StringID parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ids.StringID parseDelimitedFrom(java.io.InputStream input)
+  public static StringID parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ids.StringID parseDelimitedFrom(
+  public static StringID parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ids.StringID parseFrom(
+  public static StringID parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ids.StringID parseFrom(
+  public static StringID parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -216,23 +212,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ids.StringID prototype) {
+  public static Builder newBuilder(StringID prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -242,18 +238,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ids.StringID)
-      com.ids.StringIDOrBuilder {
+      StringIDOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ids.StringIDV1Proto.internal_static_ids_StringID_descriptor;
+      return StringIDV1Proto.internal_static_ids_StringID_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ids.StringIDV1Proto.internal_static_ids_StringID_fieldAccessorTable
+      return StringIDV1Proto.internal_static_ids_StringID_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ids.StringID.class, com.ids.StringID.Builder.class);
+              StringID.class, Builder.class);
     }
 
     // Construct using com.ids.StringID.newBuilder()
@@ -262,92 +258,100 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       iDString_ = "";
-
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ids.StringIDV1Proto.internal_static_ids_StringID_descriptor;
+      return StringIDV1Proto.internal_static_ids_StringID_descriptor;
     }
 
-    @java.lang.Override
-    public com.ids.StringID getDefaultInstanceForType() {
-      return com.ids.StringID.getDefaultInstance();
+    @Override
+    public StringID getDefaultInstanceForType() {
+      return StringID.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ids.StringID build() {
-      com.ids.StringID result = buildPartial();
+    @Override
+    public StringID build() {
+      StringID result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ids.StringID buildPartial() {
-      com.ids.StringID result = new com.ids.StringID(this);
-      result.iDString_ = iDString_;
+    @Override
+    public StringID buildPartial() {
+      StringID result = new StringID(this);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(StringID result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.iDString_ = iDString_;
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ids.StringID) {
-        return mergeFrom((com.ids.StringID)other);
+      if (other instanceof StringID) {
+        return mergeFrom((StringID)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ids.StringID other) {
-      if (other == com.ids.StringID.getDefaultInstance()) return this;
+    public Builder mergeFrom(StringID other) {
+      if (other == StringID.getDefaultInstance()) return this;
       if (!other.getIDString().isEmpty()) {
         iDString_ = other.iDString_;
+        bitField0_ |= 0x00000001;
         onChanged();
       }
       this.mergeUnknownFields(other.getUnknownFields());
@@ -355,18 +359,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -378,7 +382,7 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               iDString_ = input.readStringRequireUtf8();
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             default: {
@@ -396,22 +400,23 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
-    private java.lang.Object iDString_ = "";
+    private Object iDString_ = "";
     /**
      * <code>string i_d_string = 1 [json_name = "iDString"];</code>
      * @return The iDString.
      */
-    public java.lang.String getIDString() {
-      java.lang.Object ref = iDString_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getIDString() {
+      Object ref = iDString_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         iDString_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -420,11 +425,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getIDStringBytes() {
-      java.lang.Object ref = iDString_;
+      Object ref = iDString_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         iDString_ = b;
         return b;
       } else {
@@ -437,12 +442,10 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setIDString(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        String value) {
+      if (value == null) { throw new NullPointerException(); }
       iDString_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -451,8 +454,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearIDString() {
-      
       iDString_ = getDefaultInstance().getIDString();
+      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -463,22 +466,20 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setIDStringBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       iDString_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -489,18 +490,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ids.StringID)
-  private static final com.ids.StringID DEFAULT_INSTANCE;
+  private static final StringID DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ids.StringID();
+    DEFAULT_INSTANCE = new StringID();
   }
 
-  public static com.ids.StringID getDefaultInstance() {
+  public static StringID getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<StringID>
       PARSER = new com.google.protobuf.AbstractParser<StringID>() {
-    @java.lang.Override
+    @Override
     public StringID parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -524,13 +525,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<StringID> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ids.StringID getDefaultInstanceForType() {
+  @Override
+  public StringID getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -11,7 +11,7 @@ public interface MsgConnectionOpenConfirmOrBuilder extends
    * <code>string connection_id = 1 [json_name = "connectionId", (.gogoproto.moretags) = "yaml:&#92;"connection_id&#92;""];</code>
    * @return The connectionId.
    */
-  java.lang.String getConnectionId();
+  String getConnectionId();
   /**
    * <code>string connection_id = 1 [json_name = "connectionId", (.gogoproto.moretags) = "yaml:&#92;"connection_id&#92;""];</code>
    * @return The bytes for connectionId.
@@ -48,7 +48,7 @@ public interface MsgConnectionOpenConfirmOrBuilder extends
    * <code>string signer = 4 [json_name = "signer"];</code>
    * @return The signer.
    */
-  java.lang.String getSigner();
+  String getSigner();
   /**
    * <code>string signer = 4 [json_name = "signer"];</code>
    * @return The bytes for signer.

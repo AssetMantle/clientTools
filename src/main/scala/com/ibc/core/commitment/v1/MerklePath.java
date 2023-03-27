@@ -25,24 +25,24 @@ private static final long serialVersionUID = 0L;
     keyPath_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new MerklePath();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.commitment.v1.CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePath_descriptor;
+    return CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePath_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.commitment.v1.CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePath_fieldAccessorTable
+    return CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePath_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.commitment.v1.MerklePath.class, com.ibc.core.commitment.v1.MerklePath.Builder.class);
+            MerklePath.class, Builder.class);
   }
 
   public static final int KEY_PATH_FIELD_NUMBER = 1;
@@ -68,7 +68,7 @@ private static final long serialVersionUID = 0L;
    * @param index The index of the element to return.
    * @return The keyPath at the given index.
    */
-  public java.lang.String getKeyPath(int index) {
+  public String getKeyPath(int index) {
     return keyPath_.get(index);
   }
   /**
@@ -82,7 +82,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -92,7 +92,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < keyPath_.size(); i++) {
@@ -101,7 +101,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -120,15 +120,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.commitment.v1.MerklePath)) {
+    if (!(obj instanceof MerklePath)) {
       return super.equals(obj);
     }
-    com.ibc.core.commitment.v1.MerklePath other = (com.ibc.core.commitment.v1.MerklePath) obj;
+    MerklePath other = (MerklePath) obj;
 
     if (!getKeyPathList()
         .equals(other.getKeyPathList())) return false;
@@ -136,7 +136,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -152,69 +152,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.commitment.v1.MerklePath parseFrom(
+  public static MerklePath parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseFrom(
+  public static MerklePath parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseFrom(
+  public static MerklePath parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseFrom(
+  public static MerklePath parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseFrom(byte[] data)
+  public static MerklePath parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseFrom(
+  public static MerklePath parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseFrom(java.io.InputStream input)
+  public static MerklePath parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseFrom(
+  public static MerklePath parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseDelimitedFrom(java.io.InputStream input)
+  public static MerklePath parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseDelimitedFrom(
+  public static MerklePath parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseFrom(
+  public static MerklePath parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.commitment.v1.MerklePath parseFrom(
+  public static MerklePath parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -222,23 +222,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.commitment.v1.MerklePath prototype) {
+  public static Builder newBuilder(MerklePath prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -254,18 +254,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.commitment.v1.MerklePath)
-      com.ibc.core.commitment.v1.MerklePathOrBuilder {
+      MerklePathOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.commitment.v1.CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePath_descriptor;
+      return CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePath_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.commitment.v1.CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePath_fieldAccessorTable
+      return CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePath_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.commitment.v1.MerklePath.class, com.ibc.core.commitment.v1.MerklePath.Builder.class);
+              MerklePath.class, Builder.class);
     }
 
     // Construct using com.ibc.core.commitment.v1.MerklePath.newBuilder()
@@ -274,11 +274,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -287,36 +287,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.commitment.v1.CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePath_descriptor;
+      return CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePath_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.commitment.v1.MerklePath getDefaultInstanceForType() {
-      return com.ibc.core.commitment.v1.MerklePath.getDefaultInstance();
+    @Override
+    public MerklePath getDefaultInstanceForType() {
+      return MerklePath.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.commitment.v1.MerklePath build() {
-      com.ibc.core.commitment.v1.MerklePath result = buildPartial();
+    @Override
+    public MerklePath build() {
+      MerklePath result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.commitment.v1.MerklePath buildPartial() {
-      com.ibc.core.commitment.v1.MerklePath result = new com.ibc.core.commitment.v1.MerklePath(this);
+    @Override
+    public MerklePath buildPartial() {
+      MerklePath result = new MerklePath(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.ibc.core.commitment.v1.MerklePath result) {
+    private void buildPartialRepeatedFields(MerklePath result) {
       if (((bitField0_ & 0x00000001) != 0)) {
         keyPath_ = keyPath_.getUnmodifiableView();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -324,54 +324,54 @@ private static final long serialVersionUID = 0L;
       result.keyPath_ = keyPath_;
     }
 
-    private void buildPartial0(com.ibc.core.commitment.v1.MerklePath result) {
+    private void buildPartial0(MerklePath result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.commitment.v1.MerklePath) {
-        return mergeFrom((com.ibc.core.commitment.v1.MerklePath)other);
+      if (other instanceof MerklePath) {
+        return mergeFrom((MerklePath)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.commitment.v1.MerklePath other) {
-      if (other == com.ibc.core.commitment.v1.MerklePath.getDefaultInstance()) return this;
+    public Builder mergeFrom(MerklePath other) {
+      if (other == MerklePath.getDefaultInstance()) return this;
       if (!other.keyPath_.isEmpty()) {
         if (keyPath_.isEmpty()) {
           keyPath_ = other.keyPath_;
@@ -387,18 +387,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -409,7 +409,7 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
               ensureKeyPathIsMutable();
               keyPath_.add(s);
               break;
@@ -458,7 +458,7 @@ private static final long serialVersionUID = 0L;
      * @param index The index of the element to return.
      * @return The keyPath at the given index.
      */
-    public java.lang.String getKeyPath(int index) {
+    public String getKeyPath(int index) {
       return keyPath_.get(index);
     }
     /**
@@ -477,7 +477,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setKeyPath(
-        int index, java.lang.String value) {
+        int index, String value) {
       if (value == null) { throw new NullPointerException(); }
       ensureKeyPathIsMutable();
       keyPath_.set(index, value);
@@ -490,7 +490,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addKeyPath(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       ensureKeyPathIsMutable();
       keyPath_.add(value);
@@ -503,7 +503,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addAllKeyPath(
-        java.lang.Iterable<java.lang.String> values) {
+        Iterable<String> values) {
       ensureKeyPathIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, keyPath_);
@@ -534,13 +534,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -551,18 +551,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.commitment.v1.MerklePath)
-  private static final com.ibc.core.commitment.v1.MerklePath DEFAULT_INSTANCE;
+  private static final MerklePath DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.commitment.v1.MerklePath();
+    DEFAULT_INSTANCE = new MerklePath();
   }
 
-  public static com.ibc.core.commitment.v1.MerklePath getDefaultInstance() {
+  public static MerklePath getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MerklePath>
       PARSER = new com.google.protobuf.AbstractParser<MerklePath>() {
-    @java.lang.Override
+    @Override
     public MerklePath parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -586,13 +586,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MerklePath> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.commitment.v1.MerklePath getDefaultInstanceForType() {
+  @Override
+  public MerklePath getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

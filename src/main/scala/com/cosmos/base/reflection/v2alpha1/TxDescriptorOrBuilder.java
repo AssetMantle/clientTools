@@ -17,7 +17,7 @@ public interface TxDescriptorOrBuilder extends
    * <code>string fullname = 1 [json_name = "fullname"];</code>
    * @return The fullname.
    */
-  java.lang.String getFullname();
+  String getFullname();
   /**
    * <pre>
    * fullname is the protobuf fullname of the raw transaction type (for instance the tx.Tx type)
@@ -38,7 +38,7 @@ public interface TxDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
    */
-  java.util.List<com.cosmos.base.reflection.v2alpha1.MsgDescriptor> 
+  java.util.List<MsgDescriptor>
       getMsgsList();
   /**
    * <pre>
@@ -47,7 +47,7 @@ public interface TxDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.MsgDescriptor getMsgs(int index);
+  MsgDescriptor getMsgs(int index);
   /**
    * <pre>
    * msgs lists the accepted application messages (sdk.Msg)
@@ -63,7 +63,7 @@ public interface TxDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
    */
-  java.util.List<? extends com.cosmos.base.reflection.v2alpha1.MsgDescriptorOrBuilder> 
+  java.util.List<? extends MsgDescriptorOrBuilder>
       getMsgsOrBuilderList();
   /**
    * <pre>
@@ -72,6 +72,6 @@ public interface TxDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.MsgDescriptorOrBuilder getMsgsOrBuilder(
+  MsgDescriptorOrBuilder getMsgsOrBuilder(
       int index);
 }

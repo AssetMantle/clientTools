@@ -11,7 +11,7 @@ public interface MessageOrBuilder extends
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
    */
-  java.lang.String getFrom();
+  String getFrom();
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The bytes for from.
@@ -50,12 +50,12 @@ public interface MessageOrBuilder extends
   com.ids.AnyOwnableIDOrBuilder getOwnableIDOrBuilder();
 
   /**
-   * <code>string value = 4 [json_name = "value", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
+   * <code>string value = 4 [json_name = "value"];</code>
    * @return The value.
    */
-  java.lang.String getValue();
+  String getValue();
   /**
-   * <code>string value = 4 [json_name = "value", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
+   * <code>string value = 4 [json_name = "value"];</code>
    * @return The bytes for value.
    */
   com.google.protobuf.ByteString

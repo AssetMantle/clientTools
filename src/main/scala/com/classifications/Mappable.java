@@ -18,29 +18,24 @@ private static final long serialVersionUID = 0L;
   private Mappable() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Mappable();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.classifications.MappableV1Proto.internal_static_classifications_Mappable_descriptor;
+    return MappableV1Proto.internal_static_classifications_Mappable_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.classifications.MappableV1Proto.internal_static_classifications_Mappable_fieldAccessorTable
+    return MappableV1Proto.internal_static_classifications_Mappable_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.classifications.Mappable.class, com.classifications.Mappable.Builder.class);
+            Mappable.class, Builder.class);
   }
 
   public static final int CLASSIFICATION_FIELD_NUMBER = 1;
@@ -49,7 +44,7 @@ private static final long serialVersionUID = 0L;
    * <code>.documents.Document classification = 1 [json_name = "classification"];</code>
    * @return Whether the classification field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasClassification() {
     return classification_ != null;
   }
@@ -57,20 +52,20 @@ private static final long serialVersionUID = 0L;
    * <code>.documents.Document classification = 1 [json_name = "classification"];</code>
    * @return The classification.
    */
-  @java.lang.Override
+  @Override
   public com.documents.Document getClassification() {
     return classification_ == null ? com.documents.Document.getDefaultInstance() : classification_;
   }
   /**
    * <code>.documents.Document classification = 1 [json_name = "classification"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.documents.DocumentOrBuilder getClassificationOrBuilder() {
-    return getClassification();
+    return classification_ == null ? com.documents.Document.getDefaultInstance() : classification_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -80,7 +75,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (classification_ != null) {
@@ -89,7 +84,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -104,15 +99,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.classifications.Mappable)) {
+    if (!(obj instanceof Mappable)) {
       return super.equals(obj);
     }
-    com.classifications.Mappable other = (com.classifications.Mappable) obj;
+    Mappable other = (Mappable) obj;
 
     if (hasClassification() != other.hasClassification()) return false;
     if (hasClassification()) {
@@ -123,7 +118,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -139,69 +134,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.classifications.Mappable parseFrom(
+  public static Mappable parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.classifications.Mappable parseFrom(
+  public static Mappable parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.classifications.Mappable parseFrom(
+  public static Mappable parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.classifications.Mappable parseFrom(
+  public static Mappable parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.classifications.Mappable parseFrom(byte[] data)
+  public static Mappable parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.classifications.Mappable parseFrom(
+  public static Mappable parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.classifications.Mappable parseFrom(java.io.InputStream input)
+  public static Mappable parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.classifications.Mappable parseFrom(
+  public static Mappable parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.classifications.Mappable parseDelimitedFrom(java.io.InputStream input)
+  public static Mappable parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.classifications.Mappable parseDelimitedFrom(
+  public static Mappable parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.classifications.Mappable parseFrom(
+  public static Mappable parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.classifications.Mappable parseFrom(
+  public static Mappable parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -209,23 +204,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.classifications.Mappable prototype) {
+  public static Builder newBuilder(Mappable prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -235,18 +230,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:classifications.Mappable)
-      com.classifications.MappableOrBuilder {
+      MappableOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.classifications.MappableV1Proto.internal_static_classifications_Mappable_descriptor;
+      return MappableV1Proto.internal_static_classifications_Mappable_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.classifications.MappableV1Proto.internal_static_classifications_Mappable_fieldAccessorTable
+      return MappableV1Proto.internal_static_classifications_Mappable_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.classifications.Mappable.class, com.classifications.Mappable.Builder.class);
+              Mappable.class, Builder.class);
     }
 
     // Construct using com.classifications.Mappable.newBuilder()
@@ -255,98 +250,103 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
-      if (classificationBuilder_ == null) {
-        classification_ = null;
-      } else {
-        classification_ = null;
+      bitField0_ = 0;
+      classification_ = null;
+      if (classificationBuilder_ != null) {
+        classificationBuilder_.dispose();
         classificationBuilder_ = null;
       }
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.classifications.MappableV1Proto.internal_static_classifications_Mappable_descriptor;
+      return MappableV1Proto.internal_static_classifications_Mappable_descriptor;
     }
 
-    @java.lang.Override
-    public com.classifications.Mappable getDefaultInstanceForType() {
-      return com.classifications.Mappable.getDefaultInstance();
+    @Override
+    public Mappable getDefaultInstanceForType() {
+      return Mappable.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.classifications.Mappable build() {
-      com.classifications.Mappable result = buildPartial();
+    @Override
+    public Mappable build() {
+      Mappable result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.classifications.Mappable buildPartial() {
-      com.classifications.Mappable result = new com.classifications.Mappable(this);
-      if (classificationBuilder_ == null) {
-        result.classification_ = classification_;
-      } else {
-        result.classification_ = classificationBuilder_.build();
-      }
+    @Override
+    public Mappable buildPartial() {
+      Mappable result = new Mappable(this);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(Mappable result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.classification_ = classificationBuilder_ == null
+            ? classification_
+            : classificationBuilder_.build();
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.classifications.Mappable) {
-        return mergeFrom((com.classifications.Mappable)other);
+      if (other instanceof Mappable) {
+        return mergeFrom((Mappable)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.classifications.Mappable other) {
-      if (other == com.classifications.Mappable.getDefaultInstance()) return this;
+    public Builder mergeFrom(Mappable other) {
+      if (other == Mappable.getDefaultInstance()) return this;
       if (other.hasClassification()) {
         mergeClassification(other.getClassification());
       }
@@ -355,18 +355,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getClassificationFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             default: {
@@ -398,6 +398,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private com.documents.Document classification_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -407,7 +408,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the classification field is set.
      */
     public boolean hasClassification() {
-      return classificationBuilder_ != null || classification_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>.documents.Document classification = 1 [json_name = "classification"];</code>
@@ -429,11 +430,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         classification_ = value;
-        onChanged();
       } else {
         classificationBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -443,11 +444,11 @@ private static final long serialVersionUID = 0L;
         com.documents.Document.Builder builderForValue) {
       if (classificationBuilder_ == null) {
         classification_ = builderForValue.build();
-        onChanged();
       } else {
         classificationBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -455,38 +456,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeClassification(com.documents.Document value) {
       if (classificationBuilder_ == null) {
-        if (classification_ != null) {
-          classification_ =
-            com.documents.Document.newBuilder(classification_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          classification_ != null &&
+          classification_ != com.documents.Document.getDefaultInstance()) {
+          getClassificationBuilder().mergeFrom(value);
         } else {
           classification_ = value;
         }
-        onChanged();
       } else {
         classificationBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.documents.Document classification = 1 [json_name = "classification"];</code>
      */
     public Builder clearClassification() {
-      if (classificationBuilder_ == null) {
-        classification_ = null;
-        onChanged();
-      } else {
-        classification_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      classification_ = null;
+      if (classificationBuilder_ != null) {
+        classificationBuilder_.dispose();
         classificationBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.documents.Document classification = 1 [json_name = "classification"];</code>
      */
     public com.documents.Document.Builder getClassificationBuilder() {
-      
+      bitField0_ |= 0x00000001;
       onChanged();
       return getClassificationFieldBuilder().getBuilder();
     }
@@ -517,13 +518,13 @@ private static final long serialVersionUID = 0L;
       }
       return classificationBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -534,18 +535,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:classifications.Mappable)
-  private static final com.classifications.Mappable DEFAULT_INSTANCE;
+  private static final Mappable DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.classifications.Mappable();
+    DEFAULT_INSTANCE = new Mappable();
   }
 
-  public static com.classifications.Mappable getDefaultInstance() {
+  public static Mappable getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Mappable>
       PARSER = new com.google.protobuf.AbstractParser<Mappable>() {
-    @java.lang.Override
+    @Override
     public Mappable parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -569,13 +570,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Mappable> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.classifications.Mappable getDefaultInstanceForType() {
+  @Override
+  public Mappable getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

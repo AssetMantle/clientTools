@@ -27,7 +27,7 @@ public final class KeyV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n-modules/maintainers/internal/key/key.v" +
       "1.proto\022\013maintainers\032%schema/ids/base/ma" +
       "intainerID.v1.proto\">\n\003Key\0227\n\016maintainer" +
@@ -48,7 +48,7 @@ public final class KeyV1Proto {
     internal_static_maintainers_Key_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_maintainers_Key_descriptor,
-        new java.lang.String[] { "MaintainerID", });
+        new String[] { "MaintainerID", });
     com.ids.MaintainerIDV1Proto.getDescriptor();
   }
 

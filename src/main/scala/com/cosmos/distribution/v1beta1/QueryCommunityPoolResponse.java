@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     pool_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryCommunityPoolResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryCommunityPoolResponse_descriptor;
+    return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryCommunityPoolResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryCommunityPoolResponse_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryCommunityPoolResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse.class, com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse.Builder.class);
+            QueryCommunityPoolResponse.class, Builder.class);
   }
 
   public static final int POOL_FIELD_NUMBER = 1;
@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin pool = 1 [json_name = "pool", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<com.cosmos.base.v1beta1.DecCoin> getPoolList() {
     return pool_;
   }
@@ -65,7 +65,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin pool = 1 [json_name = "pool", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<? extends com.cosmos.base.v1beta1.DecCoinOrBuilder> 
       getPoolOrBuilderList() {
     return pool_;
@@ -77,7 +77,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin pool = 1 [json_name = "pool", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getPoolCount() {
     return pool_.size();
   }
@@ -88,7 +88,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin pool = 1 [json_name = "pool", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.DecCoin getPool(int index) {
     return pool_.get(index);
   }
@@ -99,14 +99,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin pool = 1 [json_name = "pool", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.DecCoinOrBuilder getPoolOrBuilder(
       int index) {
     return pool_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -116,7 +116,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < pool_.size(); i++) {
@@ -125,7 +125,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -140,15 +140,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse)) {
+    if (!(obj instanceof QueryCommunityPoolResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse other = (com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse) obj;
+    QueryCommunityPoolResponse other = (QueryCommunityPoolResponse) obj;
 
     if (!getPoolList()
         .equals(other.getPoolList())) return false;
@@ -156,7 +156,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -172,69 +172,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseFrom(
+  public static QueryCommunityPoolResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseFrom(
+  public static QueryCommunityPoolResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseFrom(
+  public static QueryCommunityPoolResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseFrom(
+  public static QueryCommunityPoolResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseFrom(byte[] data)
+  public static QueryCommunityPoolResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseFrom(
+  public static QueryCommunityPoolResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseFrom(java.io.InputStream input)
+  public static QueryCommunityPoolResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseFrom(
+  public static QueryCommunityPoolResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryCommunityPoolResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseDelimitedFrom(
+  public static QueryCommunityPoolResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseFrom(
+  public static QueryCommunityPoolResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse parseFrom(
+  public static QueryCommunityPoolResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -242,23 +242,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse prototype) {
+  public static Builder newBuilder(QueryCommunityPoolResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -273,18 +273,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.distribution.v1beta1.QueryCommunityPoolResponse)
-      com.cosmos.distribution.v1beta1.QueryCommunityPoolResponseOrBuilder {
+      QueryCommunityPoolResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryCommunityPoolResponse_descriptor;
+      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryCommunityPoolResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryCommunityPoolResponse_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryCommunityPoolResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse.class, com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse.Builder.class);
+              QueryCommunityPoolResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse.newBuilder()
@@ -293,11 +293,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -311,36 +311,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryCommunityPoolResponse_descriptor;
+      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryCommunityPoolResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse getDefaultInstanceForType() {
-      return com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse.getDefaultInstance();
+    @Override
+    public QueryCommunityPoolResponse getDefaultInstanceForType() {
+      return QueryCommunityPoolResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse build() {
-      com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse result = buildPartial();
+    @Override
+    public QueryCommunityPoolResponse build() {
+      QueryCommunityPoolResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse buildPartial() {
-      com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse result = new com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse(this);
+    @Override
+    public QueryCommunityPoolResponse buildPartial() {
+      QueryCommunityPoolResponse result = new QueryCommunityPoolResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse result) {
+    private void buildPartialRepeatedFields(QueryCommunityPoolResponse result) {
       if (poolBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           pool_ = java.util.Collections.unmodifiableList(pool_);
@@ -352,54 +352,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse result) {
+    private void buildPartial0(QueryCommunityPoolResponse result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse) {
-        return mergeFrom((com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse)other);
+      if (other instanceof QueryCommunityPoolResponse) {
+        return mergeFrom((QueryCommunityPoolResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse other) {
-      if (other == com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryCommunityPoolResponse other) {
+      if (other == QueryCommunityPoolResponse.getDefaultInstance()) return this;
       if (poolBuilder_ == null) {
         if (!other.pool_.isEmpty()) {
           if (pool_.isEmpty()) {
@@ -431,18 +431,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -660,7 +660,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.v1beta1.DecCoin pool = 1 [json_name = "pool", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
      */
     public Builder addAllPool(
-        java.lang.Iterable<? extends com.cosmos.base.v1beta1.DecCoin> values) {
+        Iterable<? extends com.cosmos.base.v1beta1.DecCoin> values) {
       if (poolBuilder_ == null) {
         ensurePoolIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -793,13 +793,13 @@ private static final long serialVersionUID = 0L;
       }
       return poolBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -810,18 +810,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.distribution.v1beta1.QueryCommunityPoolResponse)
-  private static final com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse DEFAULT_INSTANCE;
+  private static final QueryCommunityPoolResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse();
+    DEFAULT_INSTANCE = new QueryCommunityPoolResponse();
   }
 
-  public static com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse getDefaultInstance() {
+  public static QueryCommunityPoolResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryCommunityPoolResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryCommunityPoolResponse>() {
-    @java.lang.Override
+    @Override
     public QueryCommunityPoolResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -845,13 +845,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryCommunityPoolResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.distribution.v1beta1.QueryCommunityPoolResponse getDefaultInstanceForType() {
+  @Override
+  public QueryCommunityPoolResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

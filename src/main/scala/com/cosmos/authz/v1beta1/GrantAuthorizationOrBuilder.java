@@ -11,7 +11,7 @@ public interface GrantAuthorizationOrBuilder extends
    * <code>string granter = 1 [json_name = "granter"];</code>
    * @return The granter.
    */
-  java.lang.String getGranter();
+  String getGranter();
   /**
    * <code>string granter = 1 [json_name = "granter"];</code>
    * @return The bytes for granter.
@@ -23,7 +23,7 @@ public interface GrantAuthorizationOrBuilder extends
    * <code>string grantee = 2 [json_name = "grantee"];</code>
    * @return The grantee.
    */
-  java.lang.String getGrantee();
+  String getGrantee();
   /**
    * <code>string grantee = 2 [json_name = "grantee"];</code>
    * @return The bytes for grantee.

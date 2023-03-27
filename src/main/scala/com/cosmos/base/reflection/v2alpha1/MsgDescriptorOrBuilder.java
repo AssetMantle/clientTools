@@ -15,7 +15,7 @@ public interface MsgDescriptorOrBuilder extends
    * <code>string msg_type_url = 1 [json_name = "msgTypeUrl"];</code>
    * @return The msgTypeUrl.
    */
-  java.lang.String getMsgTypeUrl();
+  String getMsgTypeUrl();
   /**
    * <pre>
    * msg_type_url contains the TypeURL of a sdk.Msg.

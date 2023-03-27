@@ -24,7 +24,7 @@ public interface QuerySigningInfoResponseOrBuilder extends
    * <code>.cosmos.slashing.v1beta1.ValidatorSigningInfo val_signing_info = 1 [json_name = "valSigningInfo", (.gogoproto.nullable) = false];</code>
    * @return The valSigningInfo.
    */
-  com.cosmos.slashing.v1beta1.ValidatorSigningInfo getValSigningInfo();
+  ValidatorSigningInfo getValSigningInfo();
   /**
    * <pre>
    * val_signing_info is the signing info of requested val cons address
@@ -32,5 +32,5 @@ public interface QuerySigningInfoResponseOrBuilder extends
    *
    * <code>.cosmos.slashing.v1beta1.ValidatorSigningInfo val_signing_info = 1 [json_name = "valSigningInfo", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.slashing.v1beta1.ValidatorSigningInfoOrBuilder getValSigningInfoOrBuilder();
+  ValidatorSigningInfoOrBuilder getValSigningInfoOrBuilder();
 }

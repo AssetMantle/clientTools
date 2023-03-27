@@ -18,29 +18,24 @@ private static final long serialVersionUID = 0L;
   private Document() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Document();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.documents.DocumentV1Proto.internal_static_documents_Document_descriptor;
+    return DocumentV1Proto.internal_static_documents_Document_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.documents.DocumentV1Proto.internal_static_documents_Document_fieldAccessorTable
+    return DocumentV1Proto.internal_static_documents_Document_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.documents.Document.class, com.documents.Document.Builder.class);
+            Document.class, Builder.class);
   }
 
   public static final int CLASSIFICATION_I_D_FIELD_NUMBER = 1;
@@ -49,7 +44,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.ClassificationID classification_i_d = 1 [json_name = "classificationID"];</code>
    * @return Whether the classificationID field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasClassificationID() {
     return classificationID_ != null;
   }
@@ -57,16 +52,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.ClassificationID classification_i_d = 1 [json_name = "classificationID"];</code>
    * @return The classificationID.
    */
-  @java.lang.Override
+  @Override
   public com.ids.ClassificationID getClassificationID() {
     return classificationID_ == null ? com.ids.ClassificationID.getDefaultInstance() : classificationID_;
   }
   /**
    * <code>.ids.ClassificationID classification_i_d = 1 [json_name = "classificationID"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ids.ClassificationIDOrBuilder getClassificationIDOrBuilder() {
-    return getClassificationID();
+    return classificationID_ == null ? com.ids.ClassificationID.getDefaultInstance() : classificationID_;
   }
 
   public static final int IMMUTABLES_FIELD_NUMBER = 2;
@@ -75,7 +70,7 @@ private static final long serialVersionUID = 0L;
    * <code>.qualified.Immutables immutables = 2 [json_name = "immutables"];</code>
    * @return Whether the immutables field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasImmutables() {
     return immutables_ != null;
   }
@@ -83,16 +78,16 @@ private static final long serialVersionUID = 0L;
    * <code>.qualified.Immutables immutables = 2 [json_name = "immutables"];</code>
    * @return The immutables.
    */
-  @java.lang.Override
+  @Override
   public com.qualified.Immutables getImmutables() {
     return immutables_ == null ? com.qualified.Immutables.getDefaultInstance() : immutables_;
   }
   /**
    * <code>.qualified.Immutables immutables = 2 [json_name = "immutables"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.qualified.ImmutablesOrBuilder getImmutablesOrBuilder() {
-    return getImmutables();
+    return immutables_ == null ? com.qualified.Immutables.getDefaultInstance() : immutables_;
   }
 
   public static final int MUTABLES_FIELD_NUMBER = 3;
@@ -101,7 +96,7 @@ private static final long serialVersionUID = 0L;
    * <code>.qualified.Mutables mutables = 3 [json_name = "mutables"];</code>
    * @return Whether the mutables field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasMutables() {
     return mutables_ != null;
   }
@@ -109,20 +104,20 @@ private static final long serialVersionUID = 0L;
    * <code>.qualified.Mutables mutables = 3 [json_name = "mutables"];</code>
    * @return The mutables.
    */
-  @java.lang.Override
+  @Override
   public com.qualified.Mutables getMutables() {
     return mutables_ == null ? com.qualified.Mutables.getDefaultInstance() : mutables_;
   }
   /**
    * <code>.qualified.Mutables mutables = 3 [json_name = "mutables"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.qualified.MutablesOrBuilder getMutablesOrBuilder() {
-    return getMutables();
+    return mutables_ == null ? com.qualified.Mutables.getDefaultInstance() : mutables_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -132,7 +127,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (classificationID_ != null) {
@@ -147,7 +142,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -170,15 +165,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.documents.Document)) {
+    if (!(obj instanceof Document)) {
       return super.equals(obj);
     }
-    com.documents.Document other = (com.documents.Document) obj;
+    Document other = (Document) obj;
 
     if (hasClassificationID() != other.hasClassificationID()) return false;
     if (hasClassificationID()) {
@@ -199,7 +194,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -223,69 +218,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.documents.Document parseFrom(
+  public static Document parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.documents.Document parseFrom(
+  public static Document parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.documents.Document parseFrom(
+  public static Document parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.documents.Document parseFrom(
+  public static Document parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.documents.Document parseFrom(byte[] data)
+  public static Document parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.documents.Document parseFrom(
+  public static Document parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.documents.Document parseFrom(java.io.InputStream input)
+  public static Document parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.documents.Document parseFrom(
+  public static Document parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.documents.Document parseDelimitedFrom(java.io.InputStream input)
+  public static Document parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.documents.Document parseDelimitedFrom(
+  public static Document parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.documents.Document parseFrom(
+  public static Document parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.documents.Document parseFrom(
+  public static Document parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -293,23 +288,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.documents.Document prototype) {
+  public static Builder newBuilder(Document prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -319,18 +314,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:documents.Document)
-      com.documents.DocumentOrBuilder {
+      DocumentOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.documents.DocumentV1Proto.internal_static_documents_Document_descriptor;
+      return DocumentV1Proto.internal_static_documents_Document_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.documents.DocumentV1Proto.internal_static_documents_Document_fieldAccessorTable
+      return DocumentV1Proto.internal_static_documents_Document_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.documents.Document.class, com.documents.Document.Builder.class);
+              Document.class, Builder.class);
     }
 
     // Construct using com.documents.Document.newBuilder()
@@ -339,120 +334,123 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
-      if (classificationIDBuilder_ == null) {
-        classificationID_ = null;
-      } else {
-        classificationID_ = null;
+      bitField0_ = 0;
+      classificationID_ = null;
+      if (classificationIDBuilder_ != null) {
+        classificationIDBuilder_.dispose();
         classificationIDBuilder_ = null;
       }
-      if (immutablesBuilder_ == null) {
-        immutables_ = null;
-      } else {
-        immutables_ = null;
+      immutables_ = null;
+      if (immutablesBuilder_ != null) {
+        immutablesBuilder_.dispose();
         immutablesBuilder_ = null;
       }
-      if (mutablesBuilder_ == null) {
-        mutables_ = null;
-      } else {
-        mutables_ = null;
+      mutables_ = null;
+      if (mutablesBuilder_ != null) {
+        mutablesBuilder_.dispose();
         mutablesBuilder_ = null;
       }
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.documents.DocumentV1Proto.internal_static_documents_Document_descriptor;
+      return DocumentV1Proto.internal_static_documents_Document_descriptor;
     }
 
-    @java.lang.Override
-    public com.documents.Document getDefaultInstanceForType() {
-      return com.documents.Document.getDefaultInstance();
+    @Override
+    public Document getDefaultInstanceForType() {
+      return Document.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.documents.Document build() {
-      com.documents.Document result = buildPartial();
+    @Override
+    public Document build() {
+      Document result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.documents.Document buildPartial() {
-      com.documents.Document result = new com.documents.Document(this);
-      if (classificationIDBuilder_ == null) {
-        result.classificationID_ = classificationID_;
-      } else {
-        result.classificationID_ = classificationIDBuilder_.build();
-      }
-      if (immutablesBuilder_ == null) {
-        result.immutables_ = immutables_;
-      } else {
-        result.immutables_ = immutablesBuilder_.build();
-      }
-      if (mutablesBuilder_ == null) {
-        result.mutables_ = mutables_;
-      } else {
-        result.mutables_ = mutablesBuilder_.build();
-      }
+    @Override
+    public Document buildPartial() {
+      Document result = new Document(this);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(Document result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.classificationID_ = classificationIDBuilder_ == null
+            ? classificationID_
+            : classificationIDBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.immutables_ = immutablesBuilder_ == null
+            ? immutables_
+            : immutablesBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.mutables_ = mutablesBuilder_ == null
+            ? mutables_
+            : mutablesBuilder_.build();
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.documents.Document) {
-        return mergeFrom((com.documents.Document)other);
+      if (other instanceof Document) {
+        return mergeFrom((Document)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.documents.Document other) {
-      if (other == com.documents.Document.getDefaultInstance()) return this;
+    public Builder mergeFrom(Document other) {
+      if (other == Document.getDefaultInstance()) return this;
       if (other.hasClassificationID()) {
         mergeClassificationID(other.getClassificationID());
       }
@@ -467,18 +465,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -492,21 +490,21 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getClassificationIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             case 18: {
               input.readMessage(
                   getImmutablesFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000002;
               break;
             } // case 18
             case 26: {
               input.readMessage(
                   getMutablesFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000004;
               break;
             } // case 26
             default: {
@@ -524,6 +522,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private com.ids.ClassificationID classificationID_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -533,7 +532,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the classificationID field is set.
      */
     public boolean hasClassificationID() {
-      return classificationIDBuilder_ != null || classificationID_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>.ids.ClassificationID classification_i_d = 1 [json_name = "classificationID"];</code>
@@ -555,11 +554,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         classificationID_ = value;
-        onChanged();
       } else {
         classificationIDBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -569,11 +568,11 @@ private static final long serialVersionUID = 0L;
         com.ids.ClassificationID.Builder builderForValue) {
       if (classificationIDBuilder_ == null) {
         classificationID_ = builderForValue.build();
-        onChanged();
       } else {
         classificationIDBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -581,38 +580,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeClassificationID(com.ids.ClassificationID value) {
       if (classificationIDBuilder_ == null) {
-        if (classificationID_ != null) {
-          classificationID_ =
-            com.ids.ClassificationID.newBuilder(classificationID_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          classificationID_ != null &&
+          classificationID_ != com.ids.ClassificationID.getDefaultInstance()) {
+          getClassificationIDBuilder().mergeFrom(value);
         } else {
           classificationID_ = value;
         }
-        onChanged();
       } else {
         classificationIDBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.ClassificationID classification_i_d = 1 [json_name = "classificationID"];</code>
      */
     public Builder clearClassificationID() {
-      if (classificationIDBuilder_ == null) {
-        classificationID_ = null;
-        onChanged();
-      } else {
-        classificationID_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      classificationID_ = null;
+      if (classificationIDBuilder_ != null) {
+        classificationIDBuilder_.dispose();
         classificationIDBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.ClassificationID classification_i_d = 1 [json_name = "classificationID"];</code>
      */
     public com.ids.ClassificationID.Builder getClassificationIDBuilder() {
-      
+      bitField0_ |= 0x00000001;
       onChanged();
       return getClassificationIDFieldBuilder().getBuilder();
     }
@@ -652,7 +651,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the immutables field is set.
      */
     public boolean hasImmutables() {
-      return immutablesBuilder_ != null || immutables_ != null;
+      return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>.qualified.Immutables immutables = 2 [json_name = "immutables"];</code>
@@ -674,11 +673,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         immutables_ = value;
-        onChanged();
       } else {
         immutablesBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -688,11 +687,11 @@ private static final long serialVersionUID = 0L;
         com.qualified.Immutables.Builder builderForValue) {
       if (immutablesBuilder_ == null) {
         immutables_ = builderForValue.build();
-        onChanged();
       } else {
         immutablesBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -700,38 +699,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeImmutables(com.qualified.Immutables value) {
       if (immutablesBuilder_ == null) {
-        if (immutables_ != null) {
-          immutables_ =
-            com.qualified.Immutables.newBuilder(immutables_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000002) != 0) &&
+          immutables_ != null &&
+          immutables_ != com.qualified.Immutables.getDefaultInstance()) {
+          getImmutablesBuilder().mergeFrom(value);
         } else {
           immutables_ = value;
         }
-        onChanged();
       } else {
         immutablesBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
      * <code>.qualified.Immutables immutables = 2 [json_name = "immutables"];</code>
      */
     public Builder clearImmutables() {
-      if (immutablesBuilder_ == null) {
-        immutables_ = null;
-        onChanged();
-      } else {
-        immutables_ = null;
+      bitField0_ = (bitField0_ & ~0x00000002);
+      immutables_ = null;
+      if (immutablesBuilder_ != null) {
+        immutablesBuilder_.dispose();
         immutablesBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.qualified.Immutables immutables = 2 [json_name = "immutables"];</code>
      */
     public com.qualified.Immutables.Builder getImmutablesBuilder() {
-      
+      bitField0_ |= 0x00000002;
       onChanged();
       return getImmutablesFieldBuilder().getBuilder();
     }
@@ -771,7 +770,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the mutables field is set.
      */
     public boolean hasMutables() {
-      return mutablesBuilder_ != null || mutables_ != null;
+      return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>.qualified.Mutables mutables = 3 [json_name = "mutables"];</code>
@@ -793,11 +792,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         mutables_ = value;
-        onChanged();
       } else {
         mutablesBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
@@ -807,11 +806,11 @@ private static final long serialVersionUID = 0L;
         com.qualified.Mutables.Builder builderForValue) {
       if (mutablesBuilder_ == null) {
         mutables_ = builderForValue.build();
-        onChanged();
       } else {
         mutablesBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
@@ -819,38 +818,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeMutables(com.qualified.Mutables value) {
       if (mutablesBuilder_ == null) {
-        if (mutables_ != null) {
-          mutables_ =
-            com.qualified.Mutables.newBuilder(mutables_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000004) != 0) &&
+          mutables_ != null &&
+          mutables_ != com.qualified.Mutables.getDefaultInstance()) {
+          getMutablesBuilder().mergeFrom(value);
         } else {
           mutables_ = value;
         }
-        onChanged();
       } else {
         mutablesBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
      * <code>.qualified.Mutables mutables = 3 [json_name = "mutables"];</code>
      */
     public Builder clearMutables() {
-      if (mutablesBuilder_ == null) {
-        mutables_ = null;
-        onChanged();
-      } else {
-        mutables_ = null;
+      bitField0_ = (bitField0_ & ~0x00000004);
+      mutables_ = null;
+      if (mutablesBuilder_ != null) {
+        mutablesBuilder_.dispose();
         mutablesBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.qualified.Mutables mutables = 3 [json_name = "mutables"];</code>
      */
     public com.qualified.Mutables.Builder getMutablesBuilder() {
-      
+      bitField0_ |= 0x00000004;
       onChanged();
       return getMutablesFieldBuilder().getBuilder();
     }
@@ -881,13 +880,13 @@ private static final long serialVersionUID = 0L;
       }
       return mutablesBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -898,18 +897,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:documents.Document)
-  private static final com.documents.Document DEFAULT_INSTANCE;
+  private static final Document DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.documents.Document();
+    DEFAULT_INSTANCE = new Document();
   }
 
-  public static com.documents.Document getDefaultInstance() {
+  public static Document getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Document>
       PARSER = new com.google.protobuf.AbstractParser<Document>() {
-    @java.lang.Override
+    @Override
     public Document parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -933,13 +932,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Document> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.documents.Document getDefaultInstanceForType() {
+  @Override
+  public Document getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

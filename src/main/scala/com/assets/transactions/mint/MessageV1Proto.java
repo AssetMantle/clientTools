@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n:modules/assets/internal/transactions/m" +
       "int/message.v1.proto\022\030assets.transaction" +
       "s.mint\032)schema/ids/base/classificationID" +
@@ -65,7 +65,7 @@ public final class MessageV1Proto {
     internal_static_assets_transactions_mint_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_assets_transactions_mint_Message_descriptor,
-        new java.lang.String[] { "From", "FromID", "ToID", "ClassificationID", "ImmutableMetaProperties", "ImmutableProperties", "MutableMetaProperties", "MutableProperties", });
+        new String[] { "From", "FromID", "ToID", "ClassificationID", "ImmutableMetaProperties", "ImmutableProperties", "MutableMetaProperties", "MutableProperties", });
     com.ids.ClassificationIDV1Proto.getDescriptor();
     com.ids.IdentityIDV1Proto.getDescriptor();
     com.lists.PropertyListV1Proto.getDescriptor();

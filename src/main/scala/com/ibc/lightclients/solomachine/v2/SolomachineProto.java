@@ -102,7 +102,7 @@ public final class SolomachineProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n1ibc/lightclients/solomachine/v2/soloma" +
       "chine.proto\022\037ibc.lightclients.solomachin" +
       "e.v2\032\'ibc/core/connection/v1/connection." +
@@ -209,97 +209,97 @@ public final class SolomachineProto {
     internal_static_ibc_lightclients_solomachine_v2_ClientState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_ClientState_descriptor,
-        new java.lang.String[] { "Sequence", "IsFrozen", "ConsensusState", "AllowUpdateAfterProposal", });
+        new String[] { "Sequence", "IsFrozen", "ConsensusState", "AllowUpdateAfterProposal", });
     internal_static_ibc_lightclients_solomachine_v2_ConsensusState_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_lightclients_solomachine_v2_ConsensusState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_ConsensusState_descriptor,
-        new java.lang.String[] { "PublicKey", "Diversifier", "Timestamp", });
+        new String[] { "PublicKey", "Diversifier", "Timestamp", });
     internal_static_ibc_lightclients_solomachine_v2_Header_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_lightclients_solomachine_v2_Header_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_Header_descriptor,
-        new java.lang.String[] { "Sequence", "Timestamp", "Signature", "NewPublicKey", "NewDiversifier", });
+        new String[] { "Sequence", "Timestamp", "Signature", "NewPublicKey", "NewDiversifier", });
     internal_static_ibc_lightclients_solomachine_v2_Misbehaviour_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_lightclients_solomachine_v2_Misbehaviour_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_Misbehaviour_descriptor,
-        new java.lang.String[] { "ClientId", "Sequence", "SignatureOne", "SignatureTwo", });
+        new String[] { "ClientId", "Sequence", "SignatureOne", "SignatureTwo", });
     internal_static_ibc_lightclients_solomachine_v2_SignatureAndData_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_lightclients_solomachine_v2_SignatureAndData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_SignatureAndData_descriptor,
-        new java.lang.String[] { "Signature", "DataType", "Data", "Timestamp", });
+        new String[] { "Signature", "DataType", "Data", "Timestamp", });
     internal_static_ibc_lightclients_solomachine_v2_TimestampedSignatureData_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_ibc_lightclients_solomachine_v2_TimestampedSignatureData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_TimestampedSignatureData_descriptor,
-        new java.lang.String[] { "SignatureData", "Timestamp", });
+        new String[] { "SignatureData", "Timestamp", });
     internal_static_ibc_lightclients_solomachine_v2_SignBytes_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_ibc_lightclients_solomachine_v2_SignBytes_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_SignBytes_descriptor,
-        new java.lang.String[] { "Sequence", "Timestamp", "Diversifier", "DataType", "Data", });
+        new String[] { "Sequence", "Timestamp", "Diversifier", "DataType", "Data", });
     internal_static_ibc_lightclients_solomachine_v2_HeaderData_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_ibc_lightclients_solomachine_v2_HeaderData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_HeaderData_descriptor,
-        new java.lang.String[] { "NewPubKey", "NewDiversifier", });
+        new String[] { "NewPubKey", "NewDiversifier", });
     internal_static_ibc_lightclients_solomachine_v2_ClientStateData_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_ibc_lightclients_solomachine_v2_ClientStateData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_ClientStateData_descriptor,
-        new java.lang.String[] { "Path", "ClientState", });
+        new String[] { "Path", "ClientState", });
     internal_static_ibc_lightclients_solomachine_v2_ConsensusStateData_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_ibc_lightclients_solomachine_v2_ConsensusStateData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_ConsensusStateData_descriptor,
-        new java.lang.String[] { "Path", "ConsensusState", });
+        new String[] { "Path", "ConsensusState", });
     internal_static_ibc_lightclients_solomachine_v2_ConnectionStateData_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_ibc_lightclients_solomachine_v2_ConnectionStateData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_ConnectionStateData_descriptor,
-        new java.lang.String[] { "Path", "Connection", });
+        new String[] { "Path", "Connection", });
     internal_static_ibc_lightclients_solomachine_v2_ChannelStateData_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_ibc_lightclients_solomachine_v2_ChannelStateData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_ChannelStateData_descriptor,
-        new java.lang.String[] { "Path", "Channel", });
+        new String[] { "Path", "Channel", });
     internal_static_ibc_lightclients_solomachine_v2_PacketCommitmentData_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_ibc_lightclients_solomachine_v2_PacketCommitmentData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_PacketCommitmentData_descriptor,
-        new java.lang.String[] { "Path", "Commitment", });
+        new String[] { "Path", "Commitment", });
     internal_static_ibc_lightclients_solomachine_v2_PacketAcknowledgementData_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_ibc_lightclients_solomachine_v2_PacketAcknowledgementData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_PacketAcknowledgementData_descriptor,
-        new java.lang.String[] { "Path", "Acknowledgement", });
+        new String[] { "Path", "Acknowledgement", });
     internal_static_ibc_lightclients_solomachine_v2_PacketReceiptAbsenceData_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_ibc_lightclients_solomachine_v2_PacketReceiptAbsenceData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_PacketReceiptAbsenceData_descriptor,
-        new java.lang.String[] { "Path", });
+        new String[] { "Path", });
     internal_static_ibc_lightclients_solomachine_v2_NextSequenceRecvData_descriptor =
       getDescriptor().getMessageTypes().get(15);
     internal_static_ibc_lightclients_solomachine_v2_NextSequenceRecvData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_solomachine_v2_NextSequenceRecvData_descriptor,
-        new java.lang.String[] { "Path", "NextSeqRecv", });
+        new String[] { "Path", "NextSeqRecv", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.enumvalueCustomname);

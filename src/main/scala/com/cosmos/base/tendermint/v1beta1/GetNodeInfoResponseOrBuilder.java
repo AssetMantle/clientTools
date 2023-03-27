@@ -31,9 +31,9 @@ public interface GetNodeInfoResponseOrBuilder extends
    * <code>.cosmos.base.tendermint.v1beta1.VersionInfo application_version = 2 [json_name = "applicationVersion"];</code>
    * @return The applicationVersion.
    */
-  com.cosmos.base.tendermint.v1beta1.VersionInfo getApplicationVersion();
+  VersionInfo getApplicationVersion();
   /**
    * <code>.cosmos.base.tendermint.v1beta1.VersionInfo application_version = 2 [json_name = "applicationVersion"];</code>
    */
-  com.cosmos.base.tendermint.v1beta1.VersionInfoOrBuilder getApplicationVersionOrBuilder();
+  VersionInfoOrBuilder getApplicationVersionOrBuilder();
 }

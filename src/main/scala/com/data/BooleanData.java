@@ -18,44 +18,39 @@ private static final long serialVersionUID = 0L;
   private BooleanData() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new BooleanData();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.data.BooleanDataV1Proto.internal_static_data_BooleanData_descriptor;
+    return BooleanDataV1Proto.internal_static_data_BooleanData_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.data.BooleanDataV1Proto.internal_static_data_BooleanData_fieldAccessorTable
+    return BooleanDataV1Proto.internal_static_data_BooleanData_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.data.BooleanData.class, com.data.BooleanData.Builder.class);
+            BooleanData.class, Builder.class);
   }
 
   public static final int VALUE_FIELD_NUMBER = 1;
-  private boolean value_;
+  private boolean value_ = false;
   /**
    * <code>bool value = 1 [json_name = "value"];</code>
    * @return The value.
    */
-  @java.lang.Override
+  @Override
   public boolean getValue() {
     return value_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -65,7 +60,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (value_ != false) {
@@ -74,7 +69,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -89,15 +84,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.data.BooleanData)) {
+    if (!(obj instanceof BooleanData)) {
       return super.equals(obj);
     }
-    com.data.BooleanData other = (com.data.BooleanData) obj;
+    BooleanData other = (BooleanData) obj;
 
     if (getValue()
         != other.getValue()) return false;
@@ -105,7 +100,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -120,69 +115,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.data.BooleanData parseFrom(
+  public static BooleanData parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.data.BooleanData parseFrom(
+  public static BooleanData parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.data.BooleanData parseFrom(
+  public static BooleanData parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.data.BooleanData parseFrom(
+  public static BooleanData parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.data.BooleanData parseFrom(byte[] data)
+  public static BooleanData parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.data.BooleanData parseFrom(
+  public static BooleanData parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.data.BooleanData parseFrom(java.io.InputStream input)
+  public static BooleanData parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.data.BooleanData parseFrom(
+  public static BooleanData parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.data.BooleanData parseDelimitedFrom(java.io.InputStream input)
+  public static BooleanData parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.data.BooleanData parseDelimitedFrom(
+  public static BooleanData parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.data.BooleanData parseFrom(
+  public static BooleanData parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.data.BooleanData parseFrom(
+  public static BooleanData parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -190,23 +185,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.data.BooleanData prototype) {
+  public static Builder newBuilder(BooleanData prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -216,18 +211,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:data.BooleanData)
-      com.data.BooleanDataOrBuilder {
+      BooleanDataOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.data.BooleanDataV1Proto.internal_static_data_BooleanData_descriptor;
+      return BooleanDataV1Proto.internal_static_data_BooleanData_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.data.BooleanDataV1Proto.internal_static_data_BooleanData_fieldAccessorTable
+      return BooleanDataV1Proto.internal_static_data_BooleanData_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.data.BooleanData.class, com.data.BooleanData.Builder.class);
+              BooleanData.class, Builder.class);
     }
 
     // Construct using com.data.BooleanData.newBuilder()
@@ -236,90 +231,97 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       value_ = false;
-
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.data.BooleanDataV1Proto.internal_static_data_BooleanData_descriptor;
+      return BooleanDataV1Proto.internal_static_data_BooleanData_descriptor;
     }
 
-    @java.lang.Override
-    public com.data.BooleanData getDefaultInstanceForType() {
-      return com.data.BooleanData.getDefaultInstance();
+    @Override
+    public BooleanData getDefaultInstanceForType() {
+      return BooleanData.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.data.BooleanData build() {
-      com.data.BooleanData result = buildPartial();
+    @Override
+    public BooleanData build() {
+      BooleanData result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.data.BooleanData buildPartial() {
-      com.data.BooleanData result = new com.data.BooleanData(this);
-      result.value_ = value_;
+    @Override
+    public BooleanData buildPartial() {
+      BooleanData result = new BooleanData(this);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(BooleanData result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.value_ = value_;
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.data.BooleanData) {
-        return mergeFrom((com.data.BooleanData)other);
+      if (other instanceof BooleanData) {
+        return mergeFrom((BooleanData)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.data.BooleanData other) {
-      if (other == com.data.BooleanData.getDefaultInstance()) return this;
+    public Builder mergeFrom(BooleanData other) {
+      if (other == BooleanData.getDefaultInstance()) return this;
       if (other.getValue() != false) {
         setValue(other.getValue());
       }
@@ -328,18 +330,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -351,7 +353,7 @@ private static final long serialVersionUID = 0L;
               break;
             case 8: {
               value_ = input.readBool();
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 8
             default: {
@@ -369,13 +371,14 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private boolean value_ ;
     /**
      * <code>bool value = 1 [json_name = "value"];</code>
      * @return The value.
      */
-    @java.lang.Override
+    @Override
     public boolean getValue() {
       return value_;
     }
@@ -385,8 +388,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setValue(boolean value) {
-      
+
       value_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -395,18 +399,18 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearValue() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       value_ = false;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -417,18 +421,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:data.BooleanData)
-  private static final com.data.BooleanData DEFAULT_INSTANCE;
+  private static final BooleanData DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.data.BooleanData();
+    DEFAULT_INSTANCE = new BooleanData();
   }
 
-  public static com.data.BooleanData getDefaultInstance() {
+  public static BooleanData getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<BooleanData>
       PARSER = new com.google.protobuf.AbstractParser<BooleanData>() {
-    @java.lang.Override
+    @Override
     public BooleanData parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -452,13 +456,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<BooleanData> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.data.BooleanData getDefaultInstanceForType() {
+  @Override
+  public BooleanData getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

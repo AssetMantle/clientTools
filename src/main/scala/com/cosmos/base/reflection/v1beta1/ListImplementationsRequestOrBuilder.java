@@ -15,7 +15,7 @@ public interface ListImplementationsRequestOrBuilder extends
    * <code>string interface_name = 1 [json_name = "interfaceName"];</code>
    * @return The interfaceName.
    */
-  java.lang.String getInterfaceName();
+  String getInterfaceName();
   /**
    * <pre>
    * interface_name defines the interface to query the implementations for.

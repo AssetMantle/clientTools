@@ -87,7 +87,7 @@ public final class TypesProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\034tendermint/types/types.proto\022\020tendermi" +
       "nt.types\032\024gogoproto/gogo.proto\032\037google/p" +
       "rotobuf/timestamp.proto\032\035tendermint/cryp" +
@@ -182,86 +182,86 @@ public final class TypesProto {
           com.google.protobuf.TimestampProto.getDescriptor(),
           com.tendermint.crypto.ProofProto.getDescriptor(),
           com.tendermint.version.TypesProto.getDescriptor(),
-          com.tendermint.types.ValidatorProto.getDescriptor(),
+          ValidatorProto.getDescriptor(),
         });
     internal_static_tendermint_types_PartSetHeader_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_tendermint_types_PartSetHeader_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_PartSetHeader_descriptor,
-        new java.lang.String[] { "Total", "Hash", });
+        new String[] { "Total", "Hash", });
     internal_static_tendermint_types_Part_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_tendermint_types_Part_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_Part_descriptor,
-        new java.lang.String[] { "Index", "Bytes", "Proof", });
+        new String[] { "Index", "Bytes", "Proof", });
     internal_static_tendermint_types_BlockID_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_tendermint_types_BlockID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_BlockID_descriptor,
-        new java.lang.String[] { "Hash", "PartSetHeader", });
+        new String[] { "Hash", "PartSetHeader", });
     internal_static_tendermint_types_Header_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_tendermint_types_Header_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_Header_descriptor,
-        new java.lang.String[] { "Version", "ChainId", "Height", "Time", "LastBlockId", "LastCommitHash", "DataHash", "ValidatorsHash", "NextValidatorsHash", "ConsensusHash", "AppHash", "LastResultsHash", "EvidenceHash", "ProposerAddress", });
+        new String[] { "Version", "ChainId", "Height", "Time", "LastBlockId", "LastCommitHash", "DataHash", "ValidatorsHash", "NextValidatorsHash", "ConsensusHash", "AppHash", "LastResultsHash", "EvidenceHash", "ProposerAddress", });
     internal_static_tendermint_types_Data_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_tendermint_types_Data_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_Data_descriptor,
-        new java.lang.String[] { "Txs", });
+        new String[] { "Txs", });
     internal_static_tendermint_types_Vote_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_tendermint_types_Vote_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_Vote_descriptor,
-        new java.lang.String[] { "Type", "Height", "Round", "BlockId", "Timestamp", "ValidatorAddress", "ValidatorIndex", "Signature", });
+        new String[] { "Type", "Height", "Round", "BlockId", "Timestamp", "ValidatorAddress", "ValidatorIndex", "Signature", });
     internal_static_tendermint_types_Commit_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_tendermint_types_Commit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_Commit_descriptor,
-        new java.lang.String[] { "Height", "Round", "BlockId", "Signatures", });
+        new String[] { "Height", "Round", "BlockId", "Signatures", });
     internal_static_tendermint_types_CommitSig_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_tendermint_types_CommitSig_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_CommitSig_descriptor,
-        new java.lang.String[] { "BlockIdFlag", "ValidatorAddress", "Timestamp", "Signature", });
+        new String[] { "BlockIdFlag", "ValidatorAddress", "Timestamp", "Signature", });
     internal_static_tendermint_types_Proposal_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_tendermint_types_Proposal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_Proposal_descriptor,
-        new java.lang.String[] { "Type", "Height", "Round", "PolRound", "BlockId", "Timestamp", "Signature", });
+        new String[] { "Type", "Height", "Round", "PolRound", "BlockId", "Timestamp", "Signature", });
     internal_static_tendermint_types_SignedHeader_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_tendermint_types_SignedHeader_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_SignedHeader_descriptor,
-        new java.lang.String[] { "Header", "Commit", });
+        new String[] { "Header", "Commit", });
     internal_static_tendermint_types_LightBlock_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_tendermint_types_LightBlock_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_LightBlock_descriptor,
-        new java.lang.String[] { "SignedHeader", "ValidatorSet", });
+        new String[] { "SignedHeader", "ValidatorSet", });
     internal_static_tendermint_types_BlockMeta_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_tendermint_types_BlockMeta_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_BlockMeta_descriptor,
-        new java.lang.String[] { "BlockId", "BlockSize", "Header", "NumTxs", });
+        new String[] { "BlockId", "BlockSize", "Header", "NumTxs", });
     internal_static_tendermint_types_TxProof_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_tendermint_types_TxProof_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_TxProof_descriptor,
-        new java.lang.String[] { "RootHash", "Data", "Proof", });
+        new String[] { "RootHash", "Data", "Proof", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customname);
@@ -276,7 +276,7 @@ public final class TypesProto {
     com.google.protobuf.TimestampProto.getDescriptor();
     com.tendermint.crypto.ProofProto.getDescriptor();
     com.tendermint.version.TypesProto.getDescriptor();
-    com.tendermint.types.ValidatorProto.getDescriptor();
+    ValidatorProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

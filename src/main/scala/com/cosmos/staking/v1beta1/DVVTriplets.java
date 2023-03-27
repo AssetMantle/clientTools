@@ -23,69 +23,69 @@ private static final long serialVersionUID = 0L;
     triplets_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new DVVTriplets();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_DVVTriplets_descriptor;
+    return StakingProto.internal_static_cosmos_staking_v1beta1_DVVTriplets_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_DVVTriplets_fieldAccessorTable
+    return StakingProto.internal_static_cosmos_staking_v1beta1_DVVTriplets_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.staking.v1beta1.DVVTriplets.class, com.cosmos.staking.v1beta1.DVVTriplets.Builder.class);
+            DVVTriplets.class, Builder.class);
   }
 
   public static final int TRIPLETS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.staking.v1beta1.DVVTriplet> triplets_;
+  private java.util.List<DVVTriplet> triplets_;
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.staking.v1beta1.DVVTriplet> getTripletsList() {
+  @Override
+  public java.util.List<DVVTriplet> getTripletsList() {
     return triplets_;
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.staking.v1beta1.DVVTripletOrBuilder> 
+  @Override
+  public java.util.List<? extends DVVTripletOrBuilder>
       getTripletsOrBuilderList() {
     return triplets_;
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getTripletsCount() {
     return triplets_.size();
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.DVVTriplet getTriplets(int index) {
+  @Override
+  public DVVTriplet getTriplets(int index) {
     return triplets_.get(index);
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.DVVTripletOrBuilder getTripletsOrBuilder(
+  @Override
+  public DVVTripletOrBuilder getTripletsOrBuilder(
       int index) {
     return triplets_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -95,7 +95,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < triplets_.size(); i++) {
@@ -104,7 +104,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -119,15 +119,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.staking.v1beta1.DVVTriplets)) {
+    if (!(obj instanceof DVVTriplets)) {
       return super.equals(obj);
     }
-    com.cosmos.staking.v1beta1.DVVTriplets other = (com.cosmos.staking.v1beta1.DVVTriplets) obj;
+    DVVTriplets other = (DVVTriplets) obj;
 
     if (!getTripletsList()
         .equals(other.getTripletsList())) return false;
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseFrom(
+  public static DVVTriplets parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseFrom(
+  public static DVVTriplets parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseFrom(
+  public static DVVTriplets parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseFrom(
+  public static DVVTriplets parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseFrom(byte[] data)
+  public static DVVTriplets parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseFrom(
+  public static DVVTriplets parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseFrom(java.io.InputStream input)
+  public static DVVTriplets parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseFrom(
+  public static DVVTriplets parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseDelimitedFrom(java.io.InputStream input)
+  public static DVVTriplets parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseDelimitedFrom(
+  public static DVVTriplets parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseFrom(
+  public static DVVTriplets parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.DVVTriplets parseFrom(
+  public static DVVTriplets parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.staking.v1beta1.DVVTriplets prototype) {
+  public static Builder newBuilder(DVVTriplets prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -251,18 +251,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.DVVTriplets)
-      com.cosmos.staking.v1beta1.DVVTripletsOrBuilder {
+      DVVTripletsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_DVVTriplets_descriptor;
+      return StakingProto.internal_static_cosmos_staking_v1beta1_DVVTriplets_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_DVVTriplets_fieldAccessorTable
+      return StakingProto.internal_static_cosmos_staking_v1beta1_DVVTriplets_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.staking.v1beta1.DVVTriplets.class, com.cosmos.staking.v1beta1.DVVTriplets.Builder.class);
+              DVVTriplets.class, Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.DVVTriplets.newBuilder()
@@ -271,11 +271,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -289,36 +289,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_DVVTriplets_descriptor;
+      return StakingProto.internal_static_cosmos_staking_v1beta1_DVVTriplets_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.DVVTriplets getDefaultInstanceForType() {
-      return com.cosmos.staking.v1beta1.DVVTriplets.getDefaultInstance();
+    @Override
+    public DVVTriplets getDefaultInstanceForType() {
+      return DVVTriplets.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.DVVTriplets build() {
-      com.cosmos.staking.v1beta1.DVVTriplets result = buildPartial();
+    @Override
+    public DVVTriplets build() {
+      DVVTriplets result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.DVVTriplets buildPartial() {
-      com.cosmos.staking.v1beta1.DVVTriplets result = new com.cosmos.staking.v1beta1.DVVTriplets(this);
+    @Override
+    public DVVTriplets buildPartial() {
+      DVVTriplets result = new DVVTriplets(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.staking.v1beta1.DVVTriplets result) {
+    private void buildPartialRepeatedFields(DVVTriplets result) {
       if (tripletsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           triplets_ = java.util.Collections.unmodifiableList(triplets_);
@@ -330,54 +330,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.staking.v1beta1.DVVTriplets result) {
+    private void buildPartial0(DVVTriplets result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.staking.v1beta1.DVVTriplets) {
-        return mergeFrom((com.cosmos.staking.v1beta1.DVVTriplets)other);
+      if (other instanceof DVVTriplets) {
+        return mergeFrom((DVVTriplets)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.staking.v1beta1.DVVTriplets other) {
-      if (other == com.cosmos.staking.v1beta1.DVVTriplets.getDefaultInstance()) return this;
+    public Builder mergeFrom(DVVTriplets other) {
+      if (other == DVVTriplets.getDefaultInstance()) return this;
       if (tripletsBuilder_ == null) {
         if (!other.triplets_.isEmpty()) {
           if (triplets_.isEmpty()) {
@@ -409,18 +409,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -431,9 +431,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.cosmos.staking.v1beta1.DVVTriplet m =
+              DVVTriplet m =
                   input.readMessage(
-                      com.cosmos.staking.v1beta1.DVVTriplet.parser(),
+                      DVVTriplet.parser(),
                       extensionRegistry);
               if (tripletsBuilder_ == null) {
                 ensureTripletsIsMutable();
@@ -460,22 +460,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.cosmos.staking.v1beta1.DVVTriplet> triplets_ =
+    private java.util.List<DVVTriplet> triplets_ =
       java.util.Collections.emptyList();
     private void ensureTripletsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        triplets_ = new java.util.ArrayList<com.cosmos.staking.v1beta1.DVVTriplet>(triplets_);
+        triplets_ = new java.util.ArrayList<DVVTriplet>(triplets_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.DVVTriplet, com.cosmos.staking.v1beta1.DVVTriplet.Builder, com.cosmos.staking.v1beta1.DVVTripletOrBuilder> tripletsBuilder_;
+        DVVTriplet, DVVTriplet.Builder, DVVTripletOrBuilder> tripletsBuilder_;
 
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.DVVTriplet> getTripletsList() {
+    public java.util.List<DVVTriplet> getTripletsList() {
       if (tripletsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(triplets_);
       } else {
@@ -495,7 +495,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.DVVTriplet getTriplets(int index) {
+    public DVVTriplet getTriplets(int index) {
       if (tripletsBuilder_ == null) {
         return triplets_.get(index);
       } else {
@@ -506,7 +506,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
     public Builder setTriplets(
-        int index, com.cosmos.staking.v1beta1.DVVTriplet value) {
+        int index, DVVTriplet value) {
       if (tripletsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -523,7 +523,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
     public Builder setTriplets(
-        int index, com.cosmos.staking.v1beta1.DVVTriplet.Builder builderForValue) {
+        int index, DVVTriplet.Builder builderForValue) {
       if (tripletsBuilder_ == null) {
         ensureTripletsIsMutable();
         triplets_.set(index, builderForValue.build());
@@ -536,7 +536,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addTriplets(com.cosmos.staking.v1beta1.DVVTriplet value) {
+    public Builder addTriplets(DVVTriplet value) {
       if (tripletsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -553,7 +553,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
     public Builder addTriplets(
-        int index, com.cosmos.staking.v1beta1.DVVTriplet value) {
+        int index, DVVTriplet value) {
       if (tripletsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -570,7 +570,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
     public Builder addTriplets(
-        com.cosmos.staking.v1beta1.DVVTriplet.Builder builderForValue) {
+        DVVTriplet.Builder builderForValue) {
       if (tripletsBuilder_ == null) {
         ensureTripletsIsMutable();
         triplets_.add(builderForValue.build());
@@ -584,7 +584,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
     public Builder addTriplets(
-        int index, com.cosmos.staking.v1beta1.DVVTriplet.Builder builderForValue) {
+        int index, DVVTriplet.Builder builderForValue) {
       if (tripletsBuilder_ == null) {
         ensureTripletsIsMutable();
         triplets_.add(index, builderForValue.build());
@@ -598,7 +598,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllTriplets(
-        java.lang.Iterable<? extends com.cosmos.staking.v1beta1.DVVTriplet> values) {
+        Iterable<? extends DVVTriplet> values) {
       if (tripletsBuilder_ == null) {
         ensureTripletsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -638,14 +638,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.DVVTriplet.Builder getTripletsBuilder(
+    public DVVTriplet.Builder getTripletsBuilder(
         int index) {
       return getTripletsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.DVVTripletOrBuilder getTripletsOrBuilder(
+    public DVVTripletOrBuilder getTripletsOrBuilder(
         int index) {
       if (tripletsBuilder_ == null) {
         return triplets_.get(index);  } else {
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.cosmos.staking.v1beta1.DVVTripletOrBuilder> 
+    public java.util.List<? extends DVVTripletOrBuilder>
          getTripletsOrBuilderList() {
       if (tripletsBuilder_ != null) {
         return tripletsBuilder_.getMessageOrBuilderList();
@@ -666,31 +666,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.DVVTriplet.Builder addTripletsBuilder() {
+    public DVVTriplet.Builder addTripletsBuilder() {
       return getTripletsFieldBuilder().addBuilder(
-          com.cosmos.staking.v1beta1.DVVTriplet.getDefaultInstance());
+          DVVTriplet.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.DVVTriplet.Builder addTripletsBuilder(
+    public DVVTriplet.Builder addTripletsBuilder(
         int index) {
       return getTripletsFieldBuilder().addBuilder(
-          index, com.cosmos.staking.v1beta1.DVVTriplet.getDefaultInstance());
+          index, DVVTriplet.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.DVVTriplet.Builder> 
+    public java.util.List<DVVTriplet.Builder>
          getTripletsBuilderList() {
       return getTripletsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.DVVTriplet, com.cosmos.staking.v1beta1.DVVTriplet.Builder, com.cosmos.staking.v1beta1.DVVTripletOrBuilder> 
+        DVVTriplet, DVVTriplet.Builder, DVVTripletOrBuilder>
         getTripletsFieldBuilder() {
       if (tripletsBuilder_ == null) {
         tripletsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.staking.v1beta1.DVVTriplet, com.cosmos.staking.v1beta1.DVVTriplet.Builder, com.cosmos.staking.v1beta1.DVVTripletOrBuilder>(
+            DVVTriplet, DVVTriplet.Builder, DVVTripletOrBuilder>(
                 triplets_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -699,13 +699,13 @@ private static final long serialVersionUID = 0L;
       }
       return tripletsBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -716,18 +716,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.DVVTriplets)
-  private static final com.cosmos.staking.v1beta1.DVVTriplets DEFAULT_INSTANCE;
+  private static final DVVTriplets DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.DVVTriplets();
+    DEFAULT_INSTANCE = new DVVTriplets();
   }
 
-  public static com.cosmos.staking.v1beta1.DVVTriplets getDefaultInstance() {
+  public static DVVTriplets getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<DVVTriplets>
       PARSER = new com.google.protobuf.AbstractParser<DVVTriplets>() {
-    @java.lang.Override
+    @Override
     public DVVTriplets parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -751,13 +751,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<DVVTriplets> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.DVVTriplets getDefaultInstanceForType() {
+  @Override
+  public DVVTriplets getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

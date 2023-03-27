@@ -37,21 +37,21 @@ public interface RequestBeginBlockOrBuilder extends
    * <code>.tendermint.abci.LastCommitInfo last_commit_info = 3 [json_name = "lastCommitInfo", (.gogoproto.nullable) = false];</code>
    * @return The lastCommitInfo.
    */
-  com.tendermint.abci.LastCommitInfo getLastCommitInfo();
+  LastCommitInfo getLastCommitInfo();
   /**
    * <code>.tendermint.abci.LastCommitInfo last_commit_info = 3 [json_name = "lastCommitInfo", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.abci.LastCommitInfoOrBuilder getLastCommitInfoOrBuilder();
+  LastCommitInfoOrBuilder getLastCommitInfoOrBuilder();
 
   /**
    * <code>repeated .tendermint.abci.Evidence byzantine_validators = 4 [json_name = "byzantineValidators", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.tendermint.abci.Evidence> 
+  java.util.List<Evidence>
       getByzantineValidatorsList();
   /**
    * <code>repeated .tendermint.abci.Evidence byzantine_validators = 4 [json_name = "byzantineValidators", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.abci.Evidence getByzantineValidators(int index);
+  Evidence getByzantineValidators(int index);
   /**
    * <code>repeated .tendermint.abci.Evidence byzantine_validators = 4 [json_name = "byzantineValidators", (.gogoproto.nullable) = false];</code>
    */
@@ -59,11 +59,11 @@ public interface RequestBeginBlockOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.Evidence byzantine_validators = 4 [json_name = "byzantineValidators", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.tendermint.abci.EvidenceOrBuilder> 
+  java.util.List<? extends EvidenceOrBuilder>
       getByzantineValidatorsOrBuilderList();
   /**
    * <code>repeated .tendermint.abci.Evidence byzantine_validators = 4 [json_name = "byzantineValidators", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.abci.EvidenceOrBuilder getByzantineValidatorsOrBuilder(
+  EvidenceOrBuilder getByzantineValidatorsOrBuilder(
       int index);
 }

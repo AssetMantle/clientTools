@@ -16,7 +16,7 @@ public interface ResponseApplySnapshotChunkOrBuilder extends
    * <code>.tendermint.abci.ResponseApplySnapshotChunk.Result result = 1 [json_name = "result"];</code>
    * @return The result.
    */
-  com.tendermint.abci.ResponseApplySnapshotChunk.Result getResult();
+  ResponseApplySnapshotChunk.Result getResult();
 
   /**
    * <pre>
@@ -26,7 +26,7 @@ public interface ResponseApplySnapshotChunkOrBuilder extends
    * <code>repeated uint32 refetch_chunks = 2 [json_name = "refetchChunks"];</code>
    * @return A list containing the refetchChunks.
    */
-  java.util.List<java.lang.Integer> getRefetchChunksList();
+  java.util.List<Integer> getRefetchChunksList();
   /**
    * <pre>
    * Chunks to refetch and reapply
@@ -55,7 +55,7 @@ public interface ResponseApplySnapshotChunkOrBuilder extends
    * <code>repeated string reject_senders = 3 [json_name = "rejectSenders"];</code>
    * @return A list containing the rejectSenders.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getRejectSendersList();
   /**
    * <pre>
@@ -75,7 +75,7 @@ public interface ResponseApplySnapshotChunkOrBuilder extends
    * @param index The index of the element to return.
    * @return The rejectSenders at the given index.
    */
-  java.lang.String getRejectSenders(int index);
+  String getRejectSenders(int index);
   /**
    * <pre>
    * Chunk senders to reject and ban

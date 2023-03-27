@@ -11,7 +11,7 @@ public interface MetadataOrBuilder extends
    * <code>string description = 1 [json_name = "description"];</code>
    * @return The description.
    */
-  java.lang.String getDescription();
+  String getDescription();
   /**
    * <code>string description = 1 [json_name = "description"];</code>
    * @return The bytes for description.
@@ -26,7 +26,7 @@ public interface MetadataOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
    */
-  java.util.List<com.cosmos.bank.v1beta1.DenomUnit> 
+  java.util.List<DenomUnit>
       getDenomUnitsList();
   /**
    * <pre>
@@ -35,7 +35,7 @@ public interface MetadataOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
    */
-  com.cosmos.bank.v1beta1.DenomUnit getDenomUnits(int index);
+  DenomUnit getDenomUnits(int index);
   /**
    * <pre>
    * denom_units represents the list of DenomUnit's for a given coin
@@ -51,7 +51,7 @@ public interface MetadataOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
    */
-  java.util.List<? extends com.cosmos.bank.v1beta1.DenomUnitOrBuilder> 
+  java.util.List<? extends DenomUnitOrBuilder>
       getDenomUnitsOrBuilderList();
   /**
    * <pre>
@@ -60,7 +60,7 @@ public interface MetadataOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
    */
-  com.cosmos.bank.v1beta1.DenomUnitOrBuilder getDenomUnitsOrBuilder(
+  DenomUnitOrBuilder getDenomUnitsOrBuilder(
       int index);
 
   /**
@@ -71,7 +71,7 @@ public interface MetadataOrBuilder extends
    * <code>string base = 3 [json_name = "base"];</code>
    * @return The base.
    */
-  java.lang.String getBase();
+  String getBase();
   /**
    * <pre>
    * base represents the base denom (should be the DenomUnit with exponent = 0).
@@ -92,7 +92,7 @@ public interface MetadataOrBuilder extends
    * <code>string display = 4 [json_name = "display"];</code>
    * @return The display.
    */
-  java.lang.String getDisplay();
+  String getDisplay();
   /**
    * <pre>
    * display indicates the suggested denom that should be
@@ -115,7 +115,7 @@ public interface MetadataOrBuilder extends
    * <code>string name = 5 [json_name = "name"];</code>
    * @return The name.
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <pre>
    * name defines the name of the token (eg: Cosmos Atom)
@@ -140,7 +140,7 @@ public interface MetadataOrBuilder extends
    * <code>string symbol = 6 [json_name = "symbol"];</code>
    * @return The symbol.
    */
-  java.lang.String getSymbol();
+  String getSymbol();
   /**
    * <pre>
    * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can

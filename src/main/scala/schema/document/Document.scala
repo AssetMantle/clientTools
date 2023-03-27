@@ -1,13 +1,12 @@
 package schema.document
 
-import com.documents.{Document => protoDocument}
 import schema.id.base.{ClassificationID, HashID, PropertyID}
 import schema.property.Property
 import schema.qualified._
 
 case class Document(classificationID: ClassificationID, immutables: Immutables, mutables: Mutables) {
 
-  def generateHashID: HashID = commonUtilities.ID.generateHashID(this.classificationID.getBytes, this.immutables.generateHashID.getBytes)
+  def generateHashID: HashID = utilities.ID.generateHashID(this.classificationID.getBytes, this.immutables.generateHashID.getBytes)
 
   def getProperty(id: PropertyID): Option[Property] = {
     val immutable = this.immutables.getProperty(id)
@@ -24,6 +23,8 @@ case class Document(classificationID: ClassificationID, immutables: Immutables, 
     .build()
 
   def getProtoBytes: Array[Byte] = this.asProtoDocument.toByteString.toByteArray
+
+  def mutate(properties: Seq[Property]): Document = this.copy(mutables = this.mutables.mutate(properties))
 }
 
 object Document {

@@ -24,7 +24,7 @@ public interface ChannelOrBuilder extends
    * <code>.ibc.core.channel.v1.State state = 1 [json_name = "state"];</code>
    * @return The state.
    */
-  com.ibc.core.channel.v1.State getState();
+  State getState();
 
   /**
    * <pre>
@@ -43,7 +43,7 @@ public interface ChannelOrBuilder extends
    * <code>.ibc.core.channel.v1.Order ordering = 2 [json_name = "ordering"];</code>
    * @return The ordering.
    */
-  com.ibc.core.channel.v1.Order getOrdering();
+  Order getOrdering();
 
   /**
    * <pre>
@@ -62,7 +62,7 @@ public interface ChannelOrBuilder extends
    * <code>.ibc.core.channel.v1.Counterparty counterparty = 3 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    * @return The counterparty.
    */
-  com.ibc.core.channel.v1.Counterparty getCounterparty();
+  Counterparty getCounterparty();
   /**
    * <pre>
    * counterparty channel end
@@ -70,7 +70,7 @@ public interface ChannelOrBuilder extends
    *
    * <code>.ibc.core.channel.v1.Counterparty counterparty = 3 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    */
-  com.ibc.core.channel.v1.CounterpartyOrBuilder getCounterpartyOrBuilder();
+  CounterpartyOrBuilder getCounterpartyOrBuilder();
 
   /**
    * <pre>
@@ -81,7 +81,7 @@ public interface ChannelOrBuilder extends
    * <code>repeated string connection_hops = 4 [json_name = "connectionHops", (.gogoproto.moretags) = "yaml:&#92;"connection_hops&#92;""];</code>
    * @return A list containing the connectionHops.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getConnectionHopsList();
   /**
    * <pre>
@@ -103,7 +103,7 @@ public interface ChannelOrBuilder extends
    * @param index The index of the element to return.
    * @return The connectionHops at the given index.
    */
-  java.lang.String getConnectionHops(int index);
+  String getConnectionHops(int index);
   /**
    * <pre>
    * list of connection identifiers, in order, along which packets sent on
@@ -125,7 +125,7 @@ public interface ChannelOrBuilder extends
    * <code>string version = 5 [json_name = "version"];</code>
    * @return The version.
    */
-  java.lang.String getVersion();
+  String getVersion();
   /**
    * <pre>
    * opaque channel version, which is agreed upon during the handshake

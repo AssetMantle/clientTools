@@ -27,7 +27,7 @@ public final class ListeningProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n)cosmos/base/store/v1beta1/listening.pr" +
       "oto\022\031cosmos.base.store.v1beta1\"j\n\013StoreK" +
       "VPair\022\033\n\tstore_key\030\001 \001(\tR\010storeKey\022\026\n\006de" +
@@ -50,7 +50,7 @@ public final class ListeningProto {
     internal_static_cosmos_base_store_v1beta1_StoreKVPair_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_store_v1beta1_StoreKVPair_descriptor,
-        new java.lang.String[] { "StoreKey", "Delete", "Key", "Value", });
+        new String[] { "StoreKey", "Delete", "Key", "Value", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

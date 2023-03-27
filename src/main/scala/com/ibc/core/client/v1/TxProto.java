@@ -62,7 +62,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\033ibc/core/client/v1/tx.proto\022\022ibc.core." +
       "client.v1\032\024gogoproto/gogo.proto\032\031google/" +
       "protobuf/any.proto\"\340\001\n\017MsgCreateClient\022P" +
@@ -122,49 +122,49 @@ public final class TxProto {
     internal_static_ibc_core_client_v1_MsgCreateClient_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_MsgCreateClient_descriptor,
-        new java.lang.String[] { "ClientState", "ConsensusState", "Signer", });
+        new String[] { "ClientState", "ConsensusState", "Signer", });
     internal_static_ibc_core_client_v1_MsgCreateClientResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_core_client_v1_MsgCreateClientResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_MsgCreateClientResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_ibc_core_client_v1_MsgUpdateClient_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_core_client_v1_MsgUpdateClient_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_MsgUpdateClient_descriptor,
-        new java.lang.String[] { "ClientId", "Header", "Signer", });
+        new String[] { "ClientId", "Header", "Signer", });
     internal_static_ibc_core_client_v1_MsgUpdateClientResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_core_client_v1_MsgUpdateClientResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_MsgUpdateClientResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_ibc_core_client_v1_MsgUpgradeClient_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_core_client_v1_MsgUpgradeClient_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_MsgUpgradeClient_descriptor,
-        new java.lang.String[] { "ClientId", "ClientState", "ConsensusState", "ProofUpgradeClient", "ProofUpgradeConsensusState", "Signer", });
+        new String[] { "ClientId", "ClientState", "ConsensusState", "ProofUpgradeClient", "ProofUpgradeConsensusState", "Signer", });
     internal_static_ibc_core_client_v1_MsgUpgradeClientResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_ibc_core_client_v1_MsgUpgradeClientResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_MsgUpgradeClientResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_ibc_core_client_v1_MsgSubmitMisbehaviour_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_ibc_core_client_v1_MsgSubmitMisbehaviour_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_MsgSubmitMisbehaviour_descriptor,
-        new java.lang.String[] { "ClientId", "Misbehaviour", "Signer", });
+        new String[] { "ClientId", "Misbehaviour", "Signer", });
     internal_static_ibc_core_client_v1_MsgSubmitMisbehaviourResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_ibc_core_client_v1_MsgSubmitMisbehaviourResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_MsgSubmitMisbehaviourResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.equal);

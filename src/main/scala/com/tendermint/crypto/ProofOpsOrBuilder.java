@@ -10,12 +10,12 @@ public interface ProofOpsOrBuilder extends
   /**
    * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.tendermint.crypto.ProofOp> 
+  java.util.List<ProofOp>
       getOpsList();
   /**
    * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.crypto.ProofOp getOps(int index);
+  ProofOp getOps(int index);
   /**
    * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
    */
@@ -23,11 +23,11 @@ public interface ProofOpsOrBuilder extends
   /**
    * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.tendermint.crypto.ProofOpOrBuilder> 
+  java.util.List<? extends ProofOpOrBuilder>
       getOpsOrBuilderList();
   /**
    * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.crypto.ProofOpOrBuilder getOpsOrBuilder(
+  ProofOpOrBuilder getOpsOrBuilder(
       int index);
 }

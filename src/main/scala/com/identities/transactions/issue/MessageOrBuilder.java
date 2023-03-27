@@ -11,7 +11,7 @@ public interface MessageOrBuilder extends
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
    */
-  java.lang.String getFrom();
+  String getFrom();
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The bytes for from.
@@ -38,7 +38,7 @@ public interface MessageOrBuilder extends
    * <code>string to = 3 [json_name = "to"];</code>
    * @return The to.
    */
-  java.lang.String getTo();
+  String getTo();
   /**
    * <code>string to = 3 [json_name = "to"];</code>
    * @return The bytes for to.

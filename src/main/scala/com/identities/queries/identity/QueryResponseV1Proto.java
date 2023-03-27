@@ -27,7 +27,7 @@ public final class QueryResponseV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\nCmodules/identities/internal/queries/id" +
       "entity/queryResponse.v1.proto\022\033identitie" +
       "s.queries.identity\032\024gogoproto/gogo.proto" +
@@ -55,7 +55,7 @@ public final class QueryResponseV1Proto {
     internal_static_identities_queries_identity_QueryResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_identities_queries_identity_QueryResponse_descriptor,
-        new java.lang.String[] { "Success", "Error", "List", });
+        new String[] { "Success", "Error", "List", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

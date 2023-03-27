@@ -27,7 +27,7 @@ public final class QueryResponseV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\nNmodules/classifications/internal/queri" +
       "es/classification/queryResponse.v1.proto" +
       "\022&classifications.queries.classification" +
@@ -57,7 +57,7 @@ public final class QueryResponseV1Proto {
     internal_static_classifications_queries_classification_QueryResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_classifications_queries_classification_QueryResponse_descriptor,
-        new java.lang.String[] { "Success", "Error", "List", });
+        new String[] { "Success", "Error", "List", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

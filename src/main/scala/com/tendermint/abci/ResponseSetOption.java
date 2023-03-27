@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     info_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new ResponseSetOption();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ResponseSetOption_descriptor;
+    return TypesProto.internal_static_tendermint_abci_ResponseSetOption_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ResponseSetOption_fieldAccessorTable
+    return TypesProto.internal_static_tendermint_abci_ResponseSetOption_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.tendermint.abci.ResponseSetOption.class, com.tendermint.abci.ResponseSetOption.Builder.class);
+            ResponseSetOption.class, Builder.class);
   }
 
   public static final int CODE_FIELD_NUMBER = 1;
@@ -50,14 +50,14 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 code = 1 [json_name = "code"];</code>
    * @return The code.
    */
-  @java.lang.Override
+  @Override
   public int getCode() {
     return code_;
   }
 
   public static final int LOG_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object log_ = "";
+  private volatile Object log_ = "";
   /**
    * <pre>
    * bytes data = 2;
@@ -66,15 +66,15 @@ private static final long serialVersionUID = 0L;
    * <code>string log = 3 [json_name = "log"];</code>
    * @return The log.
    */
-  @java.lang.Override
-  public java.lang.String getLog() {
-    java.lang.Object ref = log_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getLog() {
+    Object ref = log_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       log_ = s;
       return s;
     }
@@ -87,14 +87,14 @@ private static final long serialVersionUID = 0L;
    * <code>string log = 3 [json_name = "log"];</code>
    * @return The bytes for log.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getLogBytes() {
-    java.lang.Object ref = log_;
-    if (ref instanceof java.lang.String) {
+    Object ref = log_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       log_ = b;
       return b;
     } else {
@@ -104,20 +104,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int INFO_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object info_ = "";
+  private volatile Object info_ = "";
   /**
    * <code>string info = 4 [json_name = "info"];</code>
    * @return The info.
    */
-  @java.lang.Override
-  public java.lang.String getInfo() {
-    java.lang.Object ref = info_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getInfo() {
+    Object ref = info_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       info_ = s;
       return s;
     }
@@ -126,14 +126,14 @@ private static final long serialVersionUID = 0L;
    * <code>string info = 4 [json_name = "info"];</code>
    * @return The bytes for info.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getInfoBytes() {
-    java.lang.Object ref = info_;
-    if (ref instanceof java.lang.String) {
+    Object ref = info_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       info_ = b;
       return b;
     } else {
@@ -142,7 +142,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -152,7 +152,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (code_ != 0) {
@@ -167,7 +167,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -188,15 +188,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.tendermint.abci.ResponseSetOption)) {
+    if (!(obj instanceof ResponseSetOption)) {
       return super.equals(obj);
     }
-    com.tendermint.abci.ResponseSetOption other = (com.tendermint.abci.ResponseSetOption) obj;
+    ResponseSetOption other = (ResponseSetOption) obj;
 
     if (getCode()
         != other.getCode()) return false;
@@ -208,7 +208,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -226,69 +226,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.tendermint.abci.ResponseSetOption parseFrom(
+  public static ResponseSetOption parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.ResponseSetOption parseFrom(
+  public static ResponseSetOption parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.ResponseSetOption parseFrom(
+  public static ResponseSetOption parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.ResponseSetOption parseFrom(
+  public static ResponseSetOption parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.ResponseSetOption parseFrom(byte[] data)
+  public static ResponseSetOption parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.ResponseSetOption parseFrom(
+  public static ResponseSetOption parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.ResponseSetOption parseFrom(java.io.InputStream input)
+  public static ResponseSetOption parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.ResponseSetOption parseFrom(
+  public static ResponseSetOption parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.abci.ResponseSetOption parseDelimitedFrom(java.io.InputStream input)
+  public static ResponseSetOption parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.ResponseSetOption parseDelimitedFrom(
+  public static ResponseSetOption parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.abci.ResponseSetOption parseFrom(
+  public static ResponseSetOption parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.ResponseSetOption parseFrom(
+  public static ResponseSetOption parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -296,23 +296,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.tendermint.abci.ResponseSetOption prototype) {
+  public static Builder newBuilder(ResponseSetOption prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -326,18 +326,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.abci.ResponseSetOption)
-      com.tendermint.abci.ResponseSetOptionOrBuilder {
+      ResponseSetOptionOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ResponseSetOption_descriptor;
+      return TypesProto.internal_static_tendermint_abci_ResponseSetOption_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ResponseSetOption_fieldAccessorTable
+      return TypesProto.internal_static_tendermint_abci_ResponseSetOption_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.tendermint.abci.ResponseSetOption.class, com.tendermint.abci.ResponseSetOption.Builder.class);
+              ResponseSetOption.class, Builder.class);
     }
 
     // Construct using com.tendermint.abci.ResponseSetOption.newBuilder()
@@ -346,11 +346,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -360,35 +360,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ResponseSetOption_descriptor;
+      return TypesProto.internal_static_tendermint_abci_ResponseSetOption_descriptor;
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.ResponseSetOption getDefaultInstanceForType() {
-      return com.tendermint.abci.ResponseSetOption.getDefaultInstance();
+    @Override
+    public ResponseSetOption getDefaultInstanceForType() {
+      return ResponseSetOption.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.ResponseSetOption build() {
-      com.tendermint.abci.ResponseSetOption result = buildPartial();
+    @Override
+    public ResponseSetOption build() {
+      ResponseSetOption result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.ResponseSetOption buildPartial() {
-      com.tendermint.abci.ResponseSetOption result = new com.tendermint.abci.ResponseSetOption(this);
+    @Override
+    public ResponseSetOption buildPartial() {
+      ResponseSetOption result = new ResponseSetOption(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.tendermint.abci.ResponseSetOption result) {
+    private void buildPartial0(ResponseSetOption result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.code_ = code_;
@@ -401,50 +401,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.tendermint.abci.ResponseSetOption) {
-        return mergeFrom((com.tendermint.abci.ResponseSetOption)other);
+      if (other instanceof ResponseSetOption) {
+        return mergeFrom((ResponseSetOption)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.tendermint.abci.ResponseSetOption other) {
-      if (other == com.tendermint.abci.ResponseSetOption.getDefaultInstance()) return this;
+    public Builder mergeFrom(ResponseSetOption other) {
+      if (other == ResponseSetOption.getDefaultInstance()) return this;
       if (other.getCode() != 0) {
         setCode(other.getCode());
       }
@@ -463,18 +463,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -521,7 +521,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 code = 1 [json_name = "code"];</code>
      * @return The code.
      */
-    @java.lang.Override
+    @Override
     public int getCode() {
       return code_;
     }
@@ -548,7 +548,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object log_ = "";
+    private Object log_ = "";
     /**
      * <pre>
      * bytes data = 2;
@@ -557,16 +557,16 @@ private static final long serialVersionUID = 0L;
      * <code>string log = 3 [json_name = "log"];</code>
      * @return The log.
      */
-    public java.lang.String getLog() {
-      java.lang.Object ref = log_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getLog() {
+      Object ref = log_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         log_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -579,11 +579,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getLogBytes() {
-      java.lang.Object ref = log_;
+      Object ref = log_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         log_ = b;
         return b;
       } else {
@@ -600,7 +600,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setLog(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       log_ = value;
       bitField0_ |= 0x00000002;
@@ -640,21 +640,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object info_ = "";
+    private Object info_ = "";
     /**
      * <code>string info = 4 [json_name = "info"];</code>
      * @return The info.
      */
-    public java.lang.String getInfo() {
-      java.lang.Object ref = info_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getInfo() {
+      Object ref = info_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         info_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -663,11 +663,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getInfoBytes() {
-      java.lang.Object ref = info_;
+      Object ref = info_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         info_ = b;
         return b;
       } else {
@@ -680,7 +680,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setInfo(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       info_ = value;
       bitField0_ |= 0x00000004;
@@ -711,13 +711,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -728,18 +728,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.abci.ResponseSetOption)
-  private static final com.tendermint.abci.ResponseSetOption DEFAULT_INSTANCE;
+  private static final ResponseSetOption DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.tendermint.abci.ResponseSetOption();
+    DEFAULT_INSTANCE = new ResponseSetOption();
   }
 
-  public static com.tendermint.abci.ResponseSetOption getDefaultInstance() {
+  public static ResponseSetOption getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ResponseSetOption>
       PARSER = new com.google.protobuf.AbstractParser<ResponseSetOption>() {
-    @java.lang.Override
+    @Override
     public ResponseSetOption parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -763,13 +763,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<ResponseSetOption> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.tendermint.abci.ResponseSetOption getDefaultInstanceForType() {
+  @Override
+  public ResponseSetOption getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

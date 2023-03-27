@@ -35,7 +35,7 @@ public interface MsgFundCommunityPoolOrBuilder extends
    * <code>string depositor = 2 [json_name = "depositor"];</code>
    * @return The depositor.
    */
-  java.lang.String getDepositor();
+  String getDepositor();
   /**
    * <code>string depositor = 2 [json_name = "depositor"];</code>
    * @return The bytes for depositor.

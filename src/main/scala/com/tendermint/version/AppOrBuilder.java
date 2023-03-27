@@ -17,7 +17,7 @@ public interface AppOrBuilder extends
    * <code>string software = 2 [json_name = "software"];</code>
    * @return The software.
    */
-  java.lang.String getSoftware();
+  String getSoftware();
   /**
    * <code>string software = 2 [json_name = "software"];</code>
    * @return The bytes for software.

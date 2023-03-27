@@ -16,11 +16,11 @@ public interface GenesisStateOrBuilder extends
    * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
    * @return The controllerGenesisState.
    */
-  com.ibc.applications.interchain_accounts.v1.ControllerGenesisState getControllerGenesisState();
+  ControllerGenesisState getControllerGenesisState();
   /**
    * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
    */
-  com.ibc.applications.interchain_accounts.v1.ControllerGenesisStateOrBuilder getControllerGenesisStateOrBuilder();
+  ControllerGenesisStateOrBuilder getControllerGenesisStateOrBuilder();
 
   /**
    * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
@@ -31,9 +31,9 @@ public interface GenesisStateOrBuilder extends
    * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
    * @return The hostGenesisState.
    */
-  com.ibc.applications.interchain_accounts.v1.HostGenesisState getHostGenesisState();
+  HostGenesisState getHostGenesisState();
   /**
    * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
    */
-  com.ibc.applications.interchain_accounts.v1.HostGenesisStateOrBuilder getHostGenesisStateOrBuilder();
+  HostGenesisStateOrBuilder getHostGenesisStateOrBuilder();
 }

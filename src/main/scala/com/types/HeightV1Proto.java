@@ -27,7 +27,7 @@ public final class HeightV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n!schema/types/base/height.v1.proto\022\005typ" +
       "es\032\024gogoproto/gogo.proto\"$\n\006Height\022\024\n\005va" +
       "lue\030\001 \001(\003R\005value:\004\210\240\037\000B\200\001\n\tcom.typesB\rHe" +
@@ -46,7 +46,7 @@ public final class HeightV1Proto {
     internal_static_types_Height_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_types_Height_descriptor,
-        new java.lang.String[] { "Value", });
+        new String[] { "Value", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

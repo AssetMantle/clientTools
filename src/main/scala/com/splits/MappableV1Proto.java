@@ -27,7 +27,7 @@ public final class MappableV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n2modules/splits/internal/mappable/mappa" +
       "ble.v1.proto\022\006splits\032 schema/types/base/" +
       "split.v1.proto\".\n\010Mappable\022\"\n\005split\030\001 \001(" +
@@ -47,7 +47,7 @@ public final class MappableV1Proto {
     internal_static_splits_Mappable_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_splits_Mappable_descriptor,
-        new java.lang.String[] { "Split", });
+        new String[] { "Split", });
     com.types.SplitV1Proto.getDescriptor();
   }
 

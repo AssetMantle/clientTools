@@ -16,17 +16,17 @@ public interface RedelegationEntryResponseOrBuilder extends
    * <code>.cosmos.staking.v1beta1.RedelegationEntry redelegation_entry = 1 [json_name = "redelegationEntry", (.gogoproto.nullable) = false];</code>
    * @return The redelegationEntry.
    */
-  com.cosmos.staking.v1beta1.RedelegationEntry getRedelegationEntry();
+  RedelegationEntry getRedelegationEntry();
   /**
    * <code>.cosmos.staking.v1beta1.RedelegationEntry redelegation_entry = 1 [json_name = "redelegationEntry", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.RedelegationEntryOrBuilder getRedelegationEntryOrBuilder();
+  RedelegationEntryOrBuilder getRedelegationEntryOrBuilder();
 
   /**
    * <code>string balance = 4 [json_name = "balance", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The balance.
    */
-  java.lang.String getBalance();
+  String getBalance();
   /**
    * <code>string balance = 4 [json_name = "balance", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The bytes for balance.

@@ -14,7 +14,7 @@ public interface QueryServicesDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
    */
-  java.util.List<com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor> 
+  java.util.List<QueryServiceDescriptor>
       getQueryServicesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryServicesDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor getQueryServices(int index);
+  QueryServiceDescriptor getQueryServices(int index);
   /**
    * <pre>
    * query_services is a list of cosmos-sdk QueryServiceDescriptor
@@ -39,7 +39,7 @@ public interface QueryServicesDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
    */
-  java.util.List<? extends com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptorOrBuilder> 
+  java.util.List<? extends QueryServiceDescriptorOrBuilder>
       getQueryServicesOrBuilderList();
   /**
    * <pre>
@@ -48,6 +48,6 @@ public interface QueryServicesDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptorOrBuilder getQueryServicesOrBuilder(
+  QueryServiceDescriptorOrBuilder getQueryServicesOrBuilder(
       int index);
 }

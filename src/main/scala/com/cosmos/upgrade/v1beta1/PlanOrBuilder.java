@@ -21,7 +21,7 @@ public interface PlanOrBuilder extends
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <pre>
    * Sets the name for the upgrade. This name will be used by the upgraded
@@ -51,7 +51,7 @@ public interface PlanOrBuilder extends
    *     See cosmos/upgrade/v1beta1/upgrade.proto;l=27
    * @return Whether the time field is set.
    */
-  @java.lang.Deprecated boolean hasTime();
+  @Deprecated boolean hasTime();
   /**
    * <pre>
    * Deprecated: Time based upgrades have been deprecated. Time based upgrade logic
@@ -64,7 +64,7 @@ public interface PlanOrBuilder extends
    *     See cosmos/upgrade/v1beta1/upgrade.proto;l=27
    * @return The time.
    */
-  @java.lang.Deprecated com.google.protobuf.Timestamp getTime();
+  @Deprecated com.google.protobuf.Timestamp getTime();
   /**
    * <pre>
    * Deprecated: Time based upgrades have been deprecated. Time based upgrade logic
@@ -74,7 +74,7 @@ public interface PlanOrBuilder extends
    *
    * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", deprecated = true, (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    */
-  @java.lang.Deprecated com.google.protobuf.TimestampOrBuilder getTimeOrBuilder();
+  @Deprecated com.google.protobuf.TimestampOrBuilder getTimeOrBuilder();
 
   /**
    * <pre>
@@ -96,7 +96,7 @@ public interface PlanOrBuilder extends
    * <code>string info = 4 [json_name = "info"];</code>
    * @return The info.
    */
-  java.lang.String getInfo();
+  String getInfo();
   /**
    * <pre>
    * Any application specific upgrade info to be included on-chain
@@ -121,7 +121,7 @@ public interface PlanOrBuilder extends
    *     See cosmos/upgrade/v1beta1/upgrade.proto;l=40
    * @return Whether the upgradedClientState field is set.
    */
-  @java.lang.Deprecated boolean hasUpgradedClientState();
+  @Deprecated boolean hasUpgradedClientState();
   /**
    * <pre>
    * Deprecated: UpgradedClientState field has been deprecated. IBC upgrade logic has been
@@ -134,7 +134,7 @@ public interface PlanOrBuilder extends
    *     See cosmos/upgrade/v1beta1/upgrade.proto;l=40
    * @return The upgradedClientState.
    */
-  @java.lang.Deprecated com.google.protobuf.Any getUpgradedClientState();
+  @Deprecated com.google.protobuf.Any getUpgradedClientState();
   /**
    * <pre>
    * Deprecated: UpgradedClientState field has been deprecated. IBC upgrade logic has been
@@ -144,5 +144,5 @@ public interface PlanOrBuilder extends
    *
    * <code>.google.protobuf.Any upgraded_client_state = 5 [json_name = "upgradedClientState", deprecated = true, (.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
    */
-  @java.lang.Deprecated com.google.protobuf.AnyOrBuilder getUpgradedClientStateOrBuilder();
+  @Deprecated com.google.protobuf.AnyOrBuilder getUpgradedClientStateOrBuilder();
 }

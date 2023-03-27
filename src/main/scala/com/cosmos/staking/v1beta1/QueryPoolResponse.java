@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private QueryPoolResponse() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryPoolResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryPoolResponse_descriptor;
+    return QueryProto.internal_static_cosmos_staking_v1beta1_QueryPoolResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryPoolResponse_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_staking_v1beta1_QueryPoolResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.staking.v1beta1.QueryPoolResponse.class, com.cosmos.staking.v1beta1.QueryPoolResponse.Builder.class);
+            QueryPoolResponse.class, Builder.class);
   }
 
   public static final int POOL_FIELD_NUMBER = 1;
-  private com.cosmos.staking.v1beta1.Pool pool_;
+  private Pool pool_;
   /**
    * <pre>
    * pool defines the pool info.
@@ -52,7 +52,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
    * @return Whether the pool field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPool() {
     return pool_ != null;
   }
@@ -64,9 +64,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
    * @return The pool.
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.Pool getPool() {
-    return pool_ == null ? com.cosmos.staking.v1beta1.Pool.getDefaultInstance() : pool_;
+  @Override
+  public Pool getPool() {
+    return pool_ == null ? Pool.getDefaultInstance() : pool_;
   }
   /**
    * <pre>
@@ -75,13 +75,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.PoolOrBuilder getPoolOrBuilder() {
-    return pool_ == null ? com.cosmos.staking.v1beta1.Pool.getDefaultInstance() : pool_;
+  @Override
+  public PoolOrBuilder getPoolOrBuilder() {
+    return pool_ == null ? Pool.getDefaultInstance() : pool_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -91,7 +91,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (pool_ != null) {
@@ -100,7 +100,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -115,15 +115,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.staking.v1beta1.QueryPoolResponse)) {
+    if (!(obj instanceof QueryPoolResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.staking.v1beta1.QueryPoolResponse other = (com.cosmos.staking.v1beta1.QueryPoolResponse) obj;
+    QueryPoolResponse other = (QueryPoolResponse) obj;
 
     if (hasPool() != other.hasPool()) return false;
     if (hasPool()) {
@@ -134,7 +134,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -150,69 +150,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseFrom(
+  public static QueryPoolResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseFrom(
+  public static QueryPoolResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseFrom(
+  public static QueryPoolResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseFrom(
+  public static QueryPoolResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseFrom(byte[] data)
+  public static QueryPoolResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseFrom(
+  public static QueryPoolResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseFrom(java.io.InputStream input)
+  public static QueryPoolResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseFrom(
+  public static QueryPoolResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryPoolResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseDelimitedFrom(
+  public static QueryPoolResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseFrom(
+  public static QueryPoolResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse parseFrom(
+  public static QueryPoolResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -220,23 +220,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.staking.v1beta1.QueryPoolResponse prototype) {
+  public static Builder newBuilder(QueryPoolResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -250,18 +250,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.QueryPoolResponse)
-      com.cosmos.staking.v1beta1.QueryPoolResponseOrBuilder {
+      QueryPoolResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryPoolResponse_descriptor;
+      return QueryProto.internal_static_cosmos_staking_v1beta1_QueryPoolResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryPoolResponse_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_staking_v1beta1_QueryPoolResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.staking.v1beta1.QueryPoolResponse.class, com.cosmos.staking.v1beta1.QueryPoolResponse.Builder.class);
+              QueryPoolResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.QueryPoolResponse.newBuilder()
@@ -270,11 +270,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -286,35 +286,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryPoolResponse_descriptor;
+      return QueryProto.internal_static_cosmos_staking_v1beta1_QueryPoolResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.QueryPoolResponse getDefaultInstanceForType() {
-      return com.cosmos.staking.v1beta1.QueryPoolResponse.getDefaultInstance();
+    @Override
+    public QueryPoolResponse getDefaultInstanceForType() {
+      return QueryPoolResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.QueryPoolResponse build() {
-      com.cosmos.staking.v1beta1.QueryPoolResponse result = buildPartial();
+    @Override
+    public QueryPoolResponse build() {
+      QueryPoolResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.QueryPoolResponse buildPartial() {
-      com.cosmos.staking.v1beta1.QueryPoolResponse result = new com.cosmos.staking.v1beta1.QueryPoolResponse(this);
+    @Override
+    public QueryPoolResponse buildPartial() {
+      QueryPoolResponse result = new QueryPoolResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.staking.v1beta1.QueryPoolResponse result) {
+    private void buildPartial0(QueryPoolResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.pool_ = poolBuilder_ == null
@@ -323,50 +323,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.staking.v1beta1.QueryPoolResponse) {
-        return mergeFrom((com.cosmos.staking.v1beta1.QueryPoolResponse)other);
+      if (other instanceof QueryPoolResponse) {
+        return mergeFrom((QueryPoolResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.staking.v1beta1.QueryPoolResponse other) {
-      if (other == com.cosmos.staking.v1beta1.QueryPoolResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryPoolResponse other) {
+      if (other == QueryPoolResponse.getDefaultInstance()) return this;
       if (other.hasPool()) {
         mergePool(other.getPool());
       }
@@ -375,18 +375,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -420,9 +420,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.cosmos.staking.v1beta1.Pool pool_;
+    private Pool pool_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Pool, com.cosmos.staking.v1beta1.Pool.Builder, com.cosmos.staking.v1beta1.PoolOrBuilder> poolBuilder_;
+        Pool, Pool.Builder, PoolOrBuilder> poolBuilder_;
     /**
      * <pre>
      * pool defines the pool info.
@@ -442,9 +442,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
      * @return The pool.
      */
-    public com.cosmos.staking.v1beta1.Pool getPool() {
+    public Pool getPool() {
       if (poolBuilder_ == null) {
-        return pool_ == null ? com.cosmos.staking.v1beta1.Pool.getDefaultInstance() : pool_;
+        return pool_ == null ? Pool.getDefaultInstance() : pool_;
       } else {
         return poolBuilder_.getMessage();
       }
@@ -456,7 +456,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setPool(com.cosmos.staking.v1beta1.Pool value) {
+    public Builder setPool(Pool value) {
       if (poolBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -477,7 +477,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
      */
     public Builder setPool(
-        com.cosmos.staking.v1beta1.Pool.Builder builderForValue) {
+        Pool.Builder builderForValue) {
       if (poolBuilder_ == null) {
         pool_ = builderForValue.build();
       } else {
@@ -494,11 +494,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergePool(com.cosmos.staking.v1beta1.Pool value) {
+    public Builder mergePool(Pool value) {
       if (poolBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           pool_ != null &&
-          pool_ != com.cosmos.staking.v1beta1.Pool.getDefaultInstance()) {
+          pool_ != Pool.getDefaultInstance()) {
           getPoolBuilder().mergeFrom(value);
         } else {
           pool_ = value;
@@ -534,7 +534,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Pool.Builder getPoolBuilder() {
+    public Pool.Builder getPoolBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getPoolFieldBuilder().getBuilder();
@@ -546,12 +546,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.PoolOrBuilder getPoolOrBuilder() {
+    public PoolOrBuilder getPoolOrBuilder() {
       if (poolBuilder_ != null) {
         return poolBuilder_.getMessageOrBuilder();
       } else {
         return pool_ == null ?
-            com.cosmos.staking.v1beta1.Pool.getDefaultInstance() : pool_;
+            Pool.getDefaultInstance() : pool_;
       }
     }
     /**
@@ -562,11 +562,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Pool, com.cosmos.staking.v1beta1.Pool.Builder, com.cosmos.staking.v1beta1.PoolOrBuilder> 
+        Pool, Pool.Builder, PoolOrBuilder>
         getPoolFieldBuilder() {
       if (poolBuilder_ == null) {
         poolBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.staking.v1beta1.Pool, com.cosmos.staking.v1beta1.Pool.Builder, com.cosmos.staking.v1beta1.PoolOrBuilder>(
+            Pool, Pool.Builder, PoolOrBuilder>(
                 getPool(),
                 getParentForChildren(),
                 isClean());
@@ -574,13 +574,13 @@ private static final long serialVersionUID = 0L;
       }
       return poolBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -591,18 +591,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.QueryPoolResponse)
-  private static final com.cosmos.staking.v1beta1.QueryPoolResponse DEFAULT_INSTANCE;
+  private static final QueryPoolResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.QueryPoolResponse();
+    DEFAULT_INSTANCE = new QueryPoolResponse();
   }
 
-  public static com.cosmos.staking.v1beta1.QueryPoolResponse getDefaultInstance() {
+  public static QueryPoolResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryPoolResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryPoolResponse>() {
-    @java.lang.Override
+    @Override
     public QueryPoolResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -626,13 +626,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryPoolResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.QueryPoolResponse getDefaultInstanceForType() {
+  @Override
+  public QueryPoolResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -10,12 +10,12 @@ public interface QueryDepositsResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.gov.v1beta1.Deposit deposits = 1 [json_name = "deposits", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.gov.v1beta1.Deposit> 
+  java.util.List<Deposit>
       getDepositsList();
   /**
    * <code>repeated .cosmos.gov.v1beta1.Deposit deposits = 1 [json_name = "deposits", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.gov.v1beta1.Deposit getDeposits(int index);
+  Deposit getDeposits(int index);
   /**
    * <code>repeated .cosmos.gov.v1beta1.Deposit deposits = 1 [json_name = "deposits", (.gogoproto.nullable) = false];</code>
    */
@@ -23,12 +23,12 @@ public interface QueryDepositsResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.gov.v1beta1.Deposit deposits = 1 [json_name = "deposits", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.gov.v1beta1.DepositOrBuilder> 
+  java.util.List<? extends DepositOrBuilder>
       getDepositsOrBuilderList();
   /**
    * <code>repeated .cosmos.gov.v1beta1.Deposit deposits = 1 [json_name = "deposits", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.gov.v1beta1.DepositOrBuilder getDepositsOrBuilder(
+  DepositOrBuilder getDepositsOrBuilder(
       int index);
 
   /**

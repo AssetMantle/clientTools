@@ -10,12 +10,12 @@ public interface EvidenceListOrBuilder extends
   /**
    * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.tendermint.types.Evidence> 
+  java.util.List<Evidence>
       getEvidenceList();
   /**
    * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.types.Evidence getEvidence(int index);
+  Evidence getEvidence(int index);
   /**
    * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
@@ -23,11 +23,11 @@ public interface EvidenceListOrBuilder extends
   /**
    * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.tendermint.types.EvidenceOrBuilder> 
+  java.util.List<? extends EvidenceOrBuilder>
       getEvidenceOrBuilderList();
   /**
    * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.types.EvidenceOrBuilder getEvidenceOrBuilder(
+  EvidenceOrBuilder getEvidenceOrBuilder(
       int index);
 }

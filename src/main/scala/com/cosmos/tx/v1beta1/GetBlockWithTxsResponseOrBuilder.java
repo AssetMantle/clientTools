@@ -14,7 +14,7 @@ public interface GetBlockWithTxsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.Tx txs = 1 [json_name = "txs"];</code>
    */
-  java.util.List<com.cosmos.tx.v1beta1.Tx> 
+  java.util.List<Tx>
       getTxsList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface GetBlockWithTxsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.Tx txs = 1 [json_name = "txs"];</code>
    */
-  com.cosmos.tx.v1beta1.Tx getTxs(int index);
+  Tx getTxs(int index);
   /**
    * <pre>
    * txs are the transactions in the block.
@@ -39,7 +39,7 @@ public interface GetBlockWithTxsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.Tx txs = 1 [json_name = "txs"];</code>
    */
-  java.util.List<? extends com.cosmos.tx.v1beta1.TxOrBuilder> 
+  java.util.List<? extends TxOrBuilder>
       getTxsOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface GetBlockWithTxsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.Tx txs = 1 [json_name = "txs"];</code>
    */
-  com.cosmos.tx.v1beta1.TxOrBuilder getTxsOrBuilder(
+  TxOrBuilder getTxsOrBuilder(
       int index);
 
   /**

@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n<modules/orders/internal/transactions/c" +
       "ancel/message.v1.proto\022\032orders.transacti" +
       "ons.cancel\032#schema/ids/base/identityID.v" +
@@ -54,7 +54,7 @@ public final class MessageV1Proto {
     internal_static_orders_transactions_cancel_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_orders_transactions_cancel_Message_descriptor,
-        new java.lang.String[] { "From", "FromID", "OrderID", });
+        new String[] { "From", "FromID", "OrderID", });
     com.ids.IdentityIDV1Proto.getDescriptor();
     com.ids.OrderIDV1Proto.getDescriptor();
   }

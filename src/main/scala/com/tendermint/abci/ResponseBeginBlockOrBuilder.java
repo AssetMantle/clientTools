@@ -10,12 +10,12 @@ public interface ResponseBeginBlockOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.Event events = 1 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  java.util.List<com.tendermint.abci.Event> 
+  java.util.List<Event>
       getEventsList();
   /**
    * <code>repeated .tendermint.abci.Event events = 1 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  com.tendermint.abci.Event getEvents(int index);
+  Event getEvents(int index);
   /**
    * <code>repeated .tendermint.abci.Event events = 1 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
@@ -23,11 +23,11 @@ public interface ResponseBeginBlockOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.Event events = 1 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  java.util.List<? extends com.tendermint.abci.EventOrBuilder> 
+  java.util.List<? extends EventOrBuilder>
       getEventsOrBuilderList();
   /**
    * <code>repeated .tendermint.abci.Event events = 1 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  com.tendermint.abci.EventOrBuilder getEventsOrBuilder(
+  EventOrBuilder getEventsOrBuilder(
       int index);
 }

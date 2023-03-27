@@ -15,7 +15,7 @@ public interface QuerySupplyOfRequestOrBuilder extends
    * <code>string denom = 1 [json_name = "denom"];</code>
    * @return The denom.
    */
-  java.lang.String getDenom();
+  String getDenom();
   /**
    * <pre>
    * denom is the coin denom to query balances for.

@@ -37,7 +37,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n ibc/core/client/v1/genesis.proto\022\022ibc." +
       "core.client.v1\032\037ibc/core/client/v1/clien" +
       "t.proto\032\024gogoproto/gogo.proto\"\330\004\n\014Genesi" +
@@ -72,7 +72,7 @@ public final class GenesisProto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.ibc.core.client.v1.ClientProto.getDescriptor(),
+          ClientProto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_ibc_core_client_v1_GenesisState_descriptor =
@@ -80,19 +80,19 @@ public final class GenesisProto {
     internal_static_ibc_core_client_v1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_GenesisState_descriptor,
-        new java.lang.String[] { "Clients", "ClientsConsensus", "ClientsMetadata", "Params", "CreateLocalhost", "NextClientSequence", });
+        new String[] { "Clients", "ClientsConsensus", "ClientsMetadata", "Params", "CreateLocalhost", "NextClientSequence", });
     internal_static_ibc_core_client_v1_GenesisMetadata_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_core_client_v1_GenesisMetadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_GenesisMetadata_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new String[] { "Key", "Value", });
     internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_descriptor,
-        new java.lang.String[] { "ClientId", "ClientMetadata", });
+        new String[] { "ClientId", "ClientMetadata", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);
@@ -101,7 +101,7 @@ public final class GenesisProto {
     registry.add(com.gogoproto.GogoProto.nullable);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    com.ibc.core.client.v1.ClientProto.getDescriptor();
+    ClientProto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 

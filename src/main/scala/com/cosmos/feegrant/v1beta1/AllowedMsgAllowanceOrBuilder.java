@@ -42,7 +42,7 @@ public interface AllowedMsgAllowanceOrBuilder extends
    * <code>repeated string allowed_messages = 2 [json_name = "allowedMessages"];</code>
    * @return A list containing the allowedMessages.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getAllowedMessagesList();
   /**
    * <pre>
@@ -62,7 +62,7 @@ public interface AllowedMsgAllowanceOrBuilder extends
    * @param index The index of the element to return.
    * @return The allowedMessages at the given index.
    */
-  java.lang.String getAllowedMessages(int index);
+  String getAllowedMessages(int index);
   /**
    * <pre>
    * allowed_messages are the messages for which the grantee has the access.

@@ -52,7 +52,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\037cosmos/mint/v1beta1/query.proto\022\023cosmo" +
       "s.mint.v1beta1\032\024gogoproto/gogo.proto\032\034go" +
       "ogle/api/annotations.proto\032\036cosmos/mint/" +
@@ -90,44 +90,44 @@ public final class QueryProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
-          com.cosmos.mint.v1beta1.MintProto.getDescriptor(),
+          MintProto.getDescriptor(),
         });
     internal_static_cosmos_mint_v1beta1_QueryParamsRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_mint_v1beta1_QueryParamsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_mint_v1beta1_QueryParamsRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_mint_v1beta1_QueryParamsResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_mint_v1beta1_QueryParamsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_mint_v1beta1_QueryParamsResponse_descriptor,
-        new java.lang.String[] { "Params", });
+        new String[] { "Params", });
     internal_static_cosmos_mint_v1beta1_QueryInflationRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_mint_v1beta1_QueryInflationRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_mint_v1beta1_QueryInflationRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_mint_v1beta1_QueryInflationResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_mint_v1beta1_QueryInflationResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_mint_v1beta1_QueryInflationResponse_descriptor,
-        new java.lang.String[] { "Inflation", });
+        new String[] { "Inflation", });
     internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsResponse_descriptor,
-        new java.lang.String[] { "AnnualProvisions", });
+        new String[] { "AnnualProvisions", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customtype);
@@ -137,7 +137,7 @@ public final class QueryProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
-    com.cosmos.mint.v1beta1.MintProto.getDescriptor();
+    MintProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

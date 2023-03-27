@@ -27,7 +27,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n!cosmos/auth/v1beta1/genesis.proto\022\023cos" +
       "mos.auth.v1beta1\032\031google/protobuf/any.pr" +
       "oto\032\024gogoproto/gogo.proto\032\036cosmos/auth/v" +
@@ -47,14 +47,14 @@ public final class GenesisProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.protobuf.AnyProto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
-          com.cosmos.auth.v1beta1.AuthProto.getDescriptor(),
+          AuthProto.getDescriptor(),
         });
     internal_static_cosmos_auth_v1beta1_GenesisState_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_auth_v1beta1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_auth_v1beta1_GenesisState_descriptor,
-        new java.lang.String[] { "Params", "Accounts", });
+        new String[] { "Params", "Accounts", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);
@@ -62,7 +62,7 @@ public final class GenesisProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.protobuf.AnyProto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
-    com.cosmos.auth.v1beta1.AuthProto.getDescriptor();
+    AuthProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

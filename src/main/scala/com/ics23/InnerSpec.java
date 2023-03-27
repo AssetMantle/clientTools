@@ -33,24 +33,24 @@ private static final long serialVersionUID = 0L;
     hash_ = 0;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new InnerSpec();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ics23.ProofsProto.internal_static_ics23_InnerSpec_descriptor;
+    return ProofsProto.internal_static_ics23_InnerSpec_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ics23.ProofsProto.internal_static_ics23_InnerSpec_fieldAccessorTable
+    return ProofsProto.internal_static_ics23_InnerSpec_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ics23.InnerSpec.class, com.ics23.InnerSpec.Builder.class);
+            InnerSpec.class, Builder.class);
   }
 
   public static final int CHILD_ORDER_FIELD_NUMBER = 1;
@@ -66,8 +66,8 @@ private static final long serialVersionUID = 0L;
    * <code>repeated int32 child_order = 1 [json_name = "childOrder"];</code>
    * @return A list containing the childOrder.
    */
-  @java.lang.Override
-  public java.util.List<java.lang.Integer>
+  @Override
+  public java.util.List<Integer>
       getChildOrderList() {
     return childOrder_;
   }
@@ -106,7 +106,7 @@ private static final long serialVersionUID = 0L;
    * <code>int32 child_size = 2 [json_name = "childSize"];</code>
    * @return The childSize.
    */
-  @java.lang.Override
+  @Override
   public int getChildSize() {
     return childSize_;
   }
@@ -117,7 +117,7 @@ private static final long serialVersionUID = 0L;
    * <code>int32 min_prefix_length = 3 [json_name = "minPrefixLength"];</code>
    * @return The minPrefixLength.
    */
-  @java.lang.Override
+  @Override
   public int getMinPrefixLength() {
     return minPrefixLength_;
   }
@@ -128,7 +128,7 @@ private static final long serialVersionUID = 0L;
    * <code>int32 max_prefix_length = 4 [json_name = "maxPrefixLength"];</code>
    * @return The maxPrefixLength.
    */
-  @java.lang.Override
+  @Override
   public int getMaxPrefixLength() {
     return maxPrefixLength_;
   }
@@ -143,7 +143,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes empty_child = 5 [json_name = "emptyChild"];</code>
    * @return The emptyChild.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getEmptyChild() {
     return emptyChild_;
   }
@@ -158,7 +158,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.HashOp hash = 6 [json_name = "hash"];</code>
    * @return The enum numeric value on the wire for hash.
    */
-  @java.lang.Override public int getHashValue() {
+  @Override public int getHashValue() {
     return hash_;
   }
   /**
@@ -169,13 +169,13 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.HashOp hash = 6 [json_name = "hash"];</code>
    * @return The hash.
    */
-  @java.lang.Override public com.ics23.HashOp getHash() {
-    com.ics23.HashOp result = com.ics23.HashOp.forNumber(hash_);
-    return result == null ? com.ics23.HashOp.UNRECOGNIZED : result;
+  @Override public HashOp getHash() {
+    HashOp result = HashOp.forNumber(hash_);
+    return result == null ? HashOp.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -185,7 +185,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
@@ -208,13 +208,13 @@ private static final long serialVersionUID = 0L;
     if (!emptyChild_.isEmpty()) {
       output.writeBytes(5, emptyChild_);
     }
-    if (hash_ != com.ics23.HashOp.NO_HASH.getNumber()) {
+    if (hash_ != HashOp.NO_HASH.getNumber()) {
       output.writeEnum(6, hash_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -250,7 +250,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBytesSize(5, emptyChild_);
     }
-    if (hash_ != com.ics23.HashOp.NO_HASH.getNumber()) {
+    if (hash_ != HashOp.NO_HASH.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(6, hash_);
     }
@@ -259,15 +259,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ics23.InnerSpec)) {
+    if (!(obj instanceof InnerSpec)) {
       return super.equals(obj);
     }
-    com.ics23.InnerSpec other = (com.ics23.InnerSpec) obj;
+    InnerSpec other = (InnerSpec) obj;
 
     if (!getChildOrderList()
         .equals(other.getChildOrderList())) return false;
@@ -284,7 +284,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -310,69 +310,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ics23.InnerSpec parseFrom(
+  public static InnerSpec parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.InnerSpec parseFrom(
+  public static InnerSpec parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.InnerSpec parseFrom(
+  public static InnerSpec parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.InnerSpec parseFrom(
+  public static InnerSpec parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.InnerSpec parseFrom(byte[] data)
+  public static InnerSpec parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.InnerSpec parseFrom(
+  public static InnerSpec parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.InnerSpec parseFrom(java.io.InputStream input)
+  public static InnerSpec parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.InnerSpec parseFrom(
+  public static InnerSpec parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.InnerSpec parseDelimitedFrom(java.io.InputStream input)
+  public static InnerSpec parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ics23.InnerSpec parseDelimitedFrom(
+  public static InnerSpec parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.InnerSpec parseFrom(
+  public static InnerSpec parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.InnerSpec parseFrom(
+  public static InnerSpec parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -380,23 +380,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ics23.InnerSpec prototype) {
+  public static Builder newBuilder(InnerSpec prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -418,18 +418,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ics23.InnerSpec)
-      com.ics23.InnerSpecOrBuilder {
+      InnerSpecOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ics23.ProofsProto.internal_static_ics23_InnerSpec_descriptor;
+      return ProofsProto.internal_static_ics23_InnerSpec_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ics23.ProofsProto.internal_static_ics23_InnerSpec_fieldAccessorTable
+      return ProofsProto.internal_static_ics23_InnerSpec_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ics23.InnerSpec.class, com.ics23.InnerSpec.Builder.class);
+              InnerSpec.class, Builder.class);
     }
 
     // Construct using com.ics23.InnerSpec.newBuilder()
@@ -438,11 +438,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -455,36 +455,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ics23.ProofsProto.internal_static_ics23_InnerSpec_descriptor;
+      return ProofsProto.internal_static_ics23_InnerSpec_descriptor;
     }
 
-    @java.lang.Override
-    public com.ics23.InnerSpec getDefaultInstanceForType() {
-      return com.ics23.InnerSpec.getDefaultInstance();
+    @Override
+    public InnerSpec getDefaultInstanceForType() {
+      return InnerSpec.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ics23.InnerSpec build() {
-      com.ics23.InnerSpec result = buildPartial();
+    @Override
+    public InnerSpec build() {
+      InnerSpec result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ics23.InnerSpec buildPartial() {
-      com.ics23.InnerSpec result = new com.ics23.InnerSpec(this);
+    @Override
+    public InnerSpec buildPartial() {
+      InnerSpec result = new InnerSpec(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.ics23.InnerSpec result) {
+    private void buildPartialRepeatedFields(InnerSpec result) {
       if (((bitField0_ & 0x00000001) != 0)) {
         childOrder_.makeImmutable();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -492,7 +492,7 @@ private static final long serialVersionUID = 0L;
       result.childOrder_ = childOrder_;
     }
 
-    private void buildPartial0(com.ics23.InnerSpec result) {
+    private void buildPartial0(InnerSpec result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.childSize_ = childSize_;
@@ -511,50 +511,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ics23.InnerSpec) {
-        return mergeFrom((com.ics23.InnerSpec)other);
+      if (other instanceof InnerSpec) {
+        return mergeFrom((InnerSpec)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ics23.InnerSpec other) {
-      if (other == com.ics23.InnerSpec.getDefaultInstance()) return this;
+    public Builder mergeFrom(InnerSpec other) {
+      if (other == InnerSpec.getDefaultInstance()) return this;
       if (!other.childOrder_.isEmpty()) {
         if (childOrder_.isEmpty()) {
           childOrder_ = other.childOrder_;
@@ -585,18 +585,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -681,7 +681,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated int32 child_order = 1 [json_name = "childOrder"];</code>
      * @return A list containing the childOrder.
      */
-    public java.util.List<java.lang.Integer>
+    public java.util.List<Integer>
         getChildOrderList() {
       return ((bitField0_ & 0x00000001) != 0) ?
                java.util.Collections.unmodifiableList(childOrder_) : childOrder_;
@@ -763,7 +763,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addAllChildOrder(
-        java.lang.Iterable<? extends java.lang.Integer> values) {
+        Iterable<? extends Integer> values) {
       ensureChildOrderIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, childOrder_);
@@ -792,7 +792,7 @@ private static final long serialVersionUID = 0L;
      * <code>int32 child_size = 2 [json_name = "childSize"];</code>
      * @return The childSize.
      */
-    @java.lang.Override
+    @Override
     public int getChildSize() {
       return childSize_;
     }
@@ -824,7 +824,7 @@ private static final long serialVersionUID = 0L;
      * <code>int32 min_prefix_length = 3 [json_name = "minPrefixLength"];</code>
      * @return The minPrefixLength.
      */
-    @java.lang.Override
+    @Override
     public int getMinPrefixLength() {
       return minPrefixLength_;
     }
@@ -856,7 +856,7 @@ private static final long serialVersionUID = 0L;
      * <code>int32 max_prefix_length = 4 [json_name = "maxPrefixLength"];</code>
      * @return The maxPrefixLength.
      */
-    @java.lang.Override
+    @Override
     public int getMaxPrefixLength() {
       return maxPrefixLength_;
     }
@@ -892,7 +892,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes empty_child = 5 [json_name = "emptyChild"];</code>
      * @return The emptyChild.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getEmptyChild() {
       return emptyChild_;
     }
@@ -936,7 +936,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.HashOp hash = 6 [json_name = "hash"];</code>
      * @return The enum numeric value on the wire for hash.
      */
-    @java.lang.Override public int getHashValue() {
+    @Override public int getHashValue() {
       return hash_;
     }
     /**
@@ -962,10 +962,10 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.HashOp hash = 6 [json_name = "hash"];</code>
      * @return The hash.
      */
-    @java.lang.Override
-    public com.ics23.HashOp getHash() {
-      com.ics23.HashOp result = com.ics23.HashOp.forNumber(hash_);
-      return result == null ? com.ics23.HashOp.UNRECOGNIZED : result;
+    @Override
+    public HashOp getHash() {
+      HashOp result = HashOp.forNumber(hash_);
+      return result == null ? HashOp.UNRECOGNIZED : result;
     }
     /**
      * <pre>
@@ -976,7 +976,7 @@ private static final long serialVersionUID = 0L;
      * @param value The hash to set.
      * @return This builder for chaining.
      */
-    public Builder setHash(com.ics23.HashOp value) {
+    public Builder setHash(HashOp value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -999,13 +999,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1016,18 +1016,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ics23.InnerSpec)
-  private static final com.ics23.InnerSpec DEFAULT_INSTANCE;
+  private static final InnerSpec DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ics23.InnerSpec();
+    DEFAULT_INSTANCE = new InnerSpec();
   }
 
-  public static com.ics23.InnerSpec getDefaultInstance() {
+  public static InnerSpec getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<InnerSpec>
       PARSER = new com.google.protobuf.AbstractParser<InnerSpec>() {
-    @java.lang.Override
+    @Override
     public InnerSpec parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1051,13 +1051,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<InnerSpec> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ics23.InnerSpec getDefaultInstanceForType() {
+  @Override
+  public InnerSpec getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

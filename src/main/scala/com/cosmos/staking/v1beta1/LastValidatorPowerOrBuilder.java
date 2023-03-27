@@ -15,7 +15,7 @@ public interface LastValidatorPowerOrBuilder extends
    * <code>string address = 1 [json_name = "address"];</code>
    * @return The address.
    */
-  java.lang.String getAddress();
+  String getAddress();
   /**
    * <pre>
    * address is the address of the validator.

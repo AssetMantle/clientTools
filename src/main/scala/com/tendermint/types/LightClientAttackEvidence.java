@@ -23,33 +23,33 @@ private static final long serialVersionUID = 0L;
     byzantineValidators_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new LightClientAttackEvidence();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_LightClientAttackEvidence_descriptor;
+    return EvidenceProto.internal_static_tendermint_types_LightClientAttackEvidence_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_LightClientAttackEvidence_fieldAccessorTable
+    return EvidenceProto.internal_static_tendermint_types_LightClientAttackEvidence_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.tendermint.types.LightClientAttackEvidence.class, com.tendermint.types.LightClientAttackEvidence.Builder.class);
+            LightClientAttackEvidence.class, Builder.class);
   }
 
   public static final int CONFLICTING_BLOCK_FIELD_NUMBER = 1;
-  private com.tendermint.types.LightBlock conflictingBlock_;
+  private LightBlock conflictingBlock_;
   /**
    * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
    * @return Whether the conflictingBlock field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasConflictingBlock() {
     return conflictingBlock_ != null;
   }
@@ -57,16 +57,16 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
    * @return The conflictingBlock.
    */
-  @java.lang.Override
-  public com.tendermint.types.LightBlock getConflictingBlock() {
-    return conflictingBlock_ == null ? com.tendermint.types.LightBlock.getDefaultInstance() : conflictingBlock_;
+  @Override
+  public LightBlock getConflictingBlock() {
+    return conflictingBlock_ == null ? LightBlock.getDefaultInstance() : conflictingBlock_;
   }
   /**
    * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
    */
-  @java.lang.Override
-  public com.tendermint.types.LightBlockOrBuilder getConflictingBlockOrBuilder() {
-    return conflictingBlock_ == null ? com.tendermint.types.LightBlock.getDefaultInstance() : conflictingBlock_;
+  @Override
+  public LightBlockOrBuilder getConflictingBlockOrBuilder() {
+    return conflictingBlock_ == null ? LightBlock.getDefaultInstance() : conflictingBlock_;
   }
 
   public static final int COMMON_HEIGHT_FIELD_NUMBER = 2;
@@ -75,48 +75,48 @@ private static final long serialVersionUID = 0L;
    * <code>int64 common_height = 2 [json_name = "commonHeight"];</code>
    * @return The commonHeight.
    */
-  @java.lang.Override
+  @Override
   public long getCommonHeight() {
     return commonHeight_;
   }
 
   public static final int BYZANTINE_VALIDATORS_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private java.util.List<com.tendermint.types.Validator> byzantineValidators_;
+  private java.util.List<Validator> byzantineValidators_;
   /**
    * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.tendermint.types.Validator> getByzantineValidatorsList() {
+  @Override
+  public java.util.List<Validator> getByzantineValidatorsList() {
     return byzantineValidators_;
   }
   /**
    * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.tendermint.types.ValidatorOrBuilder> 
+  @Override
+  public java.util.List<? extends ValidatorOrBuilder>
       getByzantineValidatorsOrBuilderList() {
     return byzantineValidators_;
   }
   /**
    * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getByzantineValidatorsCount() {
     return byzantineValidators_.size();
   }
   /**
    * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
    */
-  @java.lang.Override
-  public com.tendermint.types.Validator getByzantineValidators(int index) {
+  @Override
+  public Validator getByzantineValidators(int index) {
     return byzantineValidators_.get(index);
   }
   /**
    * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
    */
-  @java.lang.Override
-  public com.tendermint.types.ValidatorOrBuilder getByzantineValidatorsOrBuilder(
+  @Override
+  public ValidatorOrBuilder getByzantineValidatorsOrBuilder(
       int index) {
     return byzantineValidators_.get(index);
   }
@@ -127,7 +127,7 @@ private static final long serialVersionUID = 0L;
    * <code>int64 total_voting_power = 4 [json_name = "totalVotingPower"];</code>
    * @return The totalVotingPower.
    */
-  @java.lang.Override
+  @Override
   public long getTotalVotingPower() {
     return totalVotingPower_;
   }
@@ -138,7 +138,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp timestamp = 5 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return Whether the timestamp field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasTimestamp() {
     return timestamp_ != null;
   }
@@ -146,20 +146,20 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp timestamp = 5 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return The timestamp.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Timestamp getTimestamp() {
     return timestamp_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timestamp_;
   }
   /**
    * <code>.google.protobuf.Timestamp timestamp = 5 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.TimestampOrBuilder getTimestampOrBuilder() {
     return timestamp_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timestamp_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -169,7 +169,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (conflictingBlock_ != null) {
@@ -190,7 +190,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -221,15 +221,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.tendermint.types.LightClientAttackEvidence)) {
+    if (!(obj instanceof LightClientAttackEvidence)) {
       return super.equals(obj);
     }
-    com.tendermint.types.LightClientAttackEvidence other = (com.tendermint.types.LightClientAttackEvidence) obj;
+    LightClientAttackEvidence other = (LightClientAttackEvidence) obj;
 
     if (hasConflictingBlock() != other.hasConflictingBlock()) return false;
     if (hasConflictingBlock()) {
@@ -251,7 +251,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -281,69 +281,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.tendermint.types.LightClientAttackEvidence parseFrom(
+  public static LightClientAttackEvidence parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseFrom(
+  public static LightClientAttackEvidence parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseFrom(
+  public static LightClientAttackEvidence parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseFrom(
+  public static LightClientAttackEvidence parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseFrom(byte[] data)
+  public static LightClientAttackEvidence parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseFrom(
+  public static LightClientAttackEvidence parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseFrom(java.io.InputStream input)
+  public static LightClientAttackEvidence parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseFrom(
+  public static LightClientAttackEvidence parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseDelimitedFrom(java.io.InputStream input)
+  public static LightClientAttackEvidence parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseDelimitedFrom(
+  public static LightClientAttackEvidence parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseFrom(
+  public static LightClientAttackEvidence parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.types.LightClientAttackEvidence parseFrom(
+  public static LightClientAttackEvidence parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -351,23 +351,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.tendermint.types.LightClientAttackEvidence prototype) {
+  public static Builder newBuilder(LightClientAttackEvidence prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -381,18 +381,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.types.LightClientAttackEvidence)
-      com.tendermint.types.LightClientAttackEvidenceOrBuilder {
+      LightClientAttackEvidenceOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_LightClientAttackEvidence_descriptor;
+      return EvidenceProto.internal_static_tendermint_types_LightClientAttackEvidence_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_LightClientAttackEvidence_fieldAccessorTable
+      return EvidenceProto.internal_static_tendermint_types_LightClientAttackEvidence_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.tendermint.types.LightClientAttackEvidence.class, com.tendermint.types.LightClientAttackEvidence.Builder.class);
+              LightClientAttackEvidence.class, Builder.class);
     }
 
     // Construct using com.tendermint.types.LightClientAttackEvidence.newBuilder()
@@ -401,11 +401,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -431,36 +431,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_LightClientAttackEvidence_descriptor;
+      return EvidenceProto.internal_static_tendermint_types_LightClientAttackEvidence_descriptor;
     }
 
-    @java.lang.Override
-    public com.tendermint.types.LightClientAttackEvidence getDefaultInstanceForType() {
-      return com.tendermint.types.LightClientAttackEvidence.getDefaultInstance();
+    @Override
+    public LightClientAttackEvidence getDefaultInstanceForType() {
+      return LightClientAttackEvidence.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.tendermint.types.LightClientAttackEvidence build() {
-      com.tendermint.types.LightClientAttackEvidence result = buildPartial();
+    @Override
+    public LightClientAttackEvidence build() {
+      LightClientAttackEvidence result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.tendermint.types.LightClientAttackEvidence buildPartial() {
-      com.tendermint.types.LightClientAttackEvidence result = new com.tendermint.types.LightClientAttackEvidence(this);
+    @Override
+    public LightClientAttackEvidence buildPartial() {
+      LightClientAttackEvidence result = new LightClientAttackEvidence(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.tendermint.types.LightClientAttackEvidence result) {
+    private void buildPartialRepeatedFields(LightClientAttackEvidence result) {
       if (byzantineValidatorsBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0)) {
           byzantineValidators_ = java.util.Collections.unmodifiableList(byzantineValidators_);
@@ -472,7 +472,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.tendermint.types.LightClientAttackEvidence result) {
+    private void buildPartial0(LightClientAttackEvidence result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.conflictingBlock_ = conflictingBlockBuilder_ == null
@@ -492,50 +492,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.tendermint.types.LightClientAttackEvidence) {
-        return mergeFrom((com.tendermint.types.LightClientAttackEvidence)other);
+      if (other instanceof LightClientAttackEvidence) {
+        return mergeFrom((LightClientAttackEvidence)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.tendermint.types.LightClientAttackEvidence other) {
-      if (other == com.tendermint.types.LightClientAttackEvidence.getDefaultInstance()) return this;
+    public Builder mergeFrom(LightClientAttackEvidence other) {
+      if (other == LightClientAttackEvidence.getDefaultInstance()) return this;
       if (other.hasConflictingBlock()) {
         mergeConflictingBlock(other.getConflictingBlock());
       }
@@ -579,18 +579,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -613,9 +613,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 16
             case 26: {
-              com.tendermint.types.Validator m =
+              Validator m =
                   input.readMessage(
-                      com.tendermint.types.Validator.parser(),
+                      Validator.parser(),
                       extensionRegistry);
               if (byzantineValidatorsBuilder_ == null) {
                 ensureByzantineValidatorsIsMutable();
@@ -654,9 +654,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.tendermint.types.LightBlock conflictingBlock_;
+    private LightBlock conflictingBlock_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.tendermint.types.LightBlock, com.tendermint.types.LightBlock.Builder, com.tendermint.types.LightBlockOrBuilder> conflictingBlockBuilder_;
+        LightBlock, LightBlock.Builder, LightBlockOrBuilder> conflictingBlockBuilder_;
     /**
      * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
      * @return Whether the conflictingBlock field is set.
@@ -668,9 +668,9 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
      * @return The conflictingBlock.
      */
-    public com.tendermint.types.LightBlock getConflictingBlock() {
+    public LightBlock getConflictingBlock() {
       if (conflictingBlockBuilder_ == null) {
-        return conflictingBlock_ == null ? com.tendermint.types.LightBlock.getDefaultInstance() : conflictingBlock_;
+        return conflictingBlock_ == null ? LightBlock.getDefaultInstance() : conflictingBlock_;
       } else {
         return conflictingBlockBuilder_.getMessage();
       }
@@ -678,7 +678,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
      */
-    public Builder setConflictingBlock(com.tendermint.types.LightBlock value) {
+    public Builder setConflictingBlock(LightBlock value) {
       if (conflictingBlockBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -695,7 +695,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
      */
     public Builder setConflictingBlock(
-        com.tendermint.types.LightBlock.Builder builderForValue) {
+        LightBlock.Builder builderForValue) {
       if (conflictingBlockBuilder_ == null) {
         conflictingBlock_ = builderForValue.build();
       } else {
@@ -708,11 +708,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
      */
-    public Builder mergeConflictingBlock(com.tendermint.types.LightBlock value) {
+    public Builder mergeConflictingBlock(LightBlock value) {
       if (conflictingBlockBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           conflictingBlock_ != null &&
-          conflictingBlock_ != com.tendermint.types.LightBlock.getDefaultInstance()) {
+          conflictingBlock_ != LightBlock.getDefaultInstance()) {
           getConflictingBlockBuilder().mergeFrom(value);
         } else {
           conflictingBlock_ = value;
@@ -740,7 +740,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
      */
-    public com.tendermint.types.LightBlock.Builder getConflictingBlockBuilder() {
+    public LightBlock.Builder getConflictingBlockBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getConflictingBlockFieldBuilder().getBuilder();
@@ -748,23 +748,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
      */
-    public com.tendermint.types.LightBlockOrBuilder getConflictingBlockOrBuilder() {
+    public LightBlockOrBuilder getConflictingBlockOrBuilder() {
       if (conflictingBlockBuilder_ != null) {
         return conflictingBlockBuilder_.getMessageOrBuilder();
       } else {
         return conflictingBlock_ == null ?
-            com.tendermint.types.LightBlock.getDefaultInstance() : conflictingBlock_;
+            LightBlock.getDefaultInstance() : conflictingBlock_;
       }
     }
     /**
      * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.tendermint.types.LightBlock, com.tendermint.types.LightBlock.Builder, com.tendermint.types.LightBlockOrBuilder> 
+        LightBlock, LightBlock.Builder, LightBlockOrBuilder>
         getConflictingBlockFieldBuilder() {
       if (conflictingBlockBuilder_ == null) {
         conflictingBlockBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.tendermint.types.LightBlock, com.tendermint.types.LightBlock.Builder, com.tendermint.types.LightBlockOrBuilder>(
+            LightBlock, LightBlock.Builder, LightBlockOrBuilder>(
                 getConflictingBlock(),
                 getParentForChildren(),
                 isClean());
@@ -778,7 +778,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 common_height = 2 [json_name = "commonHeight"];</code>
      * @return The commonHeight.
      */
-    @java.lang.Override
+    @Override
     public long getCommonHeight() {
       return commonHeight_;
     }
@@ -805,22 +805,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<com.tendermint.types.Validator> byzantineValidators_ =
+    private java.util.List<Validator> byzantineValidators_ =
       java.util.Collections.emptyList();
     private void ensureByzantineValidatorsIsMutable() {
       if (!((bitField0_ & 0x00000004) != 0)) {
-        byzantineValidators_ = new java.util.ArrayList<com.tendermint.types.Validator>(byzantineValidators_);
+        byzantineValidators_ = new java.util.ArrayList<Validator>(byzantineValidators_);
         bitField0_ |= 0x00000004;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.tendermint.types.Validator, com.tendermint.types.Validator.Builder, com.tendermint.types.ValidatorOrBuilder> byzantineValidatorsBuilder_;
+        Validator, Validator.Builder, ValidatorOrBuilder> byzantineValidatorsBuilder_;
 
     /**
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
-    public java.util.List<com.tendermint.types.Validator> getByzantineValidatorsList() {
+    public java.util.List<Validator> getByzantineValidatorsList() {
       if (byzantineValidatorsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(byzantineValidators_);
       } else {
@@ -840,7 +840,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
-    public com.tendermint.types.Validator getByzantineValidators(int index) {
+    public Validator getByzantineValidators(int index) {
       if (byzantineValidatorsBuilder_ == null) {
         return byzantineValidators_.get(index);
       } else {
@@ -851,7 +851,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
     public Builder setByzantineValidators(
-        int index, com.tendermint.types.Validator value) {
+        int index, Validator value) {
       if (byzantineValidatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -868,7 +868,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
     public Builder setByzantineValidators(
-        int index, com.tendermint.types.Validator.Builder builderForValue) {
+        int index, Validator.Builder builderForValue) {
       if (byzantineValidatorsBuilder_ == null) {
         ensureByzantineValidatorsIsMutable();
         byzantineValidators_.set(index, builderForValue.build());
@@ -881,7 +881,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
-    public Builder addByzantineValidators(com.tendermint.types.Validator value) {
+    public Builder addByzantineValidators(Validator value) {
       if (byzantineValidatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -898,7 +898,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
     public Builder addByzantineValidators(
-        int index, com.tendermint.types.Validator value) {
+        int index, Validator value) {
       if (byzantineValidatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -915,7 +915,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
     public Builder addByzantineValidators(
-        com.tendermint.types.Validator.Builder builderForValue) {
+        Validator.Builder builderForValue) {
       if (byzantineValidatorsBuilder_ == null) {
         ensureByzantineValidatorsIsMutable();
         byzantineValidators_.add(builderForValue.build());
@@ -929,7 +929,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
     public Builder addByzantineValidators(
-        int index, com.tendermint.types.Validator.Builder builderForValue) {
+        int index, Validator.Builder builderForValue) {
       if (byzantineValidatorsBuilder_ == null) {
         ensureByzantineValidatorsIsMutable();
         byzantineValidators_.add(index, builderForValue.build());
@@ -943,7 +943,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
     public Builder addAllByzantineValidators(
-        java.lang.Iterable<? extends com.tendermint.types.Validator> values) {
+        Iterable<? extends Validator> values) {
       if (byzantineValidatorsBuilder_ == null) {
         ensureByzantineValidatorsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -983,14 +983,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
-    public com.tendermint.types.Validator.Builder getByzantineValidatorsBuilder(
+    public Validator.Builder getByzantineValidatorsBuilder(
         int index) {
       return getByzantineValidatorsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
-    public com.tendermint.types.ValidatorOrBuilder getByzantineValidatorsOrBuilder(
+    public ValidatorOrBuilder getByzantineValidatorsOrBuilder(
         int index) {
       if (byzantineValidatorsBuilder_ == null) {
         return byzantineValidators_.get(index);  } else {
@@ -1000,7 +1000,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
-    public java.util.List<? extends com.tendermint.types.ValidatorOrBuilder> 
+    public java.util.List<? extends ValidatorOrBuilder>
          getByzantineValidatorsOrBuilderList() {
       if (byzantineValidatorsBuilder_ != null) {
         return byzantineValidatorsBuilder_.getMessageOrBuilderList();
@@ -1011,31 +1011,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
-    public com.tendermint.types.Validator.Builder addByzantineValidatorsBuilder() {
+    public Validator.Builder addByzantineValidatorsBuilder() {
       return getByzantineValidatorsFieldBuilder().addBuilder(
-          com.tendermint.types.Validator.getDefaultInstance());
+          Validator.getDefaultInstance());
     }
     /**
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
-    public com.tendermint.types.Validator.Builder addByzantineValidatorsBuilder(
+    public Validator.Builder addByzantineValidatorsBuilder(
         int index) {
       return getByzantineValidatorsFieldBuilder().addBuilder(
-          index, com.tendermint.types.Validator.getDefaultInstance());
+          index, Validator.getDefaultInstance());
     }
     /**
      * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
      */
-    public java.util.List<com.tendermint.types.Validator.Builder> 
+    public java.util.List<Validator.Builder>
          getByzantineValidatorsBuilderList() {
       return getByzantineValidatorsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.tendermint.types.Validator, com.tendermint.types.Validator.Builder, com.tendermint.types.ValidatorOrBuilder> 
+        Validator, Validator.Builder, ValidatorOrBuilder>
         getByzantineValidatorsFieldBuilder() {
       if (byzantineValidatorsBuilder_ == null) {
         byzantineValidatorsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.tendermint.types.Validator, com.tendermint.types.Validator.Builder, com.tendermint.types.ValidatorOrBuilder>(
+            Validator, Validator.Builder, ValidatorOrBuilder>(
                 byzantineValidators_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
@@ -1050,7 +1050,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 total_voting_power = 4 [json_name = "totalVotingPower"];</code>
      * @return The totalVotingPower.
      */
-    @java.lang.Override
+    @Override
     public long getTotalVotingPower() {
       return totalVotingPower_;
     }
@@ -1195,13 +1195,13 @@ private static final long serialVersionUID = 0L;
       }
       return timestampBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1212,18 +1212,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.types.LightClientAttackEvidence)
-  private static final com.tendermint.types.LightClientAttackEvidence DEFAULT_INSTANCE;
+  private static final LightClientAttackEvidence DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.tendermint.types.LightClientAttackEvidence();
+    DEFAULT_INSTANCE = new LightClientAttackEvidence();
   }
 
-  public static com.tendermint.types.LightClientAttackEvidence getDefaultInstance() {
+  public static LightClientAttackEvidence getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<LightClientAttackEvidence>
       PARSER = new com.google.protobuf.AbstractParser<LightClientAttackEvidence>() {
-    @java.lang.Override
+    @Override
     public LightClientAttackEvidence parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1247,13 +1247,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<LightClientAttackEvidence> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.tendermint.types.LightClientAttackEvidence getDefaultInstanceForType() {
+  @Override
+  public LightClientAttackEvidence getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

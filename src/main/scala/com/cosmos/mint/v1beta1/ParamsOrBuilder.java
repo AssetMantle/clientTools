@@ -15,7 +15,7 @@ public interface ParamsOrBuilder extends
    * <code>string mint_denom = 1 [json_name = "mintDenom"];</code>
    * @return The mintDenom.
    */
-  java.lang.String getMintDenom();
+  String getMintDenom();
   /**
    * <pre>
    * type of coin to mint
@@ -35,7 +35,7 @@ public interface ParamsOrBuilder extends
    * <code>string inflation_rate_change = 2 [json_name = "inflationRateChange", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_rate_change&#92;""];</code>
    * @return The inflationRateChange.
    */
-  java.lang.String getInflationRateChange();
+  String getInflationRateChange();
   /**
    * <pre>
    * maximum annual change in inflation rate
@@ -55,7 +55,7 @@ public interface ParamsOrBuilder extends
    * <code>string inflation_max = 3 [json_name = "inflationMax", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_max&#92;""];</code>
    * @return The inflationMax.
    */
-  java.lang.String getInflationMax();
+  String getInflationMax();
   /**
    * <pre>
    * maximum inflation rate
@@ -75,7 +75,7 @@ public interface ParamsOrBuilder extends
    * <code>string inflation_min = 4 [json_name = "inflationMin", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_min&#92;""];</code>
    * @return The inflationMin.
    */
-  java.lang.String getInflationMin();
+  String getInflationMin();
   /**
    * <pre>
    * minimum inflation rate
@@ -95,7 +95,7 @@ public interface ParamsOrBuilder extends
    * <code>string goal_bonded = 5 [json_name = "goalBonded", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"goal_bonded&#92;""];</code>
    * @return The goalBonded.
    */
-  java.lang.String getGoalBonded();
+  String getGoalBonded();
   /**
    * <pre>
    * goal of percent bonded atoms

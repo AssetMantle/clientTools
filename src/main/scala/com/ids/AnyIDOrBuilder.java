@@ -8,124 +8,124 @@ public interface AnyIDOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
+   * <code>.ids.AnyOwnableID any_ownable_i_d = 1 [json_name = "anyOwnableID"];</code>
+   * @return Whether the anyOwnableID field is set.
+   */
+  boolean hasAnyOwnableID();
+  /**
+   * <code>.ids.AnyOwnableID any_ownable_i_d = 1 [json_name = "anyOwnableID"];</code>
+   * @return The anyOwnableID.
+   */
+  AnyOwnableID getAnyOwnableID();
+  /**
+   * <code>.ids.AnyOwnableID any_ownable_i_d = 1 [json_name = "anyOwnableID"];</code>
+   */
+  AnyOwnableIDOrBuilder getAnyOwnableIDOrBuilder();
+
+  /**
+   * <code>.ids.AssetID asset_i_d = 2 [json_name = "assetID"];</code>
    * @return Whether the assetID field is set.
    */
   boolean hasAssetID();
   /**
-   * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
+   * <code>.ids.AssetID asset_i_d = 2 [json_name = "assetID"];</code>
    * @return The assetID.
    */
-  com.ids.AssetID getAssetID();
+  AssetID getAssetID();
   /**
-   * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
+   * <code>.ids.AssetID asset_i_d = 2 [json_name = "assetID"];</code>
    */
-  com.ids.AssetIDOrBuilder getAssetIDOrBuilder();
+  AssetIDOrBuilder getAssetIDOrBuilder();
 
   /**
-   * <code>.ids.ClassificationID classification_i_d = 2 [json_name = "classificationID"];</code>
+   * <code>.ids.ClassificationID classification_i_d = 3 [json_name = "classificationID"];</code>
    * @return Whether the classificationID field is set.
    */
   boolean hasClassificationID();
   /**
-   * <code>.ids.ClassificationID classification_i_d = 2 [json_name = "classificationID"];</code>
+   * <code>.ids.ClassificationID classification_i_d = 3 [json_name = "classificationID"];</code>
    * @return The classificationID.
    */
-  com.ids.ClassificationID getClassificationID();
+  ClassificationID getClassificationID();
   /**
-   * <code>.ids.ClassificationID classification_i_d = 2 [json_name = "classificationID"];</code>
+   * <code>.ids.ClassificationID classification_i_d = 3 [json_name = "classificationID"];</code>
    */
-  com.ids.ClassificationIDOrBuilder getClassificationIDOrBuilder();
+  ClassificationIDOrBuilder getClassificationIDOrBuilder();
 
   /**
-   * <code>.ids.DataID data_i_d = 3 [json_name = "dataID"];</code>
+   * <code>.ids.DataID data_i_d = 4 [json_name = "dataID"];</code>
    * @return Whether the dataID field is set.
    */
   boolean hasDataID();
   /**
-   * <code>.ids.DataID data_i_d = 3 [json_name = "dataID"];</code>
+   * <code>.ids.DataID data_i_d = 4 [json_name = "dataID"];</code>
    * @return The dataID.
    */
-  com.ids.DataID getDataID();
+  DataID getDataID();
   /**
-   * <code>.ids.DataID data_i_d = 3 [json_name = "dataID"];</code>
+   * <code>.ids.DataID data_i_d = 4 [json_name = "dataID"];</code>
    */
-  com.ids.DataIDOrBuilder getDataIDOrBuilder();
+  DataIDOrBuilder getDataIDOrBuilder();
 
   /**
-   * <code>.ids.HashID hash_i_d = 4 [json_name = "hashID"];</code>
+   * <code>.ids.HashID hash_i_d = 5 [json_name = "hashID"];</code>
    * @return Whether the hashID field is set.
    */
   boolean hasHashID();
   /**
-   * <code>.ids.HashID hash_i_d = 4 [json_name = "hashID"];</code>
+   * <code>.ids.HashID hash_i_d = 5 [json_name = "hashID"];</code>
    * @return The hashID.
    */
-  com.ids.HashID getHashID();
+  HashID getHashID();
   /**
-   * <code>.ids.HashID hash_i_d = 4 [json_name = "hashID"];</code>
+   * <code>.ids.HashID hash_i_d = 5 [json_name = "hashID"];</code>
    */
-  com.ids.HashIDOrBuilder getHashIDOrBuilder();
+  HashIDOrBuilder getHashIDOrBuilder();
 
   /**
-   * <code>.ids.IdentityID identity_i_d = 5 [json_name = "identityID"];</code>
+   * <code>.ids.IdentityID identity_i_d = 6 [json_name = "identityID"];</code>
    * @return Whether the identityID field is set.
    */
   boolean hasIdentityID();
   /**
-   * <code>.ids.IdentityID identity_i_d = 5 [json_name = "identityID"];</code>
+   * <code>.ids.IdentityID identity_i_d = 6 [json_name = "identityID"];</code>
    * @return The identityID.
    */
-  com.ids.IdentityID getIdentityID();
+  IdentityID getIdentityID();
   /**
-   * <code>.ids.IdentityID identity_i_d = 5 [json_name = "identityID"];</code>
+   * <code>.ids.IdentityID identity_i_d = 6 [json_name = "identityID"];</code>
    */
-  com.ids.IdentityIDOrBuilder getIdentityIDOrBuilder();
+  IdentityIDOrBuilder getIdentityIDOrBuilder();
 
   /**
-   * <code>.ids.MaintainerID maintainer_i_d = 6 [json_name = "maintainerID"];</code>
+   * <code>.ids.MaintainerID maintainer_i_d = 7 [json_name = "maintainerID"];</code>
    * @return Whether the maintainerID field is set.
    */
   boolean hasMaintainerID();
   /**
-   * <code>.ids.MaintainerID maintainer_i_d = 6 [json_name = "maintainerID"];</code>
+   * <code>.ids.MaintainerID maintainer_i_d = 7 [json_name = "maintainerID"];</code>
    * @return The maintainerID.
    */
-  com.ids.MaintainerID getMaintainerID();
+  MaintainerID getMaintainerID();
   /**
-   * <code>.ids.MaintainerID maintainer_i_d = 6 [json_name = "maintainerID"];</code>
+   * <code>.ids.MaintainerID maintainer_i_d = 7 [json_name = "maintainerID"];</code>
    */
-  com.ids.MaintainerIDOrBuilder getMaintainerIDOrBuilder();
+  MaintainerIDOrBuilder getMaintainerIDOrBuilder();
 
   /**
-   * <code>.ids.OrderID order_i_d = 7 [json_name = "orderID"];</code>
+   * <code>.ids.OrderID order_i_d = 8 [json_name = "orderID"];</code>
    * @return Whether the orderID field is set.
    */
   boolean hasOrderID();
   /**
-   * <code>.ids.OrderID order_i_d = 7 [json_name = "orderID"];</code>
+   * <code>.ids.OrderID order_i_d = 8 [json_name = "orderID"];</code>
    * @return The orderID.
    */
-  com.ids.OrderID getOrderID();
+  OrderID getOrderID();
   /**
-   * <code>.ids.OrderID order_i_d = 7 [json_name = "orderID"];</code>
+   * <code>.ids.OrderID order_i_d = 8 [json_name = "orderID"];</code>
    */
-  com.ids.OrderIDOrBuilder getOrderIDOrBuilder();
-
-  /**
-   * <code>.ids.AnyOwnableID ownable_i_d = 8 [json_name = "ownableID"];</code>
-   * @return Whether the ownableID field is set.
-   */
-  boolean hasOwnableID();
-  /**
-   * <code>.ids.AnyOwnableID ownable_i_d = 8 [json_name = "ownableID"];</code>
-   * @return The ownableID.
-   */
-  com.ids.AnyOwnableID getOwnableID();
-  /**
-   * <code>.ids.AnyOwnableID ownable_i_d = 8 [json_name = "ownableID"];</code>
-   */
-  com.ids.AnyOwnableIDOrBuilder getOwnableIDOrBuilder();
+  OrderIDOrBuilder getOrderIDOrBuilder();
 
   /**
    * <code>.ids.PropertyID property_i_d = 9 [json_name = "propertyID"];</code>
@@ -136,11 +136,11 @@ public interface AnyIDOrBuilder extends
    * <code>.ids.PropertyID property_i_d = 9 [json_name = "propertyID"];</code>
    * @return The propertyID.
    */
-  com.ids.PropertyID getPropertyID();
+  PropertyID getPropertyID();
   /**
    * <code>.ids.PropertyID property_i_d = 9 [json_name = "propertyID"];</code>
    */
-  com.ids.PropertyIDOrBuilder getPropertyIDOrBuilder();
+  PropertyIDOrBuilder getPropertyIDOrBuilder();
 
   /**
    * <code>.ids.SplitID split_i_d = 10 [json_name = "splitID"];</code>
@@ -151,11 +151,11 @@ public interface AnyIDOrBuilder extends
    * <code>.ids.SplitID split_i_d = 10 [json_name = "splitID"];</code>
    * @return The splitID.
    */
-  com.ids.SplitID getSplitID();
+  SplitID getSplitID();
   /**
    * <code>.ids.SplitID split_i_d = 10 [json_name = "splitID"];</code>
    */
-  com.ids.SplitIDOrBuilder getSplitIDOrBuilder();
+  SplitIDOrBuilder getSplitIDOrBuilder();
 
   /**
    * <code>.ids.StringID string_i_d = 11 [json_name = "stringID"];</code>
@@ -166,11 +166,11 @@ public interface AnyIDOrBuilder extends
    * <code>.ids.StringID string_i_d = 11 [json_name = "stringID"];</code>
    * @return The stringID.
    */
-  com.ids.StringID getStringID();
+  StringID getStringID();
   /**
    * <code>.ids.StringID string_i_d = 11 [json_name = "stringID"];</code>
    */
-  com.ids.StringIDOrBuilder getStringIDOrBuilder();
+  StringIDOrBuilder getStringIDOrBuilder();
 
-  public com.ids.AnyID.ImplCase getImplCase();
+  AnyID.ImplCase getImplCase();
 }

@@ -11,7 +11,7 @@ public interface StoreInfoOrBuilder extends
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The bytes for name.
@@ -28,9 +28,9 @@ public interface StoreInfoOrBuilder extends
    * <code>.cosmos.base.store.v1beta1.CommitID commit_id = 2 [json_name = "commitId", (.gogoproto.nullable) = false];</code>
    * @return The commitId.
    */
-  com.cosmos.base.store.v1beta1.CommitID getCommitId();
+  CommitID getCommitId();
   /**
    * <code>.cosmos.base.store.v1beta1.CommitID commit_id = 2 [json_name = "commitId", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.base.store.v1beta1.CommitIDOrBuilder getCommitIdOrBuilder();
+  CommitIDOrBuilder getCommitIdOrBuilder();
 }

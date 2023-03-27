@@ -37,7 +37,7 @@ public final class AuthProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\036cosmos/auth/v1beta1/auth.proto\022\023cosmos" +
       ".auth.v1beta1\032\031cosmos_proto/cosmos.proto" +
       "\032\024gogoproto/gogo.proto\032\031google/protobuf/" +
@@ -84,19 +84,19 @@ public final class AuthProto {
     internal_static_cosmos_auth_v1beta1_BaseAccount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_auth_v1beta1_BaseAccount_descriptor,
-        new java.lang.String[] { "Address", "PubKey", "AccountNumber", "Sequence", });
+        new String[] { "Address", "PubKey", "AccountNumber", "Sequence", });
     internal_static_cosmos_auth_v1beta1_ModuleAccount_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_auth_v1beta1_ModuleAccount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_auth_v1beta1_ModuleAccount_descriptor,
-        new java.lang.String[] { "BaseAccount", "Name", "Permissions", });
+        new String[] { "BaseAccount", "Name", "Permissions", });
     internal_static_cosmos_auth_v1beta1_Params_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_auth_v1beta1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_auth_v1beta1_Params_descriptor,
-        new java.lang.String[] { "MaxMemoCharacters", "TxSigLimit", "TxSizeCostPerByte", "SigVerifyCostEd25519", "SigVerifyCostSecp256K1", });
+        new String[] { "MaxMemoCharacters", "TxSigLimit", "TxSizeCostPerByte", "SigVerifyCostEd25519", "SigVerifyCostSecp256K1", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.implementsInterface);

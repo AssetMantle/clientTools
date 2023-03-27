@@ -10,12 +10,12 @@ public interface ResponseListSnapshotsOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.Snapshot snapshots = 1 [json_name = "snapshots"];</code>
    */
-  java.util.List<com.tendermint.abci.Snapshot> 
+  java.util.List<Snapshot>
       getSnapshotsList();
   /**
    * <code>repeated .tendermint.abci.Snapshot snapshots = 1 [json_name = "snapshots"];</code>
    */
-  com.tendermint.abci.Snapshot getSnapshots(int index);
+  Snapshot getSnapshots(int index);
   /**
    * <code>repeated .tendermint.abci.Snapshot snapshots = 1 [json_name = "snapshots"];</code>
    */
@@ -23,11 +23,11 @@ public interface ResponseListSnapshotsOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.Snapshot snapshots = 1 [json_name = "snapshots"];</code>
    */
-  java.util.List<? extends com.tendermint.abci.SnapshotOrBuilder> 
+  java.util.List<? extends SnapshotOrBuilder>
       getSnapshotsOrBuilderList();
   /**
    * <code>repeated .tendermint.abci.Snapshot snapshots = 1 [json_name = "snapshots"];</code>
    */
-  com.tendermint.abci.SnapshotOrBuilder getSnapshotsOrBuilder(
+  SnapshotOrBuilder getSnapshotsOrBuilder(
       int index);
 }

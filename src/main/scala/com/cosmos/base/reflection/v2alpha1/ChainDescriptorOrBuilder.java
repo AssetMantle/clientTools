@@ -15,7 +15,7 @@ public interface ChainDescriptorOrBuilder extends
    * <code>string id = 1 [json_name = "id"];</code>
    * @return The id.
    */
-  java.lang.String getId();
+  String getId();
   /**
    * <pre>
    * id is the chain id

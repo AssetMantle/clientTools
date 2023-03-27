@@ -25,24 +25,24 @@ private static final long serialVersionUID = 0L;
     keyPrefix_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new MerklePrefix();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.commitment.v1.CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePrefix_descriptor;
+    return CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePrefix_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.commitment.v1.CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePrefix_fieldAccessorTable
+    return CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePrefix_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.commitment.v1.MerklePrefix.class, com.ibc.core.commitment.v1.MerklePrefix.Builder.class);
+            MerklePrefix.class, Builder.class);
   }
 
   public static final int KEY_PREFIX_FIELD_NUMBER = 1;
@@ -51,13 +51,13 @@ private static final long serialVersionUID = 0L;
    * <code>bytes key_prefix = 1 [json_name = "keyPrefix", (.gogoproto.moretags) = "yaml:&#92;"key_prefix&#92;""];</code>
    * @return The keyPrefix.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getKeyPrefix() {
     return keyPrefix_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -67,7 +67,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!keyPrefix_.isEmpty()) {
@@ -76,7 +76,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -91,15 +91,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.commitment.v1.MerklePrefix)) {
+    if (!(obj instanceof MerklePrefix)) {
       return super.equals(obj);
     }
-    com.ibc.core.commitment.v1.MerklePrefix other = (com.ibc.core.commitment.v1.MerklePrefix) obj;
+    MerklePrefix other = (MerklePrefix) obj;
 
     if (!getKeyPrefix()
         .equals(other.getKeyPrefix())) return false;
@@ -107,7 +107,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -121,69 +121,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.commitment.v1.MerklePrefix parseFrom(
+  public static MerklePrefix parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseFrom(
+  public static MerklePrefix parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseFrom(
+  public static MerklePrefix parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseFrom(
+  public static MerklePrefix parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseFrom(byte[] data)
+  public static MerklePrefix parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseFrom(
+  public static MerklePrefix parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseFrom(java.io.InputStream input)
+  public static MerklePrefix parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseFrom(
+  public static MerklePrefix parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseDelimitedFrom(java.io.InputStream input)
+  public static MerklePrefix parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseDelimitedFrom(
+  public static MerklePrefix parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseFrom(
+  public static MerklePrefix parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.commitment.v1.MerklePrefix parseFrom(
+  public static MerklePrefix parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -191,23 +191,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.commitment.v1.MerklePrefix prototype) {
+  public static Builder newBuilder(MerklePrefix prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -223,18 +223,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.commitment.v1.MerklePrefix)
-      com.ibc.core.commitment.v1.MerklePrefixOrBuilder {
+      MerklePrefixOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.commitment.v1.CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePrefix_descriptor;
+      return CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePrefix_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.commitment.v1.CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePrefix_fieldAccessorTable
+      return CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePrefix_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.commitment.v1.MerklePrefix.class, com.ibc.core.commitment.v1.MerklePrefix.Builder.class);
+              MerklePrefix.class, Builder.class);
     }
 
     // Construct using com.ibc.core.commitment.v1.MerklePrefix.newBuilder()
@@ -243,11 +243,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -255,85 +255,85 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.commitment.v1.CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePrefix_descriptor;
+      return CommitmentProto.internal_static_ibc_core_commitment_v1_MerklePrefix_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.commitment.v1.MerklePrefix getDefaultInstanceForType() {
-      return com.ibc.core.commitment.v1.MerklePrefix.getDefaultInstance();
+    @Override
+    public MerklePrefix getDefaultInstanceForType() {
+      return MerklePrefix.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.commitment.v1.MerklePrefix build() {
-      com.ibc.core.commitment.v1.MerklePrefix result = buildPartial();
+    @Override
+    public MerklePrefix build() {
+      MerklePrefix result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.commitment.v1.MerklePrefix buildPartial() {
-      com.ibc.core.commitment.v1.MerklePrefix result = new com.ibc.core.commitment.v1.MerklePrefix(this);
+    @Override
+    public MerklePrefix buildPartial() {
+      MerklePrefix result = new MerklePrefix(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.core.commitment.v1.MerklePrefix result) {
+    private void buildPartial0(MerklePrefix result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.keyPrefix_ = keyPrefix_;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.commitment.v1.MerklePrefix) {
-        return mergeFrom((com.ibc.core.commitment.v1.MerklePrefix)other);
+      if (other instanceof MerklePrefix) {
+        return mergeFrom((MerklePrefix)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.commitment.v1.MerklePrefix other) {
-      if (other == com.ibc.core.commitment.v1.MerklePrefix.getDefaultInstance()) return this;
+    public Builder mergeFrom(MerklePrefix other) {
+      if (other == MerklePrefix.getDefaultInstance()) return this;
       if (other.getKeyPrefix() != com.google.protobuf.ByteString.EMPTY) {
         setKeyPrefix(other.getKeyPrefix());
       }
@@ -342,18 +342,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -390,7 +390,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes key_prefix = 1 [json_name = "keyPrefix", (.gogoproto.moretags) = "yaml:&#92;"key_prefix&#92;""];</code>
      * @return The keyPrefix.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getKeyPrefix() {
       return keyPrefix_;
     }
@@ -416,13 +416,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -433,18 +433,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.commitment.v1.MerklePrefix)
-  private static final com.ibc.core.commitment.v1.MerklePrefix DEFAULT_INSTANCE;
+  private static final MerklePrefix DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.commitment.v1.MerklePrefix();
+    DEFAULT_INSTANCE = new MerklePrefix();
   }
 
-  public static com.ibc.core.commitment.v1.MerklePrefix getDefaultInstance() {
+  public static MerklePrefix getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MerklePrefix>
       PARSER = new com.google.protobuf.AbstractParser<MerklePrefix>() {
-    @java.lang.Override
+    @Override
     public MerklePrefix parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -468,13 +468,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MerklePrefix> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.commitment.v1.MerklePrefix getDefaultInstanceForType() {
+  @Override
+  public MerklePrefix getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

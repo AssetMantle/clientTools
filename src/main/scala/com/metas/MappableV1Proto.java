@@ -27,7 +27,7 @@ public final class MappableV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n1modules/metas/internal/mappable/mappab" +
       "le.v1.proto\022\005metas\032!schema/data/base/any" +
       "Data.v1.proto\032\024gogoproto/gogo.proto\"3\n\010M" +
@@ -49,7 +49,7 @@ public final class MappableV1Proto {
     internal_static_metas_Mappable_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_metas_Mappable_descriptor,
-        new java.lang.String[] { "Data", });
+        new String[] { "Data", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

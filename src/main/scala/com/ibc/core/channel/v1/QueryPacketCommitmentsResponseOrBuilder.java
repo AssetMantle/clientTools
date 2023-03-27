@@ -10,12 +10,12 @@ public interface QueryPacketCommitmentsResponseOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
    */
-  java.util.List<com.ibc.core.channel.v1.PacketState> 
+  java.util.List<PacketState>
       getCommitmentsList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
    */
-  com.ibc.core.channel.v1.PacketState getCommitments(int index);
+  PacketState getCommitments(int index);
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
    */
@@ -23,12 +23,12 @@ public interface QueryPacketCommitmentsResponseOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
    */
-  java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
+  java.util.List<? extends PacketStateOrBuilder>
       getCommitmentsOrBuilderList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
    */
-  com.ibc.core.channel.v1.PacketStateOrBuilder getCommitmentsOrBuilder(
+  PacketStateOrBuilder getCommitmentsOrBuilder(
       int index);
 
   /**

@@ -24,29 +24,29 @@ private static final long serialVersionUID = 0L;
     consensusStates_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryConsensusStatesResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_descriptor;
+    return QueryProto.internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_fieldAccessorTable
+    return QueryProto.internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.client.v1.QueryConsensusStatesResponse.class, com.ibc.core.client.v1.QueryConsensusStatesResponse.Builder.class);
+            QueryConsensusStatesResponse.class, Builder.class);
   }
 
   public static final int CONSENSUS_STATES_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.ibc.core.client.v1.ConsensusStateWithHeight> consensusStates_;
+  private java.util.List<ConsensusStateWithHeight> consensusStates_;
   /**
    * <pre>
    * consensus states associated with the identifier
@@ -54,8 +54,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.ibc.core.client.v1.ConsensusStateWithHeight> getConsensusStatesList() {
+  @Override
+  public java.util.List<ConsensusStateWithHeight> getConsensusStatesList() {
     return consensusStates_;
   }
   /**
@@ -65,8 +65,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder> 
+  @Override
+  public java.util.List<? extends ConsensusStateWithHeightOrBuilder>
       getConsensusStatesOrBuilderList() {
     return consensusStates_;
   }
@@ -77,7 +77,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getConsensusStatesCount() {
     return consensusStates_.size();
   }
@@ -88,8 +88,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.ibc.core.client.v1.ConsensusStateWithHeight getConsensusStates(int index) {
+  @Override
+  public ConsensusStateWithHeight getConsensusStates(int index) {
     return consensusStates_.get(index);
   }
   /**
@@ -99,8 +99,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder getConsensusStatesOrBuilder(
+  @Override
+  public ConsensusStateWithHeightOrBuilder getConsensusStatesOrBuilder(
       int index) {
     return consensusStates_.get(index);
   }
@@ -115,7 +115,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -127,7 +127,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageResponse getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -138,13 +138,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageResponseOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -154,7 +154,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < consensusStates_.size(); i++) {
@@ -166,7 +166,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -185,15 +185,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.client.v1.QueryConsensusStatesResponse)) {
+    if (!(obj instanceof QueryConsensusStatesResponse)) {
       return super.equals(obj);
     }
-    com.ibc.core.client.v1.QueryConsensusStatesResponse other = (com.ibc.core.client.v1.QueryConsensusStatesResponse) obj;
+    QueryConsensusStatesResponse other = (QueryConsensusStatesResponse) obj;
 
     if (!getConsensusStatesList()
         .equals(other.getConsensusStatesList())) return false;
@@ -206,7 +206,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -226,69 +226,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseFrom(
+  public static QueryConsensusStatesResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseFrom(
+  public static QueryConsensusStatesResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseFrom(
+  public static QueryConsensusStatesResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseFrom(
+  public static QueryConsensusStatesResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseFrom(byte[] data)
+  public static QueryConsensusStatesResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseFrom(
+  public static QueryConsensusStatesResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseFrom(java.io.InputStream input)
+  public static QueryConsensusStatesResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseFrom(
+  public static QueryConsensusStatesResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryConsensusStatesResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseDelimitedFrom(
+  public static QueryConsensusStatesResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseFrom(
+  public static QueryConsensusStatesResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse parseFrom(
+  public static QueryConsensusStatesResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -296,23 +296,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.client.v1.QueryConsensusStatesResponse prototype) {
+  public static Builder newBuilder(QueryConsensusStatesResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -327,18 +327,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.client.v1.QueryConsensusStatesResponse)
-      com.ibc.core.client.v1.QueryConsensusStatesResponseOrBuilder {
+      QueryConsensusStatesResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_descriptor;
+      return QueryProto.internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_fieldAccessorTable
+      return QueryProto.internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.client.v1.QueryConsensusStatesResponse.class, com.ibc.core.client.v1.QueryConsensusStatesResponse.Builder.class);
+              QueryConsensusStatesResponse.class, Builder.class);
     }
 
     // Construct using com.ibc.core.client.v1.QueryConsensusStatesResponse.newBuilder()
@@ -347,11 +347,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -370,36 +370,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_descriptor;
+      return QueryProto.internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.client.v1.QueryConsensusStatesResponse getDefaultInstanceForType() {
-      return com.ibc.core.client.v1.QueryConsensusStatesResponse.getDefaultInstance();
+    @Override
+    public QueryConsensusStatesResponse getDefaultInstanceForType() {
+      return QueryConsensusStatesResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.client.v1.QueryConsensusStatesResponse build() {
-      com.ibc.core.client.v1.QueryConsensusStatesResponse result = buildPartial();
+    @Override
+    public QueryConsensusStatesResponse build() {
+      QueryConsensusStatesResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.client.v1.QueryConsensusStatesResponse buildPartial() {
-      com.ibc.core.client.v1.QueryConsensusStatesResponse result = new com.ibc.core.client.v1.QueryConsensusStatesResponse(this);
+    @Override
+    public QueryConsensusStatesResponse buildPartial() {
+      QueryConsensusStatesResponse result = new QueryConsensusStatesResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.ibc.core.client.v1.QueryConsensusStatesResponse result) {
+    private void buildPartialRepeatedFields(QueryConsensusStatesResponse result) {
       if (consensusStatesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           consensusStates_ = java.util.Collections.unmodifiableList(consensusStates_);
@@ -411,7 +411,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.ibc.core.client.v1.QueryConsensusStatesResponse result) {
+    private void buildPartial0(QueryConsensusStatesResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -420,50 +420,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.client.v1.QueryConsensusStatesResponse) {
-        return mergeFrom((com.ibc.core.client.v1.QueryConsensusStatesResponse)other);
+      if (other instanceof QueryConsensusStatesResponse) {
+        return mergeFrom((QueryConsensusStatesResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.client.v1.QueryConsensusStatesResponse other) {
-      if (other == com.ibc.core.client.v1.QueryConsensusStatesResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryConsensusStatesResponse other) {
+      if (other == QueryConsensusStatesResponse.getDefaultInstance()) return this;
       if (consensusStatesBuilder_ == null) {
         if (!other.consensusStates_.isEmpty()) {
           if (consensusStates_.isEmpty()) {
@@ -498,18 +498,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -520,9 +520,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.ibc.core.client.v1.ConsensusStateWithHeight m =
+              ConsensusStateWithHeight m =
                   input.readMessage(
-                      com.ibc.core.client.v1.ConsensusStateWithHeight.parser(),
+                      ConsensusStateWithHeight.parser(),
                       extensionRegistry);
               if (consensusStatesBuilder_ == null) {
                 ensureConsensusStatesIsMutable();
@@ -556,17 +556,17 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.ibc.core.client.v1.ConsensusStateWithHeight> consensusStates_ =
+    private java.util.List<ConsensusStateWithHeight> consensusStates_ =
       java.util.Collections.emptyList();
     private void ensureConsensusStatesIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        consensusStates_ = new java.util.ArrayList<com.ibc.core.client.v1.ConsensusStateWithHeight>(consensusStates_);
+        consensusStates_ = new java.util.ArrayList<ConsensusStateWithHeight>(consensusStates_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ibc.core.client.v1.ConsensusStateWithHeight, com.ibc.core.client.v1.ConsensusStateWithHeight.Builder, com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder> consensusStatesBuilder_;
+        ConsensusStateWithHeight, ConsensusStateWithHeight.Builder, ConsensusStateWithHeightOrBuilder> consensusStatesBuilder_;
 
     /**
      * <pre>
@@ -575,7 +575,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.ibc.core.client.v1.ConsensusStateWithHeight> getConsensusStatesList() {
+    public java.util.List<ConsensusStateWithHeight> getConsensusStatesList() {
       if (consensusStatesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(consensusStates_);
       } else {
@@ -603,7 +603,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
-    public com.ibc.core.client.v1.ConsensusStateWithHeight getConsensusStates(int index) {
+    public ConsensusStateWithHeight getConsensusStates(int index) {
       if (consensusStatesBuilder_ == null) {
         return consensusStates_.get(index);
       } else {
@@ -618,7 +618,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
     public Builder setConsensusStates(
-        int index, com.ibc.core.client.v1.ConsensusStateWithHeight value) {
+        int index, ConsensusStateWithHeight value) {
       if (consensusStatesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -639,7 +639,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
     public Builder setConsensusStates(
-        int index, com.ibc.core.client.v1.ConsensusStateWithHeight.Builder builderForValue) {
+        int index, ConsensusStateWithHeight.Builder builderForValue) {
       if (consensusStatesBuilder_ == null) {
         ensureConsensusStatesIsMutable();
         consensusStates_.set(index, builderForValue.build());
@@ -656,7 +656,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addConsensusStates(com.ibc.core.client.v1.ConsensusStateWithHeight value) {
+    public Builder addConsensusStates(ConsensusStateWithHeight value) {
       if (consensusStatesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -677,7 +677,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
     public Builder addConsensusStates(
-        int index, com.ibc.core.client.v1.ConsensusStateWithHeight value) {
+        int index, ConsensusStateWithHeight value) {
       if (consensusStatesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -698,7 +698,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
     public Builder addConsensusStates(
-        com.ibc.core.client.v1.ConsensusStateWithHeight.Builder builderForValue) {
+        ConsensusStateWithHeight.Builder builderForValue) {
       if (consensusStatesBuilder_ == null) {
         ensureConsensusStatesIsMutable();
         consensusStates_.add(builderForValue.build());
@@ -716,7 +716,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
     public Builder addConsensusStates(
-        int index, com.ibc.core.client.v1.ConsensusStateWithHeight.Builder builderForValue) {
+        int index, ConsensusStateWithHeight.Builder builderForValue) {
       if (consensusStatesBuilder_ == null) {
         ensureConsensusStatesIsMutable();
         consensusStates_.add(index, builderForValue.build());
@@ -734,7 +734,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllConsensusStates(
-        java.lang.Iterable<? extends com.ibc.core.client.v1.ConsensusStateWithHeight> values) {
+        Iterable<? extends ConsensusStateWithHeight> values) {
       if (consensusStatesBuilder_ == null) {
         ensureConsensusStatesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -786,7 +786,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
-    public com.ibc.core.client.v1.ConsensusStateWithHeight.Builder getConsensusStatesBuilder(
+    public ConsensusStateWithHeight.Builder getConsensusStatesBuilder(
         int index) {
       return getConsensusStatesFieldBuilder().getBuilder(index);
     }
@@ -797,7 +797,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
-    public com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder getConsensusStatesOrBuilder(
+    public ConsensusStateWithHeightOrBuilder getConsensusStatesOrBuilder(
         int index) {
       if (consensusStatesBuilder_ == null) {
         return consensusStates_.get(index);  } else {
@@ -811,7 +811,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder> 
+    public java.util.List<? extends ConsensusStateWithHeightOrBuilder>
          getConsensusStatesOrBuilderList() {
       if (consensusStatesBuilder_ != null) {
         return consensusStatesBuilder_.getMessageOrBuilderList();
@@ -826,9 +826,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
-    public com.ibc.core.client.v1.ConsensusStateWithHeight.Builder addConsensusStatesBuilder() {
+    public ConsensusStateWithHeight.Builder addConsensusStatesBuilder() {
       return getConsensusStatesFieldBuilder().addBuilder(
-          com.ibc.core.client.v1.ConsensusStateWithHeight.getDefaultInstance());
+          ConsensusStateWithHeight.getDefaultInstance());
     }
     /**
      * <pre>
@@ -837,10 +837,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
-    public com.ibc.core.client.v1.ConsensusStateWithHeight.Builder addConsensusStatesBuilder(
+    public ConsensusStateWithHeight.Builder addConsensusStatesBuilder(
         int index) {
       return getConsensusStatesFieldBuilder().addBuilder(
-          index, com.ibc.core.client.v1.ConsensusStateWithHeight.getDefaultInstance());
+          index, ConsensusStateWithHeight.getDefaultInstance());
     }
     /**
      * <pre>
@@ -849,16 +849,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.ibc.core.client.v1.ConsensusStateWithHeight.Builder> 
+    public java.util.List<ConsensusStateWithHeight.Builder>
          getConsensusStatesBuilderList() {
       return getConsensusStatesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ibc.core.client.v1.ConsensusStateWithHeight, com.ibc.core.client.v1.ConsensusStateWithHeight.Builder, com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder> 
+        ConsensusStateWithHeight, ConsensusStateWithHeight.Builder, ConsensusStateWithHeightOrBuilder>
         getConsensusStatesFieldBuilder() {
       if (consensusStatesBuilder_ == null) {
         consensusStatesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.ibc.core.client.v1.ConsensusStateWithHeight, com.ibc.core.client.v1.ConsensusStateWithHeight.Builder, com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder>(
+            ConsensusStateWithHeight, ConsensusStateWithHeight.Builder, ConsensusStateWithHeightOrBuilder>(
                 consensusStates_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -1022,13 +1022,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1039,18 +1039,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.client.v1.QueryConsensusStatesResponse)
-  private static final com.ibc.core.client.v1.QueryConsensusStatesResponse DEFAULT_INSTANCE;
+  private static final QueryConsensusStatesResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.client.v1.QueryConsensusStatesResponse();
+    DEFAULT_INSTANCE = new QueryConsensusStatesResponse();
   }
 
-  public static com.ibc.core.client.v1.QueryConsensusStatesResponse getDefaultInstance() {
+  public static QueryConsensusStatesResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryConsensusStatesResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryConsensusStatesResponse>() {
-    @java.lang.Override
+    @Override
     public QueryConsensusStatesResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1074,13 +1074,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryConsensusStatesResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.client.v1.QueryConsensusStatesResponse getDefaultInstanceForType() {
+  @Override
+  public QueryConsensusStatesResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

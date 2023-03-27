@@ -40,9 +40,9 @@ public interface SnapshotOrBuilder extends
    * <code>.cosmos.base.snapshots.v1beta1.Metadata metadata = 5 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
    * @return The metadata.
    */
-  com.cosmos.base.snapshots.v1beta1.Metadata getMetadata();
+  Metadata getMetadata();
   /**
    * <code>.cosmos.base.snapshots.v1beta1.Metadata metadata = 5 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.base.snapshots.v1beta1.MetadataOrBuilder getMetadataOrBuilder();
+  MetadataOrBuilder getMetadataOrBuilder();
 }

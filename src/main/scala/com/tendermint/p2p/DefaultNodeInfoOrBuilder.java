@@ -16,17 +16,17 @@ public interface DefaultNodeInfoOrBuilder extends
    * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
    * @return The protocolVersion.
    */
-  com.tendermint.p2p.ProtocolVersion getProtocolVersion();
+  ProtocolVersion getProtocolVersion();
   /**
    * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.p2p.ProtocolVersionOrBuilder getProtocolVersionOrBuilder();
+  ProtocolVersionOrBuilder getProtocolVersionOrBuilder();
 
   /**
    * <code>string default_node_id = 2 [json_name = "defaultNodeId", (.gogoproto.customname) = "DefaultNodeID"];</code>
    * @return The defaultNodeId.
    */
-  java.lang.String getDefaultNodeId();
+  String getDefaultNodeId();
   /**
    * <code>string default_node_id = 2 [json_name = "defaultNodeId", (.gogoproto.customname) = "DefaultNodeID"];</code>
    * @return The bytes for defaultNodeId.
@@ -38,7 +38,7 @@ public interface DefaultNodeInfoOrBuilder extends
    * <code>string listen_addr = 3 [json_name = "listenAddr"];</code>
    * @return The listenAddr.
    */
-  java.lang.String getListenAddr();
+  String getListenAddr();
   /**
    * <code>string listen_addr = 3 [json_name = "listenAddr"];</code>
    * @return The bytes for listenAddr.
@@ -50,7 +50,7 @@ public interface DefaultNodeInfoOrBuilder extends
    * <code>string network = 4 [json_name = "network"];</code>
    * @return The network.
    */
-  java.lang.String getNetwork();
+  String getNetwork();
   /**
    * <code>string network = 4 [json_name = "network"];</code>
    * @return The bytes for network.
@@ -62,7 +62,7 @@ public interface DefaultNodeInfoOrBuilder extends
    * <code>string version = 5 [json_name = "version"];</code>
    * @return The version.
    */
-  java.lang.String getVersion();
+  String getVersion();
   /**
    * <code>string version = 5 [json_name = "version"];</code>
    * @return The bytes for version.
@@ -80,7 +80,7 @@ public interface DefaultNodeInfoOrBuilder extends
    * <code>string moniker = 7 [json_name = "moniker"];</code>
    * @return The moniker.
    */
-  java.lang.String getMoniker();
+  String getMoniker();
   /**
    * <code>string moniker = 7 [json_name = "moniker"];</code>
    * @return The bytes for moniker.
@@ -97,9 +97,9 @@ public interface DefaultNodeInfoOrBuilder extends
    * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
    * @return The other.
    */
-  com.tendermint.p2p.DefaultNodeInfoOther getOther();
+  DefaultNodeInfoOther getOther();
   /**
    * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.p2p.DefaultNodeInfoOtherOrBuilder getOtherOrBuilder();
+  DefaultNodeInfoOtherOrBuilder getOtherOrBuilder();
 }

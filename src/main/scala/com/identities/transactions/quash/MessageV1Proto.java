@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n?modules/identities/internal/transactio" +
       "ns/quash/message.v1.proto\022\035identities.tr" +
       "ansactions.quash\032#schema/ids/base/identi" +
@@ -53,7 +53,7 @@ public final class MessageV1Proto {
     internal_static_identities_transactions_quash_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_identities_transactions_quash_Message_descriptor,
-        new java.lang.String[] { "From", "FromID", "IdentityID", });
+        new String[] { "From", "FromID", "IdentityID", });
     com.ids.IdentityIDV1Proto.getDescriptor();
   }
 

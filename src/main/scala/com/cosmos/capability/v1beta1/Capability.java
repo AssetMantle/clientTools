@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
   private Capability() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Capability();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.capability.v1beta1.CapabilityProto.internal_static_cosmos_capability_v1beta1_Capability_descriptor;
+    return CapabilityProto.internal_static_cosmos_capability_v1beta1_Capability_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.capability.v1beta1.CapabilityProto.internal_static_cosmos_capability_v1beta1_Capability_fieldAccessorTable
+    return CapabilityProto.internal_static_cosmos_capability_v1beta1_Capability_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.capability.v1beta1.Capability.class, com.cosmos.capability.v1beta1.Capability.Builder.class);
+            Capability.class, Builder.class);
   }
 
   public static final int INDEX_FIELD_NUMBER = 1;
@@ -49,13 +49,13 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 index = 1 [json_name = "index", (.gogoproto.moretags) = "yaml:&#92;"index&#92;""];</code>
    * @return The index.
    */
-  @java.lang.Override
+  @Override
   public long getIndex() {
     return index_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -65,7 +65,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (index_ != 0L) {
@@ -74,7 +74,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -89,15 +89,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.capability.v1beta1.Capability)) {
+    if (!(obj instanceof Capability)) {
       return super.equals(obj);
     }
-    com.cosmos.capability.v1beta1.Capability other = (com.cosmos.capability.v1beta1.Capability) obj;
+    Capability other = (Capability) obj;
 
     if (getIndex()
         != other.getIndex()) return false;
@@ -105,7 +105,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -120,69 +120,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.capability.v1beta1.Capability parseFrom(
+  public static Capability parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseFrom(
+  public static Capability parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseFrom(
+  public static Capability parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseFrom(
+  public static Capability parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseFrom(byte[] data)
+  public static Capability parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseFrom(
+  public static Capability parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseFrom(java.io.InputStream input)
+  public static Capability parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseFrom(
+  public static Capability parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseDelimitedFrom(java.io.InputStream input)
+  public static Capability parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseDelimitedFrom(
+  public static Capability parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseFrom(
+  public static Capability parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.capability.v1beta1.Capability parseFrom(
+  public static Capability parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -190,23 +190,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.capability.v1beta1.Capability prototype) {
+  public static Builder newBuilder(Capability prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -221,18 +221,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.capability.v1beta1.Capability)
-      com.cosmos.capability.v1beta1.CapabilityOrBuilder {
+      CapabilityOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.capability.v1beta1.CapabilityProto.internal_static_cosmos_capability_v1beta1_Capability_descriptor;
+      return CapabilityProto.internal_static_cosmos_capability_v1beta1_Capability_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.capability.v1beta1.CapabilityProto.internal_static_cosmos_capability_v1beta1_Capability_fieldAccessorTable
+      return CapabilityProto.internal_static_cosmos_capability_v1beta1_Capability_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.capability.v1beta1.Capability.class, com.cosmos.capability.v1beta1.Capability.Builder.class);
+              Capability.class, Builder.class);
     }
 
     // Construct using com.cosmos.capability.v1beta1.Capability.newBuilder()
@@ -241,11 +241,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -253,85 +253,85 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.capability.v1beta1.CapabilityProto.internal_static_cosmos_capability_v1beta1_Capability_descriptor;
+      return CapabilityProto.internal_static_cosmos_capability_v1beta1_Capability_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.capability.v1beta1.Capability getDefaultInstanceForType() {
-      return com.cosmos.capability.v1beta1.Capability.getDefaultInstance();
+    @Override
+    public Capability getDefaultInstanceForType() {
+      return Capability.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.capability.v1beta1.Capability build() {
-      com.cosmos.capability.v1beta1.Capability result = buildPartial();
+    @Override
+    public Capability build() {
+      Capability result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.capability.v1beta1.Capability buildPartial() {
-      com.cosmos.capability.v1beta1.Capability result = new com.cosmos.capability.v1beta1.Capability(this);
+    @Override
+    public Capability buildPartial() {
+      Capability result = new Capability(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.capability.v1beta1.Capability result) {
+    private void buildPartial0(Capability result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.index_ = index_;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.capability.v1beta1.Capability) {
-        return mergeFrom((com.cosmos.capability.v1beta1.Capability)other);
+      if (other instanceof Capability) {
+        return mergeFrom((Capability)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.capability.v1beta1.Capability other) {
-      if (other == com.cosmos.capability.v1beta1.Capability.getDefaultInstance()) return this;
+    public Builder mergeFrom(Capability other) {
+      if (other == Capability.getDefaultInstance()) return this;
       if (other.getIndex() != 0L) {
         setIndex(other.getIndex());
       }
@@ -340,18 +340,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -388,7 +388,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 index = 1 [json_name = "index", (.gogoproto.moretags) = "yaml:&#92;"index&#92;""];</code>
      * @return The index.
      */
-    @java.lang.Override
+    @Override
     public long getIndex() {
       return index_;
     }
@@ -414,13 +414,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -431,18 +431,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.capability.v1beta1.Capability)
-  private static final com.cosmos.capability.v1beta1.Capability DEFAULT_INSTANCE;
+  private static final Capability DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.capability.v1beta1.Capability();
+    DEFAULT_INSTANCE = new Capability();
   }
 
-  public static com.cosmos.capability.v1beta1.Capability getDefaultInstance() {
+  public static Capability getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Capability>
       PARSER = new com.google.protobuf.AbstractParser<Capability>() {
-    @java.lang.Override
+    @Override
     public Capability parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -466,13 +466,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Capability> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.capability.v1beta1.Capability getDefaultInstanceForType() {
+  @Override
+  public Capability getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

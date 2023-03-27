@@ -23,29 +23,29 @@ private static final long serialVersionUID = 0L;
     queryServices_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryServicesDescriptor();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_descriptor;
+    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_fieldAccessorTable
+    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.class, com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.Builder.class);
+            QueryServicesDescriptor.class, Builder.class);
   }
 
   public static final int QUERY_SERVICES_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor> queryServices_;
+  private java.util.List<QueryServiceDescriptor> queryServices_;
   /**
    * <pre>
    * query_services is a list of cosmos-sdk QueryServiceDescriptor
@@ -53,8 +53,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor> getQueryServicesList() {
+  @Override
+  public java.util.List<QueryServiceDescriptor> getQueryServicesList() {
     return queryServices_;
   }
   /**
@@ -64,8 +64,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptorOrBuilder> 
+  @Override
+  public java.util.List<? extends QueryServiceDescriptorOrBuilder>
       getQueryServicesOrBuilderList() {
     return queryServices_;
   }
@@ -76,7 +76,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getQueryServicesCount() {
     return queryServices_.size();
   }
@@ -87,8 +87,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor getQueryServices(int index) {
+  @Override
+  public QueryServiceDescriptor getQueryServices(int index) {
     return queryServices_.get(index);
   }
   /**
@@ -98,14 +98,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptorOrBuilder getQueryServicesOrBuilder(
+  @Override
+  public QueryServiceDescriptorOrBuilder getQueryServicesOrBuilder(
       int index) {
     return queryServices_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -115,7 +115,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < queryServices_.size(); i++) {
@@ -124,7 +124,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -139,15 +139,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor)) {
+    if (!(obj instanceof QueryServicesDescriptor)) {
       return super.equals(obj);
     }
-    com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor other = (com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor) obj;
+    QueryServicesDescriptor other = (QueryServicesDescriptor) obj;
 
     if (!getQueryServicesList()
         .equals(other.getQueryServicesList())) return false;
@@ -155,7 +155,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -171,69 +171,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseFrom(
+  public static QueryServicesDescriptor parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseFrom(
+  public static QueryServicesDescriptor parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseFrom(
+  public static QueryServicesDescriptor parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseFrom(
+  public static QueryServicesDescriptor parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseFrom(byte[] data)
+  public static QueryServicesDescriptor parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseFrom(
+  public static QueryServicesDescriptor parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseFrom(java.io.InputStream input)
+  public static QueryServicesDescriptor parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseFrom(
+  public static QueryServicesDescriptor parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseDelimitedFrom(java.io.InputStream input)
+  public static QueryServicesDescriptor parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseDelimitedFrom(
+  public static QueryServicesDescriptor parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseFrom(
+  public static QueryServicesDescriptor parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor parseFrom(
+  public static QueryServicesDescriptor parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -241,23 +241,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor prototype) {
+  public static Builder newBuilder(QueryServicesDescriptor prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -271,18 +271,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.reflection.v2alpha1.QueryServicesDescriptor)
-      com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptorOrBuilder {
+      QueryServicesDescriptorOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_descriptor;
+      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_fieldAccessorTable
+      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.class, com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.Builder.class);
+              QueryServicesDescriptor.class, Builder.class);
     }
 
     // Construct using com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.newBuilder()
@@ -291,11 +291,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -309,36 +309,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_descriptor;
+      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor getDefaultInstanceForType() {
-      return com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.getDefaultInstance();
+    @Override
+    public QueryServicesDescriptor getDefaultInstanceForType() {
+      return QueryServicesDescriptor.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor build() {
-      com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor result = buildPartial();
+    @Override
+    public QueryServicesDescriptor build() {
+      QueryServicesDescriptor result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor buildPartial() {
-      com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor result = new com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor(this);
+    @Override
+    public QueryServicesDescriptor buildPartial() {
+      QueryServicesDescriptor result = new QueryServicesDescriptor(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor result) {
+    private void buildPartialRepeatedFields(QueryServicesDescriptor result) {
       if (queryServicesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           queryServices_ = java.util.Collections.unmodifiableList(queryServices_);
@@ -350,54 +350,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor result) {
+    private void buildPartial0(QueryServicesDescriptor result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor) {
-        return mergeFrom((com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor)other);
+      if (other instanceof QueryServicesDescriptor) {
+        return mergeFrom((QueryServicesDescriptor)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor other) {
-      if (other == com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryServicesDescriptor other) {
+      if (other == QueryServicesDescriptor.getDefaultInstance()) return this;
       if (queryServicesBuilder_ == null) {
         if (!other.queryServices_.isEmpty()) {
           if (queryServices_.isEmpty()) {
@@ -429,18 +429,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -451,9 +451,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor m =
+              QueryServiceDescriptor m =
                   input.readMessage(
-                      com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.parser(),
+                      QueryServiceDescriptor.parser(),
                       extensionRegistry);
               if (queryServicesBuilder_ == null) {
                 ensureQueryServicesIsMutable();
@@ -480,17 +480,17 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor> queryServices_ =
+    private java.util.List<QueryServiceDescriptor> queryServices_ =
       java.util.Collections.emptyList();
     private void ensureQueryServicesIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        queryServices_ = new java.util.ArrayList<com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor>(queryServices_);
+        queryServices_ = new java.util.ArrayList<QueryServiceDescriptor>(queryServices_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptorOrBuilder> queryServicesBuilder_;
+        QueryServiceDescriptor, QueryServiceDescriptor.Builder, QueryServiceDescriptorOrBuilder> queryServicesBuilder_;
 
     /**
      * <pre>
@@ -499,7 +499,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
-    public java.util.List<com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor> getQueryServicesList() {
+    public java.util.List<QueryServiceDescriptor> getQueryServicesList() {
       if (queryServicesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(queryServices_);
       } else {
@@ -527,7 +527,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor getQueryServices(int index) {
+    public QueryServiceDescriptor getQueryServices(int index) {
       if (queryServicesBuilder_ == null) {
         return queryServices_.get(index);
       } else {
@@ -542,7 +542,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
     public Builder setQueryServices(
-        int index, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor value) {
+        int index, QueryServiceDescriptor value) {
       if (queryServicesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -563,7 +563,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
     public Builder setQueryServices(
-        int index, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.Builder builderForValue) {
+        int index, QueryServiceDescriptor.Builder builderForValue) {
       if (queryServicesBuilder_ == null) {
         ensureQueryServicesIsMutable();
         queryServices_.set(index, builderForValue.build());
@@ -580,7 +580,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
-    public Builder addQueryServices(com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor value) {
+    public Builder addQueryServices(QueryServiceDescriptor value) {
       if (queryServicesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -601,7 +601,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
     public Builder addQueryServices(
-        int index, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor value) {
+        int index, QueryServiceDescriptor value) {
       if (queryServicesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -622,7 +622,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
     public Builder addQueryServices(
-        com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.Builder builderForValue) {
+        QueryServiceDescriptor.Builder builderForValue) {
       if (queryServicesBuilder_ == null) {
         ensureQueryServicesIsMutable();
         queryServices_.add(builderForValue.build());
@@ -640,7 +640,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
     public Builder addQueryServices(
-        int index, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.Builder builderForValue) {
+        int index, QueryServiceDescriptor.Builder builderForValue) {
       if (queryServicesBuilder_ == null) {
         ensureQueryServicesIsMutable();
         queryServices_.add(index, builderForValue.build());
@@ -658,7 +658,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
     public Builder addAllQueryServices(
-        java.lang.Iterable<? extends com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor> values) {
+        Iterable<? extends QueryServiceDescriptor> values) {
       if (queryServicesBuilder_ == null) {
         ensureQueryServicesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -710,7 +710,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.Builder getQueryServicesBuilder(
+    public QueryServiceDescriptor.Builder getQueryServicesBuilder(
         int index) {
       return getQueryServicesFieldBuilder().getBuilder(index);
     }
@@ -721,7 +721,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptorOrBuilder getQueryServicesOrBuilder(
+    public QueryServiceDescriptorOrBuilder getQueryServicesOrBuilder(
         int index) {
       if (queryServicesBuilder_ == null) {
         return queryServices_.get(index);  } else {
@@ -735,7 +735,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
-    public java.util.List<? extends com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptorOrBuilder> 
+    public java.util.List<? extends QueryServiceDescriptorOrBuilder>
          getQueryServicesOrBuilderList() {
       if (queryServicesBuilder_ != null) {
         return queryServicesBuilder_.getMessageOrBuilderList();
@@ -750,9 +750,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.Builder addQueryServicesBuilder() {
+    public QueryServiceDescriptor.Builder addQueryServicesBuilder() {
       return getQueryServicesFieldBuilder().addBuilder(
-          com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.getDefaultInstance());
+          QueryServiceDescriptor.getDefaultInstance());
     }
     /**
      * <pre>
@@ -761,10 +761,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.Builder addQueryServicesBuilder(
+    public QueryServiceDescriptor.Builder addQueryServicesBuilder(
         int index) {
       return getQueryServicesFieldBuilder().addBuilder(
-          index, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.getDefaultInstance());
+          index, QueryServiceDescriptor.getDefaultInstance());
     }
     /**
      * <pre>
@@ -773,16 +773,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.QueryServiceDescriptor query_services = 1 [json_name = "queryServices"];</code>
      */
-    public java.util.List<com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.Builder> 
+    public java.util.List<QueryServiceDescriptor.Builder>
          getQueryServicesBuilderList() {
       return getQueryServicesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptorOrBuilder> 
+        QueryServiceDescriptor, QueryServiceDescriptor.Builder, QueryServiceDescriptorOrBuilder>
         getQueryServicesFieldBuilder() {
       if (queryServicesBuilder_ == null) {
         queryServicesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.QueryServiceDescriptorOrBuilder>(
+            QueryServiceDescriptor, QueryServiceDescriptor.Builder, QueryServiceDescriptorOrBuilder>(
                 queryServices_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -791,13 +791,13 @@ private static final long serialVersionUID = 0L;
       }
       return queryServicesBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -808,18 +808,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.reflection.v2alpha1.QueryServicesDescriptor)
-  private static final com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor DEFAULT_INSTANCE;
+  private static final QueryServicesDescriptor DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor();
+    DEFAULT_INSTANCE = new QueryServicesDescriptor();
   }
 
-  public static com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor getDefaultInstance() {
+  public static QueryServicesDescriptor getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryServicesDescriptor>
       PARSER = new com.google.protobuf.AbstractParser<QueryServicesDescriptor>() {
-    @java.lang.Override
+    @Override
     public QueryServicesDescriptor parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -843,13 +843,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryServicesDescriptor> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor getDefaultInstanceForType() {
+  @Override
+  public QueryServicesDescriptor getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

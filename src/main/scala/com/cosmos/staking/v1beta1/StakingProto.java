@@ -122,7 +122,7 @@ public final class StakingProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n$cosmos/staking/v1beta1/staking.proto\022\026" +
       "cosmos.staking.v1beta1\032\024gogoproto/gogo.p" +
       "roto\032\031google/protobuf/any.proto\032\036google/" +
@@ -291,121 +291,121 @@ public final class StakingProto {
     internal_static_cosmos_staking_v1beta1_HistoricalInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_HistoricalInfo_descriptor,
-        new java.lang.String[] { "Header", "Valset", });
+        new String[] { "Header", "Valset", });
     internal_static_cosmos_staking_v1beta1_CommissionRates_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_staking_v1beta1_CommissionRates_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_CommissionRates_descriptor,
-        new java.lang.String[] { "Rate", "MaxRate", "MaxChangeRate", });
+        new String[] { "Rate", "MaxRate", "MaxChangeRate", });
     internal_static_cosmos_staking_v1beta1_Commission_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_staking_v1beta1_Commission_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_Commission_descriptor,
-        new java.lang.String[] { "CommissionRates", "UpdateTime", });
+        new String[] { "CommissionRates", "UpdateTime", });
     internal_static_cosmos_staking_v1beta1_Description_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_staking_v1beta1_Description_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_Description_descriptor,
-        new java.lang.String[] { "Moniker", "Identity", "Website", "SecurityContact", "Details", });
+        new String[] { "Moniker", "Identity", "Website", "SecurityContact", "Details", });
     internal_static_cosmos_staking_v1beta1_Validator_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_staking_v1beta1_Validator_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_Validator_descriptor,
-        new java.lang.String[] { "OperatorAddress", "ConsensusPubkey", "Jailed", "Status", "Tokens", "DelegatorShares", "Description", "UnbondingHeight", "UnbondingTime", "Commission", "MinSelfDelegation", });
+        new String[] { "OperatorAddress", "ConsensusPubkey", "Jailed", "Status", "Tokens", "DelegatorShares", "Description", "UnbondingHeight", "UnbondingTime", "Commission", "MinSelfDelegation", });
     internal_static_cosmos_staking_v1beta1_ValAddresses_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_staking_v1beta1_ValAddresses_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_ValAddresses_descriptor,
-        new java.lang.String[] { "Addresses", });
+        new String[] { "Addresses", });
     internal_static_cosmos_staking_v1beta1_DVPair_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_staking_v1beta1_DVPair_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_DVPair_descriptor,
-        new java.lang.String[] { "DelegatorAddress", "ValidatorAddress", });
+        new String[] { "DelegatorAddress", "ValidatorAddress", });
     internal_static_cosmos_staking_v1beta1_DVPairs_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_staking_v1beta1_DVPairs_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_DVPairs_descriptor,
-        new java.lang.String[] { "Pairs", });
+        new String[] { "Pairs", });
     internal_static_cosmos_staking_v1beta1_DVVTriplet_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_cosmos_staking_v1beta1_DVVTriplet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_DVVTriplet_descriptor,
-        new java.lang.String[] { "DelegatorAddress", "ValidatorSrcAddress", "ValidatorDstAddress", });
+        new String[] { "DelegatorAddress", "ValidatorSrcAddress", "ValidatorDstAddress", });
     internal_static_cosmos_staking_v1beta1_DVVTriplets_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_cosmos_staking_v1beta1_DVVTriplets_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_DVVTriplets_descriptor,
-        new java.lang.String[] { "Triplets", });
+        new String[] { "Triplets", });
     internal_static_cosmos_staking_v1beta1_Delegation_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_cosmos_staking_v1beta1_Delegation_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_Delegation_descriptor,
-        new java.lang.String[] { "DelegatorAddress", "ValidatorAddress", "Shares", });
+        new String[] { "DelegatorAddress", "ValidatorAddress", "Shares", });
     internal_static_cosmos_staking_v1beta1_UnbondingDelegation_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_cosmos_staking_v1beta1_UnbondingDelegation_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_UnbondingDelegation_descriptor,
-        new java.lang.String[] { "DelegatorAddress", "ValidatorAddress", "Entries", });
+        new String[] { "DelegatorAddress", "ValidatorAddress", "Entries", });
     internal_static_cosmos_staking_v1beta1_UnbondingDelegationEntry_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_cosmos_staking_v1beta1_UnbondingDelegationEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_UnbondingDelegationEntry_descriptor,
-        new java.lang.String[] { "CreationHeight", "CompletionTime", "InitialBalance", "Balance", });
+        new String[] { "CreationHeight", "CompletionTime", "InitialBalance", "Balance", });
     internal_static_cosmos_staking_v1beta1_RedelegationEntry_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_cosmos_staking_v1beta1_RedelegationEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_RedelegationEntry_descriptor,
-        new java.lang.String[] { "CreationHeight", "CompletionTime", "InitialBalance", "SharesDst", });
+        new String[] { "CreationHeight", "CompletionTime", "InitialBalance", "SharesDst", });
     internal_static_cosmos_staking_v1beta1_Redelegation_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_cosmos_staking_v1beta1_Redelegation_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_Redelegation_descriptor,
-        new java.lang.String[] { "DelegatorAddress", "ValidatorSrcAddress", "ValidatorDstAddress", "Entries", });
+        new String[] { "DelegatorAddress", "ValidatorSrcAddress", "ValidatorDstAddress", "Entries", });
     internal_static_cosmos_staking_v1beta1_Params_descriptor =
       getDescriptor().getMessageTypes().get(15);
     internal_static_cosmos_staking_v1beta1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_Params_descriptor,
-        new java.lang.String[] { "UnbondingTime", "MaxValidators", "MaxEntries", "HistoricalEntries", "BondDenom", });
+        new String[] { "UnbondingTime", "MaxValidators", "MaxEntries", "HistoricalEntries", "BondDenom", });
     internal_static_cosmos_staking_v1beta1_DelegationResponse_descriptor =
       getDescriptor().getMessageTypes().get(16);
     internal_static_cosmos_staking_v1beta1_DelegationResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_DelegationResponse_descriptor,
-        new java.lang.String[] { "Delegation", "Balance", });
+        new String[] { "Delegation", "Balance", });
     internal_static_cosmos_staking_v1beta1_RedelegationEntryResponse_descriptor =
       getDescriptor().getMessageTypes().get(17);
     internal_static_cosmos_staking_v1beta1_RedelegationEntryResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_RedelegationEntryResponse_descriptor,
-        new java.lang.String[] { "RedelegationEntry", "Balance", });
+        new String[] { "RedelegationEntry", "Balance", });
     internal_static_cosmos_staking_v1beta1_RedelegationResponse_descriptor =
       getDescriptor().getMessageTypes().get(18);
     internal_static_cosmos_staking_v1beta1_RedelegationResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_RedelegationResponse_descriptor,
-        new java.lang.String[] { "Redelegation", "Entries", });
+        new String[] { "Redelegation", "Entries", });
     internal_static_cosmos_staking_v1beta1_Pool_descriptor =
       getDescriptor().getMessageTypes().get(19);
     internal_static_cosmos_staking_v1beta1_Pool_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_Pool_descriptor,
-        new java.lang.String[] { "NotBondedTokens", "BondedTokens", });
+        new String[] { "NotBondedTokens", "BondedTokens", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);

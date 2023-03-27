@@ -27,7 +27,7 @@ public final class QueryRequestV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\nBmodules/identities/internal/queries/id" +
       "entity/queryRequest.v1.proto\022\033identities" +
       ".queries.identity\032#schema/ids/base/ident" +
@@ -52,7 +52,7 @@ public final class QueryRequestV1Proto {
     internal_static_identities_queries_identity_QueryRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_identities_queries_identity_QueryRequest_descriptor,
-        new java.lang.String[] { "IdentityID", });
+        new String[] { "IdentityID", });
     com.ids.IdentityIDV1Proto.getDescriptor();
   }
 

@@ -37,7 +37,7 @@ public final class CommitInfoProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n+cosmos/base/store/v1beta1/commit_info." +
       "proto\022\031cosmos.base.store.v1beta1\032\024gogopr" +
       "oto/gogo.proto\"s\n\nCommitInfo\022\030\n\007version\030" +
@@ -66,19 +66,19 @@ public final class CommitInfoProto {
     internal_static_cosmos_base_store_v1beta1_CommitInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_store_v1beta1_CommitInfo_descriptor,
-        new java.lang.String[] { "Version", "StoreInfos", });
+        new String[] { "Version", "StoreInfos", });
     internal_static_cosmos_base_store_v1beta1_StoreInfo_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_base_store_v1beta1_StoreInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_store_v1beta1_StoreInfo_descriptor,
-        new java.lang.String[] { "Name", "CommitId", });
+        new String[] { "Name", "CommitId", });
     internal_static_cosmos_base_store_v1beta1_CommitID_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_base_store_v1beta1_CommitID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_store_v1beta1_CommitID_descriptor,
-        new java.lang.String[] { "Version", "Hash", });
+        new String[] { "Version", "Hash", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoStringer);

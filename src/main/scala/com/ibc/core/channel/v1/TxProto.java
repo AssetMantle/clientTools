@@ -122,7 +122,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\034ibc/core/channel/v1/tx.proto\022\023ibc.core" +
       ".channel.v1\032\024gogoproto/gogo.proto\032\037ibc/c" +
       "ore/client/v1/client.proto\032!ibc/core/cha" +
@@ -267,128 +267,128 @@ public final class TxProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
           com.ibc.core.client.v1.ClientProto.getDescriptor(),
-          com.ibc.core.channel.v1.ChannelProto.getDescriptor(),
+          ChannelProto.getDescriptor(),
         });
     internal_static_ibc_core_channel_v1_MsgChannelOpenInit_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ibc_core_channel_v1_MsgChannelOpenInit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelOpenInit_descriptor,
-        new java.lang.String[] { "PortId", "Channel", "Signer", });
+        new String[] { "PortId", "Channel", "Signer", });
     internal_static_ibc_core_channel_v1_MsgChannelOpenInitResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_core_channel_v1_MsgChannelOpenInitResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelOpenInitResponse_descriptor,
-        new java.lang.String[] { "ChannelId", "Version", });
+        new String[] { "ChannelId", "Version", });
     internal_static_ibc_core_channel_v1_MsgChannelOpenTry_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_core_channel_v1_MsgChannelOpenTry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelOpenTry_descriptor,
-        new java.lang.String[] { "PortId", "PreviousChannelId", "Channel", "CounterpartyVersion", "ProofInit", "ProofHeight", "Signer", });
+        new String[] { "PortId", "PreviousChannelId", "Channel", "CounterpartyVersion", "ProofInit", "ProofHeight", "Signer", });
     internal_static_ibc_core_channel_v1_MsgChannelOpenTryResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_core_channel_v1_MsgChannelOpenTryResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelOpenTryResponse_descriptor,
-        new java.lang.String[] { "Version", });
+        new String[] { "Version", });
     internal_static_ibc_core_channel_v1_MsgChannelOpenAck_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_core_channel_v1_MsgChannelOpenAck_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelOpenAck_descriptor,
-        new java.lang.String[] { "PortId", "ChannelId", "CounterpartyChannelId", "CounterpartyVersion", "ProofTry", "ProofHeight", "Signer", });
+        new String[] { "PortId", "ChannelId", "CounterpartyChannelId", "CounterpartyVersion", "ProofTry", "ProofHeight", "Signer", });
     internal_static_ibc_core_channel_v1_MsgChannelOpenAckResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_ibc_core_channel_v1_MsgChannelOpenAckResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelOpenAckResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_descriptor,
-        new java.lang.String[] { "PortId", "ChannelId", "ProofAck", "ProofHeight", "Signer", });
+        new String[] { "PortId", "ChannelId", "ProofAck", "ProofHeight", "Signer", });
     internal_static_ibc_core_channel_v1_MsgChannelOpenConfirmResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_ibc_core_channel_v1_MsgChannelOpenConfirmResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelOpenConfirmResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_ibc_core_channel_v1_MsgChannelCloseInit_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_ibc_core_channel_v1_MsgChannelCloseInit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelCloseInit_descriptor,
-        new java.lang.String[] { "PortId", "ChannelId", "Signer", });
+        new String[] { "PortId", "ChannelId", "Signer", });
     internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_ibc_core_channel_v1_MsgChannelCloseConfirm_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_ibc_core_channel_v1_MsgChannelCloseConfirm_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelCloseConfirm_descriptor,
-        new java.lang.String[] { "PortId", "ChannelId", "ProofInit", "ProofHeight", "Signer", });
+        new String[] { "PortId", "ChannelId", "ProofInit", "ProofHeight", "Signer", });
     internal_static_ibc_core_channel_v1_MsgChannelCloseConfirmResponse_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_ibc_core_channel_v1_MsgChannelCloseConfirmResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgChannelCloseConfirmResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_ibc_core_channel_v1_MsgRecvPacket_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_ibc_core_channel_v1_MsgRecvPacket_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgRecvPacket_descriptor,
-        new java.lang.String[] { "Packet", "ProofCommitment", "ProofHeight", "Signer", });
+        new String[] { "Packet", "ProofCommitment", "ProofHeight", "Signer", });
     internal_static_ibc_core_channel_v1_MsgRecvPacketResponse_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_ibc_core_channel_v1_MsgRecvPacketResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgRecvPacketResponse_descriptor,
-        new java.lang.String[] { "Result", });
+        new String[] { "Result", });
     internal_static_ibc_core_channel_v1_MsgTimeout_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_ibc_core_channel_v1_MsgTimeout_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgTimeout_descriptor,
-        new java.lang.String[] { "Packet", "ProofUnreceived", "ProofHeight", "NextSequenceRecv", "Signer", });
+        new String[] { "Packet", "ProofUnreceived", "ProofHeight", "NextSequenceRecv", "Signer", });
     internal_static_ibc_core_channel_v1_MsgTimeoutResponse_descriptor =
       getDescriptor().getMessageTypes().get(15);
     internal_static_ibc_core_channel_v1_MsgTimeoutResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgTimeoutResponse_descriptor,
-        new java.lang.String[] { "Result", });
+        new String[] { "Result", });
     internal_static_ibc_core_channel_v1_MsgTimeoutOnClose_descriptor =
       getDescriptor().getMessageTypes().get(16);
     internal_static_ibc_core_channel_v1_MsgTimeoutOnClose_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgTimeoutOnClose_descriptor,
-        new java.lang.String[] { "Packet", "ProofUnreceived", "ProofClose", "ProofHeight", "NextSequenceRecv", "Signer", });
+        new String[] { "Packet", "ProofUnreceived", "ProofClose", "ProofHeight", "NextSequenceRecv", "Signer", });
     internal_static_ibc_core_channel_v1_MsgTimeoutOnCloseResponse_descriptor =
       getDescriptor().getMessageTypes().get(17);
     internal_static_ibc_core_channel_v1_MsgTimeoutOnCloseResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgTimeoutOnCloseResponse_descriptor,
-        new java.lang.String[] { "Result", });
+        new String[] { "Result", });
     internal_static_ibc_core_channel_v1_MsgAcknowledgement_descriptor =
       getDescriptor().getMessageTypes().get(18);
     internal_static_ibc_core_channel_v1_MsgAcknowledgement_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgAcknowledgement_descriptor,
-        new java.lang.String[] { "Packet", "Acknowledgement", "ProofAcked", "ProofHeight", "Signer", });
+        new String[] { "Packet", "Acknowledgement", "ProofAcked", "ProofHeight", "Signer", });
     internal_static_ibc_core_channel_v1_MsgAcknowledgementResponse_descriptor =
       getDescriptor().getMessageTypes().get(19);
     internal_static_ibc_core_channel_v1_MsgAcknowledgementResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_MsgAcknowledgementResponse_descriptor,
-        new java.lang.String[] { "Result", });
+        new String[] { "Result", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.enumvalueCustomname);
@@ -401,7 +401,7 @@ public final class TxProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
     com.ibc.core.client.v1.ClientProto.getDescriptor();
-    com.ibc.core.channel.v1.ChannelProto.getDescriptor();
+    ChannelProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

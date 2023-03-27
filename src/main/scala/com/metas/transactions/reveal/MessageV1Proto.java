@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n;modules/metas/internal/transactions/re" +
       "veal/message.v1.proto\022\031metas.transaction" +
       "s.reveal\032!schema/data/base/anyData.v1.pr" +
@@ -53,7 +53,7 @@ public final class MessageV1Proto {
     internal_static_metas_transactions_reveal_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_metas_transactions_reveal_Message_descriptor,
-        new java.lang.String[] { "From", "Data", });
+        new String[] { "From", "Data", });
     com.data.AnyDataV1Proto.getDescriptor();
     com.ids.IdentityIDV1Proto.getDescriptor();
   }

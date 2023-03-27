@@ -15,7 +15,7 @@ public interface QueryAppliedPlanRequestOrBuilder extends
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <pre>
    * name is the name of the applied plan to query for.

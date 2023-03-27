@@ -15,7 +15,7 @@ public interface CustomHttpPatternOrBuilder extends
    * <code>string kind = 1 [json_name = "kind"];</code>
    * @return The kind.
    */
-  java.lang.String getKind();
+  String getKind();
   /**
    * <pre>
    * The name of this custom HTTP verb.
@@ -35,7 +35,7 @@ public interface CustomHttpPatternOrBuilder extends
    * <code>string path = 2 [json_name = "path"];</code>
    * @return The path.
    */
-  java.lang.String getPath();
+  String getPath();
   /**
    * <pre>
    * The path matched by this custom verb.

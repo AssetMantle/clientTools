@@ -39,7 +39,7 @@ public interface SignDocOrBuilder extends
    * <code>string chain_id = 3 [json_name = "chainId"];</code>
    * @return The chainId.
    */
-  java.lang.String getChainId();
+  String getChainId();
   /**
    * <pre>
    * chain_id is the unique identifier of the chain this transaction targets.

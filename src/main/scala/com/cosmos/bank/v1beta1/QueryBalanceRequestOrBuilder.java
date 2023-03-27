@@ -15,7 +15,7 @@ public interface QueryBalanceRequestOrBuilder extends
    * <code>string address = 1 [json_name = "address"];</code>
    * @return The address.
    */
-  java.lang.String getAddress();
+  String getAddress();
   /**
    * <pre>
    * address is the address to query balances for.
@@ -35,7 +35,7 @@ public interface QueryBalanceRequestOrBuilder extends
    * <code>string denom = 2 [json_name = "denom"];</code>
    * @return The denom.
    */
-  java.lang.String getDenom();
+  String getDenom();
   /**
    * <pre>
    * denom is the coin denom to query balances for.

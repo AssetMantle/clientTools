@@ -152,7 +152,7 @@ public final class ReflectionProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n0cosmos/base/reflection/v2alpha1/reflec" +
       "tion.proto\022\037cosmos.base.reflection.v2alp" +
       "ha1\032\034google/api/annotations.proto\"\347\003\n\rAp" +
@@ -280,157 +280,157 @@ public final class ReflectionProto {
     internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_descriptor,
-        new java.lang.String[] { "Authn", "Chain", "Codec", "Configuration", "QueryServices", "Tx", });
+        new String[] { "Authn", "Chain", "Codec", "Configuration", "QueryServices", "Tx", });
     internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_descriptor,
-        new java.lang.String[] { "Fullname", "Msgs", });
+        new String[] { "Fullname", "Msgs", });
     internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_descriptor,
-        new java.lang.String[] { "SignModes", });
+        new String[] { "SignModes", });
     internal_static_cosmos_base_reflection_v2alpha1_SigningModeDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_base_reflection_v2alpha1_SigningModeDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_SigningModeDescriptor_descriptor,
-        new java.lang.String[] { "Name", "Number", "AuthnInfoProviderMethodFullname", });
+        new String[] { "Name", "Number", "AuthnInfoProviderMethodFullname", });
     internal_static_cosmos_base_reflection_v2alpha1_ChainDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_base_reflection_v2alpha1_ChainDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_ChainDescriptor_descriptor,
-        new java.lang.String[] { "Id", });
+        new String[] { "Id", });
     internal_static_cosmos_base_reflection_v2alpha1_CodecDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_base_reflection_v2alpha1_CodecDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_CodecDescriptor_descriptor,
-        new java.lang.String[] { "Interfaces", });
+        new String[] { "Interfaces", });
     internal_static_cosmos_base_reflection_v2alpha1_InterfaceDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_base_reflection_v2alpha1_InterfaceDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_InterfaceDescriptor_descriptor,
-        new java.lang.String[] { "Fullname", "InterfaceAcceptingMessages", "InterfaceImplementers", });
+        new String[] { "Fullname", "InterfaceAcceptingMessages", "InterfaceImplementers", });
     internal_static_cosmos_base_reflection_v2alpha1_InterfaceImplementerDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_base_reflection_v2alpha1_InterfaceImplementerDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_InterfaceImplementerDescriptor_descriptor,
-        new java.lang.String[] { "Fullname", "TypeUrl", });
+        new String[] { "Fullname", "TypeUrl", });
     internal_static_cosmos_base_reflection_v2alpha1_InterfaceAcceptingMessageDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_cosmos_base_reflection_v2alpha1_InterfaceAcceptingMessageDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_InterfaceAcceptingMessageDescriptor_descriptor,
-        new java.lang.String[] { "Fullname", "FieldDescriptorNames", });
+        new String[] { "Fullname", "FieldDescriptorNames", });
     internal_static_cosmos_base_reflection_v2alpha1_ConfigurationDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_cosmos_base_reflection_v2alpha1_ConfigurationDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_ConfigurationDescriptor_descriptor,
-        new java.lang.String[] { "Bech32AccountAddressPrefix", });
+        new String[] { "Bech32AccountAddressPrefix", });
     internal_static_cosmos_base_reflection_v2alpha1_MsgDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_cosmos_base_reflection_v2alpha1_MsgDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_MsgDescriptor_descriptor,
-        new java.lang.String[] { "MsgTypeUrl", });
+        new String[] { "MsgTypeUrl", });
     internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorRequest_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_descriptor,
-        new java.lang.String[] { "Authn", });
+        new String[] { "Authn", });
     internal_static_cosmos_base_reflection_v2alpha1_GetChainDescriptorRequest_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_cosmos_base_reflection_v2alpha1_GetChainDescriptorRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetChainDescriptorRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_base_reflection_v2alpha1_GetChainDescriptorResponse_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_cosmos_base_reflection_v2alpha1_GetChainDescriptorResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetChainDescriptorResponse_descriptor,
-        new java.lang.String[] { "Chain", });
+        new String[] { "Chain", });
     internal_static_cosmos_base_reflection_v2alpha1_GetCodecDescriptorRequest_descriptor =
       getDescriptor().getMessageTypes().get(15);
     internal_static_cosmos_base_reflection_v2alpha1_GetCodecDescriptorRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetCodecDescriptorRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_base_reflection_v2alpha1_GetCodecDescriptorResponse_descriptor =
       getDescriptor().getMessageTypes().get(16);
     internal_static_cosmos_base_reflection_v2alpha1_GetCodecDescriptorResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetCodecDescriptorResponse_descriptor,
-        new java.lang.String[] { "Codec", });
+        new String[] { "Codec", });
     internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorRequest_descriptor =
       getDescriptor().getMessageTypes().get(17);
     internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_descriptor =
       getDescriptor().getMessageTypes().get(18);
     internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_descriptor,
-        new java.lang.String[] { "Config", });
+        new String[] { "Config", });
     internal_static_cosmos_base_reflection_v2alpha1_GetQueryServicesDescriptorRequest_descriptor =
       getDescriptor().getMessageTypes().get(19);
     internal_static_cosmos_base_reflection_v2alpha1_GetQueryServicesDescriptorRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetQueryServicesDescriptorRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_base_reflection_v2alpha1_GetQueryServicesDescriptorResponse_descriptor =
       getDescriptor().getMessageTypes().get(20);
     internal_static_cosmos_base_reflection_v2alpha1_GetQueryServicesDescriptorResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetQueryServicesDescriptorResponse_descriptor,
-        new java.lang.String[] { "Queries", });
+        new String[] { "Queries", });
     internal_static_cosmos_base_reflection_v2alpha1_GetTxDescriptorRequest_descriptor =
       getDescriptor().getMessageTypes().get(21);
     internal_static_cosmos_base_reflection_v2alpha1_GetTxDescriptorRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetTxDescriptorRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_base_reflection_v2alpha1_GetTxDescriptorResponse_descriptor =
       getDescriptor().getMessageTypes().get(22);
     internal_static_cosmos_base_reflection_v2alpha1_GetTxDescriptorResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_GetTxDescriptorResponse_descriptor,
-        new java.lang.String[] { "Tx", });
+        new String[] { "Tx", });
     internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(23);
     internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_QueryServicesDescriptor_descriptor,
-        new java.lang.String[] { "QueryServices", });
+        new String[] { "QueryServices", });
     internal_static_cosmos_base_reflection_v2alpha1_QueryServiceDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(24);
     internal_static_cosmos_base_reflection_v2alpha1_QueryServiceDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_QueryServiceDescriptor_descriptor,
-        new java.lang.String[] { "Fullname", "IsModule", "Methods", });
+        new String[] { "Fullname", "IsModule", "Methods", });
     internal_static_cosmos_base_reflection_v2alpha1_QueryMethodDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(25);
     internal_static_cosmos_base_reflection_v2alpha1_QueryMethodDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_reflection_v2alpha1_QueryMethodDescriptor_descriptor,
-        new java.lang.String[] { "Name", "FullQueryPath", });
+        new String[] { "Name", "FullQueryPath", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.google.api.AnnotationsProto.http);

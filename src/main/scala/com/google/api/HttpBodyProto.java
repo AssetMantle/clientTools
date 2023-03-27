@@ -27,7 +27,7 @@ public final class HttpBodyProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\031google/api/httpBody.proto\022\ngoogle.api\032" +
       "\031google/protobuf/any.proto\"w\n\010HttpBody\022!" +
       "\n\014content_type\030\001 \001(\tR\013contentType\022\022\n\004dat" +
@@ -48,7 +48,7 @@ public final class HttpBodyProto {
     internal_static_google_api_HttpBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_google_api_HttpBody_descriptor,
-        new java.lang.String[] { "ContentType", "Data", "Extensions", });
+        new String[] { "ContentType", "Data", "Extensions", });
     com.google.protobuf.AnyProto.getDescriptor();
   }
 

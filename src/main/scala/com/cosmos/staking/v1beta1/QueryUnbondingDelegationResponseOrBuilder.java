@@ -24,7 +24,7 @@ public interface QueryUnbondingDelegationResponseOrBuilder extends
    * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
    * @return The unbond.
    */
-  com.cosmos.staking.v1beta1.UnbondingDelegation getUnbond();
+  UnbondingDelegation getUnbond();
   /**
    * <pre>
    * unbond defines the unbonding information of a delegation.
@@ -32,5 +32,5 @@ public interface QueryUnbondingDelegationResponseOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder getUnbondOrBuilder();
+  UnbondingDelegationOrBuilder getUnbondOrBuilder();
 }

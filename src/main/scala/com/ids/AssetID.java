@@ -18,38 +18,33 @@ private static final long serialVersionUID = 0L;
   private AssetID() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new AssetID();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ids.AssetIDV1Proto.internal_static_ids_AssetID_descriptor;
+    return AssetIDV1Proto.internal_static_ids_AssetID_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ids.AssetIDV1Proto.internal_static_ids_AssetID_fieldAccessorTable
+    return AssetIDV1Proto.internal_static_ids_AssetID_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ids.AssetID.class, com.ids.AssetID.Builder.class);
+            AssetID.class, Builder.class);
   }
 
   public static final int HASH_I_D_FIELD_NUMBER = 1;
-  private com.ids.HashID hashID_;
+  private HashID hashID_;
   /**
    * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
    * @return Whether the hashID field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasHashID() {
     return hashID_ != null;
   }
@@ -57,20 +52,20 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
    * @return The hashID.
    */
-  @java.lang.Override
-  public com.ids.HashID getHashID() {
-    return hashID_ == null ? com.ids.HashID.getDefaultInstance() : hashID_;
+  @Override
+  public HashID getHashID() {
+    return hashID_ == null ? HashID.getDefaultInstance() : hashID_;
   }
   /**
    * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
    */
-  @java.lang.Override
-  public com.ids.HashIDOrBuilder getHashIDOrBuilder() {
-    return getHashID();
+  @Override
+  public HashIDOrBuilder getHashIDOrBuilder() {
+    return hashID_ == null ? HashID.getDefaultInstance() : hashID_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -80,7 +75,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (hashID_ != null) {
@@ -89,7 +84,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -104,15 +99,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ids.AssetID)) {
+    if (!(obj instanceof AssetID)) {
       return super.equals(obj);
     }
-    com.ids.AssetID other = (com.ids.AssetID) obj;
+    AssetID other = (AssetID) obj;
 
     if (hasHashID() != other.hasHashID()) return false;
     if (hasHashID()) {
@@ -123,7 +118,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -139,69 +134,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ids.AssetID parseFrom(
+  public static AssetID parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.AssetID parseFrom(
+  public static AssetID parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.AssetID parseFrom(
+  public static AssetID parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.AssetID parseFrom(
+  public static AssetID parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.AssetID parseFrom(byte[] data)
+  public static AssetID parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.AssetID parseFrom(
+  public static AssetID parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.AssetID parseFrom(java.io.InputStream input)
+  public static AssetID parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ids.AssetID parseFrom(
+  public static AssetID parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ids.AssetID parseDelimitedFrom(java.io.InputStream input)
+  public static AssetID parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ids.AssetID parseDelimitedFrom(
+  public static AssetID parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ids.AssetID parseFrom(
+  public static AssetID parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ids.AssetID parseFrom(
+  public static AssetID parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -209,23 +204,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ids.AssetID prototype) {
+  public static Builder newBuilder(AssetID prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -235,18 +230,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ids.AssetID)
-      com.ids.AssetIDOrBuilder {
+      AssetIDOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ids.AssetIDV1Proto.internal_static_ids_AssetID_descriptor;
+      return AssetIDV1Proto.internal_static_ids_AssetID_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ids.AssetIDV1Proto.internal_static_ids_AssetID_fieldAccessorTable
+      return AssetIDV1Proto.internal_static_ids_AssetID_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ids.AssetID.class, com.ids.AssetID.Builder.class);
+              AssetID.class, Builder.class);
     }
 
     // Construct using com.ids.AssetID.newBuilder()
@@ -255,98 +250,103 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
-      if (hashIDBuilder_ == null) {
-        hashID_ = null;
-      } else {
-        hashID_ = null;
+      bitField0_ = 0;
+      hashID_ = null;
+      if (hashIDBuilder_ != null) {
+        hashIDBuilder_.dispose();
         hashIDBuilder_ = null;
       }
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ids.AssetIDV1Proto.internal_static_ids_AssetID_descriptor;
+      return AssetIDV1Proto.internal_static_ids_AssetID_descriptor;
     }
 
-    @java.lang.Override
-    public com.ids.AssetID getDefaultInstanceForType() {
-      return com.ids.AssetID.getDefaultInstance();
+    @Override
+    public AssetID getDefaultInstanceForType() {
+      return AssetID.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ids.AssetID build() {
-      com.ids.AssetID result = buildPartial();
+    @Override
+    public AssetID build() {
+      AssetID result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ids.AssetID buildPartial() {
-      com.ids.AssetID result = new com.ids.AssetID(this);
-      if (hashIDBuilder_ == null) {
-        result.hashID_ = hashID_;
-      } else {
-        result.hashID_ = hashIDBuilder_.build();
-      }
+    @Override
+    public AssetID buildPartial() {
+      AssetID result = new AssetID(this);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(AssetID result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.hashID_ = hashIDBuilder_ == null
+            ? hashID_
+            : hashIDBuilder_.build();
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ids.AssetID) {
-        return mergeFrom((com.ids.AssetID)other);
+      if (other instanceof AssetID) {
+        return mergeFrom((AssetID)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ids.AssetID other) {
-      if (other == com.ids.AssetID.getDefaultInstance()) return this;
+    public Builder mergeFrom(AssetID other) {
+      if (other == AssetID.getDefaultInstance()) return this;
       if (other.hasHashID()) {
         mergeHashID(other.getHashID());
       }
@@ -355,18 +355,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getHashIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             default: {
@@ -398,24 +398,25 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
-    private com.ids.HashID hashID_;
+    private HashID hashID_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.HashID, com.ids.HashID.Builder, com.ids.HashIDOrBuilder> hashIDBuilder_;
+        HashID, HashID.Builder, HashIDOrBuilder> hashIDBuilder_;
     /**
      * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
      * @return Whether the hashID field is set.
      */
     public boolean hasHashID() {
-      return hashIDBuilder_ != null || hashID_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
      * @return The hashID.
      */
-    public com.ids.HashID getHashID() {
+    public HashID getHashID() {
       if (hashIDBuilder_ == null) {
-        return hashID_ == null ? com.ids.HashID.getDefaultInstance() : hashID_;
+        return hashID_ == null ? HashID.getDefaultInstance() : hashID_;
       } else {
         return hashIDBuilder_.getMessage();
       }
@@ -423,93 +424,93 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
      */
-    public Builder setHashID(com.ids.HashID value) {
+    public Builder setHashID(HashID value) {
       if (hashIDBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
         hashID_ = value;
-        onChanged();
       } else {
         hashIDBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
      */
     public Builder setHashID(
-        com.ids.HashID.Builder builderForValue) {
+        HashID.Builder builderForValue) {
       if (hashIDBuilder_ == null) {
         hashID_ = builderForValue.build();
-        onChanged();
       } else {
         hashIDBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
      */
-    public Builder mergeHashID(com.ids.HashID value) {
+    public Builder mergeHashID(HashID value) {
       if (hashIDBuilder_ == null) {
-        if (hashID_ != null) {
-          hashID_ =
-            com.ids.HashID.newBuilder(hashID_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          hashID_ != null &&
+          hashID_ != HashID.getDefaultInstance()) {
+          getHashIDBuilder().mergeFrom(value);
         } else {
           hashID_ = value;
         }
-        onChanged();
       } else {
         hashIDBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
      */
     public Builder clearHashID() {
-      if (hashIDBuilder_ == null) {
-        hashID_ = null;
-        onChanged();
-      } else {
-        hashID_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      hashID_ = null;
+      if (hashIDBuilder_ != null) {
+        hashIDBuilder_.dispose();
         hashIDBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
      */
-    public com.ids.HashID.Builder getHashIDBuilder() {
-      
+    public HashID.Builder getHashIDBuilder() {
+      bitField0_ |= 0x00000001;
       onChanged();
       return getHashIDFieldBuilder().getBuilder();
     }
     /**
      * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
      */
-    public com.ids.HashIDOrBuilder getHashIDOrBuilder() {
+    public HashIDOrBuilder getHashIDOrBuilder() {
       if (hashIDBuilder_ != null) {
         return hashIDBuilder_.getMessageOrBuilder();
       } else {
         return hashID_ == null ?
-            com.ids.HashID.getDefaultInstance() : hashID_;
+            HashID.getDefaultInstance() : hashID_;
       }
     }
     /**
      * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.HashID, com.ids.HashID.Builder, com.ids.HashIDOrBuilder> 
+        HashID, HashID.Builder, HashIDOrBuilder>
         getHashIDFieldBuilder() {
       if (hashIDBuilder_ == null) {
         hashIDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.ids.HashID, com.ids.HashID.Builder, com.ids.HashIDOrBuilder>(
+            HashID, HashID.Builder, HashIDOrBuilder>(
                 getHashID(),
                 getParentForChildren(),
                 isClean());
@@ -517,13 +518,13 @@ private static final long serialVersionUID = 0L;
       }
       return hashIDBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -534,18 +535,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ids.AssetID)
-  private static final com.ids.AssetID DEFAULT_INSTANCE;
+  private static final AssetID DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ids.AssetID();
+    DEFAULT_INSTANCE = new AssetID();
   }
 
-  public static com.ids.AssetID getDefaultInstance() {
+  public static AssetID getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<AssetID>
       PARSER = new com.google.protobuf.AbstractParser<AssetID>() {
-    @java.lang.Override
+    @Override
     public AssetID parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -569,13 +570,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<AssetID> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ids.AssetID getDefaultInstanceForType() {
+  @Override
+  public AssetID getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

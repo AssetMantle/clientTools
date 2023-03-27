@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     accountOwner_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new InterchainAccount();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.applications.interchain_accounts.v1.AccountProto.internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_descriptor;
+    return AccountProto.internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.applications.interchain_accounts.v1.AccountProto.internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_fieldAccessorTable
+    return AccountProto.internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.applications.interchain_accounts.v1.InterchainAccount.class, com.ibc.applications.interchain_accounts.v1.InterchainAccount.Builder.class);
+            InterchainAccount.class, Builder.class);
   }
 
   public static final int BASE_ACCOUNT_FIELD_NUMBER = 1;
@@ -49,7 +49,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.auth.v1beta1.BaseAccount base_account = 1 [json_name = "baseAccount", (.gogoproto.embed) = true, (.gogoproto.moretags) = "yaml:&#92;"base_account&#92;""];</code>
    * @return Whether the baseAccount field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasBaseAccount() {
     return baseAccount_ != null;
   }
@@ -57,34 +57,34 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.auth.v1beta1.BaseAccount base_account = 1 [json_name = "baseAccount", (.gogoproto.embed) = true, (.gogoproto.moretags) = "yaml:&#92;"base_account&#92;""];</code>
    * @return The baseAccount.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.auth.v1beta1.BaseAccount getBaseAccount() {
     return baseAccount_ == null ? com.cosmos.auth.v1beta1.BaseAccount.getDefaultInstance() : baseAccount_;
   }
   /**
    * <code>.cosmos.auth.v1beta1.BaseAccount base_account = 1 [json_name = "baseAccount", (.gogoproto.embed) = true, (.gogoproto.moretags) = "yaml:&#92;"base_account&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.auth.v1beta1.BaseAccountOrBuilder getBaseAccountOrBuilder() {
     return baseAccount_ == null ? com.cosmos.auth.v1beta1.BaseAccount.getDefaultInstance() : baseAccount_;
   }
 
   public static final int ACCOUNT_OWNER_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object accountOwner_ = "";
+  private volatile Object accountOwner_ = "";
   /**
    * <code>string account_owner = 2 [json_name = "accountOwner", (.gogoproto.moretags) = "yaml:&#92;"account_owner&#92;""];</code>
    * @return The accountOwner.
    */
-  @java.lang.Override
-  public java.lang.String getAccountOwner() {
-    java.lang.Object ref = accountOwner_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getAccountOwner() {
+    Object ref = accountOwner_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       accountOwner_ = s;
       return s;
     }
@@ -93,14 +93,14 @@ private static final long serialVersionUID = 0L;
    * <code>string account_owner = 2 [json_name = "accountOwner", (.gogoproto.moretags) = "yaml:&#92;"account_owner&#92;""];</code>
    * @return The bytes for accountOwner.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getAccountOwnerBytes() {
-    java.lang.Object ref = accountOwner_;
-    if (ref instanceof java.lang.String) {
+    Object ref = accountOwner_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       accountOwner_ = b;
       return b;
     } else {
@@ -109,7 +109,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -119,7 +119,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (baseAccount_ != null) {
@@ -131,7 +131,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -149,15 +149,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.applications.interchain_accounts.v1.InterchainAccount)) {
+    if (!(obj instanceof InterchainAccount)) {
       return super.equals(obj);
     }
-    com.ibc.applications.interchain_accounts.v1.InterchainAccount other = (com.ibc.applications.interchain_accounts.v1.InterchainAccount) obj;
+    InterchainAccount other = (InterchainAccount) obj;
 
     if (hasBaseAccount() != other.hasBaseAccount()) return false;
     if (hasBaseAccount()) {
@@ -170,7 +170,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -188,69 +188,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseFrom(
+  public static InterchainAccount parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseFrom(
+  public static InterchainAccount parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseFrom(
+  public static InterchainAccount parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseFrom(
+  public static InterchainAccount parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseFrom(byte[] data)
+  public static InterchainAccount parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseFrom(
+  public static InterchainAccount parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseFrom(java.io.InputStream input)
+  public static InterchainAccount parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseFrom(
+  public static InterchainAccount parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseDelimitedFrom(java.io.InputStream input)
+  public static InterchainAccount parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseDelimitedFrom(
+  public static InterchainAccount parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseFrom(
+  public static InterchainAccount parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount parseFrom(
+  public static InterchainAccount parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -258,23 +258,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.applications.interchain_accounts.v1.InterchainAccount prototype) {
+  public static Builder newBuilder(InterchainAccount prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -288,18 +288,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.applications.interchain_accounts.v1.InterchainAccount)
-      com.ibc.applications.interchain_accounts.v1.InterchainAccountOrBuilder {
+      InterchainAccountOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.applications.interchain_accounts.v1.AccountProto.internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_descriptor;
+      return AccountProto.internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.applications.interchain_accounts.v1.AccountProto.internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_fieldAccessorTable
+      return AccountProto.internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.applications.interchain_accounts.v1.InterchainAccount.class, com.ibc.applications.interchain_accounts.v1.InterchainAccount.Builder.class);
+              InterchainAccount.class, Builder.class);
     }
 
     // Construct using com.ibc.applications.interchain_accounts.v1.InterchainAccount.newBuilder()
@@ -308,11 +308,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -325,35 +325,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.applications.interchain_accounts.v1.AccountProto.internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_descriptor;
+      return AccountProto.internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.applications.interchain_accounts.v1.InterchainAccount getDefaultInstanceForType() {
-      return com.ibc.applications.interchain_accounts.v1.InterchainAccount.getDefaultInstance();
+    @Override
+    public InterchainAccount getDefaultInstanceForType() {
+      return InterchainAccount.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.applications.interchain_accounts.v1.InterchainAccount build() {
-      com.ibc.applications.interchain_accounts.v1.InterchainAccount result = buildPartial();
+    @Override
+    public InterchainAccount build() {
+      InterchainAccount result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.applications.interchain_accounts.v1.InterchainAccount buildPartial() {
-      com.ibc.applications.interchain_accounts.v1.InterchainAccount result = new com.ibc.applications.interchain_accounts.v1.InterchainAccount(this);
+    @Override
+    public InterchainAccount buildPartial() {
+      InterchainAccount result = new InterchainAccount(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.applications.interchain_accounts.v1.InterchainAccount result) {
+    private void buildPartial0(InterchainAccount result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.baseAccount_ = baseAccountBuilder_ == null
@@ -365,50 +365,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.applications.interchain_accounts.v1.InterchainAccount) {
-        return mergeFrom((com.ibc.applications.interchain_accounts.v1.InterchainAccount)other);
+      if (other instanceof InterchainAccount) {
+        return mergeFrom((InterchainAccount)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.applications.interchain_accounts.v1.InterchainAccount other) {
-      if (other == com.ibc.applications.interchain_accounts.v1.InterchainAccount.getDefaultInstance()) return this;
+    public Builder mergeFrom(InterchainAccount other) {
+      if (other == InterchainAccount.getDefaultInstance()) return this;
       if (other.hasBaseAccount()) {
         mergeBaseAccount(other.getBaseAccount());
       }
@@ -422,18 +422,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -591,21 +591,21 @@ private static final long serialVersionUID = 0L;
       return baseAccountBuilder_;
     }
 
-    private java.lang.Object accountOwner_ = "";
+    private Object accountOwner_ = "";
     /**
      * <code>string account_owner = 2 [json_name = "accountOwner", (.gogoproto.moretags) = "yaml:&#92;"account_owner&#92;""];</code>
      * @return The accountOwner.
      */
-    public java.lang.String getAccountOwner() {
-      java.lang.Object ref = accountOwner_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getAccountOwner() {
+      Object ref = accountOwner_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         accountOwner_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -614,11 +614,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getAccountOwnerBytes() {
-      java.lang.Object ref = accountOwner_;
+      Object ref = accountOwner_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         accountOwner_ = b;
         return b;
       } else {
@@ -631,7 +631,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setAccountOwner(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       accountOwner_ = value;
       bitField0_ |= 0x00000002;
@@ -662,13 +662,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -679,18 +679,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.applications.interchain_accounts.v1.InterchainAccount)
-  private static final com.ibc.applications.interchain_accounts.v1.InterchainAccount DEFAULT_INSTANCE;
+  private static final InterchainAccount DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.applications.interchain_accounts.v1.InterchainAccount();
+    DEFAULT_INSTANCE = new InterchainAccount();
   }
 
-  public static com.ibc.applications.interchain_accounts.v1.InterchainAccount getDefaultInstance() {
+  public static InterchainAccount getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<InterchainAccount>
       PARSER = new com.google.protobuf.AbstractParser<InterchainAccount>() {
-    @java.lang.Override
+    @Override
     public InterchainAccount parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -714,13 +714,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<InterchainAccount> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.applications.interchain_accounts.v1.InterchainAccount getDefaultInstanceForType() {
+  @Override
+  public InterchainAccount getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

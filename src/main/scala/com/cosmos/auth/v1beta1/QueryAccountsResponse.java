@@ -25,24 +25,24 @@ private static final long serialVersionUID = 0L;
     accounts_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryAccountsResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.auth.v1beta1.QueryProto.internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_descriptor;
+    return QueryProto.internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.auth.v1beta1.QueryProto.internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.auth.v1beta1.QueryAccountsResponse.class, com.cosmos.auth.v1beta1.QueryAccountsResponse.Builder.class);
+            QueryAccountsResponse.class, Builder.class);
   }
 
   public static final int ACCOUNTS_FIELD_NUMBER = 1;
@@ -55,7 +55,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any accounts = 1 [json_name = "accounts", (.cosmos_proto.accepts_interface) = "AccountI"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<com.google.protobuf.Any> getAccountsList() {
     return accounts_;
   }
@@ -66,7 +66,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any accounts = 1 [json_name = "accounts", (.cosmos_proto.accepts_interface) = "AccountI"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<? extends com.google.protobuf.AnyOrBuilder> 
       getAccountsOrBuilderList() {
     return accounts_;
@@ -78,7 +78,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any accounts = 1 [json_name = "accounts", (.cosmos_proto.accepts_interface) = "AccountI"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getAccountsCount() {
     return accounts_.size();
   }
@@ -89,7 +89,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any accounts = 1 [json_name = "accounts", (.cosmos_proto.accepts_interface) = "AccountI"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Any getAccounts(int index) {
     return accounts_.get(index);
   }
@@ -100,7 +100,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any accounts = 1 [json_name = "accounts", (.cosmos_proto.accepts_interface) = "AccountI"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.AnyOrBuilder getAccountsOrBuilder(
       int index) {
     return accounts_.get(index);
@@ -116,7 +116,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -128,7 +128,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageResponse getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -139,13 +139,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageResponseOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -155,7 +155,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < accounts_.size(); i++) {
@@ -167,7 +167,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -186,15 +186,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.auth.v1beta1.QueryAccountsResponse)) {
+    if (!(obj instanceof QueryAccountsResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.auth.v1beta1.QueryAccountsResponse other = (com.cosmos.auth.v1beta1.QueryAccountsResponse) obj;
+    QueryAccountsResponse other = (QueryAccountsResponse) obj;
 
     if (!getAccountsList()
         .equals(other.getAccountsList())) return false;
@@ -207,7 +207,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -227,69 +227,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseFrom(
+  public static QueryAccountsResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseFrom(
+  public static QueryAccountsResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseFrom(
+  public static QueryAccountsResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseFrom(
+  public static QueryAccountsResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseFrom(byte[] data)
+  public static QueryAccountsResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseFrom(
+  public static QueryAccountsResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseFrom(java.io.InputStream input)
+  public static QueryAccountsResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseFrom(
+  public static QueryAccountsResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryAccountsResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseDelimitedFrom(
+  public static QueryAccountsResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseFrom(
+  public static QueryAccountsResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse parseFrom(
+  public static QueryAccountsResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -297,23 +297,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.auth.v1beta1.QueryAccountsResponse prototype) {
+  public static Builder newBuilder(QueryAccountsResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -329,18 +329,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.auth.v1beta1.QueryAccountsResponse)
-      com.cosmos.auth.v1beta1.QueryAccountsResponseOrBuilder {
+      QueryAccountsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.auth.v1beta1.QueryProto.internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_descriptor;
+      return QueryProto.internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.auth.v1beta1.QueryProto.internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.auth.v1beta1.QueryAccountsResponse.class, com.cosmos.auth.v1beta1.QueryAccountsResponse.Builder.class);
+              QueryAccountsResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.auth.v1beta1.QueryAccountsResponse.newBuilder()
@@ -349,11 +349,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -372,36 +372,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.auth.v1beta1.QueryProto.internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_descriptor;
+      return QueryProto.internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.auth.v1beta1.QueryAccountsResponse getDefaultInstanceForType() {
-      return com.cosmos.auth.v1beta1.QueryAccountsResponse.getDefaultInstance();
+    @Override
+    public QueryAccountsResponse getDefaultInstanceForType() {
+      return QueryAccountsResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.auth.v1beta1.QueryAccountsResponse build() {
-      com.cosmos.auth.v1beta1.QueryAccountsResponse result = buildPartial();
+    @Override
+    public QueryAccountsResponse build() {
+      QueryAccountsResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.auth.v1beta1.QueryAccountsResponse buildPartial() {
-      com.cosmos.auth.v1beta1.QueryAccountsResponse result = new com.cosmos.auth.v1beta1.QueryAccountsResponse(this);
+    @Override
+    public QueryAccountsResponse buildPartial() {
+      QueryAccountsResponse result = new QueryAccountsResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.auth.v1beta1.QueryAccountsResponse result) {
+    private void buildPartialRepeatedFields(QueryAccountsResponse result) {
       if (accountsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           accounts_ = java.util.Collections.unmodifiableList(accounts_);
@@ -413,7 +413,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.auth.v1beta1.QueryAccountsResponse result) {
+    private void buildPartial0(QueryAccountsResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -422,50 +422,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.auth.v1beta1.QueryAccountsResponse) {
-        return mergeFrom((com.cosmos.auth.v1beta1.QueryAccountsResponse)other);
+      if (other instanceof QueryAccountsResponse) {
+        return mergeFrom((QueryAccountsResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.auth.v1beta1.QueryAccountsResponse other) {
-      if (other == com.cosmos.auth.v1beta1.QueryAccountsResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryAccountsResponse other) {
+      if (other == QueryAccountsResponse.getDefaultInstance()) return this;
       if (accountsBuilder_ == null) {
         if (!other.accounts_.isEmpty()) {
           if (accounts_.isEmpty()) {
@@ -500,18 +500,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -736,7 +736,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.protobuf.Any accounts = 1 [json_name = "accounts", (.cosmos_proto.accepts_interface) = "AccountI"];</code>
      */
     public Builder addAllAccounts(
-        java.lang.Iterable<? extends com.google.protobuf.Any> values) {
+        Iterable<? extends com.google.protobuf.Any> values) {
       if (accountsBuilder_ == null) {
         ensureAccountsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1024,13 +1024,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1041,18 +1041,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.auth.v1beta1.QueryAccountsResponse)
-  private static final com.cosmos.auth.v1beta1.QueryAccountsResponse DEFAULT_INSTANCE;
+  private static final QueryAccountsResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.auth.v1beta1.QueryAccountsResponse();
+    DEFAULT_INSTANCE = new QueryAccountsResponse();
   }
 
-  public static com.cosmos.auth.v1beta1.QueryAccountsResponse getDefaultInstance() {
+  public static QueryAccountsResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryAccountsResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryAccountsResponse>() {
-    @java.lang.Override
+    @Override
     public QueryAccountsResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1076,13 +1076,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryAccountsResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.auth.v1beta1.QueryAccountsResponse getDefaultInstanceForType() {
+  @Override
+  public QueryAccountsResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

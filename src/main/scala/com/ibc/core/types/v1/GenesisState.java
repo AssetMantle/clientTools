@@ -22,24 +22,24 @@ private static final long serialVersionUID = 0L;
   private GenesisState() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new GenesisState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.types.v1.GenesisProto.internal_static_ibc_core_types_v1_GenesisState_descriptor;
+    return GenesisProto.internal_static_ibc_core_types_v1_GenesisState_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.types.v1.GenesisProto.internal_static_ibc_core_types_v1_GenesisState_fieldAccessorTable
+    return GenesisProto.internal_static_ibc_core_types_v1_GenesisState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.types.v1.GenesisState.class, com.ibc.core.types.v1.GenesisState.Builder.class);
+            GenesisState.class, Builder.class);
   }
 
   public static final int CLIENT_GENESIS_FIELD_NUMBER = 1;
@@ -52,7 +52,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.GenesisState client_genesis = 1 [json_name = "clientGenesis", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_genesis&#92;""];</code>
    * @return Whether the clientGenesis field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasClientGenesis() {
     return clientGenesis_ != null;
   }
@@ -64,7 +64,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.GenesisState client_genesis = 1 [json_name = "clientGenesis", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_genesis&#92;""];</code>
    * @return The clientGenesis.
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.GenesisState getClientGenesis() {
     return clientGenesis_ == null ? com.ibc.core.client.v1.GenesisState.getDefaultInstance() : clientGenesis_;
   }
@@ -75,7 +75,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.client.v1.GenesisState client_genesis = 1 [json_name = "clientGenesis", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_genesis&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.GenesisStateOrBuilder getClientGenesisOrBuilder() {
     return clientGenesis_ == null ? com.ibc.core.client.v1.GenesisState.getDefaultInstance() : clientGenesis_;
   }
@@ -90,7 +90,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.connection.v1.GenesisState connection_genesis = 2 [json_name = "connectionGenesis", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"connection_genesis&#92;""];</code>
    * @return Whether the connectionGenesis field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasConnectionGenesis() {
     return connectionGenesis_ != null;
   }
@@ -102,7 +102,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.connection.v1.GenesisState connection_genesis = 2 [json_name = "connectionGenesis", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"connection_genesis&#92;""];</code>
    * @return The connectionGenesis.
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.connection.v1.GenesisState getConnectionGenesis() {
     return connectionGenesis_ == null ? com.ibc.core.connection.v1.GenesisState.getDefaultInstance() : connectionGenesis_;
   }
@@ -113,7 +113,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.connection.v1.GenesisState connection_genesis = 2 [json_name = "connectionGenesis", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"connection_genesis&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.connection.v1.GenesisStateOrBuilder getConnectionGenesisOrBuilder() {
     return connectionGenesis_ == null ? com.ibc.core.connection.v1.GenesisState.getDefaultInstance() : connectionGenesis_;
   }
@@ -128,7 +128,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.channel.v1.GenesisState channel_genesis = 3 [json_name = "channelGenesis", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"channel_genesis&#92;""];</code>
    * @return Whether the channelGenesis field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasChannelGenesis() {
     return channelGenesis_ != null;
   }
@@ -140,7 +140,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.channel.v1.GenesisState channel_genesis = 3 [json_name = "channelGenesis", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"channel_genesis&#92;""];</code>
    * @return The channelGenesis.
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.channel.v1.GenesisState getChannelGenesis() {
     return channelGenesis_ == null ? com.ibc.core.channel.v1.GenesisState.getDefaultInstance() : channelGenesis_;
   }
@@ -151,13 +151,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.channel.v1.GenesisState channel_genesis = 3 [json_name = "channelGenesis", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"channel_genesis&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.channel.v1.GenesisStateOrBuilder getChannelGenesisOrBuilder() {
     return channelGenesis_ == null ? com.ibc.core.channel.v1.GenesisState.getDefaultInstance() : channelGenesis_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -167,7 +167,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (clientGenesis_ != null) {
@@ -182,7 +182,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -205,15 +205,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.types.v1.GenesisState)) {
+    if (!(obj instanceof GenesisState)) {
       return super.equals(obj);
     }
-    com.ibc.core.types.v1.GenesisState other = (com.ibc.core.types.v1.GenesisState) obj;
+    GenesisState other = (GenesisState) obj;
 
     if (hasClientGenesis() != other.hasClientGenesis()) return false;
     if (hasClientGenesis()) {
@@ -234,7 +234,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -258,69 +258,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.types.v1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.types.v1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.types.v1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.types.v1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.types.v1.GenesisState parseFrom(byte[] data)
+  public static GenesisState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.types.v1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.types.v1.GenesisState parseFrom(java.io.InputStream input)
+  public static GenesisState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.types.v1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.types.v1.GenesisState parseDelimitedFrom(java.io.InputStream input)
+  public static GenesisState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.types.v1.GenesisState parseDelimitedFrom(
+  public static GenesisState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.types.v1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.types.v1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -328,23 +328,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.types.v1.GenesisState prototype) {
+  public static Builder newBuilder(GenesisState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -358,18 +358,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.types.v1.GenesisState)
-      com.ibc.core.types.v1.GenesisStateOrBuilder {
+      GenesisStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.types.v1.GenesisProto.internal_static_ibc_core_types_v1_GenesisState_descriptor;
+      return GenesisProto.internal_static_ibc_core_types_v1_GenesisState_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.types.v1.GenesisProto.internal_static_ibc_core_types_v1_GenesisState_fieldAccessorTable
+      return GenesisProto.internal_static_ibc_core_types_v1_GenesisState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.types.v1.GenesisState.class, com.ibc.core.types.v1.GenesisState.Builder.class);
+              GenesisState.class, Builder.class);
     }
 
     // Construct using com.ibc.core.types.v1.GenesisState.newBuilder()
@@ -378,11 +378,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -404,35 +404,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.types.v1.GenesisProto.internal_static_ibc_core_types_v1_GenesisState_descriptor;
+      return GenesisProto.internal_static_ibc_core_types_v1_GenesisState_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.types.v1.GenesisState getDefaultInstanceForType() {
-      return com.ibc.core.types.v1.GenesisState.getDefaultInstance();
+    @Override
+    public GenesisState getDefaultInstanceForType() {
+      return GenesisState.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.types.v1.GenesisState build() {
-      com.ibc.core.types.v1.GenesisState result = buildPartial();
+    @Override
+    public GenesisState build() {
+      GenesisState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.types.v1.GenesisState buildPartial() {
-      com.ibc.core.types.v1.GenesisState result = new com.ibc.core.types.v1.GenesisState(this);
+    @Override
+    public GenesisState buildPartial() {
+      GenesisState result = new GenesisState(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.core.types.v1.GenesisState result) {
+    private void buildPartial0(GenesisState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.clientGenesis_ = clientGenesisBuilder_ == null
@@ -451,50 +451,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.types.v1.GenesisState) {
-        return mergeFrom((com.ibc.core.types.v1.GenesisState)other);
+      if (other instanceof GenesisState) {
+        return mergeFrom((GenesisState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.types.v1.GenesisState other) {
-      if (other == com.ibc.core.types.v1.GenesisState.getDefaultInstance()) return this;
+    public Builder mergeFrom(GenesisState other) {
+      if (other == GenesisState.getDefaultInstance()) return this;
       if (other.hasClientGenesis()) {
         mergeClientGenesis(other.getClientGenesis());
       }
@@ -509,18 +509,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -1032,13 +1032,13 @@ private static final long serialVersionUID = 0L;
       }
       return channelGenesisBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1049,18 +1049,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.types.v1.GenesisState)
-  private static final com.ibc.core.types.v1.GenesisState DEFAULT_INSTANCE;
+  private static final GenesisState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.types.v1.GenesisState();
+    DEFAULT_INSTANCE = new GenesisState();
   }
 
-  public static com.ibc.core.types.v1.GenesisState getDefaultInstance() {
+  public static GenesisState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GenesisState>
       PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-    @java.lang.Override
+    @Override
     public GenesisState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1084,13 +1084,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<GenesisState> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.types.v1.GenesisState getDefaultInstanceForType() {
+  @Override
+  public GenesisState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

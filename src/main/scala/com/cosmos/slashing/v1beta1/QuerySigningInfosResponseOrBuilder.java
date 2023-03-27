@@ -14,7 +14,7 @@ public interface QuerySigningInfosResponseOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorSigningInfo info = 1 [json_name = "info", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.slashing.v1beta1.ValidatorSigningInfo> 
+  java.util.List<ValidatorSigningInfo>
       getInfoList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QuerySigningInfosResponseOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorSigningInfo info = 1 [json_name = "info", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.slashing.v1beta1.ValidatorSigningInfo getInfo(int index);
+  ValidatorSigningInfo getInfo(int index);
   /**
    * <pre>
    * info is the signing info of all validators
@@ -39,7 +39,7 @@ public interface QuerySigningInfosResponseOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorSigningInfo info = 1 [json_name = "info", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.slashing.v1beta1.ValidatorSigningInfoOrBuilder> 
+  java.util.List<? extends ValidatorSigningInfoOrBuilder>
       getInfoOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QuerySigningInfosResponseOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorSigningInfo info = 1 [json_name = "info", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.slashing.v1beta1.ValidatorSigningInfoOrBuilder getInfoOrBuilder(
+  ValidatorSigningInfoOrBuilder getInfoOrBuilder(
       int index);
 
   /**

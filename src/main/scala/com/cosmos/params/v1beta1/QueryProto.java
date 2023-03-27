@@ -32,7 +32,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n!cosmos/params/v1beta1/query.proto\022\025cos" +
       "mos.params.v1beta1\032\024gogoproto/gogo.proto" +
       "\032\034google/api/annotations.proto\032\"cosmos/p" +
@@ -57,20 +57,20 @@ public final class QueryProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
-          com.cosmos.params.v1beta1.ParamsProto.getDescriptor(),
+          ParamsProto.getDescriptor(),
         });
     internal_static_cosmos_params_v1beta1_QueryParamsRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_params_v1beta1_QueryParamsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_params_v1beta1_QueryParamsRequest_descriptor,
-        new java.lang.String[] { "Subspace", "Key", });
+        new String[] { "Subspace", "Key", });
     internal_static_cosmos_params_v1beta1_QueryParamsResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_params_v1beta1_QueryParamsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_params_v1beta1_QueryParamsResponse_descriptor,
-        new java.lang.String[] { "Param", });
+        new String[] { "Param", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);
@@ -79,7 +79,7 @@ public final class QueryProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
-    com.cosmos.params.v1beta1.ParamsProto.getDescriptor();
+    ParamsProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

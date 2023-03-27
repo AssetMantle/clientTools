@@ -3,7 +3,7 @@
 
 package com.cosmos.bank.v1beta1;
 
-@java.lang.Deprecated public interface SupplyOrBuilder extends
+@Deprecated public interface SupplyOrBuilder extends
     // @@protoc_insertion_point(interface_extends:cosmos.bank.v1beta1.Supply)
     com.google.protobuf.MessageOrBuilder {
 

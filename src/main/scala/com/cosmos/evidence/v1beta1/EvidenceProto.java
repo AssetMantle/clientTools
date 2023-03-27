@@ -27,7 +27,7 @@ public final class EvidenceProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n&cosmos/evidence/v1beta1/evidence.proto" +
       "\022\027cosmos.evidence.v1beta1\032\024gogoproto/gog" +
       "o.proto\032\037google/protobuf/timestamp.proto" +
@@ -55,7 +55,7 @@ public final class EvidenceProto {
     internal_static_cosmos_evidence_v1beta1_Equivocation_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_evidence_v1beta1_Equivocation_descriptor,
-        new java.lang.String[] { "Height", "Time", "Power", "ConsensusAddress", });
+        new String[] { "Height", "Time", "Power", "ConsensusAddress", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.equal);

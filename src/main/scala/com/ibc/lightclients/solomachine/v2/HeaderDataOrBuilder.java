@@ -42,7 +42,7 @@ public interface HeaderDataOrBuilder extends
    * <code>string new_diversifier = 2 [json_name = "newDiversifier", (.gogoproto.moretags) = "yaml:&#92;"new_diversifier&#92;""];</code>
    * @return The newDiversifier.
    */
-  java.lang.String getNewDiversifier();
+  String getNewDiversifier();
   /**
    * <pre>
    * header diversifier

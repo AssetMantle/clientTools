@@ -15,7 +15,7 @@ public interface ValidatorAccumulatedCommissionRecordOrBuilder extends
    * <code>string validator_address = 1 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  java.lang.String getValidatorAddress();
+  String getValidatorAddress();
   /**
    * <pre>
    * validator_address is the address of the validator.
@@ -44,7 +44,7 @@ public interface ValidatorAccumulatedCommissionRecordOrBuilder extends
    * <code>.cosmos.distribution.v1beta1.ValidatorAccumulatedCommission accumulated = 2 [json_name = "accumulated", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"accumulated&#92;""];</code>
    * @return The accumulated.
    */
-  com.cosmos.distribution.v1beta1.ValidatorAccumulatedCommission getAccumulated();
+  ValidatorAccumulatedCommission getAccumulated();
   /**
    * <pre>
    * accumulated is the accumulated commission of a validator.
@@ -52,5 +52,5 @@ public interface ValidatorAccumulatedCommissionRecordOrBuilder extends
    *
    * <code>.cosmos.distribution.v1beta1.ValidatorAccumulatedCommission accumulated = 2 [json_name = "accumulated", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"accumulated&#92;""];</code>
    */
-  com.cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionOrBuilder getAccumulatedOrBuilder();
+  ValidatorAccumulatedCommissionOrBuilder getAccumulatedOrBuilder();
 }

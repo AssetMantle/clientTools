@@ -17,7 +17,7 @@ public interface VoteOrBuilder extends
    * <code>string voter = 2 [json_name = "voter"];</code>
    * @return The voter.
    */
-  java.lang.String getVoter();
+  String getVoter();
   /**
    * <code>string voter = 2 [json_name = "voter"];</code>
    * @return The bytes for voter.
@@ -37,7 +37,7 @@ public interface VoteOrBuilder extends
    *     See cosmos/gov/v1beta1/gov.proto;l=138
    * @return The enum numeric value on the wire for option.
    */
-  @java.lang.Deprecated int getOptionValue();
+  @Deprecated int getOptionValue();
   /**
    * <pre>
    * Deprecated: Prefer to use `options` instead. This field is set in queries
@@ -50,7 +50,7 @@ public interface VoteOrBuilder extends
    *     See cosmos/gov/v1beta1/gov.proto;l=138
    * @return The option.
    */
-  @java.lang.Deprecated com.cosmos.gov.v1beta1.VoteOption getOption();
+  @Deprecated VoteOption getOption();
 
   /**
    * <pre>
@@ -59,7 +59,7 @@ public interface VoteOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.WeightedVoteOption options = 4 [json_name = "options", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.gov.v1beta1.WeightedVoteOption> 
+  java.util.List<WeightedVoteOption>
       getOptionsList();
   /**
    * <pre>
@@ -68,7 +68,7 @@ public interface VoteOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.WeightedVoteOption options = 4 [json_name = "options", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.gov.v1beta1.WeightedVoteOption getOptions(int index);
+  WeightedVoteOption getOptions(int index);
   /**
    * <pre>
    * Since: cosmos-sdk 0.43
@@ -84,7 +84,7 @@ public interface VoteOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.WeightedVoteOption options = 4 [json_name = "options", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.gov.v1beta1.WeightedVoteOptionOrBuilder> 
+  java.util.List<? extends WeightedVoteOptionOrBuilder>
       getOptionsOrBuilderList();
   /**
    * <pre>
@@ -93,6 +93,6 @@ public interface VoteOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.WeightedVoteOption options = 4 [json_name = "options", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.gov.v1beta1.WeightedVoteOptionOrBuilder getOptionsOrBuilder(
+  WeightedVoteOptionOrBuilder getOptionsOrBuilder(
       int index);
 }

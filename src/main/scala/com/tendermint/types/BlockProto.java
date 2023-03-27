@@ -27,7 +27,7 @@ public final class BlockProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\034tendermint/types/block.proto\022\020tendermi" +
       "nt.types\032\024gogoproto/gogo.proto\032\034tendermi" +
       "nt/types/types.proto\032\037tendermint/types/e" +
@@ -48,23 +48,23 @@ public final class BlockProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
-          com.tendermint.types.TypesProto.getDescriptor(),
-          com.tendermint.types.EvidenceProto.getDescriptor(),
+          TypesProto.getDescriptor(),
+          EvidenceProto.getDescriptor(),
         });
     internal_static_tendermint_types_Block_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_tendermint_types_Block_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_Block_descriptor,
-        new java.lang.String[] { "Header", "Data", "Evidence", "LastCommit", });
+        new String[] { "Header", "Data", "Evidence", "LastCommit", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
-    com.tendermint.types.TypesProto.getDescriptor();
-    com.tendermint.types.EvidenceProto.getDescriptor();
+    TypesProto.getDescriptor();
+    EvidenceProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

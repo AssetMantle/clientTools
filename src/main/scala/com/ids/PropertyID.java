@@ -18,38 +18,33 @@ private static final long serialVersionUID = 0L;
   private PropertyID() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new PropertyID();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ids.PropertyIDV1Proto.internal_static_ids_PropertyID_descriptor;
+    return PropertyIDV1Proto.internal_static_ids_PropertyID_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ids.PropertyIDV1Proto.internal_static_ids_PropertyID_fieldAccessorTable
+    return PropertyIDV1Proto.internal_static_ids_PropertyID_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ids.PropertyID.class, com.ids.PropertyID.Builder.class);
+            PropertyID.class, Builder.class);
   }
 
   public static final int KEY_I_D_FIELD_NUMBER = 1;
-  private com.ids.StringID keyID_;
+  private StringID keyID_;
   /**
    * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
    * @return Whether the keyID field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasKeyID() {
     return keyID_ != null;
   }
@@ -57,25 +52,25 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
    * @return The keyID.
    */
-  @java.lang.Override
-  public com.ids.StringID getKeyID() {
-    return keyID_ == null ? com.ids.StringID.getDefaultInstance() : keyID_;
+  @Override
+  public StringID getKeyID() {
+    return keyID_ == null ? StringID.getDefaultInstance() : keyID_;
   }
   /**
    * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
    */
-  @java.lang.Override
-  public com.ids.StringIDOrBuilder getKeyIDOrBuilder() {
-    return getKeyID();
+  @Override
+  public StringIDOrBuilder getKeyIDOrBuilder() {
+    return keyID_ == null ? StringID.getDefaultInstance() : keyID_;
   }
 
   public static final int TYPE_I_D_FIELD_NUMBER = 2;
-  private com.ids.StringID typeID_;
+  private StringID typeID_;
   /**
    * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
    * @return Whether the typeID field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasTypeID() {
     return typeID_ != null;
   }
@@ -83,20 +78,20 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
    * @return The typeID.
    */
-  @java.lang.Override
-  public com.ids.StringID getTypeID() {
-    return typeID_ == null ? com.ids.StringID.getDefaultInstance() : typeID_;
+  @Override
+  public StringID getTypeID() {
+    return typeID_ == null ? StringID.getDefaultInstance() : typeID_;
   }
   /**
    * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
    */
-  @java.lang.Override
-  public com.ids.StringIDOrBuilder getTypeIDOrBuilder() {
-    return getTypeID();
+  @Override
+  public StringIDOrBuilder getTypeIDOrBuilder() {
+    return typeID_ == null ? StringID.getDefaultInstance() : typeID_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -106,7 +101,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (keyID_ != null) {
@@ -118,7 +113,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -137,15 +132,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ids.PropertyID)) {
+    if (!(obj instanceof PropertyID)) {
       return super.equals(obj);
     }
-    com.ids.PropertyID other = (com.ids.PropertyID) obj;
+    PropertyID other = (PropertyID) obj;
 
     if (hasKeyID() != other.hasKeyID()) return false;
     if (hasKeyID()) {
@@ -161,7 +156,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -181,69 +176,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ids.PropertyID parseFrom(
+  public static PropertyID parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.PropertyID parseFrom(
+  public static PropertyID parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.PropertyID parseFrom(
+  public static PropertyID parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.PropertyID parseFrom(
+  public static PropertyID parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.PropertyID parseFrom(byte[] data)
+  public static PropertyID parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.PropertyID parseFrom(
+  public static PropertyID parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.PropertyID parseFrom(java.io.InputStream input)
+  public static PropertyID parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ids.PropertyID parseFrom(
+  public static PropertyID parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ids.PropertyID parseDelimitedFrom(java.io.InputStream input)
+  public static PropertyID parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ids.PropertyID parseDelimitedFrom(
+  public static PropertyID parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ids.PropertyID parseFrom(
+  public static PropertyID parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ids.PropertyID parseFrom(
+  public static PropertyID parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -251,23 +246,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ids.PropertyID prototype) {
+  public static Builder newBuilder(PropertyID prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -277,18 +272,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ids.PropertyID)
-      com.ids.PropertyIDOrBuilder {
+      PropertyIDOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ids.PropertyIDV1Proto.internal_static_ids_PropertyID_descriptor;
+      return PropertyIDV1Proto.internal_static_ids_PropertyID_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ids.PropertyIDV1Proto.internal_static_ids_PropertyID_fieldAccessorTable
+      return PropertyIDV1Proto.internal_static_ids_PropertyID_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ids.PropertyID.class, com.ids.PropertyID.Builder.class);
+              PropertyID.class, Builder.class);
     }
 
     // Construct using com.ids.PropertyID.newBuilder()
@@ -297,109 +292,113 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
-      if (keyIDBuilder_ == null) {
-        keyID_ = null;
-      } else {
-        keyID_ = null;
+      bitField0_ = 0;
+      keyID_ = null;
+      if (keyIDBuilder_ != null) {
+        keyIDBuilder_.dispose();
         keyIDBuilder_ = null;
       }
-      if (typeIDBuilder_ == null) {
-        typeID_ = null;
-      } else {
-        typeID_ = null;
+      typeID_ = null;
+      if (typeIDBuilder_ != null) {
+        typeIDBuilder_.dispose();
         typeIDBuilder_ = null;
       }
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ids.PropertyIDV1Proto.internal_static_ids_PropertyID_descriptor;
+      return PropertyIDV1Proto.internal_static_ids_PropertyID_descriptor;
     }
 
-    @java.lang.Override
-    public com.ids.PropertyID getDefaultInstanceForType() {
-      return com.ids.PropertyID.getDefaultInstance();
+    @Override
+    public PropertyID getDefaultInstanceForType() {
+      return PropertyID.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ids.PropertyID build() {
-      com.ids.PropertyID result = buildPartial();
+    @Override
+    public PropertyID build() {
+      PropertyID result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ids.PropertyID buildPartial() {
-      com.ids.PropertyID result = new com.ids.PropertyID(this);
-      if (keyIDBuilder_ == null) {
-        result.keyID_ = keyID_;
-      } else {
-        result.keyID_ = keyIDBuilder_.build();
-      }
-      if (typeIDBuilder_ == null) {
-        result.typeID_ = typeID_;
-      } else {
-        result.typeID_ = typeIDBuilder_.build();
-      }
+    @Override
+    public PropertyID buildPartial() {
+      PropertyID result = new PropertyID(this);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(PropertyID result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.keyID_ = keyIDBuilder_ == null
+            ? keyID_
+            : keyIDBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.typeID_ = typeIDBuilder_ == null
+            ? typeID_
+            : typeIDBuilder_.build();
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ids.PropertyID) {
-        return mergeFrom((com.ids.PropertyID)other);
+      if (other instanceof PropertyID) {
+        return mergeFrom((PropertyID)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ids.PropertyID other) {
-      if (other == com.ids.PropertyID.getDefaultInstance()) return this;
+    public Builder mergeFrom(PropertyID other) {
+      if (other == PropertyID.getDefaultInstance()) return this;
       if (other.hasKeyID()) {
         mergeKeyID(other.getKeyID());
       }
@@ -411,18 +410,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -436,14 +435,14 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getKeyIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             case 18: {
               input.readMessage(
                   getTypeIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000002;
               break;
             } // case 18
             default: {
@@ -461,24 +460,25 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
-    private com.ids.StringID keyID_;
+    private StringID keyID_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.StringID, com.ids.StringID.Builder, com.ids.StringIDOrBuilder> keyIDBuilder_;
+        StringID, StringID.Builder, StringIDOrBuilder> keyIDBuilder_;
     /**
      * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
      * @return Whether the keyID field is set.
      */
     public boolean hasKeyID() {
-      return keyIDBuilder_ != null || keyID_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
      * @return The keyID.
      */
-    public com.ids.StringID getKeyID() {
+    public StringID getKeyID() {
       if (keyIDBuilder_ == null) {
-        return keyID_ == null ? com.ids.StringID.getDefaultInstance() : keyID_;
+        return keyID_ == null ? StringID.getDefaultInstance() : keyID_;
       } else {
         return keyIDBuilder_.getMessage();
       }
@@ -486,93 +486,93 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
      */
-    public Builder setKeyID(com.ids.StringID value) {
+    public Builder setKeyID(StringID value) {
       if (keyIDBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
         keyID_ = value;
-        onChanged();
       } else {
         keyIDBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
      */
     public Builder setKeyID(
-        com.ids.StringID.Builder builderForValue) {
+        StringID.Builder builderForValue) {
       if (keyIDBuilder_ == null) {
         keyID_ = builderForValue.build();
-        onChanged();
       } else {
         keyIDBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
      */
-    public Builder mergeKeyID(com.ids.StringID value) {
+    public Builder mergeKeyID(StringID value) {
       if (keyIDBuilder_ == null) {
-        if (keyID_ != null) {
-          keyID_ =
-            com.ids.StringID.newBuilder(keyID_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          keyID_ != null &&
+          keyID_ != StringID.getDefaultInstance()) {
+          getKeyIDBuilder().mergeFrom(value);
         } else {
           keyID_ = value;
         }
-        onChanged();
       } else {
         keyIDBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
      */
     public Builder clearKeyID() {
-      if (keyIDBuilder_ == null) {
-        keyID_ = null;
-        onChanged();
-      } else {
-        keyID_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      keyID_ = null;
+      if (keyIDBuilder_ != null) {
+        keyIDBuilder_.dispose();
         keyIDBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
      */
-    public com.ids.StringID.Builder getKeyIDBuilder() {
-      
+    public StringID.Builder getKeyIDBuilder() {
+      bitField0_ |= 0x00000001;
       onChanged();
       return getKeyIDFieldBuilder().getBuilder();
     }
     /**
      * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
      */
-    public com.ids.StringIDOrBuilder getKeyIDOrBuilder() {
+    public StringIDOrBuilder getKeyIDOrBuilder() {
       if (keyIDBuilder_ != null) {
         return keyIDBuilder_.getMessageOrBuilder();
       } else {
         return keyID_ == null ?
-            com.ids.StringID.getDefaultInstance() : keyID_;
+            StringID.getDefaultInstance() : keyID_;
       }
     }
     /**
      * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.StringID, com.ids.StringID.Builder, com.ids.StringIDOrBuilder> 
+        StringID, StringID.Builder, StringIDOrBuilder>
         getKeyIDFieldBuilder() {
       if (keyIDBuilder_ == null) {
         keyIDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.ids.StringID, com.ids.StringID.Builder, com.ids.StringIDOrBuilder>(
+            StringID, StringID.Builder, StringIDOrBuilder>(
                 getKeyID(),
                 getParentForChildren(),
                 isClean());
@@ -581,23 +581,23 @@ private static final long serialVersionUID = 0L;
       return keyIDBuilder_;
     }
 
-    private com.ids.StringID typeID_;
+    private StringID typeID_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.StringID, com.ids.StringID.Builder, com.ids.StringIDOrBuilder> typeIDBuilder_;
+        StringID, StringID.Builder, StringIDOrBuilder> typeIDBuilder_;
     /**
      * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
      * @return Whether the typeID field is set.
      */
     public boolean hasTypeID() {
-      return typeIDBuilder_ != null || typeID_ != null;
+      return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
      * @return The typeID.
      */
-    public com.ids.StringID getTypeID() {
+    public StringID getTypeID() {
       if (typeIDBuilder_ == null) {
-        return typeID_ == null ? com.ids.StringID.getDefaultInstance() : typeID_;
+        return typeID_ == null ? StringID.getDefaultInstance() : typeID_;
       } else {
         return typeIDBuilder_.getMessage();
       }
@@ -605,93 +605,93 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
      */
-    public Builder setTypeID(com.ids.StringID value) {
+    public Builder setTypeID(StringID value) {
       if (typeIDBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
         typeID_ = value;
-        onChanged();
       } else {
         typeIDBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
      */
     public Builder setTypeID(
-        com.ids.StringID.Builder builderForValue) {
+        StringID.Builder builderForValue) {
       if (typeIDBuilder_ == null) {
         typeID_ = builderForValue.build();
-        onChanged();
       } else {
         typeIDBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
      */
-    public Builder mergeTypeID(com.ids.StringID value) {
+    public Builder mergeTypeID(StringID value) {
       if (typeIDBuilder_ == null) {
-        if (typeID_ != null) {
-          typeID_ =
-            com.ids.StringID.newBuilder(typeID_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000002) != 0) &&
+          typeID_ != null &&
+          typeID_ != StringID.getDefaultInstance()) {
+          getTypeIDBuilder().mergeFrom(value);
         } else {
           typeID_ = value;
         }
-        onChanged();
       } else {
         typeIDBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
      */
     public Builder clearTypeID() {
-      if (typeIDBuilder_ == null) {
-        typeID_ = null;
-        onChanged();
-      } else {
-        typeID_ = null;
+      bitField0_ = (bitField0_ & ~0x00000002);
+      typeID_ = null;
+      if (typeIDBuilder_ != null) {
+        typeIDBuilder_.dispose();
         typeIDBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
      */
-    public com.ids.StringID.Builder getTypeIDBuilder() {
-      
+    public StringID.Builder getTypeIDBuilder() {
+      bitField0_ |= 0x00000002;
       onChanged();
       return getTypeIDFieldBuilder().getBuilder();
     }
     /**
      * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
      */
-    public com.ids.StringIDOrBuilder getTypeIDOrBuilder() {
+    public StringIDOrBuilder getTypeIDOrBuilder() {
       if (typeIDBuilder_ != null) {
         return typeIDBuilder_.getMessageOrBuilder();
       } else {
         return typeID_ == null ?
-            com.ids.StringID.getDefaultInstance() : typeID_;
+            StringID.getDefaultInstance() : typeID_;
       }
     }
     /**
      * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.StringID, com.ids.StringID.Builder, com.ids.StringIDOrBuilder> 
+        StringID, StringID.Builder, StringIDOrBuilder>
         getTypeIDFieldBuilder() {
       if (typeIDBuilder_ == null) {
         typeIDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.ids.StringID, com.ids.StringID.Builder, com.ids.StringIDOrBuilder>(
+            StringID, StringID.Builder, StringIDOrBuilder>(
                 getTypeID(),
                 getParentForChildren(),
                 isClean());
@@ -699,13 +699,13 @@ private static final long serialVersionUID = 0L;
       }
       return typeIDBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -716,18 +716,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ids.PropertyID)
-  private static final com.ids.PropertyID DEFAULT_INSTANCE;
+  private static final PropertyID DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ids.PropertyID();
+    DEFAULT_INSTANCE = new PropertyID();
   }
 
-  public static com.ids.PropertyID getDefaultInstance() {
+  public static PropertyID getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<PropertyID>
       PARSER = new com.google.protobuf.AbstractParser<PropertyID>() {
-    @java.lang.Override
+    @Override
     public PropertyID parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -751,13 +751,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<PropertyID> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ids.PropertyID getDefaultInstanceForType() {
+  @Override
+  public PropertyID getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

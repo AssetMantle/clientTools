@@ -42,7 +42,7 @@ public interface QueryChannelConsensusStateResponseOrBuilder extends
    * <code>string client_id = 2 [json_name = "clientId"];</code>
    * @return The clientId.
    */
-  java.lang.String getClientId();
+  String getClientId();
   /**
    * <pre>
    * client ID associated with the consensus state

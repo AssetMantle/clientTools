@@ -24,7 +24,7 @@ public interface QueryParamsResponseOrBuilder extends
    * <code>.ibc.applications.transfer.v1.Params params = 1 [json_name = "params"];</code>
    * @return The params.
    */
-  com.ibc.applications.transfer.v1.Params getParams();
+  Params getParams();
   /**
    * <pre>
    * params defines the parameters of the module.
@@ -32,5 +32,5 @@ public interface QueryParamsResponseOrBuilder extends
    *
    * <code>.ibc.applications.transfer.v1.Params params = 1 [json_name = "params"];</code>
    */
-  com.ibc.applications.transfer.v1.ParamsOrBuilder getParamsOrBuilder();
+  ParamsOrBuilder getParamsOrBuilder();
 }

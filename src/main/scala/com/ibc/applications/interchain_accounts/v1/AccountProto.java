@@ -27,7 +27,7 @@ public final class AccountProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n5ibc/applications/interchain_accounts/v" +
       "1/account.proto\022\'ibc.applications.interc" +
       "hain_accounts.v1\032\031cosmos_proto/cosmos.pr" +
@@ -60,7 +60,7 @@ public final class AccountProto {
     internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_v1_InterchainAccount_descriptor,
-        new java.lang.String[] { "BaseAccount", "AccountOwner", });
+        new String[] { "BaseAccount", "AccountOwner", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.implementsInterface);

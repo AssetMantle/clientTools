@@ -67,7 +67,7 @@ public final class GovProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\034cosmos/gov/v1beta1/gov.proto\022\022cosmos.g" +
       "ov.v1beta1\032\036cosmos/base/v1beta1/coin.pro" +
       "to\032\024gogoproto/gogo.proto\032\031cosmos_proto/c" +
@@ -178,55 +178,55 @@ public final class GovProto {
     internal_static_cosmos_gov_v1beta1_WeightedVoteOption_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_WeightedVoteOption_descriptor,
-        new java.lang.String[] { "Option", "Weight", });
+        new String[] { "Option", "Weight", });
     internal_static_cosmos_gov_v1beta1_TextProposal_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_gov_v1beta1_TextProposal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_TextProposal_descriptor,
-        new java.lang.String[] { "Title", "Description", });
+        new String[] { "Title", "Description", });
     internal_static_cosmos_gov_v1beta1_Deposit_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_gov_v1beta1_Deposit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_Deposit_descriptor,
-        new java.lang.String[] { "ProposalId", "Depositor", "Amount", });
+        new String[] { "ProposalId", "Depositor", "Amount", });
     internal_static_cosmos_gov_v1beta1_Proposal_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_gov_v1beta1_Proposal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_Proposal_descriptor,
-        new java.lang.String[] { "ProposalId", "Content", "Status", "FinalTallyResult", "SubmitTime", "DepositEndTime", "TotalDeposit", "VotingStartTime", "VotingEndTime", });
+        new String[] { "ProposalId", "Content", "Status", "FinalTallyResult", "SubmitTime", "DepositEndTime", "TotalDeposit", "VotingStartTime", "VotingEndTime", });
     internal_static_cosmos_gov_v1beta1_TallyResult_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_gov_v1beta1_TallyResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_TallyResult_descriptor,
-        new java.lang.String[] { "Yes", "Abstain", "No", "NoWithVeto", });
+        new String[] { "Yes", "Abstain", "No", "NoWithVeto", });
     internal_static_cosmos_gov_v1beta1_Vote_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_gov_v1beta1_Vote_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_Vote_descriptor,
-        new java.lang.String[] { "ProposalId", "Voter", "Option", "Options", });
+        new String[] { "ProposalId", "Voter", "Option", "Options", });
     internal_static_cosmos_gov_v1beta1_DepositParams_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_gov_v1beta1_DepositParams_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_DepositParams_descriptor,
-        new java.lang.String[] { "MinDeposit", "MaxDepositPeriod", });
+        new String[] { "MinDeposit", "MaxDepositPeriod", });
     internal_static_cosmos_gov_v1beta1_VotingParams_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_gov_v1beta1_VotingParams_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_VotingParams_descriptor,
-        new java.lang.String[] { "VotingPeriod", });
+        new String[] { "VotingPeriod", });
     internal_static_cosmos_gov_v1beta1_TallyParams_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_cosmos_gov_v1beta1_TallyParams_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_TallyParams_descriptor,
-        new java.lang.String[] { "Quorum", "Threshold", "VetoThreshold", });
+        new String[] { "Quorum", "Threshold", "VetoThreshold", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);

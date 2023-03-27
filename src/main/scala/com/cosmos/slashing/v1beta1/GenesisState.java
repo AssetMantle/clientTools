@@ -24,28 +24,28 @@ private static final long serialVersionUID = 0L;
     missedBlocks_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new GenesisState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.slashing.v1beta1.GenesisProto.internal_static_cosmos_slashing_v1beta1_GenesisState_descriptor;
+    return GenesisProto.internal_static_cosmos_slashing_v1beta1_GenesisState_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.slashing.v1beta1.GenesisProto.internal_static_cosmos_slashing_v1beta1_GenesisState_fieldAccessorTable
+    return GenesisProto.internal_static_cosmos_slashing_v1beta1_GenesisState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.slashing.v1beta1.GenesisState.class, com.cosmos.slashing.v1beta1.GenesisState.Builder.class);
+            GenesisState.class, Builder.class);
   }
 
   public static final int PARAMS_FIELD_NUMBER = 1;
-  private com.cosmos.slashing.v1beta1.Params params_;
+  private Params params_;
   /**
    * <pre>
    * params defines all the paramaters of related to deposit.
@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return Whether the params field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasParams() {
     return params_ != null;
   }
@@ -66,9 +66,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  @java.lang.Override
-  public com.cosmos.slashing.v1beta1.Params getParams() {
-    return params_ == null ? com.cosmos.slashing.v1beta1.Params.getDefaultInstance() : params_;
+  @Override
+  public Params getParams() {
+    return params_ == null ? Params.getDefaultInstance() : params_;
   }
   /**
    * <pre>
@@ -77,14 +77,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.slashing.v1beta1.ParamsOrBuilder getParamsOrBuilder() {
-    return params_ == null ? com.cosmos.slashing.v1beta1.Params.getDefaultInstance() : params_;
+  @Override
+  public ParamsOrBuilder getParamsOrBuilder() {
+    return params_ == null ? Params.getDefaultInstance() : params_;
   }
 
   public static final int SIGNING_INFOS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.slashing.v1beta1.SigningInfo> signingInfos_;
+  private java.util.List<SigningInfo> signingInfos_;
   /**
    * <pre>
    * signing_infos represents a map between validator addresses and their
@@ -93,8 +93,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.slashing.v1beta1.SigningInfo> getSigningInfosList() {
+  @Override
+  public java.util.List<SigningInfo> getSigningInfosList() {
     return signingInfos_;
   }
   /**
@@ -105,8 +105,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.slashing.v1beta1.SigningInfoOrBuilder> 
+  @Override
+  public java.util.List<? extends SigningInfoOrBuilder>
       getSigningInfosOrBuilderList() {
     return signingInfos_;
   }
@@ -118,7 +118,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public int getSigningInfosCount() {
     return signingInfos_.size();
   }
@@ -130,8 +130,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
    */
-  @java.lang.Override
-  public com.cosmos.slashing.v1beta1.SigningInfo getSigningInfos(int index) {
+  @Override
+  public SigningInfo getSigningInfos(int index) {
     return signingInfos_.get(index);
   }
   /**
@@ -142,15 +142,15 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
    */
-  @java.lang.Override
-  public com.cosmos.slashing.v1beta1.SigningInfoOrBuilder getSigningInfosOrBuilder(
+  @Override
+  public SigningInfoOrBuilder getSigningInfosOrBuilder(
       int index) {
     return signingInfos_.get(index);
   }
 
   public static final int MISSED_BLOCKS_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.slashing.v1beta1.ValidatorMissedBlocks> missedBlocks_;
+  private java.util.List<ValidatorMissedBlocks> missedBlocks_;
   /**
    * <pre>
    * missed_blocks represents a map between validator addresses and their
@@ -159,8 +159,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.slashing.v1beta1.ValidatorMissedBlocks> getMissedBlocksList() {
+  @Override
+  public java.util.List<ValidatorMissedBlocks> getMissedBlocksList() {
     return missedBlocks_;
   }
   /**
@@ -171,8 +171,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.slashing.v1beta1.ValidatorMissedBlocksOrBuilder> 
+  @Override
+  public java.util.List<? extends ValidatorMissedBlocksOrBuilder>
       getMissedBlocksOrBuilderList() {
     return missedBlocks_;
   }
@@ -184,7 +184,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public int getMissedBlocksCount() {
     return missedBlocks_.size();
   }
@@ -196,8 +196,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  @java.lang.Override
-  public com.cosmos.slashing.v1beta1.ValidatorMissedBlocks getMissedBlocks(int index) {
+  @Override
+  public ValidatorMissedBlocks getMissedBlocks(int index) {
     return missedBlocks_.get(index);
   }
   /**
@@ -208,14 +208,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  @java.lang.Override
-  public com.cosmos.slashing.v1beta1.ValidatorMissedBlocksOrBuilder getMissedBlocksOrBuilder(
+  @Override
+  public ValidatorMissedBlocksOrBuilder getMissedBlocksOrBuilder(
       int index) {
     return missedBlocks_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -225,7 +225,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (params_ != null) {
@@ -240,7 +240,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -263,15 +263,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.slashing.v1beta1.GenesisState)) {
+    if (!(obj instanceof GenesisState)) {
       return super.equals(obj);
     }
-    com.cosmos.slashing.v1beta1.GenesisState other = (com.cosmos.slashing.v1beta1.GenesisState) obj;
+    GenesisState other = (GenesisState) obj;
 
     if (hasParams() != other.hasParams()) return false;
     if (hasParams()) {
@@ -286,7 +286,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -310,69 +310,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.slashing.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseFrom(byte[] data)
+  public static GenesisState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseFrom(java.io.InputStream input)
+  public static GenesisState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseDelimitedFrom(java.io.InputStream input)
+  public static GenesisState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseDelimitedFrom(
+  public static GenesisState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.slashing.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -380,23 +380,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.slashing.v1beta1.GenesisState prototype) {
+  public static Builder newBuilder(GenesisState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -410,18 +410,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.slashing.v1beta1.GenesisState)
-      com.cosmos.slashing.v1beta1.GenesisStateOrBuilder {
+      GenesisStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.slashing.v1beta1.GenesisProto.internal_static_cosmos_slashing_v1beta1_GenesisState_descriptor;
+      return GenesisProto.internal_static_cosmos_slashing_v1beta1_GenesisState_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.slashing.v1beta1.GenesisProto.internal_static_cosmos_slashing_v1beta1_GenesisState_fieldAccessorTable
+      return GenesisProto.internal_static_cosmos_slashing_v1beta1_GenesisState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.slashing.v1beta1.GenesisState.class, com.cosmos.slashing.v1beta1.GenesisState.Builder.class);
+              GenesisState.class, Builder.class);
     }
 
     // Construct using com.cosmos.slashing.v1beta1.GenesisState.newBuilder()
@@ -430,11 +430,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -460,36 +460,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.slashing.v1beta1.GenesisProto.internal_static_cosmos_slashing_v1beta1_GenesisState_descriptor;
+      return GenesisProto.internal_static_cosmos_slashing_v1beta1_GenesisState_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.slashing.v1beta1.GenesisState getDefaultInstanceForType() {
-      return com.cosmos.slashing.v1beta1.GenesisState.getDefaultInstance();
+    @Override
+    public GenesisState getDefaultInstanceForType() {
+      return GenesisState.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.slashing.v1beta1.GenesisState build() {
-      com.cosmos.slashing.v1beta1.GenesisState result = buildPartial();
+    @Override
+    public GenesisState build() {
+      GenesisState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.slashing.v1beta1.GenesisState buildPartial() {
-      com.cosmos.slashing.v1beta1.GenesisState result = new com.cosmos.slashing.v1beta1.GenesisState(this);
+    @Override
+    public GenesisState buildPartial() {
+      GenesisState result = new GenesisState(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.slashing.v1beta1.GenesisState result) {
+    private void buildPartialRepeatedFields(GenesisState result) {
       if (signingInfosBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           signingInfos_ = java.util.Collections.unmodifiableList(signingInfos_);
@@ -510,7 +510,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.slashing.v1beta1.GenesisState result) {
+    private void buildPartial0(GenesisState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.params_ = paramsBuilder_ == null
@@ -519,50 +519,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.slashing.v1beta1.GenesisState) {
-        return mergeFrom((com.cosmos.slashing.v1beta1.GenesisState)other);
+      if (other instanceof GenesisState) {
+        return mergeFrom((GenesisState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.slashing.v1beta1.GenesisState other) {
-      if (other == com.cosmos.slashing.v1beta1.GenesisState.getDefaultInstance()) return this;
+    public Builder mergeFrom(GenesisState other) {
+      if (other == GenesisState.getDefaultInstance()) return this;
       if (other.hasParams()) {
         mergeParams(other.getParams());
       }
@@ -623,18 +623,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -652,9 +652,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              com.cosmos.slashing.v1beta1.SigningInfo m =
+              SigningInfo m =
                   input.readMessage(
-                      com.cosmos.slashing.v1beta1.SigningInfo.parser(),
+                      SigningInfo.parser(),
                       extensionRegistry);
               if (signingInfosBuilder_ == null) {
                 ensureSigningInfosIsMutable();
@@ -665,9 +665,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 18
             case 26: {
-              com.cosmos.slashing.v1beta1.ValidatorMissedBlocks m =
+              ValidatorMissedBlocks m =
                   input.readMessage(
-                      com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.parser(),
+                      ValidatorMissedBlocks.parser(),
                       extensionRegistry);
               if (missedBlocksBuilder_ == null) {
                 ensureMissedBlocksIsMutable();
@@ -694,9 +694,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.cosmos.slashing.v1beta1.Params params_;
+    private Params params_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.slashing.v1beta1.Params, com.cosmos.slashing.v1beta1.Params.Builder, com.cosmos.slashing.v1beta1.ParamsOrBuilder> paramsBuilder_;
+        Params, Params.Builder, ParamsOrBuilder> paramsBuilder_;
     /**
      * <pre>
      * params defines all the paramaters of related to deposit.
@@ -716,9 +716,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      * @return The params.
      */
-    public com.cosmos.slashing.v1beta1.Params getParams() {
+    public Params getParams() {
       if (paramsBuilder_ == null) {
-        return params_ == null ? com.cosmos.slashing.v1beta1.Params.getDefaultInstance() : params_;
+        return params_ == null ? Params.getDefaultInstance() : params_;
       } else {
         return paramsBuilder_.getMessage();
       }
@@ -730,7 +730,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setParams(com.cosmos.slashing.v1beta1.Params value) {
+    public Builder setParams(Params value) {
       if (paramsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -751,7 +751,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
     public Builder setParams(
-        com.cosmos.slashing.v1beta1.Params.Builder builderForValue) {
+        Params.Builder builderForValue) {
       if (paramsBuilder_ == null) {
         params_ = builderForValue.build();
       } else {
@@ -768,11 +768,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeParams(com.cosmos.slashing.v1beta1.Params value) {
+    public Builder mergeParams(Params value) {
       if (paramsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           params_ != null &&
-          params_ != com.cosmos.slashing.v1beta1.Params.getDefaultInstance()) {
+          params_ != Params.getDefaultInstance()) {
           getParamsBuilder().mergeFrom(value);
         } else {
           params_ = value;
@@ -808,7 +808,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.slashing.v1beta1.Params.Builder getParamsBuilder() {
+    public Params.Builder getParamsBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getParamsFieldBuilder().getBuilder();
@@ -820,12 +820,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.slashing.v1beta1.ParamsOrBuilder getParamsOrBuilder() {
+    public ParamsOrBuilder getParamsOrBuilder() {
       if (paramsBuilder_ != null) {
         return paramsBuilder_.getMessageOrBuilder();
       } else {
         return params_ == null ?
-            com.cosmos.slashing.v1beta1.Params.getDefaultInstance() : params_;
+            Params.getDefaultInstance() : params_;
       }
     }
     /**
@@ -836,11 +836,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.slashing.v1beta1.Params, com.cosmos.slashing.v1beta1.Params.Builder, com.cosmos.slashing.v1beta1.ParamsOrBuilder> 
+        Params, Params.Builder, ParamsOrBuilder>
         getParamsFieldBuilder() {
       if (paramsBuilder_ == null) {
         paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.slashing.v1beta1.Params, com.cosmos.slashing.v1beta1.Params.Builder, com.cosmos.slashing.v1beta1.ParamsOrBuilder>(
+            Params, Params.Builder, ParamsOrBuilder>(
                 getParams(),
                 getParentForChildren(),
                 isClean());
@@ -849,17 +849,17 @@ private static final long serialVersionUID = 0L;
       return paramsBuilder_;
     }
 
-    private java.util.List<com.cosmos.slashing.v1beta1.SigningInfo> signingInfos_ =
+    private java.util.List<SigningInfo> signingInfos_ =
       java.util.Collections.emptyList();
     private void ensureSigningInfosIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        signingInfos_ = new java.util.ArrayList<com.cosmos.slashing.v1beta1.SigningInfo>(signingInfos_);
+        signingInfos_ = new java.util.ArrayList<SigningInfo>(signingInfos_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.slashing.v1beta1.SigningInfo, com.cosmos.slashing.v1beta1.SigningInfo.Builder, com.cosmos.slashing.v1beta1.SigningInfoOrBuilder> signingInfosBuilder_;
+        SigningInfo, SigningInfo.Builder, SigningInfoOrBuilder> signingInfosBuilder_;
 
     /**
      * <pre>
@@ -869,7 +869,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
-    public java.util.List<com.cosmos.slashing.v1beta1.SigningInfo> getSigningInfosList() {
+    public java.util.List<SigningInfo> getSigningInfosList() {
       if (signingInfosBuilder_ == null) {
         return java.util.Collections.unmodifiableList(signingInfos_);
       } else {
@@ -899,7 +899,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
-    public com.cosmos.slashing.v1beta1.SigningInfo getSigningInfos(int index) {
+    public SigningInfo getSigningInfos(int index) {
       if (signingInfosBuilder_ == null) {
         return signingInfos_.get(index);
       } else {
@@ -915,7 +915,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
     public Builder setSigningInfos(
-        int index, com.cosmos.slashing.v1beta1.SigningInfo value) {
+        int index, SigningInfo value) {
       if (signingInfosBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -937,7 +937,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
     public Builder setSigningInfos(
-        int index, com.cosmos.slashing.v1beta1.SigningInfo.Builder builderForValue) {
+        int index, SigningInfo.Builder builderForValue) {
       if (signingInfosBuilder_ == null) {
         ensureSigningInfosIsMutable();
         signingInfos_.set(index, builderForValue.build());
@@ -955,7 +955,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
-    public Builder addSigningInfos(com.cosmos.slashing.v1beta1.SigningInfo value) {
+    public Builder addSigningInfos(SigningInfo value) {
       if (signingInfosBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -977,7 +977,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
     public Builder addSigningInfos(
-        int index, com.cosmos.slashing.v1beta1.SigningInfo value) {
+        int index, SigningInfo value) {
       if (signingInfosBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -999,7 +999,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
     public Builder addSigningInfos(
-        com.cosmos.slashing.v1beta1.SigningInfo.Builder builderForValue) {
+        SigningInfo.Builder builderForValue) {
       if (signingInfosBuilder_ == null) {
         ensureSigningInfosIsMutable();
         signingInfos_.add(builderForValue.build());
@@ -1018,7 +1018,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
     public Builder addSigningInfos(
-        int index, com.cosmos.slashing.v1beta1.SigningInfo.Builder builderForValue) {
+        int index, SigningInfo.Builder builderForValue) {
       if (signingInfosBuilder_ == null) {
         ensureSigningInfosIsMutable();
         signingInfos_.add(index, builderForValue.build());
@@ -1037,7 +1037,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
     public Builder addAllSigningInfos(
-        java.lang.Iterable<? extends com.cosmos.slashing.v1beta1.SigningInfo> values) {
+        Iterable<? extends SigningInfo> values) {
       if (signingInfosBuilder_ == null) {
         ensureSigningInfosIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1092,7 +1092,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
-    public com.cosmos.slashing.v1beta1.SigningInfo.Builder getSigningInfosBuilder(
+    public SigningInfo.Builder getSigningInfosBuilder(
         int index) {
       return getSigningInfosFieldBuilder().getBuilder(index);
     }
@@ -1104,7 +1104,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
-    public com.cosmos.slashing.v1beta1.SigningInfoOrBuilder getSigningInfosOrBuilder(
+    public SigningInfoOrBuilder getSigningInfosOrBuilder(
         int index) {
       if (signingInfosBuilder_ == null) {
         return signingInfos_.get(index);  } else {
@@ -1119,7 +1119,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
-    public java.util.List<? extends com.cosmos.slashing.v1beta1.SigningInfoOrBuilder> 
+    public java.util.List<? extends SigningInfoOrBuilder>
          getSigningInfosOrBuilderList() {
       if (signingInfosBuilder_ != null) {
         return signingInfosBuilder_.getMessageOrBuilderList();
@@ -1135,9 +1135,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
-    public com.cosmos.slashing.v1beta1.SigningInfo.Builder addSigningInfosBuilder() {
+    public SigningInfo.Builder addSigningInfosBuilder() {
       return getSigningInfosFieldBuilder().addBuilder(
-          com.cosmos.slashing.v1beta1.SigningInfo.getDefaultInstance());
+          SigningInfo.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1147,10 +1147,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
-    public com.cosmos.slashing.v1beta1.SigningInfo.Builder addSigningInfosBuilder(
+    public SigningInfo.Builder addSigningInfosBuilder(
         int index) {
       return getSigningInfosFieldBuilder().addBuilder(
-          index, com.cosmos.slashing.v1beta1.SigningInfo.getDefaultInstance());
+          index, SigningInfo.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1160,16 +1160,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
      */
-    public java.util.List<com.cosmos.slashing.v1beta1.SigningInfo.Builder> 
+    public java.util.List<SigningInfo.Builder>
          getSigningInfosBuilderList() {
       return getSigningInfosFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.slashing.v1beta1.SigningInfo, com.cosmos.slashing.v1beta1.SigningInfo.Builder, com.cosmos.slashing.v1beta1.SigningInfoOrBuilder> 
+        SigningInfo, SigningInfo.Builder, SigningInfoOrBuilder>
         getSigningInfosFieldBuilder() {
       if (signingInfosBuilder_ == null) {
         signingInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.slashing.v1beta1.SigningInfo, com.cosmos.slashing.v1beta1.SigningInfo.Builder, com.cosmos.slashing.v1beta1.SigningInfoOrBuilder>(
+            SigningInfo, SigningInfo.Builder, SigningInfoOrBuilder>(
                 signingInfos_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1179,17 +1179,17 @@ private static final long serialVersionUID = 0L;
       return signingInfosBuilder_;
     }
 
-    private java.util.List<com.cosmos.slashing.v1beta1.ValidatorMissedBlocks> missedBlocks_ =
+    private java.util.List<ValidatorMissedBlocks> missedBlocks_ =
       java.util.Collections.emptyList();
     private void ensureMissedBlocksIsMutable() {
       if (!((bitField0_ & 0x00000004) != 0)) {
-        missedBlocks_ = new java.util.ArrayList<com.cosmos.slashing.v1beta1.ValidatorMissedBlocks>(missedBlocks_);
+        missedBlocks_ = new java.util.ArrayList<ValidatorMissedBlocks>(missedBlocks_);
         bitField0_ |= 0x00000004;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.slashing.v1beta1.ValidatorMissedBlocks, com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.Builder, com.cosmos.slashing.v1beta1.ValidatorMissedBlocksOrBuilder> missedBlocksBuilder_;
+        ValidatorMissedBlocks, ValidatorMissedBlocks.Builder, ValidatorMissedBlocksOrBuilder> missedBlocksBuilder_;
 
     /**
      * <pre>
@@ -1199,7 +1199,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
-    public java.util.List<com.cosmos.slashing.v1beta1.ValidatorMissedBlocks> getMissedBlocksList() {
+    public java.util.List<ValidatorMissedBlocks> getMissedBlocksList() {
       if (missedBlocksBuilder_ == null) {
         return java.util.Collections.unmodifiableList(missedBlocks_);
       } else {
@@ -1229,7 +1229,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
-    public com.cosmos.slashing.v1beta1.ValidatorMissedBlocks getMissedBlocks(int index) {
+    public ValidatorMissedBlocks getMissedBlocks(int index) {
       if (missedBlocksBuilder_ == null) {
         return missedBlocks_.get(index);
       } else {
@@ -1245,7 +1245,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
     public Builder setMissedBlocks(
-        int index, com.cosmos.slashing.v1beta1.ValidatorMissedBlocks value) {
+        int index, ValidatorMissedBlocks value) {
       if (missedBlocksBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1267,7 +1267,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
     public Builder setMissedBlocks(
-        int index, com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.Builder builderForValue) {
+        int index, ValidatorMissedBlocks.Builder builderForValue) {
       if (missedBlocksBuilder_ == null) {
         ensureMissedBlocksIsMutable();
         missedBlocks_.set(index, builderForValue.build());
@@ -1285,7 +1285,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
-    public Builder addMissedBlocks(com.cosmos.slashing.v1beta1.ValidatorMissedBlocks value) {
+    public Builder addMissedBlocks(ValidatorMissedBlocks value) {
       if (missedBlocksBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1307,7 +1307,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
     public Builder addMissedBlocks(
-        int index, com.cosmos.slashing.v1beta1.ValidatorMissedBlocks value) {
+        int index, ValidatorMissedBlocks value) {
       if (missedBlocksBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1329,7 +1329,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
     public Builder addMissedBlocks(
-        com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.Builder builderForValue) {
+        ValidatorMissedBlocks.Builder builderForValue) {
       if (missedBlocksBuilder_ == null) {
         ensureMissedBlocksIsMutable();
         missedBlocks_.add(builderForValue.build());
@@ -1348,7 +1348,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
     public Builder addMissedBlocks(
-        int index, com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.Builder builderForValue) {
+        int index, ValidatorMissedBlocks.Builder builderForValue) {
       if (missedBlocksBuilder_ == null) {
         ensureMissedBlocksIsMutable();
         missedBlocks_.add(index, builderForValue.build());
@@ -1367,7 +1367,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
     public Builder addAllMissedBlocks(
-        java.lang.Iterable<? extends com.cosmos.slashing.v1beta1.ValidatorMissedBlocks> values) {
+        Iterable<? extends ValidatorMissedBlocks> values) {
       if (missedBlocksBuilder_ == null) {
         ensureMissedBlocksIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1422,7 +1422,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
-    public com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.Builder getMissedBlocksBuilder(
+    public ValidatorMissedBlocks.Builder getMissedBlocksBuilder(
         int index) {
       return getMissedBlocksFieldBuilder().getBuilder(index);
     }
@@ -1434,7 +1434,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
-    public com.cosmos.slashing.v1beta1.ValidatorMissedBlocksOrBuilder getMissedBlocksOrBuilder(
+    public ValidatorMissedBlocksOrBuilder getMissedBlocksOrBuilder(
         int index) {
       if (missedBlocksBuilder_ == null) {
         return missedBlocks_.get(index);  } else {
@@ -1449,7 +1449,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
-    public java.util.List<? extends com.cosmos.slashing.v1beta1.ValidatorMissedBlocksOrBuilder> 
+    public java.util.List<? extends ValidatorMissedBlocksOrBuilder>
          getMissedBlocksOrBuilderList() {
       if (missedBlocksBuilder_ != null) {
         return missedBlocksBuilder_.getMessageOrBuilderList();
@@ -1465,9 +1465,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
-    public com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.Builder addMissedBlocksBuilder() {
+    public ValidatorMissedBlocks.Builder addMissedBlocksBuilder() {
       return getMissedBlocksFieldBuilder().addBuilder(
-          com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.getDefaultInstance());
+          ValidatorMissedBlocks.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1477,10 +1477,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
-    public com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.Builder addMissedBlocksBuilder(
+    public ValidatorMissedBlocks.Builder addMissedBlocksBuilder(
         int index) {
       return getMissedBlocksFieldBuilder().addBuilder(
-          index, com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.getDefaultInstance());
+          index, ValidatorMissedBlocks.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1490,16 +1490,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
      */
-    public java.util.List<com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.Builder> 
+    public java.util.List<ValidatorMissedBlocks.Builder>
          getMissedBlocksBuilderList() {
       return getMissedBlocksFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.slashing.v1beta1.ValidatorMissedBlocks, com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.Builder, com.cosmos.slashing.v1beta1.ValidatorMissedBlocksOrBuilder> 
+        ValidatorMissedBlocks, ValidatorMissedBlocks.Builder, ValidatorMissedBlocksOrBuilder>
         getMissedBlocksFieldBuilder() {
       if (missedBlocksBuilder_ == null) {
         missedBlocksBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.slashing.v1beta1.ValidatorMissedBlocks, com.cosmos.slashing.v1beta1.ValidatorMissedBlocks.Builder, com.cosmos.slashing.v1beta1.ValidatorMissedBlocksOrBuilder>(
+            ValidatorMissedBlocks, ValidatorMissedBlocks.Builder, ValidatorMissedBlocksOrBuilder>(
                 missedBlocks_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
@@ -1508,13 +1508,13 @@ private static final long serialVersionUID = 0L;
       }
       return missedBlocksBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1525,18 +1525,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.slashing.v1beta1.GenesisState)
-  private static final com.cosmos.slashing.v1beta1.GenesisState DEFAULT_INSTANCE;
+  private static final GenesisState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.slashing.v1beta1.GenesisState();
+    DEFAULT_INSTANCE = new GenesisState();
   }
 
-  public static com.cosmos.slashing.v1beta1.GenesisState getDefaultInstance() {
+  public static GenesisState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GenesisState>
       PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-    @java.lang.Override
+    @Override
     public GenesisState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1560,13 +1560,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<GenesisState> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.slashing.v1beta1.GenesisState getDefaultInstanceForType() {
+  @Override
+  public GenesisState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

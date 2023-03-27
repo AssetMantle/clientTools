@@ -25,33 +25,33 @@ private static final long serialVersionUID = 0L;
     entries_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new RedelegationResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_RedelegationResponse_descriptor;
+    return StakingProto.internal_static_cosmos_staking_v1beta1_RedelegationResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_RedelegationResponse_fieldAccessorTable
+    return StakingProto.internal_static_cosmos_staking_v1beta1_RedelegationResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.staking.v1beta1.RedelegationResponse.class, com.cosmos.staking.v1beta1.RedelegationResponse.Builder.class);
+            RedelegationResponse.class, Builder.class);
   }
 
   public static final int REDELEGATION_FIELD_NUMBER = 1;
-  private com.cosmos.staking.v1beta1.Redelegation redelegation_;
+  private Redelegation redelegation_;
   /**
    * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
    * @return Whether the redelegation field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasRedelegation() {
     return redelegation_ != null;
   }
@@ -59,61 +59,61 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
    * @return The redelegation.
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.Redelegation getRedelegation() {
-    return redelegation_ == null ? com.cosmos.staking.v1beta1.Redelegation.getDefaultInstance() : redelegation_;
+  @Override
+  public Redelegation getRedelegation() {
+    return redelegation_ == null ? Redelegation.getDefaultInstance() : redelegation_;
   }
   /**
    * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.RedelegationOrBuilder getRedelegationOrBuilder() {
-    return redelegation_ == null ? com.cosmos.staking.v1beta1.Redelegation.getDefaultInstance() : redelegation_;
+  @Override
+  public RedelegationOrBuilder getRedelegationOrBuilder() {
+    return redelegation_ == null ? Redelegation.getDefaultInstance() : redelegation_;
   }
 
   public static final int ENTRIES_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.staking.v1beta1.RedelegationEntryResponse> entries_;
+  private java.util.List<RedelegationEntryResponse> entries_;
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.staking.v1beta1.RedelegationEntryResponse> getEntriesList() {
+  @Override
+  public java.util.List<RedelegationEntryResponse> getEntriesList() {
     return entries_;
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.staking.v1beta1.RedelegationEntryResponseOrBuilder> 
+  @Override
+  public java.util.List<? extends RedelegationEntryResponseOrBuilder>
       getEntriesOrBuilderList() {
     return entries_;
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getEntriesCount() {
     return entries_.size();
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.RedelegationEntryResponse getEntries(int index) {
+  @Override
+  public RedelegationEntryResponse getEntries(int index) {
     return entries_.get(index);
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.RedelegationEntryResponseOrBuilder getEntriesOrBuilder(
+  @Override
+  public RedelegationEntryResponseOrBuilder getEntriesOrBuilder(
       int index) {
     return entries_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -123,7 +123,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (redelegation_ != null) {
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -154,15 +154,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.staking.v1beta1.RedelegationResponse)) {
+    if (!(obj instanceof RedelegationResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.staking.v1beta1.RedelegationResponse other = (com.cosmos.staking.v1beta1.RedelegationResponse) obj;
+    RedelegationResponse other = (RedelegationResponse) obj;
 
     if (hasRedelegation() != other.hasRedelegation()) return false;
     if (hasRedelegation()) {
@@ -175,7 +175,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -195,69 +195,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseFrom(
+  public static RedelegationResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseFrom(
+  public static RedelegationResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseFrom(
+  public static RedelegationResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseFrom(
+  public static RedelegationResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseFrom(byte[] data)
+  public static RedelegationResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseFrom(
+  public static RedelegationResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseFrom(java.io.InputStream input)
+  public static RedelegationResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseFrom(
+  public static RedelegationResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseDelimitedFrom(java.io.InputStream input)
+  public static RedelegationResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseDelimitedFrom(
+  public static RedelegationResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseFrom(
+  public static RedelegationResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.RedelegationResponse parseFrom(
+  public static RedelegationResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -265,23 +265,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.staking.v1beta1.RedelegationResponse prototype) {
+  public static Builder newBuilder(RedelegationResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -297,18 +297,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.RedelegationResponse)
-      com.cosmos.staking.v1beta1.RedelegationResponseOrBuilder {
+      RedelegationResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_RedelegationResponse_descriptor;
+      return StakingProto.internal_static_cosmos_staking_v1beta1_RedelegationResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_RedelegationResponse_fieldAccessorTable
+      return StakingProto.internal_static_cosmos_staking_v1beta1_RedelegationResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.staking.v1beta1.RedelegationResponse.class, com.cosmos.staking.v1beta1.RedelegationResponse.Builder.class);
+              RedelegationResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.RedelegationResponse.newBuilder()
@@ -317,11 +317,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -340,36 +340,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_RedelegationResponse_descriptor;
+      return StakingProto.internal_static_cosmos_staking_v1beta1_RedelegationResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.RedelegationResponse getDefaultInstanceForType() {
-      return com.cosmos.staking.v1beta1.RedelegationResponse.getDefaultInstance();
+    @Override
+    public RedelegationResponse getDefaultInstanceForType() {
+      return RedelegationResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.RedelegationResponse build() {
-      com.cosmos.staking.v1beta1.RedelegationResponse result = buildPartial();
+    @Override
+    public RedelegationResponse build() {
+      RedelegationResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.RedelegationResponse buildPartial() {
-      com.cosmos.staking.v1beta1.RedelegationResponse result = new com.cosmos.staking.v1beta1.RedelegationResponse(this);
+    @Override
+    public RedelegationResponse buildPartial() {
+      RedelegationResponse result = new RedelegationResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.staking.v1beta1.RedelegationResponse result) {
+    private void buildPartialRepeatedFields(RedelegationResponse result) {
       if (entriesBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           entries_ = java.util.Collections.unmodifiableList(entries_);
@@ -381,7 +381,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.staking.v1beta1.RedelegationResponse result) {
+    private void buildPartial0(RedelegationResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.redelegation_ = redelegationBuilder_ == null
@@ -390,50 +390,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.staking.v1beta1.RedelegationResponse) {
-        return mergeFrom((com.cosmos.staking.v1beta1.RedelegationResponse)other);
+      if (other instanceof RedelegationResponse) {
+        return mergeFrom((RedelegationResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.staking.v1beta1.RedelegationResponse other) {
-      if (other == com.cosmos.staking.v1beta1.RedelegationResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(RedelegationResponse other) {
+      if (other == RedelegationResponse.getDefaultInstance()) return this;
       if (other.hasRedelegation()) {
         mergeRedelegation(other.getRedelegation());
       }
@@ -468,18 +468,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -497,9 +497,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              com.cosmos.staking.v1beta1.RedelegationEntryResponse m =
+              RedelegationEntryResponse m =
                   input.readMessage(
-                      com.cosmos.staking.v1beta1.RedelegationEntryResponse.parser(),
+                      RedelegationEntryResponse.parser(),
                       extensionRegistry);
               if (entriesBuilder_ == null) {
                 ensureEntriesIsMutable();
@@ -526,9 +526,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.cosmos.staking.v1beta1.Redelegation redelegation_;
+    private Redelegation redelegation_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Redelegation, com.cosmos.staking.v1beta1.Redelegation.Builder, com.cosmos.staking.v1beta1.RedelegationOrBuilder> redelegationBuilder_;
+        Redelegation, Redelegation.Builder, RedelegationOrBuilder> redelegationBuilder_;
     /**
      * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
      * @return Whether the redelegation field is set.
@@ -540,9 +540,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
      * @return The redelegation.
      */
-    public com.cosmos.staking.v1beta1.Redelegation getRedelegation() {
+    public Redelegation getRedelegation() {
       if (redelegationBuilder_ == null) {
-        return redelegation_ == null ? com.cosmos.staking.v1beta1.Redelegation.getDefaultInstance() : redelegation_;
+        return redelegation_ == null ? Redelegation.getDefaultInstance() : redelegation_;
       } else {
         return redelegationBuilder_.getMessage();
       }
@@ -550,7 +550,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setRedelegation(com.cosmos.staking.v1beta1.Redelegation value) {
+    public Builder setRedelegation(Redelegation value) {
       if (redelegationBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -567,7 +567,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
      */
     public Builder setRedelegation(
-        com.cosmos.staking.v1beta1.Redelegation.Builder builderForValue) {
+        Redelegation.Builder builderForValue) {
       if (redelegationBuilder_ == null) {
         redelegation_ = builderForValue.build();
       } else {
@@ -580,11 +580,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeRedelegation(com.cosmos.staking.v1beta1.Redelegation value) {
+    public Builder mergeRedelegation(Redelegation value) {
       if (redelegationBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           redelegation_ != null &&
-          redelegation_ != com.cosmos.staking.v1beta1.Redelegation.getDefaultInstance()) {
+          redelegation_ != Redelegation.getDefaultInstance()) {
           getRedelegationBuilder().mergeFrom(value);
         } else {
           redelegation_ = value;
@@ -612,7 +612,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Redelegation.Builder getRedelegationBuilder() {
+    public Redelegation.Builder getRedelegationBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getRedelegationFieldBuilder().getBuilder();
@@ -620,23 +620,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.RedelegationOrBuilder getRedelegationOrBuilder() {
+    public RedelegationOrBuilder getRedelegationOrBuilder() {
       if (redelegationBuilder_ != null) {
         return redelegationBuilder_.getMessageOrBuilder();
       } else {
         return redelegation_ == null ?
-            com.cosmos.staking.v1beta1.Redelegation.getDefaultInstance() : redelegation_;
+            Redelegation.getDefaultInstance() : redelegation_;
       }
     }
     /**
      * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Redelegation, com.cosmos.staking.v1beta1.Redelegation.Builder, com.cosmos.staking.v1beta1.RedelegationOrBuilder> 
+        Redelegation, Redelegation.Builder, RedelegationOrBuilder>
         getRedelegationFieldBuilder() {
       if (redelegationBuilder_ == null) {
         redelegationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.staking.v1beta1.Redelegation, com.cosmos.staking.v1beta1.Redelegation.Builder, com.cosmos.staking.v1beta1.RedelegationOrBuilder>(
+            Redelegation, Redelegation.Builder, RedelegationOrBuilder>(
                 getRedelegation(),
                 getParentForChildren(),
                 isClean());
@@ -645,22 +645,22 @@ private static final long serialVersionUID = 0L;
       return redelegationBuilder_;
     }
 
-    private java.util.List<com.cosmos.staking.v1beta1.RedelegationEntryResponse> entries_ =
+    private java.util.List<RedelegationEntryResponse> entries_ =
       java.util.Collections.emptyList();
     private void ensureEntriesIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        entries_ = new java.util.ArrayList<com.cosmos.staking.v1beta1.RedelegationEntryResponse>(entries_);
+        entries_ = new java.util.ArrayList<RedelegationEntryResponse>(entries_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.RedelegationEntryResponse, com.cosmos.staking.v1beta1.RedelegationEntryResponse.Builder, com.cosmos.staking.v1beta1.RedelegationEntryResponseOrBuilder> entriesBuilder_;
+        RedelegationEntryResponse, RedelegationEntryResponse.Builder, RedelegationEntryResponseOrBuilder> entriesBuilder_;
 
     /**
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.RedelegationEntryResponse> getEntriesList() {
+    public java.util.List<RedelegationEntryResponse> getEntriesList() {
       if (entriesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(entries_);
       } else {
@@ -680,7 +680,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.RedelegationEntryResponse getEntries(int index) {
+    public RedelegationEntryResponse getEntries(int index) {
       if (entriesBuilder_ == null) {
         return entries_.get(index);
       } else {
@@ -691,7 +691,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
     public Builder setEntries(
-        int index, com.cosmos.staking.v1beta1.RedelegationEntryResponse value) {
+        int index, RedelegationEntryResponse value) {
       if (entriesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -708,7 +708,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
     public Builder setEntries(
-        int index, com.cosmos.staking.v1beta1.RedelegationEntryResponse.Builder builderForValue) {
+        int index, RedelegationEntryResponse.Builder builderForValue) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         entries_.set(index, builderForValue.build());
@@ -721,7 +721,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addEntries(com.cosmos.staking.v1beta1.RedelegationEntryResponse value) {
+    public Builder addEntries(RedelegationEntryResponse value) {
       if (entriesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -738,7 +738,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
     public Builder addEntries(
-        int index, com.cosmos.staking.v1beta1.RedelegationEntryResponse value) {
+        int index, RedelegationEntryResponse value) {
       if (entriesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -755,7 +755,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
     public Builder addEntries(
-        com.cosmos.staking.v1beta1.RedelegationEntryResponse.Builder builderForValue) {
+        RedelegationEntryResponse.Builder builderForValue) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         entries_.add(builderForValue.build());
@@ -769,7 +769,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
     public Builder addEntries(
-        int index, com.cosmos.staking.v1beta1.RedelegationEntryResponse.Builder builderForValue) {
+        int index, RedelegationEntryResponse.Builder builderForValue) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         entries_.add(index, builderForValue.build());
@@ -783,7 +783,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllEntries(
-        java.lang.Iterable<? extends com.cosmos.staking.v1beta1.RedelegationEntryResponse> values) {
+        Iterable<? extends RedelegationEntryResponse> values) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -823,14 +823,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.RedelegationEntryResponse.Builder getEntriesBuilder(
+    public RedelegationEntryResponse.Builder getEntriesBuilder(
         int index) {
       return getEntriesFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.RedelegationEntryResponseOrBuilder getEntriesOrBuilder(
+    public RedelegationEntryResponseOrBuilder getEntriesOrBuilder(
         int index) {
       if (entriesBuilder_ == null) {
         return entries_.get(index);  } else {
@@ -840,7 +840,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.cosmos.staking.v1beta1.RedelegationEntryResponseOrBuilder> 
+    public java.util.List<? extends RedelegationEntryResponseOrBuilder>
          getEntriesOrBuilderList() {
       if (entriesBuilder_ != null) {
         return entriesBuilder_.getMessageOrBuilderList();
@@ -851,31 +851,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.RedelegationEntryResponse.Builder addEntriesBuilder() {
+    public RedelegationEntryResponse.Builder addEntriesBuilder() {
       return getEntriesFieldBuilder().addBuilder(
-          com.cosmos.staking.v1beta1.RedelegationEntryResponse.getDefaultInstance());
+          RedelegationEntryResponse.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.RedelegationEntryResponse.Builder addEntriesBuilder(
+    public RedelegationEntryResponse.Builder addEntriesBuilder(
         int index) {
       return getEntriesFieldBuilder().addBuilder(
-          index, com.cosmos.staking.v1beta1.RedelegationEntryResponse.getDefaultInstance());
+          index, RedelegationEntryResponse.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.RedelegationEntryResponse.Builder> 
+    public java.util.List<RedelegationEntryResponse.Builder>
          getEntriesBuilderList() {
       return getEntriesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.RedelegationEntryResponse, com.cosmos.staking.v1beta1.RedelegationEntryResponse.Builder, com.cosmos.staking.v1beta1.RedelegationEntryResponseOrBuilder> 
+        RedelegationEntryResponse, RedelegationEntryResponse.Builder, RedelegationEntryResponseOrBuilder>
         getEntriesFieldBuilder() {
       if (entriesBuilder_ == null) {
         entriesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.staking.v1beta1.RedelegationEntryResponse, com.cosmos.staking.v1beta1.RedelegationEntryResponse.Builder, com.cosmos.staking.v1beta1.RedelegationEntryResponseOrBuilder>(
+            RedelegationEntryResponse, RedelegationEntryResponse.Builder, RedelegationEntryResponseOrBuilder>(
                 entries_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -884,13 +884,13 @@ private static final long serialVersionUID = 0L;
       }
       return entriesBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -901,18 +901,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.RedelegationResponse)
-  private static final com.cosmos.staking.v1beta1.RedelegationResponse DEFAULT_INSTANCE;
+  private static final RedelegationResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.RedelegationResponse();
+    DEFAULT_INSTANCE = new RedelegationResponse();
   }
 
-  public static com.cosmos.staking.v1beta1.RedelegationResponse getDefaultInstance() {
+  public static RedelegationResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<RedelegationResponse>
       PARSER = new com.google.protobuf.AbstractParser<RedelegationResponse>() {
-    @java.lang.Override
+    @Override
     public RedelegationResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -936,13 +936,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<RedelegationResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.RedelegationResponse getDefaultInstanceForType() {
+  @Override
+  public RedelegationResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -15,7 +15,7 @@ public interface GenericAuthorizationOrBuilder extends
    * <code>string msg = 1 [json_name = "msg"];</code>
    * @return The msg.
    */
-  java.lang.String getMsg();
+  String getMsg();
   /**
    * <pre>
    * Msg, identified by it's type URL, to grant unrestricted permissions to execute

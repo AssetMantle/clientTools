@@ -16,12 +16,12 @@ public interface LastCommitInfoOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.VoteInfo votes = 2 [json_name = "votes", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.tendermint.abci.VoteInfo> 
+  java.util.List<VoteInfo>
       getVotesList();
   /**
    * <code>repeated .tendermint.abci.VoteInfo votes = 2 [json_name = "votes", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.abci.VoteInfo getVotes(int index);
+  VoteInfo getVotes(int index);
   /**
    * <code>repeated .tendermint.abci.VoteInfo votes = 2 [json_name = "votes", (.gogoproto.nullable) = false];</code>
    */
@@ -29,11 +29,11 @@ public interface LastCommitInfoOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.VoteInfo votes = 2 [json_name = "votes", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.tendermint.abci.VoteInfoOrBuilder> 
+  java.util.List<? extends VoteInfoOrBuilder>
       getVotesOrBuilderList();
   /**
    * <code>repeated .tendermint.abci.VoteInfo votes = 2 [json_name = "votes", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.abci.VoteInfoOrBuilder getVotesOrBuilder(
+  VoteInfoOrBuilder getVotesOrBuilder(
       int index);
 }

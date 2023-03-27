@@ -11,7 +11,7 @@ public interface GenesisStateOrBuilder extends
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The portId.
    */
-  java.lang.String getPortId();
+  String getPortId();
   /**
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The bytes for portId.
@@ -22,12 +22,12 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.applications.transfer.v1.DenomTrace denom_traces = 2 [json_name = "denomTraces", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"denom_traces&#92;"", (.gogoproto.castrepeated) = "Traces"];</code>
    */
-  java.util.List<com.ibc.applications.transfer.v1.DenomTrace> 
+  java.util.List<DenomTrace>
       getDenomTracesList();
   /**
    * <code>repeated .ibc.applications.transfer.v1.DenomTrace denom_traces = 2 [json_name = "denomTraces", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"denom_traces&#92;"", (.gogoproto.castrepeated) = "Traces"];</code>
    */
-  com.ibc.applications.transfer.v1.DenomTrace getDenomTraces(int index);
+  DenomTrace getDenomTraces(int index);
   /**
    * <code>repeated .ibc.applications.transfer.v1.DenomTrace denom_traces = 2 [json_name = "denomTraces", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"denom_traces&#92;"", (.gogoproto.castrepeated) = "Traces"];</code>
    */
@@ -35,12 +35,12 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.applications.transfer.v1.DenomTrace denom_traces = 2 [json_name = "denomTraces", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"denom_traces&#92;"", (.gogoproto.castrepeated) = "Traces"];</code>
    */
-  java.util.List<? extends com.ibc.applications.transfer.v1.DenomTraceOrBuilder> 
+  java.util.List<? extends DenomTraceOrBuilder>
       getDenomTracesOrBuilderList();
   /**
    * <code>repeated .ibc.applications.transfer.v1.DenomTrace denom_traces = 2 [json_name = "denomTraces", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"denom_traces&#92;"", (.gogoproto.castrepeated) = "Traces"];</code>
    */
-  com.ibc.applications.transfer.v1.DenomTraceOrBuilder getDenomTracesOrBuilder(
+  DenomTraceOrBuilder getDenomTracesOrBuilder(
       int index);
 
   /**
@@ -52,9 +52,9 @@ public interface GenesisStateOrBuilder extends
    * <code>.ibc.applications.transfer.v1.Params params = 3 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  com.ibc.applications.transfer.v1.Params getParams();
+  Params getParams();
   /**
    * <code>.ibc.applications.transfer.v1.Params params = 3 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  com.ibc.applications.transfer.v1.ParamsOrBuilder getParamsOrBuilder();
+  ParamsOrBuilder getParamsOrBuilder();
 }

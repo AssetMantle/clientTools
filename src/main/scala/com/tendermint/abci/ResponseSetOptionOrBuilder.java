@@ -21,7 +21,7 @@ public interface ResponseSetOptionOrBuilder extends
    * <code>string log = 3 [json_name = "log"];</code>
    * @return The log.
    */
-  java.lang.String getLog();
+  String getLog();
   /**
    * <pre>
    * bytes data = 2;
@@ -37,7 +37,7 @@ public interface ResponseSetOptionOrBuilder extends
    * <code>string info = 4 [json_name = "info"];</code>
    * @return The info.
    */
-  java.lang.String getInfo();
+  String getInfo();
   /**
    * <code>string info = 4 [json_name = "info"];</code>
    * @return The bytes for info.

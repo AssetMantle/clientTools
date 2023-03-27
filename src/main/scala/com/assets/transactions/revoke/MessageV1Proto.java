@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n<modules/assets/internal/transactions/r" +
       "evoke/message.v1.proto\022\032assets.transacti" +
       "ons.revoke\032#schema/ids/base/identityID.v" +
@@ -56,7 +56,7 @@ public final class MessageV1Proto {
     internal_static_assets_transactions_revoke_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_assets_transactions_revoke_Message_descriptor,
-        new java.lang.String[] { "From", "FromID", "ToID", "ClassificationID", });
+        new String[] { "From", "FromID", "ToID", "ClassificationID", });
     com.ids.IdentityIDV1Proto.getDescriptor();
     com.ids.ClassificationIDV1Proto.getDescriptor();
   }

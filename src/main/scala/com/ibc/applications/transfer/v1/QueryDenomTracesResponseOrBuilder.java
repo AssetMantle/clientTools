@@ -14,7 +14,7 @@ public interface QueryDenomTracesResponseOrBuilder extends
    *
    * <code>repeated .ibc.applications.transfer.v1.DenomTrace denom_traces = 1 [json_name = "denomTraces", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Traces"];</code>
    */
-  java.util.List<com.ibc.applications.transfer.v1.DenomTrace> 
+  java.util.List<DenomTrace>
       getDenomTracesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryDenomTracesResponseOrBuilder extends
    *
    * <code>repeated .ibc.applications.transfer.v1.DenomTrace denom_traces = 1 [json_name = "denomTraces", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Traces"];</code>
    */
-  com.ibc.applications.transfer.v1.DenomTrace getDenomTraces(int index);
+  DenomTrace getDenomTraces(int index);
   /**
    * <pre>
    * denom_traces returns all denominations trace information.
@@ -39,7 +39,7 @@ public interface QueryDenomTracesResponseOrBuilder extends
    *
    * <code>repeated .ibc.applications.transfer.v1.DenomTrace denom_traces = 1 [json_name = "denomTraces", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Traces"];</code>
    */
-  java.util.List<? extends com.ibc.applications.transfer.v1.DenomTraceOrBuilder> 
+  java.util.List<? extends DenomTraceOrBuilder>
       getDenomTracesOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryDenomTracesResponseOrBuilder extends
    *
    * <code>repeated .ibc.applications.transfer.v1.DenomTrace denom_traces = 1 [json_name = "denomTraces", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Traces"];</code>
    */
-  com.ibc.applications.transfer.v1.DenomTraceOrBuilder getDenomTracesOrBuilder(
+  DenomTraceOrBuilder getDenomTracesOrBuilder(
       int index);
 
   /**

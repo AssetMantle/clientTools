@@ -15,7 +15,7 @@ public interface QueryEscrowAddressResponseOrBuilder extends
    * <code>string escrow_address = 1 [json_name = "escrowAddress"];</code>
    * @return The escrowAddress.
    */
-  java.lang.String getEscrowAddress();
+  String getEscrowAddress();
   /**
    * <pre>
    * the escrow account address

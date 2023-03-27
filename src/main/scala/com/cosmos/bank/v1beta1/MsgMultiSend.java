@@ -24,110 +24,110 @@ private static final long serialVersionUID = 0L;
     outputs_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgMultiSend();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.bank.v1beta1.TxProto.internal_static_cosmos_bank_v1beta1_MsgMultiSend_descriptor;
+    return TxProto.internal_static_cosmos_bank_v1beta1_MsgMultiSend_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.bank.v1beta1.TxProto.internal_static_cosmos_bank_v1beta1_MsgMultiSend_fieldAccessorTable
+    return TxProto.internal_static_cosmos_bank_v1beta1_MsgMultiSend_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.bank.v1beta1.MsgMultiSend.class, com.cosmos.bank.v1beta1.MsgMultiSend.Builder.class);
+            MsgMultiSend.class, Builder.class);
   }
 
   public static final int INPUTS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.bank.v1beta1.Input> inputs_;
+  private java.util.List<Input> inputs_;
   /**
    * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.bank.v1beta1.Input> getInputsList() {
+  @Override
+  public java.util.List<Input> getInputsList() {
     return inputs_;
   }
   /**
    * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.bank.v1beta1.InputOrBuilder> 
+  @Override
+  public java.util.List<? extends InputOrBuilder>
       getInputsOrBuilderList() {
     return inputs_;
   }
   /**
    * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getInputsCount() {
     return inputs_.size();
   }
   /**
    * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.bank.v1beta1.Input getInputs(int index) {
+  @Override
+  public Input getInputs(int index) {
     return inputs_.get(index);
   }
   /**
    * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.bank.v1beta1.InputOrBuilder getInputsOrBuilder(
+  @Override
+  public InputOrBuilder getInputsOrBuilder(
       int index) {
     return inputs_.get(index);
   }
 
   public static final int OUTPUTS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.bank.v1beta1.Output> outputs_;
+  private java.util.List<Output> outputs_;
   /**
    * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.bank.v1beta1.Output> getOutputsList() {
+  @Override
+  public java.util.List<Output> getOutputsList() {
     return outputs_;
   }
   /**
    * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.bank.v1beta1.OutputOrBuilder> 
+  @Override
+  public java.util.List<? extends OutputOrBuilder>
       getOutputsOrBuilderList() {
     return outputs_;
   }
   /**
    * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getOutputsCount() {
     return outputs_.size();
   }
   /**
    * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.bank.v1beta1.Output getOutputs(int index) {
+  @Override
+  public Output getOutputs(int index) {
     return outputs_.get(index);
   }
   /**
    * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.bank.v1beta1.OutputOrBuilder getOutputsOrBuilder(
+  @Override
+  public OutputOrBuilder getOutputsOrBuilder(
       int index) {
     return outputs_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -137,7 +137,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < inputs_.size(); i++) {
@@ -149,7 +149,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -168,15 +168,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.bank.v1beta1.MsgMultiSend)) {
+    if (!(obj instanceof MsgMultiSend)) {
       return super.equals(obj);
     }
-    com.cosmos.bank.v1beta1.MsgMultiSend other = (com.cosmos.bank.v1beta1.MsgMultiSend) obj;
+    MsgMultiSend other = (MsgMultiSend) obj;
 
     if (!getInputsList()
         .equals(other.getInputsList())) return false;
@@ -186,7 +186,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -206,69 +206,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseFrom(
+  public static MsgMultiSend parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseFrom(
+  public static MsgMultiSend parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseFrom(
+  public static MsgMultiSend parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseFrom(
+  public static MsgMultiSend parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseFrom(byte[] data)
+  public static MsgMultiSend parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseFrom(
+  public static MsgMultiSend parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseFrom(java.io.InputStream input)
+  public static MsgMultiSend parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseFrom(
+  public static MsgMultiSend parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseDelimitedFrom(java.io.InputStream input)
+  public static MsgMultiSend parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseDelimitedFrom(
+  public static MsgMultiSend parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseFrom(
+  public static MsgMultiSend parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.MsgMultiSend parseFrom(
+  public static MsgMultiSend parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -276,23 +276,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.bank.v1beta1.MsgMultiSend prototype) {
+  public static Builder newBuilder(MsgMultiSend prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -306,18 +306,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.bank.v1beta1.MsgMultiSend)
-      com.cosmos.bank.v1beta1.MsgMultiSendOrBuilder {
+      MsgMultiSendOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.bank.v1beta1.TxProto.internal_static_cosmos_bank_v1beta1_MsgMultiSend_descriptor;
+      return TxProto.internal_static_cosmos_bank_v1beta1_MsgMultiSend_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.bank.v1beta1.TxProto.internal_static_cosmos_bank_v1beta1_MsgMultiSend_fieldAccessorTable
+      return TxProto.internal_static_cosmos_bank_v1beta1_MsgMultiSend_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.bank.v1beta1.MsgMultiSend.class, com.cosmos.bank.v1beta1.MsgMultiSend.Builder.class);
+              MsgMultiSend.class, Builder.class);
     }
 
     // Construct using com.cosmos.bank.v1beta1.MsgMultiSend.newBuilder()
@@ -326,11 +326,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -351,36 +351,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.bank.v1beta1.TxProto.internal_static_cosmos_bank_v1beta1_MsgMultiSend_descriptor;
+      return TxProto.internal_static_cosmos_bank_v1beta1_MsgMultiSend_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.MsgMultiSend getDefaultInstanceForType() {
-      return com.cosmos.bank.v1beta1.MsgMultiSend.getDefaultInstance();
+    @Override
+    public MsgMultiSend getDefaultInstanceForType() {
+      return MsgMultiSend.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.MsgMultiSend build() {
-      com.cosmos.bank.v1beta1.MsgMultiSend result = buildPartial();
+    @Override
+    public MsgMultiSend build() {
+      MsgMultiSend result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.MsgMultiSend buildPartial() {
-      com.cosmos.bank.v1beta1.MsgMultiSend result = new com.cosmos.bank.v1beta1.MsgMultiSend(this);
+    @Override
+    public MsgMultiSend buildPartial() {
+      MsgMultiSend result = new MsgMultiSend(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.bank.v1beta1.MsgMultiSend result) {
+    private void buildPartialRepeatedFields(MsgMultiSend result) {
       if (inputsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           inputs_ = java.util.Collections.unmodifiableList(inputs_);
@@ -401,54 +401,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.bank.v1beta1.MsgMultiSend result) {
+    private void buildPartial0(MsgMultiSend result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.bank.v1beta1.MsgMultiSend) {
-        return mergeFrom((com.cosmos.bank.v1beta1.MsgMultiSend)other);
+      if (other instanceof MsgMultiSend) {
+        return mergeFrom((MsgMultiSend)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.bank.v1beta1.MsgMultiSend other) {
-      if (other == com.cosmos.bank.v1beta1.MsgMultiSend.getDefaultInstance()) return this;
+    public Builder mergeFrom(MsgMultiSend other) {
+      if (other == MsgMultiSend.getDefaultInstance()) return this;
       if (inputsBuilder_ == null) {
         if (!other.inputs_.isEmpty()) {
           if (inputs_.isEmpty()) {
@@ -506,18 +506,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -528,9 +528,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.cosmos.bank.v1beta1.Input m =
+              Input m =
                   input.readMessage(
-                      com.cosmos.bank.v1beta1.Input.parser(),
+                      Input.parser(),
                       extensionRegistry);
               if (inputsBuilder_ == null) {
                 ensureInputsIsMutable();
@@ -541,9 +541,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              com.cosmos.bank.v1beta1.Output m =
+              Output m =
                   input.readMessage(
-                      com.cosmos.bank.v1beta1.Output.parser(),
+                      Output.parser(),
                       extensionRegistry);
               if (outputsBuilder_ == null) {
                 ensureOutputsIsMutable();
@@ -570,22 +570,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.cosmos.bank.v1beta1.Input> inputs_ =
+    private java.util.List<Input> inputs_ =
       java.util.Collections.emptyList();
     private void ensureInputsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        inputs_ = new java.util.ArrayList<com.cosmos.bank.v1beta1.Input>(inputs_);
+        inputs_ = new java.util.ArrayList<Input>(inputs_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.bank.v1beta1.Input, com.cosmos.bank.v1beta1.Input.Builder, com.cosmos.bank.v1beta1.InputOrBuilder> inputsBuilder_;
+        Input, Input.Builder, InputOrBuilder> inputsBuilder_;
 
     /**
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.bank.v1beta1.Input> getInputsList() {
+    public java.util.List<Input> getInputsList() {
       if (inputsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(inputs_);
       } else {
@@ -605,7 +605,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.bank.v1beta1.Input getInputs(int index) {
+    public Input getInputs(int index) {
       if (inputsBuilder_ == null) {
         return inputs_.get(index);
       } else {
@@ -616,7 +616,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder setInputs(
-        int index, com.cosmos.bank.v1beta1.Input value) {
+        int index, Input value) {
       if (inputsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -633,7 +633,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder setInputs(
-        int index, com.cosmos.bank.v1beta1.Input.Builder builderForValue) {
+        int index, Input.Builder builderForValue) {
       if (inputsBuilder_ == null) {
         ensureInputsIsMutable();
         inputs_.set(index, builderForValue.build());
@@ -646,7 +646,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addInputs(com.cosmos.bank.v1beta1.Input value) {
+    public Builder addInputs(Input value) {
       if (inputsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -663,7 +663,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addInputs(
-        int index, com.cosmos.bank.v1beta1.Input value) {
+        int index, Input value) {
       if (inputsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -680,7 +680,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addInputs(
-        com.cosmos.bank.v1beta1.Input.Builder builderForValue) {
+        Input.Builder builderForValue) {
       if (inputsBuilder_ == null) {
         ensureInputsIsMutable();
         inputs_.add(builderForValue.build());
@@ -694,7 +694,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addInputs(
-        int index, com.cosmos.bank.v1beta1.Input.Builder builderForValue) {
+        int index, Input.Builder builderForValue) {
       if (inputsBuilder_ == null) {
         ensureInputsIsMutable();
         inputs_.add(index, builderForValue.build());
@@ -708,7 +708,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllInputs(
-        java.lang.Iterable<? extends com.cosmos.bank.v1beta1.Input> values) {
+        Iterable<? extends Input> values) {
       if (inputsBuilder_ == null) {
         ensureInputsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -748,14 +748,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.bank.v1beta1.Input.Builder getInputsBuilder(
+    public Input.Builder getInputsBuilder(
         int index) {
       return getInputsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.bank.v1beta1.InputOrBuilder getInputsOrBuilder(
+    public InputOrBuilder getInputsOrBuilder(
         int index) {
       if (inputsBuilder_ == null) {
         return inputs_.get(index);  } else {
@@ -765,7 +765,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.cosmos.bank.v1beta1.InputOrBuilder> 
+    public java.util.List<? extends InputOrBuilder>
          getInputsOrBuilderList() {
       if (inputsBuilder_ != null) {
         return inputsBuilder_.getMessageOrBuilderList();
@@ -776,31 +776,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.bank.v1beta1.Input.Builder addInputsBuilder() {
+    public Input.Builder addInputsBuilder() {
       return getInputsFieldBuilder().addBuilder(
-          com.cosmos.bank.v1beta1.Input.getDefaultInstance());
+          Input.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.bank.v1beta1.Input.Builder addInputsBuilder(
+    public Input.Builder addInputsBuilder(
         int index) {
       return getInputsFieldBuilder().addBuilder(
-          index, com.cosmos.bank.v1beta1.Input.getDefaultInstance());
+          index, Input.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.bank.v1beta1.Input.Builder> 
+    public java.util.List<Input.Builder>
          getInputsBuilderList() {
       return getInputsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.bank.v1beta1.Input, com.cosmos.bank.v1beta1.Input.Builder, com.cosmos.bank.v1beta1.InputOrBuilder> 
+        Input, Input.Builder, InputOrBuilder>
         getInputsFieldBuilder() {
       if (inputsBuilder_ == null) {
         inputsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.bank.v1beta1.Input, com.cosmos.bank.v1beta1.Input.Builder, com.cosmos.bank.v1beta1.InputOrBuilder>(
+            Input, Input.Builder, InputOrBuilder>(
                 inputs_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -810,22 +810,22 @@ private static final long serialVersionUID = 0L;
       return inputsBuilder_;
     }
 
-    private java.util.List<com.cosmos.bank.v1beta1.Output> outputs_ =
+    private java.util.List<Output> outputs_ =
       java.util.Collections.emptyList();
     private void ensureOutputsIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        outputs_ = new java.util.ArrayList<com.cosmos.bank.v1beta1.Output>(outputs_);
+        outputs_ = new java.util.ArrayList<Output>(outputs_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.bank.v1beta1.Output, com.cosmos.bank.v1beta1.Output.Builder, com.cosmos.bank.v1beta1.OutputOrBuilder> outputsBuilder_;
+        Output, Output.Builder, OutputOrBuilder> outputsBuilder_;
 
     /**
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.bank.v1beta1.Output> getOutputsList() {
+    public java.util.List<Output> getOutputsList() {
       if (outputsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(outputs_);
       } else {
@@ -845,7 +845,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.bank.v1beta1.Output getOutputs(int index) {
+    public Output getOutputs(int index) {
       if (outputsBuilder_ == null) {
         return outputs_.get(index);
       } else {
@@ -856,7 +856,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder setOutputs(
-        int index, com.cosmos.bank.v1beta1.Output value) {
+        int index, Output value) {
       if (outputsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -873,7 +873,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder setOutputs(
-        int index, com.cosmos.bank.v1beta1.Output.Builder builderForValue) {
+        int index, Output.Builder builderForValue) {
       if (outputsBuilder_ == null) {
         ensureOutputsIsMutable();
         outputs_.set(index, builderForValue.build());
@@ -886,7 +886,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addOutputs(com.cosmos.bank.v1beta1.Output value) {
+    public Builder addOutputs(Output value) {
       if (outputsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -903,7 +903,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOutputs(
-        int index, com.cosmos.bank.v1beta1.Output value) {
+        int index, Output value) {
       if (outputsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -920,7 +920,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOutputs(
-        com.cosmos.bank.v1beta1.Output.Builder builderForValue) {
+        Output.Builder builderForValue) {
       if (outputsBuilder_ == null) {
         ensureOutputsIsMutable();
         outputs_.add(builderForValue.build());
@@ -934,7 +934,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOutputs(
-        int index, com.cosmos.bank.v1beta1.Output.Builder builderForValue) {
+        int index, Output.Builder builderForValue) {
       if (outputsBuilder_ == null) {
         ensureOutputsIsMutable();
         outputs_.add(index, builderForValue.build());
@@ -948,7 +948,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllOutputs(
-        java.lang.Iterable<? extends com.cosmos.bank.v1beta1.Output> values) {
+        Iterable<? extends Output> values) {
       if (outputsBuilder_ == null) {
         ensureOutputsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -988,14 +988,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.bank.v1beta1.Output.Builder getOutputsBuilder(
+    public Output.Builder getOutputsBuilder(
         int index) {
       return getOutputsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.bank.v1beta1.OutputOrBuilder getOutputsOrBuilder(
+    public OutputOrBuilder getOutputsOrBuilder(
         int index) {
       if (outputsBuilder_ == null) {
         return outputs_.get(index);  } else {
@@ -1005,7 +1005,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.cosmos.bank.v1beta1.OutputOrBuilder> 
+    public java.util.List<? extends OutputOrBuilder>
          getOutputsOrBuilderList() {
       if (outputsBuilder_ != null) {
         return outputsBuilder_.getMessageOrBuilderList();
@@ -1016,31 +1016,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.bank.v1beta1.Output.Builder addOutputsBuilder() {
+    public Output.Builder addOutputsBuilder() {
       return getOutputsFieldBuilder().addBuilder(
-          com.cosmos.bank.v1beta1.Output.getDefaultInstance());
+          Output.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.bank.v1beta1.Output.Builder addOutputsBuilder(
+    public Output.Builder addOutputsBuilder(
         int index) {
       return getOutputsFieldBuilder().addBuilder(
-          index, com.cosmos.bank.v1beta1.Output.getDefaultInstance());
+          index, Output.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.bank.v1beta1.Output.Builder> 
+    public java.util.List<Output.Builder>
          getOutputsBuilderList() {
       return getOutputsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.bank.v1beta1.Output, com.cosmos.bank.v1beta1.Output.Builder, com.cosmos.bank.v1beta1.OutputOrBuilder> 
+        Output, Output.Builder, OutputOrBuilder>
         getOutputsFieldBuilder() {
       if (outputsBuilder_ == null) {
         outputsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.bank.v1beta1.Output, com.cosmos.bank.v1beta1.Output.Builder, com.cosmos.bank.v1beta1.OutputOrBuilder>(
+            Output, Output.Builder, OutputOrBuilder>(
                 outputs_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1049,13 +1049,13 @@ private static final long serialVersionUID = 0L;
       }
       return outputsBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1066,18 +1066,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.bank.v1beta1.MsgMultiSend)
-  private static final com.cosmos.bank.v1beta1.MsgMultiSend DEFAULT_INSTANCE;
+  private static final MsgMultiSend DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.bank.v1beta1.MsgMultiSend();
+    DEFAULT_INSTANCE = new MsgMultiSend();
   }
 
-  public static com.cosmos.bank.v1beta1.MsgMultiSend getDefaultInstance() {
+  public static MsgMultiSend getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgMultiSend>
       PARSER = new com.google.protobuf.AbstractParser<MsgMultiSend>() {
-    @java.lang.Override
+    @Override
     public MsgMultiSend parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1101,13 +1101,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MsgMultiSend> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.bank.v1beta1.MsgMultiSend getDefaultInstanceForType() {
+  @Override
+  public MsgMultiSend getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

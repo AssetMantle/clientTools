@@ -16,11 +16,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
    * @return The exception.
    */
-  com.tendermint.abci.ResponseException getException();
+  ResponseException getException();
   /**
    * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
    */
-  com.tendermint.abci.ResponseExceptionOrBuilder getExceptionOrBuilder();
+  ResponseExceptionOrBuilder getExceptionOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
@@ -31,11 +31,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
    * @return The echo.
    */
-  com.tendermint.abci.ResponseEcho getEcho();
+  ResponseEcho getEcho();
   /**
    * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
    */
-  com.tendermint.abci.ResponseEchoOrBuilder getEchoOrBuilder();
+  ResponseEchoOrBuilder getEchoOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
@@ -46,11 +46,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
    * @return The flush.
    */
-  com.tendermint.abci.ResponseFlush getFlush();
+  ResponseFlush getFlush();
   /**
    * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
    */
-  com.tendermint.abci.ResponseFlushOrBuilder getFlushOrBuilder();
+  ResponseFlushOrBuilder getFlushOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
@@ -61,11 +61,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
    * @return The info.
    */
-  com.tendermint.abci.ResponseInfo getInfo();
+  ResponseInfo getInfo();
   /**
    * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
    */
-  com.tendermint.abci.ResponseInfoOrBuilder getInfoOrBuilder();
+  ResponseInfoOrBuilder getInfoOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
@@ -76,11 +76,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
    * @return The setOption.
    */
-  com.tendermint.abci.ResponseSetOption getSetOption();
+  ResponseSetOption getSetOption();
   /**
    * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
    */
-  com.tendermint.abci.ResponseSetOptionOrBuilder getSetOptionOrBuilder();
+  ResponseSetOptionOrBuilder getSetOptionOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
@@ -91,11 +91,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
    * @return The initChain.
    */
-  com.tendermint.abci.ResponseInitChain getInitChain();
+  ResponseInitChain getInitChain();
   /**
    * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
    */
-  com.tendermint.abci.ResponseInitChainOrBuilder getInitChainOrBuilder();
+  ResponseInitChainOrBuilder getInitChainOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
@@ -106,11 +106,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
    * @return The query.
    */
-  com.tendermint.abci.ResponseQuery getQuery();
+  ResponseQuery getQuery();
   /**
    * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
    */
-  com.tendermint.abci.ResponseQueryOrBuilder getQueryOrBuilder();
+  ResponseQueryOrBuilder getQueryOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
@@ -121,11 +121,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
    * @return The beginBlock.
    */
-  com.tendermint.abci.ResponseBeginBlock getBeginBlock();
+  ResponseBeginBlock getBeginBlock();
   /**
    * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
    */
-  com.tendermint.abci.ResponseBeginBlockOrBuilder getBeginBlockOrBuilder();
+  ResponseBeginBlockOrBuilder getBeginBlockOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
@@ -136,11 +136,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
    * @return The checkTx.
    */
-  com.tendermint.abci.ResponseCheckTx getCheckTx();
+  ResponseCheckTx getCheckTx();
   /**
    * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
    */
-  com.tendermint.abci.ResponseCheckTxOrBuilder getCheckTxOrBuilder();
+  ResponseCheckTxOrBuilder getCheckTxOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
@@ -151,11 +151,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
    * @return The deliverTx.
    */
-  com.tendermint.abci.ResponseDeliverTx getDeliverTx();
+  ResponseDeliverTx getDeliverTx();
   /**
    * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
    */
-  com.tendermint.abci.ResponseDeliverTxOrBuilder getDeliverTxOrBuilder();
+  ResponseDeliverTxOrBuilder getDeliverTxOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
@@ -166,11 +166,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
    * @return The endBlock.
    */
-  com.tendermint.abci.ResponseEndBlock getEndBlock();
+  ResponseEndBlock getEndBlock();
   /**
    * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
    */
-  com.tendermint.abci.ResponseEndBlockOrBuilder getEndBlockOrBuilder();
+  ResponseEndBlockOrBuilder getEndBlockOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
@@ -181,11 +181,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
    * @return The commit.
    */
-  com.tendermint.abci.ResponseCommit getCommit();
+  ResponseCommit getCommit();
   /**
    * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
    */
-  com.tendermint.abci.ResponseCommitOrBuilder getCommitOrBuilder();
+  ResponseCommitOrBuilder getCommitOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
@@ -196,11 +196,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
    * @return The listSnapshots.
    */
-  com.tendermint.abci.ResponseListSnapshots getListSnapshots();
+  ResponseListSnapshots getListSnapshots();
   /**
    * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
    */
-  com.tendermint.abci.ResponseListSnapshotsOrBuilder getListSnapshotsOrBuilder();
+  ResponseListSnapshotsOrBuilder getListSnapshotsOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
@@ -211,11 +211,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
    * @return The offerSnapshot.
    */
-  com.tendermint.abci.ResponseOfferSnapshot getOfferSnapshot();
+  ResponseOfferSnapshot getOfferSnapshot();
   /**
    * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
    */
-  com.tendermint.abci.ResponseOfferSnapshotOrBuilder getOfferSnapshotOrBuilder();
+  ResponseOfferSnapshotOrBuilder getOfferSnapshotOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
@@ -226,11 +226,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
    * @return The loadSnapshotChunk.
    */
-  com.tendermint.abci.ResponseLoadSnapshotChunk getLoadSnapshotChunk();
+  ResponseLoadSnapshotChunk getLoadSnapshotChunk();
   /**
    * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
    */
-  com.tendermint.abci.ResponseLoadSnapshotChunkOrBuilder getLoadSnapshotChunkOrBuilder();
+  ResponseLoadSnapshotChunkOrBuilder getLoadSnapshotChunkOrBuilder();
 
   /**
    * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
@@ -241,11 +241,11 @@ public interface ResponseOrBuilder extends
    * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
    * @return The applySnapshotChunk.
    */
-  com.tendermint.abci.ResponseApplySnapshotChunk getApplySnapshotChunk();
+  ResponseApplySnapshotChunk getApplySnapshotChunk();
   /**
    * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
    */
-  com.tendermint.abci.ResponseApplySnapshotChunkOrBuilder getApplySnapshotChunkOrBuilder();
+  ResponseApplySnapshotChunkOrBuilder getApplySnapshotChunkOrBuilder();
 
-  com.tendermint.abci.Response.ValueCase getValueCase();
+  Response.ValueCase getValueCase();
 }

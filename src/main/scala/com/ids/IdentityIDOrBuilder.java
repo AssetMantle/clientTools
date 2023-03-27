@@ -16,9 +16,9 @@ public interface IdentityIDOrBuilder extends
    * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
    * @return The hashID.
    */
-  com.ids.HashID getHashID();
+  HashID getHashID();
   /**
    * <code>.ids.HashID hash_i_d = 1 [json_name = "hashID"];</code>
    */
-  com.ids.HashIDOrBuilder getHashIDOrBuilder();
+  HashIDOrBuilder getHashIDOrBuilder();
 }

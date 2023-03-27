@@ -27,7 +27,7 @@ public final class PropertyListV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\'schema/lists/base/propertyList.v1.prot" +
       "o\022\005lists\032+schema/properties/base/anyProp" +
       "erty.v1.proto\032\024gogoproto/gogo.proto\"R\n\014P" +
@@ -49,7 +49,7 @@ public final class PropertyListV1Proto {
     internal_static_lists_PropertyList_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_lists_PropertyList_descriptor,
-        new java.lang.String[] { "PropertyList", });
+        new String[] { "PropertyList", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

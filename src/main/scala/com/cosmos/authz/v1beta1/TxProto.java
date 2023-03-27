@@ -52,7 +52,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\035cosmos/authz/v1beta1/tx.proto\022\024cosmos." +
       "authz.v1beta1\032\031cosmos_proto/cosmos.proto" +
       "\032\024gogoproto/gogo.proto\032\037google/protobuf/" +
@@ -91,44 +91,44 @@ public final class TxProto {
           com.google.protobuf.TimestampProto.getDescriptor(),
           com.google.protobuf.AnyProto.getDescriptor(),
           com.cosmos.base.abci.v1beta1.AbciProto.getDescriptor(),
-          com.cosmos.authz.v1beta1.AuthzProto.getDescriptor(),
+          AuthzProto.getDescriptor(),
         });
     internal_static_cosmos_authz_v1beta1_MsgGrant_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_authz_v1beta1_MsgGrant_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_MsgGrant_descriptor,
-        new java.lang.String[] { "Granter", "Grantee", "Grant", });
+        new String[] { "Granter", "Grantee", "Grant", });
     internal_static_cosmos_authz_v1beta1_MsgExecResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_authz_v1beta1_MsgExecResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_MsgExecResponse_descriptor,
-        new java.lang.String[] { "Results", });
+        new String[] { "Results", });
     internal_static_cosmos_authz_v1beta1_MsgExec_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_authz_v1beta1_MsgExec_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_MsgExec_descriptor,
-        new java.lang.String[] { "Grantee", "Msgs", });
+        new String[] { "Grantee", "Msgs", });
     internal_static_cosmos_authz_v1beta1_MsgGrantResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_authz_v1beta1_MsgGrantResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_MsgGrantResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_authz_v1beta1_MsgRevoke_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_authz_v1beta1_MsgRevoke_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_MsgRevoke_descriptor,
-        new java.lang.String[] { "Granter", "Grantee", "MsgTypeUrl", });
+        new String[] { "Granter", "Grantee", "MsgTypeUrl", });
     internal_static_cosmos_authz_v1beta1_MsgRevokeResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_authz_v1beta1_MsgRevokeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_MsgRevokeResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);
@@ -141,7 +141,7 @@ public final class TxProto {
     com.google.protobuf.TimestampProto.getDescriptor();
     com.google.protobuf.AnyProto.getDescriptor();
     com.cosmos.base.abci.v1beta1.AbciProto.getDescriptor();
-    com.cosmos.authz.v1beta1.AuthzProto.getDescriptor();
+    AuthzProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

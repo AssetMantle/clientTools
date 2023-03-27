@@ -1,7 +1,5 @@
 package schema.list
 
-import com.ids.AnyID
-import com.lists.{IDList => protoIDList}
 import schema.id.ID
 
 import scala.jdk.CollectionConverters._

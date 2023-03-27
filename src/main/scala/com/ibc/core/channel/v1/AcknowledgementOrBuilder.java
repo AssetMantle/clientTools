@@ -27,7 +27,7 @@ public interface AcknowledgementOrBuilder extends
    * <code>string error = 22 [json_name = "error"];</code>
    * @return The error.
    */
-  java.lang.String getError();
+  String getError();
   /**
    * <code>string error = 22 [json_name = "error"];</code>
    * @return The bytes for error.
@@ -35,5 +35,5 @@ public interface AcknowledgementOrBuilder extends
   com.google.protobuf.ByteString
       getErrorBytes();
 
-  com.ibc.core.channel.v1.Acknowledgement.ResponseCase getResponseCase();
+  Acknowledgement.ResponseCase getResponseCase();
 }

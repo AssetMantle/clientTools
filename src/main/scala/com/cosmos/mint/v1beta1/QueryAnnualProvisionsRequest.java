@@ -23,28 +23,28 @@ private static final long serialVersionUID = 0L;
   private QueryAnnualProvisionsRequest() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryAnnualProvisionsRequest();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.mint.v1beta1.QueryProto.internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_descriptor;
+    return QueryProto.internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.mint.v1beta1.QueryProto.internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest.class, com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest.Builder.class);
+            QueryAnnualProvisionsRequest.class, Builder.class);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -54,13 +54,13 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -71,21 +71,21 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest)) {
+    if (!(obj instanceof QueryAnnualProvisionsRequest)) {
       return super.equals(obj);
     }
-    com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest other = (com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest) obj;
+    QueryAnnualProvisionsRequest other = (QueryAnnualProvisionsRequest) obj;
 
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -97,69 +97,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseFrom(
+  public static QueryAnnualProvisionsRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseFrom(
+  public static QueryAnnualProvisionsRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseFrom(
+  public static QueryAnnualProvisionsRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseFrom(
+  public static QueryAnnualProvisionsRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseFrom(byte[] data)
+  public static QueryAnnualProvisionsRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseFrom(
+  public static QueryAnnualProvisionsRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseFrom(java.io.InputStream input)
+  public static QueryAnnualProvisionsRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseFrom(
+  public static QueryAnnualProvisionsRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseDelimitedFrom(java.io.InputStream input)
+  public static QueryAnnualProvisionsRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseDelimitedFrom(
+  public static QueryAnnualProvisionsRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseFrom(
+  public static QueryAnnualProvisionsRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest parseFrom(
+  public static QueryAnnualProvisionsRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -167,23 +167,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest prototype) {
+  public static Builder newBuilder(QueryAnnualProvisionsRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -198,18 +198,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.mint.v1beta1.QueryAnnualProvisionsRequest)
-      com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequestOrBuilder {
+      QueryAnnualProvisionsRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.mint.v1beta1.QueryProto.internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_descriptor;
+      return QueryProto.internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.mint.v1beta1.QueryProto.internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest.class, com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest.Builder.class);
+              QueryAnnualProvisionsRequest.class, Builder.class);
     }
 
     // Construct using com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest.newBuilder()
@@ -218,104 +218,104 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.mint.v1beta1.QueryProto.internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_descriptor;
+      return QueryProto.internal_static_cosmos_mint_v1beta1_QueryAnnualProvisionsRequest_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest getDefaultInstanceForType() {
-      return com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest.getDefaultInstance();
+    @Override
+    public QueryAnnualProvisionsRequest getDefaultInstanceForType() {
+      return QueryAnnualProvisionsRequest.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest build() {
-      com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest result = buildPartial();
+    @Override
+    public QueryAnnualProvisionsRequest build() {
+      QueryAnnualProvisionsRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest buildPartial() {
-      com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest result = new com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest(this);
+    @Override
+    public QueryAnnualProvisionsRequest buildPartial() {
+      QueryAnnualProvisionsRequest result = new QueryAnnualProvisionsRequest(this);
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest) {
-        return mergeFrom((com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest)other);
+      if (other instanceof QueryAnnualProvisionsRequest) {
+        return mergeFrom((QueryAnnualProvisionsRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest other) {
-      if (other == com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryAnnualProvisionsRequest other) {
+      if (other == QueryAnnualProvisionsRequest.getDefaultInstance()) return this;
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -340,13 +340,13 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -357,18 +357,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.mint.v1beta1.QueryAnnualProvisionsRequest)
-  private static final com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest DEFAULT_INSTANCE;
+  private static final QueryAnnualProvisionsRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest();
+    DEFAULT_INSTANCE = new QueryAnnualProvisionsRequest();
   }
 
-  public static com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest getDefaultInstance() {
+  public static QueryAnnualProvisionsRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryAnnualProvisionsRequest>
       PARSER = new com.google.protobuf.AbstractParser<QueryAnnualProvisionsRequest>() {
-    @java.lang.Override
+    @Override
     public QueryAnnualProvisionsRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -392,13 +392,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryAnnualProvisionsRequest> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.mint.v1beta1.QueryAnnualProvisionsRequest getDefaultInstanceForType() {
+  @Override
+  public QueryAnnualProvisionsRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

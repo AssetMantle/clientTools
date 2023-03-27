@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n?modules/identities/internal/transactio" +
       "ns/issue/message.v1.proto\022\035identities.tr" +
       "ansactions.issue\032)schema/ids/base/classi" +
@@ -66,7 +66,7 @@ public final class MessageV1Proto {
     internal_static_identities_transactions_issue_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_identities_transactions_issue_Message_descriptor,
-        new java.lang.String[] { "From", "FromID", "To", "ClassificationID", "ImmutableMetaProperties", "ImmutableProperties", "MutableMetaProperties", "MutableProperties", });
+        new String[] { "From", "FromID", "To", "ClassificationID", "ImmutableMetaProperties", "ImmutableProperties", "MutableMetaProperties", "MutableProperties", });
     com.ids.ClassificationIDV1Proto.getDescriptor();
     com.ids.IdentityIDV1Proto.getDescriptor();
     com.lists.PropertyListV1Proto.getDescriptor();

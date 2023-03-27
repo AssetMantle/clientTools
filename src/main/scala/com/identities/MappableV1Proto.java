@@ -27,7 +27,7 @@ public final class MappableV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n6modules/identities/internal/mappable/m" +
       "appable.v1.proto\022\nidentities\032\'schema/doc" +
       "uments/base/document.v1.proto\";\n\010Mappabl" +
@@ -48,7 +48,7 @@ public final class MappableV1Proto {
     internal_static_identities_Mappable_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_identities_Mappable_descriptor,
-        new java.lang.String[] { "Identity", });
+        new String[] { "Identity", });
     com.documents.DocumentV1Proto.getDescriptor();
   }
 

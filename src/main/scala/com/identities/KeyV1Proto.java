@@ -27,7 +27,7 @@ public final class KeyV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n,modules/identities/internal/key/key.v1" +
       ".proto\022\nidentities\032#schema/ids/base/iden" +
       "tityID.v1.proto\"8\n\003Key\0221\n\014identity_i_d\030\001" +
@@ -48,7 +48,7 @@ public final class KeyV1Proto {
     internal_static_identities_Key_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_identities_Key_descriptor,
-        new java.lang.String[] { "IdentityID", });
+        new String[] { "IdentityID", });
     com.ids.IdentityIDV1Proto.getDescriptor();
   }
 

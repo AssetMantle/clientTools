@@ -15,7 +15,7 @@ public interface ConnectionPathsOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  java.lang.String getClientId();
+  String getClientId();
   /**
    * <pre>
    * client state unique identifier
@@ -35,7 +35,7 @@ public interface ConnectionPathsOrBuilder extends
    * <code>repeated string paths = 2 [json_name = "paths"];</code>
    * @return A list containing the paths.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getPathsList();
   /**
    * <pre>
@@ -55,7 +55,7 @@ public interface ConnectionPathsOrBuilder extends
    * @param index The index of the element to return.
    * @return The paths at the given index.
    */
-  java.lang.String getPaths(int index);
+  String getPaths(int index);
   /**
    * <pre>
    * list of connection paths

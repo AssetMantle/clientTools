@@ -24,7 +24,7 @@ public interface QueryDelegatorValidatorResponseOrBuilder extends
    * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    * @return The validator.
    */
-  com.cosmos.staking.v1beta1.Validator getValidator();
+  Validator getValidator();
   /**
    * <pre>
    * validator defines the the validator info.
@@ -32,5 +32,5 @@ public interface QueryDelegatorValidatorResponseOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.ValidatorOrBuilder getValidatorOrBuilder();
+  ValidatorOrBuilder getValidatorOrBuilder();
 }

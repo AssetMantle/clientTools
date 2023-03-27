@@ -1,7 +1,5 @@
 package schema.property.base
 
-import com.data.AnyData
-import com.properties.{MetaProperty => protoMetaProperty, AnyProperty}
 import schema.data.Data
 import schema.id.base.{DataID, PropertyID, StringID}
 import schema.property.Property
@@ -10,9 +8,11 @@ case class MetaProperty(id: PropertyID, data: AnyData) extends Property {
 
   def getID: PropertyID = this.id
 
+  def getBondedWeight: Int = this.getData.getBondWeight
+
   def getData: Data = Data(this.data)
 
-  def getDataID: DataID = this.getData.getID
+  def getDataID: DataID = this.getData.getDataID
 
   def getKey: StringID = this.id.keyID
 
@@ -20,7 +20,7 @@ case class MetaProperty(id: PropertyID, data: AnyData) extends Property {
 
   def isMeta: Boolean = true
 
-  def asProtoMetaProperty: protoMetaProperty = protoMetaProperty.newBuilder().setId(this.id.asProtoPropertyID).setAnyData(this.data).build()
+  def asProtoMetaProperty: protoMetaProperty = protoMetaProperty.newBuilder().setID(this.id.asProtoPropertyID).setData(this.data).build()
 
   def toAnyProperty: AnyProperty = AnyProperty.newBuilder().setMetaProperty(this.asProtoMetaProperty).build()
 
@@ -31,6 +31,8 @@ case class MetaProperty(id: PropertyID, data: AnyData) extends Property {
 
 object MetaProperty {
 
-  def apply(value: protoMetaProperty): MetaProperty = MetaProperty(id = PropertyID(value.getId), data = value.getAnyData)
+  def apply(value: protoMetaProperty): MetaProperty = MetaProperty(id = PropertyID(value.getID), data = value.getData)
+
+  def apply(protoBytes: Array[Byte]): MetaProperty = MetaProperty(protoMetaProperty.parseFrom(protoBytes))
 
 }

@@ -24,29 +24,29 @@ private static final long serialVersionUID = 0L;
     signModes_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new AuthnDescriptor();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_descriptor;
+    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_fieldAccessorTable
+    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.class, com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder.class);
+            AuthnDescriptor.class, Builder.class);
   }
 
   public static final int SIGN_MODES_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor> signModes_;
+  private java.util.List<SigningModeDescriptor> signModes_;
   /**
    * <pre>
    * sign_modes defines the supported signature algorithm
@@ -54,8 +54,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor> getSignModesList() {
+  @Override
+  public java.util.List<SigningModeDescriptor> getSignModesList() {
     return signModes_;
   }
   /**
@@ -65,8 +65,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.base.reflection.v2alpha1.SigningModeDescriptorOrBuilder> 
+  @Override
+  public java.util.List<? extends SigningModeDescriptorOrBuilder>
       getSignModesOrBuilderList() {
     return signModes_;
   }
@@ -77,7 +77,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getSignModesCount() {
     return signModes_.size();
   }
@@ -88,8 +88,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor getSignModes(int index) {
+  @Override
+  public SigningModeDescriptor getSignModes(int index) {
     return signModes_.get(index);
   }
   /**
@@ -99,14 +99,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.base.reflection.v2alpha1.SigningModeDescriptorOrBuilder getSignModesOrBuilder(
+  @Override
+  public SigningModeDescriptorOrBuilder getSignModesOrBuilder(
       int index) {
     return signModes_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -116,7 +116,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < signModes_.size(); i++) {
@@ -125,7 +125,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -140,15 +140,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.base.reflection.v2alpha1.AuthnDescriptor)) {
+    if (!(obj instanceof AuthnDescriptor)) {
       return super.equals(obj);
     }
-    com.cosmos.base.reflection.v2alpha1.AuthnDescriptor other = (com.cosmos.base.reflection.v2alpha1.AuthnDescriptor) obj;
+    AuthnDescriptor other = (AuthnDescriptor) obj;
 
     if (!getSignModesList()
         .equals(other.getSignModesList())) return false;
@@ -156,7 +156,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -172,69 +172,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseFrom(
+  public static AuthnDescriptor parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseFrom(
+  public static AuthnDescriptor parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseFrom(
+  public static AuthnDescriptor parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseFrom(
+  public static AuthnDescriptor parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseFrom(byte[] data)
+  public static AuthnDescriptor parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseFrom(
+  public static AuthnDescriptor parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseFrom(java.io.InputStream input)
+  public static AuthnDescriptor parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseFrom(
+  public static AuthnDescriptor parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseDelimitedFrom(java.io.InputStream input)
+  public static AuthnDescriptor parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseDelimitedFrom(
+  public static AuthnDescriptor parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseFrom(
+  public static AuthnDescriptor parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor parseFrom(
+  public static AuthnDescriptor parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -242,23 +242,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.base.reflection.v2alpha1.AuthnDescriptor prototype) {
+  public static Builder newBuilder(AuthnDescriptor prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -273,18 +273,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.reflection.v2alpha1.AuthnDescriptor)
-      com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder {
+      AuthnDescriptorOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_descriptor;
+      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_fieldAccessorTable
+      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.class, com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder.class);
+              AuthnDescriptor.class, Builder.class);
     }
 
     // Construct using com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.newBuilder()
@@ -293,11 +293,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -311,36 +311,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_descriptor;
+      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AuthnDescriptor_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.reflection.v2alpha1.AuthnDescriptor getDefaultInstanceForType() {
-      return com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance();
+    @Override
+    public AuthnDescriptor getDefaultInstanceForType() {
+      return AuthnDescriptor.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.base.reflection.v2alpha1.AuthnDescriptor build() {
-      com.cosmos.base.reflection.v2alpha1.AuthnDescriptor result = buildPartial();
+    @Override
+    public AuthnDescriptor build() {
+      AuthnDescriptor result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.reflection.v2alpha1.AuthnDescriptor buildPartial() {
-      com.cosmos.base.reflection.v2alpha1.AuthnDescriptor result = new com.cosmos.base.reflection.v2alpha1.AuthnDescriptor(this);
+    @Override
+    public AuthnDescriptor buildPartial() {
+      AuthnDescriptor result = new AuthnDescriptor(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.base.reflection.v2alpha1.AuthnDescriptor result) {
+    private void buildPartialRepeatedFields(AuthnDescriptor result) {
       if (signModesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           signModes_ = java.util.Collections.unmodifiableList(signModes_);
@@ -352,54 +352,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.base.reflection.v2alpha1.AuthnDescriptor result) {
+    private void buildPartial0(AuthnDescriptor result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.base.reflection.v2alpha1.AuthnDescriptor) {
-        return mergeFrom((com.cosmos.base.reflection.v2alpha1.AuthnDescriptor)other);
+      if (other instanceof AuthnDescriptor) {
+        return mergeFrom((AuthnDescriptor)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.base.reflection.v2alpha1.AuthnDescriptor other) {
-      if (other == com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance()) return this;
+    public Builder mergeFrom(AuthnDescriptor other) {
+      if (other == AuthnDescriptor.getDefaultInstance()) return this;
       if (signModesBuilder_ == null) {
         if (!other.signModes_.isEmpty()) {
           if (signModes_.isEmpty()) {
@@ -431,18 +431,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -453,9 +453,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor m =
+              SigningModeDescriptor m =
                   input.readMessage(
-                      com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.parser(),
+                      SigningModeDescriptor.parser(),
                       extensionRegistry);
               if (signModesBuilder_ == null) {
                 ensureSignModesIsMutable();
@@ -482,17 +482,17 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor> signModes_ =
+    private java.util.List<SigningModeDescriptor> signModes_ =
       java.util.Collections.emptyList();
     private void ensureSignModesIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        signModes_ = new java.util.ArrayList<com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor>(signModes_);
+        signModes_ = new java.util.ArrayList<SigningModeDescriptor>(signModes_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptorOrBuilder> signModesBuilder_;
+        SigningModeDescriptor, SigningModeDescriptor.Builder, SigningModeDescriptorOrBuilder> signModesBuilder_;
 
     /**
      * <pre>
@@ -501,7 +501,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
-    public java.util.List<com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor> getSignModesList() {
+    public java.util.List<SigningModeDescriptor> getSignModesList() {
       if (signModesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(signModes_);
       } else {
@@ -529,7 +529,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor getSignModes(int index) {
+    public SigningModeDescriptor getSignModes(int index) {
       if (signModesBuilder_ == null) {
         return signModes_.get(index);
       } else {
@@ -544,7 +544,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
     public Builder setSignModes(
-        int index, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor value) {
+        int index, SigningModeDescriptor value) {
       if (signModesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -565,7 +565,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
     public Builder setSignModes(
-        int index, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.Builder builderForValue) {
+        int index, SigningModeDescriptor.Builder builderForValue) {
       if (signModesBuilder_ == null) {
         ensureSignModesIsMutable();
         signModes_.set(index, builderForValue.build());
@@ -582,7 +582,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
-    public Builder addSignModes(com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor value) {
+    public Builder addSignModes(SigningModeDescriptor value) {
       if (signModesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -603,7 +603,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
     public Builder addSignModes(
-        int index, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor value) {
+        int index, SigningModeDescriptor value) {
       if (signModesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -624,7 +624,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
     public Builder addSignModes(
-        com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.Builder builderForValue) {
+        SigningModeDescriptor.Builder builderForValue) {
       if (signModesBuilder_ == null) {
         ensureSignModesIsMutable();
         signModes_.add(builderForValue.build());
@@ -642,7 +642,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
     public Builder addSignModes(
-        int index, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.Builder builderForValue) {
+        int index, SigningModeDescriptor.Builder builderForValue) {
       if (signModesBuilder_ == null) {
         ensureSignModesIsMutable();
         signModes_.add(index, builderForValue.build());
@@ -660,7 +660,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
     public Builder addAllSignModes(
-        java.lang.Iterable<? extends com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor> values) {
+        Iterable<? extends SigningModeDescriptor> values) {
       if (signModesBuilder_ == null) {
         ensureSignModesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -712,7 +712,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.Builder getSignModesBuilder(
+    public SigningModeDescriptor.Builder getSignModesBuilder(
         int index) {
       return getSignModesFieldBuilder().getBuilder(index);
     }
@@ -723,7 +723,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.SigningModeDescriptorOrBuilder getSignModesOrBuilder(
+    public SigningModeDescriptorOrBuilder getSignModesOrBuilder(
         int index) {
       if (signModesBuilder_ == null) {
         return signModes_.get(index);  } else {
@@ -737,7 +737,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
-    public java.util.List<? extends com.cosmos.base.reflection.v2alpha1.SigningModeDescriptorOrBuilder> 
+    public java.util.List<? extends SigningModeDescriptorOrBuilder>
          getSignModesOrBuilderList() {
       if (signModesBuilder_ != null) {
         return signModesBuilder_.getMessageOrBuilderList();
@@ -752,9 +752,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.Builder addSignModesBuilder() {
+    public SigningModeDescriptor.Builder addSignModesBuilder() {
       return getSignModesFieldBuilder().addBuilder(
-          com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.getDefaultInstance());
+          SigningModeDescriptor.getDefaultInstance());
     }
     /**
      * <pre>
@@ -763,10 +763,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.Builder addSignModesBuilder(
+    public SigningModeDescriptor.Builder addSignModesBuilder(
         int index) {
       return getSignModesFieldBuilder().addBuilder(
-          index, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.getDefaultInstance());
+          index, SigningModeDescriptor.getDefaultInstance());
     }
     /**
      * <pre>
@@ -775,16 +775,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
      */
-    public java.util.List<com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.Builder> 
+    public java.util.List<SigningModeDescriptor.Builder>
          getSignModesBuilderList() {
       return getSignModesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptorOrBuilder> 
+        SigningModeDescriptor, SigningModeDescriptor.Builder, SigningModeDescriptorOrBuilder>
         getSignModesFieldBuilder() {
       if (signModesBuilder_ == null) {
         signModesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.SigningModeDescriptorOrBuilder>(
+            SigningModeDescriptor, SigningModeDescriptor.Builder, SigningModeDescriptorOrBuilder>(
                 signModes_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -793,13 +793,13 @@ private static final long serialVersionUID = 0L;
       }
       return signModesBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -810,18 +810,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.reflection.v2alpha1.AuthnDescriptor)
-  private static final com.cosmos.base.reflection.v2alpha1.AuthnDescriptor DEFAULT_INSTANCE;
+  private static final AuthnDescriptor DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.base.reflection.v2alpha1.AuthnDescriptor();
+    DEFAULT_INSTANCE = new AuthnDescriptor();
   }
 
-  public static com.cosmos.base.reflection.v2alpha1.AuthnDescriptor getDefaultInstance() {
+  public static AuthnDescriptor getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<AuthnDescriptor>
       PARSER = new com.google.protobuf.AbstractParser<AuthnDescriptor>() {
-    @java.lang.Override
+    @Override
     public AuthnDescriptor parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -845,13 +845,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<AuthnDescriptor> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.base.reflection.v2alpha1.AuthnDescriptor getDefaultInstanceForType() {
+  @Override
+  public AuthnDescriptor getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

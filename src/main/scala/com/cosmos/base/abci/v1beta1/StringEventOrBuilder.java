@@ -11,7 +11,7 @@ public interface StringEventOrBuilder extends
    * <code>string type = 1 [json_name = "type"];</code>
    * @return The type.
    */
-  java.lang.String getType();
+  String getType();
   /**
    * <code>string type = 1 [json_name = "type"];</code>
    * @return The bytes for type.
@@ -22,12 +22,12 @@ public interface StringEventOrBuilder extends
   /**
    * <code>repeated .cosmos.base.abci.v1beta1.Attribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.base.abci.v1beta1.Attribute> 
+  java.util.List<Attribute>
       getAttributesList();
   /**
    * <code>repeated .cosmos.base.abci.v1beta1.Attribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.base.abci.v1beta1.Attribute getAttributes(int index);
+  Attribute getAttributes(int index);
   /**
    * <code>repeated .cosmos.base.abci.v1beta1.Attribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false];</code>
    */
@@ -35,11 +35,11 @@ public interface StringEventOrBuilder extends
   /**
    * <code>repeated .cosmos.base.abci.v1beta1.Attribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.base.abci.v1beta1.AttributeOrBuilder> 
+  java.util.List<? extends AttributeOrBuilder>
       getAttributesOrBuilderList();
   /**
    * <code>repeated .cosmos.base.abci.v1beta1.Attribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.base.abci.v1beta1.AttributeOrBuilder getAttributesOrBuilder(
+  AttributeOrBuilder getAttributesOrBuilder(
       int index);
 }

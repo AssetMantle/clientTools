@@ -11,7 +11,7 @@ public interface MsgBeginRedelegateOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  java.lang.String getDelegatorAddress();
+  String getDelegatorAddress();
   /**
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The bytes for delegatorAddress.
@@ -23,7 +23,7 @@ public interface MsgBeginRedelegateOrBuilder extends
    * <code>string validator_src_address = 2 [json_name = "validatorSrcAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_src_address&#92;""];</code>
    * @return The validatorSrcAddress.
    */
-  java.lang.String getValidatorSrcAddress();
+  String getValidatorSrcAddress();
   /**
    * <code>string validator_src_address = 2 [json_name = "validatorSrcAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_src_address&#92;""];</code>
    * @return The bytes for validatorSrcAddress.
@@ -35,7 +35,7 @@ public interface MsgBeginRedelegateOrBuilder extends
    * <code>string validator_dst_address = 3 [json_name = "validatorDstAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_dst_address&#92;""];</code>
    * @return The validatorDstAddress.
    */
-  java.lang.String getValidatorDstAddress();
+  String getValidatorDstAddress();
   /**
    * <code>string validator_dst_address = 3 [json_name = "validatorDstAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_dst_address&#92;""];</code>
    * @return The bytes for validatorDstAddress.

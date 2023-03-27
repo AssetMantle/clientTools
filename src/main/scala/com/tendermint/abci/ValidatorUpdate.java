@@ -22,24 +22,24 @@ private static final long serialVersionUID = 0L;
   private ValidatorUpdate() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new ValidatorUpdate();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ValidatorUpdate_descriptor;
+    return TypesProto.internal_static_tendermint_abci_ValidatorUpdate_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ValidatorUpdate_fieldAccessorTable
+    return TypesProto.internal_static_tendermint_abci_ValidatorUpdate_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.tendermint.abci.ValidatorUpdate.class, com.tendermint.abci.ValidatorUpdate.Builder.class);
+            ValidatorUpdate.class, Builder.class);
   }
 
   public static final int PUB_KEY_FIELD_NUMBER = 1;
@@ -48,7 +48,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.crypto.PublicKey pub_key = 1 [json_name = "pubKey", (.gogoproto.nullable) = false];</code>
    * @return Whether the pubKey field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPubKey() {
     return pubKey_ != null;
   }
@@ -56,14 +56,14 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.crypto.PublicKey pub_key = 1 [json_name = "pubKey", (.gogoproto.nullable) = false];</code>
    * @return The pubKey.
    */
-  @java.lang.Override
+  @Override
   public com.tendermint.crypto.PublicKey getPubKey() {
     return pubKey_ == null ? com.tendermint.crypto.PublicKey.getDefaultInstance() : pubKey_;
   }
   /**
    * <code>.tendermint.crypto.PublicKey pub_key = 1 [json_name = "pubKey", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public com.tendermint.crypto.PublicKeyOrBuilder getPubKeyOrBuilder() {
     return pubKey_ == null ? com.tendermint.crypto.PublicKey.getDefaultInstance() : pubKey_;
   }
@@ -74,13 +74,13 @@ private static final long serialVersionUID = 0L;
    * <code>int64 power = 2 [json_name = "power"];</code>
    * @return The power.
    */
-  @java.lang.Override
+  @Override
   public long getPower() {
     return power_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -90,7 +90,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (pubKey_ != null) {
@@ -102,7 +102,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -121,15 +121,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.tendermint.abci.ValidatorUpdate)) {
+    if (!(obj instanceof ValidatorUpdate)) {
       return super.equals(obj);
     }
-    com.tendermint.abci.ValidatorUpdate other = (com.tendermint.abci.ValidatorUpdate) obj;
+    ValidatorUpdate other = (ValidatorUpdate) obj;
 
     if (hasPubKey() != other.hasPubKey()) return false;
     if (hasPubKey()) {
@@ -142,7 +142,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -161,69 +161,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.tendermint.abci.ValidatorUpdate parseFrom(
+  public static ValidatorUpdate parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseFrom(
+  public static ValidatorUpdate parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseFrom(
+  public static ValidatorUpdate parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseFrom(
+  public static ValidatorUpdate parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseFrom(byte[] data)
+  public static ValidatorUpdate parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseFrom(
+  public static ValidatorUpdate parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseFrom(java.io.InputStream input)
+  public static ValidatorUpdate parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseFrom(
+  public static ValidatorUpdate parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseDelimitedFrom(java.io.InputStream input)
+  public static ValidatorUpdate parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseDelimitedFrom(
+  public static ValidatorUpdate parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseFrom(
+  public static ValidatorUpdate parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.ValidatorUpdate parseFrom(
+  public static ValidatorUpdate parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -231,23 +231,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.tendermint.abci.ValidatorUpdate prototype) {
+  public static Builder newBuilder(ValidatorUpdate prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -261,18 +261,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.abci.ValidatorUpdate)
-      com.tendermint.abci.ValidatorUpdateOrBuilder {
+      ValidatorUpdateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ValidatorUpdate_descriptor;
+      return TypesProto.internal_static_tendermint_abci_ValidatorUpdate_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ValidatorUpdate_fieldAccessorTable
+      return TypesProto.internal_static_tendermint_abci_ValidatorUpdate_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.tendermint.abci.ValidatorUpdate.class, com.tendermint.abci.ValidatorUpdate.Builder.class);
+              ValidatorUpdate.class, Builder.class);
     }
 
     // Construct using com.tendermint.abci.ValidatorUpdate.newBuilder()
@@ -281,11 +281,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -298,35 +298,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ValidatorUpdate_descriptor;
+      return TypesProto.internal_static_tendermint_abci_ValidatorUpdate_descriptor;
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.ValidatorUpdate getDefaultInstanceForType() {
-      return com.tendermint.abci.ValidatorUpdate.getDefaultInstance();
+    @Override
+    public ValidatorUpdate getDefaultInstanceForType() {
+      return ValidatorUpdate.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.ValidatorUpdate build() {
-      com.tendermint.abci.ValidatorUpdate result = buildPartial();
+    @Override
+    public ValidatorUpdate build() {
+      ValidatorUpdate result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.ValidatorUpdate buildPartial() {
-      com.tendermint.abci.ValidatorUpdate result = new com.tendermint.abci.ValidatorUpdate(this);
+    @Override
+    public ValidatorUpdate buildPartial() {
+      ValidatorUpdate result = new ValidatorUpdate(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.tendermint.abci.ValidatorUpdate result) {
+    private void buildPartial0(ValidatorUpdate result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.pubKey_ = pubKeyBuilder_ == null
@@ -338,50 +338,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.tendermint.abci.ValidatorUpdate) {
-        return mergeFrom((com.tendermint.abci.ValidatorUpdate)other);
+      if (other instanceof ValidatorUpdate) {
+        return mergeFrom((ValidatorUpdate)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.tendermint.abci.ValidatorUpdate other) {
-      if (other == com.tendermint.abci.ValidatorUpdate.getDefaultInstance()) return this;
+    public Builder mergeFrom(ValidatorUpdate other) {
+      if (other == ValidatorUpdate.getDefaultInstance()) return this;
       if (other.hasPubKey()) {
         mergePubKey(other.getPubKey());
       }
@@ -393,18 +393,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -567,7 +567,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 power = 2 [json_name = "power"];</code>
      * @return The power.
      */
-    @java.lang.Override
+    @Override
     public long getPower() {
       return power_;
     }
@@ -593,13 +593,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -610,18 +610,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.abci.ValidatorUpdate)
-  private static final com.tendermint.abci.ValidatorUpdate DEFAULT_INSTANCE;
+  private static final ValidatorUpdate DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.tendermint.abci.ValidatorUpdate();
+    DEFAULT_INSTANCE = new ValidatorUpdate();
   }
 
-  public static com.tendermint.abci.ValidatorUpdate getDefaultInstance() {
+  public static ValidatorUpdate getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ValidatorUpdate>
       PARSER = new com.google.protobuf.AbstractParser<ValidatorUpdate>() {
-    @java.lang.Override
+    @Override
     public ValidatorUpdate parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -645,13 +645,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<ValidatorUpdate> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.tendermint.abci.ValidatorUpdate getDefaultInstanceForType() {
+  @Override
+  public ValidatorUpdate getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

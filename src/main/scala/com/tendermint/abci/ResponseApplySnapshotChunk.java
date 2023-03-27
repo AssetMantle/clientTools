@@ -21,24 +21,24 @@ private static final long serialVersionUID = 0L;
     rejectSenders_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new ResponseApplySnapshotChunk();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ResponseApplySnapshotChunk_descriptor;
+    return TypesProto.internal_static_tendermint_abci_ResponseApplySnapshotChunk_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ResponseApplySnapshotChunk_fieldAccessorTable
+    return TypesProto.internal_static_tendermint_abci_ResponseApplySnapshotChunk_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.tendermint.abci.ResponseApplySnapshotChunk.class, com.tendermint.abci.ResponseApplySnapshotChunk.Builder.class);
+            ResponseApplySnapshotChunk.class, Builder.class);
   }
 
   /**
@@ -149,7 +149,7 @@ private static final long serialVersionUID = 0L;
 
     public final int getNumber() {
       if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
+        throw new IllegalArgumentException(
             "Can't get the number of an unknown enum value.");
       }
       return value;
@@ -160,7 +160,7 @@ private static final long serialVersionUID = 0L;
      * @return The enum associated with the given numeric wire value.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @java.lang.Deprecated
+    @Deprecated
     public static Result valueOf(int value) {
       return forNumber(value);
     }
@@ -196,7 +196,7 @@ private static final long serialVersionUID = 0L;
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
       if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
+        throw new IllegalStateException(
             "Can't get the descriptor of an unrecognized enum value.");
       }
       return getDescriptor().getValues().get(ordinal());
@@ -207,7 +207,7 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return com.tendermint.abci.ResponseApplySnapshotChunk.getDescriptor().getEnumTypes().get(0);
+      return ResponseApplySnapshotChunk.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final Result[] VALUES = values();
@@ -215,7 +215,7 @@ private static final long serialVersionUID = 0L;
     public static Result valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
+        throw new IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       if (desc.getIndex() == -1) {
@@ -239,16 +239,16 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseApplySnapshotChunk.Result result = 1 [json_name = "result"];</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  @Override public int getResultValue() {
     return result_;
   }
   /**
    * <code>.tendermint.abci.ResponseApplySnapshotChunk.Result result = 1 [json_name = "result"];</code>
    * @return The result.
    */
-  @java.lang.Override public com.tendermint.abci.ResponseApplySnapshotChunk.Result getResult() {
-    com.tendermint.abci.ResponseApplySnapshotChunk.Result result = com.tendermint.abci.ResponseApplySnapshotChunk.Result.forNumber(result_);
-    return result == null ? com.tendermint.abci.ResponseApplySnapshotChunk.Result.UNRECOGNIZED : result;
+  @Override public Result getResult() {
+    Result result = Result.forNumber(result_);
+    return result == null ? Result.UNRECOGNIZED : result;
   }
 
   public static final int REFETCH_CHUNKS_FIELD_NUMBER = 2;
@@ -262,8 +262,8 @@ private static final long serialVersionUID = 0L;
    * <code>repeated uint32 refetch_chunks = 2 [json_name = "refetchChunks"];</code>
    * @return A list containing the refetchChunks.
    */
-  @java.lang.Override
-  public java.util.List<java.lang.Integer>
+  @Override
+  public java.util.List<Integer>
       getRefetchChunksList() {
     return refetchChunks_;
   }
@@ -327,7 +327,7 @@ private static final long serialVersionUID = 0L;
    * @param index The index of the element to return.
    * @return The rejectSenders at the given index.
    */
-  public java.lang.String getRejectSenders(int index) {
+  public String getRejectSenders(int index) {
     return rejectSenders_.get(index);
   }
   /**
@@ -345,7 +345,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -355,11 +355,11 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
-    if (result_ != com.tendermint.abci.ResponseApplySnapshotChunk.Result.UNKNOWN.getNumber()) {
+    if (result_ != Result.UNKNOWN.getNumber()) {
       output.writeEnum(1, result_);
     }
     if (getRefetchChunksList().size() > 0) {
@@ -375,13 +375,13 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
-    if (result_ != com.tendermint.abci.ResponseApplySnapshotChunk.Result.UNKNOWN.getNumber()) {
+    if (result_ != Result.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }
@@ -412,15 +412,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.tendermint.abci.ResponseApplySnapshotChunk)) {
+    if (!(obj instanceof ResponseApplySnapshotChunk)) {
       return super.equals(obj);
     }
-    com.tendermint.abci.ResponseApplySnapshotChunk other = (com.tendermint.abci.ResponseApplySnapshotChunk) obj;
+    ResponseApplySnapshotChunk other = (ResponseApplySnapshotChunk) obj;
 
     if (result_ != other.result_) return false;
     if (!getRefetchChunksList()
@@ -431,7 +431,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -453,69 +453,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseFrom(
+  public static ResponseApplySnapshotChunk parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseFrom(
+  public static ResponseApplySnapshotChunk parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseFrom(
+  public static ResponseApplySnapshotChunk parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseFrom(
+  public static ResponseApplySnapshotChunk parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseFrom(byte[] data)
+  public static ResponseApplySnapshotChunk parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseFrom(
+  public static ResponseApplySnapshotChunk parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseFrom(java.io.InputStream input)
+  public static ResponseApplySnapshotChunk parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseFrom(
+  public static ResponseApplySnapshotChunk parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseDelimitedFrom(java.io.InputStream input)
+  public static ResponseApplySnapshotChunk parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseDelimitedFrom(
+  public static ResponseApplySnapshotChunk parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseFrom(
+  public static ResponseApplySnapshotChunk parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.ResponseApplySnapshotChunk parseFrom(
+  public static ResponseApplySnapshotChunk parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -523,23 +523,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.tendermint.abci.ResponseApplySnapshotChunk prototype) {
+  public static Builder newBuilder(ResponseApplySnapshotChunk prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -549,18 +549,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.abci.ResponseApplySnapshotChunk)
-      com.tendermint.abci.ResponseApplySnapshotChunkOrBuilder {
+      ResponseApplySnapshotChunkOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ResponseApplySnapshotChunk_descriptor;
+      return TypesProto.internal_static_tendermint_abci_ResponseApplySnapshotChunk_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ResponseApplySnapshotChunk_fieldAccessorTable
+      return TypesProto.internal_static_tendermint_abci_ResponseApplySnapshotChunk_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.tendermint.abci.ResponseApplySnapshotChunk.class, com.tendermint.abci.ResponseApplySnapshotChunk.Builder.class);
+              ResponseApplySnapshotChunk.class, Builder.class);
     }
 
     // Construct using com.tendermint.abci.ResponseApplySnapshotChunk.newBuilder()
@@ -569,11 +569,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -584,36 +584,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_ResponseApplySnapshotChunk_descriptor;
+      return TypesProto.internal_static_tendermint_abci_ResponseApplySnapshotChunk_descriptor;
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.ResponseApplySnapshotChunk getDefaultInstanceForType() {
-      return com.tendermint.abci.ResponseApplySnapshotChunk.getDefaultInstance();
+    @Override
+    public ResponseApplySnapshotChunk getDefaultInstanceForType() {
+      return ResponseApplySnapshotChunk.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.ResponseApplySnapshotChunk build() {
-      com.tendermint.abci.ResponseApplySnapshotChunk result = buildPartial();
+    @Override
+    public ResponseApplySnapshotChunk build() {
+      ResponseApplySnapshotChunk result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.ResponseApplySnapshotChunk buildPartial() {
-      com.tendermint.abci.ResponseApplySnapshotChunk result = new com.tendermint.abci.ResponseApplySnapshotChunk(this);
+    @Override
+    public ResponseApplySnapshotChunk buildPartial() {
+      ResponseApplySnapshotChunk result = new ResponseApplySnapshotChunk(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.tendermint.abci.ResponseApplySnapshotChunk result) {
+    private void buildPartialRepeatedFields(ResponseApplySnapshotChunk result) {
       if (((bitField0_ & 0x00000002) != 0)) {
         refetchChunks_.makeImmutable();
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -626,57 +626,57 @@ private static final long serialVersionUID = 0L;
       result.rejectSenders_ = rejectSenders_;
     }
 
-    private void buildPartial0(com.tendermint.abci.ResponseApplySnapshotChunk result) {
+    private void buildPartial0(ResponseApplySnapshotChunk result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.result_ = result_;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.tendermint.abci.ResponseApplySnapshotChunk) {
-        return mergeFrom((com.tendermint.abci.ResponseApplySnapshotChunk)other);
+      if (other instanceof ResponseApplySnapshotChunk) {
+        return mergeFrom((ResponseApplySnapshotChunk)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.tendermint.abci.ResponseApplySnapshotChunk other) {
-      if (other == com.tendermint.abci.ResponseApplySnapshotChunk.getDefaultInstance()) return this;
+    public Builder mergeFrom(ResponseApplySnapshotChunk other) {
+      if (other == ResponseApplySnapshotChunk.getDefaultInstance()) return this;
       if (other.result_ != 0) {
         setResultValue(other.getResultValue());
       }
@@ -705,18 +705,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -748,7 +748,7 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 18
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
               ensureRejectSendersIsMutable();
               rejectSenders_.add(s);
               break;
@@ -775,7 +775,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseApplySnapshotChunk.Result result = 1 [json_name = "result"];</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    @Override public int getResultValue() {
       return result_;
     }
     /**
@@ -793,17 +793,17 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseApplySnapshotChunk.Result result = 1 [json_name = "result"];</code>
      * @return The result.
      */
-    @java.lang.Override
-    public com.tendermint.abci.ResponseApplySnapshotChunk.Result getResult() {
-      com.tendermint.abci.ResponseApplySnapshotChunk.Result result = com.tendermint.abci.ResponseApplySnapshotChunk.Result.forNumber(result_);
-      return result == null ? com.tendermint.abci.ResponseApplySnapshotChunk.Result.UNRECOGNIZED : result;
+    @Override
+    public Result getResult() {
+      Result result = Result.forNumber(result_);
+      return result == null ? Result.UNRECOGNIZED : result;
     }
     /**
      * <code>.tendermint.abci.ResponseApplySnapshotChunk.Result result = 1 [json_name = "result"];</code>
      * @param value The result to set.
      * @return This builder for chaining.
      */
-    public Builder setResult(com.tendermint.abci.ResponseApplySnapshotChunk.Result value) {
+    public Builder setResult(Result value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -838,7 +838,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated uint32 refetch_chunks = 2 [json_name = "refetchChunks"];</code>
      * @return A list containing the refetchChunks.
      */
-    public java.util.List<java.lang.Integer>
+    public java.util.List<Integer>
         getRefetchChunksList() {
       return ((bitField0_ & 0x00000002) != 0) ?
                java.util.Collections.unmodifiableList(refetchChunks_) : refetchChunks_;
@@ -910,7 +910,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addAllRefetchChunks(
-        java.lang.Iterable<? extends java.lang.Integer> values) {
+        Iterable<? extends Integer> values) {
       ensureRefetchChunksIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, refetchChunks_);
@@ -971,7 +971,7 @@ private static final long serialVersionUID = 0L;
      * @param index The index of the element to return.
      * @return The rejectSenders at the given index.
      */
-    public java.lang.String getRejectSenders(int index) {
+    public String getRejectSenders(int index) {
       return rejectSenders_.get(index);
     }
     /**
@@ -998,7 +998,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setRejectSenders(
-        int index, java.lang.String value) {
+        int index, String value) {
       if (value == null) { throw new NullPointerException(); }
       ensureRejectSendersIsMutable();
       rejectSenders_.set(index, value);
@@ -1015,7 +1015,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addRejectSenders(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       ensureRejectSendersIsMutable();
       rejectSenders_.add(value);
@@ -1032,7 +1032,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addAllRejectSenders(
-        java.lang.Iterable<java.lang.String> values) {
+        Iterable<String> values) {
       ensureRejectSendersIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, rejectSenders_);
@@ -1071,13 +1071,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1088,18 +1088,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.abci.ResponseApplySnapshotChunk)
-  private static final com.tendermint.abci.ResponseApplySnapshotChunk DEFAULT_INSTANCE;
+  private static final ResponseApplySnapshotChunk DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.tendermint.abci.ResponseApplySnapshotChunk();
+    DEFAULT_INSTANCE = new ResponseApplySnapshotChunk();
   }
 
-  public static com.tendermint.abci.ResponseApplySnapshotChunk getDefaultInstance() {
+  public static ResponseApplySnapshotChunk getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ResponseApplySnapshotChunk>
       PARSER = new com.google.protobuf.AbstractParser<ResponseApplySnapshotChunk>() {
-    @java.lang.Override
+    @Override
     public ResponseApplySnapshotChunk parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1123,13 +1123,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<ResponseApplySnapshotChunk> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.tendermint.abci.ResponseApplySnapshotChunk getDefaultInstanceForType() {
+  @Override
+  public ResponseApplySnapshotChunk getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

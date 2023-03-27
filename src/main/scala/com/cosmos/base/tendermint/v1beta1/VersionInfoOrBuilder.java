@@ -11,7 +11,7 @@ public interface VersionInfoOrBuilder extends
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The bytes for name.
@@ -23,7 +23,7 @@ public interface VersionInfoOrBuilder extends
    * <code>string app_name = 2 [json_name = "appName"];</code>
    * @return The appName.
    */
-  java.lang.String getAppName();
+  String getAppName();
   /**
    * <code>string app_name = 2 [json_name = "appName"];</code>
    * @return The bytes for appName.
@@ -35,7 +35,7 @@ public interface VersionInfoOrBuilder extends
    * <code>string version = 3 [json_name = "version"];</code>
    * @return The version.
    */
-  java.lang.String getVersion();
+  String getVersion();
   /**
    * <code>string version = 3 [json_name = "version"];</code>
    * @return The bytes for version.
@@ -47,7 +47,7 @@ public interface VersionInfoOrBuilder extends
    * <code>string git_commit = 4 [json_name = "gitCommit"];</code>
    * @return The gitCommit.
    */
-  java.lang.String getGitCommit();
+  String getGitCommit();
   /**
    * <code>string git_commit = 4 [json_name = "gitCommit"];</code>
    * @return The bytes for gitCommit.
@@ -59,7 +59,7 @@ public interface VersionInfoOrBuilder extends
    * <code>string build_tags = 5 [json_name = "buildTags"];</code>
    * @return The buildTags.
    */
-  java.lang.String getBuildTags();
+  String getBuildTags();
   /**
    * <code>string build_tags = 5 [json_name = "buildTags"];</code>
    * @return The bytes for buildTags.
@@ -71,7 +71,7 @@ public interface VersionInfoOrBuilder extends
    * <code>string go_version = 6 [json_name = "goVersion"];</code>
    * @return The goVersion.
    */
-  java.lang.String getGoVersion();
+  String getGoVersion();
   /**
    * <code>string go_version = 6 [json_name = "goVersion"];</code>
    * @return The bytes for goVersion.
@@ -82,12 +82,12 @@ public interface VersionInfoOrBuilder extends
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
    */
-  java.util.List<com.cosmos.base.tendermint.v1beta1.Module> 
+  java.util.List<Module>
       getBuildDepsList();
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
    */
-  com.cosmos.base.tendermint.v1beta1.Module getBuildDeps(int index);
+  Module getBuildDeps(int index);
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
    */
@@ -95,12 +95,12 @@ public interface VersionInfoOrBuilder extends
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
    */
-  java.util.List<? extends com.cosmos.base.tendermint.v1beta1.ModuleOrBuilder> 
+  java.util.List<? extends ModuleOrBuilder>
       getBuildDepsOrBuilderList();
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
    */
-  com.cosmos.base.tendermint.v1beta1.ModuleOrBuilder getBuildDepsOrBuilder(
+  ModuleOrBuilder getBuildDepsOrBuilder(
       int index);
 
   /**
@@ -111,7 +111,7 @@ public interface VersionInfoOrBuilder extends
    * <code>string cosmos_sdk_version = 8 [json_name = "cosmosSdkVersion"];</code>
    * @return The cosmosSdkVersion.
    */
-  java.lang.String getCosmosSdkVersion();
+  String getCosmosSdkVersion();
   /**
    * <pre>
    * Since: cosmos-sdk 0.43

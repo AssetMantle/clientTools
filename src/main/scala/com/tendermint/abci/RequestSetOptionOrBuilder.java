@@ -11,7 +11,7 @@ public interface RequestSetOptionOrBuilder extends
    * <code>string key = 1 [json_name = "key"];</code>
    * @return The key.
    */
-  java.lang.String getKey();
+  String getKey();
   /**
    * <code>string key = 1 [json_name = "key"];</code>
    * @return The bytes for key.
@@ -23,7 +23,7 @@ public interface RequestSetOptionOrBuilder extends
    * <code>string value = 2 [json_name = "value"];</code>
    * @return The value.
    */
-  java.lang.String getValue();
+  String getValue();
   /**
    * <code>string value = 2 [json_name = "value"];</code>
    * @return The bytes for value.

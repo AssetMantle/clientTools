@@ -26,7 +26,7 @@ public interface InterchainAccountOrBuilder extends
    * <code>string account_owner = 2 [json_name = "accountOwner", (.gogoproto.moretags) = "yaml:&#92;"account_owner&#92;""];</code>
    * @return The accountOwner.
    */
-  java.lang.String getAccountOwner();
+  String getAccountOwner();
   /**
    * <code>string account_owner = 2 [json_name = "accountOwner", (.gogoproto.moretags) = "yaml:&#92;"account_owner&#92;""];</code>
    * @return The bytes for accountOwner.

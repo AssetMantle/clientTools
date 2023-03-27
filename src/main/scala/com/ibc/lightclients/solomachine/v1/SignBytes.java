@@ -25,24 +25,24 @@ private static final long serialVersionUID = 0L;
     data_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new SignBytes();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_SignBytes_descriptor;
+    return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_SignBytes_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_SignBytes_fieldAccessorTable
+    return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_SignBytes_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.lightclients.solomachine.v1.SignBytes.class, com.ibc.lightclients.solomachine.v1.SignBytes.Builder.class);
+            SignBytes.class, Builder.class);
   }
 
   public static final int SEQUENCE_FIELD_NUMBER = 1;
@@ -51,7 +51,7 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 sequence = 1 [json_name = "sequence"];</code>
    * @return The sequence.
    */
-  @java.lang.Override
+  @Override
   public long getSequence() {
     return sequence_;
   }
@@ -62,27 +62,27 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 timestamp = 2 [json_name = "timestamp"];</code>
    * @return The timestamp.
    */
-  @java.lang.Override
+  @Override
   public long getTimestamp() {
     return timestamp_;
   }
 
   public static final int DIVERSIFIER_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object diversifier_ = "";
+  private volatile Object diversifier_ = "";
   /**
    * <code>string diversifier = 3 [json_name = "diversifier"];</code>
    * @return The diversifier.
    */
-  @java.lang.Override
-  public java.lang.String getDiversifier() {
-    java.lang.Object ref = diversifier_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getDiversifier() {
+    Object ref = diversifier_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       diversifier_ = s;
       return s;
     }
@@ -91,14 +91,14 @@ private static final long serialVersionUID = 0L;
    * <code>string diversifier = 3 [json_name = "diversifier"];</code>
    * @return The bytes for diversifier.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getDiversifierBytes() {
-    java.lang.Object ref = diversifier_;
-    if (ref instanceof java.lang.String) {
+    Object ref = diversifier_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       diversifier_ = b;
       return b;
     } else {
@@ -116,7 +116,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.lightclients.solomachine.v1.DataType data_type = 4 [json_name = "dataType", (.gogoproto.moretags) = "yaml:&#92;"data_type&#92;""];</code>
    * @return The enum numeric value on the wire for dataType.
    */
-  @java.lang.Override public int getDataTypeValue() {
+  @Override public int getDataTypeValue() {
     return dataType_;
   }
   /**
@@ -127,9 +127,9 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.lightclients.solomachine.v1.DataType data_type = 4 [json_name = "dataType", (.gogoproto.moretags) = "yaml:&#92;"data_type&#92;""];</code>
    * @return The dataType.
    */
-  @java.lang.Override public com.ibc.lightclients.solomachine.v1.DataType getDataType() {
-    com.ibc.lightclients.solomachine.v1.DataType result = com.ibc.lightclients.solomachine.v1.DataType.forNumber(dataType_);
-    return result == null ? com.ibc.lightclients.solomachine.v1.DataType.UNRECOGNIZED : result;
+  @Override public DataType getDataType() {
+    DataType result = DataType.forNumber(dataType_);
+    return result == null ? DataType.UNRECOGNIZED : result;
   }
 
   public static final int DATA_FIELD_NUMBER = 5;
@@ -142,13 +142,13 @@ private static final long serialVersionUID = 0L;
    * <code>bytes data = 5 [json_name = "data"];</code>
    * @return The data.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getData() {
     return data_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -158,7 +158,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (sequence_ != 0L) {
@@ -170,7 +170,7 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(diversifier_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 3, diversifier_);
     }
-    if (dataType_ != com.ibc.lightclients.solomachine.v1.DataType.DATA_TYPE_UNINITIALIZED_UNSPECIFIED.getNumber()) {
+    if (dataType_ != DataType.DATA_TYPE_UNINITIALIZED_UNSPECIFIED.getNumber()) {
       output.writeEnum(4, dataType_);
     }
     if (!data_.isEmpty()) {
@@ -179,7 +179,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -196,7 +196,7 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(diversifier_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, diversifier_);
     }
-    if (dataType_ != com.ibc.lightclients.solomachine.v1.DataType.DATA_TYPE_UNINITIALIZED_UNSPECIFIED.getNumber()) {
+    if (dataType_ != DataType.DATA_TYPE_UNINITIALIZED_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(4, dataType_);
     }
@@ -209,15 +209,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.lightclients.solomachine.v1.SignBytes)) {
+    if (!(obj instanceof SignBytes)) {
       return super.equals(obj);
     }
-    com.ibc.lightclients.solomachine.v1.SignBytes other = (com.ibc.lightclients.solomachine.v1.SignBytes) obj;
+    SignBytes other = (SignBytes) obj;
 
     if (getSequence()
         != other.getSequence()) return false;
@@ -232,7 +232,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -256,69 +256,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseFrom(
+  public static SignBytes parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseFrom(
+  public static SignBytes parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseFrom(
+  public static SignBytes parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseFrom(
+  public static SignBytes parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseFrom(byte[] data)
+  public static SignBytes parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseFrom(
+  public static SignBytes parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseFrom(java.io.InputStream input)
+  public static SignBytes parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseFrom(
+  public static SignBytes parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseDelimitedFrom(java.io.InputStream input)
+  public static SignBytes parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseDelimitedFrom(
+  public static SignBytes parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseFrom(
+  public static SignBytes parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.lightclients.solomachine.v1.SignBytes parseFrom(
+  public static SignBytes parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -326,23 +326,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.lightclients.solomachine.v1.SignBytes prototype) {
+  public static Builder newBuilder(SignBytes prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -356,18 +356,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.lightclients.solomachine.v1.SignBytes)
-      com.ibc.lightclients.solomachine.v1.SignBytesOrBuilder {
+      SignBytesOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_SignBytes_descriptor;
+      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_SignBytes_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_SignBytes_fieldAccessorTable
+      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_SignBytes_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.lightclients.solomachine.v1.SignBytes.class, com.ibc.lightclients.solomachine.v1.SignBytes.Builder.class);
+              SignBytes.class, Builder.class);
     }
 
     // Construct using com.ibc.lightclients.solomachine.v1.SignBytes.newBuilder()
@@ -376,11 +376,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -392,35 +392,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_SignBytes_descriptor;
+      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_SignBytes_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.lightclients.solomachine.v1.SignBytes getDefaultInstanceForType() {
-      return com.ibc.lightclients.solomachine.v1.SignBytes.getDefaultInstance();
+    @Override
+    public SignBytes getDefaultInstanceForType() {
+      return SignBytes.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.lightclients.solomachine.v1.SignBytes build() {
-      com.ibc.lightclients.solomachine.v1.SignBytes result = buildPartial();
+    @Override
+    public SignBytes build() {
+      SignBytes result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.lightclients.solomachine.v1.SignBytes buildPartial() {
-      com.ibc.lightclients.solomachine.v1.SignBytes result = new com.ibc.lightclients.solomachine.v1.SignBytes(this);
+    @Override
+    public SignBytes buildPartial() {
+      SignBytes result = new SignBytes(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.lightclients.solomachine.v1.SignBytes result) {
+    private void buildPartial0(SignBytes result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.sequence_ = sequence_;
@@ -439,50 +439,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.lightclients.solomachine.v1.SignBytes) {
-        return mergeFrom((com.ibc.lightclients.solomachine.v1.SignBytes)other);
+      if (other instanceof SignBytes) {
+        return mergeFrom((SignBytes)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.lightclients.solomachine.v1.SignBytes other) {
-      if (other == com.ibc.lightclients.solomachine.v1.SignBytes.getDefaultInstance()) return this;
+    public Builder mergeFrom(SignBytes other) {
+      if (other == SignBytes.getDefaultInstance()) return this;
       if (other.getSequence() != 0L) {
         setSequence(other.getSequence());
       }
@@ -505,18 +505,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -573,7 +573,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 sequence = 1 [json_name = "sequence"];</code>
      * @return The sequence.
      */
-    @java.lang.Override
+    @Override
     public long getSequence() {
       return sequence_;
     }
@@ -605,7 +605,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 timestamp = 2 [json_name = "timestamp"];</code>
      * @return The timestamp.
      */
-    @java.lang.Override
+    @Override
     public long getTimestamp() {
       return timestamp_;
     }
@@ -632,21 +632,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object diversifier_ = "";
+    private Object diversifier_ = "";
     /**
      * <code>string diversifier = 3 [json_name = "diversifier"];</code>
      * @return The diversifier.
      */
-    public java.lang.String getDiversifier() {
-      java.lang.Object ref = diversifier_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getDiversifier() {
+      Object ref = diversifier_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         diversifier_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -655,11 +655,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getDiversifierBytes() {
-      java.lang.Object ref = diversifier_;
+      Object ref = diversifier_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         diversifier_ = b;
         return b;
       } else {
@@ -672,7 +672,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDiversifier(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       diversifier_ = value;
       bitField0_ |= 0x00000004;
@@ -713,7 +713,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.lightclients.solomachine.v1.DataType data_type = 4 [json_name = "dataType", (.gogoproto.moretags) = "yaml:&#92;"data_type&#92;""];</code>
      * @return The enum numeric value on the wire for dataType.
      */
-    @java.lang.Override public int getDataTypeValue() {
+    @Override public int getDataTypeValue() {
       return dataType_;
     }
     /**
@@ -739,10 +739,10 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.lightclients.solomachine.v1.DataType data_type = 4 [json_name = "dataType", (.gogoproto.moretags) = "yaml:&#92;"data_type&#92;""];</code>
      * @return The dataType.
      */
-    @java.lang.Override
-    public com.ibc.lightclients.solomachine.v1.DataType getDataType() {
-      com.ibc.lightclients.solomachine.v1.DataType result = com.ibc.lightclients.solomachine.v1.DataType.forNumber(dataType_);
-      return result == null ? com.ibc.lightclients.solomachine.v1.DataType.UNRECOGNIZED : result;
+    @Override
+    public DataType getDataType() {
+      DataType result = DataType.forNumber(dataType_);
+      return result == null ? DataType.UNRECOGNIZED : result;
     }
     /**
      * <pre>
@@ -753,7 +753,7 @@ private static final long serialVersionUID = 0L;
      * @param value The dataType to set.
      * @return This builder for chaining.
      */
-    public Builder setDataType(com.ibc.lightclients.solomachine.v1.DataType value) {
+    public Builder setDataType(DataType value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -786,7 +786,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes data = 5 [json_name = "data"];</code>
      * @return The data.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getData() {
       return data_;
     }
@@ -820,13 +820,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -837,18 +837,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.lightclients.solomachine.v1.SignBytes)
-  private static final com.ibc.lightclients.solomachine.v1.SignBytes DEFAULT_INSTANCE;
+  private static final SignBytes DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.lightclients.solomachine.v1.SignBytes();
+    DEFAULT_INSTANCE = new SignBytes();
   }
 
-  public static com.ibc.lightclients.solomachine.v1.SignBytes getDefaultInstance() {
+  public static SignBytes getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<SignBytes>
       PARSER = new com.google.protobuf.AbstractParser<SignBytes>() {
-    @java.lang.Override
+    @Override
     public SignBytes parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -872,13 +872,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<SignBytes> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.lightclients.solomachine.v1.SignBytes getDefaultInstanceForType() {
+  @Override
+  public SignBytes getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

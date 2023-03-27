@@ -11,7 +11,7 @@ public interface MessageOrBuilder extends
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
    */
-  java.lang.String getFrom();
+  String getFrom();
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The bytes for from.
@@ -110,24 +110,24 @@ public interface MessageOrBuilder extends
   com.types.HeightOrBuilder getExpiresInOrBuilder();
 
   /**
-   * <code>string maker_ownable_split = 8 [json_name = "makerOwnableSplit", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
+   * <code>string maker_ownable_split = 8 [json_name = "makerOwnableSplit"];</code>
    * @return The makerOwnableSplit.
    */
-  java.lang.String getMakerOwnableSplit();
+  String getMakerOwnableSplit();
   /**
-   * <code>string maker_ownable_split = 8 [json_name = "makerOwnableSplit", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
+   * <code>string maker_ownable_split = 8 [json_name = "makerOwnableSplit"];</code>
    * @return The bytes for makerOwnableSplit.
    */
   com.google.protobuf.ByteString
       getMakerOwnableSplitBytes();
 
   /**
-   * <code>string taker_ownable_split = 9 [json_name = "takerOwnableSplit", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
+   * <code>string taker_ownable_split = 9 [json_name = "takerOwnableSplit"];</code>
    * @return The takerOwnableSplit.
    */
-  java.lang.String getTakerOwnableSplit();
+  String getTakerOwnableSplit();
   /**
-   * <code>string taker_ownable_split = 9 [json_name = "takerOwnableSplit", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
+   * <code>string taker_ownable_split = 9 [json_name = "takerOwnableSplit"];</code>
    * @return The bytes for takerOwnableSplit.
    */
   com.google.protobuf.ByteString

@@ -27,7 +27,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n%cosmos/evidence/v1beta1/genesis.proto\022" +
       "\027cosmos.evidence.v1beta1\032\031google/protobu" +
       "f/any.proto\"@\n\014GenesisState\0220\n\010evidence\030" +
@@ -50,7 +50,7 @@ public final class GenesisProto {
     internal_static_cosmos_evidence_v1beta1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_evidence_v1beta1_GenesisState_descriptor,
-        new java.lang.String[] { "Evidence", });
+        new String[] { "Evidence", });
     com.google.protobuf.AnyProto.getDescriptor();
   }
 

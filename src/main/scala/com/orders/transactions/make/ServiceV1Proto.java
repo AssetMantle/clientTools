@@ -22,30 +22,31 @@ public final class ServiceV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n:modules/orders/internal/transactions/m" +
       "ake/service.v1.proto\022\030orders.transaction" +
       "s.make\032\034google/api/annotations.proto\032:mo" +
       "dules/orders/internal/transactions/make/" +
-      "message.v1.proto\032;modules/orders/interna" +
-      "l/transactions/make/response.v1.proto2w\n" +
-      "\007Service\022l\n\006Handle\022!.orders.transactions" +
-      ".make.Message\032\".orders.transactions.make" +
-      ".Response\"\033\202\323\344\223\002\025\"\023/mantle/orders/makeB\372" +
-      "\001\n\034com.orders.transactions.makeB\016Service" +
-      "V1ProtoP\001ZHgithub.com/AssetMantle/module" +
-      "s/modules/orders/internal/transactions/m" +
-      "ake\242\002\003OTM\252\002\030Orders.Transactions.Make\312\002\030O" +
-      "rders\\Transactions\\Make\342\002$Orders\\Transac" +
-      "tions\\Make\\GPBMetadata\352\002\032Orders::Transac" +
-      "tions::Makeb\006proto3"
+      "message.v1.proto\032Fmodules/orders/interna" +
+      "l/transactions/make/transactionResponse." +
+      "v1.proto2\202\001\n\007Service\022w\n\006Handle\022!.orders." +
+      "transactions.make.Message\032-.orders.trans" +
+      "actions.make.TransactionResponse\"\033\202\323\344\223\002\025" +
+      "\"\023/mantle/orders/makeB\372\001\n\034com.orders.tra" +
+      "nsactions.makeB\016ServiceV1ProtoP\001ZHgithub" +
+      ".com/AssetMantle/modules/modules/orders/" +
+      "internal/transactions/make\242\002\003OTM\252\002\030Order" +
+      "s.Transactions.Make\312\002\030Orders\\Transaction" +
+      "s\\Make\342\002$Orders\\Transactions\\Make\\GPBMet" +
+      "adata\352\002\032Orders::Transactions::Makeb\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.api.AnnotationsProto.getDescriptor(),
-          com.orders.transactions.make.MessageV1Proto.getDescriptor(),
-          com.orders.transactions.make.ResponseV1Proto.getDescriptor(),
+          MessageV1Proto.getDescriptor(),
+          TransactionResponseV1Proto.getDescriptor(),
         });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
@@ -53,8 +54,8 @@ public final class ServiceV1Proto {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();
-    com.orders.transactions.make.MessageV1Proto.getDescriptor();
-    com.orders.transactions.make.ResponseV1Proto.getDescriptor();
+    MessageV1Proto.getDescriptor();
+    TransactionResponseV1Proto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

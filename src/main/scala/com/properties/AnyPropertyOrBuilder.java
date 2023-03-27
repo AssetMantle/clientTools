@@ -16,11 +16,11 @@ public interface AnyPropertyOrBuilder extends
    * <code>.properties.MesaProperty mesa_property = 1 [json_name = "mesaProperty"];</code>
    * @return The mesaProperty.
    */
-  com.properties.MesaProperty getMesaProperty();
+  MesaProperty getMesaProperty();
   /**
    * <code>.properties.MesaProperty mesa_property = 1 [json_name = "mesaProperty"];</code>
    */
-  com.properties.MesaPropertyOrBuilder getMesaPropertyOrBuilder();
+  MesaPropertyOrBuilder getMesaPropertyOrBuilder();
 
   /**
    * <code>.properties.MetaProperty meta_property = 2 [json_name = "metaProperty"];</code>
@@ -31,11 +31,11 @@ public interface AnyPropertyOrBuilder extends
    * <code>.properties.MetaProperty meta_property = 2 [json_name = "metaProperty"];</code>
    * @return The metaProperty.
    */
-  com.properties.MetaProperty getMetaProperty();
+  MetaProperty getMetaProperty();
   /**
    * <code>.properties.MetaProperty meta_property = 2 [json_name = "metaProperty"];</code>
    */
-  com.properties.MetaPropertyOrBuilder getMetaPropertyOrBuilder();
+  MetaPropertyOrBuilder getMetaPropertyOrBuilder();
 
-  public com.properties.AnyProperty.ImplCase getImplCase();
+  AnyProperty.ImplCase getImplCase();
 }

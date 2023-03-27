@@ -14,7 +14,7 @@ public interface QueryVotesResponseOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Vote votes = 1 [json_name = "votes", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.gov.v1beta1.Vote> 
+  java.util.List<Vote>
       getVotesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryVotesResponseOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Vote votes = 1 [json_name = "votes", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.gov.v1beta1.Vote getVotes(int index);
+  Vote getVotes(int index);
   /**
    * <pre>
    * votes defined the queried votes.
@@ -39,7 +39,7 @@ public interface QueryVotesResponseOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Vote votes = 1 [json_name = "votes", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.gov.v1beta1.VoteOrBuilder> 
+  java.util.List<? extends VoteOrBuilder>
       getVotesOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryVotesResponseOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Vote votes = 1 [json_name = "votes", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.gov.v1beta1.VoteOrBuilder getVotesOrBuilder(
+  VoteOrBuilder getVotesOrBuilder(
       int index);
 
   /**

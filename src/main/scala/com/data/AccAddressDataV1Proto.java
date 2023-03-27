@@ -27,7 +27,7 @@ public final class AccAddressDataV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n(schema/data/base/accAddressData.v1.pro" +
       "to\022\004data\032\024gogoproto/gogo.proto\",\n\016AccAdd" +
       "ressData\022\024\n\005value\030\001 \001(\014R\005value:\004\210\240\037\000B\202\001\n" +
@@ -46,7 +46,7 @@ public final class AccAddressDataV1Proto {
     internal_static_data_AccAddressData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_data_AccAddressData_descriptor,
-        new java.lang.String[] { "Value", });
+        new String[] { "Value", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

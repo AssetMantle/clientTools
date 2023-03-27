@@ -16,12 +16,12 @@ public interface CommitInfoOrBuilder extends
   /**
    * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.base.store.v1beta1.StoreInfo> 
+  java.util.List<StoreInfo>
       getStoreInfosList();
   /**
    * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.base.store.v1beta1.StoreInfo getStoreInfos(int index);
+  StoreInfo getStoreInfos(int index);
   /**
    * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
    */
@@ -29,11 +29,11 @@ public interface CommitInfoOrBuilder extends
   /**
    * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.base.store.v1beta1.StoreInfoOrBuilder> 
+  java.util.List<? extends StoreInfoOrBuilder>
       getStoreInfosOrBuilderList();
   /**
    * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.base.store.v1beta1.StoreInfoOrBuilder getStoreInfosOrBuilder(
+  StoreInfoOrBuilder getStoreInfosOrBuilder(
       int index);
 }

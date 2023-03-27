@@ -10,12 +10,12 @@ public interface ValidatorSlashEventsOrBuilder extends
   /**
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEvent validator_slash_events = 1 [json_name = "validatorSlashEvents", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_slash_events&#92;""];</code>
    */
-  java.util.List<com.cosmos.distribution.v1beta1.ValidatorSlashEvent> 
+  java.util.List<ValidatorSlashEvent>
       getValidatorSlashEventsList();
   /**
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEvent validator_slash_events = 1 [json_name = "validatorSlashEvents", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_slash_events&#92;""];</code>
    */
-  com.cosmos.distribution.v1beta1.ValidatorSlashEvent getValidatorSlashEvents(int index);
+  ValidatorSlashEvent getValidatorSlashEvents(int index);
   /**
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEvent validator_slash_events = 1 [json_name = "validatorSlashEvents", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_slash_events&#92;""];</code>
    */
@@ -23,11 +23,11 @@ public interface ValidatorSlashEventsOrBuilder extends
   /**
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEvent validator_slash_events = 1 [json_name = "validatorSlashEvents", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_slash_events&#92;""];</code>
    */
-  java.util.List<? extends com.cosmos.distribution.v1beta1.ValidatorSlashEventOrBuilder> 
+  java.util.List<? extends ValidatorSlashEventOrBuilder>
       getValidatorSlashEventsOrBuilderList();
   /**
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEvent validator_slash_events = 1 [json_name = "validatorSlashEvents", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_slash_events&#92;""];</code>
    */
-  com.cosmos.distribution.v1beta1.ValidatorSlashEventOrBuilder getValidatorSlashEventsOrBuilder(
+  ValidatorSlashEventOrBuilder getValidatorSlashEventsOrBuilder(
       int index);
 }

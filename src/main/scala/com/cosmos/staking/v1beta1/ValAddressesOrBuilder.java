@@ -11,7 +11,7 @@ public interface ValAddressesOrBuilder extends
    * <code>repeated string addresses = 1 [json_name = "addresses"];</code>
    * @return A list containing the addresses.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getAddressesList();
   /**
    * <code>repeated string addresses = 1 [json_name = "addresses"];</code>
@@ -23,7 +23,7 @@ public interface ValAddressesOrBuilder extends
    * @param index The index of the element to return.
    * @return The addresses at the given index.
    */
-  java.lang.String getAddresses(int index);
+  String getAddresses(int index);
   /**
    * <code>repeated string addresses = 1 [json_name = "addresses"];</code>
    * @param index The index of the value to return.

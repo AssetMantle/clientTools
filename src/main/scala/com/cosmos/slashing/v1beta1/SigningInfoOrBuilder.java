@@ -15,7 +15,7 @@ public interface SigningInfoOrBuilder extends
    * <code>string address = 1 [json_name = "address"];</code>
    * @return The address.
    */
-  java.lang.String getAddress();
+  String getAddress();
   /**
    * <pre>
    * address is the validator address.
@@ -44,7 +44,7 @@ public interface SigningInfoOrBuilder extends
    * <code>.cosmos.slashing.v1beta1.ValidatorSigningInfo validator_signing_info = 2 [json_name = "validatorSigningInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_signing_info&#92;""];</code>
    * @return The validatorSigningInfo.
    */
-  com.cosmos.slashing.v1beta1.ValidatorSigningInfo getValidatorSigningInfo();
+  ValidatorSigningInfo getValidatorSigningInfo();
   /**
    * <pre>
    * validator_signing_info represents the signing info of this validator.
@@ -52,5 +52,5 @@ public interface SigningInfoOrBuilder extends
    *
    * <code>.cosmos.slashing.v1beta1.ValidatorSigningInfo validator_signing_info = 2 [json_name = "validatorSigningInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_signing_info&#92;""];</code>
    */
-  com.cosmos.slashing.v1beta1.ValidatorSigningInfoOrBuilder getValidatorSigningInfoOrBuilder();
+  ValidatorSigningInfoOrBuilder getValidatorSigningInfoOrBuilder();
 }

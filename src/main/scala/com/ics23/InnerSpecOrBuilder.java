@@ -17,7 +17,7 @@ public interface InnerSpecOrBuilder extends
    * <code>repeated int32 child_order = 1 [json_name = "childOrder"];</code>
    * @return A list containing the childOrder.
    */
-  java.util.List<java.lang.Integer> getChildOrderList();
+  java.util.List<Integer> getChildOrderList();
   /**
    * <pre>
    * Child order is the ordering of the children node, must count from 0
@@ -87,5 +87,5 @@ public interface InnerSpecOrBuilder extends
    * <code>.ics23.HashOp hash = 6 [json_name = "hash"];</code>
    * @return The hash.
    */
-  com.ics23.HashOp getHash();
+  HashOp getHash();
 }

@@ -24,7 +24,7 @@ public interface QueryHistoricalInfoResponseOrBuilder extends
    * <code>.cosmos.staking.v1beta1.HistoricalInfo hist = 1 [json_name = "hist"];</code>
    * @return The hist.
    */
-  com.cosmos.staking.v1beta1.HistoricalInfo getHist();
+  HistoricalInfo getHist();
   /**
    * <pre>
    * hist defines the historical info at the given height.
@@ -32,5 +32,5 @@ public interface QueryHistoricalInfoResponseOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.HistoricalInfo hist = 1 [json_name = "hist"];</code>
    */
-  com.cosmos.staking.v1beta1.HistoricalInfoOrBuilder getHistOrBuilder();
+  HistoricalInfoOrBuilder getHistOrBuilder();
 }

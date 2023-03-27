@@ -37,7 +37,7 @@ public interface ProposalOrBuilder extends
    * <code>.cosmos.gov.v1beta1.ProposalStatus status = 3 [json_name = "status", (.gogoproto.moretags) = "yaml:&#92;"proposal_status&#92;""];</code>
    * @return The status.
    */
-  com.cosmos.gov.v1beta1.ProposalStatus getStatus();
+  ProposalStatus getStatus();
 
   /**
    * <code>.cosmos.gov.v1beta1.TallyResult final_tally_result = 4 [json_name = "finalTallyResult", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"final_tally_result&#92;""];</code>
@@ -48,11 +48,11 @@ public interface ProposalOrBuilder extends
    * <code>.cosmos.gov.v1beta1.TallyResult final_tally_result = 4 [json_name = "finalTallyResult", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"final_tally_result&#92;""];</code>
    * @return The finalTallyResult.
    */
-  com.cosmos.gov.v1beta1.TallyResult getFinalTallyResult();
+  TallyResult getFinalTallyResult();
   /**
    * <code>.cosmos.gov.v1beta1.TallyResult final_tally_result = 4 [json_name = "finalTallyResult", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"final_tally_result&#92;""];</code>
    */
-  com.cosmos.gov.v1beta1.TallyResultOrBuilder getFinalTallyResultOrBuilder();
+  TallyResultOrBuilder getFinalTallyResultOrBuilder();
 
   /**
    * <code>.google.protobuf.Timestamp submit_time = 5 [json_name = "submitTime", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"submit_time&#92;"", (.gogoproto.stdtime) = true];</code>

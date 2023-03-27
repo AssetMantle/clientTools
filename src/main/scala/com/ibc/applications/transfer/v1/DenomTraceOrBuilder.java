@@ -16,7 +16,7 @@ public interface DenomTraceOrBuilder extends
    * <code>string path = 1 [json_name = "path"];</code>
    * @return The path.
    */
-  java.lang.String getPath();
+  String getPath();
   /**
    * <pre>
    * path defines the chain of port/channel identifiers used for tracing the
@@ -37,7 +37,7 @@ public interface DenomTraceOrBuilder extends
    * <code>string base_denom = 2 [json_name = "baseDenom"];</code>
    * @return The baseDenom.
    */
-  java.lang.String getBaseDenom();
+  String getBaseDenom();
   /**
    * <pre>
    * base denomination of the relayed fungible token.

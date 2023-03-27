@@ -32,7 +32,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n!ibc/core/channel/v1/genesis.proto\022\023ibc" +
       ".core.channel.v1\032\024gogoproto/gogo.proto\032!" +
       "ibc/core/channel/v1/channel.proto\"\343\005\n\014Ge" +
@@ -69,20 +69,20 @@ public final class GenesisProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
-          com.ibc.core.channel.v1.ChannelProto.getDescriptor(),
+          ChannelProto.getDescriptor(),
         });
     internal_static_ibc_core_channel_v1_GenesisState_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ibc_core_channel_v1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_GenesisState_descriptor,
-        new java.lang.String[] { "Channels", "Acknowledgements", "Commitments", "Receipts", "SendSequences", "RecvSequences", "AckSequences", "NextChannelSequence", });
+        new String[] { "Channels", "Acknowledgements", "Commitments", "Receipts", "SendSequences", "RecvSequences", "AckSequences", "NextChannelSequence", });
     internal_static_ibc_core_channel_v1_PacketSequence_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_core_channel_v1_PacketSequence_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_PacketSequence_descriptor,
-        new java.lang.String[] { "PortId", "ChannelId", "Sequence", });
+        new String[] { "PortId", "ChannelId", "Sequence", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.casttype);
@@ -91,7 +91,7 @@ public final class GenesisProto {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
-    com.ibc.core.channel.v1.ChannelProto.getDescriptor();
+    ChannelProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

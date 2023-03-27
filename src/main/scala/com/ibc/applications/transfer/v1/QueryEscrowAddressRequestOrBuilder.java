@@ -15,7 +15,7 @@ public interface QueryEscrowAddressRequestOrBuilder extends
    * <code>string port_id = 1 [json_name = "portId"];</code>
    * @return The portId.
    */
-  java.lang.String getPortId();
+  String getPortId();
   /**
    * <pre>
    * unique port identifier
@@ -35,7 +35,7 @@ public interface QueryEscrowAddressRequestOrBuilder extends
    * <code>string channel_id = 2 [json_name = "channelId"];</code>
    * @return The channelId.
    */
-  java.lang.String getChannelId();
+  String getChannelId();
   /**
    * <pre>
    * unique channel identifier

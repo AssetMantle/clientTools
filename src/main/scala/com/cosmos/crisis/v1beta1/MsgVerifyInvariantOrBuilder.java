@@ -11,7 +11,7 @@ public interface MsgVerifyInvariantOrBuilder extends
    * <code>string sender = 1 [json_name = "sender"];</code>
    * @return The sender.
    */
-  java.lang.String getSender();
+  String getSender();
   /**
    * <code>string sender = 1 [json_name = "sender"];</code>
    * @return The bytes for sender.
@@ -23,7 +23,7 @@ public interface MsgVerifyInvariantOrBuilder extends
    * <code>string invariant_module_name = 2 [json_name = "invariantModuleName", (.gogoproto.moretags) = "yaml:&#92;"invariant_module_name&#92;""];</code>
    * @return The invariantModuleName.
    */
-  java.lang.String getInvariantModuleName();
+  String getInvariantModuleName();
   /**
    * <code>string invariant_module_name = 2 [json_name = "invariantModuleName", (.gogoproto.moretags) = "yaml:&#92;"invariant_module_name&#92;""];</code>
    * @return The bytes for invariantModuleName.
@@ -35,7 +35,7 @@ public interface MsgVerifyInvariantOrBuilder extends
    * <code>string invariant_route = 3 [json_name = "invariantRoute", (.gogoproto.moretags) = "yaml:&#92;"invariant_route&#92;""];</code>
    * @return The invariantRoute.
    */
-  java.lang.String getInvariantRoute();
+  String getInvariantRoute();
   /**
    * <code>string invariant_route = 3 [json_name = "invariantRoute", (.gogoproto.moretags) = "yaml:&#92;"invariant_route&#92;""];</code>
    * @return The bytes for invariantRoute.

@@ -11,7 +11,7 @@ public interface MerklePathOrBuilder extends
    * <code>repeated string key_path = 1 [json_name = "keyPath", (.gogoproto.moretags) = "yaml:&#92;"key_path&#92;""];</code>
    * @return A list containing the keyPath.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getKeyPathList();
   /**
    * <code>repeated string key_path = 1 [json_name = "keyPath", (.gogoproto.moretags) = "yaml:&#92;"key_path&#92;""];</code>
@@ -23,7 +23,7 @@ public interface MerklePathOrBuilder extends
    * @param index The index of the element to return.
    * @return The keyPath at the given index.
    */
-  java.lang.String getKeyPath(int index);
+  String getKeyPath(int index);
   /**
    * <code>repeated string key_path = 1 [json_name = "keyPath", (.gogoproto.moretags) = "yaml:&#92;"key_path&#92;""];</code>
    * @param index The index of the value to return.

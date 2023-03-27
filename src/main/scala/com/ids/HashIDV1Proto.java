@@ -27,7 +27,7 @@ public final class HashIDV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\037schema/ids/base/hashID.v1.proto\022\003ids\032\024" +
       "gogoproto/gogo.proto\"*\n\006HashID\022\032\n\ti_d_by" +
       "tes\030\001 \001(\014R\007iDBytes:\004\210\240\037\000Bt\n\007com.idsB\rHas" +
@@ -45,7 +45,7 @@ public final class HashIDV1Proto {
     internal_static_ids_HashID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ids_HashID_descriptor,
-        new java.lang.String[] { "IDBytes", });
+        new String[] { "IDBytes", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

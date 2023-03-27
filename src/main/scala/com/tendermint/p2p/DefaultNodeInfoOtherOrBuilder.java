@@ -11,7 +11,7 @@ public interface DefaultNodeInfoOtherOrBuilder extends
    * <code>string tx_index = 1 [json_name = "txIndex"];</code>
    * @return The txIndex.
    */
-  java.lang.String getTxIndex();
+  String getTxIndex();
   /**
    * <code>string tx_index = 1 [json_name = "txIndex"];</code>
    * @return The bytes for txIndex.
@@ -23,7 +23,7 @@ public interface DefaultNodeInfoOtherOrBuilder extends
    * <code>string rpc_address = 2 [json_name = "rpcAddress", (.gogoproto.customname) = "RPCAddress"];</code>
    * @return The rpcAddress.
    */
-  java.lang.String getRpcAddress();
+  String getRpcAddress();
   /**
    * <code>string rpc_address = 2 [json_name = "rpcAddress", (.gogoproto.customname) = "RPCAddress"];</code>
    * @return The bytes for rpcAddress.

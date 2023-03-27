@@ -23,28 +23,28 @@ private static final long serialVersionUID = 0L;
   private QueryCurrentPlanResponse() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryCurrentPlanResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.upgrade.v1beta1.QueryProto.internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_descriptor;
+    return QueryProto.internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.upgrade.v1beta1.QueryProto.internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse.class, com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse.Builder.class);
+            QueryCurrentPlanResponse.class, Builder.class);
   }
 
   public static final int PLAN_FIELD_NUMBER = 1;
-  private com.cosmos.upgrade.v1beta1.Plan plan_;
+  private Plan plan_;
   /**
    * <pre>
    * plan is the current upgrade plan.
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
    * @return Whether the plan field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPlan() {
     return plan_ != null;
   }
@@ -65,9 +65,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
    * @return The plan.
    */
-  @java.lang.Override
-  public com.cosmos.upgrade.v1beta1.Plan getPlan() {
-    return plan_ == null ? com.cosmos.upgrade.v1beta1.Plan.getDefaultInstance() : plan_;
+  @Override
+  public Plan getPlan() {
+    return plan_ == null ? Plan.getDefaultInstance() : plan_;
   }
   /**
    * <pre>
@@ -76,13 +76,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.upgrade.v1beta1.PlanOrBuilder getPlanOrBuilder() {
-    return plan_ == null ? com.cosmos.upgrade.v1beta1.Plan.getDefaultInstance() : plan_;
+  @Override
+  public PlanOrBuilder getPlanOrBuilder() {
+    return plan_ == null ? Plan.getDefaultInstance() : plan_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -92,7 +92,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (plan_ != null) {
@@ -101,7 +101,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -116,15 +116,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse)) {
+    if (!(obj instanceof QueryCurrentPlanResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse other = (com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse) obj;
+    QueryCurrentPlanResponse other = (QueryCurrentPlanResponse) obj;
 
     if (hasPlan() != other.hasPlan()) return false;
     if (hasPlan()) {
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseFrom(
+  public static QueryCurrentPlanResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseFrom(
+  public static QueryCurrentPlanResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseFrom(
+  public static QueryCurrentPlanResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseFrom(
+  public static QueryCurrentPlanResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseFrom(byte[] data)
+  public static QueryCurrentPlanResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseFrom(
+  public static QueryCurrentPlanResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseFrom(java.io.InputStream input)
+  public static QueryCurrentPlanResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseFrom(
+  public static QueryCurrentPlanResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryCurrentPlanResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseDelimitedFrom(
+  public static QueryCurrentPlanResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseFrom(
+  public static QueryCurrentPlanResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse parseFrom(
+  public static QueryCurrentPlanResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse prototype) {
+  public static Builder newBuilder(QueryCurrentPlanResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -252,18 +252,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.upgrade.v1beta1.QueryCurrentPlanResponse)
-      com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponseOrBuilder {
+      QueryCurrentPlanResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.upgrade.v1beta1.QueryProto.internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_descriptor;
+      return QueryProto.internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.upgrade.v1beta1.QueryProto.internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse.class, com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse.Builder.class);
+              QueryCurrentPlanResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse.newBuilder()
@@ -272,11 +272,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -288,35 +288,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.upgrade.v1beta1.QueryProto.internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_descriptor;
+      return QueryProto.internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse getDefaultInstanceForType() {
-      return com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse.getDefaultInstance();
+    @Override
+    public QueryCurrentPlanResponse getDefaultInstanceForType() {
+      return QueryCurrentPlanResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse build() {
-      com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse result = buildPartial();
+    @Override
+    public QueryCurrentPlanResponse build() {
+      QueryCurrentPlanResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse buildPartial() {
-      com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse result = new com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse(this);
+    @Override
+    public QueryCurrentPlanResponse buildPartial() {
+      QueryCurrentPlanResponse result = new QueryCurrentPlanResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse result) {
+    private void buildPartial0(QueryCurrentPlanResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.plan_ = planBuilder_ == null
@@ -325,50 +325,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse) {
-        return mergeFrom((com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse)other);
+      if (other instanceof QueryCurrentPlanResponse) {
+        return mergeFrom((QueryCurrentPlanResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse other) {
-      if (other == com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryCurrentPlanResponse other) {
+      if (other == QueryCurrentPlanResponse.getDefaultInstance()) return this;
       if (other.hasPlan()) {
         mergePlan(other.getPlan());
       }
@@ -377,18 +377,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -422,9 +422,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.cosmos.upgrade.v1beta1.Plan plan_;
+    private Plan plan_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.upgrade.v1beta1.Plan, com.cosmos.upgrade.v1beta1.Plan.Builder, com.cosmos.upgrade.v1beta1.PlanOrBuilder> planBuilder_;
+        Plan, Plan.Builder, PlanOrBuilder> planBuilder_;
     /**
      * <pre>
      * plan is the current upgrade plan.
@@ -444,9 +444,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
      * @return The plan.
      */
-    public com.cosmos.upgrade.v1beta1.Plan getPlan() {
+    public Plan getPlan() {
       if (planBuilder_ == null) {
-        return plan_ == null ? com.cosmos.upgrade.v1beta1.Plan.getDefaultInstance() : plan_;
+        return plan_ == null ? Plan.getDefaultInstance() : plan_;
       } else {
         return planBuilder_.getMessage();
       }
@@ -458,7 +458,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
      */
-    public Builder setPlan(com.cosmos.upgrade.v1beta1.Plan value) {
+    public Builder setPlan(Plan value) {
       if (planBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -479,7 +479,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
      */
     public Builder setPlan(
-        com.cosmos.upgrade.v1beta1.Plan.Builder builderForValue) {
+        Plan.Builder builderForValue) {
       if (planBuilder_ == null) {
         plan_ = builderForValue.build();
       } else {
@@ -496,11 +496,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
      */
-    public Builder mergePlan(com.cosmos.upgrade.v1beta1.Plan value) {
+    public Builder mergePlan(Plan value) {
       if (planBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           plan_ != null &&
-          plan_ != com.cosmos.upgrade.v1beta1.Plan.getDefaultInstance()) {
+          plan_ != Plan.getDefaultInstance()) {
           getPlanBuilder().mergeFrom(value);
         } else {
           plan_ = value;
@@ -536,7 +536,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
      */
-    public com.cosmos.upgrade.v1beta1.Plan.Builder getPlanBuilder() {
+    public Plan.Builder getPlanBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getPlanFieldBuilder().getBuilder();
@@ -548,12 +548,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
      */
-    public com.cosmos.upgrade.v1beta1.PlanOrBuilder getPlanOrBuilder() {
+    public PlanOrBuilder getPlanOrBuilder() {
       if (planBuilder_ != null) {
         return planBuilder_.getMessageOrBuilder();
       } else {
         return plan_ == null ?
-            com.cosmos.upgrade.v1beta1.Plan.getDefaultInstance() : plan_;
+            Plan.getDefaultInstance() : plan_;
       }
     }
     /**
@@ -564,11 +564,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.upgrade.v1beta1.Plan, com.cosmos.upgrade.v1beta1.Plan.Builder, com.cosmos.upgrade.v1beta1.PlanOrBuilder> 
+        Plan, Plan.Builder, PlanOrBuilder>
         getPlanFieldBuilder() {
       if (planBuilder_ == null) {
         planBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.upgrade.v1beta1.Plan, com.cosmos.upgrade.v1beta1.Plan.Builder, com.cosmos.upgrade.v1beta1.PlanOrBuilder>(
+            Plan, Plan.Builder, PlanOrBuilder>(
                 getPlan(),
                 getParentForChildren(),
                 isClean());
@@ -576,13 +576,13 @@ private static final long serialVersionUID = 0L;
       }
       return planBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -593,18 +593,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.upgrade.v1beta1.QueryCurrentPlanResponse)
-  private static final com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse DEFAULT_INSTANCE;
+  private static final QueryCurrentPlanResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse();
+    DEFAULT_INSTANCE = new QueryCurrentPlanResponse();
   }
 
-  public static com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse getDefaultInstance() {
+  public static QueryCurrentPlanResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryCurrentPlanResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryCurrentPlanResponse>() {
-    @java.lang.Override
+    @Override
     public QueryCurrentPlanResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -628,13 +628,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryCurrentPlanResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.upgrade.v1beta1.QueryCurrentPlanResponse getDefaultInstanceForType() {
+  @Override
+  public QueryCurrentPlanResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -62,7 +62,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n)cosmos/distribution/v1beta1/genesis.pr" +
       "oto\022\033cosmos.distribution.v1beta1\032\024gogopr" +
       "oto/gogo.proto\032\036cosmos/base/v1beta1/coin" +
@@ -161,56 +161,56 @@ public final class GenesisProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
           com.cosmos.base.v1beta1.CoinProto.getDescriptor(),
-          com.cosmos.distribution.v1beta1.DistributionProto.getDescriptor(),
+          DistributionProto.getDescriptor(),
         });
     internal_static_cosmos_distribution_v1beta1_DelegatorWithdrawInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_distribution_v1beta1_DelegatorWithdrawInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_DelegatorWithdrawInfo_descriptor,
-        new java.lang.String[] { "DelegatorAddress", "WithdrawAddress", });
+        new String[] { "DelegatorAddress", "WithdrawAddress", });
     internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_descriptor,
-        new java.lang.String[] { "ValidatorAddress", "OutstandingRewards", });
+        new String[] { "ValidatorAddress", "OutstandingRewards", });
     internal_static_cosmos_distribution_v1beta1_ValidatorAccumulatedCommissionRecord_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_distribution_v1beta1_ValidatorAccumulatedCommissionRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_ValidatorAccumulatedCommissionRecord_descriptor,
-        new java.lang.String[] { "ValidatorAddress", "Accumulated", });
+        new String[] { "ValidatorAddress", "Accumulated", });
     internal_static_cosmos_distribution_v1beta1_ValidatorHistoricalRewardsRecord_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_distribution_v1beta1_ValidatorHistoricalRewardsRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_ValidatorHistoricalRewardsRecord_descriptor,
-        new java.lang.String[] { "ValidatorAddress", "Period", "Rewards", });
+        new String[] { "ValidatorAddress", "Period", "Rewards", });
     internal_static_cosmos_distribution_v1beta1_ValidatorCurrentRewardsRecord_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_distribution_v1beta1_ValidatorCurrentRewardsRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_ValidatorCurrentRewardsRecord_descriptor,
-        new java.lang.String[] { "ValidatorAddress", "Rewards", });
+        new String[] { "ValidatorAddress", "Rewards", });
     internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_descriptor,
-        new java.lang.String[] { "DelegatorAddress", "ValidatorAddress", "StartingInfo", });
+        new String[] { "DelegatorAddress", "ValidatorAddress", "StartingInfo", });
     internal_static_cosmos_distribution_v1beta1_ValidatorSlashEventRecord_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_distribution_v1beta1_ValidatorSlashEventRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_ValidatorSlashEventRecord_descriptor,
-        new java.lang.String[] { "ValidatorAddress", "Height", "Period", "ValidatorSlashEvent", });
+        new String[] { "ValidatorAddress", "Height", "Period", "ValidatorSlashEvent", });
     internal_static_cosmos_distribution_v1beta1_GenesisState_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_distribution_v1beta1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_GenesisState_descriptor,
-        new java.lang.String[] { "Params", "FeePool", "DelegatorWithdrawInfos", "PreviousProposer", "OutstandingRewards", "ValidatorAccumulatedCommissions", "ValidatorHistoricalRewards", "ValidatorCurrentRewards", "DelegatorStartingInfos", "ValidatorSlashEvents", });
+        new String[] { "Params", "FeePool", "DelegatorWithdrawInfos", "PreviousProposer", "OutstandingRewards", "ValidatorAccumulatedCommissions", "ValidatorHistoricalRewards", "ValidatorCurrentRewards", "DelegatorStartingInfos", "ValidatorSlashEvents", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);
@@ -223,7 +223,7 @@ public final class GenesisProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
     com.cosmos.base.v1beta1.CoinProto.getDescriptor();
-    com.cosmos.distribution.v1beta1.DistributionProto.getDescriptor();
+    DistributionProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

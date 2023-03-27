@@ -15,7 +15,7 @@ public interface QueryValidatorCommissionRequestOrBuilder extends
    * <code>string validator_address = 1 [json_name = "validatorAddress"];</code>
    * @return The validatorAddress.
    */
-  java.lang.String getValidatorAddress();
+  String getValidatorAddress();
   /**
    * <pre>
    * validator_address defines the validator address to query for.

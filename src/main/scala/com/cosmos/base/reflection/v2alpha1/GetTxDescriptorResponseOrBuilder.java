@@ -26,7 +26,7 @@ public interface GetTxDescriptorResponseOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 1 [json_name = "tx"];</code>
    * @return The tx.
    */
-  com.cosmos.base.reflection.v2alpha1.TxDescriptor getTx();
+  TxDescriptor getTx();
   /**
    * <pre>
    * tx provides information on msgs that can be forwarded to the application
@@ -35,5 +35,5 @@ public interface GetTxDescriptorResponseOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 1 [json_name = "tx"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.TxDescriptorOrBuilder getTxOrBuilder();
+  TxDescriptorOrBuilder getTxOrBuilder();
 }

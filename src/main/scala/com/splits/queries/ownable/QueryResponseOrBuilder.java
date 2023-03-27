@@ -17,7 +17,7 @@ public interface QueryResponseOrBuilder extends
    * <code>string error = 2 [json_name = "error"];</code>
    * @return The error.
    */
-  java.lang.String getError();
+  String getError();
   /**
    * <code>string error = 2 [json_name = "error"];</code>
    * @return The bytes for error.
@@ -26,12 +26,12 @@ public interface QueryResponseOrBuilder extends
       getErrorBytes();
 
   /**
-   * <code>string value = 3 [json_name = "value", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
+   * <code>string value = 3 [json_name = "value"];</code>
    * @return The value.
    */
-  java.lang.String getValue();
+  String getValue();
   /**
-   * <code>string value = 3 [json_name = "value", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
+   * <code>string value = 3 [json_name = "value"];</code>
    * @return The bytes for value.
    */
   com.google.protobuf.ByteString

@@ -27,7 +27,7 @@ public final class KeyV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n1modules/classifications/internal/key/k" +
       "ey.v1.proto\022\017classifications\032)schema/ids" +
       "/base/classificationID.v1.proto\"J\n\003Key\022C" +
@@ -49,7 +49,7 @@ public final class KeyV1Proto {
     internal_static_classifications_Key_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_classifications_Key_descriptor,
-        new java.lang.String[] { "ClassificationID", });
+        new String[] { "ClassificationID", });
     com.ids.ClassificationIDV1Proto.getDescriptor();
   }
 

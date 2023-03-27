@@ -24,7 +24,7 @@ public interface PeriodicAllowanceOrBuilder extends
    * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
    * @return The basic.
    */
-  com.cosmos.feegrant.v1beta1.BasicAllowance getBasic();
+  BasicAllowance getBasic();
   /**
    * <pre>
    * basic specifies a struct of `BasicAllowance`
@@ -32,7 +32,7 @@ public interface PeriodicAllowanceOrBuilder extends
    *
    * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.feegrant.v1beta1.BasicAllowanceOrBuilder getBasicOrBuilder();
+  BasicAllowanceOrBuilder getBasicOrBuilder();
 
   /**
    * <pre>

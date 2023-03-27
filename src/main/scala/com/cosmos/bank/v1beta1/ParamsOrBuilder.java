@@ -10,12 +10,12 @@ public interface ParamsOrBuilder extends
   /**
    * <code>repeated .cosmos.bank.v1beta1.SendEnabled send_enabled = 1 [json_name = "sendEnabled", (.gogoproto.moretags) = "yaml:&#92;"send_enabled,omitempty&#92;""];</code>
    */
-  java.util.List<com.cosmos.bank.v1beta1.SendEnabled> 
+  java.util.List<SendEnabled>
       getSendEnabledList();
   /**
    * <code>repeated .cosmos.bank.v1beta1.SendEnabled send_enabled = 1 [json_name = "sendEnabled", (.gogoproto.moretags) = "yaml:&#92;"send_enabled,omitempty&#92;""];</code>
    */
-  com.cosmos.bank.v1beta1.SendEnabled getSendEnabled(int index);
+  SendEnabled getSendEnabled(int index);
   /**
    * <code>repeated .cosmos.bank.v1beta1.SendEnabled send_enabled = 1 [json_name = "sendEnabled", (.gogoproto.moretags) = "yaml:&#92;"send_enabled,omitempty&#92;""];</code>
    */
@@ -23,12 +23,12 @@ public interface ParamsOrBuilder extends
   /**
    * <code>repeated .cosmos.bank.v1beta1.SendEnabled send_enabled = 1 [json_name = "sendEnabled", (.gogoproto.moretags) = "yaml:&#92;"send_enabled,omitempty&#92;""];</code>
    */
-  java.util.List<? extends com.cosmos.bank.v1beta1.SendEnabledOrBuilder> 
+  java.util.List<? extends SendEnabledOrBuilder>
       getSendEnabledOrBuilderList();
   /**
    * <code>repeated .cosmos.bank.v1beta1.SendEnabled send_enabled = 1 [json_name = "sendEnabled", (.gogoproto.moretags) = "yaml:&#92;"send_enabled,omitempty&#92;""];</code>
    */
-  com.cosmos.bank.v1beta1.SendEnabledOrBuilder getSendEnabledOrBuilder(
+  SendEnabledOrBuilder getSendEnabledOrBuilder(
       int index);
 
   /**

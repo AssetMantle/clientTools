@@ -24,7 +24,7 @@ public interface QueryConnectionResponseOrBuilder extends
    * <code>.ibc.core.connection.v1.ConnectionEnd connection = 1 [json_name = "connection"];</code>
    * @return The connection.
    */
-  com.ibc.core.connection.v1.ConnectionEnd getConnection();
+  ConnectionEnd getConnection();
   /**
    * <pre>
    * connection associated with the request identifier
@@ -32,7 +32,7 @@ public interface QueryConnectionResponseOrBuilder extends
    *
    * <code>.ibc.core.connection.v1.ConnectionEnd connection = 1 [json_name = "connection"];</code>
    */
-  com.ibc.core.connection.v1.ConnectionEndOrBuilder getConnectionOrBuilder();
+  ConnectionEndOrBuilder getConnectionOrBuilder();
 
   /**
    * <pre>

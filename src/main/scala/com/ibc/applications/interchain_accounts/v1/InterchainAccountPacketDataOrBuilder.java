@@ -16,7 +16,7 @@ public interface InterchainAccountPacketDataOrBuilder extends
    * <code>.ibc.applications.interchain_accounts.v1.Type type = 1 [json_name = "type"];</code>
    * @return The type.
    */
-  com.ibc.applications.interchain_accounts.v1.Type getType();
+  Type getType();
 
   /**
    * <code>bytes data = 2 [json_name = "data"];</code>
@@ -28,7 +28,7 @@ public interface InterchainAccountPacketDataOrBuilder extends
    * <code>string memo = 3 [json_name = "memo"];</code>
    * @return The memo.
    */
-  java.lang.String getMemo();
+  String getMemo();
   /**
    * <code>string memo = 3 [json_name = "memo"];</code>
    * @return The bytes for memo.

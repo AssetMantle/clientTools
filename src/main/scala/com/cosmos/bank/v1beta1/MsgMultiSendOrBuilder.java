@@ -10,12 +10,12 @@ public interface MsgMultiSendOrBuilder extends
   /**
    * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.bank.v1beta1.Input> 
+  java.util.List<Input>
       getInputsList();
   /**
    * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.bank.v1beta1.Input getInputs(int index);
+  Input getInputs(int index);
   /**
    * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
    */
@@ -23,23 +23,23 @@ public interface MsgMultiSendOrBuilder extends
   /**
    * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.bank.v1beta1.InputOrBuilder> 
+  java.util.List<? extends InputOrBuilder>
       getInputsOrBuilderList();
   /**
    * <code>repeated .cosmos.bank.v1beta1.Input inputs = 1 [json_name = "inputs", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.bank.v1beta1.InputOrBuilder getInputsOrBuilder(
+  InputOrBuilder getInputsOrBuilder(
       int index);
 
   /**
    * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.bank.v1beta1.Output> 
+  java.util.List<Output>
       getOutputsList();
   /**
    * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.bank.v1beta1.Output getOutputs(int index);
+  Output getOutputs(int index);
   /**
    * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
    */
@@ -47,11 +47,11 @@ public interface MsgMultiSendOrBuilder extends
   /**
    * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.bank.v1beta1.OutputOrBuilder> 
+  java.util.List<? extends OutputOrBuilder>
       getOutputsOrBuilderList();
   /**
    * <code>repeated .cosmos.bank.v1beta1.Output outputs = 2 [json_name = "outputs", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.bank.v1beta1.OutputOrBuilder getOutputsOrBuilder(
+  OutputOrBuilder getOutputsOrBuilder(
       int index);
 }

@@ -27,7 +27,7 @@ public final class KeyV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\'modules/metas/internal/key/key.v1.prot" +
       "o\022\005metas\032\037schema/ids/base/dataID.v1.prot" +
       "o\",\n\003Key\022%\n\010data_i_d\030\001 \001(\0132\013.ids.DataIDR" +
@@ -46,7 +46,7 @@ public final class KeyV1Proto {
     internal_static_metas_Key_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_metas_Key_descriptor,
-        new java.lang.String[] { "DataID", });
+        new String[] { "DataID", });
     com.ids.DataIDV1Proto.getDescriptor();
   }
 

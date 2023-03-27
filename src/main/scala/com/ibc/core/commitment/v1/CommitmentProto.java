@@ -42,7 +42,7 @@ public final class CommitmentProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\'ibc/core/commitment/v1/commitment.prot" +
       "o\022\026ibc.core.commitment.v1\032\024gogoproto/gog" +
       "o.proto\032\014proofs.proto\"&\n\nMerkleRoot\022\022\n\004h" +
@@ -70,25 +70,25 @@ public final class CommitmentProto {
     internal_static_ibc_core_commitment_v1_MerkleRoot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_commitment_v1_MerkleRoot_descriptor,
-        new java.lang.String[] { "Hash", });
+        new String[] { "Hash", });
     internal_static_ibc_core_commitment_v1_MerklePrefix_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_core_commitment_v1_MerklePrefix_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_commitment_v1_MerklePrefix_descriptor,
-        new java.lang.String[] { "KeyPrefix", });
+        new String[] { "KeyPrefix", });
     internal_static_ibc_core_commitment_v1_MerklePath_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_core_commitment_v1_MerklePath_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_commitment_v1_MerklePath_descriptor,
-        new java.lang.String[] { "KeyPath", });
+        new String[] { "KeyPath", });
     internal_static_ibc_core_commitment_v1_MerkleProof_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_core_commitment_v1_MerkleProof_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_commitment_v1_MerkleProof_descriptor,
-        new java.lang.String[] { "Proofs", });
+        new String[] { "Proofs", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

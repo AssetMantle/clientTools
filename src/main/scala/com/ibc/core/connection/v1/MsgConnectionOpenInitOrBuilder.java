@@ -11,7 +11,7 @@ public interface MsgConnectionOpenInitOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  java.lang.String getClientId();
+  String getClientId();
   /**
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The bytes for clientId.
@@ -28,11 +28,11 @@ public interface MsgConnectionOpenInitOrBuilder extends
    * <code>.ibc.core.connection.v1.Counterparty counterparty = 2 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    * @return The counterparty.
    */
-  com.ibc.core.connection.v1.Counterparty getCounterparty();
+  Counterparty getCounterparty();
   /**
    * <code>.ibc.core.connection.v1.Counterparty counterparty = 2 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    */
-  com.ibc.core.connection.v1.CounterpartyOrBuilder getCounterpartyOrBuilder();
+  CounterpartyOrBuilder getCounterpartyOrBuilder();
 
   /**
    * <code>.ibc.core.connection.v1.Version version = 3 [json_name = "version"];</code>
@@ -43,11 +43,11 @@ public interface MsgConnectionOpenInitOrBuilder extends
    * <code>.ibc.core.connection.v1.Version version = 3 [json_name = "version"];</code>
    * @return The version.
    */
-  com.ibc.core.connection.v1.Version getVersion();
+  Version getVersion();
   /**
    * <code>.ibc.core.connection.v1.Version version = 3 [json_name = "version"];</code>
    */
-  com.ibc.core.connection.v1.VersionOrBuilder getVersionOrBuilder();
+  VersionOrBuilder getVersionOrBuilder();
 
   /**
    * <code>uint64 delay_period = 4 [json_name = "delayPeriod", (.gogoproto.moretags) = "yaml:&#92;"delay_period&#92;""];</code>
@@ -59,7 +59,7 @@ public interface MsgConnectionOpenInitOrBuilder extends
    * <code>string signer = 5 [json_name = "signer"];</code>
    * @return The signer.
    */
-  java.lang.String getSigner();
+  String getSigner();
   /**
    * <code>string signer = 5 [json_name = "signer"];</code>
    * @return The bytes for signer.

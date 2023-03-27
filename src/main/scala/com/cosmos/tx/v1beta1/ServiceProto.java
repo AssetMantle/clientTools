@@ -72,7 +72,7 @@ public final class ServiceProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\037cosmos/tx/v1beta1/service.proto\022\021cosmo" +
       "s.tx.v1beta1\032\034google/api/annotations.pro" +
       "to\032#cosmos/base/abci/v1beta1/abci.proto\032" +
@@ -147,7 +147,7 @@ public final class ServiceProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.api.AnnotationsProto.getDescriptor(),
           com.cosmos.base.abci.v1beta1.AbciProto.getDescriptor(),
-          com.cosmos.tx.v1beta1.TxProto.getDescriptor(),
+          TxProto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
           com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor(),
           com.tendermint.types.BlockProto.getDescriptor(),
@@ -158,61 +158,61 @@ public final class ServiceProto {
     internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_descriptor,
-        new java.lang.String[] { "Events", "Pagination", "OrderBy", });
+        new String[] { "Events", "Pagination", "OrderBy", });
     internal_static_cosmos_tx_v1beta1_GetTxsEventResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_tx_v1beta1_GetTxsEventResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_GetTxsEventResponse_descriptor,
-        new java.lang.String[] { "Txs", "TxResponses", "Pagination", });
+        new String[] { "Txs", "TxResponses", "Pagination", });
     internal_static_cosmos_tx_v1beta1_BroadcastTxRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_tx_v1beta1_BroadcastTxRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_BroadcastTxRequest_descriptor,
-        new java.lang.String[] { "TxBytes", "Mode", });
+        new String[] { "TxBytes", "Mode", });
     internal_static_cosmos_tx_v1beta1_BroadcastTxResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_tx_v1beta1_BroadcastTxResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_BroadcastTxResponse_descriptor,
-        new java.lang.String[] { "TxResponse", });
+        new String[] { "TxResponse", });
     internal_static_cosmos_tx_v1beta1_SimulateRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_tx_v1beta1_SimulateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_SimulateRequest_descriptor,
-        new java.lang.String[] { "Tx", "TxBytes", });
+        new String[] { "Tx", "TxBytes", });
     internal_static_cosmos_tx_v1beta1_SimulateResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_tx_v1beta1_SimulateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_SimulateResponse_descriptor,
-        new java.lang.String[] { "GasInfo", "Result", });
+        new String[] { "GasInfo", "Result", });
     internal_static_cosmos_tx_v1beta1_GetTxRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_tx_v1beta1_GetTxRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_GetTxRequest_descriptor,
-        new java.lang.String[] { "Hash", });
+        new String[] { "Hash", });
     internal_static_cosmos_tx_v1beta1_GetTxResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_tx_v1beta1_GetTxResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_GetTxResponse_descriptor,
-        new java.lang.String[] { "Tx", "TxResponse", });
+        new String[] { "Tx", "TxResponse", });
     internal_static_cosmos_tx_v1beta1_GetBlockWithTxsRequest_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_cosmos_tx_v1beta1_GetBlockWithTxsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_GetBlockWithTxsRequest_descriptor,
-        new java.lang.String[] { "Height", "Pagination", });
+        new String[] { "Height", "Pagination", });
     internal_static_cosmos_tx_v1beta1_GetBlockWithTxsResponse_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_cosmos_tx_v1beta1_GetBlockWithTxsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_GetBlockWithTxsResponse_descriptor,
-        new java.lang.String[] { "Txs", "BlockId", "Block", "Pagination", });
+        new String[] { "Txs", "BlockId", "Block", "Pagination", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoRegistration);
@@ -221,7 +221,7 @@ public final class ServiceProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();
     com.cosmos.base.abci.v1beta1.AbciProto.getDescriptor();
-    com.cosmos.tx.v1beta1.TxProto.getDescriptor();
+    TxProto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
     com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor();
     com.tendermint.types.BlockProto.getDescriptor();

@@ -26,42 +26,42 @@ private static final long serialVersionUID = 0L;
     noWithVeto_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new TallyResult();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_TallyResult_descriptor;
+    return GovProto.internal_static_cosmos_gov_v1beta1_TallyResult_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_TallyResult_fieldAccessorTable
+    return GovProto.internal_static_cosmos_gov_v1beta1_TallyResult_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.gov.v1beta1.TallyResult.class, com.cosmos.gov.v1beta1.TallyResult.Builder.class);
+            TallyResult.class, Builder.class);
   }
 
   public static final int YES_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object yes_ = "";
+  private volatile Object yes_ = "";
   /**
    * <code>string yes = 1 [json_name = "yes", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The yes.
    */
-  @java.lang.Override
-  public java.lang.String getYes() {
-    java.lang.Object ref = yes_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getYes() {
+    Object ref = yes_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       yes_ = s;
       return s;
     }
@@ -70,14 +70,14 @@ private static final long serialVersionUID = 0L;
    * <code>string yes = 1 [json_name = "yes", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The bytes for yes.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getYesBytes() {
-    java.lang.Object ref = yes_;
-    if (ref instanceof java.lang.String) {
+    Object ref = yes_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       yes_ = b;
       return b;
     } else {
@@ -87,20 +87,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int ABSTAIN_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object abstain_ = "";
+  private volatile Object abstain_ = "";
   /**
    * <code>string abstain = 2 [json_name = "abstain", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The abstain.
    */
-  @java.lang.Override
-  public java.lang.String getAbstain() {
-    java.lang.Object ref = abstain_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getAbstain() {
+    Object ref = abstain_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       abstain_ = s;
       return s;
     }
@@ -109,14 +109,14 @@ private static final long serialVersionUID = 0L;
    * <code>string abstain = 2 [json_name = "abstain", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The bytes for abstain.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getAbstainBytes() {
-    java.lang.Object ref = abstain_;
-    if (ref instanceof java.lang.String) {
+    Object ref = abstain_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       abstain_ = b;
       return b;
     } else {
@@ -126,20 +126,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int NO_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object no_ = "";
+  private volatile Object no_ = "";
   /**
    * <code>string no = 3 [json_name = "no", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The no.
    */
-  @java.lang.Override
-  public java.lang.String getNo() {
-    java.lang.Object ref = no_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getNo() {
+    Object ref = no_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       no_ = s;
       return s;
     }
@@ -148,14 +148,14 @@ private static final long serialVersionUID = 0L;
    * <code>string no = 3 [json_name = "no", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The bytes for no.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getNoBytes() {
-    java.lang.Object ref = no_;
-    if (ref instanceof java.lang.String) {
+    Object ref = no_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       no_ = b;
       return b;
     } else {
@@ -165,20 +165,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int NO_WITH_VETO_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object noWithVeto_ = "";
+  private volatile Object noWithVeto_ = "";
   /**
    * <code>string no_with_veto = 4 [json_name = "noWithVeto", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"no_with_veto&#92;""];</code>
    * @return The noWithVeto.
    */
-  @java.lang.Override
-  public java.lang.String getNoWithVeto() {
-    java.lang.Object ref = noWithVeto_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getNoWithVeto() {
+    Object ref = noWithVeto_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       noWithVeto_ = s;
       return s;
     }
@@ -187,14 +187,14 @@ private static final long serialVersionUID = 0L;
    * <code>string no_with_veto = 4 [json_name = "noWithVeto", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"no_with_veto&#92;""];</code>
    * @return The bytes for noWithVeto.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getNoWithVetoBytes() {
-    java.lang.Object ref = noWithVeto_;
-    if (ref instanceof java.lang.String) {
+    Object ref = noWithVeto_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       noWithVeto_ = b;
       return b;
     } else {
@@ -203,7 +203,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -213,7 +213,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(yes_)) {
@@ -231,7 +231,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -254,15 +254,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.gov.v1beta1.TallyResult)) {
+    if (!(obj instanceof TallyResult)) {
       return super.equals(obj);
     }
-    com.cosmos.gov.v1beta1.TallyResult other = (com.cosmos.gov.v1beta1.TallyResult) obj;
+    TallyResult other = (TallyResult) obj;
 
     if (!getYes()
         .equals(other.getYes())) return false;
@@ -276,7 +276,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -296,69 +296,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.gov.v1beta1.TallyResult parseFrom(
+  public static TallyResult parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseFrom(
+  public static TallyResult parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseFrom(
+  public static TallyResult parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseFrom(
+  public static TallyResult parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseFrom(byte[] data)
+  public static TallyResult parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseFrom(
+  public static TallyResult parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseFrom(java.io.InputStream input)
+  public static TallyResult parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseFrom(
+  public static TallyResult parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseDelimitedFrom(java.io.InputStream input)
+  public static TallyResult parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseDelimitedFrom(
+  public static TallyResult parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseFrom(
+  public static TallyResult parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.gov.v1beta1.TallyResult parseFrom(
+  public static TallyResult parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -366,23 +366,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.gov.v1beta1.TallyResult prototype) {
+  public static Builder newBuilder(TallyResult prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -396,18 +396,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.gov.v1beta1.TallyResult)
-      com.cosmos.gov.v1beta1.TallyResultOrBuilder {
+      TallyResultOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_TallyResult_descriptor;
+      return GovProto.internal_static_cosmos_gov_v1beta1_TallyResult_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_TallyResult_fieldAccessorTable
+      return GovProto.internal_static_cosmos_gov_v1beta1_TallyResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.gov.v1beta1.TallyResult.class, com.cosmos.gov.v1beta1.TallyResult.Builder.class);
+              TallyResult.class, Builder.class);
     }
 
     // Construct using com.cosmos.gov.v1beta1.TallyResult.newBuilder()
@@ -416,11 +416,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -431,35 +431,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_TallyResult_descriptor;
+      return GovProto.internal_static_cosmos_gov_v1beta1_TallyResult_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.gov.v1beta1.TallyResult getDefaultInstanceForType() {
-      return com.cosmos.gov.v1beta1.TallyResult.getDefaultInstance();
+    @Override
+    public TallyResult getDefaultInstanceForType() {
+      return TallyResult.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.gov.v1beta1.TallyResult build() {
-      com.cosmos.gov.v1beta1.TallyResult result = buildPartial();
+    @Override
+    public TallyResult build() {
+      TallyResult result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.gov.v1beta1.TallyResult buildPartial() {
-      com.cosmos.gov.v1beta1.TallyResult result = new com.cosmos.gov.v1beta1.TallyResult(this);
+    @Override
+    public TallyResult buildPartial() {
+      TallyResult result = new TallyResult(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.gov.v1beta1.TallyResult result) {
+    private void buildPartial0(TallyResult result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.yes_ = yes_;
@@ -475,50 +475,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.gov.v1beta1.TallyResult) {
-        return mergeFrom((com.cosmos.gov.v1beta1.TallyResult)other);
+      if (other instanceof TallyResult) {
+        return mergeFrom((TallyResult)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.gov.v1beta1.TallyResult other) {
-      if (other == com.cosmos.gov.v1beta1.TallyResult.getDefaultInstance()) return this;
+    public Builder mergeFrom(TallyResult other) {
+      if (other == TallyResult.getDefaultInstance()) return this;
       if (!other.getYes().isEmpty()) {
         yes_ = other.yes_;
         bitField0_ |= 0x00000001;
@@ -544,18 +544,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -602,21 +602,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object yes_ = "";
+    private Object yes_ = "";
     /**
      * <code>string yes = 1 [json_name = "yes", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
      * @return The yes.
      */
-    public java.lang.String getYes() {
-      java.lang.Object ref = yes_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getYes() {
+      Object ref = yes_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         yes_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -625,11 +625,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getYesBytes() {
-      java.lang.Object ref = yes_;
+      Object ref = yes_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         yes_ = b;
         return b;
       } else {
@@ -642,7 +642,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setYes(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       yes_ = value;
       bitField0_ |= 0x00000001;
@@ -674,21 +674,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object abstain_ = "";
+    private Object abstain_ = "";
     /**
      * <code>string abstain = 2 [json_name = "abstain", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
      * @return The abstain.
      */
-    public java.lang.String getAbstain() {
-      java.lang.Object ref = abstain_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getAbstain() {
+      Object ref = abstain_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         abstain_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -697,11 +697,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getAbstainBytes() {
-      java.lang.Object ref = abstain_;
+      Object ref = abstain_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         abstain_ = b;
         return b;
       } else {
@@ -714,7 +714,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setAbstain(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       abstain_ = value;
       bitField0_ |= 0x00000002;
@@ -746,21 +746,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object no_ = "";
+    private Object no_ = "";
     /**
      * <code>string no = 3 [json_name = "no", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
      * @return The no.
      */
-    public java.lang.String getNo() {
-      java.lang.Object ref = no_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getNo() {
+      Object ref = no_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         no_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -769,11 +769,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getNoBytes() {
-      java.lang.Object ref = no_;
+      Object ref = no_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         no_ = b;
         return b;
       } else {
@@ -786,7 +786,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setNo(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       no_ = value;
       bitField0_ |= 0x00000004;
@@ -818,21 +818,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object noWithVeto_ = "";
+    private Object noWithVeto_ = "";
     /**
      * <code>string no_with_veto = 4 [json_name = "noWithVeto", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"no_with_veto&#92;""];</code>
      * @return The noWithVeto.
      */
-    public java.lang.String getNoWithVeto() {
-      java.lang.Object ref = noWithVeto_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getNoWithVeto() {
+      Object ref = noWithVeto_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         noWithVeto_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -841,11 +841,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getNoWithVetoBytes() {
-      java.lang.Object ref = noWithVeto_;
+      Object ref = noWithVeto_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         noWithVeto_ = b;
         return b;
       } else {
@@ -858,7 +858,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setNoWithVeto(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       noWithVeto_ = value;
       bitField0_ |= 0x00000008;
@@ -889,13 +889,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -906,18 +906,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.gov.v1beta1.TallyResult)
-  private static final com.cosmos.gov.v1beta1.TallyResult DEFAULT_INSTANCE;
+  private static final TallyResult DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.gov.v1beta1.TallyResult();
+    DEFAULT_INSTANCE = new TallyResult();
   }
 
-  public static com.cosmos.gov.v1beta1.TallyResult getDefaultInstance() {
+  public static TallyResult getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<TallyResult>
       PARSER = new com.google.protobuf.AbstractParser<TallyResult>() {
-    @java.lang.Override
+    @Override
     public TallyResult parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -941,13 +941,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<TallyResult> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.gov.v1beta1.TallyResult getDefaultInstanceForType() {
+  @Override
+  public TallyResult getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

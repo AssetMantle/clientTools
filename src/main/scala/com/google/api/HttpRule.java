@@ -242,32 +242,32 @@ private static final long serialVersionUID = 0L;
     additionalBindings_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new HttpRule();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.google.api.HttpProto.internal_static_google_api_HttpRule_descriptor;
+    return HttpProto.internal_static_google_api_HttpRule_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.google.api.HttpProto.internal_static_google_api_HttpRule_fieldAccessorTable
+    return HttpProto.internal_static_google_api_HttpRule_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.google.api.HttpRule.class, com.google.api.HttpRule.Builder.class);
+            HttpRule.class, Builder.class);
   }
 
   private int patternCase_ = 0;
   @SuppressWarnings("serial")
-  private java.lang.Object pattern_;
+  private Object pattern_;
   public enum PatternCase
       implements com.google.protobuf.Internal.EnumLite,
-          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+          InternalOneOfEnum {
     GET(2),
     PUT(3),
     POST(4),
@@ -284,7 +284,7 @@ private static final long serialVersionUID = 0L;
      * @return The enum associated with the given number.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @java.lang.Deprecated
+    @Deprecated
     public static PatternCase valueOf(int value) {
       return forNumber(value);
     }
@@ -314,7 +314,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int SELECTOR_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object selector_ = "";
+  private volatile Object selector_ = "";
   /**
    * <pre>
    * Selects methods to which this rule applies.
@@ -325,15 +325,15 @@ private static final long serialVersionUID = 0L;
    * <code>string selector = 1 [json_name = "selector"];</code>
    * @return The selector.
    */
-  @java.lang.Override
-  public java.lang.String getSelector() {
-    java.lang.Object ref = selector_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getSelector() {
+    Object ref = selector_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       selector_ = s;
       return s;
     }
@@ -348,14 +348,14 @@ private static final long serialVersionUID = 0L;
    * <code>string selector = 1 [json_name = "selector"];</code>
    * @return The bytes for selector.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getSelectorBytes() {
-    java.lang.Object ref = selector_;
-    if (ref instanceof java.lang.String) {
+    Object ref = selector_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       selector_ = b;
       return b;
     } else {
@@ -383,17 +383,17 @@ private static final long serialVersionUID = 0L;
    * <code>string get = 2 [json_name = "get"];</code>
    * @return The get.
    */
-  public java.lang.String getGet() {
-    java.lang.Object ref = "";
+  public String getGet() {
+    Object ref = "";
     if (patternCase_ == 2) {
       ref = pattern_;
     }
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       if (patternCase_ == 2) {
         pattern_ = s;
       }
@@ -410,14 +410,14 @@ private static final long serialVersionUID = 0L;
    */
   public com.google.protobuf.ByteString
       getGetBytes() {
-    java.lang.Object ref = "";
+    Object ref = "";
     if (patternCase_ == 2) {
       ref = pattern_;
     }
-    if (ref instanceof java.lang.String) {
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       if (patternCase_ == 2) {
         pattern_ = b;
       }
@@ -447,17 +447,17 @@ private static final long serialVersionUID = 0L;
    * <code>string put = 3 [json_name = "put"];</code>
    * @return The put.
    */
-  public java.lang.String getPut() {
-    java.lang.Object ref = "";
+  public String getPut() {
+    Object ref = "";
     if (patternCase_ == 3) {
       ref = pattern_;
     }
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       if (patternCase_ == 3) {
         pattern_ = s;
       }
@@ -474,14 +474,14 @@ private static final long serialVersionUID = 0L;
    */
   public com.google.protobuf.ByteString
       getPutBytes() {
-    java.lang.Object ref = "";
+    Object ref = "";
     if (patternCase_ == 3) {
       ref = pattern_;
     }
-    if (ref instanceof java.lang.String) {
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       if (patternCase_ == 3) {
         pattern_ = b;
       }
@@ -511,17 +511,17 @@ private static final long serialVersionUID = 0L;
    * <code>string post = 4 [json_name = "post"];</code>
    * @return The post.
    */
-  public java.lang.String getPost() {
-    java.lang.Object ref = "";
+  public String getPost() {
+    Object ref = "";
     if (patternCase_ == 4) {
       ref = pattern_;
     }
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       if (patternCase_ == 4) {
         pattern_ = s;
       }
@@ -538,14 +538,14 @@ private static final long serialVersionUID = 0L;
    */
   public com.google.protobuf.ByteString
       getPostBytes() {
-    java.lang.Object ref = "";
+    Object ref = "";
     if (patternCase_ == 4) {
       ref = pattern_;
     }
-    if (ref instanceof java.lang.String) {
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       if (patternCase_ == 4) {
         pattern_ = b;
       }
@@ -575,17 +575,17 @@ private static final long serialVersionUID = 0L;
    * <code>string delete = 5 [json_name = "delete"];</code>
    * @return The delete.
    */
-  public java.lang.String getDelete() {
-    java.lang.Object ref = "";
+  public String getDelete() {
+    Object ref = "";
     if (patternCase_ == 5) {
       ref = pattern_;
     }
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       if (patternCase_ == 5) {
         pattern_ = s;
       }
@@ -602,14 +602,14 @@ private static final long serialVersionUID = 0L;
    */
   public com.google.protobuf.ByteString
       getDeleteBytes() {
-    java.lang.Object ref = "";
+    Object ref = "";
     if (patternCase_ == 5) {
       ref = pattern_;
     }
-    if (ref instanceof java.lang.String) {
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       if (patternCase_ == 5) {
         pattern_ = b;
       }
@@ -639,17 +639,17 @@ private static final long serialVersionUID = 0L;
    * <code>string patch = 6 [json_name = "patch"];</code>
    * @return The patch.
    */
-  public java.lang.String getPatch() {
-    java.lang.Object ref = "";
+  public String getPatch() {
+    Object ref = "";
     if (patternCase_ == 6) {
       ref = pattern_;
     }
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       if (patternCase_ == 6) {
         pattern_ = s;
       }
@@ -666,14 +666,14 @@ private static final long serialVersionUID = 0L;
    */
   public com.google.protobuf.ByteString
       getPatchBytes() {
-    java.lang.Object ref = "";
+    Object ref = "";
     if (patternCase_ == 6) {
       ref = pattern_;
     }
-    if (ref instanceof java.lang.String) {
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       if (patternCase_ == 6) {
         pattern_ = b;
       }
@@ -695,7 +695,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
    * @return Whether the custom field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasCustom() {
     return patternCase_ == 8;
   }
@@ -710,12 +710,12 @@ private static final long serialVersionUID = 0L;
    * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
    * @return The custom.
    */
-  @java.lang.Override
-  public com.google.api.CustomHttpPattern getCustom() {
+  @Override
+  public CustomHttpPattern getCustom() {
     if (patternCase_ == 8) {
-       return (com.google.api.CustomHttpPattern) pattern_;
+       return (CustomHttpPattern) pattern_;
     }
-    return com.google.api.CustomHttpPattern.getDefaultInstance();
+    return CustomHttpPattern.getDefaultInstance();
   }
   /**
    * <pre>
@@ -727,17 +727,17 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
    */
-  @java.lang.Override
-  public com.google.api.CustomHttpPatternOrBuilder getCustomOrBuilder() {
+  @Override
+  public CustomHttpPatternOrBuilder getCustomOrBuilder() {
     if (patternCase_ == 8) {
-       return (com.google.api.CustomHttpPattern) pattern_;
+       return (CustomHttpPattern) pattern_;
     }
-    return com.google.api.CustomHttpPattern.getDefaultInstance();
+    return CustomHttpPattern.getDefaultInstance();
   }
 
   public static final int BODY_FIELD_NUMBER = 7;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object body_ = "";
+  private volatile Object body_ = "";
   /**
    * <pre>
    * The name of the request field whose value is mapped to the HTTP body, or
@@ -749,15 +749,15 @@ private static final long serialVersionUID = 0L;
    * <code>string body = 7 [json_name = "body"];</code>
    * @return The body.
    */
-  @java.lang.Override
-  public java.lang.String getBody() {
-    java.lang.Object ref = body_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getBody() {
+    Object ref = body_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       body_ = s;
       return s;
     }
@@ -773,14 +773,14 @@ private static final long serialVersionUID = 0L;
    * <code>string body = 7 [json_name = "body"];</code>
    * @return The bytes for body.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getBodyBytes() {
-    java.lang.Object ref = body_;
-    if (ref instanceof java.lang.String) {
+    Object ref = body_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       body_ = b;
       return b;
     } else {
@@ -790,7 +790,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int RESPONSE_BODY_FIELD_NUMBER = 12;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object responseBody_ = "";
+  private volatile Object responseBody_ = "";
   /**
    * <pre>
    * Optional. The name of the response field whose value is mapped to the HTTP
@@ -801,15 +801,15 @@ private static final long serialVersionUID = 0L;
    * <code>string response_body = 12 [json_name = "responseBody"];</code>
    * @return The responseBody.
    */
-  @java.lang.Override
-  public java.lang.String getResponseBody() {
-    java.lang.Object ref = responseBody_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getResponseBody() {
+    Object ref = responseBody_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       responseBody_ = s;
       return s;
     }
@@ -824,14 +824,14 @@ private static final long serialVersionUID = 0L;
    * <code>string response_body = 12 [json_name = "responseBody"];</code>
    * @return The bytes for responseBody.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getResponseBodyBytes() {
-    java.lang.Object ref = responseBody_;
-    if (ref instanceof java.lang.String) {
+    Object ref = responseBody_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       responseBody_ = b;
       return b;
     } else {
@@ -841,7 +841,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int ADDITIONAL_BINDINGS_FIELD_NUMBER = 11;
   @SuppressWarnings("serial")
-  private java.util.List<com.google.api.HttpRule> additionalBindings_;
+  private java.util.List<HttpRule> additionalBindings_;
   /**
    * <pre>
    * Additional HTTP bindings for the selector. Nested bindings must
@@ -851,8 +851,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.google.api.HttpRule> getAdditionalBindingsList() {
+  @Override
+  public java.util.List<HttpRule> getAdditionalBindingsList() {
     return additionalBindings_;
   }
   /**
@@ -864,8 +864,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.google.api.HttpRuleOrBuilder> 
+  @Override
+  public java.util.List<? extends HttpRuleOrBuilder>
       getAdditionalBindingsOrBuilderList() {
     return additionalBindings_;
   }
@@ -878,7 +878,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getAdditionalBindingsCount() {
     return additionalBindings_.size();
   }
@@ -891,8 +891,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
    */
-  @java.lang.Override
-  public com.google.api.HttpRule getAdditionalBindings(int index) {
+  @Override
+  public HttpRule getAdditionalBindings(int index) {
     return additionalBindings_.get(index);
   }
   /**
@@ -904,14 +904,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
    */
-  @java.lang.Override
-  public com.google.api.HttpRuleOrBuilder getAdditionalBindingsOrBuilder(
+  @Override
+  public HttpRuleOrBuilder getAdditionalBindingsOrBuilder(
       int index) {
     return additionalBindings_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -921,7 +921,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(selector_)) {
@@ -946,7 +946,7 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.GeneratedMessageV3.writeString(output, 7, body_);
     }
     if (patternCase_ == 8) {
-      output.writeMessage(8, (com.google.api.CustomHttpPattern) pattern_);
+      output.writeMessage(8, (CustomHttpPattern) pattern_);
     }
     for (int i = 0; i < additionalBindings_.size(); i++) {
       output.writeMessage(11, additionalBindings_.get(i));
@@ -957,7 +957,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -986,7 +986,7 @@ private static final long serialVersionUID = 0L;
     }
     if (patternCase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, (com.google.api.CustomHttpPattern) pattern_);
+        .computeMessageSize(8, (CustomHttpPattern) pattern_);
     }
     for (int i = 0; i < additionalBindings_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
@@ -1000,15 +1000,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.google.api.HttpRule)) {
+    if (!(obj instanceof HttpRule)) {
       return super.equals(obj);
     }
-    com.google.api.HttpRule other = (com.google.api.HttpRule) obj;
+    HttpRule other = (HttpRule) obj;
 
     if (!getSelector()
         .equals(other.getSelector())) return false;
@@ -1051,7 +1051,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -1101,69 +1101,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.google.api.HttpRule parseFrom(
+  public static HttpRule parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.google.api.HttpRule parseFrom(
+  public static HttpRule parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.google.api.HttpRule parseFrom(
+  public static HttpRule parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.google.api.HttpRule parseFrom(
+  public static HttpRule parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.google.api.HttpRule parseFrom(byte[] data)
+  public static HttpRule parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.google.api.HttpRule parseFrom(
+  public static HttpRule parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.google.api.HttpRule parseFrom(java.io.InputStream input)
+  public static HttpRule parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.google.api.HttpRule parseFrom(
+  public static HttpRule parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.google.api.HttpRule parseDelimitedFrom(java.io.InputStream input)
+  public static HttpRule parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.google.api.HttpRule parseDelimitedFrom(
+  public static HttpRule parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.google.api.HttpRule parseFrom(
+  public static HttpRule parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.google.api.HttpRule parseFrom(
+  public static HttpRule parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -1171,23 +1171,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.google.api.HttpRule prototype) {
+  public static Builder newBuilder(HttpRule prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -1417,18 +1417,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:google.api.HttpRule)
-      com.google.api.HttpRuleOrBuilder {
+      HttpRuleOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.google.api.HttpProto.internal_static_google_api_HttpRule_descriptor;
+      return HttpProto.internal_static_google_api_HttpRule_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.google.api.HttpProto.internal_static_google_api_HttpRule_fieldAccessorTable
+      return HttpProto.internal_static_google_api_HttpRule_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.google.api.HttpRule.class, com.google.api.HttpRule.Builder.class);
+              HttpRule.class, Builder.class);
     }
 
     // Construct using com.google.api.HttpRule.newBuilder()
@@ -1437,11 +1437,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -1463,29 +1463,29 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.google.api.HttpProto.internal_static_google_api_HttpRule_descriptor;
+      return HttpProto.internal_static_google_api_HttpRule_descriptor;
     }
 
-    @java.lang.Override
-    public com.google.api.HttpRule getDefaultInstanceForType() {
-      return com.google.api.HttpRule.getDefaultInstance();
+    @Override
+    public HttpRule getDefaultInstanceForType() {
+      return HttpRule.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.google.api.HttpRule build() {
-      com.google.api.HttpRule result = buildPartial();
+    @Override
+    public HttpRule build() {
+      HttpRule result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.google.api.HttpRule buildPartial() {
-      com.google.api.HttpRule result = new com.google.api.HttpRule(this);
+    @Override
+    public HttpRule buildPartial() {
+      HttpRule result = new HttpRule(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       buildPartialOneofs(result);
@@ -1493,7 +1493,7 @@ private static final long serialVersionUID = 0L;
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.google.api.HttpRule result) {
+    private void buildPartialRepeatedFields(HttpRule result) {
       if (additionalBindingsBuilder_ == null) {
         if (((bitField0_ & 0x00000200) != 0)) {
           additionalBindings_ = java.util.Collections.unmodifiableList(additionalBindings_);
@@ -1505,7 +1505,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.google.api.HttpRule result) {
+    private void buildPartial0(HttpRule result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.selector_ = selector_;
@@ -1518,7 +1518,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartialOneofs(com.google.api.HttpRule result) {
+    private void buildPartialOneofs(HttpRule result) {
       result.patternCase_ = patternCase_;
       result.pattern_ = this.pattern_;
       if (patternCase_ == 8 &&
@@ -1527,50 +1527,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.google.api.HttpRule) {
-        return mergeFrom((com.google.api.HttpRule)other);
+      if (other instanceof HttpRule) {
+        return mergeFrom((HttpRule)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.google.api.HttpRule other) {
-      if (other == com.google.api.HttpRule.getDefaultInstance()) return this;
+    public Builder mergeFrom(HttpRule other) {
+      if (other == HttpRule.getDefaultInstance()) return this;
       if (!other.getSelector().isEmpty()) {
         selector_ = other.selector_;
         bitField0_ |= 0x00000001;
@@ -1656,18 +1656,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -1683,31 +1683,31 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
               patternCase_ = 2;
               pattern_ = s;
               break;
             } // case 18
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
               patternCase_ = 3;
               pattern_ = s;
               break;
             } // case 26
             case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
               patternCase_ = 4;
               pattern_ = s;
               break;
             } // case 34
             case 42: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
               patternCase_ = 5;
               pattern_ = s;
               break;
             } // case 42
             case 50: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
               patternCase_ = 6;
               pattern_ = s;
               break;
@@ -1725,9 +1725,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 66
             case 90: {
-              com.google.api.HttpRule m =
+              HttpRule m =
                   input.readMessage(
-                      com.google.api.HttpRule.parser(),
+                      HttpRule.parser(),
                       extensionRegistry);
               if (additionalBindingsBuilder_ == null) {
                 ensureAdditionalBindingsIsMutable();
@@ -1758,7 +1758,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int patternCase_ = 0;
-    private java.lang.Object pattern_;
+    private Object pattern_;
     public PatternCase
         getPatternCase() {
       return PatternCase.forNumber(
@@ -1774,7 +1774,7 @@ private static final long serialVersionUID = 0L;
 
     private int bitField0_;
 
-    private java.lang.Object selector_ = "";
+    private Object selector_ = "";
     /**
      * <pre>
      * Selects methods to which this rule applies.
@@ -1785,16 +1785,16 @@ private static final long serialVersionUID = 0L;
      * <code>string selector = 1 [json_name = "selector"];</code>
      * @return The selector.
      */
-    public java.lang.String getSelector() {
-      java.lang.Object ref = selector_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getSelector() {
+      Object ref = selector_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         selector_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1809,11 +1809,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getSelectorBytes() {
-      java.lang.Object ref = selector_;
+      Object ref = selector_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         selector_ = b;
         return b;
       } else {
@@ -1832,7 +1832,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSelector(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       selector_ = value;
       bitField0_ |= 0x00000001;
@@ -1884,7 +1884,7 @@ private static final long serialVersionUID = 0L;
      * <code>string get = 2 [json_name = "get"];</code>
      * @return Whether the get field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasGet() {
       return patternCase_ == 2;
     }
@@ -1896,22 +1896,22 @@ private static final long serialVersionUID = 0L;
      * <code>string get = 2 [json_name = "get"];</code>
      * @return The get.
      */
-    @java.lang.Override
-    public java.lang.String getGet() {
-      java.lang.Object ref = "";
+    @Override
+    public String getGet() {
+      Object ref = "";
       if (patternCase_ == 2) {
         ref = pattern_;
       }
-      if (!(ref instanceof java.lang.String)) {
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (patternCase_ == 2) {
           pattern_ = s;
         }
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1922,17 +1922,17 @@ private static final long serialVersionUID = 0L;
      * <code>string get = 2 [json_name = "get"];</code>
      * @return The bytes for get.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getGetBytes() {
-      java.lang.Object ref = "";
+      Object ref = "";
       if (patternCase_ == 2) {
         ref = pattern_;
       }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         if (patternCase_ == 2) {
           pattern_ = b;
         }
@@ -1951,7 +1951,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setGet(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       patternCase_ = 2;
       pattern_ = value;
@@ -2001,7 +2001,7 @@ private static final long serialVersionUID = 0L;
      * <code>string put = 3 [json_name = "put"];</code>
      * @return Whether the put field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasPut() {
       return patternCase_ == 3;
     }
@@ -2013,22 +2013,22 @@ private static final long serialVersionUID = 0L;
      * <code>string put = 3 [json_name = "put"];</code>
      * @return The put.
      */
-    @java.lang.Override
-    public java.lang.String getPut() {
-      java.lang.Object ref = "";
+    @Override
+    public String getPut() {
+      Object ref = "";
       if (patternCase_ == 3) {
         ref = pattern_;
       }
-      if (!(ref instanceof java.lang.String)) {
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (patternCase_ == 3) {
           pattern_ = s;
         }
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -2039,17 +2039,17 @@ private static final long serialVersionUID = 0L;
      * <code>string put = 3 [json_name = "put"];</code>
      * @return The bytes for put.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getPutBytes() {
-      java.lang.Object ref = "";
+      Object ref = "";
       if (patternCase_ == 3) {
         ref = pattern_;
       }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         if (patternCase_ == 3) {
           pattern_ = b;
         }
@@ -2068,7 +2068,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPut(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       patternCase_ = 3;
       pattern_ = value;
@@ -2118,7 +2118,7 @@ private static final long serialVersionUID = 0L;
      * <code>string post = 4 [json_name = "post"];</code>
      * @return Whether the post field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasPost() {
       return patternCase_ == 4;
     }
@@ -2130,22 +2130,22 @@ private static final long serialVersionUID = 0L;
      * <code>string post = 4 [json_name = "post"];</code>
      * @return The post.
      */
-    @java.lang.Override
-    public java.lang.String getPost() {
-      java.lang.Object ref = "";
+    @Override
+    public String getPost() {
+      Object ref = "";
       if (patternCase_ == 4) {
         ref = pattern_;
       }
-      if (!(ref instanceof java.lang.String)) {
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (patternCase_ == 4) {
           pattern_ = s;
         }
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -2156,17 +2156,17 @@ private static final long serialVersionUID = 0L;
      * <code>string post = 4 [json_name = "post"];</code>
      * @return The bytes for post.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getPostBytes() {
-      java.lang.Object ref = "";
+      Object ref = "";
       if (patternCase_ == 4) {
         ref = pattern_;
       }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         if (patternCase_ == 4) {
           pattern_ = b;
         }
@@ -2185,7 +2185,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPost(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       patternCase_ = 4;
       pattern_ = value;
@@ -2235,7 +2235,7 @@ private static final long serialVersionUID = 0L;
      * <code>string delete = 5 [json_name = "delete"];</code>
      * @return Whether the delete field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasDelete() {
       return patternCase_ == 5;
     }
@@ -2247,22 +2247,22 @@ private static final long serialVersionUID = 0L;
      * <code>string delete = 5 [json_name = "delete"];</code>
      * @return The delete.
      */
-    @java.lang.Override
-    public java.lang.String getDelete() {
-      java.lang.Object ref = "";
+    @Override
+    public String getDelete() {
+      Object ref = "";
       if (patternCase_ == 5) {
         ref = pattern_;
       }
-      if (!(ref instanceof java.lang.String)) {
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (patternCase_ == 5) {
           pattern_ = s;
         }
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -2273,17 +2273,17 @@ private static final long serialVersionUID = 0L;
      * <code>string delete = 5 [json_name = "delete"];</code>
      * @return The bytes for delete.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getDeleteBytes() {
-      java.lang.Object ref = "";
+      Object ref = "";
       if (patternCase_ == 5) {
         ref = pattern_;
       }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         if (patternCase_ == 5) {
           pattern_ = b;
         }
@@ -2302,7 +2302,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDelete(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       patternCase_ = 5;
       pattern_ = value;
@@ -2352,7 +2352,7 @@ private static final long serialVersionUID = 0L;
      * <code>string patch = 6 [json_name = "patch"];</code>
      * @return Whether the patch field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasPatch() {
       return patternCase_ == 6;
     }
@@ -2364,22 +2364,22 @@ private static final long serialVersionUID = 0L;
      * <code>string patch = 6 [json_name = "patch"];</code>
      * @return The patch.
      */
-    @java.lang.Override
-    public java.lang.String getPatch() {
-      java.lang.Object ref = "";
+    @Override
+    public String getPatch() {
+      Object ref = "";
       if (patternCase_ == 6) {
         ref = pattern_;
       }
-      if (!(ref instanceof java.lang.String)) {
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (patternCase_ == 6) {
           pattern_ = s;
         }
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -2390,17 +2390,17 @@ private static final long serialVersionUID = 0L;
      * <code>string patch = 6 [json_name = "patch"];</code>
      * @return The bytes for patch.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getPatchBytes() {
-      java.lang.Object ref = "";
+      Object ref = "";
       if (patternCase_ == 6) {
         ref = pattern_;
       }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         if (patternCase_ == 6) {
           pattern_ = b;
         }
@@ -2419,7 +2419,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPatch(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       patternCase_ = 6;
       pattern_ = value;
@@ -2462,7 +2462,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.api.CustomHttpPattern, com.google.api.CustomHttpPattern.Builder, com.google.api.CustomHttpPatternOrBuilder> customBuilder_;
+        CustomHttpPattern, CustomHttpPattern.Builder, CustomHttpPatternOrBuilder> customBuilder_;
     /**
      * <pre>
      * The custom pattern is used for specifying an HTTP method that is not
@@ -2474,7 +2474,7 @@ private static final long serialVersionUID = 0L;
      * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
      * @return Whether the custom field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasCustom() {
       return patternCase_ == 8;
     }
@@ -2489,18 +2489,18 @@ private static final long serialVersionUID = 0L;
      * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
      * @return The custom.
      */
-    @java.lang.Override
-    public com.google.api.CustomHttpPattern getCustom() {
+    @Override
+    public CustomHttpPattern getCustom() {
       if (customBuilder_ == null) {
         if (patternCase_ == 8) {
-          return (com.google.api.CustomHttpPattern) pattern_;
+          return (CustomHttpPattern) pattern_;
         }
-        return com.google.api.CustomHttpPattern.getDefaultInstance();
+        return CustomHttpPattern.getDefaultInstance();
       } else {
         if (patternCase_ == 8) {
           return customBuilder_.getMessage();
         }
-        return com.google.api.CustomHttpPattern.getDefaultInstance();
+        return CustomHttpPattern.getDefaultInstance();
       }
     }
     /**
@@ -2513,7 +2513,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
      */
-    public Builder setCustom(com.google.api.CustomHttpPattern value) {
+    public Builder setCustom(CustomHttpPattern value) {
       if (customBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2537,7 +2537,7 @@ private static final long serialVersionUID = 0L;
      * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
      */
     public Builder setCustom(
-        com.google.api.CustomHttpPattern.Builder builderForValue) {
+        CustomHttpPattern.Builder builderForValue) {
       if (customBuilder_ == null) {
         pattern_ = builderForValue.build();
         onChanged();
@@ -2557,11 +2557,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
      */
-    public Builder mergeCustom(com.google.api.CustomHttpPattern value) {
+    public Builder mergeCustom(CustomHttpPattern value) {
       if (customBuilder_ == null) {
         if (patternCase_ == 8 &&
-            pattern_ != com.google.api.CustomHttpPattern.getDefaultInstance()) {
-          pattern_ = com.google.api.CustomHttpPattern.newBuilder((com.google.api.CustomHttpPattern) pattern_)
+            pattern_ != CustomHttpPattern.getDefaultInstance()) {
+          pattern_ = CustomHttpPattern.newBuilder((CustomHttpPattern) pattern_)
               .mergeFrom(value).buildPartial();
         } else {
           pattern_ = value;
@@ -2613,7 +2613,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
      */
-    public com.google.api.CustomHttpPattern.Builder getCustomBuilder() {
+    public CustomHttpPattern.Builder getCustomBuilder() {
       return getCustomFieldBuilder().getBuilder();
     }
     /**
@@ -2626,15 +2626,15 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
      */
-    @java.lang.Override
-    public com.google.api.CustomHttpPatternOrBuilder getCustomOrBuilder() {
+    @Override
+    public CustomHttpPatternOrBuilder getCustomOrBuilder() {
       if ((patternCase_ == 8) && (customBuilder_ != null)) {
         return customBuilder_.getMessageOrBuilder();
       } else {
         if (patternCase_ == 8) {
-          return (com.google.api.CustomHttpPattern) pattern_;
+          return (CustomHttpPattern) pattern_;
         }
-        return com.google.api.CustomHttpPattern.getDefaultInstance();
+        return CustomHttpPattern.getDefaultInstance();
       }
     }
     /**
@@ -2648,15 +2648,15 @@ private static final long serialVersionUID = 0L;
      * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.api.CustomHttpPattern, com.google.api.CustomHttpPattern.Builder, com.google.api.CustomHttpPatternOrBuilder> 
+        CustomHttpPattern, CustomHttpPattern.Builder, CustomHttpPatternOrBuilder>
         getCustomFieldBuilder() {
       if (customBuilder_ == null) {
         if (!(patternCase_ == 8)) {
-          pattern_ = com.google.api.CustomHttpPattern.getDefaultInstance();
+          pattern_ = CustomHttpPattern.getDefaultInstance();
         }
         customBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.api.CustomHttpPattern, com.google.api.CustomHttpPattern.Builder, com.google.api.CustomHttpPatternOrBuilder>(
-                (com.google.api.CustomHttpPattern) pattern_,
+            CustomHttpPattern, CustomHttpPattern.Builder, CustomHttpPatternOrBuilder>(
+                (CustomHttpPattern) pattern_,
                 getParentForChildren(),
                 isClean());
         pattern_ = null;
@@ -2666,7 +2666,7 @@ private static final long serialVersionUID = 0L;
       return customBuilder_;
     }
 
-    private java.lang.Object body_ = "";
+    private Object body_ = "";
     /**
      * <pre>
      * The name of the request field whose value is mapped to the HTTP body, or
@@ -2678,16 +2678,16 @@ private static final long serialVersionUID = 0L;
      * <code>string body = 7 [json_name = "body"];</code>
      * @return The body.
      */
-    public java.lang.String getBody() {
-      java.lang.Object ref = body_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getBody() {
+      Object ref = body_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         body_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -2703,11 +2703,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getBodyBytes() {
-      java.lang.Object ref = body_;
+      Object ref = body_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         body_ = b;
         return b;
       } else {
@@ -2727,7 +2727,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setBody(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       body_ = value;
       bitField0_ |= 0x00000080;
@@ -2773,7 +2773,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object responseBody_ = "";
+    private Object responseBody_ = "";
     /**
      * <pre>
      * Optional. The name of the response field whose value is mapped to the HTTP
@@ -2784,16 +2784,16 @@ private static final long serialVersionUID = 0L;
      * <code>string response_body = 12 [json_name = "responseBody"];</code>
      * @return The responseBody.
      */
-    public java.lang.String getResponseBody() {
-      java.lang.Object ref = responseBody_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getResponseBody() {
+      Object ref = responseBody_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         responseBody_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -2808,11 +2808,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getResponseBodyBytes() {
-      java.lang.Object ref = responseBody_;
+      Object ref = responseBody_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         responseBody_ = b;
         return b;
       } else {
@@ -2831,7 +2831,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResponseBody(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       responseBody_ = value;
       bitField0_ |= 0x00000100;
@@ -2875,17 +2875,17 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<com.google.api.HttpRule> additionalBindings_ =
+    private java.util.List<HttpRule> additionalBindings_ =
       java.util.Collections.emptyList();
     private void ensureAdditionalBindingsIsMutable() {
       if (!((bitField0_ & 0x00000200) != 0)) {
-        additionalBindings_ = new java.util.ArrayList<com.google.api.HttpRule>(additionalBindings_);
+        additionalBindings_ = new java.util.ArrayList<HttpRule>(additionalBindings_);
         bitField0_ |= 0x00000200;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.api.HttpRule, com.google.api.HttpRule.Builder, com.google.api.HttpRuleOrBuilder> additionalBindingsBuilder_;
+        HttpRule, Builder, HttpRuleOrBuilder> additionalBindingsBuilder_;
 
     /**
      * <pre>
@@ -2896,7 +2896,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
-    public java.util.List<com.google.api.HttpRule> getAdditionalBindingsList() {
+    public java.util.List<HttpRule> getAdditionalBindingsList() {
       if (additionalBindingsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(additionalBindings_);
       } else {
@@ -2928,7 +2928,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
-    public com.google.api.HttpRule getAdditionalBindings(int index) {
+    public HttpRule getAdditionalBindings(int index) {
       if (additionalBindingsBuilder_ == null) {
         return additionalBindings_.get(index);
       } else {
@@ -2945,7 +2945,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
     public Builder setAdditionalBindings(
-        int index, com.google.api.HttpRule value) {
+        int index, HttpRule value) {
       if (additionalBindingsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2968,7 +2968,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
     public Builder setAdditionalBindings(
-        int index, com.google.api.HttpRule.Builder builderForValue) {
+        int index, Builder builderForValue) {
       if (additionalBindingsBuilder_ == null) {
         ensureAdditionalBindingsIsMutable();
         additionalBindings_.set(index, builderForValue.build());
@@ -2987,7 +2987,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
-    public Builder addAdditionalBindings(com.google.api.HttpRule value) {
+    public Builder addAdditionalBindings(HttpRule value) {
       if (additionalBindingsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3010,7 +3010,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
     public Builder addAdditionalBindings(
-        int index, com.google.api.HttpRule value) {
+        int index, HttpRule value) {
       if (additionalBindingsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3033,7 +3033,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
     public Builder addAdditionalBindings(
-        com.google.api.HttpRule.Builder builderForValue) {
+        Builder builderForValue) {
       if (additionalBindingsBuilder_ == null) {
         ensureAdditionalBindingsIsMutable();
         additionalBindings_.add(builderForValue.build());
@@ -3053,7 +3053,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
     public Builder addAdditionalBindings(
-        int index, com.google.api.HttpRule.Builder builderForValue) {
+        int index, Builder builderForValue) {
       if (additionalBindingsBuilder_ == null) {
         ensureAdditionalBindingsIsMutable();
         additionalBindings_.add(index, builderForValue.build());
@@ -3073,7 +3073,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
     public Builder addAllAdditionalBindings(
-        java.lang.Iterable<? extends com.google.api.HttpRule> values) {
+        Iterable<? extends HttpRule> values) {
       if (additionalBindingsBuilder_ == null) {
         ensureAdditionalBindingsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3131,7 +3131,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
-    public com.google.api.HttpRule.Builder getAdditionalBindingsBuilder(
+    public Builder getAdditionalBindingsBuilder(
         int index) {
       return getAdditionalBindingsFieldBuilder().getBuilder(index);
     }
@@ -3144,7 +3144,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
-    public com.google.api.HttpRuleOrBuilder getAdditionalBindingsOrBuilder(
+    public HttpRuleOrBuilder getAdditionalBindingsOrBuilder(
         int index) {
       if (additionalBindingsBuilder_ == null) {
         return additionalBindings_.get(index);  } else {
@@ -3160,7 +3160,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
-    public java.util.List<? extends com.google.api.HttpRuleOrBuilder> 
+    public java.util.List<? extends HttpRuleOrBuilder>
          getAdditionalBindingsOrBuilderList() {
       if (additionalBindingsBuilder_ != null) {
         return additionalBindingsBuilder_.getMessageOrBuilderList();
@@ -3177,9 +3177,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
-    public com.google.api.HttpRule.Builder addAdditionalBindingsBuilder() {
+    public Builder addAdditionalBindingsBuilder() {
       return getAdditionalBindingsFieldBuilder().addBuilder(
-          com.google.api.HttpRule.getDefaultInstance());
+          HttpRule.getDefaultInstance());
     }
     /**
      * <pre>
@@ -3190,10 +3190,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
-    public com.google.api.HttpRule.Builder addAdditionalBindingsBuilder(
+    public Builder addAdditionalBindingsBuilder(
         int index) {
       return getAdditionalBindingsFieldBuilder().addBuilder(
-          index, com.google.api.HttpRule.getDefaultInstance());
+          index, HttpRule.getDefaultInstance());
     }
     /**
      * <pre>
@@ -3204,16 +3204,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
      */
-    public java.util.List<com.google.api.HttpRule.Builder> 
+    public java.util.List<Builder>
          getAdditionalBindingsBuilderList() {
       return getAdditionalBindingsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.api.HttpRule, com.google.api.HttpRule.Builder, com.google.api.HttpRuleOrBuilder> 
+        HttpRule, Builder, HttpRuleOrBuilder>
         getAdditionalBindingsFieldBuilder() {
       if (additionalBindingsBuilder_ == null) {
         additionalBindingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.google.api.HttpRule, com.google.api.HttpRule.Builder, com.google.api.HttpRuleOrBuilder>(
+            HttpRule, Builder, HttpRuleOrBuilder>(
                 additionalBindings_,
                 ((bitField0_ & 0x00000200) != 0),
                 getParentForChildren(),
@@ -3222,13 +3222,13 @@ private static final long serialVersionUID = 0L;
       }
       return additionalBindingsBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -3239,18 +3239,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:google.api.HttpRule)
-  private static final com.google.api.HttpRule DEFAULT_INSTANCE;
+  private static final HttpRule DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.google.api.HttpRule();
+    DEFAULT_INSTANCE = new HttpRule();
   }
 
-  public static com.google.api.HttpRule getDefaultInstance() {
+  public static HttpRule getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<HttpRule>
       PARSER = new com.google.protobuf.AbstractParser<HttpRule>() {
-    @java.lang.Override
+    @Override
     public HttpRule parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -3274,13 +3274,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<HttpRule> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.google.api.HttpRule getDefaultInstanceForType() {
+  @Override
+  public HttpRule getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

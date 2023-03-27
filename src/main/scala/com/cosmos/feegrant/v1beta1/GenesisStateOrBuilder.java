@@ -10,12 +10,12 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.feegrant.v1beta1.Grant> 
+  java.util.List<Grant>
       getAllowancesList();
   /**
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.feegrant.v1beta1.Grant getAllowances(int index);
+  Grant getAllowances(int index);
   /**
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
    */
@@ -23,11 +23,11 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.feegrant.v1beta1.GrantOrBuilder> 
+  java.util.List<? extends GrantOrBuilder>
       getAllowancesOrBuilderList();
   /**
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.feegrant.v1beta1.GrantOrBuilder getAllowancesOrBuilder(
+  GrantOrBuilder getAllowancesOrBuilder(
       int index);
 }

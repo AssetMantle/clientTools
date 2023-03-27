@@ -25,29 +25,29 @@ private static final long serialVersionUID = 0L;
     channelId_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryPacketCommitmentRequest();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_descriptor;
+    return QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_fieldAccessorTable
+    return QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.channel.v1.QueryPacketCommitmentRequest.class, com.ibc.core.channel.v1.QueryPacketCommitmentRequest.Builder.class);
+            QueryPacketCommitmentRequest.class, Builder.class);
   }
 
   public static final int PORT_ID_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object portId_ = "";
+  private volatile Object portId_ = "";
   /**
    * <pre>
    * port unique identifier
@@ -56,15 +56,15 @@ private static final long serialVersionUID = 0L;
    * <code>string port_id = 1 [json_name = "portId"];</code>
    * @return The portId.
    */
-  @java.lang.Override
-  public java.lang.String getPortId() {
-    java.lang.Object ref = portId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getPortId() {
+    Object ref = portId_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       portId_ = s;
       return s;
     }
@@ -77,14 +77,14 @@ private static final long serialVersionUID = 0L;
    * <code>string port_id = 1 [json_name = "portId"];</code>
    * @return The bytes for portId.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getPortIdBytes() {
-    java.lang.Object ref = portId_;
-    if (ref instanceof java.lang.String) {
+    Object ref = portId_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       portId_ = b;
       return b;
     } else {
@@ -94,7 +94,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int CHANNEL_ID_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object channelId_ = "";
+  private volatile Object channelId_ = "";
   /**
    * <pre>
    * channel unique identifier
@@ -103,15 +103,15 @@ private static final long serialVersionUID = 0L;
    * <code>string channel_id = 2 [json_name = "channelId"];</code>
    * @return The channelId.
    */
-  @java.lang.Override
-  public java.lang.String getChannelId() {
-    java.lang.Object ref = channelId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getChannelId() {
+    Object ref = channelId_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       channelId_ = s;
       return s;
     }
@@ -124,14 +124,14 @@ private static final long serialVersionUID = 0L;
    * <code>string channel_id = 2 [json_name = "channelId"];</code>
    * @return The bytes for channelId.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getChannelIdBytes() {
-    java.lang.Object ref = channelId_;
-    if (ref instanceof java.lang.String) {
+    Object ref = channelId_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       channelId_ = b;
       return b;
     } else {
@@ -149,13 +149,13 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 sequence = 3 [json_name = "sequence"];</code>
    * @return The sequence.
    */
-  @java.lang.Override
+  @Override
   public long getSequence() {
     return sequence_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -165,7 +165,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(portId_)) {
@@ -180,7 +180,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -201,15 +201,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.channel.v1.QueryPacketCommitmentRequest)) {
+    if (!(obj instanceof QueryPacketCommitmentRequest)) {
       return super.equals(obj);
     }
-    com.ibc.core.channel.v1.QueryPacketCommitmentRequest other = (com.ibc.core.channel.v1.QueryPacketCommitmentRequest) obj;
+    QueryPacketCommitmentRequest other = (QueryPacketCommitmentRequest) obj;
 
     if (!getPortId()
         .equals(other.getPortId())) return false;
@@ -221,7 +221,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -240,69 +240,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseFrom(
+  public static QueryPacketCommitmentRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseFrom(
+  public static QueryPacketCommitmentRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseFrom(
+  public static QueryPacketCommitmentRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseFrom(
+  public static QueryPacketCommitmentRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseFrom(byte[] data)
+  public static QueryPacketCommitmentRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseFrom(
+  public static QueryPacketCommitmentRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseFrom(java.io.InputStream input)
+  public static QueryPacketCommitmentRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseFrom(
+  public static QueryPacketCommitmentRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseDelimitedFrom(java.io.InputStream input)
+  public static QueryPacketCommitmentRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseDelimitedFrom(
+  public static QueryPacketCommitmentRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseFrom(
+  public static QueryPacketCommitmentRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest parseFrom(
+  public static QueryPacketCommitmentRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -310,23 +310,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.channel.v1.QueryPacketCommitmentRequest prototype) {
+  public static Builder newBuilder(QueryPacketCommitmentRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -341,18 +341,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.channel.v1.QueryPacketCommitmentRequest)
-      com.ibc.core.channel.v1.QueryPacketCommitmentRequestOrBuilder {
+      QueryPacketCommitmentRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_descriptor;
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_fieldAccessorTable
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.channel.v1.QueryPacketCommitmentRequest.class, com.ibc.core.channel.v1.QueryPacketCommitmentRequest.Builder.class);
+              QueryPacketCommitmentRequest.class, Builder.class);
     }
 
     // Construct using com.ibc.core.channel.v1.QueryPacketCommitmentRequest.newBuilder()
@@ -361,11 +361,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -375,35 +375,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_descriptor;
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryPacketCommitmentRequest getDefaultInstanceForType() {
-      return com.ibc.core.channel.v1.QueryPacketCommitmentRequest.getDefaultInstance();
+    @Override
+    public QueryPacketCommitmentRequest getDefaultInstanceForType() {
+      return QueryPacketCommitmentRequest.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryPacketCommitmentRequest build() {
-      com.ibc.core.channel.v1.QueryPacketCommitmentRequest result = buildPartial();
+    @Override
+    public QueryPacketCommitmentRequest build() {
+      QueryPacketCommitmentRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryPacketCommitmentRequest buildPartial() {
-      com.ibc.core.channel.v1.QueryPacketCommitmentRequest result = new com.ibc.core.channel.v1.QueryPacketCommitmentRequest(this);
+    @Override
+    public QueryPacketCommitmentRequest buildPartial() {
+      QueryPacketCommitmentRequest result = new QueryPacketCommitmentRequest(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.core.channel.v1.QueryPacketCommitmentRequest result) {
+    private void buildPartial0(QueryPacketCommitmentRequest result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.portId_ = portId_;
@@ -416,50 +416,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.channel.v1.QueryPacketCommitmentRequest) {
-        return mergeFrom((com.ibc.core.channel.v1.QueryPacketCommitmentRequest)other);
+      if (other instanceof QueryPacketCommitmentRequest) {
+        return mergeFrom((QueryPacketCommitmentRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.channel.v1.QueryPacketCommitmentRequest other) {
-      if (other == com.ibc.core.channel.v1.QueryPacketCommitmentRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryPacketCommitmentRequest other) {
+      if (other == QueryPacketCommitmentRequest.getDefaultInstance()) return this;
       if (!other.getPortId().isEmpty()) {
         portId_ = other.portId_;
         bitField0_ |= 0x00000001;
@@ -478,18 +478,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -531,7 +531,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object portId_ = "";
+    private Object portId_ = "";
     /**
      * <pre>
      * port unique identifier
@@ -540,16 +540,16 @@ private static final long serialVersionUID = 0L;
      * <code>string port_id = 1 [json_name = "portId"];</code>
      * @return The portId.
      */
-    public java.lang.String getPortId() {
-      java.lang.Object ref = portId_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getPortId() {
+      Object ref = portId_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         portId_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -562,11 +562,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getPortIdBytes() {
-      java.lang.Object ref = portId_;
+      Object ref = portId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         portId_ = b;
         return b;
       } else {
@@ -583,7 +583,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPortId(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       portId_ = value;
       bitField0_ |= 0x00000001;
@@ -623,7 +623,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object channelId_ = "";
+    private Object channelId_ = "";
     /**
      * <pre>
      * channel unique identifier
@@ -632,16 +632,16 @@ private static final long serialVersionUID = 0L;
      * <code>string channel_id = 2 [json_name = "channelId"];</code>
      * @return The channelId.
      */
-    public java.lang.String getChannelId() {
-      java.lang.Object ref = channelId_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getChannelId() {
+      Object ref = channelId_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         channelId_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -654,11 +654,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getChannelIdBytes() {
-      java.lang.Object ref = channelId_;
+      Object ref = channelId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         channelId_ = b;
         return b;
       } else {
@@ -675,7 +675,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setChannelId(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       channelId_ = value;
       bitField0_ |= 0x00000002;
@@ -724,7 +724,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 sequence = 3 [json_name = "sequence"];</code>
      * @return The sequence.
      */
-    @java.lang.Override
+    @Override
     public long getSequence() {
       return sequence_;
     }
@@ -758,13 +758,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -775,18 +775,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.channel.v1.QueryPacketCommitmentRequest)
-  private static final com.ibc.core.channel.v1.QueryPacketCommitmentRequest DEFAULT_INSTANCE;
+  private static final QueryPacketCommitmentRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.channel.v1.QueryPacketCommitmentRequest();
+    DEFAULT_INSTANCE = new QueryPacketCommitmentRequest();
   }
 
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentRequest getDefaultInstance() {
+  public static QueryPacketCommitmentRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryPacketCommitmentRequest>
       PARSER = new com.google.protobuf.AbstractParser<QueryPacketCommitmentRequest>() {
-    @java.lang.Override
+    @Override
     public QueryPacketCommitmentRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -810,13 +810,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryPacketCommitmentRequest> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.channel.v1.QueryPacketCommitmentRequest getDefaultInstanceForType() {
+  @Override
+  public QueryPacketCommitmentRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -16,11 +16,11 @@ public interface SignedHeaderOrBuilder extends
    * <code>.tendermint.types.Header header = 1 [json_name = "header"];</code>
    * @return The header.
    */
-  com.tendermint.types.Header getHeader();
+  Header getHeader();
   /**
    * <code>.tendermint.types.Header header = 1 [json_name = "header"];</code>
    */
-  com.tendermint.types.HeaderOrBuilder getHeaderOrBuilder();
+  HeaderOrBuilder getHeaderOrBuilder();
 
   /**
    * <code>.tendermint.types.Commit commit = 2 [json_name = "commit"];</code>
@@ -31,9 +31,9 @@ public interface SignedHeaderOrBuilder extends
    * <code>.tendermint.types.Commit commit = 2 [json_name = "commit"];</code>
    * @return The commit.
    */
-  com.tendermint.types.Commit getCommit();
+  Commit getCommit();
   /**
    * <code>.tendermint.types.Commit commit = 2 [json_name = "commit"];</code>
    */
-  com.tendermint.types.CommitOrBuilder getCommitOrBuilder();
+  CommitOrBuilder getCommitOrBuilder();
 }

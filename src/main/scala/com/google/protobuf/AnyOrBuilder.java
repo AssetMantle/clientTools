@@ -5,7 +5,7 @@ package com.google.protobuf;
 
 public interface AnyOrBuilder extends
     // @@protoc_insertion_point(interface_extends:google.protobuf.Any)
-    com.google.protobuf.MessageOrBuilder {
+    MessageOrBuilder {
 
   /**
    * <pre>
@@ -37,7 +37,7 @@ public interface AnyOrBuilder extends
    * <code>string type_url = 1;</code>
    * @return The typeUrl.
    */
-  java.lang.String getTypeUrl();
+  String getTypeUrl();
   /**
    * <pre>
    * A URL/resource name that uniquely identifies the type of the serialized
@@ -68,7 +68,7 @@ public interface AnyOrBuilder extends
    * <code>string type_url = 1;</code>
    * @return The bytes for typeUrl.
    */
-  com.google.protobuf.ByteString
+  ByteString
       getTypeUrlBytes();
 
   /**
@@ -79,5 +79,5 @@ public interface AnyOrBuilder extends
    * <code>bytes value = 2;</code>
    * @return The value.
    */
-  com.google.protobuf.ByteString getValue();
+  ByteString getValue();
 }

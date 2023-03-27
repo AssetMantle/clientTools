@@ -24,7 +24,7 @@ public interface QueryParamsResponseOrBuilder extends
    * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  com.cosmos.staking.v1beta1.Params getParams();
+  Params getParams();
   /**
    * <pre>
    * params holds all the parameters of this module.
@@ -32,5 +32,5 @@ public interface QueryParamsResponseOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.ParamsOrBuilder getParamsOrBuilder();
+  ParamsOrBuilder getParamsOrBuilder();
 }

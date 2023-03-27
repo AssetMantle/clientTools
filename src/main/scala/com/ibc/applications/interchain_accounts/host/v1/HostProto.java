@@ -27,7 +27,7 @@ public final class HostProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n7ibc/applications/interchain_accounts/h" +
       "ost/v1/host.proto\022,ibc.applications.inte" +
       "rchain_accounts.host.v1\032\024gogoproto/gogo." +
@@ -55,7 +55,7 @@ public final class HostProto {
     internal_static_ibc_applications_interchain_accounts_host_v1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_host_v1_Params_descriptor,
-        new java.lang.String[] { "HostEnabled", "AllowMessages", });
+        new String[] { "HostEnabled", "AllowMessages", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.moretags);

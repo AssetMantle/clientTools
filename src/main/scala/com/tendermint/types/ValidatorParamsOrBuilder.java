@@ -11,7 +11,7 @@ public interface ValidatorParamsOrBuilder extends
    * <code>repeated string pub_key_types = 1 [json_name = "pubKeyTypes"];</code>
    * @return A list containing the pubKeyTypes.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getPubKeyTypesList();
   /**
    * <code>repeated string pub_key_types = 1 [json_name = "pubKeyTypes"];</code>
@@ -23,7 +23,7 @@ public interface ValidatorParamsOrBuilder extends
    * @param index The index of the element to return.
    * @return The pubKeyTypes at the given index.
    */
-  java.lang.String getPubKeyTypes(int index);
+  String getPubKeyTypes(int index);
   /**
    * <code>repeated string pub_key_types = 1 [json_name = "pubKeyTypes"];</code>
    * @param index The index of the value to return.

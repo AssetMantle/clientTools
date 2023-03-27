@@ -26,42 +26,42 @@ private static final long serialVersionUID = 0L;
     attributes_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Event();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_Event_descriptor;
+    return TypesProto.internal_static_tendermint_abci_Event_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_Event_fieldAccessorTable
+    return TypesProto.internal_static_tendermint_abci_Event_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.tendermint.abci.Event.class, com.tendermint.abci.Event.Builder.class);
+            Event.class, Builder.class);
   }
 
   public static final int TYPE_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object type_ = "";
+  private volatile Object type_ = "";
   /**
    * <code>string type = 1 [json_name = "type"];</code>
    * @return The type.
    */
-  @java.lang.Override
-  public java.lang.String getType() {
-    java.lang.Object ref = type_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getType() {
+    Object ref = type_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       type_ = s;
       return s;
     }
@@ -70,14 +70,14 @@ private static final long serialVersionUID = 0L;
    * <code>string type = 1 [json_name = "type"];</code>
    * @return The bytes for type.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getTypeBytes() {
-    java.lang.Object ref = type_;
-    if (ref instanceof java.lang.String) {
+    Object ref = type_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       type_ = b;
       return b;
     } else {
@@ -87,47 +87,47 @@ private static final long serialVersionUID = 0L;
 
   public static final int ATTRIBUTES_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<com.tendermint.abci.EventAttribute> attributes_;
+  private java.util.List<EventAttribute> attributes_;
   /**
    * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.tendermint.abci.EventAttribute> getAttributesList() {
+  @Override
+  public java.util.List<EventAttribute> getAttributesList() {
     return attributes_;
   }
   /**
    * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.tendermint.abci.EventAttributeOrBuilder> 
+  @Override
+  public java.util.List<? extends EventAttributeOrBuilder>
       getAttributesOrBuilderList() {
     return attributes_;
   }
   /**
    * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getAttributesCount() {
     return attributes_.size();
   }
   /**
    * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
    */
-  @java.lang.Override
-  public com.tendermint.abci.EventAttribute getAttributes(int index) {
+  @Override
+  public EventAttribute getAttributes(int index) {
     return attributes_.get(index);
   }
   /**
    * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
    */
-  @java.lang.Override
-  public com.tendermint.abci.EventAttributeOrBuilder getAttributesOrBuilder(
+  @Override
+  public EventAttributeOrBuilder getAttributesOrBuilder(
       int index) {
     return attributes_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -137,7 +137,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
@@ -149,7 +149,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -167,15 +167,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.tendermint.abci.Event)) {
+    if (!(obj instanceof Event)) {
       return super.equals(obj);
     }
-    com.tendermint.abci.Event other = (com.tendermint.abci.Event) obj;
+    Event other = (Event) obj;
 
     if (!getType()
         .equals(other.getType())) return false;
@@ -185,7 +185,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -203,69 +203,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.tendermint.abci.Event parseFrom(
+  public static Event parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.Event parseFrom(
+  public static Event parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.Event parseFrom(
+  public static Event parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.Event parseFrom(
+  public static Event parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.Event parseFrom(byte[] data)
+  public static Event parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.Event parseFrom(
+  public static Event parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.Event parseFrom(java.io.InputStream input)
+  public static Event parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.Event parseFrom(
+  public static Event parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.abci.Event parseDelimitedFrom(java.io.InputStream input)
+  public static Event parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.Event parseDelimitedFrom(
+  public static Event parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.abci.Event parseFrom(
+  public static Event parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.Event parseFrom(
+  public static Event parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -273,23 +273,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.tendermint.abci.Event prototype) {
+  public static Builder newBuilder(Event prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -305,18 +305,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.abci.Event)
-      com.tendermint.abci.EventOrBuilder {
+      EventOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_Event_descriptor;
+      return TypesProto.internal_static_tendermint_abci_Event_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_Event_fieldAccessorTable
+      return TypesProto.internal_static_tendermint_abci_Event_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.tendermint.abci.Event.class, com.tendermint.abci.Event.Builder.class);
+              Event.class, Builder.class);
     }
 
     // Construct using com.tendermint.abci.Event.newBuilder()
@@ -325,11 +325,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -344,36 +344,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_Event_descriptor;
+      return TypesProto.internal_static_tendermint_abci_Event_descriptor;
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.Event getDefaultInstanceForType() {
-      return com.tendermint.abci.Event.getDefaultInstance();
+    @Override
+    public Event getDefaultInstanceForType() {
+      return Event.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.Event build() {
-      com.tendermint.abci.Event result = buildPartial();
+    @Override
+    public Event build() {
+      Event result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.Event buildPartial() {
-      com.tendermint.abci.Event result = new com.tendermint.abci.Event(this);
+    @Override
+    public Event buildPartial() {
+      Event result = new Event(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.tendermint.abci.Event result) {
+    private void buildPartialRepeatedFields(Event result) {
       if (attributesBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           attributes_ = java.util.Collections.unmodifiableList(attributes_);
@@ -385,57 +385,57 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.tendermint.abci.Event result) {
+    private void buildPartial0(Event result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.type_ = type_;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.tendermint.abci.Event) {
-        return mergeFrom((com.tendermint.abci.Event)other);
+      if (other instanceof Event) {
+        return mergeFrom((Event)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.tendermint.abci.Event other) {
-      if (other == com.tendermint.abci.Event.getDefaultInstance()) return this;
+    public Builder mergeFrom(Event other) {
+      if (other == Event.getDefaultInstance()) return this;
       if (!other.getType().isEmpty()) {
         type_ = other.type_;
         bitField0_ |= 0x00000001;
@@ -472,18 +472,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -499,9 +499,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              com.tendermint.abci.EventAttribute m =
+              EventAttribute m =
                   input.readMessage(
-                      com.tendermint.abci.EventAttribute.parser(),
+                      EventAttribute.parser(),
                       extensionRegistry);
               if (attributesBuilder_ == null) {
                 ensureAttributesIsMutable();
@@ -528,21 +528,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object type_ = "";
+    private Object type_ = "";
     /**
      * <code>string type = 1 [json_name = "type"];</code>
      * @return The type.
      */
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getType() {
+      Object ref = type_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         type_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -551,11 +551,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
-      java.lang.Object ref = type_;
+      Object ref = type_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         type_ = b;
         return b;
       } else {
@@ -568,7 +568,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setType(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       type_ = value;
       bitField0_ |= 0x00000001;
@@ -600,22 +600,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<com.tendermint.abci.EventAttribute> attributes_ =
+    private java.util.List<EventAttribute> attributes_ =
       java.util.Collections.emptyList();
     private void ensureAttributesIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        attributes_ = new java.util.ArrayList<com.tendermint.abci.EventAttribute>(attributes_);
+        attributes_ = new java.util.ArrayList<EventAttribute>(attributes_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.tendermint.abci.EventAttribute, com.tendermint.abci.EventAttribute.Builder, com.tendermint.abci.EventAttributeOrBuilder> attributesBuilder_;
+        EventAttribute, EventAttribute.Builder, EventAttributeOrBuilder> attributesBuilder_;
 
     /**
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
-    public java.util.List<com.tendermint.abci.EventAttribute> getAttributesList() {
+    public java.util.List<EventAttribute> getAttributesList() {
       if (attributesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(attributes_);
       } else {
@@ -635,7 +635,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
-    public com.tendermint.abci.EventAttribute getAttributes(int index) {
+    public EventAttribute getAttributes(int index) {
       if (attributesBuilder_ == null) {
         return attributes_.get(index);
       } else {
@@ -646,7 +646,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
     public Builder setAttributes(
-        int index, com.tendermint.abci.EventAttribute value) {
+        int index, EventAttribute value) {
       if (attributesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -663,7 +663,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
     public Builder setAttributes(
-        int index, com.tendermint.abci.EventAttribute.Builder builderForValue) {
+        int index, EventAttribute.Builder builderForValue) {
       if (attributesBuilder_ == null) {
         ensureAttributesIsMutable();
         attributes_.set(index, builderForValue.build());
@@ -676,7 +676,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
-    public Builder addAttributes(com.tendermint.abci.EventAttribute value) {
+    public Builder addAttributes(EventAttribute value) {
       if (attributesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -693,7 +693,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
     public Builder addAttributes(
-        int index, com.tendermint.abci.EventAttribute value) {
+        int index, EventAttribute value) {
       if (attributesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -710,7 +710,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
     public Builder addAttributes(
-        com.tendermint.abci.EventAttribute.Builder builderForValue) {
+        EventAttribute.Builder builderForValue) {
       if (attributesBuilder_ == null) {
         ensureAttributesIsMutable();
         attributes_.add(builderForValue.build());
@@ -724,7 +724,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
     public Builder addAttributes(
-        int index, com.tendermint.abci.EventAttribute.Builder builderForValue) {
+        int index, EventAttribute.Builder builderForValue) {
       if (attributesBuilder_ == null) {
         ensureAttributesIsMutable();
         attributes_.add(index, builderForValue.build());
@@ -738,7 +738,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
     public Builder addAllAttributes(
-        java.lang.Iterable<? extends com.tendermint.abci.EventAttribute> values) {
+        Iterable<? extends EventAttribute> values) {
       if (attributesBuilder_ == null) {
         ensureAttributesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -778,14 +778,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
-    public com.tendermint.abci.EventAttribute.Builder getAttributesBuilder(
+    public EventAttribute.Builder getAttributesBuilder(
         int index) {
       return getAttributesFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
-    public com.tendermint.abci.EventAttributeOrBuilder getAttributesOrBuilder(
+    public EventAttributeOrBuilder getAttributesOrBuilder(
         int index) {
       if (attributesBuilder_ == null) {
         return attributes_.get(index);  } else {
@@ -795,7 +795,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
-    public java.util.List<? extends com.tendermint.abci.EventAttributeOrBuilder> 
+    public java.util.List<? extends EventAttributeOrBuilder>
          getAttributesOrBuilderList() {
       if (attributesBuilder_ != null) {
         return attributesBuilder_.getMessageOrBuilderList();
@@ -806,31 +806,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
-    public com.tendermint.abci.EventAttribute.Builder addAttributesBuilder() {
+    public EventAttribute.Builder addAttributesBuilder() {
       return getAttributesFieldBuilder().addBuilder(
-          com.tendermint.abci.EventAttribute.getDefaultInstance());
+          EventAttribute.getDefaultInstance());
     }
     /**
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
-    public com.tendermint.abci.EventAttribute.Builder addAttributesBuilder(
+    public EventAttribute.Builder addAttributesBuilder(
         int index) {
       return getAttributesFieldBuilder().addBuilder(
-          index, com.tendermint.abci.EventAttribute.getDefaultInstance());
+          index, EventAttribute.getDefaultInstance());
     }
     /**
      * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
      */
-    public java.util.List<com.tendermint.abci.EventAttribute.Builder> 
+    public java.util.List<EventAttribute.Builder>
          getAttributesBuilderList() {
       return getAttributesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.tendermint.abci.EventAttribute, com.tendermint.abci.EventAttribute.Builder, com.tendermint.abci.EventAttributeOrBuilder> 
+        EventAttribute, EventAttribute.Builder, EventAttributeOrBuilder>
         getAttributesFieldBuilder() {
       if (attributesBuilder_ == null) {
         attributesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.tendermint.abci.EventAttribute, com.tendermint.abci.EventAttribute.Builder, com.tendermint.abci.EventAttributeOrBuilder>(
+            EventAttribute, EventAttribute.Builder, EventAttributeOrBuilder>(
                 attributes_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -839,13 +839,13 @@ private static final long serialVersionUID = 0L;
       }
       return attributesBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -856,18 +856,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.abci.Event)
-  private static final com.tendermint.abci.Event DEFAULT_INSTANCE;
+  private static final Event DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.tendermint.abci.Event();
+    DEFAULT_INSTANCE = new Event();
   }
 
-  public static com.tendermint.abci.Event getDefaultInstance() {
+  public static Event getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Event>
       PARSER = new com.google.protobuf.AbstractParser<Event>() {
-    @java.lang.Override
+    @Override
     public Event parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -891,13 +891,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Event> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.tendermint.abci.Event getDefaultInstanceForType() {
+  @Override
+  public Event getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

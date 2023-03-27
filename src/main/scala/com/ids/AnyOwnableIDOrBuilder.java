@@ -16,11 +16,11 @@ public interface AnyOwnableIDOrBuilder extends
    * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
    * @return The assetID.
    */
-  com.ids.AssetID getAssetID();
+  AssetID getAssetID();
   /**
    * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
    */
-  com.ids.AssetIDOrBuilder getAssetIDOrBuilder();
+  AssetIDOrBuilder getAssetIDOrBuilder();
 
   /**
    * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
@@ -31,11 +31,11 @@ public interface AnyOwnableIDOrBuilder extends
    * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
    * @return The coinID.
    */
-  com.ids.CoinID getCoinID();
+  CoinID getCoinID();
   /**
    * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
    */
-  com.ids.CoinIDOrBuilder getCoinIDOrBuilder();
+  CoinIDOrBuilder getCoinIDOrBuilder();
 
-  com.ids.AnyOwnableID.ImplCase getImplCase();
+  AnyOwnableID.ImplCase getImplCase();
 }

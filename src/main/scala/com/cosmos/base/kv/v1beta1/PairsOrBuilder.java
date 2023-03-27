@@ -10,12 +10,12 @@ public interface PairsOrBuilder extends
   /**
    * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.base.kv.v1beta1.Pair> 
+  java.util.List<Pair>
       getPairsList();
   /**
    * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.base.kv.v1beta1.Pair getPairs(int index);
+  Pair getPairs(int index);
   /**
    * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
@@ -23,11 +23,11 @@ public interface PairsOrBuilder extends
   /**
    * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.base.kv.v1beta1.PairOrBuilder> 
+  java.util.List<? extends PairOrBuilder>
       getPairsOrBuilderList();
   /**
    * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.base.kv.v1beta1.PairOrBuilder getPairsOrBuilder(
+  PairOrBuilder getPairsOrBuilder(
       int index);
 }

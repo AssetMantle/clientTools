@@ -72,7 +72,7 @@ public interface MsgCreateClientOrBuilder extends
    * <code>string signer = 3 [json_name = "signer"];</code>
    * @return The signer.
    */
-  java.lang.String getSigner();
+  String getSigner();
   /**
    * <pre>
    * signer address

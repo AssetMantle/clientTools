@@ -16,11 +16,11 @@ public interface ConsensusParamsOrBuilder extends
    * <code>.tendermint.types.BlockParams block = 1 [json_name = "block", (.gogoproto.nullable) = false];</code>
    * @return The block.
    */
-  com.tendermint.types.BlockParams getBlock();
+  BlockParams getBlock();
   /**
    * <code>.tendermint.types.BlockParams block = 1 [json_name = "block", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.types.BlockParamsOrBuilder getBlockOrBuilder();
+  BlockParamsOrBuilder getBlockOrBuilder();
 
   /**
    * <code>.tendermint.types.EvidenceParams evidence = 2 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
@@ -31,11 +31,11 @@ public interface ConsensusParamsOrBuilder extends
    * <code>.tendermint.types.EvidenceParams evidence = 2 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    * @return The evidence.
    */
-  com.tendermint.types.EvidenceParams getEvidence();
+  EvidenceParams getEvidence();
   /**
    * <code>.tendermint.types.EvidenceParams evidence = 2 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.types.EvidenceParamsOrBuilder getEvidenceOrBuilder();
+  EvidenceParamsOrBuilder getEvidenceOrBuilder();
 
   /**
    * <code>.tendermint.types.ValidatorParams validator = 3 [json_name = "validator", (.gogoproto.nullable) = false];</code>
@@ -46,11 +46,11 @@ public interface ConsensusParamsOrBuilder extends
    * <code>.tendermint.types.ValidatorParams validator = 3 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    * @return The validator.
    */
-  com.tendermint.types.ValidatorParams getValidator();
+  ValidatorParams getValidator();
   /**
    * <code>.tendermint.types.ValidatorParams validator = 3 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.types.ValidatorParamsOrBuilder getValidatorOrBuilder();
+  ValidatorParamsOrBuilder getValidatorOrBuilder();
 
   /**
    * <code>.tendermint.types.VersionParams version = 4 [json_name = "version", (.gogoproto.nullable) = false];</code>
@@ -61,9 +61,9 @@ public interface ConsensusParamsOrBuilder extends
    * <code>.tendermint.types.VersionParams version = 4 [json_name = "version", (.gogoproto.nullable) = false];</code>
    * @return The version.
    */
-  com.tendermint.types.VersionParams getVersion();
+  VersionParams getVersion();
   /**
    * <code>.tendermint.types.VersionParams version = 4 [json_name = "version", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.types.VersionParamsOrBuilder getVersionOrBuilder();
+  VersionParamsOrBuilder getVersionOrBuilder();
 }

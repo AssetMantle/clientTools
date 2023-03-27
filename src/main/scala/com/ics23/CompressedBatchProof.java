@@ -20,110 +20,110 @@ private static final long serialVersionUID = 0L;
     lookupInners_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new CompressedBatchProof();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ics23.ProofsProto.internal_static_ics23_CompressedBatchProof_descriptor;
+    return ProofsProto.internal_static_ics23_CompressedBatchProof_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ics23.ProofsProto.internal_static_ics23_CompressedBatchProof_fieldAccessorTable
+    return ProofsProto.internal_static_ics23_CompressedBatchProof_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ics23.CompressedBatchProof.class, com.ics23.CompressedBatchProof.Builder.class);
+            CompressedBatchProof.class, Builder.class);
   }
 
   public static final int ENTRIES_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.ics23.CompressedBatchEntry> entries_;
+  private java.util.List<CompressedBatchEntry> entries_;
   /**
    * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.ics23.CompressedBatchEntry> getEntriesList() {
+  @Override
+  public java.util.List<CompressedBatchEntry> getEntriesList() {
     return entries_;
   }
   /**
    * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.ics23.CompressedBatchEntryOrBuilder> 
+  @Override
+  public java.util.List<? extends CompressedBatchEntryOrBuilder>
       getEntriesOrBuilderList() {
     return entries_;
   }
   /**
    * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getEntriesCount() {
     return entries_.size();
   }
   /**
    * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  @java.lang.Override
-  public com.ics23.CompressedBatchEntry getEntries(int index) {
+  @Override
+  public CompressedBatchEntry getEntries(int index) {
     return entries_.get(index);
   }
   /**
    * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  @java.lang.Override
-  public com.ics23.CompressedBatchEntryOrBuilder getEntriesOrBuilder(
+  @Override
+  public CompressedBatchEntryOrBuilder getEntriesOrBuilder(
       int index) {
     return entries_.get(index);
   }
 
   public static final int LOOKUP_INNERS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<com.ics23.InnerOp> lookupInners_;
+  private java.util.List<InnerOp> lookupInners_;
   /**
    * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.ics23.InnerOp> getLookupInnersList() {
+  @Override
+  public java.util.List<InnerOp> getLookupInnersList() {
     return lookupInners_;
   }
   /**
    * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.ics23.InnerOpOrBuilder> 
+  @Override
+  public java.util.List<? extends InnerOpOrBuilder>
       getLookupInnersOrBuilderList() {
     return lookupInners_;
   }
   /**
    * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getLookupInnersCount() {
     return lookupInners_.size();
   }
   /**
    * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
    */
-  @java.lang.Override
-  public com.ics23.InnerOp getLookupInners(int index) {
+  @Override
+  public InnerOp getLookupInners(int index) {
     return lookupInners_.get(index);
   }
   /**
    * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
    */
-  @java.lang.Override
-  public com.ics23.InnerOpOrBuilder getLookupInnersOrBuilder(
+  @Override
+  public InnerOpOrBuilder getLookupInnersOrBuilder(
       int index) {
     return lookupInners_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -133,7 +133,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < entries_.size(); i++) {
@@ -145,7 +145,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -164,15 +164,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ics23.CompressedBatchProof)) {
+    if (!(obj instanceof CompressedBatchProof)) {
       return super.equals(obj);
     }
-    com.ics23.CompressedBatchProof other = (com.ics23.CompressedBatchProof) obj;
+    CompressedBatchProof other = (CompressedBatchProof) obj;
 
     if (!getEntriesList()
         .equals(other.getEntriesList())) return false;
@@ -182,7 +182,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -202,69 +202,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ics23.CompressedBatchProof parseFrom(
+  public static CompressedBatchProof parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.CompressedBatchProof parseFrom(
+  public static CompressedBatchProof parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.CompressedBatchProof parseFrom(
+  public static CompressedBatchProof parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.CompressedBatchProof parseFrom(
+  public static CompressedBatchProof parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.CompressedBatchProof parseFrom(byte[] data)
+  public static CompressedBatchProof parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.CompressedBatchProof parseFrom(
+  public static CompressedBatchProof parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.CompressedBatchProof parseFrom(java.io.InputStream input)
+  public static CompressedBatchProof parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.CompressedBatchProof parseFrom(
+  public static CompressedBatchProof parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.CompressedBatchProof parseDelimitedFrom(java.io.InputStream input)
+  public static CompressedBatchProof parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ics23.CompressedBatchProof parseDelimitedFrom(
+  public static CompressedBatchProof parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.CompressedBatchProof parseFrom(
+  public static CompressedBatchProof parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.CompressedBatchProof parseFrom(
+  public static CompressedBatchProof parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -272,23 +272,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ics23.CompressedBatchProof prototype) {
+  public static Builder newBuilder(CompressedBatchProof prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -298,18 +298,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ics23.CompressedBatchProof)
-      com.ics23.CompressedBatchProofOrBuilder {
+      CompressedBatchProofOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ics23.ProofsProto.internal_static_ics23_CompressedBatchProof_descriptor;
+      return ProofsProto.internal_static_ics23_CompressedBatchProof_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ics23.ProofsProto.internal_static_ics23_CompressedBatchProof_fieldAccessorTable
+      return ProofsProto.internal_static_ics23_CompressedBatchProof_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ics23.CompressedBatchProof.class, com.ics23.CompressedBatchProof.Builder.class);
+              CompressedBatchProof.class, Builder.class);
     }
 
     // Construct using com.ics23.CompressedBatchProof.newBuilder()
@@ -318,11 +318,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -343,36 +343,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ics23.ProofsProto.internal_static_ics23_CompressedBatchProof_descriptor;
+      return ProofsProto.internal_static_ics23_CompressedBatchProof_descriptor;
     }
 
-    @java.lang.Override
-    public com.ics23.CompressedBatchProof getDefaultInstanceForType() {
-      return com.ics23.CompressedBatchProof.getDefaultInstance();
+    @Override
+    public CompressedBatchProof getDefaultInstanceForType() {
+      return CompressedBatchProof.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ics23.CompressedBatchProof build() {
-      com.ics23.CompressedBatchProof result = buildPartial();
+    @Override
+    public CompressedBatchProof build() {
+      CompressedBatchProof result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ics23.CompressedBatchProof buildPartial() {
-      com.ics23.CompressedBatchProof result = new com.ics23.CompressedBatchProof(this);
+    @Override
+    public CompressedBatchProof buildPartial() {
+      CompressedBatchProof result = new CompressedBatchProof(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.ics23.CompressedBatchProof result) {
+    private void buildPartialRepeatedFields(CompressedBatchProof result) {
       if (entriesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           entries_ = java.util.Collections.unmodifiableList(entries_);
@@ -393,54 +393,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.ics23.CompressedBatchProof result) {
+    private void buildPartial0(CompressedBatchProof result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ics23.CompressedBatchProof) {
-        return mergeFrom((com.ics23.CompressedBatchProof)other);
+      if (other instanceof CompressedBatchProof) {
+        return mergeFrom((CompressedBatchProof)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ics23.CompressedBatchProof other) {
-      if (other == com.ics23.CompressedBatchProof.getDefaultInstance()) return this;
+    public Builder mergeFrom(CompressedBatchProof other) {
+      if (other == CompressedBatchProof.getDefaultInstance()) return this;
       if (entriesBuilder_ == null) {
         if (!other.entries_.isEmpty()) {
           if (entries_.isEmpty()) {
@@ -498,18 +498,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -520,9 +520,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.ics23.CompressedBatchEntry m =
+              CompressedBatchEntry m =
                   input.readMessage(
-                      com.ics23.CompressedBatchEntry.parser(),
+                      CompressedBatchEntry.parser(),
                       extensionRegistry);
               if (entriesBuilder_ == null) {
                 ensureEntriesIsMutable();
@@ -533,9 +533,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              com.ics23.InnerOp m =
+              InnerOp m =
                   input.readMessage(
-                      com.ics23.InnerOp.parser(),
+                      InnerOp.parser(),
                       extensionRegistry);
               if (lookupInnersBuilder_ == null) {
                 ensureLookupInnersIsMutable();
@@ -562,22 +562,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.ics23.CompressedBatchEntry> entries_ =
+    private java.util.List<CompressedBatchEntry> entries_ =
       java.util.Collections.emptyList();
     private void ensureEntriesIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        entries_ = new java.util.ArrayList<com.ics23.CompressedBatchEntry>(entries_);
+        entries_ = new java.util.ArrayList<CompressedBatchEntry>(entries_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ics23.CompressedBatchEntry, com.ics23.CompressedBatchEntry.Builder, com.ics23.CompressedBatchEntryOrBuilder> entriesBuilder_;
+        CompressedBatchEntry, CompressedBatchEntry.Builder, CompressedBatchEntryOrBuilder> entriesBuilder_;
 
     /**
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public java.util.List<com.ics23.CompressedBatchEntry> getEntriesList() {
+    public java.util.List<CompressedBatchEntry> getEntriesList() {
       if (entriesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(entries_);
       } else {
@@ -597,7 +597,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public com.ics23.CompressedBatchEntry getEntries(int index) {
+    public CompressedBatchEntry getEntries(int index) {
       if (entriesBuilder_ == null) {
         return entries_.get(index);
       } else {
@@ -608,7 +608,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder setEntries(
-        int index, com.ics23.CompressedBatchEntry value) {
+        int index, CompressedBatchEntry value) {
       if (entriesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -625,7 +625,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder setEntries(
-        int index, com.ics23.CompressedBatchEntry.Builder builderForValue) {
+        int index, CompressedBatchEntry.Builder builderForValue) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         entries_.set(index, builderForValue.build());
@@ -638,7 +638,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public Builder addEntries(com.ics23.CompressedBatchEntry value) {
+    public Builder addEntries(CompressedBatchEntry value) {
       if (entriesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder addEntries(
-        int index, com.ics23.CompressedBatchEntry value) {
+        int index, CompressedBatchEntry value) {
       if (entriesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -672,7 +672,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder addEntries(
-        com.ics23.CompressedBatchEntry.Builder builderForValue) {
+        CompressedBatchEntry.Builder builderForValue) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         entries_.add(builderForValue.build());
@@ -686,7 +686,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder addEntries(
-        int index, com.ics23.CompressedBatchEntry.Builder builderForValue) {
+        int index, CompressedBatchEntry.Builder builderForValue) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         entries_.add(index, builderForValue.build());
@@ -700,7 +700,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder addAllEntries(
-        java.lang.Iterable<? extends com.ics23.CompressedBatchEntry> values) {
+        Iterable<? extends CompressedBatchEntry> values) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -740,14 +740,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public com.ics23.CompressedBatchEntry.Builder getEntriesBuilder(
+    public CompressedBatchEntry.Builder getEntriesBuilder(
         int index) {
       return getEntriesFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public com.ics23.CompressedBatchEntryOrBuilder getEntriesOrBuilder(
+    public CompressedBatchEntryOrBuilder getEntriesOrBuilder(
         int index) {
       if (entriesBuilder_ == null) {
         return entries_.get(index);  } else {
@@ -757,7 +757,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public java.util.List<? extends com.ics23.CompressedBatchEntryOrBuilder> 
+    public java.util.List<? extends CompressedBatchEntryOrBuilder>
          getEntriesOrBuilderList() {
       if (entriesBuilder_ != null) {
         return entriesBuilder_.getMessageOrBuilderList();
@@ -768,31 +768,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public com.ics23.CompressedBatchEntry.Builder addEntriesBuilder() {
+    public CompressedBatchEntry.Builder addEntriesBuilder() {
       return getEntriesFieldBuilder().addBuilder(
-          com.ics23.CompressedBatchEntry.getDefaultInstance());
+          CompressedBatchEntry.getDefaultInstance());
     }
     /**
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public com.ics23.CompressedBatchEntry.Builder addEntriesBuilder(
+    public CompressedBatchEntry.Builder addEntriesBuilder(
         int index) {
       return getEntriesFieldBuilder().addBuilder(
-          index, com.ics23.CompressedBatchEntry.getDefaultInstance());
+          index, CompressedBatchEntry.getDefaultInstance());
     }
     /**
      * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public java.util.List<com.ics23.CompressedBatchEntry.Builder> 
+    public java.util.List<CompressedBatchEntry.Builder>
          getEntriesBuilderList() {
       return getEntriesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ics23.CompressedBatchEntry, com.ics23.CompressedBatchEntry.Builder, com.ics23.CompressedBatchEntryOrBuilder> 
+        CompressedBatchEntry, CompressedBatchEntry.Builder, CompressedBatchEntryOrBuilder>
         getEntriesFieldBuilder() {
       if (entriesBuilder_ == null) {
         entriesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.ics23.CompressedBatchEntry, com.ics23.CompressedBatchEntry.Builder, com.ics23.CompressedBatchEntryOrBuilder>(
+            CompressedBatchEntry, CompressedBatchEntry.Builder, CompressedBatchEntryOrBuilder>(
                 entries_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -802,22 +802,22 @@ private static final long serialVersionUID = 0L;
       return entriesBuilder_;
     }
 
-    private java.util.List<com.ics23.InnerOp> lookupInners_ =
+    private java.util.List<InnerOp> lookupInners_ =
       java.util.Collections.emptyList();
     private void ensureLookupInnersIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        lookupInners_ = new java.util.ArrayList<com.ics23.InnerOp>(lookupInners_);
+        lookupInners_ = new java.util.ArrayList<InnerOp>(lookupInners_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ics23.InnerOp, com.ics23.InnerOp.Builder, com.ics23.InnerOpOrBuilder> lookupInnersBuilder_;
+        InnerOp, InnerOp.Builder, InnerOpOrBuilder> lookupInnersBuilder_;
 
     /**
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
-    public java.util.List<com.ics23.InnerOp> getLookupInnersList() {
+    public java.util.List<InnerOp> getLookupInnersList() {
       if (lookupInnersBuilder_ == null) {
         return java.util.Collections.unmodifiableList(lookupInners_);
       } else {
@@ -837,7 +837,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
-    public com.ics23.InnerOp getLookupInners(int index) {
+    public InnerOp getLookupInners(int index) {
       if (lookupInnersBuilder_ == null) {
         return lookupInners_.get(index);
       } else {
@@ -848,7 +848,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
     public Builder setLookupInners(
-        int index, com.ics23.InnerOp value) {
+        int index, InnerOp value) {
       if (lookupInnersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -865,7 +865,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
     public Builder setLookupInners(
-        int index, com.ics23.InnerOp.Builder builderForValue) {
+        int index, InnerOp.Builder builderForValue) {
       if (lookupInnersBuilder_ == null) {
         ensureLookupInnersIsMutable();
         lookupInners_.set(index, builderForValue.build());
@@ -878,7 +878,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
-    public Builder addLookupInners(com.ics23.InnerOp value) {
+    public Builder addLookupInners(InnerOp value) {
       if (lookupInnersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -895,7 +895,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
     public Builder addLookupInners(
-        int index, com.ics23.InnerOp value) {
+        int index, InnerOp value) {
       if (lookupInnersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -912,7 +912,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
     public Builder addLookupInners(
-        com.ics23.InnerOp.Builder builderForValue) {
+        InnerOp.Builder builderForValue) {
       if (lookupInnersBuilder_ == null) {
         ensureLookupInnersIsMutable();
         lookupInners_.add(builderForValue.build());
@@ -926,7 +926,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
     public Builder addLookupInners(
-        int index, com.ics23.InnerOp.Builder builderForValue) {
+        int index, InnerOp.Builder builderForValue) {
       if (lookupInnersBuilder_ == null) {
         ensureLookupInnersIsMutable();
         lookupInners_.add(index, builderForValue.build());
@@ -940,7 +940,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
     public Builder addAllLookupInners(
-        java.lang.Iterable<? extends com.ics23.InnerOp> values) {
+        Iterable<? extends InnerOp> values) {
       if (lookupInnersBuilder_ == null) {
         ensureLookupInnersIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -980,14 +980,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
-    public com.ics23.InnerOp.Builder getLookupInnersBuilder(
+    public InnerOp.Builder getLookupInnersBuilder(
         int index) {
       return getLookupInnersFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
-    public com.ics23.InnerOpOrBuilder getLookupInnersOrBuilder(
+    public InnerOpOrBuilder getLookupInnersOrBuilder(
         int index) {
       if (lookupInnersBuilder_ == null) {
         return lookupInners_.get(index);  } else {
@@ -997,7 +997,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
-    public java.util.List<? extends com.ics23.InnerOpOrBuilder> 
+    public java.util.List<? extends InnerOpOrBuilder>
          getLookupInnersOrBuilderList() {
       if (lookupInnersBuilder_ != null) {
         return lookupInnersBuilder_.getMessageOrBuilderList();
@@ -1008,31 +1008,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
-    public com.ics23.InnerOp.Builder addLookupInnersBuilder() {
+    public InnerOp.Builder addLookupInnersBuilder() {
       return getLookupInnersFieldBuilder().addBuilder(
-          com.ics23.InnerOp.getDefaultInstance());
+          InnerOp.getDefaultInstance());
     }
     /**
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
-    public com.ics23.InnerOp.Builder addLookupInnersBuilder(
+    public InnerOp.Builder addLookupInnersBuilder(
         int index) {
       return getLookupInnersFieldBuilder().addBuilder(
-          index, com.ics23.InnerOp.getDefaultInstance());
+          index, InnerOp.getDefaultInstance());
     }
     /**
      * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
      */
-    public java.util.List<com.ics23.InnerOp.Builder> 
+    public java.util.List<InnerOp.Builder>
          getLookupInnersBuilderList() {
       return getLookupInnersFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ics23.InnerOp, com.ics23.InnerOp.Builder, com.ics23.InnerOpOrBuilder> 
+        InnerOp, InnerOp.Builder, InnerOpOrBuilder>
         getLookupInnersFieldBuilder() {
       if (lookupInnersBuilder_ == null) {
         lookupInnersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.ics23.InnerOp, com.ics23.InnerOp.Builder, com.ics23.InnerOpOrBuilder>(
+            InnerOp, InnerOp.Builder, InnerOpOrBuilder>(
                 lookupInners_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1041,13 +1041,13 @@ private static final long serialVersionUID = 0L;
       }
       return lookupInnersBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1058,18 +1058,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ics23.CompressedBatchProof)
-  private static final com.ics23.CompressedBatchProof DEFAULT_INSTANCE;
+  private static final CompressedBatchProof DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ics23.CompressedBatchProof();
+    DEFAULT_INSTANCE = new CompressedBatchProof();
   }
 
-  public static com.ics23.CompressedBatchProof getDefaultInstance() {
+  public static CompressedBatchProof getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<CompressedBatchProof>
       PARSER = new com.google.protobuf.AbstractParser<CompressedBatchProof>() {
-    @java.lang.Override
+    @Override
     public CompressedBatchProof parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1093,13 +1093,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<CompressedBatchProof> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ics23.CompressedBatchProof getDefaultInstanceForType() {
+  @Override
+  public CompressedBatchProof getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -18,85 +18,80 @@ private static final long serialVersionUID = 0L;
   private MetaProperty() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new MetaProperty();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.properties.MetaPropertyV1Proto.internal_static_properties_MetaProperty_descriptor;
+    return MetaPropertyV1Proto.internal_static_properties_MetaProperty_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.properties.MetaPropertyV1Proto.internal_static_properties_MetaProperty_fieldAccessorTable
+    return MetaPropertyV1Proto.internal_static_properties_MetaProperty_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.properties.MetaProperty.class, com.properties.MetaProperty.Builder.class);
+            MetaProperty.class, Builder.class);
   }
 
-  public static final int ID_FIELD_NUMBER = 1;
-  private com.ids.PropertyID id_;
+  public static final int I_D_FIELD_NUMBER = 1;
+  private com.ids.PropertyID iD_;
   /**
-   * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
-   * @return Whether the id field is set.
+   * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
+   * @return Whether the iD field is set.
    */
-  @java.lang.Override
-  public boolean hasId() {
-    return id_ != null;
+  @Override
+  public boolean hasID() {
+    return iD_ != null;
   }
   /**
-   * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
-   * @return The id.
+   * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
+   * @return The iD.
    */
-  @java.lang.Override
-  public com.ids.PropertyID getId() {
-    return id_ == null ? com.ids.PropertyID.getDefaultInstance() : id_;
+  @Override
+  public com.ids.PropertyID getID() {
+    return iD_ == null ? com.ids.PropertyID.getDefaultInstance() : iD_;
   }
   /**
-   * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
+   * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
    */
-  @java.lang.Override
-  public com.ids.PropertyIDOrBuilder getIdOrBuilder() {
-    return getId();
+  @Override
+  public com.ids.PropertyIDOrBuilder getIDOrBuilder() {
+    return iD_ == null ? com.ids.PropertyID.getDefaultInstance() : iD_;
   }
 
-  public static final int ANY_DATA_FIELD_NUMBER = 2;
-  private com.data.AnyData anyData_;
+  public static final int DATA_FIELD_NUMBER = 2;
+  private com.data.AnyData data_;
   /**
-   * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
-   * @return Whether the anyData field is set.
+   * <code>.data.AnyData data = 2 [json_name = "data"];</code>
+   * @return Whether the data field is set.
    */
-  @java.lang.Override
-  public boolean hasAnyData() {
-    return anyData_ != null;
+  @Override
+  public boolean hasData() {
+    return data_ != null;
   }
   /**
-   * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
-   * @return The anyData.
+   * <code>.data.AnyData data = 2 [json_name = "data"];</code>
+   * @return The data.
    */
-  @java.lang.Override
-  public com.data.AnyData getAnyData() {
-    return anyData_ == null ? com.data.AnyData.getDefaultInstance() : anyData_;
+  @Override
+  public com.data.AnyData getData() {
+    return data_ == null ? com.data.AnyData.getDefaultInstance() : data_;
   }
   /**
-   * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
+   * <code>.data.AnyData data = 2 [json_name = "data"];</code>
    */
-  @java.lang.Override
-  public com.data.AnyDataOrBuilder getAnyDataOrBuilder() {
-    return getAnyData();
+  @Override
+  public com.data.AnyDataOrBuilder getDataOrBuilder() {
+    return data_ == null ? com.data.AnyData.getDefaultInstance() : data_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -106,144 +101,144 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (id_ != null) {
-      output.writeMessage(1, getId());
+    if (iD_ != null) {
+      output.writeMessage(1, getID());
     }
-    if (anyData_ != null) {
-      output.writeMessage(2, getAnyData());
+    if (data_ != null) {
+      output.writeMessage(2, getData());
     }
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
-    if (id_ != null) {
+    if (iD_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getId());
+        .computeMessageSize(1, getID());
     }
-    if (anyData_ != null) {
+    if (data_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getAnyData());
+        .computeMessageSize(2, getData());
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.properties.MetaProperty)) {
+    if (!(obj instanceof MetaProperty)) {
       return super.equals(obj);
     }
-    com.properties.MetaProperty other = (com.properties.MetaProperty) obj;
+    MetaProperty other = (MetaProperty) obj;
 
-    if (hasId() != other.hasId()) return false;
-    if (hasId()) {
-      if (!getId()
-          .equals(other.getId())) return false;
+    if (hasID() != other.hasID()) return false;
+    if (hasID()) {
+      if (!getID()
+          .equals(other.getID())) return false;
     }
-    if (hasAnyData() != other.hasAnyData()) return false;
-    if (hasAnyData()) {
-      if (!getAnyData()
-          .equals(other.getAnyData())) return false;
+    if (hasData() != other.hasData()) return false;
+    if (hasData()) {
+      if (!getData()
+          .equals(other.getData())) return false;
     }
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasId()) {
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId().hashCode();
+    if (hasID()) {
+      hash = (37 * hash) + I_D_FIELD_NUMBER;
+      hash = (53 * hash) + getID().hashCode();
     }
-    if (hasAnyData()) {
-      hash = (37 * hash) + ANY_DATA_FIELD_NUMBER;
-      hash = (53 * hash) + getAnyData().hashCode();
+    if (hasData()) {
+      hash = (37 * hash) + DATA_FIELD_NUMBER;
+      hash = (53 * hash) + getData().hashCode();
     }
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static com.properties.MetaProperty parseFrom(
+  public static MetaProperty parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.properties.MetaProperty parseFrom(
+  public static MetaProperty parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.properties.MetaProperty parseFrom(
+  public static MetaProperty parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.properties.MetaProperty parseFrom(
+  public static MetaProperty parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.properties.MetaProperty parseFrom(byte[] data)
+  public static MetaProperty parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.properties.MetaProperty parseFrom(
+  public static MetaProperty parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.properties.MetaProperty parseFrom(java.io.InputStream input)
+  public static MetaProperty parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.properties.MetaProperty parseFrom(
+  public static MetaProperty parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.properties.MetaProperty parseDelimitedFrom(java.io.InputStream input)
+  public static MetaProperty parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.properties.MetaProperty parseDelimitedFrom(
+  public static MetaProperty parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.properties.MetaProperty parseFrom(
+  public static MetaProperty parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.properties.MetaProperty parseFrom(
+  public static MetaProperty parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -251,23 +246,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.properties.MetaProperty prototype) {
+  public static Builder newBuilder(MetaProperty prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -277,18 +272,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:properties.MetaProperty)
-      com.properties.MetaPropertyOrBuilder {
+      MetaPropertyOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.properties.MetaPropertyV1Proto.internal_static_properties_MetaProperty_descriptor;
+      return MetaPropertyV1Proto.internal_static_properties_MetaProperty_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.properties.MetaPropertyV1Proto.internal_static_properties_MetaProperty_fieldAccessorTable
+      return MetaPropertyV1Proto.internal_static_properties_MetaProperty_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.properties.MetaProperty.class, com.properties.MetaProperty.Builder.class);
+              MetaProperty.class, Builder.class);
     }
 
     // Construct using com.properties.MetaProperty.newBuilder()
@@ -297,132 +292,136 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
-      if (idBuilder_ == null) {
-        id_ = null;
-      } else {
-        id_ = null;
-        idBuilder_ = null;
+      bitField0_ = 0;
+      iD_ = null;
+      if (iDBuilder_ != null) {
+        iDBuilder_.dispose();
+        iDBuilder_ = null;
       }
-      if (anyDataBuilder_ == null) {
-        anyData_ = null;
-      } else {
-        anyData_ = null;
-        anyDataBuilder_ = null;
+      data_ = null;
+      if (dataBuilder_ != null) {
+        dataBuilder_.dispose();
+        dataBuilder_ = null;
       }
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.properties.MetaPropertyV1Proto.internal_static_properties_MetaProperty_descriptor;
+      return MetaPropertyV1Proto.internal_static_properties_MetaProperty_descriptor;
     }
 
-    @java.lang.Override
-    public com.properties.MetaProperty getDefaultInstanceForType() {
-      return com.properties.MetaProperty.getDefaultInstance();
+    @Override
+    public MetaProperty getDefaultInstanceForType() {
+      return MetaProperty.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.properties.MetaProperty build() {
-      com.properties.MetaProperty result = buildPartial();
+    @Override
+    public MetaProperty build() {
+      MetaProperty result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.properties.MetaProperty buildPartial() {
-      com.properties.MetaProperty result = new com.properties.MetaProperty(this);
-      if (idBuilder_ == null) {
-        result.id_ = id_;
-      } else {
-        result.id_ = idBuilder_.build();
-      }
-      if (anyDataBuilder_ == null) {
-        result.anyData_ = anyData_;
-      } else {
-        result.anyData_ = anyDataBuilder_.build();
-      }
+    @Override
+    public MetaProperty buildPartial() {
+      MetaProperty result = new MetaProperty(this);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(MetaProperty result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.iD_ = iDBuilder_ == null
+            ? iD_
+            : iDBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.data_ = dataBuilder_ == null
+            ? data_
+            : dataBuilder_.build();
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.properties.MetaProperty) {
-        return mergeFrom((com.properties.MetaProperty)other);
+      if (other instanceof MetaProperty) {
+        return mergeFrom((MetaProperty)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.properties.MetaProperty other) {
-      if (other == com.properties.MetaProperty.getDefaultInstance()) return this;
-      if (other.hasId()) {
-        mergeId(other.getId());
+    public Builder mergeFrom(MetaProperty other) {
+      if (other == MetaProperty.getDefaultInstance()) return this;
+      if (other.hasID()) {
+        mergeID(other.getID());
       }
-      if (other.hasAnyData()) {
-        mergeAnyData(other.getAnyData());
+      if (other.hasData()) {
+        mergeData(other.getData());
       }
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -434,16 +433,16 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               input.readMessage(
-                  getIdFieldBuilder().getBuilder(),
+                  getIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             case 18: {
               input.readMessage(
-                  getAnyDataFieldBuilder().getBuilder(),
+                  getDataFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000002;
               break;
             } // case 18
             default: {
@@ -461,251 +460,252 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
-    private com.ids.PropertyID id_;
+    private com.ids.PropertyID iD_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.PropertyID, com.ids.PropertyID.Builder, com.ids.PropertyIDOrBuilder> idBuilder_;
+        com.ids.PropertyID, com.ids.PropertyID.Builder, com.ids.PropertyIDOrBuilder> iDBuilder_;
     /**
-     * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
-     * @return Whether the id field is set.
+     * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
+     * @return Whether the iD field is set.
      */
-    public boolean hasId() {
-      return idBuilder_ != null || id_ != null;
+    public boolean hasID() {
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
-     * @return The id.
+     * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
+     * @return The iD.
      */
-    public com.ids.PropertyID getId() {
-      if (idBuilder_ == null) {
-        return id_ == null ? com.ids.PropertyID.getDefaultInstance() : id_;
+    public com.ids.PropertyID getID() {
+      if (iDBuilder_ == null) {
+        return iD_ == null ? com.ids.PropertyID.getDefaultInstance() : iD_;
       } else {
-        return idBuilder_.getMessage();
+        return iDBuilder_.getMessage();
       }
     }
     /**
-     * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
+     * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
      */
-    public Builder setId(com.ids.PropertyID value) {
-      if (idBuilder_ == null) {
+    public Builder setID(com.ids.PropertyID value) {
+      if (iDBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        id_ = value;
-        onChanged();
+        iD_ = value;
       } else {
-        idBuilder_.setMessage(value);
+        iDBuilder_.setMessage(value);
       }
-
-      return this;
-    }
-    /**
-     * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
-     */
-    public Builder setId(
-        com.ids.PropertyID.Builder builderForValue) {
-      if (idBuilder_ == null) {
-        id_ = builderForValue.build();
-        onChanged();
-      } else {
-        idBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
-     */
-    public Builder mergeId(com.ids.PropertyID value) {
-      if (idBuilder_ == null) {
-        if (id_ != null) {
-          id_ =
-            com.ids.PropertyID.newBuilder(id_).mergeFrom(value).buildPartial();
-        } else {
-          id_ = value;
-        }
-        onChanged();
-      } else {
-        idBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
-     */
-    public Builder clearId() {
-      if (idBuilder_ == null) {
-        id_ = null;
-        onChanged();
-      } else {
-        id_ = null;
-        idBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
-     */
-    public com.ids.PropertyID.Builder getIdBuilder() {
-      
+      bitField0_ |= 0x00000001;
       onChanged();
-      return getIdFieldBuilder().getBuilder();
+      return this;
     }
     /**
-     * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
+     * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
      */
-    public com.ids.PropertyIDOrBuilder getIdOrBuilder() {
-      if (idBuilder_ != null) {
-        return idBuilder_.getMessageOrBuilder();
+    public Builder setID(
+        com.ids.PropertyID.Builder builderForValue) {
+      if (iDBuilder_ == null) {
+        iD_ = builderForValue.build();
       } else {
-        return id_ == null ?
-            com.ids.PropertyID.getDefaultInstance() : id_;
+        iDBuilder_.setMessage(builderForValue.build());
+      }
+      bitField0_ |= 0x00000001;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
+     */
+    public Builder mergeID(com.ids.PropertyID value) {
+      if (iDBuilder_ == null) {
+        if (((bitField0_ & 0x00000001) != 0) &&
+          iD_ != null &&
+          iD_ != com.ids.PropertyID.getDefaultInstance()) {
+          getIDBuilder().mergeFrom(value);
+        } else {
+          iD_ = value;
+        }
+      } else {
+        iDBuilder_.mergeFrom(value);
+      }
+      bitField0_ |= 0x00000001;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
+     */
+    public Builder clearID() {
+      bitField0_ = (bitField0_ & ~0x00000001);
+      iD_ = null;
+      if (iDBuilder_ != null) {
+        iDBuilder_.dispose();
+        iDBuilder_ = null;
+      }
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
+     */
+    public com.ids.PropertyID.Builder getIDBuilder() {
+      bitField0_ |= 0x00000001;
+      onChanged();
+      return getIDFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
+     */
+    public com.ids.PropertyIDOrBuilder getIDOrBuilder() {
+      if (iDBuilder_ != null) {
+        return iDBuilder_.getMessageOrBuilder();
+      } else {
+        return iD_ == null ?
+            com.ids.PropertyID.getDefaultInstance() : iD_;
       }
     }
     /**
-     * <code>.ids.PropertyID id = 1 [json_name = "id"];</code>
+     * <code>.ids.PropertyID i_d = 1 [json_name = "iD"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.ids.PropertyID, com.ids.PropertyID.Builder, com.ids.PropertyIDOrBuilder> 
-        getIdFieldBuilder() {
-      if (idBuilder_ == null) {
-        idBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getIDFieldBuilder() {
+      if (iDBuilder_ == null) {
+        iDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             com.ids.PropertyID, com.ids.PropertyID.Builder, com.ids.PropertyIDOrBuilder>(
-                getId(),
+                getID(),
                 getParentForChildren(),
                 isClean());
-        id_ = null;
+        iD_ = null;
       }
-      return idBuilder_;
+      return iDBuilder_;
     }
 
-    private com.data.AnyData anyData_;
+    private com.data.AnyData data_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.data.AnyData, com.data.AnyData.Builder, com.data.AnyDataOrBuilder> anyDataBuilder_;
+        com.data.AnyData, com.data.AnyData.Builder, com.data.AnyDataOrBuilder> dataBuilder_;
     /**
-     * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
-     * @return Whether the anyData field is set.
+     * <code>.data.AnyData data = 2 [json_name = "data"];</code>
+     * @return Whether the data field is set.
      */
-    public boolean hasAnyData() {
-      return anyDataBuilder_ != null || anyData_ != null;
+    public boolean hasData() {
+      return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
-     * @return The anyData.
+     * <code>.data.AnyData data = 2 [json_name = "data"];</code>
+     * @return The data.
      */
-    public com.data.AnyData getAnyData() {
-      if (anyDataBuilder_ == null) {
-        return anyData_ == null ? com.data.AnyData.getDefaultInstance() : anyData_;
+    public com.data.AnyData getData() {
+      if (dataBuilder_ == null) {
+        return data_ == null ? com.data.AnyData.getDefaultInstance() : data_;
       } else {
-        return anyDataBuilder_.getMessage();
+        return dataBuilder_.getMessage();
       }
     }
     /**
-     * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
+     * <code>.data.AnyData data = 2 [json_name = "data"];</code>
      */
-    public Builder setAnyData(com.data.AnyData value) {
-      if (anyDataBuilder_ == null) {
+    public Builder setData(com.data.AnyData value) {
+      if (dataBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        anyData_ = value;
-        onChanged();
+        data_ = value;
       } else {
-        anyDataBuilder_.setMessage(value);
+        dataBuilder_.setMessage(value);
       }
-
-      return this;
-    }
-    /**
-     * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
-     */
-    public Builder setAnyData(
-        com.data.AnyData.Builder builderForValue) {
-      if (anyDataBuilder_ == null) {
-        anyData_ = builderForValue.build();
-        onChanged();
-      } else {
-        anyDataBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
-     */
-    public Builder mergeAnyData(com.data.AnyData value) {
-      if (anyDataBuilder_ == null) {
-        if (anyData_ != null) {
-          anyData_ =
-            com.data.AnyData.newBuilder(anyData_).mergeFrom(value).buildPartial();
-        } else {
-          anyData_ = value;
-        }
-        onChanged();
-      } else {
-        anyDataBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
-     */
-    public Builder clearAnyData() {
-      if (anyDataBuilder_ == null) {
-        anyData_ = null;
-        onChanged();
-      } else {
-        anyData_ = null;
-        anyDataBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
-     */
-    public com.data.AnyData.Builder getAnyDataBuilder() {
-      
+      bitField0_ |= 0x00000002;
       onChanged();
-      return getAnyDataFieldBuilder().getBuilder();
+      return this;
     }
     /**
-     * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
+     * <code>.data.AnyData data = 2 [json_name = "data"];</code>
      */
-    public com.data.AnyDataOrBuilder getAnyDataOrBuilder() {
-      if (anyDataBuilder_ != null) {
-        return anyDataBuilder_.getMessageOrBuilder();
+    public Builder setData(
+        com.data.AnyData.Builder builderForValue) {
+      if (dataBuilder_ == null) {
+        data_ = builderForValue.build();
       } else {
-        return anyData_ == null ?
-            com.data.AnyData.getDefaultInstance() : anyData_;
+        dataBuilder_.setMessage(builderForValue.build());
+      }
+      bitField0_ |= 0x00000002;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.data.AnyData data = 2 [json_name = "data"];</code>
+     */
+    public Builder mergeData(com.data.AnyData value) {
+      if (dataBuilder_ == null) {
+        if (((bitField0_ & 0x00000002) != 0) &&
+          data_ != null &&
+          data_ != com.data.AnyData.getDefaultInstance()) {
+          getDataBuilder().mergeFrom(value);
+        } else {
+          data_ = value;
+        }
+      } else {
+        dataBuilder_.mergeFrom(value);
+      }
+      bitField0_ |= 0x00000002;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.data.AnyData data = 2 [json_name = "data"];</code>
+     */
+    public Builder clearData() {
+      bitField0_ = (bitField0_ & ~0x00000002);
+      data_ = null;
+      if (dataBuilder_ != null) {
+        dataBuilder_.dispose();
+        dataBuilder_ = null;
+      }
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.data.AnyData data = 2 [json_name = "data"];</code>
+     */
+    public com.data.AnyData.Builder getDataBuilder() {
+      bitField0_ |= 0x00000002;
+      onChanged();
+      return getDataFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.data.AnyData data = 2 [json_name = "data"];</code>
+     */
+    public com.data.AnyDataOrBuilder getDataOrBuilder() {
+      if (dataBuilder_ != null) {
+        return dataBuilder_.getMessageOrBuilder();
+      } else {
+        return data_ == null ?
+            com.data.AnyData.getDefaultInstance() : data_;
       }
     }
     /**
-     * <code>.data.AnyData any_data = 2 [json_name = "anyData"];</code>
+     * <code>.data.AnyData data = 2 [json_name = "data"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.data.AnyData, com.data.AnyData.Builder, com.data.AnyDataOrBuilder> 
-        getAnyDataFieldBuilder() {
-      if (anyDataBuilder_ == null) {
-        anyDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getDataFieldBuilder() {
+      if (dataBuilder_ == null) {
+        dataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             com.data.AnyData, com.data.AnyData.Builder, com.data.AnyDataOrBuilder>(
-                getAnyData(),
+                getData(),
                 getParentForChildren(),
                 isClean());
-        anyData_ = null;
+        data_ = null;
       }
-      return anyDataBuilder_;
+      return dataBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -716,18 +716,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:properties.MetaProperty)
-  private static final com.properties.MetaProperty DEFAULT_INSTANCE;
+  private static final MetaProperty DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.properties.MetaProperty();
+    DEFAULT_INSTANCE = new MetaProperty();
   }
 
-  public static com.properties.MetaProperty getDefaultInstance() {
+  public static MetaProperty getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MetaProperty>
       PARSER = new com.google.protobuf.AbstractParser<MetaProperty>() {
-    @java.lang.Override
+    @Override
     public MetaProperty parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -751,13 +751,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MetaProperty> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.properties.MetaProperty getDefaultInstanceForType() {
+  @Override
+  public MetaProperty getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

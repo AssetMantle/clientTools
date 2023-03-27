@@ -24,7 +24,7 @@ public interface QueryCurrentPlanResponseOrBuilder extends
    * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
    * @return The plan.
    */
-  com.cosmos.upgrade.v1beta1.Plan getPlan();
+  Plan getPlan();
   /**
    * <pre>
    * plan is the current upgrade plan.
@@ -32,5 +32,5 @@ public interface QueryCurrentPlanResponseOrBuilder extends
    *
    * <code>.cosmos.upgrade.v1beta1.Plan plan = 1 [json_name = "plan"];</code>
    */
-  com.cosmos.upgrade.v1beta1.PlanOrBuilder getPlanOrBuilder();
+  PlanOrBuilder getPlanOrBuilder();
 }

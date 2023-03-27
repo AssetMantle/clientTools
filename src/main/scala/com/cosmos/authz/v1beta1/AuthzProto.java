@@ -37,7 +37,7 @@ public final class AuthzProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n cosmos/authz/v1beta1/authz.proto\022\024cosm" +
       "os.authz.v1beta1\032\031cosmos_proto/cosmos.pr" +
       "oto\032\037google/protobuf/timestamp.proto\032\024go" +
@@ -74,19 +74,19 @@ public final class AuthzProto {
     internal_static_cosmos_authz_v1beta1_GenericAuthorization_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_GenericAuthorization_descriptor,
-        new java.lang.String[] { "Msg", });
+        new String[] { "Msg", });
     internal_static_cosmos_authz_v1beta1_Grant_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_authz_v1beta1_Grant_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_Grant_descriptor,
-        new java.lang.String[] { "Authorization", "Expiration", });
+        new String[] { "Authorization", "Expiration", });
     internal_static_cosmos_authz_v1beta1_GrantAuthorization_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_authz_v1beta1_GrantAuthorization_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_GrantAuthorization_descriptor,
-        new java.lang.String[] { "Granter", "Grantee", "Authorization", "Expiration", });
+        new String[] { "Granter", "Grantee", "Authorization", "Expiration", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);

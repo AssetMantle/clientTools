@@ -27,7 +27,7 @@ public final class AnyOwnableIDV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n%schema/ids/base/anyOwnableID.v1.proto\022" +
       "\003ids\032\024gogoproto/gogo.proto\032 schema/ids/b" +
       "ase/assetID.v1.proto\032\037schema/ids/base/co" +
@@ -43,23 +43,23 @@ public final class AnyOwnableIDV1Proto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
-          com.ids.AssetIDV1Proto.getDescriptor(),
-          com.ids.CoinIDV1Proto.getDescriptor(),
+          AssetIDV1Proto.getDescriptor(),
+          CoinIDV1Proto.getDescriptor(),
         });
     internal_static_ids_AnyOwnableID_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ids_AnyOwnableID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ids_AnyOwnableID_descriptor,
-        new java.lang.String[] { "AssetID", "CoinID", "Impl", });
+        new String[] { "AssetID", "CoinID", "Impl", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
-    com.ids.AssetIDV1Proto.getDescriptor();
-    com.ids.CoinIDV1Proto.getDescriptor();
+    AssetIDV1Proto.getDescriptor();
+    CoinIDV1Proto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

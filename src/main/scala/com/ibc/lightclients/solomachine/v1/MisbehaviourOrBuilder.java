@@ -11,7 +11,7 @@ public interface MisbehaviourOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  java.lang.String getClientId();
+  String getClientId();
   /**
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The bytes for clientId.
@@ -34,11 +34,11 @@ public interface MisbehaviourOrBuilder extends
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
    * @return The signatureOne.
    */
-  com.ibc.lightclients.solomachine.v1.SignatureAndData getSignatureOne();
+  SignatureAndData getSignatureOne();
   /**
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
    */
-  com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder getSignatureOneOrBuilder();
+  SignatureAndDataOrBuilder getSignatureOneOrBuilder();
 
   /**
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
@@ -49,9 +49,9 @@ public interface MisbehaviourOrBuilder extends
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
    * @return The signatureTwo.
    */
-  com.ibc.lightclients.solomachine.v1.SignatureAndData getSignatureTwo();
+  SignatureAndData getSignatureTwo();
   /**
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
    */
-  com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder getSignatureTwoOrBuilder();
+  SignatureAndDataOrBuilder getSignatureTwoOrBuilder();
 }

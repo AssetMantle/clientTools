@@ -11,7 +11,7 @@ public interface MsgDataOrBuilder extends
    * <code>string msg_type = 1 [json_name = "msgType"];</code>
    * @return The msgType.
    */
-  java.lang.String getMsgType();
+  String getMsgType();
   /**
    * <code>string msg_type = 1 [json_name = "msgType"];</code>
    * @return The bytes for msgType.

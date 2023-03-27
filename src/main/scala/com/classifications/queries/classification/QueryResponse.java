@@ -20,57 +20,53 @@ private static final long serialVersionUID = 0L;
     list_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryResponse();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.classifications.queries.classification.QueryResponseV1Proto.internal_static_classifications_queries_classification_QueryResponse_descriptor;
+    return QueryResponseV1Proto.internal_static_classifications_queries_classification_QueryResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.classifications.queries.classification.QueryResponseV1Proto.internal_static_classifications_queries_classification_QueryResponse_fieldAccessorTable
+    return QueryResponseV1Proto.internal_static_classifications_queries_classification_QueryResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.classifications.queries.classification.QueryResponse.class, com.classifications.queries.classification.QueryResponse.Builder.class);
+            QueryResponse.class, Builder.class);
   }
 
   public static final int SUCCESS_FIELD_NUMBER = 1;
-  private boolean success_;
+  private boolean success_ = false;
   /**
    * <code>bool success = 1 [json_name = "success"];</code>
    * @return The success.
    */
-  @java.lang.Override
+  @Override
   public boolean getSuccess() {
     return success_;
   }
 
   public static final int ERROR_FIELD_NUMBER = 2;
-  private volatile java.lang.Object error_;
+  @SuppressWarnings("serial")
+  private volatile Object error_ = "";
   /**
    * <code>string error = 2 [json_name = "error"];</code>
    * @return The error.
    */
-  @java.lang.Override
-  public java.lang.String getError() {
-    java.lang.Object ref = error_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getError() {
+    Object ref = error_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       error_ = s;
       return s;
     }
@@ -79,14 +75,14 @@ private static final long serialVersionUID = 0L;
    * <code>string error = 2 [json_name = "error"];</code>
    * @return The bytes for error.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getErrorBytes() {
-    java.lang.Object ref = error_;
-    if (ref instanceof java.lang.String) {
+    Object ref = error_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       error_ = b;
       return b;
     } else {
@@ -95,18 +91,19 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int LIST_FIELD_NUMBER = 3;
+  @SuppressWarnings("serial")
   private java.util.List<com.classifications.Mappable> list_;
   /**
    * <code>repeated .classifications.Mappable list = 3 [json_name = "list"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<com.classifications.Mappable> getListList() {
     return list_;
   }
   /**
    * <code>repeated .classifications.Mappable list = 3 [json_name = "list"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<? extends com.classifications.MappableOrBuilder> 
       getListOrBuilderList() {
     return list_;
@@ -114,28 +111,28 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .classifications.Mappable list = 3 [json_name = "list"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getListCount() {
     return list_.size();
   }
   /**
    * <code>repeated .classifications.Mappable list = 3 [json_name = "list"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.classifications.Mappable getList(int index) {
     return list_.get(index);
   }
   /**
    * <code>repeated .classifications.Mappable list = 3 [json_name = "list"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.classifications.MappableOrBuilder getListOrBuilder(
       int index) {
     return list_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -145,7 +142,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (success_ != false) {
@@ -160,7 +157,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -182,15 +179,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.classifications.queries.classification.QueryResponse)) {
+    if (!(obj instanceof QueryResponse)) {
       return super.equals(obj);
     }
-    com.classifications.queries.classification.QueryResponse other = (com.classifications.queries.classification.QueryResponse) obj;
+    QueryResponse other = (QueryResponse) obj;
 
     if (getSuccess()
         != other.getSuccess()) return false;
@@ -202,7 +199,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -223,69 +220,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.classifications.queries.classification.QueryResponse parseFrom(
+  public static QueryResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.classifications.queries.classification.QueryResponse parseFrom(
+  public static QueryResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.classifications.queries.classification.QueryResponse parseFrom(
+  public static QueryResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.classifications.queries.classification.QueryResponse parseFrom(
+  public static QueryResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.classifications.queries.classification.QueryResponse parseFrom(byte[] data)
+  public static QueryResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.classifications.queries.classification.QueryResponse parseFrom(
+  public static QueryResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.classifications.queries.classification.QueryResponse parseFrom(java.io.InputStream input)
+  public static QueryResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.classifications.queries.classification.QueryResponse parseFrom(
+  public static QueryResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.classifications.queries.classification.QueryResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.classifications.queries.classification.QueryResponse parseDelimitedFrom(
+  public static QueryResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.classifications.queries.classification.QueryResponse parseFrom(
+  public static QueryResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.classifications.queries.classification.QueryResponse parseFrom(
+  public static QueryResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -293,23 +290,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.classifications.queries.classification.QueryResponse prototype) {
+  public static Builder newBuilder(QueryResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -319,18 +316,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:classifications.queries.classification.QueryResponse)
-      com.classifications.queries.classification.QueryResponseOrBuilder {
+      QueryResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.classifications.queries.classification.QueryResponseV1Proto.internal_static_classifications_queries_classification_QueryResponse_descriptor;
+      return QueryResponseV1Proto.internal_static_classifications_queries_classification_QueryResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.classifications.queries.classification.QueryResponseV1Proto.internal_static_classifications_queries_classification_QueryResponse_fieldAccessorTable
+      return QueryResponseV1Proto.internal_static_classifications_queries_classification_QueryResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.classifications.queries.classification.QueryResponse.class, com.classifications.queries.classification.QueryResponse.Builder.class);
+              QueryResponse.class, Builder.class);
     }
 
     // Construct using com.classifications.queries.classification.QueryResponse.newBuilder()
@@ -339,122 +336,134 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       success_ = false;
-
       error_ = "";
-
       if (listBuilder_ == null) {
         list_ = java.util.Collections.emptyList();
       } else {
         list_ = null;
         listBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000001);
+      bitField0_ = (bitField0_ & ~0x00000004);
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.classifications.queries.classification.QueryResponseV1Proto.internal_static_classifications_queries_classification_QueryResponse_descriptor;
+      return QueryResponseV1Proto.internal_static_classifications_queries_classification_QueryResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.classifications.queries.classification.QueryResponse getDefaultInstanceForType() {
-      return com.classifications.queries.classification.QueryResponse.getDefaultInstance();
+    @Override
+    public QueryResponse getDefaultInstanceForType() {
+      return QueryResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.classifications.queries.classification.QueryResponse build() {
-      com.classifications.queries.classification.QueryResponse result = buildPartial();
+    @Override
+    public QueryResponse build() {
+      QueryResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.classifications.queries.classification.QueryResponse buildPartial() {
-      com.classifications.queries.classification.QueryResponse result = new com.classifications.queries.classification.QueryResponse(this);
-      int from_bitField0_ = bitField0_;
-      result.success_ = success_;
-      result.error_ = error_;
+    @Override
+    public QueryResponse buildPartial() {
+      QueryResponse result = new QueryResponse(this);
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(QueryResponse result) {
       if (listBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00000004) != 0)) {
           list_ = java.util.Collections.unmodifiableList(list_);
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.list_ = list_;
       } else {
         result.list_ = listBuilder_.build();
       }
-      onBuilt();
-      return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(QueryResponse result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.success_ = success_;
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.error_ = error_;
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.classifications.queries.classification.QueryResponse) {
-        return mergeFrom((com.classifications.queries.classification.QueryResponse)other);
+      if (other instanceof QueryResponse) {
+        return mergeFrom((QueryResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.classifications.queries.classification.QueryResponse other) {
-      if (other == com.classifications.queries.classification.QueryResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryResponse other) {
+      if (other == QueryResponse.getDefaultInstance()) return this;
       if (other.getSuccess() != false) {
         setSuccess(other.getSuccess());
       }
       if (!other.getError().isEmpty()) {
         error_ = other.error_;
+        bitField0_ |= 0x00000002;
         onChanged();
       }
       if (listBuilder_ == null) {
         if (!other.list_.isEmpty()) {
           if (list_.isEmpty()) {
             list_ = other.list_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureListIsMutable();
             list_.addAll(other.list_);
@@ -467,7 +476,7 @@ private static final long serialVersionUID = 0L;
             listBuilder_.dispose();
             listBuilder_ = null;
             list_ = other.list_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000004);
             listBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getListFieldBuilder() : null;
@@ -481,18 +490,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -504,12 +513,12 @@ private static final long serialVersionUID = 0L;
               break;
             case 8: {
               success_ = input.readBool();
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 8
             case 18: {
               error_ = input.readStringRequireUtf8();
-
+              bitField0_ |= 0x00000002;
               break;
             } // case 18
             case 26: {
@@ -547,7 +556,7 @@ private static final long serialVersionUID = 0L;
      * <code>bool success = 1 [json_name = "success"];</code>
      * @return The success.
      */
-    @java.lang.Override
+    @Override
     public boolean getSuccess() {
       return success_;
     }
@@ -557,8 +566,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSuccess(boolean value) {
-      
+
       success_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -567,27 +577,27 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearSuccess() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       success_ = false;
       onChanged();
       return this;
     }
 
-    private java.lang.Object error_ = "";
+    private Object error_ = "";
     /**
      * <code>string error = 2 [json_name = "error"];</code>
      * @return The error.
      */
-    public java.lang.String getError() {
-      java.lang.Object ref = error_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getError() {
+      Object ref = error_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         error_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -596,11 +606,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getErrorBytes() {
-      java.lang.Object ref = error_;
+      Object ref = error_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         error_ = b;
         return b;
       } else {
@@ -613,12 +623,10 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setError(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        String value) {
+      if (value == null) { throw new NullPointerException(); }
       error_ = value;
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -627,8 +635,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearError() {
-      
       error_ = getDefaultInstance().getError();
+      bitField0_ = (bitField0_ & ~0x00000002);
       onChanged();
       return this;
     }
@@ -639,12 +647,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setErrorBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       error_ = value;
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -652,9 +658,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<com.classifications.Mappable> list_ =
       java.util.Collections.emptyList();
     private void ensureListIsMutable() {
-      if (!((bitField0_ & 0x00000001) != 0)) {
+      if (!((bitField0_ & 0x00000004) != 0)) {
         list_ = new java.util.ArrayList<com.classifications.Mappable>(list_);
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000004;
        }
     }
 
@@ -787,7 +793,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .classifications.Mappable list = 3 [json_name = "list"];</code>
      */
     public Builder addAllList(
-        java.lang.Iterable<? extends com.classifications.Mappable> values) {
+        Iterable<? extends com.classifications.Mappable> values) {
       if (listBuilder_ == null) {
         ensureListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -804,7 +810,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearList() {
       if (listBuilder_ == null) {
         list_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
       } else {
         listBuilder_.clear();
@@ -881,20 +887,20 @@ private static final long serialVersionUID = 0L;
         listBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.classifications.Mappable, com.classifications.Mappable.Builder, com.classifications.MappableOrBuilder>(
                 list_,
-                ((bitField0_ & 0x00000001) != 0),
+                ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
                 isClean());
         list_ = null;
       }
       return listBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -905,18 +911,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:classifications.queries.classification.QueryResponse)
-  private static final com.classifications.queries.classification.QueryResponse DEFAULT_INSTANCE;
+  private static final QueryResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.classifications.queries.classification.QueryResponse();
+    DEFAULT_INSTANCE = new QueryResponse();
   }
 
-  public static com.classifications.queries.classification.QueryResponse getDefaultInstance() {
+  public static QueryResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryResponse>() {
-    @java.lang.Override
+    @Override
     public QueryResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -940,13 +946,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.classifications.queries.classification.QueryResponse getDefaultInstanceForType() {
+  @Override
+  public QueryResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

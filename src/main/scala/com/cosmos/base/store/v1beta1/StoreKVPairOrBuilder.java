@@ -15,7 +15,7 @@ public interface StoreKVPairOrBuilder extends
    * <code>string store_key = 1 [json_name = "storeKey"];</code>
    * @return The storeKey.
    */
-  java.lang.String getStoreKey();
+  String getStoreKey();
   /**
    * <pre>
    * the store key for the KVStore this pair originates from

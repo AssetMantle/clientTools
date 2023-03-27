@@ -27,7 +27,7 @@ public final class QueryRequestV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\nEmodules/maintainers/internal/queries/m" +
       "aintainer/queryRequest.v1.proto\022\036maintai" +
       "ners.queries.maintainer\032%schema/ids/base" +
@@ -54,7 +54,7 @@ public final class QueryRequestV1Proto {
     internal_static_maintainers_queries_maintainer_QueryRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_maintainers_queries_maintainer_QueryRequest_descriptor,
-        new java.lang.String[] { "MaintainerID", });
+        new String[] { "MaintainerID", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

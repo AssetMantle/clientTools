@@ -27,7 +27,7 @@ public final class MappableV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n;modules/classifications/internal/mappa" +
       "ble/mappable.v1.proto\022\017classifications\032\'" +
       "schema/documents/base/document.v1.proto\"" +
@@ -50,7 +50,7 @@ public final class MappableV1Proto {
     internal_static_classifications_Mappable_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_classifications_Mappable_descriptor,
-        new java.lang.String[] { "Classification", });
+        new String[] { "Classification", });
     com.documents.DocumentV1Proto.getDescriptor();
   }
 

@@ -10,12 +10,12 @@ public interface CapabilityOwnersOrBuilder extends
   /**
    * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.capability.v1beta1.Owner> 
+  java.util.List<Owner>
       getOwnersList();
   /**
    * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.capability.v1beta1.Owner getOwners(int index);
+  Owner getOwners(int index);
   /**
    * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
@@ -23,11 +23,11 @@ public interface CapabilityOwnersOrBuilder extends
   /**
    * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.capability.v1beta1.OwnerOrBuilder> 
+  java.util.List<? extends OwnerOrBuilder>
       getOwnersOrBuilderList();
   /**
    * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.capability.v1beta1.OwnerOrBuilder getOwnersOrBuilder(
+  OwnerOrBuilder getOwnersOrBuilder(
       int index);
 }
