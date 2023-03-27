@@ -24,29 +24,29 @@ private static final long serialVersionUID = 0L;
     withdrawAddress_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryDelegatorWithdrawAddressResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorWithdrawAddressResponse_descriptor;
+    return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorWithdrawAddressResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorWithdrawAddressResponse_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorWithdrawAddressResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse.class, com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse.Builder.class);
+            QueryDelegatorWithdrawAddressResponse.class, Builder.class);
   }
 
   public static final int WITHDRAW_ADDRESS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object withdrawAddress_ = "";
+  private volatile Object withdrawAddress_ = "";
   /**
    * <pre>
    * withdraw_address defines the delegator address to query for.
@@ -55,15 +55,15 @@ private static final long serialVersionUID = 0L;
    * <code>string withdraw_address = 1 [json_name = "withdrawAddress"];</code>
    * @return The withdrawAddress.
    */
-  @java.lang.Override
-  public java.lang.String getWithdrawAddress() {
-    java.lang.Object ref = withdrawAddress_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getWithdrawAddress() {
+    Object ref = withdrawAddress_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       withdrawAddress_ = s;
       return s;
     }
@@ -76,14 +76,14 @@ private static final long serialVersionUID = 0L;
    * <code>string withdraw_address = 1 [json_name = "withdrawAddress"];</code>
    * @return The bytes for withdrawAddress.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getWithdrawAddressBytes() {
-    java.lang.Object ref = withdrawAddress_;
-    if (ref instanceof java.lang.String) {
+    Object ref = withdrawAddress_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       withdrawAddress_ = b;
       return b;
     } else {
@@ -92,7 +92,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -102,7 +102,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(withdrawAddress_)) {
@@ -111,7 +111,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -125,15 +125,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse)) {
+    if (!(obj instanceof QueryDelegatorWithdrawAddressResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse other = (com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse) obj;
+    QueryDelegatorWithdrawAddressResponse other = (QueryDelegatorWithdrawAddressResponse) obj;
 
     if (!getWithdrawAddress()
         .equals(other.getWithdrawAddress())) return false;
@@ -141,7 +141,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -155,69 +155,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseFrom(
+  public static QueryDelegatorWithdrawAddressResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseFrom(
+  public static QueryDelegatorWithdrawAddressResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseFrom(
+  public static QueryDelegatorWithdrawAddressResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseFrom(
+  public static QueryDelegatorWithdrawAddressResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseFrom(byte[] data)
+  public static QueryDelegatorWithdrawAddressResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseFrom(
+  public static QueryDelegatorWithdrawAddressResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseFrom(java.io.InputStream input)
+  public static QueryDelegatorWithdrawAddressResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseFrom(
+  public static QueryDelegatorWithdrawAddressResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryDelegatorWithdrawAddressResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseDelimitedFrom(
+  public static QueryDelegatorWithdrawAddressResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseFrom(
+  public static QueryDelegatorWithdrawAddressResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse parseFrom(
+  public static QueryDelegatorWithdrawAddressResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -225,23 +225,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse prototype) {
+  public static Builder newBuilder(QueryDelegatorWithdrawAddressResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -256,18 +256,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse)
-      com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponseOrBuilder {
+      QueryDelegatorWithdrawAddressResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorWithdrawAddressResponse_descriptor;
+      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorWithdrawAddressResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorWithdrawAddressResponse_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorWithdrawAddressResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse.class, com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse.Builder.class);
+              QueryDelegatorWithdrawAddressResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse.newBuilder()
@@ -276,11 +276,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -288,85 +288,85 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorWithdrawAddressResponse_descriptor;
+      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorWithdrawAddressResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse getDefaultInstanceForType() {
-      return com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse.getDefaultInstance();
+    @Override
+    public QueryDelegatorWithdrawAddressResponse getDefaultInstanceForType() {
+      return QueryDelegatorWithdrawAddressResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse build() {
-      com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse result = buildPartial();
+    @Override
+    public QueryDelegatorWithdrawAddressResponse build() {
+      QueryDelegatorWithdrawAddressResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse buildPartial() {
-      com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse result = new com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse(this);
+    @Override
+    public QueryDelegatorWithdrawAddressResponse buildPartial() {
+      QueryDelegatorWithdrawAddressResponse result = new QueryDelegatorWithdrawAddressResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse result) {
+    private void buildPartial0(QueryDelegatorWithdrawAddressResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.withdrawAddress_ = withdrawAddress_;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse) {
-        return mergeFrom((com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse)other);
+      if (other instanceof QueryDelegatorWithdrawAddressResponse) {
+        return mergeFrom((QueryDelegatorWithdrawAddressResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse other) {
-      if (other == com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryDelegatorWithdrawAddressResponse other) {
+      if (other == QueryDelegatorWithdrawAddressResponse.getDefaultInstance()) return this;
       if (!other.getWithdrawAddress().isEmpty()) {
         withdrawAddress_ = other.withdrawAddress_;
         bitField0_ |= 0x00000001;
@@ -377,18 +377,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -420,7 +420,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object withdrawAddress_ = "";
+    private Object withdrawAddress_ = "";
     /**
      * <pre>
      * withdraw_address defines the delegator address to query for.
@@ -429,16 +429,16 @@ private static final long serialVersionUID = 0L;
      * <code>string withdraw_address = 1 [json_name = "withdrawAddress"];</code>
      * @return The withdrawAddress.
      */
-    public java.lang.String getWithdrawAddress() {
-      java.lang.Object ref = withdrawAddress_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getWithdrawAddress() {
+      Object ref = withdrawAddress_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         withdrawAddress_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -451,11 +451,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getWithdrawAddressBytes() {
-      java.lang.Object ref = withdrawAddress_;
+      Object ref = withdrawAddress_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         withdrawAddress_ = b;
         return b;
       } else {
@@ -472,7 +472,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setWithdrawAddress(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       withdrawAddress_ = value;
       bitField0_ |= 0x00000001;
@@ -511,13 +511,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -528,18 +528,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse)
-  private static final com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse DEFAULT_INSTANCE;
+  private static final QueryDelegatorWithdrawAddressResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse();
+    DEFAULT_INSTANCE = new QueryDelegatorWithdrawAddressResponse();
   }
 
-  public static com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse getDefaultInstance() {
+  public static QueryDelegatorWithdrawAddressResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryDelegatorWithdrawAddressResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryDelegatorWithdrawAddressResponse>() {
-    @java.lang.Override
+    @Override
     public QueryDelegatorWithdrawAddressResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -563,13 +563,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryDelegatorWithdrawAddressResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse getDefaultInstanceForType() {
+  @Override
+  public QueryDelegatorWithdrawAddressResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

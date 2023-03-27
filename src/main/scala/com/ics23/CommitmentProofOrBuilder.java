@@ -16,11 +16,11 @@ public interface CommitmentProofOrBuilder extends
    * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
    * @return The exist.
    */
-  com.ics23.ExistenceProof getExist();
+  ExistenceProof getExist();
   /**
    * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
    */
-  com.ics23.ExistenceProofOrBuilder getExistOrBuilder();
+  ExistenceProofOrBuilder getExistOrBuilder();
 
   /**
    * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
@@ -31,11 +31,11 @@ public interface CommitmentProofOrBuilder extends
    * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
    * @return The nonexist.
    */
-  com.ics23.NonExistenceProof getNonexist();
+  NonExistenceProof getNonexist();
   /**
    * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
    */
-  com.ics23.NonExistenceProofOrBuilder getNonexistOrBuilder();
+  NonExistenceProofOrBuilder getNonexistOrBuilder();
 
   /**
    * <code>.ics23.BatchProof batch = 3 [json_name = "batch"];</code>
@@ -46,11 +46,11 @@ public interface CommitmentProofOrBuilder extends
    * <code>.ics23.BatchProof batch = 3 [json_name = "batch"];</code>
    * @return The batch.
    */
-  com.ics23.BatchProof getBatch();
+  BatchProof getBatch();
   /**
    * <code>.ics23.BatchProof batch = 3 [json_name = "batch"];</code>
    */
-  com.ics23.BatchProofOrBuilder getBatchOrBuilder();
+  BatchProofOrBuilder getBatchOrBuilder();
 
   /**
    * <code>.ics23.CompressedBatchProof compressed = 4 [json_name = "compressed"];</code>
@@ -61,11 +61,11 @@ public interface CommitmentProofOrBuilder extends
    * <code>.ics23.CompressedBatchProof compressed = 4 [json_name = "compressed"];</code>
    * @return The compressed.
    */
-  com.ics23.CompressedBatchProof getCompressed();
+  CompressedBatchProof getCompressed();
   /**
    * <code>.ics23.CompressedBatchProof compressed = 4 [json_name = "compressed"];</code>
    */
-  com.ics23.CompressedBatchProofOrBuilder getCompressedOrBuilder();
+  CompressedBatchProofOrBuilder getCompressedOrBuilder();
 
-  com.ics23.CommitmentProof.ProofCase getProofCase();
+  CommitmentProof.ProofCase getProofCase();
 }

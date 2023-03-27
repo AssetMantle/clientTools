@@ -73,41 +73,41 @@ package com.google.protobuf;
  * Protobuf type {@code google.protobuf.Any}
  */
 public final class Any extends
-    com.google.protobuf.GeneratedMessageV3 implements
+    GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:google.protobuf.Any)
     AnyOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use Any.newBuilder() to construct.
-  private Any(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  private Any(GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
   private Any() {
     typeUrl_ = "";
-    value_ = com.google.protobuf.ByteString.EMPTY;
+    value_ = ByteString.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Any();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
+  @Override
+  public final UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
   }
   private Any(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+      CodedInputStream input,
+      ExtensionRegistryLite extensionRegistry)
+      throws InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException();
     }
-    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-        com.google.protobuf.UnknownFieldSet.newBuilder();
+    UnknownFieldSet.Builder unknownFields =
+        UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -117,7 +117,7 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            java.lang.String s = input.readStringRequireUtf8();
+            String s = input.readStringRequireUtf8();
 
             typeUrl_ = s;
             break;
@@ -136,44 +136,44 @@ private static final long serialVersionUID = 0L;
           }
         }
       }
-    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+    } catch (InvalidProtocolBufferException e) {
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
-      throw new com.google.protobuf.InvalidProtocolBufferException(
+      throw new InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
-  public static final com.google.protobuf.Descriptors.Descriptor
+  public static final Descriptors.Descriptor
       getDescriptor() {
-    return com.google.protobuf.AnyProto.internal_static_google_protobuf_Any_descriptor;
+    return AnyProto.internal_static_google_protobuf_Any_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.google.protobuf.AnyProto.internal_static_google_protobuf_Any_fieldAccessorTable
+    return AnyProto.internal_static_google_protobuf_Any_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.google.protobuf.Any.class, com.google.protobuf.Any.Builder.class);
+            Any.class, Builder.class);
   }
 
   private static String getTypeUrl(
-      java.lang.String typeUrlPrefix,
-      com.google.protobuf.Descriptors.Descriptor descriptor) {
+      String typeUrlPrefix,
+      Descriptors.Descriptor descriptor) {
     return typeUrlPrefix.endsWith("/")
         ? typeUrlPrefix + descriptor.getFullName()
         : typeUrlPrefix + "/" + descriptor.getFullName();
   }
 
   private static String getTypeNameFromTypeUrl(
-      java.lang.String typeUrl) {
+      String typeUrl) {
     int pos = typeUrl.lastIndexOf('/');
     return pos == -1 ? "" : typeUrl.substring(pos + 1);
   }
 
-  public static <T extends com.google.protobuf.Message> Any pack(
+  public static <T extends Message> Any pack(
       T message) {
     return Any.newBuilder()
         .setTypeUrl(getTypeUrl("type.googleapis.com",
@@ -188,8 +188,8 @@ private static final long serialVersionUID = 0L;
    * prefix with an optional "/" separator if the prefix doesn't end
    * with "/" already.
    */
-  public static <T extends com.google.protobuf.Message> Any pack(
-      T message, java.lang.String typeUrlPrefix) {
+  public static <T extends Message> Any pack(
+      T message, String typeUrlPrefix) {
     return Any.newBuilder()
         .setTypeUrl(getTypeUrl(typeUrlPrefix,
                                message.getDescriptorForType()))
@@ -197,20 +197,20 @@ private static final long serialVersionUID = 0L;
         .build();
   }
 
-  public <T extends com.google.protobuf.Message> boolean is(
-      java.lang.Class<T> clazz) {
+  public <T extends Message> boolean is(
+      Class<T> clazz) {
     T defaultInstance =
-        com.google.protobuf.Internal.getDefaultInstance(clazz);
+        Internal.getDefaultInstance(clazz);
     return getTypeNameFromTypeUrl(getTypeUrl()).equals(
         defaultInstance.getDescriptorForType().getFullName());
   }
 
-  private volatile com.google.protobuf.Message cachedUnpackValue;
+  private volatile Message cachedUnpackValue;
 
-  @java.lang.SuppressWarnings("unchecked")
-  public <T extends com.google.protobuf.Message> T unpack(
-      java.lang.Class<T> clazz)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  @SuppressWarnings("unchecked")
+  public <T extends Message> T unpack(
+      Class<T> clazz)
+      throws InvalidProtocolBufferException {
     boolean invalidClazz = false;
     if (cachedUnpackValue != null) {
       if (cachedUnpackValue.getClass() == clazz) {
@@ -219,18 +219,18 @@ private static final long serialVersionUID = 0L;
       invalidClazz = true;
     }
     if (invalidClazz || !is(clazz)) {
-      throw new com.google.protobuf.InvalidProtocolBufferException(
+      throw new InvalidProtocolBufferException(
           "Type of the Any message does not match the given class.");
     }
     T defaultInstance =
-        com.google.protobuf.Internal.getDefaultInstance(clazz);
+        Internal.getDefaultInstance(clazz);
     T result = (T) defaultInstance.getParserForType()
         .parseFrom(getValue());
     cachedUnpackValue = result;
     return result;
   }
   public static final int TYPE_URL_FIELD_NUMBER = 1;
-  private volatile java.lang.Object typeUrl_;
+  private volatile Object typeUrl_;
   /**
    * <pre>
    * A URL/resource name that uniquely identifies the type of the serialized
@@ -261,15 +261,15 @@ private static final long serialVersionUID = 0L;
    * <code>string type_url = 1;</code>
    * @return The typeUrl.
    */
-  @java.lang.Override
-  public java.lang.String getTypeUrl() {
-    java.lang.Object ref = typeUrl_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getTypeUrl() {
+    Object ref = typeUrl_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      ByteString bs =
+          (ByteString) ref;
+      String s = bs.toStringUtf8();
       typeUrl_ = s;
       return s;
     }
@@ -304,23 +304,23 @@ private static final long serialVersionUID = 0L;
    * <code>string type_url = 1;</code>
    * @return The bytes for typeUrl.
    */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
+  @Override
+  public ByteString
       getTypeUrlBytes() {
-    java.lang.Object ref = typeUrl_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+    Object ref = typeUrl_;
+    if (ref instanceof String) {
+      ByteString b =
+          ByteString.copyFromUtf8(
+              (String) ref);
       typeUrl_ = b;
       return b;
     } else {
-      return (com.google.protobuf.ByteString) ref;
+      return (ByteString) ref;
     }
   }
 
   public static final int VALUE_FIELD_NUMBER = 2;
-  private com.google.protobuf.ByteString value_;
+  private ByteString value_;
   /**
    * <pre>
    * Must be a valid serialized protocol buffer of the above specified type.
@@ -329,13 +329,13 @@ private static final long serialVersionUID = 0L;
    * <code>bytes value = 2;</code>
    * @return The value.
    */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getValue() {
+  @Override
+  public ByteString getValue() {
     return value_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -345,11 +345,11 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output)
+  @Override
+  public void writeTo(CodedOutputStream output)
                       throws java.io.IOException {
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(typeUrl_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, typeUrl_);
+    if (!GeneratedMessageV3.isStringEmpty(typeUrl_)) {
+      GeneratedMessageV3.writeString(output, 1, typeUrl_);
     }
     if (!value_.isEmpty()) {
       output.writeBytes(2, value_);
@@ -357,17 +357,17 @@ private static final long serialVersionUID = 0L;
     unknownFields.writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(typeUrl_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, typeUrl_);
+    if (!GeneratedMessageV3.isStringEmpty(typeUrl_)) {
+      size += GeneratedMessageV3.computeStringSize(1, typeUrl_);
     }
     if (!value_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream
+      size += CodedOutputStream
         .computeBytesSize(2, value_);
     }
     size += unknownFields.getSerializedSize();
@@ -375,15 +375,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.google.protobuf.Any)) {
+    if (!(obj instanceof Any)) {
       return super.equals(obj);
     }
-    com.google.protobuf.Any other = (com.google.protobuf.Any) obj;
+    Any other = (Any) obj;
 
     if (!getTypeUrl()
         .equals(other.getTypeUrl())) return false;
@@ -393,7 +393,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -409,93 +409,93 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.google.protobuf.Any parseFrom(
+  public static Any parseFrom(
       java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+      throws InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.google.protobuf.Any parseFrom(
+  public static Any parseFrom(
       java.nio.ByteBuffer data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+      ExtensionRegistryLite extensionRegistry)
+      throws InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.google.protobuf.Any parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static Any parseFrom(
+      ByteString data)
+      throws InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.google.protobuf.Any parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static Any parseFrom(
+      ByteString data,
+      ExtensionRegistryLite extensionRegistry)
+      throws InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.google.protobuf.Any parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+  public static Any parseFrom(byte[] data)
+      throws InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.google.protobuf.Any parseFrom(
+  public static Any parseFrom(
       byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+      ExtensionRegistryLite extensionRegistry)
+      throws InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.google.protobuf.Any parseFrom(java.io.InputStream input)
+  public static Any parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
+    return GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.google.protobuf.Any parseFrom(
+  public static Any parseFrom(
       java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
+    return GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.google.protobuf.Any parseDelimitedFrom(java.io.InputStream input)
+  public static Any parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
+    return GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.google.protobuf.Any parseDelimitedFrom(
+  public static Any parseDelimitedFrom(
       java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
+    return GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.google.protobuf.Any parseFrom(
-      com.google.protobuf.CodedInputStream input)
+  public static Any parseFrom(
+      CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
+    return GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.google.protobuf.Any parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+  public static Any parseFrom(
+      CodedInputStream input,
+      ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
+    return GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.google.protobuf.Any prototype) {
+  public static Builder newBuilder(Any prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -569,20 +569,20 @@ private static final long serialVersionUID = 0L;
    * Protobuf type {@code google.protobuf.Any}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:google.protobuf.Any)
-      com.google.protobuf.AnyOrBuilder {
-    public static final com.google.protobuf.Descriptors.Descriptor
+      AnyOrBuilder {
+    public static final Descriptors.Descriptor
         getDescriptor() {
-      return com.google.protobuf.AnyProto.internal_static_google_protobuf_Any_descriptor;
+      return AnyProto.internal_static_google_protobuf_Any_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.google.protobuf.AnyProto.internal_static_google_protobuf_Any_fieldAccessorTable
+      return AnyProto.internal_static_google_protobuf_Any_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.google.protobuf.Any.class, com.google.protobuf.Any.Builder.class);
+              Any.class, Builder.class);
     }
 
     // Construct using com.google.protobuf.Any.newBuilder()
@@ -591,103 +591,103 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessageV3
+      if (GeneratedMessageV3
               .alwaysUseFieldBuilders) {
       }
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       typeUrl_ = "";
 
-      value_ = com.google.protobuf.ByteString.EMPTY;
+      value_ = ByteString.EMPTY;
 
       return this;
     }
 
-    @java.lang.Override
-    public com.google.protobuf.Descriptors.Descriptor
+    @Override
+    public Descriptors.Descriptor
         getDescriptorForType() {
-      return com.google.protobuf.AnyProto.internal_static_google_protobuf_Any_descriptor;
+      return AnyProto.internal_static_google_protobuf_Any_descriptor;
     }
 
-    @java.lang.Override
-    public com.google.protobuf.Any getDefaultInstanceForType() {
-      return com.google.protobuf.Any.getDefaultInstance();
+    @Override
+    public Any getDefaultInstanceForType() {
+      return Any.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.google.protobuf.Any build() {
-      com.google.protobuf.Any result = buildPartial();
+    @Override
+    public Any build() {
+      Any result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.google.protobuf.Any buildPartial() {
-      com.google.protobuf.Any result = new com.google.protobuf.Any(this);
+    @Override
+    public Any buildPartial() {
+      Any result = new Any(this);
       result.typeUrl_ = typeUrl_;
       result.value_ = value_;
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Descriptors.FieldDescriptor field,
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
+        Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        Descriptors.FieldDescriptor field,
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Descriptors.FieldDescriptor field,
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
-    public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.google.protobuf.Any) {
-        return mergeFrom((com.google.protobuf.Any)other);
+    @Override
+    public Builder mergeFrom(Message other) {
+      if (other instanceof Any) {
+        return mergeFrom((Any)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.google.protobuf.Any other) {
-      if (other == com.google.protobuf.Any.getDefaultInstance()) return this;
+    public Builder mergeFrom(Any other) {
+      if (other == Any.getDefaultInstance()) return this;
       if (!other.getTypeUrl().isEmpty()) {
         typeUrl_ = other.typeUrl_;
         onChanged();
       }
-      if (other.getValue() != com.google.protobuf.ByteString.EMPTY) {
+      if (other.getValue() != ByteString.EMPTY) {
         setValue(other.getValue());
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -695,21 +695,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        CodedInputStream input,
+        ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.google.protobuf.Any parsedMessage = null;
+      Any parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.google.protobuf.Any) e.getUnfinishedMessage();
+      } catch (InvalidProtocolBufferException e) {
+        parsedMessage = (Any) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -719,7 +719,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object typeUrl_ = "";
+    private Object typeUrl_ = "";
     /**
      * <pre>
      * A URL/resource name that uniquely identifies the type of the serialized
@@ -750,16 +750,16 @@ private static final long serialVersionUID = 0L;
      * <code>string type_url = 1;</code>
      * @return The typeUrl.
      */
-    public java.lang.String getTypeUrl() {
-      java.lang.Object ref = typeUrl_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+    public String getTypeUrl() {
+      Object ref = typeUrl_;
+      if (!(ref instanceof String)) {
+        ByteString bs =
+            (ByteString) ref;
+        String s = bs.toStringUtf8();
         typeUrl_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -792,17 +792,17 @@ private static final long serialVersionUID = 0L;
      * <code>string type_url = 1;</code>
      * @return The bytes for typeUrl.
      */
-    public com.google.protobuf.ByteString
+    public ByteString
         getTypeUrlBytes() {
-      java.lang.Object ref = typeUrl_;
+      Object ref = typeUrl_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        ByteString b =
+            ByteString.copyFromUtf8(
+                (String) ref);
         typeUrl_ = b;
         return b;
       } else {
-        return (com.google.protobuf.ByteString) ref;
+        return (ByteString) ref;
       }
     }
     /**
@@ -837,7 +837,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setTypeUrl(
-        java.lang.String value) {
+        String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -914,7 +914,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setTypeUrlBytes(
-        com.google.protobuf.ByteString value) {
+        ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -925,7 +925,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.google.protobuf.ByteString value_ = com.google.protobuf.ByteString.EMPTY;
+    private ByteString value_ = ByteString.EMPTY;
     /**
      * <pre>
      * Must be a valid serialized protocol buffer of the above specified type.
@@ -934,8 +934,8 @@ private static final long serialVersionUID = 0L;
      * <code>bytes value = 2;</code>
      * @return The value.
      */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getValue() {
+    @Override
+    public ByteString getValue() {
       return value_;
     }
     /**
@@ -947,7 +947,7 @@ private static final long serialVersionUID = 0L;
      * @param value The value to set.
      * @return This builder for chaining.
      */
-    public Builder setValue(com.google.protobuf.ByteString value) {
+    public Builder setValue(ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -970,15 +970,15 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -987,37 +987,37 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:google.protobuf.Any)
-  private static final com.google.protobuf.Any DEFAULT_INSTANCE;
+  private static final Any DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.google.protobuf.Any();
+    DEFAULT_INSTANCE = new Any();
   }
 
-  public static com.google.protobuf.Any getDefaultInstance() {
+  public static Any getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<Any>
-      PARSER = new com.google.protobuf.AbstractParser<Any>() {
-    @java.lang.Override
+  private static final Parser<Any>
+      PARSER = new AbstractParser<Any>() {
+    @Override
     public Any parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+        CodedInputStream input,
+        ExtensionRegistryLite extensionRegistry)
+        throws InvalidProtocolBufferException {
       return new Any(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<Any> parser() {
+  public static Parser<Any> parser() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.google.protobuf.Parser<Any> getParserForType() {
+  @Override
+  public Parser<Any> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.google.protobuf.Any getDefaultInstanceForType() {
+  @Override
+  public Any getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

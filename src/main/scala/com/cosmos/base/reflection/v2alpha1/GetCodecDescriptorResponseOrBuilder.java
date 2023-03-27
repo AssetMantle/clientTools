@@ -24,7 +24,7 @@ public interface GetCodecDescriptorResponseOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 1 [json_name = "codec"];</code>
    * @return The codec.
    */
-  com.cosmos.base.reflection.v2alpha1.CodecDescriptor getCodec();
+  CodecDescriptor getCodec();
   /**
    * <pre>
    * codec describes the application codec such as registered interfaces and implementations
@@ -32,5 +32,5 @@ public interface GetCodecDescriptorResponseOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 1 [json_name = "codec"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.CodecDescriptorOrBuilder getCodecOrBuilder();
+  CodecDescriptorOrBuilder getCodecOrBuilder();
 }

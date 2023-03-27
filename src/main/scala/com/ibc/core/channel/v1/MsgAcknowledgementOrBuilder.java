@@ -16,11 +16,11 @@ public interface MsgAcknowledgementOrBuilder extends
    * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
    * @return The packet.
    */
-  com.ibc.core.channel.v1.Packet getPacket();
+  Packet getPacket();
   /**
    * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
    */
-  com.ibc.core.channel.v1.PacketOrBuilder getPacketOrBuilder();
+  PacketOrBuilder getPacketOrBuilder();
 
   /**
    * <code>bytes acknowledgement = 2 [json_name = "acknowledgement"];</code>
@@ -53,7 +53,7 @@ public interface MsgAcknowledgementOrBuilder extends
    * <code>string signer = 5 [json_name = "signer"];</code>
    * @return The signer.
    */
-  java.lang.String getSigner();
+  String getSigner();
   /**
    * <code>string signer = 5 [json_name = "signer"];</code>
    * @return The bytes for signer.

@@ -30,42 +30,42 @@ private static final long serialVersionUID = 0L;
     cosmosSdkVersion_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new VersionInfo();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.base.tendermint.v1beta1.QueryProto.internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_descriptor;
+    return QueryProto.internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.base.tendermint.v1beta1.QueryProto.internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.base.tendermint.v1beta1.VersionInfo.class, com.cosmos.base.tendermint.v1beta1.VersionInfo.Builder.class);
+            VersionInfo.class, Builder.class);
   }
 
   public static final int NAME_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object name_ = "";
+  private volatile Object name_ = "";
   /**
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  @java.lang.Override
-  public java.lang.String getName() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getName() {
+    Object ref = name_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       name_ = s;
       return s;
     }
@@ -74,14 +74,14 @@ private static final long serialVersionUID = 0L;
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The bytes for name.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getNameBytes() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
+    Object ref = name_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       name_ = b;
       return b;
     } else {
@@ -91,20 +91,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int APP_NAME_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object appName_ = "";
+  private volatile Object appName_ = "";
   /**
    * <code>string app_name = 2 [json_name = "appName"];</code>
    * @return The appName.
    */
-  @java.lang.Override
-  public java.lang.String getAppName() {
-    java.lang.Object ref = appName_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getAppName() {
+    Object ref = appName_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       appName_ = s;
       return s;
     }
@@ -113,14 +113,14 @@ private static final long serialVersionUID = 0L;
    * <code>string app_name = 2 [json_name = "appName"];</code>
    * @return The bytes for appName.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getAppNameBytes() {
-    java.lang.Object ref = appName_;
-    if (ref instanceof java.lang.String) {
+    Object ref = appName_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       appName_ = b;
       return b;
     } else {
@@ -130,20 +130,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int VERSION_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object version_ = "";
+  private volatile Object version_ = "";
   /**
    * <code>string version = 3 [json_name = "version"];</code>
    * @return The version.
    */
-  @java.lang.Override
-  public java.lang.String getVersion() {
-    java.lang.Object ref = version_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getVersion() {
+    Object ref = version_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       version_ = s;
       return s;
     }
@@ -152,14 +152,14 @@ private static final long serialVersionUID = 0L;
    * <code>string version = 3 [json_name = "version"];</code>
    * @return The bytes for version.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getVersionBytes() {
-    java.lang.Object ref = version_;
-    if (ref instanceof java.lang.String) {
+    Object ref = version_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       version_ = b;
       return b;
     } else {
@@ -169,20 +169,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int GIT_COMMIT_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object gitCommit_ = "";
+  private volatile Object gitCommit_ = "";
   /**
    * <code>string git_commit = 4 [json_name = "gitCommit"];</code>
    * @return The gitCommit.
    */
-  @java.lang.Override
-  public java.lang.String getGitCommit() {
-    java.lang.Object ref = gitCommit_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getGitCommit() {
+    Object ref = gitCommit_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       gitCommit_ = s;
       return s;
     }
@@ -191,14 +191,14 @@ private static final long serialVersionUID = 0L;
    * <code>string git_commit = 4 [json_name = "gitCommit"];</code>
    * @return The bytes for gitCommit.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getGitCommitBytes() {
-    java.lang.Object ref = gitCommit_;
-    if (ref instanceof java.lang.String) {
+    Object ref = gitCommit_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       gitCommit_ = b;
       return b;
     } else {
@@ -208,20 +208,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int BUILD_TAGS_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object buildTags_ = "";
+  private volatile Object buildTags_ = "";
   /**
    * <code>string build_tags = 5 [json_name = "buildTags"];</code>
    * @return The buildTags.
    */
-  @java.lang.Override
-  public java.lang.String getBuildTags() {
-    java.lang.Object ref = buildTags_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getBuildTags() {
+    Object ref = buildTags_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       buildTags_ = s;
       return s;
     }
@@ -230,14 +230,14 @@ private static final long serialVersionUID = 0L;
    * <code>string build_tags = 5 [json_name = "buildTags"];</code>
    * @return The bytes for buildTags.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getBuildTagsBytes() {
-    java.lang.Object ref = buildTags_;
-    if (ref instanceof java.lang.String) {
+    Object ref = buildTags_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       buildTags_ = b;
       return b;
     } else {
@@ -247,20 +247,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int GO_VERSION_FIELD_NUMBER = 6;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object goVersion_ = "";
+  private volatile Object goVersion_ = "";
   /**
    * <code>string go_version = 6 [json_name = "goVersion"];</code>
    * @return The goVersion.
    */
-  @java.lang.Override
-  public java.lang.String getGoVersion() {
-    java.lang.Object ref = goVersion_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getGoVersion() {
+    Object ref = goVersion_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       goVersion_ = s;
       return s;
     }
@@ -269,14 +269,14 @@ private static final long serialVersionUID = 0L;
    * <code>string go_version = 6 [json_name = "goVersion"];</code>
    * @return The bytes for goVersion.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getGoVersionBytes() {
-    java.lang.Object ref = goVersion_;
-    if (ref instanceof java.lang.String) {
+    Object ref = goVersion_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       goVersion_ = b;
       return b;
     } else {
@@ -286,48 +286,48 @@ private static final long serialVersionUID = 0L;
 
   public static final int BUILD_DEPS_FIELD_NUMBER = 7;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.base.tendermint.v1beta1.Module> buildDeps_;
+  private java.util.List<Module> buildDeps_;
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.base.tendermint.v1beta1.Module> getBuildDepsList() {
+  @Override
+  public java.util.List<Module> getBuildDepsList() {
     return buildDeps_;
   }
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.base.tendermint.v1beta1.ModuleOrBuilder> 
+  @Override
+  public java.util.List<? extends ModuleOrBuilder>
       getBuildDepsOrBuilderList() {
     return buildDeps_;
   }
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getBuildDepsCount() {
     return buildDeps_.size();
   }
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.base.tendermint.v1beta1.Module getBuildDeps(int index) {
+  @Override
+  public Module getBuildDeps(int index) {
     return buildDeps_.get(index);
   }
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.base.tendermint.v1beta1.ModuleOrBuilder getBuildDepsOrBuilder(
+  @Override
+  public ModuleOrBuilder getBuildDepsOrBuilder(
       int index) {
     return buildDeps_.get(index);
   }
 
   public static final int COSMOS_SDK_VERSION_FIELD_NUMBER = 8;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object cosmosSdkVersion_ = "";
+  private volatile Object cosmosSdkVersion_ = "";
   /**
    * <pre>
    * Since: cosmos-sdk 0.43
@@ -336,15 +336,15 @@ private static final long serialVersionUID = 0L;
    * <code>string cosmos_sdk_version = 8 [json_name = "cosmosSdkVersion"];</code>
    * @return The cosmosSdkVersion.
    */
-  @java.lang.Override
-  public java.lang.String getCosmosSdkVersion() {
-    java.lang.Object ref = cosmosSdkVersion_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getCosmosSdkVersion() {
+    Object ref = cosmosSdkVersion_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       cosmosSdkVersion_ = s;
       return s;
     }
@@ -357,14 +357,14 @@ private static final long serialVersionUID = 0L;
    * <code>string cosmos_sdk_version = 8 [json_name = "cosmosSdkVersion"];</code>
    * @return The bytes for cosmosSdkVersion.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getCosmosSdkVersionBytes() {
-    java.lang.Object ref = cosmosSdkVersion_;
-    if (ref instanceof java.lang.String) {
+    Object ref = cosmosSdkVersion_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       cosmosSdkVersion_ = b;
       return b;
     } else {
@@ -373,7 +373,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -383,7 +383,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
@@ -413,7 +413,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -449,15 +449,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.base.tendermint.v1beta1.VersionInfo)) {
+    if (!(obj instanceof VersionInfo)) {
       return super.equals(obj);
     }
-    com.cosmos.base.tendermint.v1beta1.VersionInfo other = (com.cosmos.base.tendermint.v1beta1.VersionInfo) obj;
+    VersionInfo other = (VersionInfo) obj;
 
     if (!getName()
         .equals(other.getName())) return false;
@@ -479,7 +479,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -509,69 +509,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseFrom(
+  public static VersionInfo parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseFrom(
+  public static VersionInfo parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseFrom(
+  public static VersionInfo parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseFrom(
+  public static VersionInfo parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseFrom(byte[] data)
+  public static VersionInfo parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseFrom(
+  public static VersionInfo parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseFrom(java.io.InputStream input)
+  public static VersionInfo parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseFrom(
+  public static VersionInfo parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseDelimitedFrom(java.io.InputStream input)
+  public static VersionInfo parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseDelimitedFrom(
+  public static VersionInfo parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseFrom(
+  public static VersionInfo parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo parseFrom(
+  public static VersionInfo parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -579,23 +579,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.base.tendermint.v1beta1.VersionInfo prototype) {
+  public static Builder newBuilder(VersionInfo prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -609,18 +609,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.tendermint.v1beta1.VersionInfo)
-      com.cosmos.base.tendermint.v1beta1.VersionInfoOrBuilder {
+      VersionInfoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.base.tendermint.v1beta1.QueryProto.internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_descriptor;
+      return QueryProto.internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.base.tendermint.v1beta1.QueryProto.internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.base.tendermint.v1beta1.VersionInfo.class, com.cosmos.base.tendermint.v1beta1.VersionInfo.Builder.class);
+              VersionInfo.class, Builder.class);
     }
 
     // Construct using com.cosmos.base.tendermint.v1beta1.VersionInfo.newBuilder()
@@ -629,11 +629,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -654,36 +654,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.base.tendermint.v1beta1.QueryProto.internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_descriptor;
+      return QueryProto.internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.tendermint.v1beta1.VersionInfo getDefaultInstanceForType() {
-      return com.cosmos.base.tendermint.v1beta1.VersionInfo.getDefaultInstance();
+    @Override
+    public VersionInfo getDefaultInstanceForType() {
+      return VersionInfo.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.base.tendermint.v1beta1.VersionInfo build() {
-      com.cosmos.base.tendermint.v1beta1.VersionInfo result = buildPartial();
+    @Override
+    public VersionInfo build() {
+      VersionInfo result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.tendermint.v1beta1.VersionInfo buildPartial() {
-      com.cosmos.base.tendermint.v1beta1.VersionInfo result = new com.cosmos.base.tendermint.v1beta1.VersionInfo(this);
+    @Override
+    public VersionInfo buildPartial() {
+      VersionInfo result = new VersionInfo(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.base.tendermint.v1beta1.VersionInfo result) {
+    private void buildPartialRepeatedFields(VersionInfo result) {
       if (buildDepsBuilder_ == null) {
         if (((bitField0_ & 0x00000040) != 0)) {
           buildDeps_ = java.util.Collections.unmodifiableList(buildDeps_);
@@ -695,7 +695,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.base.tendermint.v1beta1.VersionInfo result) {
+    private void buildPartial0(VersionInfo result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.name_ = name_;
@@ -720,50 +720,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.base.tendermint.v1beta1.VersionInfo) {
-        return mergeFrom((com.cosmos.base.tendermint.v1beta1.VersionInfo)other);
+      if (other instanceof VersionInfo) {
+        return mergeFrom((VersionInfo)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.base.tendermint.v1beta1.VersionInfo other) {
-      if (other == com.cosmos.base.tendermint.v1beta1.VersionInfo.getDefaultInstance()) return this;
+    public Builder mergeFrom(VersionInfo other) {
+      if (other == VersionInfo.getDefaultInstance()) return this;
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
         bitField0_ |= 0x00000001;
@@ -830,18 +830,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -882,9 +882,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 50
             case 58: {
-              com.cosmos.base.tendermint.v1beta1.Module m =
+              Module m =
                   input.readMessage(
-                      com.cosmos.base.tendermint.v1beta1.Module.parser(),
+                      Module.parser(),
                       extensionRegistry);
               if (buildDepsBuilder_ == null) {
                 ensureBuildDepsIsMutable();
@@ -916,21 +916,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object name_ = "";
+    private Object name_ = "";
     /**
      * <code>string name = 1 [json_name = "name"];</code>
      * @return The name.
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getName() {
+      Object ref = name_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         name_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -939,11 +939,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      java.lang.Object ref = name_;
+      Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         name_ = b;
         return b;
       } else {
@@ -956,7 +956,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setName(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       name_ = value;
       bitField0_ |= 0x00000001;
@@ -988,21 +988,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object appName_ = "";
+    private Object appName_ = "";
     /**
      * <code>string app_name = 2 [json_name = "appName"];</code>
      * @return The appName.
      */
-    public java.lang.String getAppName() {
-      java.lang.Object ref = appName_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getAppName() {
+      Object ref = appName_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         appName_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1011,11 +1011,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getAppNameBytes() {
-      java.lang.Object ref = appName_;
+      Object ref = appName_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         appName_ = b;
         return b;
       } else {
@@ -1028,7 +1028,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setAppName(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       appName_ = value;
       bitField0_ |= 0x00000002;
@@ -1060,21 +1060,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object version_ = "";
+    private Object version_ = "";
     /**
      * <code>string version = 3 [json_name = "version"];</code>
      * @return The version.
      */
-    public java.lang.String getVersion() {
-      java.lang.Object ref = version_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getVersion() {
+      Object ref = version_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         version_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1083,11 +1083,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getVersionBytes() {
-      java.lang.Object ref = version_;
+      Object ref = version_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         version_ = b;
         return b;
       } else {
@@ -1100,7 +1100,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setVersion(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       version_ = value;
       bitField0_ |= 0x00000004;
@@ -1132,21 +1132,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object gitCommit_ = "";
+    private Object gitCommit_ = "";
     /**
      * <code>string git_commit = 4 [json_name = "gitCommit"];</code>
      * @return The gitCommit.
      */
-    public java.lang.String getGitCommit() {
-      java.lang.Object ref = gitCommit_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getGitCommit() {
+      Object ref = gitCommit_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         gitCommit_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1155,11 +1155,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getGitCommitBytes() {
-      java.lang.Object ref = gitCommit_;
+      Object ref = gitCommit_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         gitCommit_ = b;
         return b;
       } else {
@@ -1172,7 +1172,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setGitCommit(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       gitCommit_ = value;
       bitField0_ |= 0x00000008;
@@ -1204,21 +1204,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object buildTags_ = "";
+    private Object buildTags_ = "";
     /**
      * <code>string build_tags = 5 [json_name = "buildTags"];</code>
      * @return The buildTags.
      */
-    public java.lang.String getBuildTags() {
-      java.lang.Object ref = buildTags_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getBuildTags() {
+      Object ref = buildTags_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         buildTags_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1227,11 +1227,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getBuildTagsBytes() {
-      java.lang.Object ref = buildTags_;
+      Object ref = buildTags_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         buildTags_ = b;
         return b;
       } else {
@@ -1244,7 +1244,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setBuildTags(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       buildTags_ = value;
       bitField0_ |= 0x00000010;
@@ -1276,21 +1276,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object goVersion_ = "";
+    private Object goVersion_ = "";
     /**
      * <code>string go_version = 6 [json_name = "goVersion"];</code>
      * @return The goVersion.
      */
-    public java.lang.String getGoVersion() {
-      java.lang.Object ref = goVersion_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getGoVersion() {
+      Object ref = goVersion_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         goVersion_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1299,11 +1299,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getGoVersionBytes() {
-      java.lang.Object ref = goVersion_;
+      Object ref = goVersion_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         goVersion_ = b;
         return b;
       } else {
@@ -1316,7 +1316,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setGoVersion(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       goVersion_ = value;
       bitField0_ |= 0x00000020;
@@ -1348,22 +1348,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<com.cosmos.base.tendermint.v1beta1.Module> buildDeps_ =
+    private java.util.List<Module> buildDeps_ =
       java.util.Collections.emptyList();
     private void ensureBuildDepsIsMutable() {
       if (!((bitField0_ & 0x00000040) != 0)) {
-        buildDeps_ = new java.util.ArrayList<com.cosmos.base.tendermint.v1beta1.Module>(buildDeps_);
+        buildDeps_ = new java.util.ArrayList<Module>(buildDeps_);
         bitField0_ |= 0x00000040;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.base.tendermint.v1beta1.Module, com.cosmos.base.tendermint.v1beta1.Module.Builder, com.cosmos.base.tendermint.v1beta1.ModuleOrBuilder> buildDepsBuilder_;
+        Module, Module.Builder, ModuleOrBuilder> buildDepsBuilder_;
 
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
-    public java.util.List<com.cosmos.base.tendermint.v1beta1.Module> getBuildDepsList() {
+    public java.util.List<Module> getBuildDepsList() {
       if (buildDepsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(buildDeps_);
       } else {
@@ -1383,7 +1383,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
-    public com.cosmos.base.tendermint.v1beta1.Module getBuildDeps(int index) {
+    public Module getBuildDeps(int index) {
       if (buildDepsBuilder_ == null) {
         return buildDeps_.get(index);
       } else {
@@ -1394,7 +1394,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
     public Builder setBuildDeps(
-        int index, com.cosmos.base.tendermint.v1beta1.Module value) {
+        int index, Module value) {
       if (buildDepsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1411,7 +1411,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
     public Builder setBuildDeps(
-        int index, com.cosmos.base.tendermint.v1beta1.Module.Builder builderForValue) {
+        int index, Module.Builder builderForValue) {
       if (buildDepsBuilder_ == null) {
         ensureBuildDepsIsMutable();
         buildDeps_.set(index, builderForValue.build());
@@ -1424,7 +1424,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
-    public Builder addBuildDeps(com.cosmos.base.tendermint.v1beta1.Module value) {
+    public Builder addBuildDeps(Module value) {
       if (buildDepsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1441,7 +1441,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
     public Builder addBuildDeps(
-        int index, com.cosmos.base.tendermint.v1beta1.Module value) {
+        int index, Module value) {
       if (buildDepsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1458,7 +1458,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
     public Builder addBuildDeps(
-        com.cosmos.base.tendermint.v1beta1.Module.Builder builderForValue) {
+        Module.Builder builderForValue) {
       if (buildDepsBuilder_ == null) {
         ensureBuildDepsIsMutable();
         buildDeps_.add(builderForValue.build());
@@ -1472,7 +1472,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
     public Builder addBuildDeps(
-        int index, com.cosmos.base.tendermint.v1beta1.Module.Builder builderForValue) {
+        int index, Module.Builder builderForValue) {
       if (buildDepsBuilder_ == null) {
         ensureBuildDepsIsMutable();
         buildDeps_.add(index, builderForValue.build());
@@ -1486,7 +1486,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
     public Builder addAllBuildDeps(
-        java.lang.Iterable<? extends com.cosmos.base.tendermint.v1beta1.Module> values) {
+        Iterable<? extends Module> values) {
       if (buildDepsBuilder_ == null) {
         ensureBuildDepsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1526,14 +1526,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
-    public com.cosmos.base.tendermint.v1beta1.Module.Builder getBuildDepsBuilder(
+    public Module.Builder getBuildDepsBuilder(
         int index) {
       return getBuildDepsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
-    public com.cosmos.base.tendermint.v1beta1.ModuleOrBuilder getBuildDepsOrBuilder(
+    public ModuleOrBuilder getBuildDepsOrBuilder(
         int index) {
       if (buildDepsBuilder_ == null) {
         return buildDeps_.get(index);  } else {
@@ -1543,7 +1543,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
-    public java.util.List<? extends com.cosmos.base.tendermint.v1beta1.ModuleOrBuilder> 
+    public java.util.List<? extends ModuleOrBuilder>
          getBuildDepsOrBuilderList() {
       if (buildDepsBuilder_ != null) {
         return buildDepsBuilder_.getMessageOrBuilderList();
@@ -1554,31 +1554,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
-    public com.cosmos.base.tendermint.v1beta1.Module.Builder addBuildDepsBuilder() {
+    public Module.Builder addBuildDepsBuilder() {
       return getBuildDepsFieldBuilder().addBuilder(
-          com.cosmos.base.tendermint.v1beta1.Module.getDefaultInstance());
+          Module.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
-    public com.cosmos.base.tendermint.v1beta1.Module.Builder addBuildDepsBuilder(
+    public Module.Builder addBuildDepsBuilder(
         int index) {
       return getBuildDepsFieldBuilder().addBuilder(
-          index, com.cosmos.base.tendermint.v1beta1.Module.getDefaultInstance());
+          index, Module.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7 [json_name = "buildDeps"];</code>
      */
-    public java.util.List<com.cosmos.base.tendermint.v1beta1.Module.Builder> 
+    public java.util.List<Module.Builder>
          getBuildDepsBuilderList() {
       return getBuildDepsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.base.tendermint.v1beta1.Module, com.cosmos.base.tendermint.v1beta1.Module.Builder, com.cosmos.base.tendermint.v1beta1.ModuleOrBuilder> 
+        Module, Module.Builder, ModuleOrBuilder>
         getBuildDepsFieldBuilder() {
       if (buildDepsBuilder_ == null) {
         buildDepsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.base.tendermint.v1beta1.Module, com.cosmos.base.tendermint.v1beta1.Module.Builder, com.cosmos.base.tendermint.v1beta1.ModuleOrBuilder>(
+            Module, Module.Builder, ModuleOrBuilder>(
                 buildDeps_,
                 ((bitField0_ & 0x00000040) != 0),
                 getParentForChildren(),
@@ -1588,7 +1588,7 @@ private static final long serialVersionUID = 0L;
       return buildDepsBuilder_;
     }
 
-    private java.lang.Object cosmosSdkVersion_ = "";
+    private Object cosmosSdkVersion_ = "";
     /**
      * <pre>
      * Since: cosmos-sdk 0.43
@@ -1597,16 +1597,16 @@ private static final long serialVersionUID = 0L;
      * <code>string cosmos_sdk_version = 8 [json_name = "cosmosSdkVersion"];</code>
      * @return The cosmosSdkVersion.
      */
-    public java.lang.String getCosmosSdkVersion() {
-      java.lang.Object ref = cosmosSdkVersion_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getCosmosSdkVersion() {
+      Object ref = cosmosSdkVersion_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         cosmosSdkVersion_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1619,11 +1619,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getCosmosSdkVersionBytes() {
-      java.lang.Object ref = cosmosSdkVersion_;
+      Object ref = cosmosSdkVersion_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         cosmosSdkVersion_ = b;
         return b;
       } else {
@@ -1640,7 +1640,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setCosmosSdkVersion(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       cosmosSdkVersion_ = value;
       bitField0_ |= 0x00000080;
@@ -1679,13 +1679,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1696,18 +1696,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.tendermint.v1beta1.VersionInfo)
-  private static final com.cosmos.base.tendermint.v1beta1.VersionInfo DEFAULT_INSTANCE;
+  private static final VersionInfo DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.base.tendermint.v1beta1.VersionInfo();
+    DEFAULT_INSTANCE = new VersionInfo();
   }
 
-  public static com.cosmos.base.tendermint.v1beta1.VersionInfo getDefaultInstance() {
+  public static VersionInfo getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<VersionInfo>
       PARSER = new com.google.protobuf.AbstractParser<VersionInfo>() {
-    @java.lang.Override
+    @Override
     public VersionInfo parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1731,13 +1731,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<VersionInfo> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.base.tendermint.v1beta1.VersionInfo getDefaultInstanceForType() {
+  @Override
+  public VersionInfo getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

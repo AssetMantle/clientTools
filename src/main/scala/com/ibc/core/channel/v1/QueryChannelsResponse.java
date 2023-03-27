@@ -23,29 +23,29 @@ private static final long serialVersionUID = 0L;
     channels_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryChannelsResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryChannelsResponse_descriptor;
+    return QueryProto.internal_static_ibc_core_channel_v1_QueryChannelsResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryChannelsResponse_fieldAccessorTable
+    return QueryProto.internal_static_ibc_core_channel_v1_QueryChannelsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.channel.v1.QueryChannelsResponse.class, com.ibc.core.channel.v1.QueryChannelsResponse.Builder.class);
+            QueryChannelsResponse.class, Builder.class);
   }
 
   public static final int CHANNELS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.ibc.core.channel.v1.IdentifiedChannel> channels_;
+  private java.util.List<IdentifiedChannel> channels_;
   /**
    * <pre>
    * list of stored channels of the chain.
@@ -53,8 +53,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.ibc.core.channel.v1.IdentifiedChannel> getChannelsList() {
+  @Override
+  public java.util.List<IdentifiedChannel> getChannelsList() {
     return channels_;
   }
   /**
@@ -64,8 +64,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.ibc.core.channel.v1.IdentifiedChannelOrBuilder> 
+  @Override
+  public java.util.List<? extends IdentifiedChannelOrBuilder>
       getChannelsOrBuilderList() {
     return channels_;
   }
@@ -76,7 +76,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getChannelsCount() {
     return channels_.size();
   }
@@ -87,8 +87,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
    */
-  @java.lang.Override
-  public com.ibc.core.channel.v1.IdentifiedChannel getChannels(int index) {
+  @Override
+  public IdentifiedChannel getChannels(int index) {
     return channels_.get(index);
   }
   /**
@@ -98,8 +98,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
    */
-  @java.lang.Override
-  public com.ibc.core.channel.v1.IdentifiedChannelOrBuilder getChannelsOrBuilder(
+  @Override
+  public IdentifiedChannelOrBuilder getChannelsOrBuilder(
       int index) {
     return channels_.get(index);
   }
@@ -114,7 +114,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -126,7 +126,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageResponse getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -137,7 +137,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageResponseOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -152,7 +152,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height height = 3 [json_name = "height", (.gogoproto.nullable) = false];</code>
    * @return Whether the height field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasHeight() {
     return height_ != null;
   }
@@ -164,7 +164,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height height = 3 [json_name = "height", (.gogoproto.nullable) = false];</code>
    * @return The height.
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.Height getHeight() {
     return height_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : height_;
   }
@@ -175,13 +175,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.client.v1.Height height = 3 [json_name = "height", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.HeightOrBuilder getHeightOrBuilder() {
     return height_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : height_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -191,7 +191,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < channels_.size(); i++) {
@@ -206,7 +206,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -229,15 +229,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.channel.v1.QueryChannelsResponse)) {
+    if (!(obj instanceof QueryChannelsResponse)) {
       return super.equals(obj);
     }
-    com.ibc.core.channel.v1.QueryChannelsResponse other = (com.ibc.core.channel.v1.QueryChannelsResponse) obj;
+    QueryChannelsResponse other = (QueryChannelsResponse) obj;
 
     if (!getChannelsList()
         .equals(other.getChannelsList())) return false;
@@ -255,7 +255,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -279,69 +279,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseFrom(
+  public static QueryChannelsResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseFrom(
+  public static QueryChannelsResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseFrom(
+  public static QueryChannelsResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseFrom(
+  public static QueryChannelsResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseFrom(byte[] data)
+  public static QueryChannelsResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseFrom(
+  public static QueryChannelsResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseFrom(java.io.InputStream input)
+  public static QueryChannelsResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseFrom(
+  public static QueryChannelsResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryChannelsResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseDelimitedFrom(
+  public static QueryChannelsResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseFrom(
+  public static QueryChannelsResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryChannelsResponse parseFrom(
+  public static QueryChannelsResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -349,23 +349,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.channel.v1.QueryChannelsResponse prototype) {
+  public static Builder newBuilder(QueryChannelsResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -379,18 +379,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.channel.v1.QueryChannelsResponse)
-      com.ibc.core.channel.v1.QueryChannelsResponseOrBuilder {
+      QueryChannelsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryChannelsResponse_descriptor;
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryChannelsResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryChannelsResponse_fieldAccessorTable
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryChannelsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.channel.v1.QueryChannelsResponse.class, com.ibc.core.channel.v1.QueryChannelsResponse.Builder.class);
+              QueryChannelsResponse.class, Builder.class);
     }
 
     // Construct using com.ibc.core.channel.v1.QueryChannelsResponse.newBuilder()
@@ -399,11 +399,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -427,36 +427,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryChannelsResponse_descriptor;
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryChannelsResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryChannelsResponse getDefaultInstanceForType() {
-      return com.ibc.core.channel.v1.QueryChannelsResponse.getDefaultInstance();
+    @Override
+    public QueryChannelsResponse getDefaultInstanceForType() {
+      return QueryChannelsResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryChannelsResponse build() {
-      com.ibc.core.channel.v1.QueryChannelsResponse result = buildPartial();
+    @Override
+    public QueryChannelsResponse build() {
+      QueryChannelsResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryChannelsResponse buildPartial() {
-      com.ibc.core.channel.v1.QueryChannelsResponse result = new com.ibc.core.channel.v1.QueryChannelsResponse(this);
+    @Override
+    public QueryChannelsResponse buildPartial() {
+      QueryChannelsResponse result = new QueryChannelsResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.ibc.core.channel.v1.QueryChannelsResponse result) {
+    private void buildPartialRepeatedFields(QueryChannelsResponse result) {
       if (channelsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           channels_ = java.util.Collections.unmodifiableList(channels_);
@@ -468,7 +468,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.ibc.core.channel.v1.QueryChannelsResponse result) {
+    private void buildPartial0(QueryChannelsResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -482,50 +482,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.channel.v1.QueryChannelsResponse) {
-        return mergeFrom((com.ibc.core.channel.v1.QueryChannelsResponse)other);
+      if (other instanceof QueryChannelsResponse) {
+        return mergeFrom((QueryChannelsResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.channel.v1.QueryChannelsResponse other) {
-      if (other == com.ibc.core.channel.v1.QueryChannelsResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryChannelsResponse other) {
+      if (other == QueryChannelsResponse.getDefaultInstance()) return this;
       if (channelsBuilder_ == null) {
         if (!other.channels_.isEmpty()) {
           if (channels_.isEmpty()) {
@@ -563,18 +563,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -585,9 +585,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.ibc.core.channel.v1.IdentifiedChannel m =
+              IdentifiedChannel m =
                   input.readMessage(
-                      com.ibc.core.channel.v1.IdentifiedChannel.parser(),
+                      IdentifiedChannel.parser(),
                       extensionRegistry);
               if (channelsBuilder_ == null) {
                 ensureChannelsIsMutable();
@@ -628,17 +628,17 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.ibc.core.channel.v1.IdentifiedChannel> channels_ =
+    private java.util.List<IdentifiedChannel> channels_ =
       java.util.Collections.emptyList();
     private void ensureChannelsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        channels_ = new java.util.ArrayList<com.ibc.core.channel.v1.IdentifiedChannel>(channels_);
+        channels_ = new java.util.ArrayList<IdentifiedChannel>(channels_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ibc.core.channel.v1.IdentifiedChannel, com.ibc.core.channel.v1.IdentifiedChannel.Builder, com.ibc.core.channel.v1.IdentifiedChannelOrBuilder> channelsBuilder_;
+        IdentifiedChannel, IdentifiedChannel.Builder, IdentifiedChannelOrBuilder> channelsBuilder_;
 
     /**
      * <pre>
@@ -647,7 +647,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
-    public java.util.List<com.ibc.core.channel.v1.IdentifiedChannel> getChannelsList() {
+    public java.util.List<IdentifiedChannel> getChannelsList() {
       if (channelsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(channels_);
       } else {
@@ -675,7 +675,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
-    public com.ibc.core.channel.v1.IdentifiedChannel getChannels(int index) {
+    public IdentifiedChannel getChannels(int index) {
       if (channelsBuilder_ == null) {
         return channels_.get(index);
       } else {
@@ -690,7 +690,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
     public Builder setChannels(
-        int index, com.ibc.core.channel.v1.IdentifiedChannel value) {
+        int index, IdentifiedChannel value) {
       if (channelsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -711,7 +711,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
     public Builder setChannels(
-        int index, com.ibc.core.channel.v1.IdentifiedChannel.Builder builderForValue) {
+        int index, IdentifiedChannel.Builder builderForValue) {
       if (channelsBuilder_ == null) {
         ensureChannelsIsMutable();
         channels_.set(index, builderForValue.build());
@@ -728,7 +728,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
-    public Builder addChannels(com.ibc.core.channel.v1.IdentifiedChannel value) {
+    public Builder addChannels(IdentifiedChannel value) {
       if (channelsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -749,7 +749,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
     public Builder addChannels(
-        int index, com.ibc.core.channel.v1.IdentifiedChannel value) {
+        int index, IdentifiedChannel value) {
       if (channelsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -770,7 +770,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
     public Builder addChannels(
-        com.ibc.core.channel.v1.IdentifiedChannel.Builder builderForValue) {
+        IdentifiedChannel.Builder builderForValue) {
       if (channelsBuilder_ == null) {
         ensureChannelsIsMutable();
         channels_.add(builderForValue.build());
@@ -788,7 +788,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
     public Builder addChannels(
-        int index, com.ibc.core.channel.v1.IdentifiedChannel.Builder builderForValue) {
+        int index, IdentifiedChannel.Builder builderForValue) {
       if (channelsBuilder_ == null) {
         ensureChannelsIsMutable();
         channels_.add(index, builderForValue.build());
@@ -806,7 +806,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
     public Builder addAllChannels(
-        java.lang.Iterable<? extends com.ibc.core.channel.v1.IdentifiedChannel> values) {
+        Iterable<? extends IdentifiedChannel> values) {
       if (channelsBuilder_ == null) {
         ensureChannelsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -858,7 +858,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
-    public com.ibc.core.channel.v1.IdentifiedChannel.Builder getChannelsBuilder(
+    public IdentifiedChannel.Builder getChannelsBuilder(
         int index) {
       return getChannelsFieldBuilder().getBuilder(index);
     }
@@ -869,7 +869,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
-    public com.ibc.core.channel.v1.IdentifiedChannelOrBuilder getChannelsOrBuilder(
+    public IdentifiedChannelOrBuilder getChannelsOrBuilder(
         int index) {
       if (channelsBuilder_ == null) {
         return channels_.get(index);  } else {
@@ -883,7 +883,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
-    public java.util.List<? extends com.ibc.core.channel.v1.IdentifiedChannelOrBuilder> 
+    public java.util.List<? extends IdentifiedChannelOrBuilder>
          getChannelsOrBuilderList() {
       if (channelsBuilder_ != null) {
         return channelsBuilder_.getMessageOrBuilderList();
@@ -898,9 +898,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
-    public com.ibc.core.channel.v1.IdentifiedChannel.Builder addChannelsBuilder() {
+    public IdentifiedChannel.Builder addChannelsBuilder() {
       return getChannelsFieldBuilder().addBuilder(
-          com.ibc.core.channel.v1.IdentifiedChannel.getDefaultInstance());
+          IdentifiedChannel.getDefaultInstance());
     }
     /**
      * <pre>
@@ -909,10 +909,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
-    public com.ibc.core.channel.v1.IdentifiedChannel.Builder addChannelsBuilder(
+    public IdentifiedChannel.Builder addChannelsBuilder(
         int index) {
       return getChannelsFieldBuilder().addBuilder(
-          index, com.ibc.core.channel.v1.IdentifiedChannel.getDefaultInstance());
+          index, IdentifiedChannel.getDefaultInstance());
     }
     /**
      * <pre>
@@ -921,16 +921,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
      */
-    public java.util.List<com.ibc.core.channel.v1.IdentifiedChannel.Builder> 
+    public java.util.List<IdentifiedChannel.Builder>
          getChannelsBuilderList() {
       return getChannelsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ibc.core.channel.v1.IdentifiedChannel, com.ibc.core.channel.v1.IdentifiedChannel.Builder, com.ibc.core.channel.v1.IdentifiedChannelOrBuilder> 
+        IdentifiedChannel, IdentifiedChannel.Builder, IdentifiedChannelOrBuilder>
         getChannelsFieldBuilder() {
       if (channelsBuilder_ == null) {
         channelsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.ibc.core.channel.v1.IdentifiedChannel, com.ibc.core.channel.v1.IdentifiedChannel.Builder, com.ibc.core.channel.v1.IdentifiedChannelOrBuilder>(
+            IdentifiedChannel, IdentifiedChannel.Builder, IdentifiedChannelOrBuilder>(
                 channels_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -1249,13 +1249,13 @@ private static final long serialVersionUID = 0L;
       }
       return heightBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1266,18 +1266,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.channel.v1.QueryChannelsResponse)
-  private static final com.ibc.core.channel.v1.QueryChannelsResponse DEFAULT_INSTANCE;
+  private static final QueryChannelsResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.channel.v1.QueryChannelsResponse();
+    DEFAULT_INSTANCE = new QueryChannelsResponse();
   }
 
-  public static com.ibc.core.channel.v1.QueryChannelsResponse getDefaultInstance() {
+  public static QueryChannelsResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryChannelsResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryChannelsResponse>() {
-    @java.lang.Override
+    @Override
     public QueryChannelsResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1301,13 +1301,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryChannelsResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.channel.v1.QueryChannelsResponse getDefaultInstanceForType() {
+  @Override
+  public QueryChannelsResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

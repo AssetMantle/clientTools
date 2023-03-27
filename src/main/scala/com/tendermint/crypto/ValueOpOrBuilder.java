@@ -34,7 +34,7 @@ public interface ValueOpOrBuilder extends
    * <code>.tendermint.crypto.Proof proof = 2 [json_name = "proof"];</code>
    * @return The proof.
    */
-  com.tendermint.crypto.Proof getProof();
+  Proof getProof();
   /**
    * <pre>
    * To encode in ProofOp.Data
@@ -42,5 +42,5 @@ public interface ValueOpOrBuilder extends
    *
    * <code>.tendermint.crypto.Proof proof = 2 [json_name = "proof"];</code>
    */
-  com.tendermint.crypto.ProofOrBuilder getProofOrBuilder();
+  ProofOrBuilder getProofOrBuilder();
 }

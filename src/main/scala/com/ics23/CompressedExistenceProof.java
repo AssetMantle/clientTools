@@ -21,24 +21,24 @@ private static final long serialVersionUID = 0L;
     path_ = emptyIntList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new CompressedExistenceProof();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ics23.ProofsProto.internal_static_ics23_CompressedExistenceProof_descriptor;
+    return ProofsProto.internal_static_ics23_CompressedExistenceProof_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ics23.ProofsProto.internal_static_ics23_CompressedExistenceProof_fieldAccessorTable
+    return ProofsProto.internal_static_ics23_CompressedExistenceProof_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ics23.CompressedExistenceProof.class, com.ics23.CompressedExistenceProof.Builder.class);
+            CompressedExistenceProof.class, Builder.class);
   }
 
   public static final int KEY_FIELD_NUMBER = 1;
@@ -47,7 +47,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes key = 1 [json_name = "key"];</code>
    * @return The key.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getKey() {
     return key_;
   }
@@ -58,18 +58,18 @@ private static final long serialVersionUID = 0L;
    * <code>bytes value = 2 [json_name = "value"];</code>
    * @return The value.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getValue() {
     return value_;
   }
 
   public static final int LEAF_FIELD_NUMBER = 3;
-  private com.ics23.LeafOp leaf_;
+  private LeafOp leaf_;
   /**
    * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
    * @return Whether the leaf field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasLeaf() {
     return leaf_ != null;
   }
@@ -77,16 +77,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
    * @return The leaf.
    */
-  @java.lang.Override
-  public com.ics23.LeafOp getLeaf() {
-    return leaf_ == null ? com.ics23.LeafOp.getDefaultInstance() : leaf_;
+  @Override
+  public LeafOp getLeaf() {
+    return leaf_ == null ? LeafOp.getDefaultInstance() : leaf_;
   }
   /**
    * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
    */
-  @java.lang.Override
-  public com.ics23.LeafOpOrBuilder getLeafOrBuilder() {
-    return leaf_ == null ? com.ics23.LeafOp.getDefaultInstance() : leaf_;
+  @Override
+  public LeafOpOrBuilder getLeafOrBuilder() {
+    return leaf_ == null ? LeafOp.getDefaultInstance() : leaf_;
   }
 
   public static final int PATH_FIELD_NUMBER = 4;
@@ -100,8 +100,8 @@ private static final long serialVersionUID = 0L;
    * <code>repeated int32 path = 4 [json_name = "path"];</code>
    * @return A list containing the path.
    */
-  @java.lang.Override
-  public java.util.List<java.lang.Integer>
+  @Override
+  public java.util.List<Integer>
       getPathList() {
     return path_;
   }
@@ -131,7 +131,7 @@ private static final long serialVersionUID = 0L;
   private int pathMemoizedSerializedSize = -1;
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -141,7 +141,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
@@ -164,7 +164,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -201,15 +201,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ics23.CompressedExistenceProof)) {
+    if (!(obj instanceof CompressedExistenceProof)) {
       return super.equals(obj);
     }
-    com.ics23.CompressedExistenceProof other = (com.ics23.CompressedExistenceProof) obj;
+    CompressedExistenceProof other = (CompressedExistenceProof) obj;
 
     if (!getKey()
         .equals(other.getKey())) return false;
@@ -226,7 +226,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -250,69 +250,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ics23.CompressedExistenceProof parseFrom(
+  public static CompressedExistenceProof parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.CompressedExistenceProof parseFrom(
+  public static CompressedExistenceProof parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.CompressedExistenceProof parseFrom(
+  public static CompressedExistenceProof parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.CompressedExistenceProof parseFrom(
+  public static CompressedExistenceProof parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.CompressedExistenceProof parseFrom(byte[] data)
+  public static CompressedExistenceProof parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.CompressedExistenceProof parseFrom(
+  public static CompressedExistenceProof parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.CompressedExistenceProof parseFrom(java.io.InputStream input)
+  public static CompressedExistenceProof parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.CompressedExistenceProof parseFrom(
+  public static CompressedExistenceProof parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.CompressedExistenceProof parseDelimitedFrom(java.io.InputStream input)
+  public static CompressedExistenceProof parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ics23.CompressedExistenceProof parseDelimitedFrom(
+  public static CompressedExistenceProof parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.CompressedExistenceProof parseFrom(
+  public static CompressedExistenceProof parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.CompressedExistenceProof parseFrom(
+  public static CompressedExistenceProof parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -320,23 +320,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ics23.CompressedExistenceProof prototype) {
+  public static Builder newBuilder(CompressedExistenceProof prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -346,18 +346,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ics23.CompressedExistenceProof)
-      com.ics23.CompressedExistenceProofOrBuilder {
+      CompressedExistenceProofOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ics23.ProofsProto.internal_static_ics23_CompressedExistenceProof_descriptor;
+      return ProofsProto.internal_static_ics23_CompressedExistenceProof_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ics23.ProofsProto.internal_static_ics23_CompressedExistenceProof_fieldAccessorTable
+      return ProofsProto.internal_static_ics23_CompressedExistenceProof_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ics23.CompressedExistenceProof.class, com.ics23.CompressedExistenceProof.Builder.class);
+              CompressedExistenceProof.class, Builder.class);
     }
 
     // Construct using com.ics23.CompressedExistenceProof.newBuilder()
@@ -366,11 +366,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -385,36 +385,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ics23.ProofsProto.internal_static_ics23_CompressedExistenceProof_descriptor;
+      return ProofsProto.internal_static_ics23_CompressedExistenceProof_descriptor;
     }
 
-    @java.lang.Override
-    public com.ics23.CompressedExistenceProof getDefaultInstanceForType() {
-      return com.ics23.CompressedExistenceProof.getDefaultInstance();
+    @Override
+    public CompressedExistenceProof getDefaultInstanceForType() {
+      return CompressedExistenceProof.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ics23.CompressedExistenceProof build() {
-      com.ics23.CompressedExistenceProof result = buildPartial();
+    @Override
+    public CompressedExistenceProof build() {
+      CompressedExistenceProof result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ics23.CompressedExistenceProof buildPartial() {
-      com.ics23.CompressedExistenceProof result = new com.ics23.CompressedExistenceProof(this);
+    @Override
+    public CompressedExistenceProof buildPartial() {
+      CompressedExistenceProof result = new CompressedExistenceProof(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.ics23.CompressedExistenceProof result) {
+    private void buildPartialRepeatedFields(CompressedExistenceProof result) {
       if (((bitField0_ & 0x00000008) != 0)) {
         path_.makeImmutable();
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -422,7 +422,7 @@ private static final long serialVersionUID = 0L;
       result.path_ = path_;
     }
 
-    private void buildPartial0(com.ics23.CompressedExistenceProof result) {
+    private void buildPartial0(CompressedExistenceProof result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.key_ = key_;
@@ -437,50 +437,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ics23.CompressedExistenceProof) {
-        return mergeFrom((com.ics23.CompressedExistenceProof)other);
+      if (other instanceof CompressedExistenceProof) {
+        return mergeFrom((CompressedExistenceProof)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ics23.CompressedExistenceProof other) {
-      if (other == com.ics23.CompressedExistenceProof.getDefaultInstance()) return this;
+    public Builder mergeFrom(CompressedExistenceProof other) {
+      if (other == CompressedExistenceProof.getDefaultInstance()) return this;
       if (other.getKey() != com.google.protobuf.ByteString.EMPTY) {
         setKey(other.getKey());
       }
@@ -505,18 +505,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -581,7 +581,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes key = 1 [json_name = "key"];</code>
      * @return The key.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getKey() {
       return key_;
     }
@@ -613,7 +613,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes value = 2 [json_name = "value"];</code>
      * @return The value.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getValue() {
       return value_;
     }
@@ -640,9 +640,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.ics23.LeafOp leaf_;
+    private LeafOp leaf_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ics23.LeafOp, com.ics23.LeafOp.Builder, com.ics23.LeafOpOrBuilder> leafBuilder_;
+        LeafOp, LeafOp.Builder, LeafOpOrBuilder> leafBuilder_;
     /**
      * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
      * @return Whether the leaf field is set.
@@ -654,9 +654,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
      * @return The leaf.
      */
-    public com.ics23.LeafOp getLeaf() {
+    public LeafOp getLeaf() {
       if (leafBuilder_ == null) {
-        return leaf_ == null ? com.ics23.LeafOp.getDefaultInstance() : leaf_;
+        return leaf_ == null ? LeafOp.getDefaultInstance() : leaf_;
       } else {
         return leafBuilder_.getMessage();
       }
@@ -664,7 +664,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
      */
-    public Builder setLeaf(com.ics23.LeafOp value) {
+    public Builder setLeaf(LeafOp value) {
       if (leafBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -681,7 +681,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
      */
     public Builder setLeaf(
-        com.ics23.LeafOp.Builder builderForValue) {
+        LeafOp.Builder builderForValue) {
       if (leafBuilder_ == null) {
         leaf_ = builderForValue.build();
       } else {
@@ -694,11 +694,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
      */
-    public Builder mergeLeaf(com.ics23.LeafOp value) {
+    public Builder mergeLeaf(LeafOp value) {
       if (leafBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0) &&
           leaf_ != null &&
-          leaf_ != com.ics23.LeafOp.getDefaultInstance()) {
+          leaf_ != LeafOp.getDefaultInstance()) {
           getLeafBuilder().mergeFrom(value);
         } else {
           leaf_ = value;
@@ -726,7 +726,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
      */
-    public com.ics23.LeafOp.Builder getLeafBuilder() {
+    public LeafOp.Builder getLeafBuilder() {
       bitField0_ |= 0x00000004;
       onChanged();
       return getLeafFieldBuilder().getBuilder();
@@ -734,23 +734,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
      */
-    public com.ics23.LeafOpOrBuilder getLeafOrBuilder() {
+    public LeafOpOrBuilder getLeafOrBuilder() {
       if (leafBuilder_ != null) {
         return leafBuilder_.getMessageOrBuilder();
       } else {
         return leaf_ == null ?
-            com.ics23.LeafOp.getDefaultInstance() : leaf_;
+            LeafOp.getDefaultInstance() : leaf_;
       }
     }
     /**
      * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ics23.LeafOp, com.ics23.LeafOp.Builder, com.ics23.LeafOpOrBuilder> 
+        LeafOp, LeafOp.Builder, LeafOpOrBuilder>
         getLeafFieldBuilder() {
       if (leafBuilder_ == null) {
         leafBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.ics23.LeafOp, com.ics23.LeafOp.Builder, com.ics23.LeafOpOrBuilder>(
+            LeafOp, LeafOp.Builder, LeafOpOrBuilder>(
                 getLeaf(),
                 getParentForChildren(),
                 isClean());
@@ -774,7 +774,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated int32 path = 4 [json_name = "path"];</code>
      * @return A list containing the path.
      */
-    public java.util.List<java.lang.Integer>
+    public java.util.List<Integer>
         getPathList() {
       return ((bitField0_ & 0x00000008) != 0) ?
                java.util.Collections.unmodifiableList(path_) : path_;
@@ -846,7 +846,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addAllPath(
-        java.lang.Iterable<? extends java.lang.Integer> values) {
+        Iterable<? extends Integer> values) {
       ensurePathIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, path_);
@@ -867,13 +867,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -884,18 +884,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ics23.CompressedExistenceProof)
-  private static final com.ics23.CompressedExistenceProof DEFAULT_INSTANCE;
+  private static final CompressedExistenceProof DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ics23.CompressedExistenceProof();
+    DEFAULT_INSTANCE = new CompressedExistenceProof();
   }
 
-  public static com.ics23.CompressedExistenceProof getDefaultInstance() {
+  public static CompressedExistenceProof getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<CompressedExistenceProof>
       PARSER = new com.google.protobuf.AbstractParser<CompressedExistenceProof>() {
-    @java.lang.Override
+    @Override
     public CompressedExistenceProof parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -919,13 +919,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<CompressedExistenceProof> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ics23.CompressedExistenceProof getDefaultInstanceForType() {
+  @Override
+  public CompressedExistenceProof getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -11,7 +11,7 @@ public interface StringDataOrBuilder extends
    * <code>string value = 1 [json_name = "value"];</code>
    * @return The value.
    */
-  java.lang.String getValue();
+  String getValue();
   /**
    * <code>string value = 1 [json_name = "value"];</code>
    * @return The bytes for value.

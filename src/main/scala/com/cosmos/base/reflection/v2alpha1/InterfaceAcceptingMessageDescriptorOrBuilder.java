@@ -15,7 +15,7 @@ public interface InterfaceAcceptingMessageDescriptorOrBuilder extends
    * <code>string fullname = 1 [json_name = "fullname"];</code>
    * @return The fullname.
    */
-  java.lang.String getFullname();
+  String getFullname();
   /**
    * <pre>
    * fullname is the protobuf fullname of the type containing the interface
@@ -37,7 +37,7 @@ public interface InterfaceAcceptingMessageDescriptorOrBuilder extends
    * <code>repeated string field_descriptor_names = 2 [json_name = "fieldDescriptorNames"];</code>
    * @return A list containing the fieldDescriptorNames.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getFieldDescriptorNamesList();
   /**
    * <pre>
@@ -61,7 +61,7 @@ public interface InterfaceAcceptingMessageDescriptorOrBuilder extends
    * @param index The index of the element to return.
    * @return The fieldDescriptorNames at the given index.
    */
-  java.lang.String getFieldDescriptorNames(int index);
+  String getFieldDescriptorNames(int index);
   /**
    * <pre>
    * field_descriptor_names is a list of the protobuf name (not fullname) of the field

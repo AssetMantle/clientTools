@@ -1,26 +1,28 @@
 package schema.data.base
 
-import commonUtilities.AttoNumber
 import com.data.{AnyData, DecData => protoDecData}
 import schema.data.Data
 import schema.id.base.{DataID, HashID, StringID}
+import utilities.AttoNumber
 
 case class DecData(value: AttoNumber) extends Data {
-  def getType: StringID = commonConstants.DataTypeID.DecDataTypeID
+  def getType: StringID = constants.Data.DecDataTypeID
 
-  def getID: DataID = DataID(typeID = commonConstants.DataTypeID.DecDataTypeID, hashID = this.generateHashID)
+  def getBondWeight: Int = constants.Data.DecDataWeight
+
+  def getDataID: DataID = DataID(typeID = constants.Data.DecDataTypeID, hashID = this.generateHashID)
 
   def zeroValue: Data = DecData(AttoNumber.zero)
 
-  def getBytes: Array[Byte] = this.value.getSortableDecBytes
+  def getBytes: Array[Byte] = this.value.toByteArray
 
-  def generateHashID: HashID = commonUtilities.ID.generateHashID(this.getBytes)
+  def generateHashID: HashID = if (this.value == AttoNumber.zero) utilities.ID.generateHashID() else utilities.ID.generateHashID(this.getBytes)
 
-  def asProtoDecData: protoDecData = protoDecData.newBuilder().setValue(this.value.toString).build()
+  def asProtoDecData: protoDecData = protoDecData.newBuilder().setValue(this.value.toPlainString).build()
 
   def toAnyData: AnyData = AnyData.newBuilder().setDecData(this.asProtoDecData).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoDecData.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoDecData.toByteString.toByteArray
 
   def viewString: String = this.value.toString
 }

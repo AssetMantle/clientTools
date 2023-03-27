@@ -27,7 +27,7 @@ public interface ResponseCheckTxOrBuilder extends
    * <code>string log = 3 [json_name = "log"];</code>
    * @return The log.
    */
-  java.lang.String getLog();
+  String getLog();
   /**
    * <pre>
    * nondeterministic
@@ -47,7 +47,7 @@ public interface ResponseCheckTxOrBuilder extends
    * <code>string info = 4 [json_name = "info"];</code>
    * @return The info.
    */
-  java.lang.String getInfo();
+  String getInfo();
   /**
    * <pre>
    * nondeterministic
@@ -74,12 +74,12 @@ public interface ResponseCheckTxOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.Event events = 7 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  java.util.List<com.tendermint.abci.Event> 
+  java.util.List<Event>
       getEventsList();
   /**
    * <code>repeated .tendermint.abci.Event events = 7 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  com.tendermint.abci.Event getEvents(int index);
+  Event getEvents(int index);
   /**
    * <code>repeated .tendermint.abci.Event events = 7 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
@@ -87,19 +87,19 @@ public interface ResponseCheckTxOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.Event events = 7 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  java.util.List<? extends com.tendermint.abci.EventOrBuilder> 
+  java.util.List<? extends EventOrBuilder>
       getEventsOrBuilderList();
   /**
    * <code>repeated .tendermint.abci.Event events = 7 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  com.tendermint.abci.EventOrBuilder getEventsOrBuilder(
+  EventOrBuilder getEventsOrBuilder(
       int index);
 
   /**
    * <code>string codespace = 8 [json_name = "codespace"];</code>
    * @return The codespace.
    */
-  java.lang.String getCodespace();
+  String getCodespace();
   /**
    * <code>string codespace = 8 [json_name = "codespace"];</code>
    * @return The bytes for codespace.

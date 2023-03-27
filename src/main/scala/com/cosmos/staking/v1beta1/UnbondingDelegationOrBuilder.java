@@ -15,7 +15,7 @@ public interface UnbondingDelegationOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  java.lang.String getDelegatorAddress();
+  String getDelegatorAddress();
   /**
    * <pre>
    * delegator_address is the bech32-encoded address of the delegator.
@@ -35,7 +35,7 @@ public interface UnbondingDelegationOrBuilder extends
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  java.lang.String getValidatorAddress();
+  String getValidatorAddress();
   /**
    * <pre>
    * validator_address is the bech32-encoded address of the validator.
@@ -54,7 +54,7 @@ public interface UnbondingDelegationOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegationEntry entries = 3 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.staking.v1beta1.UnbondingDelegationEntry> 
+  java.util.List<UnbondingDelegationEntry>
       getEntriesList();
   /**
    * <pre>
@@ -63,7 +63,7 @@ public interface UnbondingDelegationOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegationEntry entries = 3 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.UnbondingDelegationEntry getEntries(int index);
+  UnbondingDelegationEntry getEntries(int index);
   /**
    * <pre>
    * entries are the unbonding delegation entries.
@@ -79,7 +79,7 @@ public interface UnbondingDelegationOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegationEntry entries = 3 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.staking.v1beta1.UnbondingDelegationEntryOrBuilder> 
+  java.util.List<? extends UnbondingDelegationEntryOrBuilder>
       getEntriesOrBuilderList();
   /**
    * <pre>
@@ -88,6 +88,6 @@ public interface UnbondingDelegationOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegationEntry entries = 3 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.UnbondingDelegationEntryOrBuilder getEntriesOrBuilder(
+  UnbondingDelegationEntryOrBuilder getEntriesOrBuilder(
       int index);
 }

@@ -32,7 +32,7 @@ public final class KvProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\037cosmos/base/kv/v1beta1/kv.proto\022\026cosmo" +
       "s.base.kv.v1beta1\032\024gogoproto/gogo.proto\"" +
       "A\n\005Pairs\0228\n\005pairs\030\001 \003(\0132\034.cosmos.base.kv" +
@@ -55,13 +55,13 @@ public final class KvProto {
     internal_static_cosmos_base_kv_v1beta1_Pairs_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_kv_v1beta1_Pairs_descriptor,
-        new java.lang.String[] { "Pairs", });
+        new String[] { "Pairs", });
     internal_static_cosmos_base_kv_v1beta1_Pair_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_base_kv_v1beta1_Pair_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_kv_v1beta1_Pair_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new String[] { "Key", "Value", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);

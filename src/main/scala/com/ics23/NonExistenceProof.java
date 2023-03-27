@@ -26,24 +26,24 @@ private static final long serialVersionUID = 0L;
     key_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new NonExistenceProof();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ics23.ProofsProto.internal_static_ics23_NonExistenceProof_descriptor;
+    return ProofsProto.internal_static_ics23_NonExistenceProof_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ics23.ProofsProto.internal_static_ics23_NonExistenceProof_fieldAccessorTable
+    return ProofsProto.internal_static_ics23_NonExistenceProof_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ics23.NonExistenceProof.class, com.ics23.NonExistenceProof.Builder.class);
+            NonExistenceProof.class, Builder.class);
   }
 
   public static final int KEY_FIELD_NUMBER = 1;
@@ -56,18 +56,18 @@ private static final long serialVersionUID = 0L;
    * <code>bytes key = 1 [json_name = "key"];</code>
    * @return The key.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getKey() {
     return key_;
   }
 
   public static final int LEFT_FIELD_NUMBER = 2;
-  private com.ics23.ExistenceProof left_;
+  private ExistenceProof left_;
   /**
    * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
    * @return Whether the left field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasLeft() {
     return left_ != null;
   }
@@ -75,25 +75,25 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
    * @return The left.
    */
-  @java.lang.Override
-  public com.ics23.ExistenceProof getLeft() {
-    return left_ == null ? com.ics23.ExistenceProof.getDefaultInstance() : left_;
+  @Override
+  public ExistenceProof getLeft() {
+    return left_ == null ? ExistenceProof.getDefaultInstance() : left_;
   }
   /**
    * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
    */
-  @java.lang.Override
-  public com.ics23.ExistenceProofOrBuilder getLeftOrBuilder() {
-    return left_ == null ? com.ics23.ExistenceProof.getDefaultInstance() : left_;
+  @Override
+  public ExistenceProofOrBuilder getLeftOrBuilder() {
+    return left_ == null ? ExistenceProof.getDefaultInstance() : left_;
   }
 
   public static final int RIGHT_FIELD_NUMBER = 3;
-  private com.ics23.ExistenceProof right_;
+  private ExistenceProof right_;
   /**
    * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
    * @return Whether the right field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasRight() {
     return right_ != null;
   }
@@ -101,20 +101,20 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
    * @return The right.
    */
-  @java.lang.Override
-  public com.ics23.ExistenceProof getRight() {
-    return right_ == null ? com.ics23.ExistenceProof.getDefaultInstance() : right_;
+  @Override
+  public ExistenceProof getRight() {
+    return right_ == null ? ExistenceProof.getDefaultInstance() : right_;
   }
   /**
    * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
    */
-  @java.lang.Override
-  public com.ics23.ExistenceProofOrBuilder getRightOrBuilder() {
-    return right_ == null ? com.ics23.ExistenceProof.getDefaultInstance() : right_;
+  @Override
+  public ExistenceProofOrBuilder getRightOrBuilder() {
+    return right_ == null ? ExistenceProof.getDefaultInstance() : right_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -124,7 +124,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!key_.isEmpty()) {
@@ -139,7 +139,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -162,15 +162,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ics23.NonExistenceProof)) {
+    if (!(obj instanceof NonExistenceProof)) {
       return super.equals(obj);
     }
-    com.ics23.NonExistenceProof other = (com.ics23.NonExistenceProof) obj;
+    NonExistenceProof other = (NonExistenceProof) obj;
 
     if (!getKey()
         .equals(other.getKey())) return false;
@@ -188,7 +188,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -210,69 +210,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ics23.NonExistenceProof parseFrom(
+  public static NonExistenceProof parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.NonExistenceProof parseFrom(
+  public static NonExistenceProof parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.NonExistenceProof parseFrom(
+  public static NonExistenceProof parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.NonExistenceProof parseFrom(
+  public static NonExistenceProof parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.NonExistenceProof parseFrom(byte[] data)
+  public static NonExistenceProof parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.NonExistenceProof parseFrom(
+  public static NonExistenceProof parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.NonExistenceProof parseFrom(java.io.InputStream input)
+  public static NonExistenceProof parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.NonExistenceProof parseFrom(
+  public static NonExistenceProof parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.NonExistenceProof parseDelimitedFrom(java.io.InputStream input)
+  public static NonExistenceProof parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ics23.NonExistenceProof parseDelimitedFrom(
+  public static NonExistenceProof parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.NonExistenceProof parseFrom(
+  public static NonExistenceProof parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.NonExistenceProof parseFrom(
+  public static NonExistenceProof parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -280,23 +280,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ics23.NonExistenceProof prototype) {
+  public static Builder newBuilder(NonExistenceProof prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -313,18 +313,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ics23.NonExistenceProof)
-      com.ics23.NonExistenceProofOrBuilder {
+      NonExistenceProofOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ics23.ProofsProto.internal_static_ics23_NonExistenceProof_descriptor;
+      return ProofsProto.internal_static_ics23_NonExistenceProof_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ics23.ProofsProto.internal_static_ics23_NonExistenceProof_fieldAccessorTable
+      return ProofsProto.internal_static_ics23_NonExistenceProof_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ics23.NonExistenceProof.class, com.ics23.NonExistenceProof.Builder.class);
+              NonExistenceProof.class, Builder.class);
     }
 
     // Construct using com.ics23.NonExistenceProof.newBuilder()
@@ -333,11 +333,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -355,35 +355,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ics23.ProofsProto.internal_static_ics23_NonExistenceProof_descriptor;
+      return ProofsProto.internal_static_ics23_NonExistenceProof_descriptor;
     }
 
-    @java.lang.Override
-    public com.ics23.NonExistenceProof getDefaultInstanceForType() {
-      return com.ics23.NonExistenceProof.getDefaultInstance();
+    @Override
+    public NonExistenceProof getDefaultInstanceForType() {
+      return NonExistenceProof.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ics23.NonExistenceProof build() {
-      com.ics23.NonExistenceProof result = buildPartial();
+    @Override
+    public NonExistenceProof build() {
+      NonExistenceProof result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ics23.NonExistenceProof buildPartial() {
-      com.ics23.NonExistenceProof result = new com.ics23.NonExistenceProof(this);
+    @Override
+    public NonExistenceProof buildPartial() {
+      NonExistenceProof result = new NonExistenceProof(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ics23.NonExistenceProof result) {
+    private void buildPartial0(NonExistenceProof result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.key_ = key_;
@@ -400,50 +400,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ics23.NonExistenceProof) {
-        return mergeFrom((com.ics23.NonExistenceProof)other);
+      if (other instanceof NonExistenceProof) {
+        return mergeFrom((NonExistenceProof)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ics23.NonExistenceProof other) {
-      if (other == com.ics23.NonExistenceProof.getDefaultInstance()) return this;
+    public Builder mergeFrom(NonExistenceProof other) {
+      if (other == NonExistenceProof.getDefaultInstance()) return this;
       if (other.getKey() != com.google.protobuf.ByteString.EMPTY) {
         setKey(other.getKey());
       }
@@ -458,18 +458,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -524,7 +524,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes key = 1 [json_name = "key"];</code>
      * @return The key.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getKey() {
       return key_;
     }
@@ -559,9 +559,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.ics23.ExistenceProof left_;
+    private ExistenceProof left_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ics23.ExistenceProof, com.ics23.ExistenceProof.Builder, com.ics23.ExistenceProofOrBuilder> leftBuilder_;
+        ExistenceProof, ExistenceProof.Builder, ExistenceProofOrBuilder> leftBuilder_;
     /**
      * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
      * @return Whether the left field is set.
@@ -573,9 +573,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
      * @return The left.
      */
-    public com.ics23.ExistenceProof getLeft() {
+    public ExistenceProof getLeft() {
       if (leftBuilder_ == null) {
-        return left_ == null ? com.ics23.ExistenceProof.getDefaultInstance() : left_;
+        return left_ == null ? ExistenceProof.getDefaultInstance() : left_;
       } else {
         return leftBuilder_.getMessage();
       }
@@ -583,7 +583,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
      */
-    public Builder setLeft(com.ics23.ExistenceProof value) {
+    public Builder setLeft(ExistenceProof value) {
       if (leftBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -600,7 +600,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
      */
     public Builder setLeft(
-        com.ics23.ExistenceProof.Builder builderForValue) {
+        ExistenceProof.Builder builderForValue) {
       if (leftBuilder_ == null) {
         left_ = builderForValue.build();
       } else {
@@ -613,11 +613,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
      */
-    public Builder mergeLeft(com.ics23.ExistenceProof value) {
+    public Builder mergeLeft(ExistenceProof value) {
       if (leftBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           left_ != null &&
-          left_ != com.ics23.ExistenceProof.getDefaultInstance()) {
+          left_ != ExistenceProof.getDefaultInstance()) {
           getLeftBuilder().mergeFrom(value);
         } else {
           left_ = value;
@@ -645,7 +645,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
      */
-    public com.ics23.ExistenceProof.Builder getLeftBuilder() {
+    public ExistenceProof.Builder getLeftBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getLeftFieldBuilder().getBuilder();
@@ -653,23 +653,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
      */
-    public com.ics23.ExistenceProofOrBuilder getLeftOrBuilder() {
+    public ExistenceProofOrBuilder getLeftOrBuilder() {
       if (leftBuilder_ != null) {
         return leftBuilder_.getMessageOrBuilder();
       } else {
         return left_ == null ?
-            com.ics23.ExistenceProof.getDefaultInstance() : left_;
+            ExistenceProof.getDefaultInstance() : left_;
       }
     }
     /**
      * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ics23.ExistenceProof, com.ics23.ExistenceProof.Builder, com.ics23.ExistenceProofOrBuilder> 
+        ExistenceProof, ExistenceProof.Builder, ExistenceProofOrBuilder>
         getLeftFieldBuilder() {
       if (leftBuilder_ == null) {
         leftBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.ics23.ExistenceProof, com.ics23.ExistenceProof.Builder, com.ics23.ExistenceProofOrBuilder>(
+            ExistenceProof, ExistenceProof.Builder, ExistenceProofOrBuilder>(
                 getLeft(),
                 getParentForChildren(),
                 isClean());
@@ -678,9 +678,9 @@ private static final long serialVersionUID = 0L;
       return leftBuilder_;
     }
 
-    private com.ics23.ExistenceProof right_;
+    private ExistenceProof right_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ics23.ExistenceProof, com.ics23.ExistenceProof.Builder, com.ics23.ExistenceProofOrBuilder> rightBuilder_;
+        ExistenceProof, ExistenceProof.Builder, ExistenceProofOrBuilder> rightBuilder_;
     /**
      * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
      * @return Whether the right field is set.
@@ -692,9 +692,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
      * @return The right.
      */
-    public com.ics23.ExistenceProof getRight() {
+    public ExistenceProof getRight() {
       if (rightBuilder_ == null) {
-        return right_ == null ? com.ics23.ExistenceProof.getDefaultInstance() : right_;
+        return right_ == null ? ExistenceProof.getDefaultInstance() : right_;
       } else {
         return rightBuilder_.getMessage();
       }
@@ -702,7 +702,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
      */
-    public Builder setRight(com.ics23.ExistenceProof value) {
+    public Builder setRight(ExistenceProof value) {
       if (rightBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -719,7 +719,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
      */
     public Builder setRight(
-        com.ics23.ExistenceProof.Builder builderForValue) {
+        ExistenceProof.Builder builderForValue) {
       if (rightBuilder_ == null) {
         right_ = builderForValue.build();
       } else {
@@ -732,11 +732,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
      */
-    public Builder mergeRight(com.ics23.ExistenceProof value) {
+    public Builder mergeRight(ExistenceProof value) {
       if (rightBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0) &&
           right_ != null &&
-          right_ != com.ics23.ExistenceProof.getDefaultInstance()) {
+          right_ != ExistenceProof.getDefaultInstance()) {
           getRightBuilder().mergeFrom(value);
         } else {
           right_ = value;
@@ -764,7 +764,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
      */
-    public com.ics23.ExistenceProof.Builder getRightBuilder() {
+    public ExistenceProof.Builder getRightBuilder() {
       bitField0_ |= 0x00000004;
       onChanged();
       return getRightFieldBuilder().getBuilder();
@@ -772,23 +772,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
      */
-    public com.ics23.ExistenceProofOrBuilder getRightOrBuilder() {
+    public ExistenceProofOrBuilder getRightOrBuilder() {
       if (rightBuilder_ != null) {
         return rightBuilder_.getMessageOrBuilder();
       } else {
         return right_ == null ?
-            com.ics23.ExistenceProof.getDefaultInstance() : right_;
+            ExistenceProof.getDefaultInstance() : right_;
       }
     }
     /**
      * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ics23.ExistenceProof, com.ics23.ExistenceProof.Builder, com.ics23.ExistenceProofOrBuilder> 
+        ExistenceProof, ExistenceProof.Builder, ExistenceProofOrBuilder>
         getRightFieldBuilder() {
       if (rightBuilder_ == null) {
         rightBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.ics23.ExistenceProof, com.ics23.ExistenceProof.Builder, com.ics23.ExistenceProofOrBuilder>(
+            ExistenceProof, ExistenceProof.Builder, ExistenceProofOrBuilder>(
                 getRight(),
                 getParentForChildren(),
                 isClean());
@@ -796,13 +796,13 @@ private static final long serialVersionUID = 0L;
       }
       return rightBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -813,18 +813,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ics23.NonExistenceProof)
-  private static final com.ics23.NonExistenceProof DEFAULT_INSTANCE;
+  private static final NonExistenceProof DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ics23.NonExistenceProof();
+    DEFAULT_INSTANCE = new NonExistenceProof();
   }
 
-  public static com.ics23.NonExistenceProof getDefaultInstance() {
+  public static NonExistenceProof getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<NonExistenceProof>
       PARSER = new com.google.protobuf.AbstractParser<NonExistenceProof>() {
-    @java.lang.Override
+    @Override
     public NonExistenceProof parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -848,13 +848,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<NonExistenceProof> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ics23.NonExistenceProof getDefaultInstanceForType() {
+  @Override
+  public NonExistenceProof getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

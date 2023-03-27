@@ -11,7 +11,7 @@ public interface MsgChannelCloseInitOrBuilder extends
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The portId.
    */
-  java.lang.String getPortId();
+  String getPortId();
   /**
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The bytes for portId.
@@ -23,7 +23,7 @@ public interface MsgChannelCloseInitOrBuilder extends
    * <code>string channel_id = 2 [json_name = "channelId", (.gogoproto.moretags) = "yaml:&#92;"channel_id&#92;""];</code>
    * @return The channelId.
    */
-  java.lang.String getChannelId();
+  String getChannelId();
   /**
    * <code>string channel_id = 2 [json_name = "channelId", (.gogoproto.moretags) = "yaml:&#92;"channel_id&#92;""];</code>
    * @return The bytes for channelId.
@@ -35,7 +35,7 @@ public interface MsgChannelCloseInitOrBuilder extends
    * <code>string signer = 3 [json_name = "signer"];</code>
    * @return The signer.
    */
-  java.lang.String getSigner();
+  String getSigner();
   /**
    * <code>string signer = 3 [json_name = "signer"];</code>
    * @return The bytes for signer.

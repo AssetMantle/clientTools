@@ -11,7 +11,7 @@ public interface NetAddressOrBuilder extends
    * <code>string id = 1 [json_name = "id", (.gogoproto.customname) = "ID"];</code>
    * @return The id.
    */
-  java.lang.String getId();
+  String getId();
   /**
    * <code>string id = 1 [json_name = "id", (.gogoproto.customname) = "ID"];</code>
    * @return The bytes for id.
@@ -23,7 +23,7 @@ public interface NetAddressOrBuilder extends
    * <code>string ip = 2 [json_name = "ip", (.gogoproto.customname) = "IP"];</code>
    * @return The ip.
    */
-  java.lang.String getIp();
+  String getIp();
   /**
    * <code>string ip = 2 [json_name = "ip", (.gogoproto.customname) = "IP"];</code>
    * @return The bytes for ip.

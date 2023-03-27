@@ -25,24 +25,24 @@ private static final long serialVersionUID = 0L;
     authorizationType_ = 0;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new StakeAuthorization();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.staking.v1beta1.AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_descriptor;
+    return AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.staking.v1beta1.AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_fieldAccessorTable
+    return AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.staking.v1beta1.StakeAuthorization.class, com.cosmos.staking.v1beta1.StakeAuthorization.Builder.class);
+            StakeAuthorization.class, Builder.class);
   }
 
   public interface ValidatorsOrBuilder extends
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated string address = 1 [json_name = "address"];</code>
      * @return A list containing the address.
      */
-    java.util.List<java.lang.String>
+    java.util.List<String>
         getAddressList();
     /**
      * <code>repeated string address = 1 [json_name = "address"];</code>
@@ -65,7 +65,7 @@ private static final long serialVersionUID = 0L;
      * @param index The index of the element to return.
      * @return The address at the given index.
      */
-    java.lang.String getAddress(int index);
+    String getAddress(int index);
     /**
      * <code>repeated string address = 1 [json_name = "address"];</code>
      * @param index The index of the value to return.
@@ -94,24 +94,24 @@ private static final long serialVersionUID = 0L;
       address_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new Validators();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.staking.v1beta1.AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_descriptor;
+      return AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.staking.v1beta1.AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_fieldAccessorTable
+      return AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.staking.v1beta1.StakeAuthorization.Validators.class, com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder.class);
+              Validators.class, Builder.class);
     }
 
     public static final int ADDRESS_FIELD_NUMBER = 1;
@@ -137,7 +137,7 @@ private static final long serialVersionUID = 0L;
      * @param index The index of the element to return.
      * @return The address at the given index.
      */
-    public java.lang.String getAddress(int index) {
+    public String getAddress(int index) {
       return address_.get(index);
     }
     /**
@@ -151,7 +151,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -161,7 +161,7 @@ private static final long serialVersionUID = 0L;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < address_.size(); i++) {
@@ -170,7 +170,7 @@ private static final long serialVersionUID = 0L;
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -189,15 +189,15 @@ private static final long serialVersionUID = 0L;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.cosmos.staking.v1beta1.StakeAuthorization.Validators)) {
+      if (!(obj instanceof Validators)) {
         return super.equals(obj);
       }
-      com.cosmos.staking.v1beta1.StakeAuthorization.Validators other = (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) obj;
+      Validators other = (Validators) obj;
 
       if (!getAddressList()
           .equals(other.getAddressList())) return false;
@@ -205,7 +205,7 @@ private static final long serialVersionUID = 0L;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -221,69 +221,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseFrom(
+    public static Validators parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseFrom(
+    public static Validators parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseFrom(
+    public static Validators parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseFrom(
+    public static Validators parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseFrom(byte[] data)
+    public static Validators parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseFrom(
+    public static Validators parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseFrom(java.io.InputStream input)
+    public static Validators parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseFrom(
+    public static Validators parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseDelimitedFrom(java.io.InputStream input)
+    public static Validators parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseDelimitedFrom(
+    public static Validators parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseFrom(
+    public static Validators parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators parseFrom(
+    public static Validators parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -291,23 +291,23 @@ private static final long serialVersionUID = 0L;
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.cosmos.staking.v1beta1.StakeAuthorization.Validators prototype) {
+    public static Builder newBuilder(Validators prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -321,18 +321,18 @@ private static final long serialVersionUID = 0L;
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.StakeAuthorization.Validators)
-        com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder {
+        ValidatorsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.cosmos.staking.v1beta1.AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_descriptor;
+        return AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.cosmos.staking.v1beta1.AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_fieldAccessorTable
+        return AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.cosmos.staking.v1beta1.StakeAuthorization.Validators.class, com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder.class);
+                Validators.class, Builder.class);
       }
 
       // Construct using com.cosmos.staking.v1beta1.StakeAuthorization.Validators.newBuilder()
@@ -341,11 +341,11 @@ private static final long serialVersionUID = 0L;
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
@@ -354,36 +354,36 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.cosmos.staking.v1beta1.AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_descriptor;
+        return AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_descriptor;
       }
 
-      @java.lang.Override
-      public com.cosmos.staking.v1beta1.StakeAuthorization.Validators getDefaultInstanceForType() {
-        return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+      @Override
+      public Validators getDefaultInstanceForType() {
+        return Validators.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public com.cosmos.staking.v1beta1.StakeAuthorization.Validators build() {
-        com.cosmos.staking.v1beta1.StakeAuthorization.Validators result = buildPartial();
+      @Override
+      public Validators build() {
+        Validators result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public com.cosmos.staking.v1beta1.StakeAuthorization.Validators buildPartial() {
-        com.cosmos.staking.v1beta1.StakeAuthorization.Validators result = new com.cosmos.staking.v1beta1.StakeAuthorization.Validators(this);
+      @Override
+      public Validators buildPartial() {
+        Validators result = new Validators(this);
         buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartialRepeatedFields(com.cosmos.staking.v1beta1.StakeAuthorization.Validators result) {
+      private void buildPartialRepeatedFields(Validators result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           address_ = address_.getUnmodifiableView();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -391,54 +391,54 @@ private static final long serialVersionUID = 0L;
         result.address_ = address_;
       }
 
-      private void buildPartial0(com.cosmos.staking.v1beta1.StakeAuthorization.Validators result) {
+      private void buildPartial0(Validators result) {
         int from_bitField0_ = bitField0_;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.cosmos.staking.v1beta1.StakeAuthorization.Validators) {
-          return mergeFrom((com.cosmos.staking.v1beta1.StakeAuthorization.Validators)other);
+        if (other instanceof Validators) {
+          return mergeFrom((Validators)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.cosmos.staking.v1beta1.StakeAuthorization.Validators other) {
-        if (other == com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance()) return this;
+      public Builder mergeFrom(Validators other) {
+        if (other == Validators.getDefaultInstance()) return this;
         if (!other.address_.isEmpty()) {
           if (address_.isEmpty()) {
             address_ = other.address_;
@@ -454,18 +454,18 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -476,7 +476,7 @@ private static final long serialVersionUID = 0L;
                 done = true;
                 break;
               case 10: {
-                java.lang.String s = input.readStringRequireUtf8();
+                String s = input.readStringRequireUtf8();
                 ensureAddressIsMutable();
                 address_.add(s);
                 break;
@@ -525,7 +525,7 @@ private static final long serialVersionUID = 0L;
        * @param index The index of the element to return.
        * @return The address at the given index.
        */
-      public java.lang.String getAddress(int index) {
+      public String getAddress(int index) {
         return address_.get(index);
       }
       /**
@@ -544,7 +544,7 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setAddress(
-          int index, java.lang.String value) {
+          int index, String value) {
         if (value == null) { throw new NullPointerException(); }
         ensureAddressIsMutable();
         address_.set(index, value);
@@ -557,7 +557,7 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder addAddress(
-          java.lang.String value) {
+          String value) {
         if (value == null) { throw new NullPointerException(); }
         ensureAddressIsMutable();
         address_.add(value);
@@ -570,7 +570,7 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder addAllAddress(
-          java.lang.Iterable<java.lang.String> values) {
+          Iterable<String> values) {
         ensureAddressIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, address_);
@@ -601,13 +601,13 @@ private static final long serialVersionUID = 0L;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -618,18 +618,18 @@ private static final long serialVersionUID = 0L;
     }
 
     // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.StakeAuthorization.Validators)
-    private static final com.cosmos.staking.v1beta1.StakeAuthorization.Validators DEFAULT_INSTANCE;
+    private static final Validators DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.StakeAuthorization.Validators();
+      DEFAULT_INSTANCE = new Validators();
     }
 
-    public static com.cosmos.staking.v1beta1.StakeAuthorization.Validators getDefaultInstance() {
+    public static Validators getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Validators>
         PARSER = new com.google.protobuf.AbstractParser<Validators>() {
-      @java.lang.Override
+      @Override
       public Validators parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -653,13 +653,13 @@ private static final long serialVersionUID = 0L;
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Validators> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.StakeAuthorization.Validators getDefaultInstanceForType() {
+    @Override
+    public Validators getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -667,10 +667,10 @@ private static final long serialVersionUID = 0L;
 
   private int validatorsCase_ = 0;
   @SuppressWarnings("serial")
-  private java.lang.Object validators_;
+  private Object validators_;
   public enum ValidatorsCase
       implements com.google.protobuf.Internal.EnumLite,
-          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+          InternalOneOfEnum {
     ALLOW_LIST(2),
     DENY_LIST(3),
     VALIDATORS_NOT_SET(0);
@@ -683,7 +683,7 @@ private static final long serialVersionUID = 0L;
      * @return The enum associated with the given number.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @java.lang.Deprecated
+    @Deprecated
     public static ValidatorsCase valueOf(int value) {
       return forNumber(value);
     }
@@ -718,7 +718,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.v1beta1.Coin max_tokens = 1 [json_name = "maxTokens", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coin"];</code>
    * @return Whether the maxTokens field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasMaxTokens() {
     return maxTokens_ != null;
   }
@@ -731,7 +731,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.v1beta1.Coin max_tokens = 1 [json_name = "maxTokens", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coin"];</code>
    * @return The maxTokens.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.Coin getMaxTokens() {
     return maxTokens_ == null ? com.cosmos.base.v1beta1.Coin.getDefaultInstance() : maxTokens_;
   }
@@ -743,7 +743,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.v1beta1.Coin max_tokens = 1 [json_name = "maxTokens", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coin"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.CoinOrBuilder getMaxTokensOrBuilder() {
     return maxTokens_ == null ? com.cosmos.base.v1beta1.Coin.getDefaultInstance() : maxTokens_;
   }
@@ -758,7 +758,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
    * @return Whether the allowList field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasAllowList() {
     return validatorsCase_ == 2;
   }
@@ -771,12 +771,12 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
    * @return The allowList.
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.StakeAuthorization.Validators getAllowList() {
+  @Override
+  public Validators getAllowList() {
     if (validatorsCase_ == 2) {
-       return (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_;
+       return (Validators) validators_;
     }
-    return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+    return Validators.getDefaultInstance();
   }
   /**
    * <pre>
@@ -786,12 +786,12 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder getAllowListOrBuilder() {
+  @Override
+  public ValidatorsOrBuilder getAllowListOrBuilder() {
     if (validatorsCase_ == 2) {
-       return (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_;
+       return (Validators) validators_;
     }
-    return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+    return Validators.getDefaultInstance();
   }
 
   public static final int DENY_LIST_FIELD_NUMBER = 3;
@@ -803,7 +803,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
    * @return Whether the denyList field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasDenyList() {
     return validatorsCase_ == 3;
   }
@@ -815,12 +815,12 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
    * @return The denyList.
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.StakeAuthorization.Validators getDenyList() {
+  @Override
+  public Validators getDenyList() {
     if (validatorsCase_ == 3) {
-       return (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_;
+       return (Validators) validators_;
     }
-    return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+    return Validators.getDefaultInstance();
   }
   /**
    * <pre>
@@ -829,12 +829,12 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder getDenyListOrBuilder() {
+  @Override
+  public ValidatorsOrBuilder getDenyListOrBuilder() {
     if (validatorsCase_ == 3) {
-       return (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_;
+       return (Validators) validators_;
     }
-    return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+    return Validators.getDefaultInstance();
   }
 
   public static final int AUTHORIZATION_TYPE_FIELD_NUMBER = 4;
@@ -847,7 +847,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.AuthorizationType authorization_type = 4 [json_name = "authorizationType"];</code>
    * @return The enum numeric value on the wire for authorizationType.
    */
-  @java.lang.Override public int getAuthorizationTypeValue() {
+  @Override public int getAuthorizationTypeValue() {
     return authorizationType_;
   }
   /**
@@ -858,13 +858,13 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.AuthorizationType authorization_type = 4 [json_name = "authorizationType"];</code>
    * @return The authorizationType.
    */
-  @java.lang.Override public com.cosmos.staking.v1beta1.AuthorizationType getAuthorizationType() {
-    com.cosmos.staking.v1beta1.AuthorizationType result = com.cosmos.staking.v1beta1.AuthorizationType.forNumber(authorizationType_);
-    return result == null ? com.cosmos.staking.v1beta1.AuthorizationType.UNRECOGNIZED : result;
+  @Override public AuthorizationType getAuthorizationType() {
+    AuthorizationType result = AuthorizationType.forNumber(authorizationType_);
+    return result == null ? AuthorizationType.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -874,25 +874,25 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (maxTokens_ != null) {
       output.writeMessage(1, getMaxTokens());
     }
     if (validatorsCase_ == 2) {
-      output.writeMessage(2, (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_);
+      output.writeMessage(2, (Validators) validators_);
     }
     if (validatorsCase_ == 3) {
-      output.writeMessage(3, (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_);
+      output.writeMessage(3, (Validators) validators_);
     }
-    if (authorizationType_ != com.cosmos.staking.v1beta1.AuthorizationType.AUTHORIZATION_TYPE_UNSPECIFIED.getNumber()) {
+    if (authorizationType_ != AuthorizationType.AUTHORIZATION_TYPE_UNSPECIFIED.getNumber()) {
       output.writeEnum(4, authorizationType_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -904,13 +904,13 @@ private static final long serialVersionUID = 0L;
     }
     if (validatorsCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_);
+        .computeMessageSize(2, (Validators) validators_);
     }
     if (validatorsCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_);
+        .computeMessageSize(3, (Validators) validators_);
     }
-    if (authorizationType_ != com.cosmos.staking.v1beta1.AuthorizationType.AUTHORIZATION_TYPE_UNSPECIFIED.getNumber()) {
+    if (authorizationType_ != AuthorizationType.AUTHORIZATION_TYPE_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(4, authorizationType_);
     }
@@ -919,15 +919,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.staking.v1beta1.StakeAuthorization)) {
+    if (!(obj instanceof StakeAuthorization)) {
       return super.equals(obj);
     }
-    com.cosmos.staking.v1beta1.StakeAuthorization other = (com.cosmos.staking.v1beta1.StakeAuthorization) obj;
+    StakeAuthorization other = (StakeAuthorization) obj;
 
     if (hasMaxTokens() != other.hasMaxTokens()) return false;
     if (hasMaxTokens()) {
@@ -952,7 +952,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -982,69 +982,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseFrom(
+  public static StakeAuthorization parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseFrom(
+  public static StakeAuthorization parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseFrom(
+  public static StakeAuthorization parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseFrom(
+  public static StakeAuthorization parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseFrom(byte[] data)
+  public static StakeAuthorization parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseFrom(
+  public static StakeAuthorization parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseFrom(java.io.InputStream input)
+  public static StakeAuthorization parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseFrom(
+  public static StakeAuthorization parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseDelimitedFrom(java.io.InputStream input)
+  public static StakeAuthorization parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseDelimitedFrom(
+  public static StakeAuthorization parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseFrom(
+  public static StakeAuthorization parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.StakeAuthorization parseFrom(
+  public static StakeAuthorization parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -1052,23 +1052,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.staking.v1beta1.StakeAuthorization prototype) {
+  public static Builder newBuilder(StakeAuthorization prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -1084,18 +1084,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.StakeAuthorization)
-      com.cosmos.staking.v1beta1.StakeAuthorizationOrBuilder {
+      StakeAuthorizationOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.staking.v1beta1.AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_descriptor;
+      return AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.staking.v1beta1.AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_fieldAccessorTable
+      return AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.staking.v1beta1.StakeAuthorization.class, com.cosmos.staking.v1beta1.StakeAuthorization.Builder.class);
+              StakeAuthorization.class, Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.StakeAuthorization.newBuilder()
@@ -1104,11 +1104,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -1129,36 +1129,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.staking.v1beta1.AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_descriptor;
+      return AuthzProto.internal_static_cosmos_staking_v1beta1_StakeAuthorization_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.StakeAuthorization getDefaultInstanceForType() {
-      return com.cosmos.staking.v1beta1.StakeAuthorization.getDefaultInstance();
+    @Override
+    public StakeAuthorization getDefaultInstanceForType() {
+      return StakeAuthorization.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.StakeAuthorization build() {
-      com.cosmos.staking.v1beta1.StakeAuthorization result = buildPartial();
+    @Override
+    public StakeAuthorization build() {
+      StakeAuthorization result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.StakeAuthorization buildPartial() {
-      com.cosmos.staking.v1beta1.StakeAuthorization result = new com.cosmos.staking.v1beta1.StakeAuthorization(this);
+    @Override
+    public StakeAuthorization buildPartial() {
+      StakeAuthorization result = new StakeAuthorization(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       buildPartialOneofs(result);
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.staking.v1beta1.StakeAuthorization result) {
+    private void buildPartial0(StakeAuthorization result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.maxTokens_ = maxTokensBuilder_ == null
@@ -1170,7 +1170,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartialOneofs(com.cosmos.staking.v1beta1.StakeAuthorization result) {
+    private void buildPartialOneofs(StakeAuthorization result) {
       result.validatorsCase_ = validatorsCase_;
       result.validators_ = this.validators_;
       if (validatorsCase_ == 2 &&
@@ -1183,50 +1183,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.staking.v1beta1.StakeAuthorization) {
-        return mergeFrom((com.cosmos.staking.v1beta1.StakeAuthorization)other);
+      if (other instanceof StakeAuthorization) {
+        return mergeFrom((StakeAuthorization)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.staking.v1beta1.StakeAuthorization other) {
-      if (other == com.cosmos.staking.v1beta1.StakeAuthorization.getDefaultInstance()) return this;
+    public Builder mergeFrom(StakeAuthorization other) {
+      if (other == StakeAuthorization.getDefaultInstance()) return this;
       if (other.hasMaxTokens()) {
         mergeMaxTokens(other.getMaxTokens());
       }
@@ -1251,18 +1251,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -1314,7 +1314,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int validatorsCase_ = 0;
-    private java.lang.Object validators_;
+    private Object validators_;
     public ValidatorsCase
         getValidatorsCase() {
       return ValidatorsCase.forNumber(
@@ -1495,7 +1495,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.staking.v1beta1.StakeAuthorization.Validators, com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder, com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder> allowListBuilder_;
+        Validators, Validators.Builder, ValidatorsOrBuilder> allowListBuilder_;
     /**
      * <pre>
      * allow_list specifies list of validator addresses to whom grantee can delegate tokens on behalf of granter's
@@ -1505,7 +1505,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
      * @return Whether the allowList field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasAllowList() {
       return validatorsCase_ == 2;
     }
@@ -1518,18 +1518,18 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
      * @return The allowList.
      */
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.StakeAuthorization.Validators getAllowList() {
+    @Override
+    public Validators getAllowList() {
       if (allowListBuilder_ == null) {
         if (validatorsCase_ == 2) {
-          return (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_;
+          return (Validators) validators_;
         }
-        return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+        return Validators.getDefaultInstance();
       } else {
         if (validatorsCase_ == 2) {
           return allowListBuilder_.getMessage();
         }
-        return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+        return Validators.getDefaultInstance();
       }
     }
     /**
@@ -1540,7 +1540,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
      */
-    public Builder setAllowList(com.cosmos.staking.v1beta1.StakeAuthorization.Validators value) {
+    public Builder setAllowList(Validators value) {
       if (allowListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1562,7 +1562,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
      */
     public Builder setAllowList(
-        com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder builderForValue) {
+        Validators.Builder builderForValue) {
       if (allowListBuilder_ == null) {
         validators_ = builderForValue.build();
         onChanged();
@@ -1580,11 +1580,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
      */
-    public Builder mergeAllowList(com.cosmos.staking.v1beta1.StakeAuthorization.Validators value) {
+    public Builder mergeAllowList(Validators value) {
       if (allowListBuilder_ == null) {
         if (validatorsCase_ == 2 &&
-            validators_ != com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance()) {
-          validators_ = com.cosmos.staking.v1beta1.StakeAuthorization.Validators.newBuilder((com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_)
+            validators_ != Validators.getDefaultInstance()) {
+          validators_ = Validators.newBuilder((Validators) validators_)
               .mergeFrom(value).buildPartial();
         } else {
           validators_ = value;
@@ -1632,7 +1632,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
      */
-    public com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder getAllowListBuilder() {
+    public Validators.Builder getAllowListBuilder() {
       return getAllowListFieldBuilder().getBuilder();
     }
     /**
@@ -1643,15 +1643,15 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
      */
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder getAllowListOrBuilder() {
+    @Override
+    public ValidatorsOrBuilder getAllowListOrBuilder() {
       if ((validatorsCase_ == 2) && (allowListBuilder_ != null)) {
         return allowListBuilder_.getMessageOrBuilder();
       } else {
         if (validatorsCase_ == 2) {
-          return (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_;
+          return (Validators) validators_;
         }
-        return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+        return Validators.getDefaultInstance();
       }
     }
     /**
@@ -1663,15 +1663,15 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.staking.v1beta1.StakeAuthorization.Validators, com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder, com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder> 
+        Validators, Validators.Builder, ValidatorsOrBuilder>
         getAllowListFieldBuilder() {
       if (allowListBuilder_ == null) {
         if (!(validatorsCase_ == 2)) {
-          validators_ = com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+          validators_ = Validators.getDefaultInstance();
         }
         allowListBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.staking.v1beta1.StakeAuthorization.Validators, com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder, com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder>(
-                (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_,
+            Validators, Validators.Builder, ValidatorsOrBuilder>(
+                (Validators) validators_,
                 getParentForChildren(),
                 isClean());
         validators_ = null;
@@ -1682,7 +1682,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.staking.v1beta1.StakeAuthorization.Validators, com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder, com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder> denyListBuilder_;
+        Validators, Validators.Builder, ValidatorsOrBuilder> denyListBuilder_;
     /**
      * <pre>
      * deny_list specifies list of validator addresses to whom grantee can not delegate tokens.
@@ -1691,7 +1691,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
      * @return Whether the denyList field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasDenyList() {
       return validatorsCase_ == 3;
     }
@@ -1703,18 +1703,18 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
      * @return The denyList.
      */
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.StakeAuthorization.Validators getDenyList() {
+    @Override
+    public Validators getDenyList() {
       if (denyListBuilder_ == null) {
         if (validatorsCase_ == 3) {
-          return (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_;
+          return (Validators) validators_;
         }
-        return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+        return Validators.getDefaultInstance();
       } else {
         if (validatorsCase_ == 3) {
           return denyListBuilder_.getMessage();
         }
-        return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+        return Validators.getDefaultInstance();
       }
     }
     /**
@@ -1724,7 +1724,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
      */
-    public Builder setDenyList(com.cosmos.staking.v1beta1.StakeAuthorization.Validators value) {
+    public Builder setDenyList(Validators value) {
       if (denyListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1745,7 +1745,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
      */
     public Builder setDenyList(
-        com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder builderForValue) {
+        Validators.Builder builderForValue) {
       if (denyListBuilder_ == null) {
         validators_ = builderForValue.build();
         onChanged();
@@ -1762,11 +1762,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
      */
-    public Builder mergeDenyList(com.cosmos.staking.v1beta1.StakeAuthorization.Validators value) {
+    public Builder mergeDenyList(Validators value) {
       if (denyListBuilder_ == null) {
         if (validatorsCase_ == 3 &&
-            validators_ != com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance()) {
-          validators_ = com.cosmos.staking.v1beta1.StakeAuthorization.Validators.newBuilder((com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_)
+            validators_ != Validators.getDefaultInstance()) {
+          validators_ = Validators.newBuilder((Validators) validators_)
               .mergeFrom(value).buildPartial();
         } else {
           validators_ = value;
@@ -1812,7 +1812,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
      */
-    public com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder getDenyListBuilder() {
+    public Validators.Builder getDenyListBuilder() {
       return getDenyListFieldBuilder().getBuilder();
     }
     /**
@@ -1822,15 +1822,15 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
      */
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder getDenyListOrBuilder() {
+    @Override
+    public ValidatorsOrBuilder getDenyListOrBuilder() {
       if ((validatorsCase_ == 3) && (denyListBuilder_ != null)) {
         return denyListBuilder_.getMessageOrBuilder();
       } else {
         if (validatorsCase_ == 3) {
-          return (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_;
+          return (Validators) validators_;
         }
-        return com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+        return Validators.getDefaultInstance();
       }
     }
     /**
@@ -1841,15 +1841,15 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.staking.v1beta1.StakeAuthorization.Validators, com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder, com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder> 
+        Validators, Validators.Builder, ValidatorsOrBuilder>
         getDenyListFieldBuilder() {
       if (denyListBuilder_ == null) {
         if (!(validatorsCase_ == 3)) {
-          validators_ = com.cosmos.staking.v1beta1.StakeAuthorization.Validators.getDefaultInstance();
+          validators_ = Validators.getDefaultInstance();
         }
         denyListBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.staking.v1beta1.StakeAuthorization.Validators, com.cosmos.staking.v1beta1.StakeAuthorization.Validators.Builder, com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder>(
-                (com.cosmos.staking.v1beta1.StakeAuthorization.Validators) validators_,
+            Validators, Validators.Builder, ValidatorsOrBuilder>(
+                (Validators) validators_,
                 getParentForChildren(),
                 isClean());
         validators_ = null;
@@ -1868,7 +1868,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.AuthorizationType authorization_type = 4 [json_name = "authorizationType"];</code>
      * @return The enum numeric value on the wire for authorizationType.
      */
-    @java.lang.Override public int getAuthorizationTypeValue() {
+    @Override public int getAuthorizationTypeValue() {
       return authorizationType_;
     }
     /**
@@ -1894,10 +1894,10 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.AuthorizationType authorization_type = 4 [json_name = "authorizationType"];</code>
      * @return The authorizationType.
      */
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.AuthorizationType getAuthorizationType() {
-      com.cosmos.staking.v1beta1.AuthorizationType result = com.cosmos.staking.v1beta1.AuthorizationType.forNumber(authorizationType_);
-      return result == null ? com.cosmos.staking.v1beta1.AuthorizationType.UNRECOGNIZED : result;
+    @Override
+    public AuthorizationType getAuthorizationType() {
+      AuthorizationType result = AuthorizationType.forNumber(authorizationType_);
+      return result == null ? AuthorizationType.UNRECOGNIZED : result;
     }
     /**
      * <pre>
@@ -1908,7 +1908,7 @@ private static final long serialVersionUID = 0L;
      * @param value The authorizationType to set.
      * @return This builder for chaining.
      */
-    public Builder setAuthorizationType(com.cosmos.staking.v1beta1.AuthorizationType value) {
+    public Builder setAuthorizationType(AuthorizationType value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -1931,13 +1931,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1948,18 +1948,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.StakeAuthorization)
-  private static final com.cosmos.staking.v1beta1.StakeAuthorization DEFAULT_INSTANCE;
+  private static final StakeAuthorization DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.StakeAuthorization();
+    DEFAULT_INSTANCE = new StakeAuthorization();
   }
 
-  public static com.cosmos.staking.v1beta1.StakeAuthorization getDefaultInstance() {
+  public static StakeAuthorization getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<StakeAuthorization>
       PARSER = new com.google.protobuf.AbstractParser<StakeAuthorization>() {
-    @java.lang.Override
+    @Override
     public StakeAuthorization parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1983,13 +1983,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<StakeAuthorization> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.StakeAuthorization getDefaultInstanceForType() {
+  @Override
+  public StakeAuthorization getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

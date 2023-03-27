@@ -24,33 +24,33 @@ private static final long serialVersionUID = 0L;
     signer_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgTimeout();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgTimeout_descriptor;
+    return TxProto.internal_static_ibc_core_channel_v1_MsgTimeout_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgTimeout_fieldAccessorTable
+    return TxProto.internal_static_ibc_core_channel_v1_MsgTimeout_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.channel.v1.MsgTimeout.class, com.ibc.core.channel.v1.MsgTimeout.Builder.class);
+            MsgTimeout.class, Builder.class);
   }
 
   public static final int PACKET_FIELD_NUMBER = 1;
-  private com.ibc.core.channel.v1.Packet packet_;
+  private Packet packet_;
   /**
    * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
    * @return Whether the packet field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPacket() {
     return packet_ != null;
   }
@@ -58,16 +58,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
    * @return The packet.
    */
-  @java.lang.Override
-  public com.ibc.core.channel.v1.Packet getPacket() {
-    return packet_ == null ? com.ibc.core.channel.v1.Packet.getDefaultInstance() : packet_;
+  @Override
+  public Packet getPacket() {
+    return packet_ == null ? Packet.getDefaultInstance() : packet_;
   }
   /**
    * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.ibc.core.channel.v1.PacketOrBuilder getPacketOrBuilder() {
-    return packet_ == null ? com.ibc.core.channel.v1.Packet.getDefaultInstance() : packet_;
+  @Override
+  public PacketOrBuilder getPacketOrBuilder() {
+    return packet_ == null ? Packet.getDefaultInstance() : packet_;
   }
 
   public static final int PROOF_UNRECEIVED_FIELD_NUMBER = 2;
@@ -76,7 +76,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes proof_unreceived = 2 [json_name = "proofUnreceived", (.gogoproto.moretags) = "yaml:&#92;"proof_unreceived&#92;""];</code>
    * @return The proofUnreceived.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getProofUnreceived() {
     return proofUnreceived_;
   }
@@ -87,7 +87,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"proof_height&#92;""];</code>
    * @return Whether the proofHeight field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasProofHeight() {
     return proofHeight_ != null;
   }
@@ -95,14 +95,14 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"proof_height&#92;""];</code>
    * @return The proofHeight.
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.Height getProofHeight() {
     return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
   }
   /**
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"proof_height&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.HeightOrBuilder getProofHeightOrBuilder() {
     return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
   }
@@ -113,27 +113,27 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 next_sequence_recv = 4 [json_name = "nextSequenceRecv", (.gogoproto.moretags) = "yaml:&#92;"next_sequence_recv&#92;""];</code>
    * @return The nextSequenceRecv.
    */
-  @java.lang.Override
+  @Override
   public long getNextSequenceRecv() {
     return nextSequenceRecv_;
   }
 
   public static final int SIGNER_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object signer_ = "";
+  private volatile Object signer_ = "";
   /**
    * <code>string signer = 5 [json_name = "signer"];</code>
    * @return The signer.
    */
-  @java.lang.Override
-  public java.lang.String getSigner() {
-    java.lang.Object ref = signer_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getSigner() {
+    Object ref = signer_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       signer_ = s;
       return s;
     }
@@ -142,14 +142,14 @@ private static final long serialVersionUID = 0L;
    * <code>string signer = 5 [json_name = "signer"];</code>
    * @return The bytes for signer.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getSignerBytes() {
-    java.lang.Object ref = signer_;
-    if (ref instanceof java.lang.String) {
+    Object ref = signer_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       signer_ = b;
       return b;
     } else {
@@ -158,7 +158,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -168,7 +168,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (packet_ != null) {
@@ -189,7 +189,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -219,15 +219,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.channel.v1.MsgTimeout)) {
+    if (!(obj instanceof MsgTimeout)) {
       return super.equals(obj);
     }
-    com.ibc.core.channel.v1.MsgTimeout other = (com.ibc.core.channel.v1.MsgTimeout) obj;
+    MsgTimeout other = (MsgTimeout) obj;
 
     if (hasPacket() != other.hasPacket()) return false;
     if (hasPacket()) {
@@ -249,7 +249,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -276,69 +276,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.channel.v1.MsgTimeout parseFrom(
+  public static MsgTimeout parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseFrom(
+  public static MsgTimeout parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseFrom(
+  public static MsgTimeout parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseFrom(
+  public static MsgTimeout parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseFrom(byte[] data)
+  public static MsgTimeout parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseFrom(
+  public static MsgTimeout parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseFrom(java.io.InputStream input)
+  public static MsgTimeout parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseFrom(
+  public static MsgTimeout parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseDelimitedFrom(java.io.InputStream input)
+  public static MsgTimeout parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseDelimitedFrom(
+  public static MsgTimeout parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseFrom(
+  public static MsgTimeout parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.MsgTimeout parseFrom(
+  public static MsgTimeout parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -346,23 +346,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.channel.v1.MsgTimeout prototype) {
+  public static Builder newBuilder(MsgTimeout prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -376,18 +376,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.channel.v1.MsgTimeout)
-      com.ibc.core.channel.v1.MsgTimeoutOrBuilder {
+      MsgTimeoutOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgTimeout_descriptor;
+      return TxProto.internal_static_ibc_core_channel_v1_MsgTimeout_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgTimeout_fieldAccessorTable
+      return TxProto.internal_static_ibc_core_channel_v1_MsgTimeout_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.channel.v1.MsgTimeout.class, com.ibc.core.channel.v1.MsgTimeout.Builder.class);
+              MsgTimeout.class, Builder.class);
     }
 
     // Construct using com.ibc.core.channel.v1.MsgTimeout.newBuilder()
@@ -396,11 +396,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -420,35 +420,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgTimeout_descriptor;
+      return TxProto.internal_static_ibc_core_channel_v1_MsgTimeout_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.MsgTimeout getDefaultInstanceForType() {
-      return com.ibc.core.channel.v1.MsgTimeout.getDefaultInstance();
+    @Override
+    public MsgTimeout getDefaultInstanceForType() {
+      return MsgTimeout.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.MsgTimeout build() {
-      com.ibc.core.channel.v1.MsgTimeout result = buildPartial();
+    @Override
+    public MsgTimeout build() {
+      MsgTimeout result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.MsgTimeout buildPartial() {
-      com.ibc.core.channel.v1.MsgTimeout result = new com.ibc.core.channel.v1.MsgTimeout(this);
+    @Override
+    public MsgTimeout buildPartial() {
+      MsgTimeout result = new MsgTimeout(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.core.channel.v1.MsgTimeout result) {
+    private void buildPartial0(MsgTimeout result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.packet_ = packetBuilder_ == null
@@ -471,50 +471,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.channel.v1.MsgTimeout) {
-        return mergeFrom((com.ibc.core.channel.v1.MsgTimeout)other);
+      if (other instanceof MsgTimeout) {
+        return mergeFrom((MsgTimeout)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.channel.v1.MsgTimeout other) {
-      if (other == com.ibc.core.channel.v1.MsgTimeout.getDefaultInstance()) return this;
+    public Builder mergeFrom(MsgTimeout other) {
+      if (other == MsgTimeout.getDefaultInstance()) return this;
       if (other.hasPacket()) {
         mergePacket(other.getPacket());
       }
@@ -537,18 +537,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -604,9 +604,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.ibc.core.channel.v1.Packet packet_;
+    private Packet packet_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ibc.core.channel.v1.Packet, com.ibc.core.channel.v1.Packet.Builder, com.ibc.core.channel.v1.PacketOrBuilder> packetBuilder_;
+        Packet, Packet.Builder, PacketOrBuilder> packetBuilder_;
     /**
      * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
      * @return Whether the packet field is set.
@@ -618,9 +618,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
      * @return The packet.
      */
-    public com.ibc.core.channel.v1.Packet getPacket() {
+    public Packet getPacket() {
       if (packetBuilder_ == null) {
-        return packet_ == null ? com.ibc.core.channel.v1.Packet.getDefaultInstance() : packet_;
+        return packet_ == null ? Packet.getDefaultInstance() : packet_;
       } else {
         return packetBuilder_.getMessage();
       }
@@ -628,7 +628,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setPacket(com.ibc.core.channel.v1.Packet value) {
+    public Builder setPacket(Packet value) {
       if (packetBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -645,7 +645,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
      */
     public Builder setPacket(
-        com.ibc.core.channel.v1.Packet.Builder builderForValue) {
+        Packet.Builder builderForValue) {
       if (packetBuilder_ == null) {
         packet_ = builderForValue.build();
       } else {
@@ -658,11 +658,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergePacket(com.ibc.core.channel.v1.Packet value) {
+    public Builder mergePacket(Packet value) {
       if (packetBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           packet_ != null &&
-          packet_ != com.ibc.core.channel.v1.Packet.getDefaultInstance()) {
+          packet_ != Packet.getDefaultInstance()) {
           getPacketBuilder().mergeFrom(value);
         } else {
           packet_ = value;
@@ -690,7 +690,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
      */
-    public com.ibc.core.channel.v1.Packet.Builder getPacketBuilder() {
+    public Packet.Builder getPacketBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getPacketFieldBuilder().getBuilder();
@@ -698,23 +698,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
      */
-    public com.ibc.core.channel.v1.PacketOrBuilder getPacketOrBuilder() {
+    public PacketOrBuilder getPacketOrBuilder() {
       if (packetBuilder_ != null) {
         return packetBuilder_.getMessageOrBuilder();
       } else {
         return packet_ == null ?
-            com.ibc.core.channel.v1.Packet.getDefaultInstance() : packet_;
+            Packet.getDefaultInstance() : packet_;
       }
     }
     /**
      * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ibc.core.channel.v1.Packet, com.ibc.core.channel.v1.Packet.Builder, com.ibc.core.channel.v1.PacketOrBuilder> 
+        Packet, Packet.Builder, PacketOrBuilder>
         getPacketFieldBuilder() {
       if (packetBuilder_ == null) {
         packetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.ibc.core.channel.v1.Packet, com.ibc.core.channel.v1.Packet.Builder, com.ibc.core.channel.v1.PacketOrBuilder>(
+            Packet, Packet.Builder, PacketOrBuilder>(
                 getPacket(),
                 getParentForChildren(),
                 isClean());
@@ -728,7 +728,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes proof_unreceived = 2 [json_name = "proofUnreceived", (.gogoproto.moretags) = "yaml:&#92;"proof_unreceived&#92;""];</code>
      * @return The proofUnreceived.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getProofUnreceived() {
       return proofUnreceived_;
     }
@@ -879,7 +879,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 next_sequence_recv = 4 [json_name = "nextSequenceRecv", (.gogoproto.moretags) = "yaml:&#92;"next_sequence_recv&#92;""];</code>
      * @return The nextSequenceRecv.
      */
-    @java.lang.Override
+    @Override
     public long getNextSequenceRecv() {
       return nextSequenceRecv_;
     }
@@ -906,21 +906,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object signer_ = "";
+    private Object signer_ = "";
     /**
      * <code>string signer = 5 [json_name = "signer"];</code>
      * @return The signer.
      */
-    public java.lang.String getSigner() {
-      java.lang.Object ref = signer_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getSigner() {
+      Object ref = signer_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         signer_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -929,11 +929,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getSignerBytes() {
-      java.lang.Object ref = signer_;
+      Object ref = signer_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         signer_ = b;
         return b;
       } else {
@@ -946,7 +946,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSigner(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       signer_ = value;
       bitField0_ |= 0x00000010;
@@ -977,13 +977,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -994,18 +994,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.channel.v1.MsgTimeout)
-  private static final com.ibc.core.channel.v1.MsgTimeout DEFAULT_INSTANCE;
+  private static final MsgTimeout DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.channel.v1.MsgTimeout();
+    DEFAULT_INSTANCE = new MsgTimeout();
   }
 
-  public static com.ibc.core.channel.v1.MsgTimeout getDefaultInstance() {
+  public static MsgTimeout getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgTimeout>
       PARSER = new com.google.protobuf.AbstractParser<MsgTimeout>() {
-    @java.lang.Override
+    @Override
     public MsgTimeout parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1029,13 +1029,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MsgTimeout> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.channel.v1.MsgTimeout getDefaultInstanceForType() {
+  @Override
+  public MsgTimeout getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

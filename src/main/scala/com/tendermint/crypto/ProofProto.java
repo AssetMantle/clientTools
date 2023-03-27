@@ -47,7 +47,7 @@ public final class ProofProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\035tendermint/crypto/proof.proto\022\021tenderm" +
       "int.crypto\032\024gogoproto/gogo.proto\"f\n\005Proo" +
       "f\022\024\n\005total\030\001 \001(\003R\005total\022\024\n\005index\030\002 \001(\003R\005" +
@@ -76,31 +76,31 @@ public final class ProofProto {
     internal_static_tendermint_crypto_Proof_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_crypto_Proof_descriptor,
-        new java.lang.String[] { "Total", "Index", "LeafHash", "Aunts", });
+        new String[] { "Total", "Index", "LeafHash", "Aunts", });
     internal_static_tendermint_crypto_ValueOp_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_tendermint_crypto_ValueOp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_crypto_ValueOp_descriptor,
-        new java.lang.String[] { "Key", "Proof", });
+        new String[] { "Key", "Proof", });
     internal_static_tendermint_crypto_DominoOp_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_tendermint_crypto_DominoOp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_crypto_DominoOp_descriptor,
-        new java.lang.String[] { "Key", "Input", "Output", });
+        new String[] { "Key", "Input", "Output", });
     internal_static_tendermint_crypto_ProofOp_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_tendermint_crypto_ProofOp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_crypto_ProofOp_descriptor,
-        new java.lang.String[] { "Type", "Key", "Data", });
+        new String[] { "Type", "Key", "Data", });
     internal_static_tendermint_crypto_ProofOps_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_tendermint_crypto_ProofOps_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_crypto_ProofOps_descriptor,
-        new java.lang.String[] { "Ops", });
+        new String[] { "Ops", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);

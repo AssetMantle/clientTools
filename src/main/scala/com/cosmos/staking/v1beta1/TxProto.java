@@ -72,7 +72,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\037cosmos/staking/v1beta1/tx.proto\022\026cosmo" +
       "s.staking.v1beta1\032\031google/protobuf/any.p" +
       "roto\032\037google/protobuf/timestamp.proto\032\024g" +
@@ -160,68 +160,68 @@ public final class TxProto {
           com.gogoproto.GogoProto.getDescriptor(),
           com.cosmos_proto.CosmosProto.getDescriptor(),
           com.cosmos.base.v1beta1.CoinProto.getDescriptor(),
-          com.cosmos.staking.v1beta1.StakingProto.getDescriptor(),
+          StakingProto.getDescriptor(),
         });
     internal_static_cosmos_staking_v1beta1_MsgCreateValidator_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_staking_v1beta1_MsgCreateValidator_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_MsgCreateValidator_descriptor,
-        new java.lang.String[] { "Description", "Commission", "MinSelfDelegation", "DelegatorAddress", "ValidatorAddress", "Pubkey", "Value", });
+        new String[] { "Description", "Commission", "MinSelfDelegation", "DelegatorAddress", "ValidatorAddress", "Pubkey", "Value", });
     internal_static_cosmos_staking_v1beta1_MsgCreateValidatorResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_staking_v1beta1_MsgCreateValidatorResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_MsgCreateValidatorResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_staking_v1beta1_MsgEditValidator_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_staking_v1beta1_MsgEditValidator_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_MsgEditValidator_descriptor,
-        new java.lang.String[] { "Description", "ValidatorAddress", "CommissionRate", "MinSelfDelegation", });
+        new String[] { "Description", "ValidatorAddress", "CommissionRate", "MinSelfDelegation", });
     internal_static_cosmos_staking_v1beta1_MsgEditValidatorResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_staking_v1beta1_MsgEditValidatorResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_MsgEditValidatorResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_staking_v1beta1_MsgDelegate_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_staking_v1beta1_MsgDelegate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_MsgDelegate_descriptor,
-        new java.lang.String[] { "DelegatorAddress", "ValidatorAddress", "Amount", });
+        new String[] { "DelegatorAddress", "ValidatorAddress", "Amount", });
     internal_static_cosmos_staking_v1beta1_MsgDelegateResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_staking_v1beta1_MsgDelegateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_MsgDelegateResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_staking_v1beta1_MsgBeginRedelegate_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_staking_v1beta1_MsgBeginRedelegate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_MsgBeginRedelegate_descriptor,
-        new java.lang.String[] { "DelegatorAddress", "ValidatorSrcAddress", "ValidatorDstAddress", "Amount", });
+        new String[] { "DelegatorAddress", "ValidatorSrcAddress", "ValidatorDstAddress", "Amount", });
     internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_descriptor,
-        new java.lang.String[] { "CompletionTime", });
+        new String[] { "CompletionTime", });
     internal_static_cosmos_staking_v1beta1_MsgUndelegate_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_cosmos_staking_v1beta1_MsgUndelegate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_MsgUndelegate_descriptor,
-        new java.lang.String[] { "DelegatorAddress", "ValidatorAddress", "Amount", });
+        new String[] { "DelegatorAddress", "ValidatorAddress", "Amount", });
     internal_static_cosmos_staking_v1beta1_MsgUndelegateResponse_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_cosmos_staking_v1beta1_MsgUndelegateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_MsgUndelegateResponse_descriptor,
-        new java.lang.String[] { "CompletionTime", });
+        new String[] { "CompletionTime", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);
@@ -238,7 +238,7 @@ public final class TxProto {
     com.gogoproto.GogoProto.getDescriptor();
     com.cosmos_proto.CosmosProto.getDescriptor();
     com.cosmos.base.v1beta1.CoinProto.getDescriptor();
-    com.cosmos.staking.v1beta1.StakingProto.getDescriptor();
+    StakingProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

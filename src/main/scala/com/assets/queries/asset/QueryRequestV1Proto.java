@@ -27,7 +27,7 @@ public final class QueryRequestV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n;modules/assets/internal/queries/asset/" +
       "queryRequest.v1.proto\022\024assets.queries.as" +
       "set\032 schema/ids/base/assetID.v1.proto\"8\n" +
@@ -50,7 +50,7 @@ public final class QueryRequestV1Proto {
     internal_static_assets_queries_asset_QueryRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_assets_queries_asset_QueryRequest_descriptor,
-        new java.lang.String[] { "AssetID", });
+        new String[] { "AssetID", });
     com.ids.AssetIDV1Proto.getDescriptor();
   }
 

@@ -17,7 +17,7 @@ public interface QueryResponseOrBuilder extends
    * <code>string error = 2 [json_name = "error"];</code>
    * @return The error.
    */
-  java.lang.String getError();
+  String getError();
   /**
    * <code>string error = 2 [json_name = "error"];</code>
    * @return The bytes for error.

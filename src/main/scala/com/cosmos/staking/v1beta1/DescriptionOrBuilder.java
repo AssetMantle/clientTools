@@ -15,7 +15,7 @@ public interface DescriptionOrBuilder extends
    * <code>string moniker = 1 [json_name = "moniker"];</code>
    * @return The moniker.
    */
-  java.lang.String getMoniker();
+  String getMoniker();
   /**
    * <pre>
    * moniker defines a human-readable name for the validator.
@@ -35,7 +35,7 @@ public interface DescriptionOrBuilder extends
    * <code>string identity = 2 [json_name = "identity"];</code>
    * @return The identity.
    */
-  java.lang.String getIdentity();
+  String getIdentity();
   /**
    * <pre>
    * identity defines an optional identity signature (ex. UPort or Keybase).
@@ -55,7 +55,7 @@ public interface DescriptionOrBuilder extends
    * <code>string website = 3 [json_name = "website"];</code>
    * @return The website.
    */
-  java.lang.String getWebsite();
+  String getWebsite();
   /**
    * <pre>
    * website defines an optional website link.
@@ -75,7 +75,7 @@ public interface DescriptionOrBuilder extends
    * <code>string security_contact = 4 [json_name = "securityContact", (.gogoproto.moretags) = "yaml:&#92;"security_contact&#92;""];</code>
    * @return The securityContact.
    */
-  java.lang.String getSecurityContact();
+  String getSecurityContact();
   /**
    * <pre>
    * security_contact defines an optional email for security contact.
@@ -95,7 +95,7 @@ public interface DescriptionOrBuilder extends
    * <code>string details = 5 [json_name = "details"];</code>
    * @return The details.
    */
-  java.lang.String getDetails();
+  String getDetails();
   /**
    * <pre>
    * details define other optional details.

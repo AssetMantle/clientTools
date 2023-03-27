@@ -16,11 +16,11 @@ public interface DuplicateVoteEvidenceOrBuilder extends
    * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
    * @return The voteA.
    */
-  com.tendermint.types.Vote getVoteA();
+  Vote getVoteA();
   /**
    * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
    */
-  com.tendermint.types.VoteOrBuilder getVoteAOrBuilder();
+  VoteOrBuilder getVoteAOrBuilder();
 
   /**
    * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
@@ -31,11 +31,11 @@ public interface DuplicateVoteEvidenceOrBuilder extends
    * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
    * @return The voteB.
    */
-  com.tendermint.types.Vote getVoteB();
+  Vote getVoteB();
   /**
    * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
    */
-  com.tendermint.types.VoteOrBuilder getVoteBOrBuilder();
+  VoteOrBuilder getVoteBOrBuilder();
 
   /**
    * <code>int64 total_voting_power = 3 [json_name = "totalVotingPower"];</code>

@@ -19,69 +19,69 @@ private static final long serialVersionUID = 0L;
     evidence_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new EvidenceList();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_EvidenceList_descriptor;
+    return EvidenceProto.internal_static_tendermint_types_EvidenceList_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_EvidenceList_fieldAccessorTable
+    return EvidenceProto.internal_static_tendermint_types_EvidenceList_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.tendermint.types.EvidenceList.class, com.tendermint.types.EvidenceList.Builder.class);
+            EvidenceList.class, Builder.class);
   }
 
   public static final int EVIDENCE_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.tendermint.types.Evidence> evidence_;
+  private java.util.List<Evidence> evidence_;
   /**
    * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.tendermint.types.Evidence> getEvidenceList() {
+  @Override
+  public java.util.List<Evidence> getEvidenceList() {
     return evidence_;
   }
   /**
    * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.tendermint.types.EvidenceOrBuilder> 
+  @Override
+  public java.util.List<? extends EvidenceOrBuilder>
       getEvidenceOrBuilderList() {
     return evidence_;
   }
   /**
    * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getEvidenceCount() {
     return evidence_.size();
   }
   /**
    * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.tendermint.types.Evidence getEvidence(int index) {
+  @Override
+  public Evidence getEvidence(int index) {
     return evidence_.get(index);
   }
   /**
    * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.tendermint.types.EvidenceOrBuilder getEvidenceOrBuilder(
+  @Override
+  public EvidenceOrBuilder getEvidenceOrBuilder(
       int index) {
     return evidence_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -91,7 +91,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < evidence_.size(); i++) {
@@ -100,7 +100,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -115,15 +115,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.tendermint.types.EvidenceList)) {
+    if (!(obj instanceof EvidenceList)) {
       return super.equals(obj);
     }
-    com.tendermint.types.EvidenceList other = (com.tendermint.types.EvidenceList) obj;
+    EvidenceList other = (EvidenceList) obj;
 
     if (!getEvidenceList()
         .equals(other.getEvidenceList())) return false;
@@ -131,7 +131,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -147,69 +147,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.tendermint.types.EvidenceList parseFrom(
+  public static EvidenceList parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.types.EvidenceList parseFrom(
+  public static EvidenceList parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.types.EvidenceList parseFrom(
+  public static EvidenceList parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.types.EvidenceList parseFrom(
+  public static EvidenceList parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.types.EvidenceList parseFrom(byte[] data)
+  public static EvidenceList parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.types.EvidenceList parseFrom(
+  public static EvidenceList parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.types.EvidenceList parseFrom(java.io.InputStream input)
+  public static EvidenceList parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.types.EvidenceList parseFrom(
+  public static EvidenceList parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.types.EvidenceList parseDelimitedFrom(java.io.InputStream input)
+  public static EvidenceList parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.tendermint.types.EvidenceList parseDelimitedFrom(
+  public static EvidenceList parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.types.EvidenceList parseFrom(
+  public static EvidenceList parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.types.EvidenceList parseFrom(
+  public static EvidenceList parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -217,23 +217,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.tendermint.types.EvidenceList prototype) {
+  public static Builder newBuilder(EvidenceList prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -243,18 +243,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.types.EvidenceList)
-      com.tendermint.types.EvidenceListOrBuilder {
+      EvidenceListOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_EvidenceList_descriptor;
+      return EvidenceProto.internal_static_tendermint_types_EvidenceList_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_EvidenceList_fieldAccessorTable
+      return EvidenceProto.internal_static_tendermint_types_EvidenceList_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.tendermint.types.EvidenceList.class, com.tendermint.types.EvidenceList.Builder.class);
+              EvidenceList.class, Builder.class);
     }
 
     // Construct using com.tendermint.types.EvidenceList.newBuilder()
@@ -263,11 +263,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -281,36 +281,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_EvidenceList_descriptor;
+      return EvidenceProto.internal_static_tendermint_types_EvidenceList_descriptor;
     }
 
-    @java.lang.Override
-    public com.tendermint.types.EvidenceList getDefaultInstanceForType() {
-      return com.tendermint.types.EvidenceList.getDefaultInstance();
+    @Override
+    public EvidenceList getDefaultInstanceForType() {
+      return EvidenceList.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.tendermint.types.EvidenceList build() {
-      com.tendermint.types.EvidenceList result = buildPartial();
+    @Override
+    public EvidenceList build() {
+      EvidenceList result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.tendermint.types.EvidenceList buildPartial() {
-      com.tendermint.types.EvidenceList result = new com.tendermint.types.EvidenceList(this);
+    @Override
+    public EvidenceList buildPartial() {
+      EvidenceList result = new EvidenceList(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.tendermint.types.EvidenceList result) {
+    private void buildPartialRepeatedFields(EvidenceList result) {
       if (evidenceBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           evidence_ = java.util.Collections.unmodifiableList(evidence_);
@@ -322,54 +322,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.tendermint.types.EvidenceList result) {
+    private void buildPartial0(EvidenceList result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.tendermint.types.EvidenceList) {
-        return mergeFrom((com.tendermint.types.EvidenceList)other);
+      if (other instanceof EvidenceList) {
+        return mergeFrom((EvidenceList)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.tendermint.types.EvidenceList other) {
-      if (other == com.tendermint.types.EvidenceList.getDefaultInstance()) return this;
+    public Builder mergeFrom(EvidenceList other) {
+      if (other == EvidenceList.getDefaultInstance()) return this;
       if (evidenceBuilder_ == null) {
         if (!other.evidence_.isEmpty()) {
           if (evidence_.isEmpty()) {
@@ -401,18 +401,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -423,9 +423,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.tendermint.types.Evidence m =
+              Evidence m =
                   input.readMessage(
-                      com.tendermint.types.Evidence.parser(),
+                      Evidence.parser(),
                       extensionRegistry);
               if (evidenceBuilder_ == null) {
                 ensureEvidenceIsMutable();
@@ -452,22 +452,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.tendermint.types.Evidence> evidence_ =
+    private java.util.List<Evidence> evidence_ =
       java.util.Collections.emptyList();
     private void ensureEvidenceIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        evidence_ = new java.util.ArrayList<com.tendermint.types.Evidence>(evidence_);
+        evidence_ = new java.util.ArrayList<Evidence>(evidence_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.tendermint.types.Evidence, com.tendermint.types.Evidence.Builder, com.tendermint.types.EvidenceOrBuilder> evidenceBuilder_;
+        Evidence, Evidence.Builder, EvidenceOrBuilder> evidenceBuilder_;
 
     /**
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.tendermint.types.Evidence> getEvidenceList() {
+    public java.util.List<Evidence> getEvidenceList() {
       if (evidenceBuilder_ == null) {
         return java.util.Collections.unmodifiableList(evidence_);
       } else {
@@ -487,7 +487,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.types.Evidence getEvidence(int index) {
+    public Evidence getEvidence(int index) {
       if (evidenceBuilder_ == null) {
         return evidence_.get(index);
       } else {
@@ -498,7 +498,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
     public Builder setEvidence(
-        int index, com.tendermint.types.Evidence value) {
+        int index, Evidence value) {
       if (evidenceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -515,7 +515,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
     public Builder setEvidence(
-        int index, com.tendermint.types.Evidence.Builder builderForValue) {
+        int index, Evidence.Builder builderForValue) {
       if (evidenceBuilder_ == null) {
         ensureEvidenceIsMutable();
         evidence_.set(index, builderForValue.build());
@@ -528,7 +528,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addEvidence(com.tendermint.types.Evidence value) {
+    public Builder addEvidence(Evidence value) {
       if (evidenceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -545,7 +545,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
     public Builder addEvidence(
-        int index, com.tendermint.types.Evidence value) {
+        int index, Evidence value) {
       if (evidenceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -562,7 +562,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
     public Builder addEvidence(
-        com.tendermint.types.Evidence.Builder builderForValue) {
+        Evidence.Builder builderForValue) {
       if (evidenceBuilder_ == null) {
         ensureEvidenceIsMutable();
         evidence_.add(builderForValue.build());
@@ -576,7 +576,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
     public Builder addEvidence(
-        int index, com.tendermint.types.Evidence.Builder builderForValue) {
+        int index, Evidence.Builder builderForValue) {
       if (evidenceBuilder_ == null) {
         ensureEvidenceIsMutable();
         evidence_.add(index, builderForValue.build());
@@ -590,7 +590,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllEvidence(
-        java.lang.Iterable<? extends com.tendermint.types.Evidence> values) {
+        Iterable<? extends Evidence> values) {
       if (evidenceBuilder_ == null) {
         ensureEvidenceIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -630,14 +630,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.types.Evidence.Builder getEvidenceBuilder(
+    public Evidence.Builder getEvidenceBuilder(
         int index) {
       return getEvidenceFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.types.EvidenceOrBuilder getEvidenceOrBuilder(
+    public EvidenceOrBuilder getEvidenceOrBuilder(
         int index) {
       if (evidenceBuilder_ == null) {
         return evidence_.get(index);  } else {
@@ -647,7 +647,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.tendermint.types.EvidenceOrBuilder> 
+    public java.util.List<? extends EvidenceOrBuilder>
          getEvidenceOrBuilderList() {
       if (evidenceBuilder_ != null) {
         return evidenceBuilder_.getMessageOrBuilderList();
@@ -658,31 +658,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.types.Evidence.Builder addEvidenceBuilder() {
+    public Evidence.Builder addEvidenceBuilder() {
       return getEvidenceFieldBuilder().addBuilder(
-          com.tendermint.types.Evidence.getDefaultInstance());
+          Evidence.getDefaultInstance());
     }
     /**
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.types.Evidence.Builder addEvidenceBuilder(
+    public Evidence.Builder addEvidenceBuilder(
         int index) {
       return getEvidenceFieldBuilder().addBuilder(
-          index, com.tendermint.types.Evidence.getDefaultInstance());
+          index, Evidence.getDefaultInstance());
     }
     /**
      * <code>repeated .tendermint.types.Evidence evidence = 1 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.tendermint.types.Evidence.Builder> 
+    public java.util.List<Evidence.Builder>
          getEvidenceBuilderList() {
       return getEvidenceFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.tendermint.types.Evidence, com.tendermint.types.Evidence.Builder, com.tendermint.types.EvidenceOrBuilder> 
+        Evidence, Evidence.Builder, EvidenceOrBuilder>
         getEvidenceFieldBuilder() {
       if (evidenceBuilder_ == null) {
         evidenceBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.tendermint.types.Evidence, com.tendermint.types.Evidence.Builder, com.tendermint.types.EvidenceOrBuilder>(
+            Evidence, Evidence.Builder, EvidenceOrBuilder>(
                 evidence_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -691,13 +691,13 @@ private static final long serialVersionUID = 0L;
       }
       return evidenceBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -708,18 +708,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.types.EvidenceList)
-  private static final com.tendermint.types.EvidenceList DEFAULT_INSTANCE;
+  private static final EvidenceList DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.tendermint.types.EvidenceList();
+    DEFAULT_INSTANCE = new EvidenceList();
   }
 
-  public static com.tendermint.types.EvidenceList getDefaultInstance() {
+  public static EvidenceList getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<EvidenceList>
       PARSER = new com.google.protobuf.AbstractParser<EvidenceList>() {
-    @java.lang.Override
+    @Override
     public EvidenceList parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -743,13 +743,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<EvidenceList> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.tendermint.types.EvidenceList getDefaultInstanceForType() {
+  @Override
+  public EvidenceList getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

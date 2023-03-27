@@ -1,7 +1,7 @@
 package schema.id.base
 
 import com.ids.{AnyID, AnyOwnableID, CoinID => protoCoinID}
-import schema.id.{ID, OwnableID}
+import schema.id.OwnableID
 
 case class CoinID(value: StringID) extends OwnableID {
 
@@ -13,9 +13,11 @@ case class CoinID(value: StringID) extends OwnableID {
 
   def toAnyOwnableID: AnyOwnableID = AnyOwnableID.newBuilder().setCoinID(this.asProtoCoinID).build()
 
-  def toAnyID: AnyID = AnyID.newBuilder().setOwnableID(this.toAnyOwnableID).build()
+  def toAnyID: AnyID = AnyID.newBuilder().setAnyOwnableID(this.toAnyOwnableID).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoCoinID.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoCoinID.toByteString.toByteArray
+
+  def isCoinId: Boolean = false
 
 }
 

@@ -52,7 +52,7 @@ public final class ChannelProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n!ibc/core/channel/v1/channel.proto\022\023ibc" +
       ".core.channel.v1\032\024gogoproto/gogo.proto\032\037" +
       "ibc/core/client/v1/client.proto\"\245\002\n\007Chan" +
@@ -120,37 +120,37 @@ public final class ChannelProto {
     internal_static_ibc_core_channel_v1_Channel_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_Channel_descriptor,
-        new java.lang.String[] { "State", "Ordering", "Counterparty", "ConnectionHops", "Version", });
+        new String[] { "State", "Ordering", "Counterparty", "ConnectionHops", "Version", });
     internal_static_ibc_core_channel_v1_IdentifiedChannel_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_core_channel_v1_IdentifiedChannel_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_IdentifiedChannel_descriptor,
-        new java.lang.String[] { "State", "Ordering", "Counterparty", "ConnectionHops", "Version", "PortId", "ChannelId", });
+        new String[] { "State", "Ordering", "Counterparty", "ConnectionHops", "Version", "PortId", "ChannelId", });
     internal_static_ibc_core_channel_v1_Counterparty_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_core_channel_v1_Counterparty_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_Counterparty_descriptor,
-        new java.lang.String[] { "PortId", "ChannelId", });
+        new String[] { "PortId", "ChannelId", });
     internal_static_ibc_core_channel_v1_Packet_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_core_channel_v1_Packet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_Packet_descriptor,
-        new java.lang.String[] { "Sequence", "SourcePort", "SourceChannel", "DestinationPort", "DestinationChannel", "Data", "TimeoutHeight", "TimeoutTimestamp", });
+        new String[] { "Sequence", "SourcePort", "SourceChannel", "DestinationPort", "DestinationChannel", "Data", "TimeoutHeight", "TimeoutTimestamp", });
     internal_static_ibc_core_channel_v1_PacketState_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_core_channel_v1_PacketState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_PacketState_descriptor,
-        new java.lang.String[] { "PortId", "ChannelId", "Sequence", "Data", });
+        new String[] { "PortId", "ChannelId", "Sequence", "Data", });
     internal_static_ibc_core_channel_v1_Acknowledgement_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_ibc_core_channel_v1_Acknowledgement_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_Acknowledgement_descriptor,
-        new java.lang.String[] { "Result", "Error", "Response", });
+        new String[] { "Result", "Error", "Response", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.enumvalueCustomname);

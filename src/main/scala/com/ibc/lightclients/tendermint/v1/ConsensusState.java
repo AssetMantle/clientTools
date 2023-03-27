@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     nextValidatorsHash_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new ConsensusState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.lightclients.tendermint.v1.TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ConsensusState_descriptor;
+    return TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ConsensusState_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.lightclients.tendermint.v1.TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ConsensusState_fieldAccessorTable
+    return TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ConsensusState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.lightclients.tendermint.v1.ConsensusState.class, com.ibc.lightclients.tendermint.v1.ConsensusState.Builder.class);
+            ConsensusState.class, Builder.class);
   }
 
   public static final int TIMESTAMP_FIELD_NUMBER = 1;
@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp timestamp = 1 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return Whether the timestamp field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasTimestamp() {
     return timestamp_ != null;
   }
@@ -67,7 +67,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp timestamp = 1 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return The timestamp.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Timestamp getTimestamp() {
     return timestamp_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timestamp_;
   }
@@ -79,7 +79,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Timestamp timestamp = 1 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.TimestampOrBuilder getTimestampOrBuilder() {
     return timestamp_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timestamp_;
   }
@@ -94,7 +94,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.commitment.v1.MerkleRoot root = 2 [json_name = "root", (.gogoproto.nullable) = false];</code>
    * @return Whether the root field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasRoot() {
     return root_ != null;
   }
@@ -106,7 +106,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.commitment.v1.MerkleRoot root = 2 [json_name = "root", (.gogoproto.nullable) = false];</code>
    * @return The root.
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.commitment.v1.MerkleRoot getRoot() {
     return root_ == null ? com.ibc.core.commitment.v1.MerkleRoot.getDefaultInstance() : root_;
   }
@@ -117,7 +117,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.commitment.v1.MerkleRoot root = 2 [json_name = "root", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.commitment.v1.MerkleRootOrBuilder getRootOrBuilder() {
     return root_ == null ? com.ibc.core.commitment.v1.MerkleRoot.getDefaultInstance() : root_;
   }
@@ -128,13 +128,13 @@ private static final long serialVersionUID = 0L;
    * <code>bytes next_validators_hash = 3 [json_name = "nextValidatorsHash", (.gogoproto.moretags) = "yaml:&#92;"next_validators_hash&#92;"", (.gogoproto.casttype) = "github.com/tendermint/tendermint/libs/bytes.HexBytes"];</code>
    * @return The nextValidatorsHash.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getNextValidatorsHash() {
     return nextValidatorsHash_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -144,7 +144,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (timestamp_ != null) {
@@ -159,7 +159,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -182,15 +182,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.lightclients.tendermint.v1.ConsensusState)) {
+    if (!(obj instanceof ConsensusState)) {
       return super.equals(obj);
     }
-    com.ibc.lightclients.tendermint.v1.ConsensusState other = (com.ibc.lightclients.tendermint.v1.ConsensusState) obj;
+    ConsensusState other = (ConsensusState) obj;
 
     if (hasTimestamp() != other.hasTimestamp()) return false;
     if (hasTimestamp()) {
@@ -208,7 +208,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -230,69 +230,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseFrom(
+  public static ConsensusState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseFrom(
+  public static ConsensusState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseFrom(
+  public static ConsensusState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseFrom(
+  public static ConsensusState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseFrom(byte[] data)
+  public static ConsensusState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseFrom(
+  public static ConsensusState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseFrom(java.io.InputStream input)
+  public static ConsensusState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseFrom(
+  public static ConsensusState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseDelimitedFrom(java.io.InputStream input)
+  public static ConsensusState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseDelimitedFrom(
+  public static ConsensusState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseFrom(
+  public static ConsensusState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState parseFrom(
+  public static ConsensusState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -300,23 +300,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.lightclients.tendermint.v1.ConsensusState prototype) {
+  public static Builder newBuilder(ConsensusState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -330,18 +330,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.lightclients.tendermint.v1.ConsensusState)
-      com.ibc.lightclients.tendermint.v1.ConsensusStateOrBuilder {
+      ConsensusStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.lightclients.tendermint.v1.TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ConsensusState_descriptor;
+      return TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ConsensusState_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.lightclients.tendermint.v1.TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ConsensusState_fieldAccessorTable
+      return TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ConsensusState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.lightclients.tendermint.v1.ConsensusState.class, com.ibc.lightclients.tendermint.v1.ConsensusState.Builder.class);
+              ConsensusState.class, Builder.class);
     }
 
     // Construct using com.ibc.lightclients.tendermint.v1.ConsensusState.newBuilder()
@@ -350,11 +350,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -372,35 +372,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.lightclients.tendermint.v1.TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ConsensusState_descriptor;
+      return TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ConsensusState_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.lightclients.tendermint.v1.ConsensusState getDefaultInstanceForType() {
-      return com.ibc.lightclients.tendermint.v1.ConsensusState.getDefaultInstance();
+    @Override
+    public ConsensusState getDefaultInstanceForType() {
+      return ConsensusState.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.lightclients.tendermint.v1.ConsensusState build() {
-      com.ibc.lightclients.tendermint.v1.ConsensusState result = buildPartial();
+    @Override
+    public ConsensusState build() {
+      ConsensusState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.lightclients.tendermint.v1.ConsensusState buildPartial() {
-      com.ibc.lightclients.tendermint.v1.ConsensusState result = new com.ibc.lightclients.tendermint.v1.ConsensusState(this);
+    @Override
+    public ConsensusState buildPartial() {
+      ConsensusState result = new ConsensusState(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.lightclients.tendermint.v1.ConsensusState result) {
+    private void buildPartial0(ConsensusState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.timestamp_ = timestampBuilder_ == null
@@ -417,50 +417,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.lightclients.tendermint.v1.ConsensusState) {
-        return mergeFrom((com.ibc.lightclients.tendermint.v1.ConsensusState)other);
+      if (other instanceof ConsensusState) {
+        return mergeFrom((ConsensusState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.lightclients.tendermint.v1.ConsensusState other) {
-      if (other == com.ibc.lightclients.tendermint.v1.ConsensusState.getDefaultInstance()) return this;
+    public Builder mergeFrom(ConsensusState other) {
+      if (other == ConsensusState.getDefaultInstance()) return this;
       if (other.hasTimestamp()) {
         mergeTimestamp(other.getTimestamp());
       }
@@ -475,18 +475,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -856,7 +856,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes next_validators_hash = 3 [json_name = "nextValidatorsHash", (.gogoproto.moretags) = "yaml:&#92;"next_validators_hash&#92;"", (.gogoproto.casttype) = "github.com/tendermint/tendermint/libs/bytes.HexBytes"];</code>
      * @return The nextValidatorsHash.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getNextValidatorsHash() {
       return nextValidatorsHash_;
     }
@@ -882,13 +882,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -899,18 +899,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.lightclients.tendermint.v1.ConsensusState)
-  private static final com.ibc.lightclients.tendermint.v1.ConsensusState DEFAULT_INSTANCE;
+  private static final ConsensusState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.lightclients.tendermint.v1.ConsensusState();
+    DEFAULT_INSTANCE = new ConsensusState();
   }
 
-  public static com.ibc.lightclients.tendermint.v1.ConsensusState getDefaultInstance() {
+  public static ConsensusState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ConsensusState>
       PARSER = new com.google.protobuf.AbstractParser<ConsensusState>() {
-    @java.lang.Override
+    @Override
     public ConsensusState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -934,13 +934,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<ConsensusState> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.lightclients.tendermint.v1.ConsensusState getDefaultInstanceForType() {
+  @Override
+  public ConsensusState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

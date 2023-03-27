@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     consensusAddress_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Equivocation();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.evidence.v1beta1.EvidenceProto.internal_static_cosmos_evidence_v1beta1_Equivocation_descriptor;
+    return EvidenceProto.internal_static_cosmos_evidence_v1beta1_Equivocation_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.evidence.v1beta1.EvidenceProto.internal_static_cosmos_evidence_v1beta1_Equivocation_fieldAccessorTable
+    return EvidenceProto.internal_static_cosmos_evidence_v1beta1_Equivocation_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.evidence.v1beta1.Equivocation.class, com.cosmos.evidence.v1beta1.Equivocation.Builder.class);
+            Equivocation.class, Builder.class);
   }
 
   public static final int HEIGHT_FIELD_NUMBER = 1;
@@ -50,7 +50,7 @@ private static final long serialVersionUID = 0L;
    * <code>int64 height = 1 [json_name = "height"];</code>
    * @return The height.
    */
-  @java.lang.Override
+  @Override
   public long getHeight() {
     return height_;
   }
@@ -61,7 +61,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return Whether the time field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasTime() {
     return time_ != null;
   }
@@ -69,14 +69,14 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return The time.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Timestamp getTime() {
     return time_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : time_;
   }
   /**
    * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.TimestampOrBuilder getTimeOrBuilder() {
     return time_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : time_;
   }
@@ -87,27 +87,27 @@ private static final long serialVersionUID = 0L;
    * <code>int64 power = 3 [json_name = "power"];</code>
    * @return The power.
    */
-  @java.lang.Override
+  @Override
   public long getPower() {
     return power_;
   }
 
   public static final int CONSENSUS_ADDRESS_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object consensusAddress_ = "";
+  private volatile Object consensusAddress_ = "";
   /**
    * <code>string consensus_address = 4 [json_name = "consensusAddress", (.gogoproto.moretags) = "yaml:&#92;"consensus_address&#92;""];</code>
    * @return The consensusAddress.
    */
-  @java.lang.Override
-  public java.lang.String getConsensusAddress() {
-    java.lang.Object ref = consensusAddress_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getConsensusAddress() {
+    Object ref = consensusAddress_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       consensusAddress_ = s;
       return s;
     }
@@ -116,14 +116,14 @@ private static final long serialVersionUID = 0L;
    * <code>string consensus_address = 4 [json_name = "consensusAddress", (.gogoproto.moretags) = "yaml:&#92;"consensus_address&#92;""];</code>
    * @return The bytes for consensusAddress.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getConsensusAddressBytes() {
-    java.lang.Object ref = consensusAddress_;
-    if (ref instanceof java.lang.String) {
+    Object ref = consensusAddress_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       consensusAddress_ = b;
       return b;
     } else {
@@ -132,7 +132,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -142,7 +142,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (height_ != 0L) {
@@ -160,7 +160,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -186,15 +186,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.evidence.v1beta1.Equivocation)) {
+    if (!(obj instanceof Equivocation)) {
       return super.equals(obj);
     }
-    com.cosmos.evidence.v1beta1.Equivocation other = (com.cosmos.evidence.v1beta1.Equivocation) obj;
+    Equivocation other = (Equivocation) obj;
 
     if (getHeight()
         != other.getHeight()) return false;
@@ -211,7 +211,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -235,69 +235,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.evidence.v1beta1.Equivocation parseFrom(
+  public static Equivocation parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseFrom(
+  public static Equivocation parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseFrom(
+  public static Equivocation parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseFrom(
+  public static Equivocation parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseFrom(byte[] data)
+  public static Equivocation parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseFrom(
+  public static Equivocation parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseFrom(java.io.InputStream input)
+  public static Equivocation parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseFrom(
+  public static Equivocation parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseDelimitedFrom(java.io.InputStream input)
+  public static Equivocation parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseDelimitedFrom(
+  public static Equivocation parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseFrom(
+  public static Equivocation parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.evidence.v1beta1.Equivocation parseFrom(
+  public static Equivocation parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -305,23 +305,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.evidence.v1beta1.Equivocation prototype) {
+  public static Builder newBuilder(Equivocation prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -336,18 +336,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.evidence.v1beta1.Equivocation)
-      com.cosmos.evidence.v1beta1.EquivocationOrBuilder {
+      EquivocationOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.evidence.v1beta1.EvidenceProto.internal_static_cosmos_evidence_v1beta1_Equivocation_descriptor;
+      return EvidenceProto.internal_static_cosmos_evidence_v1beta1_Equivocation_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.evidence.v1beta1.EvidenceProto.internal_static_cosmos_evidence_v1beta1_Equivocation_fieldAccessorTable
+      return EvidenceProto.internal_static_cosmos_evidence_v1beta1_Equivocation_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.evidence.v1beta1.Equivocation.class, com.cosmos.evidence.v1beta1.Equivocation.Builder.class);
+              Equivocation.class, Builder.class);
     }
 
     // Construct using com.cosmos.evidence.v1beta1.Equivocation.newBuilder()
@@ -356,11 +356,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -375,35 +375,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.evidence.v1beta1.EvidenceProto.internal_static_cosmos_evidence_v1beta1_Equivocation_descriptor;
+      return EvidenceProto.internal_static_cosmos_evidence_v1beta1_Equivocation_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.evidence.v1beta1.Equivocation getDefaultInstanceForType() {
-      return com.cosmos.evidence.v1beta1.Equivocation.getDefaultInstance();
+    @Override
+    public Equivocation getDefaultInstanceForType() {
+      return Equivocation.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.evidence.v1beta1.Equivocation build() {
-      com.cosmos.evidence.v1beta1.Equivocation result = buildPartial();
+    @Override
+    public Equivocation build() {
+      Equivocation result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.evidence.v1beta1.Equivocation buildPartial() {
-      com.cosmos.evidence.v1beta1.Equivocation result = new com.cosmos.evidence.v1beta1.Equivocation(this);
+    @Override
+    public Equivocation buildPartial() {
+      Equivocation result = new Equivocation(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.evidence.v1beta1.Equivocation result) {
+    private void buildPartial0(Equivocation result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.height_ = height_;
@@ -421,50 +421,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.evidence.v1beta1.Equivocation) {
-        return mergeFrom((com.cosmos.evidence.v1beta1.Equivocation)other);
+      if (other instanceof Equivocation) {
+        return mergeFrom((Equivocation)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.evidence.v1beta1.Equivocation other) {
-      if (other == com.cosmos.evidence.v1beta1.Equivocation.getDefaultInstance()) return this;
+    public Builder mergeFrom(Equivocation other) {
+      if (other == Equivocation.getDefaultInstance()) return this;
       if (other.getHeight() != 0L) {
         setHeight(other.getHeight());
       }
@@ -484,18 +484,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -549,7 +549,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 height = 1 [json_name = "height"];</code>
      * @return The height.
      */
-    @java.lang.Override
+    @Override
     public long getHeight() {
       return height_;
     }
@@ -700,7 +700,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 power = 3 [json_name = "power"];</code>
      * @return The power.
      */
-    @java.lang.Override
+    @Override
     public long getPower() {
       return power_;
     }
@@ -727,21 +727,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object consensusAddress_ = "";
+    private Object consensusAddress_ = "";
     /**
      * <code>string consensus_address = 4 [json_name = "consensusAddress", (.gogoproto.moretags) = "yaml:&#92;"consensus_address&#92;""];</code>
      * @return The consensusAddress.
      */
-    public java.lang.String getConsensusAddress() {
-      java.lang.Object ref = consensusAddress_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getConsensusAddress() {
+      Object ref = consensusAddress_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         consensusAddress_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -750,11 +750,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getConsensusAddressBytes() {
-      java.lang.Object ref = consensusAddress_;
+      Object ref = consensusAddress_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         consensusAddress_ = b;
         return b;
       } else {
@@ -767,7 +767,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setConsensusAddress(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       consensusAddress_ = value;
       bitField0_ |= 0x00000008;
@@ -798,13 +798,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -815,18 +815,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.evidence.v1beta1.Equivocation)
-  private static final com.cosmos.evidence.v1beta1.Equivocation DEFAULT_INSTANCE;
+  private static final Equivocation DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.evidence.v1beta1.Equivocation();
+    DEFAULT_INSTANCE = new Equivocation();
   }
 
-  public static com.cosmos.evidence.v1beta1.Equivocation getDefaultInstance() {
+  public static Equivocation getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Equivocation>
       PARSER = new com.google.protobuf.AbstractParser<Equivocation>() {
-    @java.lang.Override
+    @Override
     public Equivocation parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -850,13 +850,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Equivocation> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.evidence.v1beta1.Equivocation getDefaultInstanceForType() {
+  @Override
+  public Equivocation getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

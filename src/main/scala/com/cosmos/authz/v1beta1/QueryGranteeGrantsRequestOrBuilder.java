@@ -11,7 +11,7 @@ public interface QueryGranteeGrantsRequestOrBuilder extends
    * <code>string grantee = 1 [json_name = "grantee"];</code>
    * @return The grantee.
    */
-  java.lang.String getGrantee();
+  String getGrantee();
   /**
    * <code>string grantee = 1 [json_name = "grantee"];</code>
    * @return The bytes for grantee.

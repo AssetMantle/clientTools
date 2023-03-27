@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n>modules/orders/internal/transactions/d" +
       "eputize/message.v1.proto\022\034orders.transac" +
       "tions.deputize\032)schema/ids/base/classifi" +
@@ -67,7 +67,7 @@ public final class MessageV1Proto {
     internal_static_orders_transactions_deputize_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_orders_transactions_deputize_Message_descriptor,
-        new java.lang.String[] { "From", "FromID", "ToID", "ClassificationID", "MaintainedProperties", "CanMintAsset", "CanBurnAsset", "CanRenumerateAsset", "CanAddMaintainer", "CanRemoveMaintainer", "CanMutateMaintainer", });
+        new String[] { "From", "FromID", "ToID", "ClassificationID", "MaintainedProperties", "CanMintAsset", "CanBurnAsset", "CanRenumerateAsset", "CanAddMaintainer", "CanRemoveMaintainer", "CanMutateMaintainer", });
     com.ids.ClassificationIDV1Proto.getDescriptor();
     com.ids.IdentityIDV1Proto.getDescriptor();
     com.lists.PropertyListV1Proto.getDescriptor();

@@ -16,13 +16,13 @@ public interface WeightedVoteOptionOrBuilder extends
    * <code>.cosmos.gov.v1beta1.VoteOption option = 1 [json_name = "option"];</code>
    * @return The option.
    */
-  com.cosmos.gov.v1beta1.VoteOption getOption();
+  VoteOption getOption();
 
   /**
    * <code>string weight = 2 [json_name = "weight", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"weight&#92;""];</code>
    * @return The weight.
    */
-  java.lang.String getWeight();
+  String getWeight();
   /**
    * <code>string weight = 2 [json_name = "weight", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"weight&#92;""];</code>
    * @return The bytes for weight.

@@ -27,7 +27,7 @@ public final class SplitIDV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n schema/ids/base/splitID.v1.proto\022\003ids\032" +
       "#schema/ids/base/identityID.v1.proto\032%sc" +
       "hema/ids/base/anyOwnableID.v1.proto\032\024gog" +
@@ -42,8 +42,8 @@ public final class SplitIDV1Proto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.ids.IdentityIDV1Proto.getDescriptor(),
-          com.ids.AnyOwnableIDV1Proto.getDescriptor(),
+          IdentityIDV1Proto.getDescriptor(),
+          AnyOwnableIDV1Proto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_ids_SplitID_descriptor =
@@ -51,14 +51,14 @@ public final class SplitIDV1Proto {
     internal_static_ids_SplitID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ids_SplitID_descriptor,
-        new java.lang.String[] { "OwnerID", "OwnableID", });
+        new String[] { "OwnerID", "OwnableID", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    com.ids.IdentityIDV1Proto.getDescriptor();
-    com.ids.AnyOwnableIDV1Proto.getDescriptor();
+    IdentityIDV1Proto.getDescriptor();
+    AnyOwnableIDV1Proto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 

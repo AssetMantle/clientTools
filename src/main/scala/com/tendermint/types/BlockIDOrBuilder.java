@@ -22,9 +22,9 @@ public interface BlockIDOrBuilder extends
    * <code>.tendermint.types.PartSetHeader part_set_header = 2 [json_name = "partSetHeader", (.gogoproto.nullable) = false];</code>
    * @return The partSetHeader.
    */
-  com.tendermint.types.PartSetHeader getPartSetHeader();
+  PartSetHeader getPartSetHeader();
   /**
    * <code>.tendermint.types.PartSetHeader part_set_header = 2 [json_name = "partSetHeader", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.types.PartSetHeaderOrBuilder getPartSetHeaderOrBuilder();
+  PartSetHeaderOrBuilder getPartSetHeaderOrBuilder();
 }

@@ -27,7 +27,7 @@ public final class MutablesV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\'schema/qualified/base/mutables.v1.prot" +
       "o\022\tqualified\032\'schema/lists/base/property" +
       "List.v1.proto\032\024gogoproto/gogo.proto\"J\n\010M" +
@@ -49,7 +49,7 @@ public final class MutablesV1Proto {
     internal_static_qualified_Mutables_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_qualified_Mutables_descriptor,
-        new java.lang.String[] { "PropertyList", });
+        new String[] { "PropertyList", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

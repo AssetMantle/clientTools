@@ -10,12 +10,12 @@ public interface QueryRedelegationsResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationResponse redelegation_responses = 1 [json_name = "redelegationResponses", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.staking.v1beta1.RedelegationResponse> 
+  java.util.List<RedelegationResponse>
       getRedelegationResponsesList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationResponse redelegation_responses = 1 [json_name = "redelegationResponses", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.RedelegationResponse getRedelegationResponses(int index);
+  RedelegationResponse getRedelegationResponses(int index);
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationResponse redelegation_responses = 1 [json_name = "redelegationResponses", (.gogoproto.nullable) = false];</code>
    */
@@ -23,12 +23,12 @@ public interface QueryRedelegationsResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationResponse redelegation_responses = 1 [json_name = "redelegationResponses", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.staking.v1beta1.RedelegationResponseOrBuilder> 
+  java.util.List<? extends RedelegationResponseOrBuilder>
       getRedelegationResponsesOrBuilderList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationResponse redelegation_responses = 1 [json_name = "redelegationResponses", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.RedelegationResponseOrBuilder getRedelegationResponsesOrBuilder(
+  RedelegationResponseOrBuilder getRedelegationResponsesOrBuilder(
       int index);
 
   /**

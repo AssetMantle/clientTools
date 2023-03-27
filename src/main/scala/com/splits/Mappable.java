@@ -18,29 +18,24 @@ private static final long serialVersionUID = 0L;
   private Mappable() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Mappable();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.splits.MappableV1Proto.internal_static_splits_Mappable_descriptor;
+    return MappableV1Proto.internal_static_splits_Mappable_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.splits.MappableV1Proto.internal_static_splits_Mappable_fieldAccessorTable
+    return MappableV1Proto.internal_static_splits_Mappable_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.splits.Mappable.class, com.splits.Mappable.Builder.class);
+            Mappable.class, Builder.class);
   }
 
   public static final int SPLIT_FIELD_NUMBER = 1;
@@ -49,7 +44,7 @@ private static final long serialVersionUID = 0L;
    * <code>.types.Split split = 1 [json_name = "split"];</code>
    * @return Whether the split field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasSplit() {
     return split_ != null;
   }
@@ -57,20 +52,20 @@ private static final long serialVersionUID = 0L;
    * <code>.types.Split split = 1 [json_name = "split"];</code>
    * @return The split.
    */
-  @java.lang.Override
+  @Override
   public com.types.Split getSplit() {
     return split_ == null ? com.types.Split.getDefaultInstance() : split_;
   }
   /**
    * <code>.types.Split split = 1 [json_name = "split"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.types.SplitOrBuilder getSplitOrBuilder() {
-    return getSplit();
+    return split_ == null ? com.types.Split.getDefaultInstance() : split_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -80,7 +75,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (split_ != null) {
@@ -89,7 +84,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -104,15 +99,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.splits.Mappable)) {
+    if (!(obj instanceof Mappable)) {
       return super.equals(obj);
     }
-    com.splits.Mappable other = (com.splits.Mappable) obj;
+    Mappable other = (Mappable) obj;
 
     if (hasSplit() != other.hasSplit()) return false;
     if (hasSplit()) {
@@ -123,7 +118,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -139,69 +134,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.splits.Mappable parseFrom(
+  public static Mappable parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.splits.Mappable parseFrom(
+  public static Mappable parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.splits.Mappable parseFrom(
+  public static Mappable parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.splits.Mappable parseFrom(
+  public static Mappable parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.splits.Mappable parseFrom(byte[] data)
+  public static Mappable parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.splits.Mappable parseFrom(
+  public static Mappable parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.splits.Mappable parseFrom(java.io.InputStream input)
+  public static Mappable parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.splits.Mappable parseFrom(
+  public static Mappable parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.splits.Mappable parseDelimitedFrom(java.io.InputStream input)
+  public static Mappable parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.splits.Mappable parseDelimitedFrom(
+  public static Mappable parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.splits.Mappable parseFrom(
+  public static Mappable parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.splits.Mappable parseFrom(
+  public static Mappable parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -209,23 +204,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.splits.Mappable prototype) {
+  public static Builder newBuilder(Mappable prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -235,18 +230,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:splits.Mappable)
-      com.splits.MappableOrBuilder {
+      MappableOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.splits.MappableV1Proto.internal_static_splits_Mappable_descriptor;
+      return MappableV1Proto.internal_static_splits_Mappable_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.splits.MappableV1Proto.internal_static_splits_Mappable_fieldAccessorTable
+      return MappableV1Proto.internal_static_splits_Mappable_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.splits.Mappable.class, com.splits.Mappable.Builder.class);
+              Mappable.class, Builder.class);
     }
 
     // Construct using com.splits.Mappable.newBuilder()
@@ -255,98 +250,103 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
-      if (splitBuilder_ == null) {
-        split_ = null;
-      } else {
-        split_ = null;
+      bitField0_ = 0;
+      split_ = null;
+      if (splitBuilder_ != null) {
+        splitBuilder_.dispose();
         splitBuilder_ = null;
       }
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.splits.MappableV1Proto.internal_static_splits_Mappable_descriptor;
+      return MappableV1Proto.internal_static_splits_Mappable_descriptor;
     }
 
-    @java.lang.Override
-    public com.splits.Mappable getDefaultInstanceForType() {
-      return com.splits.Mappable.getDefaultInstance();
+    @Override
+    public Mappable getDefaultInstanceForType() {
+      return Mappable.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.splits.Mappable build() {
-      com.splits.Mappable result = buildPartial();
+    @Override
+    public Mappable build() {
+      Mappable result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.splits.Mappable buildPartial() {
-      com.splits.Mappable result = new com.splits.Mappable(this);
-      if (splitBuilder_ == null) {
-        result.split_ = split_;
-      } else {
-        result.split_ = splitBuilder_.build();
-      }
+    @Override
+    public Mappable buildPartial() {
+      Mappable result = new Mappable(this);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(Mappable result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.split_ = splitBuilder_ == null
+            ? split_
+            : splitBuilder_.build();
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.splits.Mappable) {
-        return mergeFrom((com.splits.Mappable)other);
+      if (other instanceof Mappable) {
+        return mergeFrom((Mappable)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.splits.Mappable other) {
-      if (other == com.splits.Mappable.getDefaultInstance()) return this;
+    public Builder mergeFrom(Mappable other) {
+      if (other == Mappable.getDefaultInstance()) return this;
       if (other.hasSplit()) {
         mergeSplit(other.getSplit());
       }
@@ -355,18 +355,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getSplitFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             default: {
@@ -398,6 +398,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private com.types.Split split_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -407,7 +408,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the split field is set.
      */
     public boolean hasSplit() {
-      return splitBuilder_ != null || split_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>.types.Split split = 1 [json_name = "split"];</code>
@@ -429,11 +430,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         split_ = value;
-        onChanged();
       } else {
         splitBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -443,11 +444,11 @@ private static final long serialVersionUID = 0L;
         com.types.Split.Builder builderForValue) {
       if (splitBuilder_ == null) {
         split_ = builderForValue.build();
-        onChanged();
       } else {
         splitBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -455,38 +456,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeSplit(com.types.Split value) {
       if (splitBuilder_ == null) {
-        if (split_ != null) {
-          split_ =
-            com.types.Split.newBuilder(split_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          split_ != null &&
+          split_ != com.types.Split.getDefaultInstance()) {
+          getSplitBuilder().mergeFrom(value);
         } else {
           split_ = value;
         }
-        onChanged();
       } else {
         splitBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.types.Split split = 1 [json_name = "split"];</code>
      */
     public Builder clearSplit() {
-      if (splitBuilder_ == null) {
-        split_ = null;
-        onChanged();
-      } else {
-        split_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      split_ = null;
+      if (splitBuilder_ != null) {
+        splitBuilder_.dispose();
         splitBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.types.Split split = 1 [json_name = "split"];</code>
      */
     public com.types.Split.Builder getSplitBuilder() {
-      
+      bitField0_ |= 0x00000001;
       onChanged();
       return getSplitFieldBuilder().getBuilder();
     }
@@ -517,13 +518,13 @@ private static final long serialVersionUID = 0L;
       }
       return splitBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -534,18 +535,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:splits.Mappable)
-  private static final com.splits.Mappable DEFAULT_INSTANCE;
+  private static final Mappable DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.splits.Mappable();
+    DEFAULT_INSTANCE = new Mappable();
   }
 
-  public static com.splits.Mappable getDefaultInstance() {
+  public static Mappable getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Mappable>
       PARSER = new com.google.protobuf.AbstractParser<Mappable>() {
-    @java.lang.Override
+    @Override
     public Mappable parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -569,13 +570,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Mappable> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.splits.Mappable getDefaultInstanceForType() {
+  @Override
+  public Mappable getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

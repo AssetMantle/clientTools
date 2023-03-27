@@ -15,7 +15,7 @@ public interface ClientPathsOrBuilder extends
    * <code>repeated string paths = 1 [json_name = "paths"];</code>
    * @return A list containing the paths.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getPathsList();
   /**
    * <pre>
@@ -35,7 +35,7 @@ public interface ClientPathsOrBuilder extends
    * @param index The index of the element to return.
    * @return The paths at the given index.
    */
-  java.lang.String getPaths(int index);
+  String getPaths(int index);
   /**
    * <pre>
    * list of connection paths

@@ -28,21 +28,21 @@ public interface CommitOrBuilder extends
    * <code>.tendermint.types.BlockID block_id = 3 [json_name = "blockId", (.gogoproto.nullable) = false, (.gogoproto.customname) = "BlockID"];</code>
    * @return The blockId.
    */
-  com.tendermint.types.BlockID getBlockId();
+  BlockID getBlockId();
   /**
    * <code>.tendermint.types.BlockID block_id = 3 [json_name = "blockId", (.gogoproto.nullable) = false, (.gogoproto.customname) = "BlockID"];</code>
    */
-  com.tendermint.types.BlockIDOrBuilder getBlockIdOrBuilder();
+  BlockIDOrBuilder getBlockIdOrBuilder();
 
   /**
    * <code>repeated .tendermint.types.CommitSig signatures = 4 [json_name = "signatures", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.tendermint.types.CommitSig> 
+  java.util.List<CommitSig>
       getSignaturesList();
   /**
    * <code>repeated .tendermint.types.CommitSig signatures = 4 [json_name = "signatures", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.types.CommitSig getSignatures(int index);
+  CommitSig getSignatures(int index);
   /**
    * <code>repeated .tendermint.types.CommitSig signatures = 4 [json_name = "signatures", (.gogoproto.nullable) = false];</code>
    */
@@ -50,11 +50,11 @@ public interface CommitOrBuilder extends
   /**
    * <code>repeated .tendermint.types.CommitSig signatures = 4 [json_name = "signatures", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.tendermint.types.CommitSigOrBuilder> 
+  java.util.List<? extends CommitSigOrBuilder>
       getSignaturesOrBuilderList();
   /**
    * <code>repeated .tendermint.types.CommitSig signatures = 4 [json_name = "signatures", (.gogoproto.nullable) = false];</code>
    */
-  com.tendermint.types.CommitSigOrBuilder getSignaturesOrBuilder(
+  CommitSigOrBuilder getSignaturesOrBuilder(
       int index);
 }

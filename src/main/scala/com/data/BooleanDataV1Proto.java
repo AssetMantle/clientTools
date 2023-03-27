@@ -27,7 +27,7 @@ public final class BooleanDataV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n%schema/data/base/booleanData.v1.proto\022" +
       "\004data\032\024gogoproto/gogo.proto\")\n\013BooleanDa" +
       "ta\022\024\n\005value\030\001 \001(\010R\005value:\004\210\240\037\000B\177\n\010com.da" +
@@ -46,7 +46,7 @@ public final class BooleanDataV1Proto {
     internal_static_data_BooleanData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_data_BooleanData_descriptor,
-        new java.lang.String[] { "Value", });
+        new String[] { "Value", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

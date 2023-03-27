@@ -16,11 +16,11 @@ public interface PropertyIDOrBuilder extends
    * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
    * @return The keyID.
    */
-  com.ids.StringID getKeyID();
+  StringID getKeyID();
   /**
    * <code>.ids.StringID key_i_d = 1 [json_name = "keyID"];</code>
    */
-  com.ids.StringIDOrBuilder getKeyIDOrBuilder();
+  StringIDOrBuilder getKeyIDOrBuilder();
 
   /**
    * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
@@ -31,9 +31,9 @@ public interface PropertyIDOrBuilder extends
    * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
    * @return The typeID.
    */
-  com.ids.StringID getTypeID();
+  StringID getTypeID();
   /**
    * <code>.ids.StringID type_i_d = 2 [json_name = "typeID"];</code>
    */
-  com.ids.StringIDOrBuilder getTypeIDOrBuilder();
+  StringIDOrBuilder getTypeIDOrBuilder();
 }

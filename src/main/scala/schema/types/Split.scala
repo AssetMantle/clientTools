@@ -14,7 +14,7 @@ case class Split(ownerID: IdentityID, ownableID: OwnableID, value: BigDecimal) {
 
   def asProtoSplit: protoSplit = protoSplit.newBuilder().setOwnerID(ownerID.asProtoIdentityID).setOwnableID(ownableID.toAnyOwnableID).setValue(value.toString()).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoSplit.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoSplit.toByteString.toByteArray
 
 }
 

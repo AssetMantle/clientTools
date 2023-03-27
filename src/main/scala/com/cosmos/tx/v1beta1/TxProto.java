@@ -72,7 +72,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\032cosmos/tx/v1beta1/tx.proto\022\021cosmos.tx." +
       "v1beta1\032\024gogoproto/gogo.proto\032-cosmos/cr" +
       "ypto/multisig/v1beta1/multisig.proto\032\036co" +
@@ -137,61 +137,61 @@ public final class TxProto {
     internal_static_cosmos_tx_v1beta1_Tx_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_Tx_descriptor,
-        new java.lang.String[] { "Body", "AuthInfo", "Signatures", });
+        new String[] { "Body", "AuthInfo", "Signatures", });
     internal_static_cosmos_tx_v1beta1_TxRaw_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_tx_v1beta1_TxRaw_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_TxRaw_descriptor,
-        new java.lang.String[] { "BodyBytes", "AuthInfoBytes", "Signatures", });
+        new String[] { "BodyBytes", "AuthInfoBytes", "Signatures", });
     internal_static_cosmos_tx_v1beta1_SignDoc_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_tx_v1beta1_SignDoc_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_SignDoc_descriptor,
-        new java.lang.String[] { "BodyBytes", "AuthInfoBytes", "ChainId", "AccountNumber", });
+        new String[] { "BodyBytes", "AuthInfoBytes", "ChainId", "AccountNumber", });
     internal_static_cosmos_tx_v1beta1_TxBody_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_tx_v1beta1_TxBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_TxBody_descriptor,
-        new java.lang.String[] { "Messages", "Memo", "TimeoutHeight", "ExtensionOptions", "NonCriticalExtensionOptions", });
+        new String[] { "Messages", "Memo", "TimeoutHeight", "ExtensionOptions", "NonCriticalExtensionOptions", });
     internal_static_cosmos_tx_v1beta1_AuthInfo_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_tx_v1beta1_AuthInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_AuthInfo_descriptor,
-        new java.lang.String[] { "SignerInfos", "Fee", });
+        new String[] { "SignerInfos", "Fee", });
     internal_static_cosmos_tx_v1beta1_SignerInfo_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_tx_v1beta1_SignerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_SignerInfo_descriptor,
-        new java.lang.String[] { "PublicKey", "ModeInfo", "Sequence", });
+        new String[] { "PublicKey", "ModeInfo", "Sequence", });
     internal_static_cosmos_tx_v1beta1_ModeInfo_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_tx_v1beta1_ModeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_ModeInfo_descriptor,
-        new java.lang.String[] { "Single", "Multi", "Sum", });
+        new String[] { "Single", "Multi", "Sum", });
     internal_static_cosmos_tx_v1beta1_ModeInfo_Single_descriptor =
       internal_static_cosmos_tx_v1beta1_ModeInfo_descriptor.getNestedTypes().get(0);
     internal_static_cosmos_tx_v1beta1_ModeInfo_Single_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_ModeInfo_Single_descriptor,
-        new java.lang.String[] { "Mode", });
+        new String[] { "Mode", });
     internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_descriptor =
       internal_static_cosmos_tx_v1beta1_ModeInfo_descriptor.getNestedTypes().get(1);
     internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_descriptor,
-        new java.lang.String[] { "Bitarray", "ModeInfos", });
+        new String[] { "Bitarray", "ModeInfos", });
     internal_static_cosmos_tx_v1beta1_Fee_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_tx_v1beta1_Fee_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_v1beta1_Fee_descriptor,
-        new java.lang.String[] { "Amount", "GasLimit", "Payer", "Granter", });
+        new String[] { "Amount", "GasLimit", "Payer", "Granter", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);

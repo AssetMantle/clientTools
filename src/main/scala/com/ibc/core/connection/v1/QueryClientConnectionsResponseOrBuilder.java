@@ -15,7 +15,7 @@ public interface QueryClientConnectionsResponseOrBuilder extends
    * <code>repeated string connection_paths = 1 [json_name = "connectionPaths"];</code>
    * @return A list containing the connectionPaths.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getConnectionPathsList();
   /**
    * <pre>
@@ -35,7 +35,7 @@ public interface QueryClientConnectionsResponseOrBuilder extends
    * @param index The index of the element to return.
    * @return The connectionPaths at the given index.
    */
-  java.lang.String getConnectionPaths(int index);
+  String getConnectionPaths(int index);
   /**
    * <pre>
    * slice of all the connection paths associated with a client.

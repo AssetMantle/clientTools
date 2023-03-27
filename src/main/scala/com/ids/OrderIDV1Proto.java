@@ -27,7 +27,7 @@ public final class OrderIDV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n schema/ids/base/orderID.v1.proto\022\003ids\032" +
       "\037schema/ids/base/hashID.v1.proto\032\024gogopr" +
       "oto/gogo.proto\"6\n\007OrderID\022%\n\010hash_i_d\030\001 " +
@@ -39,7 +39,7 @@ public final class OrderIDV1Proto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.ids.HashIDV1Proto.getDescriptor(),
+          HashIDV1Proto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_ids_OrderID_descriptor =
@@ -47,13 +47,13 @@ public final class OrderIDV1Proto {
     internal_static_ids_OrderID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ids_OrderID_descriptor,
-        new java.lang.String[] { "HashID", });
+        new String[] { "HashID", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    com.ids.HashIDV1Proto.getDescriptor();
+    HashIDV1Proto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 

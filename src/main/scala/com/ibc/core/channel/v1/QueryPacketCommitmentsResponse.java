@@ -24,63 +24,63 @@ private static final long serialVersionUID = 0L;
     commitments_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryPacketCommitmentsResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_descriptor;
+    return QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_fieldAccessorTable
+    return QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.channel.v1.QueryPacketCommitmentsResponse.class, com.ibc.core.channel.v1.QueryPacketCommitmentsResponse.Builder.class);
+            QueryPacketCommitmentsResponse.class, Builder.class);
   }
 
   public static final int COMMITMENTS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.ibc.core.channel.v1.PacketState> commitments_;
+  private java.util.List<PacketState> commitments_;
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.ibc.core.channel.v1.PacketState> getCommitmentsList() {
+  @Override
+  public java.util.List<PacketState> getCommitmentsList() {
     return commitments_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
+  @Override
+  public java.util.List<? extends PacketStateOrBuilder>
       getCommitmentsOrBuilderList() {
     return commitments_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getCommitmentsCount() {
     return commitments_.size();
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
    */
-  @java.lang.Override
-  public com.ibc.core.channel.v1.PacketState getCommitments(int index) {
+  @Override
+  public PacketState getCommitments(int index) {
     return commitments_.get(index);
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
    */
-  @java.lang.Override
-  public com.ibc.core.channel.v1.PacketStateOrBuilder getCommitmentsOrBuilder(
+  @Override
+  public PacketStateOrBuilder getCommitmentsOrBuilder(
       int index) {
     return commitments_.get(index);
   }
@@ -95,7 +95,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -107,7 +107,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageResponse getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -118,7 +118,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageResponseOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -133,7 +133,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height height = 3 [json_name = "height", (.gogoproto.nullable) = false];</code>
    * @return Whether the height field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasHeight() {
     return height_ != null;
   }
@@ -145,7 +145,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height height = 3 [json_name = "height", (.gogoproto.nullable) = false];</code>
    * @return The height.
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.Height getHeight() {
     return height_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : height_;
   }
@@ -156,13 +156,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.client.v1.Height height = 3 [json_name = "height", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.HeightOrBuilder getHeightOrBuilder() {
     return height_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : height_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -172,7 +172,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < commitments_.size(); i++) {
@@ -187,7 +187,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -210,15 +210,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.channel.v1.QueryPacketCommitmentsResponse)) {
+    if (!(obj instanceof QueryPacketCommitmentsResponse)) {
       return super.equals(obj);
     }
-    com.ibc.core.channel.v1.QueryPacketCommitmentsResponse other = (com.ibc.core.channel.v1.QueryPacketCommitmentsResponse) obj;
+    QueryPacketCommitmentsResponse other = (QueryPacketCommitmentsResponse) obj;
 
     if (!getCommitmentsList()
         .equals(other.getCommitmentsList())) return false;
@@ -236,7 +236,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -260,69 +260,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseFrom(
+  public static QueryPacketCommitmentsResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseFrom(
+  public static QueryPacketCommitmentsResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseFrom(
+  public static QueryPacketCommitmentsResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseFrom(
+  public static QueryPacketCommitmentsResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseFrom(byte[] data)
+  public static QueryPacketCommitmentsResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseFrom(
+  public static QueryPacketCommitmentsResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseFrom(java.io.InputStream input)
+  public static QueryPacketCommitmentsResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseFrom(
+  public static QueryPacketCommitmentsResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryPacketCommitmentsResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseDelimitedFrom(
+  public static QueryPacketCommitmentsResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseFrom(
+  public static QueryPacketCommitmentsResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse parseFrom(
+  public static QueryPacketCommitmentsResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -330,23 +330,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.channel.v1.QueryPacketCommitmentsResponse prototype) {
+  public static Builder newBuilder(QueryPacketCommitmentsResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -361,18 +361,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.channel.v1.QueryPacketCommitmentsResponse)
-      com.ibc.core.channel.v1.QueryPacketCommitmentsResponseOrBuilder {
+      QueryPacketCommitmentsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_descriptor;
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_fieldAccessorTable
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.channel.v1.QueryPacketCommitmentsResponse.class, com.ibc.core.channel.v1.QueryPacketCommitmentsResponse.Builder.class);
+              QueryPacketCommitmentsResponse.class, Builder.class);
     }
 
     // Construct using com.ibc.core.channel.v1.QueryPacketCommitmentsResponse.newBuilder()
@@ -381,11 +381,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -409,36 +409,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_descriptor;
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryPacketCommitmentsResponse getDefaultInstanceForType() {
-      return com.ibc.core.channel.v1.QueryPacketCommitmentsResponse.getDefaultInstance();
+    @Override
+    public QueryPacketCommitmentsResponse getDefaultInstanceForType() {
+      return QueryPacketCommitmentsResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryPacketCommitmentsResponse build() {
-      com.ibc.core.channel.v1.QueryPacketCommitmentsResponse result = buildPartial();
+    @Override
+    public QueryPacketCommitmentsResponse build() {
+      QueryPacketCommitmentsResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryPacketCommitmentsResponse buildPartial() {
-      com.ibc.core.channel.v1.QueryPacketCommitmentsResponse result = new com.ibc.core.channel.v1.QueryPacketCommitmentsResponse(this);
+    @Override
+    public QueryPacketCommitmentsResponse buildPartial() {
+      QueryPacketCommitmentsResponse result = new QueryPacketCommitmentsResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.ibc.core.channel.v1.QueryPacketCommitmentsResponse result) {
+    private void buildPartialRepeatedFields(QueryPacketCommitmentsResponse result) {
       if (commitmentsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           commitments_ = java.util.Collections.unmodifiableList(commitments_);
@@ -450,7 +450,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.ibc.core.channel.v1.QueryPacketCommitmentsResponse result) {
+    private void buildPartial0(QueryPacketCommitmentsResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -464,50 +464,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.channel.v1.QueryPacketCommitmentsResponse) {
-        return mergeFrom((com.ibc.core.channel.v1.QueryPacketCommitmentsResponse)other);
+      if (other instanceof QueryPacketCommitmentsResponse) {
+        return mergeFrom((QueryPacketCommitmentsResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.channel.v1.QueryPacketCommitmentsResponse other) {
-      if (other == com.ibc.core.channel.v1.QueryPacketCommitmentsResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryPacketCommitmentsResponse other) {
+      if (other == QueryPacketCommitmentsResponse.getDefaultInstance()) return this;
       if (commitmentsBuilder_ == null) {
         if (!other.commitments_.isEmpty()) {
           if (commitments_.isEmpty()) {
@@ -545,18 +545,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -567,9 +567,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.ibc.core.channel.v1.PacketState m =
+              PacketState m =
                   input.readMessage(
-                      com.ibc.core.channel.v1.PacketState.parser(),
+                      PacketState.parser(),
                       extensionRegistry);
               if (commitmentsBuilder_ == null) {
                 ensureCommitmentsIsMutable();
@@ -610,22 +610,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.ibc.core.channel.v1.PacketState> commitments_ =
+    private java.util.List<PacketState> commitments_ =
       java.util.Collections.emptyList();
     private void ensureCommitmentsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        commitments_ = new java.util.ArrayList<com.ibc.core.channel.v1.PacketState>(commitments_);
+        commitments_ = new java.util.ArrayList<PacketState>(commitments_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder> commitmentsBuilder_;
+        PacketState, PacketState.Builder, PacketStateOrBuilder> commitmentsBuilder_;
 
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
-    public java.util.List<com.ibc.core.channel.v1.PacketState> getCommitmentsList() {
+    public java.util.List<PacketState> getCommitmentsList() {
       if (commitmentsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(commitments_);
       } else {
@@ -645,7 +645,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
-    public com.ibc.core.channel.v1.PacketState getCommitments(int index) {
+    public PacketState getCommitments(int index) {
       if (commitmentsBuilder_ == null) {
         return commitments_.get(index);
       } else {
@@ -656,7 +656,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
     public Builder setCommitments(
-        int index, com.ibc.core.channel.v1.PacketState value) {
+        int index, PacketState value) {
       if (commitmentsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -673,7 +673,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
     public Builder setCommitments(
-        int index, com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
+        int index, PacketState.Builder builderForValue) {
       if (commitmentsBuilder_ == null) {
         ensureCommitmentsIsMutable();
         commitments_.set(index, builderForValue.build());
@@ -686,7 +686,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
-    public Builder addCommitments(com.ibc.core.channel.v1.PacketState value) {
+    public Builder addCommitments(PacketState value) {
       if (commitmentsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -703,7 +703,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
     public Builder addCommitments(
-        int index, com.ibc.core.channel.v1.PacketState value) {
+        int index, PacketState value) {
       if (commitmentsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -720,7 +720,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
     public Builder addCommitments(
-        com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
+        PacketState.Builder builderForValue) {
       if (commitmentsBuilder_ == null) {
         ensureCommitmentsIsMutable();
         commitments_.add(builderForValue.build());
@@ -734,7 +734,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
     public Builder addCommitments(
-        int index, com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
+        int index, PacketState.Builder builderForValue) {
       if (commitmentsBuilder_ == null) {
         ensureCommitmentsIsMutable();
         commitments_.add(index, builderForValue.build());
@@ -748,7 +748,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
     public Builder addAllCommitments(
-        java.lang.Iterable<? extends com.ibc.core.channel.v1.PacketState> values) {
+        Iterable<? extends PacketState> values) {
       if (commitmentsBuilder_ == null) {
         ensureCommitmentsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -788,14 +788,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
-    public com.ibc.core.channel.v1.PacketState.Builder getCommitmentsBuilder(
+    public PacketState.Builder getCommitmentsBuilder(
         int index) {
       return getCommitmentsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
-    public com.ibc.core.channel.v1.PacketStateOrBuilder getCommitmentsOrBuilder(
+    public PacketStateOrBuilder getCommitmentsOrBuilder(
         int index) {
       if (commitmentsBuilder_ == null) {
         return commitments_.get(index);  } else {
@@ -805,7 +805,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
-    public java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
+    public java.util.List<? extends PacketStateOrBuilder>
          getCommitmentsOrBuilderList() {
       if (commitmentsBuilder_ != null) {
         return commitmentsBuilder_.getMessageOrBuilderList();
@@ -816,31 +816,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
-    public com.ibc.core.channel.v1.PacketState.Builder addCommitmentsBuilder() {
+    public PacketState.Builder addCommitmentsBuilder() {
       return getCommitmentsFieldBuilder().addBuilder(
-          com.ibc.core.channel.v1.PacketState.getDefaultInstance());
+          PacketState.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
-    public com.ibc.core.channel.v1.PacketState.Builder addCommitmentsBuilder(
+    public PacketState.Builder addCommitmentsBuilder(
         int index) {
       return getCommitmentsFieldBuilder().addBuilder(
-          index, com.ibc.core.channel.v1.PacketState.getDefaultInstance());
+          index, PacketState.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 1 [json_name = "commitments"];</code>
      */
-    public java.util.List<com.ibc.core.channel.v1.PacketState.Builder> 
+    public java.util.List<PacketState.Builder>
          getCommitmentsBuilderList() {
       return getCommitmentsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder> 
+        PacketState, PacketState.Builder, PacketStateOrBuilder>
         getCommitmentsFieldBuilder() {
       if (commitmentsBuilder_ == null) {
         commitmentsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder>(
+            PacketState, PacketState.Builder, PacketStateOrBuilder>(
                 commitments_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -1159,13 +1159,13 @@ private static final long serialVersionUID = 0L;
       }
       return heightBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1176,18 +1176,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.channel.v1.QueryPacketCommitmentsResponse)
-  private static final com.ibc.core.channel.v1.QueryPacketCommitmentsResponse DEFAULT_INSTANCE;
+  private static final QueryPacketCommitmentsResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.channel.v1.QueryPacketCommitmentsResponse();
+    DEFAULT_INSTANCE = new QueryPacketCommitmentsResponse();
   }
 
-  public static com.ibc.core.channel.v1.QueryPacketCommitmentsResponse getDefaultInstance() {
+  public static QueryPacketCommitmentsResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryPacketCommitmentsResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryPacketCommitmentsResponse>() {
-    @java.lang.Override
+    @Override
     public QueryPacketCommitmentsResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1211,13 +1211,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryPacketCommitmentsResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.channel.v1.QueryPacketCommitmentsResponse getDefaultInstanceForType() {
+  @Override
+  public QueryPacketCommitmentsResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

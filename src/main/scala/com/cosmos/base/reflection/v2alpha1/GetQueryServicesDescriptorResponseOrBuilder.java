@@ -24,7 +24,7 @@ public interface GetQueryServicesDescriptorResponseOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor queries = 1 [json_name = "queries"];</code>
    * @return The queries.
    */
-  com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor getQueries();
+  QueryServicesDescriptor getQueries();
   /**
    * <pre>
    * queries provides information on the available queryable services
@@ -32,5 +32,5 @@ public interface GetQueryServicesDescriptorResponseOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor queries = 1 [json_name = "queries"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptorOrBuilder getQueriesOrBuilder();
+  QueryServicesDescriptorOrBuilder getQueriesOrBuilder();
 }

@@ -27,7 +27,7 @@ public final class QueryRequestV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n;modules/orders/internal/queries/order/" +
       "queryRequest.v1.proto\022\024orders.queries.or" +
       "der\032 schema/ids/base/orderID.v1.proto\"8\n" +
@@ -50,7 +50,7 @@ public final class QueryRequestV1Proto {
     internal_static_orders_queries_order_QueryRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_orders_queries_order_QueryRequest_descriptor,
-        new java.lang.String[] { "OrderID", });
+        new String[] { "OrderID", });
     com.ids.OrderIDV1Proto.getDescriptor();
   }
 

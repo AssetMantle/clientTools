@@ -18,24 +18,24 @@ private static final long serialVersionUID = 0L;
   private SimpleValidator() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new SimpleValidator();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.tendermint.types.ValidatorProto.internal_static_tendermint_types_SimpleValidator_descriptor;
+    return ValidatorProto.internal_static_tendermint_types_SimpleValidator_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.tendermint.types.ValidatorProto.internal_static_tendermint_types_SimpleValidator_fieldAccessorTable
+    return ValidatorProto.internal_static_tendermint_types_SimpleValidator_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.tendermint.types.SimpleValidator.class, com.tendermint.types.SimpleValidator.Builder.class);
+            SimpleValidator.class, Builder.class);
   }
 
   public static final int PUB_KEY_FIELD_NUMBER = 1;
@@ -44,7 +44,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.crypto.PublicKey pub_key = 1 [json_name = "pubKey"];</code>
    * @return Whether the pubKey field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPubKey() {
     return pubKey_ != null;
   }
@@ -52,14 +52,14 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.crypto.PublicKey pub_key = 1 [json_name = "pubKey"];</code>
    * @return The pubKey.
    */
-  @java.lang.Override
+  @Override
   public com.tendermint.crypto.PublicKey getPubKey() {
     return pubKey_ == null ? com.tendermint.crypto.PublicKey.getDefaultInstance() : pubKey_;
   }
   /**
    * <code>.tendermint.crypto.PublicKey pub_key = 1 [json_name = "pubKey"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.tendermint.crypto.PublicKeyOrBuilder getPubKeyOrBuilder() {
     return pubKey_ == null ? com.tendermint.crypto.PublicKey.getDefaultInstance() : pubKey_;
   }
@@ -70,13 +70,13 @@ private static final long serialVersionUID = 0L;
    * <code>int64 voting_power = 2 [json_name = "votingPower"];</code>
    * @return The votingPower.
    */
-  @java.lang.Override
+  @Override
   public long getVotingPower() {
     return votingPower_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -86,7 +86,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (pubKey_ != null) {
@@ -98,7 +98,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -117,15 +117,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.tendermint.types.SimpleValidator)) {
+    if (!(obj instanceof SimpleValidator)) {
       return super.equals(obj);
     }
-    com.tendermint.types.SimpleValidator other = (com.tendermint.types.SimpleValidator) obj;
+    SimpleValidator other = (SimpleValidator) obj;
 
     if (hasPubKey() != other.hasPubKey()) return false;
     if (hasPubKey()) {
@@ -138,7 +138,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -157,69 +157,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.tendermint.types.SimpleValidator parseFrom(
+  public static SimpleValidator parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.types.SimpleValidator parseFrom(
+  public static SimpleValidator parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.types.SimpleValidator parseFrom(
+  public static SimpleValidator parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.types.SimpleValidator parseFrom(
+  public static SimpleValidator parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.types.SimpleValidator parseFrom(byte[] data)
+  public static SimpleValidator parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.types.SimpleValidator parseFrom(
+  public static SimpleValidator parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.types.SimpleValidator parseFrom(java.io.InputStream input)
+  public static SimpleValidator parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.types.SimpleValidator parseFrom(
+  public static SimpleValidator parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.types.SimpleValidator parseDelimitedFrom(java.io.InputStream input)
+  public static SimpleValidator parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.tendermint.types.SimpleValidator parseDelimitedFrom(
+  public static SimpleValidator parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.types.SimpleValidator parseFrom(
+  public static SimpleValidator parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.types.SimpleValidator parseFrom(
+  public static SimpleValidator parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -227,23 +227,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.tendermint.types.SimpleValidator prototype) {
+  public static Builder newBuilder(SimpleValidator prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -253,18 +253,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.types.SimpleValidator)
-      com.tendermint.types.SimpleValidatorOrBuilder {
+      SimpleValidatorOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.tendermint.types.ValidatorProto.internal_static_tendermint_types_SimpleValidator_descriptor;
+      return ValidatorProto.internal_static_tendermint_types_SimpleValidator_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.tendermint.types.ValidatorProto.internal_static_tendermint_types_SimpleValidator_fieldAccessorTable
+      return ValidatorProto.internal_static_tendermint_types_SimpleValidator_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.tendermint.types.SimpleValidator.class, com.tendermint.types.SimpleValidator.Builder.class);
+              SimpleValidator.class, Builder.class);
     }
 
     // Construct using com.tendermint.types.SimpleValidator.newBuilder()
@@ -273,11 +273,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -290,35 +290,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.tendermint.types.ValidatorProto.internal_static_tendermint_types_SimpleValidator_descriptor;
+      return ValidatorProto.internal_static_tendermint_types_SimpleValidator_descriptor;
     }
 
-    @java.lang.Override
-    public com.tendermint.types.SimpleValidator getDefaultInstanceForType() {
-      return com.tendermint.types.SimpleValidator.getDefaultInstance();
+    @Override
+    public SimpleValidator getDefaultInstanceForType() {
+      return SimpleValidator.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.tendermint.types.SimpleValidator build() {
-      com.tendermint.types.SimpleValidator result = buildPartial();
+    @Override
+    public SimpleValidator build() {
+      SimpleValidator result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.tendermint.types.SimpleValidator buildPartial() {
-      com.tendermint.types.SimpleValidator result = new com.tendermint.types.SimpleValidator(this);
+    @Override
+    public SimpleValidator buildPartial() {
+      SimpleValidator result = new SimpleValidator(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.tendermint.types.SimpleValidator result) {
+    private void buildPartial0(SimpleValidator result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.pubKey_ = pubKeyBuilder_ == null
@@ -330,50 +330,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.tendermint.types.SimpleValidator) {
-        return mergeFrom((com.tendermint.types.SimpleValidator)other);
+      if (other instanceof SimpleValidator) {
+        return mergeFrom((SimpleValidator)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.tendermint.types.SimpleValidator other) {
-      if (other == com.tendermint.types.SimpleValidator.getDefaultInstance()) return this;
+    public Builder mergeFrom(SimpleValidator other) {
+      if (other == SimpleValidator.getDefaultInstance()) return this;
       if (other.hasPubKey()) {
         mergePubKey(other.getPubKey());
       }
@@ -385,18 +385,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -559,7 +559,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 voting_power = 2 [json_name = "votingPower"];</code>
      * @return The votingPower.
      */
-    @java.lang.Override
+    @Override
     public long getVotingPower() {
       return votingPower_;
     }
@@ -585,13 +585,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -602,18 +602,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.types.SimpleValidator)
-  private static final com.tendermint.types.SimpleValidator DEFAULT_INSTANCE;
+  private static final SimpleValidator DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.tendermint.types.SimpleValidator();
+    DEFAULT_INSTANCE = new SimpleValidator();
   }
 
-  public static com.tendermint.types.SimpleValidator getDefaultInstance() {
+  public static SimpleValidator getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<SimpleValidator>
       PARSER = new com.google.protobuf.AbstractParser<SimpleValidator>() {
-    @java.lang.Override
+    @Override
     public SimpleValidator parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -637,13 +637,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<SimpleValidator> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.tendermint.types.SimpleValidator getDefaultInstanceForType() {
+  @Override
+  public SimpleValidator getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

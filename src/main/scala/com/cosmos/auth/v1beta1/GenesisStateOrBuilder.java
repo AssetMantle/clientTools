@@ -24,7 +24,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  com.cosmos.auth.v1beta1.Params getParams();
+  Params getParams();
   /**
    * <pre>
    * params defines all the paramaters of the module.
@@ -32,7 +32,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.auth.v1beta1.ParamsOrBuilder getParamsOrBuilder();
+  ParamsOrBuilder getParamsOrBuilder();
 
   /**
    * <pre>

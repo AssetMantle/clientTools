@@ -41,24 +41,24 @@ private static final long serialVersionUID = 0L;
     prefix_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new LeafOp();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ics23.ProofsProto.internal_static_ics23_LeafOp_descriptor;
+    return ProofsProto.internal_static_ics23_LeafOp_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ics23.ProofsProto.internal_static_ics23_LeafOp_fieldAccessorTable
+    return ProofsProto.internal_static_ics23_LeafOp_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ics23.LeafOp.class, com.ics23.LeafOp.Builder.class);
+            LeafOp.class, Builder.class);
   }
 
   public static final int HASH_FIELD_NUMBER = 1;
@@ -67,16 +67,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.HashOp hash = 1 [json_name = "hash"];</code>
    * @return The enum numeric value on the wire for hash.
    */
-  @java.lang.Override public int getHashValue() {
+  @Override public int getHashValue() {
     return hash_;
   }
   /**
    * <code>.ics23.HashOp hash = 1 [json_name = "hash"];</code>
    * @return The hash.
    */
-  @java.lang.Override public com.ics23.HashOp getHash() {
-    com.ics23.HashOp result = com.ics23.HashOp.forNumber(hash_);
-    return result == null ? com.ics23.HashOp.UNRECOGNIZED : result;
+  @Override public HashOp getHash() {
+    HashOp result = HashOp.forNumber(hash_);
+    return result == null ? HashOp.UNRECOGNIZED : result;
   }
 
   public static final int PREHASH_KEY_FIELD_NUMBER = 2;
@@ -85,16 +85,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.HashOp prehash_key = 2 [json_name = "prehashKey"];</code>
    * @return The enum numeric value on the wire for prehashKey.
    */
-  @java.lang.Override public int getPrehashKeyValue() {
+  @Override public int getPrehashKeyValue() {
     return prehashKey_;
   }
   /**
    * <code>.ics23.HashOp prehash_key = 2 [json_name = "prehashKey"];</code>
    * @return The prehashKey.
    */
-  @java.lang.Override public com.ics23.HashOp getPrehashKey() {
-    com.ics23.HashOp result = com.ics23.HashOp.forNumber(prehashKey_);
-    return result == null ? com.ics23.HashOp.UNRECOGNIZED : result;
+  @Override public HashOp getPrehashKey() {
+    HashOp result = HashOp.forNumber(prehashKey_);
+    return result == null ? HashOp.UNRECOGNIZED : result;
   }
 
   public static final int PREHASH_VALUE_FIELD_NUMBER = 3;
@@ -103,16 +103,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.HashOp prehash_value = 3 [json_name = "prehashValue"];</code>
    * @return The enum numeric value on the wire for prehashValue.
    */
-  @java.lang.Override public int getPrehashValueValue() {
+  @Override public int getPrehashValueValue() {
     return prehashValue_;
   }
   /**
    * <code>.ics23.HashOp prehash_value = 3 [json_name = "prehashValue"];</code>
    * @return The prehashValue.
    */
-  @java.lang.Override public com.ics23.HashOp getPrehashValue() {
-    com.ics23.HashOp result = com.ics23.HashOp.forNumber(prehashValue_);
-    return result == null ? com.ics23.HashOp.UNRECOGNIZED : result;
+  @Override public HashOp getPrehashValue() {
+    HashOp result = HashOp.forNumber(prehashValue_);
+    return result == null ? HashOp.UNRECOGNIZED : result;
   }
 
   public static final int LENGTH_FIELD_NUMBER = 4;
@@ -121,16 +121,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.LengthOp length = 4 [json_name = "length"];</code>
    * @return The enum numeric value on the wire for length.
    */
-  @java.lang.Override public int getLengthValue() {
+  @Override public int getLengthValue() {
     return length_;
   }
   /**
    * <code>.ics23.LengthOp length = 4 [json_name = "length"];</code>
    * @return The length.
    */
-  @java.lang.Override public com.ics23.LengthOp getLength() {
-    com.ics23.LengthOp result = com.ics23.LengthOp.forNumber(length_);
-    return result == null ? com.ics23.LengthOp.UNRECOGNIZED : result;
+  @Override public LengthOp getLength() {
+    LengthOp result = LengthOp.forNumber(length_);
+    return result == null ? LengthOp.UNRECOGNIZED : result;
   }
 
   public static final int PREFIX_FIELD_NUMBER = 5;
@@ -144,13 +144,13 @@ private static final long serialVersionUID = 0L;
    * <code>bytes prefix = 5 [json_name = "prefix"];</code>
    * @return The prefix.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getPrefix() {
     return prefix_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -160,19 +160,19 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (hash_ != com.ics23.HashOp.NO_HASH.getNumber()) {
+    if (hash_ != HashOp.NO_HASH.getNumber()) {
       output.writeEnum(1, hash_);
     }
-    if (prehashKey_ != com.ics23.HashOp.NO_HASH.getNumber()) {
+    if (prehashKey_ != HashOp.NO_HASH.getNumber()) {
       output.writeEnum(2, prehashKey_);
     }
-    if (prehashValue_ != com.ics23.HashOp.NO_HASH.getNumber()) {
+    if (prehashValue_ != HashOp.NO_HASH.getNumber()) {
       output.writeEnum(3, prehashValue_);
     }
-    if (length_ != com.ics23.LengthOp.NO_PREFIX.getNumber()) {
+    if (length_ != LengthOp.NO_PREFIX.getNumber()) {
       output.writeEnum(4, length_);
     }
     if (!prefix_.isEmpty()) {
@@ -181,25 +181,25 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
-    if (hash_ != com.ics23.HashOp.NO_HASH.getNumber()) {
+    if (hash_ != HashOp.NO_HASH.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, hash_);
     }
-    if (prehashKey_ != com.ics23.HashOp.NO_HASH.getNumber()) {
+    if (prehashKey_ != HashOp.NO_HASH.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, prehashKey_);
     }
-    if (prehashValue_ != com.ics23.HashOp.NO_HASH.getNumber()) {
+    if (prehashValue_ != HashOp.NO_HASH.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, prehashValue_);
     }
-    if (length_ != com.ics23.LengthOp.NO_PREFIX.getNumber()) {
+    if (length_ != LengthOp.NO_PREFIX.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(4, length_);
     }
@@ -212,15 +212,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ics23.LeafOp)) {
+    if (!(obj instanceof LeafOp)) {
       return super.equals(obj);
     }
-    com.ics23.LeafOp other = (com.ics23.LeafOp) obj;
+    LeafOp other = (LeafOp) obj;
 
     if (hash_ != other.hash_) return false;
     if (prehashKey_ != other.prehashKey_) return false;
@@ -232,7 +232,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -254,69 +254,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ics23.LeafOp parseFrom(
+  public static LeafOp parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.LeafOp parseFrom(
+  public static LeafOp parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.LeafOp parseFrom(
+  public static LeafOp parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.LeafOp parseFrom(
+  public static LeafOp parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.LeafOp parseFrom(byte[] data)
+  public static LeafOp parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.LeafOp parseFrom(
+  public static LeafOp parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.LeafOp parseFrom(java.io.InputStream input)
+  public static LeafOp parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.LeafOp parseFrom(
+  public static LeafOp parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.LeafOp parseDelimitedFrom(java.io.InputStream input)
+  public static LeafOp parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ics23.LeafOp parseDelimitedFrom(
+  public static LeafOp parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.LeafOp parseFrom(
+  public static LeafOp parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.LeafOp parseFrom(
+  public static LeafOp parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -324,23 +324,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ics23.LeafOp prototype) {
+  public static Builder newBuilder(LeafOp prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -368,18 +368,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ics23.LeafOp)
-      com.ics23.LeafOpOrBuilder {
+      LeafOpOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ics23.ProofsProto.internal_static_ics23_LeafOp_descriptor;
+      return ProofsProto.internal_static_ics23_LeafOp_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ics23.ProofsProto.internal_static_ics23_LeafOp_fieldAccessorTable
+      return ProofsProto.internal_static_ics23_LeafOp_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ics23.LeafOp.class, com.ics23.LeafOp.Builder.class);
+              LeafOp.class, Builder.class);
     }
 
     // Construct using com.ics23.LeafOp.newBuilder()
@@ -388,11 +388,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -404,35 +404,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ics23.ProofsProto.internal_static_ics23_LeafOp_descriptor;
+      return ProofsProto.internal_static_ics23_LeafOp_descriptor;
     }
 
-    @java.lang.Override
-    public com.ics23.LeafOp getDefaultInstanceForType() {
-      return com.ics23.LeafOp.getDefaultInstance();
+    @Override
+    public LeafOp getDefaultInstanceForType() {
+      return LeafOp.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ics23.LeafOp build() {
-      com.ics23.LeafOp result = buildPartial();
+    @Override
+    public LeafOp build() {
+      LeafOp result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ics23.LeafOp buildPartial() {
-      com.ics23.LeafOp result = new com.ics23.LeafOp(this);
+    @Override
+    public LeafOp buildPartial() {
+      LeafOp result = new LeafOp(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ics23.LeafOp result) {
+    private void buildPartial0(LeafOp result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.hash_ = hash_;
@@ -451,50 +451,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ics23.LeafOp) {
-        return mergeFrom((com.ics23.LeafOp)other);
+      if (other instanceof LeafOp) {
+        return mergeFrom((LeafOp)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ics23.LeafOp other) {
-      if (other == com.ics23.LeafOp.getDefaultInstance()) return this;
+    public Builder mergeFrom(LeafOp other) {
+      if (other == LeafOp.getDefaultInstance()) return this;
       if (other.hash_ != 0) {
         setHashValue(other.getHashValue());
       }
@@ -515,18 +515,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -583,7 +583,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.HashOp hash = 1 [json_name = "hash"];</code>
      * @return The enum numeric value on the wire for hash.
      */
-    @java.lang.Override public int getHashValue() {
+    @Override public int getHashValue() {
       return hash_;
     }
     /**
@@ -601,17 +601,17 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.HashOp hash = 1 [json_name = "hash"];</code>
      * @return The hash.
      */
-    @java.lang.Override
-    public com.ics23.HashOp getHash() {
-      com.ics23.HashOp result = com.ics23.HashOp.forNumber(hash_);
-      return result == null ? com.ics23.HashOp.UNRECOGNIZED : result;
+    @Override
+    public HashOp getHash() {
+      HashOp result = HashOp.forNumber(hash_);
+      return result == null ? HashOp.UNRECOGNIZED : result;
     }
     /**
      * <code>.ics23.HashOp hash = 1 [json_name = "hash"];</code>
      * @param value The hash to set.
      * @return This builder for chaining.
      */
-    public Builder setHash(com.ics23.HashOp value) {
+    public Builder setHash(HashOp value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -636,7 +636,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.HashOp prehash_key = 2 [json_name = "prehashKey"];</code>
      * @return The enum numeric value on the wire for prehashKey.
      */
-    @java.lang.Override public int getPrehashKeyValue() {
+    @Override public int getPrehashKeyValue() {
       return prehashKey_;
     }
     /**
@@ -654,17 +654,17 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.HashOp prehash_key = 2 [json_name = "prehashKey"];</code>
      * @return The prehashKey.
      */
-    @java.lang.Override
-    public com.ics23.HashOp getPrehashKey() {
-      com.ics23.HashOp result = com.ics23.HashOp.forNumber(prehashKey_);
-      return result == null ? com.ics23.HashOp.UNRECOGNIZED : result;
+    @Override
+    public HashOp getPrehashKey() {
+      HashOp result = HashOp.forNumber(prehashKey_);
+      return result == null ? HashOp.UNRECOGNIZED : result;
     }
     /**
      * <code>.ics23.HashOp prehash_key = 2 [json_name = "prehashKey"];</code>
      * @param value The prehashKey to set.
      * @return This builder for chaining.
      */
-    public Builder setPrehashKey(com.ics23.HashOp value) {
+    public Builder setPrehashKey(HashOp value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -689,7 +689,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.HashOp prehash_value = 3 [json_name = "prehashValue"];</code>
      * @return The enum numeric value on the wire for prehashValue.
      */
-    @java.lang.Override public int getPrehashValueValue() {
+    @Override public int getPrehashValueValue() {
       return prehashValue_;
     }
     /**
@@ -707,17 +707,17 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.HashOp prehash_value = 3 [json_name = "prehashValue"];</code>
      * @return The prehashValue.
      */
-    @java.lang.Override
-    public com.ics23.HashOp getPrehashValue() {
-      com.ics23.HashOp result = com.ics23.HashOp.forNumber(prehashValue_);
-      return result == null ? com.ics23.HashOp.UNRECOGNIZED : result;
+    @Override
+    public HashOp getPrehashValue() {
+      HashOp result = HashOp.forNumber(prehashValue_);
+      return result == null ? HashOp.UNRECOGNIZED : result;
     }
     /**
      * <code>.ics23.HashOp prehash_value = 3 [json_name = "prehashValue"];</code>
      * @param value The prehashValue to set.
      * @return This builder for chaining.
      */
-    public Builder setPrehashValue(com.ics23.HashOp value) {
+    public Builder setPrehashValue(HashOp value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -742,7 +742,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.LengthOp length = 4 [json_name = "length"];</code>
      * @return The enum numeric value on the wire for length.
      */
-    @java.lang.Override public int getLengthValue() {
+    @Override public int getLengthValue() {
       return length_;
     }
     /**
@@ -760,17 +760,17 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.LengthOp length = 4 [json_name = "length"];</code>
      * @return The length.
      */
-    @java.lang.Override
-    public com.ics23.LengthOp getLength() {
-      com.ics23.LengthOp result = com.ics23.LengthOp.forNumber(length_);
-      return result == null ? com.ics23.LengthOp.UNRECOGNIZED : result;
+    @Override
+    public LengthOp getLength() {
+      LengthOp result = LengthOp.forNumber(length_);
+      return result == null ? LengthOp.UNRECOGNIZED : result;
     }
     /**
      * <code>.ics23.LengthOp length = 4 [json_name = "length"];</code>
      * @param value The length to set.
      * @return This builder for chaining.
      */
-    public Builder setLength(com.ics23.LengthOp value) {
+    public Builder setLength(LengthOp value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -800,7 +800,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes prefix = 5 [json_name = "prefix"];</code>
      * @return The prefix.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getPrefix() {
       return prefix_;
     }
@@ -836,13 +836,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -853,18 +853,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ics23.LeafOp)
-  private static final com.ics23.LeafOp DEFAULT_INSTANCE;
+  private static final LeafOp DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ics23.LeafOp();
+    DEFAULT_INSTANCE = new LeafOp();
   }
 
-  public static com.ics23.LeafOp getDefaultInstance() {
+  public static LeafOp getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<LeafOp>
       PARSER = new com.google.protobuf.AbstractParser<LeafOp>() {
-    @java.lang.Override
+    @Override
     public LeafOp parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -888,13 +888,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<LeafOp> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ics23.LeafOp getDefaultInstanceForType() {
+  @Override
+  public LeafOp getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

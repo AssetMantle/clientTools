@@ -11,7 +11,7 @@ public interface RegisteredInterchainAccountOrBuilder extends
    * <code>string connection_id = 1 [json_name = "connectionId", (.gogoproto.moretags) = "yaml:&#92;"connection_id&#92;""];</code>
    * @return The connectionId.
    */
-  java.lang.String getConnectionId();
+  String getConnectionId();
   /**
    * <code>string connection_id = 1 [json_name = "connectionId", (.gogoproto.moretags) = "yaml:&#92;"connection_id&#92;""];</code>
    * @return The bytes for connectionId.
@@ -23,7 +23,7 @@ public interface RegisteredInterchainAccountOrBuilder extends
    * <code>string port_id = 2 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The portId.
    */
-  java.lang.String getPortId();
+  String getPortId();
   /**
    * <code>string port_id = 2 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The bytes for portId.
@@ -35,7 +35,7 @@ public interface RegisteredInterchainAccountOrBuilder extends
    * <code>string account_address = 3 [json_name = "accountAddress", (.gogoproto.moretags) = "yaml:&#92;"account_address&#92;""];</code>
    * @return The accountAddress.
    */
-  java.lang.String getAccountAddress();
+  String getAccountAddress();
   /**
    * <code>string account_address = 3 [json_name = "accountAddress", (.gogoproto.moretags) = "yaml:&#92;"account_address&#92;""];</code>
    * @return The bytes for accountAddress.

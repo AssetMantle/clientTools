@@ -11,7 +11,7 @@ public interface MessageOrBuilder extends
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
    */
-  java.lang.String getFrom();
+  String getFrom();
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The bytes for from.
@@ -35,12 +35,12 @@ public interface MessageOrBuilder extends
   com.ids.IdentityIDOrBuilder getFromIDOrBuilder();
 
   /**
-   * <code>string taker_ownable_split = 3 [json_name = "takerOwnableSplit", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
+   * <code>string taker_ownable_split = 3 [json_name = "takerOwnableSplit"];</code>
    * @return The takerOwnableSplit.
    */
-  java.lang.String getTakerOwnableSplit();
+  String getTakerOwnableSplit();
   /**
-   * <code>string taker_ownable_split = 3 [json_name = "takerOwnableSplit", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
+   * <code>string taker_ownable_split = 3 [json_name = "takerOwnableSplit"];</code>
    * @return The bytes for takerOwnableSplit.
    */
   com.google.protobuf.ByteString

@@ -32,7 +32,7 @@ public final class KeysProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n cosmos/crypto/ed25519/keys.proto\022\025cosm" +
       "os.crypto.ed25519\032\024gogoproto/gogo.proto\"" +
       ">\n\006PubKey\022.\n\003key\030\001 \001(\014B\034\372\336\037\030crypto/ed255" +
@@ -55,13 +55,13 @@ public final class KeysProto {
     internal_static_cosmos_crypto_ed25519_PubKey_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_crypto_ed25519_PubKey_descriptor,
-        new java.lang.String[] { "Key", });
+        new String[] { "Key", });
     internal_static_cosmos_crypto_ed25519_PrivKey_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_crypto_ed25519_PrivKey_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_crypto_ed25519_PrivKey_descriptor,
-        new java.lang.String[] { "Key", });
+        new String[] { "Key", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.casttype);

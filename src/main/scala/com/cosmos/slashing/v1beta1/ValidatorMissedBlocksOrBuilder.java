@@ -15,7 +15,7 @@ public interface ValidatorMissedBlocksOrBuilder extends
    * <code>string address = 1 [json_name = "address"];</code>
    * @return The address.
    */
-  java.lang.String getAddress();
+  String getAddress();
   /**
    * <pre>
    * address is the validator address.
@@ -34,7 +34,7 @@ public interface ValidatorMissedBlocksOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.MissedBlock missed_blocks = 2 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  java.util.List<com.cosmos.slashing.v1beta1.MissedBlock> 
+  java.util.List<MissedBlock>
       getMissedBlocksList();
   /**
    * <pre>
@@ -43,7 +43,7 @@ public interface ValidatorMissedBlocksOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.MissedBlock missed_blocks = 2 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  com.cosmos.slashing.v1beta1.MissedBlock getMissedBlocks(int index);
+  MissedBlock getMissedBlocks(int index);
   /**
    * <pre>
    * missed_blocks is an array of missed blocks by the validator.
@@ -59,7 +59,7 @@ public interface ValidatorMissedBlocksOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.MissedBlock missed_blocks = 2 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  java.util.List<? extends com.cosmos.slashing.v1beta1.MissedBlockOrBuilder> 
+  java.util.List<? extends MissedBlockOrBuilder>
       getMissedBlocksOrBuilderList();
   /**
    * <pre>
@@ -68,6 +68,6 @@ public interface ValidatorMissedBlocksOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.MissedBlock missed_blocks = 2 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  com.cosmos.slashing.v1beta1.MissedBlockOrBuilder getMissedBlocksOrBuilder(
+  MissedBlockOrBuilder getMissedBlocksOrBuilder(
       int index);
 }

@@ -26,7 +26,7 @@ public interface AppDescriptorOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
    * @return The authn.
    */
-  com.cosmos.base.reflection.v2alpha1.AuthnDescriptor getAuthn();
+  AuthnDescriptor getAuthn();
   /**
    * <pre>
    * AuthnDescriptor provides information on how to authenticate transactions on the application
@@ -35,7 +35,7 @@ public interface AppDescriptorOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder getAuthnOrBuilder();
+  AuthnDescriptorOrBuilder getAuthnOrBuilder();
 
   /**
    * <pre>
@@ -54,7 +54,7 @@ public interface AppDescriptorOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
    * @return The chain.
    */
-  com.cosmos.base.reflection.v2alpha1.ChainDescriptor getChain();
+  ChainDescriptor getChain();
   /**
    * <pre>
    * chain provides the chain descriptor
@@ -62,7 +62,7 @@ public interface AppDescriptorOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.ChainDescriptorOrBuilder getChainOrBuilder();
+  ChainDescriptorOrBuilder getChainOrBuilder();
 
   /**
    * <pre>
@@ -81,7 +81,7 @@ public interface AppDescriptorOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
    * @return The codec.
    */
-  com.cosmos.base.reflection.v2alpha1.CodecDescriptor getCodec();
+  CodecDescriptor getCodec();
   /**
    * <pre>
    * codec provides metadata information regarding codec related types
@@ -89,7 +89,7 @@ public interface AppDescriptorOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.CodecDescriptorOrBuilder getCodecOrBuilder();
+  CodecDescriptorOrBuilder getCodecOrBuilder();
 
   /**
    * <pre>
@@ -108,7 +108,7 @@ public interface AppDescriptorOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
    * @return The configuration.
    */
-  com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor getConfiguration();
+  ConfigurationDescriptor getConfiguration();
   /**
    * <pre>
    * configuration provides metadata information regarding the sdk.Config type
@@ -116,7 +116,7 @@ public interface AppDescriptorOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder getConfigurationOrBuilder();
+  ConfigurationDescriptorOrBuilder getConfigurationOrBuilder();
 
   /**
    * <pre>
@@ -135,7 +135,7 @@ public interface AppDescriptorOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
    * @return The queryServices.
    */
-  com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor getQueryServices();
+  QueryServicesDescriptor getQueryServices();
   /**
    * <pre>
    * query_services provides metadata information regarding the available queriable endpoints
@@ -143,7 +143,7 @@ public interface AppDescriptorOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptorOrBuilder getQueryServicesOrBuilder();
+  QueryServicesDescriptorOrBuilder getQueryServicesOrBuilder();
 
   /**
    * <pre>
@@ -162,7 +162,7 @@ public interface AppDescriptorOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
    * @return The tx.
    */
-  com.cosmos.base.reflection.v2alpha1.TxDescriptor getTx();
+  TxDescriptor getTx();
   /**
    * <pre>
    * tx provides metadata information regarding how to send transactions to the given application
@@ -170,5 +170,5 @@ public interface AppDescriptorOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.TxDescriptorOrBuilder getTxOrBuilder();
+  TxDescriptorOrBuilder getTxOrBuilder();
 }

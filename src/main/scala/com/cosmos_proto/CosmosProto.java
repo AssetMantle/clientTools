@@ -7,9 +7,9 @@ public final class CosmosProto {
   private CosmosProto() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
-    registry.add(com.cosmos_proto.CosmosProto.interfaceType);
-    registry.add(com.cosmos_proto.CosmosProto.implementsInterface);
-    registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);
+    registry.add(CosmosProto.interfaceType);
+    registry.add(CosmosProto.implementsInterface);
+    registry.add(CosmosProto.acceptsInterface);
   }
 
   public static void registerAllExtensions(
@@ -24,9 +24,9 @@ public final class CosmosProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.String> interfaceType = com.google.protobuf.GeneratedMessage
+      String> interfaceType = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int IMPLEMENTS_INTERFACE_FIELD_NUMBER = 93002;
   /**
@@ -35,9 +35,9 @@ public final class CosmosProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.String> implementsInterface = com.google.protobuf.GeneratedMessage
+      String> implementsInterface = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int ACCEPTS_INTERFACE_FIELD_NUMBER = 93001;
   /**
@@ -46,9 +46,9 @@ public final class CosmosProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.String> acceptsInterface = com.google.protobuf.GeneratedMessage
+      String> acceptsInterface = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -58,7 +58,7 @@ public final class CosmosProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\031cosmos_proto/cosmos.proto\022\014cosmos_prot" +
       "o\032 google/protobuf/descriptor.proto:H\n\016i" +
       "nterface_type\022\037.google.protobuf.MessageO" +

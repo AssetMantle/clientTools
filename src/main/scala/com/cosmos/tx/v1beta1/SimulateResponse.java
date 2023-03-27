@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
   private SimulateResponse() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new SimulateResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.tx.v1beta1.ServiceProto.internal_static_cosmos_tx_v1beta1_SimulateResponse_descriptor;
+    return ServiceProto.internal_static_cosmos_tx_v1beta1_SimulateResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.tx.v1beta1.ServiceProto.internal_static_cosmos_tx_v1beta1_SimulateResponse_fieldAccessorTable
+    return ServiceProto.internal_static_cosmos_tx_v1beta1_SimulateResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.tx.v1beta1.SimulateResponse.class, com.cosmos.tx.v1beta1.SimulateResponse.Builder.class);
+            SimulateResponse.class, Builder.class);
   }
 
   public static final int GAS_INFO_FIELD_NUMBER = 1;
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo"];</code>
    * @return Whether the gasInfo field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasGasInfo() {
     return gasInfo_ != null;
   }
@@ -65,7 +65,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo"];</code>
    * @return The gasInfo.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.abci.v1beta1.GasInfo getGasInfo() {
     return gasInfo_ == null ? com.cosmos.base.abci.v1beta1.GasInfo.getDefaultInstance() : gasInfo_;
   }
@@ -76,7 +76,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.abci.v1beta1.GasInfoOrBuilder getGasInfoOrBuilder() {
     return gasInfo_ == null ? com.cosmos.base.abci.v1beta1.GasInfo.getDefaultInstance() : gasInfo_;
   }
@@ -91,7 +91,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
    * @return Whether the result field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasResult() {
     return result_ != null;
   }
@@ -103,7 +103,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
    * @return The result.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.abci.v1beta1.Result getResult() {
     return result_ == null ? com.cosmos.base.abci.v1beta1.Result.getDefaultInstance() : result_;
   }
@@ -114,13 +114,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.abci.v1beta1.ResultOrBuilder getResultOrBuilder() {
     return result_ == null ? com.cosmos.base.abci.v1beta1.Result.getDefaultInstance() : result_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -130,7 +130,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (gasInfo_ != null) {
@@ -142,7 +142,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -161,15 +161,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.tx.v1beta1.SimulateResponse)) {
+    if (!(obj instanceof SimulateResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.tx.v1beta1.SimulateResponse other = (com.cosmos.tx.v1beta1.SimulateResponse) obj;
+    SimulateResponse other = (SimulateResponse) obj;
 
     if (hasGasInfo() != other.hasGasInfo()) return false;
     if (hasGasInfo()) {
@@ -185,7 +185,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -205,69 +205,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseFrom(
+  public static SimulateResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseFrom(
+  public static SimulateResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseFrom(
+  public static SimulateResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseFrom(
+  public static SimulateResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseFrom(byte[] data)
+  public static SimulateResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseFrom(
+  public static SimulateResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseFrom(java.io.InputStream input)
+  public static SimulateResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseFrom(
+  public static SimulateResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseDelimitedFrom(java.io.InputStream input)
+  public static SimulateResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseDelimitedFrom(
+  public static SimulateResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseFrom(
+  public static SimulateResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.tx.v1beta1.SimulateResponse parseFrom(
+  public static SimulateResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -275,23 +275,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.tx.v1beta1.SimulateResponse prototype) {
+  public static Builder newBuilder(SimulateResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -306,18 +306,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.tx.v1beta1.SimulateResponse)
-      com.cosmos.tx.v1beta1.SimulateResponseOrBuilder {
+      SimulateResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.tx.v1beta1.ServiceProto.internal_static_cosmos_tx_v1beta1_SimulateResponse_descriptor;
+      return ServiceProto.internal_static_cosmos_tx_v1beta1_SimulateResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.tx.v1beta1.ServiceProto.internal_static_cosmos_tx_v1beta1_SimulateResponse_fieldAccessorTable
+      return ServiceProto.internal_static_cosmos_tx_v1beta1_SimulateResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.tx.v1beta1.SimulateResponse.class, com.cosmos.tx.v1beta1.SimulateResponse.Builder.class);
+              SimulateResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.tx.v1beta1.SimulateResponse.newBuilder()
@@ -326,11 +326,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -347,35 +347,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.tx.v1beta1.ServiceProto.internal_static_cosmos_tx_v1beta1_SimulateResponse_descriptor;
+      return ServiceProto.internal_static_cosmos_tx_v1beta1_SimulateResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.tx.v1beta1.SimulateResponse getDefaultInstanceForType() {
-      return com.cosmos.tx.v1beta1.SimulateResponse.getDefaultInstance();
+    @Override
+    public SimulateResponse getDefaultInstanceForType() {
+      return SimulateResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.tx.v1beta1.SimulateResponse build() {
-      com.cosmos.tx.v1beta1.SimulateResponse result = buildPartial();
+    @Override
+    public SimulateResponse build() {
+      SimulateResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.tx.v1beta1.SimulateResponse buildPartial() {
-      com.cosmos.tx.v1beta1.SimulateResponse result = new com.cosmos.tx.v1beta1.SimulateResponse(this);
+    @Override
+    public SimulateResponse buildPartial() {
+      SimulateResponse result = new SimulateResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.tx.v1beta1.SimulateResponse result) {
+    private void buildPartial0(SimulateResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.gasInfo_ = gasInfoBuilder_ == null
@@ -389,50 +389,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.tx.v1beta1.SimulateResponse) {
-        return mergeFrom((com.cosmos.tx.v1beta1.SimulateResponse)other);
+      if (other instanceof SimulateResponse) {
+        return mergeFrom((SimulateResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.tx.v1beta1.SimulateResponse other) {
-      if (other == com.cosmos.tx.v1beta1.SimulateResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(SimulateResponse other) {
+      if (other == SimulateResponse.getDefaultInstance()) return this;
       if (other.hasGasInfo()) {
         mergeGasInfo(other.getGasInfo());
       }
@@ -444,18 +444,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -805,13 +805,13 @@ private static final long serialVersionUID = 0L;
       }
       return resultBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -822,18 +822,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.tx.v1beta1.SimulateResponse)
-  private static final com.cosmos.tx.v1beta1.SimulateResponse DEFAULT_INSTANCE;
+  private static final SimulateResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.tx.v1beta1.SimulateResponse();
+    DEFAULT_INSTANCE = new SimulateResponse();
   }
 
-  public static com.cosmos.tx.v1beta1.SimulateResponse getDefaultInstance() {
+  public static SimulateResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<SimulateResponse>
       PARSER = new com.google.protobuf.AbstractParser<SimulateResponse>() {
-    @java.lang.Override
+    @Override
     public SimulateResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -857,13 +857,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<SimulateResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.tx.v1beta1.SimulateResponse getDefaultInstanceForType() {
+  @Override
+  public SimulateResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

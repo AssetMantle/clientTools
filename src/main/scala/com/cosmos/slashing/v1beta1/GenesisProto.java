@@ -42,7 +42,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n%cosmos/slashing/v1beta1/genesis.proto\022" +
       "\027cosmos.slashing.v1beta1\032\024gogoproto/gogo" +
       ".proto\032&cosmos/slashing/v1beta1/slashing" +
@@ -75,32 +75,32 @@ public final class GenesisProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
-          com.cosmos.slashing.v1beta1.SlashingProto.getDescriptor(),
+          SlashingProto.getDescriptor(),
         });
     internal_static_cosmos_slashing_v1beta1_GenesisState_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_slashing_v1beta1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_GenesisState_descriptor,
-        new java.lang.String[] { "Params", "SigningInfos", "MissedBlocks", });
+        new String[] { "Params", "SigningInfos", "MissedBlocks", });
     internal_static_cosmos_slashing_v1beta1_SigningInfo_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_slashing_v1beta1_SigningInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_SigningInfo_descriptor,
-        new java.lang.String[] { "Address", "ValidatorSigningInfo", });
+        new String[] { "Address", "ValidatorSigningInfo", });
     internal_static_cosmos_slashing_v1beta1_ValidatorMissedBlocks_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_slashing_v1beta1_ValidatorMissedBlocks_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_ValidatorMissedBlocks_descriptor,
-        new java.lang.String[] { "Address", "MissedBlocks", });
+        new String[] { "Address", "MissedBlocks", });
     internal_static_cosmos_slashing_v1beta1_MissedBlock_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_slashing_v1beta1_MissedBlock_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_MissedBlock_descriptor,
-        new java.lang.String[] { "Index", "Missed", });
+        new String[] { "Index", "Missed", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.moretags);
@@ -108,7 +108,7 @@ public final class GenesisProto {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
-    com.cosmos.slashing.v1beta1.SlashingProto.getDescriptor();
+    SlashingProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

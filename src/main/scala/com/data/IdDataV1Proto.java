@@ -27,7 +27,7 @@ public final class IdDataV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n schema/data/base/idData.v1.proto\022\004data" +
       "\032\036schema/ids/base/anyID.v1.proto\032\024gogopr" +
       "oto/gogo.proto\"0\n\006IDData\022 \n\005value\030\001 \001(\0132" +
@@ -47,7 +47,7 @@ public final class IdDataV1Proto {
     internal_static_data_IDData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_data_IDData_descriptor,
-        new java.lang.String[] { "Value", });
+        new String[] { "Value", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

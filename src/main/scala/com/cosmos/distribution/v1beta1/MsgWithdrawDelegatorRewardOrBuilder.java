@@ -11,7 +11,7 @@ public interface MsgWithdrawDelegatorRewardOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  java.lang.String getDelegatorAddress();
+  String getDelegatorAddress();
   /**
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The bytes for delegatorAddress.
@@ -23,7 +23,7 @@ public interface MsgWithdrawDelegatorRewardOrBuilder extends
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  java.lang.String getValidatorAddress();
+  String getValidatorAddress();
   /**
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The bytes for validatorAddress.

@@ -17,7 +17,7 @@ public interface QueryModuleVersionsRequestOrBuilder extends
    * <code>string module_name = 1 [json_name = "moduleName"];</code>
    * @return The moduleName.
    */
-  java.lang.String getModuleName();
+  String getModuleName();
   /**
    * <pre>
    * module_name is a field to query a specific module

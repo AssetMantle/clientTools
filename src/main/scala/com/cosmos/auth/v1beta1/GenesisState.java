@@ -23,28 +23,28 @@ private static final long serialVersionUID = 0L;
     accounts_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new GenesisState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.auth.v1beta1.GenesisProto.internal_static_cosmos_auth_v1beta1_GenesisState_descriptor;
+    return GenesisProto.internal_static_cosmos_auth_v1beta1_GenesisState_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.auth.v1beta1.GenesisProto.internal_static_cosmos_auth_v1beta1_GenesisState_fieldAccessorTable
+    return GenesisProto.internal_static_cosmos_auth_v1beta1_GenesisState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.auth.v1beta1.GenesisState.class, com.cosmos.auth.v1beta1.GenesisState.Builder.class);
+            GenesisState.class, Builder.class);
   }
 
   public static final int PARAMS_FIELD_NUMBER = 1;
-  private com.cosmos.auth.v1beta1.Params params_;
+  private Params params_;
   /**
    * <pre>
    * params defines all the paramaters of the module.
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return Whether the params field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasParams() {
     return params_ != null;
   }
@@ -65,9 +65,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  @java.lang.Override
-  public com.cosmos.auth.v1beta1.Params getParams() {
-    return params_ == null ? com.cosmos.auth.v1beta1.Params.getDefaultInstance() : params_;
+  @Override
+  public Params getParams() {
+    return params_ == null ? Params.getDefaultInstance() : params_;
   }
   /**
    * <pre>
@@ -76,9 +76,9 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.auth.v1beta1.ParamsOrBuilder getParamsOrBuilder() {
-    return params_ == null ? com.cosmos.auth.v1beta1.Params.getDefaultInstance() : params_;
+  @Override
+  public ParamsOrBuilder getParamsOrBuilder() {
+    return params_ == null ? Params.getDefaultInstance() : params_;
   }
 
   public static final int ACCOUNTS_FIELD_NUMBER = 2;
@@ -91,7 +91,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any accounts = 2 [json_name = "accounts"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<com.google.protobuf.Any> getAccountsList() {
     return accounts_;
   }
@@ -102,7 +102,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any accounts = 2 [json_name = "accounts"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<? extends com.google.protobuf.AnyOrBuilder> 
       getAccountsOrBuilderList() {
     return accounts_;
@@ -114,7 +114,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any accounts = 2 [json_name = "accounts"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getAccountsCount() {
     return accounts_.size();
   }
@@ -125,7 +125,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any accounts = 2 [json_name = "accounts"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Any getAccounts(int index) {
     return accounts_.get(index);
   }
@@ -136,14 +136,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any accounts = 2 [json_name = "accounts"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.AnyOrBuilder getAccountsOrBuilder(
       int index) {
     return accounts_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -153,7 +153,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (params_ != null) {
@@ -165,7 +165,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -184,15 +184,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.auth.v1beta1.GenesisState)) {
+    if (!(obj instanceof GenesisState)) {
       return super.equals(obj);
     }
-    com.cosmos.auth.v1beta1.GenesisState other = (com.cosmos.auth.v1beta1.GenesisState) obj;
+    GenesisState other = (GenesisState) obj;
 
     if (hasParams() != other.hasParams()) return false;
     if (hasParams()) {
@@ -205,7 +205,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -225,69 +225,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.auth.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseFrom(byte[] data)
+  public static GenesisState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseFrom(java.io.InputStream input)
+  public static GenesisState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseDelimitedFrom(java.io.InputStream input)
+  public static GenesisState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseDelimitedFrom(
+  public static GenesisState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.auth.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -295,23 +295,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.auth.v1beta1.GenesisState prototype) {
+  public static Builder newBuilder(GenesisState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -325,18 +325,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.auth.v1beta1.GenesisState)
-      com.cosmos.auth.v1beta1.GenesisStateOrBuilder {
+      GenesisStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.auth.v1beta1.GenesisProto.internal_static_cosmos_auth_v1beta1_GenesisState_descriptor;
+      return GenesisProto.internal_static_cosmos_auth_v1beta1_GenesisState_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.auth.v1beta1.GenesisProto.internal_static_cosmos_auth_v1beta1_GenesisState_fieldAccessorTable
+      return GenesisProto.internal_static_cosmos_auth_v1beta1_GenesisState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.auth.v1beta1.GenesisState.class, com.cosmos.auth.v1beta1.GenesisState.Builder.class);
+              GenesisState.class, Builder.class);
     }
 
     // Construct using com.cosmos.auth.v1beta1.GenesisState.newBuilder()
@@ -345,11 +345,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -368,36 +368,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.auth.v1beta1.GenesisProto.internal_static_cosmos_auth_v1beta1_GenesisState_descriptor;
+      return GenesisProto.internal_static_cosmos_auth_v1beta1_GenesisState_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.auth.v1beta1.GenesisState getDefaultInstanceForType() {
-      return com.cosmos.auth.v1beta1.GenesisState.getDefaultInstance();
+    @Override
+    public GenesisState getDefaultInstanceForType() {
+      return GenesisState.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.auth.v1beta1.GenesisState build() {
-      com.cosmos.auth.v1beta1.GenesisState result = buildPartial();
+    @Override
+    public GenesisState build() {
+      GenesisState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.auth.v1beta1.GenesisState buildPartial() {
-      com.cosmos.auth.v1beta1.GenesisState result = new com.cosmos.auth.v1beta1.GenesisState(this);
+    @Override
+    public GenesisState buildPartial() {
+      GenesisState result = new GenesisState(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.auth.v1beta1.GenesisState result) {
+    private void buildPartialRepeatedFields(GenesisState result) {
       if (accountsBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           accounts_ = java.util.Collections.unmodifiableList(accounts_);
@@ -409,7 +409,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.auth.v1beta1.GenesisState result) {
+    private void buildPartial0(GenesisState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.params_ = paramsBuilder_ == null
@@ -418,50 +418,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.auth.v1beta1.GenesisState) {
-        return mergeFrom((com.cosmos.auth.v1beta1.GenesisState)other);
+      if (other instanceof GenesisState) {
+        return mergeFrom((GenesisState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.auth.v1beta1.GenesisState other) {
-      if (other == com.cosmos.auth.v1beta1.GenesisState.getDefaultInstance()) return this;
+    public Builder mergeFrom(GenesisState other) {
+      if (other == GenesisState.getDefaultInstance()) return this;
       if (other.hasParams()) {
         mergeParams(other.getParams());
       }
@@ -496,18 +496,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -554,9 +554,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.cosmos.auth.v1beta1.Params params_;
+    private Params params_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.auth.v1beta1.Params, com.cosmos.auth.v1beta1.Params.Builder, com.cosmos.auth.v1beta1.ParamsOrBuilder> paramsBuilder_;
+        Params, Params.Builder, ParamsOrBuilder> paramsBuilder_;
     /**
      * <pre>
      * params defines all the paramaters of the module.
@@ -576,9 +576,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      * @return The params.
      */
-    public com.cosmos.auth.v1beta1.Params getParams() {
+    public Params getParams() {
       if (paramsBuilder_ == null) {
-        return params_ == null ? com.cosmos.auth.v1beta1.Params.getDefaultInstance() : params_;
+        return params_ == null ? Params.getDefaultInstance() : params_;
       } else {
         return paramsBuilder_.getMessage();
       }
@@ -590,7 +590,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setParams(com.cosmos.auth.v1beta1.Params value) {
+    public Builder setParams(Params value) {
       if (paramsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -611,7 +611,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
     public Builder setParams(
-        com.cosmos.auth.v1beta1.Params.Builder builderForValue) {
+        Params.Builder builderForValue) {
       if (paramsBuilder_ == null) {
         params_ = builderForValue.build();
       } else {
@@ -628,11 +628,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeParams(com.cosmos.auth.v1beta1.Params value) {
+    public Builder mergeParams(Params value) {
       if (paramsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           params_ != null &&
-          params_ != com.cosmos.auth.v1beta1.Params.getDefaultInstance()) {
+          params_ != Params.getDefaultInstance()) {
           getParamsBuilder().mergeFrom(value);
         } else {
           params_ = value;
@@ -668,7 +668,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.auth.v1beta1.Params.Builder getParamsBuilder() {
+    public Params.Builder getParamsBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getParamsFieldBuilder().getBuilder();
@@ -680,12 +680,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.auth.v1beta1.ParamsOrBuilder getParamsOrBuilder() {
+    public ParamsOrBuilder getParamsOrBuilder() {
       if (paramsBuilder_ != null) {
         return paramsBuilder_.getMessageOrBuilder();
       } else {
         return params_ == null ?
-            com.cosmos.auth.v1beta1.Params.getDefaultInstance() : params_;
+            Params.getDefaultInstance() : params_;
       }
     }
     /**
@@ -696,11 +696,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.auth.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.auth.v1beta1.Params, com.cosmos.auth.v1beta1.Params.Builder, com.cosmos.auth.v1beta1.ParamsOrBuilder> 
+        Params, Params.Builder, ParamsOrBuilder>
         getParamsFieldBuilder() {
       if (paramsBuilder_ == null) {
         paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.auth.v1beta1.Params, com.cosmos.auth.v1beta1.Params.Builder, com.cosmos.auth.v1beta1.ParamsOrBuilder>(
+            Params, Params.Builder, ParamsOrBuilder>(
                 getParams(),
                 getParentForChildren(),
                 isClean());
@@ -887,7 +887,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.protobuf.Any accounts = 2 [json_name = "accounts"];</code>
      */
     public Builder addAllAccounts(
-        java.lang.Iterable<? extends com.google.protobuf.Any> values) {
+        Iterable<? extends com.google.protobuf.Any> values) {
       if (accountsBuilder_ == null) {
         ensureAccountsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1020,13 +1020,13 @@ private static final long serialVersionUID = 0L;
       }
       return accountsBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1037,18 +1037,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.auth.v1beta1.GenesisState)
-  private static final com.cosmos.auth.v1beta1.GenesisState DEFAULT_INSTANCE;
+  private static final GenesisState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.auth.v1beta1.GenesisState();
+    DEFAULT_INSTANCE = new GenesisState();
   }
 
-  public static com.cosmos.auth.v1beta1.GenesisState getDefaultInstance() {
+  public static GenesisState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GenesisState>
       PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-    @java.lang.Override
+    @Override
     public GenesisState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1072,13 +1072,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<GenesisState> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.auth.v1beta1.GenesisState getDefaultInstanceForType() {
+  @Override
+  public GenesisState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

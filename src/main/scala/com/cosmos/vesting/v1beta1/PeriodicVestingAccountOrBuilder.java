@@ -16,11 +16,11 @@ public interface PeriodicVestingAccountOrBuilder extends
    * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
    * @return The baseVestingAccount.
    */
-  com.cosmos.vesting.v1beta1.BaseVestingAccount getBaseVestingAccount();
+  BaseVestingAccount getBaseVestingAccount();
   /**
    * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
    */
-  com.cosmos.vesting.v1beta1.BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder();
+  BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder();
 
   /**
    * <code>int64 start_time = 2 [json_name = "startTime", (.gogoproto.moretags) = "yaml:&#92;"start_time&#92;""];</code>
@@ -31,12 +31,12 @@ public interface PeriodicVestingAccountOrBuilder extends
   /**
    * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
    */
-  java.util.List<com.cosmos.vesting.v1beta1.Period> 
+  java.util.List<Period>
       getVestingPeriodsList();
   /**
    * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
    */
-  com.cosmos.vesting.v1beta1.Period getVestingPeriods(int index);
+  Period getVestingPeriods(int index);
   /**
    * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
    */
@@ -44,11 +44,11 @@ public interface PeriodicVestingAccountOrBuilder extends
   /**
    * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
    */
-  java.util.List<? extends com.cosmos.vesting.v1beta1.PeriodOrBuilder> 
+  java.util.List<? extends PeriodOrBuilder>
       getVestingPeriodsOrBuilderList();
   /**
    * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
    */
-  com.cosmos.vesting.v1beta1.PeriodOrBuilder getVestingPeriodsOrBuilder(
+  PeriodOrBuilder getVestingPeriodsOrBuilder(
       int index);
 }

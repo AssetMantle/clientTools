@@ -24,28 +24,28 @@ private static final long serialVersionUID = 0L;
   private MsgVoteWeightedResponse() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgVoteWeightedResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.gov.v1beta1.TxProto.internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_descriptor;
+    return TxProto.internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.gov.v1beta1.TxProto.internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_fieldAccessorTable
+    return TxProto.internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.gov.v1beta1.MsgVoteWeightedResponse.class, com.cosmos.gov.v1beta1.MsgVoteWeightedResponse.Builder.class);
+            MsgVoteWeightedResponse.class, Builder.class);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -55,13 +55,13 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -72,21 +72,21 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.gov.v1beta1.MsgVoteWeightedResponse)) {
+    if (!(obj instanceof MsgVoteWeightedResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.gov.v1beta1.MsgVoteWeightedResponse other = (com.cosmos.gov.v1beta1.MsgVoteWeightedResponse) obj;
+    MsgVoteWeightedResponse other = (MsgVoteWeightedResponse) obj;
 
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -98,69 +98,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseFrom(
+  public static MsgVoteWeightedResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseFrom(
+  public static MsgVoteWeightedResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseFrom(
+  public static MsgVoteWeightedResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseFrom(
+  public static MsgVoteWeightedResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseFrom(byte[] data)
+  public static MsgVoteWeightedResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseFrom(
+  public static MsgVoteWeightedResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseFrom(java.io.InputStream input)
+  public static MsgVoteWeightedResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseFrom(
+  public static MsgVoteWeightedResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseDelimitedFrom(java.io.InputStream input)
+  public static MsgVoteWeightedResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseDelimitedFrom(
+  public static MsgVoteWeightedResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseFrom(
+  public static MsgVoteWeightedResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse parseFrom(
+  public static MsgVoteWeightedResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -168,23 +168,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.gov.v1beta1.MsgVoteWeightedResponse prototype) {
+  public static Builder newBuilder(MsgVoteWeightedResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -200,18 +200,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.gov.v1beta1.MsgVoteWeightedResponse)
-      com.cosmos.gov.v1beta1.MsgVoteWeightedResponseOrBuilder {
+      MsgVoteWeightedResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.gov.v1beta1.TxProto.internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_descriptor;
+      return TxProto.internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.gov.v1beta1.TxProto.internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_fieldAccessorTable
+      return TxProto.internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.gov.v1beta1.MsgVoteWeightedResponse.class, com.cosmos.gov.v1beta1.MsgVoteWeightedResponse.Builder.class);
+              MsgVoteWeightedResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.gov.v1beta1.MsgVoteWeightedResponse.newBuilder()
@@ -220,104 +220,104 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.gov.v1beta1.TxProto.internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_descriptor;
+      return TxProto.internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.gov.v1beta1.MsgVoteWeightedResponse getDefaultInstanceForType() {
-      return com.cosmos.gov.v1beta1.MsgVoteWeightedResponse.getDefaultInstance();
+    @Override
+    public MsgVoteWeightedResponse getDefaultInstanceForType() {
+      return MsgVoteWeightedResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.gov.v1beta1.MsgVoteWeightedResponse build() {
-      com.cosmos.gov.v1beta1.MsgVoteWeightedResponse result = buildPartial();
+    @Override
+    public MsgVoteWeightedResponse build() {
+      MsgVoteWeightedResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.gov.v1beta1.MsgVoteWeightedResponse buildPartial() {
-      com.cosmos.gov.v1beta1.MsgVoteWeightedResponse result = new com.cosmos.gov.v1beta1.MsgVoteWeightedResponse(this);
+    @Override
+    public MsgVoteWeightedResponse buildPartial() {
+      MsgVoteWeightedResponse result = new MsgVoteWeightedResponse(this);
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.gov.v1beta1.MsgVoteWeightedResponse) {
-        return mergeFrom((com.cosmos.gov.v1beta1.MsgVoteWeightedResponse)other);
+      if (other instanceof MsgVoteWeightedResponse) {
+        return mergeFrom((MsgVoteWeightedResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.gov.v1beta1.MsgVoteWeightedResponse other) {
-      if (other == com.cosmos.gov.v1beta1.MsgVoteWeightedResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(MsgVoteWeightedResponse other) {
+      if (other == MsgVoteWeightedResponse.getDefaultInstance()) return this;
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -342,13 +342,13 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -359,18 +359,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.gov.v1beta1.MsgVoteWeightedResponse)
-  private static final com.cosmos.gov.v1beta1.MsgVoteWeightedResponse DEFAULT_INSTANCE;
+  private static final MsgVoteWeightedResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.gov.v1beta1.MsgVoteWeightedResponse();
+    DEFAULT_INSTANCE = new MsgVoteWeightedResponse();
   }
 
-  public static com.cosmos.gov.v1beta1.MsgVoteWeightedResponse getDefaultInstance() {
+  public static MsgVoteWeightedResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgVoteWeightedResponse>
       PARSER = new com.google.protobuf.AbstractParser<MsgVoteWeightedResponse>() {
-    @java.lang.Override
+    @Override
     public MsgVoteWeightedResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -394,13 +394,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MsgVoteWeightedResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.gov.v1beta1.MsgVoteWeightedResponse getDefaultInstanceForType() {
+  @Override
+  public MsgVoteWeightedResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -10,12 +10,12 @@ public interface QueryValidatorUnbondingDelegationsResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_responses = 1 [json_name = "unbondingResponses", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.staking.v1beta1.UnbondingDelegation> 
+  java.util.List<UnbondingDelegation>
       getUnbondingResponsesList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_responses = 1 [json_name = "unbondingResponses", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.UnbondingDelegation getUnbondingResponses(int index);
+  UnbondingDelegation getUnbondingResponses(int index);
   /**
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_responses = 1 [json_name = "unbondingResponses", (.gogoproto.nullable) = false];</code>
    */
@@ -23,12 +23,12 @@ public interface QueryValidatorUnbondingDelegationsResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_responses = 1 [json_name = "unbondingResponses", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder> 
+  java.util.List<? extends UnbondingDelegationOrBuilder>
       getUnbondingResponsesOrBuilderList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_responses = 1 [json_name = "unbondingResponses", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder getUnbondingResponsesOrBuilder(
+  UnbondingDelegationOrBuilder getUnbondingResponsesOrBuilder(
       int index);
 
   /**

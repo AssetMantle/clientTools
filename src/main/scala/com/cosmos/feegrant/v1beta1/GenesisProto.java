@@ -27,7 +27,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n%cosmos/feegrant/v1beta1/genesis.proto\022" +
       "\027cosmos.feegrant.v1beta1\032\024gogoproto/gogo" +
       ".proto\032&cosmos/feegrant/v1beta1/feegrant" +
@@ -45,21 +45,21 @@ public final class GenesisProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
-          com.cosmos.feegrant.v1beta1.FeegrantProto.getDescriptor(),
+          FeegrantProto.getDescriptor(),
         });
     internal_static_cosmos_feegrant_v1beta1_GenesisState_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_feegrant_v1beta1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_GenesisState_descriptor,
-        new java.lang.String[] { "Allowances", });
+        new String[] { "Allowances", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
-    com.cosmos.feegrant.v1beta1.FeegrantProto.getDescriptor();
+    FeegrantProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

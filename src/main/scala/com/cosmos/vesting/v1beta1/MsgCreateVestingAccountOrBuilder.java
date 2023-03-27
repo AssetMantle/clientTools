@@ -11,7 +11,7 @@ public interface MsgCreateVestingAccountOrBuilder extends
    * <code>string from_address = 1 [json_name = "fromAddress", (.gogoproto.moretags) = "yaml:&#92;"from_address&#92;""];</code>
    * @return The fromAddress.
    */
-  java.lang.String getFromAddress();
+  String getFromAddress();
   /**
    * <code>string from_address = 1 [json_name = "fromAddress", (.gogoproto.moretags) = "yaml:&#92;"from_address&#92;""];</code>
    * @return The bytes for fromAddress.
@@ -23,7 +23,7 @@ public interface MsgCreateVestingAccountOrBuilder extends
    * <code>string to_address = 2 [json_name = "toAddress", (.gogoproto.moretags) = "yaml:&#92;"to_address&#92;""];</code>
    * @return The toAddress.
    */
-  java.lang.String getToAddress();
+  String getToAddress();
   /**
    * <code>string to_address = 2 [json_name = "toAddress", (.gogoproto.moretags) = "yaml:&#92;"to_address&#92;""];</code>
    * @return The bytes for toAddress.

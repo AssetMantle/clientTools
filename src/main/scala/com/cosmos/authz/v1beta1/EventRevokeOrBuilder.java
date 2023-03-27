@@ -15,7 +15,7 @@ public interface EventRevokeOrBuilder extends
    * <code>string msg_type_url = 2 [json_name = "msgTypeUrl"];</code>
    * @return The msgTypeUrl.
    */
-  java.lang.String getMsgTypeUrl();
+  String getMsgTypeUrl();
   /**
    * <pre>
    * Msg type URL for which an autorization is revoked
@@ -35,7 +35,7 @@ public interface EventRevokeOrBuilder extends
    * <code>string granter = 3 [json_name = "granter"];</code>
    * @return The granter.
    */
-  java.lang.String getGranter();
+  String getGranter();
   /**
    * <pre>
    * Granter account address
@@ -55,7 +55,7 @@ public interface EventRevokeOrBuilder extends
    * <code>string grantee = 4 [json_name = "grantee"];</code>
    * @return The grantee.
    */
-  java.lang.String getGrantee();
+  String getGrantee();
   /**
    * <pre>
    * Grantee account address

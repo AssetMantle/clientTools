@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     newDiversifier_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new HeaderData();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_HeaderData_descriptor;
+    return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_HeaderData_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_HeaderData_fieldAccessorTable
+    return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_HeaderData_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.lightclients.solomachine.v1.HeaderData.class, com.ibc.lightclients.solomachine.v1.HeaderData.Builder.class);
+            HeaderData.class, Builder.class);
   }
 
   public static final int NEW_PUB_KEY_FIELD_NUMBER = 1;
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any new_pub_key = 1 [json_name = "newPubKey", (.gogoproto.moretags) = "yaml:&#92;"new_pub_key&#92;""];</code>
    * @return Whether the newPubKey field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasNewPubKey() {
     return newPubKey_ != null;
   }
@@ -65,7 +65,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any new_pub_key = 1 [json_name = "newPubKey", (.gogoproto.moretags) = "yaml:&#92;"new_pub_key&#92;""];</code>
    * @return The newPubKey.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Any getNewPubKey() {
     return newPubKey_ == null ? com.google.protobuf.Any.getDefaultInstance() : newPubKey_;
   }
@@ -76,14 +76,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Any new_pub_key = 1 [json_name = "newPubKey", (.gogoproto.moretags) = "yaml:&#92;"new_pub_key&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.AnyOrBuilder getNewPubKeyOrBuilder() {
     return newPubKey_ == null ? com.google.protobuf.Any.getDefaultInstance() : newPubKey_;
   }
 
   public static final int NEW_DIVERSIFIER_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object newDiversifier_ = "";
+  private volatile Object newDiversifier_ = "";
   /**
    * <pre>
    * header diversifier
@@ -92,15 +92,15 @@ private static final long serialVersionUID = 0L;
    * <code>string new_diversifier = 2 [json_name = "newDiversifier", (.gogoproto.moretags) = "yaml:&#92;"new_diversifier&#92;""];</code>
    * @return The newDiversifier.
    */
-  @java.lang.Override
-  public java.lang.String getNewDiversifier() {
-    java.lang.Object ref = newDiversifier_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getNewDiversifier() {
+    Object ref = newDiversifier_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       newDiversifier_ = s;
       return s;
     }
@@ -113,14 +113,14 @@ private static final long serialVersionUID = 0L;
    * <code>string new_diversifier = 2 [json_name = "newDiversifier", (.gogoproto.moretags) = "yaml:&#92;"new_diversifier&#92;""];</code>
    * @return The bytes for newDiversifier.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getNewDiversifierBytes() {
-    java.lang.Object ref = newDiversifier_;
-    if (ref instanceof java.lang.String) {
+    Object ref = newDiversifier_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       newDiversifier_ = b;
       return b;
     } else {
@@ -129,7 +129,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -139,7 +139,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (newPubKey_ != null) {
@@ -151,7 +151,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -169,15 +169,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.lightclients.solomachine.v1.HeaderData)) {
+    if (!(obj instanceof HeaderData)) {
       return super.equals(obj);
     }
-    com.ibc.lightclients.solomachine.v1.HeaderData other = (com.ibc.lightclients.solomachine.v1.HeaderData) obj;
+    HeaderData other = (HeaderData) obj;
 
     if (hasNewPubKey() != other.hasNewPubKey()) return false;
     if (hasNewPubKey()) {
@@ -190,7 +190,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -208,69 +208,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseFrom(
+  public static HeaderData parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseFrom(
+  public static HeaderData parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseFrom(
+  public static HeaderData parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseFrom(
+  public static HeaderData parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseFrom(byte[] data)
+  public static HeaderData parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseFrom(
+  public static HeaderData parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseFrom(java.io.InputStream input)
+  public static HeaderData parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseFrom(
+  public static HeaderData parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseDelimitedFrom(java.io.InputStream input)
+  public static HeaderData parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseDelimitedFrom(
+  public static HeaderData parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseFrom(
+  public static HeaderData parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.lightclients.solomachine.v1.HeaderData parseFrom(
+  public static HeaderData parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -278,23 +278,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.lightclients.solomachine.v1.HeaderData prototype) {
+  public static Builder newBuilder(HeaderData prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -308,18 +308,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.lightclients.solomachine.v1.HeaderData)
-      com.ibc.lightclients.solomachine.v1.HeaderDataOrBuilder {
+      HeaderDataOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_HeaderData_descriptor;
+      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_HeaderData_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_HeaderData_fieldAccessorTable
+      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_HeaderData_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.lightclients.solomachine.v1.HeaderData.class, com.ibc.lightclients.solomachine.v1.HeaderData.Builder.class);
+              HeaderData.class, Builder.class);
     }
 
     // Construct using com.ibc.lightclients.solomachine.v1.HeaderData.newBuilder()
@@ -328,11 +328,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -345,35 +345,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_HeaderData_descriptor;
+      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_HeaderData_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.lightclients.solomachine.v1.HeaderData getDefaultInstanceForType() {
-      return com.ibc.lightclients.solomachine.v1.HeaderData.getDefaultInstance();
+    @Override
+    public HeaderData getDefaultInstanceForType() {
+      return HeaderData.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.lightclients.solomachine.v1.HeaderData build() {
-      com.ibc.lightclients.solomachine.v1.HeaderData result = buildPartial();
+    @Override
+    public HeaderData build() {
+      HeaderData result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.lightclients.solomachine.v1.HeaderData buildPartial() {
-      com.ibc.lightclients.solomachine.v1.HeaderData result = new com.ibc.lightclients.solomachine.v1.HeaderData(this);
+    @Override
+    public HeaderData buildPartial() {
+      HeaderData result = new HeaderData(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.lightclients.solomachine.v1.HeaderData result) {
+    private void buildPartial0(HeaderData result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.newPubKey_ = newPubKeyBuilder_ == null
@@ -385,50 +385,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.lightclients.solomachine.v1.HeaderData) {
-        return mergeFrom((com.ibc.lightclients.solomachine.v1.HeaderData)other);
+      if (other instanceof HeaderData) {
+        return mergeFrom((HeaderData)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.lightclients.solomachine.v1.HeaderData other) {
-      if (other == com.ibc.lightclients.solomachine.v1.HeaderData.getDefaultInstance()) return this;
+    public Builder mergeFrom(HeaderData other) {
+      if (other == HeaderData.getDefaultInstance()) return this;
       if (other.hasNewPubKey()) {
         mergeNewPubKey(other.getNewPubKey());
       }
@@ -442,18 +442,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -647,7 +647,7 @@ private static final long serialVersionUID = 0L;
       return newPubKeyBuilder_;
     }
 
-    private java.lang.Object newDiversifier_ = "";
+    private Object newDiversifier_ = "";
     /**
      * <pre>
      * header diversifier
@@ -656,16 +656,16 @@ private static final long serialVersionUID = 0L;
      * <code>string new_diversifier = 2 [json_name = "newDiversifier", (.gogoproto.moretags) = "yaml:&#92;"new_diversifier&#92;""];</code>
      * @return The newDiversifier.
      */
-    public java.lang.String getNewDiversifier() {
-      java.lang.Object ref = newDiversifier_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getNewDiversifier() {
+      Object ref = newDiversifier_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         newDiversifier_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -678,11 +678,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getNewDiversifierBytes() {
-      java.lang.Object ref = newDiversifier_;
+      Object ref = newDiversifier_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         newDiversifier_ = b;
         return b;
       } else {
@@ -699,7 +699,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setNewDiversifier(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       newDiversifier_ = value;
       bitField0_ |= 0x00000002;
@@ -738,13 +738,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -755,18 +755,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.lightclients.solomachine.v1.HeaderData)
-  private static final com.ibc.lightclients.solomachine.v1.HeaderData DEFAULT_INSTANCE;
+  private static final HeaderData DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.lightclients.solomachine.v1.HeaderData();
+    DEFAULT_INSTANCE = new HeaderData();
   }
 
-  public static com.ibc.lightclients.solomachine.v1.HeaderData getDefaultInstance() {
+  public static HeaderData getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<HeaderData>
       PARSER = new com.google.protobuf.AbstractParser<HeaderData>() {
-    @java.lang.Override
+    @Override
     public HeaderData parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -790,13 +790,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<HeaderData> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.lightclients.solomachine.v1.HeaderData getDefaultInstanceForType() {
+  @Override
+  public HeaderData getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

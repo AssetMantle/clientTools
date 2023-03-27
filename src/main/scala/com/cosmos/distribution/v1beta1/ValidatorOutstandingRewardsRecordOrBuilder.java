@@ -15,7 +15,7 @@ public interface ValidatorOutstandingRewardsRecordOrBuilder extends
    * <code>string validator_address = 1 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  java.lang.String getValidatorAddress();
+  String getValidatorAddress();
   /**
    * <pre>
    * validator_address is the address of the validator.

@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
   private QueryAllEvidenceRequest() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryAllEvidenceRequest();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.evidence.v1beta1.QueryProto.internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_descriptor;
+    return QueryProto.internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.evidence.v1beta1.QueryProto.internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest.class, com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest.Builder.class);
+            QueryAllEvidenceRequest.class, Builder.class);
   }
 
   public static final int PAGINATION_FIELD_NUMBER = 1;
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -65,7 +65,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageRequest getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
@@ -76,13 +76,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1 [json_name = "pagination"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageRequestOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -92,7 +92,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (pagination_ != null) {
@@ -101,7 +101,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -116,15 +116,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest)) {
+    if (!(obj instanceof QueryAllEvidenceRequest)) {
       return super.equals(obj);
     }
-    com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest other = (com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest) obj;
+    QueryAllEvidenceRequest other = (QueryAllEvidenceRequest) obj;
 
     if (hasPagination() != other.hasPagination()) return false;
     if (hasPagination()) {
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseFrom(
+  public static QueryAllEvidenceRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseFrom(
+  public static QueryAllEvidenceRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseFrom(
+  public static QueryAllEvidenceRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseFrom(
+  public static QueryAllEvidenceRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseFrom(byte[] data)
+  public static QueryAllEvidenceRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseFrom(
+  public static QueryAllEvidenceRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseFrom(java.io.InputStream input)
+  public static QueryAllEvidenceRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseFrom(
+  public static QueryAllEvidenceRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseDelimitedFrom(java.io.InputStream input)
+  public static QueryAllEvidenceRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseDelimitedFrom(
+  public static QueryAllEvidenceRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseFrom(
+  public static QueryAllEvidenceRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest parseFrom(
+  public static QueryAllEvidenceRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest prototype) {
+  public static Builder newBuilder(QueryAllEvidenceRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -252,18 +252,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.evidence.v1beta1.QueryAllEvidenceRequest)
-      com.cosmos.evidence.v1beta1.QueryAllEvidenceRequestOrBuilder {
+      QueryAllEvidenceRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.evidence.v1beta1.QueryProto.internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_descriptor;
+      return QueryProto.internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.evidence.v1beta1.QueryProto.internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest.class, com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest.Builder.class);
+              QueryAllEvidenceRequest.class, Builder.class);
     }
 
     // Construct using com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest.newBuilder()
@@ -272,11 +272,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -288,35 +288,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.evidence.v1beta1.QueryProto.internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_descriptor;
+      return QueryProto.internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest getDefaultInstanceForType() {
-      return com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest.getDefaultInstance();
+    @Override
+    public QueryAllEvidenceRequest getDefaultInstanceForType() {
+      return QueryAllEvidenceRequest.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest build() {
-      com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest result = buildPartial();
+    @Override
+    public QueryAllEvidenceRequest build() {
+      QueryAllEvidenceRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest buildPartial() {
-      com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest result = new com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest(this);
+    @Override
+    public QueryAllEvidenceRequest buildPartial() {
+      QueryAllEvidenceRequest result = new QueryAllEvidenceRequest(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest result) {
+    private void buildPartial0(QueryAllEvidenceRequest result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -325,50 +325,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest) {
-        return mergeFrom((com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest)other);
+      if (other instanceof QueryAllEvidenceRequest) {
+        return mergeFrom((QueryAllEvidenceRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest other) {
-      if (other == com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryAllEvidenceRequest other) {
+      if (other == QueryAllEvidenceRequest.getDefaultInstance()) return this;
       if (other.hasPagination()) {
         mergePagination(other.getPagination());
       }
@@ -377,18 +377,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -576,13 +576,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -593,18 +593,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.evidence.v1beta1.QueryAllEvidenceRequest)
-  private static final com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest DEFAULT_INSTANCE;
+  private static final QueryAllEvidenceRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest();
+    DEFAULT_INSTANCE = new QueryAllEvidenceRequest();
   }
 
-  public static com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest getDefaultInstance() {
+  public static QueryAllEvidenceRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryAllEvidenceRequest>
       PARSER = new com.google.protobuf.AbstractParser<QueryAllEvidenceRequest>() {
-    @java.lang.Override
+    @Override
     public QueryAllEvidenceRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -628,13 +628,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryAllEvidenceRequest> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.evidence.v1beta1.QueryAllEvidenceRequest getDefaultInstanceForType() {
+  @Override
+  public QueryAllEvidenceRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

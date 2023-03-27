@@ -1,29 +1,30 @@
 package schema.data.base
 
-import commonUtilities.AttoNumber
 import com.data.{AnyData, BooleanData => protoBooleanData}
 import schema.data.Data
 import schema.id.base.{DataID, HashID, StringID}
 
 case class BooleanData(value: Boolean) extends Data {
-  def getType: StringID = commonConstants.DataTypeID.BooleanDataTypeID
+  def getType: StringID = constants.Data.BooleanDataTypeID
 
-  def getID: DataID = DataID(typeID = commonConstants.DataTypeID.BooleanDataTypeID, hashID = this.generateHashID)
+  def getBondWeight: Int = constants.Data.BooleanBondWeight
 
-  def zeroValue: Data = DecData(AttoNumber.zero)
+  def getDataID: DataID = DataID(typeID = constants.Data.BooleanDataTypeID, hashID = this.generateHashID)
+
+  def zeroValue: Data = BooleanData(false)
 
   def getBytes: Array[Byte] = {
     val res: Byte = if (this.value) 1 else 0
     Seq(res).toArray
   }
 
-  def generateHashID: HashID = commonUtilities.ID.generateHashID(this.getBytes)
+  def generateHashID: HashID = if (!this.value) utilities.ID.generateHashID() else utilities.ID.generateHashID(this.getBytes)
 
   def asProtoBooleanData: protoBooleanData = protoBooleanData.newBuilder().setValue(this.value).build()
 
   def toAnyData: AnyData = AnyData.newBuilder().setBooleanData(this.asProtoBooleanData).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoBooleanData.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoBooleanData.toByteString.toByteArray
 
   def viewString: String = this.value.toString
 }

@@ -22,24 +22,24 @@ private static final long serialVersionUID = 0L;
   private QueryDepositsRequest() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryDepositsRequest();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_descriptor;
+    return QueryProto.internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.gov.v1beta1.QueryDepositsRequest.class, com.cosmos.gov.v1beta1.QueryDepositsRequest.Builder.class);
+            QueryDepositsRequest.class, Builder.class);
   }
 
   public static final int PROPOSAL_ID_FIELD_NUMBER = 1;
@@ -52,7 +52,7 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 proposal_id = 1 [json_name = "proposalId"];</code>
    * @return The proposalId.
    */
-  @java.lang.Override
+  @Override
   public long getProposalId() {
     return proposalId_;
   }
@@ -67,7 +67,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -79,7 +79,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageRequest getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
@@ -90,13 +90,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2 [json_name = "pagination"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageRequestOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -106,7 +106,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (proposalId_ != 0L) {
@@ -118,7 +118,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -137,15 +137,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.gov.v1beta1.QueryDepositsRequest)) {
+    if (!(obj instanceof QueryDepositsRequest)) {
       return super.equals(obj);
     }
-    com.cosmos.gov.v1beta1.QueryDepositsRequest other = (com.cosmos.gov.v1beta1.QueryDepositsRequest) obj;
+    QueryDepositsRequest other = (QueryDepositsRequest) obj;
 
     if (getProposalId()
         != other.getProposalId()) return false;
@@ -158,7 +158,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -177,69 +177,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseFrom(
+  public static QueryDepositsRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseFrom(
+  public static QueryDepositsRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseFrom(
+  public static QueryDepositsRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseFrom(
+  public static QueryDepositsRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseFrom(byte[] data)
+  public static QueryDepositsRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseFrom(
+  public static QueryDepositsRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseFrom(java.io.InputStream input)
+  public static QueryDepositsRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseFrom(
+  public static QueryDepositsRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseDelimitedFrom(java.io.InputStream input)
+  public static QueryDepositsRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseDelimitedFrom(
+  public static QueryDepositsRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseFrom(
+  public static QueryDepositsRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest parseFrom(
+  public static QueryDepositsRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -247,23 +247,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.gov.v1beta1.QueryDepositsRequest prototype) {
+  public static Builder newBuilder(QueryDepositsRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -277,18 +277,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.gov.v1beta1.QueryDepositsRequest)
-      com.cosmos.gov.v1beta1.QueryDepositsRequestOrBuilder {
+      QueryDepositsRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_descriptor;
+      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.gov.v1beta1.QueryDepositsRequest.class, com.cosmos.gov.v1beta1.QueryDepositsRequest.Builder.class);
+              QueryDepositsRequest.class, Builder.class);
     }
 
     // Construct using com.cosmos.gov.v1beta1.QueryDepositsRequest.newBuilder()
@@ -297,11 +297,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -314,35 +314,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_descriptor;
+      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.gov.v1beta1.QueryDepositsRequest getDefaultInstanceForType() {
-      return com.cosmos.gov.v1beta1.QueryDepositsRequest.getDefaultInstance();
+    @Override
+    public QueryDepositsRequest getDefaultInstanceForType() {
+      return QueryDepositsRequest.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.gov.v1beta1.QueryDepositsRequest build() {
-      com.cosmos.gov.v1beta1.QueryDepositsRequest result = buildPartial();
+    @Override
+    public QueryDepositsRequest build() {
+      QueryDepositsRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.gov.v1beta1.QueryDepositsRequest buildPartial() {
-      com.cosmos.gov.v1beta1.QueryDepositsRequest result = new com.cosmos.gov.v1beta1.QueryDepositsRequest(this);
+    @Override
+    public QueryDepositsRequest buildPartial() {
+      QueryDepositsRequest result = new QueryDepositsRequest(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.gov.v1beta1.QueryDepositsRequest result) {
+    private void buildPartial0(QueryDepositsRequest result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.proposalId_ = proposalId_;
@@ -354,50 +354,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.gov.v1beta1.QueryDepositsRequest) {
-        return mergeFrom((com.cosmos.gov.v1beta1.QueryDepositsRequest)other);
+      if (other instanceof QueryDepositsRequest) {
+        return mergeFrom((QueryDepositsRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.gov.v1beta1.QueryDepositsRequest other) {
-      if (other == com.cosmos.gov.v1beta1.QueryDepositsRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryDepositsRequest other) {
+      if (other == QueryDepositsRequest.getDefaultInstance()) return this;
       if (other.getProposalId() != 0L) {
         setProposalId(other.getProposalId());
       }
@@ -409,18 +409,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -468,7 +468,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 proposal_id = 1 [json_name = "proposalId"];</code>
      * @return The proposalId.
      */
-    @java.lang.Override
+    @Override
     public long getProposalId() {
       return proposalId_;
     }
@@ -657,13 +657,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -674,18 +674,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.gov.v1beta1.QueryDepositsRequest)
-  private static final com.cosmos.gov.v1beta1.QueryDepositsRequest DEFAULT_INSTANCE;
+  private static final QueryDepositsRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.gov.v1beta1.QueryDepositsRequest();
+    DEFAULT_INSTANCE = new QueryDepositsRequest();
   }
 
-  public static com.cosmos.gov.v1beta1.QueryDepositsRequest getDefaultInstance() {
+  public static QueryDepositsRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryDepositsRequest>
       PARSER = new com.google.protobuf.AbstractParser<QueryDepositsRequest>() {
-    @java.lang.Override
+    @Override
     public QueryDepositsRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -709,13 +709,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryDepositsRequest> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.gov.v1beta1.QueryDepositsRequest getDefaultInstanceForType() {
+  @Override
+  public QueryDepositsRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

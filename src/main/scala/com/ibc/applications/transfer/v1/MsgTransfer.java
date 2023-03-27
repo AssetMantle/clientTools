@@ -28,29 +28,29 @@ private static final long serialVersionUID = 0L;
     receiver_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgTransfer();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.applications.transfer.v1.TxProto.internal_static_ibc_applications_transfer_v1_MsgTransfer_descriptor;
+    return TxProto.internal_static_ibc_applications_transfer_v1_MsgTransfer_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.applications.transfer.v1.TxProto.internal_static_ibc_applications_transfer_v1_MsgTransfer_fieldAccessorTable
+    return TxProto.internal_static_ibc_applications_transfer_v1_MsgTransfer_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.applications.transfer.v1.MsgTransfer.class, com.ibc.applications.transfer.v1.MsgTransfer.Builder.class);
+            MsgTransfer.class, Builder.class);
   }
 
   public static final int SOURCE_PORT_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object sourcePort_ = "";
+  private volatile Object sourcePort_ = "";
   /**
    * <pre>
    * the port on which the packet will be sent
@@ -59,15 +59,15 @@ private static final long serialVersionUID = 0L;
    * <code>string source_port = 1 [json_name = "sourcePort", (.gogoproto.moretags) = "yaml:&#92;"source_port&#92;""];</code>
    * @return The sourcePort.
    */
-  @java.lang.Override
-  public java.lang.String getSourcePort() {
-    java.lang.Object ref = sourcePort_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getSourcePort() {
+    Object ref = sourcePort_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       sourcePort_ = s;
       return s;
     }
@@ -80,14 +80,14 @@ private static final long serialVersionUID = 0L;
    * <code>string source_port = 1 [json_name = "sourcePort", (.gogoproto.moretags) = "yaml:&#92;"source_port&#92;""];</code>
    * @return The bytes for sourcePort.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getSourcePortBytes() {
-    java.lang.Object ref = sourcePort_;
-    if (ref instanceof java.lang.String) {
+    Object ref = sourcePort_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       sourcePort_ = b;
       return b;
     } else {
@@ -97,7 +97,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int SOURCE_CHANNEL_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object sourceChannel_ = "";
+  private volatile Object sourceChannel_ = "";
   /**
    * <pre>
    * the channel by which the packet will be sent
@@ -106,15 +106,15 @@ private static final long serialVersionUID = 0L;
    * <code>string source_channel = 2 [json_name = "sourceChannel", (.gogoproto.moretags) = "yaml:&#92;"source_channel&#92;""];</code>
    * @return The sourceChannel.
    */
-  @java.lang.Override
-  public java.lang.String getSourceChannel() {
-    java.lang.Object ref = sourceChannel_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getSourceChannel() {
+    Object ref = sourceChannel_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       sourceChannel_ = s;
       return s;
     }
@@ -127,14 +127,14 @@ private static final long serialVersionUID = 0L;
    * <code>string source_channel = 2 [json_name = "sourceChannel", (.gogoproto.moretags) = "yaml:&#92;"source_channel&#92;""];</code>
    * @return The bytes for sourceChannel.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getSourceChannelBytes() {
-    java.lang.Object ref = sourceChannel_;
-    if (ref instanceof java.lang.String) {
+    Object ref = sourceChannel_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       sourceChannel_ = b;
       return b;
     } else {
@@ -152,7 +152,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.v1beta1.Coin token = 3 [json_name = "token", (.gogoproto.nullable) = false];</code>
    * @return Whether the token field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasToken() {
     return token_ != null;
   }
@@ -164,7 +164,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.v1beta1.Coin token = 3 [json_name = "token", (.gogoproto.nullable) = false];</code>
    * @return The token.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.Coin getToken() {
     return token_ == null ? com.cosmos.base.v1beta1.Coin.getDefaultInstance() : token_;
   }
@@ -175,14 +175,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.v1beta1.Coin token = 3 [json_name = "token", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.CoinOrBuilder getTokenOrBuilder() {
     return token_ == null ? com.cosmos.base.v1beta1.Coin.getDefaultInstance() : token_;
   }
 
   public static final int SENDER_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object sender_ = "";
+  private volatile Object sender_ = "";
   /**
    * <pre>
    * the sender address
@@ -191,15 +191,15 @@ private static final long serialVersionUID = 0L;
    * <code>string sender = 4 [json_name = "sender"];</code>
    * @return The sender.
    */
-  @java.lang.Override
-  public java.lang.String getSender() {
-    java.lang.Object ref = sender_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getSender() {
+    Object ref = sender_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       sender_ = s;
       return s;
     }
@@ -212,14 +212,14 @@ private static final long serialVersionUID = 0L;
    * <code>string sender = 4 [json_name = "sender"];</code>
    * @return The bytes for sender.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getSenderBytes() {
-    java.lang.Object ref = sender_;
-    if (ref instanceof java.lang.String) {
+    Object ref = sender_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       sender_ = b;
       return b;
     } else {
@@ -229,7 +229,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int RECEIVER_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object receiver_ = "";
+  private volatile Object receiver_ = "";
   /**
    * <pre>
    * the recipient address on the destination chain
@@ -238,15 +238,15 @@ private static final long serialVersionUID = 0L;
    * <code>string receiver = 5 [json_name = "receiver"];</code>
    * @return The receiver.
    */
-  @java.lang.Override
-  public java.lang.String getReceiver() {
-    java.lang.Object ref = receiver_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getReceiver() {
+    Object ref = receiver_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       receiver_ = s;
       return s;
     }
@@ -259,14 +259,14 @@ private static final long serialVersionUID = 0L;
    * <code>string receiver = 5 [json_name = "receiver"];</code>
    * @return The bytes for receiver.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getReceiverBytes() {
-    java.lang.Object ref = receiver_;
-    if (ref instanceof java.lang.String) {
+    Object ref = receiver_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       receiver_ = b;
       return b;
     } else {
@@ -285,7 +285,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height timeout_height = 6 [json_name = "timeoutHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"timeout_height&#92;""];</code>
    * @return Whether the timeoutHeight field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasTimeoutHeight() {
     return timeoutHeight_ != null;
   }
@@ -298,7 +298,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height timeout_height = 6 [json_name = "timeoutHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"timeout_height&#92;""];</code>
    * @return The timeoutHeight.
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.Height getTimeoutHeight() {
     return timeoutHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : timeoutHeight_;
   }
@@ -310,7 +310,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.client.v1.Height timeout_height = 6 [json_name = "timeoutHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"timeout_height&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.HeightOrBuilder getTimeoutHeightOrBuilder() {
     return timeoutHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : timeoutHeight_;
   }
@@ -326,13 +326,13 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 timeout_timestamp = 7 [json_name = "timeoutTimestamp", (.gogoproto.moretags) = "yaml:&#92;"timeout_timestamp&#92;""];</code>
    * @return The timeoutTimestamp.
    */
-  @java.lang.Override
+  @Override
   public long getTimeoutTimestamp() {
     return timeoutTimestamp_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -342,7 +342,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sourcePort_)) {
@@ -369,7 +369,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -404,15 +404,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.applications.transfer.v1.MsgTransfer)) {
+    if (!(obj instanceof MsgTransfer)) {
       return super.equals(obj);
     }
-    com.ibc.applications.transfer.v1.MsgTransfer other = (com.ibc.applications.transfer.v1.MsgTransfer) obj;
+    MsgTransfer other = (MsgTransfer) obj;
 
     if (!getSourcePort()
         .equals(other.getSourcePort())) return false;
@@ -438,7 +438,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -469,69 +469,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseFrom(
+  public static MsgTransfer parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseFrom(
+  public static MsgTransfer parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseFrom(
+  public static MsgTransfer parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseFrom(
+  public static MsgTransfer parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseFrom(byte[] data)
+  public static MsgTransfer parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseFrom(
+  public static MsgTransfer parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseFrom(java.io.InputStream input)
+  public static MsgTransfer parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseFrom(
+  public static MsgTransfer parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseDelimitedFrom(java.io.InputStream input)
+  public static MsgTransfer parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseDelimitedFrom(
+  public static MsgTransfer parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseFrom(
+  public static MsgTransfer parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.applications.transfer.v1.MsgTransfer parseFrom(
+  public static MsgTransfer parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -539,23 +539,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.applications.transfer.v1.MsgTransfer prototype) {
+  public static Builder newBuilder(MsgTransfer prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -571,18 +571,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.applications.transfer.v1.MsgTransfer)
-      com.ibc.applications.transfer.v1.MsgTransferOrBuilder {
+      MsgTransferOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.applications.transfer.v1.TxProto.internal_static_ibc_applications_transfer_v1_MsgTransfer_descriptor;
+      return TxProto.internal_static_ibc_applications_transfer_v1_MsgTransfer_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.applications.transfer.v1.TxProto.internal_static_ibc_applications_transfer_v1_MsgTransfer_fieldAccessorTable
+      return TxProto.internal_static_ibc_applications_transfer_v1_MsgTransfer_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.applications.transfer.v1.MsgTransfer.class, com.ibc.applications.transfer.v1.MsgTransfer.Builder.class);
+              MsgTransfer.class, Builder.class);
     }
 
     // Construct using com.ibc.applications.transfer.v1.MsgTransfer.newBuilder()
@@ -591,11 +591,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -617,35 +617,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.applications.transfer.v1.TxProto.internal_static_ibc_applications_transfer_v1_MsgTransfer_descriptor;
+      return TxProto.internal_static_ibc_applications_transfer_v1_MsgTransfer_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.applications.transfer.v1.MsgTransfer getDefaultInstanceForType() {
-      return com.ibc.applications.transfer.v1.MsgTransfer.getDefaultInstance();
+    @Override
+    public MsgTransfer getDefaultInstanceForType() {
+      return MsgTransfer.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.applications.transfer.v1.MsgTransfer build() {
-      com.ibc.applications.transfer.v1.MsgTransfer result = buildPartial();
+    @Override
+    public MsgTransfer build() {
+      MsgTransfer result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.applications.transfer.v1.MsgTransfer buildPartial() {
-      com.ibc.applications.transfer.v1.MsgTransfer result = new com.ibc.applications.transfer.v1.MsgTransfer(this);
+    @Override
+    public MsgTransfer buildPartial() {
+      MsgTransfer result = new MsgTransfer(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.applications.transfer.v1.MsgTransfer result) {
+    private void buildPartial0(MsgTransfer result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.sourcePort_ = sourcePort_;
@@ -674,50 +674,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.applications.transfer.v1.MsgTransfer) {
-        return mergeFrom((com.ibc.applications.transfer.v1.MsgTransfer)other);
+      if (other instanceof MsgTransfer) {
+        return mergeFrom((MsgTransfer)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.applications.transfer.v1.MsgTransfer other) {
-      if (other == com.ibc.applications.transfer.v1.MsgTransfer.getDefaultInstance()) return this;
+    public Builder mergeFrom(MsgTransfer other) {
+      if (other == MsgTransfer.getDefaultInstance()) return this;
       if (!other.getSourcePort().isEmpty()) {
         sourcePort_ = other.sourcePort_;
         bitField0_ |= 0x00000001;
@@ -752,18 +752,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -829,7 +829,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object sourcePort_ = "";
+    private Object sourcePort_ = "";
     /**
      * <pre>
      * the port on which the packet will be sent
@@ -838,16 +838,16 @@ private static final long serialVersionUID = 0L;
      * <code>string source_port = 1 [json_name = "sourcePort", (.gogoproto.moretags) = "yaml:&#92;"source_port&#92;""];</code>
      * @return The sourcePort.
      */
-    public java.lang.String getSourcePort() {
-      java.lang.Object ref = sourcePort_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getSourcePort() {
+      Object ref = sourcePort_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         sourcePort_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -860,11 +860,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getSourcePortBytes() {
-      java.lang.Object ref = sourcePort_;
+      Object ref = sourcePort_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         sourcePort_ = b;
         return b;
       } else {
@@ -881,7 +881,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSourcePort(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       sourcePort_ = value;
       bitField0_ |= 0x00000001;
@@ -921,7 +921,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object sourceChannel_ = "";
+    private Object sourceChannel_ = "";
     /**
      * <pre>
      * the channel by which the packet will be sent
@@ -930,16 +930,16 @@ private static final long serialVersionUID = 0L;
      * <code>string source_channel = 2 [json_name = "sourceChannel", (.gogoproto.moretags) = "yaml:&#92;"source_channel&#92;""];</code>
      * @return The sourceChannel.
      */
-    public java.lang.String getSourceChannel() {
-      java.lang.Object ref = sourceChannel_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getSourceChannel() {
+      Object ref = sourceChannel_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         sourceChannel_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -952,11 +952,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getSourceChannelBytes() {
-      java.lang.Object ref = sourceChannel_;
+      Object ref = sourceChannel_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         sourceChannel_ = b;
         return b;
       } else {
@@ -973,7 +973,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSourceChannel(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       sourceChannel_ = value;
       bitField0_ |= 0x00000002;
@@ -1168,7 +1168,7 @@ private static final long serialVersionUID = 0L;
       return tokenBuilder_;
     }
 
-    private java.lang.Object sender_ = "";
+    private Object sender_ = "";
     /**
      * <pre>
      * the sender address
@@ -1177,16 +1177,16 @@ private static final long serialVersionUID = 0L;
      * <code>string sender = 4 [json_name = "sender"];</code>
      * @return The sender.
      */
-    public java.lang.String getSender() {
-      java.lang.Object ref = sender_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getSender() {
+      Object ref = sender_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         sender_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1199,11 +1199,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getSenderBytes() {
-      java.lang.Object ref = sender_;
+      Object ref = sender_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         sender_ = b;
         return b;
       } else {
@@ -1220,7 +1220,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSender(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       sender_ = value;
       bitField0_ |= 0x00000008;
@@ -1260,7 +1260,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object receiver_ = "";
+    private Object receiver_ = "";
     /**
      * <pre>
      * the recipient address on the destination chain
@@ -1269,16 +1269,16 @@ private static final long serialVersionUID = 0L;
      * <code>string receiver = 5 [json_name = "receiver"];</code>
      * @return The receiver.
      */
-    public java.lang.String getReceiver() {
-      java.lang.Object ref = receiver_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getReceiver() {
+      Object ref = receiver_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         receiver_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1291,11 +1291,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getReceiverBytes() {
-      java.lang.Object ref = receiver_;
+      Object ref = receiver_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         receiver_ = b;
         return b;
       } else {
@@ -1312,7 +1312,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setReceiver(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       receiver_ = value;
       bitField0_ |= 0x00000010;
@@ -1526,7 +1526,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 timeout_timestamp = 7 [json_name = "timeoutTimestamp", (.gogoproto.moretags) = "yaml:&#92;"timeout_timestamp&#92;""];</code>
      * @return The timeoutTimestamp.
      */
-    @java.lang.Override
+    @Override
     public long getTimeoutTimestamp() {
       return timeoutTimestamp_;
     }
@@ -1562,13 +1562,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1579,18 +1579,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.applications.transfer.v1.MsgTransfer)
-  private static final com.ibc.applications.transfer.v1.MsgTransfer DEFAULT_INSTANCE;
+  private static final MsgTransfer DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.applications.transfer.v1.MsgTransfer();
+    DEFAULT_INSTANCE = new MsgTransfer();
   }
 
-  public static com.ibc.applications.transfer.v1.MsgTransfer getDefaultInstance() {
+  public static MsgTransfer getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgTransfer>
       PARSER = new com.google.protobuf.AbstractParser<MsgTransfer>() {
-    @java.lang.Override
+    @Override
     public MsgTransfer parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1614,13 +1614,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MsgTransfer> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.applications.transfer.v1.MsgTransfer getDefaultInstanceForType() {
+  @Override
+  public MsgTransfer getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

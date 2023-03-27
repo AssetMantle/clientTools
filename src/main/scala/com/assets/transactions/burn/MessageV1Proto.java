@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n:modules/assets/internal/transactions/b" +
       "urn/message.v1.proto\022\030assets.transaction" +
       "s.burn\032#schema/ids/base/identityID.v1.pr" +
@@ -54,7 +54,7 @@ public final class MessageV1Proto {
     internal_static_assets_transactions_burn_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_assets_transactions_burn_Message_descriptor,
-        new java.lang.String[] { "From", "FromID", "AssetID", });
+        new String[] { "From", "FromID", "AssetID", });
     com.ids.IdentityIDV1Proto.getDescriptor();
     com.ids.AssetIDV1Proto.getDescriptor();
   }

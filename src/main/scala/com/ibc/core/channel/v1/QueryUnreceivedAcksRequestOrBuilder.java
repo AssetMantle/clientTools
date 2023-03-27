@@ -15,7 +15,7 @@ public interface QueryUnreceivedAcksRequestOrBuilder extends
    * <code>string port_id = 1 [json_name = "portId"];</code>
    * @return The portId.
    */
-  java.lang.String getPortId();
+  String getPortId();
   /**
    * <pre>
    * port unique identifier
@@ -35,7 +35,7 @@ public interface QueryUnreceivedAcksRequestOrBuilder extends
    * <code>string channel_id = 2 [json_name = "channelId"];</code>
    * @return The channelId.
    */
-  java.lang.String getChannelId();
+  String getChannelId();
   /**
    * <pre>
    * channel unique identifier
@@ -55,7 +55,7 @@ public interface QueryUnreceivedAcksRequestOrBuilder extends
    * <code>repeated uint64 packet_ack_sequences = 3 [json_name = "packetAckSequences"];</code>
    * @return A list containing the packetAckSequences.
    */
-  java.util.List<java.lang.Long> getPacketAckSequencesList();
+  java.util.List<Long> getPacketAckSequencesList();
   /**
    * <pre>
    * list of acknowledgement sequences

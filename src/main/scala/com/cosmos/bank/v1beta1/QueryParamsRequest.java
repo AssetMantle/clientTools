@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private QueryParamsRequest() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryParamsRequest();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryParamsRequest_descriptor;
+    return QueryProto.internal_static_cosmos_bank_v1beta1_QueryParamsRequest_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryParamsRequest_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_bank_v1beta1_QueryParamsRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.bank.v1beta1.QueryParamsRequest.class, com.cosmos.bank.v1beta1.QueryParamsRequest.Builder.class);
+            QueryParamsRequest.class, Builder.class);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -53,13 +53,13 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -70,21 +70,21 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.bank.v1beta1.QueryParamsRequest)) {
+    if (!(obj instanceof QueryParamsRequest)) {
       return super.equals(obj);
     }
-    com.cosmos.bank.v1beta1.QueryParamsRequest other = (com.cosmos.bank.v1beta1.QueryParamsRequest) obj;
+    QueryParamsRequest other = (QueryParamsRequest) obj;
 
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -96,69 +96,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseFrom(
+  public static QueryParamsRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseFrom(
+  public static QueryParamsRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseFrom(
+  public static QueryParamsRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseFrom(
+  public static QueryParamsRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseFrom(byte[] data)
+  public static QueryParamsRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseFrom(
+  public static QueryParamsRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseFrom(java.io.InputStream input)
+  public static QueryParamsRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseFrom(
+  public static QueryParamsRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseDelimitedFrom(java.io.InputStream input)
+  public static QueryParamsRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseDelimitedFrom(
+  public static QueryParamsRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseFrom(
+  public static QueryParamsRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest parseFrom(
+  public static QueryParamsRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -166,23 +166,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.bank.v1beta1.QueryParamsRequest prototype) {
+  public static Builder newBuilder(QueryParamsRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -196,18 +196,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.bank.v1beta1.QueryParamsRequest)
-      com.cosmos.bank.v1beta1.QueryParamsRequestOrBuilder {
+      QueryParamsRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryParamsRequest_descriptor;
+      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryParamsRequest_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryParamsRequest_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryParamsRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.bank.v1beta1.QueryParamsRequest.class, com.cosmos.bank.v1beta1.QueryParamsRequest.Builder.class);
+              QueryParamsRequest.class, Builder.class);
     }
 
     // Construct using com.cosmos.bank.v1beta1.QueryParamsRequest.newBuilder()
@@ -216,104 +216,104 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryParamsRequest_descriptor;
+      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryParamsRequest_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.QueryParamsRequest getDefaultInstanceForType() {
-      return com.cosmos.bank.v1beta1.QueryParamsRequest.getDefaultInstance();
+    @Override
+    public QueryParamsRequest getDefaultInstanceForType() {
+      return QueryParamsRequest.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.QueryParamsRequest build() {
-      com.cosmos.bank.v1beta1.QueryParamsRequest result = buildPartial();
+    @Override
+    public QueryParamsRequest build() {
+      QueryParamsRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.QueryParamsRequest buildPartial() {
-      com.cosmos.bank.v1beta1.QueryParamsRequest result = new com.cosmos.bank.v1beta1.QueryParamsRequest(this);
+    @Override
+    public QueryParamsRequest buildPartial() {
+      QueryParamsRequest result = new QueryParamsRequest(this);
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.bank.v1beta1.QueryParamsRequest) {
-        return mergeFrom((com.cosmos.bank.v1beta1.QueryParamsRequest)other);
+      if (other instanceof QueryParamsRequest) {
+        return mergeFrom((QueryParamsRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.bank.v1beta1.QueryParamsRequest other) {
-      if (other == com.cosmos.bank.v1beta1.QueryParamsRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryParamsRequest other) {
+      if (other == QueryParamsRequest.getDefaultInstance()) return this;
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -338,13 +338,13 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -355,18 +355,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.bank.v1beta1.QueryParamsRequest)
-  private static final com.cosmos.bank.v1beta1.QueryParamsRequest DEFAULT_INSTANCE;
+  private static final QueryParamsRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.bank.v1beta1.QueryParamsRequest();
+    DEFAULT_INSTANCE = new QueryParamsRequest();
   }
 
-  public static com.cosmos.bank.v1beta1.QueryParamsRequest getDefaultInstance() {
+  public static QueryParamsRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryParamsRequest>
       PARSER = new com.google.protobuf.AbstractParser<QueryParamsRequest>() {
-    @java.lang.Override
+    @Override
     public QueryParamsRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -390,13 +390,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryParamsRequest> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.bank.v1beta1.QueryParamsRequest getDefaultInstanceForType() {
+  @Override
+  public QueryParamsRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

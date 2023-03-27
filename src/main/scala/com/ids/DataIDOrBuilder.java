@@ -16,11 +16,11 @@ public interface DataIDOrBuilder extends
    * <code>.ids.StringID type_i_d = 1 [json_name = "typeID"];</code>
    * @return The typeID.
    */
-  com.ids.StringID getTypeID();
+  StringID getTypeID();
   /**
    * <code>.ids.StringID type_i_d = 1 [json_name = "typeID"];</code>
    */
-  com.ids.StringIDOrBuilder getTypeIDOrBuilder();
+  StringIDOrBuilder getTypeIDOrBuilder();
 
   /**
    * <code>.ids.HashID hash_i_d = 2 [json_name = "hashID"];</code>
@@ -31,9 +31,9 @@ public interface DataIDOrBuilder extends
    * <code>.ids.HashID hash_i_d = 2 [json_name = "hashID"];</code>
    * @return The hashID.
    */
-  com.ids.HashID getHashID();
+  HashID getHashID();
   /**
    * <code>.ids.HashID hash_i_d = 2 [json_name = "hashID"];</code>
    */
-  com.ids.HashIDOrBuilder getHashIDOrBuilder();
+  HashIDOrBuilder getHashIDOrBuilder();
 }

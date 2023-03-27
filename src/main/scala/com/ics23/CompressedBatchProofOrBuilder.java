@@ -10,12 +10,12 @@ public interface CompressedBatchProofOrBuilder extends
   /**
    * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  java.util.List<com.ics23.CompressedBatchEntry> 
+  java.util.List<CompressedBatchEntry>
       getEntriesList();
   /**
    * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  com.ics23.CompressedBatchEntry getEntries(int index);
+  CompressedBatchEntry getEntries(int index);
   /**
    * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
    */
@@ -23,23 +23,23 @@ public interface CompressedBatchProofOrBuilder extends
   /**
    * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  java.util.List<? extends com.ics23.CompressedBatchEntryOrBuilder> 
+  java.util.List<? extends CompressedBatchEntryOrBuilder>
       getEntriesOrBuilderList();
   /**
    * <code>repeated .ics23.CompressedBatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  com.ics23.CompressedBatchEntryOrBuilder getEntriesOrBuilder(
+  CompressedBatchEntryOrBuilder getEntriesOrBuilder(
       int index);
 
   /**
    * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
    */
-  java.util.List<com.ics23.InnerOp> 
+  java.util.List<InnerOp>
       getLookupInnersList();
   /**
    * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
    */
-  com.ics23.InnerOp getLookupInners(int index);
+  InnerOp getLookupInners(int index);
   /**
    * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
    */
@@ -47,11 +47,11 @@ public interface CompressedBatchProofOrBuilder extends
   /**
    * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
    */
-  java.util.List<? extends com.ics23.InnerOpOrBuilder> 
+  java.util.List<? extends InnerOpOrBuilder>
       getLookupInnersOrBuilderList();
   /**
    * <code>repeated .ics23.InnerOp lookup_inners = 2 [json_name = "lookupInners"];</code>
    */
-  com.ics23.InnerOpOrBuilder getLookupInnersOrBuilder(
+  InnerOpOrBuilder getLookupInnersOrBuilder(
       int index);
 }

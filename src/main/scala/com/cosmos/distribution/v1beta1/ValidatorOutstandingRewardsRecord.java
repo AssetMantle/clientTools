@@ -24,29 +24,29 @@ private static final long serialVersionUID = 0L;
     outstandingRewards_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new ValidatorOutstandingRewardsRecord();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.distribution.v1beta1.GenesisProto.internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_descriptor;
+    return GenesisProto.internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.distribution.v1beta1.GenesisProto.internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_fieldAccessorTable
+    return GenesisProto.internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord.class, com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord.Builder.class);
+            ValidatorOutstandingRewardsRecord.class, Builder.class);
   }
 
   public static final int VALIDATOR_ADDRESS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object validatorAddress_ = "";
+  private volatile Object validatorAddress_ = "";
   /**
    * <pre>
    * validator_address is the address of the validator.
@@ -55,15 +55,15 @@ private static final long serialVersionUID = 0L;
    * <code>string validator_address = 1 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  @java.lang.Override
-  public java.lang.String getValidatorAddress() {
-    java.lang.Object ref = validatorAddress_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getValidatorAddress() {
+    Object ref = validatorAddress_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       validatorAddress_ = s;
       return s;
     }
@@ -76,14 +76,14 @@ private static final long serialVersionUID = 0L;
    * <code>string validator_address = 1 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The bytes for validatorAddress.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getValidatorAddressBytes() {
-    java.lang.Object ref = validatorAddress_;
-    if (ref instanceof java.lang.String) {
+    Object ref = validatorAddress_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       validatorAddress_ = b;
       return b;
     } else {
@@ -101,7 +101,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin outstanding_rewards = 2 [json_name = "outstandingRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"outstanding_rewards&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<com.cosmos.base.v1beta1.DecCoin> getOutstandingRewardsList() {
     return outstandingRewards_;
   }
@@ -112,7 +112,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin outstanding_rewards = 2 [json_name = "outstandingRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"outstanding_rewards&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<? extends com.cosmos.base.v1beta1.DecCoinOrBuilder> 
       getOutstandingRewardsOrBuilderList() {
     return outstandingRewards_;
@@ -124,7 +124,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin outstanding_rewards = 2 [json_name = "outstandingRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"outstanding_rewards&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getOutstandingRewardsCount() {
     return outstandingRewards_.size();
   }
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin outstanding_rewards = 2 [json_name = "outstandingRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"outstanding_rewards&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.DecCoin getOutstandingRewards(int index) {
     return outstandingRewards_.get(index);
   }
@@ -146,14 +146,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin outstanding_rewards = 2 [json_name = "outstandingRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"outstanding_rewards&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.DecCoinOrBuilder getOutstandingRewardsOrBuilder(
       int index) {
     return outstandingRewards_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -163,7 +163,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(validatorAddress_)) {
@@ -175,7 +175,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -193,15 +193,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord)) {
+    if (!(obj instanceof ValidatorOutstandingRewardsRecord)) {
       return super.equals(obj);
     }
-    com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord other = (com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord) obj;
+    ValidatorOutstandingRewardsRecord other = (ValidatorOutstandingRewardsRecord) obj;
 
     if (!getValidatorAddress()
         .equals(other.getValidatorAddress())) return false;
@@ -211,7 +211,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -229,69 +229,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseFrom(
+  public static ValidatorOutstandingRewardsRecord parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseFrom(
+  public static ValidatorOutstandingRewardsRecord parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseFrom(
+  public static ValidatorOutstandingRewardsRecord parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseFrom(
+  public static ValidatorOutstandingRewardsRecord parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseFrom(byte[] data)
+  public static ValidatorOutstandingRewardsRecord parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseFrom(
+  public static ValidatorOutstandingRewardsRecord parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseFrom(java.io.InputStream input)
+  public static ValidatorOutstandingRewardsRecord parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseFrom(
+  public static ValidatorOutstandingRewardsRecord parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseDelimitedFrom(java.io.InputStream input)
+  public static ValidatorOutstandingRewardsRecord parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseDelimitedFrom(
+  public static ValidatorOutstandingRewardsRecord parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseFrom(
+  public static ValidatorOutstandingRewardsRecord parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord parseFrom(
+  public static ValidatorOutstandingRewardsRecord parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -299,23 +299,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord prototype) {
+  public static Builder newBuilder(ValidatorOutstandingRewardsRecord prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -329,18 +329,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord)
-      com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecordOrBuilder {
+      ValidatorOutstandingRewardsRecordOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.distribution.v1beta1.GenesisProto.internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_descriptor;
+      return GenesisProto.internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.distribution.v1beta1.GenesisProto.internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_fieldAccessorTable
+      return GenesisProto.internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord.class, com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord.Builder.class);
+              ValidatorOutstandingRewardsRecord.class, Builder.class);
     }
 
     // Construct using com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord.newBuilder()
@@ -349,11 +349,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -368,36 +368,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.distribution.v1beta1.GenesisProto.internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_descriptor;
+      return GenesisProto.internal_static_cosmos_distribution_v1beta1_ValidatorOutstandingRewardsRecord_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord getDefaultInstanceForType() {
-      return com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord.getDefaultInstance();
+    @Override
+    public ValidatorOutstandingRewardsRecord getDefaultInstanceForType() {
+      return ValidatorOutstandingRewardsRecord.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord build() {
-      com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord result = buildPartial();
+    @Override
+    public ValidatorOutstandingRewardsRecord build() {
+      ValidatorOutstandingRewardsRecord result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord buildPartial() {
-      com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord result = new com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord(this);
+    @Override
+    public ValidatorOutstandingRewardsRecord buildPartial() {
+      ValidatorOutstandingRewardsRecord result = new ValidatorOutstandingRewardsRecord(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord result) {
+    private void buildPartialRepeatedFields(ValidatorOutstandingRewardsRecord result) {
       if (outstandingRewardsBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           outstandingRewards_ = java.util.Collections.unmodifiableList(outstandingRewards_);
@@ -409,57 +409,57 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord result) {
+    private void buildPartial0(ValidatorOutstandingRewardsRecord result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.validatorAddress_ = validatorAddress_;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord) {
-        return mergeFrom((com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord)other);
+      if (other instanceof ValidatorOutstandingRewardsRecord) {
+        return mergeFrom((ValidatorOutstandingRewardsRecord)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord other) {
-      if (other == com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord.getDefaultInstance()) return this;
+    public Builder mergeFrom(ValidatorOutstandingRewardsRecord other) {
+      if (other == ValidatorOutstandingRewardsRecord.getDefaultInstance()) return this;
       if (!other.getValidatorAddress().isEmpty()) {
         validatorAddress_ = other.validatorAddress_;
         bitField0_ |= 0x00000001;
@@ -496,18 +496,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -552,7 +552,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object validatorAddress_ = "";
+    private Object validatorAddress_ = "";
     /**
      * <pre>
      * validator_address is the address of the validator.
@@ -561,16 +561,16 @@ private static final long serialVersionUID = 0L;
      * <code>string validator_address = 1 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
      * @return The validatorAddress.
      */
-    public java.lang.String getValidatorAddress() {
-      java.lang.Object ref = validatorAddress_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getValidatorAddress() {
+      Object ref = validatorAddress_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         validatorAddress_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -583,11 +583,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getValidatorAddressBytes() {
-      java.lang.Object ref = validatorAddress_;
+      Object ref = validatorAddress_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         validatorAddress_ = b;
         return b;
       } else {
@@ -604,7 +604,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setValidatorAddress(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       validatorAddress_ = value;
       bitField0_ |= 0x00000001;
@@ -822,7 +822,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.v1beta1.DecCoin outstanding_rewards = 2 [json_name = "outstandingRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"outstanding_rewards&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
      */
     public Builder addAllOutstandingRewards(
-        java.lang.Iterable<? extends com.cosmos.base.v1beta1.DecCoin> values) {
+        Iterable<? extends com.cosmos.base.v1beta1.DecCoin> values) {
       if (outstandingRewardsBuilder_ == null) {
         ensureOutstandingRewardsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -955,13 +955,13 @@ private static final long serialVersionUID = 0L;
       }
       return outstandingRewardsBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -972,18 +972,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord)
-  private static final com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord DEFAULT_INSTANCE;
+  private static final ValidatorOutstandingRewardsRecord DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord();
+    DEFAULT_INSTANCE = new ValidatorOutstandingRewardsRecord();
   }
 
-  public static com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord getDefaultInstance() {
+  public static ValidatorOutstandingRewardsRecord getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ValidatorOutstandingRewardsRecord>
       PARSER = new com.google.protobuf.AbstractParser<ValidatorOutstandingRewardsRecord>() {
-    @java.lang.Override
+    @Override
     public ValidatorOutstandingRewardsRecord parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1007,13 +1007,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<ValidatorOutstandingRewardsRecord> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord getDefaultInstanceForType() {
+  @Override
+  public ValidatorOutstandingRewardsRecord getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

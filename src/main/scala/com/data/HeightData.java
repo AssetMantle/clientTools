@@ -18,29 +18,24 @@ private static final long serialVersionUID = 0L;
   private HeightData() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new HeightData();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.data.HeightDataV1Proto.internal_static_data_HeightData_descriptor;
+    return HeightDataV1Proto.internal_static_data_HeightData_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.data.HeightDataV1Proto.internal_static_data_HeightData_fieldAccessorTable
+    return HeightDataV1Proto.internal_static_data_HeightData_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.data.HeightData.class, com.data.HeightData.Builder.class);
+            HeightData.class, Builder.class);
   }
 
   public static final int VALUE_FIELD_NUMBER = 1;
@@ -49,7 +44,7 @@ private static final long serialVersionUID = 0L;
    * <code>.types.Height value = 1 [json_name = "value"];</code>
    * @return Whether the value field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasValue() {
     return value_ != null;
   }
@@ -57,20 +52,20 @@ private static final long serialVersionUID = 0L;
    * <code>.types.Height value = 1 [json_name = "value"];</code>
    * @return The value.
    */
-  @java.lang.Override
+  @Override
   public com.types.Height getValue() {
     return value_ == null ? com.types.Height.getDefaultInstance() : value_;
   }
   /**
    * <code>.types.Height value = 1 [json_name = "value"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.types.HeightOrBuilder getValueOrBuilder() {
-    return getValue();
+    return value_ == null ? com.types.Height.getDefaultInstance() : value_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -80,7 +75,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (value_ != null) {
@@ -89,7 +84,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -104,15 +99,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.data.HeightData)) {
+    if (!(obj instanceof HeightData)) {
       return super.equals(obj);
     }
-    com.data.HeightData other = (com.data.HeightData) obj;
+    HeightData other = (HeightData) obj;
 
     if (hasValue() != other.hasValue()) return false;
     if (hasValue()) {
@@ -123,7 +118,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -139,69 +134,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.data.HeightData parseFrom(
+  public static HeightData parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.data.HeightData parseFrom(
+  public static HeightData parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.data.HeightData parseFrom(
+  public static HeightData parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.data.HeightData parseFrom(
+  public static HeightData parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.data.HeightData parseFrom(byte[] data)
+  public static HeightData parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.data.HeightData parseFrom(
+  public static HeightData parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.data.HeightData parseFrom(java.io.InputStream input)
+  public static HeightData parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.data.HeightData parseFrom(
+  public static HeightData parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.data.HeightData parseDelimitedFrom(java.io.InputStream input)
+  public static HeightData parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.data.HeightData parseDelimitedFrom(
+  public static HeightData parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.data.HeightData parseFrom(
+  public static HeightData parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.data.HeightData parseFrom(
+  public static HeightData parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -209,23 +204,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.data.HeightData prototype) {
+  public static Builder newBuilder(HeightData prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -235,18 +230,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:data.HeightData)
-      com.data.HeightDataOrBuilder {
+      HeightDataOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.data.HeightDataV1Proto.internal_static_data_HeightData_descriptor;
+      return HeightDataV1Proto.internal_static_data_HeightData_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.data.HeightDataV1Proto.internal_static_data_HeightData_fieldAccessorTable
+      return HeightDataV1Proto.internal_static_data_HeightData_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.data.HeightData.class, com.data.HeightData.Builder.class);
+              HeightData.class, Builder.class);
     }
 
     // Construct using com.data.HeightData.newBuilder()
@@ -255,98 +250,103 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
-      if (valueBuilder_ == null) {
-        value_ = null;
-      } else {
-        value_ = null;
+      bitField0_ = 0;
+      value_ = null;
+      if (valueBuilder_ != null) {
+        valueBuilder_.dispose();
         valueBuilder_ = null;
       }
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.data.HeightDataV1Proto.internal_static_data_HeightData_descriptor;
+      return HeightDataV1Proto.internal_static_data_HeightData_descriptor;
     }
 
-    @java.lang.Override
-    public com.data.HeightData getDefaultInstanceForType() {
-      return com.data.HeightData.getDefaultInstance();
+    @Override
+    public HeightData getDefaultInstanceForType() {
+      return HeightData.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.data.HeightData build() {
-      com.data.HeightData result = buildPartial();
+    @Override
+    public HeightData build() {
+      HeightData result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.data.HeightData buildPartial() {
-      com.data.HeightData result = new com.data.HeightData(this);
-      if (valueBuilder_ == null) {
-        result.value_ = value_;
-      } else {
-        result.value_ = valueBuilder_.build();
-      }
+    @Override
+    public HeightData buildPartial() {
+      HeightData result = new HeightData(this);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(HeightData result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.value_ = valueBuilder_ == null
+            ? value_
+            : valueBuilder_.build();
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.data.HeightData) {
-        return mergeFrom((com.data.HeightData)other);
+      if (other instanceof HeightData) {
+        return mergeFrom((HeightData)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.data.HeightData other) {
-      if (other == com.data.HeightData.getDefaultInstance()) return this;
+    public Builder mergeFrom(HeightData other) {
+      if (other == HeightData.getDefaultInstance()) return this;
       if (other.hasValue()) {
         mergeValue(other.getValue());
       }
@@ -355,18 +355,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getValueFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             default: {
@@ -398,6 +398,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private com.types.Height value_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -407,7 +408,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the value field is set.
      */
     public boolean hasValue() {
-      return valueBuilder_ != null || value_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>.types.Height value = 1 [json_name = "value"];</code>
@@ -429,11 +430,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         value_ = value;
-        onChanged();
       } else {
         valueBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -443,11 +444,11 @@ private static final long serialVersionUID = 0L;
         com.types.Height.Builder builderForValue) {
       if (valueBuilder_ == null) {
         value_ = builderForValue.build();
-        onChanged();
       } else {
         valueBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -455,38 +456,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeValue(com.types.Height value) {
       if (valueBuilder_ == null) {
-        if (value_ != null) {
-          value_ =
-            com.types.Height.newBuilder(value_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          value_ != null &&
+          value_ != com.types.Height.getDefaultInstance()) {
+          getValueBuilder().mergeFrom(value);
         } else {
           value_ = value;
         }
-        onChanged();
       } else {
         valueBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.types.Height value = 1 [json_name = "value"];</code>
      */
     public Builder clearValue() {
-      if (valueBuilder_ == null) {
-        value_ = null;
-        onChanged();
-      } else {
-        value_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      value_ = null;
+      if (valueBuilder_ != null) {
+        valueBuilder_.dispose();
         valueBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.types.Height value = 1 [json_name = "value"];</code>
      */
     public com.types.Height.Builder getValueBuilder() {
-      
+      bitField0_ |= 0x00000001;
       onChanged();
       return getValueFieldBuilder().getBuilder();
     }
@@ -517,13 +518,13 @@ private static final long serialVersionUID = 0L;
       }
       return valueBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -534,18 +535,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:data.HeightData)
-  private static final com.data.HeightData DEFAULT_INSTANCE;
+  private static final HeightData DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.data.HeightData();
+    DEFAULT_INSTANCE = new HeightData();
   }
 
-  public static com.data.HeightData getDefaultInstance() {
+  public static HeightData getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<HeightData>
       PARSER = new com.google.protobuf.AbstractParser<HeightData>() {
-    @java.lang.Override
+    @Override
     public HeightData parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -569,13 +570,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<HeightData> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.data.HeightData getDefaultInstanceForType() {
+  @Override
+  public HeightData getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -24,7 +24,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Deposit deposits = 2 [json_name = "deposits", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Deposits"];</code>
    */
-  java.util.List<com.cosmos.gov.v1beta1.Deposit> 
+  java.util.List<Deposit>
       getDepositsList();
   /**
    * <pre>
@@ -33,7 +33,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Deposit deposits = 2 [json_name = "deposits", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Deposits"];</code>
    */
-  com.cosmos.gov.v1beta1.Deposit getDeposits(int index);
+  Deposit getDeposits(int index);
   /**
    * <pre>
    * deposits defines all the deposits present at genesis.
@@ -49,7 +49,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Deposit deposits = 2 [json_name = "deposits", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Deposits"];</code>
    */
-  java.util.List<? extends com.cosmos.gov.v1beta1.DepositOrBuilder> 
+  java.util.List<? extends DepositOrBuilder>
       getDepositsOrBuilderList();
   /**
    * <pre>
@@ -58,7 +58,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Deposit deposits = 2 [json_name = "deposits", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Deposits"];</code>
    */
-  com.cosmos.gov.v1beta1.DepositOrBuilder getDepositsOrBuilder(
+  DepositOrBuilder getDepositsOrBuilder(
       int index);
 
   /**
@@ -68,7 +68,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Vote votes = 3 [json_name = "votes", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Votes"];</code>
    */
-  java.util.List<com.cosmos.gov.v1beta1.Vote> 
+  java.util.List<Vote>
       getVotesList();
   /**
    * <pre>
@@ -77,7 +77,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Vote votes = 3 [json_name = "votes", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Votes"];</code>
    */
-  com.cosmos.gov.v1beta1.Vote getVotes(int index);
+  Vote getVotes(int index);
   /**
    * <pre>
    * votes defines all the votes present at genesis.
@@ -93,7 +93,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Vote votes = 3 [json_name = "votes", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Votes"];</code>
    */
-  java.util.List<? extends com.cosmos.gov.v1beta1.VoteOrBuilder> 
+  java.util.List<? extends VoteOrBuilder>
       getVotesOrBuilderList();
   /**
    * <pre>
@@ -102,7 +102,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Vote votes = 3 [json_name = "votes", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Votes"];</code>
    */
-  com.cosmos.gov.v1beta1.VoteOrBuilder getVotesOrBuilder(
+  VoteOrBuilder getVotesOrBuilder(
       int index);
 
   /**
@@ -112,7 +112,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 4 [json_name = "proposals", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Proposals"];</code>
    */
-  java.util.List<com.cosmos.gov.v1beta1.Proposal> 
+  java.util.List<Proposal>
       getProposalsList();
   /**
    * <pre>
@@ -121,7 +121,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 4 [json_name = "proposals", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Proposals"];</code>
    */
-  com.cosmos.gov.v1beta1.Proposal getProposals(int index);
+  Proposal getProposals(int index);
   /**
    * <pre>
    * proposals defines all the proposals present at genesis.
@@ -137,7 +137,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 4 [json_name = "proposals", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Proposals"];</code>
    */
-  java.util.List<? extends com.cosmos.gov.v1beta1.ProposalOrBuilder> 
+  java.util.List<? extends ProposalOrBuilder>
       getProposalsOrBuilderList();
   /**
    * <pre>
@@ -146,7 +146,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 4 [json_name = "proposals", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "Proposals"];</code>
    */
-  com.cosmos.gov.v1beta1.ProposalOrBuilder getProposalsOrBuilder(
+  ProposalOrBuilder getProposalsOrBuilder(
       int index);
 
   /**
@@ -166,7 +166,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 5 [json_name = "depositParams", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"deposit_params&#92;""];</code>
    * @return The depositParams.
    */
-  com.cosmos.gov.v1beta1.DepositParams getDepositParams();
+  DepositParams getDepositParams();
   /**
    * <pre>
    * params defines all the paramaters of related to deposit.
@@ -174,7 +174,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 5 [json_name = "depositParams", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"deposit_params&#92;""];</code>
    */
-  com.cosmos.gov.v1beta1.DepositParamsOrBuilder getDepositParamsOrBuilder();
+  DepositParamsOrBuilder getDepositParamsOrBuilder();
 
   /**
    * <pre>
@@ -193,7 +193,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 6 [json_name = "votingParams", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"voting_params&#92;""];</code>
    * @return The votingParams.
    */
-  com.cosmos.gov.v1beta1.VotingParams getVotingParams();
+  VotingParams getVotingParams();
   /**
    * <pre>
    * params defines all the paramaters of related to voting.
@@ -201,7 +201,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 6 [json_name = "votingParams", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"voting_params&#92;""];</code>
    */
-  com.cosmos.gov.v1beta1.VotingParamsOrBuilder getVotingParamsOrBuilder();
+  VotingParamsOrBuilder getVotingParamsOrBuilder();
 
   /**
    * <pre>
@@ -220,7 +220,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 7 [json_name = "tallyParams", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"tally_params&#92;""];</code>
    * @return The tallyParams.
    */
-  com.cosmos.gov.v1beta1.TallyParams getTallyParams();
+  TallyParams getTallyParams();
   /**
    * <pre>
    * params defines all the paramaters of related to tally.
@@ -228,5 +228,5 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 7 [json_name = "tallyParams", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"tally_params&#92;""];</code>
    */
-  com.cosmos.gov.v1beta1.TallyParamsOrBuilder getTallyParamsOrBuilder();
+  TallyParamsOrBuilder getTallyParamsOrBuilder();
 }

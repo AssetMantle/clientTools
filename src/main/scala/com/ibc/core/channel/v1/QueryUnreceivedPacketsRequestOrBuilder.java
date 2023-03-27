@@ -15,7 +15,7 @@ public interface QueryUnreceivedPacketsRequestOrBuilder extends
    * <code>string port_id = 1 [json_name = "portId"];</code>
    * @return The portId.
    */
-  java.lang.String getPortId();
+  String getPortId();
   /**
    * <pre>
    * port unique identifier
@@ -35,7 +35,7 @@ public interface QueryUnreceivedPacketsRequestOrBuilder extends
    * <code>string channel_id = 2 [json_name = "channelId"];</code>
    * @return The channelId.
    */
-  java.lang.String getChannelId();
+  String getChannelId();
   /**
    * <pre>
    * channel unique identifier
@@ -55,7 +55,7 @@ public interface QueryUnreceivedPacketsRequestOrBuilder extends
    * <code>repeated uint64 packet_commitment_sequences = 3 [json_name = "packetCommitmentSequences"];</code>
    * @return A list containing the packetCommitmentSequences.
    */
-  java.util.List<java.lang.Long> getPacketCommitmentSequencesList();
+  java.util.List<Long> getPacketCommitmentSequencesList();
   /**
    * <pre>
    * list of packet sequences

@@ -11,7 +11,7 @@ public interface PoolOrBuilder extends
    * <code>string not_bonded_tokens = 1 [json_name = "notBondedTokens", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.jsontag) = "not_bonded_tokens"];</code>
    * @return The notBondedTokens.
    */
-  java.lang.String getNotBondedTokens();
+  String getNotBondedTokens();
   /**
    * <code>string not_bonded_tokens = 1 [json_name = "notBondedTokens", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.jsontag) = "not_bonded_tokens"];</code>
    * @return The bytes for notBondedTokens.
@@ -23,7 +23,7 @@ public interface PoolOrBuilder extends
    * <code>string bonded_tokens = 2 [json_name = "bondedTokens", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.jsontag) = "bonded_tokens", (.gogoproto.moretags) = "yaml:&#92;"bonded_tokens&#92;""];</code>
    * @return The bondedTokens.
    */
-  java.lang.String getBondedTokens();
+  String getBondedTokens();
   /**
    * <code>string bonded_tokens = 2 [json_name = "bondedTokens", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.jsontag) = "bonded_tokens", (.gogoproto.moretags) = "yaml:&#92;"bonded_tokens&#92;""];</code>
    * @return The bytes for bondedTokens.

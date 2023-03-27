@@ -57,7 +57,7 @@ public final class BankProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\036cosmos/bank/v1beta1/bank.proto\022\023cosmos" +
       ".bank.v1beta1\032\024gogoproto/gogo.proto\032\031cos" +
       "mos_proto/cosmos.proto\032\036cosmos/base/v1be" +
@@ -107,43 +107,43 @@ public final class BankProto {
     internal_static_cosmos_bank_v1beta1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_Params_descriptor,
-        new java.lang.String[] { "SendEnabled", "DefaultSendEnabled", });
+        new String[] { "SendEnabled", "DefaultSendEnabled", });
     internal_static_cosmos_bank_v1beta1_SendEnabled_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_bank_v1beta1_SendEnabled_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_SendEnabled_descriptor,
-        new java.lang.String[] { "Denom", "Enabled", });
+        new String[] { "Denom", "Enabled", });
     internal_static_cosmos_bank_v1beta1_Input_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_bank_v1beta1_Input_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_Input_descriptor,
-        new java.lang.String[] { "Address", "Coins", });
+        new String[] { "Address", "Coins", });
     internal_static_cosmos_bank_v1beta1_Output_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_bank_v1beta1_Output_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_Output_descriptor,
-        new java.lang.String[] { "Address", "Coins", });
+        new String[] { "Address", "Coins", });
     internal_static_cosmos_bank_v1beta1_Supply_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_bank_v1beta1_Supply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_Supply_descriptor,
-        new java.lang.String[] { "Total", });
+        new String[] { "Total", });
     internal_static_cosmos_bank_v1beta1_DenomUnit_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_bank_v1beta1_DenomUnit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_DenomUnit_descriptor,
-        new java.lang.String[] { "Denom", "Exponent", "Aliases", });
+        new String[] { "Denom", "Exponent", "Aliases", });
     internal_static_cosmos_bank_v1beta1_Metadata_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_bank_v1beta1_Metadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_Metadata_descriptor,
-        new java.lang.String[] { "Description", "DenomUnits", "Base", "Display", "Name", "Symbol", });
+        new String[] { "Description", "DenomUnits", "Base", "Display", "Name", "Symbol", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.implementsInterface);

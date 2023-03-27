@@ -87,7 +87,7 @@ public final class ProofsProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\023confio/proofs.proto\022\005ics23\"\177\n\016Existenc" +
       "eProof\022\020\n\003key\030\001 \001(\014R\003key\022\024\n\005value\030\002 \001(\014R" +
       "\005value\022!\n\004leaf\030\003 \001(\0132\r.ics23.LeafOpR\004lea" +
@@ -158,79 +158,79 @@ public final class ProofsProto {
     internal_static_ics23_ExistenceProof_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_ExistenceProof_descriptor,
-        new java.lang.String[] { "Key", "Value", "Leaf", "Path", });
+        new String[] { "Key", "Value", "Leaf", "Path", });
     internal_static_ics23_NonExistenceProof_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ics23_NonExistenceProof_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_NonExistenceProof_descriptor,
-        new java.lang.String[] { "Key", "Left", "Right", });
+        new String[] { "Key", "Left", "Right", });
     internal_static_ics23_CommitmentProof_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ics23_CommitmentProof_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_CommitmentProof_descriptor,
-        new java.lang.String[] { "Exist", "Nonexist", "Batch", "Compressed", "Proof", });
+        new String[] { "Exist", "Nonexist", "Batch", "Compressed", "Proof", });
     internal_static_ics23_LeafOp_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ics23_LeafOp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_LeafOp_descriptor,
-        new java.lang.String[] { "Hash", "PrehashKey", "PrehashValue", "Length", "Prefix", });
+        new String[] { "Hash", "PrehashKey", "PrehashValue", "Length", "Prefix", });
     internal_static_ics23_InnerOp_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ics23_InnerOp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_InnerOp_descriptor,
-        new java.lang.String[] { "Hash", "Prefix", "Suffix", });
+        new String[] { "Hash", "Prefix", "Suffix", });
     internal_static_ics23_ProofSpec_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_ics23_ProofSpec_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_ProofSpec_descriptor,
-        new java.lang.String[] { "LeafSpec", "InnerSpec", "MaxDepth", "MinDepth", });
+        new String[] { "LeafSpec", "InnerSpec", "MaxDepth", "MinDepth", });
     internal_static_ics23_InnerSpec_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_ics23_InnerSpec_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_InnerSpec_descriptor,
-        new java.lang.String[] { "ChildOrder", "ChildSize", "MinPrefixLength", "MaxPrefixLength", "EmptyChild", "Hash", });
+        new String[] { "ChildOrder", "ChildSize", "MinPrefixLength", "MaxPrefixLength", "EmptyChild", "Hash", });
     internal_static_ics23_BatchProof_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_ics23_BatchProof_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_BatchProof_descriptor,
-        new java.lang.String[] { "Entries", });
+        new String[] { "Entries", });
     internal_static_ics23_BatchEntry_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_ics23_BatchEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_BatchEntry_descriptor,
-        new java.lang.String[] { "Exist", "Nonexist", "Proof", });
+        new String[] { "Exist", "Nonexist", "Proof", });
     internal_static_ics23_CompressedBatchProof_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_ics23_CompressedBatchProof_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_CompressedBatchProof_descriptor,
-        new java.lang.String[] { "Entries", "LookupInners", });
+        new String[] { "Entries", "LookupInners", });
     internal_static_ics23_CompressedBatchEntry_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_ics23_CompressedBatchEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_CompressedBatchEntry_descriptor,
-        new java.lang.String[] { "Exist", "Nonexist", "Proof", });
+        new String[] { "Exist", "Nonexist", "Proof", });
     internal_static_ics23_CompressedExistenceProof_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_ics23_CompressedExistenceProof_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_CompressedExistenceProof_descriptor,
-        new java.lang.String[] { "Key", "Value", "Leaf", "Path", });
+        new String[] { "Key", "Value", "Leaf", "Path", });
     internal_static_ics23_CompressedNonExistenceProof_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_ics23_CompressedNonExistenceProof_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ics23_CompressedNonExistenceProof_descriptor,
-        new java.lang.String[] { "Key", "Left", "Right", });
+        new String[] { "Key", "Left", "Right", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

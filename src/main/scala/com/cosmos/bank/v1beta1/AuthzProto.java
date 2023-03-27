@@ -27,7 +27,7 @@ public final class AuthzProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\037cosmos/bank/v1beta1/authz.proto\022\023cosmo" +
       "s.bank.v1beta1\032\024gogoproto/gogo.proto\032\031co" +
       "smos_proto/cosmos.proto\032\036cosmos/base/v1b" +
@@ -54,7 +54,7 @@ public final class AuthzProto {
     internal_static_cosmos_bank_v1beta1_SendAuthorization_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_SendAuthorization_descriptor,
-        new java.lang.String[] { "SpendLimit", });
+        new String[] { "SpendLimit", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.implementsInterface);

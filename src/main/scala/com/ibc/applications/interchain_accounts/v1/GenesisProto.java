@@ -47,7 +47,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n5ibc/applications/interchain_accounts/v" +
       "1/genesis.proto\022\'ibc.applications.interc" +
       "hain_accounts.v1\032\024gogoproto/gogo.proto\032C" +
@@ -115,31 +115,31 @@ public final class GenesisProto {
     internal_static_ibc_applications_interchain_accounts_v1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_v1_GenesisState_descriptor,
-        new java.lang.String[] { "ControllerGenesisState", "HostGenesisState", });
+        new String[] { "ControllerGenesisState", "HostGenesisState", });
     internal_static_ibc_applications_interchain_accounts_v1_ControllerGenesisState_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_applications_interchain_accounts_v1_ControllerGenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_v1_ControllerGenesisState_descriptor,
-        new java.lang.String[] { "ActiveChannels", "InterchainAccounts", "Ports", "Params", });
+        new String[] { "ActiveChannels", "InterchainAccounts", "Ports", "Params", });
     internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_descriptor,
-        new java.lang.String[] { "ActiveChannels", "InterchainAccounts", "Port", "Params", });
+        new String[] { "ActiveChannels", "InterchainAccounts", "Port", "Params", });
     internal_static_ibc_applications_interchain_accounts_v1_ActiveChannel_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_applications_interchain_accounts_v1_ActiveChannel_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_v1_ActiveChannel_descriptor,
-        new java.lang.String[] { "ConnectionId", "PortId", "ChannelId", });
+        new String[] { "ConnectionId", "PortId", "ChannelId", });
     internal_static_ibc_applications_interchain_accounts_v1_RegisteredInterchainAccount_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_applications_interchain_accounts_v1_RegisteredInterchainAccount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_v1_RegisteredInterchainAccount_descriptor,
-        new java.lang.String[] { "ConnectionId", "PortId", "AccountAddress", });
+        new String[] { "ConnectionId", "PortId", "AccountAddress", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.moretags);

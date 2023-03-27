@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     bondDenom_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Params();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_Params_descriptor;
+    return StakingProto.internal_static_cosmos_staking_v1beta1_Params_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_Params_fieldAccessorTable
+    return StakingProto.internal_static_cosmos_staking_v1beta1_Params_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.staking.v1beta1.Params.class, com.cosmos.staking.v1beta1.Params.Builder.class);
+            Params.class, Builder.class);
   }
 
   public static final int UNBONDING_TIME_FIELD_NUMBER = 1;
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration unbonding_time = 1 [json_name = "unbondingTime", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_time&#92;"", (.gogoproto.stdduration) = true];</code>
    * @return Whether the unbondingTime field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasUnbondingTime() {
     return unbondingTime_ != null;
   }
@@ -65,7 +65,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration unbonding_time = 1 [json_name = "unbondingTime", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_time&#92;"", (.gogoproto.stdduration) = true];</code>
    * @return The unbondingTime.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Duration getUnbondingTime() {
     return unbondingTime_ == null ? com.google.protobuf.Duration.getDefaultInstance() : unbondingTime_;
   }
@@ -76,7 +76,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Duration unbonding_time = 1 [json_name = "unbondingTime", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_time&#92;"", (.gogoproto.stdduration) = true];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.DurationOrBuilder getUnbondingTimeOrBuilder() {
     return unbondingTime_ == null ? com.google.protobuf.Duration.getDefaultInstance() : unbondingTime_;
   }
@@ -91,7 +91,7 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 max_validators = 2 [json_name = "maxValidators", (.gogoproto.moretags) = "yaml:&#92;"max_validators&#92;""];</code>
    * @return The maxValidators.
    */
-  @java.lang.Override
+  @Override
   public int getMaxValidators() {
     return maxValidators_;
   }
@@ -106,7 +106,7 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 max_entries = 3 [json_name = "maxEntries", (.gogoproto.moretags) = "yaml:&#92;"max_entries&#92;""];</code>
    * @return The maxEntries.
    */
-  @java.lang.Override
+  @Override
   public int getMaxEntries() {
     return maxEntries_;
   }
@@ -121,14 +121,14 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 historical_entries = 4 [json_name = "historicalEntries", (.gogoproto.moretags) = "yaml:&#92;"historical_entries&#92;""];</code>
    * @return The historicalEntries.
    */
-  @java.lang.Override
+  @Override
   public int getHistoricalEntries() {
     return historicalEntries_;
   }
 
   public static final int BOND_DENOM_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object bondDenom_ = "";
+  private volatile Object bondDenom_ = "";
   /**
    * <pre>
    * bond_denom defines the bondable coin denomination.
@@ -137,15 +137,15 @@ private static final long serialVersionUID = 0L;
    * <code>string bond_denom = 5 [json_name = "bondDenom", (.gogoproto.moretags) = "yaml:&#92;"bond_denom&#92;""];</code>
    * @return The bondDenom.
    */
-  @java.lang.Override
-  public java.lang.String getBondDenom() {
-    java.lang.Object ref = bondDenom_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getBondDenom() {
+    Object ref = bondDenom_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       bondDenom_ = s;
       return s;
     }
@@ -158,14 +158,14 @@ private static final long serialVersionUID = 0L;
    * <code>string bond_denom = 5 [json_name = "bondDenom", (.gogoproto.moretags) = "yaml:&#92;"bond_denom&#92;""];</code>
    * @return The bytes for bondDenom.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getBondDenomBytes() {
-    java.lang.Object ref = bondDenom_;
-    if (ref instanceof java.lang.String) {
+    Object ref = bondDenom_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       bondDenom_ = b;
       return b;
     } else {
@@ -174,7 +174,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -184,7 +184,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (unbondingTime_ != null) {
@@ -205,7 +205,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -235,15 +235,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.staking.v1beta1.Params)) {
+    if (!(obj instanceof Params)) {
       return super.equals(obj);
     }
-    com.cosmos.staking.v1beta1.Params other = (com.cosmos.staking.v1beta1.Params) obj;
+    Params other = (Params) obj;
 
     if (hasUnbondingTime() != other.hasUnbondingTime()) return false;
     if (hasUnbondingTime()) {
@@ -262,7 +262,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -286,69 +286,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.staking.v1beta1.Params parseFrom(
+  public static Params parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.Params parseFrom(
+  public static Params parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.Params parseFrom(
+  public static Params parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.Params parseFrom(
+  public static Params parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.Params parseFrom(byte[] data)
+  public static Params parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.Params parseFrom(
+  public static Params parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.Params parseFrom(java.io.InputStream input)
+  public static Params parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.Params parseFrom(
+  public static Params parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.Params parseDelimitedFrom(java.io.InputStream input)
+  public static Params parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.Params parseDelimitedFrom(
+  public static Params parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.Params parseFrom(
+  public static Params parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.Params parseFrom(
+  public static Params parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -356,23 +356,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.staking.v1beta1.Params prototype) {
+  public static Builder newBuilder(Params prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -386,18 +386,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.Params)
-      com.cosmos.staking.v1beta1.ParamsOrBuilder {
+      ParamsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_Params_descriptor;
+      return StakingProto.internal_static_cosmos_staking_v1beta1_Params_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_Params_fieldAccessorTable
+      return StakingProto.internal_static_cosmos_staking_v1beta1_Params_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.staking.v1beta1.Params.class, com.cosmos.staking.v1beta1.Params.Builder.class);
+              Params.class, Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.Params.newBuilder()
@@ -406,11 +406,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -426,35 +426,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_Params_descriptor;
+      return StakingProto.internal_static_cosmos_staking_v1beta1_Params_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.Params getDefaultInstanceForType() {
-      return com.cosmos.staking.v1beta1.Params.getDefaultInstance();
+    @Override
+    public Params getDefaultInstanceForType() {
+      return Params.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.Params build() {
-      com.cosmos.staking.v1beta1.Params result = buildPartial();
+    @Override
+    public Params build() {
+      Params result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.Params buildPartial() {
-      com.cosmos.staking.v1beta1.Params result = new com.cosmos.staking.v1beta1.Params(this);
+    @Override
+    public Params buildPartial() {
+      Params result = new Params(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.staking.v1beta1.Params result) {
+    private void buildPartial0(Params result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.unbondingTime_ = unbondingTimeBuilder_ == null
@@ -475,50 +475,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.staking.v1beta1.Params) {
-        return mergeFrom((com.cosmos.staking.v1beta1.Params)other);
+      if (other instanceof Params) {
+        return mergeFrom((Params)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.staking.v1beta1.Params other) {
-      if (other == com.cosmos.staking.v1beta1.Params.getDefaultInstance()) return this;
+    public Builder mergeFrom(Params other) {
+      if (other == Params.getDefaultInstance()) return this;
       if (other.hasUnbondingTime()) {
         mergeUnbondingTime(other.getUnbondingTime());
       }
@@ -541,18 +541,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -770,7 +770,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 max_validators = 2 [json_name = "maxValidators", (.gogoproto.moretags) = "yaml:&#92;"max_validators&#92;""];</code>
      * @return The maxValidators.
      */
-    @java.lang.Override
+    @Override
     public int getMaxValidators() {
       return maxValidators_;
     }
@@ -814,7 +814,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 max_entries = 3 [json_name = "maxEntries", (.gogoproto.moretags) = "yaml:&#92;"max_entries&#92;""];</code>
      * @return The maxEntries.
      */
-    @java.lang.Override
+    @Override
     public int getMaxEntries() {
       return maxEntries_;
     }
@@ -858,7 +858,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 historical_entries = 4 [json_name = "historicalEntries", (.gogoproto.moretags) = "yaml:&#92;"historical_entries&#92;""];</code>
      * @return The historicalEntries.
      */
-    @java.lang.Override
+    @Override
     public int getHistoricalEntries() {
       return historicalEntries_;
     }
@@ -893,7 +893,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object bondDenom_ = "";
+    private Object bondDenom_ = "";
     /**
      * <pre>
      * bond_denom defines the bondable coin denomination.
@@ -902,16 +902,16 @@ private static final long serialVersionUID = 0L;
      * <code>string bond_denom = 5 [json_name = "bondDenom", (.gogoproto.moretags) = "yaml:&#92;"bond_denom&#92;""];</code>
      * @return The bondDenom.
      */
-    public java.lang.String getBondDenom() {
-      java.lang.Object ref = bondDenom_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getBondDenom() {
+      Object ref = bondDenom_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         bondDenom_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -924,11 +924,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getBondDenomBytes() {
-      java.lang.Object ref = bondDenom_;
+      Object ref = bondDenom_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         bondDenom_ = b;
         return b;
       } else {
@@ -945,7 +945,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setBondDenom(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       bondDenom_ = value;
       bitField0_ |= 0x00000010;
@@ -984,13 +984,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1001,18 +1001,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.Params)
-  private static final com.cosmos.staking.v1beta1.Params DEFAULT_INSTANCE;
+  private static final Params DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.Params();
+    DEFAULT_INSTANCE = new Params();
   }
 
-  public static com.cosmos.staking.v1beta1.Params getDefaultInstance() {
+  public static Params getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Params>
       PARSER = new com.google.protobuf.AbstractParser<Params>() {
-    @java.lang.Override
+    @Override
     public Params parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1036,13 +1036,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Params> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.Params getDefaultInstanceForType() {
+  @Override
+  public Params getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

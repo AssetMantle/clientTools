@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     result_ = 0;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgTimeoutResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgTimeoutResponse_descriptor;
+    return TxProto.internal_static_ibc_core_channel_v1_MsgTimeoutResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgTimeoutResponse_fieldAccessorTable
+    return TxProto.internal_static_ibc_core_channel_v1_MsgTimeoutResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.channel.v1.MsgTimeoutResponse.class, com.ibc.core.channel.v1.MsgTimeoutResponse.Builder.class);
+            MsgTimeoutResponse.class, Builder.class);
   }
 
   public static final int RESULT_FIELD_NUMBER = 1;
@@ -49,20 +49,20 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.channel.v1.ResponseResultType result = 1 [json_name = "result"];</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  @Override public int getResultValue() {
     return result_;
   }
   /**
    * <code>.ibc.core.channel.v1.ResponseResultType result = 1 [json_name = "result"];</code>
    * @return The result.
    */
-  @java.lang.Override public com.ibc.core.channel.v1.ResponseResultType getResult() {
-    com.ibc.core.channel.v1.ResponseResultType result = com.ibc.core.channel.v1.ResponseResultType.forNumber(result_);
-    return result == null ? com.ibc.core.channel.v1.ResponseResultType.UNRECOGNIZED : result;
+  @Override public ResponseResultType getResult() {
+    ResponseResultType result = ResponseResultType.forNumber(result_);
+    return result == null ? ResponseResultType.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -72,22 +72,22 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (result_ != com.ibc.core.channel.v1.ResponseResultType.RESPONSE_RESULT_TYPE_UNSPECIFIED.getNumber()) {
+    if (result_ != ResponseResultType.RESPONSE_RESULT_TYPE_UNSPECIFIED.getNumber()) {
       output.writeEnum(1, result_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
-    if (result_ != com.ibc.core.channel.v1.ResponseResultType.RESPONSE_RESULT_TYPE_UNSPECIFIED.getNumber()) {
+    if (result_ != ResponseResultType.RESPONSE_RESULT_TYPE_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }
@@ -96,22 +96,22 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.channel.v1.MsgTimeoutResponse)) {
+    if (!(obj instanceof MsgTimeoutResponse)) {
       return super.equals(obj);
     }
-    com.ibc.core.channel.v1.MsgTimeoutResponse other = (com.ibc.core.channel.v1.MsgTimeoutResponse) obj;
+    MsgTimeoutResponse other = (MsgTimeoutResponse) obj;
 
     if (result_ != other.result_) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -125,69 +125,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseFrom(
+  public static MsgTimeoutResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseFrom(
+  public static MsgTimeoutResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseFrom(
+  public static MsgTimeoutResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseFrom(
+  public static MsgTimeoutResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseFrom(byte[] data)
+  public static MsgTimeoutResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseFrom(
+  public static MsgTimeoutResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseFrom(java.io.InputStream input)
+  public static MsgTimeoutResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseFrom(
+  public static MsgTimeoutResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseDelimitedFrom(java.io.InputStream input)
+  public static MsgTimeoutResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseDelimitedFrom(
+  public static MsgTimeoutResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseFrom(
+  public static MsgTimeoutResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse parseFrom(
+  public static MsgTimeoutResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -195,23 +195,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.channel.v1.MsgTimeoutResponse prototype) {
+  public static Builder newBuilder(MsgTimeoutResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -225,18 +225,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.channel.v1.MsgTimeoutResponse)
-      com.ibc.core.channel.v1.MsgTimeoutResponseOrBuilder {
+      MsgTimeoutResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgTimeoutResponse_descriptor;
+      return TxProto.internal_static_ibc_core_channel_v1_MsgTimeoutResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgTimeoutResponse_fieldAccessorTable
+      return TxProto.internal_static_ibc_core_channel_v1_MsgTimeoutResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.channel.v1.MsgTimeoutResponse.class, com.ibc.core.channel.v1.MsgTimeoutResponse.Builder.class);
+              MsgTimeoutResponse.class, Builder.class);
     }
 
     // Construct using com.ibc.core.channel.v1.MsgTimeoutResponse.newBuilder()
@@ -245,11 +245,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -257,85 +257,85 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgTimeoutResponse_descriptor;
+      return TxProto.internal_static_ibc_core_channel_v1_MsgTimeoutResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.MsgTimeoutResponse getDefaultInstanceForType() {
-      return com.ibc.core.channel.v1.MsgTimeoutResponse.getDefaultInstance();
+    @Override
+    public MsgTimeoutResponse getDefaultInstanceForType() {
+      return MsgTimeoutResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.MsgTimeoutResponse build() {
-      com.ibc.core.channel.v1.MsgTimeoutResponse result = buildPartial();
+    @Override
+    public MsgTimeoutResponse build() {
+      MsgTimeoutResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.MsgTimeoutResponse buildPartial() {
-      com.ibc.core.channel.v1.MsgTimeoutResponse result = new com.ibc.core.channel.v1.MsgTimeoutResponse(this);
+    @Override
+    public MsgTimeoutResponse buildPartial() {
+      MsgTimeoutResponse result = new MsgTimeoutResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.core.channel.v1.MsgTimeoutResponse result) {
+    private void buildPartial0(MsgTimeoutResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.result_ = result_;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.channel.v1.MsgTimeoutResponse) {
-        return mergeFrom((com.ibc.core.channel.v1.MsgTimeoutResponse)other);
+      if (other instanceof MsgTimeoutResponse) {
+        return mergeFrom((MsgTimeoutResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.channel.v1.MsgTimeoutResponse other) {
-      if (other == com.ibc.core.channel.v1.MsgTimeoutResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(MsgTimeoutResponse other) {
+      if (other == MsgTimeoutResponse.getDefaultInstance()) return this;
       if (other.result_ != 0) {
         setResultValue(other.getResultValue());
       }
@@ -344,18 +344,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -392,7 +392,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.core.channel.v1.ResponseResultType result = 1 [json_name = "result"];</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    @Override public int getResultValue() {
       return result_;
     }
     /**
@@ -410,17 +410,17 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.core.channel.v1.ResponseResultType result = 1 [json_name = "result"];</code>
      * @return The result.
      */
-    @java.lang.Override
-    public com.ibc.core.channel.v1.ResponseResultType getResult() {
-      com.ibc.core.channel.v1.ResponseResultType result = com.ibc.core.channel.v1.ResponseResultType.forNumber(result_);
-      return result == null ? com.ibc.core.channel.v1.ResponseResultType.UNRECOGNIZED : result;
+    @Override
+    public ResponseResultType getResult() {
+      ResponseResultType result = ResponseResultType.forNumber(result_);
+      return result == null ? ResponseResultType.UNRECOGNIZED : result;
     }
     /**
      * <code>.ibc.core.channel.v1.ResponseResultType result = 1 [json_name = "result"];</code>
      * @param value The result to set.
      * @return This builder for chaining.
      */
-    public Builder setResult(com.ibc.core.channel.v1.ResponseResultType value) {
+    public Builder setResult(ResponseResultType value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -439,13 +439,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -456,18 +456,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.channel.v1.MsgTimeoutResponse)
-  private static final com.ibc.core.channel.v1.MsgTimeoutResponse DEFAULT_INSTANCE;
+  private static final MsgTimeoutResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.channel.v1.MsgTimeoutResponse();
+    DEFAULT_INSTANCE = new MsgTimeoutResponse();
   }
 
-  public static com.ibc.core.channel.v1.MsgTimeoutResponse getDefaultInstance() {
+  public static MsgTimeoutResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgTimeoutResponse>
       PARSER = new com.google.protobuf.AbstractParser<MsgTimeoutResponse>() {
-    @java.lang.Override
+    @Override
     public MsgTimeoutResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -491,13 +491,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MsgTimeoutResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.channel.v1.MsgTimeoutResponse getDefaultInstanceForType() {
+  @Override
+  public MsgTimeoutResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

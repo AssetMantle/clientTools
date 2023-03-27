@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n:modules/splits/internal/transactions/w" +
       "rap/message.v1.proto\022\030splits.transaction" +
       "s.wrap\032\036cosmos/base/v1beta1/coin.proto\032\024" +
@@ -57,7 +57,7 @@ public final class MessageV1Proto {
     internal_static_splits_transactions_wrap_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_splits_transactions_wrap_Message_descriptor,
-        new java.lang.String[] { "From", "FromID", "Coins", });
+        new String[] { "From", "FromID", "Coins", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);

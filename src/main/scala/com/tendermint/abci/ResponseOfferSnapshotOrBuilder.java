@@ -16,5 +16,5 @@ public interface ResponseOfferSnapshotOrBuilder extends
    * <code>.tendermint.abci.ResponseOfferSnapshot.Result result = 1 [json_name = "result"];</code>
    * @return The result.
    */
-  com.tendermint.abci.ResponseOfferSnapshot.Result getResult();
+  ResponseOfferSnapshot.Result getResult();
 }

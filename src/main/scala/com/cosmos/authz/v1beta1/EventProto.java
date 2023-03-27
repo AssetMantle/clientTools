@@ -32,7 +32,7 @@ public final class EventProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n cosmos/authz/v1beta1/event.proto\022\024cosm" +
       "os.authz.v1beta1\"b\n\nEventGrant\022 \n\014msg_ty" +
       "pe_url\030\002 \001(\tR\nmsgTypeUrl\022\030\n\007granter\030\003 \001(" +
@@ -56,13 +56,13 @@ public final class EventProto {
     internal_static_cosmos_authz_v1beta1_EventGrant_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_EventGrant_descriptor,
-        new java.lang.String[] { "MsgTypeUrl", "Granter", "Grantee", });
+        new String[] { "MsgTypeUrl", "Granter", "Grantee", });
     internal_static_cosmos_authz_v1beta1_EventRevoke_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_authz_v1beta1_EventRevoke_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_EventRevoke_descriptor,
-        new java.lang.String[] { "MsgTypeUrl", "Granter", "Grantee", });
+        new String[] { "MsgTypeUrl", "Granter", "Grantee", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

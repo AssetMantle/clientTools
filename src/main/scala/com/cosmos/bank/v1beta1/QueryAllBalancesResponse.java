@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     balances_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryAllBalancesResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_descriptor;
+    return QueryProto.internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.bank.v1beta1.QueryAllBalancesResponse.class, com.cosmos.bank.v1beta1.QueryAllBalancesResponse.Builder.class);
+            QueryAllBalancesResponse.class, Builder.class);
   }
 
   public static final int BALANCES_FIELD_NUMBER = 1;
@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [json_name = "balances", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<com.cosmos.base.v1beta1.Coin> getBalancesList() {
     return balances_;
   }
@@ -65,7 +65,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [json_name = "balances", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<? extends com.cosmos.base.v1beta1.CoinOrBuilder> 
       getBalancesOrBuilderList() {
     return balances_;
@@ -77,7 +77,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [json_name = "balances", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getBalancesCount() {
     return balances_.size();
   }
@@ -88,7 +88,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [json_name = "balances", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.Coin getBalances(int index) {
     return balances_.get(index);
   }
@@ -99,7 +99,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [json_name = "balances", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.CoinOrBuilder getBalancesOrBuilder(
       int index) {
     return balances_.get(index);
@@ -115,7 +115,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -127,7 +127,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageResponse getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -138,13 +138,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageResponseOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -154,7 +154,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < balances_.size(); i++) {
@@ -166,7 +166,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -185,15 +185,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.bank.v1beta1.QueryAllBalancesResponse)) {
+    if (!(obj instanceof QueryAllBalancesResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.bank.v1beta1.QueryAllBalancesResponse other = (com.cosmos.bank.v1beta1.QueryAllBalancesResponse) obj;
+    QueryAllBalancesResponse other = (QueryAllBalancesResponse) obj;
 
     if (!getBalancesList()
         .equals(other.getBalancesList())) return false;
@@ -206,7 +206,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -226,69 +226,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseFrom(
+  public static QueryAllBalancesResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseFrom(
+  public static QueryAllBalancesResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseFrom(
+  public static QueryAllBalancesResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseFrom(
+  public static QueryAllBalancesResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseFrom(byte[] data)
+  public static QueryAllBalancesResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseFrom(
+  public static QueryAllBalancesResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseFrom(java.io.InputStream input)
+  public static QueryAllBalancesResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseFrom(
+  public static QueryAllBalancesResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryAllBalancesResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseDelimitedFrom(
+  public static QueryAllBalancesResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseFrom(
+  public static QueryAllBalancesResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse parseFrom(
+  public static QueryAllBalancesResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -296,23 +296,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.bank.v1beta1.QueryAllBalancesResponse prototype) {
+  public static Builder newBuilder(QueryAllBalancesResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -327,18 +327,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.bank.v1beta1.QueryAllBalancesResponse)
-      com.cosmos.bank.v1beta1.QueryAllBalancesResponseOrBuilder {
+      QueryAllBalancesResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_descriptor;
+      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.bank.v1beta1.QueryAllBalancesResponse.class, com.cosmos.bank.v1beta1.QueryAllBalancesResponse.Builder.class);
+              QueryAllBalancesResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.bank.v1beta1.QueryAllBalancesResponse.newBuilder()
@@ -347,11 +347,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -370,36 +370,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_descriptor;
+      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.QueryAllBalancesResponse getDefaultInstanceForType() {
-      return com.cosmos.bank.v1beta1.QueryAllBalancesResponse.getDefaultInstance();
+    @Override
+    public QueryAllBalancesResponse getDefaultInstanceForType() {
+      return QueryAllBalancesResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.QueryAllBalancesResponse build() {
-      com.cosmos.bank.v1beta1.QueryAllBalancesResponse result = buildPartial();
+    @Override
+    public QueryAllBalancesResponse build() {
+      QueryAllBalancesResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.QueryAllBalancesResponse buildPartial() {
-      com.cosmos.bank.v1beta1.QueryAllBalancesResponse result = new com.cosmos.bank.v1beta1.QueryAllBalancesResponse(this);
+    @Override
+    public QueryAllBalancesResponse buildPartial() {
+      QueryAllBalancesResponse result = new QueryAllBalancesResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.bank.v1beta1.QueryAllBalancesResponse result) {
+    private void buildPartialRepeatedFields(QueryAllBalancesResponse result) {
       if (balancesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           balances_ = java.util.Collections.unmodifiableList(balances_);
@@ -411,7 +411,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.bank.v1beta1.QueryAllBalancesResponse result) {
+    private void buildPartial0(QueryAllBalancesResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -420,50 +420,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.bank.v1beta1.QueryAllBalancesResponse) {
-        return mergeFrom((com.cosmos.bank.v1beta1.QueryAllBalancesResponse)other);
+      if (other instanceof QueryAllBalancesResponse) {
+        return mergeFrom((QueryAllBalancesResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.bank.v1beta1.QueryAllBalancesResponse other) {
-      if (other == com.cosmos.bank.v1beta1.QueryAllBalancesResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryAllBalancesResponse other) {
+      if (other == QueryAllBalancesResponse.getDefaultInstance()) return this;
       if (balancesBuilder_ == null) {
         if (!other.balances_.isEmpty()) {
           if (balances_.isEmpty()) {
@@ -498,18 +498,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -734,7 +734,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [json_name = "balances", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
     public Builder addAllBalances(
-        java.lang.Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
+        Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
       if (balancesBuilder_ == null) {
         ensureBalancesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1022,13 +1022,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1039,18 +1039,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.bank.v1beta1.QueryAllBalancesResponse)
-  private static final com.cosmos.bank.v1beta1.QueryAllBalancesResponse DEFAULT_INSTANCE;
+  private static final QueryAllBalancesResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.bank.v1beta1.QueryAllBalancesResponse();
+    DEFAULT_INSTANCE = new QueryAllBalancesResponse();
   }
 
-  public static com.cosmos.bank.v1beta1.QueryAllBalancesResponse getDefaultInstance() {
+  public static QueryAllBalancesResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryAllBalancesResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryAllBalancesResponse>() {
-    @java.lang.Override
+    @Override
     public QueryAllBalancesResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1074,13 +1074,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryAllBalancesResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.bank.v1beta1.QueryAllBalancesResponse getDefaultInstanceForType() {
+  @Override
+  public QueryAllBalancesResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

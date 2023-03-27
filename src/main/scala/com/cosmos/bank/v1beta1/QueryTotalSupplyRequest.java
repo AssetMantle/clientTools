@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
   private QueryTotalSupplyRequest() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryTotalSupplyRequest();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_descriptor;
+    return QueryProto.internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_fieldAccessorTable
+    return QueryProto.internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.bank.v1beta1.QueryTotalSupplyRequest.class, com.cosmos.bank.v1beta1.QueryTotalSupplyRequest.Builder.class);
+            QueryTotalSupplyRequest.class, Builder.class);
   }
 
   public static final int PAGINATION_FIELD_NUMBER = 1;
@@ -55,7 +55,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -69,7 +69,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageRequest getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
@@ -82,13 +82,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1 [json_name = "pagination"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.query.v1beta1.PageRequestOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -98,7 +98,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (pagination_ != null) {
@@ -107,7 +107,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -122,15 +122,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.bank.v1beta1.QueryTotalSupplyRequest)) {
+    if (!(obj instanceof QueryTotalSupplyRequest)) {
       return super.equals(obj);
     }
-    com.cosmos.bank.v1beta1.QueryTotalSupplyRequest other = (com.cosmos.bank.v1beta1.QueryTotalSupplyRequest) obj;
+    QueryTotalSupplyRequest other = (QueryTotalSupplyRequest) obj;
 
     if (hasPagination() != other.hasPagination()) return false;
     if (hasPagination()) {
@@ -141,7 +141,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -157,69 +157,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseFrom(
+  public static QueryTotalSupplyRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseFrom(
+  public static QueryTotalSupplyRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseFrom(
+  public static QueryTotalSupplyRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseFrom(
+  public static QueryTotalSupplyRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseFrom(byte[] data)
+  public static QueryTotalSupplyRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseFrom(
+  public static QueryTotalSupplyRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseFrom(java.io.InputStream input)
+  public static QueryTotalSupplyRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseFrom(
+  public static QueryTotalSupplyRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseDelimitedFrom(java.io.InputStream input)
+  public static QueryTotalSupplyRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseDelimitedFrom(
+  public static QueryTotalSupplyRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseFrom(
+  public static QueryTotalSupplyRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest parseFrom(
+  public static QueryTotalSupplyRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -227,23 +227,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.bank.v1beta1.QueryTotalSupplyRequest prototype) {
+  public static Builder newBuilder(QueryTotalSupplyRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -258,18 +258,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.bank.v1beta1.QueryTotalSupplyRequest)
-      com.cosmos.bank.v1beta1.QueryTotalSupplyRequestOrBuilder {
+      QueryTotalSupplyRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_descriptor;
+      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_fieldAccessorTable
+      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.bank.v1beta1.QueryTotalSupplyRequest.class, com.cosmos.bank.v1beta1.QueryTotalSupplyRequest.Builder.class);
+              QueryTotalSupplyRequest.class, Builder.class);
     }
 
     // Construct using com.cosmos.bank.v1beta1.QueryTotalSupplyRequest.newBuilder()
@@ -278,11 +278,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -294,35 +294,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_descriptor;
+      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.QueryTotalSupplyRequest getDefaultInstanceForType() {
-      return com.cosmos.bank.v1beta1.QueryTotalSupplyRequest.getDefaultInstance();
+    @Override
+    public QueryTotalSupplyRequest getDefaultInstanceForType() {
+      return QueryTotalSupplyRequest.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.QueryTotalSupplyRequest build() {
-      com.cosmos.bank.v1beta1.QueryTotalSupplyRequest result = buildPartial();
+    @Override
+    public QueryTotalSupplyRequest build() {
+      QueryTotalSupplyRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.QueryTotalSupplyRequest buildPartial() {
-      com.cosmos.bank.v1beta1.QueryTotalSupplyRequest result = new com.cosmos.bank.v1beta1.QueryTotalSupplyRequest(this);
+    @Override
+    public QueryTotalSupplyRequest buildPartial() {
+      QueryTotalSupplyRequest result = new QueryTotalSupplyRequest(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.bank.v1beta1.QueryTotalSupplyRequest result) {
+    private void buildPartial0(QueryTotalSupplyRequest result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -331,50 +331,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.bank.v1beta1.QueryTotalSupplyRequest) {
-        return mergeFrom((com.cosmos.bank.v1beta1.QueryTotalSupplyRequest)other);
+      if (other instanceof QueryTotalSupplyRequest) {
+        return mergeFrom((QueryTotalSupplyRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.bank.v1beta1.QueryTotalSupplyRequest other) {
-      if (other == com.cosmos.bank.v1beta1.QueryTotalSupplyRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryTotalSupplyRequest other) {
+      if (other == QueryTotalSupplyRequest.getDefaultInstance()) return this;
       if (other.hasPagination()) {
         mergePagination(other.getPagination());
       }
@@ -383,18 +383,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -600,13 +600,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -617,18 +617,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.bank.v1beta1.QueryTotalSupplyRequest)
-  private static final com.cosmos.bank.v1beta1.QueryTotalSupplyRequest DEFAULT_INSTANCE;
+  private static final QueryTotalSupplyRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.bank.v1beta1.QueryTotalSupplyRequest();
+    DEFAULT_INSTANCE = new QueryTotalSupplyRequest();
   }
 
-  public static com.cosmos.bank.v1beta1.QueryTotalSupplyRequest getDefaultInstance() {
+  public static QueryTotalSupplyRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryTotalSupplyRequest>
       PARSER = new com.google.protobuf.AbstractParser<QueryTotalSupplyRequest>() {
-    @java.lang.Override
+    @Override
     public QueryTotalSupplyRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -652,13 +652,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryTotalSupplyRequest> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.bank.v1beta1.QueryTotalSupplyRequest getDefaultInstanceForType() {
+  @Override
+  public QueryTotalSupplyRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

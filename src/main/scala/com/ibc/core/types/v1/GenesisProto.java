@@ -27,7 +27,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\037ibc/core/types/v1/genesis.proto\022\021ibc.c" +
       "ore.types.v1\032\024gogoproto/gogo.proto\032 ibc/" +
       "core/client/v1/genesis.proto\032$ibc/core/c" +
@@ -61,7 +61,7 @@ public final class GenesisProto {
     internal_static_ibc_core_types_v1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_types_v1_GenesisState_descriptor,
-        new java.lang.String[] { "ClientGenesis", "ConnectionGenesis", "ChannelGenesis", });
+        new String[] { "ClientGenesis", "ConnectionGenesis", "ChannelGenesis", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.moretags);

@@ -24,33 +24,33 @@ private static final long serialVersionUID = 0L;
     moniker_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new DefaultNodeInfo();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.tendermint.p2p.TypesProto.internal_static_tendermint_p2p_DefaultNodeInfo_descriptor;
+    return TypesProto.internal_static_tendermint_p2p_DefaultNodeInfo_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.tendermint.p2p.TypesProto.internal_static_tendermint_p2p_DefaultNodeInfo_fieldAccessorTable
+    return TypesProto.internal_static_tendermint_p2p_DefaultNodeInfo_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.tendermint.p2p.DefaultNodeInfo.class, com.tendermint.p2p.DefaultNodeInfo.Builder.class);
+            DefaultNodeInfo.class, Builder.class);
   }
 
   public static final int PROTOCOL_VERSION_FIELD_NUMBER = 1;
-  private com.tendermint.p2p.ProtocolVersion protocolVersion_;
+  private ProtocolVersion protocolVersion_;
   /**
    * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
    * @return Whether the protocolVersion field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasProtocolVersion() {
     return protocolVersion_ != null;
   }
@@ -58,34 +58,34 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
    * @return The protocolVersion.
    */
-  @java.lang.Override
-  public com.tendermint.p2p.ProtocolVersion getProtocolVersion() {
-    return protocolVersion_ == null ? com.tendermint.p2p.ProtocolVersion.getDefaultInstance() : protocolVersion_;
+  @Override
+  public ProtocolVersion getProtocolVersion() {
+    return protocolVersion_ == null ? ProtocolVersion.getDefaultInstance() : protocolVersion_;
   }
   /**
    * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.tendermint.p2p.ProtocolVersionOrBuilder getProtocolVersionOrBuilder() {
-    return protocolVersion_ == null ? com.tendermint.p2p.ProtocolVersion.getDefaultInstance() : protocolVersion_;
+  @Override
+  public ProtocolVersionOrBuilder getProtocolVersionOrBuilder() {
+    return protocolVersion_ == null ? ProtocolVersion.getDefaultInstance() : protocolVersion_;
   }
 
   public static final int DEFAULT_NODE_ID_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object defaultNodeId_ = "";
+  private volatile Object defaultNodeId_ = "";
   /**
    * <code>string default_node_id = 2 [json_name = "defaultNodeId", (.gogoproto.customname) = "DefaultNodeID"];</code>
    * @return The defaultNodeId.
    */
-  @java.lang.Override
-  public java.lang.String getDefaultNodeId() {
-    java.lang.Object ref = defaultNodeId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getDefaultNodeId() {
+    Object ref = defaultNodeId_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       defaultNodeId_ = s;
       return s;
     }
@@ -94,14 +94,14 @@ private static final long serialVersionUID = 0L;
    * <code>string default_node_id = 2 [json_name = "defaultNodeId", (.gogoproto.customname) = "DefaultNodeID"];</code>
    * @return The bytes for defaultNodeId.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getDefaultNodeIdBytes() {
-    java.lang.Object ref = defaultNodeId_;
-    if (ref instanceof java.lang.String) {
+    Object ref = defaultNodeId_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       defaultNodeId_ = b;
       return b;
     } else {
@@ -111,20 +111,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int LISTEN_ADDR_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object listenAddr_ = "";
+  private volatile Object listenAddr_ = "";
   /**
    * <code>string listen_addr = 3 [json_name = "listenAddr"];</code>
    * @return The listenAddr.
    */
-  @java.lang.Override
-  public java.lang.String getListenAddr() {
-    java.lang.Object ref = listenAddr_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getListenAddr() {
+    Object ref = listenAddr_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       listenAddr_ = s;
       return s;
     }
@@ -133,14 +133,14 @@ private static final long serialVersionUID = 0L;
    * <code>string listen_addr = 3 [json_name = "listenAddr"];</code>
    * @return The bytes for listenAddr.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getListenAddrBytes() {
-    java.lang.Object ref = listenAddr_;
-    if (ref instanceof java.lang.String) {
+    Object ref = listenAddr_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       listenAddr_ = b;
       return b;
     } else {
@@ -150,20 +150,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int NETWORK_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object network_ = "";
+  private volatile Object network_ = "";
   /**
    * <code>string network = 4 [json_name = "network"];</code>
    * @return The network.
    */
-  @java.lang.Override
-  public java.lang.String getNetwork() {
-    java.lang.Object ref = network_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getNetwork() {
+    Object ref = network_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       network_ = s;
       return s;
     }
@@ -172,14 +172,14 @@ private static final long serialVersionUID = 0L;
    * <code>string network = 4 [json_name = "network"];</code>
    * @return The bytes for network.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getNetworkBytes() {
-    java.lang.Object ref = network_;
-    if (ref instanceof java.lang.String) {
+    Object ref = network_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       network_ = b;
       return b;
     } else {
@@ -189,20 +189,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int VERSION_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object version_ = "";
+  private volatile Object version_ = "";
   /**
    * <code>string version = 5 [json_name = "version"];</code>
    * @return The version.
    */
-  @java.lang.Override
-  public java.lang.String getVersion() {
-    java.lang.Object ref = version_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getVersion() {
+    Object ref = version_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       version_ = s;
       return s;
     }
@@ -211,14 +211,14 @@ private static final long serialVersionUID = 0L;
    * <code>string version = 5 [json_name = "version"];</code>
    * @return The bytes for version.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getVersionBytes() {
-    java.lang.Object ref = version_;
-    if (ref instanceof java.lang.String) {
+    Object ref = version_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       version_ = b;
       return b;
     } else {
@@ -232,27 +232,27 @@ private static final long serialVersionUID = 0L;
    * <code>bytes channels = 6 [json_name = "channels"];</code>
    * @return The channels.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getChannels() {
     return channels_;
   }
 
   public static final int MONIKER_FIELD_NUMBER = 7;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object moniker_ = "";
+  private volatile Object moniker_ = "";
   /**
    * <code>string moniker = 7 [json_name = "moniker"];</code>
    * @return The moniker.
    */
-  @java.lang.Override
-  public java.lang.String getMoniker() {
-    java.lang.Object ref = moniker_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getMoniker() {
+    Object ref = moniker_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       moniker_ = s;
       return s;
     }
@@ -261,14 +261,14 @@ private static final long serialVersionUID = 0L;
    * <code>string moniker = 7 [json_name = "moniker"];</code>
    * @return The bytes for moniker.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getMonikerBytes() {
-    java.lang.Object ref = moniker_;
-    if (ref instanceof java.lang.String) {
+    Object ref = moniker_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       moniker_ = b;
       return b;
     } else {
@@ -277,12 +277,12 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int OTHER_FIELD_NUMBER = 8;
-  private com.tendermint.p2p.DefaultNodeInfoOther other_;
+  private DefaultNodeInfoOther other_;
   /**
    * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
    * @return Whether the other field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasOther() {
     return other_ != null;
   }
@@ -290,20 +290,20 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
    * @return The other.
    */
-  @java.lang.Override
-  public com.tendermint.p2p.DefaultNodeInfoOther getOther() {
-    return other_ == null ? com.tendermint.p2p.DefaultNodeInfoOther.getDefaultInstance() : other_;
+  @Override
+  public DefaultNodeInfoOther getOther() {
+    return other_ == null ? DefaultNodeInfoOther.getDefaultInstance() : other_;
   }
   /**
    * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.tendermint.p2p.DefaultNodeInfoOtherOrBuilder getOtherOrBuilder() {
-    return other_ == null ? com.tendermint.p2p.DefaultNodeInfoOther.getDefaultInstance() : other_;
+  @Override
+  public DefaultNodeInfoOtherOrBuilder getOtherOrBuilder() {
+    return other_ == null ? DefaultNodeInfoOther.getDefaultInstance() : other_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -313,7 +313,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (protocolVersion_ != null) {
@@ -343,7 +343,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -381,15 +381,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.tendermint.p2p.DefaultNodeInfo)) {
+    if (!(obj instanceof DefaultNodeInfo)) {
       return super.equals(obj);
     }
-    com.tendermint.p2p.DefaultNodeInfo other = (com.tendermint.p2p.DefaultNodeInfo) obj;
+    DefaultNodeInfo other = (DefaultNodeInfo) obj;
 
     if (hasProtocolVersion() != other.hasProtocolVersion()) return false;
     if (hasProtocolVersion()) {
@@ -417,7 +417,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -449,69 +449,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.tendermint.p2p.DefaultNodeInfo parseFrom(
+  public static DefaultNodeInfo parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseFrom(
+  public static DefaultNodeInfo parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseFrom(
+  public static DefaultNodeInfo parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseFrom(
+  public static DefaultNodeInfo parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseFrom(byte[] data)
+  public static DefaultNodeInfo parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseFrom(
+  public static DefaultNodeInfo parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseFrom(java.io.InputStream input)
+  public static DefaultNodeInfo parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseFrom(
+  public static DefaultNodeInfo parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseDelimitedFrom(java.io.InputStream input)
+  public static DefaultNodeInfo parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseDelimitedFrom(
+  public static DefaultNodeInfo parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseFrom(
+  public static DefaultNodeInfo parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.p2p.DefaultNodeInfo parseFrom(
+  public static DefaultNodeInfo parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -519,23 +519,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.tendermint.p2p.DefaultNodeInfo prototype) {
+  public static Builder newBuilder(DefaultNodeInfo prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -545,18 +545,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.p2p.DefaultNodeInfo)
-      com.tendermint.p2p.DefaultNodeInfoOrBuilder {
+      DefaultNodeInfoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.tendermint.p2p.TypesProto.internal_static_tendermint_p2p_DefaultNodeInfo_descriptor;
+      return TypesProto.internal_static_tendermint_p2p_DefaultNodeInfo_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.tendermint.p2p.TypesProto.internal_static_tendermint_p2p_DefaultNodeInfo_fieldAccessorTable
+      return TypesProto.internal_static_tendermint_p2p_DefaultNodeInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.tendermint.p2p.DefaultNodeInfo.class, com.tendermint.p2p.DefaultNodeInfo.Builder.class);
+              DefaultNodeInfo.class, Builder.class);
     }
 
     // Construct using com.tendermint.p2p.DefaultNodeInfo.newBuilder()
@@ -565,11 +565,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -592,35 +592,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.tendermint.p2p.TypesProto.internal_static_tendermint_p2p_DefaultNodeInfo_descriptor;
+      return TypesProto.internal_static_tendermint_p2p_DefaultNodeInfo_descriptor;
     }
 
-    @java.lang.Override
-    public com.tendermint.p2p.DefaultNodeInfo getDefaultInstanceForType() {
-      return com.tendermint.p2p.DefaultNodeInfo.getDefaultInstance();
+    @Override
+    public DefaultNodeInfo getDefaultInstanceForType() {
+      return DefaultNodeInfo.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.tendermint.p2p.DefaultNodeInfo build() {
-      com.tendermint.p2p.DefaultNodeInfo result = buildPartial();
+    @Override
+    public DefaultNodeInfo build() {
+      DefaultNodeInfo result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.tendermint.p2p.DefaultNodeInfo buildPartial() {
-      com.tendermint.p2p.DefaultNodeInfo result = new com.tendermint.p2p.DefaultNodeInfo(this);
+    @Override
+    public DefaultNodeInfo buildPartial() {
+      DefaultNodeInfo result = new DefaultNodeInfo(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.tendermint.p2p.DefaultNodeInfo result) {
+    private void buildPartial0(DefaultNodeInfo result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.protocolVersion_ = protocolVersionBuilder_ == null
@@ -652,50 +652,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.tendermint.p2p.DefaultNodeInfo) {
-        return mergeFrom((com.tendermint.p2p.DefaultNodeInfo)other);
+      if (other instanceof DefaultNodeInfo) {
+        return mergeFrom((DefaultNodeInfo)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.tendermint.p2p.DefaultNodeInfo other) {
-      if (other == com.tendermint.p2p.DefaultNodeInfo.getDefaultInstance()) return this;
+    public Builder mergeFrom(DefaultNodeInfo other) {
+      if (other == DefaultNodeInfo.getDefaultInstance()) return this;
       if (other.hasProtocolVersion()) {
         mergeProtocolVersion(other.getProtocolVersion());
       }
@@ -735,18 +735,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -817,9 +817,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.tendermint.p2p.ProtocolVersion protocolVersion_;
+    private ProtocolVersion protocolVersion_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.tendermint.p2p.ProtocolVersion, com.tendermint.p2p.ProtocolVersion.Builder, com.tendermint.p2p.ProtocolVersionOrBuilder> protocolVersionBuilder_;
+        ProtocolVersion, ProtocolVersion.Builder, ProtocolVersionOrBuilder> protocolVersionBuilder_;
     /**
      * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
      * @return Whether the protocolVersion field is set.
@@ -831,9 +831,9 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
      * @return The protocolVersion.
      */
-    public com.tendermint.p2p.ProtocolVersion getProtocolVersion() {
+    public ProtocolVersion getProtocolVersion() {
       if (protocolVersionBuilder_ == null) {
-        return protocolVersion_ == null ? com.tendermint.p2p.ProtocolVersion.getDefaultInstance() : protocolVersion_;
+        return protocolVersion_ == null ? ProtocolVersion.getDefaultInstance() : protocolVersion_;
       } else {
         return protocolVersionBuilder_.getMessage();
       }
@@ -841,7 +841,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setProtocolVersion(com.tendermint.p2p.ProtocolVersion value) {
+    public Builder setProtocolVersion(ProtocolVersion value) {
       if (protocolVersionBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -858,7 +858,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
      */
     public Builder setProtocolVersion(
-        com.tendermint.p2p.ProtocolVersion.Builder builderForValue) {
+        ProtocolVersion.Builder builderForValue) {
       if (protocolVersionBuilder_ == null) {
         protocolVersion_ = builderForValue.build();
       } else {
@@ -871,11 +871,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeProtocolVersion(com.tendermint.p2p.ProtocolVersion value) {
+    public Builder mergeProtocolVersion(ProtocolVersion value) {
       if (protocolVersionBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           protocolVersion_ != null &&
-          protocolVersion_ != com.tendermint.p2p.ProtocolVersion.getDefaultInstance()) {
+          protocolVersion_ != ProtocolVersion.getDefaultInstance()) {
           getProtocolVersionBuilder().mergeFrom(value);
         } else {
           protocolVersion_ = value;
@@ -903,7 +903,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.p2p.ProtocolVersion.Builder getProtocolVersionBuilder() {
+    public ProtocolVersion.Builder getProtocolVersionBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getProtocolVersionFieldBuilder().getBuilder();
@@ -911,23 +911,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.p2p.ProtocolVersionOrBuilder getProtocolVersionOrBuilder() {
+    public ProtocolVersionOrBuilder getProtocolVersionOrBuilder() {
       if (protocolVersionBuilder_ != null) {
         return protocolVersionBuilder_.getMessageOrBuilder();
       } else {
         return protocolVersion_ == null ?
-            com.tendermint.p2p.ProtocolVersion.getDefaultInstance() : protocolVersion_;
+            ProtocolVersion.getDefaultInstance() : protocolVersion_;
       }
     }
     /**
      * <code>.tendermint.p2p.ProtocolVersion protocol_version = 1 [json_name = "protocolVersion", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.tendermint.p2p.ProtocolVersion, com.tendermint.p2p.ProtocolVersion.Builder, com.tendermint.p2p.ProtocolVersionOrBuilder> 
+        ProtocolVersion, ProtocolVersion.Builder, ProtocolVersionOrBuilder>
         getProtocolVersionFieldBuilder() {
       if (protocolVersionBuilder_ == null) {
         protocolVersionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.tendermint.p2p.ProtocolVersion, com.tendermint.p2p.ProtocolVersion.Builder, com.tendermint.p2p.ProtocolVersionOrBuilder>(
+            ProtocolVersion, ProtocolVersion.Builder, ProtocolVersionOrBuilder>(
                 getProtocolVersion(),
                 getParentForChildren(),
                 isClean());
@@ -936,21 +936,21 @@ private static final long serialVersionUID = 0L;
       return protocolVersionBuilder_;
     }
 
-    private java.lang.Object defaultNodeId_ = "";
+    private Object defaultNodeId_ = "";
     /**
      * <code>string default_node_id = 2 [json_name = "defaultNodeId", (.gogoproto.customname) = "DefaultNodeID"];</code>
      * @return The defaultNodeId.
      */
-    public java.lang.String getDefaultNodeId() {
-      java.lang.Object ref = defaultNodeId_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getDefaultNodeId() {
+      Object ref = defaultNodeId_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         defaultNodeId_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -959,11 +959,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getDefaultNodeIdBytes() {
-      java.lang.Object ref = defaultNodeId_;
+      Object ref = defaultNodeId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         defaultNodeId_ = b;
         return b;
       } else {
@@ -976,7 +976,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDefaultNodeId(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       defaultNodeId_ = value;
       bitField0_ |= 0x00000002;
@@ -1008,21 +1008,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object listenAddr_ = "";
+    private Object listenAddr_ = "";
     /**
      * <code>string listen_addr = 3 [json_name = "listenAddr"];</code>
      * @return The listenAddr.
      */
-    public java.lang.String getListenAddr() {
-      java.lang.Object ref = listenAddr_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getListenAddr() {
+      Object ref = listenAddr_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         listenAddr_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1031,11 +1031,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getListenAddrBytes() {
-      java.lang.Object ref = listenAddr_;
+      Object ref = listenAddr_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         listenAddr_ = b;
         return b;
       } else {
@@ -1048,7 +1048,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setListenAddr(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       listenAddr_ = value;
       bitField0_ |= 0x00000004;
@@ -1080,21 +1080,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object network_ = "";
+    private Object network_ = "";
     /**
      * <code>string network = 4 [json_name = "network"];</code>
      * @return The network.
      */
-    public java.lang.String getNetwork() {
-      java.lang.Object ref = network_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getNetwork() {
+      Object ref = network_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         network_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1103,11 +1103,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getNetworkBytes() {
-      java.lang.Object ref = network_;
+      Object ref = network_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         network_ = b;
         return b;
       } else {
@@ -1120,7 +1120,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setNetwork(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       network_ = value;
       bitField0_ |= 0x00000008;
@@ -1152,21 +1152,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object version_ = "";
+    private Object version_ = "";
     /**
      * <code>string version = 5 [json_name = "version"];</code>
      * @return The version.
      */
-    public java.lang.String getVersion() {
-      java.lang.Object ref = version_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getVersion() {
+      Object ref = version_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         version_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1175,11 +1175,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getVersionBytes() {
-      java.lang.Object ref = version_;
+      Object ref = version_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         version_ = b;
         return b;
       } else {
@@ -1192,7 +1192,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setVersion(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       version_ = value;
       bitField0_ |= 0x00000010;
@@ -1229,7 +1229,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes channels = 6 [json_name = "channels"];</code>
      * @return The channels.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getChannels() {
       return channels_;
     }
@@ -1256,21 +1256,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object moniker_ = "";
+    private Object moniker_ = "";
     /**
      * <code>string moniker = 7 [json_name = "moniker"];</code>
      * @return The moniker.
      */
-    public java.lang.String getMoniker() {
-      java.lang.Object ref = moniker_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getMoniker() {
+      Object ref = moniker_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         moniker_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1279,11 +1279,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getMonikerBytes() {
-      java.lang.Object ref = moniker_;
+      Object ref = moniker_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         moniker_ = b;
         return b;
       } else {
@@ -1296,7 +1296,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setMoniker(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       moniker_ = value;
       bitField0_ |= 0x00000040;
@@ -1328,9 +1328,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.tendermint.p2p.DefaultNodeInfoOther other_;
+    private DefaultNodeInfoOther other_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.tendermint.p2p.DefaultNodeInfoOther, com.tendermint.p2p.DefaultNodeInfoOther.Builder, com.tendermint.p2p.DefaultNodeInfoOtherOrBuilder> otherBuilder_;
+        DefaultNodeInfoOther, DefaultNodeInfoOther.Builder, DefaultNodeInfoOtherOrBuilder> otherBuilder_;
     /**
      * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
      * @return Whether the other field is set.
@@ -1342,9 +1342,9 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
      * @return The other.
      */
-    public com.tendermint.p2p.DefaultNodeInfoOther getOther() {
+    public DefaultNodeInfoOther getOther() {
       if (otherBuilder_ == null) {
-        return other_ == null ? com.tendermint.p2p.DefaultNodeInfoOther.getDefaultInstance() : other_;
+        return other_ == null ? DefaultNodeInfoOther.getDefaultInstance() : other_;
       } else {
         return otherBuilder_.getMessage();
       }
@@ -1352,7 +1352,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setOther(com.tendermint.p2p.DefaultNodeInfoOther value) {
+    public Builder setOther(DefaultNodeInfoOther value) {
       if (otherBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1369,7 +1369,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
      */
     public Builder setOther(
-        com.tendermint.p2p.DefaultNodeInfoOther.Builder builderForValue) {
+        DefaultNodeInfoOther.Builder builderForValue) {
       if (otherBuilder_ == null) {
         other_ = builderForValue.build();
       } else {
@@ -1382,11 +1382,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeOther(com.tendermint.p2p.DefaultNodeInfoOther value) {
+    public Builder mergeOther(DefaultNodeInfoOther value) {
       if (otherBuilder_ == null) {
         if (((bitField0_ & 0x00000080) != 0) &&
           other_ != null &&
-          other_ != com.tendermint.p2p.DefaultNodeInfoOther.getDefaultInstance()) {
+          other_ != DefaultNodeInfoOther.getDefaultInstance()) {
           getOtherBuilder().mergeFrom(value);
         } else {
           other_ = value;
@@ -1414,7 +1414,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.p2p.DefaultNodeInfoOther.Builder getOtherBuilder() {
+    public DefaultNodeInfoOther.Builder getOtherBuilder() {
       bitField0_ |= 0x00000080;
       onChanged();
       return getOtherFieldBuilder().getBuilder();
@@ -1422,23 +1422,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.p2p.DefaultNodeInfoOtherOrBuilder getOtherOrBuilder() {
+    public DefaultNodeInfoOtherOrBuilder getOtherOrBuilder() {
       if (otherBuilder_ != null) {
         return otherBuilder_.getMessageOrBuilder();
       } else {
         return other_ == null ?
-            com.tendermint.p2p.DefaultNodeInfoOther.getDefaultInstance() : other_;
+            DefaultNodeInfoOther.getDefaultInstance() : other_;
       }
     }
     /**
      * <code>.tendermint.p2p.DefaultNodeInfoOther other = 8 [json_name = "other", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.tendermint.p2p.DefaultNodeInfoOther, com.tendermint.p2p.DefaultNodeInfoOther.Builder, com.tendermint.p2p.DefaultNodeInfoOtherOrBuilder> 
+        DefaultNodeInfoOther, DefaultNodeInfoOther.Builder, DefaultNodeInfoOtherOrBuilder>
         getOtherFieldBuilder() {
       if (otherBuilder_ == null) {
         otherBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.tendermint.p2p.DefaultNodeInfoOther, com.tendermint.p2p.DefaultNodeInfoOther.Builder, com.tendermint.p2p.DefaultNodeInfoOtherOrBuilder>(
+            DefaultNodeInfoOther, DefaultNodeInfoOther.Builder, DefaultNodeInfoOtherOrBuilder>(
                 getOther(),
                 getParentForChildren(),
                 isClean());
@@ -1446,13 +1446,13 @@ private static final long serialVersionUID = 0L;
       }
       return otherBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1463,18 +1463,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.p2p.DefaultNodeInfo)
-  private static final com.tendermint.p2p.DefaultNodeInfo DEFAULT_INSTANCE;
+  private static final DefaultNodeInfo DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.tendermint.p2p.DefaultNodeInfo();
+    DEFAULT_INSTANCE = new DefaultNodeInfo();
   }
 
-  public static com.tendermint.p2p.DefaultNodeInfo getDefaultInstance() {
+  public static DefaultNodeInfo getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<DefaultNodeInfo>
       PARSER = new com.google.protobuf.AbstractParser<DefaultNodeInfo>() {
-    @java.lang.Override
+    @Override
     public DefaultNodeInfo parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1498,13 +1498,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<DefaultNodeInfo> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.tendermint.p2p.DefaultNodeInfo getDefaultInstanceForType() {
+  @Override
+  public DefaultNodeInfo getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

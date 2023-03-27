@@ -10,12 +10,12 @@ public interface TxMsgDataOrBuilder extends
   /**
    * <code>repeated .cosmos.base.abci.v1beta1.MsgData data = 1 [json_name = "data"];</code>
    */
-  java.util.List<com.cosmos.base.abci.v1beta1.MsgData> 
+  java.util.List<MsgData>
       getDataList();
   /**
    * <code>repeated .cosmos.base.abci.v1beta1.MsgData data = 1 [json_name = "data"];</code>
    */
-  com.cosmos.base.abci.v1beta1.MsgData getData(int index);
+  MsgData getData(int index);
   /**
    * <code>repeated .cosmos.base.abci.v1beta1.MsgData data = 1 [json_name = "data"];</code>
    */
@@ -23,11 +23,11 @@ public interface TxMsgDataOrBuilder extends
   /**
    * <code>repeated .cosmos.base.abci.v1beta1.MsgData data = 1 [json_name = "data"];</code>
    */
-  java.util.List<? extends com.cosmos.base.abci.v1beta1.MsgDataOrBuilder> 
+  java.util.List<? extends MsgDataOrBuilder>
       getDataOrBuilderList();
   /**
    * <code>repeated .cosmos.base.abci.v1beta1.MsgData data = 1 [json_name = "data"];</code>
    */
-  com.cosmos.base.abci.v1beta1.MsgDataOrBuilder getDataOrBuilder(
+  MsgDataOrBuilder getDataOrBuilder(
       int index);
 }

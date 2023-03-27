@@ -11,7 +11,7 @@ public interface MessageOrBuilder extends
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
    */
-  java.lang.String getFrom();
+  String getFrom();
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The bytes for from.

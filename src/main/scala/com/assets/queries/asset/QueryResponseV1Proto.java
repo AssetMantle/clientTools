@@ -27,7 +27,7 @@ public final class QueryResponseV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n<modules/assets/internal/queries/asset/" +
       "queryResponse.v1.proto\022\024assets.queries.a" +
       "sset\032\024gogoproto/gogo.proto\0322modules/asse" +
@@ -53,7 +53,7 @@ public final class QueryResponseV1Proto {
     internal_static_assets_queries_asset_QueryResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_assets_queries_asset_QueryResponse_descriptor,
-        new java.lang.String[] { "Success", "Error", "List", });
+        new String[] { "Success", "Error", "List", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

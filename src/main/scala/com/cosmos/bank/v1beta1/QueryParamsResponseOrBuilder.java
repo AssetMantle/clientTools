@@ -16,9 +16,9 @@ public interface QueryParamsResponseOrBuilder extends
    * <code>.cosmos.bank.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  com.cosmos.bank.v1beta1.Params getParams();
+  Params getParams();
   /**
    * <code>.cosmos.bank.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.bank.v1beta1.ParamsOrBuilder getParamsOrBuilder();
+  ParamsOrBuilder getParamsOrBuilder();
 }

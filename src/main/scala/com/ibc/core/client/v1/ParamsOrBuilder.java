@@ -15,7 +15,7 @@ public interface ParamsOrBuilder extends
    * <code>repeated string allowed_clients = 1 [json_name = "allowedClients", (.gogoproto.moretags) = "yaml:&#92;"allowed_clients&#92;""];</code>
    * @return A list containing the allowedClients.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getAllowedClientsList();
   /**
    * <pre>
@@ -35,7 +35,7 @@ public interface ParamsOrBuilder extends
    * @param index The index of the element to return.
    * @return The allowedClients at the given index.
    */
-  java.lang.String getAllowedClients(int index);
+  String getAllowedClients(int index);
   /**
    * <pre>
    * allowed_clients defines the list of allowed client state types.

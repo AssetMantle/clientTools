@@ -24,7 +24,7 @@ public interface QueryClientParamsResponseOrBuilder extends
    * <code>.ibc.core.client.v1.Params params = 1 [json_name = "params"];</code>
    * @return The params.
    */
-  com.ibc.core.client.v1.Params getParams();
+  Params getParams();
   /**
    * <pre>
    * params defines the parameters of the module.
@@ -32,5 +32,5 @@ public interface QueryClientParamsResponseOrBuilder extends
    *
    * <code>.ibc.core.client.v1.Params params = 1 [json_name = "params"];</code>
    */
-  com.ibc.core.client.v1.ParamsOrBuilder getParamsOrBuilder();
+  ParamsOrBuilder getParamsOrBuilder();
 }

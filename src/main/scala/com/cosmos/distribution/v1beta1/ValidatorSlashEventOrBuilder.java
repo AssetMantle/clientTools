@@ -17,7 +17,7 @@ public interface ValidatorSlashEventOrBuilder extends
    * <code>string fraction = 2 [json_name = "fraction", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
    * @return The fraction.
    */
-  java.lang.String getFraction();
+  String getFraction();
   /**
    * <code>string fraction = 2 [json_name = "fraction", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
    * @return The bytes for fraction.

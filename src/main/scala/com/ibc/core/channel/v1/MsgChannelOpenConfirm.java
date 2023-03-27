@@ -27,42 +27,42 @@ private static final long serialVersionUID = 0L;
     signer_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgChannelOpenConfirm();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_descriptor;
+    return TxProto.internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_fieldAccessorTable
+    return TxProto.internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.channel.v1.MsgChannelOpenConfirm.class, com.ibc.core.channel.v1.MsgChannelOpenConfirm.Builder.class);
+            MsgChannelOpenConfirm.class, Builder.class);
   }
 
   public static final int PORT_ID_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object portId_ = "";
+  private volatile Object portId_ = "";
   /**
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The portId.
    */
-  @java.lang.Override
-  public java.lang.String getPortId() {
-    java.lang.Object ref = portId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getPortId() {
+    Object ref = portId_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       portId_ = s;
       return s;
     }
@@ -71,14 +71,14 @@ private static final long serialVersionUID = 0L;
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The bytes for portId.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getPortIdBytes() {
-    java.lang.Object ref = portId_;
-    if (ref instanceof java.lang.String) {
+    Object ref = portId_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       portId_ = b;
       return b;
     } else {
@@ -88,20 +88,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int CHANNEL_ID_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object channelId_ = "";
+  private volatile Object channelId_ = "";
   /**
    * <code>string channel_id = 2 [json_name = "channelId", (.gogoproto.moretags) = "yaml:&#92;"channel_id&#92;""];</code>
    * @return The channelId.
    */
-  @java.lang.Override
-  public java.lang.String getChannelId() {
-    java.lang.Object ref = channelId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getChannelId() {
+    Object ref = channelId_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       channelId_ = s;
       return s;
     }
@@ -110,14 +110,14 @@ private static final long serialVersionUID = 0L;
    * <code>string channel_id = 2 [json_name = "channelId", (.gogoproto.moretags) = "yaml:&#92;"channel_id&#92;""];</code>
    * @return The bytes for channelId.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getChannelIdBytes() {
-    java.lang.Object ref = channelId_;
-    if (ref instanceof java.lang.String) {
+    Object ref = channelId_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       channelId_ = b;
       return b;
     } else {
@@ -131,7 +131,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes proof_ack = 3 [json_name = "proofAck", (.gogoproto.moretags) = "yaml:&#92;"proof_ack&#92;""];</code>
    * @return The proofAck.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getProofAck() {
     return proofAck_;
   }
@@ -142,7 +142,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height proof_height = 4 [json_name = "proofHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"proof_height&#92;""];</code>
    * @return Whether the proofHeight field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasProofHeight() {
     return proofHeight_ != null;
   }
@@ -150,34 +150,34 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height proof_height = 4 [json_name = "proofHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"proof_height&#92;""];</code>
    * @return The proofHeight.
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.Height getProofHeight() {
     return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
   }
   /**
    * <code>.ibc.core.client.v1.Height proof_height = 4 [json_name = "proofHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"proof_height&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.HeightOrBuilder getProofHeightOrBuilder() {
     return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
   }
 
   public static final int SIGNER_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object signer_ = "";
+  private volatile Object signer_ = "";
   /**
    * <code>string signer = 5 [json_name = "signer"];</code>
    * @return The signer.
    */
-  @java.lang.Override
-  public java.lang.String getSigner() {
-    java.lang.Object ref = signer_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getSigner() {
+    Object ref = signer_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       signer_ = s;
       return s;
     }
@@ -186,14 +186,14 @@ private static final long serialVersionUID = 0L;
    * <code>string signer = 5 [json_name = "signer"];</code>
    * @return The bytes for signer.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getSignerBytes() {
-    java.lang.Object ref = signer_;
-    if (ref instanceof java.lang.String) {
+    Object ref = signer_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       signer_ = b;
       return b;
     } else {
@@ -202,7 +202,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -212,7 +212,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(portId_)) {
@@ -233,7 +233,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -261,15 +261,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.channel.v1.MsgChannelOpenConfirm)) {
+    if (!(obj instanceof MsgChannelOpenConfirm)) {
       return super.equals(obj);
     }
-    com.ibc.core.channel.v1.MsgChannelOpenConfirm other = (com.ibc.core.channel.v1.MsgChannelOpenConfirm) obj;
+    MsgChannelOpenConfirm other = (MsgChannelOpenConfirm) obj;
 
     if (!getPortId()
         .equals(other.getPortId())) return false;
@@ -288,7 +288,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -312,69 +312,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseFrom(
+  public static MsgChannelOpenConfirm parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseFrom(
+  public static MsgChannelOpenConfirm parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseFrom(
+  public static MsgChannelOpenConfirm parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseFrom(
+  public static MsgChannelOpenConfirm parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseFrom(byte[] data)
+  public static MsgChannelOpenConfirm parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseFrom(
+  public static MsgChannelOpenConfirm parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseFrom(java.io.InputStream input)
+  public static MsgChannelOpenConfirm parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseFrom(
+  public static MsgChannelOpenConfirm parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseDelimitedFrom(java.io.InputStream input)
+  public static MsgChannelOpenConfirm parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseDelimitedFrom(
+  public static MsgChannelOpenConfirm parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseFrom(
+  public static MsgChannelOpenConfirm parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm parseFrom(
+  public static MsgChannelOpenConfirm parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -382,23 +382,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.channel.v1.MsgChannelOpenConfirm prototype) {
+  public static Builder newBuilder(MsgChannelOpenConfirm prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -413,18 +413,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.channel.v1.MsgChannelOpenConfirm)
-      com.ibc.core.channel.v1.MsgChannelOpenConfirmOrBuilder {
+      MsgChannelOpenConfirmOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_descriptor;
+      return TxProto.internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_fieldAccessorTable
+      return TxProto.internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.channel.v1.MsgChannelOpenConfirm.class, com.ibc.core.channel.v1.MsgChannelOpenConfirm.Builder.class);
+              MsgChannelOpenConfirm.class, Builder.class);
     }
 
     // Construct using com.ibc.core.channel.v1.MsgChannelOpenConfirm.newBuilder()
@@ -433,11 +433,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -453,35 +453,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_descriptor;
+      return TxProto.internal_static_ibc_core_channel_v1_MsgChannelOpenConfirm_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.MsgChannelOpenConfirm getDefaultInstanceForType() {
-      return com.ibc.core.channel.v1.MsgChannelOpenConfirm.getDefaultInstance();
+    @Override
+    public MsgChannelOpenConfirm getDefaultInstanceForType() {
+      return MsgChannelOpenConfirm.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.MsgChannelOpenConfirm build() {
-      com.ibc.core.channel.v1.MsgChannelOpenConfirm result = buildPartial();
+    @Override
+    public MsgChannelOpenConfirm build() {
+      MsgChannelOpenConfirm result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.MsgChannelOpenConfirm buildPartial() {
-      com.ibc.core.channel.v1.MsgChannelOpenConfirm result = new com.ibc.core.channel.v1.MsgChannelOpenConfirm(this);
+    @Override
+    public MsgChannelOpenConfirm buildPartial() {
+      MsgChannelOpenConfirm result = new MsgChannelOpenConfirm(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.core.channel.v1.MsgChannelOpenConfirm result) {
+    private void buildPartial0(MsgChannelOpenConfirm result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.portId_ = portId_;
@@ -502,50 +502,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.channel.v1.MsgChannelOpenConfirm) {
-        return mergeFrom((com.ibc.core.channel.v1.MsgChannelOpenConfirm)other);
+      if (other instanceof MsgChannelOpenConfirm) {
+        return mergeFrom((MsgChannelOpenConfirm)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.channel.v1.MsgChannelOpenConfirm other) {
-      if (other == com.ibc.core.channel.v1.MsgChannelOpenConfirm.getDefaultInstance()) return this;
+    public Builder mergeFrom(MsgChannelOpenConfirm other) {
+      if (other == MsgChannelOpenConfirm.getDefaultInstance()) return this;
       if (!other.getPortId().isEmpty()) {
         portId_ = other.portId_;
         bitField0_ |= 0x00000001;
@@ -572,18 +572,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -637,21 +637,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object portId_ = "";
+    private Object portId_ = "";
     /**
      * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
      * @return The portId.
      */
-    public java.lang.String getPortId() {
-      java.lang.Object ref = portId_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getPortId() {
+      Object ref = portId_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         portId_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -660,11 +660,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getPortIdBytes() {
-      java.lang.Object ref = portId_;
+      Object ref = portId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         portId_ = b;
         return b;
       } else {
@@ -677,7 +677,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPortId(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       portId_ = value;
       bitField0_ |= 0x00000001;
@@ -709,21 +709,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object channelId_ = "";
+    private Object channelId_ = "";
     /**
      * <code>string channel_id = 2 [json_name = "channelId", (.gogoproto.moretags) = "yaml:&#92;"channel_id&#92;""];</code>
      * @return The channelId.
      */
-    public java.lang.String getChannelId() {
-      java.lang.Object ref = channelId_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getChannelId() {
+      Object ref = channelId_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         channelId_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -732,11 +732,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getChannelIdBytes() {
-      java.lang.Object ref = channelId_;
+      Object ref = channelId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         channelId_ = b;
         return b;
       } else {
@@ -749,7 +749,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setChannelId(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       channelId_ = value;
       bitField0_ |= 0x00000002;
@@ -786,7 +786,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes proof_ack = 3 [json_name = "proofAck", (.gogoproto.moretags) = "yaml:&#92;"proof_ack&#92;""];</code>
      * @return The proofAck.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getProofAck() {
       return proofAck_;
     }
@@ -932,21 +932,21 @@ private static final long serialVersionUID = 0L;
       return proofHeightBuilder_;
     }
 
-    private java.lang.Object signer_ = "";
+    private Object signer_ = "";
     /**
      * <code>string signer = 5 [json_name = "signer"];</code>
      * @return The signer.
      */
-    public java.lang.String getSigner() {
-      java.lang.Object ref = signer_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getSigner() {
+      Object ref = signer_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         signer_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -955,11 +955,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getSignerBytes() {
-      java.lang.Object ref = signer_;
+      Object ref = signer_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         signer_ = b;
         return b;
       } else {
@@ -972,7 +972,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSigner(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       signer_ = value;
       bitField0_ |= 0x00000010;
@@ -1003,13 +1003,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1020,18 +1020,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.channel.v1.MsgChannelOpenConfirm)
-  private static final com.ibc.core.channel.v1.MsgChannelOpenConfirm DEFAULT_INSTANCE;
+  private static final MsgChannelOpenConfirm DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.channel.v1.MsgChannelOpenConfirm();
+    DEFAULT_INSTANCE = new MsgChannelOpenConfirm();
   }
 
-  public static com.ibc.core.channel.v1.MsgChannelOpenConfirm getDefaultInstance() {
+  public static MsgChannelOpenConfirm getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgChannelOpenConfirm>
       PARSER = new com.google.protobuf.AbstractParser<MsgChannelOpenConfirm>() {
-    @java.lang.Override
+    @Override
     public MsgChannelOpenConfirm parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1055,13 +1055,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MsgChannelOpenConfirm> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.channel.v1.MsgChannelOpenConfirm getDefaultInstanceForType() {
+  @Override
+  public MsgChannelOpenConfirm getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

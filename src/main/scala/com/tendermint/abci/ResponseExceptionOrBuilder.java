@@ -11,7 +11,7 @@ public interface ResponseExceptionOrBuilder extends
    * <code>string error = 1 [json_name = "error"];</code>
    * @return The error.
    */
-  java.lang.String getError();
+  String getError();
   /**
    * <code>string error = 1 [json_name = "error"];</code>
    * @return The bytes for error.

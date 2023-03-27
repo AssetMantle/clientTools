@@ -26,11 +26,11 @@ public interface NonExistenceProofOrBuilder extends
    * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
    * @return The left.
    */
-  com.ics23.ExistenceProof getLeft();
+  ExistenceProof getLeft();
   /**
    * <code>.ics23.ExistenceProof left = 2 [json_name = "left"];</code>
    */
-  com.ics23.ExistenceProofOrBuilder getLeftOrBuilder();
+  ExistenceProofOrBuilder getLeftOrBuilder();
 
   /**
    * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
@@ -41,9 +41,9 @@ public interface NonExistenceProofOrBuilder extends
    * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
    * @return The right.
    */
-  com.ics23.ExistenceProof getRight();
+  ExistenceProof getRight();
   /**
    * <code>.ics23.ExistenceProof right = 3 [json_name = "right"];</code>
    */
-  com.ics23.ExistenceProofOrBuilder getRightOrBuilder();
+  ExistenceProofOrBuilder getRightOrBuilder();
 }

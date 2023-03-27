@@ -20,46 +20,42 @@ private static final long serialVersionUID = 0L;
     to_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Message();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.identities.transactions.issue.MessageV1Proto.internal_static_identities_transactions_issue_Message_descriptor;
+    return MessageV1Proto.internal_static_identities_transactions_issue_Message_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.identities.transactions.issue.MessageV1Proto.internal_static_identities_transactions_issue_Message_fieldAccessorTable
+    return MessageV1Proto.internal_static_identities_transactions_issue_Message_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.identities.transactions.issue.Message.class, com.identities.transactions.issue.Message.Builder.class);
+            Message.class, Builder.class);
   }
 
   public static final int FROM_FIELD_NUMBER = 1;
-  private volatile java.lang.Object from_;
+  @SuppressWarnings("serial")
+  private volatile Object from_ = "";
   /**
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The from.
    */
-  @java.lang.Override
-  public java.lang.String getFrom() {
-    java.lang.Object ref = from_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getFrom() {
+    Object ref = from_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       from_ = s;
       return s;
     }
@@ -68,14 +64,14 @@ private static final long serialVersionUID = 0L;
    * <code>string from = 1 [json_name = "from"];</code>
    * @return The bytes for from.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getFromBytes() {
-    java.lang.Object ref = from_;
-    if (ref instanceof java.lang.String) {
+    Object ref = from_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       from_ = b;
       return b;
     } else {
@@ -89,7 +85,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
    * @return Whether the fromID field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasFromID() {
     return fromID_ != null;
   }
@@ -97,33 +93,34 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
    * @return The fromID.
    */
-  @java.lang.Override
+  @Override
   public com.ids.IdentityID getFromID() {
     return fromID_ == null ? com.ids.IdentityID.getDefaultInstance() : fromID_;
   }
   /**
    * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ids.IdentityIDOrBuilder getFromIDOrBuilder() {
-    return getFromID();
+    return fromID_ == null ? com.ids.IdentityID.getDefaultInstance() : fromID_;
   }
 
   public static final int TO_FIELD_NUMBER = 3;
-  private volatile java.lang.Object to_;
+  @SuppressWarnings("serial")
+  private volatile Object to_ = "";
   /**
    * <code>string to = 3 [json_name = "to"];</code>
    * @return The to.
    */
-  @java.lang.Override
-  public java.lang.String getTo() {
-    java.lang.Object ref = to_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getTo() {
+    Object ref = to_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       to_ = s;
       return s;
     }
@@ -132,14 +129,14 @@ private static final long serialVersionUID = 0L;
    * <code>string to = 3 [json_name = "to"];</code>
    * @return The bytes for to.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getToBytes() {
-    java.lang.Object ref = to_;
-    if (ref instanceof java.lang.String) {
+    Object ref = to_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       to_ = b;
       return b;
     } else {
@@ -153,7 +150,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.ClassificationID classification_i_d = 4 [json_name = "classificationID"];</code>
    * @return Whether the classificationID field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasClassificationID() {
     return classificationID_ != null;
   }
@@ -161,16 +158,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.ClassificationID classification_i_d = 4 [json_name = "classificationID"];</code>
    * @return The classificationID.
    */
-  @java.lang.Override
+  @Override
   public com.ids.ClassificationID getClassificationID() {
     return classificationID_ == null ? com.ids.ClassificationID.getDefaultInstance() : classificationID_;
   }
   /**
    * <code>.ids.ClassificationID classification_i_d = 4 [json_name = "classificationID"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ids.ClassificationIDOrBuilder getClassificationIDOrBuilder() {
-    return getClassificationID();
+    return classificationID_ == null ? com.ids.ClassificationID.getDefaultInstance() : classificationID_;
   }
 
   public static final int IMMUTABLE_META_PROPERTIES_FIELD_NUMBER = 5;
@@ -179,7 +176,7 @@ private static final long serialVersionUID = 0L;
    * <code>.lists.PropertyList immutable_meta_properties = 5 [json_name = "immutableMetaProperties"];</code>
    * @return Whether the immutableMetaProperties field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasImmutableMetaProperties() {
     return immutableMetaProperties_ != null;
   }
@@ -187,16 +184,16 @@ private static final long serialVersionUID = 0L;
    * <code>.lists.PropertyList immutable_meta_properties = 5 [json_name = "immutableMetaProperties"];</code>
    * @return The immutableMetaProperties.
    */
-  @java.lang.Override
+  @Override
   public com.lists.PropertyList getImmutableMetaProperties() {
     return immutableMetaProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : immutableMetaProperties_;
   }
   /**
    * <code>.lists.PropertyList immutable_meta_properties = 5 [json_name = "immutableMetaProperties"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.lists.PropertyListOrBuilder getImmutableMetaPropertiesOrBuilder() {
-    return getImmutableMetaProperties();
+    return immutableMetaProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : immutableMetaProperties_;
   }
 
   public static final int IMMUTABLE_PROPERTIES_FIELD_NUMBER = 6;
@@ -205,7 +202,7 @@ private static final long serialVersionUID = 0L;
    * <code>.lists.PropertyList immutable_properties = 6 [json_name = "immutableProperties"];</code>
    * @return Whether the immutableProperties field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasImmutableProperties() {
     return immutableProperties_ != null;
   }
@@ -213,16 +210,16 @@ private static final long serialVersionUID = 0L;
    * <code>.lists.PropertyList immutable_properties = 6 [json_name = "immutableProperties"];</code>
    * @return The immutableProperties.
    */
-  @java.lang.Override
+  @Override
   public com.lists.PropertyList getImmutableProperties() {
     return immutableProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : immutableProperties_;
   }
   /**
    * <code>.lists.PropertyList immutable_properties = 6 [json_name = "immutableProperties"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.lists.PropertyListOrBuilder getImmutablePropertiesOrBuilder() {
-    return getImmutableProperties();
+    return immutableProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : immutableProperties_;
   }
 
   public static final int MUTABLE_META_PROPERTIES_FIELD_NUMBER = 7;
@@ -231,7 +228,7 @@ private static final long serialVersionUID = 0L;
    * <code>.lists.PropertyList mutable_meta_properties = 7 [json_name = "mutableMetaProperties"];</code>
    * @return Whether the mutableMetaProperties field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasMutableMetaProperties() {
     return mutableMetaProperties_ != null;
   }
@@ -239,16 +236,16 @@ private static final long serialVersionUID = 0L;
    * <code>.lists.PropertyList mutable_meta_properties = 7 [json_name = "mutableMetaProperties"];</code>
    * @return The mutableMetaProperties.
    */
-  @java.lang.Override
+  @Override
   public com.lists.PropertyList getMutableMetaProperties() {
     return mutableMetaProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : mutableMetaProperties_;
   }
   /**
    * <code>.lists.PropertyList mutable_meta_properties = 7 [json_name = "mutableMetaProperties"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.lists.PropertyListOrBuilder getMutableMetaPropertiesOrBuilder() {
-    return getMutableMetaProperties();
+    return mutableMetaProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : mutableMetaProperties_;
   }
 
   public static final int MUTABLE_PROPERTIES_FIELD_NUMBER = 8;
@@ -257,7 +254,7 @@ private static final long serialVersionUID = 0L;
    * <code>.lists.PropertyList mutable_properties = 8 [json_name = "mutableProperties"];</code>
    * @return Whether the mutableProperties field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasMutableProperties() {
     return mutableProperties_ != null;
   }
@@ -265,20 +262,20 @@ private static final long serialVersionUID = 0L;
    * <code>.lists.PropertyList mutable_properties = 8 [json_name = "mutableProperties"];</code>
    * @return The mutableProperties.
    */
-  @java.lang.Override
+  @Override
   public com.lists.PropertyList getMutableProperties() {
     return mutableProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : mutableProperties_;
   }
   /**
    * <code>.lists.PropertyList mutable_properties = 8 [json_name = "mutableProperties"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.lists.PropertyListOrBuilder getMutablePropertiesOrBuilder() {
-    return getMutableProperties();
+    return mutableProperties_ == null ? com.lists.PropertyList.getDefaultInstance() : mutableProperties_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -288,7 +285,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(from_)) {
@@ -318,7 +315,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -359,15 +356,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.identities.transactions.issue.Message)) {
+    if (!(obj instanceof Message)) {
       return super.equals(obj);
     }
-    com.identities.transactions.issue.Message other = (com.identities.transactions.issue.Message) obj;
+    Message other = (Message) obj;
 
     if (!getFrom()
         .equals(other.getFrom())) return false;
@@ -407,7 +404,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -447,69 +444,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.identities.transactions.issue.Message parseFrom(
+  public static Message parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.identities.transactions.issue.Message parseFrom(
+  public static Message parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.identities.transactions.issue.Message parseFrom(
+  public static Message parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.identities.transactions.issue.Message parseFrom(
+  public static Message parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.identities.transactions.issue.Message parseFrom(byte[] data)
+  public static Message parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.identities.transactions.issue.Message parseFrom(
+  public static Message parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.identities.transactions.issue.Message parseFrom(java.io.InputStream input)
+  public static Message parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.identities.transactions.issue.Message parseFrom(
+  public static Message parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.identities.transactions.issue.Message parseDelimitedFrom(java.io.InputStream input)
+  public static Message parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.identities.transactions.issue.Message parseDelimitedFrom(
+  public static Message parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.identities.transactions.issue.Message parseFrom(
+  public static Message parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.identities.transactions.issue.Message parseFrom(
+  public static Message parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -517,23 +514,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.identities.transactions.issue.Message prototype) {
+  public static Builder newBuilder(Message prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -543,18 +540,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:identities.transactions.issue.Message)
-      com.identities.transactions.issue.MessageOrBuilder {
+      MessageOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.identities.transactions.issue.MessageV1Proto.internal_static_identities_transactions_issue_Message_descriptor;
+      return MessageV1Proto.internal_static_identities_transactions_issue_Message_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.identities.transactions.issue.MessageV1Proto.internal_static_identities_transactions_issue_Message_fieldAccessorTable
+      return MessageV1Proto.internal_static_identities_transactions_issue_Message_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.identities.transactions.issue.Message.class, com.identities.transactions.issue.Message.Builder.class);
+              Message.class, Builder.class);
     }
 
     // Construct using com.identities.transactions.issue.Message.newBuilder()
@@ -563,161 +560,164 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       from_ = "";
-
-      if (fromIDBuilder_ == null) {
-        fromID_ = null;
-      } else {
-        fromID_ = null;
+      fromID_ = null;
+      if (fromIDBuilder_ != null) {
+        fromIDBuilder_.dispose();
         fromIDBuilder_ = null;
       }
       to_ = "";
-
-      if (classificationIDBuilder_ == null) {
-        classificationID_ = null;
-      } else {
-        classificationID_ = null;
+      classificationID_ = null;
+      if (classificationIDBuilder_ != null) {
+        classificationIDBuilder_.dispose();
         classificationIDBuilder_ = null;
       }
-      if (immutableMetaPropertiesBuilder_ == null) {
-        immutableMetaProperties_ = null;
-      } else {
-        immutableMetaProperties_ = null;
+      immutableMetaProperties_ = null;
+      if (immutableMetaPropertiesBuilder_ != null) {
+        immutableMetaPropertiesBuilder_.dispose();
         immutableMetaPropertiesBuilder_ = null;
       }
-      if (immutablePropertiesBuilder_ == null) {
-        immutableProperties_ = null;
-      } else {
-        immutableProperties_ = null;
+      immutableProperties_ = null;
+      if (immutablePropertiesBuilder_ != null) {
+        immutablePropertiesBuilder_.dispose();
         immutablePropertiesBuilder_ = null;
       }
-      if (mutableMetaPropertiesBuilder_ == null) {
-        mutableMetaProperties_ = null;
-      } else {
-        mutableMetaProperties_ = null;
+      mutableMetaProperties_ = null;
+      if (mutableMetaPropertiesBuilder_ != null) {
+        mutableMetaPropertiesBuilder_.dispose();
         mutableMetaPropertiesBuilder_ = null;
       }
-      if (mutablePropertiesBuilder_ == null) {
-        mutableProperties_ = null;
-      } else {
-        mutableProperties_ = null;
+      mutableProperties_ = null;
+      if (mutablePropertiesBuilder_ != null) {
+        mutablePropertiesBuilder_.dispose();
         mutablePropertiesBuilder_ = null;
       }
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.identities.transactions.issue.MessageV1Proto.internal_static_identities_transactions_issue_Message_descriptor;
+      return MessageV1Proto.internal_static_identities_transactions_issue_Message_descriptor;
     }
 
-    @java.lang.Override
-    public com.identities.transactions.issue.Message getDefaultInstanceForType() {
-      return com.identities.transactions.issue.Message.getDefaultInstance();
+    @Override
+    public Message getDefaultInstanceForType() {
+      return Message.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.identities.transactions.issue.Message build() {
-      com.identities.transactions.issue.Message result = buildPartial();
+    @Override
+    public Message build() {
+      Message result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.identities.transactions.issue.Message buildPartial() {
-      com.identities.transactions.issue.Message result = new com.identities.transactions.issue.Message(this);
-      result.from_ = from_;
-      if (fromIDBuilder_ == null) {
-        result.fromID_ = fromID_;
-      } else {
-        result.fromID_ = fromIDBuilder_.build();
-      }
-      result.to_ = to_;
-      if (classificationIDBuilder_ == null) {
-        result.classificationID_ = classificationID_;
-      } else {
-        result.classificationID_ = classificationIDBuilder_.build();
-      }
-      if (immutableMetaPropertiesBuilder_ == null) {
-        result.immutableMetaProperties_ = immutableMetaProperties_;
-      } else {
-        result.immutableMetaProperties_ = immutableMetaPropertiesBuilder_.build();
-      }
-      if (immutablePropertiesBuilder_ == null) {
-        result.immutableProperties_ = immutableProperties_;
-      } else {
-        result.immutableProperties_ = immutablePropertiesBuilder_.build();
-      }
-      if (mutableMetaPropertiesBuilder_ == null) {
-        result.mutableMetaProperties_ = mutableMetaProperties_;
-      } else {
-        result.mutableMetaProperties_ = mutableMetaPropertiesBuilder_.build();
-      }
-      if (mutablePropertiesBuilder_ == null) {
-        result.mutableProperties_ = mutableProperties_;
-      } else {
-        result.mutableProperties_ = mutablePropertiesBuilder_.build();
-      }
+    @Override
+    public Message buildPartial() {
+      Message result = new Message(this);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
+    private void buildPartial0(Message result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.from_ = from_;
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.fromID_ = fromIDBuilder_ == null
+            ? fromID_
+            : fromIDBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.to_ = to_;
+      }
+      if (((from_bitField0_ & 0x00000008) != 0)) {
+        result.classificationID_ = classificationIDBuilder_ == null
+            ? classificationID_
+            : classificationIDBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000010) != 0)) {
+        result.immutableMetaProperties_ = immutableMetaPropertiesBuilder_ == null
+            ? immutableMetaProperties_
+            : immutableMetaPropertiesBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000020) != 0)) {
+        result.immutableProperties_ = immutablePropertiesBuilder_ == null
+            ? immutableProperties_
+            : immutablePropertiesBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000040) != 0)) {
+        result.mutableMetaProperties_ = mutableMetaPropertiesBuilder_ == null
+            ? mutableMetaProperties_
+            : mutableMetaPropertiesBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000080) != 0)) {
+        result.mutableProperties_ = mutablePropertiesBuilder_ == null
+            ? mutableProperties_
+            : mutablePropertiesBuilder_.build();
+      }
+    }
+
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.identities.transactions.issue.Message) {
-        return mergeFrom((com.identities.transactions.issue.Message)other);
+      if (other instanceof Message) {
+        return mergeFrom((Message)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.identities.transactions.issue.Message other) {
-      if (other == com.identities.transactions.issue.Message.getDefaultInstance()) return this;
+    public Builder mergeFrom(Message other) {
+      if (other == Message.getDefaultInstance()) return this;
       if (!other.getFrom().isEmpty()) {
         from_ = other.from_;
+        bitField0_ |= 0x00000001;
         onChanged();
       }
       if (other.hasFromID()) {
@@ -725,6 +725,7 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getTo().isEmpty()) {
         to_ = other.to_;
+        bitField0_ |= 0x00000004;
         onChanged();
       }
       if (other.hasClassificationID()) {
@@ -747,18 +748,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -770,54 +771,54 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               from_ = input.readStringRequireUtf8();
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             case 18: {
               input.readMessage(
                   getFromIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000002;
               break;
             } // case 18
             case 26: {
               to_ = input.readStringRequireUtf8();
-
+              bitField0_ |= 0x00000004;
               break;
             } // case 26
             case 34: {
               input.readMessage(
                   getClassificationIDFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000008;
               break;
             } // case 34
             case 42: {
               input.readMessage(
                   getImmutableMetaPropertiesFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000010;
               break;
             } // case 42
             case 50: {
               input.readMessage(
                   getImmutablePropertiesFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000020;
               break;
             } // case 50
             case 58: {
               input.readMessage(
                   getMutableMetaPropertiesFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000040;
               break;
             } // case 58
             case 66: {
               input.readMessage(
                   getMutablePropertiesFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000080;
               break;
             } // case 66
             default: {
@@ -835,22 +836,23 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
-    private java.lang.Object from_ = "";
+    private Object from_ = "";
     /**
      * <code>string from = 1 [json_name = "from"];</code>
      * @return The from.
      */
-    public java.lang.String getFrom() {
-      java.lang.Object ref = from_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getFrom() {
+      Object ref = from_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         from_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -859,11 +861,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getFromBytes() {
-      java.lang.Object ref = from_;
+      Object ref = from_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         from_ = b;
         return b;
       } else {
@@ -876,12 +878,10 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setFrom(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        String value) {
+      if (value == null) { throw new NullPointerException(); }
       from_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -890,8 +890,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFrom() {
-      
       from_ = getDefaultInstance().getFrom();
+      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -902,12 +902,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setFromBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       from_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -920,7 +918,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the fromID field is set.
      */
     public boolean hasFromID() {
-      return fromIDBuilder_ != null || fromID_ != null;
+      return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
@@ -942,11 +940,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         fromID_ = value;
-        onChanged();
       } else {
         fromIDBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -956,11 +954,11 @@ private static final long serialVersionUID = 0L;
         com.ids.IdentityID.Builder builderForValue) {
       if (fromIDBuilder_ == null) {
         fromID_ = builderForValue.build();
-        onChanged();
       } else {
         fromIDBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -968,38 +966,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeFromID(com.ids.IdentityID value) {
       if (fromIDBuilder_ == null) {
-        if (fromID_ != null) {
-          fromID_ =
-            com.ids.IdentityID.newBuilder(fromID_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000002) != 0) &&
+          fromID_ != null &&
+          fromID_ != com.ids.IdentityID.getDefaultInstance()) {
+          getFromIDBuilder().mergeFrom(value);
         } else {
           fromID_ = value;
         }
-        onChanged();
       } else {
         fromIDBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
      */
     public Builder clearFromID() {
-      if (fromIDBuilder_ == null) {
-        fromID_ = null;
-        onChanged();
-      } else {
-        fromID_ = null;
+      bitField0_ = (bitField0_ & ~0x00000002);
+      fromID_ = null;
+      if (fromIDBuilder_ != null) {
+        fromIDBuilder_.dispose();
         fromIDBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.IdentityID from_i_d = 2 [json_name = "fromID"];</code>
      */
     public com.ids.IdentityID.Builder getFromIDBuilder() {
-      
+      bitField0_ |= 0x00000002;
       onChanged();
       return getFromIDFieldBuilder().getBuilder();
     }
@@ -1031,21 +1029,21 @@ private static final long serialVersionUID = 0L;
       return fromIDBuilder_;
     }
 
-    private java.lang.Object to_ = "";
+    private Object to_ = "";
     /**
      * <code>string to = 3 [json_name = "to"];</code>
      * @return The to.
      */
-    public java.lang.String getTo() {
-      java.lang.Object ref = to_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getTo() {
+      Object ref = to_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         to_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1054,11 +1052,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getToBytes() {
-      java.lang.Object ref = to_;
+      Object ref = to_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         to_ = b;
         return b;
       } else {
@@ -1071,12 +1069,10 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setTo(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        String value) {
+      if (value == null) { throw new NullPointerException(); }
       to_ = value;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -1085,8 +1081,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearTo() {
-      
       to_ = getDefaultInstance().getTo();
+      bitField0_ = (bitField0_ & ~0x00000004);
       onChanged();
       return this;
     }
@@ -1097,12 +1093,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setToBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       to_ = value;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -1115,7 +1109,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the classificationID field is set.
      */
     public boolean hasClassificationID() {
-      return classificationIDBuilder_ != null || classificationID_ != null;
+      return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>.ids.ClassificationID classification_i_d = 4 [json_name = "classificationID"];</code>
@@ -1137,11 +1131,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         classificationID_ = value;
-        onChanged();
       } else {
         classificationIDBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000008;
+      onChanged();
       return this;
     }
     /**
@@ -1151,11 +1145,11 @@ private static final long serialVersionUID = 0L;
         com.ids.ClassificationID.Builder builderForValue) {
       if (classificationIDBuilder_ == null) {
         classificationID_ = builderForValue.build();
-        onChanged();
       } else {
         classificationIDBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000008;
+      onChanged();
       return this;
     }
     /**
@@ -1163,38 +1157,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeClassificationID(com.ids.ClassificationID value) {
       if (classificationIDBuilder_ == null) {
-        if (classificationID_ != null) {
-          classificationID_ =
-            com.ids.ClassificationID.newBuilder(classificationID_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000008) != 0) &&
+          classificationID_ != null &&
+          classificationID_ != com.ids.ClassificationID.getDefaultInstance()) {
+          getClassificationIDBuilder().mergeFrom(value);
         } else {
           classificationID_ = value;
         }
-        onChanged();
       } else {
         classificationIDBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000008;
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.ClassificationID classification_i_d = 4 [json_name = "classificationID"];</code>
      */
     public Builder clearClassificationID() {
-      if (classificationIDBuilder_ == null) {
-        classificationID_ = null;
-        onChanged();
-      } else {
-        classificationID_ = null;
+      bitField0_ = (bitField0_ & ~0x00000008);
+      classificationID_ = null;
+      if (classificationIDBuilder_ != null) {
+        classificationIDBuilder_.dispose();
         classificationIDBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.ids.ClassificationID classification_i_d = 4 [json_name = "classificationID"];</code>
      */
     public com.ids.ClassificationID.Builder getClassificationIDBuilder() {
-      
+      bitField0_ |= 0x00000008;
       onChanged();
       return getClassificationIDFieldBuilder().getBuilder();
     }
@@ -1234,7 +1228,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the immutableMetaProperties field is set.
      */
     public boolean hasImmutableMetaProperties() {
-      return immutableMetaPropertiesBuilder_ != null || immutableMetaProperties_ != null;
+      return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>.lists.PropertyList immutable_meta_properties = 5 [json_name = "immutableMetaProperties"];</code>
@@ -1256,11 +1250,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         immutableMetaProperties_ = value;
-        onChanged();
       } else {
         immutableMetaPropertiesBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000010;
+      onChanged();
       return this;
     }
     /**
@@ -1270,11 +1264,11 @@ private static final long serialVersionUID = 0L;
         com.lists.PropertyList.Builder builderForValue) {
       if (immutableMetaPropertiesBuilder_ == null) {
         immutableMetaProperties_ = builderForValue.build();
-        onChanged();
       } else {
         immutableMetaPropertiesBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000010;
+      onChanged();
       return this;
     }
     /**
@@ -1282,38 +1276,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeImmutableMetaProperties(com.lists.PropertyList value) {
       if (immutableMetaPropertiesBuilder_ == null) {
-        if (immutableMetaProperties_ != null) {
-          immutableMetaProperties_ =
-            com.lists.PropertyList.newBuilder(immutableMetaProperties_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000010) != 0) &&
+          immutableMetaProperties_ != null &&
+          immutableMetaProperties_ != com.lists.PropertyList.getDefaultInstance()) {
+          getImmutableMetaPropertiesBuilder().mergeFrom(value);
         } else {
           immutableMetaProperties_ = value;
         }
-        onChanged();
       } else {
         immutableMetaPropertiesBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000010;
+      onChanged();
       return this;
     }
     /**
      * <code>.lists.PropertyList immutable_meta_properties = 5 [json_name = "immutableMetaProperties"];</code>
      */
     public Builder clearImmutableMetaProperties() {
-      if (immutableMetaPropertiesBuilder_ == null) {
-        immutableMetaProperties_ = null;
-        onChanged();
-      } else {
-        immutableMetaProperties_ = null;
+      bitField0_ = (bitField0_ & ~0x00000010);
+      immutableMetaProperties_ = null;
+      if (immutableMetaPropertiesBuilder_ != null) {
+        immutableMetaPropertiesBuilder_.dispose();
         immutableMetaPropertiesBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.lists.PropertyList immutable_meta_properties = 5 [json_name = "immutableMetaProperties"];</code>
      */
     public com.lists.PropertyList.Builder getImmutableMetaPropertiesBuilder() {
-      
+      bitField0_ |= 0x00000010;
       onChanged();
       return getImmutableMetaPropertiesFieldBuilder().getBuilder();
     }
@@ -1353,7 +1347,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the immutableProperties field is set.
      */
     public boolean hasImmutableProperties() {
-      return immutablePropertiesBuilder_ != null || immutableProperties_ != null;
+      return ((bitField0_ & 0x00000020) != 0);
     }
     /**
      * <code>.lists.PropertyList immutable_properties = 6 [json_name = "immutableProperties"];</code>
@@ -1375,11 +1369,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         immutableProperties_ = value;
-        onChanged();
       } else {
         immutablePropertiesBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000020;
+      onChanged();
       return this;
     }
     /**
@@ -1389,11 +1383,11 @@ private static final long serialVersionUID = 0L;
         com.lists.PropertyList.Builder builderForValue) {
       if (immutablePropertiesBuilder_ == null) {
         immutableProperties_ = builderForValue.build();
-        onChanged();
       } else {
         immutablePropertiesBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000020;
+      onChanged();
       return this;
     }
     /**
@@ -1401,38 +1395,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeImmutableProperties(com.lists.PropertyList value) {
       if (immutablePropertiesBuilder_ == null) {
-        if (immutableProperties_ != null) {
-          immutableProperties_ =
-            com.lists.PropertyList.newBuilder(immutableProperties_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000020) != 0) &&
+          immutableProperties_ != null &&
+          immutableProperties_ != com.lists.PropertyList.getDefaultInstance()) {
+          getImmutablePropertiesBuilder().mergeFrom(value);
         } else {
           immutableProperties_ = value;
         }
-        onChanged();
       } else {
         immutablePropertiesBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000020;
+      onChanged();
       return this;
     }
     /**
      * <code>.lists.PropertyList immutable_properties = 6 [json_name = "immutableProperties"];</code>
      */
     public Builder clearImmutableProperties() {
-      if (immutablePropertiesBuilder_ == null) {
-        immutableProperties_ = null;
-        onChanged();
-      } else {
-        immutableProperties_ = null;
+      bitField0_ = (bitField0_ & ~0x00000020);
+      immutableProperties_ = null;
+      if (immutablePropertiesBuilder_ != null) {
+        immutablePropertiesBuilder_.dispose();
         immutablePropertiesBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.lists.PropertyList immutable_properties = 6 [json_name = "immutableProperties"];</code>
      */
     public com.lists.PropertyList.Builder getImmutablePropertiesBuilder() {
-      
+      bitField0_ |= 0x00000020;
       onChanged();
       return getImmutablePropertiesFieldBuilder().getBuilder();
     }
@@ -1472,7 +1466,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the mutableMetaProperties field is set.
      */
     public boolean hasMutableMetaProperties() {
-      return mutableMetaPropertiesBuilder_ != null || mutableMetaProperties_ != null;
+      return ((bitField0_ & 0x00000040) != 0);
     }
     /**
      * <code>.lists.PropertyList mutable_meta_properties = 7 [json_name = "mutableMetaProperties"];</code>
@@ -1494,11 +1488,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         mutableMetaProperties_ = value;
-        onChanged();
       } else {
         mutableMetaPropertiesBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000040;
+      onChanged();
       return this;
     }
     /**
@@ -1508,11 +1502,11 @@ private static final long serialVersionUID = 0L;
         com.lists.PropertyList.Builder builderForValue) {
       if (mutableMetaPropertiesBuilder_ == null) {
         mutableMetaProperties_ = builderForValue.build();
-        onChanged();
       } else {
         mutableMetaPropertiesBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000040;
+      onChanged();
       return this;
     }
     /**
@@ -1520,38 +1514,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeMutableMetaProperties(com.lists.PropertyList value) {
       if (mutableMetaPropertiesBuilder_ == null) {
-        if (mutableMetaProperties_ != null) {
-          mutableMetaProperties_ =
-            com.lists.PropertyList.newBuilder(mutableMetaProperties_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000040) != 0) &&
+          mutableMetaProperties_ != null &&
+          mutableMetaProperties_ != com.lists.PropertyList.getDefaultInstance()) {
+          getMutableMetaPropertiesBuilder().mergeFrom(value);
         } else {
           mutableMetaProperties_ = value;
         }
-        onChanged();
       } else {
         mutableMetaPropertiesBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000040;
+      onChanged();
       return this;
     }
     /**
      * <code>.lists.PropertyList mutable_meta_properties = 7 [json_name = "mutableMetaProperties"];</code>
      */
     public Builder clearMutableMetaProperties() {
-      if (mutableMetaPropertiesBuilder_ == null) {
-        mutableMetaProperties_ = null;
-        onChanged();
-      } else {
-        mutableMetaProperties_ = null;
+      bitField0_ = (bitField0_ & ~0x00000040);
+      mutableMetaProperties_ = null;
+      if (mutableMetaPropertiesBuilder_ != null) {
+        mutableMetaPropertiesBuilder_.dispose();
         mutableMetaPropertiesBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.lists.PropertyList mutable_meta_properties = 7 [json_name = "mutableMetaProperties"];</code>
      */
     public com.lists.PropertyList.Builder getMutableMetaPropertiesBuilder() {
-      
+      bitField0_ |= 0x00000040;
       onChanged();
       return getMutableMetaPropertiesFieldBuilder().getBuilder();
     }
@@ -1591,7 +1585,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the mutableProperties field is set.
      */
     public boolean hasMutableProperties() {
-      return mutablePropertiesBuilder_ != null || mutableProperties_ != null;
+      return ((bitField0_ & 0x00000080) != 0);
     }
     /**
      * <code>.lists.PropertyList mutable_properties = 8 [json_name = "mutableProperties"];</code>
@@ -1613,11 +1607,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         mutableProperties_ = value;
-        onChanged();
       } else {
         mutablePropertiesBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000080;
+      onChanged();
       return this;
     }
     /**
@@ -1627,11 +1621,11 @@ private static final long serialVersionUID = 0L;
         com.lists.PropertyList.Builder builderForValue) {
       if (mutablePropertiesBuilder_ == null) {
         mutableProperties_ = builderForValue.build();
-        onChanged();
       } else {
         mutablePropertiesBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000080;
+      onChanged();
       return this;
     }
     /**
@@ -1639,38 +1633,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeMutableProperties(com.lists.PropertyList value) {
       if (mutablePropertiesBuilder_ == null) {
-        if (mutableProperties_ != null) {
-          mutableProperties_ =
-            com.lists.PropertyList.newBuilder(mutableProperties_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000080) != 0) &&
+          mutableProperties_ != null &&
+          mutableProperties_ != com.lists.PropertyList.getDefaultInstance()) {
+          getMutablePropertiesBuilder().mergeFrom(value);
         } else {
           mutableProperties_ = value;
         }
-        onChanged();
       } else {
         mutablePropertiesBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000080;
+      onChanged();
       return this;
     }
     /**
      * <code>.lists.PropertyList mutable_properties = 8 [json_name = "mutableProperties"];</code>
      */
     public Builder clearMutableProperties() {
-      if (mutablePropertiesBuilder_ == null) {
-        mutableProperties_ = null;
-        onChanged();
-      } else {
-        mutableProperties_ = null;
+      bitField0_ = (bitField0_ & ~0x00000080);
+      mutableProperties_ = null;
+      if (mutablePropertiesBuilder_ != null) {
+        mutablePropertiesBuilder_.dispose();
         mutablePropertiesBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.lists.PropertyList mutable_properties = 8 [json_name = "mutableProperties"];</code>
      */
     public com.lists.PropertyList.Builder getMutablePropertiesBuilder() {
-      
+      bitField0_ |= 0x00000080;
       onChanged();
       return getMutablePropertiesFieldBuilder().getBuilder();
     }
@@ -1701,13 +1695,13 @@ private static final long serialVersionUID = 0L;
       }
       return mutablePropertiesBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1718,18 +1712,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:identities.transactions.issue.Message)
-  private static final com.identities.transactions.issue.Message DEFAULT_INSTANCE;
+  private static final Message DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.identities.transactions.issue.Message();
+    DEFAULT_INSTANCE = new Message();
   }
 
-  public static com.identities.transactions.issue.Message getDefaultInstance() {
+  public static Message getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Message>
       PARSER = new com.google.protobuf.AbstractParser<Message>() {
-    @java.lang.Override
+    @Override
     public Message parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1753,13 +1747,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Message> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.identities.transactions.issue.Message getDefaultInstanceForType() {
+  @Override
+  public Message getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -52,7 +52,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\037cosmos/auth/v1beta1/query.proto\022\023cosmo" +
       "s.auth.v1beta1\032*cosmos/base/query/v1beta" +
       "1/pagination.proto\032\024gogoproto/gogo.proto" +
@@ -96,7 +96,7 @@ public final class QueryProto {
           com.gogoproto.GogoProto.getDescriptor(),
           com.google.protobuf.AnyProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
-          com.cosmos.auth.v1beta1.AuthProto.getDescriptor(),
+          AuthProto.getDescriptor(),
           com.cosmos_proto.CosmosProto.getDescriptor(),
         });
     internal_static_cosmos_auth_v1beta1_QueryAccountsRequest_descriptor =
@@ -104,37 +104,37 @@ public final class QueryProto {
     internal_static_cosmos_auth_v1beta1_QueryAccountsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_auth_v1beta1_QueryAccountsRequest_descriptor,
-        new java.lang.String[] { "Pagination", });
+        new String[] { "Pagination", });
     internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_auth_v1beta1_QueryAccountsResponse_descriptor,
-        new java.lang.String[] { "Accounts", "Pagination", });
+        new String[] { "Accounts", "Pagination", });
     internal_static_cosmos_auth_v1beta1_QueryAccountRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_auth_v1beta1_QueryAccountRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_auth_v1beta1_QueryAccountRequest_descriptor,
-        new java.lang.String[] { "Address", });
+        new String[] { "Address", });
     internal_static_cosmos_auth_v1beta1_QueryAccountResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_auth_v1beta1_QueryAccountResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_auth_v1beta1_QueryAccountResponse_descriptor,
-        new java.lang.String[] { "Account", });
+        new String[] { "Account", });
     internal_static_cosmos_auth_v1beta1_QueryParamsRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_auth_v1beta1_QueryParamsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_auth_v1beta1_QueryParamsRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_cosmos_auth_v1beta1_QueryParamsResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_auth_v1beta1_QueryParamsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_auth_v1beta1_QueryParamsResponse_descriptor,
-        new java.lang.String[] { "Params", });
+        new String[] { "Params", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);
@@ -148,7 +148,7 @@ public final class QueryProto {
     com.gogoproto.GogoProto.getDescriptor();
     com.google.protobuf.AnyProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
-    com.cosmos.auth.v1beta1.AuthProto.getDescriptor();
+    AuthProto.getDescriptor();
     com.cosmos_proto.CosmosProto.getDescriptor();
   }
 

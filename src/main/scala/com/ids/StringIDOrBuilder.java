@@ -11,7 +11,7 @@ public interface StringIDOrBuilder extends
    * <code>string i_d_string = 1 [json_name = "iDString"];</code>
    * @return The iDString.
    */
-  java.lang.String getIDString();
+  String getIDString();
   /**
    * <code>string i_d_string = 1 [json_name = "iDString"];</code>
    * @return The bytes for iDString.

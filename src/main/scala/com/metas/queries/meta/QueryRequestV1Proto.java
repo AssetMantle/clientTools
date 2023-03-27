@@ -27,7 +27,7 @@ public final class QueryRequestV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n9modules/metas/internal/queries/meta/qu" +
       "eryRequest.v1.proto\022\022metas.queries.meta\032" +
       "\037schema/ids/base/dataID.v1.proto\032\024gogopr" +
@@ -51,7 +51,7 @@ public final class QueryRequestV1Proto {
     internal_static_metas_queries_meta_QueryRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_metas_queries_meta_QueryRequest_descriptor,
-        new java.lang.String[] { "DataID", });
+        new String[] { "DataID", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

@@ -15,7 +15,7 @@ public interface QueryConnectionRequestOrBuilder extends
    * <code>string connection_id = 1 [json_name = "connectionId"];</code>
    * @return The connectionId.
    */
-  java.lang.String getConnectionId();
+  String getConnectionId();
   /**
    * <pre>
    * connection unique identifier

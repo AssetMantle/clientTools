@@ -11,7 +11,7 @@ public interface QueryInterchainAccountRequestOrBuilder extends
    * <code>string owner = 1 [json_name = "owner"];</code>
    * @return The owner.
    */
-  java.lang.String getOwner();
+  String getOwner();
   /**
    * <code>string owner = 1 [json_name = "owner"];</code>
    * @return The bytes for owner.
@@ -23,7 +23,7 @@ public interface QueryInterchainAccountRequestOrBuilder extends
    * <code>string connection_id = 2 [json_name = "connectionId", (.gogoproto.moretags) = "yaml:&#92;"connection_id&#92;""];</code>
    * @return The connectionId.
    */
-  java.lang.String getConnectionId();
+  String getConnectionId();
   /**
    * <code>string connection_id = 2 [json_name = "connectionId", (.gogoproto.moretags) = "yaml:&#92;"connection_id&#92;""];</code>
    * @return The bytes for connectionId.

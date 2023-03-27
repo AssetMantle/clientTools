@@ -24,7 +24,7 @@ public interface TxOrBuilder extends
    * <code>.cosmos.tx.v1beta1.TxBody body = 1 [json_name = "body"];</code>
    * @return The body.
    */
-  com.cosmos.tx.v1beta1.TxBody getBody();
+  TxBody getBody();
   /**
    * <pre>
    * body is the processable content of the transaction
@@ -32,7 +32,7 @@ public interface TxOrBuilder extends
    *
    * <code>.cosmos.tx.v1beta1.TxBody body = 1 [json_name = "body"];</code>
    */
-  com.cosmos.tx.v1beta1.TxBodyOrBuilder getBodyOrBuilder();
+  TxBodyOrBuilder getBodyOrBuilder();
 
   /**
    * <pre>
@@ -53,7 +53,7 @@ public interface TxOrBuilder extends
    * <code>.cosmos.tx.v1beta1.AuthInfo auth_info = 2 [json_name = "authInfo"];</code>
    * @return The authInfo.
    */
-  com.cosmos.tx.v1beta1.AuthInfo getAuthInfo();
+  AuthInfo getAuthInfo();
   /**
    * <pre>
    * auth_info is the authorization related content of the transaction,
@@ -62,7 +62,7 @@ public interface TxOrBuilder extends
    *
    * <code>.cosmos.tx.v1beta1.AuthInfo auth_info = 2 [json_name = "authInfo"];</code>
    */
-  com.cosmos.tx.v1beta1.AuthInfoOrBuilder getAuthInfoOrBuilder();
+  AuthInfoOrBuilder getAuthInfoOrBuilder();
 
   /**
    * <pre>

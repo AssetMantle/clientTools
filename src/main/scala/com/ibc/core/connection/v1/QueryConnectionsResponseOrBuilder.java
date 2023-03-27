@@ -14,7 +14,7 @@ public interface QueryConnectionsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
    */
-  java.util.List<com.ibc.core.connection.v1.IdentifiedConnection> 
+  java.util.List<IdentifiedConnection>
       getConnectionsList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryConnectionsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
    */
-  com.ibc.core.connection.v1.IdentifiedConnection getConnections(int index);
+  IdentifiedConnection getConnections(int index);
   /**
    * <pre>
    * list of stored connections of the chain.
@@ -39,7 +39,7 @@ public interface QueryConnectionsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
    */
-  java.util.List<? extends com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder> 
+  java.util.List<? extends IdentifiedConnectionOrBuilder>
       getConnectionsOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryConnectionsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
    */
-  com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder getConnectionsOrBuilder(
+  IdentifiedConnectionOrBuilder getConnectionsOrBuilder(
       int index);
 
   /**

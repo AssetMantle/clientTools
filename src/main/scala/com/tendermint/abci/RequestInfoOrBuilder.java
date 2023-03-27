@@ -11,7 +11,7 @@ public interface RequestInfoOrBuilder extends
    * <code>string version = 1 [json_name = "version"];</code>
    * @return The version.
    */
-  java.lang.String getVersion();
+  String getVersion();
   /**
    * <code>string version = 1 [json_name = "version"];</code>
    * @return The bytes for version.

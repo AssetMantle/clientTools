@@ -27,7 +27,7 @@ public final class IdentityIDV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n#schema/ids/base/identityID.v1.proto\022\003i" +
       "ds\032\024gogoproto/gogo.proto\032\037schema/ids/bas" +
       "e/hashID.v1.proto\"9\n\nIdentityID\022%\n\010hash_" +
@@ -41,21 +41,21 @@ public final class IdentityIDV1Proto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
-          com.ids.HashIDV1Proto.getDescriptor(),
+          HashIDV1Proto.getDescriptor(),
         });
     internal_static_ids_IdentityID_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ids_IdentityID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ids_IdentityID_descriptor,
-        new java.lang.String[] { "HashID", });
+        new String[] { "HashID", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
-    com.ids.HashIDV1Proto.getDescriptor();
+    HashIDV1Proto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -27,7 +27,7 @@ public final class KeyV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n(modules/assets/internal/key/key.v1.pro" +
       "to\022\006assets\032 schema/ids/base/assetID.v1.p" +
       "roto\"/\n\003Key\022(\n\tasset_i_d\030\001 \001(\0132\014.ids.Ass" +
@@ -47,7 +47,7 @@ public final class KeyV1Proto {
     internal_static_assets_Key_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_assets_Key_descriptor,
-        new java.lang.String[] { "AssetID", });
+        new String[] { "AssetID", });
     com.ids.AssetIDV1Proto.getDescriptor();
   }
 

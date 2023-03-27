@@ -16,11 +16,11 @@ public interface MsgTimeoutOnCloseOrBuilder extends
    * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
    * @return The packet.
    */
-  com.ibc.core.channel.v1.Packet getPacket();
+  Packet getPacket();
   /**
    * <code>.ibc.core.channel.v1.Packet packet = 1 [json_name = "packet", (.gogoproto.nullable) = false];</code>
    */
-  com.ibc.core.channel.v1.PacketOrBuilder getPacketOrBuilder();
+  PacketOrBuilder getPacketOrBuilder();
 
   /**
    * <code>bytes proof_unreceived = 2 [json_name = "proofUnreceived", (.gogoproto.moretags) = "yaml:&#92;"proof_unreceived&#92;""];</code>
@@ -59,7 +59,7 @@ public interface MsgTimeoutOnCloseOrBuilder extends
    * <code>string signer = 6 [json_name = "signer"];</code>
    * @return The signer.
    */
-  java.lang.String getSigner();
+  String getSigner();
   /**
    * <code>string signer = 6 [json_name = "signer"];</code>
    * @return The bytes for signer.

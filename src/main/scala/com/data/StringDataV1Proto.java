@@ -27,7 +27,7 @@ public final class StringDataV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n$schema/data/base/stringData.v1.proto\022\004" +
       "data\032\024gogoproto/gogo.proto\"(\n\nStringData" +
       "\022\024\n\005value\030\001 \001(\tR\005value:\004\210\240\037\000B~\n\010com.data" +
@@ -46,7 +46,7 @@ public final class StringDataV1Proto {
     internal_static_data_StringData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_data_StringData_descriptor,
-        new java.lang.String[] { "Value", });
+        new String[] { "Value", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

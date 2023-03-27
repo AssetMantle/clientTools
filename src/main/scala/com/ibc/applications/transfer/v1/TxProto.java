@@ -32,7 +32,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n%ibc/applications/transfer/v1/tx.proto\022" +
       "\034ibc.applications.transfer.v1\032\024gogoproto" +
       "/gogo.proto\032\036cosmos/base/v1beta1/coin.pr" +
@@ -71,13 +71,13 @@ public final class TxProto {
     internal_static_ibc_applications_transfer_v1_MsgTransfer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_MsgTransfer_descriptor,
-        new java.lang.String[] { "SourcePort", "SourceChannel", "Token", "Sender", "Receiver", "TimeoutHeight", "TimeoutTimestamp", });
+        new String[] { "SourcePort", "SourceChannel", "Token", "Sender", "Receiver", "TimeoutHeight", "TimeoutTimestamp", });
     internal_static_ibc_applications_transfer_v1_MsgTransferResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_applications_transfer_v1_MsgTransferResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_MsgTransferResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.equal);

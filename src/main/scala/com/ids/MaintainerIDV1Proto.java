@@ -27,7 +27,7 @@ public final class MaintainerIDV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n%schema/ids/base/maintainerID.v1.proto\022" +
       "\003ids\032\037schema/ids/base/hashID.v1.proto\032\024g" +
       "ogoproto/gogo.proto\";\n\014MaintainerID\022%\n\010h" +
@@ -40,7 +40,7 @@ public final class MaintainerIDV1Proto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.ids.HashIDV1Proto.getDescriptor(),
+          HashIDV1Proto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_ids_MaintainerID_descriptor =
@@ -48,13 +48,13 @@ public final class MaintainerIDV1Proto {
     internal_static_ids_MaintainerID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ids_MaintainerID_descriptor,
-        new java.lang.String[] { "HashID", });
+        new String[] { "HashID", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    com.ids.HashIDV1Proto.getDescriptor();
+    HashIDV1Proto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 

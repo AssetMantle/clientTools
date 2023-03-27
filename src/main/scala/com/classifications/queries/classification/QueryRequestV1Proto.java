@@ -27,7 +27,7 @@ public final class QueryRequestV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\nMmodules/classifications/internal/queri" +
       "es/classification/queryRequest.v1.proto\022" +
       "&classifications.queries.classification\032" +
@@ -54,7 +54,7 @@ public final class QueryRequestV1Proto {
     internal_static_classifications_queries_classification_QueryRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_classifications_queries_classification_QueryRequest_descriptor,
-        new java.lang.String[] { "ClassificationID", });
+        new String[] { "ClassificationID", });
     com.ids.ClassificationIDV1Proto.getDescriptor();
   }
 

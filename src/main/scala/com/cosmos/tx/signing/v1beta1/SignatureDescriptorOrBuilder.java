@@ -43,11 +43,11 @@ public interface SignatureDescriptorOrBuilder extends
    * <code>.cosmos.tx.signing.v1beta1.SignatureDescriptor.Data data = 2 [json_name = "data"];</code>
    * @return The data.
    */
-  com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Data getData();
+  SignatureDescriptor.Data getData();
   /**
    * <code>.cosmos.tx.signing.v1beta1.SignatureDescriptor.Data data = 2 [json_name = "data"];</code>
    */
-  com.cosmos.tx.signing.v1beta1.SignatureDescriptor.DataOrBuilder getDataOrBuilder();
+  SignatureDescriptor.DataOrBuilder getDataOrBuilder();
 
   /**
    * <pre>

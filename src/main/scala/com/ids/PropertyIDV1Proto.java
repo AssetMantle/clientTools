@@ -27,7 +27,7 @@ public final class PropertyIDV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n#schema/ids/base/propertyID.v1.proto\022\003i" +
       "ds\032!schema/ids/base/stringID.v1.proto\032\024g" +
       "ogoproto/gogo.proto\"b\n\nPropertyID\022%\n\007key" +
@@ -41,7 +41,7 @@ public final class PropertyIDV1Proto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.ids.StringIDV1Proto.getDescriptor(),
+          StringIDV1Proto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_ids_PropertyID_descriptor =
@@ -49,13 +49,13 @@ public final class PropertyIDV1Proto {
     internal_static_ids_PropertyID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ids_PropertyID_descriptor,
-        new java.lang.String[] { "KeyID", "TypeID", });
+        new String[] { "KeyID", "TypeID", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    com.ids.StringIDV1Proto.getDescriptor();
+    StringIDV1Proto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 

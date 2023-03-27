@@ -52,7 +52,7 @@ public interface RedelegationEntryOrBuilder extends
    * <code>string initial_balance = 3 [json_name = "initialBalance", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"initial_balance&#92;""];</code>
    * @return The initialBalance.
    */
-  java.lang.String getInitialBalance();
+  String getInitialBalance();
   /**
    * <pre>
    * initial_balance defines the initial balance when redelegation started.
@@ -72,7 +72,7 @@ public interface RedelegationEntryOrBuilder extends
    * <code>string shares_dst = 4 [json_name = "sharesDst", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
    * @return The sharesDst.
    */
-  java.lang.String getSharesDst();
+  String getSharesDst();
   /**
    * <pre>
    * shares_dst is the amount of destination-validator shares created by redelegation.

@@ -23,42 +23,42 @@ private static final long serialVersionUID = 0L;
     int_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new IntProto();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.base.v1beta1.CoinProto.internal_static_cosmos_base_v1beta1_IntProto_descriptor;
+    return CoinProto.internal_static_cosmos_base_v1beta1_IntProto_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.base.v1beta1.CoinProto.internal_static_cosmos_base_v1beta1_IntProto_fieldAccessorTable
+    return CoinProto.internal_static_cosmos_base_v1beta1_IntProto_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.base.v1beta1.IntProto.class, com.cosmos.base.v1beta1.IntProto.Builder.class);
+            IntProto.class, Builder.class);
   }
 
   public static final int INT_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object int_ = "";
+  private volatile Object int_ = "";
   /**
    * <code>string int = 1 [json_name = "int", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "Int"];</code>
    * @return The int.
    */
-  @java.lang.Override
-  public java.lang.String getInt() {
-    java.lang.Object ref = int_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getInt() {
+    Object ref = int_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       int_ = s;
       return s;
     }
@@ -67,14 +67,14 @@ private static final long serialVersionUID = 0L;
    * <code>string int = 1 [json_name = "int", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "Int"];</code>
    * @return The bytes for int.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getIntBytes() {
-    java.lang.Object ref = int_;
-    if (ref instanceof java.lang.String) {
+    Object ref = int_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       int_ = b;
       return b;
     } else {
@@ -83,7 +83,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -93,7 +93,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(int_)) {
@@ -102,7 +102,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -116,15 +116,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.base.v1beta1.IntProto)) {
+    if (!(obj instanceof IntProto)) {
       return super.equals(obj);
     }
-    com.cosmos.base.v1beta1.IntProto other = (com.cosmos.base.v1beta1.IntProto) obj;
+    IntProto other = (IntProto) obj;
 
     if (!getInt()
         .equals(other.getInt())) return false;
@@ -132,7 +132,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -146,69 +146,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.base.v1beta1.IntProto parseFrom(
+  public static IntProto parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseFrom(
+  public static IntProto parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseFrom(
+  public static IntProto parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseFrom(
+  public static IntProto parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseFrom(byte[] data)
+  public static IntProto parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseFrom(
+  public static IntProto parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseFrom(java.io.InputStream input)
+  public static IntProto parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseFrom(
+  public static IntProto parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseDelimitedFrom(java.io.InputStream input)
+  public static IntProto parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseDelimitedFrom(
+  public static IntProto parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseFrom(
+  public static IntProto parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.v1beta1.IntProto parseFrom(
+  public static IntProto parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -216,23 +216,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.base.v1beta1.IntProto prototype) {
+  public static Builder newBuilder(IntProto prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -246,18 +246,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.v1beta1.IntProto)
-      com.cosmos.base.v1beta1.IntProtoOrBuilder {
+      IntProtoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.base.v1beta1.CoinProto.internal_static_cosmos_base_v1beta1_IntProto_descriptor;
+      return CoinProto.internal_static_cosmos_base_v1beta1_IntProto_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.base.v1beta1.CoinProto.internal_static_cosmos_base_v1beta1_IntProto_fieldAccessorTable
+      return CoinProto.internal_static_cosmos_base_v1beta1_IntProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.base.v1beta1.IntProto.class, com.cosmos.base.v1beta1.IntProto.Builder.class);
+              IntProto.class, Builder.class);
     }
 
     // Construct using com.cosmos.base.v1beta1.IntProto.newBuilder()
@@ -266,11 +266,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -278,85 +278,85 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.base.v1beta1.CoinProto.internal_static_cosmos_base_v1beta1_IntProto_descriptor;
+      return CoinProto.internal_static_cosmos_base_v1beta1_IntProto_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.v1beta1.IntProto getDefaultInstanceForType() {
-      return com.cosmos.base.v1beta1.IntProto.getDefaultInstance();
+    @Override
+    public IntProto getDefaultInstanceForType() {
+      return IntProto.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.base.v1beta1.IntProto build() {
-      com.cosmos.base.v1beta1.IntProto result = buildPartial();
+    @Override
+    public IntProto build() {
+      IntProto result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.v1beta1.IntProto buildPartial() {
-      com.cosmos.base.v1beta1.IntProto result = new com.cosmos.base.v1beta1.IntProto(this);
+    @Override
+    public IntProto buildPartial() {
+      IntProto result = new IntProto(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.base.v1beta1.IntProto result) {
+    private void buildPartial0(IntProto result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.int_ = int_;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.base.v1beta1.IntProto) {
-        return mergeFrom((com.cosmos.base.v1beta1.IntProto)other);
+      if (other instanceof IntProto) {
+        return mergeFrom((IntProto)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.base.v1beta1.IntProto other) {
-      if (other == com.cosmos.base.v1beta1.IntProto.getDefaultInstance()) return this;
+    public Builder mergeFrom(IntProto other) {
+      if (other == IntProto.getDefaultInstance()) return this;
       if (!other.getInt().isEmpty()) {
         int_ = other.int_;
         bitField0_ |= 0x00000001;
@@ -367,18 +367,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -410,21 +410,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object int_ = "";
+    private Object int_ = "";
     /**
      * <code>string int = 1 [json_name = "int", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "Int"];</code>
      * @return The int.
      */
-    public java.lang.String getInt() {
-      java.lang.Object ref = int_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getInt() {
+      Object ref = int_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         int_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -433,11 +433,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getIntBytes() {
-      java.lang.Object ref = int_;
+      Object ref = int_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         int_ = b;
         return b;
       } else {
@@ -450,7 +450,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setInt(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       int_ = value;
       bitField0_ |= 0x00000001;
@@ -481,13 +481,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -498,18 +498,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.v1beta1.IntProto)
-  private static final com.cosmos.base.v1beta1.IntProto DEFAULT_INSTANCE;
+  private static final IntProto DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.base.v1beta1.IntProto();
+    DEFAULT_INSTANCE = new IntProto();
   }
 
-  public static com.cosmos.base.v1beta1.IntProto getDefaultInstance() {
+  public static IntProto getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<IntProto>
       PARSER = new com.google.protobuf.AbstractParser<IntProto>() {
-    @java.lang.Override
+    @Override
     public IntProto parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -533,13 +533,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<IntProto> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.base.v1beta1.IntProto getDefaultInstanceForType() {
+  @Override
+  public IntProto getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

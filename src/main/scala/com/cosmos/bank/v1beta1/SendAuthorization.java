@@ -26,24 +26,24 @@ private static final long serialVersionUID = 0L;
     spendLimit_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new SendAuthorization();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.bank.v1beta1.AuthzProto.internal_static_cosmos_bank_v1beta1_SendAuthorization_descriptor;
+    return AuthzProto.internal_static_cosmos_bank_v1beta1_SendAuthorization_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.bank.v1beta1.AuthzProto.internal_static_cosmos_bank_v1beta1_SendAuthorization_fieldAccessorTable
+    return AuthzProto.internal_static_cosmos_bank_v1beta1_SendAuthorization_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.bank.v1beta1.SendAuthorization.class, com.cosmos.bank.v1beta1.SendAuthorization.Builder.class);
+            SendAuthorization.class, Builder.class);
   }
 
   public static final int SPEND_LIMIT_FIELD_NUMBER = 1;
@@ -52,14 +52,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<com.cosmos.base.v1beta1.Coin> getSpendLimitList() {
     return spendLimit_;
   }
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @java.lang.Override
+  @Override
   public java.util.List<? extends com.cosmos.base.v1beta1.CoinOrBuilder> 
       getSpendLimitOrBuilderList() {
     return spendLimit_;
@@ -67,28 +67,28 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getSpendLimitCount() {
     return spendLimit_.size();
   }
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.Coin getSpendLimit(int index) {
     return spendLimit_.get(index);
   }
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @java.lang.Override
+  @Override
   public com.cosmos.base.v1beta1.CoinOrBuilder getSpendLimitOrBuilder(
       int index) {
     return spendLimit_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -98,7 +98,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < spendLimit_.size(); i++) {
@@ -107,7 +107,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -122,15 +122,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.bank.v1beta1.SendAuthorization)) {
+    if (!(obj instanceof SendAuthorization)) {
       return super.equals(obj);
     }
-    com.cosmos.bank.v1beta1.SendAuthorization other = (com.cosmos.bank.v1beta1.SendAuthorization) obj;
+    SendAuthorization other = (SendAuthorization) obj;
 
     if (!getSpendLimitList()
         .equals(other.getSpendLimitList())) return false;
@@ -138,7 +138,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -154,69 +154,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseFrom(
+  public static SendAuthorization parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseFrom(
+  public static SendAuthorization parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseFrom(
+  public static SendAuthorization parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseFrom(
+  public static SendAuthorization parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseFrom(byte[] data)
+  public static SendAuthorization parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseFrom(
+  public static SendAuthorization parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseFrom(java.io.InputStream input)
+  public static SendAuthorization parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseFrom(
+  public static SendAuthorization parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseDelimitedFrom(java.io.InputStream input)
+  public static SendAuthorization parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseDelimitedFrom(
+  public static SendAuthorization parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseFrom(
+  public static SendAuthorization parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.bank.v1beta1.SendAuthorization parseFrom(
+  public static SendAuthorization parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -224,23 +224,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.bank.v1beta1.SendAuthorization prototype) {
+  public static Builder newBuilder(SendAuthorization prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -257,18 +257,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.bank.v1beta1.SendAuthorization)
-      com.cosmos.bank.v1beta1.SendAuthorizationOrBuilder {
+      SendAuthorizationOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.bank.v1beta1.AuthzProto.internal_static_cosmos_bank_v1beta1_SendAuthorization_descriptor;
+      return AuthzProto.internal_static_cosmos_bank_v1beta1_SendAuthorization_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.bank.v1beta1.AuthzProto.internal_static_cosmos_bank_v1beta1_SendAuthorization_fieldAccessorTable
+      return AuthzProto.internal_static_cosmos_bank_v1beta1_SendAuthorization_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.bank.v1beta1.SendAuthorization.class, com.cosmos.bank.v1beta1.SendAuthorization.Builder.class);
+              SendAuthorization.class, Builder.class);
     }
 
     // Construct using com.cosmos.bank.v1beta1.SendAuthorization.newBuilder()
@@ -277,11 +277,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -295,36 +295,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.bank.v1beta1.AuthzProto.internal_static_cosmos_bank_v1beta1_SendAuthorization_descriptor;
+      return AuthzProto.internal_static_cosmos_bank_v1beta1_SendAuthorization_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.SendAuthorization getDefaultInstanceForType() {
-      return com.cosmos.bank.v1beta1.SendAuthorization.getDefaultInstance();
+    @Override
+    public SendAuthorization getDefaultInstanceForType() {
+      return SendAuthorization.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.SendAuthorization build() {
-      com.cosmos.bank.v1beta1.SendAuthorization result = buildPartial();
+    @Override
+    public SendAuthorization build() {
+      SendAuthorization result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.bank.v1beta1.SendAuthorization buildPartial() {
-      com.cosmos.bank.v1beta1.SendAuthorization result = new com.cosmos.bank.v1beta1.SendAuthorization(this);
+    @Override
+    public SendAuthorization buildPartial() {
+      SendAuthorization result = new SendAuthorization(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.bank.v1beta1.SendAuthorization result) {
+    private void buildPartialRepeatedFields(SendAuthorization result) {
       if (spendLimitBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           spendLimit_ = java.util.Collections.unmodifiableList(spendLimit_);
@@ -336,54 +336,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.bank.v1beta1.SendAuthorization result) {
+    private void buildPartial0(SendAuthorization result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.bank.v1beta1.SendAuthorization) {
-        return mergeFrom((com.cosmos.bank.v1beta1.SendAuthorization)other);
+      if (other instanceof SendAuthorization) {
+        return mergeFrom((SendAuthorization)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.bank.v1beta1.SendAuthorization other) {
-      if (other == com.cosmos.bank.v1beta1.SendAuthorization.getDefaultInstance()) return this;
+    public Builder mergeFrom(SendAuthorization other) {
+      if (other == SendAuthorization.getDefaultInstance()) return this;
       if (spendLimitBuilder_ == null) {
         if (!other.spendLimit_.isEmpty()) {
           if (spendLimit_.isEmpty()) {
@@ -415,18 +415,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -604,7 +604,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
     public Builder addAllSpendLimit(
-        java.lang.Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
+        Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
       if (spendLimitBuilder_ == null) {
         ensureSpendLimitIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -705,13 +705,13 @@ private static final long serialVersionUID = 0L;
       }
       return spendLimitBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -722,18 +722,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.bank.v1beta1.SendAuthorization)
-  private static final com.cosmos.bank.v1beta1.SendAuthorization DEFAULT_INSTANCE;
+  private static final SendAuthorization DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.bank.v1beta1.SendAuthorization();
+    DEFAULT_INSTANCE = new SendAuthorization();
   }
 
-  public static com.cosmos.bank.v1beta1.SendAuthorization getDefaultInstance() {
+  public static SendAuthorization getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<SendAuthorization>
       PARSER = new com.google.protobuf.AbstractParser<SendAuthorization>() {
-    @java.lang.Override
+    @Override
     public SendAuthorization parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -757,13 +757,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<SendAuthorization> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.bank.v1beta1.SendAuthorization getDefaultInstanceForType() {
+  @Override
+  public SendAuthorization getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

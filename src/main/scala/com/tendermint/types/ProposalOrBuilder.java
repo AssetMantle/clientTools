@@ -16,7 +16,7 @@ public interface ProposalOrBuilder extends
    * <code>.tendermint.types.SignedMsgType type = 1 [json_name = "type"];</code>
    * @return The type.
    */
-  com.tendermint.types.SignedMsgType getType();
+  SignedMsgType getType();
 
   /**
    * <code>int64 height = 2 [json_name = "height"];</code>
@@ -45,11 +45,11 @@ public interface ProposalOrBuilder extends
    * <code>.tendermint.types.BlockID block_id = 5 [json_name = "blockId", (.gogoproto.nullable) = false, (.gogoproto.customname) = "BlockID"];</code>
    * @return The blockId.
    */
-  com.tendermint.types.BlockID getBlockId();
+  BlockID getBlockId();
   /**
    * <code>.tendermint.types.BlockID block_id = 5 [json_name = "blockId", (.gogoproto.nullable) = false, (.gogoproto.customname) = "BlockID"];</code>
    */
-  com.tendermint.types.BlockIDOrBuilder getBlockIdOrBuilder();
+  BlockIDOrBuilder getBlockIdOrBuilder();
 
   /**
    * <code>.google.protobuf.Timestamp timestamp = 6 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>

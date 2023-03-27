@@ -27,7 +27,7 @@ public final class QueryRequestV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n=modules/splits/internal/queries/ownabl" +
       "e/queryRequest.v1.proto\022\026splits.queries." +
       "ownable\032%schema/ids/base/anyOwnableID.v1" +
@@ -51,7 +51,7 @@ public final class QueryRequestV1Proto {
     internal_static_splits_queries_ownable_QueryRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_splits_queries_ownable_QueryRequest_descriptor,
-        new java.lang.String[] { "OwnableID", });
+        new String[] { "OwnableID", });
     com.ids.AnyOwnableIDV1Proto.getDescriptor();
   }
 

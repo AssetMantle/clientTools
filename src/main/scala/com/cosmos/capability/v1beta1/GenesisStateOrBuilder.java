@@ -25,7 +25,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.capability.v1beta1.GenesisOwners> 
+  java.util.List<GenesisOwners>
       getOwnersList();
   /**
    * <pre>
@@ -35,7 +35,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.capability.v1beta1.GenesisOwners getOwners(int index);
+  GenesisOwners getOwners(int index);
   /**
    * <pre>
    * owners represents a map from index to owners of the capability index
@@ -53,7 +53,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.capability.v1beta1.GenesisOwnersOrBuilder> 
+  java.util.List<? extends GenesisOwnersOrBuilder>
       getOwnersOrBuilderList();
   /**
    * <pre>
@@ -63,6 +63,6 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.capability.v1beta1.GenesisOwnersOrBuilder getOwnersOrBuilder(
+  GenesisOwnersOrBuilder getOwnersOrBuilder(
       int index);
 }

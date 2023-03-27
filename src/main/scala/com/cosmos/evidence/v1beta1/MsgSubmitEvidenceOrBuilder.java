@@ -11,7 +11,7 @@ public interface MsgSubmitEvidenceOrBuilder extends
    * <code>string submitter = 1 [json_name = "submitter"];</code>
    * @return The submitter.
    */
-  java.lang.String getSubmitter();
+  String getSubmitter();
   /**
    * <code>string submitter = 1 [json_name = "submitter"];</code>
    * @return The bytes for submitter.

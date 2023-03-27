@@ -32,7 +32,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n cosmos/slashing/v1beta1/tx.proto\022\027cosm" +
       "os.slashing.v1beta1\032\024gogoproto/gogo.prot" +
       "o\"[\n\tMsgUnjail\022D\n\016validator_addr\030\001 \001(\tB\035" +
@@ -58,13 +58,13 @@ public final class TxProto {
     internal_static_cosmos_slashing_v1beta1_MsgUnjail_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_MsgUnjail_descriptor,
-        new java.lang.String[] { "ValidatorAddr", });
+        new String[] { "ValidatorAddr", });
     internal_static_cosmos_slashing_v1beta1_MsgUnjailResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_slashing_v1beta1_MsgUnjailResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_MsgUnjailResponse_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.equalAll);

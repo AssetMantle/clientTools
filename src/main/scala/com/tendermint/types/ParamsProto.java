@@ -52,7 +52,7 @@ public final class ParamsProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\035tendermint/types/params.proto\022\020tenderm" +
       "int.types\032\024gogoproto/gogo.proto\032\036google/" +
       "protobuf/duration.proto\"\230\002\n\017ConsensusPar" +
@@ -92,37 +92,37 @@ public final class ParamsProto {
     internal_static_tendermint_types_ConsensusParams_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_ConsensusParams_descriptor,
-        new java.lang.String[] { "Block", "Evidence", "Validator", "Version", });
+        new String[] { "Block", "Evidence", "Validator", "Version", });
     internal_static_tendermint_types_BlockParams_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_tendermint_types_BlockParams_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_BlockParams_descriptor,
-        new java.lang.String[] { "MaxBytes", "MaxGas", "TimeIotaMs", });
+        new String[] { "MaxBytes", "MaxGas", "TimeIotaMs", });
     internal_static_tendermint_types_EvidenceParams_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_tendermint_types_EvidenceParams_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_EvidenceParams_descriptor,
-        new java.lang.String[] { "MaxAgeNumBlocks", "MaxAgeDuration", "MaxBytes", });
+        new String[] { "MaxAgeNumBlocks", "MaxAgeDuration", "MaxBytes", });
     internal_static_tendermint_types_ValidatorParams_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_tendermint_types_ValidatorParams_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_ValidatorParams_descriptor,
-        new java.lang.String[] { "PubKeyTypes", });
+        new String[] { "PubKeyTypes", });
     internal_static_tendermint_types_VersionParams_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_tendermint_types_VersionParams_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_VersionParams_descriptor,
-        new java.lang.String[] { "AppVersion", });
+        new String[] { "AppVersion", });
     internal_static_tendermint_types_HashedParams_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_tendermint_types_HashedParams_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_HashedParams_descriptor,
-        new java.lang.String[] { "BlockMaxBytes", "BlockMaxGas", });
+        new String[] { "BlockMaxBytes", "BlockMaxGas", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.equal);

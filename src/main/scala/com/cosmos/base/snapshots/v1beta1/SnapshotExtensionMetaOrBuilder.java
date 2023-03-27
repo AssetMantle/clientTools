@@ -11,7 +11,7 @@ public interface SnapshotExtensionMetaOrBuilder extends
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The bytes for name.

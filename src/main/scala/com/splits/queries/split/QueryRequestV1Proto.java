@@ -27,7 +27,7 @@ public final class QueryRequestV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n;modules/splits/internal/queries/split/" +
       "queryRequest.v1.proto\022\024splits.queries.sp" +
       "lit\032 schema/ids/base/splitID.v1.proto\"8\n" +
@@ -50,7 +50,7 @@ public final class QueryRequestV1Proto {
     internal_static_splits_queries_split_QueryRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_splits_queries_split_QueryRequest_descriptor,
-        new java.lang.String[] { "SplitID", });
+        new String[] { "SplitID", });
     com.ids.SplitIDV1Proto.getDescriptor();
   }
 

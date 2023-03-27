@@ -16,11 +16,11 @@ public interface ConsensusParamsOrBuilder extends
    * <code>.tendermint.abci.BlockParams block = 1 [json_name = "block"];</code>
    * @return The block.
    */
-  com.tendermint.abci.BlockParams getBlock();
+  BlockParams getBlock();
   /**
    * <code>.tendermint.abci.BlockParams block = 1 [json_name = "block"];</code>
    */
-  com.tendermint.abci.BlockParamsOrBuilder getBlockOrBuilder();
+  BlockParamsOrBuilder getBlockOrBuilder();
 
   /**
    * <code>.tendermint.types.EvidenceParams evidence = 2 [json_name = "evidence"];</code>

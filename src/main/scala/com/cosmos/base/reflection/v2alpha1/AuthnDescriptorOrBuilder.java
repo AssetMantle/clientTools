@@ -14,7 +14,7 @@ public interface AuthnDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
    */
-  java.util.List<com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor> 
+  java.util.List<SigningModeDescriptor>
       getSignModesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface AuthnDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.SigningModeDescriptor getSignModes(int index);
+  SigningModeDescriptor getSignModes(int index);
   /**
    * <pre>
    * sign_modes defines the supported signature algorithm
@@ -39,7 +39,7 @@ public interface AuthnDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
    */
-  java.util.List<? extends com.cosmos.base.reflection.v2alpha1.SigningModeDescriptorOrBuilder> 
+  java.util.List<? extends SigningModeDescriptorOrBuilder>
       getSignModesOrBuilderList();
   /**
    * <pre>
@@ -48,6 +48,6 @@ public interface AuthnDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.SigningModeDescriptor sign_modes = 1 [json_name = "signModes"];</code>
    */
-  com.cosmos.base.reflection.v2alpha1.SigningModeDescriptorOrBuilder getSignModesOrBuilder(
+  SigningModeDescriptorOrBuilder getSignModesOrBuilder(
       int index);
 }

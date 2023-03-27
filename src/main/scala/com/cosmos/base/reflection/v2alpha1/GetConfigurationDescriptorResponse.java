@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private GetConfigurationDescriptorResponse() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new GetConfigurationDescriptorResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_descriptor;
+    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_fieldAccessorTable
+    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse.class, com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse.Builder.class);
+            GetConfigurationDescriptorResponse.class, Builder.class);
   }
 
   public static final int CONFIG_FIELD_NUMBER = 1;
-  private com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config_;
+  private ConfigurationDescriptor config_;
   /**
    * <pre>
    * config describes the application's sdk.Config
@@ -52,7 +52,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
    * @return Whether the config field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasConfig() {
     return config_ != null;
   }
@@ -64,9 +64,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
    * @return The config.
    */
-  @java.lang.Override
-  public com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor getConfig() {
-    return config_ == null ? com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.getDefaultInstance() : config_;
+  @Override
+  public ConfigurationDescriptor getConfig() {
+    return config_ == null ? ConfigurationDescriptor.getDefaultInstance() : config_;
   }
   /**
    * <pre>
@@ -75,13 +75,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder getConfigOrBuilder() {
-    return config_ == null ? com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.getDefaultInstance() : config_;
+  @Override
+  public ConfigurationDescriptorOrBuilder getConfigOrBuilder() {
+    return config_ == null ? ConfigurationDescriptor.getDefaultInstance() : config_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -91,7 +91,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (config_ != null) {
@@ -100,7 +100,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -115,15 +115,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse)) {
+    if (!(obj instanceof GetConfigurationDescriptorResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse other = (com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse) obj;
+    GetConfigurationDescriptorResponse other = (GetConfigurationDescriptorResponse) obj;
 
     if (hasConfig() != other.hasConfig()) return false;
     if (hasConfig()) {
@@ -134,7 +134,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -150,69 +150,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseFrom(
+  public static GetConfigurationDescriptorResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseFrom(
+  public static GetConfigurationDescriptorResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseFrom(
+  public static GetConfigurationDescriptorResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseFrom(
+  public static GetConfigurationDescriptorResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseFrom(byte[] data)
+  public static GetConfigurationDescriptorResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseFrom(
+  public static GetConfigurationDescriptorResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseFrom(java.io.InputStream input)
+  public static GetConfigurationDescriptorResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseFrom(
+  public static GetConfigurationDescriptorResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseDelimitedFrom(java.io.InputStream input)
+  public static GetConfigurationDescriptorResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseDelimitedFrom(
+  public static GetConfigurationDescriptorResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseFrom(
+  public static GetConfigurationDescriptorResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse parseFrom(
+  public static GetConfigurationDescriptorResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -220,23 +220,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse prototype) {
+  public static Builder newBuilder(GetConfigurationDescriptorResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -250,18 +250,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse)
-      com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponseOrBuilder {
+      GetConfigurationDescriptorResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_descriptor;
+      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_fieldAccessorTable
+      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse.class, com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse.Builder.class);
+              GetConfigurationDescriptorResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse.newBuilder()
@@ -270,11 +270,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -286,35 +286,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_descriptor;
+      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetConfigurationDescriptorResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse getDefaultInstanceForType() {
-      return com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse.getDefaultInstance();
+    @Override
+    public GetConfigurationDescriptorResponse getDefaultInstanceForType() {
+      return GetConfigurationDescriptorResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse build() {
-      com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse result = buildPartial();
+    @Override
+    public GetConfigurationDescriptorResponse build() {
+      GetConfigurationDescriptorResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse buildPartial() {
-      com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse result = new com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse(this);
+    @Override
+    public GetConfigurationDescriptorResponse buildPartial() {
+      GetConfigurationDescriptorResponse result = new GetConfigurationDescriptorResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse result) {
+    private void buildPartial0(GetConfigurationDescriptorResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.config_ = configBuilder_ == null
@@ -323,50 +323,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse) {
-        return mergeFrom((com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse)other);
+      if (other instanceof GetConfigurationDescriptorResponse) {
+        return mergeFrom((GetConfigurationDescriptorResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse other) {
-      if (other == com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(GetConfigurationDescriptorResponse other) {
+      if (other == GetConfigurationDescriptorResponse.getDefaultInstance()) return this;
       if (other.hasConfig()) {
         mergeConfig(other.getConfig());
       }
@@ -375,18 +375,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -420,9 +420,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config_;
+    private ConfigurationDescriptor config_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder> configBuilder_;
+        ConfigurationDescriptor, ConfigurationDescriptor.Builder, ConfigurationDescriptorOrBuilder> configBuilder_;
     /**
      * <pre>
      * config describes the application's sdk.Config
@@ -442,9 +442,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
      * @return The config.
      */
-    public com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor getConfig() {
+    public ConfigurationDescriptor getConfig() {
       if (configBuilder_ == null) {
-        return config_ == null ? com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.getDefaultInstance() : config_;
+        return config_ == null ? ConfigurationDescriptor.getDefaultInstance() : config_;
       } else {
         return configBuilder_.getMessage();
       }
@@ -456,7 +456,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
      */
-    public Builder setConfig(com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor value) {
+    public Builder setConfig(ConfigurationDescriptor value) {
       if (configBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -477,7 +477,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
      */
     public Builder setConfig(
-        com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.Builder builderForValue) {
+        ConfigurationDescriptor.Builder builderForValue) {
       if (configBuilder_ == null) {
         config_ = builderForValue.build();
       } else {
@@ -494,11 +494,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
      */
-    public Builder mergeConfig(com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor value) {
+    public Builder mergeConfig(ConfigurationDescriptor value) {
       if (configBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           config_ != null &&
-          config_ != com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.getDefaultInstance()) {
+          config_ != ConfigurationDescriptor.getDefaultInstance()) {
           getConfigBuilder().mergeFrom(value);
         } else {
           config_ = value;
@@ -534,7 +534,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.Builder getConfigBuilder() {
+    public ConfigurationDescriptor.Builder getConfigBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getConfigFieldBuilder().getBuilder();
@@ -546,12 +546,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
      */
-    public com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder getConfigOrBuilder() {
+    public ConfigurationDescriptorOrBuilder getConfigOrBuilder() {
       if (configBuilder_ != null) {
         return configBuilder_.getMessageOrBuilder();
       } else {
         return config_ == null ?
-            com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.getDefaultInstance() : config_;
+            ConfigurationDescriptor.getDefaultInstance() : config_;
       }
     }
     /**
@@ -562,11 +562,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder> 
+        ConfigurationDescriptor, ConfigurationDescriptor.Builder, ConfigurationDescriptorOrBuilder>
         getConfigFieldBuilder() {
       if (configBuilder_ == null) {
         configBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder>(
+            ConfigurationDescriptor, ConfigurationDescriptor.Builder, ConfigurationDescriptorOrBuilder>(
                 getConfig(),
                 getParentForChildren(),
                 isClean());
@@ -574,13 +574,13 @@ private static final long serialVersionUID = 0L;
       }
       return configBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -591,18 +591,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse)
-  private static final com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse DEFAULT_INSTANCE;
+  private static final GetConfigurationDescriptorResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse();
+    DEFAULT_INSTANCE = new GetConfigurationDescriptorResponse();
   }
 
-  public static com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse getDefaultInstance() {
+  public static GetConfigurationDescriptorResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GetConfigurationDescriptorResponse>
       PARSER = new com.google.protobuf.AbstractParser<GetConfigurationDescriptorResponse>() {
-    @java.lang.Override
+    @Override
     public GetConfigurationDescriptorResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -626,13 +626,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<GetConfigurationDescriptorResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse getDefaultInstanceForType() {
+  @Override
+  public GetConfigurationDescriptorResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

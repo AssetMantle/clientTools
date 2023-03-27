@@ -16,9 +16,9 @@ public interface CoinIDOrBuilder extends
    * <code>.ids.StringID string_i_d = 1 [json_name = "stringID"];</code>
    * @return The stringID.
    */
-  com.ids.StringID getStringID();
+  StringID getStringID();
   /**
    * <code>.ids.StringID string_i_d = 1 [json_name = "stringID"];</code>
    */
-  com.ids.StringIDOrBuilder getStringIDOrBuilder();
+  StringIDOrBuilder getStringIDOrBuilder();
 }

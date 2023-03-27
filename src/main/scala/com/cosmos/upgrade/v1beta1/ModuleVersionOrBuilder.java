@@ -15,7 +15,7 @@ public interface ModuleVersionOrBuilder extends
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <pre>
    * name of the app module

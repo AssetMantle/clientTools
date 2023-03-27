@@ -10,12 +10,12 @@ public interface QueryPacketAcknowledgementsResponseOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 1 [json_name = "acknowledgements"];</code>
    */
-  java.util.List<com.ibc.core.channel.v1.PacketState> 
+  java.util.List<PacketState>
       getAcknowledgementsList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 1 [json_name = "acknowledgements"];</code>
    */
-  com.ibc.core.channel.v1.PacketState getAcknowledgements(int index);
+  PacketState getAcknowledgements(int index);
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 1 [json_name = "acknowledgements"];</code>
    */
@@ -23,12 +23,12 @@ public interface QueryPacketAcknowledgementsResponseOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 1 [json_name = "acknowledgements"];</code>
    */
-  java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
+  java.util.List<? extends PacketStateOrBuilder>
       getAcknowledgementsOrBuilderList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 1 [json_name = "acknowledgements"];</code>
    */
-  com.ibc.core.channel.v1.PacketStateOrBuilder getAcknowledgementsOrBuilder(
+  PacketStateOrBuilder getAcknowledgementsOrBuilder(
       int index);
 
   /**

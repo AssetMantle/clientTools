@@ -11,7 +11,7 @@ public interface TallyResultOrBuilder extends
    * <code>string yes = 1 [json_name = "yes", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The yes.
    */
-  java.lang.String getYes();
+  String getYes();
   /**
    * <code>string yes = 1 [json_name = "yes", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The bytes for yes.
@@ -23,7 +23,7 @@ public interface TallyResultOrBuilder extends
    * <code>string abstain = 2 [json_name = "abstain", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The abstain.
    */
-  java.lang.String getAbstain();
+  String getAbstain();
   /**
    * <code>string abstain = 2 [json_name = "abstain", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The bytes for abstain.
@@ -35,7 +35,7 @@ public interface TallyResultOrBuilder extends
    * <code>string no = 3 [json_name = "no", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The no.
    */
-  java.lang.String getNo();
+  String getNo();
   /**
    * <code>string no = 3 [json_name = "no", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The bytes for no.
@@ -47,7 +47,7 @@ public interface TallyResultOrBuilder extends
    * <code>string no_with_veto = 4 [json_name = "noWithVeto", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"no_with_veto&#92;""];</code>
    * @return The noWithVeto.
    */
-  java.lang.String getNoWithVeto();
+  String getNoWithVeto();
   /**
    * <code>string no_with_veto = 4 [json_name = "noWithVeto", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"no_with_veto&#92;""];</code>
    * @return The bytes for noWithVeto.

@@ -16,17 +16,17 @@ public interface MsgEditValidatorOrBuilder extends
    * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
    * @return The description.
    */
-  com.cosmos.staking.v1beta1.Description getDescription();
+  Description getDescription();
   /**
    * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.DescriptionOrBuilder getDescriptionOrBuilder();
+  DescriptionOrBuilder getDescriptionOrBuilder();
 
   /**
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"address&#92;""];</code>
    * @return The validatorAddress.
    */
-  java.lang.String getValidatorAddress();
+  String getValidatorAddress();
   /**
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"address&#92;""];</code>
    * @return The bytes for validatorAddress.
@@ -45,7 +45,7 @@ public interface MsgEditValidatorOrBuilder extends
    * <code>string commission_rate = 3 [json_name = "commissionRate", (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"commission_rate&#92;""];</code>
    * @return The commissionRate.
    */
-  java.lang.String getCommissionRate();
+  String getCommissionRate();
   /**
    * <pre>
    * We pass a reference to the new commission rate and min self delegation as
@@ -64,7 +64,7 @@ public interface MsgEditValidatorOrBuilder extends
    * <code>string min_self_delegation = 4 [json_name = "minSelfDelegation", (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"min_self_delegation&#92;""];</code>
    * @return The minSelfDelegation.
    */
-  java.lang.String getMinSelfDelegation();
+  String getMinSelfDelegation();
   /**
    * <code>string min_self_delegation = 4 [json_name = "minSelfDelegation", (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"min_self_delegation&#92;""];</code>
    * @return The bytes for minSelfDelegation.

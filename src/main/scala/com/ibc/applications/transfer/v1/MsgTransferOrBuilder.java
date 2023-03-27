@@ -15,7 +15,7 @@ public interface MsgTransferOrBuilder extends
    * <code>string source_port = 1 [json_name = "sourcePort", (.gogoproto.moretags) = "yaml:&#92;"source_port&#92;""];</code>
    * @return The sourcePort.
    */
-  java.lang.String getSourcePort();
+  String getSourcePort();
   /**
    * <pre>
    * the port on which the packet will be sent
@@ -35,7 +35,7 @@ public interface MsgTransferOrBuilder extends
    * <code>string source_channel = 2 [json_name = "sourceChannel", (.gogoproto.moretags) = "yaml:&#92;"source_channel&#92;""];</code>
    * @return The sourceChannel.
    */
-  java.lang.String getSourceChannel();
+  String getSourceChannel();
   /**
    * <pre>
    * the channel by which the packet will be sent
@@ -82,7 +82,7 @@ public interface MsgTransferOrBuilder extends
    * <code>string sender = 4 [json_name = "sender"];</code>
    * @return The sender.
    */
-  java.lang.String getSender();
+  String getSender();
   /**
    * <pre>
    * the sender address
@@ -102,7 +102,7 @@ public interface MsgTransferOrBuilder extends
    * <code>string receiver = 5 [json_name = "receiver"];</code>
    * @return The receiver.
    */
-  java.lang.String getReceiver();
+  String getReceiver();
   /**
    * <pre>
    * the recipient address on the destination chain

@@ -24,69 +24,69 @@ private static final long serialVersionUID = 0L;
     owners_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new CapabilityOwners();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.capability.v1beta1.CapabilityProto.internal_static_cosmos_capability_v1beta1_CapabilityOwners_descriptor;
+    return CapabilityProto.internal_static_cosmos_capability_v1beta1_CapabilityOwners_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.capability.v1beta1.CapabilityProto.internal_static_cosmos_capability_v1beta1_CapabilityOwners_fieldAccessorTable
+    return CapabilityProto.internal_static_cosmos_capability_v1beta1_CapabilityOwners_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.capability.v1beta1.CapabilityOwners.class, com.cosmos.capability.v1beta1.CapabilityOwners.Builder.class);
+            CapabilityOwners.class, Builder.class);
   }
 
   public static final int OWNERS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.capability.v1beta1.Owner> owners_;
+  private java.util.List<Owner> owners_;
   /**
    * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.capability.v1beta1.Owner> getOwnersList() {
+  @Override
+  public java.util.List<Owner> getOwnersList() {
     return owners_;
   }
   /**
    * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.capability.v1beta1.OwnerOrBuilder> 
+  @Override
+  public java.util.List<? extends OwnerOrBuilder>
       getOwnersOrBuilderList() {
     return owners_;
   }
   /**
    * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getOwnersCount() {
     return owners_.size();
   }
   /**
    * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.capability.v1beta1.Owner getOwners(int index) {
+  @Override
+  public Owner getOwners(int index) {
     return owners_.get(index);
   }
   /**
    * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.capability.v1beta1.OwnerOrBuilder getOwnersOrBuilder(
+  @Override
+  public OwnerOrBuilder getOwnersOrBuilder(
       int index) {
     return owners_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -96,7 +96,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < owners_.size(); i++) {
@@ -105,7 +105,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -120,15 +120,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.capability.v1beta1.CapabilityOwners)) {
+    if (!(obj instanceof CapabilityOwners)) {
       return super.equals(obj);
     }
-    com.cosmos.capability.v1beta1.CapabilityOwners other = (com.cosmos.capability.v1beta1.CapabilityOwners) obj;
+    CapabilityOwners other = (CapabilityOwners) obj;
 
     if (!getOwnersList()
         .equals(other.getOwnersList())) return false;
@@ -136,7 +136,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -152,69 +152,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseFrom(
+  public static CapabilityOwners parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseFrom(
+  public static CapabilityOwners parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseFrom(
+  public static CapabilityOwners parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseFrom(
+  public static CapabilityOwners parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseFrom(byte[] data)
+  public static CapabilityOwners parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseFrom(
+  public static CapabilityOwners parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseFrom(java.io.InputStream input)
+  public static CapabilityOwners parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseFrom(
+  public static CapabilityOwners parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseDelimitedFrom(java.io.InputStream input)
+  public static CapabilityOwners parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseDelimitedFrom(
+  public static CapabilityOwners parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseFrom(
+  public static CapabilityOwners parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.capability.v1beta1.CapabilityOwners parseFrom(
+  public static CapabilityOwners parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -222,23 +222,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.capability.v1beta1.CapabilityOwners prototype) {
+  public static Builder newBuilder(CapabilityOwners prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -253,18 +253,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.capability.v1beta1.CapabilityOwners)
-      com.cosmos.capability.v1beta1.CapabilityOwnersOrBuilder {
+      CapabilityOwnersOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.capability.v1beta1.CapabilityProto.internal_static_cosmos_capability_v1beta1_CapabilityOwners_descriptor;
+      return CapabilityProto.internal_static_cosmos_capability_v1beta1_CapabilityOwners_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.capability.v1beta1.CapabilityProto.internal_static_cosmos_capability_v1beta1_CapabilityOwners_fieldAccessorTable
+      return CapabilityProto.internal_static_cosmos_capability_v1beta1_CapabilityOwners_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.capability.v1beta1.CapabilityOwners.class, com.cosmos.capability.v1beta1.CapabilityOwners.Builder.class);
+              CapabilityOwners.class, Builder.class);
     }
 
     // Construct using com.cosmos.capability.v1beta1.CapabilityOwners.newBuilder()
@@ -273,11 +273,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -291,36 +291,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.capability.v1beta1.CapabilityProto.internal_static_cosmos_capability_v1beta1_CapabilityOwners_descriptor;
+      return CapabilityProto.internal_static_cosmos_capability_v1beta1_CapabilityOwners_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.capability.v1beta1.CapabilityOwners getDefaultInstanceForType() {
-      return com.cosmos.capability.v1beta1.CapabilityOwners.getDefaultInstance();
+    @Override
+    public CapabilityOwners getDefaultInstanceForType() {
+      return CapabilityOwners.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.capability.v1beta1.CapabilityOwners build() {
-      com.cosmos.capability.v1beta1.CapabilityOwners result = buildPartial();
+    @Override
+    public CapabilityOwners build() {
+      CapabilityOwners result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.capability.v1beta1.CapabilityOwners buildPartial() {
-      com.cosmos.capability.v1beta1.CapabilityOwners result = new com.cosmos.capability.v1beta1.CapabilityOwners(this);
+    @Override
+    public CapabilityOwners buildPartial() {
+      CapabilityOwners result = new CapabilityOwners(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.capability.v1beta1.CapabilityOwners result) {
+    private void buildPartialRepeatedFields(CapabilityOwners result) {
       if (ownersBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           owners_ = java.util.Collections.unmodifiableList(owners_);
@@ -332,54 +332,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.capability.v1beta1.CapabilityOwners result) {
+    private void buildPartial0(CapabilityOwners result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.capability.v1beta1.CapabilityOwners) {
-        return mergeFrom((com.cosmos.capability.v1beta1.CapabilityOwners)other);
+      if (other instanceof CapabilityOwners) {
+        return mergeFrom((CapabilityOwners)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.capability.v1beta1.CapabilityOwners other) {
-      if (other == com.cosmos.capability.v1beta1.CapabilityOwners.getDefaultInstance()) return this;
+    public Builder mergeFrom(CapabilityOwners other) {
+      if (other == CapabilityOwners.getDefaultInstance()) return this;
       if (ownersBuilder_ == null) {
         if (!other.owners_.isEmpty()) {
           if (owners_.isEmpty()) {
@@ -411,18 +411,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -433,9 +433,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.cosmos.capability.v1beta1.Owner m =
+              Owner m =
                   input.readMessage(
-                      com.cosmos.capability.v1beta1.Owner.parser(),
+                      Owner.parser(),
                       extensionRegistry);
               if (ownersBuilder_ == null) {
                 ensureOwnersIsMutable();
@@ -462,22 +462,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.cosmos.capability.v1beta1.Owner> owners_ =
+    private java.util.List<Owner> owners_ =
       java.util.Collections.emptyList();
     private void ensureOwnersIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        owners_ = new java.util.ArrayList<com.cosmos.capability.v1beta1.Owner>(owners_);
+        owners_ = new java.util.ArrayList<Owner>(owners_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.capability.v1beta1.Owner, com.cosmos.capability.v1beta1.Owner.Builder, com.cosmos.capability.v1beta1.OwnerOrBuilder> ownersBuilder_;
+        Owner, Owner.Builder, OwnerOrBuilder> ownersBuilder_;
 
     /**
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.capability.v1beta1.Owner> getOwnersList() {
+    public java.util.List<Owner> getOwnersList() {
       if (ownersBuilder_ == null) {
         return java.util.Collections.unmodifiableList(owners_);
       } else {
@@ -497,7 +497,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.capability.v1beta1.Owner getOwners(int index) {
+    public Owner getOwners(int index) {
       if (ownersBuilder_ == null) {
         return owners_.get(index);
       } else {
@@ -508,7 +508,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder setOwners(
-        int index, com.cosmos.capability.v1beta1.Owner value) {
+        int index, Owner value) {
       if (ownersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -525,7 +525,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder setOwners(
-        int index, com.cosmos.capability.v1beta1.Owner.Builder builderForValue) {
+        int index, Owner.Builder builderForValue) {
       if (ownersBuilder_ == null) {
         ensureOwnersIsMutable();
         owners_.set(index, builderForValue.build());
@@ -538,7 +538,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addOwners(com.cosmos.capability.v1beta1.Owner value) {
+    public Builder addOwners(Owner value) {
       if (ownersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -555,7 +555,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOwners(
-        int index, com.cosmos.capability.v1beta1.Owner value) {
+        int index, Owner value) {
       if (ownersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -572,7 +572,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOwners(
-        com.cosmos.capability.v1beta1.Owner.Builder builderForValue) {
+        Owner.Builder builderForValue) {
       if (ownersBuilder_ == null) {
         ensureOwnersIsMutable();
         owners_.add(builderForValue.build());
@@ -586,7 +586,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOwners(
-        int index, com.cosmos.capability.v1beta1.Owner.Builder builderForValue) {
+        int index, Owner.Builder builderForValue) {
       if (ownersBuilder_ == null) {
         ensureOwnersIsMutable();
         owners_.add(index, builderForValue.build());
@@ -600,7 +600,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllOwners(
-        java.lang.Iterable<? extends com.cosmos.capability.v1beta1.Owner> values) {
+        Iterable<? extends Owner> values) {
       if (ownersBuilder_ == null) {
         ensureOwnersIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -640,14 +640,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.capability.v1beta1.Owner.Builder getOwnersBuilder(
+    public Owner.Builder getOwnersBuilder(
         int index) {
       return getOwnersFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.capability.v1beta1.OwnerOrBuilder getOwnersOrBuilder(
+    public OwnerOrBuilder getOwnersOrBuilder(
         int index) {
       if (ownersBuilder_ == null) {
         return owners_.get(index);  } else {
@@ -657,7 +657,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.cosmos.capability.v1beta1.OwnerOrBuilder> 
+    public java.util.List<? extends OwnerOrBuilder>
          getOwnersOrBuilderList() {
       if (ownersBuilder_ != null) {
         return ownersBuilder_.getMessageOrBuilderList();
@@ -668,31 +668,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.capability.v1beta1.Owner.Builder addOwnersBuilder() {
+    public Owner.Builder addOwnersBuilder() {
       return getOwnersFieldBuilder().addBuilder(
-          com.cosmos.capability.v1beta1.Owner.getDefaultInstance());
+          Owner.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.capability.v1beta1.Owner.Builder addOwnersBuilder(
+    public Owner.Builder addOwnersBuilder(
         int index) {
       return getOwnersFieldBuilder().addBuilder(
-          index, com.cosmos.capability.v1beta1.Owner.getDefaultInstance());
+          index, Owner.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.capability.v1beta1.Owner owners = 1 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.capability.v1beta1.Owner.Builder> 
+    public java.util.List<Owner.Builder>
          getOwnersBuilderList() {
       return getOwnersFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.capability.v1beta1.Owner, com.cosmos.capability.v1beta1.Owner.Builder, com.cosmos.capability.v1beta1.OwnerOrBuilder> 
+        Owner, Owner.Builder, OwnerOrBuilder>
         getOwnersFieldBuilder() {
       if (ownersBuilder_ == null) {
         ownersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.capability.v1beta1.Owner, com.cosmos.capability.v1beta1.Owner.Builder, com.cosmos.capability.v1beta1.OwnerOrBuilder>(
+            Owner, Owner.Builder, OwnerOrBuilder>(
                 owners_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -701,13 +701,13 @@ private static final long serialVersionUID = 0L;
       }
       return ownersBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -718,18 +718,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.capability.v1beta1.CapabilityOwners)
-  private static final com.cosmos.capability.v1beta1.CapabilityOwners DEFAULT_INSTANCE;
+  private static final CapabilityOwners DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.capability.v1beta1.CapabilityOwners();
+    DEFAULT_INSTANCE = new CapabilityOwners();
   }
 
-  public static com.cosmos.capability.v1beta1.CapabilityOwners getDefaultInstance() {
+  public static CapabilityOwners getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<CapabilityOwners>
       PARSER = new com.google.protobuf.AbstractParser<CapabilityOwners>() {
-    @java.lang.Override
+    @Override
     public CapabilityOwners parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -753,13 +753,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<CapabilityOwners> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.capability.v1beta1.CapabilityOwners getDefaultInstanceForType() {
+  @Override
+  public CapabilityOwners getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

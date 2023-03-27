@@ -27,7 +27,7 @@ public final class StringIDV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n!schema/ids/base/stringID.v1.proto\022\003ids" +
       "\032\024gogoproto/gogo.proto\".\n\010StringID\022\034\n\ni_" +
       "d_string\030\001 \001(\tR\010iDString:\004\210\240\037\000Bv\n\007com.id" +
@@ -45,7 +45,7 @@ public final class StringIDV1Proto {
     internal_static_ids_StringID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ids_StringID_descriptor,
-        new java.lang.String[] { "IDString", });
+        new String[] { "IDString", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

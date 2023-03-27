@@ -16,11 +16,11 @@ public interface SplitIDOrBuilder extends
    * <code>.ids.IdentityID owner_i_d = 1 [json_name = "ownerID"];</code>
    * @return The ownerID.
    */
-  com.ids.IdentityID getOwnerID();
+  IdentityID getOwnerID();
   /**
    * <code>.ids.IdentityID owner_i_d = 1 [json_name = "ownerID"];</code>
    */
-  com.ids.IdentityIDOrBuilder getOwnerIDOrBuilder();
+  IdentityIDOrBuilder getOwnerIDOrBuilder();
 
   /**
    * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
@@ -31,9 +31,9 @@ public interface SplitIDOrBuilder extends
    * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
    * @return The ownableID.
    */
-  com.ids.AnyOwnableID getOwnableID();
+  AnyOwnableID getOwnableID();
   /**
    * <code>.ids.AnyOwnableID ownable_i_d = 2 [json_name = "ownableID"];</code>
    */
-  com.ids.AnyOwnableIDOrBuilder getOwnableIDOrBuilder();
+  AnyOwnableIDOrBuilder getOwnableIDOrBuilder();
 }

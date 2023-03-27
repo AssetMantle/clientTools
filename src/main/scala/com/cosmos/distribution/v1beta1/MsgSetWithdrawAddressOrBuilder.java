@@ -11,7 +11,7 @@ public interface MsgSetWithdrawAddressOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  java.lang.String getDelegatorAddress();
+  String getDelegatorAddress();
   /**
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The bytes for delegatorAddress.
@@ -23,7 +23,7 @@ public interface MsgSetWithdrawAddressOrBuilder extends
    * <code>string withdraw_address = 2 [json_name = "withdrawAddress", (.gogoproto.moretags) = "yaml:&#92;"withdraw_address&#92;""];</code>
    * @return The withdrawAddress.
    */
-  java.lang.String getWithdrawAddress();
+  String getWithdrawAddress();
   /**
    * <code>string withdraw_address = 2 [json_name = "withdrawAddress", (.gogoproto.moretags) = "yaml:&#92;"withdraw_address&#92;""];</code>
    * @return The bytes for withdrawAddress.

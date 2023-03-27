@@ -27,7 +27,7 @@ public final class IdListV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n!schema/lists/base/idList.v1.proto\022\005lis" +
       "ts\032\036schema/ids/base/anyID.v1.proto\032\024gogo" +
       "proto/gogo.proto\"4\n\006IDList\022$\n\010i_d_list\030\001" +
@@ -48,7 +48,7 @@ public final class IdListV1Proto {
     internal_static_lists_IDList_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_lists_IDList_descriptor,
-        new java.lang.String[] { "IDList", });
+        new String[] { "IDList", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

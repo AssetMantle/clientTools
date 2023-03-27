@@ -11,7 +11,7 @@ public interface MsgChannelOpenTryOrBuilder extends
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The portId.
    */
-  java.lang.String getPortId();
+  String getPortId();
   /**
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The bytes for portId.
@@ -28,7 +28,7 @@ public interface MsgChannelOpenTryOrBuilder extends
    * <code>string previous_channel_id = 2 [json_name = "previousChannelId", (.gogoproto.moretags) = "yaml:&#92;"previous_channel_id&#92;""];</code>
    * @return The previousChannelId.
    */
-  java.lang.String getPreviousChannelId();
+  String getPreviousChannelId();
   /**
    * <pre>
    * in the case of crossing hello's, when both chains call OpenInit, we need
@@ -58,7 +58,7 @@ public interface MsgChannelOpenTryOrBuilder extends
    * <code>.ibc.core.channel.v1.Channel channel = 3 [json_name = "channel", (.gogoproto.nullable) = false];</code>
    * @return The channel.
    */
-  com.ibc.core.channel.v1.Channel getChannel();
+  Channel getChannel();
   /**
    * <pre>
    * NOTE: the version field within the channel has been deprecated. Its value will be ignored by core IBC.
@@ -66,13 +66,13 @@ public interface MsgChannelOpenTryOrBuilder extends
    *
    * <code>.ibc.core.channel.v1.Channel channel = 3 [json_name = "channel", (.gogoproto.nullable) = false];</code>
    */
-  com.ibc.core.channel.v1.ChannelOrBuilder getChannelOrBuilder();
+  ChannelOrBuilder getChannelOrBuilder();
 
   /**
    * <code>string counterparty_version = 4 [json_name = "counterpartyVersion", (.gogoproto.moretags) = "yaml:&#92;"counterparty_version&#92;""];</code>
    * @return The counterpartyVersion.
    */
-  java.lang.String getCounterpartyVersion();
+  String getCounterpartyVersion();
   /**
    * <code>string counterparty_version = 4 [json_name = "counterpartyVersion", (.gogoproto.moretags) = "yaml:&#92;"counterparty_version&#92;""];</code>
    * @return The bytes for counterpartyVersion.
@@ -105,7 +105,7 @@ public interface MsgChannelOpenTryOrBuilder extends
    * <code>string signer = 7 [json_name = "signer"];</code>
    * @return The signer.
    */
-  java.lang.String getSigner();
+  String getSigner();
   /**
    * <code>string signer = 7 [json_name = "signer"];</code>
    * @return The bytes for signer.

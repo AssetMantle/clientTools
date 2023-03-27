@@ -25,12 +25,12 @@ public interface HistoricalInfoOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.Validator valset = 2 [json_name = "valset", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.staking.v1beta1.Validator> 
+  java.util.List<Validator>
       getValsetList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.Validator valset = 2 [json_name = "valset", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.Validator getValset(int index);
+  Validator getValset(int index);
   /**
    * <code>repeated .cosmos.staking.v1beta1.Validator valset = 2 [json_name = "valset", (.gogoproto.nullable) = false];</code>
    */
@@ -38,11 +38,11 @@ public interface HistoricalInfoOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.Validator valset = 2 [json_name = "valset", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.staking.v1beta1.ValidatorOrBuilder> 
+  java.util.List<? extends ValidatorOrBuilder>
       getValsetOrBuilderList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.Validator valset = 2 [json_name = "valset", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.ValidatorOrBuilder getValsetOrBuilder(
+  ValidatorOrBuilder getValsetOrBuilder(
       int index);
 }

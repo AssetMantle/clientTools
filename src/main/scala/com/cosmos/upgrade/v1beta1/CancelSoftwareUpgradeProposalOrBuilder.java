@@ -11,7 +11,7 @@ public interface CancelSoftwareUpgradeProposalOrBuilder extends
    * <code>string title = 1 [json_name = "title"];</code>
    * @return The title.
    */
-  java.lang.String getTitle();
+  String getTitle();
   /**
    * <code>string title = 1 [json_name = "title"];</code>
    * @return The bytes for title.
@@ -23,7 +23,7 @@ public interface CancelSoftwareUpgradeProposalOrBuilder extends
    * <code>string description = 2 [json_name = "description"];</code>
    * @return The description.
    */
-  java.lang.String getDescription();
+  String getDescription();
   /**
    * <code>string description = 2 [json_name = "description"];</code>
    * @return The bytes for description.

@@ -23,33 +23,33 @@ private static final long serialVersionUID = 0L;
   private SimulationResponse() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new SimulationResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_SimulationResponse_descriptor;
+    return AbciProto.internal_static_cosmos_base_abci_v1beta1_SimulationResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_SimulationResponse_fieldAccessorTable
+    return AbciProto.internal_static_cosmos_base_abci_v1beta1_SimulationResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.base.abci.v1beta1.SimulationResponse.class, com.cosmos.base.abci.v1beta1.SimulationResponse.Builder.class);
+            SimulationResponse.class, Builder.class);
   }
 
   public static final int GAS_INFO_FIELD_NUMBER = 1;
-  private com.cosmos.base.abci.v1beta1.GasInfo gasInfo_;
+  private GasInfo gasInfo_;
   /**
    * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
    * @return Whether the gasInfo field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasGasInfo() {
     return gasInfo_ != null;
   }
@@ -57,25 +57,25 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
    * @return The gasInfo.
    */
-  @java.lang.Override
-  public com.cosmos.base.abci.v1beta1.GasInfo getGasInfo() {
-    return gasInfo_ == null ? com.cosmos.base.abci.v1beta1.GasInfo.getDefaultInstance() : gasInfo_;
+  @Override
+  public GasInfo getGasInfo() {
+    return gasInfo_ == null ? GasInfo.getDefaultInstance() : gasInfo_;
   }
   /**
    * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
    */
-  @java.lang.Override
-  public com.cosmos.base.abci.v1beta1.GasInfoOrBuilder getGasInfoOrBuilder() {
-    return gasInfo_ == null ? com.cosmos.base.abci.v1beta1.GasInfo.getDefaultInstance() : gasInfo_;
+  @Override
+  public GasInfoOrBuilder getGasInfoOrBuilder() {
+    return gasInfo_ == null ? GasInfo.getDefaultInstance() : gasInfo_;
   }
 
   public static final int RESULT_FIELD_NUMBER = 2;
-  private com.cosmos.base.abci.v1beta1.Result result_;
+  private Result result_;
   /**
    * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
    * @return Whether the result field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasResult() {
     return result_ != null;
   }
@@ -83,20 +83,20 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
    * @return The result.
    */
-  @java.lang.Override
-  public com.cosmos.base.abci.v1beta1.Result getResult() {
-    return result_ == null ? com.cosmos.base.abci.v1beta1.Result.getDefaultInstance() : result_;
+  @Override
+  public Result getResult() {
+    return result_ == null ? Result.getDefaultInstance() : result_;
   }
   /**
    * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
    */
-  @java.lang.Override
-  public com.cosmos.base.abci.v1beta1.ResultOrBuilder getResultOrBuilder() {
-    return result_ == null ? com.cosmos.base.abci.v1beta1.Result.getDefaultInstance() : result_;
+  @Override
+  public ResultOrBuilder getResultOrBuilder() {
+    return result_ == null ? Result.getDefaultInstance() : result_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -106,7 +106,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (gasInfo_ != null) {
@@ -118,7 +118,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -137,15 +137,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.base.abci.v1beta1.SimulationResponse)) {
+    if (!(obj instanceof SimulationResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.base.abci.v1beta1.SimulationResponse other = (com.cosmos.base.abci.v1beta1.SimulationResponse) obj;
+    SimulationResponse other = (SimulationResponse) obj;
 
     if (hasGasInfo() != other.hasGasInfo()) return false;
     if (hasGasInfo()) {
@@ -161,7 +161,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -181,69 +181,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseFrom(
+  public static SimulationResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseFrom(
+  public static SimulationResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseFrom(
+  public static SimulationResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseFrom(
+  public static SimulationResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseFrom(byte[] data)
+  public static SimulationResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseFrom(
+  public static SimulationResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseFrom(java.io.InputStream input)
+  public static SimulationResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseFrom(
+  public static SimulationResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseDelimitedFrom(java.io.InputStream input)
+  public static SimulationResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseDelimitedFrom(
+  public static SimulationResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseFrom(
+  public static SimulationResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse parseFrom(
+  public static SimulationResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -251,23 +251,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.base.abci.v1beta1.SimulationResponse prototype) {
+  public static Builder newBuilder(SimulationResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -282,18 +282,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.abci.v1beta1.SimulationResponse)
-      com.cosmos.base.abci.v1beta1.SimulationResponseOrBuilder {
+      SimulationResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_SimulationResponse_descriptor;
+      return AbciProto.internal_static_cosmos_base_abci_v1beta1_SimulationResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_SimulationResponse_fieldAccessorTable
+      return AbciProto.internal_static_cosmos_base_abci_v1beta1_SimulationResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.base.abci.v1beta1.SimulationResponse.class, com.cosmos.base.abci.v1beta1.SimulationResponse.Builder.class);
+              SimulationResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.base.abci.v1beta1.SimulationResponse.newBuilder()
@@ -302,11 +302,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -323,35 +323,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_SimulationResponse_descriptor;
+      return AbciProto.internal_static_cosmos_base_abci_v1beta1_SimulationResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.abci.v1beta1.SimulationResponse getDefaultInstanceForType() {
-      return com.cosmos.base.abci.v1beta1.SimulationResponse.getDefaultInstance();
+    @Override
+    public SimulationResponse getDefaultInstanceForType() {
+      return SimulationResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.base.abci.v1beta1.SimulationResponse build() {
-      com.cosmos.base.abci.v1beta1.SimulationResponse result = buildPartial();
+    @Override
+    public SimulationResponse build() {
+      SimulationResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.base.abci.v1beta1.SimulationResponse buildPartial() {
-      com.cosmos.base.abci.v1beta1.SimulationResponse result = new com.cosmos.base.abci.v1beta1.SimulationResponse(this);
+    @Override
+    public SimulationResponse buildPartial() {
+      SimulationResponse result = new SimulationResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.base.abci.v1beta1.SimulationResponse result) {
+    private void buildPartial0(SimulationResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.gasInfo_ = gasInfoBuilder_ == null
@@ -365,50 +365,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.base.abci.v1beta1.SimulationResponse) {
-        return mergeFrom((com.cosmos.base.abci.v1beta1.SimulationResponse)other);
+      if (other instanceof SimulationResponse) {
+        return mergeFrom((SimulationResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.base.abci.v1beta1.SimulationResponse other) {
-      if (other == com.cosmos.base.abci.v1beta1.SimulationResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(SimulationResponse other) {
+      if (other == SimulationResponse.getDefaultInstance()) return this;
       if (other.hasGasInfo()) {
         mergeGasInfo(other.getGasInfo());
       }
@@ -420,18 +420,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -472,9 +472,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.cosmos.base.abci.v1beta1.GasInfo gasInfo_;
+    private GasInfo gasInfo_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.base.abci.v1beta1.GasInfo, com.cosmos.base.abci.v1beta1.GasInfo.Builder, com.cosmos.base.abci.v1beta1.GasInfoOrBuilder> gasInfoBuilder_;
+        GasInfo, GasInfo.Builder, GasInfoOrBuilder> gasInfoBuilder_;
     /**
      * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      * @return Whether the gasInfo field is set.
@@ -486,9 +486,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      * @return The gasInfo.
      */
-    public com.cosmos.base.abci.v1beta1.GasInfo getGasInfo() {
+    public GasInfo getGasInfo() {
       if (gasInfoBuilder_ == null) {
-        return gasInfo_ == null ? com.cosmos.base.abci.v1beta1.GasInfo.getDefaultInstance() : gasInfo_;
+        return gasInfo_ == null ? GasInfo.getDefaultInstance() : gasInfo_;
       } else {
         return gasInfoBuilder_.getMessage();
       }
@@ -496,7 +496,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
-    public Builder setGasInfo(com.cosmos.base.abci.v1beta1.GasInfo value) {
+    public Builder setGasInfo(GasInfo value) {
       if (gasInfoBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -513,7 +513,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
     public Builder setGasInfo(
-        com.cosmos.base.abci.v1beta1.GasInfo.Builder builderForValue) {
+        GasInfo.Builder builderForValue) {
       if (gasInfoBuilder_ == null) {
         gasInfo_ = builderForValue.build();
       } else {
@@ -526,11 +526,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
-    public Builder mergeGasInfo(com.cosmos.base.abci.v1beta1.GasInfo value) {
+    public Builder mergeGasInfo(GasInfo value) {
       if (gasInfoBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           gasInfo_ != null &&
-          gasInfo_ != com.cosmos.base.abci.v1beta1.GasInfo.getDefaultInstance()) {
+          gasInfo_ != GasInfo.getDefaultInstance()) {
           getGasInfoBuilder().mergeFrom(value);
         } else {
           gasInfo_ = value;
@@ -558,7 +558,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
-    public com.cosmos.base.abci.v1beta1.GasInfo.Builder getGasInfoBuilder() {
+    public GasInfo.Builder getGasInfoBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getGasInfoFieldBuilder().getBuilder();
@@ -566,23 +566,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
-    public com.cosmos.base.abci.v1beta1.GasInfoOrBuilder getGasInfoOrBuilder() {
+    public GasInfoOrBuilder getGasInfoOrBuilder() {
       if (gasInfoBuilder_ != null) {
         return gasInfoBuilder_.getMessageOrBuilder();
       } else {
         return gasInfo_ == null ?
-            com.cosmos.base.abci.v1beta1.GasInfo.getDefaultInstance() : gasInfo_;
+            GasInfo.getDefaultInstance() : gasInfo_;
       }
     }
     /**
      * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.base.abci.v1beta1.GasInfo, com.cosmos.base.abci.v1beta1.GasInfo.Builder, com.cosmos.base.abci.v1beta1.GasInfoOrBuilder> 
+        GasInfo, GasInfo.Builder, GasInfoOrBuilder>
         getGasInfoFieldBuilder() {
       if (gasInfoBuilder_ == null) {
         gasInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.base.abci.v1beta1.GasInfo, com.cosmos.base.abci.v1beta1.GasInfo.Builder, com.cosmos.base.abci.v1beta1.GasInfoOrBuilder>(
+            GasInfo, GasInfo.Builder, GasInfoOrBuilder>(
                 getGasInfo(),
                 getParentForChildren(),
                 isClean());
@@ -591,9 +591,9 @@ private static final long serialVersionUID = 0L;
       return gasInfoBuilder_;
     }
 
-    private com.cosmos.base.abci.v1beta1.Result result_;
+    private Result result_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.base.abci.v1beta1.Result, com.cosmos.base.abci.v1beta1.Result.Builder, com.cosmos.base.abci.v1beta1.ResultOrBuilder> resultBuilder_;
+        Result, Result.Builder, ResultOrBuilder> resultBuilder_;
     /**
      * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
      * @return Whether the result field is set.
@@ -605,9 +605,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
      * @return The result.
      */
-    public com.cosmos.base.abci.v1beta1.Result getResult() {
+    public Result getResult() {
       if (resultBuilder_ == null) {
-        return result_ == null ? com.cosmos.base.abci.v1beta1.Result.getDefaultInstance() : result_;
+        return result_ == null ? Result.getDefaultInstance() : result_;
       } else {
         return resultBuilder_.getMessage();
       }
@@ -615,7 +615,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
      */
-    public Builder setResult(com.cosmos.base.abci.v1beta1.Result value) {
+    public Builder setResult(Result value) {
       if (resultBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -632,7 +632,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
      */
     public Builder setResult(
-        com.cosmos.base.abci.v1beta1.Result.Builder builderForValue) {
+        Result.Builder builderForValue) {
       if (resultBuilder_ == null) {
         result_ = builderForValue.build();
       } else {
@@ -645,11 +645,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
      */
-    public Builder mergeResult(com.cosmos.base.abci.v1beta1.Result value) {
+    public Builder mergeResult(Result value) {
       if (resultBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           result_ != null &&
-          result_ != com.cosmos.base.abci.v1beta1.Result.getDefaultInstance()) {
+          result_ != Result.getDefaultInstance()) {
           getResultBuilder().mergeFrom(value);
         } else {
           result_ = value;
@@ -677,7 +677,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
      */
-    public com.cosmos.base.abci.v1beta1.Result.Builder getResultBuilder() {
+    public Result.Builder getResultBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getResultFieldBuilder().getBuilder();
@@ -685,23 +685,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
      */
-    public com.cosmos.base.abci.v1beta1.ResultOrBuilder getResultOrBuilder() {
+    public ResultOrBuilder getResultOrBuilder() {
       if (resultBuilder_ != null) {
         return resultBuilder_.getMessageOrBuilder();
       } else {
         return result_ == null ?
-            com.cosmos.base.abci.v1beta1.Result.getDefaultInstance() : result_;
+            Result.getDefaultInstance() : result_;
       }
     }
     /**
      * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.base.abci.v1beta1.Result, com.cosmos.base.abci.v1beta1.Result.Builder, com.cosmos.base.abci.v1beta1.ResultOrBuilder> 
+        Result, Result.Builder, ResultOrBuilder>
         getResultFieldBuilder() {
       if (resultBuilder_ == null) {
         resultBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.base.abci.v1beta1.Result, com.cosmos.base.abci.v1beta1.Result.Builder, com.cosmos.base.abci.v1beta1.ResultOrBuilder>(
+            Result, Result.Builder, ResultOrBuilder>(
                 getResult(),
                 getParentForChildren(),
                 isClean());
@@ -709,13 +709,13 @@ private static final long serialVersionUID = 0L;
       }
       return resultBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -726,18 +726,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.abci.v1beta1.SimulationResponse)
-  private static final com.cosmos.base.abci.v1beta1.SimulationResponse DEFAULT_INSTANCE;
+  private static final SimulationResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.base.abci.v1beta1.SimulationResponse();
+    DEFAULT_INSTANCE = new SimulationResponse();
   }
 
-  public static com.cosmos.base.abci.v1beta1.SimulationResponse getDefaultInstance() {
+  public static SimulationResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<SimulationResponse>
       PARSER = new com.google.protobuf.AbstractParser<SimulationResponse>() {
-    @java.lang.Override
+    @Override
     public SimulationResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -761,13 +761,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<SimulationResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.base.abci.v1beta1.SimulationResponse getDefaultInstanceForType() {
+  @Override
+  public SimulationResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

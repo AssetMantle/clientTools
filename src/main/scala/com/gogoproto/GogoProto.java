@@ -7,83 +7,83 @@ public final class GogoProto {
   private GogoProto() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
-    registry.add(com.gogoproto.GogoProto.goprotoEnumPrefix);
-    registry.add(com.gogoproto.GogoProto.goprotoEnumStringer);
-    registry.add(com.gogoproto.GogoProto.enumStringer);
-    registry.add(com.gogoproto.GogoProto.enumCustomname);
-    registry.add(com.gogoproto.GogoProto.enumdecl);
-    registry.add(com.gogoproto.GogoProto.enumvalueCustomname);
-    registry.add(com.gogoproto.GogoProto.goprotoGettersAll);
-    registry.add(com.gogoproto.GogoProto.goprotoEnumPrefixAll);
-    registry.add(com.gogoproto.GogoProto.goprotoStringerAll);
-    registry.add(com.gogoproto.GogoProto.verboseEqualAll);
-    registry.add(com.gogoproto.GogoProto.faceAll);
-    registry.add(com.gogoproto.GogoProto.gostringAll);
-    registry.add(com.gogoproto.GogoProto.populateAll);
-    registry.add(com.gogoproto.GogoProto.stringerAll);
-    registry.add(com.gogoproto.GogoProto.onlyoneAll);
-    registry.add(com.gogoproto.GogoProto.equalAll);
-    registry.add(com.gogoproto.GogoProto.descriptionAll);
-    registry.add(com.gogoproto.GogoProto.testgenAll);
-    registry.add(com.gogoproto.GogoProto.benchgenAll);
-    registry.add(com.gogoproto.GogoProto.marshalerAll);
-    registry.add(com.gogoproto.GogoProto.unmarshalerAll);
-    registry.add(com.gogoproto.GogoProto.stableMarshalerAll);
-    registry.add(com.gogoproto.GogoProto.sizerAll);
-    registry.add(com.gogoproto.GogoProto.goprotoEnumStringerAll);
-    registry.add(com.gogoproto.GogoProto.enumStringerAll);
-    registry.add(com.gogoproto.GogoProto.unsafeMarshalerAll);
-    registry.add(com.gogoproto.GogoProto.unsafeUnmarshalerAll);
-    registry.add(com.gogoproto.GogoProto.goprotoExtensionsMapAll);
-    registry.add(com.gogoproto.GogoProto.goprotoUnrecognizedAll);
-    registry.add(com.gogoproto.GogoProto.gogoprotoImport);
-    registry.add(com.gogoproto.GogoProto.protosizerAll);
-    registry.add(com.gogoproto.GogoProto.compareAll);
-    registry.add(com.gogoproto.GogoProto.typedeclAll);
-    registry.add(com.gogoproto.GogoProto.enumdeclAll);
-    registry.add(com.gogoproto.GogoProto.goprotoRegistration);
-    registry.add(com.gogoproto.GogoProto.messagenameAll);
-    registry.add(com.gogoproto.GogoProto.goprotoSizecacheAll);
-    registry.add(com.gogoproto.GogoProto.goprotoUnkeyedAll);
-    registry.add(com.gogoproto.GogoProto.goprotoGetters);
-    registry.add(com.gogoproto.GogoProto.goprotoStringer);
-    registry.add(com.gogoproto.GogoProto.verboseEqual);
-    registry.add(com.gogoproto.GogoProto.face);
-    registry.add(com.gogoproto.GogoProto.gostring);
-    registry.add(com.gogoproto.GogoProto.populate);
-    registry.add(com.gogoproto.GogoProto.stringer);
-    registry.add(com.gogoproto.GogoProto.onlyone);
-    registry.add(com.gogoproto.GogoProto.equal);
-    registry.add(com.gogoproto.GogoProto.description);
-    registry.add(com.gogoproto.GogoProto.testgen);
-    registry.add(com.gogoproto.GogoProto.benchgen);
-    registry.add(com.gogoproto.GogoProto.marshaler);
-    registry.add(com.gogoproto.GogoProto.unmarshaler);
-    registry.add(com.gogoproto.GogoProto.stableMarshaler);
-    registry.add(com.gogoproto.GogoProto.sizer);
-    registry.add(com.gogoproto.GogoProto.unsafeMarshaler);
-    registry.add(com.gogoproto.GogoProto.unsafeUnmarshaler);
-    registry.add(com.gogoproto.GogoProto.goprotoExtensionsMap);
-    registry.add(com.gogoproto.GogoProto.goprotoUnrecognized);
-    registry.add(com.gogoproto.GogoProto.protosizer);
-    registry.add(com.gogoproto.GogoProto.compare);
-    registry.add(com.gogoproto.GogoProto.typedecl);
-    registry.add(com.gogoproto.GogoProto.messagename);
-    registry.add(com.gogoproto.GogoProto.goprotoSizecache);
-    registry.add(com.gogoproto.GogoProto.goprotoUnkeyed);
-    registry.add(com.gogoproto.GogoProto.nullable);
-    registry.add(com.gogoproto.GogoProto.embed);
-    registry.add(com.gogoproto.GogoProto.customtype);
-    registry.add(com.gogoproto.GogoProto.customname);
-    registry.add(com.gogoproto.GogoProto.jsontag);
-    registry.add(com.gogoproto.GogoProto.moretags);
-    registry.add(com.gogoproto.GogoProto.casttype);
-    registry.add(com.gogoproto.GogoProto.castkey);
-    registry.add(com.gogoproto.GogoProto.castvalue);
-    registry.add(com.gogoproto.GogoProto.stdtime);
-    registry.add(com.gogoproto.GogoProto.stdduration);
-    registry.add(com.gogoproto.GogoProto.wktpointer);
-    registry.add(com.gogoproto.GogoProto.castrepeated);
+    registry.add(GogoProto.goprotoEnumPrefix);
+    registry.add(GogoProto.goprotoEnumStringer);
+    registry.add(GogoProto.enumStringer);
+    registry.add(GogoProto.enumCustomname);
+    registry.add(GogoProto.enumdecl);
+    registry.add(GogoProto.enumvalueCustomname);
+    registry.add(GogoProto.goprotoGettersAll);
+    registry.add(GogoProto.goprotoEnumPrefixAll);
+    registry.add(GogoProto.goprotoStringerAll);
+    registry.add(GogoProto.verboseEqualAll);
+    registry.add(GogoProto.faceAll);
+    registry.add(GogoProto.gostringAll);
+    registry.add(GogoProto.populateAll);
+    registry.add(GogoProto.stringerAll);
+    registry.add(GogoProto.onlyoneAll);
+    registry.add(GogoProto.equalAll);
+    registry.add(GogoProto.descriptionAll);
+    registry.add(GogoProto.testgenAll);
+    registry.add(GogoProto.benchgenAll);
+    registry.add(GogoProto.marshalerAll);
+    registry.add(GogoProto.unmarshalerAll);
+    registry.add(GogoProto.stableMarshalerAll);
+    registry.add(GogoProto.sizerAll);
+    registry.add(GogoProto.goprotoEnumStringerAll);
+    registry.add(GogoProto.enumStringerAll);
+    registry.add(GogoProto.unsafeMarshalerAll);
+    registry.add(GogoProto.unsafeUnmarshalerAll);
+    registry.add(GogoProto.goprotoExtensionsMapAll);
+    registry.add(GogoProto.goprotoUnrecognizedAll);
+    registry.add(GogoProto.gogoprotoImport);
+    registry.add(GogoProto.protosizerAll);
+    registry.add(GogoProto.compareAll);
+    registry.add(GogoProto.typedeclAll);
+    registry.add(GogoProto.enumdeclAll);
+    registry.add(GogoProto.goprotoRegistration);
+    registry.add(GogoProto.messagenameAll);
+    registry.add(GogoProto.goprotoSizecacheAll);
+    registry.add(GogoProto.goprotoUnkeyedAll);
+    registry.add(GogoProto.goprotoGetters);
+    registry.add(GogoProto.goprotoStringer);
+    registry.add(GogoProto.verboseEqual);
+    registry.add(GogoProto.face);
+    registry.add(GogoProto.gostring);
+    registry.add(GogoProto.populate);
+    registry.add(GogoProto.stringer);
+    registry.add(GogoProto.onlyone);
+    registry.add(GogoProto.equal);
+    registry.add(GogoProto.description);
+    registry.add(GogoProto.testgen);
+    registry.add(GogoProto.benchgen);
+    registry.add(GogoProto.marshaler);
+    registry.add(GogoProto.unmarshaler);
+    registry.add(GogoProto.stableMarshaler);
+    registry.add(GogoProto.sizer);
+    registry.add(GogoProto.unsafeMarshaler);
+    registry.add(GogoProto.unsafeUnmarshaler);
+    registry.add(GogoProto.goprotoExtensionsMap);
+    registry.add(GogoProto.goprotoUnrecognized);
+    registry.add(GogoProto.protosizer);
+    registry.add(GogoProto.compare);
+    registry.add(GogoProto.typedecl);
+    registry.add(GogoProto.messagename);
+    registry.add(GogoProto.goprotoSizecache);
+    registry.add(GogoProto.goprotoUnkeyed);
+    registry.add(GogoProto.nullable);
+    registry.add(GogoProto.embed);
+    registry.add(GogoProto.customtype);
+    registry.add(GogoProto.customname);
+    registry.add(GogoProto.jsontag);
+    registry.add(GogoProto.moretags);
+    registry.add(GogoProto.casttype);
+    registry.add(GogoProto.castkey);
+    registry.add(GogoProto.castvalue);
+    registry.add(GogoProto.stdtime);
+    registry.add(GogoProto.stdduration);
+    registry.add(GogoProto.wktpointer);
+    registry.add(GogoProto.castrepeated);
   }
 
   public static void registerAllExtensions(
@@ -98,9 +98,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.EnumOptions,
-      java.lang.Boolean> goprotoEnumPrefix = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoEnumPrefix = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_ENUM_STRINGER_FIELD_NUMBER = 62021;
   /**
@@ -109,9 +109,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.EnumOptions,
-      java.lang.Boolean> goprotoEnumStringer = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoEnumStringer = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int ENUM_STRINGER_FIELD_NUMBER = 62022;
   /**
@@ -120,9 +120,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.EnumOptions,
-      java.lang.Boolean> enumStringer = com.google.protobuf.GeneratedMessage
+      Boolean> enumStringer = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int ENUM_CUSTOMNAME_FIELD_NUMBER = 62023;
   /**
@@ -131,9 +131,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.EnumOptions,
-      java.lang.String> enumCustomname = com.google.protobuf.GeneratedMessage
+      String> enumCustomname = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int ENUMDECL_FIELD_NUMBER = 62024;
   /**
@@ -142,9 +142,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.EnumOptions,
-      java.lang.Boolean> enumdecl = com.google.protobuf.GeneratedMessage
+      Boolean> enumdecl = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int ENUMVALUE_CUSTOMNAME_FIELD_NUMBER = 66001;
   /**
@@ -153,9 +153,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.EnumValueOptions,
-      java.lang.String> enumvalueCustomname = com.google.protobuf.GeneratedMessage
+      String> enumvalueCustomname = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int GOPROTO_GETTERS_ALL_FIELD_NUMBER = 63001;
   /**
@@ -164,9 +164,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> goprotoGettersAll = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoGettersAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_ENUM_PREFIX_ALL_FIELD_NUMBER = 63002;
   /**
@@ -175,9 +175,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> goprotoEnumPrefixAll = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoEnumPrefixAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_STRINGER_ALL_FIELD_NUMBER = 63003;
   /**
@@ -186,9 +186,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> goprotoStringerAll = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoStringerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int VERBOSE_EQUAL_ALL_FIELD_NUMBER = 63004;
   /**
@@ -197,9 +197,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> verboseEqualAll = com.google.protobuf.GeneratedMessage
+      Boolean> verboseEqualAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int FACE_ALL_FIELD_NUMBER = 63005;
   /**
@@ -208,9 +208,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> faceAll = com.google.protobuf.GeneratedMessage
+      Boolean> faceAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOSTRING_ALL_FIELD_NUMBER = 63006;
   /**
@@ -219,9 +219,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> gostringAll = com.google.protobuf.GeneratedMessage
+      Boolean> gostringAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int POPULATE_ALL_FIELD_NUMBER = 63007;
   /**
@@ -230,9 +230,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> populateAll = com.google.protobuf.GeneratedMessage
+      Boolean> populateAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int STRINGER_ALL_FIELD_NUMBER = 63008;
   /**
@@ -241,9 +241,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> stringerAll = com.google.protobuf.GeneratedMessage
+      Boolean> stringerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int ONLYONE_ALL_FIELD_NUMBER = 63009;
   /**
@@ -252,9 +252,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> onlyoneAll = com.google.protobuf.GeneratedMessage
+      Boolean> onlyoneAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int EQUAL_ALL_FIELD_NUMBER = 63013;
   /**
@@ -263,9 +263,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> equalAll = com.google.protobuf.GeneratedMessage
+      Boolean> equalAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int DESCRIPTION_ALL_FIELD_NUMBER = 63014;
   /**
@@ -274,9 +274,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> descriptionAll = com.google.protobuf.GeneratedMessage
+      Boolean> descriptionAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int TESTGEN_ALL_FIELD_NUMBER = 63015;
   /**
@@ -285,9 +285,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> testgenAll = com.google.protobuf.GeneratedMessage
+      Boolean> testgenAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int BENCHGEN_ALL_FIELD_NUMBER = 63016;
   /**
@@ -296,9 +296,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> benchgenAll = com.google.protobuf.GeneratedMessage
+      Boolean> benchgenAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int MARSHALER_ALL_FIELD_NUMBER = 63017;
   /**
@@ -307,9 +307,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> marshalerAll = com.google.protobuf.GeneratedMessage
+      Boolean> marshalerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int UNMARSHALER_ALL_FIELD_NUMBER = 63018;
   /**
@@ -318,9 +318,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> unmarshalerAll = com.google.protobuf.GeneratedMessage
+      Boolean> unmarshalerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int STABLE_MARSHALER_ALL_FIELD_NUMBER = 63019;
   /**
@@ -329,9 +329,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> stableMarshalerAll = com.google.protobuf.GeneratedMessage
+      Boolean> stableMarshalerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int SIZER_ALL_FIELD_NUMBER = 63020;
   /**
@@ -340,9 +340,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> sizerAll = com.google.protobuf.GeneratedMessage
+      Boolean> sizerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_ENUM_STRINGER_ALL_FIELD_NUMBER = 63021;
   /**
@@ -351,9 +351,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> goprotoEnumStringerAll = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoEnumStringerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int ENUM_STRINGER_ALL_FIELD_NUMBER = 63022;
   /**
@@ -362,9 +362,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> enumStringerAll = com.google.protobuf.GeneratedMessage
+      Boolean> enumStringerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int UNSAFE_MARSHALER_ALL_FIELD_NUMBER = 63023;
   /**
@@ -373,9 +373,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> unsafeMarshalerAll = com.google.protobuf.GeneratedMessage
+      Boolean> unsafeMarshalerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int UNSAFE_UNMARSHALER_ALL_FIELD_NUMBER = 63024;
   /**
@@ -384,9 +384,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> unsafeUnmarshalerAll = com.google.protobuf.GeneratedMessage
+      Boolean> unsafeUnmarshalerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_EXTENSIONS_MAP_ALL_FIELD_NUMBER = 63025;
   /**
@@ -395,9 +395,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> goprotoExtensionsMapAll = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoExtensionsMapAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_UNRECOGNIZED_ALL_FIELD_NUMBER = 63026;
   /**
@@ -406,9 +406,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> goprotoUnrecognizedAll = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoUnrecognizedAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOGOPROTO_IMPORT_FIELD_NUMBER = 63027;
   /**
@@ -417,9 +417,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> gogoprotoImport = com.google.protobuf.GeneratedMessage
+      Boolean> gogoprotoImport = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int PROTOSIZER_ALL_FIELD_NUMBER = 63028;
   /**
@@ -428,9 +428,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> protosizerAll = com.google.protobuf.GeneratedMessage
+      Boolean> protosizerAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int COMPARE_ALL_FIELD_NUMBER = 63029;
   /**
@@ -439,9 +439,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> compareAll = com.google.protobuf.GeneratedMessage
+      Boolean> compareAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int TYPEDECL_ALL_FIELD_NUMBER = 63030;
   /**
@@ -450,9 +450,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> typedeclAll = com.google.protobuf.GeneratedMessage
+      Boolean> typedeclAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int ENUMDECL_ALL_FIELD_NUMBER = 63031;
   /**
@@ -461,9 +461,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> enumdeclAll = com.google.protobuf.GeneratedMessage
+      Boolean> enumdeclAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_REGISTRATION_FIELD_NUMBER = 63032;
   /**
@@ -472,9 +472,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> goprotoRegistration = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoRegistration = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int MESSAGENAME_ALL_FIELD_NUMBER = 63033;
   /**
@@ -483,9 +483,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> messagenameAll = com.google.protobuf.GeneratedMessage
+      Boolean> messagenameAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_SIZECACHE_ALL_FIELD_NUMBER = 63034;
   /**
@@ -494,9 +494,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> goprotoSizecacheAll = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoSizecacheAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_UNKEYED_ALL_FIELD_NUMBER = 63035;
   /**
@@ -505,9 +505,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FileOptions,
-      java.lang.Boolean> goprotoUnkeyedAll = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoUnkeyedAll = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_GETTERS_FIELD_NUMBER = 64001;
   /**
@@ -516,9 +516,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> goprotoGetters = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoGetters = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_STRINGER_FIELD_NUMBER = 64003;
   /**
@@ -527,9 +527,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> goprotoStringer = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoStringer = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int VERBOSE_EQUAL_FIELD_NUMBER = 64004;
   /**
@@ -538,9 +538,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> verboseEqual = com.google.protobuf.GeneratedMessage
+      Boolean> verboseEqual = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int FACE_FIELD_NUMBER = 64005;
   /**
@@ -549,9 +549,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> face = com.google.protobuf.GeneratedMessage
+      Boolean> face = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOSTRING_FIELD_NUMBER = 64006;
   /**
@@ -560,9 +560,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> gostring = com.google.protobuf.GeneratedMessage
+      Boolean> gostring = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int POPULATE_FIELD_NUMBER = 64007;
   /**
@@ -571,9 +571,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> populate = com.google.protobuf.GeneratedMessage
+      Boolean> populate = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int STRINGER_FIELD_NUMBER = 67008;
   /**
@@ -582,9 +582,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> stringer = com.google.protobuf.GeneratedMessage
+      Boolean> stringer = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int ONLYONE_FIELD_NUMBER = 64009;
   /**
@@ -593,9 +593,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> onlyone = com.google.protobuf.GeneratedMessage
+      Boolean> onlyone = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int EQUAL_FIELD_NUMBER = 64013;
   /**
@@ -604,9 +604,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> equal = com.google.protobuf.GeneratedMessage
+      Boolean> equal = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int DESCRIPTION_FIELD_NUMBER = 64014;
   /**
@@ -615,9 +615,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> description = com.google.protobuf.GeneratedMessage
+      Boolean> description = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int TESTGEN_FIELD_NUMBER = 64015;
   /**
@@ -626,9 +626,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> testgen = com.google.protobuf.GeneratedMessage
+      Boolean> testgen = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int BENCHGEN_FIELD_NUMBER = 64016;
   /**
@@ -637,9 +637,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> benchgen = com.google.protobuf.GeneratedMessage
+      Boolean> benchgen = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int MARSHALER_FIELD_NUMBER = 64017;
   /**
@@ -648,9 +648,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> marshaler = com.google.protobuf.GeneratedMessage
+      Boolean> marshaler = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int UNMARSHALER_FIELD_NUMBER = 64018;
   /**
@@ -659,9 +659,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> unmarshaler = com.google.protobuf.GeneratedMessage
+      Boolean> unmarshaler = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int STABLE_MARSHALER_FIELD_NUMBER = 64019;
   /**
@@ -670,9 +670,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> stableMarshaler = com.google.protobuf.GeneratedMessage
+      Boolean> stableMarshaler = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int SIZER_FIELD_NUMBER = 64020;
   /**
@@ -681,9 +681,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> sizer = com.google.protobuf.GeneratedMessage
+      Boolean> sizer = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int UNSAFE_MARSHALER_FIELD_NUMBER = 64023;
   /**
@@ -692,9 +692,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> unsafeMarshaler = com.google.protobuf.GeneratedMessage
+      Boolean> unsafeMarshaler = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int UNSAFE_UNMARSHALER_FIELD_NUMBER = 64024;
   /**
@@ -703,9 +703,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> unsafeUnmarshaler = com.google.protobuf.GeneratedMessage
+      Boolean> unsafeUnmarshaler = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_EXTENSIONS_MAP_FIELD_NUMBER = 64025;
   /**
@@ -714,9 +714,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> goprotoExtensionsMap = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoExtensionsMap = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_UNRECOGNIZED_FIELD_NUMBER = 64026;
   /**
@@ -725,9 +725,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> goprotoUnrecognized = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoUnrecognized = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int PROTOSIZER_FIELD_NUMBER = 64028;
   /**
@@ -736,9 +736,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> protosizer = com.google.protobuf.GeneratedMessage
+      Boolean> protosizer = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int COMPARE_FIELD_NUMBER = 64029;
   /**
@@ -747,9 +747,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> compare = com.google.protobuf.GeneratedMessage
+      Boolean> compare = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int TYPEDECL_FIELD_NUMBER = 64030;
   /**
@@ -758,9 +758,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> typedecl = com.google.protobuf.GeneratedMessage
+      Boolean> typedecl = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int MESSAGENAME_FIELD_NUMBER = 64033;
   /**
@@ -769,9 +769,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> messagename = com.google.protobuf.GeneratedMessage
+      Boolean> messagename = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_SIZECACHE_FIELD_NUMBER = 64034;
   /**
@@ -780,9 +780,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> goprotoSizecache = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoSizecache = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int GOPROTO_UNKEYED_FIELD_NUMBER = 64035;
   /**
@@ -791,9 +791,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.MessageOptions,
-      java.lang.Boolean> goprotoUnkeyed = com.google.protobuf.GeneratedMessage
+      Boolean> goprotoUnkeyed = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int NULLABLE_FIELD_NUMBER = 65001;
   /**
@@ -802,9 +802,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.Boolean> nullable = com.google.protobuf.GeneratedMessage
+      Boolean> nullable = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int EMBED_FIELD_NUMBER = 65002;
   /**
@@ -813,9 +813,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.Boolean> embed = com.google.protobuf.GeneratedMessage
+      Boolean> embed = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int CUSTOMTYPE_FIELD_NUMBER = 65003;
   /**
@@ -824,9 +824,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.String> customtype = com.google.protobuf.GeneratedMessage
+      String> customtype = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int CUSTOMNAME_FIELD_NUMBER = 65004;
   /**
@@ -835,9 +835,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.String> customname = com.google.protobuf.GeneratedMessage
+      String> customname = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int JSONTAG_FIELD_NUMBER = 65005;
   /**
@@ -846,9 +846,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.String> jsontag = com.google.protobuf.GeneratedMessage
+      String> jsontag = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int MORETAGS_FIELD_NUMBER = 65006;
   /**
@@ -857,9 +857,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.String> moretags = com.google.protobuf.GeneratedMessage
+      String> moretags = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int CASTTYPE_FIELD_NUMBER = 65007;
   /**
@@ -868,9 +868,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.String> casttype = com.google.protobuf.GeneratedMessage
+      String> casttype = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int CASTKEY_FIELD_NUMBER = 65008;
   /**
@@ -879,9 +879,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.String> castkey = com.google.protobuf.GeneratedMessage
+      String> castkey = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int CASTVALUE_FIELD_NUMBER = 65009;
   /**
@@ -890,9 +890,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.String> castvalue = com.google.protobuf.GeneratedMessage
+      String> castvalue = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
   public static final int STDTIME_FIELD_NUMBER = 65010;
   /**
@@ -901,9 +901,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.Boolean> stdtime = com.google.protobuf.GeneratedMessage
+      Boolean> stdtime = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int STDDURATION_FIELD_NUMBER = 65011;
   /**
@@ -912,9 +912,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.Boolean> stdduration = com.google.protobuf.GeneratedMessage
+      Boolean> stdduration = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int WKTPOINTER_FIELD_NUMBER = 65012;
   /**
@@ -923,9 +923,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.Boolean> wktpointer = com.google.protobuf.GeneratedMessage
+      Boolean> wktpointer = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.Boolean.class,
+        Boolean.class,
         null);
   public static final int CASTREPEATED_FIELD_NUMBER = 65013;
   /**
@@ -934,9 +934,9 @@ public final class GogoProto {
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.google.protobuf.DescriptorProtos.FieldOptions,
-      java.lang.String> castrepeated = com.google.protobuf.GeneratedMessage
+      String> castrepeated = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        java.lang.String.class,
+        String.class,
         null);
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -946,7 +946,7 @@ public final class GogoProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\024gogoproto/gogo.proto\022\tgogoproto\032 googl" +
       "e/protobuf/descriptor.proto:N\n\023goproto_e" +
       "num_prefix\022\034.google.protobuf.EnumOptions" +

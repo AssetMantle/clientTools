@@ -14,7 +14,7 @@ public interface QueryDelegatorDelegationsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.DelegationResponse delegation_responses = 1 [json_name = "delegationResponses", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.staking.v1beta1.DelegationResponse> 
+  java.util.List<DelegationResponse>
       getDelegationResponsesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryDelegatorDelegationsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.DelegationResponse delegation_responses = 1 [json_name = "delegationResponses", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.DelegationResponse getDelegationResponses(int index);
+  DelegationResponse getDelegationResponses(int index);
   /**
    * <pre>
    * delegation_responses defines all the delegations' info of a delegator.
@@ -39,7 +39,7 @@ public interface QueryDelegatorDelegationsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.DelegationResponse delegation_responses = 1 [json_name = "delegationResponses", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.staking.v1beta1.DelegationResponseOrBuilder> 
+  java.util.List<? extends DelegationResponseOrBuilder>
       getDelegationResponsesOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryDelegatorDelegationsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.DelegationResponse delegation_responses = 1 [json_name = "delegationResponses", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.DelegationResponseOrBuilder getDelegationResponsesOrBuilder(
+  DelegationResponseOrBuilder getDelegationResponsesOrBuilder(
       int index);
 
   /**

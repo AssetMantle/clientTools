@@ -1,13 +1,13 @@
 package schema.id.base
 
 import com.ids.{AnyID, AnyOwnableID, AssetID => protoAssetID}
-import schema.id.{ID, OwnableID}
+import schema.id.OwnableID
 
 case class AssetID(hashID: HashID) extends OwnableID {
 
   def getBytes: Array[Byte] = this.hashID.getBytes
 
-  def asString: String = commonUtilities.Secrets.base64URLEncoder(this.getBytes)
+  def asString: String = utilities.Secrets.base64URLEncoder(this.getBytes)
 
   def asProtoAssetID: protoAssetID = protoAssetID.newBuilder().setHashID(this.hashID.asProtoHashID).build()
 
@@ -15,7 +15,9 @@ case class AssetID(hashID: HashID) extends OwnableID {
 
   def toAnyID: AnyID = AnyID.newBuilder().setAssetID(this.asProtoAssetID).build()
 
-  def getProtoBytes: Array[Byte] = this.asProtoAssetID.toByteArray
+  def getProtoBytes: Array[Byte] = this.asProtoAssetID.toByteString.toByteArray
+
+  def isCoinId: Boolean = false
 
 }
 

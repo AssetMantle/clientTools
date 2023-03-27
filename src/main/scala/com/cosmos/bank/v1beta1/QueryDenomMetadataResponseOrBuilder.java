@@ -24,7 +24,7 @@ public interface QueryDenomMetadataResponseOrBuilder extends
    * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
    * @return The metadata.
    */
-  com.cosmos.bank.v1beta1.Metadata getMetadata();
+  Metadata getMetadata();
   /**
    * <pre>
    * metadata describes and provides all the client information for the requested token.
@@ -32,5 +32,5 @@ public interface QueryDenomMetadataResponseOrBuilder extends
    *
    * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.bank.v1beta1.MetadataOrBuilder getMetadataOrBuilder();
+  MetadataOrBuilder getMetadataOrBuilder();
 }

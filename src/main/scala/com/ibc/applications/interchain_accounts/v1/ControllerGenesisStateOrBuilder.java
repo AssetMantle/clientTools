@@ -10,12 +10,12 @@ public interface ControllerGenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
    */
-  java.util.List<com.ibc.applications.interchain_accounts.v1.ActiveChannel> 
+  java.util.List<ActiveChannel>
       getActiveChannelsList();
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
    */
-  com.ibc.applications.interchain_accounts.v1.ActiveChannel getActiveChannels(int index);
+  ActiveChannel getActiveChannels(int index);
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
    */
@@ -23,23 +23,23 @@ public interface ControllerGenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
    */
-  java.util.List<? extends com.ibc.applications.interchain_accounts.v1.ActiveChannelOrBuilder> 
+  java.util.List<? extends ActiveChannelOrBuilder>
       getActiveChannelsOrBuilderList();
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
    */
-  com.ibc.applications.interchain_accounts.v1.ActiveChannelOrBuilder getActiveChannelsOrBuilder(
+  ActiveChannelOrBuilder getActiveChannelsOrBuilder(
       int index);
 
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
    */
-  java.util.List<com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount> 
+  java.util.List<RegisteredInterchainAccount>
       getInterchainAccountsList();
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
    */
-  com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount getInterchainAccounts(int index);
+  RegisteredInterchainAccount getInterchainAccounts(int index);
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
    */
@@ -47,19 +47,19 @@ public interface ControllerGenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
    */
-  java.util.List<? extends com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccountOrBuilder> 
+  java.util.List<? extends RegisteredInterchainAccountOrBuilder>
       getInterchainAccountsOrBuilderList();
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
    */
-  com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccountOrBuilder getInterchainAccountsOrBuilder(
+  RegisteredInterchainAccountOrBuilder getInterchainAccountsOrBuilder(
       int index);
 
   /**
    * <code>repeated string ports = 3 [json_name = "ports"];</code>
    * @return A list containing the ports.
    */
-  java.util.List<java.lang.String>
+  java.util.List<String>
       getPortsList();
   /**
    * <code>repeated string ports = 3 [json_name = "ports"];</code>
@@ -71,7 +71,7 @@ public interface ControllerGenesisStateOrBuilder extends
    * @param index The index of the element to return.
    * @return The ports at the given index.
    */
-  java.lang.String getPorts(int index);
+  String getPorts(int index);
   /**
    * <code>repeated string ports = 3 [json_name = "ports"];</code>
    * @param index The index of the value to return.

@@ -16,11 +16,11 @@ public interface MsgCreateValidatorOrBuilder extends
    * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
    * @return The description.
    */
-  com.cosmos.staking.v1beta1.Description getDescription();
+  Description getDescription();
   /**
    * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.DescriptionOrBuilder getDescriptionOrBuilder();
+  DescriptionOrBuilder getDescriptionOrBuilder();
 
   /**
    * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
@@ -31,17 +31,17 @@ public interface MsgCreateValidatorOrBuilder extends
    * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
    * @return The commission.
    */
-  com.cosmos.staking.v1beta1.CommissionRates getCommission();
+  CommissionRates getCommission();
   /**
    * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.staking.v1beta1.CommissionRatesOrBuilder getCommissionOrBuilder();
+  CommissionRatesOrBuilder getCommissionOrBuilder();
 
   /**
    * <code>string min_self_delegation = 3 [json_name = "minSelfDelegation", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"min_self_delegation&#92;""];</code>
    * @return The minSelfDelegation.
    */
-  java.lang.String getMinSelfDelegation();
+  String getMinSelfDelegation();
   /**
    * <code>string min_self_delegation = 3 [json_name = "minSelfDelegation", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"min_self_delegation&#92;""];</code>
    * @return The bytes for minSelfDelegation.
@@ -53,7 +53,7 @@ public interface MsgCreateValidatorOrBuilder extends
    * <code>string delegator_address = 4 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  java.lang.String getDelegatorAddress();
+  String getDelegatorAddress();
   /**
    * <code>string delegator_address = 4 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The bytes for delegatorAddress.
@@ -65,7 +65,7 @@ public interface MsgCreateValidatorOrBuilder extends
    * <code>string validator_address = 5 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  java.lang.String getValidatorAddress();
+  String getValidatorAddress();
   /**
    * <code>string validator_address = 5 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The bytes for validatorAddress.

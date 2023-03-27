@@ -15,7 +15,7 @@ public interface QueryDelegationTotalRewardsRequestOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress"];</code>
    * @return The delegatorAddress.
    */
-  java.lang.String getDelegatorAddress();
+  String getDelegatorAddress();
   /**
    * <pre>
    * delegator_address defines the delegator address to query for.

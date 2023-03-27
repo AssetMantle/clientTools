@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     proof_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryNextSequenceReceiveResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_descriptor;
+    return QueryProto.internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_fieldAccessorTable
+    return QueryProto.internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse.class, com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse.Builder.class);
+            QueryNextSequenceReceiveResponse.class, Builder.class);
   }
 
   public static final int NEXT_SEQUENCE_RECEIVE_FIELD_NUMBER = 1;
@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 next_sequence_receive = 1 [json_name = "nextSequenceReceive"];</code>
    * @return The nextSequenceReceive.
    */
-  @java.lang.Override
+  @Override
   public long getNextSequenceReceive() {
     return nextSequenceReceive_;
   }
@@ -69,7 +69,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes proof = 2 [json_name = "proof"];</code>
    * @return The proof.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getProof() {
     return proof_;
   }
@@ -84,7 +84,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
    * @return Whether the proofHeight field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasProofHeight() {
     return proofHeight_ != null;
   }
@@ -96,7 +96,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
    * @return The proofHeight.
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.Height getProofHeight() {
     return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
   }
@@ -107,13 +107,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public com.ibc.core.client.v1.HeightOrBuilder getProofHeightOrBuilder() {
     return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -123,7 +123,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (nextSequenceReceive_ != 0L) {
@@ -138,7 +138,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -161,15 +161,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse)) {
+    if (!(obj instanceof QueryNextSequenceReceiveResponse)) {
       return super.equals(obj);
     }
-    com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse other = (com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse) obj;
+    QueryNextSequenceReceiveResponse other = (QueryNextSequenceReceiveResponse) obj;
 
     if (getNextSequenceReceive()
         != other.getNextSequenceReceive()) return false;
@@ -184,7 +184,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -205,69 +205,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseFrom(
+  public static QueryNextSequenceReceiveResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseFrom(
+  public static QueryNextSequenceReceiveResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseFrom(
+  public static QueryNextSequenceReceiveResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseFrom(
+  public static QueryNextSequenceReceiveResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseFrom(byte[] data)
+  public static QueryNextSequenceReceiveResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseFrom(
+  public static QueryNextSequenceReceiveResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseFrom(java.io.InputStream input)
+  public static QueryNextSequenceReceiveResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseFrom(
+  public static QueryNextSequenceReceiveResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseDelimitedFrom(java.io.InputStream input)
+  public static QueryNextSequenceReceiveResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseDelimitedFrom(
+  public static QueryNextSequenceReceiveResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseFrom(
+  public static QueryNextSequenceReceiveResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse parseFrom(
+  public static QueryNextSequenceReceiveResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -275,23 +275,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse prototype) {
+  public static Builder newBuilder(QueryNextSequenceReceiveResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -306,18 +306,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.channel.v1.QueryNextSequenceReceiveResponse)
-      com.ibc.core.channel.v1.QueryNextSequenceReceiveResponseOrBuilder {
+      QueryNextSequenceReceiveResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_descriptor;
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_fieldAccessorTable
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse.class, com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse.Builder.class);
+              QueryNextSequenceReceiveResponse.class, Builder.class);
     }
 
     // Construct using com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse.newBuilder()
@@ -326,11 +326,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -344,35 +344,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.core.channel.v1.QueryProto.internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_descriptor;
+      return QueryProto.internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse getDefaultInstanceForType() {
-      return com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse.getDefaultInstance();
+    @Override
+    public QueryNextSequenceReceiveResponse getDefaultInstanceForType() {
+      return QueryNextSequenceReceiveResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse build() {
-      com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse result = buildPartial();
+    @Override
+    public QueryNextSequenceReceiveResponse build() {
+      QueryNextSequenceReceiveResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse buildPartial() {
-      com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse result = new com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse(this);
+    @Override
+    public QueryNextSequenceReceiveResponse buildPartial() {
+      QueryNextSequenceReceiveResponse result = new QueryNextSequenceReceiveResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse result) {
+    private void buildPartial0(QueryNextSequenceReceiveResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.nextSequenceReceive_ = nextSequenceReceive_;
@@ -387,50 +387,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse) {
-        return mergeFrom((com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse)other);
+      if (other instanceof QueryNextSequenceReceiveResponse) {
+        return mergeFrom((QueryNextSequenceReceiveResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse other) {
-      if (other == com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryNextSequenceReceiveResponse other) {
+      if (other == QueryNextSequenceReceiveResponse.getDefaultInstance()) return this;
       if (other.getNextSequenceReceive() != 0L) {
         setNextSequenceReceive(other.getNextSequenceReceive());
       }
@@ -445,18 +445,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -509,7 +509,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 next_sequence_receive = 1 [json_name = "nextSequenceReceive"];</code>
      * @return The nextSequenceReceive.
      */
-    @java.lang.Override
+    @Override
     public long getNextSequenceReceive() {
       return nextSequenceReceive_;
     }
@@ -553,7 +553,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes proof = 2 [json_name = "proof"];</code>
      * @return The proof.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getProof() {
       return proof_;
     }
@@ -742,13 +742,13 @@ private static final long serialVersionUID = 0L;
       }
       return proofHeightBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -759,18 +759,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.channel.v1.QueryNextSequenceReceiveResponse)
-  private static final com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse DEFAULT_INSTANCE;
+  private static final QueryNextSequenceReceiveResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse();
+    DEFAULT_INSTANCE = new QueryNextSequenceReceiveResponse();
   }
 
-  public static com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse getDefaultInstance() {
+  public static QueryNextSequenceReceiveResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryNextSequenceReceiveResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryNextSequenceReceiveResponse>() {
-    @java.lang.Override
+    @Override
     public QueryNextSequenceReceiveResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -794,13 +794,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryNextSequenceReceiveResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.core.channel.v1.QueryNextSequenceReceiveResponse getDefaultInstanceForType() {
+  @Override
+  public QueryNextSequenceReceiveResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

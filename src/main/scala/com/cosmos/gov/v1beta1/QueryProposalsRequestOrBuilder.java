@@ -24,7 +24,7 @@ public interface QueryProposalsRequestOrBuilder extends
    * <code>.cosmos.gov.v1beta1.ProposalStatus proposal_status = 1 [json_name = "proposalStatus"];</code>
    * @return The proposalStatus.
    */
-  com.cosmos.gov.v1beta1.ProposalStatus getProposalStatus();
+  ProposalStatus getProposalStatus();
 
   /**
    * <pre>
@@ -34,7 +34,7 @@ public interface QueryProposalsRequestOrBuilder extends
    * <code>string voter = 2 [json_name = "voter"];</code>
    * @return The voter.
    */
-  java.lang.String getVoter();
+  String getVoter();
   /**
    * <pre>
    * voter defines the voter address for the proposals.
@@ -54,7 +54,7 @@ public interface QueryProposalsRequestOrBuilder extends
    * <code>string depositor = 3 [json_name = "depositor"];</code>
    * @return The depositor.
    */
-  java.lang.String getDepositor();
+  String getDepositor();
   /**
    * <pre>
    * depositor defines the deposit addresses from the proposals.

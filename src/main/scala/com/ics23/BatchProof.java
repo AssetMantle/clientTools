@@ -24,69 +24,69 @@ private static final long serialVersionUID = 0L;
     entries_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new BatchProof();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ics23.ProofsProto.internal_static_ics23_BatchProof_descriptor;
+    return ProofsProto.internal_static_ics23_BatchProof_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ics23.ProofsProto.internal_static_ics23_BatchProof_fieldAccessorTable
+    return ProofsProto.internal_static_ics23_BatchProof_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ics23.BatchProof.class, com.ics23.BatchProof.Builder.class);
+            BatchProof.class, Builder.class);
   }
 
   public static final int ENTRIES_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<com.ics23.BatchEntry> entries_;
+  private java.util.List<BatchEntry> entries_;
   /**
    * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.ics23.BatchEntry> getEntriesList() {
+  @Override
+  public java.util.List<BatchEntry> getEntriesList() {
     return entries_;
   }
   /**
    * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.ics23.BatchEntryOrBuilder> 
+  @Override
+  public java.util.List<? extends BatchEntryOrBuilder>
       getEntriesOrBuilderList() {
     return entries_;
   }
   /**
    * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  @java.lang.Override
+  @Override
   public int getEntriesCount() {
     return entries_.size();
   }
   /**
    * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  @java.lang.Override
-  public com.ics23.BatchEntry getEntries(int index) {
+  @Override
+  public BatchEntry getEntries(int index) {
     return entries_.get(index);
   }
   /**
    * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  @java.lang.Override
-  public com.ics23.BatchEntryOrBuilder getEntriesOrBuilder(
+  @Override
+  public BatchEntryOrBuilder getEntriesOrBuilder(
       int index) {
     return entries_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -96,7 +96,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < entries_.size(); i++) {
@@ -105,7 +105,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -120,15 +120,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ics23.BatchProof)) {
+    if (!(obj instanceof BatchProof)) {
       return super.equals(obj);
     }
-    com.ics23.BatchProof other = (com.ics23.BatchProof) obj;
+    BatchProof other = (BatchProof) obj;
 
     if (!getEntriesList()
         .equals(other.getEntriesList())) return false;
@@ -136,7 +136,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -152,69 +152,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ics23.BatchProof parseFrom(
+  public static BatchProof parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.BatchProof parseFrom(
+  public static BatchProof parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.BatchProof parseFrom(
+  public static BatchProof parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.BatchProof parseFrom(
+  public static BatchProof parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.BatchProof parseFrom(byte[] data)
+  public static BatchProof parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ics23.BatchProof parseFrom(
+  public static BatchProof parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ics23.BatchProof parseFrom(java.io.InputStream input)
+  public static BatchProof parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.BatchProof parseFrom(
+  public static BatchProof parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.BatchProof parseDelimitedFrom(java.io.InputStream input)
+  public static BatchProof parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ics23.BatchProof parseDelimitedFrom(
+  public static BatchProof parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ics23.BatchProof parseFrom(
+  public static BatchProof parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ics23.BatchProof parseFrom(
+  public static BatchProof parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -222,23 +222,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ics23.BatchProof prototype) {
+  public static Builder newBuilder(BatchProof prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -253,18 +253,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ics23.BatchProof)
-      com.ics23.BatchProofOrBuilder {
+      BatchProofOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ics23.ProofsProto.internal_static_ics23_BatchProof_descriptor;
+      return ProofsProto.internal_static_ics23_BatchProof_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ics23.ProofsProto.internal_static_ics23_BatchProof_fieldAccessorTable
+      return ProofsProto.internal_static_ics23_BatchProof_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ics23.BatchProof.class, com.ics23.BatchProof.Builder.class);
+              BatchProof.class, Builder.class);
     }
 
     // Construct using com.ics23.BatchProof.newBuilder()
@@ -273,11 +273,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -291,36 +291,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ics23.ProofsProto.internal_static_ics23_BatchProof_descriptor;
+      return ProofsProto.internal_static_ics23_BatchProof_descriptor;
     }
 
-    @java.lang.Override
-    public com.ics23.BatchProof getDefaultInstanceForType() {
-      return com.ics23.BatchProof.getDefaultInstance();
+    @Override
+    public BatchProof getDefaultInstanceForType() {
+      return BatchProof.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ics23.BatchProof build() {
-      com.ics23.BatchProof result = buildPartial();
+    @Override
+    public BatchProof build() {
+      BatchProof result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ics23.BatchProof buildPartial() {
-      com.ics23.BatchProof result = new com.ics23.BatchProof(this);
+    @Override
+    public BatchProof buildPartial() {
+      BatchProof result = new BatchProof(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.ics23.BatchProof result) {
+    private void buildPartialRepeatedFields(BatchProof result) {
       if (entriesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           entries_ = java.util.Collections.unmodifiableList(entries_);
@@ -332,54 +332,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.ics23.BatchProof result) {
+    private void buildPartial0(BatchProof result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ics23.BatchProof) {
-        return mergeFrom((com.ics23.BatchProof)other);
+      if (other instanceof BatchProof) {
+        return mergeFrom((BatchProof)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ics23.BatchProof other) {
-      if (other == com.ics23.BatchProof.getDefaultInstance()) return this;
+    public Builder mergeFrom(BatchProof other) {
+      if (other == BatchProof.getDefaultInstance()) return this;
       if (entriesBuilder_ == null) {
         if (!other.entries_.isEmpty()) {
           if (entries_.isEmpty()) {
@@ -411,18 +411,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -433,9 +433,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              com.ics23.BatchEntry m =
+              BatchEntry m =
                   input.readMessage(
-                      com.ics23.BatchEntry.parser(),
+                      BatchEntry.parser(),
                       extensionRegistry);
               if (entriesBuilder_ == null) {
                 ensureEntriesIsMutable();
@@ -462,22 +462,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<com.ics23.BatchEntry> entries_ =
+    private java.util.List<BatchEntry> entries_ =
       java.util.Collections.emptyList();
     private void ensureEntriesIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        entries_ = new java.util.ArrayList<com.ics23.BatchEntry>(entries_);
+        entries_ = new java.util.ArrayList<BatchEntry>(entries_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ics23.BatchEntry, com.ics23.BatchEntry.Builder, com.ics23.BatchEntryOrBuilder> entriesBuilder_;
+        BatchEntry, BatchEntry.Builder, BatchEntryOrBuilder> entriesBuilder_;
 
     /**
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public java.util.List<com.ics23.BatchEntry> getEntriesList() {
+    public java.util.List<BatchEntry> getEntriesList() {
       if (entriesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(entries_);
       } else {
@@ -497,7 +497,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public com.ics23.BatchEntry getEntries(int index) {
+    public BatchEntry getEntries(int index) {
       if (entriesBuilder_ == null) {
         return entries_.get(index);
       } else {
@@ -508,7 +508,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder setEntries(
-        int index, com.ics23.BatchEntry value) {
+        int index, BatchEntry value) {
       if (entriesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -525,7 +525,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder setEntries(
-        int index, com.ics23.BatchEntry.Builder builderForValue) {
+        int index, BatchEntry.Builder builderForValue) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         entries_.set(index, builderForValue.build());
@@ -538,7 +538,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public Builder addEntries(com.ics23.BatchEntry value) {
+    public Builder addEntries(BatchEntry value) {
       if (entriesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -555,7 +555,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder addEntries(
-        int index, com.ics23.BatchEntry value) {
+        int index, BatchEntry value) {
       if (entriesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -572,7 +572,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder addEntries(
-        com.ics23.BatchEntry.Builder builderForValue) {
+        BatchEntry.Builder builderForValue) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         entries_.add(builderForValue.build());
@@ -586,7 +586,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder addEntries(
-        int index, com.ics23.BatchEntry.Builder builderForValue) {
+        int index, BatchEntry.Builder builderForValue) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         entries_.add(index, builderForValue.build());
@@ -600,7 +600,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
     public Builder addAllEntries(
-        java.lang.Iterable<? extends com.ics23.BatchEntry> values) {
+        Iterable<? extends BatchEntry> values) {
       if (entriesBuilder_ == null) {
         ensureEntriesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -640,14 +640,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public com.ics23.BatchEntry.Builder getEntriesBuilder(
+    public BatchEntry.Builder getEntriesBuilder(
         int index) {
       return getEntriesFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public com.ics23.BatchEntryOrBuilder getEntriesOrBuilder(
+    public BatchEntryOrBuilder getEntriesOrBuilder(
         int index) {
       if (entriesBuilder_ == null) {
         return entries_.get(index);  } else {
@@ -657,7 +657,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public java.util.List<? extends com.ics23.BatchEntryOrBuilder> 
+    public java.util.List<? extends BatchEntryOrBuilder>
          getEntriesOrBuilderList() {
       if (entriesBuilder_ != null) {
         return entriesBuilder_.getMessageOrBuilderList();
@@ -668,31 +668,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public com.ics23.BatchEntry.Builder addEntriesBuilder() {
+    public BatchEntry.Builder addEntriesBuilder() {
       return getEntriesFieldBuilder().addBuilder(
-          com.ics23.BatchEntry.getDefaultInstance());
+          BatchEntry.getDefaultInstance());
     }
     /**
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public com.ics23.BatchEntry.Builder addEntriesBuilder(
+    public BatchEntry.Builder addEntriesBuilder(
         int index) {
       return getEntriesFieldBuilder().addBuilder(
-          index, com.ics23.BatchEntry.getDefaultInstance());
+          index, BatchEntry.getDefaultInstance());
     }
     /**
      * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
      */
-    public java.util.List<com.ics23.BatchEntry.Builder> 
+    public java.util.List<BatchEntry.Builder>
          getEntriesBuilderList() {
       return getEntriesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ics23.BatchEntry, com.ics23.BatchEntry.Builder, com.ics23.BatchEntryOrBuilder> 
+        BatchEntry, BatchEntry.Builder, BatchEntryOrBuilder>
         getEntriesFieldBuilder() {
       if (entriesBuilder_ == null) {
         entriesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.ics23.BatchEntry, com.ics23.BatchEntry.Builder, com.ics23.BatchEntryOrBuilder>(
+            BatchEntry, BatchEntry.Builder, BatchEntryOrBuilder>(
                 entries_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -701,13 +701,13 @@ private static final long serialVersionUID = 0L;
       }
       return entriesBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -718,18 +718,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ics23.BatchProof)
-  private static final com.ics23.BatchProof DEFAULT_INSTANCE;
+  private static final BatchProof DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ics23.BatchProof();
+    DEFAULT_INSTANCE = new BatchProof();
   }
 
-  public static com.ics23.BatchProof getDefaultInstance() {
+  public static BatchProof getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<BatchProof>
       PARSER = new com.google.protobuf.AbstractParser<BatchProof>() {
-    @java.lang.Override
+    @Override
     public BatchProof parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -753,13 +753,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<BatchProof> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ics23.BatchProof getDefaultInstanceForType() {
+  @Override
+  public BatchProof getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

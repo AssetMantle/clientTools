@@ -18,32 +18,32 @@ private static final long serialVersionUID = 0L;
   private AnyOwnableID() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new AnyOwnableID();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ids.AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_descriptor;
+    return AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ids.AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_fieldAccessorTable
+    return AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ids.AnyOwnableID.class, com.ids.AnyOwnableID.Builder.class);
+            AnyOwnableID.class, Builder.class);
   }
 
   private int implCase_ = 0;
   @SuppressWarnings("serial")
-  private java.lang.Object impl_;
+  private Object impl_;
   public enum ImplCase
       implements com.google.protobuf.Internal.EnumLite,
-          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+          InternalOneOfEnum {
     ASSET_I_D(1),
     COIN_I_D(2),
     IMPL_NOT_SET(0);
@@ -56,7 +56,7 @@ private static final long serialVersionUID = 0L;
      * @return The enum associated with the given number.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @java.lang.Deprecated
+    @Deprecated
     public static ImplCase valueOf(int value) {
       return forNumber(value);
     }
@@ -85,7 +85,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
    * @return Whether the assetID field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasAssetID() {
     return implCase_ == 1;
   }
@@ -93,22 +93,22 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
    * @return The assetID.
    */
-  @java.lang.Override
-  public com.ids.AssetID getAssetID() {
+  @Override
+  public AssetID getAssetID() {
     if (implCase_ == 1) {
-       return (com.ids.AssetID) impl_;
+       return (AssetID) impl_;
     }
-    return com.ids.AssetID.getDefaultInstance();
+    return AssetID.getDefaultInstance();
   }
   /**
    * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
    */
-  @java.lang.Override
-  public com.ids.AssetIDOrBuilder getAssetIDOrBuilder() {
+  @Override
+  public AssetIDOrBuilder getAssetIDOrBuilder() {
     if (implCase_ == 1) {
-       return (com.ids.AssetID) impl_;
+       return (AssetID) impl_;
     }
-    return com.ids.AssetID.getDefaultInstance();
+    return AssetID.getDefaultInstance();
   }
 
   public static final int COIN_I_D_FIELD_NUMBER = 2;
@@ -116,7 +116,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
    * @return Whether the coinID field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasCoinID() {
     return implCase_ == 2;
   }
@@ -124,26 +124,26 @@ private static final long serialVersionUID = 0L;
    * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
    * @return The coinID.
    */
-  @java.lang.Override
-  public com.ids.CoinID getCoinID() {
+  @Override
+  public CoinID getCoinID() {
     if (implCase_ == 2) {
-       return (com.ids.CoinID) impl_;
+       return (CoinID) impl_;
     }
-    return com.ids.CoinID.getDefaultInstance();
+    return CoinID.getDefaultInstance();
   }
   /**
    * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
    */
-  @java.lang.Override
-  public com.ids.CoinIDOrBuilder getCoinIDOrBuilder() {
+  @Override
+  public CoinIDOrBuilder getCoinIDOrBuilder() {
     if (implCase_ == 2) {
-       return (com.ids.CoinID) impl_;
+       return (CoinID) impl_;
     }
-    return com.ids.CoinID.getDefaultInstance();
+    return CoinID.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -153,19 +153,19 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (implCase_ == 1) {
-      output.writeMessage(1, (com.ids.AssetID) impl_);
+      output.writeMessage(1, (AssetID) impl_);
     }
     if (implCase_ == 2) {
-      output.writeMessage(2, (com.ids.CoinID) impl_);
+      output.writeMessage(2, (CoinID) impl_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -173,26 +173,26 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (implCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, (com.ids.AssetID) impl_);
+        .computeMessageSize(1, (AssetID) impl_);
     }
     if (implCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (com.ids.CoinID) impl_);
+        .computeMessageSize(2, (CoinID) impl_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ids.AnyOwnableID)) {
+    if (!(obj instanceof AnyOwnableID)) {
       return super.equals(obj);
     }
-    com.ids.AnyOwnableID other = (com.ids.AnyOwnableID) obj;
+    AnyOwnableID other = (AnyOwnableID) obj;
 
     if (!getImplCase().equals(other.getImplCase())) return false;
     switch (implCase_) {
@@ -211,7 +211,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -235,69 +235,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ids.AnyOwnableID parseFrom(
+  public static AnyOwnableID parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.AnyOwnableID parseFrom(
+  public static AnyOwnableID parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.AnyOwnableID parseFrom(
+  public static AnyOwnableID parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.AnyOwnableID parseFrom(
+  public static AnyOwnableID parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.AnyOwnableID parseFrom(byte[] data)
+  public static AnyOwnableID parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ids.AnyOwnableID parseFrom(
+  public static AnyOwnableID parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ids.AnyOwnableID parseFrom(java.io.InputStream input)
+  public static AnyOwnableID parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ids.AnyOwnableID parseFrom(
+  public static AnyOwnableID parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ids.AnyOwnableID parseDelimitedFrom(java.io.InputStream input)
+  public static AnyOwnableID parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ids.AnyOwnableID parseDelimitedFrom(
+  public static AnyOwnableID parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ids.AnyOwnableID parseFrom(
+  public static AnyOwnableID parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ids.AnyOwnableID parseFrom(
+  public static AnyOwnableID parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -305,23 +305,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ids.AnyOwnableID prototype) {
+  public static Builder newBuilder(AnyOwnableID prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -331,18 +331,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ids.AnyOwnableID)
-      com.ids.AnyOwnableIDOrBuilder {
+      AnyOwnableIDOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ids.AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_descriptor;
+      return AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ids.AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_fieldAccessorTable
+      return AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ids.AnyOwnableID.class, com.ids.AnyOwnableID.Builder.class);
+              AnyOwnableID.class, Builder.class);
     }
 
     // Construct using com.ids.AnyOwnableID.newBuilder()
@@ -351,11 +351,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -370,40 +370,40 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ids.AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_descriptor;
+      return AnyOwnableIDV1Proto.internal_static_ids_AnyOwnableID_descriptor;
     }
 
-    @java.lang.Override
-    public com.ids.AnyOwnableID getDefaultInstanceForType() {
-      return com.ids.AnyOwnableID.getDefaultInstance();
+    @Override
+    public AnyOwnableID getDefaultInstanceForType() {
+      return AnyOwnableID.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ids.AnyOwnableID build() {
-      com.ids.AnyOwnableID result = buildPartial();
+    @Override
+    public AnyOwnableID build() {
+      AnyOwnableID result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ids.AnyOwnableID buildPartial() {
-      com.ids.AnyOwnableID result = new com.ids.AnyOwnableID(this);
+    @Override
+    public AnyOwnableID buildPartial() {
+      AnyOwnableID result = new AnyOwnableID(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       buildPartialOneofs(result);
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ids.AnyOwnableID result) {
+    private void buildPartial0(AnyOwnableID result) {
       int from_bitField0_ = bitField0_;
     }
 
-    private void buildPartialOneofs(com.ids.AnyOwnableID result) {
+    private void buildPartialOneofs(AnyOwnableID result) {
       result.implCase_ = implCase_;
       result.impl_ = this.impl_;
       if (implCase_ == 1 &&
@@ -416,50 +416,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ids.AnyOwnableID) {
-        return mergeFrom((com.ids.AnyOwnableID)other);
+      if (other instanceof AnyOwnableID) {
+        return mergeFrom((AnyOwnableID)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ids.AnyOwnableID other) {
-      if (other == com.ids.AnyOwnableID.getDefaultInstance()) return this;
+    public Builder mergeFrom(AnyOwnableID other) {
+      if (other == AnyOwnableID.getDefaultInstance()) return this;
       switch (other.getImplCase()) {
         case ASSET_I_D: {
           mergeAssetID(other.getAssetID());
@@ -478,18 +478,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -529,7 +529,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int implCase_ = 0;
-    private java.lang.Object impl_;
+    private Object impl_;
     public ImplCase
         getImplCase() {
       return ImplCase.forNumber(
@@ -546,12 +546,12 @@ private static final long serialVersionUID = 0L;
     private int bitField0_;
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.AssetID, com.ids.AssetID.Builder, com.ids.AssetIDOrBuilder> assetIDBuilder_;
+        AssetID, AssetID.Builder, AssetIDOrBuilder> assetIDBuilder_;
     /**
      * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
      * @return Whether the assetID field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasAssetID() {
       return implCase_ == 1;
     }
@@ -559,24 +559,24 @@ private static final long serialVersionUID = 0L;
      * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
      * @return The assetID.
      */
-    @java.lang.Override
-    public com.ids.AssetID getAssetID() {
+    @Override
+    public AssetID getAssetID() {
       if (assetIDBuilder_ == null) {
         if (implCase_ == 1) {
-          return (com.ids.AssetID) impl_;
+          return (AssetID) impl_;
         }
-        return com.ids.AssetID.getDefaultInstance();
+        return AssetID.getDefaultInstance();
       } else {
         if (implCase_ == 1) {
           return assetIDBuilder_.getMessage();
         }
-        return com.ids.AssetID.getDefaultInstance();
+        return AssetID.getDefaultInstance();
       }
     }
     /**
      * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
      */
-    public Builder setAssetID(com.ids.AssetID value) {
+    public Builder setAssetID(AssetID value) {
       if (assetIDBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -593,7 +593,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
      */
     public Builder setAssetID(
-        com.ids.AssetID.Builder builderForValue) {
+        AssetID.Builder builderForValue) {
       if (assetIDBuilder_ == null) {
         impl_ = builderForValue.build();
         onChanged();
@@ -606,11 +606,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
      */
-    public Builder mergeAssetID(com.ids.AssetID value) {
+    public Builder mergeAssetID(AssetID value) {
       if (assetIDBuilder_ == null) {
         if (implCase_ == 1 &&
-            impl_ != com.ids.AssetID.getDefaultInstance()) {
-          impl_ = com.ids.AssetID.newBuilder((com.ids.AssetID) impl_)
+            impl_ != AssetID.getDefaultInstance()) {
+          impl_ = AssetID.newBuilder((AssetID) impl_)
               .mergeFrom(value).buildPartial();
         } else {
           impl_ = value;
@@ -648,36 +648,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
      */
-    public com.ids.AssetID.Builder getAssetIDBuilder() {
+    public AssetID.Builder getAssetIDBuilder() {
       return getAssetIDFieldBuilder().getBuilder();
     }
     /**
      * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
      */
-    @java.lang.Override
-    public com.ids.AssetIDOrBuilder getAssetIDOrBuilder() {
+    @Override
+    public AssetIDOrBuilder getAssetIDOrBuilder() {
       if ((implCase_ == 1) && (assetIDBuilder_ != null)) {
         return assetIDBuilder_.getMessageOrBuilder();
       } else {
         if (implCase_ == 1) {
-          return (com.ids.AssetID) impl_;
+          return (AssetID) impl_;
         }
-        return com.ids.AssetID.getDefaultInstance();
+        return AssetID.getDefaultInstance();
       }
     }
     /**
      * <code>.ids.AssetID asset_i_d = 1 [json_name = "assetID"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.AssetID, com.ids.AssetID.Builder, com.ids.AssetIDOrBuilder> 
+        AssetID, AssetID.Builder, AssetIDOrBuilder>
         getAssetIDFieldBuilder() {
       if (assetIDBuilder_ == null) {
         if (!(implCase_ == 1)) {
-          impl_ = com.ids.AssetID.getDefaultInstance();
+          impl_ = AssetID.getDefaultInstance();
         }
         assetIDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.ids.AssetID, com.ids.AssetID.Builder, com.ids.AssetIDOrBuilder>(
-                (com.ids.AssetID) impl_,
+            AssetID, AssetID.Builder, AssetIDOrBuilder>(
+                (AssetID) impl_,
                 getParentForChildren(),
                 isClean());
         impl_ = null;
@@ -688,12 +688,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.CoinID, com.ids.CoinID.Builder, com.ids.CoinIDOrBuilder> coinIDBuilder_;
+        CoinID, CoinID.Builder, CoinIDOrBuilder> coinIDBuilder_;
     /**
      * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
      * @return Whether the coinID field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasCoinID() {
       return implCase_ == 2;
     }
@@ -701,24 +701,24 @@ private static final long serialVersionUID = 0L;
      * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
      * @return The coinID.
      */
-    @java.lang.Override
-    public com.ids.CoinID getCoinID() {
+    @Override
+    public CoinID getCoinID() {
       if (coinIDBuilder_ == null) {
         if (implCase_ == 2) {
-          return (com.ids.CoinID) impl_;
+          return (CoinID) impl_;
         }
-        return com.ids.CoinID.getDefaultInstance();
+        return CoinID.getDefaultInstance();
       } else {
         if (implCase_ == 2) {
           return coinIDBuilder_.getMessage();
         }
-        return com.ids.CoinID.getDefaultInstance();
+        return CoinID.getDefaultInstance();
       }
     }
     /**
      * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
      */
-    public Builder setCoinID(com.ids.CoinID value) {
+    public Builder setCoinID(CoinID value) {
       if (coinIDBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -735,7 +735,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
      */
     public Builder setCoinID(
-        com.ids.CoinID.Builder builderForValue) {
+        CoinID.Builder builderForValue) {
       if (coinIDBuilder_ == null) {
         impl_ = builderForValue.build();
         onChanged();
@@ -748,11 +748,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
      */
-    public Builder mergeCoinID(com.ids.CoinID value) {
+    public Builder mergeCoinID(CoinID value) {
       if (coinIDBuilder_ == null) {
         if (implCase_ == 2 &&
-            impl_ != com.ids.CoinID.getDefaultInstance()) {
-          impl_ = com.ids.CoinID.newBuilder((com.ids.CoinID) impl_)
+            impl_ != CoinID.getDefaultInstance()) {
+          impl_ = CoinID.newBuilder((CoinID) impl_)
               .mergeFrom(value).buildPartial();
         } else {
           impl_ = value;
@@ -790,36 +790,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
      */
-    public com.ids.CoinID.Builder getCoinIDBuilder() {
+    public CoinID.Builder getCoinIDBuilder() {
       return getCoinIDFieldBuilder().getBuilder();
     }
     /**
      * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
      */
-    @java.lang.Override
-    public com.ids.CoinIDOrBuilder getCoinIDOrBuilder() {
+    @Override
+    public CoinIDOrBuilder getCoinIDOrBuilder() {
       if ((implCase_ == 2) && (coinIDBuilder_ != null)) {
         return coinIDBuilder_.getMessageOrBuilder();
       } else {
         if (implCase_ == 2) {
-          return (com.ids.CoinID) impl_;
+          return (CoinID) impl_;
         }
-        return com.ids.CoinID.getDefaultInstance();
+        return CoinID.getDefaultInstance();
       }
     }
     /**
      * <code>.ids.CoinID coin_i_d = 2 [json_name = "coinID"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ids.CoinID, com.ids.CoinID.Builder, com.ids.CoinIDOrBuilder> 
+        CoinID, CoinID.Builder, CoinIDOrBuilder>
         getCoinIDFieldBuilder() {
       if (coinIDBuilder_ == null) {
         if (!(implCase_ == 2)) {
-          impl_ = com.ids.CoinID.getDefaultInstance();
+          impl_ = CoinID.getDefaultInstance();
         }
         coinIDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.ids.CoinID, com.ids.CoinID.Builder, com.ids.CoinIDOrBuilder>(
-                (com.ids.CoinID) impl_,
+            CoinID, CoinID.Builder, CoinIDOrBuilder>(
+                (CoinID) impl_,
                 getParentForChildren(),
                 isClean());
         impl_ = null;
@@ -828,13 +828,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return coinIDBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -845,18 +845,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ids.AnyOwnableID)
-  private static final com.ids.AnyOwnableID DEFAULT_INSTANCE;
+  private static final AnyOwnableID DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ids.AnyOwnableID();
+    DEFAULT_INSTANCE = new AnyOwnableID();
   }
 
-  public static com.ids.AnyOwnableID getDefaultInstance() {
+  public static AnyOwnableID getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<AnyOwnableID>
       PARSER = new com.google.protobuf.AbstractParser<AnyOwnableID>() {
-    @java.lang.Override
+    @Override
     public AnyOwnableID parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -880,13 +880,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<AnyOwnableID> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ids.AnyOwnableID getDefaultInstanceForType() {
+  @Override
+  public AnyOwnableID getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

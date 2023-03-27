@@ -22,24 +22,24 @@ private static final long serialVersionUID = 0L;
   private MsgBeginRedelegateResponse() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgBeginRedelegateResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.staking.v1beta1.TxProto.internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_descriptor;
+    return TxProto.internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.staking.v1beta1.TxProto.internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_fieldAccessorTable
+    return TxProto.internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse.class, com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse.Builder.class);
+            MsgBeginRedelegateResponse.class, Builder.class);
   }
 
   public static final int COMPLETION_TIME_FIELD_NUMBER = 1;
@@ -48,7 +48,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp completion_time = 1 [json_name = "completionTime", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return Whether the completionTime field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasCompletionTime() {
     return completionTime_ != null;
   }
@@ -56,20 +56,20 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp completion_time = 1 [json_name = "completionTime", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return The completionTime.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Timestamp getCompletionTime() {
     return completionTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : completionTime_;
   }
   /**
    * <code>.google.protobuf.Timestamp completion_time = 1 [json_name = "completionTime", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.TimestampOrBuilder getCompletionTimeOrBuilder() {
     return completionTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : completionTime_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -79,7 +79,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (completionTime_ != null) {
@@ -88,7 +88,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -103,15 +103,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse)) {
+    if (!(obj instanceof MsgBeginRedelegateResponse)) {
       return super.equals(obj);
     }
-    com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse other = (com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse) obj;
+    MsgBeginRedelegateResponse other = (MsgBeginRedelegateResponse) obj;
 
     if (hasCompletionTime() != other.hasCompletionTime()) return false;
     if (hasCompletionTime()) {
@@ -122,7 +122,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -138,69 +138,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseFrom(
+  public static MsgBeginRedelegateResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseFrom(
+  public static MsgBeginRedelegateResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseFrom(
+  public static MsgBeginRedelegateResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseFrom(
+  public static MsgBeginRedelegateResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseFrom(byte[] data)
+  public static MsgBeginRedelegateResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseFrom(
+  public static MsgBeginRedelegateResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseFrom(java.io.InputStream input)
+  public static MsgBeginRedelegateResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseFrom(
+  public static MsgBeginRedelegateResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseDelimitedFrom(java.io.InputStream input)
+  public static MsgBeginRedelegateResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseDelimitedFrom(
+  public static MsgBeginRedelegateResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseFrom(
+  public static MsgBeginRedelegateResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse parseFrom(
+  public static MsgBeginRedelegateResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -208,23 +208,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse prototype) {
+  public static Builder newBuilder(MsgBeginRedelegateResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -238,18 +238,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.MsgBeginRedelegateResponse)
-      com.cosmos.staking.v1beta1.MsgBeginRedelegateResponseOrBuilder {
+      MsgBeginRedelegateResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.staking.v1beta1.TxProto.internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_descriptor;
+      return TxProto.internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.staking.v1beta1.TxProto.internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_fieldAccessorTable
+      return TxProto.internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse.class, com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse.Builder.class);
+              MsgBeginRedelegateResponse.class, Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse.newBuilder()
@@ -258,11 +258,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -274,35 +274,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.staking.v1beta1.TxProto.internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_descriptor;
+      return TxProto.internal_static_cosmos_staking_v1beta1_MsgBeginRedelegateResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse getDefaultInstanceForType() {
-      return com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse.getDefaultInstance();
+    @Override
+    public MsgBeginRedelegateResponse getDefaultInstanceForType() {
+      return MsgBeginRedelegateResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse build() {
-      com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse result = buildPartial();
+    @Override
+    public MsgBeginRedelegateResponse build() {
+      MsgBeginRedelegateResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse buildPartial() {
-      com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse result = new com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse(this);
+    @Override
+    public MsgBeginRedelegateResponse buildPartial() {
+      MsgBeginRedelegateResponse result = new MsgBeginRedelegateResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse result) {
+    private void buildPartial0(MsgBeginRedelegateResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.completionTime_ = completionTimeBuilder_ == null
@@ -311,50 +311,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse) {
-        return mergeFrom((com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse)other);
+      if (other instanceof MsgBeginRedelegateResponse) {
+        return mergeFrom((MsgBeginRedelegateResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse other) {
-      if (other == com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(MsgBeginRedelegateResponse other) {
+      if (other == MsgBeginRedelegateResponse.getDefaultInstance()) return this;
       if (other.hasCompletionTime()) {
         mergeCompletionTime(other.getCompletionTime());
       }
@@ -363,18 +363,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -526,13 +526,13 @@ private static final long serialVersionUID = 0L;
       }
       return completionTimeBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -543,18 +543,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.MsgBeginRedelegateResponse)
-  private static final com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse DEFAULT_INSTANCE;
+  private static final MsgBeginRedelegateResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse();
+    DEFAULT_INSTANCE = new MsgBeginRedelegateResponse();
   }
 
-  public static com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse getDefaultInstance() {
+  public static MsgBeginRedelegateResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgBeginRedelegateResponse>
       PARSER = new com.google.protobuf.AbstractParser<MsgBeginRedelegateResponse>() {
-    @java.lang.Override
+    @Override
     public MsgBeginRedelegateResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -578,13 +578,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<MsgBeginRedelegateResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.MsgBeginRedelegateResponse getDefaultInstanceForType() {
+  @Override
+  public MsgBeginRedelegateResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

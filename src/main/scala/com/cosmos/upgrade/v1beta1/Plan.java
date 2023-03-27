@@ -24,29 +24,29 @@ private static final long serialVersionUID = 0L;
     info_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new Plan();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.upgrade.v1beta1.UpgradeProto.internal_static_cosmos_upgrade_v1beta1_Plan_descriptor;
+    return UpgradeProto.internal_static_cosmos_upgrade_v1beta1_Plan_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.upgrade.v1beta1.UpgradeProto.internal_static_cosmos_upgrade_v1beta1_Plan_fieldAccessorTable
+    return UpgradeProto.internal_static_cosmos_upgrade_v1beta1_Plan_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.upgrade.v1beta1.Plan.class, com.cosmos.upgrade.v1beta1.Plan.Builder.class);
+            Plan.class, Builder.class);
   }
 
   public static final int NAME_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object name_ = "";
+  private volatile Object name_ = "";
   /**
    * <pre>
    * Sets the name for the upgrade. This name will be used by the upgraded
@@ -61,15 +61,15 @@ private static final long serialVersionUID = 0L;
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  @java.lang.Override
-  public java.lang.String getName() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getName() {
+    Object ref = name_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       name_ = s;
       return s;
     }
@@ -88,14 +88,14 @@ private static final long serialVersionUID = 0L;
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The bytes for name.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getNameBytes() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
+    Object ref = name_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       name_ = b;
       return b;
     } else {
@@ -117,8 +117,8 @@ private static final long serialVersionUID = 0L;
    *     See cosmos/upgrade/v1beta1/upgrade.proto;l=27
    * @return Whether the time field is set.
    */
-  @java.lang.Override
-  @java.lang.Deprecated public boolean hasTime() {
+  @Override
+  @Deprecated public boolean hasTime() {
     return time_ != null;
   }
   /**
@@ -133,8 +133,8 @@ private static final long serialVersionUID = 0L;
    *     See cosmos/upgrade/v1beta1/upgrade.proto;l=27
    * @return The time.
    */
-  @java.lang.Override
-  @java.lang.Deprecated public com.google.protobuf.Timestamp getTime() {
+  @Override
+  @Deprecated public com.google.protobuf.Timestamp getTime() {
     return time_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : time_;
   }
   /**
@@ -146,8 +146,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", deprecated = true, (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    */
-  @java.lang.Override
-  @java.lang.Deprecated public com.google.protobuf.TimestampOrBuilder getTimeOrBuilder() {
+  @Override
+  @Deprecated public com.google.protobuf.TimestampOrBuilder getTimeOrBuilder() {
     return time_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : time_;
   }
 
@@ -162,14 +162,14 @@ private static final long serialVersionUID = 0L;
    * <code>int64 height = 3 [json_name = "height"];</code>
    * @return The height.
    */
-  @java.lang.Override
+  @Override
   public long getHeight() {
     return height_;
   }
 
   public static final int INFO_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object info_ = "";
+  private volatile Object info_ = "";
   /**
    * <pre>
    * Any application specific upgrade info to be included on-chain
@@ -179,15 +179,15 @@ private static final long serialVersionUID = 0L;
    * <code>string info = 4 [json_name = "info"];</code>
    * @return The info.
    */
-  @java.lang.Override
-  public java.lang.String getInfo() {
-    java.lang.Object ref = info_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getInfo() {
+    Object ref = info_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       info_ = s;
       return s;
     }
@@ -201,14 +201,14 @@ private static final long serialVersionUID = 0L;
    * <code>string info = 4 [json_name = "info"];</code>
    * @return The bytes for info.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getInfoBytes() {
-    java.lang.Object ref = info_;
-    if (ref instanceof java.lang.String) {
+    Object ref = info_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       info_ = b;
       return b;
     } else {
@@ -230,8 +230,8 @@ private static final long serialVersionUID = 0L;
    *     See cosmos/upgrade/v1beta1/upgrade.proto;l=40
    * @return Whether the upgradedClientState field is set.
    */
-  @java.lang.Override
-  @java.lang.Deprecated public boolean hasUpgradedClientState() {
+  @Override
+  @Deprecated public boolean hasUpgradedClientState() {
     return upgradedClientState_ != null;
   }
   /**
@@ -246,8 +246,8 @@ private static final long serialVersionUID = 0L;
    *     See cosmos/upgrade/v1beta1/upgrade.proto;l=40
    * @return The upgradedClientState.
    */
-  @java.lang.Override
-  @java.lang.Deprecated public com.google.protobuf.Any getUpgradedClientState() {
+  @Override
+  @Deprecated public com.google.protobuf.Any getUpgradedClientState() {
     return upgradedClientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : upgradedClientState_;
   }
   /**
@@ -259,13 +259,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Any upgraded_client_state = 5 [json_name = "upgradedClientState", deprecated = true, (.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
    */
-  @java.lang.Override
-  @java.lang.Deprecated public com.google.protobuf.AnyOrBuilder getUpgradedClientStateOrBuilder() {
+  @Override
+  @Deprecated public com.google.protobuf.AnyOrBuilder getUpgradedClientStateOrBuilder() {
     return upgradedClientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : upgradedClientState_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -275,7 +275,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
@@ -296,7 +296,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -325,15 +325,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.upgrade.v1beta1.Plan)) {
+    if (!(obj instanceof Plan)) {
       return super.equals(obj);
     }
-    com.cosmos.upgrade.v1beta1.Plan other = (com.cosmos.upgrade.v1beta1.Plan) obj;
+    Plan other = (Plan) obj;
 
     if (!getName()
         .equals(other.getName())) return false;
@@ -355,7 +355,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -382,69 +382,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.upgrade.v1beta1.Plan parseFrom(
+  public static Plan parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseFrom(
+  public static Plan parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseFrom(
+  public static Plan parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseFrom(
+  public static Plan parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseFrom(byte[] data)
+  public static Plan parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseFrom(
+  public static Plan parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseFrom(java.io.InputStream input)
+  public static Plan parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseFrom(
+  public static Plan parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseDelimitedFrom(java.io.InputStream input)
+  public static Plan parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseDelimitedFrom(
+  public static Plan parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseFrom(
+  public static Plan parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.upgrade.v1beta1.Plan parseFrom(
+  public static Plan parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -452,23 +452,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.upgrade.v1beta1.Plan prototype) {
+  public static Builder newBuilder(Plan prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -482,18 +482,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.upgrade.v1beta1.Plan)
-      com.cosmos.upgrade.v1beta1.PlanOrBuilder {
+      PlanOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.upgrade.v1beta1.UpgradeProto.internal_static_cosmos_upgrade_v1beta1_Plan_descriptor;
+      return UpgradeProto.internal_static_cosmos_upgrade_v1beta1_Plan_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.upgrade.v1beta1.UpgradeProto.internal_static_cosmos_upgrade_v1beta1_Plan_fieldAccessorTable
+      return UpgradeProto.internal_static_cosmos_upgrade_v1beta1_Plan_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.upgrade.v1beta1.Plan.class, com.cosmos.upgrade.v1beta1.Plan.Builder.class);
+              Plan.class, Builder.class);
     }
 
     // Construct using com.cosmos.upgrade.v1beta1.Plan.newBuilder()
@@ -502,11 +502,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -526,35 +526,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.upgrade.v1beta1.UpgradeProto.internal_static_cosmos_upgrade_v1beta1_Plan_descriptor;
+      return UpgradeProto.internal_static_cosmos_upgrade_v1beta1_Plan_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.upgrade.v1beta1.Plan getDefaultInstanceForType() {
-      return com.cosmos.upgrade.v1beta1.Plan.getDefaultInstance();
+    @Override
+    public Plan getDefaultInstanceForType() {
+      return Plan.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.upgrade.v1beta1.Plan build() {
-      com.cosmos.upgrade.v1beta1.Plan result = buildPartial();
+    @Override
+    public Plan build() {
+      Plan result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.upgrade.v1beta1.Plan buildPartial() {
-      com.cosmos.upgrade.v1beta1.Plan result = new com.cosmos.upgrade.v1beta1.Plan(this);
+    @Override
+    public Plan buildPartial() {
+      Plan result = new Plan(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.cosmos.upgrade.v1beta1.Plan result) {
+    private void buildPartial0(Plan result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.name_ = name_;
@@ -577,50 +577,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.upgrade.v1beta1.Plan) {
-        return mergeFrom((com.cosmos.upgrade.v1beta1.Plan)other);
+      if (other instanceof Plan) {
+        return mergeFrom((Plan)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.upgrade.v1beta1.Plan other) {
-      if (other == com.cosmos.upgrade.v1beta1.Plan.getDefaultInstance()) return this;
+    public Builder mergeFrom(Plan other) {
+      if (other == Plan.getDefaultInstance()) return this;
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
         bitField0_ |= 0x00000001;
@@ -645,18 +645,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -712,7 +712,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object name_ = "";
+    private Object name_ = "";
     /**
      * <pre>
      * Sets the name for the upgrade. This name will be used by the upgraded
@@ -727,16 +727,16 @@ private static final long serialVersionUID = 0L;
      * <code>string name = 1 [json_name = "name"];</code>
      * @return The name.
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getName() {
+      Object ref = name_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         name_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -755,11 +755,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      java.lang.Object ref = name_;
+      Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         name_ = b;
         return b;
       } else {
@@ -782,7 +782,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setName(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       name_ = value;
       bitField0_ |= 0x00000001;
@@ -849,7 +849,7 @@ private static final long serialVersionUID = 0L;
      *     See cosmos/upgrade/v1beta1/upgrade.proto;l=27
      * @return Whether the time field is set.
      */
-    @java.lang.Deprecated public boolean hasTime() {
+    @Deprecated public boolean hasTime() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
@@ -864,7 +864,7 @@ private static final long serialVersionUID = 0L;
      *     See cosmos/upgrade/v1beta1/upgrade.proto;l=27
      * @return The time.
      */
-    @java.lang.Deprecated public com.google.protobuf.Timestamp getTime() {
+    @Deprecated public com.google.protobuf.Timestamp getTime() {
       if (timeBuilder_ == null) {
         return time_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : time_;
       } else {
@@ -880,7 +880,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", deprecated = true, (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
      */
-    @java.lang.Deprecated public Builder setTime(com.google.protobuf.Timestamp value) {
+    @Deprecated public Builder setTime(com.google.protobuf.Timestamp value) {
       if (timeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -902,7 +902,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", deprecated = true, (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
      */
-    @java.lang.Deprecated public Builder setTime(
+    @Deprecated public Builder setTime(
         com.google.protobuf.Timestamp.Builder builderForValue) {
       if (timeBuilder_ == null) {
         time_ = builderForValue.build();
@@ -922,7 +922,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", deprecated = true, (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
      */
-    @java.lang.Deprecated public Builder mergeTime(com.google.protobuf.Timestamp value) {
+    @Deprecated public Builder mergeTime(com.google.protobuf.Timestamp value) {
       if (timeBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           time_ != null &&
@@ -947,7 +947,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", deprecated = true, (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
      */
-    @java.lang.Deprecated public Builder clearTime() {
+    @Deprecated public Builder clearTime() {
       bitField0_ = (bitField0_ & ~0x00000002);
       time_ = null;
       if (timeBuilder_ != null) {
@@ -966,7 +966,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", deprecated = true, (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.Timestamp.Builder getTimeBuilder() {
+    @Deprecated public com.google.protobuf.Timestamp.Builder getTimeBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getTimeFieldBuilder().getBuilder();
@@ -980,7 +980,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Timestamp time = 2 [json_name = "time", deprecated = true, (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.TimestampOrBuilder getTimeOrBuilder() {
+    @Deprecated public com.google.protobuf.TimestampOrBuilder getTimeOrBuilder() {
       if (timeBuilder_ != null) {
         return timeBuilder_.getMessageOrBuilder();
       } else {
@@ -1021,7 +1021,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 height = 3 [json_name = "height"];</code>
      * @return The height.
      */
-    @java.lang.Override
+    @Override
     public long getHeight() {
       return height_;
     }
@@ -1058,7 +1058,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object info_ = "";
+    private Object info_ = "";
     /**
      * <pre>
      * Any application specific upgrade info to be included on-chain
@@ -1068,16 +1068,16 @@ private static final long serialVersionUID = 0L;
      * <code>string info = 4 [json_name = "info"];</code>
      * @return The info.
      */
-    public java.lang.String getInfo() {
-      java.lang.Object ref = info_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getInfo() {
+      Object ref = info_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         info_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -1091,11 +1091,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getInfoBytes() {
-      java.lang.Object ref = info_;
+      Object ref = info_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         info_ = b;
         return b;
       } else {
@@ -1113,7 +1113,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setInfo(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       info_ = value;
       bitField0_ |= 0x00000008;
@@ -1170,7 +1170,7 @@ private static final long serialVersionUID = 0L;
      *     See cosmos/upgrade/v1beta1/upgrade.proto;l=40
      * @return Whether the upgradedClientState field is set.
      */
-    @java.lang.Deprecated public boolean hasUpgradedClientState() {
+    @Deprecated public boolean hasUpgradedClientState() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
@@ -1185,7 +1185,7 @@ private static final long serialVersionUID = 0L;
      *     See cosmos/upgrade/v1beta1/upgrade.proto;l=40
      * @return The upgradedClientState.
      */
-    @java.lang.Deprecated public com.google.protobuf.Any getUpgradedClientState() {
+    @Deprecated public com.google.protobuf.Any getUpgradedClientState() {
       if (upgradedClientStateBuilder_ == null) {
         return upgradedClientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : upgradedClientState_;
       } else {
@@ -1201,7 +1201,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Any upgraded_client_state = 5 [json_name = "upgradedClientState", deprecated = true, (.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
      */
-    @java.lang.Deprecated public Builder setUpgradedClientState(com.google.protobuf.Any value) {
+    @Deprecated public Builder setUpgradedClientState(com.google.protobuf.Any value) {
       if (upgradedClientStateBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1223,7 +1223,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Any upgraded_client_state = 5 [json_name = "upgradedClientState", deprecated = true, (.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
      */
-    @java.lang.Deprecated public Builder setUpgradedClientState(
+    @Deprecated public Builder setUpgradedClientState(
         com.google.protobuf.Any.Builder builderForValue) {
       if (upgradedClientStateBuilder_ == null) {
         upgradedClientState_ = builderForValue.build();
@@ -1243,7 +1243,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Any upgraded_client_state = 5 [json_name = "upgradedClientState", deprecated = true, (.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
      */
-    @java.lang.Deprecated public Builder mergeUpgradedClientState(com.google.protobuf.Any value) {
+    @Deprecated public Builder mergeUpgradedClientState(com.google.protobuf.Any value) {
       if (upgradedClientStateBuilder_ == null) {
         if (((bitField0_ & 0x00000010) != 0) &&
           upgradedClientState_ != null &&
@@ -1268,7 +1268,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Any upgraded_client_state = 5 [json_name = "upgradedClientState", deprecated = true, (.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
      */
-    @java.lang.Deprecated public Builder clearUpgradedClientState() {
+    @Deprecated public Builder clearUpgradedClientState() {
       bitField0_ = (bitField0_ & ~0x00000010);
       upgradedClientState_ = null;
       if (upgradedClientStateBuilder_ != null) {
@@ -1287,7 +1287,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Any upgraded_client_state = 5 [json_name = "upgradedClientState", deprecated = true, (.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.Any.Builder getUpgradedClientStateBuilder() {
+    @Deprecated public com.google.protobuf.Any.Builder getUpgradedClientStateBuilder() {
       bitField0_ |= 0x00000010;
       onChanged();
       return getUpgradedClientStateFieldBuilder().getBuilder();
@@ -1301,7 +1301,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Any upgraded_client_state = 5 [json_name = "upgradedClientState", deprecated = true, (.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.AnyOrBuilder getUpgradedClientStateOrBuilder() {
+    @Deprecated public com.google.protobuf.AnyOrBuilder getUpgradedClientStateOrBuilder() {
       if (upgradedClientStateBuilder_ != null) {
         return upgradedClientStateBuilder_.getMessageOrBuilder();
       } else {
@@ -1331,13 +1331,13 @@ private static final long serialVersionUID = 0L;
       }
       return upgradedClientStateBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1348,18 +1348,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.upgrade.v1beta1.Plan)
-  private static final com.cosmos.upgrade.v1beta1.Plan DEFAULT_INSTANCE;
+  private static final Plan DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.upgrade.v1beta1.Plan();
+    DEFAULT_INSTANCE = new Plan();
   }
 
-  public static com.cosmos.upgrade.v1beta1.Plan getDefaultInstance() {
+  public static Plan getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Plan>
       PARSER = new com.google.protobuf.AbstractParser<Plan>() {
-    @java.lang.Override
+    @Override
     public Plan parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1383,13 +1383,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Plan> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.upgrade.v1beta1.Plan getDefaultInstanceForType() {
+  @Override
+  public Plan getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -15,7 +15,7 @@ public interface InterfaceImplementerDescriptorOrBuilder extends
    * <code>string fullname = 1 [json_name = "fullname"];</code>
    * @return The fullname.
    */
-  java.lang.String getFullname();
+  String getFullname();
   /**
    * <pre>
    * fullname is the protobuf queryable name of the interface implementer
@@ -38,7 +38,7 @@ public interface InterfaceImplementerDescriptorOrBuilder extends
    * <code>string type_url = 2 [json_name = "typeUrl"];</code>
    * @return The typeUrl.
    */
-  java.lang.String getTypeUrl();
+  String getTypeUrl();
   /**
    * <pre>
    * type_url defines the type URL used when marshalling the type as any

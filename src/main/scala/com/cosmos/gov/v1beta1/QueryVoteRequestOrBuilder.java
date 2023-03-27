@@ -25,7 +25,7 @@ public interface QueryVoteRequestOrBuilder extends
    * <code>string voter = 2 [json_name = "voter"];</code>
    * @return The voter.
    */
-  java.lang.String getVoter();
+  String getVoter();
   /**
    * <pre>
    * voter defines the oter address for the proposals.

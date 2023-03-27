@@ -52,7 +52,7 @@ public final class VestingProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n$cosmos/vesting/v1beta1/vesting.proto\022\026" +
       "cosmos.vesting.v1beta1\032\024gogoproto/gogo.p" +
       "roto\032\036cosmos/base/v1beta1/coin.proto\032\036co" +
@@ -114,37 +114,37 @@ public final class VestingProto {
     internal_static_cosmos_vesting_v1beta1_BaseVestingAccount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_vesting_v1beta1_BaseVestingAccount_descriptor,
-        new java.lang.String[] { "BaseAccount", "OriginalVesting", "DelegatedFree", "DelegatedVesting", "EndTime", });
+        new String[] { "BaseAccount", "OriginalVesting", "DelegatedFree", "DelegatedVesting", "EndTime", });
     internal_static_cosmos_vesting_v1beta1_ContinuousVestingAccount_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_vesting_v1beta1_ContinuousVestingAccount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_vesting_v1beta1_ContinuousVestingAccount_descriptor,
-        new java.lang.String[] { "BaseVestingAccount", "StartTime", });
+        new String[] { "BaseVestingAccount", "StartTime", });
     internal_static_cosmos_vesting_v1beta1_DelayedVestingAccount_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_vesting_v1beta1_DelayedVestingAccount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_vesting_v1beta1_DelayedVestingAccount_descriptor,
-        new java.lang.String[] { "BaseVestingAccount", });
+        new String[] { "BaseVestingAccount", });
     internal_static_cosmos_vesting_v1beta1_Period_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_vesting_v1beta1_Period_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_vesting_v1beta1_Period_descriptor,
-        new java.lang.String[] { "Length", "Amount", });
+        new String[] { "Length", "Amount", });
     internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_descriptor,
-        new java.lang.String[] { "BaseVestingAccount", "StartTime", "VestingPeriods", });
+        new String[] { "BaseVestingAccount", "StartTime", "VestingPeriods", });
     internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_descriptor,
-        new java.lang.String[] { "BaseVestingAccount", });
+        new String[] { "BaseVestingAccount", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);

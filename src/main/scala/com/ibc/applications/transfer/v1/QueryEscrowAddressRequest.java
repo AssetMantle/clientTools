@@ -24,29 +24,29 @@ private static final long serialVersionUID = 0L;
     channelId_ = "";
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryEscrowAddressRequest();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ibc.applications.transfer.v1.QueryProto.internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_descriptor;
+    return QueryProto.internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ibc.applications.transfer.v1.QueryProto.internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_fieldAccessorTable
+    return QueryProto.internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.ibc.applications.transfer.v1.QueryEscrowAddressRequest.class, com.ibc.applications.transfer.v1.QueryEscrowAddressRequest.Builder.class);
+            QueryEscrowAddressRequest.class, Builder.class);
   }
 
   public static final int PORT_ID_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object portId_ = "";
+  private volatile Object portId_ = "";
   /**
    * <pre>
    * unique port identifier
@@ -55,15 +55,15 @@ private static final long serialVersionUID = 0L;
    * <code>string port_id = 1 [json_name = "portId"];</code>
    * @return The portId.
    */
-  @java.lang.Override
-  public java.lang.String getPortId() {
-    java.lang.Object ref = portId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getPortId() {
+    Object ref = portId_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       portId_ = s;
       return s;
     }
@@ -76,14 +76,14 @@ private static final long serialVersionUID = 0L;
    * <code>string port_id = 1 [json_name = "portId"];</code>
    * @return The bytes for portId.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getPortIdBytes() {
-    java.lang.Object ref = portId_;
-    if (ref instanceof java.lang.String) {
+    Object ref = portId_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       portId_ = b;
       return b;
     } else {
@@ -93,7 +93,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int CHANNEL_ID_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object channelId_ = "";
+  private volatile Object channelId_ = "";
   /**
    * <pre>
    * unique channel identifier
@@ -102,15 +102,15 @@ private static final long serialVersionUID = 0L;
    * <code>string channel_id = 2 [json_name = "channelId"];</code>
    * @return The channelId.
    */
-  @java.lang.Override
-  public java.lang.String getChannelId() {
-    java.lang.Object ref = channelId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getChannelId() {
+    Object ref = channelId_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       channelId_ = s;
       return s;
     }
@@ -123,14 +123,14 @@ private static final long serialVersionUID = 0L;
    * <code>string channel_id = 2 [json_name = "channelId"];</code>
    * @return The bytes for channelId.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getChannelIdBytes() {
-    java.lang.Object ref = channelId_;
-    if (ref instanceof java.lang.String) {
+    Object ref = channelId_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       channelId_ = b;
       return b;
     } else {
@@ -139,7 +139,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -149,7 +149,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(portId_)) {
@@ -161,7 +161,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -178,15 +178,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.ibc.applications.transfer.v1.QueryEscrowAddressRequest)) {
+    if (!(obj instanceof QueryEscrowAddressRequest)) {
       return super.equals(obj);
     }
-    com.ibc.applications.transfer.v1.QueryEscrowAddressRequest other = (com.ibc.applications.transfer.v1.QueryEscrowAddressRequest) obj;
+    QueryEscrowAddressRequest other = (QueryEscrowAddressRequest) obj;
 
     if (!getPortId()
         .equals(other.getPortId())) return false;
@@ -196,7 +196,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -212,69 +212,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseFrom(
+  public static QueryEscrowAddressRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseFrom(
+  public static QueryEscrowAddressRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseFrom(
+  public static QueryEscrowAddressRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseFrom(
+  public static QueryEscrowAddressRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseFrom(byte[] data)
+  public static QueryEscrowAddressRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseFrom(
+  public static QueryEscrowAddressRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseFrom(java.io.InputStream input)
+  public static QueryEscrowAddressRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseFrom(
+  public static QueryEscrowAddressRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseDelimitedFrom(java.io.InputStream input)
+  public static QueryEscrowAddressRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseDelimitedFrom(
+  public static QueryEscrowAddressRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseFrom(
+  public static QueryEscrowAddressRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest parseFrom(
+  public static QueryEscrowAddressRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -282,23 +282,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.ibc.applications.transfer.v1.QueryEscrowAddressRequest prototype) {
+  public static Builder newBuilder(QueryEscrowAddressRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -312,18 +312,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.applications.transfer.v1.QueryEscrowAddressRequest)
-      com.ibc.applications.transfer.v1.QueryEscrowAddressRequestOrBuilder {
+      QueryEscrowAddressRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ibc.applications.transfer.v1.QueryProto.internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_descriptor;
+      return QueryProto.internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ibc.applications.transfer.v1.QueryProto.internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_fieldAccessorTable
+      return QueryProto.internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.ibc.applications.transfer.v1.QueryEscrowAddressRequest.class, com.ibc.applications.transfer.v1.QueryEscrowAddressRequest.Builder.class);
+              QueryEscrowAddressRequest.class, Builder.class);
     }
 
     // Construct using com.ibc.applications.transfer.v1.QueryEscrowAddressRequest.newBuilder()
@@ -332,11 +332,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -345,35 +345,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ibc.applications.transfer.v1.QueryProto.internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_descriptor;
+      return QueryProto.internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_descriptor;
     }
 
-    @java.lang.Override
-    public com.ibc.applications.transfer.v1.QueryEscrowAddressRequest getDefaultInstanceForType() {
-      return com.ibc.applications.transfer.v1.QueryEscrowAddressRequest.getDefaultInstance();
+    @Override
+    public QueryEscrowAddressRequest getDefaultInstanceForType() {
+      return QueryEscrowAddressRequest.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.ibc.applications.transfer.v1.QueryEscrowAddressRequest build() {
-      com.ibc.applications.transfer.v1.QueryEscrowAddressRequest result = buildPartial();
+    @Override
+    public QueryEscrowAddressRequest build() {
+      QueryEscrowAddressRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.ibc.applications.transfer.v1.QueryEscrowAddressRequest buildPartial() {
-      com.ibc.applications.transfer.v1.QueryEscrowAddressRequest result = new com.ibc.applications.transfer.v1.QueryEscrowAddressRequest(this);
+    @Override
+    public QueryEscrowAddressRequest buildPartial() {
+      QueryEscrowAddressRequest result = new QueryEscrowAddressRequest(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.ibc.applications.transfer.v1.QueryEscrowAddressRequest result) {
+    private void buildPartial0(QueryEscrowAddressRequest result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.portId_ = portId_;
@@ -383,50 +383,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.ibc.applications.transfer.v1.QueryEscrowAddressRequest) {
-        return mergeFrom((com.ibc.applications.transfer.v1.QueryEscrowAddressRequest)other);
+      if (other instanceof QueryEscrowAddressRequest) {
+        return mergeFrom((QueryEscrowAddressRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.ibc.applications.transfer.v1.QueryEscrowAddressRequest other) {
-      if (other == com.ibc.applications.transfer.v1.QueryEscrowAddressRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(QueryEscrowAddressRequest other) {
+      if (other == QueryEscrowAddressRequest.getDefaultInstance()) return this;
       if (!other.getPortId().isEmpty()) {
         portId_ = other.portId_;
         bitField0_ |= 0x00000001;
@@ -442,18 +442,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -490,7 +490,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object portId_ = "";
+    private Object portId_ = "";
     /**
      * <pre>
      * unique port identifier
@@ -499,16 +499,16 @@ private static final long serialVersionUID = 0L;
      * <code>string port_id = 1 [json_name = "portId"];</code>
      * @return The portId.
      */
-    public java.lang.String getPortId() {
-      java.lang.Object ref = portId_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getPortId() {
+      Object ref = portId_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         portId_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -521,11 +521,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getPortIdBytes() {
-      java.lang.Object ref = portId_;
+      Object ref = portId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         portId_ = b;
         return b;
       } else {
@@ -542,7 +542,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPortId(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       portId_ = value;
       bitField0_ |= 0x00000001;
@@ -582,7 +582,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object channelId_ = "";
+    private Object channelId_ = "";
     /**
      * <pre>
      * unique channel identifier
@@ -591,16 +591,16 @@ private static final long serialVersionUID = 0L;
      * <code>string channel_id = 2 [json_name = "channelId"];</code>
      * @return The channelId.
      */
-    public java.lang.String getChannelId() {
-      java.lang.Object ref = channelId_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getChannelId() {
+      Object ref = channelId_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         channelId_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -613,11 +613,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getChannelIdBytes() {
-      java.lang.Object ref = channelId_;
+      Object ref = channelId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         channelId_ = b;
         return b;
       } else {
@@ -634,7 +634,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setChannelId(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       channelId_ = value;
       bitField0_ |= 0x00000002;
@@ -673,13 +673,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -690,18 +690,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.applications.transfer.v1.QueryEscrowAddressRequest)
-  private static final com.ibc.applications.transfer.v1.QueryEscrowAddressRequest DEFAULT_INSTANCE;
+  private static final QueryEscrowAddressRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.ibc.applications.transfer.v1.QueryEscrowAddressRequest();
+    DEFAULT_INSTANCE = new QueryEscrowAddressRequest();
   }
 
-  public static com.ibc.applications.transfer.v1.QueryEscrowAddressRequest getDefaultInstance() {
+  public static QueryEscrowAddressRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryEscrowAddressRequest>
       PARSER = new com.google.protobuf.AbstractParser<QueryEscrowAddressRequest>() {
-    @java.lang.Override
+    @Override
     public QueryEscrowAddressRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -725,13 +725,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<QueryEscrowAddressRequest> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.ibc.applications.transfer.v1.QueryEscrowAddressRequest getDefaultInstanceForType() {
+  @Override
+  public QueryEscrowAddressRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

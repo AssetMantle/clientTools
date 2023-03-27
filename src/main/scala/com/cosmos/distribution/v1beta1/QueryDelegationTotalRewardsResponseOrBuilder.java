@@ -14,7 +14,7 @@ public interface QueryDelegationTotalRewardsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<com.cosmos.distribution.v1beta1.DelegationDelegatorReward> 
+  java.util.List<DelegationDelegatorReward>
       getRewardsList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryDelegationTotalRewardsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.distribution.v1beta1.DelegationDelegatorReward getRewards(int index);
+  DelegationDelegatorReward getRewards(int index);
   /**
    * <pre>
    * rewards defines all the rewards accrued by a delegator.
@@ -39,7 +39,7 @@ public interface QueryDelegationTotalRewardsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends com.cosmos.distribution.v1beta1.DelegationDelegatorRewardOrBuilder> 
+  java.util.List<? extends DelegationDelegatorRewardOrBuilder>
       getRewardsOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryDelegationTotalRewardsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.distribution.v1beta1.DelegationDelegatorRewardOrBuilder getRewardsOrBuilder(
+  DelegationDelegatorRewardOrBuilder getRewardsOrBuilder(
       int index);
 
   /**

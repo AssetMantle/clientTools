@@ -28,28 +28,28 @@ private static final long serialVersionUID = 0L;
     redelegations_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new GenesisState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.cosmos.staking.v1beta1.GenesisProto.internal_static_cosmos_staking_v1beta1_GenesisState_descriptor;
+    return GenesisProto.internal_static_cosmos_staking_v1beta1_GenesisState_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.cosmos.staking.v1beta1.GenesisProto.internal_static_cosmos_staking_v1beta1_GenesisState_fieldAccessorTable
+    return GenesisProto.internal_static_cosmos_staking_v1beta1_GenesisState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.cosmos.staking.v1beta1.GenesisState.class, com.cosmos.staking.v1beta1.GenesisState.Builder.class);
+            GenesisState.class, Builder.class);
   }
 
   public static final int PARAMS_FIELD_NUMBER = 1;
-  private com.cosmos.staking.v1beta1.Params params_;
+  private Params params_;
   /**
    * <pre>
    * params defines all the paramaters of related to deposit.
@@ -58,7 +58,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return Whether the params field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasParams() {
     return params_ != null;
   }
@@ -70,9 +70,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.Params getParams() {
-    return params_ == null ? com.cosmos.staking.v1beta1.Params.getDefaultInstance() : params_;
+  @Override
+  public Params getParams() {
+    return params_ == null ? Params.getDefaultInstance() : params_;
   }
   /**
    * <pre>
@@ -81,9 +81,9 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.ParamsOrBuilder getParamsOrBuilder() {
-    return params_ == null ? com.cosmos.staking.v1beta1.Params.getDefaultInstance() : params_;
+  @Override
+  public ParamsOrBuilder getParamsOrBuilder() {
+    return params_ == null ? Params.getDefaultInstance() : params_;
   }
 
   public static final int LAST_TOTAL_POWER_FIELD_NUMBER = 2;
@@ -97,14 +97,14 @@ private static final long serialVersionUID = 0L;
    * <code>bytes last_total_power = 2 [json_name = "lastTotalPower", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"last_total_power&#92;""];</code>
    * @return The lastTotalPower.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getLastTotalPower() {
     return lastTotalPower_;
   }
 
   public static final int LAST_VALIDATOR_POWERS_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.staking.v1beta1.LastValidatorPower> lastValidatorPowers_;
+  private java.util.List<LastValidatorPower> lastValidatorPowers_;
   /**
    * <pre>
    * last_validator_powers is a special index that provides a historical list
@@ -113,8 +113,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.staking.v1beta1.LastValidatorPower> getLastValidatorPowersList() {
+  @Override
+  public java.util.List<LastValidatorPower> getLastValidatorPowersList() {
     return lastValidatorPowers_;
   }
   /**
@@ -125,8 +125,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.staking.v1beta1.LastValidatorPowerOrBuilder> 
+  @Override
+  public java.util.List<? extends LastValidatorPowerOrBuilder>
       getLastValidatorPowersOrBuilderList() {
     return lastValidatorPowers_;
   }
@@ -138,7 +138,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public int getLastValidatorPowersCount() {
     return lastValidatorPowers_.size();
   }
@@ -150,8 +150,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.LastValidatorPower getLastValidatorPowers(int index) {
+  @Override
+  public LastValidatorPower getLastValidatorPowers(int index) {
     return lastValidatorPowers_.get(index);
   }
   /**
@@ -162,15 +162,15 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.LastValidatorPowerOrBuilder getLastValidatorPowersOrBuilder(
+  @Override
+  public LastValidatorPowerOrBuilder getLastValidatorPowersOrBuilder(
       int index) {
     return lastValidatorPowers_.get(index);
   }
 
   public static final int VALIDATORS_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.staking.v1beta1.Validator> validators_;
+  private java.util.List<Validator> validators_;
   /**
    * <pre>
    * delegations defines the validator set at genesis.
@@ -178,8 +178,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.staking.v1beta1.Validator> getValidatorsList() {
+  @Override
+  public java.util.List<Validator> getValidatorsList() {
     return validators_;
   }
   /**
@@ -189,8 +189,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.staking.v1beta1.ValidatorOrBuilder> 
+  @Override
+  public java.util.List<? extends ValidatorOrBuilder>
       getValidatorsOrBuilderList() {
     return validators_;
   }
@@ -201,7 +201,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getValidatorsCount() {
     return validators_.size();
   }
@@ -212,8 +212,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.Validator getValidators(int index) {
+  @Override
+  public Validator getValidators(int index) {
     return validators_.get(index);
   }
   /**
@@ -223,15 +223,15 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.ValidatorOrBuilder getValidatorsOrBuilder(
+  @Override
+  public ValidatorOrBuilder getValidatorsOrBuilder(
       int index) {
     return validators_.get(index);
   }
 
   public static final int DELEGATIONS_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.staking.v1beta1.Delegation> delegations_;
+  private java.util.List<Delegation> delegations_;
   /**
    * <pre>
    * delegations defines the delegations active at genesis.
@@ -239,8 +239,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.staking.v1beta1.Delegation> getDelegationsList() {
+  @Override
+  public java.util.List<Delegation> getDelegationsList() {
     return delegations_;
   }
   /**
@@ -250,8 +250,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.staking.v1beta1.DelegationOrBuilder> 
+  @Override
+  public java.util.List<? extends DelegationOrBuilder>
       getDelegationsOrBuilderList() {
     return delegations_;
   }
@@ -262,7 +262,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getDelegationsCount() {
     return delegations_.size();
   }
@@ -273,8 +273,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.Delegation getDelegations(int index) {
+  @Override
+  public Delegation getDelegations(int index) {
     return delegations_.get(index);
   }
   /**
@@ -284,15 +284,15 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.DelegationOrBuilder getDelegationsOrBuilder(
+  @Override
+  public DelegationOrBuilder getDelegationsOrBuilder(
       int index) {
     return delegations_.get(index);
   }
 
   public static final int UNBONDING_DELEGATIONS_FIELD_NUMBER = 6;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.staking.v1beta1.UnbondingDelegation> unbondingDelegations_;
+  private java.util.List<UnbondingDelegation> unbondingDelegations_;
   /**
    * <pre>
    * unbonding_delegations defines the unbonding delegations active at genesis.
@@ -300,8 +300,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.staking.v1beta1.UnbondingDelegation> getUnbondingDelegationsList() {
+  @Override
+  public java.util.List<UnbondingDelegation> getUnbondingDelegationsList() {
     return unbondingDelegations_;
   }
   /**
@@ -311,8 +311,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder> 
+  @Override
+  public java.util.List<? extends UnbondingDelegationOrBuilder>
       getUnbondingDelegationsOrBuilderList() {
     return unbondingDelegations_;
   }
@@ -323,7 +323,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
    */
-  @java.lang.Override
+  @Override
   public int getUnbondingDelegationsCount() {
     return unbondingDelegations_.size();
   }
@@ -334,8 +334,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.UnbondingDelegation getUnbondingDelegations(int index) {
+  @Override
+  public UnbondingDelegation getUnbondingDelegations(int index) {
     return unbondingDelegations_.get(index);
   }
   /**
@@ -345,15 +345,15 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder getUnbondingDelegationsOrBuilder(
+  @Override
+  public UnbondingDelegationOrBuilder getUnbondingDelegationsOrBuilder(
       int index) {
     return unbondingDelegations_.get(index);
   }
 
   public static final int REDELEGATIONS_FIELD_NUMBER = 7;
   @SuppressWarnings("serial")
-  private java.util.List<com.cosmos.staking.v1beta1.Redelegation> redelegations_;
+  private java.util.List<Redelegation> redelegations_;
   /**
    * <pre>
    * redelegations defines the redelegations active at genesis.
@@ -361,8 +361,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.cosmos.staking.v1beta1.Redelegation> getRedelegationsList() {
+  @Override
+  public java.util.List<Redelegation> getRedelegationsList() {
     return redelegations_;
   }
   /**
@@ -372,8 +372,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.cosmos.staking.v1beta1.RedelegationOrBuilder> 
+  @Override
+  public java.util.List<? extends RedelegationOrBuilder>
       getRedelegationsOrBuilderList() {
     return redelegations_;
   }
@@ -384,7 +384,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getRedelegationsCount() {
     return redelegations_.size();
   }
@@ -395,8 +395,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.Redelegation getRedelegations(int index) {
+  @Override
+  public Redelegation getRedelegations(int index) {
     return redelegations_.get(index);
   }
   /**
@@ -406,8 +406,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.RedelegationOrBuilder getRedelegationsOrBuilder(
+  @Override
+  public RedelegationOrBuilder getRedelegationsOrBuilder(
       int index) {
     return redelegations_.get(index);
   }
@@ -418,13 +418,13 @@ private static final long serialVersionUID = 0L;
    * <code>bool exported = 8 [json_name = "exported"];</code>
    * @return The exported.
    */
-  @java.lang.Override
+  @Override
   public boolean getExported() {
     return exported_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -434,7 +434,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (params_ != null) {
@@ -464,7 +464,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -507,15 +507,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.cosmos.staking.v1beta1.GenesisState)) {
+    if (!(obj instanceof GenesisState)) {
       return super.equals(obj);
     }
-    com.cosmos.staking.v1beta1.GenesisState other = (com.cosmos.staking.v1beta1.GenesisState) obj;
+    GenesisState other = (GenesisState) obj;
 
     if (hasParams() != other.hasParams()) return false;
     if (hasParams()) {
@@ -540,7 +540,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -581,69 +581,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.cosmos.staking.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseFrom(byte[] data)
+  public static GenesisState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseFrom(java.io.InputStream input)
+  public static GenesisState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseDelimitedFrom(java.io.InputStream input)
+  public static GenesisState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseDelimitedFrom(
+  public static GenesisState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.cosmos.staking.v1beta1.GenesisState parseFrom(
+  public static GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -651,23 +651,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.cosmos.staking.v1beta1.GenesisState prototype) {
+  public static Builder newBuilder(GenesisState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -681,18 +681,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.GenesisState)
-      com.cosmos.staking.v1beta1.GenesisStateOrBuilder {
+      GenesisStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cosmos.staking.v1beta1.GenesisProto.internal_static_cosmos_staking_v1beta1_GenesisState_descriptor;
+      return GenesisProto.internal_static_cosmos_staking_v1beta1_GenesisState_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cosmos.staking.v1beta1.GenesisProto.internal_static_cosmos_staking_v1beta1_GenesisState_fieldAccessorTable
+      return GenesisProto.internal_static_cosmos_staking_v1beta1_GenesisState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.cosmos.staking.v1beta1.GenesisState.class, com.cosmos.staking.v1beta1.GenesisState.Builder.class);
+              GenesisState.class, Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.GenesisState.newBuilder()
@@ -701,11 +701,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -754,36 +754,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.cosmos.staking.v1beta1.GenesisProto.internal_static_cosmos_staking_v1beta1_GenesisState_descriptor;
+      return GenesisProto.internal_static_cosmos_staking_v1beta1_GenesisState_descriptor;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.GenesisState getDefaultInstanceForType() {
-      return com.cosmos.staking.v1beta1.GenesisState.getDefaultInstance();
+    @Override
+    public GenesisState getDefaultInstanceForType() {
+      return GenesisState.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.GenesisState build() {
-      com.cosmos.staking.v1beta1.GenesisState result = buildPartial();
+    @Override
+    public GenesisState build() {
+      GenesisState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.cosmos.staking.v1beta1.GenesisState buildPartial() {
-      com.cosmos.staking.v1beta1.GenesisState result = new com.cosmos.staking.v1beta1.GenesisState(this);
+    @Override
+    public GenesisState buildPartial() {
+      GenesisState result = new GenesisState(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.cosmos.staking.v1beta1.GenesisState result) {
+    private void buildPartialRepeatedFields(GenesisState result) {
       if (lastValidatorPowersBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0)) {
           lastValidatorPowers_ = java.util.Collections.unmodifiableList(lastValidatorPowers_);
@@ -831,7 +831,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.cosmos.staking.v1beta1.GenesisState result) {
+    private void buildPartial0(GenesisState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.params_ = paramsBuilder_ == null
@@ -846,50 +846,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.cosmos.staking.v1beta1.GenesisState) {
-        return mergeFrom((com.cosmos.staking.v1beta1.GenesisState)other);
+      if (other instanceof GenesisState) {
+        return mergeFrom((GenesisState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.cosmos.staking.v1beta1.GenesisState other) {
-      if (other == com.cosmos.staking.v1beta1.GenesisState.getDefaultInstance()) return this;
+    public Builder mergeFrom(GenesisState other) {
+      if (other == GenesisState.getDefaultInstance()) return this;
       if (other.hasParams()) {
         mergeParams(other.getParams());
       }
@@ -1034,18 +1034,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -1068,9 +1068,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 18
             case 26: {
-              com.cosmos.staking.v1beta1.LastValidatorPower m =
+              LastValidatorPower m =
                   input.readMessage(
-                      com.cosmos.staking.v1beta1.LastValidatorPower.parser(),
+                      LastValidatorPower.parser(),
                       extensionRegistry);
               if (lastValidatorPowersBuilder_ == null) {
                 ensureLastValidatorPowersIsMutable();
@@ -1081,9 +1081,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 26
             case 34: {
-              com.cosmos.staking.v1beta1.Validator m =
+              Validator m =
                   input.readMessage(
-                      com.cosmos.staking.v1beta1.Validator.parser(),
+                      Validator.parser(),
                       extensionRegistry);
               if (validatorsBuilder_ == null) {
                 ensureValidatorsIsMutable();
@@ -1094,9 +1094,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 34
             case 42: {
-              com.cosmos.staking.v1beta1.Delegation m =
+              Delegation m =
                   input.readMessage(
-                      com.cosmos.staking.v1beta1.Delegation.parser(),
+                      Delegation.parser(),
                       extensionRegistry);
               if (delegationsBuilder_ == null) {
                 ensureDelegationsIsMutable();
@@ -1107,9 +1107,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 42
             case 50: {
-              com.cosmos.staking.v1beta1.UnbondingDelegation m =
+              UnbondingDelegation m =
                   input.readMessage(
-                      com.cosmos.staking.v1beta1.UnbondingDelegation.parser(),
+                      UnbondingDelegation.parser(),
                       extensionRegistry);
               if (unbondingDelegationsBuilder_ == null) {
                 ensureUnbondingDelegationsIsMutable();
@@ -1120,9 +1120,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 50
             case 58: {
-              com.cosmos.staking.v1beta1.Redelegation m =
+              Redelegation m =
                   input.readMessage(
-                      com.cosmos.staking.v1beta1.Redelegation.parser(),
+                      Redelegation.parser(),
                       extensionRegistry);
               if (redelegationsBuilder_ == null) {
                 ensureRedelegationsIsMutable();
@@ -1154,9 +1154,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.cosmos.staking.v1beta1.Params params_;
+    private Params params_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Params, com.cosmos.staking.v1beta1.Params.Builder, com.cosmos.staking.v1beta1.ParamsOrBuilder> paramsBuilder_;
+        Params, Params.Builder, ParamsOrBuilder> paramsBuilder_;
     /**
      * <pre>
      * params defines all the paramaters of related to deposit.
@@ -1176,9 +1176,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      * @return The params.
      */
-    public com.cosmos.staking.v1beta1.Params getParams() {
+    public Params getParams() {
       if (paramsBuilder_ == null) {
-        return params_ == null ? com.cosmos.staking.v1beta1.Params.getDefaultInstance() : params_;
+        return params_ == null ? Params.getDefaultInstance() : params_;
       } else {
         return paramsBuilder_.getMessage();
       }
@@ -1190,7 +1190,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setParams(com.cosmos.staking.v1beta1.Params value) {
+    public Builder setParams(Params value) {
       if (paramsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1211,7 +1211,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
     public Builder setParams(
-        com.cosmos.staking.v1beta1.Params.Builder builderForValue) {
+        Params.Builder builderForValue) {
       if (paramsBuilder_ == null) {
         params_ = builderForValue.build();
       } else {
@@ -1228,11 +1228,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeParams(com.cosmos.staking.v1beta1.Params value) {
+    public Builder mergeParams(Params value) {
       if (paramsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           params_ != null &&
-          params_ != com.cosmos.staking.v1beta1.Params.getDefaultInstance()) {
+          params_ != Params.getDefaultInstance()) {
           getParamsBuilder().mergeFrom(value);
         } else {
           params_ = value;
@@ -1268,7 +1268,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Params.Builder getParamsBuilder() {
+    public Params.Builder getParamsBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getParamsFieldBuilder().getBuilder();
@@ -1280,12 +1280,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.ParamsOrBuilder getParamsOrBuilder() {
+    public ParamsOrBuilder getParamsOrBuilder() {
       if (paramsBuilder_ != null) {
         return paramsBuilder_.getMessageOrBuilder();
       } else {
         return params_ == null ?
-            com.cosmos.staking.v1beta1.Params.getDefaultInstance() : params_;
+            Params.getDefaultInstance() : params_;
       }
     }
     /**
@@ -1296,11 +1296,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Params, com.cosmos.staking.v1beta1.Params.Builder, com.cosmos.staking.v1beta1.ParamsOrBuilder> 
+        Params, Params.Builder, ParamsOrBuilder>
         getParamsFieldBuilder() {
       if (paramsBuilder_ == null) {
         paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.cosmos.staking.v1beta1.Params, com.cosmos.staking.v1beta1.Params.Builder, com.cosmos.staking.v1beta1.ParamsOrBuilder>(
+            Params, Params.Builder, ParamsOrBuilder>(
                 getParams(),
                 getParentForChildren(),
                 isClean());
@@ -1319,7 +1319,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes last_total_power = 2 [json_name = "lastTotalPower", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"last_total_power&#92;""];</code>
      * @return The lastTotalPower.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getLastTotalPower() {
       return lastTotalPower_;
     }
@@ -1356,17 +1356,17 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<com.cosmos.staking.v1beta1.LastValidatorPower> lastValidatorPowers_ =
+    private java.util.List<LastValidatorPower> lastValidatorPowers_ =
       java.util.Collections.emptyList();
     private void ensureLastValidatorPowersIsMutable() {
       if (!((bitField0_ & 0x00000004) != 0)) {
-        lastValidatorPowers_ = new java.util.ArrayList<com.cosmos.staking.v1beta1.LastValidatorPower>(lastValidatorPowers_);
+        lastValidatorPowers_ = new java.util.ArrayList<LastValidatorPower>(lastValidatorPowers_);
         bitField0_ |= 0x00000004;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.LastValidatorPower, com.cosmos.staking.v1beta1.LastValidatorPower.Builder, com.cosmos.staking.v1beta1.LastValidatorPowerOrBuilder> lastValidatorPowersBuilder_;
+        LastValidatorPower, LastValidatorPower.Builder, LastValidatorPowerOrBuilder> lastValidatorPowersBuilder_;
 
     /**
      * <pre>
@@ -1376,7 +1376,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.LastValidatorPower> getLastValidatorPowersList() {
+    public java.util.List<LastValidatorPower> getLastValidatorPowersList() {
       if (lastValidatorPowersBuilder_ == null) {
         return java.util.Collections.unmodifiableList(lastValidatorPowers_);
       } else {
@@ -1406,7 +1406,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
-    public com.cosmos.staking.v1beta1.LastValidatorPower getLastValidatorPowers(int index) {
+    public LastValidatorPower getLastValidatorPowers(int index) {
       if (lastValidatorPowersBuilder_ == null) {
         return lastValidatorPowers_.get(index);
       } else {
@@ -1422,7 +1422,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
     public Builder setLastValidatorPowers(
-        int index, com.cosmos.staking.v1beta1.LastValidatorPower value) {
+        int index, LastValidatorPower value) {
       if (lastValidatorPowersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1444,7 +1444,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
     public Builder setLastValidatorPowers(
-        int index, com.cosmos.staking.v1beta1.LastValidatorPower.Builder builderForValue) {
+        int index, LastValidatorPower.Builder builderForValue) {
       if (lastValidatorPowersBuilder_ == null) {
         ensureLastValidatorPowersIsMutable();
         lastValidatorPowers_.set(index, builderForValue.build());
@@ -1462,7 +1462,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
-    public Builder addLastValidatorPowers(com.cosmos.staking.v1beta1.LastValidatorPower value) {
+    public Builder addLastValidatorPowers(LastValidatorPower value) {
       if (lastValidatorPowersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1484,7 +1484,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
     public Builder addLastValidatorPowers(
-        int index, com.cosmos.staking.v1beta1.LastValidatorPower value) {
+        int index, LastValidatorPower value) {
       if (lastValidatorPowersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1506,7 +1506,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
     public Builder addLastValidatorPowers(
-        com.cosmos.staking.v1beta1.LastValidatorPower.Builder builderForValue) {
+        LastValidatorPower.Builder builderForValue) {
       if (lastValidatorPowersBuilder_ == null) {
         ensureLastValidatorPowersIsMutable();
         lastValidatorPowers_.add(builderForValue.build());
@@ -1525,7 +1525,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
     public Builder addLastValidatorPowers(
-        int index, com.cosmos.staking.v1beta1.LastValidatorPower.Builder builderForValue) {
+        int index, LastValidatorPower.Builder builderForValue) {
       if (lastValidatorPowersBuilder_ == null) {
         ensureLastValidatorPowersIsMutable();
         lastValidatorPowers_.add(index, builderForValue.build());
@@ -1544,7 +1544,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
     public Builder addAllLastValidatorPowers(
-        java.lang.Iterable<? extends com.cosmos.staking.v1beta1.LastValidatorPower> values) {
+        Iterable<? extends LastValidatorPower> values) {
       if (lastValidatorPowersBuilder_ == null) {
         ensureLastValidatorPowersIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1599,7 +1599,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
-    public com.cosmos.staking.v1beta1.LastValidatorPower.Builder getLastValidatorPowersBuilder(
+    public LastValidatorPower.Builder getLastValidatorPowersBuilder(
         int index) {
       return getLastValidatorPowersFieldBuilder().getBuilder(index);
     }
@@ -1611,7 +1611,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
-    public com.cosmos.staking.v1beta1.LastValidatorPowerOrBuilder getLastValidatorPowersOrBuilder(
+    public LastValidatorPowerOrBuilder getLastValidatorPowersOrBuilder(
         int index) {
       if (lastValidatorPowersBuilder_ == null) {
         return lastValidatorPowers_.get(index);  } else {
@@ -1626,7 +1626,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
-    public java.util.List<? extends com.cosmos.staking.v1beta1.LastValidatorPowerOrBuilder> 
+    public java.util.List<? extends LastValidatorPowerOrBuilder>
          getLastValidatorPowersOrBuilderList() {
       if (lastValidatorPowersBuilder_ != null) {
         return lastValidatorPowersBuilder_.getMessageOrBuilderList();
@@ -1642,9 +1642,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
-    public com.cosmos.staking.v1beta1.LastValidatorPower.Builder addLastValidatorPowersBuilder() {
+    public LastValidatorPower.Builder addLastValidatorPowersBuilder() {
       return getLastValidatorPowersFieldBuilder().addBuilder(
-          com.cosmos.staking.v1beta1.LastValidatorPower.getDefaultInstance());
+          LastValidatorPower.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1654,10 +1654,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
-    public com.cosmos.staking.v1beta1.LastValidatorPower.Builder addLastValidatorPowersBuilder(
+    public LastValidatorPower.Builder addLastValidatorPowersBuilder(
         int index) {
       return getLastValidatorPowersFieldBuilder().addBuilder(
-          index, com.cosmos.staking.v1beta1.LastValidatorPower.getDefaultInstance());
+          index, LastValidatorPower.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1667,16 +1667,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.LastValidatorPower.Builder> 
+    public java.util.List<LastValidatorPower.Builder>
          getLastValidatorPowersBuilderList() {
       return getLastValidatorPowersFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.LastValidatorPower, com.cosmos.staking.v1beta1.LastValidatorPower.Builder, com.cosmos.staking.v1beta1.LastValidatorPowerOrBuilder> 
+        LastValidatorPower, LastValidatorPower.Builder, LastValidatorPowerOrBuilder>
         getLastValidatorPowersFieldBuilder() {
       if (lastValidatorPowersBuilder_ == null) {
         lastValidatorPowersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.staking.v1beta1.LastValidatorPower, com.cosmos.staking.v1beta1.LastValidatorPower.Builder, com.cosmos.staking.v1beta1.LastValidatorPowerOrBuilder>(
+            LastValidatorPower, LastValidatorPower.Builder, LastValidatorPowerOrBuilder>(
                 lastValidatorPowers_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
@@ -1686,17 +1686,17 @@ private static final long serialVersionUID = 0L;
       return lastValidatorPowersBuilder_;
     }
 
-    private java.util.List<com.cosmos.staking.v1beta1.Validator> validators_ =
+    private java.util.List<Validator> validators_ =
       java.util.Collections.emptyList();
     private void ensureValidatorsIsMutable() {
       if (!((bitField0_ & 0x00000008) != 0)) {
-        validators_ = new java.util.ArrayList<com.cosmos.staking.v1beta1.Validator>(validators_);
+        validators_ = new java.util.ArrayList<Validator>(validators_);
         bitField0_ |= 0x00000008;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Validator, com.cosmos.staking.v1beta1.Validator.Builder, com.cosmos.staking.v1beta1.ValidatorOrBuilder> validatorsBuilder_;
+        Validator, Validator.Builder, ValidatorOrBuilder> validatorsBuilder_;
 
     /**
      * <pre>
@@ -1705,7 +1705,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.Validator> getValidatorsList() {
+    public java.util.List<Validator> getValidatorsList() {
       if (validatorsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(validators_);
       } else {
@@ -1733,7 +1733,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Validator getValidators(int index) {
+    public Validator getValidators(int index) {
       if (validatorsBuilder_ == null) {
         return validators_.get(index);
       } else {
@@ -1748,7 +1748,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder setValidators(
-        int index, com.cosmos.staking.v1beta1.Validator value) {
+        int index, Validator value) {
       if (validatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1769,7 +1769,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder setValidators(
-        int index, com.cosmos.staking.v1beta1.Validator.Builder builderForValue) {
+        int index, Validator.Builder builderForValue) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         validators_.set(index, builderForValue.build());
@@ -1786,7 +1786,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addValidators(com.cosmos.staking.v1beta1.Validator value) {
+    public Builder addValidators(Validator value) {
       if (validatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1807,7 +1807,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder addValidators(
-        int index, com.cosmos.staking.v1beta1.Validator value) {
+        int index, Validator value) {
       if (validatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1828,7 +1828,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder addValidators(
-        com.cosmos.staking.v1beta1.Validator.Builder builderForValue) {
+        Validator.Builder builderForValue) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         validators_.add(builderForValue.build());
@@ -1846,7 +1846,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder addValidators(
-        int index, com.cosmos.staking.v1beta1.Validator.Builder builderForValue) {
+        int index, Validator.Builder builderForValue) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         validators_.add(index, builderForValue.build());
@@ -1864,7 +1864,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllValidators(
-        java.lang.Iterable<? extends com.cosmos.staking.v1beta1.Validator> values) {
+        Iterable<? extends Validator> values) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1916,7 +1916,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Validator.Builder getValidatorsBuilder(
+    public Validator.Builder getValidatorsBuilder(
         int index) {
       return getValidatorsFieldBuilder().getBuilder(index);
     }
@@ -1927,7 +1927,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.ValidatorOrBuilder getValidatorsOrBuilder(
+    public ValidatorOrBuilder getValidatorsOrBuilder(
         int index) {
       if (validatorsBuilder_ == null) {
         return validators_.get(index);  } else {
@@ -1941,7 +1941,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.cosmos.staking.v1beta1.ValidatorOrBuilder> 
+    public java.util.List<? extends ValidatorOrBuilder>
          getValidatorsOrBuilderList() {
       if (validatorsBuilder_ != null) {
         return validatorsBuilder_.getMessageOrBuilderList();
@@ -1956,9 +1956,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Validator.Builder addValidatorsBuilder() {
+    public Validator.Builder addValidatorsBuilder() {
       return getValidatorsFieldBuilder().addBuilder(
-          com.cosmos.staking.v1beta1.Validator.getDefaultInstance());
+          Validator.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1967,10 +1967,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Validator.Builder addValidatorsBuilder(
+    public Validator.Builder addValidatorsBuilder(
         int index) {
       return getValidatorsFieldBuilder().addBuilder(
-          index, com.cosmos.staking.v1beta1.Validator.getDefaultInstance());
+          index, Validator.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1979,16 +1979,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.Validator.Builder> 
+    public java.util.List<Validator.Builder>
          getValidatorsBuilderList() {
       return getValidatorsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Validator, com.cosmos.staking.v1beta1.Validator.Builder, com.cosmos.staking.v1beta1.ValidatorOrBuilder> 
+        Validator, Validator.Builder, ValidatorOrBuilder>
         getValidatorsFieldBuilder() {
       if (validatorsBuilder_ == null) {
         validatorsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.staking.v1beta1.Validator, com.cosmos.staking.v1beta1.Validator.Builder, com.cosmos.staking.v1beta1.ValidatorOrBuilder>(
+            Validator, Validator.Builder, ValidatorOrBuilder>(
                 validators_,
                 ((bitField0_ & 0x00000008) != 0),
                 getParentForChildren(),
@@ -1998,17 +1998,17 @@ private static final long serialVersionUID = 0L;
       return validatorsBuilder_;
     }
 
-    private java.util.List<com.cosmos.staking.v1beta1.Delegation> delegations_ =
+    private java.util.List<Delegation> delegations_ =
       java.util.Collections.emptyList();
     private void ensureDelegationsIsMutable() {
       if (!((bitField0_ & 0x00000010) != 0)) {
-        delegations_ = new java.util.ArrayList<com.cosmos.staking.v1beta1.Delegation>(delegations_);
+        delegations_ = new java.util.ArrayList<Delegation>(delegations_);
         bitField0_ |= 0x00000010;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Delegation, com.cosmos.staking.v1beta1.Delegation.Builder, com.cosmos.staking.v1beta1.DelegationOrBuilder> delegationsBuilder_;
+        Delegation, Delegation.Builder, DelegationOrBuilder> delegationsBuilder_;
 
     /**
      * <pre>
@@ -2017,7 +2017,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.Delegation> getDelegationsList() {
+    public java.util.List<Delegation> getDelegationsList() {
       if (delegationsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(delegations_);
       } else {
@@ -2045,7 +2045,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Delegation getDelegations(int index) {
+    public Delegation getDelegations(int index) {
       if (delegationsBuilder_ == null) {
         return delegations_.get(index);
       } else {
@@ -2060,7 +2060,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder setDelegations(
-        int index, com.cosmos.staking.v1beta1.Delegation value) {
+        int index, Delegation value) {
       if (delegationsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2081,7 +2081,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder setDelegations(
-        int index, com.cosmos.staking.v1beta1.Delegation.Builder builderForValue) {
+        int index, Delegation.Builder builderForValue) {
       if (delegationsBuilder_ == null) {
         ensureDelegationsIsMutable();
         delegations_.set(index, builderForValue.build());
@@ -2098,7 +2098,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addDelegations(com.cosmos.staking.v1beta1.Delegation value) {
+    public Builder addDelegations(Delegation value) {
       if (delegationsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2119,7 +2119,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder addDelegations(
-        int index, com.cosmos.staking.v1beta1.Delegation value) {
+        int index, Delegation value) {
       if (delegationsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2140,7 +2140,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder addDelegations(
-        com.cosmos.staking.v1beta1.Delegation.Builder builderForValue) {
+        Delegation.Builder builderForValue) {
       if (delegationsBuilder_ == null) {
         ensureDelegationsIsMutable();
         delegations_.add(builderForValue.build());
@@ -2158,7 +2158,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder addDelegations(
-        int index, com.cosmos.staking.v1beta1.Delegation.Builder builderForValue) {
+        int index, Delegation.Builder builderForValue) {
       if (delegationsBuilder_ == null) {
         ensureDelegationsIsMutable();
         delegations_.add(index, builderForValue.build());
@@ -2176,7 +2176,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllDelegations(
-        java.lang.Iterable<? extends com.cosmos.staking.v1beta1.Delegation> values) {
+        Iterable<? extends Delegation> values) {
       if (delegationsBuilder_ == null) {
         ensureDelegationsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2228,7 +2228,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Delegation.Builder getDelegationsBuilder(
+    public Delegation.Builder getDelegationsBuilder(
         int index) {
       return getDelegationsFieldBuilder().getBuilder(index);
     }
@@ -2239,7 +2239,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.DelegationOrBuilder getDelegationsOrBuilder(
+    public DelegationOrBuilder getDelegationsOrBuilder(
         int index) {
       if (delegationsBuilder_ == null) {
         return delegations_.get(index);  } else {
@@ -2253,7 +2253,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.cosmos.staking.v1beta1.DelegationOrBuilder> 
+    public java.util.List<? extends DelegationOrBuilder>
          getDelegationsOrBuilderList() {
       if (delegationsBuilder_ != null) {
         return delegationsBuilder_.getMessageOrBuilderList();
@@ -2268,9 +2268,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Delegation.Builder addDelegationsBuilder() {
+    public Delegation.Builder addDelegationsBuilder() {
       return getDelegationsFieldBuilder().addBuilder(
-          com.cosmos.staking.v1beta1.Delegation.getDefaultInstance());
+          Delegation.getDefaultInstance());
     }
     /**
      * <pre>
@@ -2279,10 +2279,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Delegation.Builder addDelegationsBuilder(
+    public Delegation.Builder addDelegationsBuilder(
         int index) {
       return getDelegationsFieldBuilder().addBuilder(
-          index, com.cosmos.staking.v1beta1.Delegation.getDefaultInstance());
+          index, Delegation.getDefaultInstance());
     }
     /**
      * <pre>
@@ -2291,16 +2291,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.Delegation.Builder> 
+    public java.util.List<Delegation.Builder>
          getDelegationsBuilderList() {
       return getDelegationsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Delegation, com.cosmos.staking.v1beta1.Delegation.Builder, com.cosmos.staking.v1beta1.DelegationOrBuilder> 
+        Delegation, Delegation.Builder, DelegationOrBuilder>
         getDelegationsFieldBuilder() {
       if (delegationsBuilder_ == null) {
         delegationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.staking.v1beta1.Delegation, com.cosmos.staking.v1beta1.Delegation.Builder, com.cosmos.staking.v1beta1.DelegationOrBuilder>(
+            Delegation, Delegation.Builder, DelegationOrBuilder>(
                 delegations_,
                 ((bitField0_ & 0x00000010) != 0),
                 getParentForChildren(),
@@ -2310,17 +2310,17 @@ private static final long serialVersionUID = 0L;
       return delegationsBuilder_;
     }
 
-    private java.util.List<com.cosmos.staking.v1beta1.UnbondingDelegation> unbondingDelegations_ =
+    private java.util.List<UnbondingDelegation> unbondingDelegations_ =
       java.util.Collections.emptyList();
     private void ensureUnbondingDelegationsIsMutable() {
       if (!((bitField0_ & 0x00000020) != 0)) {
-        unbondingDelegations_ = new java.util.ArrayList<com.cosmos.staking.v1beta1.UnbondingDelegation>(unbondingDelegations_);
+        unbondingDelegations_ = new java.util.ArrayList<UnbondingDelegation>(unbondingDelegations_);
         bitField0_ |= 0x00000020;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.UnbondingDelegation, com.cosmos.staking.v1beta1.UnbondingDelegation.Builder, com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder> unbondingDelegationsBuilder_;
+        UnbondingDelegation, UnbondingDelegation.Builder, UnbondingDelegationOrBuilder> unbondingDelegationsBuilder_;
 
     /**
      * <pre>
@@ -2329,7 +2329,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.UnbondingDelegation> getUnbondingDelegationsList() {
+    public java.util.List<UnbondingDelegation> getUnbondingDelegationsList() {
       if (unbondingDelegationsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(unbondingDelegations_);
       } else {
@@ -2357,7 +2357,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
-    public com.cosmos.staking.v1beta1.UnbondingDelegation getUnbondingDelegations(int index) {
+    public UnbondingDelegation getUnbondingDelegations(int index) {
       if (unbondingDelegationsBuilder_ == null) {
         return unbondingDelegations_.get(index);
       } else {
@@ -2372,7 +2372,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
     public Builder setUnbondingDelegations(
-        int index, com.cosmos.staking.v1beta1.UnbondingDelegation value) {
+        int index, UnbondingDelegation value) {
       if (unbondingDelegationsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2393,7 +2393,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
     public Builder setUnbondingDelegations(
-        int index, com.cosmos.staking.v1beta1.UnbondingDelegation.Builder builderForValue) {
+        int index, UnbondingDelegation.Builder builderForValue) {
       if (unbondingDelegationsBuilder_ == null) {
         ensureUnbondingDelegationsIsMutable();
         unbondingDelegations_.set(index, builderForValue.build());
@@ -2410,7 +2410,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
-    public Builder addUnbondingDelegations(com.cosmos.staking.v1beta1.UnbondingDelegation value) {
+    public Builder addUnbondingDelegations(UnbondingDelegation value) {
       if (unbondingDelegationsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2431,7 +2431,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
     public Builder addUnbondingDelegations(
-        int index, com.cosmos.staking.v1beta1.UnbondingDelegation value) {
+        int index, UnbondingDelegation value) {
       if (unbondingDelegationsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2452,7 +2452,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
     public Builder addUnbondingDelegations(
-        com.cosmos.staking.v1beta1.UnbondingDelegation.Builder builderForValue) {
+        UnbondingDelegation.Builder builderForValue) {
       if (unbondingDelegationsBuilder_ == null) {
         ensureUnbondingDelegationsIsMutable();
         unbondingDelegations_.add(builderForValue.build());
@@ -2470,7 +2470,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
     public Builder addUnbondingDelegations(
-        int index, com.cosmos.staking.v1beta1.UnbondingDelegation.Builder builderForValue) {
+        int index, UnbondingDelegation.Builder builderForValue) {
       if (unbondingDelegationsBuilder_ == null) {
         ensureUnbondingDelegationsIsMutable();
         unbondingDelegations_.add(index, builderForValue.build());
@@ -2488,7 +2488,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
     public Builder addAllUnbondingDelegations(
-        java.lang.Iterable<? extends com.cosmos.staking.v1beta1.UnbondingDelegation> values) {
+        Iterable<? extends UnbondingDelegation> values) {
       if (unbondingDelegationsBuilder_ == null) {
         ensureUnbondingDelegationsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2540,7 +2540,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
-    public com.cosmos.staking.v1beta1.UnbondingDelegation.Builder getUnbondingDelegationsBuilder(
+    public UnbondingDelegation.Builder getUnbondingDelegationsBuilder(
         int index) {
       return getUnbondingDelegationsFieldBuilder().getBuilder(index);
     }
@@ -2551,7 +2551,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
-    public com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder getUnbondingDelegationsOrBuilder(
+    public UnbondingDelegationOrBuilder getUnbondingDelegationsOrBuilder(
         int index) {
       if (unbondingDelegationsBuilder_ == null) {
         return unbondingDelegations_.get(index);  } else {
@@ -2565,7 +2565,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
-    public java.util.List<? extends com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder> 
+    public java.util.List<? extends UnbondingDelegationOrBuilder>
          getUnbondingDelegationsOrBuilderList() {
       if (unbondingDelegationsBuilder_ != null) {
         return unbondingDelegationsBuilder_.getMessageOrBuilderList();
@@ -2580,9 +2580,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
-    public com.cosmos.staking.v1beta1.UnbondingDelegation.Builder addUnbondingDelegationsBuilder() {
+    public UnbondingDelegation.Builder addUnbondingDelegationsBuilder() {
       return getUnbondingDelegationsFieldBuilder().addBuilder(
-          com.cosmos.staking.v1beta1.UnbondingDelegation.getDefaultInstance());
+          UnbondingDelegation.getDefaultInstance());
     }
     /**
      * <pre>
@@ -2591,10 +2591,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
-    public com.cosmos.staking.v1beta1.UnbondingDelegation.Builder addUnbondingDelegationsBuilder(
+    public UnbondingDelegation.Builder addUnbondingDelegationsBuilder(
         int index) {
       return getUnbondingDelegationsFieldBuilder().addBuilder(
-          index, com.cosmos.staking.v1beta1.UnbondingDelegation.getDefaultInstance());
+          index, UnbondingDelegation.getDefaultInstance());
     }
     /**
      * <pre>
@@ -2603,16 +2603,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.UnbondingDelegation.Builder> 
+    public java.util.List<UnbondingDelegation.Builder>
          getUnbondingDelegationsBuilderList() {
       return getUnbondingDelegationsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.UnbondingDelegation, com.cosmos.staking.v1beta1.UnbondingDelegation.Builder, com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder> 
+        UnbondingDelegation, UnbondingDelegation.Builder, UnbondingDelegationOrBuilder>
         getUnbondingDelegationsFieldBuilder() {
       if (unbondingDelegationsBuilder_ == null) {
         unbondingDelegationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.staking.v1beta1.UnbondingDelegation, com.cosmos.staking.v1beta1.UnbondingDelegation.Builder, com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder>(
+            UnbondingDelegation, UnbondingDelegation.Builder, UnbondingDelegationOrBuilder>(
                 unbondingDelegations_,
                 ((bitField0_ & 0x00000020) != 0),
                 getParentForChildren(),
@@ -2622,17 +2622,17 @@ private static final long serialVersionUID = 0L;
       return unbondingDelegationsBuilder_;
     }
 
-    private java.util.List<com.cosmos.staking.v1beta1.Redelegation> redelegations_ =
+    private java.util.List<Redelegation> redelegations_ =
       java.util.Collections.emptyList();
     private void ensureRedelegationsIsMutable() {
       if (!((bitField0_ & 0x00000040) != 0)) {
-        redelegations_ = new java.util.ArrayList<com.cosmos.staking.v1beta1.Redelegation>(redelegations_);
+        redelegations_ = new java.util.ArrayList<Redelegation>(redelegations_);
         bitField0_ |= 0x00000040;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Redelegation, com.cosmos.staking.v1beta1.Redelegation.Builder, com.cosmos.staking.v1beta1.RedelegationOrBuilder> redelegationsBuilder_;
+        Redelegation, Redelegation.Builder, RedelegationOrBuilder> redelegationsBuilder_;
 
     /**
      * <pre>
@@ -2641,7 +2641,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.Redelegation> getRedelegationsList() {
+    public java.util.List<Redelegation> getRedelegationsList() {
       if (redelegationsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(redelegations_);
       } else {
@@ -2669,7 +2669,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Redelegation getRedelegations(int index) {
+    public Redelegation getRedelegations(int index) {
       if (redelegationsBuilder_ == null) {
         return redelegations_.get(index);
       } else {
@@ -2684,7 +2684,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder setRedelegations(
-        int index, com.cosmos.staking.v1beta1.Redelegation value) {
+        int index, Redelegation value) {
       if (redelegationsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2705,7 +2705,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder setRedelegations(
-        int index, com.cosmos.staking.v1beta1.Redelegation.Builder builderForValue) {
+        int index, Redelegation.Builder builderForValue) {
       if (redelegationsBuilder_ == null) {
         ensureRedelegationsIsMutable();
         redelegations_.set(index, builderForValue.build());
@@ -2722,7 +2722,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addRedelegations(com.cosmos.staking.v1beta1.Redelegation value) {
+    public Builder addRedelegations(Redelegation value) {
       if (redelegationsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2743,7 +2743,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder addRedelegations(
-        int index, com.cosmos.staking.v1beta1.Redelegation value) {
+        int index, Redelegation value) {
       if (redelegationsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2764,7 +2764,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder addRedelegations(
-        com.cosmos.staking.v1beta1.Redelegation.Builder builderForValue) {
+        Redelegation.Builder builderForValue) {
       if (redelegationsBuilder_ == null) {
         ensureRedelegationsIsMutable();
         redelegations_.add(builderForValue.build());
@@ -2782,7 +2782,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder addRedelegations(
-        int index, com.cosmos.staking.v1beta1.Redelegation.Builder builderForValue) {
+        int index, Redelegation.Builder builderForValue) {
       if (redelegationsBuilder_ == null) {
         ensureRedelegationsIsMutable();
         redelegations_.add(index, builderForValue.build());
@@ -2800,7 +2800,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllRedelegations(
-        java.lang.Iterable<? extends com.cosmos.staking.v1beta1.Redelegation> values) {
+        Iterable<? extends Redelegation> values) {
       if (redelegationsBuilder_ == null) {
         ensureRedelegationsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2852,7 +2852,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Redelegation.Builder getRedelegationsBuilder(
+    public Redelegation.Builder getRedelegationsBuilder(
         int index) {
       return getRedelegationsFieldBuilder().getBuilder(index);
     }
@@ -2863,7 +2863,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.RedelegationOrBuilder getRedelegationsOrBuilder(
+    public RedelegationOrBuilder getRedelegationsOrBuilder(
         int index) {
       if (redelegationsBuilder_ == null) {
         return redelegations_.get(index);  } else {
@@ -2877,7 +2877,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.cosmos.staking.v1beta1.RedelegationOrBuilder> 
+    public java.util.List<? extends RedelegationOrBuilder>
          getRedelegationsOrBuilderList() {
       if (redelegationsBuilder_ != null) {
         return redelegationsBuilder_.getMessageOrBuilderList();
@@ -2892,9 +2892,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Redelegation.Builder addRedelegationsBuilder() {
+    public Redelegation.Builder addRedelegationsBuilder() {
       return getRedelegationsFieldBuilder().addBuilder(
-          com.cosmos.staking.v1beta1.Redelegation.getDefaultInstance());
+          Redelegation.getDefaultInstance());
     }
     /**
      * <pre>
@@ -2903,10 +2903,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
-    public com.cosmos.staking.v1beta1.Redelegation.Builder addRedelegationsBuilder(
+    public Redelegation.Builder addRedelegationsBuilder(
         int index) {
       return getRedelegationsFieldBuilder().addBuilder(
-          index, com.cosmos.staking.v1beta1.Redelegation.getDefaultInstance());
+          index, Redelegation.getDefaultInstance());
     }
     /**
      * <pre>
@@ -2915,16 +2915,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.cosmos.staking.v1beta1.Redelegation.Builder> 
+    public java.util.List<Redelegation.Builder>
          getRedelegationsBuilderList() {
       return getRedelegationsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.cosmos.staking.v1beta1.Redelegation, com.cosmos.staking.v1beta1.Redelegation.Builder, com.cosmos.staking.v1beta1.RedelegationOrBuilder> 
+        Redelegation, Redelegation.Builder, RedelegationOrBuilder>
         getRedelegationsFieldBuilder() {
       if (redelegationsBuilder_ == null) {
         redelegationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.cosmos.staking.v1beta1.Redelegation, com.cosmos.staking.v1beta1.Redelegation.Builder, com.cosmos.staking.v1beta1.RedelegationOrBuilder>(
+            Redelegation, Redelegation.Builder, RedelegationOrBuilder>(
                 redelegations_,
                 ((bitField0_ & 0x00000040) != 0),
                 getParentForChildren(),
@@ -2939,7 +2939,7 @@ private static final long serialVersionUID = 0L;
      * <code>bool exported = 8 [json_name = "exported"];</code>
      * @return The exported.
      */
-    @java.lang.Override
+    @Override
     public boolean getExported() {
       return exported_;
     }
@@ -2965,13 +2965,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -2982,18 +2982,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.GenesisState)
-  private static final com.cosmos.staking.v1beta1.GenesisState DEFAULT_INSTANCE;
+  private static final GenesisState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.GenesisState();
+    DEFAULT_INSTANCE = new GenesisState();
   }
 
-  public static com.cosmos.staking.v1beta1.GenesisState getDefaultInstance() {
+  public static GenesisState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GenesisState>
       PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-    @java.lang.Override
+    @Override
     public GenesisState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -3017,13 +3017,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<GenesisState> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.cosmos.staking.v1beta1.GenesisState getDefaultInstanceForType() {
+  @Override
+  public GenesisState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -16,5 +16,5 @@ public interface MsgAcknowledgementResponseOrBuilder extends
    * <code>.ibc.core.channel.v1.ResponseResultType result = 1 [json_name = "result"];</code>
    * @return The result.
    */
-  com.ibc.core.channel.v1.ResponseResultType getResult();
+  ResponseResultType getResult();
 }

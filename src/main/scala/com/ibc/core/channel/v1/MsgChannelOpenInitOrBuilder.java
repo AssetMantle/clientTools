@@ -11,7 +11,7 @@ public interface MsgChannelOpenInitOrBuilder extends
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The portId.
    */
-  java.lang.String getPortId();
+  String getPortId();
   /**
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The bytes for portId.
@@ -28,17 +28,17 @@ public interface MsgChannelOpenInitOrBuilder extends
    * <code>.ibc.core.channel.v1.Channel channel = 2 [json_name = "channel", (.gogoproto.nullable) = false];</code>
    * @return The channel.
    */
-  com.ibc.core.channel.v1.Channel getChannel();
+  Channel getChannel();
   /**
    * <code>.ibc.core.channel.v1.Channel channel = 2 [json_name = "channel", (.gogoproto.nullable) = false];</code>
    */
-  com.ibc.core.channel.v1.ChannelOrBuilder getChannelOrBuilder();
+  ChannelOrBuilder getChannelOrBuilder();
 
   /**
    * <code>string signer = 3 [json_name = "signer"];</code>
    * @return The signer.
    */
-  java.lang.String getSigner();
+  String getSigner();
   /**
    * <code>string signer = 3 [json_name = "signer"];</code>
    * @return The bytes for signer.

@@ -27,7 +27,7 @@ public final class ImmutablesV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n)schema/qualified/base/immutables.v1.pr" +
       "oto\022\tqualified\032\'schema/lists/base/proper" +
       "tyList.v1.proto\032\024gogoproto/gogo.proto\"L\n" +
@@ -50,7 +50,7 @@ public final class ImmutablesV1Proto {
     internal_static_qualified_Immutables_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_qualified_Immutables_descriptor,
-        new java.lang.String[] { "PropertyList", });
+        new String[] { "PropertyList", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

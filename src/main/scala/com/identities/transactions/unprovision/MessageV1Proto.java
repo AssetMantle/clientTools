@@ -27,7 +27,7 @@ public final class MessageV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\nEmodules/identities/internal/transactio" +
       "ns/unprovision/message.v1.proto\022#identit" +
       "ies.transactions.unprovision\032#schema/ids" +
@@ -54,7 +54,7 @@ public final class MessageV1Proto {
     internal_static_identities_transactions_unprovision_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_identities_transactions_unprovision_Message_descriptor,
-        new java.lang.String[] { "From", "To", "IdentityID", });
+        new String[] { "From", "To", "IdentityID", });
     com.ids.IdentityIDV1Proto.getDescriptor();
   }
 

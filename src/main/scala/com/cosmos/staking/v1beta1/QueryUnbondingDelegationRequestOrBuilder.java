@@ -15,7 +15,7 @@ public interface QueryUnbondingDelegationRequestOrBuilder extends
    * <code>string delegator_addr = 1 [json_name = "delegatorAddr"];</code>
    * @return The delegatorAddr.
    */
-  java.lang.String getDelegatorAddr();
+  String getDelegatorAddr();
   /**
    * <pre>
    * delegator_addr defines the delegator address to query for.
@@ -35,7 +35,7 @@ public interface QueryUnbondingDelegationRequestOrBuilder extends
    * <code>string validator_addr = 2 [json_name = "validatorAddr"];</code>
    * @return The validatorAddr.
    */
-  java.lang.String getValidatorAddr();
+  String getValidatorAddr();
   /**
    * <pre>
    * validator_addr defines the validator address to query for.

@@ -16,9 +16,9 @@ public interface QueryValidatorOutstandingRewardsResponseOrBuilder extends
    * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    * @return The rewards.
    */
-  com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards getRewards();
+  ValidatorOutstandingRewards getRewards();
   /**
    * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsOrBuilder getRewardsOrBuilder();
+  ValidatorOutstandingRewardsOrBuilder getRewardsOrBuilder();
 }

@@ -26,7 +26,7 @@ public interface ProofSpecOrBuilder extends
    * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
    * @return The leafSpec.
    */
-  com.ics23.LeafOp getLeafSpec();
+  LeafOp getLeafSpec();
   /**
    * <pre>
    * any field in the ExistenceProof must be the same as in this spec.
@@ -35,7 +35,7 @@ public interface ProofSpecOrBuilder extends
    *
    * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
    */
-  com.ics23.LeafOpOrBuilder getLeafSpecOrBuilder();
+  LeafOpOrBuilder getLeafSpecOrBuilder();
 
   /**
    * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
@@ -46,11 +46,11 @@ public interface ProofSpecOrBuilder extends
    * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
    * @return The innerSpec.
    */
-  com.ics23.InnerSpec getInnerSpec();
+  InnerSpec getInnerSpec();
   /**
    * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
    */
-  com.ics23.InnerSpecOrBuilder getInnerSpecOrBuilder();
+  InnerSpecOrBuilder getInnerSpecOrBuilder();
 
   /**
    * <pre>

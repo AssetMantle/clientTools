@@ -21,24 +21,24 @@ private static final long serialVersionUID = 0L;
     appStateBytes_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
+  protected Object newInstance(
       UnusedPrivateParameter unused) {
     return new RequestInitChain();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestInitChain_descriptor;
+    return TypesProto.internal_static_tendermint_abci_RequestInitChain_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  @Override
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestInitChain_fieldAccessorTable
+    return TypesProto.internal_static_tendermint_abci_RequestInitChain_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.tendermint.abci.RequestInitChain.class, com.tendermint.abci.RequestInitChain.Builder.class);
+            RequestInitChain.class, Builder.class);
   }
 
   public static final int TIME_FIELD_NUMBER = 1;
@@ -47,7 +47,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp time = 1 [json_name = "time", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return Whether the time field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasTime() {
     return time_ != null;
   }
@@ -55,34 +55,34 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp time = 1 [json_name = "time", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return The time.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Timestamp getTime() {
     return time_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : time_;
   }
   /**
    * <code>.google.protobuf.Timestamp time = 1 [json_name = "time", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.TimestampOrBuilder getTimeOrBuilder() {
     return time_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : time_;
   }
 
   public static final int CHAIN_ID_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object chainId_ = "";
+  private volatile Object chainId_ = "";
   /**
    * <code>string chain_id = 2 [json_name = "chainId"];</code>
    * @return The chainId.
    */
-  @java.lang.Override
-  public java.lang.String getChainId() {
-    java.lang.Object ref = chainId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  @Override
+  public String getChainId() {
+    Object ref = chainId_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       chainId_ = s;
       return s;
     }
@@ -91,14 +91,14 @@ private static final long serialVersionUID = 0L;
    * <code>string chain_id = 2 [json_name = "chainId"];</code>
    * @return The bytes for chainId.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString
       getChainIdBytes() {
-    java.lang.Object ref = chainId_;
-    if (ref instanceof java.lang.String) {
+    Object ref = chainId_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       chainId_ = b;
       return b;
     } else {
@@ -107,12 +107,12 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CONSENSUS_PARAMS_FIELD_NUMBER = 3;
-  private com.tendermint.abci.ConsensusParams consensusParams_;
+  private ConsensusParams consensusParams_;
   /**
    * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
    * @return Whether the consensusParams field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasConsensusParams() {
     return consensusParams_ != null;
   }
@@ -120,55 +120,55 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
    * @return The consensusParams.
    */
-  @java.lang.Override
-  public com.tendermint.abci.ConsensusParams getConsensusParams() {
-    return consensusParams_ == null ? com.tendermint.abci.ConsensusParams.getDefaultInstance() : consensusParams_;
+  @Override
+  public ConsensusParams getConsensusParams() {
+    return consensusParams_ == null ? ConsensusParams.getDefaultInstance() : consensusParams_;
   }
   /**
    * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
    */
-  @java.lang.Override
-  public com.tendermint.abci.ConsensusParamsOrBuilder getConsensusParamsOrBuilder() {
-    return consensusParams_ == null ? com.tendermint.abci.ConsensusParams.getDefaultInstance() : consensusParams_;
+  @Override
+  public ConsensusParamsOrBuilder getConsensusParamsOrBuilder() {
+    return consensusParams_ == null ? ConsensusParams.getDefaultInstance() : consensusParams_;
   }
 
   public static final int VALIDATORS_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private java.util.List<com.tendermint.abci.ValidatorUpdate> validators_;
+  private java.util.List<ValidatorUpdate> validators_;
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<com.tendermint.abci.ValidatorUpdate> getValidatorsList() {
+  @Override
+  public java.util.List<ValidatorUpdate> getValidatorsList() {
     return validators_;
   }
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends com.tendermint.abci.ValidatorUpdateOrBuilder> 
+  @Override
+  public java.util.List<? extends ValidatorUpdateOrBuilder>
       getValidatorsOrBuilderList() {
     return validators_;
   }
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
+  @Override
   public int getValidatorsCount() {
     return validators_.size();
   }
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.tendermint.abci.ValidatorUpdate getValidators(int index) {
+  @Override
+  public ValidatorUpdate getValidators(int index) {
     return validators_.get(index);
   }
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  @java.lang.Override
-  public com.tendermint.abci.ValidatorUpdateOrBuilder getValidatorsOrBuilder(
+  @Override
+  public ValidatorUpdateOrBuilder getValidatorsOrBuilder(
       int index) {
     return validators_.get(index);
   }
@@ -179,7 +179,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes app_state_bytes = 5 [json_name = "appStateBytes"];</code>
    * @return The appStateBytes.
    */
-  @java.lang.Override
+  @Override
   public com.google.protobuf.ByteString getAppStateBytes() {
     return appStateBytes_;
   }
@@ -190,13 +190,13 @@ private static final long serialVersionUID = 0L;
    * <code>int64 initial_height = 6 [json_name = "initialHeight"];</code>
    * @return The initialHeight.
    */
-  @java.lang.Override
+  @Override
   public long getInitialHeight() {
     return initialHeight_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -206,7 +206,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (time_ != null) {
@@ -230,7 +230,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -264,15 +264,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.tendermint.abci.RequestInitChain)) {
+    if (!(obj instanceof RequestInitChain)) {
       return super.equals(obj);
     }
-    com.tendermint.abci.RequestInitChain other = (com.tendermint.abci.RequestInitChain) obj;
+    RequestInitChain other = (RequestInitChain) obj;
 
     if (hasTime() != other.hasTime()) return false;
     if (hasTime()) {
@@ -296,7 +296,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -327,69 +327,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.tendermint.abci.RequestInitChain parseFrom(
+  public static RequestInitChain parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.RequestInitChain parseFrom(
+  public static RequestInitChain parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.RequestInitChain parseFrom(
+  public static RequestInitChain parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.RequestInitChain parseFrom(
+  public static RequestInitChain parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.RequestInitChain parseFrom(byte[] data)
+  public static RequestInitChain parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.tendermint.abci.RequestInitChain parseFrom(
+  public static RequestInitChain parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.tendermint.abci.RequestInitChain parseFrom(java.io.InputStream input)
+  public static RequestInitChain parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.RequestInitChain parseFrom(
+  public static RequestInitChain parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.abci.RequestInitChain parseDelimitedFrom(java.io.InputStream input)
+  public static RequestInitChain parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.RequestInitChain parseDelimitedFrom(
+  public static RequestInitChain parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.tendermint.abci.RequestInitChain parseFrom(
+  public static RequestInitChain parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.tendermint.abci.RequestInitChain parseFrom(
+  public static RequestInitChain parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -397,23 +397,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.tendermint.abci.RequestInitChain prototype) {
+  public static Builder newBuilder(RequestInitChain prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -423,18 +423,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.abci.RequestInitChain)
-      com.tendermint.abci.RequestInitChainOrBuilder {
+      RequestInitChainOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestInitChain_descriptor;
+      return TypesProto.internal_static_tendermint_abci_RequestInitChain_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestInitChain_fieldAccessorTable
+      return TypesProto.internal_static_tendermint_abci_RequestInitChain_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.tendermint.abci.RequestInitChain.class, com.tendermint.abci.RequestInitChain.Builder.class);
+              RequestInitChain.class, Builder.class);
     }
 
     // Construct using com.tendermint.abci.RequestInitChain.newBuilder()
@@ -443,11 +443,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
 
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -474,36 +474,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestInitChain_descriptor;
+      return TypesProto.internal_static_tendermint_abci_RequestInitChain_descriptor;
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.RequestInitChain getDefaultInstanceForType() {
-      return com.tendermint.abci.RequestInitChain.getDefaultInstance();
+    @Override
+    public RequestInitChain getDefaultInstanceForType() {
+      return RequestInitChain.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.RequestInitChain build() {
-      com.tendermint.abci.RequestInitChain result = buildPartial();
+    @Override
+    public RequestInitChain build() {
+      RequestInitChain result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.tendermint.abci.RequestInitChain buildPartial() {
-      com.tendermint.abci.RequestInitChain result = new com.tendermint.abci.RequestInitChain(this);
+    @Override
+    public RequestInitChain buildPartial() {
+      RequestInitChain result = new RequestInitChain(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.tendermint.abci.RequestInitChain result) {
+    private void buildPartialRepeatedFields(RequestInitChain result) {
       if (validatorsBuilder_ == null) {
         if (((bitField0_ & 0x00000008) != 0)) {
           validators_ = java.util.Collections.unmodifiableList(validators_);
@@ -515,7 +515,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.tendermint.abci.RequestInitChain result) {
+    private void buildPartial0(RequestInitChain result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.time_ = timeBuilder_ == null
@@ -538,50 +538,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.tendermint.abci.RequestInitChain) {
-        return mergeFrom((com.tendermint.abci.RequestInitChain)other);
+      if (other instanceof RequestInitChain) {
+        return mergeFrom((RequestInitChain)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.tendermint.abci.RequestInitChain other) {
-      if (other == com.tendermint.abci.RequestInitChain.getDefaultInstance()) return this;
+    public Builder mergeFrom(RequestInitChain other) {
+      if (other == RequestInitChain.getDefaultInstance()) return this;
       if (other.hasTime()) {
         mergeTime(other.getTime());
       }
@@ -630,18 +630,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       try {
         boolean done = false;
@@ -671,9 +671,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 26
             case 34: {
-              com.tendermint.abci.ValidatorUpdate m =
+              ValidatorUpdate m =
                   input.readMessage(
-                      com.tendermint.abci.ValidatorUpdate.parser(),
+                      ValidatorUpdate.parser(),
                       extensionRegistry);
               if (validatorsBuilder_ == null) {
                 ensureValidatorsIsMutable();
@@ -829,21 +829,21 @@ private static final long serialVersionUID = 0L;
       return timeBuilder_;
     }
 
-    private java.lang.Object chainId_ = "";
+    private Object chainId_ = "";
     /**
      * <code>string chain_id = 2 [json_name = "chainId"];</code>
      * @return The chainId.
      */
-    public java.lang.String getChainId() {
-      java.lang.Object ref = chainId_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getChainId() {
+      Object ref = chainId_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         chainId_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -852,11 +852,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getChainIdBytes() {
-      java.lang.Object ref = chainId_;
+      Object ref = chainId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         chainId_ = b;
         return b;
       } else {
@@ -869,7 +869,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setChainId(
-        java.lang.String value) {
+        String value) {
       if (value == null) { throw new NullPointerException(); }
       chainId_ = value;
       bitField0_ |= 0x00000002;
@@ -901,9 +901,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.tendermint.abci.ConsensusParams consensusParams_;
+    private ConsensusParams consensusParams_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.tendermint.abci.ConsensusParams, com.tendermint.abci.ConsensusParams.Builder, com.tendermint.abci.ConsensusParamsOrBuilder> consensusParamsBuilder_;
+        ConsensusParams, ConsensusParams.Builder, ConsensusParamsOrBuilder> consensusParamsBuilder_;
     /**
      * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
      * @return Whether the consensusParams field is set.
@@ -915,9 +915,9 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
      * @return The consensusParams.
      */
-    public com.tendermint.abci.ConsensusParams getConsensusParams() {
+    public ConsensusParams getConsensusParams() {
       if (consensusParamsBuilder_ == null) {
-        return consensusParams_ == null ? com.tendermint.abci.ConsensusParams.getDefaultInstance() : consensusParams_;
+        return consensusParams_ == null ? ConsensusParams.getDefaultInstance() : consensusParams_;
       } else {
         return consensusParamsBuilder_.getMessage();
       }
@@ -925,7 +925,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
      */
-    public Builder setConsensusParams(com.tendermint.abci.ConsensusParams value) {
+    public Builder setConsensusParams(ConsensusParams value) {
       if (consensusParamsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -942,7 +942,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
      */
     public Builder setConsensusParams(
-        com.tendermint.abci.ConsensusParams.Builder builderForValue) {
+        ConsensusParams.Builder builderForValue) {
       if (consensusParamsBuilder_ == null) {
         consensusParams_ = builderForValue.build();
       } else {
@@ -955,11 +955,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
      */
-    public Builder mergeConsensusParams(com.tendermint.abci.ConsensusParams value) {
+    public Builder mergeConsensusParams(ConsensusParams value) {
       if (consensusParamsBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0) &&
           consensusParams_ != null &&
-          consensusParams_ != com.tendermint.abci.ConsensusParams.getDefaultInstance()) {
+          consensusParams_ != ConsensusParams.getDefaultInstance()) {
           getConsensusParamsBuilder().mergeFrom(value);
         } else {
           consensusParams_ = value;
@@ -987,7 +987,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
      */
-    public com.tendermint.abci.ConsensusParams.Builder getConsensusParamsBuilder() {
+    public ConsensusParams.Builder getConsensusParamsBuilder() {
       bitField0_ |= 0x00000004;
       onChanged();
       return getConsensusParamsFieldBuilder().getBuilder();
@@ -995,23 +995,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
      */
-    public com.tendermint.abci.ConsensusParamsOrBuilder getConsensusParamsOrBuilder() {
+    public ConsensusParamsOrBuilder getConsensusParamsOrBuilder() {
       if (consensusParamsBuilder_ != null) {
         return consensusParamsBuilder_.getMessageOrBuilder();
       } else {
         return consensusParams_ == null ?
-            com.tendermint.abci.ConsensusParams.getDefaultInstance() : consensusParams_;
+            ConsensusParams.getDefaultInstance() : consensusParams_;
       }
     }
     /**
      * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.tendermint.abci.ConsensusParams, com.tendermint.abci.ConsensusParams.Builder, com.tendermint.abci.ConsensusParamsOrBuilder> 
+        ConsensusParams, ConsensusParams.Builder, ConsensusParamsOrBuilder>
         getConsensusParamsFieldBuilder() {
       if (consensusParamsBuilder_ == null) {
         consensusParamsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.tendermint.abci.ConsensusParams, com.tendermint.abci.ConsensusParams.Builder, com.tendermint.abci.ConsensusParamsOrBuilder>(
+            ConsensusParams, ConsensusParams.Builder, ConsensusParamsOrBuilder>(
                 getConsensusParams(),
                 getParentForChildren(),
                 isClean());
@@ -1020,22 +1020,22 @@ private static final long serialVersionUID = 0L;
       return consensusParamsBuilder_;
     }
 
-    private java.util.List<com.tendermint.abci.ValidatorUpdate> validators_ =
+    private java.util.List<ValidatorUpdate> validators_ =
       java.util.Collections.emptyList();
     private void ensureValidatorsIsMutable() {
       if (!((bitField0_ & 0x00000008) != 0)) {
-        validators_ = new java.util.ArrayList<com.tendermint.abci.ValidatorUpdate>(validators_);
+        validators_ = new java.util.ArrayList<ValidatorUpdate>(validators_);
         bitField0_ |= 0x00000008;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.tendermint.abci.ValidatorUpdate, com.tendermint.abci.ValidatorUpdate.Builder, com.tendermint.abci.ValidatorUpdateOrBuilder> validatorsBuilder_;
+        ValidatorUpdate, ValidatorUpdate.Builder, ValidatorUpdateOrBuilder> validatorsBuilder_;
 
     /**
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.tendermint.abci.ValidatorUpdate> getValidatorsList() {
+    public java.util.List<ValidatorUpdate> getValidatorsList() {
       if (validatorsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(validators_);
       } else {
@@ -1055,7 +1055,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.abci.ValidatorUpdate getValidators(int index) {
+    public ValidatorUpdate getValidators(int index) {
       if (validatorsBuilder_ == null) {
         return validators_.get(index);
       } else {
@@ -1066,7 +1066,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder setValidators(
-        int index, com.tendermint.abci.ValidatorUpdate value) {
+        int index, ValidatorUpdate value) {
       if (validatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1083,7 +1083,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder setValidators(
-        int index, com.tendermint.abci.ValidatorUpdate.Builder builderForValue) {
+        int index, ValidatorUpdate.Builder builderForValue) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         validators_.set(index, builderForValue.build());
@@ -1096,7 +1096,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addValidators(com.tendermint.abci.ValidatorUpdate value) {
+    public Builder addValidators(ValidatorUpdate value) {
       if (validatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1113,7 +1113,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder addValidators(
-        int index, com.tendermint.abci.ValidatorUpdate value) {
+        int index, ValidatorUpdate value) {
       if (validatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1130,7 +1130,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder addValidators(
-        com.tendermint.abci.ValidatorUpdate.Builder builderForValue) {
+        ValidatorUpdate.Builder builderForValue) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         validators_.add(builderForValue.build());
@@ -1144,7 +1144,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder addValidators(
-        int index, com.tendermint.abci.ValidatorUpdate.Builder builderForValue) {
+        int index, ValidatorUpdate.Builder builderForValue) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         validators_.add(index, builderForValue.build());
@@ -1158,7 +1158,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllValidators(
-        java.lang.Iterable<? extends com.tendermint.abci.ValidatorUpdate> values) {
+        Iterable<? extends ValidatorUpdate> values) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1198,14 +1198,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.abci.ValidatorUpdate.Builder getValidatorsBuilder(
+    public ValidatorUpdate.Builder getValidatorsBuilder(
         int index) {
       return getValidatorsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.abci.ValidatorUpdateOrBuilder getValidatorsOrBuilder(
+    public ValidatorUpdateOrBuilder getValidatorsOrBuilder(
         int index) {
       if (validatorsBuilder_ == null) {
         return validators_.get(index);  } else {
@@ -1215,7 +1215,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends com.tendermint.abci.ValidatorUpdateOrBuilder> 
+    public java.util.List<? extends ValidatorUpdateOrBuilder>
          getValidatorsOrBuilderList() {
       if (validatorsBuilder_ != null) {
         return validatorsBuilder_.getMessageOrBuilderList();
@@ -1226,31 +1226,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.abci.ValidatorUpdate.Builder addValidatorsBuilder() {
+    public ValidatorUpdate.Builder addValidatorsBuilder() {
       return getValidatorsFieldBuilder().addBuilder(
-          com.tendermint.abci.ValidatorUpdate.getDefaultInstance());
+          ValidatorUpdate.getDefaultInstance());
     }
     /**
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public com.tendermint.abci.ValidatorUpdate.Builder addValidatorsBuilder(
+    public ValidatorUpdate.Builder addValidatorsBuilder(
         int index) {
       return getValidatorsFieldBuilder().addBuilder(
-          index, com.tendermint.abci.ValidatorUpdate.getDefaultInstance());
+          index, ValidatorUpdate.getDefaultInstance());
     }
     /**
      * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<com.tendermint.abci.ValidatorUpdate.Builder> 
+    public java.util.List<ValidatorUpdate.Builder>
          getValidatorsBuilderList() {
       return getValidatorsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.tendermint.abci.ValidatorUpdate, com.tendermint.abci.ValidatorUpdate.Builder, com.tendermint.abci.ValidatorUpdateOrBuilder> 
+        ValidatorUpdate, ValidatorUpdate.Builder, ValidatorUpdateOrBuilder>
         getValidatorsFieldBuilder() {
       if (validatorsBuilder_ == null) {
         validatorsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.tendermint.abci.ValidatorUpdate, com.tendermint.abci.ValidatorUpdate.Builder, com.tendermint.abci.ValidatorUpdateOrBuilder>(
+            ValidatorUpdate, ValidatorUpdate.Builder, ValidatorUpdateOrBuilder>(
                 validators_,
                 ((bitField0_ & 0x00000008) != 0),
                 getParentForChildren(),
@@ -1265,7 +1265,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes app_state_bytes = 5 [json_name = "appStateBytes"];</code>
      * @return The appStateBytes.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString getAppStateBytes() {
       return appStateBytes_;
     }
@@ -1297,7 +1297,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 initial_height = 6 [json_name = "initialHeight"];</code>
      * @return The initialHeight.
      */
-    @java.lang.Override
+    @Override
     public long getInitialHeight() {
       return initialHeight_;
     }
@@ -1323,13 +1323,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1340,18 +1340,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.abci.RequestInitChain)
-  private static final com.tendermint.abci.RequestInitChain DEFAULT_INSTANCE;
+  private static final RequestInitChain DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.tendermint.abci.RequestInitChain();
+    DEFAULT_INSTANCE = new RequestInitChain();
   }
 
-  public static com.tendermint.abci.RequestInitChain getDefaultInstance() {
+  public static RequestInitChain getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<RequestInitChain>
       PARSER = new com.google.protobuf.AbstractParser<RequestInitChain>() {
-    @java.lang.Override
+    @Override
     public RequestInitChain parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1375,13 +1375,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<RequestInitChain> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.tendermint.abci.RequestInitChain getDefaultInstanceForType() {
+  @Override
+  public RequestInitChain getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

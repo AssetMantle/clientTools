@@ -11,7 +11,7 @@ public interface MisbehaviourOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  java.lang.String getClientId();
+  String getClientId();
   /**
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The bytes for clientId.
@@ -28,11 +28,11 @@ public interface MisbehaviourOrBuilder extends
    * <code>.ibc.lightclients.tendermint.v1.Header header_1 = 2 [json_name = "header1", (.gogoproto.customname) = "Header1", (.gogoproto.moretags) = "yaml:&#92;"header_1&#92;""];</code>
    * @return The header1.
    */
-  com.ibc.lightclients.tendermint.v1.Header getHeader1();
+  Header getHeader1();
   /**
    * <code>.ibc.lightclients.tendermint.v1.Header header_1 = 2 [json_name = "header1", (.gogoproto.customname) = "Header1", (.gogoproto.moretags) = "yaml:&#92;"header_1&#92;""];</code>
    */
-  com.ibc.lightclients.tendermint.v1.HeaderOrBuilder getHeader1OrBuilder();
+  HeaderOrBuilder getHeader1OrBuilder();
 
   /**
    * <code>.ibc.lightclients.tendermint.v1.Header header_2 = 3 [json_name = "header2", (.gogoproto.customname) = "Header2", (.gogoproto.moretags) = "yaml:&#92;"header_2&#92;""];</code>
@@ -43,9 +43,9 @@ public interface MisbehaviourOrBuilder extends
    * <code>.ibc.lightclients.tendermint.v1.Header header_2 = 3 [json_name = "header2", (.gogoproto.customname) = "Header2", (.gogoproto.moretags) = "yaml:&#92;"header_2&#92;""];</code>
    * @return The header2.
    */
-  com.ibc.lightclients.tendermint.v1.Header getHeader2();
+  Header getHeader2();
   /**
    * <code>.ibc.lightclients.tendermint.v1.Header header_2 = 3 [json_name = "header2", (.gogoproto.customname) = "Header2", (.gogoproto.moretags) = "yaml:&#92;"header_2&#92;""];</code>
    */
-  com.ibc.lightclients.tendermint.v1.HeaderOrBuilder getHeader2OrBuilder();
+  HeaderOrBuilder getHeader2OrBuilder();
 }

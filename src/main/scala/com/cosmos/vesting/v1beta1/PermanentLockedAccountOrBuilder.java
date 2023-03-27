@@ -16,9 +16,9 @@ public interface PermanentLockedAccountOrBuilder extends
    * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
    * @return The baseVestingAccount.
    */
-  com.cosmos.vesting.v1beta1.BaseVestingAccount getBaseVestingAccount();
+  BaseVestingAccount getBaseVestingAccount();
   /**
    * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
    */
-  com.cosmos.vesting.v1beta1.BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder();
+  BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder();
 }

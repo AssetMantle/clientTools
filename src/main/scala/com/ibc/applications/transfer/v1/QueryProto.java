@@ -72,7 +72,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n(ibc/applications/transfer/v1/query.pro" +
       "to\022\034ibc.applications.transfer.v1\032\024gogopr" +
       "oto/gogo.proto\032*cosmos/base/query/v1beta" +
@@ -134,7 +134,7 @@ public final class QueryProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
           com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor(),
-          com.ibc.applications.transfer.v1.TransferProto.getDescriptor(),
+          TransferProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
         });
     internal_static_ibc_applications_transfer_v1_QueryDenomTraceRequest_descriptor =
@@ -142,61 +142,61 @@ public final class QueryProto {
     internal_static_ibc_applications_transfer_v1_QueryDenomTraceRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_QueryDenomTraceRequest_descriptor,
-        new java.lang.String[] { "Hash", });
+        new String[] { "Hash", });
     internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_descriptor,
-        new java.lang.String[] { "DenomTrace", });
+        new String[] { "DenomTrace", });
     internal_static_ibc_applications_transfer_v1_QueryDenomTracesRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_applications_transfer_v1_QueryDenomTracesRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_QueryDenomTracesRequest_descriptor,
-        new java.lang.String[] { "Pagination", });
+        new String[] { "Pagination", });
     internal_static_ibc_applications_transfer_v1_QueryDenomTracesResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_applications_transfer_v1_QueryDenomTracesResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_QueryDenomTracesResponse_descriptor,
-        new java.lang.String[] { "DenomTraces", "Pagination", });
+        new String[] { "DenomTraces", "Pagination", });
     internal_static_ibc_applications_transfer_v1_QueryParamsRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_applications_transfer_v1_QueryParamsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_QueryParamsRequest_descriptor,
-        new java.lang.String[] { });
+        new String[] { });
     internal_static_ibc_applications_transfer_v1_QueryParamsResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_ibc_applications_transfer_v1_QueryParamsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_QueryParamsResponse_descriptor,
-        new java.lang.String[] { "Params", });
+        new String[] { "Params", });
     internal_static_ibc_applications_transfer_v1_QueryDenomHashRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_ibc_applications_transfer_v1_QueryDenomHashRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_QueryDenomHashRequest_descriptor,
-        new java.lang.String[] { "Trace", });
+        new String[] { "Trace", });
     internal_static_ibc_applications_transfer_v1_QueryDenomHashResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_ibc_applications_transfer_v1_QueryDenomHashResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_QueryDenomHashResponse_descriptor,
-        new java.lang.String[] { "Hash", });
+        new String[] { "Hash", });
     internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_QueryEscrowAddressRequest_descriptor,
-        new java.lang.String[] { "PortId", "ChannelId", });
+        new String[] { "PortId", "ChannelId", });
     internal_static_ibc_applications_transfer_v1_QueryEscrowAddressResponse_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_ibc_applications_transfer_v1_QueryEscrowAddressResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_QueryEscrowAddressResponse_descriptor,
-        new java.lang.String[] { "EscrowAddress", });
+        new String[] { "EscrowAddress", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);
@@ -206,7 +206,7 @@ public final class QueryProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
     com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor();
-    com.ibc.applications.transfer.v1.TransferProto.getDescriptor();
+    TransferProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
   }
 

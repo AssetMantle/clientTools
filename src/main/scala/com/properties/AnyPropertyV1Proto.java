@@ -27,7 +27,7 @@ public final class AnyPropertyV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n+schema/properties/base/anyProperty.v1." +
       "proto\022\nproperties\032,schema/properties/bas" +
       "e/mesaProperty.v1.proto\032,schema/properti" +
@@ -45,8 +45,8 @@ public final class AnyPropertyV1Proto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.properties.MesaPropertyV1Proto.getDescriptor(),
-          com.properties.MetaPropertyV1Proto.getDescriptor(),
+          MesaPropertyV1Proto.getDescriptor(),
+          MetaPropertyV1Proto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_properties_AnyProperty_descriptor =
@@ -54,14 +54,14 @@ public final class AnyPropertyV1Proto {
     internal_static_properties_AnyProperty_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_properties_AnyProperty_descriptor,
-        new java.lang.String[] { "MesaProperty", "MetaProperty", "Impl", });
+        new String[] { "MesaProperty", "MetaProperty", "Impl", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    com.properties.MesaPropertyV1Proto.getDescriptor();
-    com.properties.MetaPropertyV1Proto.getDescriptor();
+    MesaPropertyV1Proto.getDescriptor();
+    MetaPropertyV1Proto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 

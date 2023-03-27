@@ -27,7 +27,7 @@ public final class CoinIDV1Proto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\037schema/ids/base/coinID.v1.proto\022\003ids\032!" +
       "schema/ids/base/stringID.v1.proto\032\024gogop" +
       "roto/gogo.proto\";\n\006CoinID\022+\n\nstring_i_d\030" +
@@ -40,7 +40,7 @@ public final class CoinIDV1Proto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.ids.StringIDV1Proto.getDescriptor(),
+          StringIDV1Proto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_ids_CoinID_descriptor =
@@ -48,13 +48,13 @@ public final class CoinIDV1Proto {
     internal_static_ids_CoinID_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ids_CoinID_descriptor,
-        new java.lang.String[] { "StringID", });
+        new String[] { "StringID", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    com.ids.StringIDV1Proto.getDescriptor();
+    StringIDV1Proto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 
