@@ -1,4 +1,4 @@
-package TestSchema.TestData
+package schema.TestData
 
 import org.scalatest.funsuite.AnyFunSuite
 

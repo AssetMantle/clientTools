@@ -1,7 +1,6 @@
-package commonUtilities
+package utilities
 
 import org.slf4j.{Logger, LoggerFactory}
-import play.api.libs.json._
 
 import java.math.MathContext
 import scala.language.implicitConversions
@@ -62,17 +61,17 @@ class MicroNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConver
 
   def isWhole: Boolean = this.value % MicroNumber.factor == 0
 
-  def roundedUp(precision: Int = 2): MicroNumber = new MicroNumber(commonUtilities.NumericOperation.roundUp(this.toDouble, precision))
+  def roundedUp(precision: Int = 2): MicroNumber = new MicroNumber(utilities.NumericOperation.roundUp(this.toDouble, precision))
 
-  def roundedDown(precision: Int = 2): MicroNumber = new MicroNumber(commonUtilities.NumericOperation.roundDown(this.toDouble, precision))
+  def roundedDown(precision: Int = 2): MicroNumber = new MicroNumber(utilities.NumericOperation.roundDown(this.toDouble, precision))
 
-  def roundedOff(precision: Int = 2): MicroNumber = new MicroNumber(commonUtilities.NumericOperation.roundOff(this.toDouble, precision))
+  def roundedOff(precision: Int = 2): MicroNumber = new MicroNumber(utilities.NumericOperation.roundOff(this.toDouble, precision))
 
-  def toRoundedUpString(precision: Int = 2): String = commonUtilities.NumericOperation.roundUp(this.toDouble, precision).toString
+  def toRoundedUpString(precision: Int = 2): String = utilities.NumericOperation.roundUp(this.toDouble, precision).toString
 
-  def toRoundedDownString(precision: Int = 2): String = commonUtilities.NumericOperation.roundDown(this.toDouble, precision).toString
+  def toRoundedDownString(precision: Int = 2): String = utilities.NumericOperation.roundDown(this.toDouble, precision).toString
 
-  def toRoundedOffString(precision: Int = 2): String = commonUtilities.NumericOperation.roundOff(this.toDouble, precision).toString
+  def toRoundedOffString(precision: Int = 2): String = utilities.NumericOperation.roundOff(this.toDouble, precision).toString
 
   def +(that: MicroNumber): MicroNumber = new MicroNumber(this.value + that.value)
 
@@ -180,7 +179,7 @@ class MicroNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConver
 
 object MicroNumber {
 
-  private val module: String = commonConstants.Module.COMMON_UTILITIES_MICRO_NUMBER
+  private val module: String = constants.Module.COMMON_UTILITIES_MICRO_NUMBER
 
   private val logger: Logger = LoggerFactory.getLogger(this.getClass)
 
@@ -208,11 +207,11 @@ object MicroNumber {
 
   //Do not define OWrites and OFormat since it takes a `key` name. Here, MicroNumber(23.5) will serialize to "23.5" and vice versa.
   // The jsObject will not have a key member. Default OFormat will make it {"value": "23.5"}
-  implicit val reads: Reads[MicroNumber] = JsPath.read[String].map(apply)
-
-  implicit val writes: Writes[MicroNumber] = (o: MicroNumber) => JsString(o.toString)
-
-  implicit val format: Format[MicroNumber] = Format[MicroNumber](reads, writes)
+  //  implicit val reads: Reads[MicroNumber] = JsPath.read[String].map(apply)
+  //
+  //  implicit val writes: Writes[MicroNumber] = (o: MicroNumber) => JsString(o.toString)
+  //
+  //  implicit val format: Format[MicroNumber] = Format[MicroNumber](reads, writes)
 
   implicit def stringToMicroNumber(s: String): MicroNumber = apply(s)
 

@@ -1,5 +1,6 @@
 package schema.types
 
+import com.types.{Split => protoSplit}
 import schema.id.OwnableID
 import schema.id.base.IdentityID
 

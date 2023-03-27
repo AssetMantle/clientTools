@@ -1,5 +1,6 @@
 package schema.id.base
 
+import com.ids.{AnyID, DataID => protoDataID}
 import schema.id.ID
 
 case class DataID(typeID: StringID, hashID: HashID) extends ID {

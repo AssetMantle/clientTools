@@ -1,5 +1,6 @@
 package schema.document
 
+import com.documents.{Document => protoDocument}
 import schema.id.base.{ClassificationID, HashID, PropertyID}
 import schema.property.Property
 import schema.qualified._

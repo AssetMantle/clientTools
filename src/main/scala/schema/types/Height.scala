@@ -1,5 +1,7 @@
 package schema.types
 
+import com.types.{Height => protoHeight}
+
 import java.nio.{ByteBuffer, ByteOrder}
 
 case class Height(value: Long) {

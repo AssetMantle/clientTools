@@ -1,7 +1,9 @@
 package schema.data.base
 
+import com.data.{AnyData, DecData => protoDecData}
 import schema.data.Data
 import schema.id.base.{DataID, HashID, StringID}
+import utilities.AttoNumber
 
 case class DecData(value: AttoNumber) extends Data {
   def getType: StringID = constants.Data.DecDataTypeID

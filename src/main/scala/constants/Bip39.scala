@@ -1,4 +1,4 @@
-package commonConstants
+package constants
 
 object Bip39 {
   // https://github.com/AlanVerbner/bip39/blob/master/src/main/scala/com/github/alanverbner/bip39/WordList.scala

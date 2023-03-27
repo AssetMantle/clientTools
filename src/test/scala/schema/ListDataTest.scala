@@ -1,6 +1,6 @@
-package TestSchema.TestData
+package schema.TestData
 
-import commonUtilities.ID.getClassificationID
+import utilities.ID.getClassificationID
 import org.scalatest.funsuite.AnyFunSuite
 import schema.data.Data
 import schema.data.base.{IDData, ListData, StringData}

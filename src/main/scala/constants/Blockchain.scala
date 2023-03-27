@@ -1,4 +1,4 @@
-package commonConstants
+package constants
 
 import org.bitcoinj.crypto.ChildNumber
 
@@ -129,7 +129,8 @@ object Blockchain {
     val ORDER_MODIFY = "/orders.transactions.modify.Message"
     val ORDER_REVOKE = "/orders.transactions.revoke.Message"
     val ORDER_TAKE = "/orders.transactions.take.Message"
-    //metaList
+    //meta
     val META_REVEAL = "/metas.transactions.reveal.Message"
+
   }
 }

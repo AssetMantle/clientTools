@@ -1,4 +1,4 @@
-package commonUtilities
+package utilities
 
 import java.text.NumberFormat
 

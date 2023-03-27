@@ -1,5 +1,6 @@
 package schema.id.base
 
+import com.ids.{AnyID, MaintainerID => protoMaintainerID}
 import schema.id.ID
 
 case class MaintainerID(hashID: HashID) extends ID {

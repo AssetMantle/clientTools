@@ -1,5 +1,7 @@
 package schema.qualified
 
+import com.lists.{PropertyList => protoPropertyList}
+import com.qualified.{Mutables => protoMutables}
 import schema.id.base.PropertyID
 import schema.list.PropertyList
 import schema.property.Property

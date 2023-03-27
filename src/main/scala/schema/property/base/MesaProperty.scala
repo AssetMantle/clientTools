@@ -1,5 +1,6 @@
 package schema.property.base
 
+import com.properties.{AnyProperty, MesaProperty => protoMesaProperty}
 import schema.id.base.{DataID, PropertyID, StringID}
 import schema.property.Property
 

@@ -1,4 +1,4 @@
-package commonUtilities
+package utilities
 
 import org.slf4j.{Logger, LoggerFactory}
 import sun.nio.cs.ISO_8859_1
@@ -10,7 +10,7 @@ import java.util.Base64
 
 object Secrets {
 
-  private implicit val module: String = commonConstants.Module.COMMON_UTILITIES_SECRETS
+  private implicit val module: String = constants.Module.COMMON_UTILITIES_SECRETS
 
   private implicit val logger: Logger = LoggerFactory.getLogger(this.getClass)
 

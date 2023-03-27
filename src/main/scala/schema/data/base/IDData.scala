@@ -1,5 +1,7 @@
 package schema.data.base
 
+import com.data.{AnyData, IDData => protoIDData}
+import com.ids.{AnyID, DataID => protoDataID}
 import schema.data.Data
 import schema.id.base.{DataID, HashID, StringID}
 import schema.id.{ID, base}

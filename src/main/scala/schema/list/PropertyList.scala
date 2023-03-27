@@ -1,5 +1,7 @@
 package schema.list
 
+import com.lists.{PropertyList => protoPropertyList}
+import com.properties.AnyProperty
 import schema.id.base.PropertyID
 import schema.property.Property
 import schema.property.base.MetaProperty

@@ -1,5 +1,6 @@
 package schema.id
 
+import com.ids.AnyOwnableID
 import org.slf4j.{Logger, LoggerFactory}
 import schema.id.base.{AssetID, CoinID}
 

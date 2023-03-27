@@ -1,7 +1,6 @@
-package commonUtilities
+package utilities
 
 import org.slf4j.{Logger, LoggerFactory}
-import play.api.libs.json._
 
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
@@ -11,7 +10,7 @@ import java.util.{Date => javaDate}
 
 object Date {
 
-  private implicit val module: String = commonConstants.Module.COMMON_UTILITIES_DATE
+  private implicit val module: String = constants.Module.COMMON_UTILITIES_DATE
 
   private implicit val logger: Logger = LoggerFactory.getLogger(this.getClass)
 
@@ -122,8 +121,8 @@ object Date {
 
     def apply(value: String): RFC3339 = if (isValidRFC3339(value)) new RFC3339(value) else throw new IllegalArgumentException("DATE_FORMAT_ERROR")
 
-    implicit val rfc3339Writes: Writes[RFC3339] = (rfc3339: RFC3339) => Json.toJson(rfc3339.toString)
-
-    implicit val rfc3339Reads: Reads[RFC3339] = (json: JsValue) => json.validate[String].map(x => RFC3339(x))
+//    implicit val rfc3339Writes: Writes[RFC3339] = (rfc3339: RFC3339) => Json.toJson(rfc3339.toString)
+//
+//    implicit val rfc3339Reads: Reads[RFC3339] = (json: JsValue) => json.validate[String].map(x => RFC3339(x))
   }
 }

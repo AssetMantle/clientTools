@@ -1,5 +1,7 @@
 package schema.property.base
 
+import com.data.AnyData
+import com.properties.{AnyProperty, MetaProperty => protoMetaProperty}
 import schema.data.Data
 import schema.id.base.{DataID, PropertyID, StringID}
 import schema.property.Property
