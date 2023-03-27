@@ -10,7 +10,7 @@ import utilities.AttoNumber
 
 class Deputize extends AnyFunSuite {
 
-  val fromID = testConstants.setup.identityID
+  val fromID = testConstants.setup.nubIdentityID
 
   val toID = testConstants.setup.secondaryIdentityID
 

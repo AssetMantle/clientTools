@@ -10,7 +10,7 @@ import utilities.AttoNumber
 
 class Mint extends AnyFunSuite {
 
-  val fromID = testConstants.setup.identityID
+  val fromID = testConstants.setup.nubIdentityID
 
   val classificationID = testConstants.setup.classificationID.asProtoClassificationID
 
