@@ -19,4 +19,6 @@ case class IdentityID(hashID: HashID) extends ID {
 
 object IdentityID {
   def apply(anyID: protoIdentityID): IdentityID = IdentityID(HashID(anyID.getHashID))
+
+  def apply(value: Array[Byte]): IdentityID = IdentityID(HashID(value))
 }

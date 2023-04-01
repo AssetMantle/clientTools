@@ -37,6 +37,8 @@ import com.splits.transactions.unwrap.{Message => UnwrapSplitMessage}
 import com.splits.transactions.wrap.{Message => WrapSplitMessage}
 import com.types.Height
 import org.bitcoinj.core.ECKey
+import schema.list
+import schema.property.base.{MesaProperty, MetaProperty}
 
 import scala.jdk.CollectionConverters.IterableHasAsJava
 
@@ -96,15 +98,15 @@ object BlockchainTransaction {
     .build()
 
   //ASSETS
-  def getDefineAssetMsgAsAny(fromAddress: String, fromID: IdentityID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
+  def getDefineAssetMsg(fromAddress: String, fromID: IdentityID, immutableMetas: Seq[MetaProperty], immutables: Seq[MesaProperty], mutableMetas: Seq[MetaProperty], mutables: Seq[MesaProperty]): protoBufAny = protoBufAny.newBuilder()
     .setTypeUrl(constants.Blockchain.TransactionMessage.ASSET_DEFINE)
     .setValue(DefineAssetMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
-      .setImmutableMetaProperties(immutableMetaProperties)
-      .setImmutableProperties(immutableProperties)
-      .setMutableMetaProperties(mutableMetaProperties)
-      .setMutableProperties(mutableProperties)
+      .setImmutableMetaProperties(list.PropertyList(immutableMetas).asProtoPropertyList)
+      .setImmutableProperties(list.PropertyList(immutables).asProtoPropertyList)
+      .setMutableMetaProperties(list.PropertyList(mutableMetas).asProtoPropertyList)
+      .setMutableProperties(list.PropertyList(mutables).asProtoPropertyList)
       .build().toByteString)
     .build()
 
@@ -278,7 +280,8 @@ object BlockchainTransaction {
     .build()
 
   //ORDERS
-  def getDefineOrderMsgAsAny(fromAddress: String, fromID: IdentityID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
+
+  def getDefineOrderMsg(fromAddress: String, fromID: IdentityID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
     .setTypeUrl(constants.Blockchain.TransactionMessage.ORDER_DEFINE)
     .setValue(DefineOrderMessage.newBuilder()
       .setFrom(fromAddress)
