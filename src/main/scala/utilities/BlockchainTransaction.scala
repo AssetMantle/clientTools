@@ -37,6 +37,8 @@ import com.cosmos.crypto.secp256k1
 import com.cosmos.tx.v1beta1._
 import com.google.protobuf.{ByteString, Any => protoBufAny}
 import org.bitcoinj.core.ECKey
+import schema.list
+import schema.property.base._
 
 import scala.jdk.CollectionConverters.IterableHasAsJava
 
