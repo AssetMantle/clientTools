@@ -24,7 +24,7 @@ public interface QueryDepositResponseOrBuilder extends
    * <code>.cosmos.gov.v1beta1.Deposit deposit = 1 [json_name = "deposit", (.gogoproto.nullable) = false];</code>
    * @return The deposit.
    */
-  Deposit getDeposit();
+  com.cosmos.gov.v1beta1.Deposit getDeposit();
   /**
    * <pre>
    * deposit defines the requested deposit.
@@ -32,5 +32,5 @@ public interface QueryDepositResponseOrBuilder extends
    *
    * <code>.cosmos.gov.v1beta1.Deposit deposit = 1 [json_name = "deposit", (.gogoproto.nullable) = false];</code>
    */
-  DepositOrBuilder getDepositOrBuilder();
+  com.cosmos.gov.v1beta1.DepositOrBuilder getDepositOrBuilder();
 }

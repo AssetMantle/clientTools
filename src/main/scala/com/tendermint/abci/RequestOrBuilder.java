@@ -16,11 +16,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestEcho echo = 1 [json_name = "echo"];</code>
    * @return The echo.
    */
-  RequestEcho getEcho();
+  com.tendermint.abci.RequestEcho getEcho();
   /**
    * <code>.tendermint.abci.RequestEcho echo = 1 [json_name = "echo"];</code>
    */
-  RequestEchoOrBuilder getEchoOrBuilder();
+  com.tendermint.abci.RequestEchoOrBuilder getEchoOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestFlush flush = 2 [json_name = "flush"];</code>
@@ -31,11 +31,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestFlush flush = 2 [json_name = "flush"];</code>
    * @return The flush.
    */
-  RequestFlush getFlush();
+  com.tendermint.abci.RequestFlush getFlush();
   /**
    * <code>.tendermint.abci.RequestFlush flush = 2 [json_name = "flush"];</code>
    */
-  RequestFlushOrBuilder getFlushOrBuilder();
+  com.tendermint.abci.RequestFlushOrBuilder getFlushOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestInfo info = 3 [json_name = "info"];</code>
@@ -46,11 +46,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestInfo info = 3 [json_name = "info"];</code>
    * @return The info.
    */
-  RequestInfo getInfo();
+  com.tendermint.abci.RequestInfo getInfo();
   /**
    * <code>.tendermint.abci.RequestInfo info = 3 [json_name = "info"];</code>
    */
-  RequestInfoOrBuilder getInfoOrBuilder();
+  com.tendermint.abci.RequestInfoOrBuilder getInfoOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestSetOption set_option = 4 [json_name = "setOption"];</code>
@@ -61,11 +61,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestSetOption set_option = 4 [json_name = "setOption"];</code>
    * @return The setOption.
    */
-  RequestSetOption getSetOption();
+  com.tendermint.abci.RequestSetOption getSetOption();
   /**
    * <code>.tendermint.abci.RequestSetOption set_option = 4 [json_name = "setOption"];</code>
    */
-  RequestSetOptionOrBuilder getSetOptionOrBuilder();
+  com.tendermint.abci.RequestSetOptionOrBuilder getSetOptionOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestInitChain init_chain = 5 [json_name = "initChain"];</code>
@@ -76,11 +76,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestInitChain init_chain = 5 [json_name = "initChain"];</code>
    * @return The initChain.
    */
-  RequestInitChain getInitChain();
+  com.tendermint.abci.RequestInitChain getInitChain();
   /**
    * <code>.tendermint.abci.RequestInitChain init_chain = 5 [json_name = "initChain"];</code>
    */
-  RequestInitChainOrBuilder getInitChainOrBuilder();
+  com.tendermint.abci.RequestInitChainOrBuilder getInitChainOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestQuery query = 6 [json_name = "query"];</code>
@@ -91,11 +91,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestQuery query = 6 [json_name = "query"];</code>
    * @return The query.
    */
-  RequestQuery getQuery();
+  com.tendermint.abci.RequestQuery getQuery();
   /**
    * <code>.tendermint.abci.RequestQuery query = 6 [json_name = "query"];</code>
    */
-  RequestQueryOrBuilder getQueryOrBuilder();
+  com.tendermint.abci.RequestQueryOrBuilder getQueryOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestBeginBlock begin_block = 7 [json_name = "beginBlock"];</code>
@@ -106,11 +106,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestBeginBlock begin_block = 7 [json_name = "beginBlock"];</code>
    * @return The beginBlock.
    */
-  RequestBeginBlock getBeginBlock();
+  com.tendermint.abci.RequestBeginBlock getBeginBlock();
   /**
    * <code>.tendermint.abci.RequestBeginBlock begin_block = 7 [json_name = "beginBlock"];</code>
    */
-  RequestBeginBlockOrBuilder getBeginBlockOrBuilder();
+  com.tendermint.abci.RequestBeginBlockOrBuilder getBeginBlockOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestCheckTx check_tx = 8 [json_name = "checkTx"];</code>
@@ -121,11 +121,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestCheckTx check_tx = 8 [json_name = "checkTx"];</code>
    * @return The checkTx.
    */
-  RequestCheckTx getCheckTx();
+  com.tendermint.abci.RequestCheckTx getCheckTx();
   /**
    * <code>.tendermint.abci.RequestCheckTx check_tx = 8 [json_name = "checkTx"];</code>
    */
-  RequestCheckTxOrBuilder getCheckTxOrBuilder();
+  com.tendermint.abci.RequestCheckTxOrBuilder getCheckTxOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestDeliverTx deliver_tx = 9 [json_name = "deliverTx"];</code>
@@ -136,11 +136,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestDeliverTx deliver_tx = 9 [json_name = "deliverTx"];</code>
    * @return The deliverTx.
    */
-  RequestDeliverTx getDeliverTx();
+  com.tendermint.abci.RequestDeliverTx getDeliverTx();
   /**
    * <code>.tendermint.abci.RequestDeliverTx deliver_tx = 9 [json_name = "deliverTx"];</code>
    */
-  RequestDeliverTxOrBuilder getDeliverTxOrBuilder();
+  com.tendermint.abci.RequestDeliverTxOrBuilder getDeliverTxOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestEndBlock end_block = 10 [json_name = "endBlock"];</code>
@@ -151,11 +151,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestEndBlock end_block = 10 [json_name = "endBlock"];</code>
    * @return The endBlock.
    */
-  RequestEndBlock getEndBlock();
+  com.tendermint.abci.RequestEndBlock getEndBlock();
   /**
    * <code>.tendermint.abci.RequestEndBlock end_block = 10 [json_name = "endBlock"];</code>
    */
-  RequestEndBlockOrBuilder getEndBlockOrBuilder();
+  com.tendermint.abci.RequestEndBlockOrBuilder getEndBlockOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestCommit commit = 11 [json_name = "commit"];</code>
@@ -166,11 +166,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestCommit commit = 11 [json_name = "commit"];</code>
    * @return The commit.
    */
-  RequestCommit getCommit();
+  com.tendermint.abci.RequestCommit getCommit();
   /**
    * <code>.tendermint.abci.RequestCommit commit = 11 [json_name = "commit"];</code>
    */
-  RequestCommitOrBuilder getCommitOrBuilder();
+  com.tendermint.abci.RequestCommitOrBuilder getCommitOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestListSnapshots list_snapshots = 12 [json_name = "listSnapshots"];</code>
@@ -181,11 +181,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestListSnapshots list_snapshots = 12 [json_name = "listSnapshots"];</code>
    * @return The listSnapshots.
    */
-  RequestListSnapshots getListSnapshots();
+  com.tendermint.abci.RequestListSnapshots getListSnapshots();
   /**
    * <code>.tendermint.abci.RequestListSnapshots list_snapshots = 12 [json_name = "listSnapshots"];</code>
    */
-  RequestListSnapshotsOrBuilder getListSnapshotsOrBuilder();
+  com.tendermint.abci.RequestListSnapshotsOrBuilder getListSnapshotsOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestOfferSnapshot offer_snapshot = 13 [json_name = "offerSnapshot"];</code>
@@ -196,11 +196,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestOfferSnapshot offer_snapshot = 13 [json_name = "offerSnapshot"];</code>
    * @return The offerSnapshot.
    */
-  RequestOfferSnapshot getOfferSnapshot();
+  com.tendermint.abci.RequestOfferSnapshot getOfferSnapshot();
   /**
    * <code>.tendermint.abci.RequestOfferSnapshot offer_snapshot = 13 [json_name = "offerSnapshot"];</code>
    */
-  RequestOfferSnapshotOrBuilder getOfferSnapshotOrBuilder();
+  com.tendermint.abci.RequestOfferSnapshotOrBuilder getOfferSnapshotOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestLoadSnapshotChunk load_snapshot_chunk = 14 [json_name = "loadSnapshotChunk"];</code>
@@ -211,11 +211,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestLoadSnapshotChunk load_snapshot_chunk = 14 [json_name = "loadSnapshotChunk"];</code>
    * @return The loadSnapshotChunk.
    */
-  RequestLoadSnapshotChunk getLoadSnapshotChunk();
+  com.tendermint.abci.RequestLoadSnapshotChunk getLoadSnapshotChunk();
   /**
    * <code>.tendermint.abci.RequestLoadSnapshotChunk load_snapshot_chunk = 14 [json_name = "loadSnapshotChunk"];</code>
    */
-  RequestLoadSnapshotChunkOrBuilder getLoadSnapshotChunkOrBuilder();
+  com.tendermint.abci.RequestLoadSnapshotChunkOrBuilder getLoadSnapshotChunkOrBuilder();
 
   /**
    * <code>.tendermint.abci.RequestApplySnapshotChunk apply_snapshot_chunk = 15 [json_name = "applySnapshotChunk"];</code>
@@ -226,11 +226,11 @@ public interface RequestOrBuilder extends
    * <code>.tendermint.abci.RequestApplySnapshotChunk apply_snapshot_chunk = 15 [json_name = "applySnapshotChunk"];</code>
    * @return The applySnapshotChunk.
    */
-  RequestApplySnapshotChunk getApplySnapshotChunk();
+  com.tendermint.abci.RequestApplySnapshotChunk getApplySnapshotChunk();
   /**
    * <code>.tendermint.abci.RequestApplySnapshotChunk apply_snapshot_chunk = 15 [json_name = "applySnapshotChunk"];</code>
    */
-  RequestApplySnapshotChunkOrBuilder getApplySnapshotChunkOrBuilder();
+  com.tendermint.abci.RequestApplySnapshotChunkOrBuilder getApplySnapshotChunkOrBuilder();
 
-  Request.ValueCase getValueCase();
+  com.tendermint.abci.Request.ValueCase getValueCase();
 }

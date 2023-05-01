@@ -10,12 +10,12 @@ public interface DVPairsOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<DVPair>
+  java.util.List<com.cosmos.staking.v1beta1.DVPair> 
       getPairsList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  DVPair getPairs(int index);
+  com.cosmos.staking.v1beta1.DVPair getPairs(int index);
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
@@ -23,11 +23,11 @@ public interface DVPairsOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends DVPairOrBuilder>
+  java.util.List<? extends com.cosmos.staking.v1beta1.DVPairOrBuilder> 
       getPairsOrBuilderList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  DVPairOrBuilder getPairsOrBuilder(
+  com.cosmos.staking.v1beta1.DVPairOrBuilder getPairsOrBuilder(
       int index);
 }

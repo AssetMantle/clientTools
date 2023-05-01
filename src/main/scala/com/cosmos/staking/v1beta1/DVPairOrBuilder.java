@@ -11,7 +11,7 @@ public interface DVPairOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  String getDelegatorAddress();
+  java.lang.String getDelegatorAddress();
   /**
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The bytes for delegatorAddress.
@@ -23,7 +23,7 @@ public interface DVPairOrBuilder extends
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  String getValidatorAddress();
+  java.lang.String getValidatorAddress();
   /**
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The bytes for validatorAddress.

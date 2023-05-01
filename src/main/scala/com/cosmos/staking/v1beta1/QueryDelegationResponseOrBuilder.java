@@ -24,7 +24,7 @@ public interface QueryDelegationResponseOrBuilder extends
    * <code>.cosmos.staking.v1beta1.DelegationResponse delegation_response = 1 [json_name = "delegationResponse"];</code>
    * @return The delegationResponse.
    */
-  DelegationResponse getDelegationResponse();
+  com.cosmos.staking.v1beta1.DelegationResponse getDelegationResponse();
   /**
    * <pre>
    * delegation_responses defines the delegation info of a delegation.
@@ -32,5 +32,5 @@ public interface QueryDelegationResponseOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.DelegationResponse delegation_response = 1 [json_name = "delegationResponse"];</code>
    */
-  DelegationResponseOrBuilder getDelegationResponseOrBuilder();
+  com.cosmos.staking.v1beta1.DelegationResponseOrBuilder getDelegationResponseOrBuilder();
 }

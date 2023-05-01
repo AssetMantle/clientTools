@@ -52,7 +52,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n#cosmos/slashing/v1beta1/query.proto\022\027c" +
       "osmos.slashing.v1beta1\032*cosmos/base/quer" +
       "y/v1beta1/pagination.proto\032\024gogoproto/go" +
@@ -98,44 +98,44 @@ public final class QueryProto {
           com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
-          SlashingProto.getDescriptor(),
+          com.cosmos.slashing.v1beta1.SlashingProto.getDescriptor(),
         });
     internal_static_cosmos_slashing_v1beta1_QueryParamsRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_slashing_v1beta1_QueryParamsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_QueryParamsRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_slashing_v1beta1_QueryParamsResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_slashing_v1beta1_QueryParamsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_QueryParamsResponse_descriptor,
-        new String[] { "Params", });
+        new java.lang.String[] { "Params", });
     internal_static_cosmos_slashing_v1beta1_QuerySigningInfoRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_slashing_v1beta1_QuerySigningInfoRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_QuerySigningInfoRequest_descriptor,
-        new String[] { "ConsAddress", });
+        new java.lang.String[] { "ConsAddress", });
     internal_static_cosmos_slashing_v1beta1_QuerySigningInfoResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_slashing_v1beta1_QuerySigningInfoResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_QuerySigningInfoResponse_descriptor,
-        new String[] { "ValSigningInfo", });
+        new java.lang.String[] { "ValSigningInfo", });
     internal_static_cosmos_slashing_v1beta1_QuerySigningInfosRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_slashing_v1beta1_QuerySigningInfosRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_QuerySigningInfosRequest_descriptor,
-        new String[] { "Pagination", });
+        new java.lang.String[] { "Pagination", });
     internal_static_cosmos_slashing_v1beta1_QuerySigningInfosResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_slashing_v1beta1_QuerySigningInfosResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_QuerySigningInfosResponse_descriptor,
-        new String[] { "Info", "Pagination", });
+        new java.lang.String[] { "Info", "Pagination", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);
@@ -145,7 +145,7 @@ public final class QueryProto {
     com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
-    SlashingProto.getDescriptor();
+    com.cosmos.slashing.v1beta1.SlashingProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

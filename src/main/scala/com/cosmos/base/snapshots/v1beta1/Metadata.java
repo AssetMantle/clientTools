@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     chunkHashes_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Metadata();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_Metadata_descriptor;
+    return com.cosmos.base.snapshots.v1beta1.SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_Metadata_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_Metadata_fieldAccessorTable
+    return com.cosmos.base.snapshots.v1beta1.SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_Metadata_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Metadata.class, Builder.class);
+            com.cosmos.base.snapshots.v1beta1.Metadata.class, com.cosmos.base.snapshots.v1beta1.Metadata.Builder.class);
   }
 
   public static final int CHUNK_HASHES_FIELD_NUMBER = 1;
@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
    * <code>repeated bytes chunk_hashes = 1 [json_name = "chunkHashes"];</code>
    * @return A list containing the chunkHashes.
    */
-  @Override
+  @java.lang.Override
   public java.util.List<com.google.protobuf.ByteString>
       getChunkHashesList() {
     return chunkHashes_;
@@ -84,7 +84,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -94,7 +94,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < chunkHashes_.size(); i++) {
@@ -103,7 +103,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -123,15 +123,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Metadata)) {
+    if (!(obj instanceof com.cosmos.base.snapshots.v1beta1.Metadata)) {
       return super.equals(obj);
     }
-    Metadata other = (Metadata) obj;
+    com.cosmos.base.snapshots.v1beta1.Metadata other = (com.cosmos.base.snapshots.v1beta1.Metadata) obj;
 
     if (!getChunkHashesList()
         .equals(other.getChunkHashesList())) return false;
@@ -139,7 +139,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -155,69 +155,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Metadata parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Metadata parseFrom(byte[] data)
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Metadata parseFrom(java.io.InputStream input)
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Metadata parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Metadata parseDelimitedFrom(
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.Metadata parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -225,23 +225,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Metadata prototype) {
+  public static Builder newBuilder(com.cosmos.base.snapshots.v1beta1.Metadata prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -255,18 +255,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.snapshots.v1beta1.Metadata)
-      MetadataOrBuilder {
+      com.cosmos.base.snapshots.v1beta1.MetadataOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_Metadata_descriptor;
+      return com.cosmos.base.snapshots.v1beta1.SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_Metadata_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_Metadata_fieldAccessorTable
+      return com.cosmos.base.snapshots.v1beta1.SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_Metadata_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Metadata.class, Builder.class);
+              com.cosmos.base.snapshots.v1beta1.Metadata.class, com.cosmos.base.snapshots.v1beta1.Metadata.Builder.class);
     }
 
     // Construct using com.cosmos.base.snapshots.v1beta1.Metadata.newBuilder()
@@ -275,11 +275,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -287,36 +287,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_Metadata_descriptor;
+      return com.cosmos.base.snapshots.v1beta1.SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_Metadata_descriptor;
     }
 
-    @Override
-    public Metadata getDefaultInstanceForType() {
-      return Metadata.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.Metadata getDefaultInstanceForType() {
+      return com.cosmos.base.snapshots.v1beta1.Metadata.getDefaultInstance();
     }
 
-    @Override
-    public Metadata build() {
-      Metadata result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.Metadata build() {
+      com.cosmos.base.snapshots.v1beta1.Metadata result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Metadata buildPartial() {
-      Metadata result = new Metadata(this);
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.Metadata buildPartial() {
+      com.cosmos.base.snapshots.v1beta1.Metadata result = new com.cosmos.base.snapshots.v1beta1.Metadata(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(Metadata result) {
+    private void buildPartialRepeatedFields(com.cosmos.base.snapshots.v1beta1.Metadata result) {
       if (((bitField0_ & 0x00000001) != 0)) {
         chunkHashes_ = java.util.Collections.unmodifiableList(chunkHashes_);
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -324,54 +324,54 @@ private static final long serialVersionUID = 0L;
       result.chunkHashes_ = chunkHashes_;
     }
 
-    private void buildPartial0(Metadata result) {
+    private void buildPartial0(com.cosmos.base.snapshots.v1beta1.Metadata result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Metadata) {
-        return mergeFrom((Metadata)other);
+      if (other instanceof com.cosmos.base.snapshots.v1beta1.Metadata) {
+        return mergeFrom((com.cosmos.base.snapshots.v1beta1.Metadata)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Metadata other) {
-      if (other == Metadata.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.base.snapshots.v1beta1.Metadata other) {
+      if (other == com.cosmos.base.snapshots.v1beta1.Metadata.getDefaultInstance()) return this;
       if (!other.chunkHashes_.isEmpty()) {
         if (chunkHashes_.isEmpty()) {
           chunkHashes_ = other.chunkHashes_;
@@ -387,18 +387,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -518,7 +518,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addAllChunkHashes(
-        Iterable<? extends com.google.protobuf.ByteString> values) {
+        java.lang.Iterable<? extends com.google.protobuf.ByteString> values) {
       ensureChunkHashesIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, chunkHashes_);
@@ -539,13 +539,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -556,18 +556,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.snapshots.v1beta1.Metadata)
-  private static final Metadata DEFAULT_INSTANCE;
+  private static final com.cosmos.base.snapshots.v1beta1.Metadata DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Metadata();
+    DEFAULT_INSTANCE = new com.cosmos.base.snapshots.v1beta1.Metadata();
   }
 
-  public static Metadata getDefaultInstance() {
+  public static com.cosmos.base.snapshots.v1beta1.Metadata getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Metadata>
       PARSER = new com.google.protobuf.AbstractParser<Metadata>() {
-    @Override
+    @java.lang.Override
     public Metadata parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -591,13 +591,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Metadata> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Metadata getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.base.snapshots.v1beta1.Metadata getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

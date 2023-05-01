@@ -20,24 +20,24 @@ private static final long serialVersionUID = 0L;
     type_ = 0;
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new RequestCheckTx();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TypesProto.internal_static_tendermint_abci_RequestCheckTx_descriptor;
+    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestCheckTx_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TypesProto.internal_static_tendermint_abci_RequestCheckTx_fieldAccessorTable
+    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestCheckTx_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            RequestCheckTx.class, Builder.class);
+            com.tendermint.abci.RequestCheckTx.class, com.tendermint.abci.RequestCheckTx.Builder.class);
   }
 
   public static final int TX_FIELD_NUMBER = 1;
@@ -46,7 +46,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes tx = 1 [json_name = "tx"];</code>
    * @return The tx.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getTx() {
     return tx_;
   }
@@ -57,20 +57,20 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.CheckTxType type = 2 [json_name = "type"];</code>
    * @return The enum numeric value on the wire for type.
    */
-  @Override public int getTypeValue() {
+  @java.lang.Override public int getTypeValue() {
     return type_;
   }
   /**
    * <code>.tendermint.abci.CheckTxType type = 2 [json_name = "type"];</code>
    * @return The type.
    */
-  @Override public CheckTxType getType() {
-    CheckTxType result = CheckTxType.forNumber(type_);
-    return result == null ? CheckTxType.UNRECOGNIZED : result;
+  @java.lang.Override public com.tendermint.abci.CheckTxType getType() {
+    com.tendermint.abci.CheckTxType result = com.tendermint.abci.CheckTxType.forNumber(type_);
+    return result == null ? com.tendermint.abci.CheckTxType.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -80,19 +80,19 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!tx_.isEmpty()) {
       output.writeBytes(1, tx_);
     }
-    if (type_ != CheckTxType.NEW.getNumber()) {
+    if (type_ != com.tendermint.abci.CheckTxType.NEW.getNumber()) {
       output.writeEnum(2, type_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -102,7 +102,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBytesSize(1, tx_);
     }
-    if (type_ != CheckTxType.NEW.getNumber()) {
+    if (type_ != com.tendermint.abci.CheckTxType.NEW.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, type_);
     }
@@ -111,15 +111,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof RequestCheckTx)) {
+    if (!(obj instanceof com.tendermint.abci.RequestCheckTx)) {
       return super.equals(obj);
     }
-    RequestCheckTx other = (RequestCheckTx) obj;
+    com.tendermint.abci.RequestCheckTx other = (com.tendermint.abci.RequestCheckTx) obj;
 
     if (!getTx()
         .equals(other.getTx())) return false;
@@ -128,7 +128,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -144,69 +144,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static RequestCheckTx parseFrom(
+  public static com.tendermint.abci.RequestCheckTx parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static RequestCheckTx parseFrom(
+  public static com.tendermint.abci.RequestCheckTx parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static RequestCheckTx parseFrom(
+  public static com.tendermint.abci.RequestCheckTx parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static RequestCheckTx parseFrom(
+  public static com.tendermint.abci.RequestCheckTx parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static RequestCheckTx parseFrom(byte[] data)
+  public static com.tendermint.abci.RequestCheckTx parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static RequestCheckTx parseFrom(
+  public static com.tendermint.abci.RequestCheckTx parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static RequestCheckTx parseFrom(java.io.InputStream input)
+  public static com.tendermint.abci.RequestCheckTx parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static RequestCheckTx parseFrom(
+  public static com.tendermint.abci.RequestCheckTx parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static RequestCheckTx parseDelimitedFrom(java.io.InputStream input)
+  public static com.tendermint.abci.RequestCheckTx parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static RequestCheckTx parseDelimitedFrom(
+  public static com.tendermint.abci.RequestCheckTx parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static RequestCheckTx parseFrom(
+  public static com.tendermint.abci.RequestCheckTx parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static RequestCheckTx parseFrom(
+  public static com.tendermint.abci.RequestCheckTx parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -214,23 +214,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(RequestCheckTx prototype) {
+  public static Builder newBuilder(com.tendermint.abci.RequestCheckTx prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -240,18 +240,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.abci.RequestCheckTx)
-      RequestCheckTxOrBuilder {
+      com.tendermint.abci.RequestCheckTxOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TypesProto.internal_static_tendermint_abci_RequestCheckTx_descriptor;
+      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestCheckTx_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TypesProto.internal_static_tendermint_abci_RequestCheckTx_fieldAccessorTable
+      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestCheckTx_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              RequestCheckTx.class, Builder.class);
+              com.tendermint.abci.RequestCheckTx.class, com.tendermint.abci.RequestCheckTx.Builder.class);
     }
 
     // Construct using com.tendermint.abci.RequestCheckTx.newBuilder()
@@ -260,11 +260,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -273,35 +273,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TypesProto.internal_static_tendermint_abci_RequestCheckTx_descriptor;
+      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestCheckTx_descriptor;
     }
 
-    @Override
-    public RequestCheckTx getDefaultInstanceForType() {
-      return RequestCheckTx.getDefaultInstance();
+    @java.lang.Override
+    public com.tendermint.abci.RequestCheckTx getDefaultInstanceForType() {
+      return com.tendermint.abci.RequestCheckTx.getDefaultInstance();
     }
 
-    @Override
-    public RequestCheckTx build() {
-      RequestCheckTx result = buildPartial();
+    @java.lang.Override
+    public com.tendermint.abci.RequestCheckTx build() {
+      com.tendermint.abci.RequestCheckTx result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public RequestCheckTx buildPartial() {
-      RequestCheckTx result = new RequestCheckTx(this);
+    @java.lang.Override
+    public com.tendermint.abci.RequestCheckTx buildPartial() {
+      com.tendermint.abci.RequestCheckTx result = new com.tendermint.abci.RequestCheckTx(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(RequestCheckTx result) {
+    private void buildPartial0(com.tendermint.abci.RequestCheckTx result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.tx_ = tx_;
@@ -311,50 +311,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof RequestCheckTx) {
-        return mergeFrom((RequestCheckTx)other);
+      if (other instanceof com.tendermint.abci.RequestCheckTx) {
+        return mergeFrom((com.tendermint.abci.RequestCheckTx)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(RequestCheckTx other) {
-      if (other == RequestCheckTx.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.tendermint.abci.RequestCheckTx other) {
+      if (other == com.tendermint.abci.RequestCheckTx.getDefaultInstance()) return this;
       if (other.getTx() != com.google.protobuf.ByteString.EMPTY) {
         setTx(other.getTx());
       }
@@ -366,18 +366,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -419,7 +419,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes tx = 1 [json_name = "tx"];</code>
      * @return The tx.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getTx() {
       return tx_;
     }
@@ -451,7 +451,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.CheckTxType type = 2 [json_name = "type"];</code>
      * @return The enum numeric value on the wire for type.
      */
-    @Override public int getTypeValue() {
+    @java.lang.Override public int getTypeValue() {
       return type_;
     }
     /**
@@ -469,17 +469,17 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.CheckTxType type = 2 [json_name = "type"];</code>
      * @return The type.
      */
-    @Override
-    public CheckTxType getType() {
-      CheckTxType result = CheckTxType.forNumber(type_);
-      return result == null ? CheckTxType.UNRECOGNIZED : result;
+    @java.lang.Override
+    public com.tendermint.abci.CheckTxType getType() {
+      com.tendermint.abci.CheckTxType result = com.tendermint.abci.CheckTxType.forNumber(type_);
+      return result == null ? com.tendermint.abci.CheckTxType.UNRECOGNIZED : result;
     }
     /**
      * <code>.tendermint.abci.CheckTxType type = 2 [json_name = "type"];</code>
      * @param value The type to set.
      * @return This builder for chaining.
      */
-    public Builder setType(CheckTxType value) {
+    public Builder setType(com.tendermint.abci.CheckTxType value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -498,13 +498,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -515,18 +515,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.abci.RequestCheckTx)
-  private static final RequestCheckTx DEFAULT_INSTANCE;
+  private static final com.tendermint.abci.RequestCheckTx DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new RequestCheckTx();
+    DEFAULT_INSTANCE = new com.tendermint.abci.RequestCheckTx();
   }
 
-  public static RequestCheckTx getDefaultInstance() {
+  public static com.tendermint.abci.RequestCheckTx getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<RequestCheckTx>
       PARSER = new com.google.protobuf.AbstractParser<RequestCheckTx>() {
-    @Override
+    @java.lang.Override
     public RequestCheckTx parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -550,13 +550,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<RequestCheckTx> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public RequestCheckTx getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.tendermint.abci.RequestCheckTx getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

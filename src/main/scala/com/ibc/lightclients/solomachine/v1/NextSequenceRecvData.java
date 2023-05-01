@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     path_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new NextSequenceRecvData();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_NextSequenceRecvData_descriptor;
+    return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_NextSequenceRecvData_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_NextSequenceRecvData_fieldAccessorTable
+    return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_NextSequenceRecvData_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            NextSequenceRecvData.class, Builder.class);
+            com.ibc.lightclients.solomachine.v1.NextSequenceRecvData.class, com.ibc.lightclients.solomachine.v1.NextSequenceRecvData.Builder.class);
   }
 
   public static final int PATH_FIELD_NUMBER = 1;
@@ -50,7 +50,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes path = 1 [json_name = "path"];</code>
    * @return The path.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getPath() {
     return path_;
   }
@@ -61,13 +61,13 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 next_seq_recv = 2 [json_name = "nextSeqRecv", (.gogoproto.moretags) = "yaml:&#92;"next_seq_recv&#92;""];</code>
    * @return The nextSeqRecv.
    */
-  @Override
+  @java.lang.Override
   public long getNextSeqRecv() {
     return nextSeqRecv_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -77,7 +77,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!path_.isEmpty()) {
@@ -89,7 +89,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -108,15 +108,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof NextSequenceRecvData)) {
+    if (!(obj instanceof com.ibc.lightclients.solomachine.v1.NextSequenceRecvData)) {
       return super.equals(obj);
     }
-    NextSequenceRecvData other = (NextSequenceRecvData) obj;
+    com.ibc.lightclients.solomachine.v1.NextSequenceRecvData other = (com.ibc.lightclients.solomachine.v1.NextSequenceRecvData) obj;
 
     if (!getPath()
         .equals(other.getPath())) return false;
@@ -126,7 +126,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -143,69 +143,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static NextSequenceRecvData parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static NextSequenceRecvData parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static NextSequenceRecvData parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static NextSequenceRecvData parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static NextSequenceRecvData parseFrom(byte[] data)
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static NextSequenceRecvData parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static NextSequenceRecvData parseFrom(java.io.InputStream input)
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static NextSequenceRecvData parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static NextSequenceRecvData parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static NextSequenceRecvData parseDelimitedFrom(
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static NextSequenceRecvData parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static NextSequenceRecvData parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -213,23 +213,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(NextSequenceRecvData prototype) {
+  public static Builder newBuilder(com.ibc.lightclients.solomachine.v1.NextSequenceRecvData prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -244,18 +244,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.lightclients.solomachine.v1.NextSequenceRecvData)
-      NextSequenceRecvDataOrBuilder {
+      com.ibc.lightclients.solomachine.v1.NextSequenceRecvDataOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_NextSequenceRecvData_descriptor;
+      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_NextSequenceRecvData_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_NextSequenceRecvData_fieldAccessorTable
+      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_NextSequenceRecvData_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              NextSequenceRecvData.class, Builder.class);
+              com.ibc.lightclients.solomachine.v1.NextSequenceRecvData.class, com.ibc.lightclients.solomachine.v1.NextSequenceRecvData.Builder.class);
     }
 
     // Construct using com.ibc.lightclients.solomachine.v1.NextSequenceRecvData.newBuilder()
@@ -264,11 +264,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -277,35 +277,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_NextSequenceRecvData_descriptor;
+      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_NextSequenceRecvData_descriptor;
     }
 
-    @Override
-    public NextSequenceRecvData getDefaultInstanceForType() {
-      return NextSequenceRecvData.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.lightclients.solomachine.v1.NextSequenceRecvData getDefaultInstanceForType() {
+      return com.ibc.lightclients.solomachine.v1.NextSequenceRecvData.getDefaultInstance();
     }
 
-    @Override
-    public NextSequenceRecvData build() {
-      NextSequenceRecvData result = buildPartial();
+    @java.lang.Override
+    public com.ibc.lightclients.solomachine.v1.NextSequenceRecvData build() {
+      com.ibc.lightclients.solomachine.v1.NextSequenceRecvData result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public NextSequenceRecvData buildPartial() {
-      NextSequenceRecvData result = new NextSequenceRecvData(this);
+    @java.lang.Override
+    public com.ibc.lightclients.solomachine.v1.NextSequenceRecvData buildPartial() {
+      com.ibc.lightclients.solomachine.v1.NextSequenceRecvData result = new com.ibc.lightclients.solomachine.v1.NextSequenceRecvData(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(NextSequenceRecvData result) {
+    private void buildPartial0(com.ibc.lightclients.solomachine.v1.NextSequenceRecvData result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.path_ = path_;
@@ -315,50 +315,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof NextSequenceRecvData) {
-        return mergeFrom((NextSequenceRecvData)other);
+      if (other instanceof com.ibc.lightclients.solomachine.v1.NextSequenceRecvData) {
+        return mergeFrom((com.ibc.lightclients.solomachine.v1.NextSequenceRecvData)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(NextSequenceRecvData other) {
-      if (other == NextSequenceRecvData.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.lightclients.solomachine.v1.NextSequenceRecvData other) {
+      if (other == com.ibc.lightclients.solomachine.v1.NextSequenceRecvData.getDefaultInstance()) return this;
       if (other.getPath() != com.google.protobuf.ByteString.EMPTY) {
         setPath(other.getPath());
       }
@@ -370,18 +370,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -423,7 +423,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes path = 1 [json_name = "path"];</code>
      * @return The path.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getPath() {
       return path_;
     }
@@ -455,7 +455,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 next_seq_recv = 2 [json_name = "nextSeqRecv", (.gogoproto.moretags) = "yaml:&#92;"next_seq_recv&#92;""];</code>
      * @return The nextSeqRecv.
      */
-    @Override
+    @java.lang.Override
     public long getNextSeqRecv() {
       return nextSeqRecv_;
     }
@@ -481,13 +481,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -498,18 +498,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.lightclients.solomachine.v1.NextSequenceRecvData)
-  private static final NextSequenceRecvData DEFAULT_INSTANCE;
+  private static final com.ibc.lightclients.solomachine.v1.NextSequenceRecvData DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new NextSequenceRecvData();
+    DEFAULT_INSTANCE = new com.ibc.lightclients.solomachine.v1.NextSequenceRecvData();
   }
 
-  public static NextSequenceRecvData getDefaultInstance() {
+  public static com.ibc.lightclients.solomachine.v1.NextSequenceRecvData getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<NextSequenceRecvData>
       PARSER = new com.google.protobuf.AbstractParser<NextSequenceRecvData>() {
-    @Override
+    @java.lang.Override
     public NextSequenceRecvData parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -533,13 +533,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<NextSequenceRecvData> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public NextSequenceRecvData getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.lightclients.solomachine.v1.NextSequenceRecvData getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

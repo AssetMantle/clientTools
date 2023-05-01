@@ -24,7 +24,7 @@ public interface GetChainDescriptorResponseOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 1 [json_name = "chain"];</code>
    * @return The chain.
    */
-  ChainDescriptor getChain();
+  com.cosmos.base.reflection.v2alpha1.ChainDescriptor getChain();
   /**
    * <pre>
    * chain describes application chain information
@@ -32,5 +32,5 @@ public interface GetChainDescriptorResponseOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 1 [json_name = "chain"];</code>
    */
-  ChainDescriptorOrBuilder getChainOrBuilder();
+  com.cosmos.base.reflection.v2alpha1.ChainDescriptorOrBuilder getChainOrBuilder();
 }

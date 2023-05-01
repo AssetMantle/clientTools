@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private MsgChannelCloseInitResponse() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgChannelCloseInitResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TxProto.internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_descriptor;
+    return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TxProto.internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_fieldAccessorTable
+    return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            MsgChannelCloseInitResponse.class, Builder.class);
+            com.ibc.core.channel.v1.MsgChannelCloseInitResponse.class, com.ibc.core.channel.v1.MsgChannelCloseInitResponse.Builder.class);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -53,13 +53,13 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -70,21 +70,21 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof MsgChannelCloseInitResponse)) {
+    if (!(obj instanceof com.ibc.core.channel.v1.MsgChannelCloseInitResponse)) {
       return super.equals(obj);
     }
-    MsgChannelCloseInitResponse other = (MsgChannelCloseInitResponse) obj;
+    com.ibc.core.channel.v1.MsgChannelCloseInitResponse other = (com.ibc.core.channel.v1.MsgChannelCloseInitResponse) obj;
 
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -96,69 +96,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static MsgChannelCloseInitResponse parseFrom(
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgChannelCloseInitResponse parseFrom(
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgChannelCloseInitResponse parseFrom(
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgChannelCloseInitResponse parseFrom(
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgChannelCloseInitResponse parseFrom(byte[] data)
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgChannelCloseInitResponse parseFrom(
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgChannelCloseInitResponse parseFrom(java.io.InputStream input)
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgChannelCloseInitResponse parseFrom(
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgChannelCloseInitResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static MsgChannelCloseInitResponse parseDelimitedFrom(
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgChannelCloseInitResponse parseFrom(
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgChannelCloseInitResponse parseFrom(
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -166,23 +166,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(MsgChannelCloseInitResponse prototype) {
+  public static Builder newBuilder(com.ibc.core.channel.v1.MsgChannelCloseInitResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -196,18 +196,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.channel.v1.MsgChannelCloseInitResponse)
-      MsgChannelCloseInitResponseOrBuilder {
+      com.ibc.core.channel.v1.MsgChannelCloseInitResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_descriptor;
+      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_fieldAccessorTable
+      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MsgChannelCloseInitResponse.class, Builder.class);
+              com.ibc.core.channel.v1.MsgChannelCloseInitResponse.class, com.ibc.core.channel.v1.MsgChannelCloseInitResponse.Builder.class);
     }
 
     // Construct using com.ibc.core.channel.v1.MsgChannelCloseInitResponse.newBuilder()
@@ -216,104 +216,104 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TxProto.internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_descriptor;
+      return com.ibc.core.channel.v1.TxProto.internal_static_ibc_core_channel_v1_MsgChannelCloseInitResponse_descriptor;
     }
 
-    @Override
-    public MsgChannelCloseInitResponse getDefaultInstanceForType() {
-      return MsgChannelCloseInitResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.core.channel.v1.MsgChannelCloseInitResponse getDefaultInstanceForType() {
+      return com.ibc.core.channel.v1.MsgChannelCloseInitResponse.getDefaultInstance();
     }
 
-    @Override
-    public MsgChannelCloseInitResponse build() {
-      MsgChannelCloseInitResponse result = buildPartial();
+    @java.lang.Override
+    public com.ibc.core.channel.v1.MsgChannelCloseInitResponse build() {
+      com.ibc.core.channel.v1.MsgChannelCloseInitResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public MsgChannelCloseInitResponse buildPartial() {
-      MsgChannelCloseInitResponse result = new MsgChannelCloseInitResponse(this);
+    @java.lang.Override
+    public com.ibc.core.channel.v1.MsgChannelCloseInitResponse buildPartial() {
+      com.ibc.core.channel.v1.MsgChannelCloseInitResponse result = new com.ibc.core.channel.v1.MsgChannelCloseInitResponse(this);
       onBuilt();
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof MsgChannelCloseInitResponse) {
-        return mergeFrom((MsgChannelCloseInitResponse)other);
+      if (other instanceof com.ibc.core.channel.v1.MsgChannelCloseInitResponse) {
+        return mergeFrom((com.ibc.core.channel.v1.MsgChannelCloseInitResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(MsgChannelCloseInitResponse other) {
-      if (other == MsgChannelCloseInitResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.core.channel.v1.MsgChannelCloseInitResponse other) {
+      if (other == com.ibc.core.channel.v1.MsgChannelCloseInitResponse.getDefaultInstance()) return this;
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -338,13 +338,13 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -355,18 +355,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.channel.v1.MsgChannelCloseInitResponse)
-  private static final MsgChannelCloseInitResponse DEFAULT_INSTANCE;
+  private static final com.ibc.core.channel.v1.MsgChannelCloseInitResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new MsgChannelCloseInitResponse();
+    DEFAULT_INSTANCE = new com.ibc.core.channel.v1.MsgChannelCloseInitResponse();
   }
 
-  public static MsgChannelCloseInitResponse getDefaultInstance() {
+  public static com.ibc.core.channel.v1.MsgChannelCloseInitResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgChannelCloseInitResponse>
       PARSER = new com.google.protobuf.AbstractParser<MsgChannelCloseInitResponse>() {
-    @Override
+    @java.lang.Override
     public MsgChannelCloseInitResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -390,13 +390,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<MsgChannelCloseInitResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public MsgChannelCloseInitResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.core.channel.v1.MsgChannelCloseInitResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

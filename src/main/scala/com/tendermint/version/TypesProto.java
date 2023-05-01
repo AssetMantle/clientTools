@@ -32,7 +32,7 @@ public final class TypesProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\036tendermint/version/types.proto\022\022tender" +
       "mint.version\032\024gogoproto/gogo.proto\"=\n\003Ap" +
       "p\022\032\n\010protocol\030\001 \001(\004R\010protocol\022\032\n\010softwar" +
@@ -54,13 +54,13 @@ public final class TypesProto {
     internal_static_tendermint_version_App_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_version_App_descriptor,
-        new String[] { "Protocol", "Software", });
+        new java.lang.String[] { "Protocol", "Software", });
     internal_static_tendermint_version_Consensus_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_tendermint_version_Consensus_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_version_Consensus_descriptor,
-        new String[] { "Block", "App", });
+        new java.lang.String[] { "Block", "App", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.equal);

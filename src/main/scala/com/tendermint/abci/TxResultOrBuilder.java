@@ -34,9 +34,9 @@ public interface TxResultOrBuilder extends
    * <code>.tendermint.abci.ResponseDeliverTx result = 4 [json_name = "result", (.gogoproto.nullable) = false];</code>
    * @return The result.
    */
-  ResponseDeliverTx getResult();
+  com.tendermint.abci.ResponseDeliverTx getResult();
   /**
    * <code>.tendermint.abci.ResponseDeliverTx result = 4 [json_name = "result", (.gogoproto.nullable) = false];</code>
    */
-  ResponseDeliverTxOrBuilder getResultOrBuilder();
+  com.tendermint.abci.ResponseDeliverTxOrBuilder getResultOrBuilder();
 }

@@ -52,7 +52,7 @@ public interface UnbondingDelegationEntryOrBuilder extends
    * <code>string initial_balance = 3 [json_name = "initialBalance", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"initial_balance&#92;""];</code>
    * @return The initialBalance.
    */
-  String getInitialBalance();
+  java.lang.String getInitialBalance();
   /**
    * <pre>
    * initial_balance defines the tokens initially scheduled to receive at completion.
@@ -72,7 +72,7 @@ public interface UnbondingDelegationEntryOrBuilder extends
    * <code>string balance = 4 [json_name = "balance", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The balance.
    */
-  String getBalance();
+  java.lang.String getBalance();
   /**
    * <pre>
    * balance defines the tokens to receive at completion.

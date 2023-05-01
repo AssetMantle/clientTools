@@ -15,7 +15,7 @@ public interface QueryDelegatorValidatorsResponseOrBuilder extends
    * <code>repeated string validators = 1 [json_name = "validators"];</code>
    * @return A list containing the validators.
    */
-  java.util.List<String>
+  java.util.List<java.lang.String>
       getValidatorsList();
   /**
    * <pre>
@@ -35,7 +35,7 @@ public interface QueryDelegatorValidatorsResponseOrBuilder extends
    * @param index The index of the element to return.
    * @return The validators at the given index.
    */
-  String getValidators(int index);
+  java.lang.String getValidators(int index);
   /**
    * <pre>
    * validators defines the validators a delegator is delegating for.

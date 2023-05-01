@@ -22,33 +22,33 @@ private static final long serialVersionUID = 0L;
   private DuplicateVoteEvidence() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new DuplicateVoteEvidence();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return EvidenceProto.internal_static_tendermint_types_DuplicateVoteEvidence_descriptor;
+    return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_DuplicateVoteEvidence_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return EvidenceProto.internal_static_tendermint_types_DuplicateVoteEvidence_fieldAccessorTable
+    return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_DuplicateVoteEvidence_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            DuplicateVoteEvidence.class, Builder.class);
+            com.tendermint.types.DuplicateVoteEvidence.class, com.tendermint.types.DuplicateVoteEvidence.Builder.class);
   }
 
   public static final int VOTE_A_FIELD_NUMBER = 1;
-  private Vote voteA_;
+  private com.tendermint.types.Vote voteA_;
   /**
    * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
    * @return Whether the voteA field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasVoteA() {
     return voteA_ != null;
   }
@@ -56,25 +56,25 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
    * @return The voteA.
    */
-  @Override
-  public Vote getVoteA() {
-    return voteA_ == null ? Vote.getDefaultInstance() : voteA_;
+  @java.lang.Override
+  public com.tendermint.types.Vote getVoteA() {
+    return voteA_ == null ? com.tendermint.types.Vote.getDefaultInstance() : voteA_;
   }
   /**
    * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
    */
-  @Override
-  public VoteOrBuilder getVoteAOrBuilder() {
-    return voteA_ == null ? Vote.getDefaultInstance() : voteA_;
+  @java.lang.Override
+  public com.tendermint.types.VoteOrBuilder getVoteAOrBuilder() {
+    return voteA_ == null ? com.tendermint.types.Vote.getDefaultInstance() : voteA_;
   }
 
   public static final int VOTE_B_FIELD_NUMBER = 2;
-  private Vote voteB_;
+  private com.tendermint.types.Vote voteB_;
   /**
    * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
    * @return Whether the voteB field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasVoteB() {
     return voteB_ != null;
   }
@@ -82,16 +82,16 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
    * @return The voteB.
    */
-  @Override
-  public Vote getVoteB() {
-    return voteB_ == null ? Vote.getDefaultInstance() : voteB_;
+  @java.lang.Override
+  public com.tendermint.types.Vote getVoteB() {
+    return voteB_ == null ? com.tendermint.types.Vote.getDefaultInstance() : voteB_;
   }
   /**
    * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
    */
-  @Override
-  public VoteOrBuilder getVoteBOrBuilder() {
-    return voteB_ == null ? Vote.getDefaultInstance() : voteB_;
+  @java.lang.Override
+  public com.tendermint.types.VoteOrBuilder getVoteBOrBuilder() {
+    return voteB_ == null ? com.tendermint.types.Vote.getDefaultInstance() : voteB_;
   }
 
   public static final int TOTAL_VOTING_POWER_FIELD_NUMBER = 3;
@@ -100,7 +100,7 @@ private static final long serialVersionUID = 0L;
    * <code>int64 total_voting_power = 3 [json_name = "totalVotingPower"];</code>
    * @return The totalVotingPower.
    */
-  @Override
+  @java.lang.Override
   public long getTotalVotingPower() {
     return totalVotingPower_;
   }
@@ -111,7 +111,7 @@ private static final long serialVersionUID = 0L;
    * <code>int64 validator_power = 4 [json_name = "validatorPower"];</code>
    * @return The validatorPower.
    */
-  @Override
+  @java.lang.Override
   public long getValidatorPower() {
     return validatorPower_;
   }
@@ -122,7 +122,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp timestamp = 5 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return Whether the timestamp field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasTimestamp() {
     return timestamp_ != null;
   }
@@ -130,20 +130,20 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp timestamp = 5 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return The timestamp.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Timestamp getTimestamp() {
     return timestamp_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timestamp_;
   }
   /**
    * <code>.google.protobuf.Timestamp timestamp = 5 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getTimestampOrBuilder() {
     return timestamp_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timestamp_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -153,7 +153,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (voteA_ != null) {
@@ -174,7 +174,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -205,15 +205,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof DuplicateVoteEvidence)) {
+    if (!(obj instanceof com.tendermint.types.DuplicateVoteEvidence)) {
       return super.equals(obj);
     }
-    DuplicateVoteEvidence other = (DuplicateVoteEvidence) obj;
+    com.tendermint.types.DuplicateVoteEvidence other = (com.tendermint.types.DuplicateVoteEvidence) obj;
 
     if (hasVoteA() != other.hasVoteA()) return false;
     if (hasVoteA()) {
@@ -238,7 +238,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -268,69 +268,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static DuplicateVoteEvidence parseFrom(
+  public static com.tendermint.types.DuplicateVoteEvidence parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DuplicateVoteEvidence parseFrom(
+  public static com.tendermint.types.DuplicateVoteEvidence parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DuplicateVoteEvidence parseFrom(
+  public static com.tendermint.types.DuplicateVoteEvidence parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DuplicateVoteEvidence parseFrom(
+  public static com.tendermint.types.DuplicateVoteEvidence parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DuplicateVoteEvidence parseFrom(byte[] data)
+  public static com.tendermint.types.DuplicateVoteEvidence parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DuplicateVoteEvidence parseFrom(
+  public static com.tendermint.types.DuplicateVoteEvidence parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DuplicateVoteEvidence parseFrom(java.io.InputStream input)
+  public static com.tendermint.types.DuplicateVoteEvidence parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static DuplicateVoteEvidence parseFrom(
+  public static com.tendermint.types.DuplicateVoteEvidence parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static DuplicateVoteEvidence parseDelimitedFrom(java.io.InputStream input)
+  public static com.tendermint.types.DuplicateVoteEvidence parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static DuplicateVoteEvidence parseDelimitedFrom(
+  public static com.tendermint.types.DuplicateVoteEvidence parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static DuplicateVoteEvidence parseFrom(
+  public static com.tendermint.types.DuplicateVoteEvidence parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static DuplicateVoteEvidence parseFrom(
+  public static com.tendermint.types.DuplicateVoteEvidence parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -338,23 +338,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(DuplicateVoteEvidence prototype) {
+  public static Builder newBuilder(com.tendermint.types.DuplicateVoteEvidence prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -368,18 +368,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.types.DuplicateVoteEvidence)
-      DuplicateVoteEvidenceOrBuilder {
+      com.tendermint.types.DuplicateVoteEvidenceOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return EvidenceProto.internal_static_tendermint_types_DuplicateVoteEvidence_descriptor;
+      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_DuplicateVoteEvidence_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return EvidenceProto.internal_static_tendermint_types_DuplicateVoteEvidence_fieldAccessorTable
+      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_DuplicateVoteEvidence_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              DuplicateVoteEvidence.class, Builder.class);
+              com.tendermint.types.DuplicateVoteEvidence.class, com.tendermint.types.DuplicateVoteEvidence.Builder.class);
     }
 
     // Construct using com.tendermint.types.DuplicateVoteEvidence.newBuilder()
@@ -388,11 +388,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -416,35 +416,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return EvidenceProto.internal_static_tendermint_types_DuplicateVoteEvidence_descriptor;
+      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_DuplicateVoteEvidence_descriptor;
     }
 
-    @Override
-    public DuplicateVoteEvidence getDefaultInstanceForType() {
-      return DuplicateVoteEvidence.getDefaultInstance();
+    @java.lang.Override
+    public com.tendermint.types.DuplicateVoteEvidence getDefaultInstanceForType() {
+      return com.tendermint.types.DuplicateVoteEvidence.getDefaultInstance();
     }
 
-    @Override
-    public DuplicateVoteEvidence build() {
-      DuplicateVoteEvidence result = buildPartial();
+    @java.lang.Override
+    public com.tendermint.types.DuplicateVoteEvidence build() {
+      com.tendermint.types.DuplicateVoteEvidence result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public DuplicateVoteEvidence buildPartial() {
-      DuplicateVoteEvidence result = new DuplicateVoteEvidence(this);
+    @java.lang.Override
+    public com.tendermint.types.DuplicateVoteEvidence buildPartial() {
+      com.tendermint.types.DuplicateVoteEvidence result = new com.tendermint.types.DuplicateVoteEvidence(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(DuplicateVoteEvidence result) {
+    private void buildPartial0(com.tendermint.types.DuplicateVoteEvidence result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.voteA_ = voteABuilder_ == null
@@ -469,50 +469,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof DuplicateVoteEvidence) {
-        return mergeFrom((DuplicateVoteEvidence)other);
+      if (other instanceof com.tendermint.types.DuplicateVoteEvidence) {
+        return mergeFrom((com.tendermint.types.DuplicateVoteEvidence)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(DuplicateVoteEvidence other) {
-      if (other == DuplicateVoteEvidence.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.tendermint.types.DuplicateVoteEvidence other) {
+      if (other == com.tendermint.types.DuplicateVoteEvidence.getDefaultInstance()) return this;
       if (other.hasVoteA()) {
         mergeVoteA(other.getVoteA());
       }
@@ -533,18 +533,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -602,9 +602,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Vote voteA_;
+    private com.tendermint.types.Vote voteA_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        Vote, Vote.Builder, VoteOrBuilder> voteABuilder_;
+        com.tendermint.types.Vote, com.tendermint.types.Vote.Builder, com.tendermint.types.VoteOrBuilder> voteABuilder_;
     /**
      * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
      * @return Whether the voteA field is set.
@@ -616,9 +616,9 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
      * @return The voteA.
      */
-    public Vote getVoteA() {
+    public com.tendermint.types.Vote getVoteA() {
       if (voteABuilder_ == null) {
-        return voteA_ == null ? Vote.getDefaultInstance() : voteA_;
+        return voteA_ == null ? com.tendermint.types.Vote.getDefaultInstance() : voteA_;
       } else {
         return voteABuilder_.getMessage();
       }
@@ -626,7 +626,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
      */
-    public Builder setVoteA(Vote value) {
+    public Builder setVoteA(com.tendermint.types.Vote value) {
       if (voteABuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -643,7 +643,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
      */
     public Builder setVoteA(
-        Vote.Builder builderForValue) {
+        com.tendermint.types.Vote.Builder builderForValue) {
       if (voteABuilder_ == null) {
         voteA_ = builderForValue.build();
       } else {
@@ -656,11 +656,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
      */
-    public Builder mergeVoteA(Vote value) {
+    public Builder mergeVoteA(com.tendermint.types.Vote value) {
       if (voteABuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           voteA_ != null &&
-          voteA_ != Vote.getDefaultInstance()) {
+          voteA_ != com.tendermint.types.Vote.getDefaultInstance()) {
           getVoteABuilder().mergeFrom(value);
         } else {
           voteA_ = value;
@@ -688,7 +688,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
      */
-    public Vote.Builder getVoteABuilder() {
+    public com.tendermint.types.Vote.Builder getVoteABuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getVoteAFieldBuilder().getBuilder();
@@ -696,23 +696,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
      */
-    public VoteOrBuilder getVoteAOrBuilder() {
+    public com.tendermint.types.VoteOrBuilder getVoteAOrBuilder() {
       if (voteABuilder_ != null) {
         return voteABuilder_.getMessageOrBuilder();
       } else {
         return voteA_ == null ?
-            Vote.getDefaultInstance() : voteA_;
+            com.tendermint.types.Vote.getDefaultInstance() : voteA_;
       }
     }
     /**
      * <code>.tendermint.types.Vote vote_a = 1 [json_name = "voteA"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Vote, Vote.Builder, VoteOrBuilder>
+        com.tendermint.types.Vote, com.tendermint.types.Vote.Builder, com.tendermint.types.VoteOrBuilder> 
         getVoteAFieldBuilder() {
       if (voteABuilder_ == null) {
         voteABuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Vote, Vote.Builder, VoteOrBuilder>(
+            com.tendermint.types.Vote, com.tendermint.types.Vote.Builder, com.tendermint.types.VoteOrBuilder>(
                 getVoteA(),
                 getParentForChildren(),
                 isClean());
@@ -721,9 +721,9 @@ private static final long serialVersionUID = 0L;
       return voteABuilder_;
     }
 
-    private Vote voteB_;
+    private com.tendermint.types.Vote voteB_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        Vote, Vote.Builder, VoteOrBuilder> voteBBuilder_;
+        com.tendermint.types.Vote, com.tendermint.types.Vote.Builder, com.tendermint.types.VoteOrBuilder> voteBBuilder_;
     /**
      * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
      * @return Whether the voteB field is set.
@@ -735,9 +735,9 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
      * @return The voteB.
      */
-    public Vote getVoteB() {
+    public com.tendermint.types.Vote getVoteB() {
       if (voteBBuilder_ == null) {
-        return voteB_ == null ? Vote.getDefaultInstance() : voteB_;
+        return voteB_ == null ? com.tendermint.types.Vote.getDefaultInstance() : voteB_;
       } else {
         return voteBBuilder_.getMessage();
       }
@@ -745,7 +745,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
      */
-    public Builder setVoteB(Vote value) {
+    public Builder setVoteB(com.tendermint.types.Vote value) {
       if (voteBBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -762,7 +762,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
      */
     public Builder setVoteB(
-        Vote.Builder builderForValue) {
+        com.tendermint.types.Vote.Builder builderForValue) {
       if (voteBBuilder_ == null) {
         voteB_ = builderForValue.build();
       } else {
@@ -775,11 +775,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
      */
-    public Builder mergeVoteB(Vote value) {
+    public Builder mergeVoteB(com.tendermint.types.Vote value) {
       if (voteBBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           voteB_ != null &&
-          voteB_ != Vote.getDefaultInstance()) {
+          voteB_ != com.tendermint.types.Vote.getDefaultInstance()) {
           getVoteBBuilder().mergeFrom(value);
         } else {
           voteB_ = value;
@@ -807,7 +807,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
      */
-    public Vote.Builder getVoteBBuilder() {
+    public com.tendermint.types.Vote.Builder getVoteBBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getVoteBFieldBuilder().getBuilder();
@@ -815,23 +815,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
      */
-    public VoteOrBuilder getVoteBOrBuilder() {
+    public com.tendermint.types.VoteOrBuilder getVoteBOrBuilder() {
       if (voteBBuilder_ != null) {
         return voteBBuilder_.getMessageOrBuilder();
       } else {
         return voteB_ == null ?
-            Vote.getDefaultInstance() : voteB_;
+            com.tendermint.types.Vote.getDefaultInstance() : voteB_;
       }
     }
     /**
      * <code>.tendermint.types.Vote vote_b = 2 [json_name = "voteB"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Vote, Vote.Builder, VoteOrBuilder>
+        com.tendermint.types.Vote, com.tendermint.types.Vote.Builder, com.tendermint.types.VoteOrBuilder> 
         getVoteBFieldBuilder() {
       if (voteBBuilder_ == null) {
         voteBBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Vote, Vote.Builder, VoteOrBuilder>(
+            com.tendermint.types.Vote, com.tendermint.types.Vote.Builder, com.tendermint.types.VoteOrBuilder>(
                 getVoteB(),
                 getParentForChildren(),
                 isClean());
@@ -845,7 +845,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 total_voting_power = 3 [json_name = "totalVotingPower"];</code>
      * @return The totalVotingPower.
      */
-    @Override
+    @java.lang.Override
     public long getTotalVotingPower() {
       return totalVotingPower_;
     }
@@ -877,7 +877,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 validator_power = 4 [json_name = "validatorPower"];</code>
      * @return The validatorPower.
      */
-    @Override
+    @java.lang.Override
     public long getValidatorPower() {
       return validatorPower_;
     }
@@ -1022,13 +1022,13 @@ private static final long serialVersionUID = 0L;
       }
       return timestampBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1039,18 +1039,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.types.DuplicateVoteEvidence)
-  private static final DuplicateVoteEvidence DEFAULT_INSTANCE;
+  private static final com.tendermint.types.DuplicateVoteEvidence DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new DuplicateVoteEvidence();
+    DEFAULT_INSTANCE = new com.tendermint.types.DuplicateVoteEvidence();
   }
 
-  public static DuplicateVoteEvidence getDefaultInstance() {
+  public static com.tendermint.types.DuplicateVoteEvidence getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<DuplicateVoteEvidence>
       PARSER = new com.google.protobuf.AbstractParser<DuplicateVoteEvidence>() {
-    @Override
+    @java.lang.Override
     public DuplicateVoteEvidence parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1074,13 +1074,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<DuplicateVoteEvidence> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public DuplicateVoteEvidence getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.tendermint.types.DuplicateVoteEvidence getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

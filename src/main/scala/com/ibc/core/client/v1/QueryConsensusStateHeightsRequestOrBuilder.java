@@ -15,7 +15,7 @@ public interface QueryConsensusStateHeightsRequestOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId"];</code>
    * @return The clientId.
    */
-  String getClientId();
+  java.lang.String getClientId();
   /**
    * <pre>
    * client identifier

@@ -10,12 +10,12 @@ public interface ValidatorSetOrBuilder extends
   /**
    * <code>repeated .tendermint.types.Validator validators = 1 [json_name = "validators"];</code>
    */
-  java.util.List<Validator>
+  java.util.List<com.tendermint.types.Validator> 
       getValidatorsList();
   /**
    * <code>repeated .tendermint.types.Validator validators = 1 [json_name = "validators"];</code>
    */
-  Validator getValidators(int index);
+  com.tendermint.types.Validator getValidators(int index);
   /**
    * <code>repeated .tendermint.types.Validator validators = 1 [json_name = "validators"];</code>
    */
@@ -23,12 +23,12 @@ public interface ValidatorSetOrBuilder extends
   /**
    * <code>repeated .tendermint.types.Validator validators = 1 [json_name = "validators"];</code>
    */
-  java.util.List<? extends ValidatorOrBuilder>
+  java.util.List<? extends com.tendermint.types.ValidatorOrBuilder> 
       getValidatorsOrBuilderList();
   /**
    * <code>repeated .tendermint.types.Validator validators = 1 [json_name = "validators"];</code>
    */
-  ValidatorOrBuilder getValidatorsOrBuilder(
+  com.tendermint.types.ValidatorOrBuilder getValidatorsOrBuilder(
       int index);
 
   /**
@@ -40,11 +40,11 @@ public interface ValidatorSetOrBuilder extends
    * <code>.tendermint.types.Validator proposer = 2 [json_name = "proposer"];</code>
    * @return The proposer.
    */
-  Validator getProposer();
+  com.tendermint.types.Validator getProposer();
   /**
    * <code>.tendermint.types.Validator proposer = 2 [json_name = "proposer"];</code>
    */
-  ValidatorOrBuilder getProposerOrBuilder();
+  com.tendermint.types.ValidatorOrBuilder getProposerOrBuilder();
 
   /**
    * <code>int64 total_voting_power = 3 [json_name = "totalVotingPower"];</code>

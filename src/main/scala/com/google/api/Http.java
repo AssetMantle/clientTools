@@ -25,29 +25,29 @@ private static final long serialVersionUID = 0L;
     rules_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Http();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return HttpProto.internal_static_google_api_Http_descriptor;
+    return com.google.api.HttpProto.internal_static_google_api_Http_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return HttpProto.internal_static_google_api_Http_fieldAccessorTable
+    return com.google.api.HttpProto.internal_static_google_api_Http_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Http.class, Builder.class);
+            com.google.api.Http.class, com.google.api.Http.Builder.class);
   }
 
   public static final int RULES_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<HttpRule> rules_;
+  private java.util.List<com.google.api.HttpRule> rules_;
   /**
    * <pre>
    * A list of HTTP configuration rules that apply to individual API methods.
@@ -57,8 +57,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
    */
-  @Override
-  public java.util.List<HttpRule> getRulesList() {
+  @java.lang.Override
+  public java.util.List<com.google.api.HttpRule> getRulesList() {
     return rules_;
   }
   /**
@@ -70,8 +70,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
    */
-  @Override
-  public java.util.List<? extends HttpRuleOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.google.api.HttpRuleOrBuilder> 
       getRulesOrBuilderList() {
     return rules_;
   }
@@ -84,7 +84,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getRulesCount() {
     return rules_.size();
   }
@@ -97,8 +97,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
    */
-  @Override
-  public HttpRule getRules(int index) {
+  @java.lang.Override
+  public com.google.api.HttpRule getRules(int index) {
     return rules_.get(index);
   }
   /**
@@ -110,8 +110,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
    */
-  @Override
-  public HttpRuleOrBuilder getRulesOrBuilder(
+  @java.lang.Override
+  public com.google.api.HttpRuleOrBuilder getRulesOrBuilder(
       int index) {
     return rules_.get(index);
   }
@@ -131,13 +131,13 @@ private static final long serialVersionUID = 0L;
    * <code>bool fully_decode_reserved_expansion = 2 [json_name = "fullyDecodeReservedExpansion"];</code>
    * @return The fullyDecodeReservedExpansion.
    */
-  @Override
+  @java.lang.Override
   public boolean getFullyDecodeReservedExpansion() {
     return fullyDecodeReservedExpansion_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -147,7 +147,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < rules_.size(); i++) {
@@ -159,7 +159,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -178,15 +178,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Http)) {
+    if (!(obj instanceof com.google.api.Http)) {
       return super.equals(obj);
     }
-    Http other = (Http) obj;
+    com.google.api.Http other = (com.google.api.Http) obj;
 
     if (!getRulesList()
         .equals(other.getRulesList())) return false;
@@ -196,7 +196,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -215,69 +215,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Http parseFrom(
+  public static com.google.api.Http parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Http parseFrom(
+  public static com.google.api.Http parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Http parseFrom(
+  public static com.google.api.Http parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Http parseFrom(
+  public static com.google.api.Http parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Http parseFrom(byte[] data)
+  public static com.google.api.Http parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Http parseFrom(
+  public static com.google.api.Http parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Http parseFrom(java.io.InputStream input)
+  public static com.google.api.Http parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Http parseFrom(
+  public static com.google.api.Http parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Http parseDelimitedFrom(java.io.InputStream input)
+  public static com.google.api.Http parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Http parseDelimitedFrom(
+  public static com.google.api.Http parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Http parseFrom(
+  public static com.google.api.Http parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Http parseFrom(
+  public static com.google.api.Http parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -285,23 +285,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Http prototype) {
+  public static Builder newBuilder(com.google.api.Http prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -317,18 +317,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:google.api.Http)
-      HttpOrBuilder {
+      com.google.api.HttpOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return HttpProto.internal_static_google_api_Http_descriptor;
+      return com.google.api.HttpProto.internal_static_google_api_Http_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return HttpProto.internal_static_google_api_Http_fieldAccessorTable
+      return com.google.api.HttpProto.internal_static_google_api_Http_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Http.class, Builder.class);
+              com.google.api.Http.class, com.google.api.Http.Builder.class);
     }
 
     // Construct using com.google.api.Http.newBuilder()
@@ -337,11 +337,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -356,36 +356,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return HttpProto.internal_static_google_api_Http_descriptor;
+      return com.google.api.HttpProto.internal_static_google_api_Http_descriptor;
     }
 
-    @Override
-    public Http getDefaultInstanceForType() {
-      return Http.getDefaultInstance();
+    @java.lang.Override
+    public com.google.api.Http getDefaultInstanceForType() {
+      return com.google.api.Http.getDefaultInstance();
     }
 
-    @Override
-    public Http build() {
-      Http result = buildPartial();
+    @java.lang.Override
+    public com.google.api.Http build() {
+      com.google.api.Http result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Http buildPartial() {
-      Http result = new Http(this);
+    @java.lang.Override
+    public com.google.api.Http buildPartial() {
+      com.google.api.Http result = new com.google.api.Http(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(Http result) {
+    private void buildPartialRepeatedFields(com.google.api.Http result) {
       if (rulesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           rules_ = java.util.Collections.unmodifiableList(rules_);
@@ -397,57 +397,57 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(Http result) {
+    private void buildPartial0(com.google.api.Http result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.fullyDecodeReservedExpansion_ = fullyDecodeReservedExpansion_;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Http) {
-        return mergeFrom((Http)other);
+      if (other instanceof com.google.api.Http) {
+        return mergeFrom((com.google.api.Http)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Http other) {
-      if (other == Http.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.google.api.Http other) {
+      if (other == com.google.api.Http.getDefaultInstance()) return this;
       if (rulesBuilder_ == null) {
         if (!other.rules_.isEmpty()) {
           if (rules_.isEmpty()) {
@@ -482,18 +482,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -504,9 +504,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              HttpRule m =
+              com.google.api.HttpRule m =
                   input.readMessage(
-                      HttpRule.parser(),
+                      com.google.api.HttpRule.parser(),
                       extensionRegistry);
               if (rulesBuilder_ == null) {
                 ensureRulesIsMutable();
@@ -538,17 +538,17 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<HttpRule> rules_ =
+    private java.util.List<com.google.api.HttpRule> rules_ =
       java.util.Collections.emptyList();
     private void ensureRulesIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        rules_ = new java.util.ArrayList<HttpRule>(rules_);
+        rules_ = new java.util.ArrayList<com.google.api.HttpRule>(rules_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        HttpRule, HttpRule.Builder, HttpRuleOrBuilder> rulesBuilder_;
+        com.google.api.HttpRule, com.google.api.HttpRule.Builder, com.google.api.HttpRuleOrBuilder> rulesBuilder_;
 
     /**
      * <pre>
@@ -559,7 +559,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
-    public java.util.List<HttpRule> getRulesList() {
+    public java.util.List<com.google.api.HttpRule> getRulesList() {
       if (rulesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(rules_);
       } else {
@@ -591,7 +591,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
-    public HttpRule getRules(int index) {
+    public com.google.api.HttpRule getRules(int index) {
       if (rulesBuilder_ == null) {
         return rules_.get(index);
       } else {
@@ -608,7 +608,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
     public Builder setRules(
-        int index, HttpRule value) {
+        int index, com.google.api.HttpRule value) {
       if (rulesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -631,7 +631,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
     public Builder setRules(
-        int index, HttpRule.Builder builderForValue) {
+        int index, com.google.api.HttpRule.Builder builderForValue) {
       if (rulesBuilder_ == null) {
         ensureRulesIsMutable();
         rules_.set(index, builderForValue.build());
@@ -650,7 +650,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
-    public Builder addRules(HttpRule value) {
+    public Builder addRules(com.google.api.HttpRule value) {
       if (rulesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -673,7 +673,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
     public Builder addRules(
-        int index, HttpRule value) {
+        int index, com.google.api.HttpRule value) {
       if (rulesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -696,7 +696,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
     public Builder addRules(
-        HttpRule.Builder builderForValue) {
+        com.google.api.HttpRule.Builder builderForValue) {
       if (rulesBuilder_ == null) {
         ensureRulesIsMutable();
         rules_.add(builderForValue.build());
@@ -716,7 +716,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
     public Builder addRules(
-        int index, HttpRule.Builder builderForValue) {
+        int index, com.google.api.HttpRule.Builder builderForValue) {
       if (rulesBuilder_ == null) {
         ensureRulesIsMutable();
         rules_.add(index, builderForValue.build());
@@ -736,7 +736,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
     public Builder addAllRules(
-        Iterable<? extends HttpRule> values) {
+        java.lang.Iterable<? extends com.google.api.HttpRule> values) {
       if (rulesBuilder_ == null) {
         ensureRulesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -794,7 +794,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
-    public HttpRule.Builder getRulesBuilder(
+    public com.google.api.HttpRule.Builder getRulesBuilder(
         int index) {
       return getRulesFieldBuilder().getBuilder(index);
     }
@@ -807,7 +807,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
-    public HttpRuleOrBuilder getRulesOrBuilder(
+    public com.google.api.HttpRuleOrBuilder getRulesOrBuilder(
         int index) {
       if (rulesBuilder_ == null) {
         return rules_.get(index);  } else {
@@ -823,7 +823,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
-    public java.util.List<? extends HttpRuleOrBuilder>
+    public java.util.List<? extends com.google.api.HttpRuleOrBuilder> 
          getRulesOrBuilderList() {
       if (rulesBuilder_ != null) {
         return rulesBuilder_.getMessageOrBuilderList();
@@ -840,9 +840,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
-    public HttpRule.Builder addRulesBuilder() {
+    public com.google.api.HttpRule.Builder addRulesBuilder() {
       return getRulesFieldBuilder().addBuilder(
-          HttpRule.getDefaultInstance());
+          com.google.api.HttpRule.getDefaultInstance());
     }
     /**
      * <pre>
@@ -853,10 +853,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
-    public HttpRule.Builder addRulesBuilder(
+    public com.google.api.HttpRule.Builder addRulesBuilder(
         int index) {
       return getRulesFieldBuilder().addBuilder(
-          index, HttpRule.getDefaultInstance());
+          index, com.google.api.HttpRule.getDefaultInstance());
     }
     /**
      * <pre>
@@ -867,16 +867,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
      */
-    public java.util.List<HttpRule.Builder>
+    public java.util.List<com.google.api.HttpRule.Builder> 
          getRulesBuilderList() {
       return getRulesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        HttpRule, HttpRule.Builder, HttpRuleOrBuilder>
+        com.google.api.HttpRule, com.google.api.HttpRule.Builder, com.google.api.HttpRuleOrBuilder> 
         getRulesFieldBuilder() {
       if (rulesBuilder_ == null) {
         rulesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            HttpRule, HttpRule.Builder, HttpRuleOrBuilder>(
+            com.google.api.HttpRule, com.google.api.HttpRule.Builder, com.google.api.HttpRuleOrBuilder>(
                 rules_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -900,7 +900,7 @@ private static final long serialVersionUID = 0L;
      * <code>bool fully_decode_reserved_expansion = 2 [json_name = "fullyDecodeReservedExpansion"];</code>
      * @return The fullyDecodeReservedExpansion.
      */
-    @Override
+    @java.lang.Override
     public boolean getFullyDecodeReservedExpansion() {
       return fullyDecodeReservedExpansion_;
     }
@@ -944,13 +944,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -961,18 +961,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:google.api.Http)
-  private static final Http DEFAULT_INSTANCE;
+  private static final com.google.api.Http DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Http();
+    DEFAULT_INSTANCE = new com.google.api.Http();
   }
 
-  public static Http getDefaultInstance() {
+  public static com.google.api.Http getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Http>
       PARSER = new com.google.protobuf.AbstractParser<Http>() {
-    @Override
+    @java.lang.Override
     public Http parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -996,13 +996,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Http> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Http getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.google.api.Http getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

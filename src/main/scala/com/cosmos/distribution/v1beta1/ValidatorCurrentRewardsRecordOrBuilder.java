@@ -15,7 +15,7 @@ public interface ValidatorCurrentRewardsRecordOrBuilder extends
    * <code>string validator_address = 1 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  String getValidatorAddress();
+  java.lang.String getValidatorAddress();
   /**
    * <pre>
    * validator_address is the address of the validator.
@@ -44,7 +44,7 @@ public interface ValidatorCurrentRewardsRecordOrBuilder extends
    * <code>.cosmos.distribution.v1beta1.ValidatorCurrentRewards rewards = 2 [json_name = "rewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"rewards&#92;""];</code>
    * @return The rewards.
    */
-  ValidatorCurrentRewards getRewards();
+  com.cosmos.distribution.v1beta1.ValidatorCurrentRewards getRewards();
   /**
    * <pre>
    * rewards defines the current rewards of a validator.
@@ -52,5 +52,5 @@ public interface ValidatorCurrentRewardsRecordOrBuilder extends
    *
    * <code>.cosmos.distribution.v1beta1.ValidatorCurrentRewards rewards = 2 [json_name = "rewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"rewards&#92;""];</code>
    */
-  ValidatorCurrentRewardsOrBuilder getRewardsOrBuilder();
+  com.cosmos.distribution.v1beta1.ValidatorCurrentRewardsOrBuilder getRewardsOrBuilder();
 }

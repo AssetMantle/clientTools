@@ -23,69 +23,69 @@ private static final long serialVersionUID = 0L;
     pairs_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Pairs();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return KvProto.internal_static_cosmos_base_kv_v1beta1_Pairs_descriptor;
+    return com.cosmos.base.kv.v1beta1.KvProto.internal_static_cosmos_base_kv_v1beta1_Pairs_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return KvProto.internal_static_cosmos_base_kv_v1beta1_Pairs_fieldAccessorTable
+    return com.cosmos.base.kv.v1beta1.KvProto.internal_static_cosmos_base_kv_v1beta1_Pairs_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Pairs.class, Builder.class);
+            com.cosmos.base.kv.v1beta1.Pairs.class, com.cosmos.base.kv.v1beta1.Pairs.Builder.class);
   }
 
   public static final int PAIRS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<Pair> pairs_;
+  private java.util.List<com.cosmos.base.kv.v1beta1.Pair> pairs_;
   /**
    * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<Pair> getPairsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.base.kv.v1beta1.Pair> getPairsList() {
     return pairs_;
   }
   /**
    * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends PairOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.base.kv.v1beta1.PairOrBuilder> 
       getPairsOrBuilderList() {
     return pairs_;
   }
   /**
    * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getPairsCount() {
     return pairs_.size();
   }
   /**
    * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public Pair getPairs(int index) {
+  @java.lang.Override
+  public com.cosmos.base.kv.v1beta1.Pair getPairs(int index) {
     return pairs_.get(index);
   }
   /**
    * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public PairOrBuilder getPairsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.base.kv.v1beta1.PairOrBuilder getPairsOrBuilder(
       int index) {
     return pairs_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -95,7 +95,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < pairs_.size(); i++) {
@@ -104,7 +104,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -119,15 +119,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Pairs)) {
+    if (!(obj instanceof com.cosmos.base.kv.v1beta1.Pairs)) {
       return super.equals(obj);
     }
-    Pairs other = (Pairs) obj;
+    com.cosmos.base.kv.v1beta1.Pairs other = (com.cosmos.base.kv.v1beta1.Pairs) obj;
 
     if (!getPairsList()
         .equals(other.getPairsList())) return false;
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Pairs parseFrom(
+  public static com.cosmos.base.kv.v1beta1.Pairs parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Pairs parseFrom(
+  public static com.cosmos.base.kv.v1beta1.Pairs parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Pairs parseFrom(
+  public static com.cosmos.base.kv.v1beta1.Pairs parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Pairs parseFrom(
+  public static com.cosmos.base.kv.v1beta1.Pairs parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Pairs parseFrom(byte[] data)
+  public static com.cosmos.base.kv.v1beta1.Pairs parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Pairs parseFrom(
+  public static com.cosmos.base.kv.v1beta1.Pairs parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Pairs parseFrom(java.io.InputStream input)
+  public static com.cosmos.base.kv.v1beta1.Pairs parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Pairs parseFrom(
+  public static com.cosmos.base.kv.v1beta1.Pairs parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Pairs parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.base.kv.v1beta1.Pairs parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Pairs parseDelimitedFrom(
+  public static com.cosmos.base.kv.v1beta1.Pairs parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Pairs parseFrom(
+  public static com.cosmos.base.kv.v1beta1.Pairs parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Pairs parseFrom(
+  public static com.cosmos.base.kv.v1beta1.Pairs parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Pairs prototype) {
+  public static Builder newBuilder(com.cosmos.base.kv.v1beta1.Pairs prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -251,18 +251,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.kv.v1beta1.Pairs)
-      PairsOrBuilder {
+      com.cosmos.base.kv.v1beta1.PairsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return KvProto.internal_static_cosmos_base_kv_v1beta1_Pairs_descriptor;
+      return com.cosmos.base.kv.v1beta1.KvProto.internal_static_cosmos_base_kv_v1beta1_Pairs_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return KvProto.internal_static_cosmos_base_kv_v1beta1_Pairs_fieldAccessorTable
+      return com.cosmos.base.kv.v1beta1.KvProto.internal_static_cosmos_base_kv_v1beta1_Pairs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Pairs.class, Builder.class);
+              com.cosmos.base.kv.v1beta1.Pairs.class, com.cosmos.base.kv.v1beta1.Pairs.Builder.class);
     }
 
     // Construct using com.cosmos.base.kv.v1beta1.Pairs.newBuilder()
@@ -271,11 +271,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -289,36 +289,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return KvProto.internal_static_cosmos_base_kv_v1beta1_Pairs_descriptor;
+      return com.cosmos.base.kv.v1beta1.KvProto.internal_static_cosmos_base_kv_v1beta1_Pairs_descriptor;
     }
 
-    @Override
-    public Pairs getDefaultInstanceForType() {
-      return Pairs.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.base.kv.v1beta1.Pairs getDefaultInstanceForType() {
+      return com.cosmos.base.kv.v1beta1.Pairs.getDefaultInstance();
     }
 
-    @Override
-    public Pairs build() {
-      Pairs result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.base.kv.v1beta1.Pairs build() {
+      com.cosmos.base.kv.v1beta1.Pairs result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Pairs buildPartial() {
-      Pairs result = new Pairs(this);
+    @java.lang.Override
+    public com.cosmos.base.kv.v1beta1.Pairs buildPartial() {
+      com.cosmos.base.kv.v1beta1.Pairs result = new com.cosmos.base.kv.v1beta1.Pairs(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(Pairs result) {
+    private void buildPartialRepeatedFields(com.cosmos.base.kv.v1beta1.Pairs result) {
       if (pairsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           pairs_ = java.util.Collections.unmodifiableList(pairs_);
@@ -330,54 +330,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(Pairs result) {
+    private void buildPartial0(com.cosmos.base.kv.v1beta1.Pairs result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Pairs) {
-        return mergeFrom((Pairs)other);
+      if (other instanceof com.cosmos.base.kv.v1beta1.Pairs) {
+        return mergeFrom((com.cosmos.base.kv.v1beta1.Pairs)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Pairs other) {
-      if (other == Pairs.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.base.kv.v1beta1.Pairs other) {
+      if (other == com.cosmos.base.kv.v1beta1.Pairs.getDefaultInstance()) return this;
       if (pairsBuilder_ == null) {
         if (!other.pairs_.isEmpty()) {
           if (pairs_.isEmpty()) {
@@ -409,18 +409,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -431,9 +431,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              Pair m =
+              com.cosmos.base.kv.v1beta1.Pair m =
                   input.readMessage(
-                      Pair.parser(),
+                      com.cosmos.base.kv.v1beta1.Pair.parser(),
                       extensionRegistry);
               if (pairsBuilder_ == null) {
                 ensurePairsIsMutable();
@@ -460,22 +460,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<Pair> pairs_ =
+    private java.util.List<com.cosmos.base.kv.v1beta1.Pair> pairs_ =
       java.util.Collections.emptyList();
     private void ensurePairsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        pairs_ = new java.util.ArrayList<Pair>(pairs_);
+        pairs_ = new java.util.ArrayList<com.cosmos.base.kv.v1beta1.Pair>(pairs_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Pair, Pair.Builder, PairOrBuilder> pairsBuilder_;
+        com.cosmos.base.kv.v1beta1.Pair, com.cosmos.base.kv.v1beta1.Pair.Builder, com.cosmos.base.kv.v1beta1.PairOrBuilder> pairsBuilder_;
 
     /**
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<Pair> getPairsList() {
+    public java.util.List<com.cosmos.base.kv.v1beta1.Pair> getPairsList() {
       if (pairsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(pairs_);
       } else {
@@ -495,7 +495,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public Pair getPairs(int index) {
+    public com.cosmos.base.kv.v1beta1.Pair getPairs(int index) {
       if (pairsBuilder_ == null) {
         return pairs_.get(index);
       } else {
@@ -506,7 +506,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder setPairs(
-        int index, Pair value) {
+        int index, com.cosmos.base.kv.v1beta1.Pair value) {
       if (pairsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -523,7 +523,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder setPairs(
-        int index, Pair.Builder builderForValue) {
+        int index, com.cosmos.base.kv.v1beta1.Pair.Builder builderForValue) {
       if (pairsBuilder_ == null) {
         ensurePairsIsMutable();
         pairs_.set(index, builderForValue.build());
@@ -536,7 +536,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addPairs(Pair value) {
+    public Builder addPairs(com.cosmos.base.kv.v1beta1.Pair value) {
       if (pairsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -553,7 +553,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addPairs(
-        int index, Pair value) {
+        int index, com.cosmos.base.kv.v1beta1.Pair value) {
       if (pairsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -570,7 +570,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addPairs(
-        Pair.Builder builderForValue) {
+        com.cosmos.base.kv.v1beta1.Pair.Builder builderForValue) {
       if (pairsBuilder_ == null) {
         ensurePairsIsMutable();
         pairs_.add(builderForValue.build());
@@ -584,7 +584,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addPairs(
-        int index, Pair.Builder builderForValue) {
+        int index, com.cosmos.base.kv.v1beta1.Pair.Builder builderForValue) {
       if (pairsBuilder_ == null) {
         ensurePairsIsMutable();
         pairs_.add(index, builderForValue.build());
@@ -598,7 +598,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllPairs(
-        Iterable<? extends Pair> values) {
+        java.lang.Iterable<? extends com.cosmos.base.kv.v1beta1.Pair> values) {
       if (pairsBuilder_ == null) {
         ensurePairsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -638,14 +638,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public Pair.Builder getPairsBuilder(
+    public com.cosmos.base.kv.v1beta1.Pair.Builder getPairsBuilder(
         int index) {
       return getPairsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public PairOrBuilder getPairsOrBuilder(
+    public com.cosmos.base.kv.v1beta1.PairOrBuilder getPairsOrBuilder(
         int index) {
       if (pairsBuilder_ == null) {
         return pairs_.get(index);  } else {
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends PairOrBuilder>
+    public java.util.List<? extends com.cosmos.base.kv.v1beta1.PairOrBuilder> 
          getPairsOrBuilderList() {
       if (pairsBuilder_ != null) {
         return pairsBuilder_.getMessageOrBuilderList();
@@ -666,31 +666,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public Pair.Builder addPairsBuilder() {
+    public com.cosmos.base.kv.v1beta1.Pair.Builder addPairsBuilder() {
       return getPairsFieldBuilder().addBuilder(
-          Pair.getDefaultInstance());
+          com.cosmos.base.kv.v1beta1.Pair.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public Pair.Builder addPairsBuilder(
+    public com.cosmos.base.kv.v1beta1.Pair.Builder addPairsBuilder(
         int index) {
       return getPairsFieldBuilder().addBuilder(
-          index, Pair.getDefaultInstance());
+          index, com.cosmos.base.kv.v1beta1.Pair.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.base.kv.v1beta1.Pair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<Pair.Builder>
+    public java.util.List<com.cosmos.base.kv.v1beta1.Pair.Builder> 
          getPairsBuilderList() {
       return getPairsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Pair, Pair.Builder, PairOrBuilder>
+        com.cosmos.base.kv.v1beta1.Pair, com.cosmos.base.kv.v1beta1.Pair.Builder, com.cosmos.base.kv.v1beta1.PairOrBuilder> 
         getPairsFieldBuilder() {
       if (pairsBuilder_ == null) {
         pairsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            Pair, Pair.Builder, PairOrBuilder>(
+            com.cosmos.base.kv.v1beta1.Pair, com.cosmos.base.kv.v1beta1.Pair.Builder, com.cosmos.base.kv.v1beta1.PairOrBuilder>(
                 pairs_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -699,13 +699,13 @@ private static final long serialVersionUID = 0L;
       }
       return pairsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -716,18 +716,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.kv.v1beta1.Pairs)
-  private static final Pairs DEFAULT_INSTANCE;
+  private static final com.cosmos.base.kv.v1beta1.Pairs DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Pairs();
+    DEFAULT_INSTANCE = new com.cosmos.base.kv.v1beta1.Pairs();
   }
 
-  public static Pairs getDefaultInstance() {
+  public static com.cosmos.base.kv.v1beta1.Pairs getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Pairs>
       PARSER = new com.google.protobuf.AbstractParser<Pairs>() {
-    @Override
+    @java.lang.Override
     public Pairs parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -751,13 +751,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Pairs> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Pairs getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.base.kv.v1beta1.Pairs getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

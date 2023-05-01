@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     storeInfos_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new CommitInfo();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return CommitInfoProto.internal_static_cosmos_base_store_v1beta1_CommitInfo_descriptor;
+    return com.cosmos.base.store.v1beta1.CommitInfoProto.internal_static_cosmos_base_store_v1beta1_CommitInfo_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return CommitInfoProto.internal_static_cosmos_base_store_v1beta1_CommitInfo_fieldAccessorTable
+    return com.cosmos.base.store.v1beta1.CommitInfoProto.internal_static_cosmos_base_store_v1beta1_CommitInfo_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            CommitInfo.class, Builder.class);
+            com.cosmos.base.store.v1beta1.CommitInfo.class, com.cosmos.base.store.v1beta1.CommitInfo.Builder.class);
   }
 
   public static final int VERSION_FIELD_NUMBER = 1;
@@ -50,54 +50,54 @@ private static final long serialVersionUID = 0L;
    * <code>int64 version = 1 [json_name = "version"];</code>
    * @return The version.
    */
-  @Override
+  @java.lang.Override
   public long getVersion() {
     return version_;
   }
 
   public static final int STORE_INFOS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<StoreInfo> storeInfos_;
+  private java.util.List<com.cosmos.base.store.v1beta1.StoreInfo> storeInfos_;
   /**
    * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<StoreInfo> getStoreInfosList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.base.store.v1beta1.StoreInfo> getStoreInfosList() {
     return storeInfos_;
   }
   /**
    * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends StoreInfoOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.base.store.v1beta1.StoreInfoOrBuilder> 
       getStoreInfosOrBuilderList() {
     return storeInfos_;
   }
   /**
    * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getStoreInfosCount() {
     return storeInfos_.size();
   }
   /**
    * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public StoreInfo getStoreInfos(int index) {
+  @java.lang.Override
+  public com.cosmos.base.store.v1beta1.StoreInfo getStoreInfos(int index) {
     return storeInfos_.get(index);
   }
   /**
    * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public StoreInfoOrBuilder getStoreInfosOrBuilder(
+  @java.lang.Override
+  public com.cosmos.base.store.v1beta1.StoreInfoOrBuilder getStoreInfosOrBuilder(
       int index) {
     return storeInfos_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -107,7 +107,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (version_ != 0L) {
@@ -119,7 +119,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -138,15 +138,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof CommitInfo)) {
+    if (!(obj instanceof com.cosmos.base.store.v1beta1.CommitInfo)) {
       return super.equals(obj);
     }
-    CommitInfo other = (CommitInfo) obj;
+    com.cosmos.base.store.v1beta1.CommitInfo other = (com.cosmos.base.store.v1beta1.CommitInfo) obj;
 
     if (getVersion()
         != other.getVersion()) return false;
@@ -156,7 +156,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -175,69 +175,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static CommitInfo parseFrom(
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CommitInfo parseFrom(
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CommitInfo parseFrom(
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CommitInfo parseFrom(
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CommitInfo parseFrom(byte[] data)
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CommitInfo parseFrom(
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CommitInfo parseFrom(java.io.InputStream input)
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static CommitInfo parseFrom(
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static CommitInfo parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static CommitInfo parseDelimitedFrom(
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static CommitInfo parseFrom(
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static CommitInfo parseFrom(
+  public static com.cosmos.base.store.v1beta1.CommitInfo parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -245,23 +245,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(CommitInfo prototype) {
+  public static Builder newBuilder(com.cosmos.base.store.v1beta1.CommitInfo prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -276,18 +276,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.store.v1beta1.CommitInfo)
-      CommitInfoOrBuilder {
+      com.cosmos.base.store.v1beta1.CommitInfoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return CommitInfoProto.internal_static_cosmos_base_store_v1beta1_CommitInfo_descriptor;
+      return com.cosmos.base.store.v1beta1.CommitInfoProto.internal_static_cosmos_base_store_v1beta1_CommitInfo_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return CommitInfoProto.internal_static_cosmos_base_store_v1beta1_CommitInfo_fieldAccessorTable
+      return com.cosmos.base.store.v1beta1.CommitInfoProto.internal_static_cosmos_base_store_v1beta1_CommitInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              CommitInfo.class, Builder.class);
+              com.cosmos.base.store.v1beta1.CommitInfo.class, com.cosmos.base.store.v1beta1.CommitInfo.Builder.class);
     }
 
     // Construct using com.cosmos.base.store.v1beta1.CommitInfo.newBuilder()
@@ -296,11 +296,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -315,36 +315,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return CommitInfoProto.internal_static_cosmos_base_store_v1beta1_CommitInfo_descriptor;
+      return com.cosmos.base.store.v1beta1.CommitInfoProto.internal_static_cosmos_base_store_v1beta1_CommitInfo_descriptor;
     }
 
-    @Override
-    public CommitInfo getDefaultInstanceForType() {
-      return CommitInfo.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.base.store.v1beta1.CommitInfo getDefaultInstanceForType() {
+      return com.cosmos.base.store.v1beta1.CommitInfo.getDefaultInstance();
     }
 
-    @Override
-    public CommitInfo build() {
-      CommitInfo result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.base.store.v1beta1.CommitInfo build() {
+      com.cosmos.base.store.v1beta1.CommitInfo result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public CommitInfo buildPartial() {
-      CommitInfo result = new CommitInfo(this);
+    @java.lang.Override
+    public com.cosmos.base.store.v1beta1.CommitInfo buildPartial() {
+      com.cosmos.base.store.v1beta1.CommitInfo result = new com.cosmos.base.store.v1beta1.CommitInfo(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(CommitInfo result) {
+    private void buildPartialRepeatedFields(com.cosmos.base.store.v1beta1.CommitInfo result) {
       if (storeInfosBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           storeInfos_ = java.util.Collections.unmodifiableList(storeInfos_);
@@ -356,57 +356,57 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(CommitInfo result) {
+    private void buildPartial0(com.cosmos.base.store.v1beta1.CommitInfo result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.version_ = version_;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof CommitInfo) {
-        return mergeFrom((CommitInfo)other);
+      if (other instanceof com.cosmos.base.store.v1beta1.CommitInfo) {
+        return mergeFrom((com.cosmos.base.store.v1beta1.CommitInfo)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(CommitInfo other) {
-      if (other == CommitInfo.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.base.store.v1beta1.CommitInfo other) {
+      if (other == com.cosmos.base.store.v1beta1.CommitInfo.getDefaultInstance()) return this;
       if (other.getVersion() != 0L) {
         setVersion(other.getVersion());
       }
@@ -441,18 +441,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -468,9 +468,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 8
             case 18: {
-              StoreInfo m =
+              com.cosmos.base.store.v1beta1.StoreInfo m =
                   input.readMessage(
-                      StoreInfo.parser(),
+                      com.cosmos.base.store.v1beta1.StoreInfo.parser(),
                       extensionRegistry);
               if (storeInfosBuilder_ == null) {
                 ensureStoreInfosIsMutable();
@@ -502,7 +502,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 version = 1 [json_name = "version"];</code>
      * @return The version.
      */
-    @Override
+    @java.lang.Override
     public long getVersion() {
       return version_;
     }
@@ -529,22 +529,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<StoreInfo> storeInfos_ =
+    private java.util.List<com.cosmos.base.store.v1beta1.StoreInfo> storeInfos_ =
       java.util.Collections.emptyList();
     private void ensureStoreInfosIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        storeInfos_ = new java.util.ArrayList<StoreInfo>(storeInfos_);
+        storeInfos_ = new java.util.ArrayList<com.cosmos.base.store.v1beta1.StoreInfo>(storeInfos_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        StoreInfo, StoreInfo.Builder, StoreInfoOrBuilder> storeInfosBuilder_;
+        com.cosmos.base.store.v1beta1.StoreInfo, com.cosmos.base.store.v1beta1.StoreInfo.Builder, com.cosmos.base.store.v1beta1.StoreInfoOrBuilder> storeInfosBuilder_;
 
     /**
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<StoreInfo> getStoreInfosList() {
+    public java.util.List<com.cosmos.base.store.v1beta1.StoreInfo> getStoreInfosList() {
       if (storeInfosBuilder_ == null) {
         return java.util.Collections.unmodifiableList(storeInfos_);
       } else {
@@ -564,7 +564,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
-    public StoreInfo getStoreInfos(int index) {
+    public com.cosmos.base.store.v1beta1.StoreInfo getStoreInfos(int index) {
       if (storeInfosBuilder_ == null) {
         return storeInfos_.get(index);
       } else {
@@ -575,7 +575,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
     public Builder setStoreInfos(
-        int index, StoreInfo value) {
+        int index, com.cosmos.base.store.v1beta1.StoreInfo value) {
       if (storeInfosBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -592,7 +592,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
     public Builder setStoreInfos(
-        int index, StoreInfo.Builder builderForValue) {
+        int index, com.cosmos.base.store.v1beta1.StoreInfo.Builder builderForValue) {
       if (storeInfosBuilder_ == null) {
         ensureStoreInfosIsMutable();
         storeInfos_.set(index, builderForValue.build());
@@ -605,7 +605,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addStoreInfos(StoreInfo value) {
+    public Builder addStoreInfos(com.cosmos.base.store.v1beta1.StoreInfo value) {
       if (storeInfosBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -622,7 +622,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
     public Builder addStoreInfos(
-        int index, StoreInfo value) {
+        int index, com.cosmos.base.store.v1beta1.StoreInfo value) {
       if (storeInfosBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -639,7 +639,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
     public Builder addStoreInfos(
-        StoreInfo.Builder builderForValue) {
+        com.cosmos.base.store.v1beta1.StoreInfo.Builder builderForValue) {
       if (storeInfosBuilder_ == null) {
         ensureStoreInfosIsMutable();
         storeInfos_.add(builderForValue.build());
@@ -653,7 +653,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
     public Builder addStoreInfos(
-        int index, StoreInfo.Builder builderForValue) {
+        int index, com.cosmos.base.store.v1beta1.StoreInfo.Builder builderForValue) {
       if (storeInfosBuilder_ == null) {
         ensureStoreInfosIsMutable();
         storeInfos_.add(index, builderForValue.build());
@@ -667,7 +667,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllStoreInfos(
-        Iterable<? extends StoreInfo> values) {
+        java.lang.Iterable<? extends com.cosmos.base.store.v1beta1.StoreInfo> values) {
       if (storeInfosBuilder_ == null) {
         ensureStoreInfosIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -707,14 +707,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
-    public StoreInfo.Builder getStoreInfosBuilder(
+    public com.cosmos.base.store.v1beta1.StoreInfo.Builder getStoreInfosBuilder(
         int index) {
       return getStoreInfosFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
-    public StoreInfoOrBuilder getStoreInfosOrBuilder(
+    public com.cosmos.base.store.v1beta1.StoreInfoOrBuilder getStoreInfosOrBuilder(
         int index) {
       if (storeInfosBuilder_ == null) {
         return storeInfos_.get(index);  } else {
@@ -724,7 +724,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends StoreInfoOrBuilder>
+    public java.util.List<? extends com.cosmos.base.store.v1beta1.StoreInfoOrBuilder> 
          getStoreInfosOrBuilderList() {
       if (storeInfosBuilder_ != null) {
         return storeInfosBuilder_.getMessageOrBuilderList();
@@ -735,31 +735,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
-    public StoreInfo.Builder addStoreInfosBuilder() {
+    public com.cosmos.base.store.v1beta1.StoreInfo.Builder addStoreInfosBuilder() {
       return getStoreInfosFieldBuilder().addBuilder(
-          StoreInfo.getDefaultInstance());
+          com.cosmos.base.store.v1beta1.StoreInfo.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
-    public StoreInfo.Builder addStoreInfosBuilder(
+    public com.cosmos.base.store.v1beta1.StoreInfo.Builder addStoreInfosBuilder(
         int index) {
       return getStoreInfosFieldBuilder().addBuilder(
-          index, StoreInfo.getDefaultInstance());
+          index, com.cosmos.base.store.v1beta1.StoreInfo.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.base.store.v1beta1.StoreInfo store_infos = 2 [json_name = "storeInfos", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<StoreInfo.Builder>
+    public java.util.List<com.cosmos.base.store.v1beta1.StoreInfo.Builder> 
          getStoreInfosBuilderList() {
       return getStoreInfosFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        StoreInfo, StoreInfo.Builder, StoreInfoOrBuilder>
+        com.cosmos.base.store.v1beta1.StoreInfo, com.cosmos.base.store.v1beta1.StoreInfo.Builder, com.cosmos.base.store.v1beta1.StoreInfoOrBuilder> 
         getStoreInfosFieldBuilder() {
       if (storeInfosBuilder_ == null) {
         storeInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            StoreInfo, StoreInfo.Builder, StoreInfoOrBuilder>(
+            com.cosmos.base.store.v1beta1.StoreInfo, com.cosmos.base.store.v1beta1.StoreInfo.Builder, com.cosmos.base.store.v1beta1.StoreInfoOrBuilder>(
                 storeInfos_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -768,13 +768,13 @@ private static final long serialVersionUID = 0L;
       }
       return storeInfosBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -785,18 +785,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.store.v1beta1.CommitInfo)
-  private static final CommitInfo DEFAULT_INSTANCE;
+  private static final com.cosmos.base.store.v1beta1.CommitInfo DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new CommitInfo();
+    DEFAULT_INSTANCE = new com.cosmos.base.store.v1beta1.CommitInfo();
   }
 
-  public static CommitInfo getDefaultInstance() {
+  public static com.cosmos.base.store.v1beta1.CommitInfo getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<CommitInfo>
       PARSER = new com.google.protobuf.AbstractParser<CommitInfo>() {
-    @Override
+    @java.lang.Override
     public CommitInfo parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -820,13 +820,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<CommitInfo> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public CommitInfo getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.base.store.v1beta1.CommitInfo getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

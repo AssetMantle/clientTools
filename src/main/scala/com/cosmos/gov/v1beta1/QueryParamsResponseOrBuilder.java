@@ -24,7 +24,7 @@ public interface QueryParamsResponseOrBuilder extends
    * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
    * @return The votingParams.
    */
-  VotingParams getVotingParams();
+  com.cosmos.gov.v1beta1.VotingParams getVotingParams();
   /**
    * <pre>
    * voting_params defines the parameters related to voting.
@@ -32,7 +32,7 @@ public interface QueryParamsResponseOrBuilder extends
    *
    * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
    */
-  VotingParamsOrBuilder getVotingParamsOrBuilder();
+  com.cosmos.gov.v1beta1.VotingParamsOrBuilder getVotingParamsOrBuilder();
 
   /**
    * <pre>
@@ -51,7 +51,7 @@ public interface QueryParamsResponseOrBuilder extends
    * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
    * @return The depositParams.
    */
-  DepositParams getDepositParams();
+  com.cosmos.gov.v1beta1.DepositParams getDepositParams();
   /**
    * <pre>
    * deposit_params defines the parameters related to deposit.
@@ -59,7 +59,7 @@ public interface QueryParamsResponseOrBuilder extends
    *
    * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
    */
-  DepositParamsOrBuilder getDepositParamsOrBuilder();
+  com.cosmos.gov.v1beta1.DepositParamsOrBuilder getDepositParamsOrBuilder();
 
   /**
    * <pre>
@@ -78,7 +78,7 @@ public interface QueryParamsResponseOrBuilder extends
    * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
    * @return The tallyParams.
    */
-  TallyParams getTallyParams();
+  com.cosmos.gov.v1beta1.TallyParams getTallyParams();
   /**
    * <pre>
    * tally_params defines the parameters related to tally.
@@ -86,5 +86,5 @@ public interface QueryParamsResponseOrBuilder extends
    *
    * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
    */
-  TallyParamsOrBuilder getTallyParamsOrBuilder();
+  com.cosmos.gov.v1beta1.TallyParamsOrBuilder getTallyParamsOrBuilder();
 }

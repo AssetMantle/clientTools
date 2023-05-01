@@ -25,24 +25,24 @@ private static final long serialVersionUID = 0L;
     depositor_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryProposalsRequest();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_descriptor;
+    return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_fieldAccessorTable
+    return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryProposalsRequest.class, Builder.class);
+            com.cosmos.gov.v1beta1.QueryProposalsRequest.class, com.cosmos.gov.v1beta1.QueryProposalsRequest.Builder.class);
   }
 
   public static final int PROPOSAL_STATUS_FIELD_NUMBER = 1;
@@ -55,7 +55,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.gov.v1beta1.ProposalStatus proposal_status = 1 [json_name = "proposalStatus"];</code>
    * @return The enum numeric value on the wire for proposalStatus.
    */
-  @Override public int getProposalStatusValue() {
+  @java.lang.Override public int getProposalStatusValue() {
     return proposalStatus_;
   }
   /**
@@ -66,14 +66,14 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.gov.v1beta1.ProposalStatus proposal_status = 1 [json_name = "proposalStatus"];</code>
    * @return The proposalStatus.
    */
-  @Override public ProposalStatus getProposalStatus() {
-    ProposalStatus result = ProposalStatus.forNumber(proposalStatus_);
-    return result == null ? ProposalStatus.UNRECOGNIZED : result;
+  @java.lang.Override public com.cosmos.gov.v1beta1.ProposalStatus getProposalStatus() {
+    com.cosmos.gov.v1beta1.ProposalStatus result = com.cosmos.gov.v1beta1.ProposalStatus.forNumber(proposalStatus_);
+    return result == null ? com.cosmos.gov.v1beta1.ProposalStatus.UNRECOGNIZED : result;
   }
 
   public static final int VOTER_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile Object voter_ = "";
+  private volatile java.lang.Object voter_ = "";
   /**
    * <pre>
    * voter defines the voter address for the proposals.
@@ -82,15 +82,15 @@ private static final long serialVersionUID = 0L;
    * <code>string voter = 2 [json_name = "voter"];</code>
    * @return The voter.
    */
-  @Override
-  public String getVoter() {
-    Object ref = voter_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getVoter() {
+    java.lang.Object ref = voter_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       voter_ = s;
       return s;
     }
@@ -103,14 +103,14 @@ private static final long serialVersionUID = 0L;
    * <code>string voter = 2 [json_name = "voter"];</code>
    * @return The bytes for voter.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getVoterBytes() {
-    Object ref = voter_;
-    if (ref instanceof String) {
+    java.lang.Object ref = voter_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       voter_ = b;
       return b;
     } else {
@@ -120,7 +120,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int DEPOSITOR_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile Object depositor_ = "";
+  private volatile java.lang.Object depositor_ = "";
   /**
    * <pre>
    * depositor defines the deposit addresses from the proposals.
@@ -129,15 +129,15 @@ private static final long serialVersionUID = 0L;
    * <code>string depositor = 3 [json_name = "depositor"];</code>
    * @return The depositor.
    */
-  @Override
-  public String getDepositor() {
-    Object ref = depositor_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getDepositor() {
+    java.lang.Object ref = depositor_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       depositor_ = s;
       return s;
     }
@@ -150,14 +150,14 @@ private static final long serialVersionUID = 0L;
    * <code>string depositor = 3 [json_name = "depositor"];</code>
    * @return The bytes for depositor.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDepositorBytes() {
-    Object ref = depositor_;
-    if (ref instanceof String) {
+    java.lang.Object ref = depositor_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       depositor_ = b;
       return b;
     } else {
@@ -175,7 +175,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 4 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -187,7 +187,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 4 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageRequest getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
@@ -198,13 +198,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 4 [json_name = "pagination"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageRequestOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -214,10 +214,10 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (proposalStatus_ != ProposalStatus.PROPOSAL_STATUS_UNSPECIFIED.getNumber()) {
+    if (proposalStatus_ != com.cosmos.gov.v1beta1.ProposalStatus.PROPOSAL_STATUS_UNSPECIFIED.getNumber()) {
       output.writeEnum(1, proposalStatus_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(voter_)) {
@@ -232,13 +232,13 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
-    if (proposalStatus_ != ProposalStatus.PROPOSAL_STATUS_UNSPECIFIED.getNumber()) {
+    if (proposalStatus_ != com.cosmos.gov.v1beta1.ProposalStatus.PROPOSAL_STATUS_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, proposalStatus_);
     }
@@ -257,15 +257,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryProposalsRequest)) {
+    if (!(obj instanceof com.cosmos.gov.v1beta1.QueryProposalsRequest)) {
       return super.equals(obj);
     }
-    QueryProposalsRequest other = (QueryProposalsRequest) obj;
+    com.cosmos.gov.v1beta1.QueryProposalsRequest other = (com.cosmos.gov.v1beta1.QueryProposalsRequest) obj;
 
     if (proposalStatus_ != other.proposalStatus_) return false;
     if (!getVoter()
@@ -281,7 +281,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -303,69 +303,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryProposalsRequest parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryProposalsRequest parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryProposalsRequest parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryProposalsRequest parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryProposalsRequest parseFrom(byte[] data)
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryProposalsRequest parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryProposalsRequest parseFrom(java.io.InputStream input)
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryProposalsRequest parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryProposalsRequest parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryProposalsRequest parseDelimitedFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryProposalsRequest parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryProposalsRequest parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -373,23 +373,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryProposalsRequest prototype) {
+  public static Builder newBuilder(com.cosmos.gov.v1beta1.QueryProposalsRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -403,18 +403,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.gov.v1beta1.QueryProposalsRequest)
-      QueryProposalsRequestOrBuilder {
+      com.cosmos.gov.v1beta1.QueryProposalsRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_descriptor;
+      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_fieldAccessorTable
+      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryProposalsRequest.class, Builder.class);
+              com.cosmos.gov.v1beta1.QueryProposalsRequest.class, com.cosmos.gov.v1beta1.QueryProposalsRequest.Builder.class);
     }
 
     // Construct using com.cosmos.gov.v1beta1.QueryProposalsRequest.newBuilder()
@@ -423,11 +423,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -442,35 +442,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_descriptor;
+      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_descriptor;
     }
 
-    @Override
-    public QueryProposalsRequest getDefaultInstanceForType() {
-      return QueryProposalsRequest.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.QueryProposalsRequest getDefaultInstanceForType() {
+      return com.cosmos.gov.v1beta1.QueryProposalsRequest.getDefaultInstance();
     }
 
-    @Override
-    public QueryProposalsRequest build() {
-      QueryProposalsRequest result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.QueryProposalsRequest build() {
+      com.cosmos.gov.v1beta1.QueryProposalsRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryProposalsRequest buildPartial() {
-      QueryProposalsRequest result = new QueryProposalsRequest(this);
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.QueryProposalsRequest buildPartial() {
+      com.cosmos.gov.v1beta1.QueryProposalsRequest result = new com.cosmos.gov.v1beta1.QueryProposalsRequest(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(QueryProposalsRequest result) {
+    private void buildPartial0(com.cosmos.gov.v1beta1.QueryProposalsRequest result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.proposalStatus_ = proposalStatus_;
@@ -488,50 +488,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryProposalsRequest) {
-        return mergeFrom((QueryProposalsRequest)other);
+      if (other instanceof com.cosmos.gov.v1beta1.QueryProposalsRequest) {
+        return mergeFrom((com.cosmos.gov.v1beta1.QueryProposalsRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryProposalsRequest other) {
-      if (other == QueryProposalsRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.gov.v1beta1.QueryProposalsRequest other) {
+      if (other == com.cosmos.gov.v1beta1.QueryProposalsRequest.getDefaultInstance()) return this;
       if (other.proposalStatus_ != 0) {
         setProposalStatusValue(other.getProposalStatusValue());
       }
@@ -553,18 +553,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -622,7 +622,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.ProposalStatus proposal_status = 1 [json_name = "proposalStatus"];</code>
      * @return The enum numeric value on the wire for proposalStatus.
      */
-    @Override public int getProposalStatusValue() {
+    @java.lang.Override public int getProposalStatusValue() {
       return proposalStatus_;
     }
     /**
@@ -648,10 +648,10 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.ProposalStatus proposal_status = 1 [json_name = "proposalStatus"];</code>
      * @return The proposalStatus.
      */
-    @Override
-    public ProposalStatus getProposalStatus() {
-      ProposalStatus result = ProposalStatus.forNumber(proposalStatus_);
-      return result == null ? ProposalStatus.UNRECOGNIZED : result;
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.ProposalStatus getProposalStatus() {
+      com.cosmos.gov.v1beta1.ProposalStatus result = com.cosmos.gov.v1beta1.ProposalStatus.forNumber(proposalStatus_);
+      return result == null ? com.cosmos.gov.v1beta1.ProposalStatus.UNRECOGNIZED : result;
     }
     /**
      * <pre>
@@ -662,7 +662,7 @@ private static final long serialVersionUID = 0L;
      * @param value The proposalStatus to set.
      * @return This builder for chaining.
      */
-    public Builder setProposalStatus(ProposalStatus value) {
+    public Builder setProposalStatus(com.cosmos.gov.v1beta1.ProposalStatus value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -686,7 +686,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object voter_ = "";
+    private java.lang.Object voter_ = "";
     /**
      * <pre>
      * voter defines the voter address for the proposals.
@@ -695,16 +695,16 @@ private static final long serialVersionUID = 0L;
      * <code>string voter = 2 [json_name = "voter"];</code>
      * @return The voter.
      */
-    public String getVoter() {
-      Object ref = voter_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getVoter() {
+      java.lang.Object ref = voter_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         voter_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -717,11 +717,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getVoterBytes() {
-      Object ref = voter_;
+      java.lang.Object ref = voter_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         voter_ = b;
         return b;
       } else {
@@ -738,7 +738,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setVoter(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       voter_ = value;
       bitField0_ |= 0x00000002;
@@ -778,7 +778,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object depositor_ = "";
+    private java.lang.Object depositor_ = "";
     /**
      * <pre>
      * depositor defines the deposit addresses from the proposals.
@@ -787,16 +787,16 @@ private static final long serialVersionUID = 0L;
      * <code>string depositor = 3 [json_name = "depositor"];</code>
      * @return The depositor.
      */
-    public String getDepositor() {
-      Object ref = depositor_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getDepositor() {
+      java.lang.Object ref = depositor_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         depositor_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -809,11 +809,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getDepositorBytes() {
-      Object ref = depositor_;
+      java.lang.Object ref = depositor_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         depositor_ = b;
         return b;
       } else {
@@ -830,7 +830,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDepositor(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       depositor_ = value;
       bitField0_ |= 0x00000004;
@@ -1024,13 +1024,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1041,18 +1041,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.gov.v1beta1.QueryProposalsRequest)
-  private static final QueryProposalsRequest DEFAULT_INSTANCE;
+  private static final com.cosmos.gov.v1beta1.QueryProposalsRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryProposalsRequest();
+    DEFAULT_INSTANCE = new com.cosmos.gov.v1beta1.QueryProposalsRequest();
   }
 
-  public static QueryProposalsRequest getDefaultInstance() {
+  public static com.cosmos.gov.v1beta1.QueryProposalsRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryProposalsRequest>
       PARSER = new com.google.protobuf.AbstractParser<QueryProposalsRequest>() {
-    @Override
+    @java.lang.Override
     public QueryProposalsRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1076,13 +1076,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryProposalsRequest> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryProposalsRequest getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.QueryProposalsRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

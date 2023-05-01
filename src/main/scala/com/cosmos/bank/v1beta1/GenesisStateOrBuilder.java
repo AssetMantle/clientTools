@@ -24,7 +24,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.bank.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  Params getParams();
+  com.cosmos.bank.v1beta1.Params getParams();
   /**
    * <pre>
    * params defines all the paramaters of the module.
@@ -32,7 +32,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.bank.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  ParamsOrBuilder getParamsOrBuilder();
+  com.cosmos.bank.v1beta1.ParamsOrBuilder getParamsOrBuilder();
 
   /**
    * <pre>
@@ -41,7 +41,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Balance balances = 2 [json_name = "balances", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<Balance>
+  java.util.List<com.cosmos.bank.v1beta1.Balance> 
       getBalancesList();
   /**
    * <pre>
@@ -50,7 +50,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Balance balances = 2 [json_name = "balances", (.gogoproto.nullable) = false];</code>
    */
-  Balance getBalances(int index);
+  com.cosmos.bank.v1beta1.Balance getBalances(int index);
   /**
    * <pre>
    * balances is an array containing the balances of all the accounts.
@@ -66,7 +66,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Balance balances = 2 [json_name = "balances", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends BalanceOrBuilder>
+  java.util.List<? extends com.cosmos.bank.v1beta1.BalanceOrBuilder> 
       getBalancesOrBuilderList();
   /**
    * <pre>
@@ -75,7 +75,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Balance balances = 2 [json_name = "balances", (.gogoproto.nullable) = false];</code>
    */
-  BalanceOrBuilder getBalancesOrBuilder(
+  com.cosmos.bank.v1beta1.BalanceOrBuilder getBalancesOrBuilder(
       int index);
 
   /**
@@ -134,7 +134,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Metadata denom_metadata = 4 [json_name = "denomMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"denom_metadata&#92;""];</code>
    */
-  java.util.List<Metadata>
+  java.util.List<com.cosmos.bank.v1beta1.Metadata> 
       getDenomMetadataList();
   /**
    * <pre>
@@ -143,7 +143,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Metadata denom_metadata = 4 [json_name = "denomMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"denom_metadata&#92;""];</code>
    */
-  Metadata getDenomMetadata(int index);
+  com.cosmos.bank.v1beta1.Metadata getDenomMetadata(int index);
   /**
    * <pre>
    * denom_metadata defines the metadata of the differents coins.
@@ -159,7 +159,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Metadata denom_metadata = 4 [json_name = "denomMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"denom_metadata&#92;""];</code>
    */
-  java.util.List<? extends MetadataOrBuilder>
+  java.util.List<? extends com.cosmos.bank.v1beta1.MetadataOrBuilder> 
       getDenomMetadataOrBuilderList();
   /**
    * <pre>
@@ -168,6 +168,6 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Metadata denom_metadata = 4 [json_name = "denomMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"denom_metadata&#92;""];</code>
    */
-  MetadataOrBuilder getDenomMetadataOrBuilder(
+  com.cosmos.bank.v1beta1.MetadataOrBuilder getDenomMetadataOrBuilder(
       int index);
 }

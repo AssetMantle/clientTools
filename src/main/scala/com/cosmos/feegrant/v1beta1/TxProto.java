@@ -42,7 +42,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n cosmos/feegrant/v1beta1/tx.proto\022\027cosm" +
       "os.feegrant.v1beta1\032\024gogoproto/gogo.prot" +
       "o\032\031google/protobuf/any.proto\032\031cosmos_pro" +
@@ -79,25 +79,25 @@ public final class TxProto {
     internal_static_cosmos_feegrant_v1beta1_MsgGrantAllowance_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_MsgGrantAllowance_descriptor,
-        new String[] { "Granter", "Grantee", "Allowance", });
+        new java.lang.String[] { "Granter", "Grantee", "Allowance", });
     internal_static_cosmos_feegrant_v1beta1_MsgGrantAllowanceResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_feegrant_v1beta1_MsgGrantAllowanceResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_MsgGrantAllowanceResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_feegrant_v1beta1_MsgRevokeAllowance_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_feegrant_v1beta1_MsgRevokeAllowance_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_MsgRevokeAllowance_descriptor,
-        new String[] { "Granter", "Grantee", });
+        new java.lang.String[] { "Granter", "Grantee", });
     internal_static_cosmos_feegrant_v1beta1_MsgRevokeAllowanceResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_feegrant_v1beta1_MsgRevokeAllowanceResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_MsgRevokeAllowanceResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);

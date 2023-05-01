@@ -25,24 +25,24 @@ private static final long serialVersionUID = 0L;
     proof_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryClientStateResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_ibc_core_client_v1_QueryClientStateResponse_descriptor;
+    return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryClientStateResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_ibc_core_client_v1_QueryClientStateResponse_fieldAccessorTable
+    return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryClientStateResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryClientStateResponse.class, Builder.class);
+            com.ibc.core.client.v1.QueryClientStateResponse.class, com.ibc.core.client.v1.QueryClientStateResponse.Builder.class);
   }
 
   public static final int CLIENT_STATE_FIELD_NUMBER = 1;
@@ -55,7 +55,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any client_state = 1 [json_name = "clientState"];</code>
    * @return Whether the clientState field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasClientState() {
     return clientState_ != null;
   }
@@ -67,7 +67,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any client_state = 1 [json_name = "clientState"];</code>
    * @return The clientState.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Any getClientState() {
     return clientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : clientState_;
   }
@@ -78,7 +78,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Any client_state = 1 [json_name = "clientState"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.AnyOrBuilder getClientStateOrBuilder() {
     return clientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : clientState_;
   }
@@ -93,13 +93,13 @@ private static final long serialVersionUID = 0L;
    * <code>bytes proof = 2 [json_name = "proof"];</code>
    * @return The proof.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getProof() {
     return proof_;
   }
 
   public static final int PROOF_HEIGHT_FIELD_NUMBER = 3;
-  private Height proofHeight_;
+  private com.ibc.core.client.v1.Height proofHeight_;
   /**
    * <pre>
    * height at which the proof was retrieved
@@ -108,7 +108,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
    * @return Whether the proofHeight field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasProofHeight() {
     return proofHeight_ != null;
   }
@@ -120,9 +120,9 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
    * @return The proofHeight.
    */
-  @Override
-  public Height getProofHeight() {
-    return proofHeight_ == null ? Height.getDefaultInstance() : proofHeight_;
+  @java.lang.Override
+  public com.ibc.core.client.v1.Height getProofHeight() {
+    return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
   }
   /**
    * <pre>
@@ -131,13 +131,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public HeightOrBuilder getProofHeightOrBuilder() {
-    return proofHeight_ == null ? Height.getDefaultInstance() : proofHeight_;
+  @java.lang.Override
+  public com.ibc.core.client.v1.HeightOrBuilder getProofHeightOrBuilder() {
+    return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -147,7 +147,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (clientState_ != null) {
@@ -162,7 +162,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -185,15 +185,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryClientStateResponse)) {
+    if (!(obj instanceof com.ibc.core.client.v1.QueryClientStateResponse)) {
       return super.equals(obj);
     }
-    QueryClientStateResponse other = (QueryClientStateResponse) obj;
+    com.ibc.core.client.v1.QueryClientStateResponse other = (com.ibc.core.client.v1.QueryClientStateResponse) obj;
 
     if (hasClientState() != other.hasClientState()) return false;
     if (hasClientState()) {
@@ -211,7 +211,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -233,69 +233,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryClientStateResponse parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryClientStateResponse parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryClientStateResponse parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryClientStateResponse parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryClientStateResponse parseFrom(byte[] data)
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryClientStateResponse parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryClientStateResponse parseFrom(java.io.InputStream input)
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryClientStateResponse parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryClientStateResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryClientStateResponse parseDelimitedFrom(
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryClientStateResponse parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryClientStateResponse parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStateResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -303,23 +303,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryClientStateResponse prototype) {
+  public static Builder newBuilder(com.ibc.core.client.v1.QueryClientStateResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -335,18 +335,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.client.v1.QueryClientStateResponse)
-      QueryClientStateResponseOrBuilder {
+      com.ibc.core.client.v1.QueryClientStateResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_ibc_core_client_v1_QueryClientStateResponse_descriptor;
+      return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryClientStateResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_ibc_core_client_v1_QueryClientStateResponse_fieldAccessorTable
+      return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryClientStateResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryClientStateResponse.class, Builder.class);
+              com.ibc.core.client.v1.QueryClientStateResponse.class, com.ibc.core.client.v1.QueryClientStateResponse.Builder.class);
     }
 
     // Construct using com.ibc.core.client.v1.QueryClientStateResponse.newBuilder()
@@ -355,11 +355,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -377,35 +377,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_ibc_core_client_v1_QueryClientStateResponse_descriptor;
+      return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryClientStateResponse_descriptor;
     }
 
-    @Override
-    public QueryClientStateResponse getDefaultInstanceForType() {
-      return QueryClientStateResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.core.client.v1.QueryClientStateResponse getDefaultInstanceForType() {
+      return com.ibc.core.client.v1.QueryClientStateResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryClientStateResponse build() {
-      QueryClientStateResponse result = buildPartial();
+    @java.lang.Override
+    public com.ibc.core.client.v1.QueryClientStateResponse build() {
+      com.ibc.core.client.v1.QueryClientStateResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryClientStateResponse buildPartial() {
-      QueryClientStateResponse result = new QueryClientStateResponse(this);
+    @java.lang.Override
+    public com.ibc.core.client.v1.QueryClientStateResponse buildPartial() {
+      com.ibc.core.client.v1.QueryClientStateResponse result = new com.ibc.core.client.v1.QueryClientStateResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(QueryClientStateResponse result) {
+    private void buildPartial0(com.ibc.core.client.v1.QueryClientStateResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.clientState_ = clientStateBuilder_ == null
@@ -422,50 +422,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryClientStateResponse) {
-        return mergeFrom((QueryClientStateResponse)other);
+      if (other instanceof com.ibc.core.client.v1.QueryClientStateResponse) {
+        return mergeFrom((com.ibc.core.client.v1.QueryClientStateResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryClientStateResponse other) {
-      if (other == QueryClientStateResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.core.client.v1.QueryClientStateResponse other) {
+      if (other == com.ibc.core.client.v1.QueryClientStateResponse.getDefaultInstance()) return this;
       if (other.hasClientState()) {
         mergeClientState(other.getClientState());
       }
@@ -480,18 +480,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -701,7 +701,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes proof = 2 [json_name = "proof"];</code>
      * @return The proof.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getProof() {
       return proof_;
     }
@@ -736,9 +736,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Height proofHeight_;
+    private com.ibc.core.client.v1.Height proofHeight_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        Height, Height.Builder, HeightOrBuilder> proofHeightBuilder_;
+        com.ibc.core.client.v1.Height, com.ibc.core.client.v1.Height.Builder, com.ibc.core.client.v1.HeightOrBuilder> proofHeightBuilder_;
     /**
      * <pre>
      * height at which the proof was retrieved
@@ -758,9 +758,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
      * @return The proofHeight.
      */
-    public Height getProofHeight() {
+    public com.ibc.core.client.v1.Height getProofHeight() {
       if (proofHeightBuilder_ == null) {
-        return proofHeight_ == null ? Height.getDefaultInstance() : proofHeight_;
+        return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
       } else {
         return proofHeightBuilder_.getMessage();
       }
@@ -772,7 +772,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setProofHeight(Height value) {
+    public Builder setProofHeight(com.ibc.core.client.v1.Height value) {
       if (proofHeightBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -793,7 +793,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
      */
     public Builder setProofHeight(
-        Height.Builder builderForValue) {
+        com.ibc.core.client.v1.Height.Builder builderForValue) {
       if (proofHeightBuilder_ == null) {
         proofHeight_ = builderForValue.build();
       } else {
@@ -810,11 +810,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeProofHeight(Height value) {
+    public Builder mergeProofHeight(com.ibc.core.client.v1.Height value) {
       if (proofHeightBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0) &&
           proofHeight_ != null &&
-          proofHeight_ != Height.getDefaultInstance()) {
+          proofHeight_ != com.ibc.core.client.v1.Height.getDefaultInstance()) {
           getProofHeightBuilder().mergeFrom(value);
         } else {
           proofHeight_ = value;
@@ -850,7 +850,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
      */
-    public Height.Builder getProofHeightBuilder() {
+    public com.ibc.core.client.v1.Height.Builder getProofHeightBuilder() {
       bitField0_ |= 0x00000004;
       onChanged();
       return getProofHeightFieldBuilder().getBuilder();
@@ -862,12 +862,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
      */
-    public HeightOrBuilder getProofHeightOrBuilder() {
+    public com.ibc.core.client.v1.HeightOrBuilder getProofHeightOrBuilder() {
       if (proofHeightBuilder_ != null) {
         return proofHeightBuilder_.getMessageOrBuilder();
       } else {
         return proofHeight_ == null ?
-            Height.getDefaultInstance() : proofHeight_;
+            com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
       }
     }
     /**
@@ -878,11 +878,11 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Height, Height.Builder, HeightOrBuilder>
+        com.ibc.core.client.v1.Height, com.ibc.core.client.v1.Height.Builder, com.ibc.core.client.v1.HeightOrBuilder> 
         getProofHeightFieldBuilder() {
       if (proofHeightBuilder_ == null) {
         proofHeightBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Height, Height.Builder, HeightOrBuilder>(
+            com.ibc.core.client.v1.Height, com.ibc.core.client.v1.Height.Builder, com.ibc.core.client.v1.HeightOrBuilder>(
                 getProofHeight(),
                 getParentForChildren(),
                 isClean());
@@ -890,13 +890,13 @@ private static final long serialVersionUID = 0L;
       }
       return proofHeightBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -907,18 +907,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.client.v1.QueryClientStateResponse)
-  private static final QueryClientStateResponse DEFAULT_INSTANCE;
+  private static final com.ibc.core.client.v1.QueryClientStateResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryClientStateResponse();
+    DEFAULT_INSTANCE = new com.ibc.core.client.v1.QueryClientStateResponse();
   }
 
-  public static QueryClientStateResponse getDefaultInstance() {
+  public static com.ibc.core.client.v1.QueryClientStateResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryClientStateResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryClientStateResponse>() {
-    @Override
+    @java.lang.Override
     public QueryClientStateResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -942,13 +942,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryClientStateResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryClientStateResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.core.client.v1.QueryClientStateResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

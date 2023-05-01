@@ -11,7 +11,7 @@ public interface CommunityPoolSpendProposalOrBuilder extends
    * <code>string title = 1 [json_name = "title"];</code>
    * @return The title.
    */
-  String getTitle();
+  java.lang.String getTitle();
   /**
    * <code>string title = 1 [json_name = "title"];</code>
    * @return The bytes for title.
@@ -23,7 +23,7 @@ public interface CommunityPoolSpendProposalOrBuilder extends
    * <code>string description = 2 [json_name = "description"];</code>
    * @return The description.
    */
-  String getDescription();
+  java.lang.String getDescription();
   /**
    * <code>string description = 2 [json_name = "description"];</code>
    * @return The bytes for description.
@@ -35,7 +35,7 @@ public interface CommunityPoolSpendProposalOrBuilder extends
    * <code>string recipient = 3 [json_name = "recipient"];</code>
    * @return The recipient.
    */
-  String getRecipient();
+  java.lang.String getRecipient();
   /**
    * <code>string recipient = 3 [json_name = "recipient"];</code>
    * @return The bytes for recipient.

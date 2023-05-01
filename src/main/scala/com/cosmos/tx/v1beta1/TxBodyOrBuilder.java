@@ -91,7 +91,7 @@ public interface TxBodyOrBuilder extends
    * <code>string memo = 2 [json_name = "memo"];</code>
    * @return The memo.
    */
-  String getMemo();
+  java.lang.String getMemo();
   /**
    * <pre>
    * memo is any arbitrary note/comment to be added to the transaction.

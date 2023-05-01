@@ -11,7 +11,7 @@ public interface MsgChannelOpenInitResponseOrBuilder extends
    * <code>string channel_id = 1 [json_name = "channelId", (.gogoproto.moretags) = "yaml:&#92;"channel_id&#92;""];</code>
    * @return The channelId.
    */
-  String getChannelId();
+  java.lang.String getChannelId();
   /**
    * <code>string channel_id = 1 [json_name = "channelId", (.gogoproto.moretags) = "yaml:&#92;"channel_id&#92;""];</code>
    * @return The bytes for channelId.
@@ -23,7 +23,7 @@ public interface MsgChannelOpenInitResponseOrBuilder extends
    * <code>string version = 2 [json_name = "version"];</code>
    * @return The version.
    */
-  String getVersion();
+  java.lang.String getVersion();
   /**
    * <code>string version = 2 [json_name = "version"];</code>
    * @return The bytes for version.

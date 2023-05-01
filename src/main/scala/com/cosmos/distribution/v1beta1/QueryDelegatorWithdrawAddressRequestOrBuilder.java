@@ -15,7 +15,7 @@ public interface QueryDelegatorWithdrawAddressRequestOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress"];</code>
    * @return The delegatorAddress.
    */
-  String getDelegatorAddress();
+  java.lang.String getDelegatorAddress();
   /**
    * <pre>
    * delegator_address defines the delegator address to query for.

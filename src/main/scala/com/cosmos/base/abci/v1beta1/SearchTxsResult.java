@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     txs_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new SearchTxsResult();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return AbciProto.internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_descriptor;
+    return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return AbciProto.internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_fieldAccessorTable
+    return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            SearchTxsResult.class, Builder.class);
+            com.cosmos.base.abci.v1beta1.SearchTxsResult.class, com.cosmos.base.abci.v1beta1.SearchTxsResult.Builder.class);
   }
 
   public static final int TOTAL_COUNT_FIELD_NUMBER = 1;
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 total_count = 1 [json_name = "totalCount", (.gogoproto.jsontag) = "total_count", (.gogoproto.moretags) = "yaml:&#92;"total_count&#92;""];</code>
    * @return The totalCount.
    */
-  @Override
+  @java.lang.Override
   public long getTotalCount() {
     return totalCount_;
   }
@@ -68,7 +68,7 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 count = 2 [json_name = "count"];</code>
    * @return The count.
    */
-  @Override
+  @java.lang.Override
   public long getCount() {
     return count_;
   }
@@ -83,7 +83,7 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 page_number = 3 [json_name = "pageNumber", (.gogoproto.jsontag) = "page_number", (.gogoproto.moretags) = "yaml:&#92;"page_number&#92;""];</code>
    * @return The pageNumber.
    */
-  @Override
+  @java.lang.Override
   public long getPageNumber() {
     return pageNumber_;
   }
@@ -98,7 +98,7 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 page_total = 4 [json_name = "pageTotal", (.gogoproto.jsontag) = "page_total", (.gogoproto.moretags) = "yaml:&#92;"page_total&#92;""];</code>
    * @return The pageTotal.
    */
-  @Override
+  @java.lang.Override
   public long getPageTotal() {
     return pageTotal_;
   }
@@ -113,14 +113,14 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 limit = 5 [json_name = "limit"];</code>
    * @return The limit.
    */
-  @Override
+  @java.lang.Override
   public long getLimit() {
     return limit_;
   }
 
   public static final int TXS_FIELD_NUMBER = 6;
   @SuppressWarnings("serial")
-  private java.util.List<TxResponse> txs_;
+  private java.util.List<com.cosmos.base.abci.v1beta1.TxResponse> txs_;
   /**
    * <pre>
    * List of txs in current page
@@ -128,8 +128,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
    */
-  @Override
-  public java.util.List<TxResponse> getTxsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.base.abci.v1beta1.TxResponse> getTxsList() {
     return txs_;
   }
   /**
@@ -139,8 +139,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
    */
-  @Override
-  public java.util.List<? extends TxResponseOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.base.abci.v1beta1.TxResponseOrBuilder> 
       getTxsOrBuilderList() {
     return txs_;
   }
@@ -151,7 +151,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getTxsCount() {
     return txs_.size();
   }
@@ -162,8 +162,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
    */
-  @Override
-  public TxResponse getTxs(int index) {
+  @java.lang.Override
+  public com.cosmos.base.abci.v1beta1.TxResponse getTxs(int index) {
     return txs_.get(index);
   }
   /**
@@ -173,14 +173,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
    */
-  @Override
-  public TxResponseOrBuilder getTxsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.base.abci.v1beta1.TxResponseOrBuilder getTxsOrBuilder(
       int index) {
     return txs_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -190,7 +190,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (totalCount_ != 0L) {
@@ -214,7 +214,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -249,15 +249,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof SearchTxsResult)) {
+    if (!(obj instanceof com.cosmos.base.abci.v1beta1.SearchTxsResult)) {
       return super.equals(obj);
     }
-    SearchTxsResult other = (SearchTxsResult) obj;
+    com.cosmos.base.abci.v1beta1.SearchTxsResult other = (com.cosmos.base.abci.v1beta1.SearchTxsResult) obj;
 
     if (getTotalCount()
         != other.getTotalCount()) return false;
@@ -275,7 +275,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -306,69 +306,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static SearchTxsResult parseFrom(
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static SearchTxsResult parseFrom(
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static SearchTxsResult parseFrom(
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static SearchTxsResult parseFrom(
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static SearchTxsResult parseFrom(byte[] data)
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static SearchTxsResult parseFrom(
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static SearchTxsResult parseFrom(java.io.InputStream input)
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static SearchTxsResult parseFrom(
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static SearchTxsResult parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static SearchTxsResult parseDelimitedFrom(
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static SearchTxsResult parseFrom(
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static SearchTxsResult parseFrom(
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -376,23 +376,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(SearchTxsResult prototype) {
+  public static Builder newBuilder(com.cosmos.base.abci.v1beta1.SearchTxsResult prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -406,18 +406,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.abci.v1beta1.SearchTxsResult)
-      SearchTxsResultOrBuilder {
+      com.cosmos.base.abci.v1beta1.SearchTxsResultOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return AbciProto.internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_descriptor;
+      return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return AbciProto.internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_fieldAccessorTable
+      return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              SearchTxsResult.class, Builder.class);
+              com.cosmos.base.abci.v1beta1.SearchTxsResult.class, com.cosmos.base.abci.v1beta1.SearchTxsResult.Builder.class);
     }
 
     // Construct using com.cosmos.base.abci.v1beta1.SearchTxsResult.newBuilder()
@@ -426,11 +426,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -449,36 +449,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return AbciProto.internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_descriptor;
+      return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_descriptor;
     }
 
-    @Override
-    public SearchTxsResult getDefaultInstanceForType() {
-      return SearchTxsResult.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.base.abci.v1beta1.SearchTxsResult getDefaultInstanceForType() {
+      return com.cosmos.base.abci.v1beta1.SearchTxsResult.getDefaultInstance();
     }
 
-    @Override
-    public SearchTxsResult build() {
-      SearchTxsResult result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.base.abci.v1beta1.SearchTxsResult build() {
+      com.cosmos.base.abci.v1beta1.SearchTxsResult result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public SearchTxsResult buildPartial() {
-      SearchTxsResult result = new SearchTxsResult(this);
+    @java.lang.Override
+    public com.cosmos.base.abci.v1beta1.SearchTxsResult buildPartial() {
+      com.cosmos.base.abci.v1beta1.SearchTxsResult result = new com.cosmos.base.abci.v1beta1.SearchTxsResult(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(SearchTxsResult result) {
+    private void buildPartialRepeatedFields(com.cosmos.base.abci.v1beta1.SearchTxsResult result) {
       if (txsBuilder_ == null) {
         if (((bitField0_ & 0x00000020) != 0)) {
           txs_ = java.util.Collections.unmodifiableList(txs_);
@@ -490,7 +490,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(SearchTxsResult result) {
+    private void buildPartial0(com.cosmos.base.abci.v1beta1.SearchTxsResult result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.totalCount_ = totalCount_;
@@ -509,50 +509,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof SearchTxsResult) {
-        return mergeFrom((SearchTxsResult)other);
+      if (other instanceof com.cosmos.base.abci.v1beta1.SearchTxsResult) {
+        return mergeFrom((com.cosmos.base.abci.v1beta1.SearchTxsResult)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(SearchTxsResult other) {
-      if (other == SearchTxsResult.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.base.abci.v1beta1.SearchTxsResult other) {
+      if (other == com.cosmos.base.abci.v1beta1.SearchTxsResult.getDefaultInstance()) return this;
       if (other.getTotalCount() != 0L) {
         setTotalCount(other.getTotalCount());
       }
@@ -599,18 +599,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -646,9 +646,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 40
             case 50: {
-              TxResponse m =
+              com.cosmos.base.abci.v1beta1.TxResponse m =
                   input.readMessage(
-                      TxResponse.parser(),
+                      com.cosmos.base.abci.v1beta1.TxResponse.parser(),
                       extensionRegistry);
               if (txsBuilder_ == null) {
                 ensureTxsIsMutable();
@@ -684,7 +684,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 total_count = 1 [json_name = "totalCount", (.gogoproto.jsontag) = "total_count", (.gogoproto.moretags) = "yaml:&#92;"total_count&#92;""];</code>
      * @return The totalCount.
      */
-    @Override
+    @java.lang.Override
     public long getTotalCount() {
       return totalCount_;
     }
@@ -728,7 +728,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 count = 2 [json_name = "count"];</code>
      * @return The count.
      */
-    @Override
+    @java.lang.Override
     public long getCount() {
       return count_;
     }
@@ -772,7 +772,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 page_number = 3 [json_name = "pageNumber", (.gogoproto.jsontag) = "page_number", (.gogoproto.moretags) = "yaml:&#92;"page_number&#92;""];</code>
      * @return The pageNumber.
      */
-    @Override
+    @java.lang.Override
     public long getPageNumber() {
       return pageNumber_;
     }
@@ -816,7 +816,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 page_total = 4 [json_name = "pageTotal", (.gogoproto.jsontag) = "page_total", (.gogoproto.moretags) = "yaml:&#92;"page_total&#92;""];</code>
      * @return The pageTotal.
      */
-    @Override
+    @java.lang.Override
     public long getPageTotal() {
       return pageTotal_;
     }
@@ -860,7 +860,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 limit = 5 [json_name = "limit"];</code>
      * @return The limit.
      */
-    @Override
+    @java.lang.Override
     public long getLimit() {
       return limit_;
     }
@@ -895,17 +895,17 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<TxResponse> txs_ =
+    private java.util.List<com.cosmos.base.abci.v1beta1.TxResponse> txs_ =
       java.util.Collections.emptyList();
     private void ensureTxsIsMutable() {
       if (!((bitField0_ & 0x00000020) != 0)) {
-        txs_ = new java.util.ArrayList<TxResponse>(txs_);
+        txs_ = new java.util.ArrayList<com.cosmos.base.abci.v1beta1.TxResponse>(txs_);
         bitField0_ |= 0x00000020;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        TxResponse, TxResponse.Builder, TxResponseOrBuilder> txsBuilder_;
+        com.cosmos.base.abci.v1beta1.TxResponse, com.cosmos.base.abci.v1beta1.TxResponse.Builder, com.cosmos.base.abci.v1beta1.TxResponseOrBuilder> txsBuilder_;
 
     /**
      * <pre>
@@ -914,7 +914,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
-    public java.util.List<TxResponse> getTxsList() {
+    public java.util.List<com.cosmos.base.abci.v1beta1.TxResponse> getTxsList() {
       if (txsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(txs_);
       } else {
@@ -942,7 +942,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
-    public TxResponse getTxs(int index) {
+    public com.cosmos.base.abci.v1beta1.TxResponse getTxs(int index) {
       if (txsBuilder_ == null) {
         return txs_.get(index);
       } else {
@@ -957,7 +957,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
     public Builder setTxs(
-        int index, TxResponse value) {
+        int index, com.cosmos.base.abci.v1beta1.TxResponse value) {
       if (txsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -978,7 +978,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
     public Builder setTxs(
-        int index, TxResponse.Builder builderForValue) {
+        int index, com.cosmos.base.abci.v1beta1.TxResponse.Builder builderForValue) {
       if (txsBuilder_ == null) {
         ensureTxsIsMutable();
         txs_.set(index, builderForValue.build());
@@ -995,7 +995,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
-    public Builder addTxs(TxResponse value) {
+    public Builder addTxs(com.cosmos.base.abci.v1beta1.TxResponse value) {
       if (txsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1016,7 +1016,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
     public Builder addTxs(
-        int index, TxResponse value) {
+        int index, com.cosmos.base.abci.v1beta1.TxResponse value) {
       if (txsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1037,7 +1037,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
     public Builder addTxs(
-        TxResponse.Builder builderForValue) {
+        com.cosmos.base.abci.v1beta1.TxResponse.Builder builderForValue) {
       if (txsBuilder_ == null) {
         ensureTxsIsMutable();
         txs_.add(builderForValue.build());
@@ -1055,7 +1055,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
     public Builder addTxs(
-        int index, TxResponse.Builder builderForValue) {
+        int index, com.cosmos.base.abci.v1beta1.TxResponse.Builder builderForValue) {
       if (txsBuilder_ == null) {
         ensureTxsIsMutable();
         txs_.add(index, builderForValue.build());
@@ -1073,7 +1073,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
     public Builder addAllTxs(
-        Iterable<? extends TxResponse> values) {
+        java.lang.Iterable<? extends com.cosmos.base.abci.v1beta1.TxResponse> values) {
       if (txsBuilder_ == null) {
         ensureTxsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1125,7 +1125,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
-    public TxResponse.Builder getTxsBuilder(
+    public com.cosmos.base.abci.v1beta1.TxResponse.Builder getTxsBuilder(
         int index) {
       return getTxsFieldBuilder().getBuilder(index);
     }
@@ -1136,7 +1136,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
-    public TxResponseOrBuilder getTxsOrBuilder(
+    public com.cosmos.base.abci.v1beta1.TxResponseOrBuilder getTxsOrBuilder(
         int index) {
       if (txsBuilder_ == null) {
         return txs_.get(index);  } else {
@@ -1150,7 +1150,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
-    public java.util.List<? extends TxResponseOrBuilder>
+    public java.util.List<? extends com.cosmos.base.abci.v1beta1.TxResponseOrBuilder> 
          getTxsOrBuilderList() {
       if (txsBuilder_ != null) {
         return txsBuilder_.getMessageOrBuilderList();
@@ -1165,9 +1165,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
-    public TxResponse.Builder addTxsBuilder() {
+    public com.cosmos.base.abci.v1beta1.TxResponse.Builder addTxsBuilder() {
       return getTxsFieldBuilder().addBuilder(
-          TxResponse.getDefaultInstance());
+          com.cosmos.base.abci.v1beta1.TxResponse.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1176,10 +1176,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
-    public TxResponse.Builder addTxsBuilder(
+    public com.cosmos.base.abci.v1beta1.TxResponse.Builder addTxsBuilder(
         int index) {
       return getTxsFieldBuilder().addBuilder(
-          index, TxResponse.getDefaultInstance());
+          index, com.cosmos.base.abci.v1beta1.TxResponse.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1188,16 +1188,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
      */
-    public java.util.List<TxResponse.Builder>
+    public java.util.List<com.cosmos.base.abci.v1beta1.TxResponse.Builder> 
          getTxsBuilderList() {
       return getTxsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        TxResponse, TxResponse.Builder, TxResponseOrBuilder>
+        com.cosmos.base.abci.v1beta1.TxResponse, com.cosmos.base.abci.v1beta1.TxResponse.Builder, com.cosmos.base.abci.v1beta1.TxResponseOrBuilder> 
         getTxsFieldBuilder() {
       if (txsBuilder_ == null) {
         txsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            TxResponse, TxResponse.Builder, TxResponseOrBuilder>(
+            com.cosmos.base.abci.v1beta1.TxResponse, com.cosmos.base.abci.v1beta1.TxResponse.Builder, com.cosmos.base.abci.v1beta1.TxResponseOrBuilder>(
                 txs_,
                 ((bitField0_ & 0x00000020) != 0),
                 getParentForChildren(),
@@ -1206,13 +1206,13 @@ private static final long serialVersionUID = 0L;
       }
       return txsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1223,18 +1223,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.abci.v1beta1.SearchTxsResult)
-  private static final SearchTxsResult DEFAULT_INSTANCE;
+  private static final com.cosmos.base.abci.v1beta1.SearchTxsResult DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new SearchTxsResult();
+    DEFAULT_INSTANCE = new com.cosmos.base.abci.v1beta1.SearchTxsResult();
   }
 
-  public static SearchTxsResult getDefaultInstance() {
+  public static com.cosmos.base.abci.v1beta1.SearchTxsResult getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<SearchTxsResult>
       PARSER = new com.google.protobuf.AbstractParser<SearchTxsResult>() {
-    @Override
+    @java.lang.Override
     public SearchTxsResult parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1258,13 +1258,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<SearchTxsResult> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public SearchTxsResult getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.base.abci.v1beta1.SearchTxsResult getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

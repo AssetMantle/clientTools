@@ -11,7 +11,7 @@ public interface ResponseInfoOrBuilder extends
    * <code>string data = 1 [json_name = "data"];</code>
    * @return The data.
    */
-  String getData();
+  java.lang.String getData();
   /**
    * <code>string data = 1 [json_name = "data"];</code>
    * @return The bytes for data.
@@ -23,7 +23,7 @@ public interface ResponseInfoOrBuilder extends
    * <code>string version = 2 [json_name = "version"];</code>
    * @return The version.
    */
-  String getVersion();
+  java.lang.String getVersion();
   /**
    * <code>string version = 2 [json_name = "version"];</code>
    * @return The bytes for version.

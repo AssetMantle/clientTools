@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private GetAuthnDescriptorResponse() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new GetAuthnDescriptorResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_descriptor;
+    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_fieldAccessorTable
+    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            GetAuthnDescriptorResponse.class, Builder.class);
+            com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse.class, com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse.Builder.class);
   }
 
   public static final int AUTHN_FIELD_NUMBER = 1;
-  private AuthnDescriptor authn_;
+  private com.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn_;
   /**
    * <pre>
    * authn describes how to authenticate to the application when sending transactions
@@ -52,7 +52,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
    * @return Whether the authn field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasAuthn() {
     return authn_ != null;
   }
@@ -64,9 +64,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
    * @return The authn.
    */
-  @Override
-  public AuthnDescriptor getAuthn() {
-    return authn_ == null ? AuthnDescriptor.getDefaultInstance() : authn_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.AuthnDescriptor getAuthn() {
+    return authn_ == null ? com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance() : authn_;
   }
   /**
    * <pre>
@@ -75,13 +75,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
    */
-  @Override
-  public AuthnDescriptorOrBuilder getAuthnOrBuilder() {
-    return authn_ == null ? AuthnDescriptor.getDefaultInstance() : authn_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder getAuthnOrBuilder() {
+    return authn_ == null ? com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance() : authn_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -91,7 +91,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (authn_ != null) {
@@ -100,7 +100,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -115,15 +115,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof GetAuthnDescriptorResponse)) {
+    if (!(obj instanceof com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse)) {
       return super.equals(obj);
     }
-    GetAuthnDescriptorResponse other = (GetAuthnDescriptorResponse) obj;
+    com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse other = (com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse) obj;
 
     if (hasAuthn() != other.hasAuthn()) return false;
     if (hasAuthn()) {
@@ -134,7 +134,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -150,69 +150,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static GetAuthnDescriptorResponse parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetAuthnDescriptorResponse parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetAuthnDescriptorResponse parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetAuthnDescriptorResponse parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetAuthnDescriptorResponse parseFrom(byte[] data)
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetAuthnDescriptorResponse parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetAuthnDescriptorResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GetAuthnDescriptorResponse parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GetAuthnDescriptorResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static GetAuthnDescriptorResponse parseDelimitedFrom(
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GetAuthnDescriptorResponse parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GetAuthnDescriptorResponse parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -220,23 +220,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(GetAuthnDescriptorResponse prototype) {
+  public static Builder newBuilder(com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -250,18 +250,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse)
-      GetAuthnDescriptorResponseOrBuilder {
+      com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_descriptor;
+      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_fieldAccessorTable
+      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              GetAuthnDescriptorResponse.class, Builder.class);
+              com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse.class, com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse.Builder.class);
     }
 
     // Construct using com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse.newBuilder()
@@ -270,11 +270,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -286,35 +286,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_descriptor;
+      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_GetAuthnDescriptorResponse_descriptor;
     }
 
-    @Override
-    public GetAuthnDescriptorResponse getDefaultInstanceForType() {
-      return GetAuthnDescriptorResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse getDefaultInstanceForType() {
+      return com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse.getDefaultInstance();
     }
 
-    @Override
-    public GetAuthnDescriptorResponse build() {
-      GetAuthnDescriptorResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse build() {
+      com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public GetAuthnDescriptorResponse buildPartial() {
-      GetAuthnDescriptorResponse result = new GetAuthnDescriptorResponse(this);
+    @java.lang.Override
+    public com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse buildPartial() {
+      com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse result = new com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(GetAuthnDescriptorResponse result) {
+    private void buildPartial0(com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.authn_ = authnBuilder_ == null
@@ -323,50 +323,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof GetAuthnDescriptorResponse) {
-        return mergeFrom((GetAuthnDescriptorResponse)other);
+      if (other instanceof com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse) {
+        return mergeFrom((com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(GetAuthnDescriptorResponse other) {
-      if (other == GetAuthnDescriptorResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse other) {
+      if (other == com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse.getDefaultInstance()) return this;
       if (other.hasAuthn()) {
         mergeAuthn(other.getAuthn());
       }
@@ -375,18 +375,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -420,9 +420,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private AuthnDescriptor authn_;
+    private com.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        AuthnDescriptor, AuthnDescriptor.Builder, AuthnDescriptorOrBuilder> authnBuilder_;
+        com.cosmos.base.reflection.v2alpha1.AuthnDescriptor, com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder> authnBuilder_;
     /**
      * <pre>
      * authn describes how to authenticate to the application when sending transactions
@@ -442,9 +442,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      * @return The authn.
      */
-    public AuthnDescriptor getAuthn() {
+    public com.cosmos.base.reflection.v2alpha1.AuthnDescriptor getAuthn() {
       if (authnBuilder_ == null) {
-        return authn_ == null ? AuthnDescriptor.getDefaultInstance() : authn_;
+        return authn_ == null ? com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance() : authn_;
       } else {
         return authnBuilder_.getMessage();
       }
@@ -456,7 +456,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
-    public Builder setAuthn(AuthnDescriptor value) {
+    public Builder setAuthn(com.cosmos.base.reflection.v2alpha1.AuthnDescriptor value) {
       if (authnBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -477,7 +477,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
     public Builder setAuthn(
-        AuthnDescriptor.Builder builderForValue) {
+        com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder builderForValue) {
       if (authnBuilder_ == null) {
         authn_ = builderForValue.build();
       } else {
@@ -494,11 +494,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
-    public Builder mergeAuthn(AuthnDescriptor value) {
+    public Builder mergeAuthn(com.cosmos.base.reflection.v2alpha1.AuthnDescriptor value) {
       if (authnBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           authn_ != null &&
-          authn_ != AuthnDescriptor.getDefaultInstance()) {
+          authn_ != com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance()) {
           getAuthnBuilder().mergeFrom(value);
         } else {
           authn_ = value;
@@ -534,7 +534,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
-    public AuthnDescriptor.Builder getAuthnBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder getAuthnBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getAuthnFieldBuilder().getBuilder();
@@ -546,12 +546,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
-    public AuthnDescriptorOrBuilder getAuthnOrBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder getAuthnOrBuilder() {
       if (authnBuilder_ != null) {
         return authnBuilder_.getMessageOrBuilder();
       } else {
         return authn_ == null ?
-            AuthnDescriptor.getDefaultInstance() : authn_;
+            com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance() : authn_;
       }
     }
     /**
@@ -562,11 +562,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        AuthnDescriptor, AuthnDescriptor.Builder, AuthnDescriptorOrBuilder>
+        com.cosmos.base.reflection.v2alpha1.AuthnDescriptor, com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder> 
         getAuthnFieldBuilder() {
       if (authnBuilder_ == null) {
         authnBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            AuthnDescriptor, AuthnDescriptor.Builder, AuthnDescriptorOrBuilder>(
+            com.cosmos.base.reflection.v2alpha1.AuthnDescriptor, com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder>(
                 getAuthn(),
                 getParentForChildren(),
                 isClean());
@@ -574,13 +574,13 @@ private static final long serialVersionUID = 0L;
       }
       return authnBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -591,18 +591,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse)
-  private static final GetAuthnDescriptorResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new GetAuthnDescriptorResponse();
+    DEFAULT_INSTANCE = new com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse();
   }
 
-  public static GetAuthnDescriptorResponse getDefaultInstance() {
+  public static com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GetAuthnDescriptorResponse>
       PARSER = new com.google.protobuf.AbstractParser<GetAuthnDescriptorResponse>() {
-    @Override
+    @java.lang.Override
     public GetAuthnDescriptorResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -626,13 +626,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<GetAuthnDescriptorResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public GetAuthnDescriptorResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -28,32 +28,32 @@ private static final long serialVersionUID = 0L;
   private Acknowledgement() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Acknowledgement();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return ChannelProto.internal_static_ibc_core_channel_v1_Acknowledgement_descriptor;
+    return com.ibc.core.channel.v1.ChannelProto.internal_static_ibc_core_channel_v1_Acknowledgement_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return ChannelProto.internal_static_ibc_core_channel_v1_Acknowledgement_fieldAccessorTable
+    return com.ibc.core.channel.v1.ChannelProto.internal_static_ibc_core_channel_v1_Acknowledgement_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Acknowledgement.class, Builder.class);
+            com.ibc.core.channel.v1.Acknowledgement.class, com.ibc.core.channel.v1.Acknowledgement.Builder.class);
   }
 
   private int responseCase_ = 0;
   @SuppressWarnings("serial")
-  private Object response_;
+  private java.lang.Object response_;
   public enum ResponseCase
       implements com.google.protobuf.Internal.EnumLite,
-          InternalOneOfEnum {
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     RESULT(21),
     ERROR(22),
     RESPONSE_NOT_SET(0);
@@ -66,7 +66,7 @@ private static final long serialVersionUID = 0L;
      * @return The enum associated with the given number.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static ResponseCase valueOf(int value) {
       return forNumber(value);
     }
@@ -95,7 +95,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes result = 21 [json_name = "result"];</code>
    * @return Whether the result field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasResult() {
     return responseCase_ == 21;
   }
@@ -103,7 +103,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes result = 21 [json_name = "result"];</code>
    * @return The result.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getResult() {
     if (responseCase_ == 21) {
       return (com.google.protobuf.ByteString) response_;
@@ -123,17 +123,17 @@ private static final long serialVersionUID = 0L;
    * <code>string error = 22 [json_name = "error"];</code>
    * @return The error.
    */
-  public String getError() {
-    Object ref = "";
+  public java.lang.String getError() {
+    java.lang.Object ref = "";
     if (responseCase_ == 22) {
       ref = response_;
     }
-    if (ref instanceof String) {
-      return (String) ref;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       if (responseCase_ == 22) {
         response_ = s;
       }
@@ -146,14 +146,14 @@ private static final long serialVersionUID = 0L;
    */
   public com.google.protobuf.ByteString
       getErrorBytes() {
-    Object ref = "";
+    java.lang.Object ref = "";
     if (responseCase_ == 22) {
       ref = response_;
     }
-    if (ref instanceof String) {
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       if (responseCase_ == 22) {
         response_ = b;
       }
@@ -164,7 +164,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -174,7 +174,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (responseCase_ == 21) {
@@ -187,7 +187,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -206,15 +206,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Acknowledgement)) {
+    if (!(obj instanceof com.ibc.core.channel.v1.Acknowledgement)) {
       return super.equals(obj);
     }
-    Acknowledgement other = (Acknowledgement) obj;
+    com.ibc.core.channel.v1.Acknowledgement other = (com.ibc.core.channel.v1.Acknowledgement) obj;
 
     if (!getResponseCase().equals(other.getResponseCase())) return false;
     switch (responseCase_) {
@@ -233,7 +233,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -257,69 +257,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Acknowledgement parseFrom(
+  public static com.ibc.core.channel.v1.Acknowledgement parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Acknowledgement parseFrom(
+  public static com.ibc.core.channel.v1.Acknowledgement parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Acknowledgement parseFrom(
+  public static com.ibc.core.channel.v1.Acknowledgement parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Acknowledgement parseFrom(
+  public static com.ibc.core.channel.v1.Acknowledgement parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Acknowledgement parseFrom(byte[] data)
+  public static com.ibc.core.channel.v1.Acknowledgement parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Acknowledgement parseFrom(
+  public static com.ibc.core.channel.v1.Acknowledgement parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Acknowledgement parseFrom(java.io.InputStream input)
+  public static com.ibc.core.channel.v1.Acknowledgement parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Acknowledgement parseFrom(
+  public static com.ibc.core.channel.v1.Acknowledgement parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Acknowledgement parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.core.channel.v1.Acknowledgement parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Acknowledgement parseDelimitedFrom(
+  public static com.ibc.core.channel.v1.Acknowledgement parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Acknowledgement parseFrom(
+  public static com.ibc.core.channel.v1.Acknowledgement parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Acknowledgement parseFrom(
+  public static com.ibc.core.channel.v1.Acknowledgement parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -327,23 +327,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Acknowledgement prototype) {
+  public static Builder newBuilder(com.ibc.core.channel.v1.Acknowledgement prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -363,18 +363,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.channel.v1.Acknowledgement)
-      AcknowledgementOrBuilder {
+      com.ibc.core.channel.v1.AcknowledgementOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ChannelProto.internal_static_ibc_core_channel_v1_Acknowledgement_descriptor;
+      return com.ibc.core.channel.v1.ChannelProto.internal_static_ibc_core_channel_v1_Acknowledgement_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ChannelProto.internal_static_ibc_core_channel_v1_Acknowledgement_fieldAccessorTable
+      return com.ibc.core.channel.v1.ChannelProto.internal_static_ibc_core_channel_v1_Acknowledgement_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Acknowledgement.class, Builder.class);
+              com.ibc.core.channel.v1.Acknowledgement.class, com.ibc.core.channel.v1.Acknowledgement.Builder.class);
     }
 
     // Construct using com.ibc.core.channel.v1.Acknowledgement.newBuilder()
@@ -383,11 +383,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -396,88 +396,88 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return ChannelProto.internal_static_ibc_core_channel_v1_Acknowledgement_descriptor;
+      return com.ibc.core.channel.v1.ChannelProto.internal_static_ibc_core_channel_v1_Acknowledgement_descriptor;
     }
 
-    @Override
-    public Acknowledgement getDefaultInstanceForType() {
-      return Acknowledgement.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.core.channel.v1.Acknowledgement getDefaultInstanceForType() {
+      return com.ibc.core.channel.v1.Acknowledgement.getDefaultInstance();
     }
 
-    @Override
-    public Acknowledgement build() {
-      Acknowledgement result = buildPartial();
+    @java.lang.Override
+    public com.ibc.core.channel.v1.Acknowledgement build() {
+      com.ibc.core.channel.v1.Acknowledgement result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Acknowledgement buildPartial() {
-      Acknowledgement result = new Acknowledgement(this);
+    @java.lang.Override
+    public com.ibc.core.channel.v1.Acknowledgement buildPartial() {
+      com.ibc.core.channel.v1.Acknowledgement result = new com.ibc.core.channel.v1.Acknowledgement(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       buildPartialOneofs(result);
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(Acknowledgement result) {
+    private void buildPartial0(com.ibc.core.channel.v1.Acknowledgement result) {
       int from_bitField0_ = bitField0_;
     }
 
-    private void buildPartialOneofs(Acknowledgement result) {
+    private void buildPartialOneofs(com.ibc.core.channel.v1.Acknowledgement result) {
       result.responseCase_ = responseCase_;
       result.response_ = this.response_;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Acknowledgement) {
-        return mergeFrom((Acknowledgement)other);
+      if (other instanceof com.ibc.core.channel.v1.Acknowledgement) {
+        return mergeFrom((com.ibc.core.channel.v1.Acknowledgement)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Acknowledgement other) {
-      if (other == Acknowledgement.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.core.channel.v1.Acknowledgement other) {
+      if (other == com.ibc.core.channel.v1.Acknowledgement.getDefaultInstance()) return this;
       switch (other.getResponseCase()) {
         case RESULT: {
           setResult(other.getResult());
@@ -498,18 +498,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -525,7 +525,7 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 170
             case 178: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
               responseCase_ = 22;
               response_ = s;
               break;
@@ -546,7 +546,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int responseCase_ = 0;
-    private Object response_;
+    private java.lang.Object response_;
     public ResponseCase
         getResponseCase() {
       return ResponseCase.forNumber(
@@ -608,7 +608,7 @@ private static final long serialVersionUID = 0L;
      * <code>string error = 22 [json_name = "error"];</code>
      * @return Whether the error field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasError() {
       return responseCase_ == 22;
     }
@@ -616,39 +616,39 @@ private static final long serialVersionUID = 0L;
      * <code>string error = 22 [json_name = "error"];</code>
      * @return The error.
      */
-    @Override
-    public String getError() {
-      Object ref = "";
+    @java.lang.Override
+    public java.lang.String getError() {
+      java.lang.Object ref = "";
       if (responseCase_ == 22) {
         ref = response_;
       }
-      if (!(ref instanceof String)) {
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (responseCase_ == 22) {
           response_ = s;
         }
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
      * <code>string error = 22 [json_name = "error"];</code>
      * @return The bytes for error.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getErrorBytes() {
-      Object ref = "";
+      java.lang.Object ref = "";
       if (responseCase_ == 22) {
         ref = response_;
       }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         if (responseCase_ == 22) {
           response_ = b;
         }
@@ -663,7 +663,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setError(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       responseCase_ = 22;
       response_ = value;
@@ -696,13 +696,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -713,18 +713,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.channel.v1.Acknowledgement)
-  private static final Acknowledgement DEFAULT_INSTANCE;
+  private static final com.ibc.core.channel.v1.Acknowledgement DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Acknowledgement();
+    DEFAULT_INSTANCE = new com.ibc.core.channel.v1.Acknowledgement();
   }
 
-  public static Acknowledgement getDefaultInstance() {
+  public static com.ibc.core.channel.v1.Acknowledgement getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Acknowledgement>
       PARSER = new com.google.protobuf.AbstractParser<Acknowledgement>() {
-    @Override
+    @java.lang.Override
     public Acknowledgement parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -748,13 +748,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Acknowledgement> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Acknowledgement getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.core.channel.v1.Acknowledgement getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

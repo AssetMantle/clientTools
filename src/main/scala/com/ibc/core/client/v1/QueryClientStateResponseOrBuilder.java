@@ -61,7 +61,7 @@ public interface QueryClientStateResponseOrBuilder extends
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
    * @return The proofHeight.
    */
-  Height getProofHeight();
+  com.ibc.core.client.v1.Height getProofHeight();
   /**
    * <pre>
    * height at which the proof was retrieved
@@ -69,5 +69,5 @@ public interface QueryClientStateResponseOrBuilder extends
    *
    * <code>.ibc.core.client.v1.Height proof_height = 3 [json_name = "proofHeight", (.gogoproto.nullable) = false];</code>
    */
-  HeightOrBuilder getProofHeightOrBuilder();
+  com.ibc.core.client.v1.HeightOrBuilder getProofHeightOrBuilder();
 }

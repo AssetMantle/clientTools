@@ -6,28 +6,28 @@ package com.google.protobuf;
 public final class AnyProto {
   private AnyProto() {}
   public static void registerAllExtensions(
-      ExtensionRegistryLite registry) {
+      com.google.protobuf.ExtensionRegistryLite registry) {
   }
 
   public static void registerAllExtensions(
-      ExtensionRegistry registry) {
+      com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions(
-        (ExtensionRegistryLite) registry);
+        (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  static final Descriptors.Descriptor
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Any_descriptor;
   static final 
-    GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_google_protobuf_Any_fieldAccessorTable;
 
-  public static Descriptors.FileDescriptor
+  public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
   }
-  private static  Descriptors.FileDescriptor
+  private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\031google/protobuf/any.proto\022\017google.prot" +
       "obuf\032\024gogoproto/gogo.proto\"8\n\003Any\022\020\n\010typ" +
       "e_url\030\001 \001(\t\022\r\n\005value\030\002 \001(\014:\020\360\241\037\000\230\240\037\000\260\240\037\000" +
@@ -35,27 +35,27 @@ public final class AnyProto {
       "\005types\242\002\003GPB\252\002\036Google.Protobuf.WellKnown" +
       "Types\300\343\036\000b\006proto3"
     };
-    descriptor = Descriptors.FileDescriptor
+    descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
-        new Descriptors.FileDescriptor[] {
-          GoGoProtos.getDescriptor(),
+        new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.google.protobuf.GoGoProtos.getDescriptor(),
         });
     internal_static_google_protobuf_Any_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_google_protobuf_Any_fieldAccessorTable = new
-      GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_google_protobuf_Any_descriptor,
-        new String[] { "TypeUrl", "Value", });
-    ExtensionRegistry registry =
-        ExtensionRegistry.newInstance();
-    registry.add(GoGoProtos.goprotoRegistration);
-    registry.add(GoGoProtos.goprotoStringer);
-    registry.add(GoGoProtos.gostring);
-    registry.add(GoGoProtos.stringer);
-    registry.add(GoGoProtos.typedecl);
-    Descriptors.FileDescriptor
+        new java.lang.String[] { "TypeUrl", "Value", });
+    com.google.protobuf.ExtensionRegistry registry =
+        com.google.protobuf.ExtensionRegistry.newInstance();
+    registry.add(com.google.protobuf.GoGoProtos.goprotoRegistration);
+    registry.add(com.google.protobuf.GoGoProtos.goprotoStringer);
+    registry.add(com.google.protobuf.GoGoProtos.gostring);
+    registry.add(com.google.protobuf.GoGoProtos.stringer);
+    registry.add(com.google.protobuf.GoGoProtos.typedecl);
+    com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    GoGoProtos.getDescriptor();
+    com.google.protobuf.GoGoProtos.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

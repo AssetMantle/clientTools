@@ -47,7 +47,7 @@ public final class SigningProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\'cosmos/tx/signing/v1beta1/signing.prot" +
       "o\022\031cosmos.tx.signing.v1beta1\032-cosmos/cry" +
       "pto/multisig/v1beta1/multisig.proto\032\031goo" +
@@ -93,31 +93,31 @@ public final class SigningProto {
     internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_descriptor,
-        new String[] { "Signatures", });
+        new java.lang.String[] { "Signatures", });
     internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_descriptor,
-        new String[] { "PublicKey", "Data", "Sequence", });
+        new java.lang.String[] { "PublicKey", "Data", "Sequence", });
     internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_descriptor =
       internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_descriptor.getNestedTypes().get(0);
     internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_descriptor,
-        new String[] { "Single", "Multi", "Sum", });
+        new java.lang.String[] { "Single", "Multi", "Sum", });
     internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_Single_descriptor =
       internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_descriptor.getNestedTypes().get(0);
     internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_Single_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_Single_descriptor,
-        new String[] { "Mode", "Signature", });
+        new java.lang.String[] { "Mode", "Signature", });
     internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_Multi_descriptor =
       internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_descriptor.getNestedTypes().get(1);
     internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_Multi_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptor_Data_Multi_descriptor,
-        new String[] { "Bitarray", "Signatures", });
+        new java.lang.String[] { "Bitarray", "Signatures", });
     com.cosmos.crypto.multisig.v1beta1.MultisigProto.getDescriptor();
     com.google.protobuf.AnyProto.getDescriptor();
   }

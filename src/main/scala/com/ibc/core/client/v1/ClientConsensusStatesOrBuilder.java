@@ -15,7 +15,7 @@ public interface ClientConsensusStatesOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  String getClientId();
+  java.lang.String getClientId();
   /**
    * <pre>
    * client identifier
@@ -34,7 +34,7 @@ public interface ClientConsensusStatesOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 2 [json_name = "consensusStates", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"consensus_states&#92;""];</code>
    */
-  java.util.List<ConsensusStateWithHeight>
+  java.util.List<com.ibc.core.client.v1.ConsensusStateWithHeight> 
       getConsensusStatesList();
   /**
    * <pre>
@@ -43,7 +43,7 @@ public interface ClientConsensusStatesOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 2 [json_name = "consensusStates", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"consensus_states&#92;""];</code>
    */
-  ConsensusStateWithHeight getConsensusStates(int index);
+  com.ibc.core.client.v1.ConsensusStateWithHeight getConsensusStates(int index);
   /**
    * <pre>
    * consensus states and their heights associated with the client
@@ -59,7 +59,7 @@ public interface ClientConsensusStatesOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 2 [json_name = "consensusStates", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"consensus_states&#92;""];</code>
    */
-  java.util.List<? extends ConsensusStateWithHeightOrBuilder>
+  java.util.List<? extends com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder> 
       getConsensusStatesOrBuilderList();
   /**
    * <pre>
@@ -68,6 +68,6 @@ public interface ClientConsensusStatesOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 2 [json_name = "consensusStates", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"consensus_states&#92;""];</code>
    */
-  ConsensusStateWithHeightOrBuilder getConsensusStatesOrBuilder(
+  com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder getConsensusStatesOrBuilder(
       int index);
 }

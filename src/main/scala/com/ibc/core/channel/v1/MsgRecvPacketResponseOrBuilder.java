@@ -16,5 +16,5 @@ public interface MsgRecvPacketResponseOrBuilder extends
    * <code>.ibc.core.channel.v1.ResponseResultType result = 1 [json_name = "result"];</code>
    * @return The result.
    */
-  ResponseResultType getResult();
+  com.ibc.core.channel.v1.ResponseResultType getResult();
 }

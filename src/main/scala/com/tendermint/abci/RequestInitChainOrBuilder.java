@@ -26,7 +26,7 @@ public interface RequestInitChainOrBuilder extends
    * <code>string chain_id = 2 [json_name = "chainId"];</code>
    * @return The chainId.
    */
-  String getChainId();
+  java.lang.String getChainId();
   /**
    * <code>string chain_id = 2 [json_name = "chainId"];</code>
    * @return The bytes for chainId.
@@ -43,21 +43,21 @@ public interface RequestInitChainOrBuilder extends
    * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
    * @return The consensusParams.
    */
-  ConsensusParams getConsensusParams();
+  com.tendermint.abci.ConsensusParams getConsensusParams();
   /**
    * <code>.tendermint.abci.ConsensusParams consensus_params = 3 [json_name = "consensusParams"];</code>
    */
-  ConsensusParamsOrBuilder getConsensusParamsOrBuilder();
+  com.tendermint.abci.ConsensusParamsOrBuilder getConsensusParamsOrBuilder();
 
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<ValidatorUpdate>
+  java.util.List<com.tendermint.abci.ValidatorUpdate> 
       getValidatorsList();
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorUpdate getValidators(int index);
+  com.tendermint.abci.ValidatorUpdate getValidators(int index);
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
@@ -65,12 +65,12 @@ public interface RequestInitChainOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends ValidatorUpdateOrBuilder>
+  java.util.List<? extends com.tendermint.abci.ValidatorUpdateOrBuilder> 
       getValidatorsOrBuilderList();
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorUpdateOrBuilder getValidatorsOrBuilder(
+  com.tendermint.abci.ValidatorUpdateOrBuilder getValidatorsOrBuilder(
       int index);
 
   /**

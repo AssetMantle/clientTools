@@ -15,7 +15,7 @@ public interface ListAllInterfacesResponseOrBuilder extends
    * <code>repeated string interface_names = 1 [json_name = "interfaceNames"];</code>
    * @return A list containing the interfaceNames.
    */
-  java.util.List<String>
+  java.util.List<java.lang.String>
       getInterfaceNamesList();
   /**
    * <pre>
@@ -35,7 +35,7 @@ public interface ListAllInterfacesResponseOrBuilder extends
    * @param index The index of the element to return.
    * @return The interfaceNames at the given index.
    */
-  String getInterfaceNames(int index);
+  java.lang.String getInterfaceNames(int index);
   /**
    * <pre>
    * interface_names is an array of all the registered interfaces.

@@ -42,7 +42,7 @@ public final class TypesProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\032tendermint/p2p/types.proto\022\016tendermint" +
       ".p2p\032\024gogoproto/gogo.proto\"P\n\nNetAddress" +
       "\022\026\n\002id\030\001 \001(\tB\006\342\336\037\002IDR\002id\022\026\n\002ip\030\002 \001(\tB\006\342\336" +
@@ -76,25 +76,25 @@ public final class TypesProto {
     internal_static_tendermint_p2p_NetAddress_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_p2p_NetAddress_descriptor,
-        new String[] { "Id", "Ip", "Port", });
+        new java.lang.String[] { "Id", "Ip", "Port", });
     internal_static_tendermint_p2p_ProtocolVersion_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_tendermint_p2p_ProtocolVersion_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_p2p_ProtocolVersion_descriptor,
-        new String[] { "P2P", "Block", "App", });
+        new java.lang.String[] { "P2P", "Block", "App", });
     internal_static_tendermint_p2p_DefaultNodeInfo_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_tendermint_p2p_DefaultNodeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_p2p_DefaultNodeInfo_descriptor,
-        new String[] { "ProtocolVersion", "DefaultNodeId", "ListenAddr", "Network", "Version", "Channels", "Moniker", "Other", });
+        new java.lang.String[] { "ProtocolVersion", "DefaultNodeId", "ListenAddr", "Network", "Version", "Channels", "Moniker", "Other", });
     internal_static_tendermint_p2p_DefaultNodeInfoOther_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_tendermint_p2p_DefaultNodeInfoOther_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_p2p_DefaultNodeInfoOther_descriptor,
-        new String[] { "TxIndex", "RpcAddress", });
+        new java.lang.String[] { "TxIndex", "RpcAddress", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customname);

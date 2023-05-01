@@ -14,7 +14,7 @@ public interface QueryChannelsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
    */
-  java.util.List<IdentifiedChannel>
+  java.util.List<com.ibc.core.channel.v1.IdentifiedChannel> 
       getChannelsList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryChannelsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
    */
-  IdentifiedChannel getChannels(int index);
+  com.ibc.core.channel.v1.IdentifiedChannel getChannels(int index);
   /**
    * <pre>
    * list of stored channels of the chain.
@@ -39,7 +39,7 @@ public interface QueryChannelsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
    */
-  java.util.List<? extends IdentifiedChannelOrBuilder>
+  java.util.List<? extends com.ibc.core.channel.v1.IdentifiedChannelOrBuilder> 
       getChannelsOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryChannelsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels"];</code>
    */
-  IdentifiedChannelOrBuilder getChannelsOrBuilder(
+  com.ibc.core.channel.v1.IdentifiedChannelOrBuilder getChannelsOrBuilder(
       int index);
 
   /**

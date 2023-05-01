@@ -23,29 +23,29 @@ private static final long serialVersionUID = 0L;
     signatures_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new SignatureDescriptors();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return SigningProto.internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_descriptor;
+    return com.cosmos.tx.signing.v1beta1.SigningProto.internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return SigningProto.internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_fieldAccessorTable
+    return com.cosmos.tx.signing.v1beta1.SigningProto.internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            SignatureDescriptors.class, Builder.class);
+            com.cosmos.tx.signing.v1beta1.SignatureDescriptors.class, com.cosmos.tx.signing.v1beta1.SignatureDescriptors.Builder.class);
   }
 
   public static final int SIGNATURES_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<SignatureDescriptor> signatures_;
+  private java.util.List<com.cosmos.tx.signing.v1beta1.SignatureDescriptor> signatures_;
   /**
    * <pre>
    * signatures are the signature descriptors
@@ -53,8 +53,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
    */
-  @Override
-  public java.util.List<SignatureDescriptor> getSignaturesList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.tx.signing.v1beta1.SignatureDescriptor> getSignaturesList() {
     return signatures_;
   }
   /**
@@ -64,8 +64,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
    */
-  @Override
-  public java.util.List<? extends SignatureDescriptorOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.tx.signing.v1beta1.SignatureDescriptorOrBuilder> 
       getSignaturesOrBuilderList() {
     return signatures_;
   }
@@ -76,7 +76,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getSignaturesCount() {
     return signatures_.size();
   }
@@ -87,8 +87,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
    */
-  @Override
-  public SignatureDescriptor getSignatures(int index) {
+  @java.lang.Override
+  public com.cosmos.tx.signing.v1beta1.SignatureDescriptor getSignatures(int index) {
     return signatures_.get(index);
   }
   /**
@@ -98,14 +98,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
    */
-  @Override
-  public SignatureDescriptorOrBuilder getSignaturesOrBuilder(
+  @java.lang.Override
+  public com.cosmos.tx.signing.v1beta1.SignatureDescriptorOrBuilder getSignaturesOrBuilder(
       int index) {
     return signatures_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -115,7 +115,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < signatures_.size(); i++) {
@@ -124,7 +124,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -139,15 +139,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof SignatureDescriptors)) {
+    if (!(obj instanceof com.cosmos.tx.signing.v1beta1.SignatureDescriptors)) {
       return super.equals(obj);
     }
-    SignatureDescriptors other = (SignatureDescriptors) obj;
+    com.cosmos.tx.signing.v1beta1.SignatureDescriptors other = (com.cosmos.tx.signing.v1beta1.SignatureDescriptors) obj;
 
     if (!getSignaturesList()
         .equals(other.getSignaturesList())) return false;
@@ -155,7 +155,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -171,69 +171,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static SignatureDescriptors parseFrom(
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static SignatureDescriptors parseFrom(
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static SignatureDescriptors parseFrom(
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static SignatureDescriptors parseFrom(
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static SignatureDescriptors parseFrom(byte[] data)
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static SignatureDescriptors parseFrom(
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static SignatureDescriptors parseFrom(java.io.InputStream input)
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static SignatureDescriptors parseFrom(
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static SignatureDescriptors parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static SignatureDescriptors parseDelimitedFrom(
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static SignatureDescriptors parseFrom(
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static SignatureDescriptors parseFrom(
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -241,23 +241,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(SignatureDescriptors prototype) {
+  public static Builder newBuilder(com.cosmos.tx.signing.v1beta1.SignatureDescriptors prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -271,18 +271,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.tx.signing.v1beta1.SignatureDescriptors)
-      SignatureDescriptorsOrBuilder {
+      com.cosmos.tx.signing.v1beta1.SignatureDescriptorsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return SigningProto.internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_descriptor;
+      return com.cosmos.tx.signing.v1beta1.SigningProto.internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return SigningProto.internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_fieldAccessorTable
+      return com.cosmos.tx.signing.v1beta1.SigningProto.internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              SignatureDescriptors.class, Builder.class);
+              com.cosmos.tx.signing.v1beta1.SignatureDescriptors.class, com.cosmos.tx.signing.v1beta1.SignatureDescriptors.Builder.class);
     }
 
     // Construct using com.cosmos.tx.signing.v1beta1.SignatureDescriptors.newBuilder()
@@ -291,11 +291,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -309,36 +309,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return SigningProto.internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_descriptor;
+      return com.cosmos.tx.signing.v1beta1.SigningProto.internal_static_cosmos_tx_signing_v1beta1_SignatureDescriptors_descriptor;
     }
 
-    @Override
-    public SignatureDescriptors getDefaultInstanceForType() {
-      return SignatureDescriptors.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.tx.signing.v1beta1.SignatureDescriptors getDefaultInstanceForType() {
+      return com.cosmos.tx.signing.v1beta1.SignatureDescriptors.getDefaultInstance();
     }
 
-    @Override
-    public SignatureDescriptors build() {
-      SignatureDescriptors result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.tx.signing.v1beta1.SignatureDescriptors build() {
+      com.cosmos.tx.signing.v1beta1.SignatureDescriptors result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public SignatureDescriptors buildPartial() {
-      SignatureDescriptors result = new SignatureDescriptors(this);
+    @java.lang.Override
+    public com.cosmos.tx.signing.v1beta1.SignatureDescriptors buildPartial() {
+      com.cosmos.tx.signing.v1beta1.SignatureDescriptors result = new com.cosmos.tx.signing.v1beta1.SignatureDescriptors(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(SignatureDescriptors result) {
+    private void buildPartialRepeatedFields(com.cosmos.tx.signing.v1beta1.SignatureDescriptors result) {
       if (signaturesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           signatures_ = java.util.Collections.unmodifiableList(signatures_);
@@ -350,54 +350,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(SignatureDescriptors result) {
+    private void buildPartial0(com.cosmos.tx.signing.v1beta1.SignatureDescriptors result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof SignatureDescriptors) {
-        return mergeFrom((SignatureDescriptors)other);
+      if (other instanceof com.cosmos.tx.signing.v1beta1.SignatureDescriptors) {
+        return mergeFrom((com.cosmos.tx.signing.v1beta1.SignatureDescriptors)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(SignatureDescriptors other) {
-      if (other == SignatureDescriptors.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.tx.signing.v1beta1.SignatureDescriptors other) {
+      if (other == com.cosmos.tx.signing.v1beta1.SignatureDescriptors.getDefaultInstance()) return this;
       if (signaturesBuilder_ == null) {
         if (!other.signatures_.isEmpty()) {
           if (signatures_.isEmpty()) {
@@ -429,18 +429,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -451,9 +451,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              SignatureDescriptor m =
+              com.cosmos.tx.signing.v1beta1.SignatureDescriptor m =
                   input.readMessage(
-                      SignatureDescriptor.parser(),
+                      com.cosmos.tx.signing.v1beta1.SignatureDescriptor.parser(),
                       extensionRegistry);
               if (signaturesBuilder_ == null) {
                 ensureSignaturesIsMutable();
@@ -480,17 +480,17 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<SignatureDescriptor> signatures_ =
+    private java.util.List<com.cosmos.tx.signing.v1beta1.SignatureDescriptor> signatures_ =
       java.util.Collections.emptyList();
     private void ensureSignaturesIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        signatures_ = new java.util.ArrayList<SignatureDescriptor>(signatures_);
+        signatures_ = new java.util.ArrayList<com.cosmos.tx.signing.v1beta1.SignatureDescriptor>(signatures_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        SignatureDescriptor, SignatureDescriptor.Builder, SignatureDescriptorOrBuilder> signaturesBuilder_;
+        com.cosmos.tx.signing.v1beta1.SignatureDescriptor, com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Builder, com.cosmos.tx.signing.v1beta1.SignatureDescriptorOrBuilder> signaturesBuilder_;
 
     /**
      * <pre>
@@ -499,7 +499,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
-    public java.util.List<SignatureDescriptor> getSignaturesList() {
+    public java.util.List<com.cosmos.tx.signing.v1beta1.SignatureDescriptor> getSignaturesList() {
       if (signaturesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(signatures_);
       } else {
@@ -527,7 +527,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
-    public SignatureDescriptor getSignatures(int index) {
+    public com.cosmos.tx.signing.v1beta1.SignatureDescriptor getSignatures(int index) {
       if (signaturesBuilder_ == null) {
         return signatures_.get(index);
       } else {
@@ -542,7 +542,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
     public Builder setSignatures(
-        int index, SignatureDescriptor value) {
+        int index, com.cosmos.tx.signing.v1beta1.SignatureDescriptor value) {
       if (signaturesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -563,7 +563,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
     public Builder setSignatures(
-        int index, SignatureDescriptor.Builder builderForValue) {
+        int index, com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Builder builderForValue) {
       if (signaturesBuilder_ == null) {
         ensureSignaturesIsMutable();
         signatures_.set(index, builderForValue.build());
@@ -580,7 +580,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
-    public Builder addSignatures(SignatureDescriptor value) {
+    public Builder addSignatures(com.cosmos.tx.signing.v1beta1.SignatureDescriptor value) {
       if (signaturesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -601,7 +601,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
     public Builder addSignatures(
-        int index, SignatureDescriptor value) {
+        int index, com.cosmos.tx.signing.v1beta1.SignatureDescriptor value) {
       if (signaturesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -622,7 +622,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
     public Builder addSignatures(
-        SignatureDescriptor.Builder builderForValue) {
+        com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Builder builderForValue) {
       if (signaturesBuilder_ == null) {
         ensureSignaturesIsMutable();
         signatures_.add(builderForValue.build());
@@ -640,7 +640,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
     public Builder addSignatures(
-        int index, SignatureDescriptor.Builder builderForValue) {
+        int index, com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Builder builderForValue) {
       if (signaturesBuilder_ == null) {
         ensureSignaturesIsMutable();
         signatures_.add(index, builderForValue.build());
@@ -658,7 +658,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
     public Builder addAllSignatures(
-        Iterable<? extends SignatureDescriptor> values) {
+        java.lang.Iterable<? extends com.cosmos.tx.signing.v1beta1.SignatureDescriptor> values) {
       if (signaturesBuilder_ == null) {
         ensureSignaturesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -710,7 +710,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
-    public SignatureDescriptor.Builder getSignaturesBuilder(
+    public com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Builder getSignaturesBuilder(
         int index) {
       return getSignaturesFieldBuilder().getBuilder(index);
     }
@@ -721,7 +721,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
-    public SignatureDescriptorOrBuilder getSignaturesOrBuilder(
+    public com.cosmos.tx.signing.v1beta1.SignatureDescriptorOrBuilder getSignaturesOrBuilder(
         int index) {
       if (signaturesBuilder_ == null) {
         return signatures_.get(index);  } else {
@@ -735,7 +735,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
-    public java.util.List<? extends SignatureDescriptorOrBuilder>
+    public java.util.List<? extends com.cosmos.tx.signing.v1beta1.SignatureDescriptorOrBuilder> 
          getSignaturesOrBuilderList() {
       if (signaturesBuilder_ != null) {
         return signaturesBuilder_.getMessageOrBuilderList();
@@ -750,9 +750,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
-    public SignatureDescriptor.Builder addSignaturesBuilder() {
+    public com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Builder addSignaturesBuilder() {
       return getSignaturesFieldBuilder().addBuilder(
-          SignatureDescriptor.getDefaultInstance());
+          com.cosmos.tx.signing.v1beta1.SignatureDescriptor.getDefaultInstance());
     }
     /**
      * <pre>
@@ -761,10 +761,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
-    public SignatureDescriptor.Builder addSignaturesBuilder(
+    public com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Builder addSignaturesBuilder(
         int index) {
       return getSignaturesFieldBuilder().addBuilder(
-          index, SignatureDescriptor.getDefaultInstance());
+          index, com.cosmos.tx.signing.v1beta1.SignatureDescriptor.getDefaultInstance());
     }
     /**
      * <pre>
@@ -773,16 +773,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.signing.v1beta1.SignatureDescriptor signatures = 1 [json_name = "signatures"];</code>
      */
-    public java.util.List<SignatureDescriptor.Builder>
+    public java.util.List<com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Builder> 
          getSignaturesBuilderList() {
       return getSignaturesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        SignatureDescriptor, SignatureDescriptor.Builder, SignatureDescriptorOrBuilder>
+        com.cosmos.tx.signing.v1beta1.SignatureDescriptor, com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Builder, com.cosmos.tx.signing.v1beta1.SignatureDescriptorOrBuilder> 
         getSignaturesFieldBuilder() {
       if (signaturesBuilder_ == null) {
         signaturesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            SignatureDescriptor, SignatureDescriptor.Builder, SignatureDescriptorOrBuilder>(
+            com.cosmos.tx.signing.v1beta1.SignatureDescriptor, com.cosmos.tx.signing.v1beta1.SignatureDescriptor.Builder, com.cosmos.tx.signing.v1beta1.SignatureDescriptorOrBuilder>(
                 signatures_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -791,13 +791,13 @@ private static final long serialVersionUID = 0L;
       }
       return signaturesBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -808,18 +808,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.tx.signing.v1beta1.SignatureDescriptors)
-  private static final SignatureDescriptors DEFAULT_INSTANCE;
+  private static final com.cosmos.tx.signing.v1beta1.SignatureDescriptors DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new SignatureDescriptors();
+    DEFAULT_INSTANCE = new com.cosmos.tx.signing.v1beta1.SignatureDescriptors();
   }
 
-  public static SignatureDescriptors getDefaultInstance() {
+  public static com.cosmos.tx.signing.v1beta1.SignatureDescriptors getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<SignatureDescriptors>
       PARSER = new com.google.protobuf.AbstractParser<SignatureDescriptors>() {
-    @Override
+    @java.lang.Override
     public SignatureDescriptors parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -843,13 +843,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<SignatureDescriptors> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public SignatureDescriptors getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.tx.signing.v1beta1.SignatureDescriptors getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

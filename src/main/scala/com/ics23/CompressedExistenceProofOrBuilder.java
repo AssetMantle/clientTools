@@ -28,11 +28,11 @@ public interface CompressedExistenceProofOrBuilder extends
    * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
    * @return The leaf.
    */
-  LeafOp getLeaf();
+  com.ics23.LeafOp getLeaf();
   /**
    * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
    */
-  LeafOpOrBuilder getLeafOrBuilder();
+  com.ics23.LeafOpOrBuilder getLeafOrBuilder();
 
   /**
    * <pre>
@@ -42,7 +42,7 @@ public interface CompressedExistenceProofOrBuilder extends
    * <code>repeated int32 path = 4 [json_name = "path"];</code>
    * @return A list containing the path.
    */
-  java.util.List<Integer> getPathList();
+  java.util.List<java.lang.Integer> getPathList();
   /**
    * <pre>
    * these are indexes into the lookup_inners table in CompressedBatchProof

@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private QueryValidatorResponse() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryValidatorResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_staking_v1beta1_QueryValidatorResponse_descriptor;
+    return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryValidatorResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_staking_v1beta1_QueryValidatorResponse_fieldAccessorTable
+    return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryValidatorResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryValidatorResponse.class, Builder.class);
+            com.cosmos.staking.v1beta1.QueryValidatorResponse.class, com.cosmos.staking.v1beta1.QueryValidatorResponse.Builder.class);
   }
 
   public static final int VALIDATOR_FIELD_NUMBER = 1;
-  private Validator validator_;
+  private com.cosmos.staking.v1beta1.Validator validator_;
   /**
    * <pre>
    * validator defines the the validator info.
@@ -52,7 +52,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    * @return Whether the validator field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasValidator() {
     return validator_ != null;
   }
@@ -64,9 +64,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    * @return The validator.
    */
-  @Override
-  public Validator getValidator() {
-    return validator_ == null ? Validator.getDefaultInstance() : validator_;
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.Validator getValidator() {
+    return validator_ == null ? com.cosmos.staking.v1beta1.Validator.getDefaultInstance() : validator_;
   }
   /**
    * <pre>
@@ -75,13 +75,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public ValidatorOrBuilder getValidatorOrBuilder() {
-    return validator_ == null ? Validator.getDefaultInstance() : validator_;
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.ValidatorOrBuilder getValidatorOrBuilder() {
+    return validator_ == null ? com.cosmos.staking.v1beta1.Validator.getDefaultInstance() : validator_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -91,7 +91,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (validator_ != null) {
@@ -100,7 +100,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -115,15 +115,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryValidatorResponse)) {
+    if (!(obj instanceof com.cosmos.staking.v1beta1.QueryValidatorResponse)) {
       return super.equals(obj);
     }
-    QueryValidatorResponse other = (QueryValidatorResponse) obj;
+    com.cosmos.staking.v1beta1.QueryValidatorResponse other = (com.cosmos.staking.v1beta1.QueryValidatorResponse) obj;
 
     if (hasValidator() != other.hasValidator()) return false;
     if (hasValidator()) {
@@ -134,7 +134,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -150,69 +150,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryValidatorResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryValidatorResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryValidatorResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryValidatorResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryValidatorResponse parseFrom(byte[] data)
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryValidatorResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryValidatorResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryValidatorResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryValidatorResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryValidatorResponse parseDelimitedFrom(
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryValidatorResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryValidatorResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -220,23 +220,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryValidatorResponse prototype) {
+  public static Builder newBuilder(com.cosmos.staking.v1beta1.QueryValidatorResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -250,18 +250,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.QueryValidatorResponse)
-      QueryValidatorResponseOrBuilder {
+      com.cosmos.staking.v1beta1.QueryValidatorResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_staking_v1beta1_QueryValidatorResponse_descriptor;
+      return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryValidatorResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_staking_v1beta1_QueryValidatorResponse_fieldAccessorTable
+      return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryValidatorResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryValidatorResponse.class, Builder.class);
+              com.cosmos.staking.v1beta1.QueryValidatorResponse.class, com.cosmos.staking.v1beta1.QueryValidatorResponse.Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.QueryValidatorResponse.newBuilder()
@@ -270,11 +270,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -286,35 +286,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_staking_v1beta1_QueryValidatorResponse_descriptor;
+      return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryValidatorResponse_descriptor;
     }
 
-    @Override
-    public QueryValidatorResponse getDefaultInstanceForType() {
-      return QueryValidatorResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.QueryValidatorResponse getDefaultInstanceForType() {
+      return com.cosmos.staking.v1beta1.QueryValidatorResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryValidatorResponse build() {
-      QueryValidatorResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.QueryValidatorResponse build() {
+      com.cosmos.staking.v1beta1.QueryValidatorResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryValidatorResponse buildPartial() {
-      QueryValidatorResponse result = new QueryValidatorResponse(this);
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.QueryValidatorResponse buildPartial() {
+      com.cosmos.staking.v1beta1.QueryValidatorResponse result = new com.cosmos.staking.v1beta1.QueryValidatorResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(QueryValidatorResponse result) {
+    private void buildPartial0(com.cosmos.staking.v1beta1.QueryValidatorResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.validator_ = validatorBuilder_ == null
@@ -323,50 +323,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryValidatorResponse) {
-        return mergeFrom((QueryValidatorResponse)other);
+      if (other instanceof com.cosmos.staking.v1beta1.QueryValidatorResponse) {
+        return mergeFrom((com.cosmos.staking.v1beta1.QueryValidatorResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryValidatorResponse other) {
-      if (other == QueryValidatorResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.staking.v1beta1.QueryValidatorResponse other) {
+      if (other == com.cosmos.staking.v1beta1.QueryValidatorResponse.getDefaultInstance()) return this;
       if (other.hasValidator()) {
         mergeValidator(other.getValidator());
       }
@@ -375,18 +375,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -420,9 +420,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Validator validator_;
+    private com.cosmos.staking.v1beta1.Validator validator_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        Validator, Validator.Builder, ValidatorOrBuilder> validatorBuilder_;
+        com.cosmos.staking.v1beta1.Validator, com.cosmos.staking.v1beta1.Validator.Builder, com.cosmos.staking.v1beta1.ValidatorOrBuilder> validatorBuilder_;
     /**
      * <pre>
      * validator defines the the validator info.
@@ -442,9 +442,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
      * @return The validator.
      */
-    public Validator getValidator() {
+    public com.cosmos.staking.v1beta1.Validator getValidator() {
       if (validatorBuilder_ == null) {
-        return validator_ == null ? Validator.getDefaultInstance() : validator_;
+        return validator_ == null ? com.cosmos.staking.v1beta1.Validator.getDefaultInstance() : validator_;
       } else {
         return validatorBuilder_.getMessage();
       }
@@ -456,7 +456,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setValidator(Validator value) {
+    public Builder setValidator(com.cosmos.staking.v1beta1.Validator value) {
       if (validatorBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -477,7 +477,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
      */
     public Builder setValidator(
-        Validator.Builder builderForValue) {
+        com.cosmos.staking.v1beta1.Validator.Builder builderForValue) {
       if (validatorBuilder_ == null) {
         validator_ = builderForValue.build();
       } else {
@@ -494,11 +494,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeValidator(Validator value) {
+    public Builder mergeValidator(com.cosmos.staking.v1beta1.Validator value) {
       if (validatorBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           validator_ != null &&
-          validator_ != Validator.getDefaultInstance()) {
+          validator_ != com.cosmos.staking.v1beta1.Validator.getDefaultInstance()) {
           getValidatorBuilder().mergeFrom(value);
         } else {
           validator_ = value;
@@ -534,7 +534,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
      */
-    public Validator.Builder getValidatorBuilder() {
+    public com.cosmos.staking.v1beta1.Validator.Builder getValidatorBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getValidatorFieldBuilder().getBuilder();
@@ -546,12 +546,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
      */
-    public ValidatorOrBuilder getValidatorOrBuilder() {
+    public com.cosmos.staking.v1beta1.ValidatorOrBuilder getValidatorOrBuilder() {
       if (validatorBuilder_ != null) {
         return validatorBuilder_.getMessageOrBuilder();
       } else {
         return validator_ == null ?
-            Validator.getDefaultInstance() : validator_;
+            com.cosmos.staking.v1beta1.Validator.getDefaultInstance() : validator_;
       }
     }
     /**
@@ -562,11 +562,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Validator, Validator.Builder, ValidatorOrBuilder>
+        com.cosmos.staking.v1beta1.Validator, com.cosmos.staking.v1beta1.Validator.Builder, com.cosmos.staking.v1beta1.ValidatorOrBuilder> 
         getValidatorFieldBuilder() {
       if (validatorBuilder_ == null) {
         validatorBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Validator, Validator.Builder, ValidatorOrBuilder>(
+            com.cosmos.staking.v1beta1.Validator, com.cosmos.staking.v1beta1.Validator.Builder, com.cosmos.staking.v1beta1.ValidatorOrBuilder>(
                 getValidator(),
                 getParentForChildren(),
                 isClean());
@@ -574,13 +574,13 @@ private static final long serialVersionUID = 0L;
       }
       return validatorBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -591,18 +591,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.QueryValidatorResponse)
-  private static final QueryValidatorResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.staking.v1beta1.QueryValidatorResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryValidatorResponse();
+    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.QueryValidatorResponse();
   }
 
-  public static QueryValidatorResponse getDefaultInstance() {
+  public static com.cosmos.staking.v1beta1.QueryValidatorResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryValidatorResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryValidatorResponse>() {
-    @Override
+    @java.lang.Override
     public QueryValidatorResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -626,13 +626,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryValidatorResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryValidatorResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.QueryValidatorResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -42,7 +42,7 @@ public final class CoinProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\036cosmos/base/v1beta1/coin.proto\022\023cosmos" +
       ".base.v1beta1\032\024gogoproto/gogo.proto\"G\n\004C" +
       "oin\022\024\n\005denom\030\001 \001(\tR\005denom\022#\n\006amount\030\002 \001(" +
@@ -68,25 +68,25 @@ public final class CoinProto {
     internal_static_cosmos_base_v1beta1_Coin_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_v1beta1_Coin_descriptor,
-        new String[] { "Denom", "Amount", });
+        new java.lang.String[] { "Denom", "Amount", });
     internal_static_cosmos_base_v1beta1_DecCoin_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_base_v1beta1_DecCoin_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_v1beta1_DecCoin_descriptor,
-        new String[] { "Denom", "Amount", });
+        new java.lang.String[] { "Denom", "Amount", });
     internal_static_cosmos_base_v1beta1_IntProto_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_base_v1beta1_IntProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_v1beta1_IntProto_descriptor,
-        new String[] { "Int", });
+        new java.lang.String[] { "Int", });
     internal_static_cosmos_base_v1beta1_DecProto_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_base_v1beta1_DecProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_v1beta1_DecProto_descriptor,
-        new String[] { "Dec", });
+        new java.lang.String[] { "Dec", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customtype);

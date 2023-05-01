@@ -10,12 +10,12 @@ public interface DVVTripletsOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<DVVTriplet>
+  java.util.List<com.cosmos.staking.v1beta1.DVVTriplet> 
       getTripletsList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
    */
-  DVVTriplet getTriplets(int index);
+  com.cosmos.staking.v1beta1.DVVTriplet getTriplets(int index);
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
    */
@@ -23,11 +23,11 @@ public interface DVVTripletsOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends DVVTripletOrBuilder>
+  java.util.List<? extends com.cosmos.staking.v1beta1.DVVTripletOrBuilder> 
       getTripletsOrBuilderList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVVTriplet triplets = 1 [json_name = "triplets", (.gogoproto.nullable) = false];</code>
    */
-  DVVTripletOrBuilder getTripletsOrBuilder(
+  com.cosmos.staking.v1beta1.DVVTripletOrBuilder getTripletsOrBuilder(
       int index);
 }

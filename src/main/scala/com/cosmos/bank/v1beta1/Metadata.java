@@ -29,42 +29,42 @@ private static final long serialVersionUID = 0L;
     symbol_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Metadata();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return BankProto.internal_static_cosmos_bank_v1beta1_Metadata_descriptor;
+    return com.cosmos.bank.v1beta1.BankProto.internal_static_cosmos_bank_v1beta1_Metadata_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return BankProto.internal_static_cosmos_bank_v1beta1_Metadata_fieldAccessorTable
+    return com.cosmos.bank.v1beta1.BankProto.internal_static_cosmos_bank_v1beta1_Metadata_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Metadata.class, Builder.class);
+            com.cosmos.bank.v1beta1.Metadata.class, com.cosmos.bank.v1beta1.Metadata.Builder.class);
   }
 
   public static final int DESCRIPTION_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object description_ = "";
+  private volatile java.lang.Object description_ = "";
   /**
    * <code>string description = 1 [json_name = "description"];</code>
    * @return The description.
    */
-  @Override
-  public String getDescription() {
-    Object ref = description_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getDescription() {
+    java.lang.Object ref = description_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       description_ = s;
       return s;
     }
@@ -73,14 +73,14 @@ private static final long serialVersionUID = 0L;
    * <code>string description = 1 [json_name = "description"];</code>
    * @return The bytes for description.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDescriptionBytes() {
-    Object ref = description_;
-    if (ref instanceof String) {
+    java.lang.Object ref = description_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       description_ = b;
       return b;
     } else {
@@ -90,7 +90,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int DENOM_UNITS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<DenomUnit> denomUnits_;
+  private java.util.List<com.cosmos.bank.v1beta1.DenomUnit> denomUnits_;
   /**
    * <pre>
    * denom_units represents the list of DenomUnit's for a given coin
@@ -98,8 +98,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
    */
-  @Override
-  public java.util.List<DenomUnit> getDenomUnitsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.bank.v1beta1.DenomUnit> getDenomUnitsList() {
     return denomUnits_;
   }
   /**
@@ -109,8 +109,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
    */
-  @Override
-  public java.util.List<? extends DenomUnitOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.bank.v1beta1.DenomUnitOrBuilder> 
       getDenomUnitsOrBuilderList() {
     return denomUnits_;
   }
@@ -121,7 +121,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getDenomUnitsCount() {
     return denomUnits_.size();
   }
@@ -132,8 +132,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
    */
-  @Override
-  public DenomUnit getDenomUnits(int index) {
+  @java.lang.Override
+  public com.cosmos.bank.v1beta1.DenomUnit getDenomUnits(int index) {
     return denomUnits_.get(index);
   }
   /**
@@ -143,15 +143,15 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
    */
-  @Override
-  public DenomUnitOrBuilder getDenomUnitsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.bank.v1beta1.DenomUnitOrBuilder getDenomUnitsOrBuilder(
       int index) {
     return denomUnits_.get(index);
   }
 
   public static final int BASE_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile Object base_ = "";
+  private volatile java.lang.Object base_ = "";
   /**
    * <pre>
    * base represents the base denom (should be the DenomUnit with exponent = 0).
@@ -160,15 +160,15 @@ private static final long serialVersionUID = 0L;
    * <code>string base = 3 [json_name = "base"];</code>
    * @return The base.
    */
-  @Override
-  public String getBase() {
-    Object ref = base_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getBase() {
+    java.lang.Object ref = base_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       base_ = s;
       return s;
     }
@@ -181,14 +181,14 @@ private static final long serialVersionUID = 0L;
    * <code>string base = 3 [json_name = "base"];</code>
    * @return The bytes for base.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getBaseBytes() {
-    Object ref = base_;
-    if (ref instanceof String) {
+    java.lang.Object ref = base_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       base_ = b;
       return b;
     } else {
@@ -198,7 +198,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int DISPLAY_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile Object display_ = "";
+  private volatile java.lang.Object display_ = "";
   /**
    * <pre>
    * display indicates the suggested denom that should be
@@ -208,15 +208,15 @@ private static final long serialVersionUID = 0L;
    * <code>string display = 4 [json_name = "display"];</code>
    * @return The display.
    */
-  @Override
-  public String getDisplay() {
-    Object ref = display_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getDisplay() {
+    java.lang.Object ref = display_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       display_ = s;
       return s;
     }
@@ -230,14 +230,14 @@ private static final long serialVersionUID = 0L;
    * <code>string display = 4 [json_name = "display"];</code>
    * @return The bytes for display.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDisplayBytes() {
-    Object ref = display_;
-    if (ref instanceof String) {
+    java.lang.Object ref = display_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       display_ = b;
       return b;
     } else {
@@ -247,7 +247,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int NAME_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private volatile Object name_ = "";
+  private volatile java.lang.Object name_ = "";
   /**
    * <pre>
    * name defines the name of the token (eg: Cosmos Atom)
@@ -258,15 +258,15 @@ private static final long serialVersionUID = 0L;
    * <code>string name = 5 [json_name = "name"];</code>
    * @return The name.
    */
-  @Override
-  public String getName() {
-    Object ref = name_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getName() {
+    java.lang.Object ref = name_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       name_ = s;
       return s;
     }
@@ -281,14 +281,14 @@ private static final long serialVersionUID = 0L;
    * <code>string name = 5 [json_name = "name"];</code>
    * @return The bytes for name.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
-    Object ref = name_;
-    if (ref instanceof String) {
+    java.lang.Object ref = name_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       name_ = b;
       return b;
     } else {
@@ -298,7 +298,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int SYMBOL_FIELD_NUMBER = 6;
   @SuppressWarnings("serial")
-  private volatile Object symbol_ = "";
+  private volatile java.lang.Object symbol_ = "";
   /**
    * <pre>
    * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
@@ -310,15 +310,15 @@ private static final long serialVersionUID = 0L;
    * <code>string symbol = 6 [json_name = "symbol"];</code>
    * @return The symbol.
    */
-  @Override
-  public String getSymbol() {
-    Object ref = symbol_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getSymbol() {
+    java.lang.Object ref = symbol_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       symbol_ = s;
       return s;
     }
@@ -334,14 +334,14 @@ private static final long serialVersionUID = 0L;
    * <code>string symbol = 6 [json_name = "symbol"];</code>
    * @return The bytes for symbol.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getSymbolBytes() {
-    Object ref = symbol_;
-    if (ref instanceof String) {
+    java.lang.Object ref = symbol_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       symbol_ = b;
       return b;
     } else {
@@ -350,7 +350,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -360,7 +360,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
@@ -384,7 +384,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -414,15 +414,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Metadata)) {
+    if (!(obj instanceof com.cosmos.bank.v1beta1.Metadata)) {
       return super.equals(obj);
     }
-    Metadata other = (Metadata) obj;
+    com.cosmos.bank.v1beta1.Metadata other = (com.cosmos.bank.v1beta1.Metadata) obj;
 
     if (!getDescription()
         .equals(other.getDescription())) return false;
@@ -440,7 +440,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -466,69 +466,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Metadata parseFrom(
+  public static com.cosmos.bank.v1beta1.Metadata parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.bank.v1beta1.Metadata parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.bank.v1beta1.Metadata parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.bank.v1beta1.Metadata parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Metadata parseFrom(byte[] data)
+  public static com.cosmos.bank.v1beta1.Metadata parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.bank.v1beta1.Metadata parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Metadata parseFrom(java.io.InputStream input)
+  public static com.cosmos.bank.v1beta1.Metadata parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.bank.v1beta1.Metadata parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Metadata parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.bank.v1beta1.Metadata parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Metadata parseDelimitedFrom(
+  public static com.cosmos.bank.v1beta1.Metadata parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.bank.v1beta1.Metadata parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Metadata parseFrom(
+  public static com.cosmos.bank.v1beta1.Metadata parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -536,23 +536,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Metadata prototype) {
+  public static Builder newBuilder(com.cosmos.bank.v1beta1.Metadata prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -567,18 +567,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.bank.v1beta1.Metadata)
-      MetadataOrBuilder {
+      com.cosmos.bank.v1beta1.MetadataOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return BankProto.internal_static_cosmos_bank_v1beta1_Metadata_descriptor;
+      return com.cosmos.bank.v1beta1.BankProto.internal_static_cosmos_bank_v1beta1_Metadata_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return BankProto.internal_static_cosmos_bank_v1beta1_Metadata_fieldAccessorTable
+      return com.cosmos.bank.v1beta1.BankProto.internal_static_cosmos_bank_v1beta1_Metadata_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Metadata.class, Builder.class);
+              com.cosmos.bank.v1beta1.Metadata.class, com.cosmos.bank.v1beta1.Metadata.Builder.class);
     }
 
     // Construct using com.cosmos.bank.v1beta1.Metadata.newBuilder()
@@ -587,11 +587,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -610,36 +610,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return BankProto.internal_static_cosmos_bank_v1beta1_Metadata_descriptor;
+      return com.cosmos.bank.v1beta1.BankProto.internal_static_cosmos_bank_v1beta1_Metadata_descriptor;
     }
 
-    @Override
-    public Metadata getDefaultInstanceForType() {
-      return Metadata.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.bank.v1beta1.Metadata getDefaultInstanceForType() {
+      return com.cosmos.bank.v1beta1.Metadata.getDefaultInstance();
     }
 
-    @Override
-    public Metadata build() {
-      Metadata result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.bank.v1beta1.Metadata build() {
+      com.cosmos.bank.v1beta1.Metadata result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Metadata buildPartial() {
-      Metadata result = new Metadata(this);
+    @java.lang.Override
+    public com.cosmos.bank.v1beta1.Metadata buildPartial() {
+      com.cosmos.bank.v1beta1.Metadata result = new com.cosmos.bank.v1beta1.Metadata(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(Metadata result) {
+    private void buildPartialRepeatedFields(com.cosmos.bank.v1beta1.Metadata result) {
       if (denomUnitsBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           denomUnits_ = java.util.Collections.unmodifiableList(denomUnits_);
@@ -651,7 +651,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(Metadata result) {
+    private void buildPartial0(com.cosmos.bank.v1beta1.Metadata result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.description_ = description_;
@@ -670,50 +670,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Metadata) {
-        return mergeFrom((Metadata)other);
+      if (other instanceof com.cosmos.bank.v1beta1.Metadata) {
+        return mergeFrom((com.cosmos.bank.v1beta1.Metadata)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Metadata other) {
-      if (other == Metadata.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.bank.v1beta1.Metadata other) {
+      if (other == com.cosmos.bank.v1beta1.Metadata.getDefaultInstance()) return this;
       if (!other.getDescription().isEmpty()) {
         description_ = other.description_;
         bitField0_ |= 0x00000001;
@@ -770,18 +770,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -797,9 +797,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              DenomUnit m =
+              com.cosmos.bank.v1beta1.DenomUnit m =
                   input.readMessage(
-                      DenomUnit.parser(),
+                      com.cosmos.bank.v1beta1.DenomUnit.parser(),
                       extensionRegistry);
               if (denomUnitsBuilder_ == null) {
                 ensureDenomUnitsIsMutable();
@@ -846,21 +846,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object description_ = "";
+    private java.lang.Object description_ = "";
     /**
      * <code>string description = 1 [json_name = "description"];</code>
      * @return The description.
      */
-    public String getDescription() {
-      Object ref = description_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getDescription() {
+      java.lang.Object ref = description_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         description_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -869,11 +869,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getDescriptionBytes() {
-      Object ref = description_;
+      java.lang.Object ref = description_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         description_ = b;
         return b;
       } else {
@@ -886,7 +886,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDescription(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       description_ = value;
       bitField0_ |= 0x00000001;
@@ -918,17 +918,17 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<DenomUnit> denomUnits_ =
+    private java.util.List<com.cosmos.bank.v1beta1.DenomUnit> denomUnits_ =
       java.util.Collections.emptyList();
     private void ensureDenomUnitsIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        denomUnits_ = new java.util.ArrayList<DenomUnit>(denomUnits_);
+        denomUnits_ = new java.util.ArrayList<com.cosmos.bank.v1beta1.DenomUnit>(denomUnits_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        DenomUnit, DenomUnit.Builder, DenomUnitOrBuilder> denomUnitsBuilder_;
+        com.cosmos.bank.v1beta1.DenomUnit, com.cosmos.bank.v1beta1.DenomUnit.Builder, com.cosmos.bank.v1beta1.DenomUnitOrBuilder> denomUnitsBuilder_;
 
     /**
      * <pre>
@@ -937,7 +937,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
-    public java.util.List<DenomUnit> getDenomUnitsList() {
+    public java.util.List<com.cosmos.bank.v1beta1.DenomUnit> getDenomUnitsList() {
       if (denomUnitsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(denomUnits_);
       } else {
@@ -965,7 +965,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
-    public DenomUnit getDenomUnits(int index) {
+    public com.cosmos.bank.v1beta1.DenomUnit getDenomUnits(int index) {
       if (denomUnitsBuilder_ == null) {
         return denomUnits_.get(index);
       } else {
@@ -980,7 +980,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
     public Builder setDenomUnits(
-        int index, DenomUnit value) {
+        int index, com.cosmos.bank.v1beta1.DenomUnit value) {
       if (denomUnitsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1001,7 +1001,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
     public Builder setDenomUnits(
-        int index, DenomUnit.Builder builderForValue) {
+        int index, com.cosmos.bank.v1beta1.DenomUnit.Builder builderForValue) {
       if (denomUnitsBuilder_ == null) {
         ensureDenomUnitsIsMutable();
         denomUnits_.set(index, builderForValue.build());
@@ -1018,7 +1018,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
-    public Builder addDenomUnits(DenomUnit value) {
+    public Builder addDenomUnits(com.cosmos.bank.v1beta1.DenomUnit value) {
       if (denomUnitsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1039,7 +1039,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
     public Builder addDenomUnits(
-        int index, DenomUnit value) {
+        int index, com.cosmos.bank.v1beta1.DenomUnit value) {
       if (denomUnitsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1060,7 +1060,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
     public Builder addDenomUnits(
-        DenomUnit.Builder builderForValue) {
+        com.cosmos.bank.v1beta1.DenomUnit.Builder builderForValue) {
       if (denomUnitsBuilder_ == null) {
         ensureDenomUnitsIsMutable();
         denomUnits_.add(builderForValue.build());
@@ -1078,7 +1078,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
     public Builder addDenomUnits(
-        int index, DenomUnit.Builder builderForValue) {
+        int index, com.cosmos.bank.v1beta1.DenomUnit.Builder builderForValue) {
       if (denomUnitsBuilder_ == null) {
         ensureDenomUnitsIsMutable();
         denomUnits_.add(index, builderForValue.build());
@@ -1096,7 +1096,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
     public Builder addAllDenomUnits(
-        Iterable<? extends DenomUnit> values) {
+        java.lang.Iterable<? extends com.cosmos.bank.v1beta1.DenomUnit> values) {
       if (denomUnitsBuilder_ == null) {
         ensureDenomUnitsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1148,7 +1148,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
-    public DenomUnit.Builder getDenomUnitsBuilder(
+    public com.cosmos.bank.v1beta1.DenomUnit.Builder getDenomUnitsBuilder(
         int index) {
       return getDenomUnitsFieldBuilder().getBuilder(index);
     }
@@ -1159,7 +1159,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
-    public DenomUnitOrBuilder getDenomUnitsOrBuilder(
+    public com.cosmos.bank.v1beta1.DenomUnitOrBuilder getDenomUnitsOrBuilder(
         int index) {
       if (denomUnitsBuilder_ == null) {
         return denomUnits_.get(index);  } else {
@@ -1173,7 +1173,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
-    public java.util.List<? extends DenomUnitOrBuilder>
+    public java.util.List<? extends com.cosmos.bank.v1beta1.DenomUnitOrBuilder> 
          getDenomUnitsOrBuilderList() {
       if (denomUnitsBuilder_ != null) {
         return denomUnitsBuilder_.getMessageOrBuilderList();
@@ -1188,9 +1188,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
-    public DenomUnit.Builder addDenomUnitsBuilder() {
+    public com.cosmos.bank.v1beta1.DenomUnit.Builder addDenomUnitsBuilder() {
       return getDenomUnitsFieldBuilder().addBuilder(
-          DenomUnit.getDefaultInstance());
+          com.cosmos.bank.v1beta1.DenomUnit.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1199,10 +1199,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
-    public DenomUnit.Builder addDenomUnitsBuilder(
+    public com.cosmos.bank.v1beta1.DenomUnit.Builder addDenomUnitsBuilder(
         int index) {
       return getDenomUnitsFieldBuilder().addBuilder(
-          index, DenomUnit.getDefaultInstance());
+          index, com.cosmos.bank.v1beta1.DenomUnit.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1211,16 +1211,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2 [json_name = "denomUnits"];</code>
      */
-    public java.util.List<DenomUnit.Builder>
+    public java.util.List<com.cosmos.bank.v1beta1.DenomUnit.Builder> 
          getDenomUnitsBuilderList() {
       return getDenomUnitsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        DenomUnit, DenomUnit.Builder, DenomUnitOrBuilder>
+        com.cosmos.bank.v1beta1.DenomUnit, com.cosmos.bank.v1beta1.DenomUnit.Builder, com.cosmos.bank.v1beta1.DenomUnitOrBuilder> 
         getDenomUnitsFieldBuilder() {
       if (denomUnitsBuilder_ == null) {
         denomUnitsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            DenomUnit, DenomUnit.Builder, DenomUnitOrBuilder>(
+            com.cosmos.bank.v1beta1.DenomUnit, com.cosmos.bank.v1beta1.DenomUnit.Builder, com.cosmos.bank.v1beta1.DenomUnitOrBuilder>(
                 denomUnits_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1230,7 +1230,7 @@ private static final long serialVersionUID = 0L;
       return denomUnitsBuilder_;
     }
 
-    private Object base_ = "";
+    private java.lang.Object base_ = "";
     /**
      * <pre>
      * base represents the base denom (should be the DenomUnit with exponent = 0).
@@ -1239,16 +1239,16 @@ private static final long serialVersionUID = 0L;
      * <code>string base = 3 [json_name = "base"];</code>
      * @return The base.
      */
-    public String getBase() {
-      Object ref = base_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getBase() {
+      java.lang.Object ref = base_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         base_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1261,11 +1261,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getBaseBytes() {
-      Object ref = base_;
+      java.lang.Object ref = base_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         base_ = b;
         return b;
       } else {
@@ -1282,7 +1282,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setBase(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       base_ = value;
       bitField0_ |= 0x00000004;
@@ -1322,7 +1322,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object display_ = "";
+    private java.lang.Object display_ = "";
     /**
      * <pre>
      * display indicates the suggested denom that should be
@@ -1332,16 +1332,16 @@ private static final long serialVersionUID = 0L;
      * <code>string display = 4 [json_name = "display"];</code>
      * @return The display.
      */
-    public String getDisplay() {
-      Object ref = display_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getDisplay() {
+      java.lang.Object ref = display_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         display_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1355,11 +1355,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getDisplayBytes() {
-      Object ref = display_;
+      java.lang.Object ref = display_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         display_ = b;
         return b;
       } else {
@@ -1377,7 +1377,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDisplay(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       display_ = value;
       bitField0_ |= 0x00000008;
@@ -1419,7 +1419,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object name_ = "";
+    private java.lang.Object name_ = "";
     /**
      * <pre>
      * name defines the name of the token (eg: Cosmos Atom)
@@ -1430,16 +1430,16 @@ private static final long serialVersionUID = 0L;
      * <code>string name = 5 [json_name = "name"];</code>
      * @return The name.
      */
-    public String getName() {
-      Object ref = name_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         name_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1454,11 +1454,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -1477,7 +1477,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setName(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       name_ = value;
       bitField0_ |= 0x00000010;
@@ -1521,7 +1521,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object symbol_ = "";
+    private java.lang.Object symbol_ = "";
     /**
      * <pre>
      * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
@@ -1533,16 +1533,16 @@ private static final long serialVersionUID = 0L;
      * <code>string symbol = 6 [json_name = "symbol"];</code>
      * @return The symbol.
      */
-    public String getSymbol() {
-      Object ref = symbol_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getSymbol() {
+      java.lang.Object ref = symbol_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         symbol_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1558,11 +1558,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getSymbolBytes() {
-      Object ref = symbol_;
+      java.lang.Object ref = symbol_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         symbol_ = b;
         return b;
       } else {
@@ -1582,7 +1582,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSymbol(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       symbol_ = value;
       bitField0_ |= 0x00000020;
@@ -1627,13 +1627,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1644,18 +1644,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.bank.v1beta1.Metadata)
-  private static final Metadata DEFAULT_INSTANCE;
+  private static final com.cosmos.bank.v1beta1.Metadata DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Metadata();
+    DEFAULT_INSTANCE = new com.cosmos.bank.v1beta1.Metadata();
   }
 
-  public static Metadata getDefaultInstance() {
+  public static com.cosmos.bank.v1beta1.Metadata getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Metadata>
       PARSER = new com.google.protobuf.AbstractParser<Metadata>() {
-    @Override
+    @java.lang.Override
     public Metadata parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1679,13 +1679,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Metadata> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Metadata getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.bank.v1beta1.Metadata getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

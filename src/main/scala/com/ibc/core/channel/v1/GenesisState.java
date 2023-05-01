@@ -29,309 +29,309 @@ private static final long serialVersionUID = 0L;
     ackSequences_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new GenesisState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GenesisProto.internal_static_ibc_core_channel_v1_GenesisState_descriptor;
+    return com.ibc.core.channel.v1.GenesisProto.internal_static_ibc_core_channel_v1_GenesisState_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GenesisProto.internal_static_ibc_core_channel_v1_GenesisState_fieldAccessorTable
+    return com.ibc.core.channel.v1.GenesisProto.internal_static_ibc_core_channel_v1_GenesisState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            GenesisState.class, Builder.class);
+            com.ibc.core.channel.v1.GenesisState.class, com.ibc.core.channel.v1.GenesisState.Builder.class);
   }
 
   public static final int CHANNELS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<IdentifiedChannel> channels_;
+  private java.util.List<com.ibc.core.channel.v1.IdentifiedChannel> channels_;
   /**
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
    */
-  @Override
-  public java.util.List<IdentifiedChannel> getChannelsList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.core.channel.v1.IdentifiedChannel> getChannelsList() {
     return channels_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
    */
-  @Override
-  public java.util.List<? extends IdentifiedChannelOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.core.channel.v1.IdentifiedChannelOrBuilder> 
       getChannelsOrBuilderList() {
     return channels_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getChannelsCount() {
     return channels_.size();
   }
   /**
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
    */
-  @Override
-  public IdentifiedChannel getChannels(int index) {
+  @java.lang.Override
+  public com.ibc.core.channel.v1.IdentifiedChannel getChannels(int index) {
     return channels_.get(index);
   }
   /**
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
    */
-  @Override
-  public IdentifiedChannelOrBuilder getChannelsOrBuilder(
+  @java.lang.Override
+  public com.ibc.core.channel.v1.IdentifiedChannelOrBuilder getChannelsOrBuilder(
       int index) {
     return channels_.get(index);
   }
 
   public static final int ACKNOWLEDGEMENTS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<PacketState> acknowledgements_;
+  private java.util.List<com.ibc.core.channel.v1.PacketState> acknowledgements_;
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<PacketState> getAcknowledgementsList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.core.channel.v1.PacketState> getAcknowledgementsList() {
     return acknowledgements_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends PacketStateOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
       getAcknowledgementsOrBuilderList() {
     return acknowledgements_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getAcknowledgementsCount() {
     return acknowledgements_.size();
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public PacketState getAcknowledgements(int index) {
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketState getAcknowledgements(int index) {
     return acknowledgements_.get(index);
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public PacketStateOrBuilder getAcknowledgementsOrBuilder(
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketStateOrBuilder getAcknowledgementsOrBuilder(
       int index) {
     return acknowledgements_.get(index);
   }
 
   public static final int COMMITMENTS_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private java.util.List<PacketState> commitments_;
+  private java.util.List<com.ibc.core.channel.v1.PacketState> commitments_;
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<PacketState> getCommitmentsList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.core.channel.v1.PacketState> getCommitmentsList() {
     return commitments_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends PacketStateOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
       getCommitmentsOrBuilderList() {
     return commitments_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getCommitmentsCount() {
     return commitments_.size();
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public PacketState getCommitments(int index) {
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketState getCommitments(int index) {
     return commitments_.get(index);
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public PacketStateOrBuilder getCommitmentsOrBuilder(
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketStateOrBuilder getCommitmentsOrBuilder(
       int index) {
     return commitments_.get(index);
   }
 
   public static final int RECEIPTS_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private java.util.List<PacketState> receipts_;
+  private java.util.List<com.ibc.core.channel.v1.PacketState> receipts_;
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<PacketState> getReceiptsList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.core.channel.v1.PacketState> getReceiptsList() {
     return receipts_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends PacketStateOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
       getReceiptsOrBuilderList() {
     return receipts_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getReceiptsCount() {
     return receipts_.size();
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public PacketState getReceipts(int index) {
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketState getReceipts(int index) {
     return receipts_.get(index);
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public PacketStateOrBuilder getReceiptsOrBuilder(
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketStateOrBuilder getReceiptsOrBuilder(
       int index) {
     return receipts_.get(index);
   }
 
   public static final int SEND_SEQUENCES_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private java.util.List<PacketSequence> sendSequences_;
+  private java.util.List<com.ibc.core.channel.v1.PacketSequence> sendSequences_;
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
    */
-  @Override
-  public java.util.List<PacketSequence> getSendSequencesList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.core.channel.v1.PacketSequence> getSendSequencesList() {
     return sendSequences_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
    */
-  @Override
-  public java.util.List<? extends PacketSequenceOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
       getSendSequencesOrBuilderList() {
     return sendSequences_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public int getSendSequencesCount() {
     return sendSequences_.size();
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
    */
-  @Override
-  public PacketSequence getSendSequences(int index) {
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketSequence getSendSequences(int index) {
     return sendSequences_.get(index);
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
    */
-  @Override
-  public PacketSequenceOrBuilder getSendSequencesOrBuilder(
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketSequenceOrBuilder getSendSequencesOrBuilder(
       int index) {
     return sendSequences_.get(index);
   }
 
   public static final int RECV_SEQUENCES_FIELD_NUMBER = 6;
   @SuppressWarnings("serial")
-  private java.util.List<PacketSequence> recvSequences_;
+  private java.util.List<com.ibc.core.channel.v1.PacketSequence> recvSequences_;
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
    */
-  @Override
-  public java.util.List<PacketSequence> getRecvSequencesList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.core.channel.v1.PacketSequence> getRecvSequencesList() {
     return recvSequences_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
    */
-  @Override
-  public java.util.List<? extends PacketSequenceOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
       getRecvSequencesOrBuilderList() {
     return recvSequences_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public int getRecvSequencesCount() {
     return recvSequences_.size();
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
    */
-  @Override
-  public PacketSequence getRecvSequences(int index) {
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketSequence getRecvSequences(int index) {
     return recvSequences_.get(index);
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
    */
-  @Override
-  public PacketSequenceOrBuilder getRecvSequencesOrBuilder(
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketSequenceOrBuilder getRecvSequencesOrBuilder(
       int index) {
     return recvSequences_.get(index);
   }
 
   public static final int ACK_SEQUENCES_FIELD_NUMBER = 7;
   @SuppressWarnings("serial")
-  private java.util.List<PacketSequence> ackSequences_;
+  private java.util.List<com.ibc.core.channel.v1.PacketSequence> ackSequences_;
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
    */
-  @Override
-  public java.util.List<PacketSequence> getAckSequencesList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.core.channel.v1.PacketSequence> getAckSequencesList() {
     return ackSequences_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
    */
-  @Override
-  public java.util.List<? extends PacketSequenceOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
       getAckSequencesOrBuilderList() {
     return ackSequences_;
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public int getAckSequencesCount() {
     return ackSequences_.size();
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
    */
-  @Override
-  public PacketSequence getAckSequences(int index) {
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketSequence getAckSequences(int index) {
     return ackSequences_.get(index);
   }
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
    */
-  @Override
-  public PacketSequenceOrBuilder getAckSequencesOrBuilder(
+  @java.lang.Override
+  public com.ibc.core.channel.v1.PacketSequenceOrBuilder getAckSequencesOrBuilder(
       int index) {
     return ackSequences_.get(index);
   }
@@ -346,13 +346,13 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 next_channel_sequence = 8 [json_name = "nextChannelSequence", (.gogoproto.moretags) = "yaml:&#92;"next_channel_sequence&#92;""];</code>
    * @return The nextChannelSequence.
    */
-  @Override
+  @java.lang.Override
   public long getNextChannelSequence() {
     return nextChannelSequence_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -362,7 +362,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < channels_.size(); i++) {
@@ -392,7 +392,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -435,15 +435,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof GenesisState)) {
+    if (!(obj instanceof com.ibc.core.channel.v1.GenesisState)) {
       return super.equals(obj);
     }
-    GenesisState other = (GenesisState) obj;
+    com.ibc.core.channel.v1.GenesisState other = (com.ibc.core.channel.v1.GenesisState) obj;
 
     if (!getChannelsList()
         .equals(other.getChannelsList())) return false;
@@ -465,7 +465,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -508,69 +508,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static GenesisState parseFrom(
+  public static com.ibc.core.channel.v1.GenesisState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.core.channel.v1.GenesisState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.core.channel.v1.GenesisState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.core.channel.v1.GenesisState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(byte[] data)
+  public static com.ibc.core.channel.v1.GenesisState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.core.channel.v1.GenesisState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(java.io.InputStream input)
+  public static com.ibc.core.channel.v1.GenesisState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.core.channel.v1.GenesisState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GenesisState parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.core.channel.v1.GenesisState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static GenesisState parseDelimitedFrom(
+  public static com.ibc.core.channel.v1.GenesisState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.core.channel.v1.GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.core.channel.v1.GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -578,23 +578,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(GenesisState prototype) {
+  public static Builder newBuilder(com.ibc.core.channel.v1.GenesisState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -608,18 +608,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.channel.v1.GenesisState)
-      GenesisStateOrBuilder {
+      com.ibc.core.channel.v1.GenesisStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return GenesisProto.internal_static_ibc_core_channel_v1_GenesisState_descriptor;
+      return com.ibc.core.channel.v1.GenesisProto.internal_static_ibc_core_channel_v1_GenesisState_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return GenesisProto.internal_static_ibc_core_channel_v1_GenesisState_fieldAccessorTable
+      return com.ibc.core.channel.v1.GenesisProto.internal_static_ibc_core_channel_v1_GenesisState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              GenesisState.class, Builder.class);
+              com.ibc.core.channel.v1.GenesisState.class, com.ibc.core.channel.v1.GenesisState.Builder.class);
     }
 
     // Construct using com.ibc.core.channel.v1.GenesisState.newBuilder()
@@ -628,11 +628,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -689,36 +689,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return GenesisProto.internal_static_ibc_core_channel_v1_GenesisState_descriptor;
+      return com.ibc.core.channel.v1.GenesisProto.internal_static_ibc_core_channel_v1_GenesisState_descriptor;
     }
 
-    @Override
-    public GenesisState getDefaultInstanceForType() {
-      return GenesisState.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.core.channel.v1.GenesisState getDefaultInstanceForType() {
+      return com.ibc.core.channel.v1.GenesisState.getDefaultInstance();
     }
 
-    @Override
-    public GenesisState build() {
-      GenesisState result = buildPartial();
+    @java.lang.Override
+    public com.ibc.core.channel.v1.GenesisState build() {
+      com.ibc.core.channel.v1.GenesisState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public GenesisState buildPartial() {
-      GenesisState result = new GenesisState(this);
+    @java.lang.Override
+    public com.ibc.core.channel.v1.GenesisState buildPartial() {
+      com.ibc.core.channel.v1.GenesisState result = new com.ibc.core.channel.v1.GenesisState(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(GenesisState result) {
+    private void buildPartialRepeatedFields(com.ibc.core.channel.v1.GenesisState result) {
       if (channelsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           channels_ = java.util.Collections.unmodifiableList(channels_);
@@ -784,57 +784,57 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(GenesisState result) {
+    private void buildPartial0(com.ibc.core.channel.v1.GenesisState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000080) != 0)) {
         result.nextChannelSequence_ = nextChannelSequence_;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof GenesisState) {
-        return mergeFrom((GenesisState)other);
+      if (other instanceof com.ibc.core.channel.v1.GenesisState) {
+        return mergeFrom((com.ibc.core.channel.v1.GenesisState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(GenesisState other) {
-      if (other == GenesisState.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.core.channel.v1.GenesisState other) {
+      if (other == com.ibc.core.channel.v1.GenesisState.getDefaultInstance()) return this;
       if (channelsBuilder_ == null) {
         if (!other.channels_.isEmpty()) {
           if (channels_.isEmpty()) {
@@ -1025,18 +1025,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -1047,9 +1047,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              IdentifiedChannel m =
+              com.ibc.core.channel.v1.IdentifiedChannel m =
                   input.readMessage(
-                      IdentifiedChannel.parser(),
+                      com.ibc.core.channel.v1.IdentifiedChannel.parser(),
                       extensionRegistry);
               if (channelsBuilder_ == null) {
                 ensureChannelsIsMutable();
@@ -1060,9 +1060,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              PacketState m =
+              com.ibc.core.channel.v1.PacketState m =
                   input.readMessage(
-                      PacketState.parser(),
+                      com.ibc.core.channel.v1.PacketState.parser(),
                       extensionRegistry);
               if (acknowledgementsBuilder_ == null) {
                 ensureAcknowledgementsIsMutable();
@@ -1073,9 +1073,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 18
             case 26: {
-              PacketState m =
+              com.ibc.core.channel.v1.PacketState m =
                   input.readMessage(
-                      PacketState.parser(),
+                      com.ibc.core.channel.v1.PacketState.parser(),
                       extensionRegistry);
               if (commitmentsBuilder_ == null) {
                 ensureCommitmentsIsMutable();
@@ -1086,9 +1086,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 26
             case 34: {
-              PacketState m =
+              com.ibc.core.channel.v1.PacketState m =
                   input.readMessage(
-                      PacketState.parser(),
+                      com.ibc.core.channel.v1.PacketState.parser(),
                       extensionRegistry);
               if (receiptsBuilder_ == null) {
                 ensureReceiptsIsMutable();
@@ -1099,9 +1099,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 34
             case 42: {
-              PacketSequence m =
+              com.ibc.core.channel.v1.PacketSequence m =
                   input.readMessage(
-                      PacketSequence.parser(),
+                      com.ibc.core.channel.v1.PacketSequence.parser(),
                       extensionRegistry);
               if (sendSequencesBuilder_ == null) {
                 ensureSendSequencesIsMutable();
@@ -1112,9 +1112,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 42
             case 50: {
-              PacketSequence m =
+              com.ibc.core.channel.v1.PacketSequence m =
                   input.readMessage(
-                      PacketSequence.parser(),
+                      com.ibc.core.channel.v1.PacketSequence.parser(),
                       extensionRegistry);
               if (recvSequencesBuilder_ == null) {
                 ensureRecvSequencesIsMutable();
@@ -1125,9 +1125,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 50
             case 58: {
-              PacketSequence m =
+              com.ibc.core.channel.v1.PacketSequence m =
                   input.readMessage(
-                      PacketSequence.parser(),
+                      com.ibc.core.channel.v1.PacketSequence.parser(),
                       extensionRegistry);
               if (ackSequencesBuilder_ == null) {
                 ensureAckSequencesIsMutable();
@@ -1159,22 +1159,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<IdentifiedChannel> channels_ =
+    private java.util.List<com.ibc.core.channel.v1.IdentifiedChannel> channels_ =
       java.util.Collections.emptyList();
     private void ensureChannelsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        channels_ = new java.util.ArrayList<IdentifiedChannel>(channels_);
+        channels_ = new java.util.ArrayList<com.ibc.core.channel.v1.IdentifiedChannel>(channels_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        IdentifiedChannel, IdentifiedChannel.Builder, IdentifiedChannelOrBuilder> channelsBuilder_;
+        com.ibc.core.channel.v1.IdentifiedChannel, com.ibc.core.channel.v1.IdentifiedChannel.Builder, com.ibc.core.channel.v1.IdentifiedChannelOrBuilder> channelsBuilder_;
 
     /**
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
-    public java.util.List<IdentifiedChannel> getChannelsList() {
+    public java.util.List<com.ibc.core.channel.v1.IdentifiedChannel> getChannelsList() {
       if (channelsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(channels_);
       } else {
@@ -1194,7 +1194,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
-    public IdentifiedChannel getChannels(int index) {
+    public com.ibc.core.channel.v1.IdentifiedChannel getChannels(int index) {
       if (channelsBuilder_ == null) {
         return channels_.get(index);
       } else {
@@ -1205,7 +1205,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
     public Builder setChannels(
-        int index, IdentifiedChannel value) {
+        int index, com.ibc.core.channel.v1.IdentifiedChannel value) {
       if (channelsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1222,7 +1222,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
     public Builder setChannels(
-        int index, IdentifiedChannel.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.IdentifiedChannel.Builder builderForValue) {
       if (channelsBuilder_ == null) {
         ensureChannelsIsMutable();
         channels_.set(index, builderForValue.build());
@@ -1235,7 +1235,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
-    public Builder addChannels(IdentifiedChannel value) {
+    public Builder addChannels(com.ibc.core.channel.v1.IdentifiedChannel value) {
       if (channelsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1252,7 +1252,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
     public Builder addChannels(
-        int index, IdentifiedChannel value) {
+        int index, com.ibc.core.channel.v1.IdentifiedChannel value) {
       if (channelsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1269,7 +1269,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
     public Builder addChannels(
-        IdentifiedChannel.Builder builderForValue) {
+        com.ibc.core.channel.v1.IdentifiedChannel.Builder builderForValue) {
       if (channelsBuilder_ == null) {
         ensureChannelsIsMutable();
         channels_.add(builderForValue.build());
@@ -1283,7 +1283,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
     public Builder addChannels(
-        int index, IdentifiedChannel.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.IdentifiedChannel.Builder builderForValue) {
       if (channelsBuilder_ == null) {
         ensureChannelsIsMutable();
         channels_.add(index, builderForValue.build());
@@ -1297,7 +1297,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
     public Builder addAllChannels(
-        Iterable<? extends IdentifiedChannel> values) {
+        java.lang.Iterable<? extends com.ibc.core.channel.v1.IdentifiedChannel> values) {
       if (channelsBuilder_ == null) {
         ensureChannelsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1337,14 +1337,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
-    public IdentifiedChannel.Builder getChannelsBuilder(
+    public com.ibc.core.channel.v1.IdentifiedChannel.Builder getChannelsBuilder(
         int index) {
       return getChannelsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
-    public IdentifiedChannelOrBuilder getChannelsOrBuilder(
+    public com.ibc.core.channel.v1.IdentifiedChannelOrBuilder getChannelsOrBuilder(
         int index) {
       if (channelsBuilder_ == null) {
         return channels_.get(index);  } else {
@@ -1354,7 +1354,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
-    public java.util.List<? extends IdentifiedChannelOrBuilder>
+    public java.util.List<? extends com.ibc.core.channel.v1.IdentifiedChannelOrBuilder> 
          getChannelsOrBuilderList() {
       if (channelsBuilder_ != null) {
         return channelsBuilder_.getMessageOrBuilderList();
@@ -1365,31 +1365,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
-    public IdentifiedChannel.Builder addChannelsBuilder() {
+    public com.ibc.core.channel.v1.IdentifiedChannel.Builder addChannelsBuilder() {
       return getChannelsFieldBuilder().addBuilder(
-          IdentifiedChannel.getDefaultInstance());
+          com.ibc.core.channel.v1.IdentifiedChannel.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
-    public IdentifiedChannel.Builder addChannelsBuilder(
+    public com.ibc.core.channel.v1.IdentifiedChannel.Builder addChannelsBuilder(
         int index) {
       return getChannelsFieldBuilder().addBuilder(
-          index, IdentifiedChannel.getDefaultInstance());
+          index, com.ibc.core.channel.v1.IdentifiedChannel.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
      */
-    public java.util.List<IdentifiedChannel.Builder>
+    public java.util.List<com.ibc.core.channel.v1.IdentifiedChannel.Builder> 
          getChannelsBuilderList() {
       return getChannelsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        IdentifiedChannel, IdentifiedChannel.Builder, IdentifiedChannelOrBuilder>
+        com.ibc.core.channel.v1.IdentifiedChannel, com.ibc.core.channel.v1.IdentifiedChannel.Builder, com.ibc.core.channel.v1.IdentifiedChannelOrBuilder> 
         getChannelsFieldBuilder() {
       if (channelsBuilder_ == null) {
         channelsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            IdentifiedChannel, IdentifiedChannel.Builder, IdentifiedChannelOrBuilder>(
+            com.ibc.core.channel.v1.IdentifiedChannel, com.ibc.core.channel.v1.IdentifiedChannel.Builder, com.ibc.core.channel.v1.IdentifiedChannelOrBuilder>(
                 channels_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -1399,22 +1399,22 @@ private static final long serialVersionUID = 0L;
       return channelsBuilder_;
     }
 
-    private java.util.List<PacketState> acknowledgements_ =
+    private java.util.List<com.ibc.core.channel.v1.PacketState> acknowledgements_ =
       java.util.Collections.emptyList();
     private void ensureAcknowledgementsIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        acknowledgements_ = new java.util.ArrayList<PacketState>(acknowledgements_);
+        acknowledgements_ = new java.util.ArrayList<com.ibc.core.channel.v1.PacketState>(acknowledgements_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketState, PacketState.Builder, PacketStateOrBuilder> acknowledgementsBuilder_;
+        com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder> acknowledgementsBuilder_;
 
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<PacketState> getAcknowledgementsList() {
+    public java.util.List<com.ibc.core.channel.v1.PacketState> getAcknowledgementsList() {
       if (acknowledgementsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(acknowledgements_);
       } else {
@@ -1434,7 +1434,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState getAcknowledgements(int index) {
+    public com.ibc.core.channel.v1.PacketState getAcknowledgements(int index) {
       if (acknowledgementsBuilder_ == null) {
         return acknowledgements_.get(index);
       } else {
@@ -1445,7 +1445,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
     public Builder setAcknowledgements(
-        int index, PacketState value) {
+        int index, com.ibc.core.channel.v1.PacketState value) {
       if (acknowledgementsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1462,7 +1462,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
     public Builder setAcknowledgements(
-        int index, PacketState.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
       if (acknowledgementsBuilder_ == null) {
         ensureAcknowledgementsIsMutable();
         acknowledgements_.set(index, builderForValue.build());
@@ -1475,7 +1475,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addAcknowledgements(PacketState value) {
+    public Builder addAcknowledgements(com.ibc.core.channel.v1.PacketState value) {
       if (acknowledgementsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1492,7 +1492,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAcknowledgements(
-        int index, PacketState value) {
+        int index, com.ibc.core.channel.v1.PacketState value) {
       if (acknowledgementsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1509,7 +1509,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAcknowledgements(
-        PacketState.Builder builderForValue) {
+        com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
       if (acknowledgementsBuilder_ == null) {
         ensureAcknowledgementsIsMutable();
         acknowledgements_.add(builderForValue.build());
@@ -1523,7 +1523,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAcknowledgements(
-        int index, PacketState.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
       if (acknowledgementsBuilder_ == null) {
         ensureAcknowledgementsIsMutable();
         acknowledgements_.add(index, builderForValue.build());
@@ -1537,7 +1537,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllAcknowledgements(
-        Iterable<? extends PacketState> values) {
+        java.lang.Iterable<? extends com.ibc.core.channel.v1.PacketState> values) {
       if (acknowledgementsBuilder_ == null) {
         ensureAcknowledgementsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1577,14 +1577,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState.Builder getAcknowledgementsBuilder(
+    public com.ibc.core.channel.v1.PacketState.Builder getAcknowledgementsBuilder(
         int index) {
       return getAcknowledgementsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
-    public PacketStateOrBuilder getAcknowledgementsOrBuilder(
+    public com.ibc.core.channel.v1.PacketStateOrBuilder getAcknowledgementsOrBuilder(
         int index) {
       if (acknowledgementsBuilder_ == null) {
         return acknowledgements_.get(index);  } else {
@@ -1594,7 +1594,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends PacketStateOrBuilder>
+    public java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
          getAcknowledgementsOrBuilderList() {
       if (acknowledgementsBuilder_ != null) {
         return acknowledgementsBuilder_.getMessageOrBuilderList();
@@ -1605,31 +1605,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState.Builder addAcknowledgementsBuilder() {
+    public com.ibc.core.channel.v1.PacketState.Builder addAcknowledgementsBuilder() {
       return getAcknowledgementsFieldBuilder().addBuilder(
-          PacketState.getDefaultInstance());
+          com.ibc.core.channel.v1.PacketState.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState.Builder addAcknowledgementsBuilder(
+    public com.ibc.core.channel.v1.PacketState.Builder addAcknowledgementsBuilder(
         int index) {
       return getAcknowledgementsFieldBuilder().addBuilder(
-          index, PacketState.getDefaultInstance());
+          index, com.ibc.core.channel.v1.PacketState.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<PacketState.Builder>
+    public java.util.List<com.ibc.core.channel.v1.PacketState.Builder> 
          getAcknowledgementsBuilderList() {
       return getAcknowledgementsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketState, PacketState.Builder, PacketStateOrBuilder>
+        com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder> 
         getAcknowledgementsFieldBuilder() {
       if (acknowledgementsBuilder_ == null) {
         acknowledgementsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            PacketState, PacketState.Builder, PacketStateOrBuilder>(
+            com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder>(
                 acknowledgements_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1639,22 +1639,22 @@ private static final long serialVersionUID = 0L;
       return acknowledgementsBuilder_;
     }
 
-    private java.util.List<PacketState> commitments_ =
+    private java.util.List<com.ibc.core.channel.v1.PacketState> commitments_ =
       java.util.Collections.emptyList();
     private void ensureCommitmentsIsMutable() {
       if (!((bitField0_ & 0x00000004) != 0)) {
-        commitments_ = new java.util.ArrayList<PacketState>(commitments_);
+        commitments_ = new java.util.ArrayList<com.ibc.core.channel.v1.PacketState>(commitments_);
         bitField0_ |= 0x00000004;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketState, PacketState.Builder, PacketStateOrBuilder> commitmentsBuilder_;
+        com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder> commitmentsBuilder_;
 
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<PacketState> getCommitmentsList() {
+    public java.util.List<com.ibc.core.channel.v1.PacketState> getCommitmentsList() {
       if (commitmentsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(commitments_);
       } else {
@@ -1674,7 +1674,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState getCommitments(int index) {
+    public com.ibc.core.channel.v1.PacketState getCommitments(int index) {
       if (commitmentsBuilder_ == null) {
         return commitments_.get(index);
       } else {
@@ -1685,7 +1685,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
     public Builder setCommitments(
-        int index, PacketState value) {
+        int index, com.ibc.core.channel.v1.PacketState value) {
       if (commitmentsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1702,7 +1702,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
     public Builder setCommitments(
-        int index, PacketState.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
       if (commitmentsBuilder_ == null) {
         ensureCommitmentsIsMutable();
         commitments_.set(index, builderForValue.build());
@@ -1715,7 +1715,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addCommitments(PacketState value) {
+    public Builder addCommitments(com.ibc.core.channel.v1.PacketState value) {
       if (commitmentsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1732,7 +1732,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
     public Builder addCommitments(
-        int index, PacketState value) {
+        int index, com.ibc.core.channel.v1.PacketState value) {
       if (commitmentsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1749,7 +1749,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
     public Builder addCommitments(
-        PacketState.Builder builderForValue) {
+        com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
       if (commitmentsBuilder_ == null) {
         ensureCommitmentsIsMutable();
         commitments_.add(builderForValue.build());
@@ -1763,7 +1763,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
     public Builder addCommitments(
-        int index, PacketState.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
       if (commitmentsBuilder_ == null) {
         ensureCommitmentsIsMutable();
         commitments_.add(index, builderForValue.build());
@@ -1777,7 +1777,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllCommitments(
-        Iterable<? extends PacketState> values) {
+        java.lang.Iterable<? extends com.ibc.core.channel.v1.PacketState> values) {
       if (commitmentsBuilder_ == null) {
         ensureCommitmentsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1817,14 +1817,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState.Builder getCommitmentsBuilder(
+    public com.ibc.core.channel.v1.PacketState.Builder getCommitmentsBuilder(
         int index) {
       return getCommitmentsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
-    public PacketStateOrBuilder getCommitmentsOrBuilder(
+    public com.ibc.core.channel.v1.PacketStateOrBuilder getCommitmentsOrBuilder(
         int index) {
       if (commitmentsBuilder_ == null) {
         return commitments_.get(index);  } else {
@@ -1834,7 +1834,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends PacketStateOrBuilder>
+    public java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
          getCommitmentsOrBuilderList() {
       if (commitmentsBuilder_ != null) {
         return commitmentsBuilder_.getMessageOrBuilderList();
@@ -1845,31 +1845,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState.Builder addCommitmentsBuilder() {
+    public com.ibc.core.channel.v1.PacketState.Builder addCommitmentsBuilder() {
       return getCommitmentsFieldBuilder().addBuilder(
-          PacketState.getDefaultInstance());
+          com.ibc.core.channel.v1.PacketState.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState.Builder addCommitmentsBuilder(
+    public com.ibc.core.channel.v1.PacketState.Builder addCommitmentsBuilder(
         int index) {
       return getCommitmentsFieldBuilder().addBuilder(
-          index, PacketState.getDefaultInstance());
+          index, com.ibc.core.channel.v1.PacketState.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<PacketState.Builder>
+    public java.util.List<com.ibc.core.channel.v1.PacketState.Builder> 
          getCommitmentsBuilderList() {
       return getCommitmentsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketState, PacketState.Builder, PacketStateOrBuilder>
+        com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder> 
         getCommitmentsFieldBuilder() {
       if (commitmentsBuilder_ == null) {
         commitmentsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            PacketState, PacketState.Builder, PacketStateOrBuilder>(
+            com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder>(
                 commitments_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
@@ -1879,22 +1879,22 @@ private static final long serialVersionUID = 0L;
       return commitmentsBuilder_;
     }
 
-    private java.util.List<PacketState> receipts_ =
+    private java.util.List<com.ibc.core.channel.v1.PacketState> receipts_ =
       java.util.Collections.emptyList();
     private void ensureReceiptsIsMutable() {
       if (!((bitField0_ & 0x00000008) != 0)) {
-        receipts_ = new java.util.ArrayList<PacketState>(receipts_);
+        receipts_ = new java.util.ArrayList<com.ibc.core.channel.v1.PacketState>(receipts_);
         bitField0_ |= 0x00000008;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketState, PacketState.Builder, PacketStateOrBuilder> receiptsBuilder_;
+        com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder> receiptsBuilder_;
 
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<PacketState> getReceiptsList() {
+    public java.util.List<com.ibc.core.channel.v1.PacketState> getReceiptsList() {
       if (receiptsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(receipts_);
       } else {
@@ -1914,7 +1914,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState getReceipts(int index) {
+    public com.ibc.core.channel.v1.PacketState getReceipts(int index) {
       if (receiptsBuilder_ == null) {
         return receipts_.get(index);
       } else {
@@ -1925,7 +1925,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
     public Builder setReceipts(
-        int index, PacketState value) {
+        int index, com.ibc.core.channel.v1.PacketState value) {
       if (receiptsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1942,7 +1942,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
     public Builder setReceipts(
-        int index, PacketState.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
       if (receiptsBuilder_ == null) {
         ensureReceiptsIsMutable();
         receipts_.set(index, builderForValue.build());
@@ -1955,7 +1955,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addReceipts(PacketState value) {
+    public Builder addReceipts(com.ibc.core.channel.v1.PacketState value) {
       if (receiptsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1972,7 +1972,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
     public Builder addReceipts(
-        int index, PacketState value) {
+        int index, com.ibc.core.channel.v1.PacketState value) {
       if (receiptsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1989,7 +1989,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
     public Builder addReceipts(
-        PacketState.Builder builderForValue) {
+        com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
       if (receiptsBuilder_ == null) {
         ensureReceiptsIsMutable();
         receipts_.add(builderForValue.build());
@@ -2003,7 +2003,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
     public Builder addReceipts(
-        int index, PacketState.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketState.Builder builderForValue) {
       if (receiptsBuilder_ == null) {
         ensureReceiptsIsMutable();
         receipts_.add(index, builderForValue.build());
@@ -2017,7 +2017,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllReceipts(
-        Iterable<? extends PacketState> values) {
+        java.lang.Iterable<? extends com.ibc.core.channel.v1.PacketState> values) {
       if (receiptsBuilder_ == null) {
         ensureReceiptsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2057,14 +2057,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState.Builder getReceiptsBuilder(
+    public com.ibc.core.channel.v1.PacketState.Builder getReceiptsBuilder(
         int index) {
       return getReceiptsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
-    public PacketStateOrBuilder getReceiptsOrBuilder(
+    public com.ibc.core.channel.v1.PacketStateOrBuilder getReceiptsOrBuilder(
         int index) {
       if (receiptsBuilder_ == null) {
         return receipts_.get(index);  } else {
@@ -2074,7 +2074,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends PacketStateOrBuilder>
+    public java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
          getReceiptsOrBuilderList() {
       if (receiptsBuilder_ != null) {
         return receiptsBuilder_.getMessageOrBuilderList();
@@ -2085,31 +2085,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState.Builder addReceiptsBuilder() {
+    public com.ibc.core.channel.v1.PacketState.Builder addReceiptsBuilder() {
       return getReceiptsFieldBuilder().addBuilder(
-          PacketState.getDefaultInstance());
+          com.ibc.core.channel.v1.PacketState.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
-    public PacketState.Builder addReceiptsBuilder(
+    public com.ibc.core.channel.v1.PacketState.Builder addReceiptsBuilder(
         int index) {
       return getReceiptsFieldBuilder().addBuilder(
-          index, PacketState.getDefaultInstance());
+          index, com.ibc.core.channel.v1.PacketState.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<PacketState.Builder>
+    public java.util.List<com.ibc.core.channel.v1.PacketState.Builder> 
          getReceiptsBuilderList() {
       return getReceiptsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketState, PacketState.Builder, PacketStateOrBuilder>
+        com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder> 
         getReceiptsFieldBuilder() {
       if (receiptsBuilder_ == null) {
         receiptsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            PacketState, PacketState.Builder, PacketStateOrBuilder>(
+            com.ibc.core.channel.v1.PacketState, com.ibc.core.channel.v1.PacketState.Builder, com.ibc.core.channel.v1.PacketStateOrBuilder>(
                 receipts_,
                 ((bitField0_ & 0x00000008) != 0),
                 getParentForChildren(),
@@ -2119,22 +2119,22 @@ private static final long serialVersionUID = 0L;
       return receiptsBuilder_;
     }
 
-    private java.util.List<PacketSequence> sendSequences_ =
+    private java.util.List<com.ibc.core.channel.v1.PacketSequence> sendSequences_ =
       java.util.Collections.emptyList();
     private void ensureSendSequencesIsMutable() {
       if (!((bitField0_ & 0x00000010) != 0)) {
-        sendSequences_ = new java.util.ArrayList<PacketSequence>(sendSequences_);
+        sendSequences_ = new java.util.ArrayList<com.ibc.core.channel.v1.PacketSequence>(sendSequences_);
         bitField0_ |= 0x00000010;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketSequence, PacketSequence.Builder, PacketSequenceOrBuilder> sendSequencesBuilder_;
+        com.ibc.core.channel.v1.PacketSequence, com.ibc.core.channel.v1.PacketSequence.Builder, com.ibc.core.channel.v1.PacketSequenceOrBuilder> sendSequencesBuilder_;
 
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
-    public java.util.List<PacketSequence> getSendSequencesList() {
+    public java.util.List<com.ibc.core.channel.v1.PacketSequence> getSendSequencesList() {
       if (sendSequencesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(sendSequences_);
       } else {
@@ -2154,7 +2154,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
-    public PacketSequence getSendSequences(int index) {
+    public com.ibc.core.channel.v1.PacketSequence getSendSequences(int index) {
       if (sendSequencesBuilder_ == null) {
         return sendSequences_.get(index);
       } else {
@@ -2165,7 +2165,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
     public Builder setSendSequences(
-        int index, PacketSequence value) {
+        int index, com.ibc.core.channel.v1.PacketSequence value) {
       if (sendSequencesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2182,7 +2182,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
     public Builder setSendSequences(
-        int index, PacketSequence.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketSequence.Builder builderForValue) {
       if (sendSequencesBuilder_ == null) {
         ensureSendSequencesIsMutable();
         sendSequences_.set(index, builderForValue.build());
@@ -2195,7 +2195,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
-    public Builder addSendSequences(PacketSequence value) {
+    public Builder addSendSequences(com.ibc.core.channel.v1.PacketSequence value) {
       if (sendSequencesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2212,7 +2212,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
     public Builder addSendSequences(
-        int index, PacketSequence value) {
+        int index, com.ibc.core.channel.v1.PacketSequence value) {
       if (sendSequencesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2229,7 +2229,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
     public Builder addSendSequences(
-        PacketSequence.Builder builderForValue) {
+        com.ibc.core.channel.v1.PacketSequence.Builder builderForValue) {
       if (sendSequencesBuilder_ == null) {
         ensureSendSequencesIsMutable();
         sendSequences_.add(builderForValue.build());
@@ -2243,7 +2243,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
     public Builder addSendSequences(
-        int index, PacketSequence.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketSequence.Builder builderForValue) {
       if (sendSequencesBuilder_ == null) {
         ensureSendSequencesIsMutable();
         sendSequences_.add(index, builderForValue.build());
@@ -2257,7 +2257,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
     public Builder addAllSendSequences(
-        Iterable<? extends PacketSequence> values) {
+        java.lang.Iterable<? extends com.ibc.core.channel.v1.PacketSequence> values) {
       if (sendSequencesBuilder_ == null) {
         ensureSendSequencesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2297,14 +2297,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
-    public PacketSequence.Builder getSendSequencesBuilder(
+    public com.ibc.core.channel.v1.PacketSequence.Builder getSendSequencesBuilder(
         int index) {
       return getSendSequencesFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
-    public PacketSequenceOrBuilder getSendSequencesOrBuilder(
+    public com.ibc.core.channel.v1.PacketSequenceOrBuilder getSendSequencesOrBuilder(
         int index) {
       if (sendSequencesBuilder_ == null) {
         return sendSequences_.get(index);  } else {
@@ -2314,7 +2314,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
-    public java.util.List<? extends PacketSequenceOrBuilder>
+    public java.util.List<? extends com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
          getSendSequencesOrBuilderList() {
       if (sendSequencesBuilder_ != null) {
         return sendSequencesBuilder_.getMessageOrBuilderList();
@@ -2325,31 +2325,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
-    public PacketSequence.Builder addSendSequencesBuilder() {
+    public com.ibc.core.channel.v1.PacketSequence.Builder addSendSequencesBuilder() {
       return getSendSequencesFieldBuilder().addBuilder(
-          PacketSequence.getDefaultInstance());
+          com.ibc.core.channel.v1.PacketSequence.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
-    public PacketSequence.Builder addSendSequencesBuilder(
+    public com.ibc.core.channel.v1.PacketSequence.Builder addSendSequencesBuilder(
         int index) {
       return getSendSequencesFieldBuilder().addBuilder(
-          index, PacketSequence.getDefaultInstance());
+          index, com.ibc.core.channel.v1.PacketSequence.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
      */
-    public java.util.List<PacketSequence.Builder>
+    public java.util.List<com.ibc.core.channel.v1.PacketSequence.Builder> 
          getSendSequencesBuilderList() {
       return getSendSequencesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketSequence, PacketSequence.Builder, PacketSequenceOrBuilder>
+        com.ibc.core.channel.v1.PacketSequence, com.ibc.core.channel.v1.PacketSequence.Builder, com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
         getSendSequencesFieldBuilder() {
       if (sendSequencesBuilder_ == null) {
         sendSequencesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            PacketSequence, PacketSequence.Builder, PacketSequenceOrBuilder>(
+            com.ibc.core.channel.v1.PacketSequence, com.ibc.core.channel.v1.PacketSequence.Builder, com.ibc.core.channel.v1.PacketSequenceOrBuilder>(
                 sendSequences_,
                 ((bitField0_ & 0x00000010) != 0),
                 getParentForChildren(),
@@ -2359,22 +2359,22 @@ private static final long serialVersionUID = 0L;
       return sendSequencesBuilder_;
     }
 
-    private java.util.List<PacketSequence> recvSequences_ =
+    private java.util.List<com.ibc.core.channel.v1.PacketSequence> recvSequences_ =
       java.util.Collections.emptyList();
     private void ensureRecvSequencesIsMutable() {
       if (!((bitField0_ & 0x00000020) != 0)) {
-        recvSequences_ = new java.util.ArrayList<PacketSequence>(recvSequences_);
+        recvSequences_ = new java.util.ArrayList<com.ibc.core.channel.v1.PacketSequence>(recvSequences_);
         bitField0_ |= 0x00000020;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketSequence, PacketSequence.Builder, PacketSequenceOrBuilder> recvSequencesBuilder_;
+        com.ibc.core.channel.v1.PacketSequence, com.ibc.core.channel.v1.PacketSequence.Builder, com.ibc.core.channel.v1.PacketSequenceOrBuilder> recvSequencesBuilder_;
 
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
-    public java.util.List<PacketSequence> getRecvSequencesList() {
+    public java.util.List<com.ibc.core.channel.v1.PacketSequence> getRecvSequencesList() {
       if (recvSequencesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(recvSequences_);
       } else {
@@ -2394,7 +2394,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
-    public PacketSequence getRecvSequences(int index) {
+    public com.ibc.core.channel.v1.PacketSequence getRecvSequences(int index) {
       if (recvSequencesBuilder_ == null) {
         return recvSequences_.get(index);
       } else {
@@ -2405,7 +2405,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
     public Builder setRecvSequences(
-        int index, PacketSequence value) {
+        int index, com.ibc.core.channel.v1.PacketSequence value) {
       if (recvSequencesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2422,7 +2422,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
     public Builder setRecvSequences(
-        int index, PacketSequence.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketSequence.Builder builderForValue) {
       if (recvSequencesBuilder_ == null) {
         ensureRecvSequencesIsMutable();
         recvSequences_.set(index, builderForValue.build());
@@ -2435,7 +2435,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
-    public Builder addRecvSequences(PacketSequence value) {
+    public Builder addRecvSequences(com.ibc.core.channel.v1.PacketSequence value) {
       if (recvSequencesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2452,7 +2452,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
     public Builder addRecvSequences(
-        int index, PacketSequence value) {
+        int index, com.ibc.core.channel.v1.PacketSequence value) {
       if (recvSequencesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2469,7 +2469,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
     public Builder addRecvSequences(
-        PacketSequence.Builder builderForValue) {
+        com.ibc.core.channel.v1.PacketSequence.Builder builderForValue) {
       if (recvSequencesBuilder_ == null) {
         ensureRecvSequencesIsMutable();
         recvSequences_.add(builderForValue.build());
@@ -2483,7 +2483,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
     public Builder addRecvSequences(
-        int index, PacketSequence.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketSequence.Builder builderForValue) {
       if (recvSequencesBuilder_ == null) {
         ensureRecvSequencesIsMutable();
         recvSequences_.add(index, builderForValue.build());
@@ -2497,7 +2497,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
     public Builder addAllRecvSequences(
-        Iterable<? extends PacketSequence> values) {
+        java.lang.Iterable<? extends com.ibc.core.channel.v1.PacketSequence> values) {
       if (recvSequencesBuilder_ == null) {
         ensureRecvSequencesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2537,14 +2537,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
-    public PacketSequence.Builder getRecvSequencesBuilder(
+    public com.ibc.core.channel.v1.PacketSequence.Builder getRecvSequencesBuilder(
         int index) {
       return getRecvSequencesFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
-    public PacketSequenceOrBuilder getRecvSequencesOrBuilder(
+    public com.ibc.core.channel.v1.PacketSequenceOrBuilder getRecvSequencesOrBuilder(
         int index) {
       if (recvSequencesBuilder_ == null) {
         return recvSequences_.get(index);  } else {
@@ -2554,7 +2554,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
-    public java.util.List<? extends PacketSequenceOrBuilder>
+    public java.util.List<? extends com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
          getRecvSequencesOrBuilderList() {
       if (recvSequencesBuilder_ != null) {
         return recvSequencesBuilder_.getMessageOrBuilderList();
@@ -2565,31 +2565,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
-    public PacketSequence.Builder addRecvSequencesBuilder() {
+    public com.ibc.core.channel.v1.PacketSequence.Builder addRecvSequencesBuilder() {
       return getRecvSequencesFieldBuilder().addBuilder(
-          PacketSequence.getDefaultInstance());
+          com.ibc.core.channel.v1.PacketSequence.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
-    public PacketSequence.Builder addRecvSequencesBuilder(
+    public com.ibc.core.channel.v1.PacketSequence.Builder addRecvSequencesBuilder(
         int index) {
       return getRecvSequencesFieldBuilder().addBuilder(
-          index, PacketSequence.getDefaultInstance());
+          index, com.ibc.core.channel.v1.PacketSequence.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
      */
-    public java.util.List<PacketSequence.Builder>
+    public java.util.List<com.ibc.core.channel.v1.PacketSequence.Builder> 
          getRecvSequencesBuilderList() {
       return getRecvSequencesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketSequence, PacketSequence.Builder, PacketSequenceOrBuilder>
+        com.ibc.core.channel.v1.PacketSequence, com.ibc.core.channel.v1.PacketSequence.Builder, com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
         getRecvSequencesFieldBuilder() {
       if (recvSequencesBuilder_ == null) {
         recvSequencesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            PacketSequence, PacketSequence.Builder, PacketSequenceOrBuilder>(
+            com.ibc.core.channel.v1.PacketSequence, com.ibc.core.channel.v1.PacketSequence.Builder, com.ibc.core.channel.v1.PacketSequenceOrBuilder>(
                 recvSequences_,
                 ((bitField0_ & 0x00000020) != 0),
                 getParentForChildren(),
@@ -2599,22 +2599,22 @@ private static final long serialVersionUID = 0L;
       return recvSequencesBuilder_;
     }
 
-    private java.util.List<PacketSequence> ackSequences_ =
+    private java.util.List<com.ibc.core.channel.v1.PacketSequence> ackSequences_ =
       java.util.Collections.emptyList();
     private void ensureAckSequencesIsMutable() {
       if (!((bitField0_ & 0x00000040) != 0)) {
-        ackSequences_ = new java.util.ArrayList<PacketSequence>(ackSequences_);
+        ackSequences_ = new java.util.ArrayList<com.ibc.core.channel.v1.PacketSequence>(ackSequences_);
         bitField0_ |= 0x00000040;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketSequence, PacketSequence.Builder, PacketSequenceOrBuilder> ackSequencesBuilder_;
+        com.ibc.core.channel.v1.PacketSequence, com.ibc.core.channel.v1.PacketSequence.Builder, com.ibc.core.channel.v1.PacketSequenceOrBuilder> ackSequencesBuilder_;
 
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
-    public java.util.List<PacketSequence> getAckSequencesList() {
+    public java.util.List<com.ibc.core.channel.v1.PacketSequence> getAckSequencesList() {
       if (ackSequencesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(ackSequences_);
       } else {
@@ -2634,7 +2634,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
-    public PacketSequence getAckSequences(int index) {
+    public com.ibc.core.channel.v1.PacketSequence getAckSequences(int index) {
       if (ackSequencesBuilder_ == null) {
         return ackSequences_.get(index);
       } else {
@@ -2645,7 +2645,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
     public Builder setAckSequences(
-        int index, PacketSequence value) {
+        int index, com.ibc.core.channel.v1.PacketSequence value) {
       if (ackSequencesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2662,7 +2662,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
     public Builder setAckSequences(
-        int index, PacketSequence.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketSequence.Builder builderForValue) {
       if (ackSequencesBuilder_ == null) {
         ensureAckSequencesIsMutable();
         ackSequences_.set(index, builderForValue.build());
@@ -2675,7 +2675,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
-    public Builder addAckSequences(PacketSequence value) {
+    public Builder addAckSequences(com.ibc.core.channel.v1.PacketSequence value) {
       if (ackSequencesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2692,7 +2692,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
     public Builder addAckSequences(
-        int index, PacketSequence value) {
+        int index, com.ibc.core.channel.v1.PacketSequence value) {
       if (ackSequencesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2709,7 +2709,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
     public Builder addAckSequences(
-        PacketSequence.Builder builderForValue) {
+        com.ibc.core.channel.v1.PacketSequence.Builder builderForValue) {
       if (ackSequencesBuilder_ == null) {
         ensureAckSequencesIsMutable();
         ackSequences_.add(builderForValue.build());
@@ -2723,7 +2723,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
     public Builder addAckSequences(
-        int index, PacketSequence.Builder builderForValue) {
+        int index, com.ibc.core.channel.v1.PacketSequence.Builder builderForValue) {
       if (ackSequencesBuilder_ == null) {
         ensureAckSequencesIsMutable();
         ackSequences_.add(index, builderForValue.build());
@@ -2737,7 +2737,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
     public Builder addAllAckSequences(
-        Iterable<? extends PacketSequence> values) {
+        java.lang.Iterable<? extends com.ibc.core.channel.v1.PacketSequence> values) {
       if (ackSequencesBuilder_ == null) {
         ensureAckSequencesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2777,14 +2777,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
-    public PacketSequence.Builder getAckSequencesBuilder(
+    public com.ibc.core.channel.v1.PacketSequence.Builder getAckSequencesBuilder(
         int index) {
       return getAckSequencesFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
-    public PacketSequenceOrBuilder getAckSequencesOrBuilder(
+    public com.ibc.core.channel.v1.PacketSequenceOrBuilder getAckSequencesOrBuilder(
         int index) {
       if (ackSequencesBuilder_ == null) {
         return ackSequences_.get(index);  } else {
@@ -2794,7 +2794,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
-    public java.util.List<? extends PacketSequenceOrBuilder>
+    public java.util.List<? extends com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
          getAckSequencesOrBuilderList() {
       if (ackSequencesBuilder_ != null) {
         return ackSequencesBuilder_.getMessageOrBuilderList();
@@ -2805,31 +2805,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
-    public PacketSequence.Builder addAckSequencesBuilder() {
+    public com.ibc.core.channel.v1.PacketSequence.Builder addAckSequencesBuilder() {
       return getAckSequencesFieldBuilder().addBuilder(
-          PacketSequence.getDefaultInstance());
+          com.ibc.core.channel.v1.PacketSequence.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
-    public PacketSequence.Builder addAckSequencesBuilder(
+    public com.ibc.core.channel.v1.PacketSequence.Builder addAckSequencesBuilder(
         int index) {
       return getAckSequencesFieldBuilder().addBuilder(
-          index, PacketSequence.getDefaultInstance());
+          index, com.ibc.core.channel.v1.PacketSequence.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
      */
-    public java.util.List<PacketSequence.Builder>
+    public java.util.List<com.ibc.core.channel.v1.PacketSequence.Builder> 
          getAckSequencesBuilderList() {
       return getAckSequencesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        PacketSequence, PacketSequence.Builder, PacketSequenceOrBuilder>
+        com.ibc.core.channel.v1.PacketSequence, com.ibc.core.channel.v1.PacketSequence.Builder, com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
         getAckSequencesFieldBuilder() {
       if (ackSequencesBuilder_ == null) {
         ackSequencesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            PacketSequence, PacketSequence.Builder, PacketSequenceOrBuilder>(
+            com.ibc.core.channel.v1.PacketSequence, com.ibc.core.channel.v1.PacketSequence.Builder, com.ibc.core.channel.v1.PacketSequenceOrBuilder>(
                 ackSequences_,
                 ((bitField0_ & 0x00000040) != 0),
                 getParentForChildren(),
@@ -2848,7 +2848,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 next_channel_sequence = 8 [json_name = "nextChannelSequence", (.gogoproto.moretags) = "yaml:&#92;"next_channel_sequence&#92;""];</code>
      * @return The nextChannelSequence.
      */
-    @Override
+    @java.lang.Override
     public long getNextChannelSequence() {
       return nextChannelSequence_;
     }
@@ -2882,13 +2882,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -2899,18 +2899,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.channel.v1.GenesisState)
-  private static final GenesisState DEFAULT_INSTANCE;
+  private static final com.ibc.core.channel.v1.GenesisState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new GenesisState();
+    DEFAULT_INSTANCE = new com.ibc.core.channel.v1.GenesisState();
   }
 
-  public static GenesisState getDefaultInstance() {
+  public static com.ibc.core.channel.v1.GenesisState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GenesisState>
       PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-    @Override
+    @java.lang.Override
     public GenesisState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2934,13 +2934,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<GenesisState> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public GenesisState getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.core.channel.v1.GenesisState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

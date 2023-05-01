@@ -15,7 +15,7 @@ public interface ConfigurationDescriptorOrBuilder extends
    * <code>string bech32_account_address_prefix = 1 [json_name = "bech32AccountAddressPrefix"];</code>
    * @return The bech32AccountAddressPrefix.
    */
-  String getBech32AccountAddressPrefix();
+  java.lang.String getBech32AccountAddressPrefix();
   /**
    * <pre>
    * bech32_account_address_prefix is the account address prefix

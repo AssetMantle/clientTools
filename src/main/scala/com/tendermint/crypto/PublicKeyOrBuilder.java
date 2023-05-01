@@ -29,5 +29,5 @@ public interface PublicKeyOrBuilder extends
    */
   com.google.protobuf.ByteString getSecp256K1();
 
-  PublicKey.SumCase getSumCase();
+  com.tendermint.crypto.PublicKey.SumCase getSumCase();
 }

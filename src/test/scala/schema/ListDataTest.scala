@@ -11,8 +11,8 @@ import schema.qualified.{Immutables, Mutables}
 
 class ListDataTest extends AnyFunSuite {
 
-  val AuthenticationProperty: MetaProperty = MetaProperty(id = PropertyID(keyID = StringID("authentication"), typeID = ListData(Seq()).getType), data = ListData(Seq()).toAnyData)
-  val NubPropertyID: MetaProperty = MetaProperty(id = PropertyID(keyID = StringID("nubID"), typeID = IDData(StringID("").toAnyID).getType), data = IDData(StringID("").toAnyID).toAnyData)
+  val AuthenticationProperty: MetaProperty = MetaProperty(id = PropertyID(keyID = StringID("authentication"), typeID = ListData(Seq()).getType), data = ListData(Seq()))
+  val NubPropertyID: MetaProperty = MetaProperty(id = PropertyID(keyID = StringID("nubID"), typeID = IDData(StringID("").toAnyID).getType), data = IDData(StringID("").toAnyID))
   val immutables = Immutables(PropertyList(Seq(NubPropertyID)))
   println(immutables.generateHashID.getBytes.length)
   println(immutables.generateHashID.getBytes.mkString("Array(", ", ", ")"))

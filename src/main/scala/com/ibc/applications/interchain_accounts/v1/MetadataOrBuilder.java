@@ -15,7 +15,7 @@ public interface MetadataOrBuilder extends
    * <code>string version = 1 [json_name = "version"];</code>
    * @return The version.
    */
-  String getVersion();
+  java.lang.String getVersion();
   /**
    * <pre>
    * version defines the ICS27 protocol version
@@ -35,7 +35,7 @@ public interface MetadataOrBuilder extends
    * <code>string controller_connection_id = 2 [json_name = "controllerConnectionId", (.gogoproto.moretags) = "yaml:&#92;"controller_connection_id&#92;""];</code>
    * @return The controllerConnectionId.
    */
-  String getControllerConnectionId();
+  java.lang.String getControllerConnectionId();
   /**
    * <pre>
    * controller_connection_id is the connection identifier associated with the controller chain
@@ -55,7 +55,7 @@ public interface MetadataOrBuilder extends
    * <code>string host_connection_id = 3 [json_name = "hostConnectionId", (.gogoproto.moretags) = "yaml:&#92;"host_connection_id&#92;""];</code>
    * @return The hostConnectionId.
    */
-  String getHostConnectionId();
+  java.lang.String getHostConnectionId();
   /**
    * <pre>
    * host_connection_id is the connection identifier associated with the host chain
@@ -76,7 +76,7 @@ public interface MetadataOrBuilder extends
    * <code>string address = 4 [json_name = "address"];</code>
    * @return The address.
    */
-  String getAddress();
+  java.lang.String getAddress();
   /**
    * <pre>
    * address defines the interchain account address to be fulfilled upon the OnChanOpenTry handshake step
@@ -97,7 +97,7 @@ public interface MetadataOrBuilder extends
    * <code>string encoding = 5 [json_name = "encoding"];</code>
    * @return The encoding.
    */
-  String getEncoding();
+  java.lang.String getEncoding();
   /**
    * <pre>
    * encoding defines the supported codec format
@@ -117,7 +117,7 @@ public interface MetadataOrBuilder extends
    * <code>string tx_type = 6 [json_name = "txType"];</code>
    * @return The txType.
    */
-  String getTxType();
+  java.lang.String getTxType();
   /**
    * <pre>
    * tx_type defines the type of transactions the interchain account can execute

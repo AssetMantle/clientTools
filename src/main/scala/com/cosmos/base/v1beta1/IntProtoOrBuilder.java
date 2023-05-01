@@ -11,7 +11,7 @@ public interface IntProtoOrBuilder extends
    * <code>string int = 1 [json_name = "int", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "Int"];</code>
    * @return The int.
    */
-  String getInt();
+  java.lang.String getInt();
   /**
    * <code>string int = 1 [json_name = "int", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "Int"];</code>
    * @return The bytes for int.

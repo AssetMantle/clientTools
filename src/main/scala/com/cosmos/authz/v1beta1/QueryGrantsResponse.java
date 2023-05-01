@@ -23,29 +23,29 @@ private static final long serialVersionUID = 0L;
     grants_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryGrantsResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_descriptor;
+    return com.cosmos.authz.v1beta1.QueryProto.internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_fieldAccessorTable
+    return com.cosmos.authz.v1beta1.QueryProto.internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryGrantsResponse.class, Builder.class);
+            com.cosmos.authz.v1beta1.QueryGrantsResponse.class, com.cosmos.authz.v1beta1.QueryGrantsResponse.Builder.class);
   }
 
   public static final int GRANTS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<Grant> grants_;
+  private java.util.List<com.cosmos.authz.v1beta1.Grant> grants_;
   /**
    * <pre>
    * authorizations is a list of grants granted for grantee by granter.
@@ -53,8 +53,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
    */
-  @Override
-  public java.util.List<Grant> getGrantsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.authz.v1beta1.Grant> getGrantsList() {
     return grants_;
   }
   /**
@@ -64,8 +64,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
    */
-  @Override
-  public java.util.List<? extends GrantOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.authz.v1beta1.GrantOrBuilder> 
       getGrantsOrBuilderList() {
     return grants_;
   }
@@ -76,7 +76,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getGrantsCount() {
     return grants_.size();
   }
@@ -87,8 +87,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
    */
-  @Override
-  public Grant getGrants(int index) {
+  @java.lang.Override
+  public com.cosmos.authz.v1beta1.Grant getGrants(int index) {
     return grants_.get(index);
   }
   /**
@@ -98,8 +98,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
    */
-  @Override
-  public GrantOrBuilder getGrantsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.authz.v1beta1.GrantOrBuilder getGrantsOrBuilder(
       int index) {
     return grants_.get(index);
   }
@@ -114,7 +114,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -126,7 +126,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageResponse getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -137,13 +137,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageResponseOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -153,7 +153,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < grants_.size(); i++) {
@@ -165,7 +165,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -184,15 +184,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryGrantsResponse)) {
+    if (!(obj instanceof com.cosmos.authz.v1beta1.QueryGrantsResponse)) {
       return super.equals(obj);
     }
-    QueryGrantsResponse other = (QueryGrantsResponse) obj;
+    com.cosmos.authz.v1beta1.QueryGrantsResponse other = (com.cosmos.authz.v1beta1.QueryGrantsResponse) obj;
 
     if (!getGrantsList()
         .equals(other.getGrantsList())) return false;
@@ -205,7 +205,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -225,69 +225,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryGrantsResponse parseFrom(
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryGrantsResponse parseFrom(
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryGrantsResponse parseFrom(
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryGrantsResponse parseFrom(
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryGrantsResponse parseFrom(byte[] data)
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryGrantsResponse parseFrom(
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryGrantsResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryGrantsResponse parseFrom(
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryGrantsResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryGrantsResponse parseDelimitedFrom(
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryGrantsResponse parseFrom(
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryGrantsResponse parseFrom(
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -295,23 +295,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryGrantsResponse prototype) {
+  public static Builder newBuilder(com.cosmos.authz.v1beta1.QueryGrantsResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -325,18 +325,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.authz.v1beta1.QueryGrantsResponse)
-      QueryGrantsResponseOrBuilder {
+      com.cosmos.authz.v1beta1.QueryGrantsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_descriptor;
+      return com.cosmos.authz.v1beta1.QueryProto.internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_fieldAccessorTable
+      return com.cosmos.authz.v1beta1.QueryProto.internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryGrantsResponse.class, Builder.class);
+              com.cosmos.authz.v1beta1.QueryGrantsResponse.class, com.cosmos.authz.v1beta1.QueryGrantsResponse.Builder.class);
     }
 
     // Construct using com.cosmos.authz.v1beta1.QueryGrantsResponse.newBuilder()
@@ -345,11 +345,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -368,36 +368,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_descriptor;
+      return com.cosmos.authz.v1beta1.QueryProto.internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_descriptor;
     }
 
-    @Override
-    public QueryGrantsResponse getDefaultInstanceForType() {
-      return QueryGrantsResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.authz.v1beta1.QueryGrantsResponse getDefaultInstanceForType() {
+      return com.cosmos.authz.v1beta1.QueryGrantsResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryGrantsResponse build() {
-      QueryGrantsResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.authz.v1beta1.QueryGrantsResponse build() {
+      com.cosmos.authz.v1beta1.QueryGrantsResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryGrantsResponse buildPartial() {
-      QueryGrantsResponse result = new QueryGrantsResponse(this);
+    @java.lang.Override
+    public com.cosmos.authz.v1beta1.QueryGrantsResponse buildPartial() {
+      com.cosmos.authz.v1beta1.QueryGrantsResponse result = new com.cosmos.authz.v1beta1.QueryGrantsResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(QueryGrantsResponse result) {
+    private void buildPartialRepeatedFields(com.cosmos.authz.v1beta1.QueryGrantsResponse result) {
       if (grantsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           grants_ = java.util.Collections.unmodifiableList(grants_);
@@ -409,7 +409,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(QueryGrantsResponse result) {
+    private void buildPartial0(com.cosmos.authz.v1beta1.QueryGrantsResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -418,50 +418,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryGrantsResponse) {
-        return mergeFrom((QueryGrantsResponse)other);
+      if (other instanceof com.cosmos.authz.v1beta1.QueryGrantsResponse) {
+        return mergeFrom((com.cosmos.authz.v1beta1.QueryGrantsResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryGrantsResponse other) {
-      if (other == QueryGrantsResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.authz.v1beta1.QueryGrantsResponse other) {
+      if (other == com.cosmos.authz.v1beta1.QueryGrantsResponse.getDefaultInstance()) return this;
       if (grantsBuilder_ == null) {
         if (!other.grants_.isEmpty()) {
           if (grants_.isEmpty()) {
@@ -496,18 +496,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -518,9 +518,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              Grant m =
+              com.cosmos.authz.v1beta1.Grant m =
                   input.readMessage(
-                      Grant.parser(),
+                      com.cosmos.authz.v1beta1.Grant.parser(),
                       extensionRegistry);
               if (grantsBuilder_ == null) {
                 ensureGrantsIsMutable();
@@ -554,17 +554,17 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<Grant> grants_ =
+    private java.util.List<com.cosmos.authz.v1beta1.Grant> grants_ =
       java.util.Collections.emptyList();
     private void ensureGrantsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        grants_ = new java.util.ArrayList<Grant>(grants_);
+        grants_ = new java.util.ArrayList<com.cosmos.authz.v1beta1.Grant>(grants_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Grant, Grant.Builder, GrantOrBuilder> grantsBuilder_;
+        com.cosmos.authz.v1beta1.Grant, com.cosmos.authz.v1beta1.Grant.Builder, com.cosmos.authz.v1beta1.GrantOrBuilder> grantsBuilder_;
 
     /**
      * <pre>
@@ -573,7 +573,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
-    public java.util.List<Grant> getGrantsList() {
+    public java.util.List<com.cosmos.authz.v1beta1.Grant> getGrantsList() {
       if (grantsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(grants_);
       } else {
@@ -601,7 +601,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
-    public Grant getGrants(int index) {
+    public com.cosmos.authz.v1beta1.Grant getGrants(int index) {
       if (grantsBuilder_ == null) {
         return grants_.get(index);
       } else {
@@ -616,7 +616,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
     public Builder setGrants(
-        int index, Grant value) {
+        int index, com.cosmos.authz.v1beta1.Grant value) {
       if (grantsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -637,7 +637,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
     public Builder setGrants(
-        int index, Grant.Builder builderForValue) {
+        int index, com.cosmos.authz.v1beta1.Grant.Builder builderForValue) {
       if (grantsBuilder_ == null) {
         ensureGrantsIsMutable();
         grants_.set(index, builderForValue.build());
@@ -654,7 +654,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
-    public Builder addGrants(Grant value) {
+    public Builder addGrants(com.cosmos.authz.v1beta1.Grant value) {
       if (grantsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -675,7 +675,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
     public Builder addGrants(
-        int index, Grant value) {
+        int index, com.cosmos.authz.v1beta1.Grant value) {
       if (grantsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -696,7 +696,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
     public Builder addGrants(
-        Grant.Builder builderForValue) {
+        com.cosmos.authz.v1beta1.Grant.Builder builderForValue) {
       if (grantsBuilder_ == null) {
         ensureGrantsIsMutable();
         grants_.add(builderForValue.build());
@@ -714,7 +714,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
     public Builder addGrants(
-        int index, Grant.Builder builderForValue) {
+        int index, com.cosmos.authz.v1beta1.Grant.Builder builderForValue) {
       if (grantsBuilder_ == null) {
         ensureGrantsIsMutable();
         grants_.add(index, builderForValue.build());
@@ -732,7 +732,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
     public Builder addAllGrants(
-        Iterable<? extends Grant> values) {
+        java.lang.Iterable<? extends com.cosmos.authz.v1beta1.Grant> values) {
       if (grantsBuilder_ == null) {
         ensureGrantsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -784,7 +784,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
-    public Grant.Builder getGrantsBuilder(
+    public com.cosmos.authz.v1beta1.Grant.Builder getGrantsBuilder(
         int index) {
       return getGrantsFieldBuilder().getBuilder(index);
     }
@@ -795,7 +795,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
-    public GrantOrBuilder getGrantsOrBuilder(
+    public com.cosmos.authz.v1beta1.GrantOrBuilder getGrantsOrBuilder(
         int index) {
       if (grantsBuilder_ == null) {
         return grants_.get(index);  } else {
@@ -809,7 +809,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
-    public java.util.List<? extends GrantOrBuilder>
+    public java.util.List<? extends com.cosmos.authz.v1beta1.GrantOrBuilder> 
          getGrantsOrBuilderList() {
       if (grantsBuilder_ != null) {
         return grantsBuilder_.getMessageOrBuilderList();
@@ -824,9 +824,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
-    public Grant.Builder addGrantsBuilder() {
+    public com.cosmos.authz.v1beta1.Grant.Builder addGrantsBuilder() {
       return getGrantsFieldBuilder().addBuilder(
-          Grant.getDefaultInstance());
+          com.cosmos.authz.v1beta1.Grant.getDefaultInstance());
     }
     /**
      * <pre>
@@ -835,10 +835,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
-    public Grant.Builder addGrantsBuilder(
+    public com.cosmos.authz.v1beta1.Grant.Builder addGrantsBuilder(
         int index) {
       return getGrantsFieldBuilder().addBuilder(
-          index, Grant.getDefaultInstance());
+          index, com.cosmos.authz.v1beta1.Grant.getDefaultInstance());
     }
     /**
      * <pre>
@@ -847,16 +847,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
      */
-    public java.util.List<Grant.Builder>
+    public java.util.List<com.cosmos.authz.v1beta1.Grant.Builder> 
          getGrantsBuilderList() {
       return getGrantsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Grant, Grant.Builder, GrantOrBuilder>
+        com.cosmos.authz.v1beta1.Grant, com.cosmos.authz.v1beta1.Grant.Builder, com.cosmos.authz.v1beta1.GrantOrBuilder> 
         getGrantsFieldBuilder() {
       if (grantsBuilder_ == null) {
         grantsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            Grant, Grant.Builder, GrantOrBuilder>(
+            com.cosmos.authz.v1beta1.Grant, com.cosmos.authz.v1beta1.Grant.Builder, com.cosmos.authz.v1beta1.GrantOrBuilder>(
                 grants_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -1020,13 +1020,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1037,18 +1037,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.authz.v1beta1.QueryGrantsResponse)
-  private static final QueryGrantsResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.authz.v1beta1.QueryGrantsResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryGrantsResponse();
+    DEFAULT_INSTANCE = new com.cosmos.authz.v1beta1.QueryGrantsResponse();
   }
 
-  public static QueryGrantsResponse getDefaultInstance() {
+  public static com.cosmos.authz.v1beta1.QueryGrantsResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryGrantsResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryGrantsResponse>() {
-    @Override
+    @java.lang.Override
     public QueryGrantsResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1072,13 +1072,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryGrantsResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryGrantsResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.authz.v1beta1.QueryGrantsResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -16,7 +16,7 @@ public interface HttpOrBuilder extends
    *
    * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
    */
-  java.util.List<HttpRule>
+  java.util.List<com.google.api.HttpRule> 
       getRulesList();
   /**
    * <pre>
@@ -27,7 +27,7 @@ public interface HttpOrBuilder extends
    *
    * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
    */
-  HttpRule getRules(int index);
+  com.google.api.HttpRule getRules(int index);
   /**
    * <pre>
    * A list of HTTP configuration rules that apply to individual API methods.
@@ -47,7 +47,7 @@ public interface HttpOrBuilder extends
    *
    * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
    */
-  java.util.List<? extends HttpRuleOrBuilder>
+  java.util.List<? extends com.google.api.HttpRuleOrBuilder> 
       getRulesOrBuilderList();
   /**
    * <pre>
@@ -58,7 +58,7 @@ public interface HttpOrBuilder extends
    *
    * <code>repeated .google.api.HttpRule rules = 1 [json_name = "rules"];</code>
    */
-  HttpRuleOrBuilder getRulesOrBuilder(
+  com.google.api.HttpRuleOrBuilder getRulesOrBuilder(
       int index);
 
   /**

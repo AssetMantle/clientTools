@@ -16,12 +16,12 @@ public interface GetValidatorSetByHeightResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
    */
-  java.util.List<Validator>
+  java.util.List<com.cosmos.base.tendermint.v1beta1.Validator> 
       getValidatorsList();
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
    */
-  Validator getValidators(int index);
+  com.cosmos.base.tendermint.v1beta1.Validator getValidators(int index);
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
    */
@@ -29,12 +29,12 @@ public interface GetValidatorSetByHeightResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
    */
-  java.util.List<? extends ValidatorOrBuilder>
+  java.util.List<? extends com.cosmos.base.tendermint.v1beta1.ValidatorOrBuilder> 
       getValidatorsOrBuilderList();
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
    */
-  ValidatorOrBuilder getValidatorsOrBuilder(
+  com.cosmos.base.tendermint.v1beta1.ValidatorOrBuilder getValidatorsOrBuilder(
       int index);
 
   /**

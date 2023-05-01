@@ -17,7 +17,7 @@ public interface RequestQueryOrBuilder extends
    * <code>string path = 2 [json_name = "path"];</code>
    * @return The path.
    */
-  String getPath();
+  java.lang.String getPath();
   /**
    * <code>string path = 2 [json_name = "path"];</code>
    * @return The bytes for path.

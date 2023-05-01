@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     owners_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new GenesisState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisState_descriptor;
+    return com.cosmos.capability.v1beta1.GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisState_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisState_fieldAccessorTable
+    return com.cosmos.capability.v1beta1.GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            GenesisState.class, Builder.class);
+            com.cosmos.capability.v1beta1.GenesisState.class, com.cosmos.capability.v1beta1.GenesisState.Builder.class);
   }
 
   public static final int INDEX_FIELD_NUMBER = 1;
@@ -53,14 +53,14 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 index = 1 [json_name = "index"];</code>
    * @return The index.
    */
-  @Override
+  @java.lang.Override
   public long getIndex() {
     return index_;
   }
 
   public static final int OWNERS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<GenesisOwners> owners_;
+  private java.util.List<com.cosmos.capability.v1beta1.GenesisOwners> owners_;
   /**
    * <pre>
    * owners represents a map from index to owners of the capability index
@@ -69,8 +69,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<GenesisOwners> getOwnersList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.capability.v1beta1.GenesisOwners> getOwnersList() {
     return owners_;
   }
   /**
@@ -81,8 +81,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends GenesisOwnersOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.capability.v1beta1.GenesisOwnersOrBuilder> 
       getOwnersOrBuilderList() {
     return owners_;
   }
@@ -94,7 +94,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getOwnersCount() {
     return owners_.size();
   }
@@ -106,8 +106,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public GenesisOwners getOwners(int index) {
+  @java.lang.Override
+  public com.cosmos.capability.v1beta1.GenesisOwners getOwners(int index) {
     return owners_.get(index);
   }
   /**
@@ -118,14 +118,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public GenesisOwnersOrBuilder getOwnersOrBuilder(
+  @java.lang.Override
+  public com.cosmos.capability.v1beta1.GenesisOwnersOrBuilder getOwnersOrBuilder(
       int index) {
     return owners_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (index_ != 0L) {
@@ -147,7 +147,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -166,15 +166,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof GenesisState)) {
+    if (!(obj instanceof com.cosmos.capability.v1beta1.GenesisState)) {
       return super.equals(obj);
     }
-    GenesisState other = (GenesisState) obj;
+    com.cosmos.capability.v1beta1.GenesisState other = (com.cosmos.capability.v1beta1.GenesisState) obj;
 
     if (getIndex()
         != other.getIndex()) return false;
@@ -184,7 +184,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -203,69 +203,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static GenesisState parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(byte[] data)
+  public static com.cosmos.capability.v1beta1.GenesisState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(java.io.InputStream input)
+  public static com.cosmos.capability.v1beta1.GenesisState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GenesisState parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.capability.v1beta1.GenesisState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static GenesisState parseDelimitedFrom(
+  public static com.cosmos.capability.v1beta1.GenesisState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -273,23 +273,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(GenesisState prototype) {
+  public static Builder newBuilder(com.cosmos.capability.v1beta1.GenesisState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -303,18 +303,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.capability.v1beta1.GenesisState)
-      GenesisStateOrBuilder {
+      com.cosmos.capability.v1beta1.GenesisStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisState_descriptor;
+      return com.cosmos.capability.v1beta1.GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisState_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisState_fieldAccessorTable
+      return com.cosmos.capability.v1beta1.GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              GenesisState.class, Builder.class);
+              com.cosmos.capability.v1beta1.GenesisState.class, com.cosmos.capability.v1beta1.GenesisState.Builder.class);
     }
 
     // Construct using com.cosmos.capability.v1beta1.GenesisState.newBuilder()
@@ -323,11 +323,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -342,36 +342,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisState_descriptor;
+      return com.cosmos.capability.v1beta1.GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisState_descriptor;
     }
 
-    @Override
-    public GenesisState getDefaultInstanceForType() {
-      return GenesisState.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.capability.v1beta1.GenesisState getDefaultInstanceForType() {
+      return com.cosmos.capability.v1beta1.GenesisState.getDefaultInstance();
     }
 
-    @Override
-    public GenesisState build() {
-      GenesisState result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.capability.v1beta1.GenesisState build() {
+      com.cosmos.capability.v1beta1.GenesisState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public GenesisState buildPartial() {
-      GenesisState result = new GenesisState(this);
+    @java.lang.Override
+    public com.cosmos.capability.v1beta1.GenesisState buildPartial() {
+      com.cosmos.capability.v1beta1.GenesisState result = new com.cosmos.capability.v1beta1.GenesisState(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(GenesisState result) {
+    private void buildPartialRepeatedFields(com.cosmos.capability.v1beta1.GenesisState result) {
       if (ownersBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           owners_ = java.util.Collections.unmodifiableList(owners_);
@@ -383,57 +383,57 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(GenesisState result) {
+    private void buildPartial0(com.cosmos.capability.v1beta1.GenesisState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.index_ = index_;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof GenesisState) {
-        return mergeFrom((GenesisState)other);
+      if (other instanceof com.cosmos.capability.v1beta1.GenesisState) {
+        return mergeFrom((com.cosmos.capability.v1beta1.GenesisState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(GenesisState other) {
-      if (other == GenesisState.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.capability.v1beta1.GenesisState other) {
+      if (other == com.cosmos.capability.v1beta1.GenesisState.getDefaultInstance()) return this;
       if (other.getIndex() != 0L) {
         setIndex(other.getIndex());
       }
@@ -468,18 +468,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -495,9 +495,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 8
             case 18: {
-              GenesisOwners m =
+              com.cosmos.capability.v1beta1.GenesisOwners m =
                   input.readMessage(
-                      GenesisOwners.parser(),
+                      com.cosmos.capability.v1beta1.GenesisOwners.parser(),
                       extensionRegistry);
               if (ownersBuilder_ == null) {
                 ensureOwnersIsMutable();
@@ -533,7 +533,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 index = 1 [json_name = "index"];</code>
      * @return The index.
      */
-    @Override
+    @java.lang.Override
     public long getIndex() {
       return index_;
     }
@@ -568,17 +568,17 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<GenesisOwners> owners_ =
+    private java.util.List<com.cosmos.capability.v1beta1.GenesisOwners> owners_ =
       java.util.Collections.emptyList();
     private void ensureOwnersIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        owners_ = new java.util.ArrayList<GenesisOwners>(owners_);
+        owners_ = new java.util.ArrayList<com.cosmos.capability.v1beta1.GenesisOwners>(owners_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        GenesisOwners, GenesisOwners.Builder, GenesisOwnersOrBuilder> ownersBuilder_;
+        com.cosmos.capability.v1beta1.GenesisOwners, com.cosmos.capability.v1beta1.GenesisOwners.Builder, com.cosmos.capability.v1beta1.GenesisOwnersOrBuilder> ownersBuilder_;
 
     /**
      * <pre>
@@ -588,7 +588,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<GenesisOwners> getOwnersList() {
+    public java.util.List<com.cosmos.capability.v1beta1.GenesisOwners> getOwnersList() {
       if (ownersBuilder_ == null) {
         return java.util.Collections.unmodifiableList(owners_);
       } else {
@@ -618,7 +618,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public GenesisOwners getOwners(int index) {
+    public com.cosmos.capability.v1beta1.GenesisOwners getOwners(int index) {
       if (ownersBuilder_ == null) {
         return owners_.get(index);
       } else {
@@ -634,7 +634,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder setOwners(
-        int index, GenesisOwners value) {
+        int index, com.cosmos.capability.v1beta1.GenesisOwners value) {
       if (ownersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -656,7 +656,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder setOwners(
-        int index, GenesisOwners.Builder builderForValue) {
+        int index, com.cosmos.capability.v1beta1.GenesisOwners.Builder builderForValue) {
       if (ownersBuilder_ == null) {
         ensureOwnersIsMutable();
         owners_.set(index, builderForValue.build());
@@ -674,7 +674,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addOwners(GenesisOwners value) {
+    public Builder addOwners(com.cosmos.capability.v1beta1.GenesisOwners value) {
       if (ownersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -696,7 +696,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOwners(
-        int index, GenesisOwners value) {
+        int index, com.cosmos.capability.v1beta1.GenesisOwners value) {
       if (ownersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -718,7 +718,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOwners(
-        GenesisOwners.Builder builderForValue) {
+        com.cosmos.capability.v1beta1.GenesisOwners.Builder builderForValue) {
       if (ownersBuilder_ == null) {
         ensureOwnersIsMutable();
         owners_.add(builderForValue.build());
@@ -737,7 +737,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOwners(
-        int index, GenesisOwners.Builder builderForValue) {
+        int index, com.cosmos.capability.v1beta1.GenesisOwners.Builder builderForValue) {
       if (ownersBuilder_ == null) {
         ensureOwnersIsMutable();
         owners_.add(index, builderForValue.build());
@@ -756,7 +756,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllOwners(
-        Iterable<? extends GenesisOwners> values) {
+        java.lang.Iterable<? extends com.cosmos.capability.v1beta1.GenesisOwners> values) {
       if (ownersBuilder_ == null) {
         ensureOwnersIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -811,7 +811,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public GenesisOwners.Builder getOwnersBuilder(
+    public com.cosmos.capability.v1beta1.GenesisOwners.Builder getOwnersBuilder(
         int index) {
       return getOwnersFieldBuilder().getBuilder(index);
     }
@@ -823,7 +823,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public GenesisOwnersOrBuilder getOwnersOrBuilder(
+    public com.cosmos.capability.v1beta1.GenesisOwnersOrBuilder getOwnersOrBuilder(
         int index) {
       if (ownersBuilder_ == null) {
         return owners_.get(index);  } else {
@@ -838,7 +838,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends GenesisOwnersOrBuilder>
+    public java.util.List<? extends com.cosmos.capability.v1beta1.GenesisOwnersOrBuilder> 
          getOwnersOrBuilderList() {
       if (ownersBuilder_ != null) {
         return ownersBuilder_.getMessageOrBuilderList();
@@ -854,9 +854,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public GenesisOwners.Builder addOwnersBuilder() {
+    public com.cosmos.capability.v1beta1.GenesisOwners.Builder addOwnersBuilder() {
       return getOwnersFieldBuilder().addBuilder(
-          GenesisOwners.getDefaultInstance());
+          com.cosmos.capability.v1beta1.GenesisOwners.getDefaultInstance());
     }
     /**
      * <pre>
@@ -866,10 +866,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public GenesisOwners.Builder addOwnersBuilder(
+    public com.cosmos.capability.v1beta1.GenesisOwners.Builder addOwnersBuilder(
         int index) {
       return getOwnersFieldBuilder().addBuilder(
-          index, GenesisOwners.getDefaultInstance());
+          index, com.cosmos.capability.v1beta1.GenesisOwners.getDefaultInstance());
     }
     /**
      * <pre>
@@ -879,16 +879,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.capability.v1beta1.GenesisOwners owners = 2 [json_name = "owners", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<GenesisOwners.Builder>
+    public java.util.List<com.cosmos.capability.v1beta1.GenesisOwners.Builder> 
          getOwnersBuilderList() {
       return getOwnersFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        GenesisOwners, GenesisOwners.Builder, GenesisOwnersOrBuilder>
+        com.cosmos.capability.v1beta1.GenesisOwners, com.cosmos.capability.v1beta1.GenesisOwners.Builder, com.cosmos.capability.v1beta1.GenesisOwnersOrBuilder> 
         getOwnersFieldBuilder() {
       if (ownersBuilder_ == null) {
         ownersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            GenesisOwners, GenesisOwners.Builder, GenesisOwnersOrBuilder>(
+            com.cosmos.capability.v1beta1.GenesisOwners, com.cosmos.capability.v1beta1.GenesisOwners.Builder, com.cosmos.capability.v1beta1.GenesisOwnersOrBuilder>(
                 owners_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -897,13 +897,13 @@ private static final long serialVersionUID = 0L;
       }
       return ownersBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -914,18 +914,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.capability.v1beta1.GenesisState)
-  private static final GenesisState DEFAULT_INSTANCE;
+  private static final com.cosmos.capability.v1beta1.GenesisState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new GenesisState();
+    DEFAULT_INSTANCE = new com.cosmos.capability.v1beta1.GenesisState();
   }
 
-  public static GenesisState getDefaultInstance() {
+  public static com.cosmos.capability.v1beta1.GenesisState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GenesisState>
       PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-    @Override
+    @java.lang.Override
     public GenesisState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -949,13 +949,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<GenesisState> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public GenesisState getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.capability.v1beta1.GenesisState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

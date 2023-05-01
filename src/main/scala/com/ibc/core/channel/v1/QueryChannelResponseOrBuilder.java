@@ -24,7 +24,7 @@ public interface QueryChannelResponseOrBuilder extends
    * <code>.ibc.core.channel.v1.Channel channel = 1 [json_name = "channel"];</code>
    * @return The channel.
    */
-  Channel getChannel();
+  com.ibc.core.channel.v1.Channel getChannel();
   /**
    * <pre>
    * channel associated with the request identifiers
@@ -32,7 +32,7 @@ public interface QueryChannelResponseOrBuilder extends
    *
    * <code>.ibc.core.channel.v1.Channel channel = 1 [json_name = "channel"];</code>
    */
-  ChannelOrBuilder getChannelOrBuilder();
+  com.ibc.core.channel.v1.ChannelOrBuilder getChannelOrBuilder();
 
   /**
    * <pre>

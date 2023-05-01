@@ -11,7 +11,7 @@ public interface ListImplementationsResponseOrBuilder extends
    * <code>repeated string implementation_message_names = 1 [json_name = "implementationMessageNames"];</code>
    * @return A list containing the implementationMessageNames.
    */
-  java.util.List<String>
+  java.util.List<java.lang.String>
       getImplementationMessageNamesList();
   /**
    * <code>repeated string implementation_message_names = 1 [json_name = "implementationMessageNames"];</code>
@@ -23,7 +23,7 @@ public interface ListImplementationsResponseOrBuilder extends
    * @param index The index of the element to return.
    * @return The implementationMessageNames at the given index.
    */
-  String getImplementationMessageNames(int index);
+  java.lang.String getImplementationMessageNames(int index);
   /**
    * <code>repeated string implementation_message_names = 1 [json_name = "implementationMessageNames"];</code>
    * @param index The index of the value to return.

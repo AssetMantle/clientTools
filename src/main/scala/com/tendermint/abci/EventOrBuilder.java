@@ -11,7 +11,7 @@ public interface EventOrBuilder extends
    * <code>string type = 1 [json_name = "type"];</code>
    * @return The type.
    */
-  String getType();
+  java.lang.String getType();
   /**
    * <code>string type = 1 [json_name = "type"];</code>
    * @return The bytes for type.
@@ -22,12 +22,12 @@ public interface EventOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
    */
-  java.util.List<EventAttribute>
+  java.util.List<com.tendermint.abci.EventAttribute> 
       getAttributesList();
   /**
    * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
    */
-  EventAttribute getAttributes(int index);
+  com.tendermint.abci.EventAttribute getAttributes(int index);
   /**
    * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
    */
@@ -35,11 +35,11 @@ public interface EventOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
    */
-  java.util.List<? extends EventAttributeOrBuilder>
+  java.util.List<? extends com.tendermint.abci.EventAttributeOrBuilder> 
       getAttributesOrBuilderList();
   /**
    * <code>repeated .tendermint.abci.EventAttribute attributes = 2 [json_name = "attributes", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "attributes,omitempty"];</code>
    */
-  EventAttributeOrBuilder getAttributesOrBuilder(
+  com.tendermint.abci.EventAttributeOrBuilder getAttributesOrBuilder(
       int index);
 }

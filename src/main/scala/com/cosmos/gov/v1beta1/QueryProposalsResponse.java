@@ -24,63 +24,63 @@ private static final long serialVersionUID = 0L;
     proposals_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryProposalsResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_descriptor;
+    return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_fieldAccessorTable
+    return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryProposalsResponse.class, Builder.class);
+            com.cosmos.gov.v1beta1.QueryProposalsResponse.class, com.cosmos.gov.v1beta1.QueryProposalsResponse.Builder.class);
   }
 
   public static final int PROPOSALS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<Proposal> proposals_;
+  private java.util.List<com.cosmos.gov.v1beta1.Proposal> proposals_;
   /**
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<Proposal> getProposalsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.gov.v1beta1.Proposal> getProposalsList() {
     return proposals_;
   }
   /**
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends ProposalOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.gov.v1beta1.ProposalOrBuilder> 
       getProposalsOrBuilderList() {
     return proposals_;
   }
   /**
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getProposalsCount() {
     return proposals_.size();
   }
   /**
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public Proposal getProposals(int index) {
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.Proposal getProposals(int index) {
     return proposals_.get(index);
   }
   /**
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public ProposalOrBuilder getProposalsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.ProposalOrBuilder getProposalsOrBuilder(
       int index) {
     return proposals_.get(index);
   }
@@ -95,7 +95,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -107,7 +107,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageResponse getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -118,13 +118,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageResponseOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -134,7 +134,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < proposals_.size(); i++) {
@@ -146,7 +146,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -165,15 +165,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryProposalsResponse)) {
+    if (!(obj instanceof com.cosmos.gov.v1beta1.QueryProposalsResponse)) {
       return super.equals(obj);
     }
-    QueryProposalsResponse other = (QueryProposalsResponse) obj;
+    com.cosmos.gov.v1beta1.QueryProposalsResponse other = (com.cosmos.gov.v1beta1.QueryProposalsResponse) obj;
 
     if (!getProposalsList()
         .equals(other.getProposalsList())) return false;
@@ -186,7 +186,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -206,69 +206,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryProposalsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryProposalsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryProposalsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryProposalsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryProposalsResponse parseFrom(byte[] data)
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryProposalsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryProposalsResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryProposalsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryProposalsResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryProposalsResponse parseDelimitedFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryProposalsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryProposalsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -276,23 +276,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryProposalsResponse prototype) {
+  public static Builder newBuilder(com.cosmos.gov.v1beta1.QueryProposalsResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -307,18 +307,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.gov.v1beta1.QueryProposalsResponse)
-      QueryProposalsResponseOrBuilder {
+      com.cosmos.gov.v1beta1.QueryProposalsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_descriptor;
+      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_fieldAccessorTable
+      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryProposalsResponse.class, Builder.class);
+              com.cosmos.gov.v1beta1.QueryProposalsResponse.class, com.cosmos.gov.v1beta1.QueryProposalsResponse.Builder.class);
     }
 
     // Construct using com.cosmos.gov.v1beta1.QueryProposalsResponse.newBuilder()
@@ -327,11 +327,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -350,36 +350,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_descriptor;
+      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_descriptor;
     }
 
-    @Override
-    public QueryProposalsResponse getDefaultInstanceForType() {
-      return QueryProposalsResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.QueryProposalsResponse getDefaultInstanceForType() {
+      return com.cosmos.gov.v1beta1.QueryProposalsResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryProposalsResponse build() {
-      QueryProposalsResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.QueryProposalsResponse build() {
+      com.cosmos.gov.v1beta1.QueryProposalsResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryProposalsResponse buildPartial() {
-      QueryProposalsResponse result = new QueryProposalsResponse(this);
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.QueryProposalsResponse buildPartial() {
+      com.cosmos.gov.v1beta1.QueryProposalsResponse result = new com.cosmos.gov.v1beta1.QueryProposalsResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(QueryProposalsResponse result) {
+    private void buildPartialRepeatedFields(com.cosmos.gov.v1beta1.QueryProposalsResponse result) {
       if (proposalsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           proposals_ = java.util.Collections.unmodifiableList(proposals_);
@@ -391,7 +391,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(QueryProposalsResponse result) {
+    private void buildPartial0(com.cosmos.gov.v1beta1.QueryProposalsResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -400,50 +400,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryProposalsResponse) {
-        return mergeFrom((QueryProposalsResponse)other);
+      if (other instanceof com.cosmos.gov.v1beta1.QueryProposalsResponse) {
+        return mergeFrom((com.cosmos.gov.v1beta1.QueryProposalsResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryProposalsResponse other) {
-      if (other == QueryProposalsResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.gov.v1beta1.QueryProposalsResponse other) {
+      if (other == com.cosmos.gov.v1beta1.QueryProposalsResponse.getDefaultInstance()) return this;
       if (proposalsBuilder_ == null) {
         if (!other.proposals_.isEmpty()) {
           if (proposals_.isEmpty()) {
@@ -478,18 +478,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -500,9 +500,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              Proposal m =
+              com.cosmos.gov.v1beta1.Proposal m =
                   input.readMessage(
-                      Proposal.parser(),
+                      com.cosmos.gov.v1beta1.Proposal.parser(),
                       extensionRegistry);
               if (proposalsBuilder_ == null) {
                 ensureProposalsIsMutable();
@@ -536,22 +536,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<Proposal> proposals_ =
+    private java.util.List<com.cosmos.gov.v1beta1.Proposal> proposals_ =
       java.util.Collections.emptyList();
     private void ensureProposalsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        proposals_ = new java.util.ArrayList<Proposal>(proposals_);
+        proposals_ = new java.util.ArrayList<com.cosmos.gov.v1beta1.Proposal>(proposals_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Proposal, Proposal.Builder, ProposalOrBuilder> proposalsBuilder_;
+        com.cosmos.gov.v1beta1.Proposal, com.cosmos.gov.v1beta1.Proposal.Builder, com.cosmos.gov.v1beta1.ProposalOrBuilder> proposalsBuilder_;
 
     /**
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<Proposal> getProposalsList() {
+    public java.util.List<com.cosmos.gov.v1beta1.Proposal> getProposalsList() {
       if (proposalsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(proposals_);
       } else {
@@ -571,7 +571,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
-    public Proposal getProposals(int index) {
+    public com.cosmos.gov.v1beta1.Proposal getProposals(int index) {
       if (proposalsBuilder_ == null) {
         return proposals_.get(index);
       } else {
@@ -582,7 +582,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
     public Builder setProposals(
-        int index, Proposal value) {
+        int index, com.cosmos.gov.v1beta1.Proposal value) {
       if (proposalsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -599,7 +599,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
     public Builder setProposals(
-        int index, Proposal.Builder builderForValue) {
+        int index, com.cosmos.gov.v1beta1.Proposal.Builder builderForValue) {
       if (proposalsBuilder_ == null) {
         ensureProposalsIsMutable();
         proposals_.set(index, builderForValue.build());
@@ -612,7 +612,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addProposals(Proposal value) {
+    public Builder addProposals(com.cosmos.gov.v1beta1.Proposal value) {
       if (proposalsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -629,7 +629,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
     public Builder addProposals(
-        int index, Proposal value) {
+        int index, com.cosmos.gov.v1beta1.Proposal value) {
       if (proposalsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -646,7 +646,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
     public Builder addProposals(
-        Proposal.Builder builderForValue) {
+        com.cosmos.gov.v1beta1.Proposal.Builder builderForValue) {
       if (proposalsBuilder_ == null) {
         ensureProposalsIsMutable();
         proposals_.add(builderForValue.build());
@@ -660,7 +660,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
     public Builder addProposals(
-        int index, Proposal.Builder builderForValue) {
+        int index, com.cosmos.gov.v1beta1.Proposal.Builder builderForValue) {
       if (proposalsBuilder_ == null) {
         ensureProposalsIsMutable();
         proposals_.add(index, builderForValue.build());
@@ -674,7 +674,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllProposals(
-        Iterable<? extends Proposal> values) {
+        java.lang.Iterable<? extends com.cosmos.gov.v1beta1.Proposal> values) {
       if (proposalsBuilder_ == null) {
         ensureProposalsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -714,14 +714,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
-    public Proposal.Builder getProposalsBuilder(
+    public com.cosmos.gov.v1beta1.Proposal.Builder getProposalsBuilder(
         int index) {
       return getProposalsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
-    public ProposalOrBuilder getProposalsOrBuilder(
+    public com.cosmos.gov.v1beta1.ProposalOrBuilder getProposalsOrBuilder(
         int index) {
       if (proposalsBuilder_ == null) {
         return proposals_.get(index);  } else {
@@ -731,7 +731,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends ProposalOrBuilder>
+    public java.util.List<? extends com.cosmos.gov.v1beta1.ProposalOrBuilder> 
          getProposalsOrBuilderList() {
       if (proposalsBuilder_ != null) {
         return proposalsBuilder_.getMessageOrBuilderList();
@@ -742,31 +742,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
-    public Proposal.Builder addProposalsBuilder() {
+    public com.cosmos.gov.v1beta1.Proposal.Builder addProposalsBuilder() {
       return getProposalsFieldBuilder().addBuilder(
-          Proposal.getDefaultInstance());
+          com.cosmos.gov.v1beta1.Proposal.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
-    public Proposal.Builder addProposalsBuilder(
+    public com.cosmos.gov.v1beta1.Proposal.Builder addProposalsBuilder(
         int index) {
       return getProposalsFieldBuilder().addBuilder(
-          index, Proposal.getDefaultInstance());
+          index, com.cosmos.gov.v1beta1.Proposal.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<Proposal.Builder>
+    public java.util.List<com.cosmos.gov.v1beta1.Proposal.Builder> 
          getProposalsBuilderList() {
       return getProposalsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Proposal, Proposal.Builder, ProposalOrBuilder>
+        com.cosmos.gov.v1beta1.Proposal, com.cosmos.gov.v1beta1.Proposal.Builder, com.cosmos.gov.v1beta1.ProposalOrBuilder> 
         getProposalsFieldBuilder() {
       if (proposalsBuilder_ == null) {
         proposalsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            Proposal, Proposal.Builder, ProposalOrBuilder>(
+            com.cosmos.gov.v1beta1.Proposal, com.cosmos.gov.v1beta1.Proposal.Builder, com.cosmos.gov.v1beta1.ProposalOrBuilder>(
                 proposals_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -930,13 +930,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -947,18 +947,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.gov.v1beta1.QueryProposalsResponse)
-  private static final QueryProposalsResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.gov.v1beta1.QueryProposalsResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryProposalsResponse();
+    DEFAULT_INSTANCE = new com.cosmos.gov.v1beta1.QueryProposalsResponse();
   }
 
-  public static QueryProposalsResponse getDefaultInstance() {
+  public static com.cosmos.gov.v1beta1.QueryProposalsResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryProposalsResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryProposalsResponse>() {
-    @Override
+    @java.lang.Override
     public QueryProposalsResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -982,13 +982,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryProposalsResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryProposalsResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.QueryProposalsResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

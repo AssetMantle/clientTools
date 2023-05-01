@@ -72,7 +72,7 @@ public final class AbciProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n#cosmos/base/abci/v1beta1/abci.proto\022\030c" +
       "osmos.base.abci.v1beta1\032\024gogoproto/gogo." +
       "proto\032\033tendermint/abci/types.proto\032\031goog" +
@@ -137,61 +137,61 @@ public final class AbciProto {
     internal_static_cosmos_base_abci_v1beta1_TxResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_abci_v1beta1_TxResponse_descriptor,
-        new String[] { "Height", "Txhash", "Codespace", "Code", "Data", "RawLog", "Logs", "Info", "GasWanted", "GasUsed", "Tx", "Timestamp", "Events", });
+        new java.lang.String[] { "Height", "Txhash", "Codespace", "Code", "Data", "RawLog", "Logs", "Info", "GasWanted", "GasUsed", "Tx", "Timestamp", "Events", });
     internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_descriptor,
-        new String[] { "MsgIndex", "Log", "Events", });
+        new java.lang.String[] { "MsgIndex", "Log", "Events", });
     internal_static_cosmos_base_abci_v1beta1_StringEvent_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_base_abci_v1beta1_StringEvent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_abci_v1beta1_StringEvent_descriptor,
-        new String[] { "Type", "Attributes", });
+        new java.lang.String[] { "Type", "Attributes", });
     internal_static_cosmos_base_abci_v1beta1_Attribute_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_base_abci_v1beta1_Attribute_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_abci_v1beta1_Attribute_descriptor,
-        new String[] { "Key", "Value", });
+        new java.lang.String[] { "Key", "Value", });
     internal_static_cosmos_base_abci_v1beta1_GasInfo_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_base_abci_v1beta1_GasInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_abci_v1beta1_GasInfo_descriptor,
-        new String[] { "GasWanted", "GasUsed", });
+        new java.lang.String[] { "GasWanted", "GasUsed", });
     internal_static_cosmos_base_abci_v1beta1_Result_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_base_abci_v1beta1_Result_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_abci_v1beta1_Result_descriptor,
-        new String[] { "Data", "Log", "Events", });
+        new java.lang.String[] { "Data", "Log", "Events", });
     internal_static_cosmos_base_abci_v1beta1_SimulationResponse_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_base_abci_v1beta1_SimulationResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_abci_v1beta1_SimulationResponse_descriptor,
-        new String[] { "GasInfo", "Result", });
+        new java.lang.String[] { "GasInfo", "Result", });
     internal_static_cosmos_base_abci_v1beta1_MsgData_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_base_abci_v1beta1_MsgData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_abci_v1beta1_MsgData_descriptor,
-        new String[] { "MsgType", "Data", });
+        new java.lang.String[] { "MsgType", "Data", });
     internal_static_cosmos_base_abci_v1beta1_TxMsgData_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_cosmos_base_abci_v1beta1_TxMsgData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_abci_v1beta1_TxMsgData_descriptor,
-        new String[] { "Data", });
+        new java.lang.String[] { "Data", });
     internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_abci_v1beta1_SearchTxsResult_descriptor,
-        new String[] { "TotalCount", "Count", "PageNumber", "PageTotal", "Limit", "Txs", });
+        new java.lang.String[] { "TotalCount", "Count", "PageNumber", "PageTotal", "Limit", "Txs", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);

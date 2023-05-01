@@ -50,7 +50,7 @@ public interface MsgSubmitProposalOrBuilder extends
    * <code>string proposer = 3 [json_name = "proposer"];</code>
    * @return The proposer.
    */
-  String getProposer();
+  java.lang.String getProposer();
   /**
    * <code>string proposer = 3 [json_name = "proposer"];</code>
    * @return The bytes for proposer.

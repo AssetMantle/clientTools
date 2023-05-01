@@ -22,7 +22,7 @@ public interface SignatureAndDataOrBuilder extends
    * <code>.ibc.lightclients.solomachine.v2.DataType data_type = 2 [json_name = "dataType", (.gogoproto.moretags) = "yaml:&#92;"data_type&#92;""];</code>
    * @return The dataType.
    */
-  DataType getDataType();
+  com.ibc.lightclients.solomachine.v2.DataType getDataType();
 
   /**
    * <code>bytes data = 3 [json_name = "data"];</code>

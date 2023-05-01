@@ -15,7 +15,7 @@ public interface QueryServiceDescriptorOrBuilder extends
    * <code>string fullname = 1 [json_name = "fullname"];</code>
    * @return The fullname.
    */
-  String getFullname();
+  java.lang.String getFullname();
   /**
    * <pre>
    * fullname is the protobuf fullname of the service descriptor
@@ -44,7 +44,7 @@ public interface QueryServiceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryMethodDescriptor methods = 3 [json_name = "methods"];</code>
    */
-  java.util.List<QueryMethodDescriptor>
+  java.util.List<com.cosmos.base.reflection.v2alpha1.QueryMethodDescriptor> 
       getMethodsList();
   /**
    * <pre>
@@ -53,7 +53,7 @@ public interface QueryServiceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryMethodDescriptor methods = 3 [json_name = "methods"];</code>
    */
-  QueryMethodDescriptor getMethods(int index);
+  com.cosmos.base.reflection.v2alpha1.QueryMethodDescriptor getMethods(int index);
   /**
    * <pre>
    * methods provides a list of query service methods
@@ -69,7 +69,7 @@ public interface QueryServiceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryMethodDescriptor methods = 3 [json_name = "methods"];</code>
    */
-  java.util.List<? extends QueryMethodDescriptorOrBuilder>
+  java.util.List<? extends com.cosmos.base.reflection.v2alpha1.QueryMethodDescriptorOrBuilder> 
       getMethodsOrBuilderList();
   /**
    * <pre>
@@ -78,6 +78,6 @@ public interface QueryServiceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.QueryMethodDescriptor methods = 3 [json_name = "methods"];</code>
    */
-  QueryMethodDescriptorOrBuilder getMethodsOrBuilder(
+  com.cosmos.base.reflection.v2alpha1.QueryMethodDescriptorOrBuilder getMethodsOrBuilder(
       int index);
 }

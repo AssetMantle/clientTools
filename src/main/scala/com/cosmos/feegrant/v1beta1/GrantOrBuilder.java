@@ -15,7 +15,7 @@ public interface GrantOrBuilder extends
    * <code>string granter = 1 [json_name = "granter"];</code>
    * @return The granter.
    */
-  String getGranter();
+  java.lang.String getGranter();
   /**
    * <pre>
    * granter is the address of the user granting an allowance of their funds.
@@ -35,7 +35,7 @@ public interface GrantOrBuilder extends
    * <code>string grantee = 2 [json_name = "grantee"];</code>
    * @return The grantee.
    */
-  String getGrantee();
+  java.lang.String getGrantee();
   /**
    * <pre>
    * grantee is the address of the user being granted an allowance of another user's funds.

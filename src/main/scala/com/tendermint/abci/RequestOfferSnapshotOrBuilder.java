@@ -24,7 +24,7 @@ public interface RequestOfferSnapshotOrBuilder extends
    * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
    * @return The snapshot.
    */
-  Snapshot getSnapshot();
+  com.tendermint.abci.Snapshot getSnapshot();
   /**
    * <pre>
    * snapshot offered by peers
@@ -32,7 +32,7 @@ public interface RequestOfferSnapshotOrBuilder extends
    *
    * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
    */
-  SnapshotOrBuilder getSnapshotOrBuilder();
+  com.tendermint.abci.SnapshotOrBuilder getSnapshotOrBuilder();
 
   /**
    * <pre>

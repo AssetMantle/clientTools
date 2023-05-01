@@ -17,7 +17,7 @@ public interface MsgVoteWeightedOrBuilder extends
    * <code>string voter = 2 [json_name = "voter"];</code>
    * @return The voter.
    */
-  String getVoter();
+  java.lang.String getVoter();
   /**
    * <code>string voter = 2 [json_name = "voter"];</code>
    * @return The bytes for voter.
@@ -28,12 +28,12 @@ public interface MsgVoteWeightedOrBuilder extends
   /**
    * <code>repeated .cosmos.gov.v1beta1.WeightedVoteOption options = 3 [json_name = "options", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<WeightedVoteOption>
+  java.util.List<com.cosmos.gov.v1beta1.WeightedVoteOption> 
       getOptionsList();
   /**
    * <code>repeated .cosmos.gov.v1beta1.WeightedVoteOption options = 3 [json_name = "options", (.gogoproto.nullable) = false];</code>
    */
-  WeightedVoteOption getOptions(int index);
+  com.cosmos.gov.v1beta1.WeightedVoteOption getOptions(int index);
   /**
    * <code>repeated .cosmos.gov.v1beta1.WeightedVoteOption options = 3 [json_name = "options", (.gogoproto.nullable) = false];</code>
    */
@@ -41,11 +41,11 @@ public interface MsgVoteWeightedOrBuilder extends
   /**
    * <code>repeated .cosmos.gov.v1beta1.WeightedVoteOption options = 3 [json_name = "options", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends WeightedVoteOptionOrBuilder>
+  java.util.List<? extends com.cosmos.gov.v1beta1.WeightedVoteOptionOrBuilder> 
       getOptionsOrBuilderList();
   /**
    * <code>repeated .cosmos.gov.v1beta1.WeightedVoteOption options = 3 [json_name = "options", (.gogoproto.nullable) = false];</code>
    */
-  WeightedVoteOptionOrBuilder getOptionsOrBuilder(
+  com.cosmos.gov.v1beta1.WeightedVoteOptionOrBuilder getOptionsOrBuilder(
       int index);
 }

@@ -15,7 +15,7 @@ public interface VersionOrBuilder extends
    * <code>string identifier = 1 [json_name = "identifier"];</code>
    * @return The identifier.
    */
-  String getIdentifier();
+  java.lang.String getIdentifier();
   /**
    * <pre>
    * unique version identifier
@@ -35,7 +35,7 @@ public interface VersionOrBuilder extends
    * <code>repeated string features = 2 [json_name = "features"];</code>
    * @return A list containing the features.
    */
-  java.util.List<String>
+  java.util.List<java.lang.String>
       getFeaturesList();
   /**
    * <pre>
@@ -55,7 +55,7 @@ public interface VersionOrBuilder extends
    * @param index The index of the element to return.
    * @return The features at the given index.
    */
-  String getFeatures(int index);
+  java.lang.String getFeatures(int index);
   /**
    * <pre>
    * list of features compatible with the specified identifier

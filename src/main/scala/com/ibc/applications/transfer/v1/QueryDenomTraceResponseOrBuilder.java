@@ -24,7 +24,7 @@ public interface QueryDenomTraceResponseOrBuilder extends
    * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
    * @return The denomTrace.
    */
-  DenomTrace getDenomTrace();
+  com.ibc.applications.transfer.v1.DenomTrace getDenomTrace();
   /**
    * <pre>
    * denom_trace returns the requested denomination trace information.
@@ -32,5 +32,5 @@ public interface QueryDenomTraceResponseOrBuilder extends
    *
    * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
    */
-  DenomTraceOrBuilder getDenomTraceOrBuilder();
+  com.ibc.applications.transfer.v1.DenomTraceOrBuilder getDenomTraceOrBuilder();
 }

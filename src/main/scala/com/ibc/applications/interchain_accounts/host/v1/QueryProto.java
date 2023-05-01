@@ -32,7 +32,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n8ibc/applications/interchain_accounts/h" +
       "ost/v1/query.proto\022,ibc.applications.int" +
       "erchain_accounts.host.v1\032\034google/api/ann" +
@@ -61,27 +61,27 @@ public final class QueryProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.api.AnnotationsProto.getDescriptor(),
-          HostProto.getDescriptor(),
+          com.ibc.applications.interchain_accounts.host.v1.HostProto.getDescriptor(),
         });
     internal_static_ibc_applications_interchain_accounts_host_v1_QueryParamsRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ibc_applications_interchain_accounts_host_v1_QueryParamsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_host_v1_QueryParamsRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_ibc_applications_interchain_accounts_host_v1_QueryParamsResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_applications_interchain_accounts_host_v1_QueryParamsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_host_v1_QueryParamsResponse_descriptor,
-        new String[] { "Params", });
+        new java.lang.String[] { "Params", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.google.api.AnnotationsProto.http);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();
-    HostProto.getDescriptor();
+    com.ibc.applications.interchain_accounts.host.v1.HostProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

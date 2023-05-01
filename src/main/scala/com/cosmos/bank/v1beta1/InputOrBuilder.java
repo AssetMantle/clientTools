@@ -11,7 +11,7 @@ public interface InputOrBuilder extends
    * <code>string address = 1 [json_name = "address"];</code>
    * @return The address.
    */
-  String getAddress();
+  java.lang.String getAddress();
   /**
    * <code>string address = 1 [json_name = "address"];</code>
    * @return The bytes for address.

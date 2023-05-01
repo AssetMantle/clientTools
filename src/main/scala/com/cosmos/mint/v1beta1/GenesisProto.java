@@ -27,7 +27,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n!cosmos/mint/v1beta1/genesis.proto\022\023cos" +
       "mos.mint.v1beta1\032\024gogoproto/gogo.proto\032\036" +
       "cosmos/mint/v1beta1/mint.proto\"\204\001\n\014Genes" +
@@ -45,21 +45,21 @@ public final class GenesisProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
-          MintProto.getDescriptor(),
+          com.cosmos.mint.v1beta1.MintProto.getDescriptor(),
         });
     internal_static_cosmos_mint_v1beta1_GenesisState_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_mint_v1beta1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_mint_v1beta1_GenesisState_descriptor,
-        new String[] { "Minter", "Params", });
+        new java.lang.String[] { "Minter", "Params", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
-    MintProto.getDescriptor();
+    com.cosmos.mint.v1beta1.MintProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

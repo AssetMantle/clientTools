@@ -11,7 +11,7 @@ public interface SoftwareUpgradeProposalOrBuilder extends
    * <code>string title = 1 [json_name = "title"];</code>
    * @return The title.
    */
-  String getTitle();
+  java.lang.String getTitle();
   /**
    * <code>string title = 1 [json_name = "title"];</code>
    * @return The bytes for title.
@@ -23,7 +23,7 @@ public interface SoftwareUpgradeProposalOrBuilder extends
    * <code>string description = 2 [json_name = "description"];</code>
    * @return The description.
    */
-  String getDescription();
+  java.lang.String getDescription();
   /**
    * <code>string description = 2 [json_name = "description"];</code>
    * @return The bytes for description.
@@ -40,9 +40,9 @@ public interface SoftwareUpgradeProposalOrBuilder extends
    * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [json_name = "plan", (.gogoproto.nullable) = false];</code>
    * @return The plan.
    */
-  Plan getPlan();
+  com.cosmos.upgrade.v1beta1.Plan getPlan();
   /**
    * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [json_name = "plan", (.gogoproto.nullable) = false];</code>
    */
-  PlanOrBuilder getPlanOrBuilder();
+  com.cosmos.upgrade.v1beta1.PlanOrBuilder getPlanOrBuilder();
 }

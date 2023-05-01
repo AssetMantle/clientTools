@@ -18,32 +18,32 @@ private static final long serialVersionUID = 0L;
   private Response() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Response();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TypesProto.internal_static_tendermint_abci_Response_descriptor;
+    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_Response_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TypesProto.internal_static_tendermint_abci_Response_fieldAccessorTable
+    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_Response_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Response.class, Builder.class);
+            com.tendermint.abci.Response.class, com.tendermint.abci.Response.Builder.class);
   }
 
   private int valueCase_ = 0;
   @SuppressWarnings("serial")
-  private Object value_;
+  private java.lang.Object value_;
   public enum ValueCase
       implements com.google.protobuf.Internal.EnumLite,
-          InternalOneOfEnum {
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     EXCEPTION(1),
     ECHO(2),
     FLUSH(3),
@@ -70,7 +70,7 @@ private static final long serialVersionUID = 0L;
      * @return The enum associated with the given number.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static ValueCase valueOf(int value) {
       return forNumber(value);
     }
@@ -113,7 +113,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
    * @return Whether the exception field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasException() {
     return valueCase_ == 1;
   }
@@ -121,22 +121,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
    * @return The exception.
    */
-  @Override
-  public ResponseException getException() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseException getException() {
     if (valueCase_ == 1) {
-       return (ResponseException) value_;
+       return (com.tendermint.abci.ResponseException) value_;
     }
-    return ResponseException.getDefaultInstance();
+    return com.tendermint.abci.ResponseException.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
    */
-  @Override
-  public ResponseExceptionOrBuilder getExceptionOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseExceptionOrBuilder getExceptionOrBuilder() {
     if (valueCase_ == 1) {
-       return (ResponseException) value_;
+       return (com.tendermint.abci.ResponseException) value_;
     }
-    return ResponseException.getDefaultInstance();
+    return com.tendermint.abci.ResponseException.getDefaultInstance();
   }
 
   public static final int ECHO_FIELD_NUMBER = 2;
@@ -144,7 +144,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
    * @return Whether the echo field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasEcho() {
     return valueCase_ == 2;
   }
@@ -152,22 +152,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
    * @return The echo.
    */
-  @Override
-  public ResponseEcho getEcho() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseEcho getEcho() {
     if (valueCase_ == 2) {
-       return (ResponseEcho) value_;
+       return (com.tendermint.abci.ResponseEcho) value_;
     }
-    return ResponseEcho.getDefaultInstance();
+    return com.tendermint.abci.ResponseEcho.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
    */
-  @Override
-  public ResponseEchoOrBuilder getEchoOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseEchoOrBuilder getEchoOrBuilder() {
     if (valueCase_ == 2) {
-       return (ResponseEcho) value_;
+       return (com.tendermint.abci.ResponseEcho) value_;
     }
-    return ResponseEcho.getDefaultInstance();
+    return com.tendermint.abci.ResponseEcho.getDefaultInstance();
   }
 
   public static final int FLUSH_FIELD_NUMBER = 3;
@@ -175,7 +175,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
    * @return Whether the flush field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasFlush() {
     return valueCase_ == 3;
   }
@@ -183,22 +183,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
    * @return The flush.
    */
-  @Override
-  public ResponseFlush getFlush() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseFlush getFlush() {
     if (valueCase_ == 3) {
-       return (ResponseFlush) value_;
+       return (com.tendermint.abci.ResponseFlush) value_;
     }
-    return ResponseFlush.getDefaultInstance();
+    return com.tendermint.abci.ResponseFlush.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
    */
-  @Override
-  public ResponseFlushOrBuilder getFlushOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseFlushOrBuilder getFlushOrBuilder() {
     if (valueCase_ == 3) {
-       return (ResponseFlush) value_;
+       return (com.tendermint.abci.ResponseFlush) value_;
     }
-    return ResponseFlush.getDefaultInstance();
+    return com.tendermint.abci.ResponseFlush.getDefaultInstance();
   }
 
   public static final int INFO_FIELD_NUMBER = 4;
@@ -206,7 +206,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
    * @return Whether the info field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasInfo() {
     return valueCase_ == 4;
   }
@@ -214,22 +214,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
    * @return The info.
    */
-  @Override
-  public ResponseInfo getInfo() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseInfo getInfo() {
     if (valueCase_ == 4) {
-       return (ResponseInfo) value_;
+       return (com.tendermint.abci.ResponseInfo) value_;
     }
-    return ResponseInfo.getDefaultInstance();
+    return com.tendermint.abci.ResponseInfo.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
    */
-  @Override
-  public ResponseInfoOrBuilder getInfoOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseInfoOrBuilder getInfoOrBuilder() {
     if (valueCase_ == 4) {
-       return (ResponseInfo) value_;
+       return (com.tendermint.abci.ResponseInfo) value_;
     }
-    return ResponseInfo.getDefaultInstance();
+    return com.tendermint.abci.ResponseInfo.getDefaultInstance();
   }
 
   public static final int SET_OPTION_FIELD_NUMBER = 5;
@@ -237,7 +237,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
    * @return Whether the setOption field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasSetOption() {
     return valueCase_ == 5;
   }
@@ -245,22 +245,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
    * @return The setOption.
    */
-  @Override
-  public ResponseSetOption getSetOption() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseSetOption getSetOption() {
     if (valueCase_ == 5) {
-       return (ResponseSetOption) value_;
+       return (com.tendermint.abci.ResponseSetOption) value_;
     }
-    return ResponseSetOption.getDefaultInstance();
+    return com.tendermint.abci.ResponseSetOption.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
    */
-  @Override
-  public ResponseSetOptionOrBuilder getSetOptionOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseSetOptionOrBuilder getSetOptionOrBuilder() {
     if (valueCase_ == 5) {
-       return (ResponseSetOption) value_;
+       return (com.tendermint.abci.ResponseSetOption) value_;
     }
-    return ResponseSetOption.getDefaultInstance();
+    return com.tendermint.abci.ResponseSetOption.getDefaultInstance();
   }
 
   public static final int INIT_CHAIN_FIELD_NUMBER = 6;
@@ -268,7 +268,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
    * @return Whether the initChain field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasInitChain() {
     return valueCase_ == 6;
   }
@@ -276,22 +276,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
    * @return The initChain.
    */
-  @Override
-  public ResponseInitChain getInitChain() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseInitChain getInitChain() {
     if (valueCase_ == 6) {
-       return (ResponseInitChain) value_;
+       return (com.tendermint.abci.ResponseInitChain) value_;
     }
-    return ResponseInitChain.getDefaultInstance();
+    return com.tendermint.abci.ResponseInitChain.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
    */
-  @Override
-  public ResponseInitChainOrBuilder getInitChainOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseInitChainOrBuilder getInitChainOrBuilder() {
     if (valueCase_ == 6) {
-       return (ResponseInitChain) value_;
+       return (com.tendermint.abci.ResponseInitChain) value_;
     }
-    return ResponseInitChain.getDefaultInstance();
+    return com.tendermint.abci.ResponseInitChain.getDefaultInstance();
   }
 
   public static final int QUERY_FIELD_NUMBER = 7;
@@ -299,7 +299,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
    * @return Whether the query field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasQuery() {
     return valueCase_ == 7;
   }
@@ -307,22 +307,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
    * @return The query.
    */
-  @Override
-  public ResponseQuery getQuery() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseQuery getQuery() {
     if (valueCase_ == 7) {
-       return (ResponseQuery) value_;
+       return (com.tendermint.abci.ResponseQuery) value_;
     }
-    return ResponseQuery.getDefaultInstance();
+    return com.tendermint.abci.ResponseQuery.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
    */
-  @Override
-  public ResponseQueryOrBuilder getQueryOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseQueryOrBuilder getQueryOrBuilder() {
     if (valueCase_ == 7) {
-       return (ResponseQuery) value_;
+       return (com.tendermint.abci.ResponseQuery) value_;
     }
-    return ResponseQuery.getDefaultInstance();
+    return com.tendermint.abci.ResponseQuery.getDefaultInstance();
   }
 
   public static final int BEGIN_BLOCK_FIELD_NUMBER = 8;
@@ -330,7 +330,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
    * @return Whether the beginBlock field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasBeginBlock() {
     return valueCase_ == 8;
   }
@@ -338,22 +338,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
    * @return The beginBlock.
    */
-  @Override
-  public ResponseBeginBlock getBeginBlock() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseBeginBlock getBeginBlock() {
     if (valueCase_ == 8) {
-       return (ResponseBeginBlock) value_;
+       return (com.tendermint.abci.ResponseBeginBlock) value_;
     }
-    return ResponseBeginBlock.getDefaultInstance();
+    return com.tendermint.abci.ResponseBeginBlock.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
    */
-  @Override
-  public ResponseBeginBlockOrBuilder getBeginBlockOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseBeginBlockOrBuilder getBeginBlockOrBuilder() {
     if (valueCase_ == 8) {
-       return (ResponseBeginBlock) value_;
+       return (com.tendermint.abci.ResponseBeginBlock) value_;
     }
-    return ResponseBeginBlock.getDefaultInstance();
+    return com.tendermint.abci.ResponseBeginBlock.getDefaultInstance();
   }
 
   public static final int CHECK_TX_FIELD_NUMBER = 9;
@@ -361,7 +361,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
    * @return Whether the checkTx field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasCheckTx() {
     return valueCase_ == 9;
   }
@@ -369,22 +369,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
    * @return The checkTx.
    */
-  @Override
-  public ResponseCheckTx getCheckTx() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseCheckTx getCheckTx() {
     if (valueCase_ == 9) {
-       return (ResponseCheckTx) value_;
+       return (com.tendermint.abci.ResponseCheckTx) value_;
     }
-    return ResponseCheckTx.getDefaultInstance();
+    return com.tendermint.abci.ResponseCheckTx.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
    */
-  @Override
-  public ResponseCheckTxOrBuilder getCheckTxOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseCheckTxOrBuilder getCheckTxOrBuilder() {
     if (valueCase_ == 9) {
-       return (ResponseCheckTx) value_;
+       return (com.tendermint.abci.ResponseCheckTx) value_;
     }
-    return ResponseCheckTx.getDefaultInstance();
+    return com.tendermint.abci.ResponseCheckTx.getDefaultInstance();
   }
 
   public static final int DELIVER_TX_FIELD_NUMBER = 10;
@@ -392,7 +392,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
    * @return Whether the deliverTx field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasDeliverTx() {
     return valueCase_ == 10;
   }
@@ -400,22 +400,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
    * @return The deliverTx.
    */
-  @Override
-  public ResponseDeliverTx getDeliverTx() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseDeliverTx getDeliverTx() {
     if (valueCase_ == 10) {
-       return (ResponseDeliverTx) value_;
+       return (com.tendermint.abci.ResponseDeliverTx) value_;
     }
-    return ResponseDeliverTx.getDefaultInstance();
+    return com.tendermint.abci.ResponseDeliverTx.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
    */
-  @Override
-  public ResponseDeliverTxOrBuilder getDeliverTxOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseDeliverTxOrBuilder getDeliverTxOrBuilder() {
     if (valueCase_ == 10) {
-       return (ResponseDeliverTx) value_;
+       return (com.tendermint.abci.ResponseDeliverTx) value_;
     }
-    return ResponseDeliverTx.getDefaultInstance();
+    return com.tendermint.abci.ResponseDeliverTx.getDefaultInstance();
   }
 
   public static final int END_BLOCK_FIELD_NUMBER = 11;
@@ -423,7 +423,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
    * @return Whether the endBlock field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasEndBlock() {
     return valueCase_ == 11;
   }
@@ -431,22 +431,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
    * @return The endBlock.
    */
-  @Override
-  public ResponseEndBlock getEndBlock() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseEndBlock getEndBlock() {
     if (valueCase_ == 11) {
-       return (ResponseEndBlock) value_;
+       return (com.tendermint.abci.ResponseEndBlock) value_;
     }
-    return ResponseEndBlock.getDefaultInstance();
+    return com.tendermint.abci.ResponseEndBlock.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
    */
-  @Override
-  public ResponseEndBlockOrBuilder getEndBlockOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseEndBlockOrBuilder getEndBlockOrBuilder() {
     if (valueCase_ == 11) {
-       return (ResponseEndBlock) value_;
+       return (com.tendermint.abci.ResponseEndBlock) value_;
     }
-    return ResponseEndBlock.getDefaultInstance();
+    return com.tendermint.abci.ResponseEndBlock.getDefaultInstance();
   }
 
   public static final int COMMIT_FIELD_NUMBER = 12;
@@ -454,7 +454,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
    * @return Whether the commit field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasCommit() {
     return valueCase_ == 12;
   }
@@ -462,22 +462,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
    * @return The commit.
    */
-  @Override
-  public ResponseCommit getCommit() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseCommit getCommit() {
     if (valueCase_ == 12) {
-       return (ResponseCommit) value_;
+       return (com.tendermint.abci.ResponseCommit) value_;
     }
-    return ResponseCommit.getDefaultInstance();
+    return com.tendermint.abci.ResponseCommit.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
    */
-  @Override
-  public ResponseCommitOrBuilder getCommitOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseCommitOrBuilder getCommitOrBuilder() {
     if (valueCase_ == 12) {
-       return (ResponseCommit) value_;
+       return (com.tendermint.abci.ResponseCommit) value_;
     }
-    return ResponseCommit.getDefaultInstance();
+    return com.tendermint.abci.ResponseCommit.getDefaultInstance();
   }
 
   public static final int LIST_SNAPSHOTS_FIELD_NUMBER = 13;
@@ -485,7 +485,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
    * @return Whether the listSnapshots field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasListSnapshots() {
     return valueCase_ == 13;
   }
@@ -493,22 +493,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
    * @return The listSnapshots.
    */
-  @Override
-  public ResponseListSnapshots getListSnapshots() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseListSnapshots getListSnapshots() {
     if (valueCase_ == 13) {
-       return (ResponseListSnapshots) value_;
+       return (com.tendermint.abci.ResponseListSnapshots) value_;
     }
-    return ResponseListSnapshots.getDefaultInstance();
+    return com.tendermint.abci.ResponseListSnapshots.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
    */
-  @Override
-  public ResponseListSnapshotsOrBuilder getListSnapshotsOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseListSnapshotsOrBuilder getListSnapshotsOrBuilder() {
     if (valueCase_ == 13) {
-       return (ResponseListSnapshots) value_;
+       return (com.tendermint.abci.ResponseListSnapshots) value_;
     }
-    return ResponseListSnapshots.getDefaultInstance();
+    return com.tendermint.abci.ResponseListSnapshots.getDefaultInstance();
   }
 
   public static final int OFFER_SNAPSHOT_FIELD_NUMBER = 14;
@@ -516,7 +516,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
    * @return Whether the offerSnapshot field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasOfferSnapshot() {
     return valueCase_ == 14;
   }
@@ -524,22 +524,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
    * @return The offerSnapshot.
    */
-  @Override
-  public ResponseOfferSnapshot getOfferSnapshot() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseOfferSnapshot getOfferSnapshot() {
     if (valueCase_ == 14) {
-       return (ResponseOfferSnapshot) value_;
+       return (com.tendermint.abci.ResponseOfferSnapshot) value_;
     }
-    return ResponseOfferSnapshot.getDefaultInstance();
+    return com.tendermint.abci.ResponseOfferSnapshot.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
    */
-  @Override
-  public ResponseOfferSnapshotOrBuilder getOfferSnapshotOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseOfferSnapshotOrBuilder getOfferSnapshotOrBuilder() {
     if (valueCase_ == 14) {
-       return (ResponseOfferSnapshot) value_;
+       return (com.tendermint.abci.ResponseOfferSnapshot) value_;
     }
-    return ResponseOfferSnapshot.getDefaultInstance();
+    return com.tendermint.abci.ResponseOfferSnapshot.getDefaultInstance();
   }
 
   public static final int LOAD_SNAPSHOT_CHUNK_FIELD_NUMBER = 15;
@@ -547,7 +547,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
    * @return Whether the loadSnapshotChunk field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasLoadSnapshotChunk() {
     return valueCase_ == 15;
   }
@@ -555,22 +555,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
    * @return The loadSnapshotChunk.
    */
-  @Override
-  public ResponseLoadSnapshotChunk getLoadSnapshotChunk() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseLoadSnapshotChunk getLoadSnapshotChunk() {
     if (valueCase_ == 15) {
-       return (ResponseLoadSnapshotChunk) value_;
+       return (com.tendermint.abci.ResponseLoadSnapshotChunk) value_;
     }
-    return ResponseLoadSnapshotChunk.getDefaultInstance();
+    return com.tendermint.abci.ResponseLoadSnapshotChunk.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
    */
-  @Override
-  public ResponseLoadSnapshotChunkOrBuilder getLoadSnapshotChunkOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseLoadSnapshotChunkOrBuilder getLoadSnapshotChunkOrBuilder() {
     if (valueCase_ == 15) {
-       return (ResponseLoadSnapshotChunk) value_;
+       return (com.tendermint.abci.ResponseLoadSnapshotChunk) value_;
     }
-    return ResponseLoadSnapshotChunk.getDefaultInstance();
+    return com.tendermint.abci.ResponseLoadSnapshotChunk.getDefaultInstance();
   }
 
   public static final int APPLY_SNAPSHOT_CHUNK_FIELD_NUMBER = 16;
@@ -578,7 +578,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
    * @return Whether the applySnapshotChunk field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasApplySnapshotChunk() {
     return valueCase_ == 16;
   }
@@ -586,26 +586,26 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
    * @return The applySnapshotChunk.
    */
-  @Override
-  public ResponseApplySnapshotChunk getApplySnapshotChunk() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseApplySnapshotChunk getApplySnapshotChunk() {
     if (valueCase_ == 16) {
-       return (ResponseApplySnapshotChunk) value_;
+       return (com.tendermint.abci.ResponseApplySnapshotChunk) value_;
     }
-    return ResponseApplySnapshotChunk.getDefaultInstance();
+    return com.tendermint.abci.ResponseApplySnapshotChunk.getDefaultInstance();
   }
   /**
    * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
    */
-  @Override
-  public ResponseApplySnapshotChunkOrBuilder getApplySnapshotChunkOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.abci.ResponseApplySnapshotChunkOrBuilder getApplySnapshotChunkOrBuilder() {
     if (valueCase_ == 16) {
-       return (ResponseApplySnapshotChunk) value_;
+       return (com.tendermint.abci.ResponseApplySnapshotChunk) value_;
     }
-    return ResponseApplySnapshotChunk.getDefaultInstance();
+    return com.tendermint.abci.ResponseApplySnapshotChunk.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -615,61 +615,61 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (valueCase_ == 1) {
-      output.writeMessage(1, (ResponseException) value_);
+      output.writeMessage(1, (com.tendermint.abci.ResponseException) value_);
     }
     if (valueCase_ == 2) {
-      output.writeMessage(2, (ResponseEcho) value_);
+      output.writeMessage(2, (com.tendermint.abci.ResponseEcho) value_);
     }
     if (valueCase_ == 3) {
-      output.writeMessage(3, (ResponseFlush) value_);
+      output.writeMessage(3, (com.tendermint.abci.ResponseFlush) value_);
     }
     if (valueCase_ == 4) {
-      output.writeMessage(4, (ResponseInfo) value_);
+      output.writeMessage(4, (com.tendermint.abci.ResponseInfo) value_);
     }
     if (valueCase_ == 5) {
-      output.writeMessage(5, (ResponseSetOption) value_);
+      output.writeMessage(5, (com.tendermint.abci.ResponseSetOption) value_);
     }
     if (valueCase_ == 6) {
-      output.writeMessage(6, (ResponseInitChain) value_);
+      output.writeMessage(6, (com.tendermint.abci.ResponseInitChain) value_);
     }
     if (valueCase_ == 7) {
-      output.writeMessage(7, (ResponseQuery) value_);
+      output.writeMessage(7, (com.tendermint.abci.ResponseQuery) value_);
     }
     if (valueCase_ == 8) {
-      output.writeMessage(8, (ResponseBeginBlock) value_);
+      output.writeMessage(8, (com.tendermint.abci.ResponseBeginBlock) value_);
     }
     if (valueCase_ == 9) {
-      output.writeMessage(9, (ResponseCheckTx) value_);
+      output.writeMessage(9, (com.tendermint.abci.ResponseCheckTx) value_);
     }
     if (valueCase_ == 10) {
-      output.writeMessage(10, (ResponseDeliverTx) value_);
+      output.writeMessage(10, (com.tendermint.abci.ResponseDeliverTx) value_);
     }
     if (valueCase_ == 11) {
-      output.writeMessage(11, (ResponseEndBlock) value_);
+      output.writeMessage(11, (com.tendermint.abci.ResponseEndBlock) value_);
     }
     if (valueCase_ == 12) {
-      output.writeMessage(12, (ResponseCommit) value_);
+      output.writeMessage(12, (com.tendermint.abci.ResponseCommit) value_);
     }
     if (valueCase_ == 13) {
-      output.writeMessage(13, (ResponseListSnapshots) value_);
+      output.writeMessage(13, (com.tendermint.abci.ResponseListSnapshots) value_);
     }
     if (valueCase_ == 14) {
-      output.writeMessage(14, (ResponseOfferSnapshot) value_);
+      output.writeMessage(14, (com.tendermint.abci.ResponseOfferSnapshot) value_);
     }
     if (valueCase_ == 15) {
-      output.writeMessage(15, (ResponseLoadSnapshotChunk) value_);
+      output.writeMessage(15, (com.tendermint.abci.ResponseLoadSnapshotChunk) value_);
     }
     if (valueCase_ == 16) {
-      output.writeMessage(16, (ResponseApplySnapshotChunk) value_);
+      output.writeMessage(16, (com.tendermint.abci.ResponseApplySnapshotChunk) value_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -677,82 +677,82 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (valueCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, (ResponseException) value_);
+        .computeMessageSize(1, (com.tendermint.abci.ResponseException) value_);
     }
     if (valueCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (ResponseEcho) value_);
+        .computeMessageSize(2, (com.tendermint.abci.ResponseEcho) value_);
     }
     if (valueCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, (ResponseFlush) value_);
+        .computeMessageSize(3, (com.tendermint.abci.ResponseFlush) value_);
     }
     if (valueCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, (ResponseInfo) value_);
+        .computeMessageSize(4, (com.tendermint.abci.ResponseInfo) value_);
     }
     if (valueCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, (ResponseSetOption) value_);
+        .computeMessageSize(5, (com.tendermint.abci.ResponseSetOption) value_);
     }
     if (valueCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, (ResponseInitChain) value_);
+        .computeMessageSize(6, (com.tendermint.abci.ResponseInitChain) value_);
     }
     if (valueCase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, (ResponseQuery) value_);
+        .computeMessageSize(7, (com.tendermint.abci.ResponseQuery) value_);
     }
     if (valueCase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, (ResponseBeginBlock) value_);
+        .computeMessageSize(8, (com.tendermint.abci.ResponseBeginBlock) value_);
     }
     if (valueCase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, (ResponseCheckTx) value_);
+        .computeMessageSize(9, (com.tendermint.abci.ResponseCheckTx) value_);
     }
     if (valueCase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, (ResponseDeliverTx) value_);
+        .computeMessageSize(10, (com.tendermint.abci.ResponseDeliverTx) value_);
     }
     if (valueCase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(11, (ResponseEndBlock) value_);
+        .computeMessageSize(11, (com.tendermint.abci.ResponseEndBlock) value_);
     }
     if (valueCase_ == 12) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, (ResponseCommit) value_);
+        .computeMessageSize(12, (com.tendermint.abci.ResponseCommit) value_);
     }
     if (valueCase_ == 13) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(13, (ResponseListSnapshots) value_);
+        .computeMessageSize(13, (com.tendermint.abci.ResponseListSnapshots) value_);
     }
     if (valueCase_ == 14) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(14, (ResponseOfferSnapshot) value_);
+        .computeMessageSize(14, (com.tendermint.abci.ResponseOfferSnapshot) value_);
     }
     if (valueCase_ == 15) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(15, (ResponseLoadSnapshotChunk) value_);
+        .computeMessageSize(15, (com.tendermint.abci.ResponseLoadSnapshotChunk) value_);
     }
     if (valueCase_ == 16) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(16, (ResponseApplySnapshotChunk) value_);
+        .computeMessageSize(16, (com.tendermint.abci.ResponseApplySnapshotChunk) value_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Response)) {
+    if (!(obj instanceof com.tendermint.abci.Response)) {
       return super.equals(obj);
     }
-    Response other = (Response) obj;
+    com.tendermint.abci.Response other = (com.tendermint.abci.Response) obj;
 
     if (!getValueCase().equals(other.getValueCase())) return false;
     switch (valueCase_) {
@@ -827,7 +827,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -907,69 +907,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Response parseFrom(
+  public static com.tendermint.abci.Response parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Response parseFrom(
+  public static com.tendermint.abci.Response parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Response parseFrom(
+  public static com.tendermint.abci.Response parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Response parseFrom(
+  public static com.tendermint.abci.Response parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Response parseFrom(byte[] data)
+  public static com.tendermint.abci.Response parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Response parseFrom(
+  public static com.tendermint.abci.Response parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Response parseFrom(java.io.InputStream input)
+  public static com.tendermint.abci.Response parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Response parseFrom(
+  public static com.tendermint.abci.Response parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Response parseDelimitedFrom(java.io.InputStream input)
+  public static com.tendermint.abci.Response parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Response parseDelimitedFrom(
+  public static com.tendermint.abci.Response parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Response parseFrom(
+  public static com.tendermint.abci.Response parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Response parseFrom(
+  public static com.tendermint.abci.Response parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -977,23 +977,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Response prototype) {
+  public static Builder newBuilder(com.tendermint.abci.Response prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -1003,18 +1003,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.abci.Response)
-      ResponseOrBuilder {
+      com.tendermint.abci.ResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TypesProto.internal_static_tendermint_abci_Response_descriptor;
+      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_Response_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TypesProto.internal_static_tendermint_abci_Response_fieldAccessorTable
+      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_Response_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Response.class, Builder.class);
+              com.tendermint.abci.Response.class, com.tendermint.abci.Response.Builder.class);
     }
 
     // Construct using com.tendermint.abci.Response.newBuilder()
@@ -1023,11 +1023,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -1084,40 +1084,40 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TypesProto.internal_static_tendermint_abci_Response_descriptor;
+      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_Response_descriptor;
     }
 
-    @Override
-    public Response getDefaultInstanceForType() {
-      return Response.getDefaultInstance();
+    @java.lang.Override
+    public com.tendermint.abci.Response getDefaultInstanceForType() {
+      return com.tendermint.abci.Response.getDefaultInstance();
     }
 
-    @Override
-    public Response build() {
-      Response result = buildPartial();
+    @java.lang.Override
+    public com.tendermint.abci.Response build() {
+      com.tendermint.abci.Response result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Response buildPartial() {
-      Response result = new Response(this);
+    @java.lang.Override
+    public com.tendermint.abci.Response buildPartial() {
+      com.tendermint.abci.Response result = new com.tendermint.abci.Response(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       buildPartialOneofs(result);
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(Response result) {
+    private void buildPartial0(com.tendermint.abci.Response result) {
       int from_bitField0_ = bitField0_;
     }
 
-    private void buildPartialOneofs(Response result) {
+    private void buildPartialOneofs(com.tendermint.abci.Response result) {
       result.valueCase_ = valueCase_;
       result.value_ = this.value_;
       if (valueCase_ == 1 &&
@@ -1186,50 +1186,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Response) {
-        return mergeFrom((Response)other);
+      if (other instanceof com.tendermint.abci.Response) {
+        return mergeFrom((com.tendermint.abci.Response)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Response other) {
-      if (other == Response.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.tendermint.abci.Response other) {
+      if (other == com.tendermint.abci.Response.getDefaultInstance()) return this;
       switch (other.getValueCase()) {
         case EXCEPTION: {
           mergeException(other.getException());
@@ -1304,18 +1304,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -1453,7 +1453,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int valueCase_ = 0;
-    private Object value_;
+    private java.lang.Object value_;
     public ValueCase
         getValueCase() {
       return ValueCase.forNumber(
@@ -1470,12 +1470,12 @@ private static final long serialVersionUID = 0L;
     private int bitField0_;
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseException, ResponseException.Builder, ResponseExceptionOrBuilder> exceptionBuilder_;
+        com.tendermint.abci.ResponseException, com.tendermint.abci.ResponseException.Builder, com.tendermint.abci.ResponseExceptionOrBuilder> exceptionBuilder_;
     /**
      * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
      * @return Whether the exception field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasException() {
       return valueCase_ == 1;
     }
@@ -1483,24 +1483,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
      * @return The exception.
      */
-    @Override
-    public ResponseException getException() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseException getException() {
       if (exceptionBuilder_ == null) {
         if (valueCase_ == 1) {
-          return (ResponseException) value_;
+          return (com.tendermint.abci.ResponseException) value_;
         }
-        return ResponseException.getDefaultInstance();
+        return com.tendermint.abci.ResponseException.getDefaultInstance();
       } else {
         if (valueCase_ == 1) {
           return exceptionBuilder_.getMessage();
         }
-        return ResponseException.getDefaultInstance();
+        return com.tendermint.abci.ResponseException.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
      */
-    public Builder setException(ResponseException value) {
+    public Builder setException(com.tendermint.abci.ResponseException value) {
       if (exceptionBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1517,7 +1517,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
      */
     public Builder setException(
-        ResponseException.Builder builderForValue) {
+        com.tendermint.abci.ResponseException.Builder builderForValue) {
       if (exceptionBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -1530,11 +1530,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
      */
-    public Builder mergeException(ResponseException value) {
+    public Builder mergeException(com.tendermint.abci.ResponseException value) {
       if (exceptionBuilder_ == null) {
         if (valueCase_ == 1 &&
-            value_ != ResponseException.getDefaultInstance()) {
-          value_ = ResponseException.newBuilder((ResponseException) value_)
+            value_ != com.tendermint.abci.ResponseException.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseException.newBuilder((com.tendermint.abci.ResponseException) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -1572,36 +1572,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
      */
-    public ResponseException.Builder getExceptionBuilder() {
+    public com.tendermint.abci.ResponseException.Builder getExceptionBuilder() {
       return getExceptionFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
      */
-    @Override
-    public ResponseExceptionOrBuilder getExceptionOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseExceptionOrBuilder getExceptionOrBuilder() {
       if ((valueCase_ == 1) && (exceptionBuilder_ != null)) {
         return exceptionBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 1) {
-          return (ResponseException) value_;
+          return (com.tendermint.abci.ResponseException) value_;
         }
-        return ResponseException.getDefaultInstance();
+        return com.tendermint.abci.ResponseException.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseException exception = 1 [json_name = "exception"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseException, ResponseException.Builder, ResponseExceptionOrBuilder>
+        com.tendermint.abci.ResponseException, com.tendermint.abci.ResponseException.Builder, com.tendermint.abci.ResponseExceptionOrBuilder> 
         getExceptionFieldBuilder() {
       if (exceptionBuilder_ == null) {
         if (!(valueCase_ == 1)) {
-          value_ = ResponseException.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseException.getDefaultInstance();
         }
         exceptionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseException, ResponseException.Builder, ResponseExceptionOrBuilder>(
-                (ResponseException) value_,
+            com.tendermint.abci.ResponseException, com.tendermint.abci.ResponseException.Builder, com.tendermint.abci.ResponseExceptionOrBuilder>(
+                (com.tendermint.abci.ResponseException) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -1612,12 +1612,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseEcho, ResponseEcho.Builder, ResponseEchoOrBuilder> echoBuilder_;
+        com.tendermint.abci.ResponseEcho, com.tendermint.abci.ResponseEcho.Builder, com.tendermint.abci.ResponseEchoOrBuilder> echoBuilder_;
     /**
      * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
      * @return Whether the echo field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasEcho() {
       return valueCase_ == 2;
     }
@@ -1625,24 +1625,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
      * @return The echo.
      */
-    @Override
-    public ResponseEcho getEcho() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseEcho getEcho() {
       if (echoBuilder_ == null) {
         if (valueCase_ == 2) {
-          return (ResponseEcho) value_;
+          return (com.tendermint.abci.ResponseEcho) value_;
         }
-        return ResponseEcho.getDefaultInstance();
+        return com.tendermint.abci.ResponseEcho.getDefaultInstance();
       } else {
         if (valueCase_ == 2) {
           return echoBuilder_.getMessage();
         }
-        return ResponseEcho.getDefaultInstance();
+        return com.tendermint.abci.ResponseEcho.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
      */
-    public Builder setEcho(ResponseEcho value) {
+    public Builder setEcho(com.tendermint.abci.ResponseEcho value) {
       if (echoBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1659,7 +1659,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
      */
     public Builder setEcho(
-        ResponseEcho.Builder builderForValue) {
+        com.tendermint.abci.ResponseEcho.Builder builderForValue) {
       if (echoBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -1672,11 +1672,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
      */
-    public Builder mergeEcho(ResponseEcho value) {
+    public Builder mergeEcho(com.tendermint.abci.ResponseEcho value) {
       if (echoBuilder_ == null) {
         if (valueCase_ == 2 &&
-            value_ != ResponseEcho.getDefaultInstance()) {
-          value_ = ResponseEcho.newBuilder((ResponseEcho) value_)
+            value_ != com.tendermint.abci.ResponseEcho.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseEcho.newBuilder((com.tendermint.abci.ResponseEcho) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -1714,36 +1714,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
      */
-    public ResponseEcho.Builder getEchoBuilder() {
+    public com.tendermint.abci.ResponseEcho.Builder getEchoBuilder() {
       return getEchoFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
      */
-    @Override
-    public ResponseEchoOrBuilder getEchoOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseEchoOrBuilder getEchoOrBuilder() {
       if ((valueCase_ == 2) && (echoBuilder_ != null)) {
         return echoBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 2) {
-          return (ResponseEcho) value_;
+          return (com.tendermint.abci.ResponseEcho) value_;
         }
-        return ResponseEcho.getDefaultInstance();
+        return com.tendermint.abci.ResponseEcho.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseEcho echo = 2 [json_name = "echo"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseEcho, ResponseEcho.Builder, ResponseEchoOrBuilder>
+        com.tendermint.abci.ResponseEcho, com.tendermint.abci.ResponseEcho.Builder, com.tendermint.abci.ResponseEchoOrBuilder> 
         getEchoFieldBuilder() {
       if (echoBuilder_ == null) {
         if (!(valueCase_ == 2)) {
-          value_ = ResponseEcho.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseEcho.getDefaultInstance();
         }
         echoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseEcho, ResponseEcho.Builder, ResponseEchoOrBuilder>(
-                (ResponseEcho) value_,
+            com.tendermint.abci.ResponseEcho, com.tendermint.abci.ResponseEcho.Builder, com.tendermint.abci.ResponseEchoOrBuilder>(
+                (com.tendermint.abci.ResponseEcho) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -1754,12 +1754,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseFlush, ResponseFlush.Builder, ResponseFlushOrBuilder> flushBuilder_;
+        com.tendermint.abci.ResponseFlush, com.tendermint.abci.ResponseFlush.Builder, com.tendermint.abci.ResponseFlushOrBuilder> flushBuilder_;
     /**
      * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
      * @return Whether the flush field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasFlush() {
       return valueCase_ == 3;
     }
@@ -1767,24 +1767,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
      * @return The flush.
      */
-    @Override
-    public ResponseFlush getFlush() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseFlush getFlush() {
       if (flushBuilder_ == null) {
         if (valueCase_ == 3) {
-          return (ResponseFlush) value_;
+          return (com.tendermint.abci.ResponseFlush) value_;
         }
-        return ResponseFlush.getDefaultInstance();
+        return com.tendermint.abci.ResponseFlush.getDefaultInstance();
       } else {
         if (valueCase_ == 3) {
           return flushBuilder_.getMessage();
         }
-        return ResponseFlush.getDefaultInstance();
+        return com.tendermint.abci.ResponseFlush.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
      */
-    public Builder setFlush(ResponseFlush value) {
+    public Builder setFlush(com.tendermint.abci.ResponseFlush value) {
       if (flushBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1801,7 +1801,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
      */
     public Builder setFlush(
-        ResponseFlush.Builder builderForValue) {
+        com.tendermint.abci.ResponseFlush.Builder builderForValue) {
       if (flushBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -1814,11 +1814,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
      */
-    public Builder mergeFlush(ResponseFlush value) {
+    public Builder mergeFlush(com.tendermint.abci.ResponseFlush value) {
       if (flushBuilder_ == null) {
         if (valueCase_ == 3 &&
-            value_ != ResponseFlush.getDefaultInstance()) {
-          value_ = ResponseFlush.newBuilder((ResponseFlush) value_)
+            value_ != com.tendermint.abci.ResponseFlush.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseFlush.newBuilder((com.tendermint.abci.ResponseFlush) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -1856,36 +1856,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
      */
-    public ResponseFlush.Builder getFlushBuilder() {
+    public com.tendermint.abci.ResponseFlush.Builder getFlushBuilder() {
       return getFlushFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
      */
-    @Override
-    public ResponseFlushOrBuilder getFlushOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseFlushOrBuilder getFlushOrBuilder() {
       if ((valueCase_ == 3) && (flushBuilder_ != null)) {
         return flushBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 3) {
-          return (ResponseFlush) value_;
+          return (com.tendermint.abci.ResponseFlush) value_;
         }
-        return ResponseFlush.getDefaultInstance();
+        return com.tendermint.abci.ResponseFlush.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseFlush flush = 3 [json_name = "flush"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseFlush, ResponseFlush.Builder, ResponseFlushOrBuilder>
+        com.tendermint.abci.ResponseFlush, com.tendermint.abci.ResponseFlush.Builder, com.tendermint.abci.ResponseFlushOrBuilder> 
         getFlushFieldBuilder() {
       if (flushBuilder_ == null) {
         if (!(valueCase_ == 3)) {
-          value_ = ResponseFlush.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseFlush.getDefaultInstance();
         }
         flushBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseFlush, ResponseFlush.Builder, ResponseFlushOrBuilder>(
-                (ResponseFlush) value_,
+            com.tendermint.abci.ResponseFlush, com.tendermint.abci.ResponseFlush.Builder, com.tendermint.abci.ResponseFlushOrBuilder>(
+                (com.tendermint.abci.ResponseFlush) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -1896,12 +1896,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseInfo, ResponseInfo.Builder, ResponseInfoOrBuilder> infoBuilder_;
+        com.tendermint.abci.ResponseInfo, com.tendermint.abci.ResponseInfo.Builder, com.tendermint.abci.ResponseInfoOrBuilder> infoBuilder_;
     /**
      * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
      * @return Whether the info field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasInfo() {
       return valueCase_ == 4;
     }
@@ -1909,24 +1909,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
      * @return The info.
      */
-    @Override
-    public ResponseInfo getInfo() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseInfo getInfo() {
       if (infoBuilder_ == null) {
         if (valueCase_ == 4) {
-          return (ResponseInfo) value_;
+          return (com.tendermint.abci.ResponseInfo) value_;
         }
-        return ResponseInfo.getDefaultInstance();
+        return com.tendermint.abci.ResponseInfo.getDefaultInstance();
       } else {
         if (valueCase_ == 4) {
           return infoBuilder_.getMessage();
         }
-        return ResponseInfo.getDefaultInstance();
+        return com.tendermint.abci.ResponseInfo.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
      */
-    public Builder setInfo(ResponseInfo value) {
+    public Builder setInfo(com.tendermint.abci.ResponseInfo value) {
       if (infoBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1943,7 +1943,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
      */
     public Builder setInfo(
-        ResponseInfo.Builder builderForValue) {
+        com.tendermint.abci.ResponseInfo.Builder builderForValue) {
       if (infoBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -1956,11 +1956,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
      */
-    public Builder mergeInfo(ResponseInfo value) {
+    public Builder mergeInfo(com.tendermint.abci.ResponseInfo value) {
       if (infoBuilder_ == null) {
         if (valueCase_ == 4 &&
-            value_ != ResponseInfo.getDefaultInstance()) {
-          value_ = ResponseInfo.newBuilder((ResponseInfo) value_)
+            value_ != com.tendermint.abci.ResponseInfo.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseInfo.newBuilder((com.tendermint.abci.ResponseInfo) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -1998,36 +1998,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
      */
-    public ResponseInfo.Builder getInfoBuilder() {
+    public com.tendermint.abci.ResponseInfo.Builder getInfoBuilder() {
       return getInfoFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
      */
-    @Override
-    public ResponseInfoOrBuilder getInfoOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseInfoOrBuilder getInfoOrBuilder() {
       if ((valueCase_ == 4) && (infoBuilder_ != null)) {
         return infoBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 4) {
-          return (ResponseInfo) value_;
+          return (com.tendermint.abci.ResponseInfo) value_;
         }
-        return ResponseInfo.getDefaultInstance();
+        return com.tendermint.abci.ResponseInfo.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseInfo info = 4 [json_name = "info"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseInfo, ResponseInfo.Builder, ResponseInfoOrBuilder>
+        com.tendermint.abci.ResponseInfo, com.tendermint.abci.ResponseInfo.Builder, com.tendermint.abci.ResponseInfoOrBuilder> 
         getInfoFieldBuilder() {
       if (infoBuilder_ == null) {
         if (!(valueCase_ == 4)) {
-          value_ = ResponseInfo.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseInfo.getDefaultInstance();
         }
         infoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseInfo, ResponseInfo.Builder, ResponseInfoOrBuilder>(
-                (ResponseInfo) value_,
+            com.tendermint.abci.ResponseInfo, com.tendermint.abci.ResponseInfo.Builder, com.tendermint.abci.ResponseInfoOrBuilder>(
+                (com.tendermint.abci.ResponseInfo) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -2038,12 +2038,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseSetOption, ResponseSetOption.Builder, ResponseSetOptionOrBuilder> setOptionBuilder_;
+        com.tendermint.abci.ResponseSetOption, com.tendermint.abci.ResponseSetOption.Builder, com.tendermint.abci.ResponseSetOptionOrBuilder> setOptionBuilder_;
     /**
      * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
      * @return Whether the setOption field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasSetOption() {
       return valueCase_ == 5;
     }
@@ -2051,24 +2051,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
      * @return The setOption.
      */
-    @Override
-    public ResponseSetOption getSetOption() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseSetOption getSetOption() {
       if (setOptionBuilder_ == null) {
         if (valueCase_ == 5) {
-          return (ResponseSetOption) value_;
+          return (com.tendermint.abci.ResponseSetOption) value_;
         }
-        return ResponseSetOption.getDefaultInstance();
+        return com.tendermint.abci.ResponseSetOption.getDefaultInstance();
       } else {
         if (valueCase_ == 5) {
           return setOptionBuilder_.getMessage();
         }
-        return ResponseSetOption.getDefaultInstance();
+        return com.tendermint.abci.ResponseSetOption.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
      */
-    public Builder setSetOption(ResponseSetOption value) {
+    public Builder setSetOption(com.tendermint.abci.ResponseSetOption value) {
       if (setOptionBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2085,7 +2085,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
      */
     public Builder setSetOption(
-        ResponseSetOption.Builder builderForValue) {
+        com.tendermint.abci.ResponseSetOption.Builder builderForValue) {
       if (setOptionBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -2098,11 +2098,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
      */
-    public Builder mergeSetOption(ResponseSetOption value) {
+    public Builder mergeSetOption(com.tendermint.abci.ResponseSetOption value) {
       if (setOptionBuilder_ == null) {
         if (valueCase_ == 5 &&
-            value_ != ResponseSetOption.getDefaultInstance()) {
-          value_ = ResponseSetOption.newBuilder((ResponseSetOption) value_)
+            value_ != com.tendermint.abci.ResponseSetOption.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseSetOption.newBuilder((com.tendermint.abci.ResponseSetOption) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -2140,36 +2140,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
      */
-    public ResponseSetOption.Builder getSetOptionBuilder() {
+    public com.tendermint.abci.ResponseSetOption.Builder getSetOptionBuilder() {
       return getSetOptionFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
      */
-    @Override
-    public ResponseSetOptionOrBuilder getSetOptionOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseSetOptionOrBuilder getSetOptionOrBuilder() {
       if ((valueCase_ == 5) && (setOptionBuilder_ != null)) {
         return setOptionBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 5) {
-          return (ResponseSetOption) value_;
+          return (com.tendermint.abci.ResponseSetOption) value_;
         }
-        return ResponseSetOption.getDefaultInstance();
+        return com.tendermint.abci.ResponseSetOption.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseSetOption set_option = 5 [json_name = "setOption"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseSetOption, ResponseSetOption.Builder, ResponseSetOptionOrBuilder>
+        com.tendermint.abci.ResponseSetOption, com.tendermint.abci.ResponseSetOption.Builder, com.tendermint.abci.ResponseSetOptionOrBuilder> 
         getSetOptionFieldBuilder() {
       if (setOptionBuilder_ == null) {
         if (!(valueCase_ == 5)) {
-          value_ = ResponseSetOption.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseSetOption.getDefaultInstance();
         }
         setOptionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseSetOption, ResponseSetOption.Builder, ResponseSetOptionOrBuilder>(
-                (ResponseSetOption) value_,
+            com.tendermint.abci.ResponseSetOption, com.tendermint.abci.ResponseSetOption.Builder, com.tendermint.abci.ResponseSetOptionOrBuilder>(
+                (com.tendermint.abci.ResponseSetOption) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -2180,12 +2180,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseInitChain, ResponseInitChain.Builder, ResponseInitChainOrBuilder> initChainBuilder_;
+        com.tendermint.abci.ResponseInitChain, com.tendermint.abci.ResponseInitChain.Builder, com.tendermint.abci.ResponseInitChainOrBuilder> initChainBuilder_;
     /**
      * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
      * @return Whether the initChain field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasInitChain() {
       return valueCase_ == 6;
     }
@@ -2193,24 +2193,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
      * @return The initChain.
      */
-    @Override
-    public ResponseInitChain getInitChain() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseInitChain getInitChain() {
       if (initChainBuilder_ == null) {
         if (valueCase_ == 6) {
-          return (ResponseInitChain) value_;
+          return (com.tendermint.abci.ResponseInitChain) value_;
         }
-        return ResponseInitChain.getDefaultInstance();
+        return com.tendermint.abci.ResponseInitChain.getDefaultInstance();
       } else {
         if (valueCase_ == 6) {
           return initChainBuilder_.getMessage();
         }
-        return ResponseInitChain.getDefaultInstance();
+        return com.tendermint.abci.ResponseInitChain.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
      */
-    public Builder setInitChain(ResponseInitChain value) {
+    public Builder setInitChain(com.tendermint.abci.ResponseInitChain value) {
       if (initChainBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2227,7 +2227,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
      */
     public Builder setInitChain(
-        ResponseInitChain.Builder builderForValue) {
+        com.tendermint.abci.ResponseInitChain.Builder builderForValue) {
       if (initChainBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -2240,11 +2240,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
      */
-    public Builder mergeInitChain(ResponseInitChain value) {
+    public Builder mergeInitChain(com.tendermint.abci.ResponseInitChain value) {
       if (initChainBuilder_ == null) {
         if (valueCase_ == 6 &&
-            value_ != ResponseInitChain.getDefaultInstance()) {
-          value_ = ResponseInitChain.newBuilder((ResponseInitChain) value_)
+            value_ != com.tendermint.abci.ResponseInitChain.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseInitChain.newBuilder((com.tendermint.abci.ResponseInitChain) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -2282,36 +2282,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
      */
-    public ResponseInitChain.Builder getInitChainBuilder() {
+    public com.tendermint.abci.ResponseInitChain.Builder getInitChainBuilder() {
       return getInitChainFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
      */
-    @Override
-    public ResponseInitChainOrBuilder getInitChainOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseInitChainOrBuilder getInitChainOrBuilder() {
       if ((valueCase_ == 6) && (initChainBuilder_ != null)) {
         return initChainBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 6) {
-          return (ResponseInitChain) value_;
+          return (com.tendermint.abci.ResponseInitChain) value_;
         }
-        return ResponseInitChain.getDefaultInstance();
+        return com.tendermint.abci.ResponseInitChain.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseInitChain init_chain = 6 [json_name = "initChain"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseInitChain, ResponseInitChain.Builder, ResponseInitChainOrBuilder>
+        com.tendermint.abci.ResponseInitChain, com.tendermint.abci.ResponseInitChain.Builder, com.tendermint.abci.ResponseInitChainOrBuilder> 
         getInitChainFieldBuilder() {
       if (initChainBuilder_ == null) {
         if (!(valueCase_ == 6)) {
-          value_ = ResponseInitChain.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseInitChain.getDefaultInstance();
         }
         initChainBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseInitChain, ResponseInitChain.Builder, ResponseInitChainOrBuilder>(
-                (ResponseInitChain) value_,
+            com.tendermint.abci.ResponseInitChain, com.tendermint.abci.ResponseInitChain.Builder, com.tendermint.abci.ResponseInitChainOrBuilder>(
+                (com.tendermint.abci.ResponseInitChain) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -2322,12 +2322,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseQuery, ResponseQuery.Builder, ResponseQueryOrBuilder> queryBuilder_;
+        com.tendermint.abci.ResponseQuery, com.tendermint.abci.ResponseQuery.Builder, com.tendermint.abci.ResponseQueryOrBuilder> queryBuilder_;
     /**
      * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
      * @return Whether the query field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasQuery() {
       return valueCase_ == 7;
     }
@@ -2335,24 +2335,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
      * @return The query.
      */
-    @Override
-    public ResponseQuery getQuery() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseQuery getQuery() {
       if (queryBuilder_ == null) {
         if (valueCase_ == 7) {
-          return (ResponseQuery) value_;
+          return (com.tendermint.abci.ResponseQuery) value_;
         }
-        return ResponseQuery.getDefaultInstance();
+        return com.tendermint.abci.ResponseQuery.getDefaultInstance();
       } else {
         if (valueCase_ == 7) {
           return queryBuilder_.getMessage();
         }
-        return ResponseQuery.getDefaultInstance();
+        return com.tendermint.abci.ResponseQuery.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
      */
-    public Builder setQuery(ResponseQuery value) {
+    public Builder setQuery(com.tendermint.abci.ResponseQuery value) {
       if (queryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2369,7 +2369,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
      */
     public Builder setQuery(
-        ResponseQuery.Builder builderForValue) {
+        com.tendermint.abci.ResponseQuery.Builder builderForValue) {
       if (queryBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -2382,11 +2382,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
      */
-    public Builder mergeQuery(ResponseQuery value) {
+    public Builder mergeQuery(com.tendermint.abci.ResponseQuery value) {
       if (queryBuilder_ == null) {
         if (valueCase_ == 7 &&
-            value_ != ResponseQuery.getDefaultInstance()) {
-          value_ = ResponseQuery.newBuilder((ResponseQuery) value_)
+            value_ != com.tendermint.abci.ResponseQuery.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseQuery.newBuilder((com.tendermint.abci.ResponseQuery) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -2424,36 +2424,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
      */
-    public ResponseQuery.Builder getQueryBuilder() {
+    public com.tendermint.abci.ResponseQuery.Builder getQueryBuilder() {
       return getQueryFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
      */
-    @Override
-    public ResponseQueryOrBuilder getQueryOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseQueryOrBuilder getQueryOrBuilder() {
       if ((valueCase_ == 7) && (queryBuilder_ != null)) {
         return queryBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 7) {
-          return (ResponseQuery) value_;
+          return (com.tendermint.abci.ResponseQuery) value_;
         }
-        return ResponseQuery.getDefaultInstance();
+        return com.tendermint.abci.ResponseQuery.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseQuery query = 7 [json_name = "query"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseQuery, ResponseQuery.Builder, ResponseQueryOrBuilder>
+        com.tendermint.abci.ResponseQuery, com.tendermint.abci.ResponseQuery.Builder, com.tendermint.abci.ResponseQueryOrBuilder> 
         getQueryFieldBuilder() {
       if (queryBuilder_ == null) {
         if (!(valueCase_ == 7)) {
-          value_ = ResponseQuery.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseQuery.getDefaultInstance();
         }
         queryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseQuery, ResponseQuery.Builder, ResponseQueryOrBuilder>(
-                (ResponseQuery) value_,
+            com.tendermint.abci.ResponseQuery, com.tendermint.abci.ResponseQuery.Builder, com.tendermint.abci.ResponseQueryOrBuilder>(
+                (com.tendermint.abci.ResponseQuery) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -2464,12 +2464,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseBeginBlock, ResponseBeginBlock.Builder, ResponseBeginBlockOrBuilder> beginBlockBuilder_;
+        com.tendermint.abci.ResponseBeginBlock, com.tendermint.abci.ResponseBeginBlock.Builder, com.tendermint.abci.ResponseBeginBlockOrBuilder> beginBlockBuilder_;
     /**
      * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
      * @return Whether the beginBlock field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasBeginBlock() {
       return valueCase_ == 8;
     }
@@ -2477,24 +2477,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
      * @return The beginBlock.
      */
-    @Override
-    public ResponseBeginBlock getBeginBlock() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseBeginBlock getBeginBlock() {
       if (beginBlockBuilder_ == null) {
         if (valueCase_ == 8) {
-          return (ResponseBeginBlock) value_;
+          return (com.tendermint.abci.ResponseBeginBlock) value_;
         }
-        return ResponseBeginBlock.getDefaultInstance();
+        return com.tendermint.abci.ResponseBeginBlock.getDefaultInstance();
       } else {
         if (valueCase_ == 8) {
           return beginBlockBuilder_.getMessage();
         }
-        return ResponseBeginBlock.getDefaultInstance();
+        return com.tendermint.abci.ResponseBeginBlock.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
      */
-    public Builder setBeginBlock(ResponseBeginBlock value) {
+    public Builder setBeginBlock(com.tendermint.abci.ResponseBeginBlock value) {
       if (beginBlockBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2511,7 +2511,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
      */
     public Builder setBeginBlock(
-        ResponseBeginBlock.Builder builderForValue) {
+        com.tendermint.abci.ResponseBeginBlock.Builder builderForValue) {
       if (beginBlockBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -2524,11 +2524,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
      */
-    public Builder mergeBeginBlock(ResponseBeginBlock value) {
+    public Builder mergeBeginBlock(com.tendermint.abci.ResponseBeginBlock value) {
       if (beginBlockBuilder_ == null) {
         if (valueCase_ == 8 &&
-            value_ != ResponseBeginBlock.getDefaultInstance()) {
-          value_ = ResponseBeginBlock.newBuilder((ResponseBeginBlock) value_)
+            value_ != com.tendermint.abci.ResponseBeginBlock.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseBeginBlock.newBuilder((com.tendermint.abci.ResponseBeginBlock) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -2566,36 +2566,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
      */
-    public ResponseBeginBlock.Builder getBeginBlockBuilder() {
+    public com.tendermint.abci.ResponseBeginBlock.Builder getBeginBlockBuilder() {
       return getBeginBlockFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
      */
-    @Override
-    public ResponseBeginBlockOrBuilder getBeginBlockOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseBeginBlockOrBuilder getBeginBlockOrBuilder() {
       if ((valueCase_ == 8) && (beginBlockBuilder_ != null)) {
         return beginBlockBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 8) {
-          return (ResponseBeginBlock) value_;
+          return (com.tendermint.abci.ResponseBeginBlock) value_;
         }
-        return ResponseBeginBlock.getDefaultInstance();
+        return com.tendermint.abci.ResponseBeginBlock.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseBeginBlock begin_block = 8 [json_name = "beginBlock"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseBeginBlock, ResponseBeginBlock.Builder, ResponseBeginBlockOrBuilder>
+        com.tendermint.abci.ResponseBeginBlock, com.tendermint.abci.ResponseBeginBlock.Builder, com.tendermint.abci.ResponseBeginBlockOrBuilder> 
         getBeginBlockFieldBuilder() {
       if (beginBlockBuilder_ == null) {
         if (!(valueCase_ == 8)) {
-          value_ = ResponseBeginBlock.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseBeginBlock.getDefaultInstance();
         }
         beginBlockBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseBeginBlock, ResponseBeginBlock.Builder, ResponseBeginBlockOrBuilder>(
-                (ResponseBeginBlock) value_,
+            com.tendermint.abci.ResponseBeginBlock, com.tendermint.abci.ResponseBeginBlock.Builder, com.tendermint.abci.ResponseBeginBlockOrBuilder>(
+                (com.tendermint.abci.ResponseBeginBlock) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -2606,12 +2606,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseCheckTx, ResponseCheckTx.Builder, ResponseCheckTxOrBuilder> checkTxBuilder_;
+        com.tendermint.abci.ResponseCheckTx, com.tendermint.abci.ResponseCheckTx.Builder, com.tendermint.abci.ResponseCheckTxOrBuilder> checkTxBuilder_;
     /**
      * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
      * @return Whether the checkTx field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasCheckTx() {
       return valueCase_ == 9;
     }
@@ -2619,24 +2619,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
      * @return The checkTx.
      */
-    @Override
-    public ResponseCheckTx getCheckTx() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseCheckTx getCheckTx() {
       if (checkTxBuilder_ == null) {
         if (valueCase_ == 9) {
-          return (ResponseCheckTx) value_;
+          return (com.tendermint.abci.ResponseCheckTx) value_;
         }
-        return ResponseCheckTx.getDefaultInstance();
+        return com.tendermint.abci.ResponseCheckTx.getDefaultInstance();
       } else {
         if (valueCase_ == 9) {
           return checkTxBuilder_.getMessage();
         }
-        return ResponseCheckTx.getDefaultInstance();
+        return com.tendermint.abci.ResponseCheckTx.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
      */
-    public Builder setCheckTx(ResponseCheckTx value) {
+    public Builder setCheckTx(com.tendermint.abci.ResponseCheckTx value) {
       if (checkTxBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2653,7 +2653,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
      */
     public Builder setCheckTx(
-        ResponseCheckTx.Builder builderForValue) {
+        com.tendermint.abci.ResponseCheckTx.Builder builderForValue) {
       if (checkTxBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -2666,11 +2666,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
      */
-    public Builder mergeCheckTx(ResponseCheckTx value) {
+    public Builder mergeCheckTx(com.tendermint.abci.ResponseCheckTx value) {
       if (checkTxBuilder_ == null) {
         if (valueCase_ == 9 &&
-            value_ != ResponseCheckTx.getDefaultInstance()) {
-          value_ = ResponseCheckTx.newBuilder((ResponseCheckTx) value_)
+            value_ != com.tendermint.abci.ResponseCheckTx.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseCheckTx.newBuilder((com.tendermint.abci.ResponseCheckTx) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -2708,36 +2708,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
      */
-    public ResponseCheckTx.Builder getCheckTxBuilder() {
+    public com.tendermint.abci.ResponseCheckTx.Builder getCheckTxBuilder() {
       return getCheckTxFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
      */
-    @Override
-    public ResponseCheckTxOrBuilder getCheckTxOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseCheckTxOrBuilder getCheckTxOrBuilder() {
       if ((valueCase_ == 9) && (checkTxBuilder_ != null)) {
         return checkTxBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 9) {
-          return (ResponseCheckTx) value_;
+          return (com.tendermint.abci.ResponseCheckTx) value_;
         }
-        return ResponseCheckTx.getDefaultInstance();
+        return com.tendermint.abci.ResponseCheckTx.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseCheckTx check_tx = 9 [json_name = "checkTx"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseCheckTx, ResponseCheckTx.Builder, ResponseCheckTxOrBuilder>
+        com.tendermint.abci.ResponseCheckTx, com.tendermint.abci.ResponseCheckTx.Builder, com.tendermint.abci.ResponseCheckTxOrBuilder> 
         getCheckTxFieldBuilder() {
       if (checkTxBuilder_ == null) {
         if (!(valueCase_ == 9)) {
-          value_ = ResponseCheckTx.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseCheckTx.getDefaultInstance();
         }
         checkTxBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseCheckTx, ResponseCheckTx.Builder, ResponseCheckTxOrBuilder>(
-                (ResponseCheckTx) value_,
+            com.tendermint.abci.ResponseCheckTx, com.tendermint.abci.ResponseCheckTx.Builder, com.tendermint.abci.ResponseCheckTxOrBuilder>(
+                (com.tendermint.abci.ResponseCheckTx) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -2748,12 +2748,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseDeliverTx, ResponseDeliverTx.Builder, ResponseDeliverTxOrBuilder> deliverTxBuilder_;
+        com.tendermint.abci.ResponseDeliverTx, com.tendermint.abci.ResponseDeliverTx.Builder, com.tendermint.abci.ResponseDeliverTxOrBuilder> deliverTxBuilder_;
     /**
      * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
      * @return Whether the deliverTx field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasDeliverTx() {
       return valueCase_ == 10;
     }
@@ -2761,24 +2761,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
      * @return The deliverTx.
      */
-    @Override
-    public ResponseDeliverTx getDeliverTx() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseDeliverTx getDeliverTx() {
       if (deliverTxBuilder_ == null) {
         if (valueCase_ == 10) {
-          return (ResponseDeliverTx) value_;
+          return (com.tendermint.abci.ResponseDeliverTx) value_;
         }
-        return ResponseDeliverTx.getDefaultInstance();
+        return com.tendermint.abci.ResponseDeliverTx.getDefaultInstance();
       } else {
         if (valueCase_ == 10) {
           return deliverTxBuilder_.getMessage();
         }
-        return ResponseDeliverTx.getDefaultInstance();
+        return com.tendermint.abci.ResponseDeliverTx.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
      */
-    public Builder setDeliverTx(ResponseDeliverTx value) {
+    public Builder setDeliverTx(com.tendermint.abci.ResponseDeliverTx value) {
       if (deliverTxBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2795,7 +2795,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
      */
     public Builder setDeliverTx(
-        ResponseDeliverTx.Builder builderForValue) {
+        com.tendermint.abci.ResponseDeliverTx.Builder builderForValue) {
       if (deliverTxBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -2808,11 +2808,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
      */
-    public Builder mergeDeliverTx(ResponseDeliverTx value) {
+    public Builder mergeDeliverTx(com.tendermint.abci.ResponseDeliverTx value) {
       if (deliverTxBuilder_ == null) {
         if (valueCase_ == 10 &&
-            value_ != ResponseDeliverTx.getDefaultInstance()) {
-          value_ = ResponseDeliverTx.newBuilder((ResponseDeliverTx) value_)
+            value_ != com.tendermint.abci.ResponseDeliverTx.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseDeliverTx.newBuilder((com.tendermint.abci.ResponseDeliverTx) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -2850,36 +2850,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
      */
-    public ResponseDeliverTx.Builder getDeliverTxBuilder() {
+    public com.tendermint.abci.ResponseDeliverTx.Builder getDeliverTxBuilder() {
       return getDeliverTxFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
      */
-    @Override
-    public ResponseDeliverTxOrBuilder getDeliverTxOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseDeliverTxOrBuilder getDeliverTxOrBuilder() {
       if ((valueCase_ == 10) && (deliverTxBuilder_ != null)) {
         return deliverTxBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 10) {
-          return (ResponseDeliverTx) value_;
+          return (com.tendermint.abci.ResponseDeliverTx) value_;
         }
-        return ResponseDeliverTx.getDefaultInstance();
+        return com.tendermint.abci.ResponseDeliverTx.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseDeliverTx deliver_tx = 10 [json_name = "deliverTx"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseDeliverTx, ResponseDeliverTx.Builder, ResponseDeliverTxOrBuilder>
+        com.tendermint.abci.ResponseDeliverTx, com.tendermint.abci.ResponseDeliverTx.Builder, com.tendermint.abci.ResponseDeliverTxOrBuilder> 
         getDeliverTxFieldBuilder() {
       if (deliverTxBuilder_ == null) {
         if (!(valueCase_ == 10)) {
-          value_ = ResponseDeliverTx.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseDeliverTx.getDefaultInstance();
         }
         deliverTxBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseDeliverTx, ResponseDeliverTx.Builder, ResponseDeliverTxOrBuilder>(
-                (ResponseDeliverTx) value_,
+            com.tendermint.abci.ResponseDeliverTx, com.tendermint.abci.ResponseDeliverTx.Builder, com.tendermint.abci.ResponseDeliverTxOrBuilder>(
+                (com.tendermint.abci.ResponseDeliverTx) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -2890,12 +2890,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseEndBlock, ResponseEndBlock.Builder, ResponseEndBlockOrBuilder> endBlockBuilder_;
+        com.tendermint.abci.ResponseEndBlock, com.tendermint.abci.ResponseEndBlock.Builder, com.tendermint.abci.ResponseEndBlockOrBuilder> endBlockBuilder_;
     /**
      * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
      * @return Whether the endBlock field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasEndBlock() {
       return valueCase_ == 11;
     }
@@ -2903,24 +2903,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
      * @return The endBlock.
      */
-    @Override
-    public ResponseEndBlock getEndBlock() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseEndBlock getEndBlock() {
       if (endBlockBuilder_ == null) {
         if (valueCase_ == 11) {
-          return (ResponseEndBlock) value_;
+          return (com.tendermint.abci.ResponseEndBlock) value_;
         }
-        return ResponseEndBlock.getDefaultInstance();
+        return com.tendermint.abci.ResponseEndBlock.getDefaultInstance();
       } else {
         if (valueCase_ == 11) {
           return endBlockBuilder_.getMessage();
         }
-        return ResponseEndBlock.getDefaultInstance();
+        return com.tendermint.abci.ResponseEndBlock.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
      */
-    public Builder setEndBlock(ResponseEndBlock value) {
+    public Builder setEndBlock(com.tendermint.abci.ResponseEndBlock value) {
       if (endBlockBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2937,7 +2937,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
      */
     public Builder setEndBlock(
-        ResponseEndBlock.Builder builderForValue) {
+        com.tendermint.abci.ResponseEndBlock.Builder builderForValue) {
       if (endBlockBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -2950,11 +2950,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
      */
-    public Builder mergeEndBlock(ResponseEndBlock value) {
+    public Builder mergeEndBlock(com.tendermint.abci.ResponseEndBlock value) {
       if (endBlockBuilder_ == null) {
         if (valueCase_ == 11 &&
-            value_ != ResponseEndBlock.getDefaultInstance()) {
-          value_ = ResponseEndBlock.newBuilder((ResponseEndBlock) value_)
+            value_ != com.tendermint.abci.ResponseEndBlock.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseEndBlock.newBuilder((com.tendermint.abci.ResponseEndBlock) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -2992,36 +2992,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
      */
-    public ResponseEndBlock.Builder getEndBlockBuilder() {
+    public com.tendermint.abci.ResponseEndBlock.Builder getEndBlockBuilder() {
       return getEndBlockFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
      */
-    @Override
-    public ResponseEndBlockOrBuilder getEndBlockOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseEndBlockOrBuilder getEndBlockOrBuilder() {
       if ((valueCase_ == 11) && (endBlockBuilder_ != null)) {
         return endBlockBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 11) {
-          return (ResponseEndBlock) value_;
+          return (com.tendermint.abci.ResponseEndBlock) value_;
         }
-        return ResponseEndBlock.getDefaultInstance();
+        return com.tendermint.abci.ResponseEndBlock.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseEndBlock end_block = 11 [json_name = "endBlock"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseEndBlock, ResponseEndBlock.Builder, ResponseEndBlockOrBuilder>
+        com.tendermint.abci.ResponseEndBlock, com.tendermint.abci.ResponseEndBlock.Builder, com.tendermint.abci.ResponseEndBlockOrBuilder> 
         getEndBlockFieldBuilder() {
       if (endBlockBuilder_ == null) {
         if (!(valueCase_ == 11)) {
-          value_ = ResponseEndBlock.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseEndBlock.getDefaultInstance();
         }
         endBlockBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseEndBlock, ResponseEndBlock.Builder, ResponseEndBlockOrBuilder>(
-                (ResponseEndBlock) value_,
+            com.tendermint.abci.ResponseEndBlock, com.tendermint.abci.ResponseEndBlock.Builder, com.tendermint.abci.ResponseEndBlockOrBuilder>(
+                (com.tendermint.abci.ResponseEndBlock) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -3032,12 +3032,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseCommit, ResponseCommit.Builder, ResponseCommitOrBuilder> commitBuilder_;
+        com.tendermint.abci.ResponseCommit, com.tendermint.abci.ResponseCommit.Builder, com.tendermint.abci.ResponseCommitOrBuilder> commitBuilder_;
     /**
      * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
      * @return Whether the commit field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasCommit() {
       return valueCase_ == 12;
     }
@@ -3045,24 +3045,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
      * @return The commit.
      */
-    @Override
-    public ResponseCommit getCommit() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseCommit getCommit() {
       if (commitBuilder_ == null) {
         if (valueCase_ == 12) {
-          return (ResponseCommit) value_;
+          return (com.tendermint.abci.ResponseCommit) value_;
         }
-        return ResponseCommit.getDefaultInstance();
+        return com.tendermint.abci.ResponseCommit.getDefaultInstance();
       } else {
         if (valueCase_ == 12) {
           return commitBuilder_.getMessage();
         }
-        return ResponseCommit.getDefaultInstance();
+        return com.tendermint.abci.ResponseCommit.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
      */
-    public Builder setCommit(ResponseCommit value) {
+    public Builder setCommit(com.tendermint.abci.ResponseCommit value) {
       if (commitBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3079,7 +3079,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
      */
     public Builder setCommit(
-        ResponseCommit.Builder builderForValue) {
+        com.tendermint.abci.ResponseCommit.Builder builderForValue) {
       if (commitBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -3092,11 +3092,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
      */
-    public Builder mergeCommit(ResponseCommit value) {
+    public Builder mergeCommit(com.tendermint.abci.ResponseCommit value) {
       if (commitBuilder_ == null) {
         if (valueCase_ == 12 &&
-            value_ != ResponseCommit.getDefaultInstance()) {
-          value_ = ResponseCommit.newBuilder((ResponseCommit) value_)
+            value_ != com.tendermint.abci.ResponseCommit.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseCommit.newBuilder((com.tendermint.abci.ResponseCommit) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -3134,36 +3134,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
      */
-    public ResponseCommit.Builder getCommitBuilder() {
+    public com.tendermint.abci.ResponseCommit.Builder getCommitBuilder() {
       return getCommitFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
      */
-    @Override
-    public ResponseCommitOrBuilder getCommitOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseCommitOrBuilder getCommitOrBuilder() {
       if ((valueCase_ == 12) && (commitBuilder_ != null)) {
         return commitBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 12) {
-          return (ResponseCommit) value_;
+          return (com.tendermint.abci.ResponseCommit) value_;
         }
-        return ResponseCommit.getDefaultInstance();
+        return com.tendermint.abci.ResponseCommit.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseCommit commit = 12 [json_name = "commit"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseCommit, ResponseCommit.Builder, ResponseCommitOrBuilder>
+        com.tendermint.abci.ResponseCommit, com.tendermint.abci.ResponseCommit.Builder, com.tendermint.abci.ResponseCommitOrBuilder> 
         getCommitFieldBuilder() {
       if (commitBuilder_ == null) {
         if (!(valueCase_ == 12)) {
-          value_ = ResponseCommit.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseCommit.getDefaultInstance();
         }
         commitBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseCommit, ResponseCommit.Builder, ResponseCommitOrBuilder>(
-                (ResponseCommit) value_,
+            com.tendermint.abci.ResponseCommit, com.tendermint.abci.ResponseCommit.Builder, com.tendermint.abci.ResponseCommitOrBuilder>(
+                (com.tendermint.abci.ResponseCommit) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -3174,12 +3174,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseListSnapshots, ResponseListSnapshots.Builder, ResponseListSnapshotsOrBuilder> listSnapshotsBuilder_;
+        com.tendermint.abci.ResponseListSnapshots, com.tendermint.abci.ResponseListSnapshots.Builder, com.tendermint.abci.ResponseListSnapshotsOrBuilder> listSnapshotsBuilder_;
     /**
      * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
      * @return Whether the listSnapshots field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasListSnapshots() {
       return valueCase_ == 13;
     }
@@ -3187,24 +3187,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
      * @return The listSnapshots.
      */
-    @Override
-    public ResponseListSnapshots getListSnapshots() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseListSnapshots getListSnapshots() {
       if (listSnapshotsBuilder_ == null) {
         if (valueCase_ == 13) {
-          return (ResponseListSnapshots) value_;
+          return (com.tendermint.abci.ResponseListSnapshots) value_;
         }
-        return ResponseListSnapshots.getDefaultInstance();
+        return com.tendermint.abci.ResponseListSnapshots.getDefaultInstance();
       } else {
         if (valueCase_ == 13) {
           return listSnapshotsBuilder_.getMessage();
         }
-        return ResponseListSnapshots.getDefaultInstance();
+        return com.tendermint.abci.ResponseListSnapshots.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
      */
-    public Builder setListSnapshots(ResponseListSnapshots value) {
+    public Builder setListSnapshots(com.tendermint.abci.ResponseListSnapshots value) {
       if (listSnapshotsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3221,7 +3221,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
      */
     public Builder setListSnapshots(
-        ResponseListSnapshots.Builder builderForValue) {
+        com.tendermint.abci.ResponseListSnapshots.Builder builderForValue) {
       if (listSnapshotsBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -3234,11 +3234,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
      */
-    public Builder mergeListSnapshots(ResponseListSnapshots value) {
+    public Builder mergeListSnapshots(com.tendermint.abci.ResponseListSnapshots value) {
       if (listSnapshotsBuilder_ == null) {
         if (valueCase_ == 13 &&
-            value_ != ResponseListSnapshots.getDefaultInstance()) {
-          value_ = ResponseListSnapshots.newBuilder((ResponseListSnapshots) value_)
+            value_ != com.tendermint.abci.ResponseListSnapshots.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseListSnapshots.newBuilder((com.tendermint.abci.ResponseListSnapshots) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -3276,36 +3276,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
      */
-    public ResponseListSnapshots.Builder getListSnapshotsBuilder() {
+    public com.tendermint.abci.ResponseListSnapshots.Builder getListSnapshotsBuilder() {
       return getListSnapshotsFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
      */
-    @Override
-    public ResponseListSnapshotsOrBuilder getListSnapshotsOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseListSnapshotsOrBuilder getListSnapshotsOrBuilder() {
       if ((valueCase_ == 13) && (listSnapshotsBuilder_ != null)) {
         return listSnapshotsBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 13) {
-          return (ResponseListSnapshots) value_;
+          return (com.tendermint.abci.ResponseListSnapshots) value_;
         }
-        return ResponseListSnapshots.getDefaultInstance();
+        return com.tendermint.abci.ResponseListSnapshots.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseListSnapshots list_snapshots = 13 [json_name = "listSnapshots"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseListSnapshots, ResponseListSnapshots.Builder, ResponseListSnapshotsOrBuilder>
+        com.tendermint.abci.ResponseListSnapshots, com.tendermint.abci.ResponseListSnapshots.Builder, com.tendermint.abci.ResponseListSnapshotsOrBuilder> 
         getListSnapshotsFieldBuilder() {
       if (listSnapshotsBuilder_ == null) {
         if (!(valueCase_ == 13)) {
-          value_ = ResponseListSnapshots.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseListSnapshots.getDefaultInstance();
         }
         listSnapshotsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseListSnapshots, ResponseListSnapshots.Builder, ResponseListSnapshotsOrBuilder>(
-                (ResponseListSnapshots) value_,
+            com.tendermint.abci.ResponseListSnapshots, com.tendermint.abci.ResponseListSnapshots.Builder, com.tendermint.abci.ResponseListSnapshotsOrBuilder>(
+                (com.tendermint.abci.ResponseListSnapshots) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -3316,12 +3316,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseOfferSnapshot, ResponseOfferSnapshot.Builder, ResponseOfferSnapshotOrBuilder> offerSnapshotBuilder_;
+        com.tendermint.abci.ResponseOfferSnapshot, com.tendermint.abci.ResponseOfferSnapshot.Builder, com.tendermint.abci.ResponseOfferSnapshotOrBuilder> offerSnapshotBuilder_;
     /**
      * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
      * @return Whether the offerSnapshot field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasOfferSnapshot() {
       return valueCase_ == 14;
     }
@@ -3329,24 +3329,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
      * @return The offerSnapshot.
      */
-    @Override
-    public ResponseOfferSnapshot getOfferSnapshot() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseOfferSnapshot getOfferSnapshot() {
       if (offerSnapshotBuilder_ == null) {
         if (valueCase_ == 14) {
-          return (ResponseOfferSnapshot) value_;
+          return (com.tendermint.abci.ResponseOfferSnapshot) value_;
         }
-        return ResponseOfferSnapshot.getDefaultInstance();
+        return com.tendermint.abci.ResponseOfferSnapshot.getDefaultInstance();
       } else {
         if (valueCase_ == 14) {
           return offerSnapshotBuilder_.getMessage();
         }
-        return ResponseOfferSnapshot.getDefaultInstance();
+        return com.tendermint.abci.ResponseOfferSnapshot.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
      */
-    public Builder setOfferSnapshot(ResponseOfferSnapshot value) {
+    public Builder setOfferSnapshot(com.tendermint.abci.ResponseOfferSnapshot value) {
       if (offerSnapshotBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3363,7 +3363,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
      */
     public Builder setOfferSnapshot(
-        ResponseOfferSnapshot.Builder builderForValue) {
+        com.tendermint.abci.ResponseOfferSnapshot.Builder builderForValue) {
       if (offerSnapshotBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -3376,11 +3376,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
      */
-    public Builder mergeOfferSnapshot(ResponseOfferSnapshot value) {
+    public Builder mergeOfferSnapshot(com.tendermint.abci.ResponseOfferSnapshot value) {
       if (offerSnapshotBuilder_ == null) {
         if (valueCase_ == 14 &&
-            value_ != ResponseOfferSnapshot.getDefaultInstance()) {
-          value_ = ResponseOfferSnapshot.newBuilder((ResponseOfferSnapshot) value_)
+            value_ != com.tendermint.abci.ResponseOfferSnapshot.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseOfferSnapshot.newBuilder((com.tendermint.abci.ResponseOfferSnapshot) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -3418,36 +3418,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
      */
-    public ResponseOfferSnapshot.Builder getOfferSnapshotBuilder() {
+    public com.tendermint.abci.ResponseOfferSnapshot.Builder getOfferSnapshotBuilder() {
       return getOfferSnapshotFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
      */
-    @Override
-    public ResponseOfferSnapshotOrBuilder getOfferSnapshotOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseOfferSnapshotOrBuilder getOfferSnapshotOrBuilder() {
       if ((valueCase_ == 14) && (offerSnapshotBuilder_ != null)) {
         return offerSnapshotBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 14) {
-          return (ResponseOfferSnapshot) value_;
+          return (com.tendermint.abci.ResponseOfferSnapshot) value_;
         }
-        return ResponseOfferSnapshot.getDefaultInstance();
+        return com.tendermint.abci.ResponseOfferSnapshot.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseOfferSnapshot offer_snapshot = 14 [json_name = "offerSnapshot"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseOfferSnapshot, ResponseOfferSnapshot.Builder, ResponseOfferSnapshotOrBuilder>
+        com.tendermint.abci.ResponseOfferSnapshot, com.tendermint.abci.ResponseOfferSnapshot.Builder, com.tendermint.abci.ResponseOfferSnapshotOrBuilder> 
         getOfferSnapshotFieldBuilder() {
       if (offerSnapshotBuilder_ == null) {
         if (!(valueCase_ == 14)) {
-          value_ = ResponseOfferSnapshot.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseOfferSnapshot.getDefaultInstance();
         }
         offerSnapshotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseOfferSnapshot, ResponseOfferSnapshot.Builder, ResponseOfferSnapshotOrBuilder>(
-                (ResponseOfferSnapshot) value_,
+            com.tendermint.abci.ResponseOfferSnapshot, com.tendermint.abci.ResponseOfferSnapshot.Builder, com.tendermint.abci.ResponseOfferSnapshotOrBuilder>(
+                (com.tendermint.abci.ResponseOfferSnapshot) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -3458,12 +3458,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseLoadSnapshotChunk, ResponseLoadSnapshotChunk.Builder, ResponseLoadSnapshotChunkOrBuilder> loadSnapshotChunkBuilder_;
+        com.tendermint.abci.ResponseLoadSnapshotChunk, com.tendermint.abci.ResponseLoadSnapshotChunk.Builder, com.tendermint.abci.ResponseLoadSnapshotChunkOrBuilder> loadSnapshotChunkBuilder_;
     /**
      * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
      * @return Whether the loadSnapshotChunk field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasLoadSnapshotChunk() {
       return valueCase_ == 15;
     }
@@ -3471,24 +3471,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
      * @return The loadSnapshotChunk.
      */
-    @Override
-    public ResponseLoadSnapshotChunk getLoadSnapshotChunk() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseLoadSnapshotChunk getLoadSnapshotChunk() {
       if (loadSnapshotChunkBuilder_ == null) {
         if (valueCase_ == 15) {
-          return (ResponseLoadSnapshotChunk) value_;
+          return (com.tendermint.abci.ResponseLoadSnapshotChunk) value_;
         }
-        return ResponseLoadSnapshotChunk.getDefaultInstance();
+        return com.tendermint.abci.ResponseLoadSnapshotChunk.getDefaultInstance();
       } else {
         if (valueCase_ == 15) {
           return loadSnapshotChunkBuilder_.getMessage();
         }
-        return ResponseLoadSnapshotChunk.getDefaultInstance();
+        return com.tendermint.abci.ResponseLoadSnapshotChunk.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
      */
-    public Builder setLoadSnapshotChunk(ResponseLoadSnapshotChunk value) {
+    public Builder setLoadSnapshotChunk(com.tendermint.abci.ResponseLoadSnapshotChunk value) {
       if (loadSnapshotChunkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3505,7 +3505,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
      */
     public Builder setLoadSnapshotChunk(
-        ResponseLoadSnapshotChunk.Builder builderForValue) {
+        com.tendermint.abci.ResponseLoadSnapshotChunk.Builder builderForValue) {
       if (loadSnapshotChunkBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -3518,11 +3518,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
      */
-    public Builder mergeLoadSnapshotChunk(ResponseLoadSnapshotChunk value) {
+    public Builder mergeLoadSnapshotChunk(com.tendermint.abci.ResponseLoadSnapshotChunk value) {
       if (loadSnapshotChunkBuilder_ == null) {
         if (valueCase_ == 15 &&
-            value_ != ResponseLoadSnapshotChunk.getDefaultInstance()) {
-          value_ = ResponseLoadSnapshotChunk.newBuilder((ResponseLoadSnapshotChunk) value_)
+            value_ != com.tendermint.abci.ResponseLoadSnapshotChunk.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseLoadSnapshotChunk.newBuilder((com.tendermint.abci.ResponseLoadSnapshotChunk) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -3560,36 +3560,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
      */
-    public ResponseLoadSnapshotChunk.Builder getLoadSnapshotChunkBuilder() {
+    public com.tendermint.abci.ResponseLoadSnapshotChunk.Builder getLoadSnapshotChunkBuilder() {
       return getLoadSnapshotChunkFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
      */
-    @Override
-    public ResponseLoadSnapshotChunkOrBuilder getLoadSnapshotChunkOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseLoadSnapshotChunkOrBuilder getLoadSnapshotChunkOrBuilder() {
       if ((valueCase_ == 15) && (loadSnapshotChunkBuilder_ != null)) {
         return loadSnapshotChunkBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 15) {
-          return (ResponseLoadSnapshotChunk) value_;
+          return (com.tendermint.abci.ResponseLoadSnapshotChunk) value_;
         }
-        return ResponseLoadSnapshotChunk.getDefaultInstance();
+        return com.tendermint.abci.ResponseLoadSnapshotChunk.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseLoadSnapshotChunk load_snapshot_chunk = 15 [json_name = "loadSnapshotChunk"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseLoadSnapshotChunk, ResponseLoadSnapshotChunk.Builder, ResponseLoadSnapshotChunkOrBuilder>
+        com.tendermint.abci.ResponseLoadSnapshotChunk, com.tendermint.abci.ResponseLoadSnapshotChunk.Builder, com.tendermint.abci.ResponseLoadSnapshotChunkOrBuilder> 
         getLoadSnapshotChunkFieldBuilder() {
       if (loadSnapshotChunkBuilder_ == null) {
         if (!(valueCase_ == 15)) {
-          value_ = ResponseLoadSnapshotChunk.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseLoadSnapshotChunk.getDefaultInstance();
         }
         loadSnapshotChunkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseLoadSnapshotChunk, ResponseLoadSnapshotChunk.Builder, ResponseLoadSnapshotChunkOrBuilder>(
-                (ResponseLoadSnapshotChunk) value_,
+            com.tendermint.abci.ResponseLoadSnapshotChunk, com.tendermint.abci.ResponseLoadSnapshotChunk.Builder, com.tendermint.abci.ResponseLoadSnapshotChunkOrBuilder>(
+                (com.tendermint.abci.ResponseLoadSnapshotChunk) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -3600,12 +3600,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseApplySnapshotChunk, ResponseApplySnapshotChunk.Builder, ResponseApplySnapshotChunkOrBuilder> applySnapshotChunkBuilder_;
+        com.tendermint.abci.ResponseApplySnapshotChunk, com.tendermint.abci.ResponseApplySnapshotChunk.Builder, com.tendermint.abci.ResponseApplySnapshotChunkOrBuilder> applySnapshotChunkBuilder_;
     /**
      * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
      * @return Whether the applySnapshotChunk field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasApplySnapshotChunk() {
       return valueCase_ == 16;
     }
@@ -3613,24 +3613,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
      * @return The applySnapshotChunk.
      */
-    @Override
-    public ResponseApplySnapshotChunk getApplySnapshotChunk() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseApplySnapshotChunk getApplySnapshotChunk() {
       if (applySnapshotChunkBuilder_ == null) {
         if (valueCase_ == 16) {
-          return (ResponseApplySnapshotChunk) value_;
+          return (com.tendermint.abci.ResponseApplySnapshotChunk) value_;
         }
-        return ResponseApplySnapshotChunk.getDefaultInstance();
+        return com.tendermint.abci.ResponseApplySnapshotChunk.getDefaultInstance();
       } else {
         if (valueCase_ == 16) {
           return applySnapshotChunkBuilder_.getMessage();
         }
-        return ResponseApplySnapshotChunk.getDefaultInstance();
+        return com.tendermint.abci.ResponseApplySnapshotChunk.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
      */
-    public Builder setApplySnapshotChunk(ResponseApplySnapshotChunk value) {
+    public Builder setApplySnapshotChunk(com.tendermint.abci.ResponseApplySnapshotChunk value) {
       if (applySnapshotChunkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3647,7 +3647,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
      */
     public Builder setApplySnapshotChunk(
-        ResponseApplySnapshotChunk.Builder builderForValue) {
+        com.tendermint.abci.ResponseApplySnapshotChunk.Builder builderForValue) {
       if (applySnapshotChunkBuilder_ == null) {
         value_ = builderForValue.build();
         onChanged();
@@ -3660,11 +3660,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
      */
-    public Builder mergeApplySnapshotChunk(ResponseApplySnapshotChunk value) {
+    public Builder mergeApplySnapshotChunk(com.tendermint.abci.ResponseApplySnapshotChunk value) {
       if (applySnapshotChunkBuilder_ == null) {
         if (valueCase_ == 16 &&
-            value_ != ResponseApplySnapshotChunk.getDefaultInstance()) {
-          value_ = ResponseApplySnapshotChunk.newBuilder((ResponseApplySnapshotChunk) value_)
+            value_ != com.tendermint.abci.ResponseApplySnapshotChunk.getDefaultInstance()) {
+          value_ = com.tendermint.abci.ResponseApplySnapshotChunk.newBuilder((com.tendermint.abci.ResponseApplySnapshotChunk) value_)
               .mergeFrom(value).buildPartial();
         } else {
           value_ = value;
@@ -3702,36 +3702,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
      */
-    public ResponseApplySnapshotChunk.Builder getApplySnapshotChunkBuilder() {
+    public com.tendermint.abci.ResponseApplySnapshotChunk.Builder getApplySnapshotChunkBuilder() {
       return getApplySnapshotChunkFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
      */
-    @Override
-    public ResponseApplySnapshotChunkOrBuilder getApplySnapshotChunkOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.abci.ResponseApplySnapshotChunkOrBuilder getApplySnapshotChunkOrBuilder() {
       if ((valueCase_ == 16) && (applySnapshotChunkBuilder_ != null)) {
         return applySnapshotChunkBuilder_.getMessageOrBuilder();
       } else {
         if (valueCase_ == 16) {
-          return (ResponseApplySnapshotChunk) value_;
+          return (com.tendermint.abci.ResponseApplySnapshotChunk) value_;
         }
-        return ResponseApplySnapshotChunk.getDefaultInstance();
+        return com.tendermint.abci.ResponseApplySnapshotChunk.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.abci.ResponseApplySnapshotChunk apply_snapshot_chunk = 16 [json_name = "applySnapshotChunk"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ResponseApplySnapshotChunk, ResponseApplySnapshotChunk.Builder, ResponseApplySnapshotChunkOrBuilder>
+        com.tendermint.abci.ResponseApplySnapshotChunk, com.tendermint.abci.ResponseApplySnapshotChunk.Builder, com.tendermint.abci.ResponseApplySnapshotChunkOrBuilder> 
         getApplySnapshotChunkFieldBuilder() {
       if (applySnapshotChunkBuilder_ == null) {
         if (!(valueCase_ == 16)) {
-          value_ = ResponseApplySnapshotChunk.getDefaultInstance();
+          value_ = com.tendermint.abci.ResponseApplySnapshotChunk.getDefaultInstance();
         }
         applySnapshotChunkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ResponseApplySnapshotChunk, ResponseApplySnapshotChunk.Builder, ResponseApplySnapshotChunkOrBuilder>(
-                (ResponseApplySnapshotChunk) value_,
+            com.tendermint.abci.ResponseApplySnapshotChunk, com.tendermint.abci.ResponseApplySnapshotChunk.Builder, com.tendermint.abci.ResponseApplySnapshotChunkOrBuilder>(
+                (com.tendermint.abci.ResponseApplySnapshotChunk) value_,
                 getParentForChildren(),
                 isClean());
         value_ = null;
@@ -3740,13 +3740,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return applySnapshotChunkBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -3757,18 +3757,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.abci.Response)
-  private static final Response DEFAULT_INSTANCE;
+  private static final com.tendermint.abci.Response DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Response();
+    DEFAULT_INSTANCE = new com.tendermint.abci.Response();
   }
 
-  public static Response getDefaultInstance() {
+  public static com.tendermint.abci.Response getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Response>
       PARSER = new com.google.protobuf.AbstractParser<Response>() {
-    @Override
+    @java.lang.Override
     public Response parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -3792,13 +3792,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Response> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Response getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.tendermint.abci.Response getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

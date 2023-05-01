@@ -23,28 +23,28 @@ private static final long serialVersionUID = 0L;
   private QueryDenomTraceResponse() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryDenomTraceResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_descriptor;
+    return com.ibc.applications.transfer.v1.QueryProto.internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_fieldAccessorTable
+    return com.ibc.applications.transfer.v1.QueryProto.internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryDenomTraceResponse.class, Builder.class);
+            com.ibc.applications.transfer.v1.QueryDenomTraceResponse.class, com.ibc.applications.transfer.v1.QueryDenomTraceResponse.Builder.class);
   }
 
   public static final int DENOM_TRACE_FIELD_NUMBER = 1;
-  private DenomTrace denomTrace_;
+  private com.ibc.applications.transfer.v1.DenomTrace denomTrace_;
   /**
    * <pre>
    * denom_trace returns the requested denomination trace information.
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
    * @return Whether the denomTrace field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasDenomTrace() {
     return denomTrace_ != null;
   }
@@ -65,9 +65,9 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
    * @return The denomTrace.
    */
-  @Override
-  public DenomTrace getDenomTrace() {
-    return denomTrace_ == null ? DenomTrace.getDefaultInstance() : denomTrace_;
+  @java.lang.Override
+  public com.ibc.applications.transfer.v1.DenomTrace getDenomTrace() {
+    return denomTrace_ == null ? com.ibc.applications.transfer.v1.DenomTrace.getDefaultInstance() : denomTrace_;
   }
   /**
    * <pre>
@@ -76,13 +76,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
    */
-  @Override
-  public DenomTraceOrBuilder getDenomTraceOrBuilder() {
-    return denomTrace_ == null ? DenomTrace.getDefaultInstance() : denomTrace_;
+  @java.lang.Override
+  public com.ibc.applications.transfer.v1.DenomTraceOrBuilder getDenomTraceOrBuilder() {
+    return denomTrace_ == null ? com.ibc.applications.transfer.v1.DenomTrace.getDefaultInstance() : denomTrace_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -92,7 +92,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (denomTrace_ != null) {
@@ -101,7 +101,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -116,15 +116,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryDenomTraceResponse)) {
+    if (!(obj instanceof com.ibc.applications.transfer.v1.QueryDenomTraceResponse)) {
       return super.equals(obj);
     }
-    QueryDenomTraceResponse other = (QueryDenomTraceResponse) obj;
+    com.ibc.applications.transfer.v1.QueryDenomTraceResponse other = (com.ibc.applications.transfer.v1.QueryDenomTraceResponse) obj;
 
     if (hasDenomTrace() != other.hasDenomTrace()) return false;
     if (hasDenomTrace()) {
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryDenomTraceResponse parseFrom(
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDenomTraceResponse parseFrom(
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDenomTraceResponse parseFrom(
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDenomTraceResponse parseFrom(
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDenomTraceResponse parseFrom(byte[] data)
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDenomTraceResponse parseFrom(
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDenomTraceResponse parseFrom(java.io.InputStream input)
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryDenomTraceResponse parseFrom(
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryDenomTraceResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryDenomTraceResponse parseDelimitedFrom(
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryDenomTraceResponse parseFrom(
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryDenomTraceResponse parseFrom(
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryDenomTraceResponse prototype) {
+  public static Builder newBuilder(com.ibc.applications.transfer.v1.QueryDenomTraceResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -252,18 +252,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.applications.transfer.v1.QueryDenomTraceResponse)
-      QueryDenomTraceResponseOrBuilder {
+      com.ibc.applications.transfer.v1.QueryDenomTraceResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_descriptor;
+      return com.ibc.applications.transfer.v1.QueryProto.internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_fieldAccessorTable
+      return com.ibc.applications.transfer.v1.QueryProto.internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryDenomTraceResponse.class, Builder.class);
+              com.ibc.applications.transfer.v1.QueryDenomTraceResponse.class, com.ibc.applications.transfer.v1.QueryDenomTraceResponse.Builder.class);
     }
 
     // Construct using com.ibc.applications.transfer.v1.QueryDenomTraceResponse.newBuilder()
@@ -272,11 +272,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -288,35 +288,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_descriptor;
+      return com.ibc.applications.transfer.v1.QueryProto.internal_static_ibc_applications_transfer_v1_QueryDenomTraceResponse_descriptor;
     }
 
-    @Override
-    public QueryDenomTraceResponse getDefaultInstanceForType() {
-      return QueryDenomTraceResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.applications.transfer.v1.QueryDenomTraceResponse getDefaultInstanceForType() {
+      return com.ibc.applications.transfer.v1.QueryDenomTraceResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryDenomTraceResponse build() {
-      QueryDenomTraceResponse result = buildPartial();
+    @java.lang.Override
+    public com.ibc.applications.transfer.v1.QueryDenomTraceResponse build() {
+      com.ibc.applications.transfer.v1.QueryDenomTraceResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryDenomTraceResponse buildPartial() {
-      QueryDenomTraceResponse result = new QueryDenomTraceResponse(this);
+    @java.lang.Override
+    public com.ibc.applications.transfer.v1.QueryDenomTraceResponse buildPartial() {
+      com.ibc.applications.transfer.v1.QueryDenomTraceResponse result = new com.ibc.applications.transfer.v1.QueryDenomTraceResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(QueryDenomTraceResponse result) {
+    private void buildPartial0(com.ibc.applications.transfer.v1.QueryDenomTraceResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.denomTrace_ = denomTraceBuilder_ == null
@@ -325,50 +325,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryDenomTraceResponse) {
-        return mergeFrom((QueryDenomTraceResponse)other);
+      if (other instanceof com.ibc.applications.transfer.v1.QueryDenomTraceResponse) {
+        return mergeFrom((com.ibc.applications.transfer.v1.QueryDenomTraceResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryDenomTraceResponse other) {
-      if (other == QueryDenomTraceResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.applications.transfer.v1.QueryDenomTraceResponse other) {
+      if (other == com.ibc.applications.transfer.v1.QueryDenomTraceResponse.getDefaultInstance()) return this;
       if (other.hasDenomTrace()) {
         mergeDenomTrace(other.getDenomTrace());
       }
@@ -377,18 +377,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -422,9 +422,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private DenomTrace denomTrace_;
+    private com.ibc.applications.transfer.v1.DenomTrace denomTrace_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        DenomTrace, DenomTrace.Builder, DenomTraceOrBuilder> denomTraceBuilder_;
+        com.ibc.applications.transfer.v1.DenomTrace, com.ibc.applications.transfer.v1.DenomTrace.Builder, com.ibc.applications.transfer.v1.DenomTraceOrBuilder> denomTraceBuilder_;
     /**
      * <pre>
      * denom_trace returns the requested denomination trace information.
@@ -444,9 +444,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
      * @return The denomTrace.
      */
-    public DenomTrace getDenomTrace() {
+    public com.ibc.applications.transfer.v1.DenomTrace getDenomTrace() {
       if (denomTraceBuilder_ == null) {
-        return denomTrace_ == null ? DenomTrace.getDefaultInstance() : denomTrace_;
+        return denomTrace_ == null ? com.ibc.applications.transfer.v1.DenomTrace.getDefaultInstance() : denomTrace_;
       } else {
         return denomTraceBuilder_.getMessage();
       }
@@ -458,7 +458,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
      */
-    public Builder setDenomTrace(DenomTrace value) {
+    public Builder setDenomTrace(com.ibc.applications.transfer.v1.DenomTrace value) {
       if (denomTraceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -479,7 +479,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
      */
     public Builder setDenomTrace(
-        DenomTrace.Builder builderForValue) {
+        com.ibc.applications.transfer.v1.DenomTrace.Builder builderForValue) {
       if (denomTraceBuilder_ == null) {
         denomTrace_ = builderForValue.build();
       } else {
@@ -496,11 +496,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
      */
-    public Builder mergeDenomTrace(DenomTrace value) {
+    public Builder mergeDenomTrace(com.ibc.applications.transfer.v1.DenomTrace value) {
       if (denomTraceBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           denomTrace_ != null &&
-          denomTrace_ != DenomTrace.getDefaultInstance()) {
+          denomTrace_ != com.ibc.applications.transfer.v1.DenomTrace.getDefaultInstance()) {
           getDenomTraceBuilder().mergeFrom(value);
         } else {
           denomTrace_ = value;
@@ -536,7 +536,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
      */
-    public DenomTrace.Builder getDenomTraceBuilder() {
+    public com.ibc.applications.transfer.v1.DenomTrace.Builder getDenomTraceBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getDenomTraceFieldBuilder().getBuilder();
@@ -548,12 +548,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
      */
-    public DenomTraceOrBuilder getDenomTraceOrBuilder() {
+    public com.ibc.applications.transfer.v1.DenomTraceOrBuilder getDenomTraceOrBuilder() {
       if (denomTraceBuilder_ != null) {
         return denomTraceBuilder_.getMessageOrBuilder();
       } else {
         return denomTrace_ == null ?
-            DenomTrace.getDefaultInstance() : denomTrace_;
+            com.ibc.applications.transfer.v1.DenomTrace.getDefaultInstance() : denomTrace_;
       }
     }
     /**
@@ -564,11 +564,11 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.applications.transfer.v1.DenomTrace denom_trace = 1 [json_name = "denomTrace"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        DenomTrace, DenomTrace.Builder, DenomTraceOrBuilder>
+        com.ibc.applications.transfer.v1.DenomTrace, com.ibc.applications.transfer.v1.DenomTrace.Builder, com.ibc.applications.transfer.v1.DenomTraceOrBuilder> 
         getDenomTraceFieldBuilder() {
       if (denomTraceBuilder_ == null) {
         denomTraceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            DenomTrace, DenomTrace.Builder, DenomTraceOrBuilder>(
+            com.ibc.applications.transfer.v1.DenomTrace, com.ibc.applications.transfer.v1.DenomTrace.Builder, com.ibc.applications.transfer.v1.DenomTraceOrBuilder>(
                 getDenomTrace(),
                 getParentForChildren(),
                 isClean());
@@ -576,13 +576,13 @@ private static final long serialVersionUID = 0L;
       }
       return denomTraceBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -593,18 +593,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.applications.transfer.v1.QueryDenomTraceResponse)
-  private static final QueryDenomTraceResponse DEFAULT_INSTANCE;
+  private static final com.ibc.applications.transfer.v1.QueryDenomTraceResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryDenomTraceResponse();
+    DEFAULT_INSTANCE = new com.ibc.applications.transfer.v1.QueryDenomTraceResponse();
   }
 
-  public static QueryDenomTraceResponse getDefaultInstance() {
+  public static com.ibc.applications.transfer.v1.QueryDenomTraceResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryDenomTraceResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryDenomTraceResponse>() {
-    @Override
+    @java.lang.Override
     public QueryDenomTraceResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -628,13 +628,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryDenomTraceResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryDenomTraceResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.applications.transfer.v1.QueryDenomTraceResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

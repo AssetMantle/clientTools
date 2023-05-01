@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     spendLimit_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new BasicAllowance();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return FeegrantProto.internal_static_cosmos_feegrant_v1beta1_BasicAllowance_descriptor;
+    return com.cosmos.feegrant.v1beta1.FeegrantProto.internal_static_cosmos_feegrant_v1beta1_BasicAllowance_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return FeegrantProto.internal_static_cosmos_feegrant_v1beta1_BasicAllowance_fieldAccessorTable
+    return com.cosmos.feegrant.v1beta1.FeegrantProto.internal_static_cosmos_feegrant_v1beta1_BasicAllowance_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            BasicAllowance.class, Builder.class);
+            com.cosmos.feegrant.v1beta1.BasicAllowance.class, com.cosmos.feegrant.v1beta1.BasicAllowance.Builder.class);
   }
 
   public static final int SPEND_LIMIT_FIELD_NUMBER = 1;
@@ -56,7 +56,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<com.cosmos.base.v1beta1.Coin> getSpendLimitList() {
     return spendLimit_;
   }
@@ -69,7 +69,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<? extends com.cosmos.base.v1beta1.CoinOrBuilder> 
       getSpendLimitOrBuilderList() {
     return spendLimit_;
@@ -83,7 +83,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getSpendLimitCount() {
     return spendLimit_.size();
   }
@@ -96,7 +96,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.Coin getSpendLimit(int index) {
     return spendLimit_.get(index);
   }
@@ -109,7 +109,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.CoinOrBuilder getSpendLimitOrBuilder(
       int index) {
     return spendLimit_.get(index);
@@ -125,7 +125,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp expiration = 2 [json_name = "expiration", (.gogoproto.stdtime) = true];</code>
    * @return Whether the expiration field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasExpiration() {
     return expiration_ != null;
   }
@@ -137,7 +137,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp expiration = 2 [json_name = "expiration", (.gogoproto.stdtime) = true];</code>
    * @return The expiration.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Timestamp getExpiration() {
     return expiration_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : expiration_;
   }
@@ -148,13 +148,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Timestamp expiration = 2 [json_name = "expiration", (.gogoproto.stdtime) = true];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getExpirationOrBuilder() {
     return expiration_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : expiration_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -164,7 +164,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < spendLimit_.size(); i++) {
@@ -176,7 +176,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -195,15 +195,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof BasicAllowance)) {
+    if (!(obj instanceof com.cosmos.feegrant.v1beta1.BasicAllowance)) {
       return super.equals(obj);
     }
-    BasicAllowance other = (BasicAllowance) obj;
+    com.cosmos.feegrant.v1beta1.BasicAllowance other = (com.cosmos.feegrant.v1beta1.BasicAllowance) obj;
 
     if (!getSpendLimitList()
         .equals(other.getSpendLimitList())) return false;
@@ -216,7 +216,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -236,69 +236,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static BasicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static BasicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static BasicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static BasicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static BasicAllowance parseFrom(byte[] data)
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static BasicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static BasicAllowance parseFrom(java.io.InputStream input)
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static BasicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static BasicAllowance parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static BasicAllowance parseDelimitedFrom(
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static BasicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static BasicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -306,23 +306,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(BasicAllowance prototype) {
+  public static Builder newBuilder(com.cosmos.feegrant.v1beta1.BasicAllowance prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -337,18 +337,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.feegrant.v1beta1.BasicAllowance)
-      BasicAllowanceOrBuilder {
+      com.cosmos.feegrant.v1beta1.BasicAllowanceOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return FeegrantProto.internal_static_cosmos_feegrant_v1beta1_BasicAllowance_descriptor;
+      return com.cosmos.feegrant.v1beta1.FeegrantProto.internal_static_cosmos_feegrant_v1beta1_BasicAllowance_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return FeegrantProto.internal_static_cosmos_feegrant_v1beta1_BasicAllowance_fieldAccessorTable
+      return com.cosmos.feegrant.v1beta1.FeegrantProto.internal_static_cosmos_feegrant_v1beta1_BasicAllowance_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              BasicAllowance.class, Builder.class);
+              com.cosmos.feegrant.v1beta1.BasicAllowance.class, com.cosmos.feegrant.v1beta1.BasicAllowance.Builder.class);
     }
 
     // Construct using com.cosmos.feegrant.v1beta1.BasicAllowance.newBuilder()
@@ -357,11 +357,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -380,36 +380,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return FeegrantProto.internal_static_cosmos_feegrant_v1beta1_BasicAllowance_descriptor;
+      return com.cosmos.feegrant.v1beta1.FeegrantProto.internal_static_cosmos_feegrant_v1beta1_BasicAllowance_descriptor;
     }
 
-    @Override
-    public BasicAllowance getDefaultInstanceForType() {
-      return BasicAllowance.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.feegrant.v1beta1.BasicAllowance getDefaultInstanceForType() {
+      return com.cosmos.feegrant.v1beta1.BasicAllowance.getDefaultInstance();
     }
 
-    @Override
-    public BasicAllowance build() {
-      BasicAllowance result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.feegrant.v1beta1.BasicAllowance build() {
+      com.cosmos.feegrant.v1beta1.BasicAllowance result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public BasicAllowance buildPartial() {
-      BasicAllowance result = new BasicAllowance(this);
+    @java.lang.Override
+    public com.cosmos.feegrant.v1beta1.BasicAllowance buildPartial() {
+      com.cosmos.feegrant.v1beta1.BasicAllowance result = new com.cosmos.feegrant.v1beta1.BasicAllowance(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(BasicAllowance result) {
+    private void buildPartialRepeatedFields(com.cosmos.feegrant.v1beta1.BasicAllowance result) {
       if (spendLimitBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           spendLimit_ = java.util.Collections.unmodifiableList(spendLimit_);
@@ -421,7 +421,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(BasicAllowance result) {
+    private void buildPartial0(com.cosmos.feegrant.v1beta1.BasicAllowance result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.expiration_ = expirationBuilder_ == null
@@ -430,50 +430,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof BasicAllowance) {
-        return mergeFrom((BasicAllowance)other);
+      if (other instanceof com.cosmos.feegrant.v1beta1.BasicAllowance) {
+        return mergeFrom((com.cosmos.feegrant.v1beta1.BasicAllowance)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(BasicAllowance other) {
-      if (other == BasicAllowance.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.feegrant.v1beta1.BasicAllowance other) {
+      if (other == com.cosmos.feegrant.v1beta1.BasicAllowance.getDefaultInstance()) return this;
       if (spendLimitBuilder_ == null) {
         if (!other.spendLimit_.isEmpty()) {
           if (spendLimit_.isEmpty()) {
@@ -508,18 +508,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -764,7 +764,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.v1beta1.Coin spend_limit = 1 [json_name = "spendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
     public Builder addAllSpendLimit(
-        Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
+        java.lang.Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
       if (spendLimitBuilder_ == null) {
         ensureSpendLimitIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1068,13 +1068,13 @@ private static final long serialVersionUID = 0L;
       }
       return expirationBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1085,18 +1085,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.feegrant.v1beta1.BasicAllowance)
-  private static final BasicAllowance DEFAULT_INSTANCE;
+  private static final com.cosmos.feegrant.v1beta1.BasicAllowance DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new BasicAllowance();
+    DEFAULT_INSTANCE = new com.cosmos.feegrant.v1beta1.BasicAllowance();
   }
 
-  public static BasicAllowance getDefaultInstance() {
+  public static com.cosmos.feegrant.v1beta1.BasicAllowance getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<BasicAllowance>
       PARSER = new com.google.protobuf.AbstractParser<BasicAllowance>() {
-    @Override
+    @java.lang.Override
     public BasicAllowance parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1120,13 +1120,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<BasicAllowance> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public BasicAllowance getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.feegrant.v1beta1.BasicAllowance getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

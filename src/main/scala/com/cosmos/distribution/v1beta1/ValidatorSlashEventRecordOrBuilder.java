@@ -15,7 +15,7 @@ public interface ValidatorSlashEventRecordOrBuilder extends
    * <code>string validator_address = 1 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  String getValidatorAddress();
+  java.lang.String getValidatorAddress();
   /**
    * <pre>
    * validator_address is the address of the validator.
@@ -64,7 +64,7 @@ public interface ValidatorSlashEventRecordOrBuilder extends
    * <code>.cosmos.distribution.v1beta1.ValidatorSlashEvent validator_slash_event = 4 [json_name = "validatorSlashEvent", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"event&#92;""];</code>
    * @return The validatorSlashEvent.
    */
-  ValidatorSlashEvent getValidatorSlashEvent();
+  com.cosmos.distribution.v1beta1.ValidatorSlashEvent getValidatorSlashEvent();
   /**
    * <pre>
    * validator_slash_event describes the slash event.
@@ -72,5 +72,5 @@ public interface ValidatorSlashEventRecordOrBuilder extends
    *
    * <code>.cosmos.distribution.v1beta1.ValidatorSlashEvent validator_slash_event = 4 [json_name = "validatorSlashEvent", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"event&#92;""];</code>
    */
-  ValidatorSlashEventOrBuilder getValidatorSlashEventOrBuilder();
+  com.cosmos.distribution.v1beta1.ValidatorSlashEventOrBuilder getValidatorSlashEventOrBuilder();
 }

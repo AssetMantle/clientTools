@@ -15,7 +15,7 @@ public interface GetTxRequestOrBuilder extends
    * <code>string hash = 1 [json_name = "hash"];</code>
    * @return The hash.
    */
-  String getHash();
+  java.lang.String getHash();
   /**
    * <pre>
    * hash is the tx hash to query, encoded as a hex string.

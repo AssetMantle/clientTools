@@ -37,7 +37,7 @@ public final class CapabilityProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n*cosmos/capability/v1beta1/capability.p" +
       "roto\022\031cosmos.capability.v1beta1\032\024gogopro" +
       "to/gogo.proto\":\n\nCapability\022&\n\005index\030\001 \001" +
@@ -65,19 +65,19 @@ public final class CapabilityProto {
     internal_static_cosmos_capability_v1beta1_Capability_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_capability_v1beta1_Capability_descriptor,
-        new String[] { "Index", });
+        new java.lang.String[] { "Index", });
     internal_static_cosmos_capability_v1beta1_Owner_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_capability_v1beta1_Owner_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_capability_v1beta1_Owner_descriptor,
-        new String[] { "Module", "Name", });
+        new java.lang.String[] { "Module", "Name", });
     internal_static_cosmos_capability_v1beta1_CapabilityOwners_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_capability_v1beta1_CapabilityOwners_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_capability_v1beta1_CapabilityOwners_descriptor,
-        new String[] { "Owners", });
+        new java.lang.String[] { "Owners", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

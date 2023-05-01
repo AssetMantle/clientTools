@@ -152,7 +152,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\037ibc/core/channel/v1/query.proto\022\023ibc.c" +
       "ore.channel.v1\032\037ibc/core/client/v1/clien" +
       "t.proto\032*cosmos/base/query/v1beta1/pagin" +
@@ -346,7 +346,7 @@ public final class QueryProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.ibc.core.client.v1.ClientProto.getDescriptor(),
           com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor(),
-          ChannelProto.getDescriptor(),
+          com.ibc.core.channel.v1.ChannelProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
           com.google.protobuf.AnyProto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
@@ -356,157 +356,157 @@ public final class QueryProto {
     internal_static_ibc_core_channel_v1_QueryChannelRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryChannelRequest_descriptor,
-        new String[] { "PortId", "ChannelId", });
+        new java.lang.String[] { "PortId", "ChannelId", });
     internal_static_ibc_core_channel_v1_QueryChannelResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_core_channel_v1_QueryChannelResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryChannelResponse_descriptor,
-        new String[] { "Channel", "Proof", "ProofHeight", });
+        new java.lang.String[] { "Channel", "Proof", "ProofHeight", });
     internal_static_ibc_core_channel_v1_QueryChannelsRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_core_channel_v1_QueryChannelsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryChannelsRequest_descriptor,
-        new String[] { "Pagination", });
+        new java.lang.String[] { "Pagination", });
     internal_static_ibc_core_channel_v1_QueryChannelsResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_core_channel_v1_QueryChannelsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryChannelsResponse_descriptor,
-        new String[] { "Channels", "Pagination", "Height", });
+        new java.lang.String[] { "Channels", "Pagination", "Height", });
     internal_static_ibc_core_channel_v1_QueryConnectionChannelsRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_core_channel_v1_QueryConnectionChannelsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryConnectionChannelsRequest_descriptor,
-        new String[] { "Connection", "Pagination", });
+        new java.lang.String[] { "Connection", "Pagination", });
     internal_static_ibc_core_channel_v1_QueryConnectionChannelsResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_ibc_core_channel_v1_QueryConnectionChannelsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryConnectionChannelsResponse_descriptor,
-        new String[] { "Channels", "Pagination", "Height", });
+        new java.lang.String[] { "Channels", "Pagination", "Height", });
     internal_static_ibc_core_channel_v1_QueryChannelClientStateRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_ibc_core_channel_v1_QueryChannelClientStateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryChannelClientStateRequest_descriptor,
-        new String[] { "PortId", "ChannelId", });
+        new java.lang.String[] { "PortId", "ChannelId", });
     internal_static_ibc_core_channel_v1_QueryChannelClientStateResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_ibc_core_channel_v1_QueryChannelClientStateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryChannelClientStateResponse_descriptor,
-        new String[] { "IdentifiedClientState", "Proof", "ProofHeight", });
+        new java.lang.String[] { "IdentifiedClientState", "Proof", "ProofHeight", });
     internal_static_ibc_core_channel_v1_QueryChannelConsensusStateRequest_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_ibc_core_channel_v1_QueryChannelConsensusStateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryChannelConsensusStateRequest_descriptor,
-        new String[] { "PortId", "ChannelId", "RevisionNumber", "RevisionHeight", });
+        new java.lang.String[] { "PortId", "ChannelId", "RevisionNumber", "RevisionHeight", });
     internal_static_ibc_core_channel_v1_QueryChannelConsensusStateResponse_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_ibc_core_channel_v1_QueryChannelConsensusStateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryChannelConsensusStateResponse_descriptor,
-        new String[] { "ConsensusState", "ClientId", "Proof", "ProofHeight", });
+        new java.lang.String[] { "ConsensusState", "ClientId", "Proof", "ProofHeight", });
     internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketCommitmentRequest_descriptor,
-        new String[] { "PortId", "ChannelId", "Sequence", });
+        new java.lang.String[] { "PortId", "ChannelId", "Sequence", });
     internal_static_ibc_core_channel_v1_QueryPacketCommitmentResponse_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_ibc_core_channel_v1_QueryPacketCommitmentResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketCommitmentResponse_descriptor,
-        new String[] { "Commitment", "Proof", "ProofHeight", });
+        new java.lang.String[] { "Commitment", "Proof", "ProofHeight", });
     internal_static_ibc_core_channel_v1_QueryPacketCommitmentsRequest_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_ibc_core_channel_v1_QueryPacketCommitmentsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketCommitmentsRequest_descriptor,
-        new String[] { "PortId", "ChannelId", "Pagination", });
+        new java.lang.String[] { "PortId", "ChannelId", "Pagination", });
     internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketCommitmentsResponse_descriptor,
-        new String[] { "Commitments", "Pagination", "Height", });
+        new java.lang.String[] { "Commitments", "Pagination", "Height", });
     internal_static_ibc_core_channel_v1_QueryPacketReceiptRequest_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_ibc_core_channel_v1_QueryPacketReceiptRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketReceiptRequest_descriptor,
-        new String[] { "PortId", "ChannelId", "Sequence", });
+        new java.lang.String[] { "PortId", "ChannelId", "Sequence", });
     internal_static_ibc_core_channel_v1_QueryPacketReceiptResponse_descriptor =
       getDescriptor().getMessageTypes().get(15);
     internal_static_ibc_core_channel_v1_QueryPacketReceiptResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketReceiptResponse_descriptor,
-        new String[] { "Received", "Proof", "ProofHeight", });
+        new java.lang.String[] { "Received", "Proof", "ProofHeight", });
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementRequest_descriptor =
       getDescriptor().getMessageTypes().get(16);
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementRequest_descriptor,
-        new String[] { "PortId", "ChannelId", "Sequence", });
+        new java.lang.String[] { "PortId", "ChannelId", "Sequence", });
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementResponse_descriptor =
       getDescriptor().getMessageTypes().get(17);
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementResponse_descriptor,
-        new String[] { "Acknowledgement", "Proof", "ProofHeight", });
+        new java.lang.String[] { "Acknowledgement", "Proof", "ProofHeight", });
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementsRequest_descriptor =
       getDescriptor().getMessageTypes().get(18);
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementsRequest_descriptor,
-        new String[] { "PortId", "ChannelId", "Pagination", "PacketCommitmentSequences", });
+        new java.lang.String[] { "PortId", "ChannelId", "Pagination", "PacketCommitmentSequences", });
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementsResponse_descriptor =
       getDescriptor().getMessageTypes().get(19);
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementsResponse_descriptor,
-        new String[] { "Acknowledgements", "Pagination", "Height", });
+        new java.lang.String[] { "Acknowledgements", "Pagination", "Height", });
     internal_static_ibc_core_channel_v1_QueryUnreceivedPacketsRequest_descriptor =
       getDescriptor().getMessageTypes().get(20);
     internal_static_ibc_core_channel_v1_QueryUnreceivedPacketsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryUnreceivedPacketsRequest_descriptor,
-        new String[] { "PortId", "ChannelId", "PacketCommitmentSequences", });
+        new java.lang.String[] { "PortId", "ChannelId", "PacketCommitmentSequences", });
     internal_static_ibc_core_channel_v1_QueryUnreceivedPacketsResponse_descriptor =
       getDescriptor().getMessageTypes().get(21);
     internal_static_ibc_core_channel_v1_QueryUnreceivedPacketsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryUnreceivedPacketsResponse_descriptor,
-        new String[] { "Sequences", "Height", });
+        new java.lang.String[] { "Sequences", "Height", });
     internal_static_ibc_core_channel_v1_QueryUnreceivedAcksRequest_descriptor =
       getDescriptor().getMessageTypes().get(22);
     internal_static_ibc_core_channel_v1_QueryUnreceivedAcksRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryUnreceivedAcksRequest_descriptor,
-        new String[] { "PortId", "ChannelId", "PacketAckSequences", });
+        new java.lang.String[] { "PortId", "ChannelId", "PacketAckSequences", });
     internal_static_ibc_core_channel_v1_QueryUnreceivedAcksResponse_descriptor =
       getDescriptor().getMessageTypes().get(23);
     internal_static_ibc_core_channel_v1_QueryUnreceivedAcksResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryUnreceivedAcksResponse_descriptor,
-        new String[] { "Sequences", "Height", });
+        new java.lang.String[] { "Sequences", "Height", });
     internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveRequest_descriptor =
       getDescriptor().getMessageTypes().get(24);
     internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveRequest_descriptor,
-        new String[] { "PortId", "ChannelId", });
+        new java.lang.String[] { "PortId", "ChannelId", });
     internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_descriptor =
       getDescriptor().getMessageTypes().get(25);
     internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryNextSequenceReceiveResponse_descriptor,
-        new String[] { "NextSequenceReceive", "Proof", "ProofHeight", });
+        new java.lang.String[] { "NextSequenceReceive", "Proof", "ProofHeight", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);
@@ -515,7 +515,7 @@ public final class QueryProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.ibc.core.client.v1.ClientProto.getDescriptor();
     com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor();
-    ChannelProto.getDescriptor();
+    com.ibc.core.channel.v1.ChannelProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
     com.google.protobuf.AnyProto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();

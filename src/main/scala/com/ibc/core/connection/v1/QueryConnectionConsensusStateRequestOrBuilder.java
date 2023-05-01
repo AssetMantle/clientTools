@@ -15,7 +15,7 @@ public interface QueryConnectionConsensusStateRequestOrBuilder extends
    * <code>string connection_id = 1 [json_name = "connectionId", (.gogoproto.moretags) = "yaml:&#92;"connection_id&#92;""];</code>
    * @return The connectionId.
    */
-  String getConnectionId();
+  java.lang.String getConnectionId();
   /**
    * <pre>
    * connection identifier

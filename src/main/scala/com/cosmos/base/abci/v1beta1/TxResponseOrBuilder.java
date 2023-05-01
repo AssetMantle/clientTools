@@ -25,7 +25,7 @@ public interface TxResponseOrBuilder extends
    * <code>string txhash = 2 [json_name = "txhash", (.gogoproto.customname) = "TxHash"];</code>
    * @return The txhash.
    */
-  String getTxhash();
+  java.lang.String getTxhash();
   /**
    * <pre>
    * The transaction hash.
@@ -45,7 +45,7 @@ public interface TxResponseOrBuilder extends
    * <code>string codespace = 3 [json_name = "codespace"];</code>
    * @return The codespace.
    */
-  String getCodespace();
+  java.lang.String getCodespace();
   /**
    * <pre>
    * Namespace for the Code
@@ -75,7 +75,7 @@ public interface TxResponseOrBuilder extends
    * <code>string data = 5 [json_name = "data"];</code>
    * @return The data.
    */
-  String getData();
+  java.lang.String getData();
   /**
    * <pre>
    * Result bytes, if any.
@@ -96,7 +96,7 @@ public interface TxResponseOrBuilder extends
    * <code>string raw_log = 6 [json_name = "rawLog"];</code>
    * @return The rawLog.
    */
-  String getRawLog();
+  java.lang.String getRawLog();
   /**
    * <pre>
    * The output of the application's logger (raw string). May be
@@ -116,7 +116,7 @@ public interface TxResponseOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.ABCIMessageLog logs = 7 [json_name = "logs", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "ABCIMessageLogs"];</code>
    */
-  java.util.List<ABCIMessageLog>
+  java.util.List<com.cosmos.base.abci.v1beta1.ABCIMessageLog> 
       getLogsList();
   /**
    * <pre>
@@ -125,7 +125,7 @@ public interface TxResponseOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.ABCIMessageLog logs = 7 [json_name = "logs", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "ABCIMessageLogs"];</code>
    */
-  ABCIMessageLog getLogs(int index);
+  com.cosmos.base.abci.v1beta1.ABCIMessageLog getLogs(int index);
   /**
    * <pre>
    * The output of the application's logger (typed). May be non-deterministic.
@@ -141,7 +141,7 @@ public interface TxResponseOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.ABCIMessageLog logs = 7 [json_name = "logs", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "ABCIMessageLogs"];</code>
    */
-  java.util.List<? extends ABCIMessageLogOrBuilder>
+  java.util.List<? extends com.cosmos.base.abci.v1beta1.ABCIMessageLogOrBuilder> 
       getLogsOrBuilderList();
   /**
    * <pre>
@@ -150,7 +150,7 @@ public interface TxResponseOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.ABCIMessageLog logs = 7 [json_name = "logs", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "ABCIMessageLogs"];</code>
    */
-  ABCIMessageLogOrBuilder getLogsOrBuilder(
+  com.cosmos.base.abci.v1beta1.ABCIMessageLogOrBuilder getLogsOrBuilder(
       int index);
 
   /**
@@ -161,7 +161,7 @@ public interface TxResponseOrBuilder extends
    * <code>string info = 8 [json_name = "info"];</code>
    * @return The info.
    */
-  String getInfo();
+  java.lang.String getInfo();
   /**
    * <pre>
    * Additional information. May be non-deterministic.
@@ -230,7 +230,7 @@ public interface TxResponseOrBuilder extends
    * <code>string timestamp = 12 [json_name = "timestamp"];</code>
    * @return The timestamp.
    */
-  String getTimestamp();
+  java.lang.String getTimestamp();
   /**
    * <pre>
    * Time of the previous block. For heights &gt; 1, it's the weighted median of

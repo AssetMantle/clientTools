@@ -16,7 +16,7 @@ public interface CommitSigOrBuilder extends
    * <code>.tendermint.types.BlockIDFlag block_id_flag = 1 [json_name = "blockIdFlag"];</code>
    * @return The blockIdFlag.
    */
-  BlockIDFlag getBlockIdFlag();
+  com.tendermint.types.BlockIDFlag getBlockIdFlag();
 
   /**
    * <code>bytes validator_address = 2 [json_name = "validatorAddress"];</code>

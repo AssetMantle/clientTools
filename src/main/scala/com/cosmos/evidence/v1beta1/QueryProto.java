@@ -42,7 +42,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n#cosmos/evidence/v1beta1/query.proto\022\027c" +
       "osmos.evidence.v1beta1\032*cosmos/base/quer" +
       "y/v1beta1/pagination.proto\032\024gogoproto/go" +
@@ -88,25 +88,25 @@ public final class QueryProto {
     internal_static_cosmos_evidence_v1beta1_QueryEvidenceRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_evidence_v1beta1_QueryEvidenceRequest_descriptor,
-        new String[] { "EvidenceHash", });
+        new java.lang.String[] { "EvidenceHash", });
     internal_static_cosmos_evidence_v1beta1_QueryEvidenceResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_evidence_v1beta1_QueryEvidenceResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_evidence_v1beta1_QueryEvidenceResponse_descriptor,
-        new String[] { "Evidence", });
+        new java.lang.String[] { "Evidence", });
     internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceRequest_descriptor,
-        new String[] { "Pagination", });
+        new java.lang.String[] { "Pagination", });
     internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_evidence_v1beta1_QueryAllEvidenceResponse_descriptor,
-        new String[] { "Evidence", "Pagination", });
+        new java.lang.String[] { "Evidence", "Pagination", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.casttype);

@@ -16,11 +16,11 @@ public interface BlockOrBuilder extends
    * <code>.tendermint.types.Header header = 1 [json_name = "header", (.gogoproto.nullable) = false];</code>
    * @return The header.
    */
-  Header getHeader();
+  com.tendermint.types.Header getHeader();
   /**
    * <code>.tendermint.types.Header header = 1 [json_name = "header", (.gogoproto.nullable) = false];</code>
    */
-  HeaderOrBuilder getHeaderOrBuilder();
+  com.tendermint.types.HeaderOrBuilder getHeaderOrBuilder();
 
   /**
    * <code>.tendermint.types.Data data = 2 [json_name = "data", (.gogoproto.nullable) = false];</code>
@@ -31,11 +31,11 @@ public interface BlockOrBuilder extends
    * <code>.tendermint.types.Data data = 2 [json_name = "data", (.gogoproto.nullable) = false];</code>
    * @return The data.
    */
-  Data getData();
+  com.tendermint.types.Data getData();
   /**
    * <code>.tendermint.types.Data data = 2 [json_name = "data", (.gogoproto.nullable) = false];</code>
    */
-  DataOrBuilder getDataOrBuilder();
+  com.tendermint.types.DataOrBuilder getDataOrBuilder();
 
   /**
    * <code>.tendermint.types.EvidenceList evidence = 3 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
@@ -46,11 +46,11 @@ public interface BlockOrBuilder extends
    * <code>.tendermint.types.EvidenceList evidence = 3 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    * @return The evidence.
    */
-  EvidenceList getEvidence();
+  com.tendermint.types.EvidenceList getEvidence();
   /**
    * <code>.tendermint.types.EvidenceList evidence = 3 [json_name = "evidence", (.gogoproto.nullable) = false];</code>
    */
-  EvidenceListOrBuilder getEvidenceOrBuilder();
+  com.tendermint.types.EvidenceListOrBuilder getEvidenceOrBuilder();
 
   /**
    * <code>.tendermint.types.Commit last_commit = 4 [json_name = "lastCommit"];</code>
@@ -61,9 +61,9 @@ public interface BlockOrBuilder extends
    * <code>.tendermint.types.Commit last_commit = 4 [json_name = "lastCommit"];</code>
    * @return The lastCommit.
    */
-  Commit getLastCommit();
+  com.tendermint.types.Commit getLastCommit();
   /**
    * <code>.tendermint.types.Commit last_commit = 4 [json_name = "lastCommit"];</code>
    */
-  CommitOrBuilder getLastCommitOrBuilder();
+  com.tendermint.types.CommitOrBuilder getLastCommitOrBuilder();
 }

@@ -18,7 +18,7 @@ public interface SimulateRequestOrBuilder extends
    *     See cosmos/tx/v1beta1/service.proto;l=112
    * @return Whether the tx field is set.
    */
-  @Deprecated boolean hasTx();
+  @java.lang.Deprecated boolean hasTx();
   /**
    * <pre>
    * tx is the transaction to simulate.
@@ -30,7 +30,7 @@ public interface SimulateRequestOrBuilder extends
    *     See cosmos/tx/v1beta1/service.proto;l=112
    * @return The tx.
    */
-  @Deprecated Tx getTx();
+  @java.lang.Deprecated com.cosmos.tx.v1beta1.Tx getTx();
   /**
    * <pre>
    * tx is the transaction to simulate.
@@ -39,7 +39,7 @@ public interface SimulateRequestOrBuilder extends
    *
    * <code>.cosmos.tx.v1beta1.Tx tx = 1 [json_name = "tx", deprecated = true];</code>
    */
-  @Deprecated TxOrBuilder getTxOrBuilder();
+  @java.lang.Deprecated com.cosmos.tx.v1beta1.TxOrBuilder getTxOrBuilder();
 
   /**
    * <pre>

@@ -24,7 +24,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  Params getParams();
+  com.cosmos.staking.v1beta1.Params getParams();
   /**
    * <pre>
    * params defines all the paramaters of related to deposit.
@@ -32,7 +32,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  ParamsOrBuilder getParamsOrBuilder();
+  com.cosmos.staking.v1beta1.ParamsOrBuilder getParamsOrBuilder();
 
   /**
    * <pre>
@@ -53,7 +53,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
    */
-  java.util.List<LastValidatorPower>
+  java.util.List<com.cosmos.staking.v1beta1.LastValidatorPower> 
       getLastValidatorPowersList();
   /**
    * <pre>
@@ -63,7 +63,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
    */
-  LastValidatorPower getLastValidatorPowers(int index);
+  com.cosmos.staking.v1beta1.LastValidatorPower getLastValidatorPowers(int index);
   /**
    * <pre>
    * last_validator_powers is a special index that provides a historical list
@@ -81,7 +81,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
    */
-  java.util.List<? extends LastValidatorPowerOrBuilder>
+  java.util.List<? extends com.cosmos.staking.v1beta1.LastValidatorPowerOrBuilder> 
       getLastValidatorPowersOrBuilderList();
   /**
    * <pre>
@@ -91,7 +91,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.LastValidatorPower last_validator_powers = 3 [json_name = "lastValidatorPowers", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"last_validator_powers&#92;""];</code>
    */
-  LastValidatorPowerOrBuilder getLastValidatorPowersOrBuilder(
+  com.cosmos.staking.v1beta1.LastValidatorPowerOrBuilder getLastValidatorPowersOrBuilder(
       int index);
 
   /**
@@ -101,7 +101,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<Validator>
+  java.util.List<com.cosmos.staking.v1beta1.Validator> 
       getValidatorsList();
   /**
    * <pre>
@@ -110,7 +110,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  Validator getValidators(int index);
+  com.cosmos.staking.v1beta1.Validator getValidators(int index);
   /**
    * <pre>
    * delegations defines the validator set at genesis.
@@ -126,7 +126,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends ValidatorOrBuilder>
+  java.util.List<? extends com.cosmos.staking.v1beta1.ValidatorOrBuilder> 
       getValidatorsOrBuilderList();
   /**
    * <pre>
@@ -135,7 +135,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 4 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorOrBuilder getValidatorsOrBuilder(
+  com.cosmos.staking.v1beta1.ValidatorOrBuilder getValidatorsOrBuilder(
       int index);
 
   /**
@@ -145,7 +145,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<Delegation>
+  java.util.List<com.cosmos.staking.v1beta1.Delegation> 
       getDelegationsList();
   /**
    * <pre>
@@ -154,7 +154,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
    */
-  Delegation getDelegations(int index);
+  com.cosmos.staking.v1beta1.Delegation getDelegations(int index);
   /**
    * <pre>
    * delegations defines the delegations active at genesis.
@@ -170,7 +170,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends DelegationOrBuilder>
+  java.util.List<? extends com.cosmos.staking.v1beta1.DelegationOrBuilder> 
       getDelegationsOrBuilderList();
   /**
    * <pre>
@@ -179,7 +179,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Delegation delegations = 5 [json_name = "delegations", (.gogoproto.nullable) = false];</code>
    */
-  DelegationOrBuilder getDelegationsOrBuilder(
+  com.cosmos.staking.v1beta1.DelegationOrBuilder getDelegationsOrBuilder(
       int index);
 
   /**
@@ -189,7 +189,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
    */
-  java.util.List<UnbondingDelegation>
+  java.util.List<com.cosmos.staking.v1beta1.UnbondingDelegation> 
       getUnbondingDelegationsList();
   /**
    * <pre>
@@ -198,7 +198,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
    */
-  UnbondingDelegation getUnbondingDelegations(int index);
+  com.cosmos.staking.v1beta1.UnbondingDelegation getUnbondingDelegations(int index);
   /**
    * <pre>
    * unbonding_delegations defines the unbonding delegations active at genesis.
@@ -214,7 +214,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
    */
-  java.util.List<? extends UnbondingDelegationOrBuilder>
+  java.util.List<? extends com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder> 
       getUnbondingDelegationsOrBuilderList();
   /**
    * <pre>
@@ -223,7 +223,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.UnbondingDelegation unbonding_delegations = 6 [json_name = "unbondingDelegations", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_delegations&#92;""];</code>
    */
-  UnbondingDelegationOrBuilder getUnbondingDelegationsOrBuilder(
+  com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder getUnbondingDelegationsOrBuilder(
       int index);
 
   /**
@@ -233,7 +233,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<Redelegation>
+  java.util.List<com.cosmos.staking.v1beta1.Redelegation> 
       getRedelegationsList();
   /**
    * <pre>
@@ -242,7 +242,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
    */
-  Redelegation getRedelegations(int index);
+  com.cosmos.staking.v1beta1.Redelegation getRedelegations(int index);
   /**
    * <pre>
    * redelegations defines the redelegations active at genesis.
@@ -258,7 +258,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends RedelegationOrBuilder>
+  java.util.List<? extends com.cosmos.staking.v1beta1.RedelegationOrBuilder> 
       getRedelegationsOrBuilderList();
   /**
    * <pre>
@@ -267,7 +267,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Redelegation redelegations = 7 [json_name = "redelegations", (.gogoproto.nullable) = false];</code>
    */
-  RedelegationOrBuilder getRedelegationsOrBuilder(
+  com.cosmos.staking.v1beta1.RedelegationOrBuilder getRedelegationsOrBuilder(
       int index);
 
   /**

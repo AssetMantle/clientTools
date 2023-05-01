@@ -56,7 +56,7 @@ public interface StakeAuthorizationOrBuilder extends
    * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
    * @return The allowList.
    */
-  StakeAuthorization.Validators getAllowList();
+  com.cosmos.staking.v1beta1.StakeAuthorization.Validators getAllowList();
   /**
    * <pre>
    * allow_list specifies list of validator addresses to whom grantee can delegate tokens on behalf of granter's
@@ -65,7 +65,7 @@ public interface StakeAuthorizationOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators allow_list = 2 [json_name = "allowList"];</code>
    */
-  StakeAuthorization.ValidatorsOrBuilder getAllowListOrBuilder();
+  com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder getAllowListOrBuilder();
 
   /**
    * <pre>
@@ -84,7 +84,7 @@ public interface StakeAuthorizationOrBuilder extends
    * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
    * @return The denyList.
    */
-  StakeAuthorization.Validators getDenyList();
+  com.cosmos.staking.v1beta1.StakeAuthorization.Validators getDenyList();
   /**
    * <pre>
    * deny_list specifies list of validator addresses to whom grantee can not delegate tokens.
@@ -92,7 +92,7 @@ public interface StakeAuthorizationOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.StakeAuthorization.Validators deny_list = 3 [json_name = "denyList"];</code>
    */
-  StakeAuthorization.ValidatorsOrBuilder getDenyListOrBuilder();
+  com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsOrBuilder getDenyListOrBuilder();
 
   /**
    * <pre>
@@ -111,7 +111,7 @@ public interface StakeAuthorizationOrBuilder extends
    * <code>.cosmos.staking.v1beta1.AuthorizationType authorization_type = 4 [json_name = "authorizationType"];</code>
    * @return The authorizationType.
    */
-  AuthorizationType getAuthorizationType();
+  com.cosmos.staking.v1beta1.AuthorizationType getAuthorizationType();
 
-  StakeAuthorization.ValidatorsCase getValidatorsCase();
+  com.cosmos.staking.v1beta1.StakeAuthorization.ValidatorsCase getValidatorsCase();
 }

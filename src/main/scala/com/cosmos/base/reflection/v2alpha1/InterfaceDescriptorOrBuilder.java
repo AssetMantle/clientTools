@@ -15,7 +15,7 @@ public interface InterfaceDescriptorOrBuilder extends
    * <code>string fullname = 1 [json_name = "fullname"];</code>
    * @return The fullname.
    */
-  String getFullname();
+  java.lang.String getFullname();
   /**
    * <pre>
    * fullname is the name of the interface
@@ -35,7 +35,7 @@ public interface InterfaceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceAcceptingMessageDescriptor interface_accepting_messages = 2 [json_name = "interfaceAcceptingMessages"];</code>
    */
-  java.util.List<InterfaceAcceptingMessageDescriptor>
+  java.util.List<com.cosmos.base.reflection.v2alpha1.InterfaceAcceptingMessageDescriptor> 
       getInterfaceAcceptingMessagesList();
   /**
    * <pre>
@@ -45,7 +45,7 @@ public interface InterfaceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceAcceptingMessageDescriptor interface_accepting_messages = 2 [json_name = "interfaceAcceptingMessages"];</code>
    */
-  InterfaceAcceptingMessageDescriptor getInterfaceAcceptingMessages(int index);
+  com.cosmos.base.reflection.v2alpha1.InterfaceAcceptingMessageDescriptor getInterfaceAcceptingMessages(int index);
   /**
    * <pre>
    * interface_accepting_messages contains information regarding the proto messages which contain the interface as
@@ -63,7 +63,7 @@ public interface InterfaceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceAcceptingMessageDescriptor interface_accepting_messages = 2 [json_name = "interfaceAcceptingMessages"];</code>
    */
-  java.util.List<? extends InterfaceAcceptingMessageDescriptorOrBuilder>
+  java.util.List<? extends com.cosmos.base.reflection.v2alpha1.InterfaceAcceptingMessageDescriptorOrBuilder> 
       getInterfaceAcceptingMessagesOrBuilderList();
   /**
    * <pre>
@@ -73,7 +73,7 @@ public interface InterfaceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceAcceptingMessageDescriptor interface_accepting_messages = 2 [json_name = "interfaceAcceptingMessages"];</code>
    */
-  InterfaceAcceptingMessageDescriptorOrBuilder getInterfaceAcceptingMessagesOrBuilder(
+  com.cosmos.base.reflection.v2alpha1.InterfaceAcceptingMessageDescriptorOrBuilder getInterfaceAcceptingMessagesOrBuilder(
       int index);
 
   /**
@@ -83,7 +83,7 @@ public interface InterfaceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceImplementerDescriptor interface_implementers = 3 [json_name = "interfaceImplementers"];</code>
    */
-  java.util.List<InterfaceImplementerDescriptor>
+  java.util.List<com.cosmos.base.reflection.v2alpha1.InterfaceImplementerDescriptor> 
       getInterfaceImplementersList();
   /**
    * <pre>
@@ -92,7 +92,7 @@ public interface InterfaceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceImplementerDescriptor interface_implementers = 3 [json_name = "interfaceImplementers"];</code>
    */
-  InterfaceImplementerDescriptor getInterfaceImplementers(int index);
+  com.cosmos.base.reflection.v2alpha1.InterfaceImplementerDescriptor getInterfaceImplementers(int index);
   /**
    * <pre>
    * interface_implementers is a list of the descriptors of the interface implementers
@@ -108,7 +108,7 @@ public interface InterfaceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceImplementerDescriptor interface_implementers = 3 [json_name = "interfaceImplementers"];</code>
    */
-  java.util.List<? extends InterfaceImplementerDescriptorOrBuilder>
+  java.util.List<? extends com.cosmos.base.reflection.v2alpha1.InterfaceImplementerDescriptorOrBuilder> 
       getInterfaceImplementersOrBuilderList();
   /**
    * <pre>
@@ -117,6 +117,6 @@ public interface InterfaceDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceImplementerDescriptor interface_implementers = 3 [json_name = "interfaceImplementers"];</code>
    */
-  InterfaceImplementerDescriptorOrBuilder getInterfaceImplementersOrBuilder(
+  com.cosmos.base.reflection.v2alpha1.InterfaceImplementerDescriptorOrBuilder getInterfaceImplementersOrBuilder(
       int index);
 }

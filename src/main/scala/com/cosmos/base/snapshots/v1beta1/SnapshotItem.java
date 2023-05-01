@@ -22,32 +22,32 @@ private static final long serialVersionUID = 0L;
   private SnapshotItem() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new SnapshotItem();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_descriptor;
+    return com.cosmos.base.snapshots.v1beta1.SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_fieldAccessorTable
+    return com.cosmos.base.snapshots.v1beta1.SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            SnapshotItem.class, Builder.class);
+            com.cosmos.base.snapshots.v1beta1.SnapshotItem.class, com.cosmos.base.snapshots.v1beta1.SnapshotItem.Builder.class);
   }
 
   private int itemCase_ = 0;
   @SuppressWarnings("serial")
-  private Object item_;
+  private java.lang.Object item_;
   public enum ItemCase
       implements com.google.protobuf.Internal.EnumLite,
-          InternalOneOfEnum {
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     STORE(1),
     IAVL(2),
     EXTENSION(3),
@@ -62,7 +62,7 @@ private static final long serialVersionUID = 0L;
      * @return The enum associated with the given number.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static ItemCase valueOf(int value) {
       return forNumber(value);
     }
@@ -93,7 +93,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
    * @return Whether the store field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasStore() {
     return itemCase_ == 1;
   }
@@ -101,22 +101,22 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
    * @return The store.
    */
-  @Override
-  public SnapshotStoreItem getStore() {
+  @java.lang.Override
+  public com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem getStore() {
     if (itemCase_ == 1) {
-       return (SnapshotStoreItem) item_;
+       return (com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem) item_;
     }
-    return SnapshotStoreItem.getDefaultInstance();
+    return com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.getDefaultInstance();
   }
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
    */
-  @Override
-  public SnapshotStoreItemOrBuilder getStoreOrBuilder() {
+  @java.lang.Override
+  public com.cosmos.base.snapshots.v1beta1.SnapshotStoreItemOrBuilder getStoreOrBuilder() {
     if (itemCase_ == 1) {
-       return (SnapshotStoreItem) item_;
+       return (com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem) item_;
     }
-    return SnapshotStoreItem.getDefaultInstance();
+    return com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.getDefaultInstance();
   }
 
   public static final int IAVL_FIELD_NUMBER = 2;
@@ -124,7 +124,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
    * @return Whether the iavl field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasIavl() {
     return itemCase_ == 2;
   }
@@ -132,22 +132,22 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
    * @return The iavl.
    */
-  @Override
-  public SnapshotIAVLItem getIavl() {
+  @java.lang.Override
+  public com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem getIavl() {
     if (itemCase_ == 2) {
-       return (SnapshotIAVLItem) item_;
+       return (com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem) item_;
     }
-    return SnapshotIAVLItem.getDefaultInstance();
+    return com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.getDefaultInstance();
   }
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
    */
-  @Override
-  public SnapshotIAVLItemOrBuilder getIavlOrBuilder() {
+  @java.lang.Override
+  public com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItemOrBuilder getIavlOrBuilder() {
     if (itemCase_ == 2) {
-       return (SnapshotIAVLItem) item_;
+       return (com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem) item_;
     }
-    return SnapshotIAVLItem.getDefaultInstance();
+    return com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.getDefaultInstance();
   }
 
   public static final int EXTENSION_FIELD_NUMBER = 3;
@@ -155,7 +155,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
    * @return Whether the extension field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasExtension() {
     return itemCase_ == 3;
   }
@@ -163,22 +163,22 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
    * @return The extension.
    */
-  @Override
-  public SnapshotExtensionMeta getExtension() {
+  @java.lang.Override
+  public com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta getExtension() {
     if (itemCase_ == 3) {
-       return (SnapshotExtensionMeta) item_;
+       return (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta) item_;
     }
-    return SnapshotExtensionMeta.getDefaultInstance();
+    return com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.getDefaultInstance();
   }
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
    */
-  @Override
-  public SnapshotExtensionMetaOrBuilder getExtensionOrBuilder() {
+  @java.lang.Override
+  public com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMetaOrBuilder getExtensionOrBuilder() {
     if (itemCase_ == 3) {
-       return (SnapshotExtensionMeta) item_;
+       return (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta) item_;
     }
-    return SnapshotExtensionMeta.getDefaultInstance();
+    return com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.getDefaultInstance();
   }
 
   public static final int EXTENSION_PAYLOAD_FIELD_NUMBER = 4;
@@ -186,7 +186,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
    * @return Whether the extensionPayload field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasExtensionPayload() {
     return itemCase_ == 4;
   }
@@ -194,26 +194,26 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
    * @return The extensionPayload.
    */
-  @Override
-  public SnapshotExtensionPayload getExtensionPayload() {
+  @java.lang.Override
+  public com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload getExtensionPayload() {
     if (itemCase_ == 4) {
-       return (SnapshotExtensionPayload) item_;
+       return (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload) item_;
     }
-    return SnapshotExtensionPayload.getDefaultInstance();
+    return com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.getDefaultInstance();
   }
   /**
    * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
    */
-  @Override
-  public SnapshotExtensionPayloadOrBuilder getExtensionPayloadOrBuilder() {
+  @java.lang.Override
+  public com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayloadOrBuilder getExtensionPayloadOrBuilder() {
     if (itemCase_ == 4) {
-       return (SnapshotExtensionPayload) item_;
+       return (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload) item_;
     }
-    return SnapshotExtensionPayload.getDefaultInstance();
+    return com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -223,25 +223,25 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (itemCase_ == 1) {
-      output.writeMessage(1, (SnapshotStoreItem) item_);
+      output.writeMessage(1, (com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem) item_);
     }
     if (itemCase_ == 2) {
-      output.writeMessage(2, (SnapshotIAVLItem) item_);
+      output.writeMessage(2, (com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem) item_);
     }
     if (itemCase_ == 3) {
-      output.writeMessage(3, (SnapshotExtensionMeta) item_);
+      output.writeMessage(3, (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta) item_);
     }
     if (itemCase_ == 4) {
-      output.writeMessage(4, (SnapshotExtensionPayload) item_);
+      output.writeMessage(4, (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload) item_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -249,34 +249,34 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (itemCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, (SnapshotStoreItem) item_);
+        .computeMessageSize(1, (com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem) item_);
     }
     if (itemCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (SnapshotIAVLItem) item_);
+        .computeMessageSize(2, (com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem) item_);
     }
     if (itemCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, (SnapshotExtensionMeta) item_);
+        .computeMessageSize(3, (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta) item_);
     }
     if (itemCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, (SnapshotExtensionPayload) item_);
+        .computeMessageSize(4, (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload) item_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof SnapshotItem)) {
+    if (!(obj instanceof com.cosmos.base.snapshots.v1beta1.SnapshotItem)) {
       return super.equals(obj);
     }
-    SnapshotItem other = (SnapshotItem) obj;
+    com.cosmos.base.snapshots.v1beta1.SnapshotItem other = (com.cosmos.base.snapshots.v1beta1.SnapshotItem) obj;
 
     if (!getItemCase().equals(other.getItemCase())) return false;
     switch (itemCase_) {
@@ -303,7 +303,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -335,69 +335,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static SnapshotItem parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static SnapshotItem parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static SnapshotItem parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static SnapshotItem parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static SnapshotItem parseFrom(byte[] data)
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static SnapshotItem parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static SnapshotItem parseFrom(java.io.InputStream input)
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static SnapshotItem parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static SnapshotItem parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static SnapshotItem parseDelimitedFrom(
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static SnapshotItem parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static SnapshotItem parseFrom(
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -405,23 +405,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(SnapshotItem prototype) {
+  public static Builder newBuilder(com.cosmos.base.snapshots.v1beta1.SnapshotItem prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -435,18 +435,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.snapshots.v1beta1.SnapshotItem)
-      SnapshotItemOrBuilder {
+      com.cosmos.base.snapshots.v1beta1.SnapshotItemOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_descriptor;
+      return com.cosmos.base.snapshots.v1beta1.SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_fieldAccessorTable
+      return com.cosmos.base.snapshots.v1beta1.SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              SnapshotItem.class, Builder.class);
+              com.cosmos.base.snapshots.v1beta1.SnapshotItem.class, com.cosmos.base.snapshots.v1beta1.SnapshotItem.Builder.class);
     }
 
     // Construct using com.cosmos.base.snapshots.v1beta1.SnapshotItem.newBuilder()
@@ -455,11 +455,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -480,40 +480,40 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_descriptor;
+      return com.cosmos.base.snapshots.v1beta1.SnapshotProto.internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_descriptor;
     }
 
-    @Override
-    public SnapshotItem getDefaultInstanceForType() {
-      return SnapshotItem.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotItem getDefaultInstanceForType() {
+      return com.cosmos.base.snapshots.v1beta1.SnapshotItem.getDefaultInstance();
     }
 
-    @Override
-    public SnapshotItem build() {
-      SnapshotItem result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotItem build() {
+      com.cosmos.base.snapshots.v1beta1.SnapshotItem result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public SnapshotItem buildPartial() {
-      SnapshotItem result = new SnapshotItem(this);
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotItem buildPartial() {
+      com.cosmos.base.snapshots.v1beta1.SnapshotItem result = new com.cosmos.base.snapshots.v1beta1.SnapshotItem(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       buildPartialOneofs(result);
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(SnapshotItem result) {
+    private void buildPartial0(com.cosmos.base.snapshots.v1beta1.SnapshotItem result) {
       int from_bitField0_ = bitField0_;
     }
 
-    private void buildPartialOneofs(SnapshotItem result) {
+    private void buildPartialOneofs(com.cosmos.base.snapshots.v1beta1.SnapshotItem result) {
       result.itemCase_ = itemCase_;
       result.item_ = this.item_;
       if (itemCase_ == 1 &&
@@ -534,50 +534,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof SnapshotItem) {
-        return mergeFrom((SnapshotItem)other);
+      if (other instanceof com.cosmos.base.snapshots.v1beta1.SnapshotItem) {
+        return mergeFrom((com.cosmos.base.snapshots.v1beta1.SnapshotItem)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(SnapshotItem other) {
-      if (other == SnapshotItem.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.base.snapshots.v1beta1.SnapshotItem other) {
+      if (other == com.cosmos.base.snapshots.v1beta1.SnapshotItem.getDefaultInstance()) return this;
       switch (other.getItemCase()) {
         case STORE: {
           mergeStore(other.getStore());
@@ -604,18 +604,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -669,7 +669,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int itemCase_ = 0;
-    private Object item_;
+    private java.lang.Object item_;
     public ItemCase
         getItemCase() {
       return ItemCase.forNumber(
@@ -686,12 +686,12 @@ private static final long serialVersionUID = 0L;
     private int bitField0_;
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        SnapshotStoreItem, SnapshotStoreItem.Builder, SnapshotStoreItemOrBuilder> storeBuilder_;
+        com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem, com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotStoreItemOrBuilder> storeBuilder_;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
      * @return Whether the store field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasStore() {
       return itemCase_ == 1;
     }
@@ -699,24 +699,24 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
      * @return The store.
      */
-    @Override
-    public SnapshotStoreItem getStore() {
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem getStore() {
       if (storeBuilder_ == null) {
         if (itemCase_ == 1) {
-          return (SnapshotStoreItem) item_;
+          return (com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem) item_;
         }
-        return SnapshotStoreItem.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.getDefaultInstance();
       } else {
         if (itemCase_ == 1) {
           return storeBuilder_.getMessage();
         }
-        return SnapshotStoreItem.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.getDefaultInstance();
       }
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
      */
-    public Builder setStore(SnapshotStoreItem value) {
+    public Builder setStore(com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem value) {
       if (storeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -733,7 +733,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
      */
     public Builder setStore(
-        SnapshotStoreItem.Builder builderForValue) {
+        com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.Builder builderForValue) {
       if (storeBuilder_ == null) {
         item_ = builderForValue.build();
         onChanged();
@@ -746,11 +746,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
      */
-    public Builder mergeStore(SnapshotStoreItem value) {
+    public Builder mergeStore(com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem value) {
       if (storeBuilder_ == null) {
         if (itemCase_ == 1 &&
-            item_ != SnapshotStoreItem.getDefaultInstance()) {
-          item_ = SnapshotStoreItem.newBuilder((SnapshotStoreItem) item_)
+            item_ != com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.getDefaultInstance()) {
+          item_ = com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.newBuilder((com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem) item_)
               .mergeFrom(value).buildPartial();
         } else {
           item_ = value;
@@ -788,36 +788,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
      */
-    public SnapshotStoreItem.Builder getStoreBuilder() {
+    public com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.Builder getStoreBuilder() {
       return getStoreFieldBuilder().getBuilder();
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
      */
-    @Override
-    public SnapshotStoreItemOrBuilder getStoreOrBuilder() {
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotStoreItemOrBuilder getStoreOrBuilder() {
       if ((itemCase_ == 1) && (storeBuilder_ != null)) {
         return storeBuilder_.getMessageOrBuilder();
       } else {
         if (itemCase_ == 1) {
-          return (SnapshotStoreItem) item_;
+          return (com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem) item_;
         }
-        return SnapshotStoreItem.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.getDefaultInstance();
       }
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotStoreItem store = 1 [json_name = "store"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        SnapshotStoreItem, SnapshotStoreItem.Builder, SnapshotStoreItemOrBuilder>
+        com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem, com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotStoreItemOrBuilder> 
         getStoreFieldBuilder() {
       if (storeBuilder_ == null) {
         if (!(itemCase_ == 1)) {
-          item_ = SnapshotStoreItem.getDefaultInstance();
+          item_ = com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.getDefaultInstance();
         }
         storeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            SnapshotStoreItem, SnapshotStoreItem.Builder, SnapshotStoreItemOrBuilder>(
-                (SnapshotStoreItem) item_,
+            com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem, com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotStoreItemOrBuilder>(
+                (com.cosmos.base.snapshots.v1beta1.SnapshotStoreItem) item_,
                 getParentForChildren(),
                 isClean());
         item_ = null;
@@ -828,12 +828,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        SnapshotIAVLItem, SnapshotIAVLItem.Builder, SnapshotIAVLItemOrBuilder> iavlBuilder_;
+        com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem, com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItemOrBuilder> iavlBuilder_;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
      * @return Whether the iavl field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasIavl() {
       return itemCase_ == 2;
     }
@@ -841,24 +841,24 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
      * @return The iavl.
      */
-    @Override
-    public SnapshotIAVLItem getIavl() {
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem getIavl() {
       if (iavlBuilder_ == null) {
         if (itemCase_ == 2) {
-          return (SnapshotIAVLItem) item_;
+          return (com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem) item_;
         }
-        return SnapshotIAVLItem.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.getDefaultInstance();
       } else {
         if (itemCase_ == 2) {
           return iavlBuilder_.getMessage();
         }
-        return SnapshotIAVLItem.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.getDefaultInstance();
       }
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
      */
-    public Builder setIavl(SnapshotIAVLItem value) {
+    public Builder setIavl(com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem value) {
       if (iavlBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -875,7 +875,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
      */
     public Builder setIavl(
-        SnapshotIAVLItem.Builder builderForValue) {
+        com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.Builder builderForValue) {
       if (iavlBuilder_ == null) {
         item_ = builderForValue.build();
         onChanged();
@@ -888,11 +888,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
      */
-    public Builder mergeIavl(SnapshotIAVLItem value) {
+    public Builder mergeIavl(com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem value) {
       if (iavlBuilder_ == null) {
         if (itemCase_ == 2 &&
-            item_ != SnapshotIAVLItem.getDefaultInstance()) {
-          item_ = SnapshotIAVLItem.newBuilder((SnapshotIAVLItem) item_)
+            item_ != com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.getDefaultInstance()) {
+          item_ = com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.newBuilder((com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem) item_)
               .mergeFrom(value).buildPartial();
         } else {
           item_ = value;
@@ -930,36 +930,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
      */
-    public SnapshotIAVLItem.Builder getIavlBuilder() {
+    public com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.Builder getIavlBuilder() {
       return getIavlFieldBuilder().getBuilder();
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
      */
-    @Override
-    public SnapshotIAVLItemOrBuilder getIavlOrBuilder() {
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItemOrBuilder getIavlOrBuilder() {
       if ((itemCase_ == 2) && (iavlBuilder_ != null)) {
         return iavlBuilder_.getMessageOrBuilder();
       } else {
         if (itemCase_ == 2) {
-          return (SnapshotIAVLItem) item_;
+          return (com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem) item_;
         }
-        return SnapshotIAVLItem.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.getDefaultInstance();
       }
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem iavl = 2 [json_name = "iavl", (.gogoproto.customname) = "IAVL"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        SnapshotIAVLItem, SnapshotIAVLItem.Builder, SnapshotIAVLItemOrBuilder>
+        com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem, com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItemOrBuilder> 
         getIavlFieldBuilder() {
       if (iavlBuilder_ == null) {
         if (!(itemCase_ == 2)) {
-          item_ = SnapshotIAVLItem.getDefaultInstance();
+          item_ = com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.getDefaultInstance();
         }
         iavlBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            SnapshotIAVLItem, SnapshotIAVLItem.Builder, SnapshotIAVLItemOrBuilder>(
-                (SnapshotIAVLItem) item_,
+            com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem, com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItemOrBuilder>(
+                (com.cosmos.base.snapshots.v1beta1.SnapshotIAVLItem) item_,
                 getParentForChildren(),
                 isClean());
         item_ = null;
@@ -970,12 +970,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        SnapshotExtensionMeta, SnapshotExtensionMeta.Builder, SnapshotExtensionMetaOrBuilder> extensionBuilder_;
+        com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMetaOrBuilder> extensionBuilder_;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
      * @return Whether the extension field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasExtension() {
       return itemCase_ == 3;
     }
@@ -983,24 +983,24 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
      * @return The extension.
      */
-    @Override
-    public SnapshotExtensionMeta getExtension() {
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta getExtension() {
       if (extensionBuilder_ == null) {
         if (itemCase_ == 3) {
-          return (SnapshotExtensionMeta) item_;
+          return (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta) item_;
         }
-        return SnapshotExtensionMeta.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.getDefaultInstance();
       } else {
         if (itemCase_ == 3) {
           return extensionBuilder_.getMessage();
         }
-        return SnapshotExtensionMeta.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.getDefaultInstance();
       }
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
      */
-    public Builder setExtension(SnapshotExtensionMeta value) {
+    public Builder setExtension(com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta value) {
       if (extensionBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1017,7 +1017,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
      */
     public Builder setExtension(
-        SnapshotExtensionMeta.Builder builderForValue) {
+        com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.Builder builderForValue) {
       if (extensionBuilder_ == null) {
         item_ = builderForValue.build();
         onChanged();
@@ -1030,11 +1030,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
      */
-    public Builder mergeExtension(SnapshotExtensionMeta value) {
+    public Builder mergeExtension(com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta value) {
       if (extensionBuilder_ == null) {
         if (itemCase_ == 3 &&
-            item_ != SnapshotExtensionMeta.getDefaultInstance()) {
-          item_ = SnapshotExtensionMeta.newBuilder((SnapshotExtensionMeta) item_)
+            item_ != com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.getDefaultInstance()) {
+          item_ = com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.newBuilder((com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta) item_)
               .mergeFrom(value).buildPartial();
         } else {
           item_ = value;
@@ -1072,36 +1072,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
      */
-    public SnapshotExtensionMeta.Builder getExtensionBuilder() {
+    public com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.Builder getExtensionBuilder() {
       return getExtensionFieldBuilder().getBuilder();
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
      */
-    @Override
-    public SnapshotExtensionMetaOrBuilder getExtensionOrBuilder() {
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMetaOrBuilder getExtensionOrBuilder() {
       if ((itemCase_ == 3) && (extensionBuilder_ != null)) {
         return extensionBuilder_.getMessageOrBuilder();
       } else {
         if (itemCase_ == 3) {
-          return (SnapshotExtensionMeta) item_;
+          return (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta) item_;
         }
-        return SnapshotExtensionMeta.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.getDefaultInstance();
       }
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta extension = 3 [json_name = "extension"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        SnapshotExtensionMeta, SnapshotExtensionMeta.Builder, SnapshotExtensionMetaOrBuilder>
+        com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMetaOrBuilder> 
         getExtensionFieldBuilder() {
       if (extensionBuilder_ == null) {
         if (!(itemCase_ == 3)) {
-          item_ = SnapshotExtensionMeta.getDefaultInstance();
+          item_ = com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.getDefaultInstance();
         }
         extensionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            SnapshotExtensionMeta, SnapshotExtensionMeta.Builder, SnapshotExtensionMetaOrBuilder>(
-                (SnapshotExtensionMeta) item_,
+            com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMetaOrBuilder>(
+                (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta) item_,
                 getParentForChildren(),
                 isClean());
         item_ = null;
@@ -1112,12 +1112,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        SnapshotExtensionPayload, SnapshotExtensionPayload.Builder, SnapshotExtensionPayloadOrBuilder> extensionPayloadBuilder_;
+        com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayloadOrBuilder> extensionPayloadBuilder_;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
      * @return Whether the extensionPayload field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasExtensionPayload() {
       return itemCase_ == 4;
     }
@@ -1125,24 +1125,24 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
      * @return The extensionPayload.
      */
-    @Override
-    public SnapshotExtensionPayload getExtensionPayload() {
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload getExtensionPayload() {
       if (extensionPayloadBuilder_ == null) {
         if (itemCase_ == 4) {
-          return (SnapshotExtensionPayload) item_;
+          return (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload) item_;
         }
-        return SnapshotExtensionPayload.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.getDefaultInstance();
       } else {
         if (itemCase_ == 4) {
           return extensionPayloadBuilder_.getMessage();
         }
-        return SnapshotExtensionPayload.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.getDefaultInstance();
       }
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
      */
-    public Builder setExtensionPayload(SnapshotExtensionPayload value) {
+    public Builder setExtensionPayload(com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload value) {
       if (extensionPayloadBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1159,7 +1159,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
      */
     public Builder setExtensionPayload(
-        SnapshotExtensionPayload.Builder builderForValue) {
+        com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.Builder builderForValue) {
       if (extensionPayloadBuilder_ == null) {
         item_ = builderForValue.build();
         onChanged();
@@ -1172,11 +1172,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
      */
-    public Builder mergeExtensionPayload(SnapshotExtensionPayload value) {
+    public Builder mergeExtensionPayload(com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload value) {
       if (extensionPayloadBuilder_ == null) {
         if (itemCase_ == 4 &&
-            item_ != SnapshotExtensionPayload.getDefaultInstance()) {
-          item_ = SnapshotExtensionPayload.newBuilder((SnapshotExtensionPayload) item_)
+            item_ != com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.getDefaultInstance()) {
+          item_ = com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.newBuilder((com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload) item_)
               .mergeFrom(value).buildPartial();
         } else {
           item_ = value;
@@ -1214,36 +1214,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
      */
-    public SnapshotExtensionPayload.Builder getExtensionPayloadBuilder() {
+    public com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.Builder getExtensionPayloadBuilder() {
       return getExtensionPayloadFieldBuilder().getBuilder();
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
      */
-    @Override
-    public SnapshotExtensionPayloadOrBuilder getExtensionPayloadOrBuilder() {
+    @java.lang.Override
+    public com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayloadOrBuilder getExtensionPayloadOrBuilder() {
       if ((itemCase_ == 4) && (extensionPayloadBuilder_ != null)) {
         return extensionPayloadBuilder_.getMessageOrBuilder();
       } else {
         if (itemCase_ == 4) {
-          return (SnapshotExtensionPayload) item_;
+          return (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload) item_;
         }
-        return SnapshotExtensionPayload.getDefaultInstance();
+        return com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.getDefaultInstance();
       }
     }
     /**
      * <code>.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload extension_payload = 4 [json_name = "extensionPayload"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        SnapshotExtensionPayload, SnapshotExtensionPayload.Builder, SnapshotExtensionPayloadOrBuilder>
+        com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayloadOrBuilder> 
         getExtensionPayloadFieldBuilder() {
       if (extensionPayloadBuilder_ == null) {
         if (!(itemCase_ == 4)) {
-          item_ = SnapshotExtensionPayload.getDefaultInstance();
+          item_ = com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.getDefaultInstance();
         }
         extensionPayloadBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            SnapshotExtensionPayload, SnapshotExtensionPayload.Builder, SnapshotExtensionPayloadOrBuilder>(
-                (SnapshotExtensionPayload) item_,
+            com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload.Builder, com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayloadOrBuilder>(
+                (com.cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload) item_,
                 getParentForChildren(),
                 isClean());
         item_ = null;
@@ -1252,13 +1252,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return extensionPayloadBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1269,18 +1269,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.snapshots.v1beta1.SnapshotItem)
-  private static final SnapshotItem DEFAULT_INSTANCE;
+  private static final com.cosmos.base.snapshots.v1beta1.SnapshotItem DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new SnapshotItem();
+    DEFAULT_INSTANCE = new com.cosmos.base.snapshots.v1beta1.SnapshotItem();
   }
 
-  public static SnapshotItem getDefaultInstance() {
+  public static com.cosmos.base.snapshots.v1beta1.SnapshotItem getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<SnapshotItem>
       PARSER = new com.google.protobuf.AbstractParser<SnapshotItem>() {
-    @Override
+    @java.lang.Override
     public SnapshotItem parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1304,13 +1304,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<SnapshotItem> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public SnapshotItem getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.base.snapshots.v1beta1.SnapshotItem getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

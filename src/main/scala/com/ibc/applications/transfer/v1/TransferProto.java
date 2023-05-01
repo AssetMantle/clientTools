@@ -32,7 +32,7 @@ public final class TransferProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n+ibc/applications/transfer/v1/transfer." +
       "proto\022\034ibc.applications.transfer.v1\032\024gog" +
       "oproto/gogo.proto\"?\n\nDenomTrace\022\022\n\004path\030" +
@@ -59,13 +59,13 @@ public final class TransferProto {
     internal_static_ibc_applications_transfer_v1_DenomTrace_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_DenomTrace_descriptor,
-        new String[] { "Path", "BaseDenom", });
+        new java.lang.String[] { "Path", "BaseDenom", });
     internal_static_ibc_applications_transfer_v1_Params_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_applications_transfer_v1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_Params_descriptor,
-        new String[] { "SendEnabled", "ReceiveEnabled", });
+        new java.lang.String[] { "SendEnabled", "ReceiveEnabled", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.moretags);

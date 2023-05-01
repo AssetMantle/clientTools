@@ -11,7 +11,7 @@ public interface MsgUnjailOrBuilder extends
    * <code>string validator_addr = 1 [json_name = "validatorAddr", (.gogoproto.jsontag) = "address", (.gogoproto.moretags) = "yaml:&#92;"address&#92;""];</code>
    * @return The validatorAddr.
    */
-  String getValidatorAddr();
+  java.lang.String getValidatorAddr();
   /**
    * <code>string validator_addr = 1 [json_name = "validatorAddr", (.gogoproto.jsontag) = "address", (.gogoproto.moretags) = "yaml:&#92;"address&#92;""];</code>
    * @return The bytes for validatorAddr.

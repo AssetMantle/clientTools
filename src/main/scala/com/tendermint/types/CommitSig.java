@@ -25,24 +25,24 @@ private static final long serialVersionUID = 0L;
     signature_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new CommitSig();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TypesProto.internal_static_tendermint_types_CommitSig_descriptor;
+    return com.tendermint.types.TypesProto.internal_static_tendermint_types_CommitSig_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TypesProto.internal_static_tendermint_types_CommitSig_fieldAccessorTable
+    return com.tendermint.types.TypesProto.internal_static_tendermint_types_CommitSig_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            CommitSig.class, Builder.class);
+            com.tendermint.types.CommitSig.class, com.tendermint.types.CommitSig.Builder.class);
   }
 
   public static final int BLOCK_ID_FLAG_FIELD_NUMBER = 1;
@@ -51,16 +51,16 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.types.BlockIDFlag block_id_flag = 1 [json_name = "blockIdFlag"];</code>
    * @return The enum numeric value on the wire for blockIdFlag.
    */
-  @Override public int getBlockIdFlagValue() {
+  @java.lang.Override public int getBlockIdFlagValue() {
     return blockIdFlag_;
   }
   /**
    * <code>.tendermint.types.BlockIDFlag block_id_flag = 1 [json_name = "blockIdFlag"];</code>
    * @return The blockIdFlag.
    */
-  @Override public BlockIDFlag getBlockIdFlag() {
-    BlockIDFlag result = BlockIDFlag.forNumber(blockIdFlag_);
-    return result == null ? BlockIDFlag.UNRECOGNIZED : result;
+  @java.lang.Override public com.tendermint.types.BlockIDFlag getBlockIdFlag() {
+    com.tendermint.types.BlockIDFlag result = com.tendermint.types.BlockIDFlag.forNumber(blockIdFlag_);
+    return result == null ? com.tendermint.types.BlockIDFlag.UNRECOGNIZED : result;
   }
 
   public static final int VALIDATOR_ADDRESS_FIELD_NUMBER = 2;
@@ -69,7 +69,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes validator_address = 2 [json_name = "validatorAddress"];</code>
    * @return The validatorAddress.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getValidatorAddress() {
     return validatorAddress_;
   }
@@ -80,7 +80,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp timestamp = 3 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return Whether the timestamp field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasTimestamp() {
     return timestamp_ != null;
   }
@@ -88,14 +88,14 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp timestamp = 3 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return The timestamp.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Timestamp getTimestamp() {
     return timestamp_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timestamp_;
   }
   /**
    * <code>.google.protobuf.Timestamp timestamp = 3 [json_name = "timestamp", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getTimestampOrBuilder() {
     return timestamp_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timestamp_;
   }
@@ -106,13 +106,13 @@ private static final long serialVersionUID = 0L;
    * <code>bytes signature = 4 [json_name = "signature"];</code>
    * @return The signature.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getSignature() {
     return signature_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -122,10 +122,10 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (blockIdFlag_ != BlockIDFlag.BLOCK_ID_FLAG_UNKNOWN.getNumber()) {
+    if (blockIdFlag_ != com.tendermint.types.BlockIDFlag.BLOCK_ID_FLAG_UNKNOWN.getNumber()) {
       output.writeEnum(1, blockIdFlag_);
     }
     if (!validatorAddress_.isEmpty()) {
@@ -140,13 +140,13 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
-    if (blockIdFlag_ != BlockIDFlag.BLOCK_ID_FLAG_UNKNOWN.getNumber()) {
+    if (blockIdFlag_ != com.tendermint.types.BlockIDFlag.BLOCK_ID_FLAG_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, blockIdFlag_);
     }
@@ -167,15 +167,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof CommitSig)) {
+    if (!(obj instanceof com.tendermint.types.CommitSig)) {
       return super.equals(obj);
     }
-    CommitSig other = (CommitSig) obj;
+    com.tendermint.types.CommitSig other = (com.tendermint.types.CommitSig) obj;
 
     if (blockIdFlag_ != other.blockIdFlag_) return false;
     if (!getValidatorAddress()
@@ -191,7 +191,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -213,69 +213,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static CommitSig parseFrom(
+  public static com.tendermint.types.CommitSig parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CommitSig parseFrom(
+  public static com.tendermint.types.CommitSig parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CommitSig parseFrom(
+  public static com.tendermint.types.CommitSig parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CommitSig parseFrom(
+  public static com.tendermint.types.CommitSig parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CommitSig parseFrom(byte[] data)
+  public static com.tendermint.types.CommitSig parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CommitSig parseFrom(
+  public static com.tendermint.types.CommitSig parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CommitSig parseFrom(java.io.InputStream input)
+  public static com.tendermint.types.CommitSig parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static CommitSig parseFrom(
+  public static com.tendermint.types.CommitSig parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static CommitSig parseDelimitedFrom(java.io.InputStream input)
+  public static com.tendermint.types.CommitSig parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static CommitSig parseDelimitedFrom(
+  public static com.tendermint.types.CommitSig parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static CommitSig parseFrom(
+  public static com.tendermint.types.CommitSig parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static CommitSig parseFrom(
+  public static com.tendermint.types.CommitSig parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -283,23 +283,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(CommitSig prototype) {
+  public static Builder newBuilder(com.tendermint.types.CommitSig prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -313,18 +313,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.types.CommitSig)
-      CommitSigOrBuilder {
+      com.tendermint.types.CommitSigOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TypesProto.internal_static_tendermint_types_CommitSig_descriptor;
+      return com.tendermint.types.TypesProto.internal_static_tendermint_types_CommitSig_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TypesProto.internal_static_tendermint_types_CommitSig_fieldAccessorTable
+      return com.tendermint.types.TypesProto.internal_static_tendermint_types_CommitSig_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              CommitSig.class, Builder.class);
+              com.tendermint.types.CommitSig.class, com.tendermint.types.CommitSig.Builder.class);
     }
 
     // Construct using com.tendermint.types.CommitSig.newBuilder()
@@ -333,11 +333,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -352,35 +352,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TypesProto.internal_static_tendermint_types_CommitSig_descriptor;
+      return com.tendermint.types.TypesProto.internal_static_tendermint_types_CommitSig_descriptor;
     }
 
-    @Override
-    public CommitSig getDefaultInstanceForType() {
-      return CommitSig.getDefaultInstance();
+    @java.lang.Override
+    public com.tendermint.types.CommitSig getDefaultInstanceForType() {
+      return com.tendermint.types.CommitSig.getDefaultInstance();
     }
 
-    @Override
-    public CommitSig build() {
-      CommitSig result = buildPartial();
+    @java.lang.Override
+    public com.tendermint.types.CommitSig build() {
+      com.tendermint.types.CommitSig result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public CommitSig buildPartial() {
-      CommitSig result = new CommitSig(this);
+    @java.lang.Override
+    public com.tendermint.types.CommitSig buildPartial() {
+      com.tendermint.types.CommitSig result = new com.tendermint.types.CommitSig(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(CommitSig result) {
+    private void buildPartial0(com.tendermint.types.CommitSig result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.blockIdFlag_ = blockIdFlag_;
@@ -398,50 +398,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof CommitSig) {
-        return mergeFrom((CommitSig)other);
+      if (other instanceof com.tendermint.types.CommitSig) {
+        return mergeFrom((com.tendermint.types.CommitSig)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(CommitSig other) {
-      if (other == CommitSig.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.tendermint.types.CommitSig other) {
+      if (other == com.tendermint.types.CommitSig.getDefaultInstance()) return this;
       if (other.blockIdFlag_ != 0) {
         setBlockIdFlagValue(other.getBlockIdFlagValue());
       }
@@ -459,18 +459,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -524,7 +524,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.BlockIDFlag block_id_flag = 1 [json_name = "blockIdFlag"];</code>
      * @return The enum numeric value on the wire for blockIdFlag.
      */
-    @Override public int getBlockIdFlagValue() {
+    @java.lang.Override public int getBlockIdFlagValue() {
       return blockIdFlag_;
     }
     /**
@@ -542,17 +542,17 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.BlockIDFlag block_id_flag = 1 [json_name = "blockIdFlag"];</code>
      * @return The blockIdFlag.
      */
-    @Override
-    public BlockIDFlag getBlockIdFlag() {
-      BlockIDFlag result = BlockIDFlag.forNumber(blockIdFlag_);
-      return result == null ? BlockIDFlag.UNRECOGNIZED : result;
+    @java.lang.Override
+    public com.tendermint.types.BlockIDFlag getBlockIdFlag() {
+      com.tendermint.types.BlockIDFlag result = com.tendermint.types.BlockIDFlag.forNumber(blockIdFlag_);
+      return result == null ? com.tendermint.types.BlockIDFlag.UNRECOGNIZED : result;
     }
     /**
      * <code>.tendermint.types.BlockIDFlag block_id_flag = 1 [json_name = "blockIdFlag"];</code>
      * @param value The blockIdFlag to set.
      * @return This builder for chaining.
      */
-    public Builder setBlockIdFlag(BlockIDFlag value) {
+    public Builder setBlockIdFlag(com.tendermint.types.BlockIDFlag value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -577,7 +577,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes validator_address = 2 [json_name = "validatorAddress"];</code>
      * @return The validatorAddress.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getValidatorAddress() {
       return validatorAddress_;
     }
@@ -728,7 +728,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes signature = 4 [json_name = "signature"];</code>
      * @return The signature.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getSignature() {
       return signature_;
     }
@@ -754,13 +754,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -771,18 +771,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.types.CommitSig)
-  private static final CommitSig DEFAULT_INSTANCE;
+  private static final com.tendermint.types.CommitSig DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new CommitSig();
+    DEFAULT_INSTANCE = new com.tendermint.types.CommitSig();
   }
 
-  public static CommitSig getDefaultInstance() {
+  public static com.tendermint.types.CommitSig getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<CommitSig>
       PARSER = new com.google.protobuf.AbstractParser<CommitSig>() {
-    @Override
+    @java.lang.Override
     public CommitSig parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -806,13 +806,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<CommitSig> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public CommitSig getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.tendermint.types.CommitSig getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -24,7 +24,7 @@ public interface QueryAllowanceResponseOrBuilder extends
    * <code>.cosmos.feegrant.v1beta1.Grant allowance = 1 [json_name = "allowance"];</code>
    * @return The allowance.
    */
-  Grant getAllowance();
+  com.cosmos.feegrant.v1beta1.Grant getAllowance();
   /**
    * <pre>
    * allowance is a allowance granted for grantee by granter.
@@ -32,5 +32,5 @@ public interface QueryAllowanceResponseOrBuilder extends
    *
    * <code>.cosmos.feegrant.v1beta1.Grant allowance = 1 [json_name = "allowance"];</code>
    */
-  GrantOrBuilder getAllowanceOrBuilder();
+  com.cosmos.feegrant.v1beta1.GrantOrBuilder getAllowanceOrBuilder();
 }

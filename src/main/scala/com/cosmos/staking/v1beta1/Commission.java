@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private Commission() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Commission();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return StakingProto.internal_static_cosmos_staking_v1beta1_Commission_descriptor;
+    return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_Commission_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return StakingProto.internal_static_cosmos_staking_v1beta1_Commission_fieldAccessorTable
+    return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_Commission_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Commission.class, Builder.class);
+            com.cosmos.staking.v1beta1.Commission.class, com.cosmos.staking.v1beta1.Commission.Builder.class);
   }
 
   public static final int COMMISSION_RATES_FIELD_NUMBER = 1;
-  private CommissionRates commissionRates_;
+  private com.cosmos.staking.v1beta1.CommissionRates commissionRates_;
   /**
    * <pre>
    * commission_rates defines the initial commission rates to be used for creating a validator.
@@ -52,7 +52,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
    * @return Whether the commissionRates field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasCommissionRates() {
     return commissionRates_ != null;
   }
@@ -64,9 +64,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
    * @return The commissionRates.
    */
-  @Override
-  public CommissionRates getCommissionRates() {
-    return commissionRates_ == null ? CommissionRates.getDefaultInstance() : commissionRates_;
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.CommissionRates getCommissionRates() {
+    return commissionRates_ == null ? com.cosmos.staking.v1beta1.CommissionRates.getDefaultInstance() : commissionRates_;
   }
   /**
    * <pre>
@@ -75,9 +75,9 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
    */
-  @Override
-  public CommissionRatesOrBuilder getCommissionRatesOrBuilder() {
-    return commissionRates_ == null ? CommissionRates.getDefaultInstance() : commissionRates_;
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.CommissionRatesOrBuilder getCommissionRatesOrBuilder() {
+    return commissionRates_ == null ? com.cosmos.staking.v1beta1.CommissionRates.getDefaultInstance() : commissionRates_;
   }
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 2;
@@ -90,7 +90,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp update_time = 2 [json_name = "updateTime", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"update_time&#92;"", (.gogoproto.stdtime) = true];</code>
    * @return Whether the updateTime field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
@@ -102,7 +102,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp update_time = 2 [json_name = "updateTime", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"update_time&#92;"", (.gogoproto.stdtime) = true];</code>
    * @return The updateTime.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
@@ -113,13 +113,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Timestamp update_time = 2 [json_name = "updateTime", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"update_time&#92;"", (.gogoproto.stdtime) = true];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getUpdateTimeOrBuilder() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -129,7 +129,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (commissionRates_ != null) {
@@ -141,7 +141,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -160,15 +160,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Commission)) {
+    if (!(obj instanceof com.cosmos.staking.v1beta1.Commission)) {
       return super.equals(obj);
     }
-    Commission other = (Commission) obj;
+    com.cosmos.staking.v1beta1.Commission other = (com.cosmos.staking.v1beta1.Commission) obj;
 
     if (hasCommissionRates() != other.hasCommissionRates()) return false;
     if (hasCommissionRates()) {
@@ -184,7 +184,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -204,69 +204,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Commission parseFrom(
+  public static com.cosmos.staking.v1beta1.Commission parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Commission parseFrom(
+  public static com.cosmos.staking.v1beta1.Commission parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Commission parseFrom(
+  public static com.cosmos.staking.v1beta1.Commission parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Commission parseFrom(
+  public static com.cosmos.staking.v1beta1.Commission parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Commission parseFrom(byte[] data)
+  public static com.cosmos.staking.v1beta1.Commission parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Commission parseFrom(
+  public static com.cosmos.staking.v1beta1.Commission parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Commission parseFrom(java.io.InputStream input)
+  public static com.cosmos.staking.v1beta1.Commission parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Commission parseFrom(
+  public static com.cosmos.staking.v1beta1.Commission parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Commission parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.staking.v1beta1.Commission parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Commission parseDelimitedFrom(
+  public static com.cosmos.staking.v1beta1.Commission parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Commission parseFrom(
+  public static com.cosmos.staking.v1beta1.Commission parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Commission parseFrom(
+  public static com.cosmos.staking.v1beta1.Commission parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -274,23 +274,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Commission prototype) {
+  public static Builder newBuilder(com.cosmos.staking.v1beta1.Commission prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -304,18 +304,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.Commission)
-      CommissionOrBuilder {
+      com.cosmos.staking.v1beta1.CommissionOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return StakingProto.internal_static_cosmos_staking_v1beta1_Commission_descriptor;
+      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_Commission_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return StakingProto.internal_static_cosmos_staking_v1beta1_Commission_fieldAccessorTable
+      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_Commission_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Commission.class, Builder.class);
+              com.cosmos.staking.v1beta1.Commission.class, com.cosmos.staking.v1beta1.Commission.Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.Commission.newBuilder()
@@ -324,11 +324,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -345,35 +345,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return StakingProto.internal_static_cosmos_staking_v1beta1_Commission_descriptor;
+      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_Commission_descriptor;
     }
 
-    @Override
-    public Commission getDefaultInstanceForType() {
-      return Commission.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.Commission getDefaultInstanceForType() {
+      return com.cosmos.staking.v1beta1.Commission.getDefaultInstance();
     }
 
-    @Override
-    public Commission build() {
-      Commission result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.Commission build() {
+      com.cosmos.staking.v1beta1.Commission result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Commission buildPartial() {
-      Commission result = new Commission(this);
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.Commission buildPartial() {
+      com.cosmos.staking.v1beta1.Commission result = new com.cosmos.staking.v1beta1.Commission(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(Commission result) {
+    private void buildPartial0(com.cosmos.staking.v1beta1.Commission result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.commissionRates_ = commissionRatesBuilder_ == null
@@ -387,50 +387,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Commission) {
-        return mergeFrom((Commission)other);
+      if (other instanceof com.cosmos.staking.v1beta1.Commission) {
+        return mergeFrom((com.cosmos.staking.v1beta1.Commission)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Commission other) {
-      if (other == Commission.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.staking.v1beta1.Commission other) {
+      if (other == com.cosmos.staking.v1beta1.Commission.getDefaultInstance()) return this;
       if (other.hasCommissionRates()) {
         mergeCommissionRates(other.getCommissionRates());
       }
@@ -442,18 +442,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -494,9 +494,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private CommissionRates commissionRates_;
+    private com.cosmos.staking.v1beta1.CommissionRates commissionRates_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        CommissionRates, CommissionRates.Builder, CommissionRatesOrBuilder> commissionRatesBuilder_;
+        com.cosmos.staking.v1beta1.CommissionRates, com.cosmos.staking.v1beta1.CommissionRates.Builder, com.cosmos.staking.v1beta1.CommissionRatesOrBuilder> commissionRatesBuilder_;
     /**
      * <pre>
      * commission_rates defines the initial commission rates to be used for creating a validator.
@@ -516,9 +516,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      * @return The commissionRates.
      */
-    public CommissionRates getCommissionRates() {
+    public com.cosmos.staking.v1beta1.CommissionRates getCommissionRates() {
       if (commissionRatesBuilder_ == null) {
-        return commissionRates_ == null ? CommissionRates.getDefaultInstance() : commissionRates_;
+        return commissionRates_ == null ? com.cosmos.staking.v1beta1.CommissionRates.getDefaultInstance() : commissionRates_;
       } else {
         return commissionRatesBuilder_.getMessage();
       }
@@ -530,7 +530,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
-    public Builder setCommissionRates(CommissionRates value) {
+    public Builder setCommissionRates(com.cosmos.staking.v1beta1.CommissionRates value) {
       if (commissionRatesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -551,7 +551,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
     public Builder setCommissionRates(
-        CommissionRates.Builder builderForValue) {
+        com.cosmos.staking.v1beta1.CommissionRates.Builder builderForValue) {
       if (commissionRatesBuilder_ == null) {
         commissionRates_ = builderForValue.build();
       } else {
@@ -568,11 +568,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
-    public Builder mergeCommissionRates(CommissionRates value) {
+    public Builder mergeCommissionRates(com.cosmos.staking.v1beta1.CommissionRates value) {
       if (commissionRatesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           commissionRates_ != null &&
-          commissionRates_ != CommissionRates.getDefaultInstance()) {
+          commissionRates_ != com.cosmos.staking.v1beta1.CommissionRates.getDefaultInstance()) {
           getCommissionRatesBuilder().mergeFrom(value);
         } else {
           commissionRates_ = value;
@@ -608,7 +608,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
-    public CommissionRates.Builder getCommissionRatesBuilder() {
+    public com.cosmos.staking.v1beta1.CommissionRates.Builder getCommissionRatesBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getCommissionRatesFieldBuilder().getBuilder();
@@ -620,12 +620,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
-    public CommissionRatesOrBuilder getCommissionRatesOrBuilder() {
+    public com.cosmos.staking.v1beta1.CommissionRatesOrBuilder getCommissionRatesOrBuilder() {
       if (commissionRatesBuilder_ != null) {
         return commissionRatesBuilder_.getMessageOrBuilder();
       } else {
         return commissionRates_ == null ?
-            CommissionRates.getDefaultInstance() : commissionRates_;
+            com.cosmos.staking.v1beta1.CommissionRates.getDefaultInstance() : commissionRates_;
       }
     }
     /**
@@ -636,11 +636,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        CommissionRates, CommissionRates.Builder, CommissionRatesOrBuilder>
+        com.cosmos.staking.v1beta1.CommissionRates, com.cosmos.staking.v1beta1.CommissionRates.Builder, com.cosmos.staking.v1beta1.CommissionRatesOrBuilder> 
         getCommissionRatesFieldBuilder() {
       if (commissionRatesBuilder_ == null) {
         commissionRatesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            CommissionRates, CommissionRates.Builder, CommissionRatesOrBuilder>(
+            com.cosmos.staking.v1beta1.CommissionRates, com.cosmos.staking.v1beta1.CommissionRates.Builder, com.cosmos.staking.v1beta1.CommissionRatesOrBuilder>(
                 getCommissionRates(),
                 getParentForChildren(),
                 isClean());
@@ -803,13 +803,13 @@ private static final long serialVersionUID = 0L;
       }
       return updateTimeBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -820,18 +820,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.Commission)
-  private static final Commission DEFAULT_INSTANCE;
+  private static final com.cosmos.staking.v1beta1.Commission DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Commission();
+    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.Commission();
   }
 
-  public static Commission getDefaultInstance() {
+  public static com.cosmos.staking.v1beta1.Commission getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Commission>
       PARSER = new com.google.protobuf.AbstractParser<Commission>() {
-    @Override
+    @java.lang.Override
     public Commission parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -855,13 +855,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Commission> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Commission getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.Commission getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

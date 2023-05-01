@@ -10,12 +10,12 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<IdentifiedConnection>
+  java.util.List<com.ibc.core.connection.v1.IdentifiedConnection> 
       getConnectionsList();
   /**
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections", (.gogoproto.nullable) = false];</code>
    */
-  IdentifiedConnection getConnections(int index);
+  com.ibc.core.connection.v1.IdentifiedConnection getConnections(int index);
   /**
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections", (.gogoproto.nullable) = false];</code>
    */
@@ -23,23 +23,23 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends IdentifiedConnectionOrBuilder>
+  java.util.List<? extends com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder> 
       getConnectionsOrBuilderList();
   /**
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections", (.gogoproto.nullable) = false];</code>
    */
-  IdentifiedConnectionOrBuilder getConnectionsOrBuilder(
+  com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder getConnectionsOrBuilder(
       int index);
 
   /**
    * <code>repeated .ibc.core.connection.v1.ConnectionPaths client_connection_paths = 2 [json_name = "clientConnectionPaths", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_connection_paths&#92;""];</code>
    */
-  java.util.List<ConnectionPaths>
+  java.util.List<com.ibc.core.connection.v1.ConnectionPaths> 
       getClientConnectionPathsList();
   /**
    * <code>repeated .ibc.core.connection.v1.ConnectionPaths client_connection_paths = 2 [json_name = "clientConnectionPaths", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_connection_paths&#92;""];</code>
    */
-  ConnectionPaths getClientConnectionPaths(int index);
+  com.ibc.core.connection.v1.ConnectionPaths getClientConnectionPaths(int index);
   /**
    * <code>repeated .ibc.core.connection.v1.ConnectionPaths client_connection_paths = 2 [json_name = "clientConnectionPaths", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_connection_paths&#92;""];</code>
    */
@@ -47,12 +47,12 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.connection.v1.ConnectionPaths client_connection_paths = 2 [json_name = "clientConnectionPaths", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_connection_paths&#92;""];</code>
    */
-  java.util.List<? extends ConnectionPathsOrBuilder>
+  java.util.List<? extends com.ibc.core.connection.v1.ConnectionPathsOrBuilder> 
       getClientConnectionPathsOrBuilderList();
   /**
    * <code>repeated .ibc.core.connection.v1.ConnectionPaths client_connection_paths = 2 [json_name = "clientConnectionPaths", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_connection_paths&#92;""];</code>
    */
-  ConnectionPathsOrBuilder getClientConnectionPathsOrBuilder(
+  com.ibc.core.connection.v1.ConnectionPathsOrBuilder getClientConnectionPathsOrBuilder(
       int index);
 
   /**
@@ -74,9 +74,9 @@ public interface GenesisStateOrBuilder extends
    * <code>.ibc.core.connection.v1.Params params = 4 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  Params getParams();
+  com.ibc.core.connection.v1.Params getParams();
   /**
    * <code>.ibc.core.connection.v1.Params params = 4 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  ParamsOrBuilder getParamsOrBuilder();
+  com.ibc.core.connection.v1.ParamsOrBuilder getParamsOrBuilder();
 }

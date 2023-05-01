@@ -16,11 +16,11 @@ public interface SimulationResponseOrBuilder extends
    * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
    * @return The gasInfo.
    */
-  GasInfo getGasInfo();
+  com.cosmos.base.abci.v1beta1.GasInfo getGasInfo();
   /**
    * <code>.cosmos.base.abci.v1beta1.GasInfo gas_info = 1 [json_name = "gasInfo", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
    */
-  GasInfoOrBuilder getGasInfoOrBuilder();
+  com.cosmos.base.abci.v1beta1.GasInfoOrBuilder getGasInfoOrBuilder();
 
   /**
    * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
@@ -31,9 +31,9 @@ public interface SimulationResponseOrBuilder extends
    * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
    * @return The result.
    */
-  Result getResult();
+  com.cosmos.base.abci.v1beta1.Result getResult();
   /**
    * <code>.cosmos.base.abci.v1beta1.Result result = 2 [json_name = "result"];</code>
    */
-  ResultOrBuilder getResultOrBuilder();
+  com.cosmos.base.abci.v1beta1.ResultOrBuilder getResultOrBuilder();
 }

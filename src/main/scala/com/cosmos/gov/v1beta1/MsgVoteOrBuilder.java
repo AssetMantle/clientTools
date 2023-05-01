@@ -17,7 +17,7 @@ public interface MsgVoteOrBuilder extends
    * <code>string voter = 2 [json_name = "voter"];</code>
    * @return The voter.
    */
-  String getVoter();
+  java.lang.String getVoter();
   /**
    * <code>string voter = 2 [json_name = "voter"];</code>
    * @return The bytes for voter.
@@ -34,5 +34,5 @@ public interface MsgVoteOrBuilder extends
    * <code>.cosmos.gov.v1beta1.VoteOption option = 3 [json_name = "option"];</code>
    * @return The option.
    */
-  VoteOption getOption();
+  com.cosmos.gov.v1beta1.VoteOption getOption();
 }

@@ -11,7 +11,7 @@ public interface CommunityPoolSpendProposalWithDepositOrBuilder extends
    * <code>string title = 1 [json_name = "title", (.gogoproto.moretags) = "yaml:&#92;"title&#92;""];</code>
    * @return The title.
    */
-  String getTitle();
+  java.lang.String getTitle();
   /**
    * <code>string title = 1 [json_name = "title", (.gogoproto.moretags) = "yaml:&#92;"title&#92;""];</code>
    * @return The bytes for title.
@@ -23,7 +23,7 @@ public interface CommunityPoolSpendProposalWithDepositOrBuilder extends
    * <code>string description = 2 [json_name = "description", (.gogoproto.moretags) = "yaml:&#92;"description&#92;""];</code>
    * @return The description.
    */
-  String getDescription();
+  java.lang.String getDescription();
   /**
    * <code>string description = 2 [json_name = "description", (.gogoproto.moretags) = "yaml:&#92;"description&#92;""];</code>
    * @return The bytes for description.
@@ -35,7 +35,7 @@ public interface CommunityPoolSpendProposalWithDepositOrBuilder extends
    * <code>string recipient = 3 [json_name = "recipient", (.gogoproto.moretags) = "yaml:&#92;"recipient&#92;""];</code>
    * @return The recipient.
    */
-  String getRecipient();
+  java.lang.String getRecipient();
   /**
    * <code>string recipient = 3 [json_name = "recipient", (.gogoproto.moretags) = "yaml:&#92;"recipient&#92;""];</code>
    * @return The bytes for recipient.
@@ -47,7 +47,7 @@ public interface CommunityPoolSpendProposalWithDepositOrBuilder extends
    * <code>string amount = 4 [json_name = "amount", (.gogoproto.moretags) = "yaml:&#92;"amount&#92;""];</code>
    * @return The amount.
    */
-  String getAmount();
+  java.lang.String getAmount();
   /**
    * <code>string amount = 4 [json_name = "amount", (.gogoproto.moretags) = "yaml:&#92;"amount&#92;""];</code>
    * @return The bytes for amount.
@@ -59,7 +59,7 @@ public interface CommunityPoolSpendProposalWithDepositOrBuilder extends
    * <code>string deposit = 5 [json_name = "deposit", (.gogoproto.moretags) = "yaml:&#92;"deposit&#92;""];</code>
    * @return The deposit.
    */
-  String getDeposit();
+  java.lang.String getDeposit();
   /**
    * <code>string deposit = 5 [json_name = "deposit", (.gogoproto.moretags) = "yaml:&#92;"deposit&#92;""];</code>
    * @return The bytes for deposit.

@@ -62,7 +62,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\"cosmos/upgrade/v1beta1/query.proto\022\026co" +
       "smos.upgrade.v1beta1\032\031google/protobuf/an" +
       "y.proto\032\034google/api/annotations.proto\032$c" +
@@ -112,56 +112,56 @@ public final class QueryProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.protobuf.AnyProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
-          UpgradeProto.getDescriptor(),
+          com.cosmos.upgrade.v1beta1.UpgradeProto.getDescriptor(),
         });
     internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_QueryCurrentPlanResponse_descriptor,
-        new String[] { "Plan", });
+        new java.lang.String[] { "Plan", });
     internal_static_cosmos_upgrade_v1beta1_QueryAppliedPlanRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_upgrade_v1beta1_QueryAppliedPlanRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_QueryAppliedPlanRequest_descriptor,
-        new String[] { "Name", });
+        new java.lang.String[] { "Name", });
     internal_static_cosmos_upgrade_v1beta1_QueryAppliedPlanResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_upgrade_v1beta1_QueryAppliedPlanResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_QueryAppliedPlanResponse_descriptor,
-        new String[] { "Height", });
+        new java.lang.String[] { "Height", });
     internal_static_cosmos_upgrade_v1beta1_QueryUpgradedConsensusStateRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_upgrade_v1beta1_QueryUpgradedConsensusStateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_QueryUpgradedConsensusStateRequest_descriptor,
-        new String[] { "LastHeight", });
+        new java.lang.String[] { "LastHeight", });
     internal_static_cosmos_upgrade_v1beta1_QueryUpgradedConsensusStateResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_upgrade_v1beta1_QueryUpgradedConsensusStateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_QueryUpgradedConsensusStateResponse_descriptor,
-        new String[] { "UpgradedConsensusState", });
+        new java.lang.String[] { "UpgradedConsensusState", });
     internal_static_cosmos_upgrade_v1beta1_QueryModuleVersionsRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_upgrade_v1beta1_QueryModuleVersionsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_QueryModuleVersionsRequest_descriptor,
-        new String[] { "ModuleName", });
+        new java.lang.String[] { "ModuleName", });
     internal_static_cosmos_upgrade_v1beta1_QueryModuleVersionsResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_upgrade_v1beta1_QueryModuleVersionsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_QueryModuleVersionsResponse_descriptor,
-        new String[] { "ModuleVersions", });
+        new java.lang.String[] { "ModuleVersions", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.google.api.AnnotationsProto.http);
@@ -169,7 +169,7 @@ public final class QueryProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.protobuf.AnyProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
-    UpgradeProto.getDescriptor();
+    com.cosmos.upgrade.v1beta1.UpgradeProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

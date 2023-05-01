@@ -15,7 +15,7 @@ public interface DelegatorWithdrawInfoOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  String getDelegatorAddress();
+  java.lang.String getDelegatorAddress();
   /**
    * <pre>
    * delegator_address is the address of the delegator.
@@ -35,7 +35,7 @@ public interface DelegatorWithdrawInfoOrBuilder extends
    * <code>string withdraw_address = 2 [json_name = "withdrawAddress", (.gogoproto.moretags) = "yaml:&#92;"withdraw_address&#92;""];</code>
    * @return The withdrawAddress.
    */
-  String getWithdrawAddress();
+  java.lang.String getWithdrawAddress();
   /**
    * <pre>
    * withdraw_address is the address to withdraw the delegation rewards to.

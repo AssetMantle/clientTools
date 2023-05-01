@@ -30,42 +30,42 @@ private static final long serialVersionUID = 0L;
     signer_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgConnectionOpenTry();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenTry_descriptor;
+    return com.ibc.core.connection.v1.TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenTry_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenTry_fieldAccessorTable
+    return com.ibc.core.connection.v1.TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenTry_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            MsgConnectionOpenTry.class, Builder.class);
+            com.ibc.core.connection.v1.MsgConnectionOpenTry.class, com.ibc.core.connection.v1.MsgConnectionOpenTry.Builder.class);
   }
 
   public static final int CLIENT_ID_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object clientId_ = "";
+  private volatile java.lang.Object clientId_ = "";
   /**
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  @Override
-  public String getClientId() {
-    Object ref = clientId_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getClientId() {
+    java.lang.Object ref = clientId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       clientId_ = s;
       return s;
     }
@@ -74,14 +74,14 @@ private static final long serialVersionUID = 0L;
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The bytes for clientId.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getClientIdBytes() {
-    Object ref = clientId_;
-    if (ref instanceof String) {
+    java.lang.Object ref = clientId_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       clientId_ = b;
       return b;
     } else {
@@ -91,7 +91,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int PREVIOUS_CONNECTION_ID_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile Object previousConnectionId_ = "";
+  private volatile java.lang.Object previousConnectionId_ = "";
   /**
    * <pre>
    * in the case of crossing hello's, when both chains call OpenInit, we need
@@ -101,15 +101,15 @@ private static final long serialVersionUID = 0L;
    * <code>string previous_connection_id = 2 [json_name = "previousConnectionId", (.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
    * @return The previousConnectionId.
    */
-  @Override
-  public String getPreviousConnectionId() {
-    Object ref = previousConnectionId_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getPreviousConnectionId() {
+    java.lang.Object ref = previousConnectionId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       previousConnectionId_ = s;
       return s;
     }
@@ -123,14 +123,14 @@ private static final long serialVersionUID = 0L;
    * <code>string previous_connection_id = 2 [json_name = "previousConnectionId", (.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
    * @return The bytes for previousConnectionId.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getPreviousConnectionIdBytes() {
-    Object ref = previousConnectionId_;
-    if (ref instanceof String) {
+    java.lang.Object ref = previousConnectionId_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       previousConnectionId_ = b;
       return b;
     } else {
@@ -144,7 +144,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any client_state = 3 [json_name = "clientState", (.gogoproto.moretags) = "yaml:&#92;"client_state&#92;""];</code>
    * @return Whether the clientState field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasClientState() {
     return clientState_ != null;
   }
@@ -152,25 +152,25 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any client_state = 3 [json_name = "clientState", (.gogoproto.moretags) = "yaml:&#92;"client_state&#92;""];</code>
    * @return The clientState.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Any getClientState() {
     return clientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : clientState_;
   }
   /**
    * <code>.google.protobuf.Any client_state = 3 [json_name = "clientState", (.gogoproto.moretags) = "yaml:&#92;"client_state&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.AnyOrBuilder getClientStateOrBuilder() {
     return clientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : clientState_;
   }
 
   public static final int COUNTERPARTY_FIELD_NUMBER = 4;
-  private Counterparty counterparty_;
+  private com.ibc.core.connection.v1.Counterparty counterparty_;
   /**
    * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    * @return Whether the counterparty field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasCounterparty() {
     return counterparty_ != null;
   }
@@ -178,16 +178,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    * @return The counterparty.
    */
-  @Override
-  public Counterparty getCounterparty() {
-    return counterparty_ == null ? Counterparty.getDefaultInstance() : counterparty_;
+  @java.lang.Override
+  public com.ibc.core.connection.v1.Counterparty getCounterparty() {
+    return counterparty_ == null ? com.ibc.core.connection.v1.Counterparty.getDefaultInstance() : counterparty_;
   }
   /**
    * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public CounterpartyOrBuilder getCounterpartyOrBuilder() {
-    return counterparty_ == null ? Counterparty.getDefaultInstance() : counterparty_;
+  @java.lang.Override
+  public com.ibc.core.connection.v1.CounterpartyOrBuilder getCounterpartyOrBuilder() {
+    return counterparty_ == null ? com.ibc.core.connection.v1.Counterparty.getDefaultInstance() : counterparty_;
   }
 
   public static final int DELAY_PERIOD_FIELD_NUMBER = 5;
@@ -196,48 +196,48 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 delay_period = 5 [json_name = "delayPeriod", (.gogoproto.moretags) = "yaml:&#92;"delay_period&#92;""];</code>
    * @return The delayPeriod.
    */
-  @Override
+  @java.lang.Override
   public long getDelayPeriod() {
     return delayPeriod_;
   }
 
   public static final int COUNTERPARTY_VERSIONS_FIELD_NUMBER = 6;
   @SuppressWarnings("serial")
-  private java.util.List<Version> counterpartyVersions_;
+  private java.util.List<com.ibc.core.connection.v1.Version> counterpartyVersions_;
   /**
    * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
    */
-  @Override
-  public java.util.List<Version> getCounterpartyVersionsList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.core.connection.v1.Version> getCounterpartyVersionsList() {
     return counterpartyVersions_;
   }
   /**
    * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
    */
-  @Override
-  public java.util.List<? extends VersionOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.core.connection.v1.VersionOrBuilder> 
       getCounterpartyVersionsOrBuilderList() {
     return counterpartyVersions_;
   }
   /**
    * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public int getCounterpartyVersionsCount() {
     return counterpartyVersions_.size();
   }
   /**
    * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
    */
-  @Override
-  public Version getCounterpartyVersions(int index) {
+  @java.lang.Override
+  public com.ibc.core.connection.v1.Version getCounterpartyVersions(int index) {
     return counterpartyVersions_.get(index);
   }
   /**
    * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
    */
-  @Override
-  public VersionOrBuilder getCounterpartyVersionsOrBuilder(
+  @java.lang.Override
+  public com.ibc.core.connection.v1.VersionOrBuilder getCounterpartyVersionsOrBuilder(
       int index) {
     return counterpartyVersions_.get(index);
   }
@@ -248,7 +248,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height proof_height = 7 [json_name = "proofHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"proof_height&#92;""];</code>
    * @return Whether the proofHeight field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasProofHeight() {
     return proofHeight_ != null;
   }
@@ -256,14 +256,14 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height proof_height = 7 [json_name = "proofHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"proof_height&#92;""];</code>
    * @return The proofHeight.
    */
-  @Override
+  @java.lang.Override
   public com.ibc.core.client.v1.Height getProofHeight() {
     return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
   }
   /**
    * <code>.ibc.core.client.v1.Height proof_height = 7 [json_name = "proofHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"proof_height&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public com.ibc.core.client.v1.HeightOrBuilder getProofHeightOrBuilder() {
     return proofHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : proofHeight_;
   }
@@ -279,7 +279,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes proof_init = 8 [json_name = "proofInit", (.gogoproto.moretags) = "yaml:&#92;"proof_init&#92;""];</code>
    * @return The proofInit.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getProofInit() {
     return proofInit_;
   }
@@ -294,7 +294,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes proof_client = 9 [json_name = "proofClient", (.gogoproto.moretags) = "yaml:&#92;"proof_client&#92;""];</code>
    * @return The proofClient.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getProofClient() {
     return proofClient_;
   }
@@ -309,7 +309,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes proof_consensus = 10 [json_name = "proofConsensus", (.gogoproto.moretags) = "yaml:&#92;"proof_consensus&#92;""];</code>
    * @return The proofConsensus.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getProofConsensus() {
     return proofConsensus_;
   }
@@ -320,7 +320,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height consensus_height = 11 [json_name = "consensusHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"consensus_height&#92;""];</code>
    * @return Whether the consensusHeight field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasConsensusHeight() {
     return consensusHeight_ != null;
   }
@@ -328,34 +328,34 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height consensus_height = 11 [json_name = "consensusHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"consensus_height&#92;""];</code>
    * @return The consensusHeight.
    */
-  @Override
+  @java.lang.Override
   public com.ibc.core.client.v1.Height getConsensusHeight() {
     return consensusHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : consensusHeight_;
   }
   /**
    * <code>.ibc.core.client.v1.Height consensus_height = 11 [json_name = "consensusHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"consensus_height&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public com.ibc.core.client.v1.HeightOrBuilder getConsensusHeightOrBuilder() {
     return consensusHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : consensusHeight_;
   }
 
   public static final int SIGNER_FIELD_NUMBER = 12;
   @SuppressWarnings("serial")
-  private volatile Object signer_ = "";
+  private volatile java.lang.Object signer_ = "";
   /**
    * <code>string signer = 12 [json_name = "signer"];</code>
    * @return The signer.
    */
-  @Override
-  public String getSigner() {
-    Object ref = signer_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getSigner() {
+    java.lang.Object ref = signer_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       signer_ = s;
       return s;
     }
@@ -364,14 +364,14 @@ private static final long serialVersionUID = 0L;
    * <code>string signer = 12 [json_name = "signer"];</code>
    * @return The bytes for signer.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getSignerBytes() {
-    Object ref = signer_;
-    if (ref instanceof String) {
+    java.lang.Object ref = signer_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       signer_ = b;
       return b;
     } else {
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -390,7 +390,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientId_)) {
@@ -432,7 +432,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -488,15 +488,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof MsgConnectionOpenTry)) {
+    if (!(obj instanceof com.ibc.core.connection.v1.MsgConnectionOpenTry)) {
       return super.equals(obj);
     }
-    MsgConnectionOpenTry other = (MsgConnectionOpenTry) obj;
+    com.ibc.core.connection.v1.MsgConnectionOpenTry other = (com.ibc.core.connection.v1.MsgConnectionOpenTry) obj;
 
     if (!getClientId()
         .equals(other.getClientId())) return false;
@@ -538,7 +538,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -585,69 +585,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static MsgConnectionOpenTry parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgConnectionOpenTry parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgConnectionOpenTry parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgConnectionOpenTry parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgConnectionOpenTry parseFrom(byte[] data)
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgConnectionOpenTry parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgConnectionOpenTry parseFrom(java.io.InputStream input)
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgConnectionOpenTry parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgConnectionOpenTry parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static MsgConnectionOpenTry parseDelimitedFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgConnectionOpenTry parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgConnectionOpenTry parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -655,23 +655,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(MsgConnectionOpenTry prototype) {
+  public static Builder newBuilder(com.ibc.core.connection.v1.MsgConnectionOpenTry prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -686,18 +686,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.connection.v1.MsgConnectionOpenTry)
-      MsgConnectionOpenTryOrBuilder {
+      com.ibc.core.connection.v1.MsgConnectionOpenTryOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenTry_descriptor;
+      return com.ibc.core.connection.v1.TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenTry_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenTry_fieldAccessorTable
+      return com.ibc.core.connection.v1.TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenTry_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MsgConnectionOpenTry.class, Builder.class);
+              com.ibc.core.connection.v1.MsgConnectionOpenTry.class, com.ibc.core.connection.v1.MsgConnectionOpenTry.Builder.class);
     }
 
     // Construct using com.ibc.core.connection.v1.MsgConnectionOpenTry.newBuilder()
@@ -706,11 +706,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -751,36 +751,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenTry_descriptor;
+      return com.ibc.core.connection.v1.TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenTry_descriptor;
     }
 
-    @Override
-    public MsgConnectionOpenTry getDefaultInstanceForType() {
-      return MsgConnectionOpenTry.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.core.connection.v1.MsgConnectionOpenTry getDefaultInstanceForType() {
+      return com.ibc.core.connection.v1.MsgConnectionOpenTry.getDefaultInstance();
     }
 
-    @Override
-    public MsgConnectionOpenTry build() {
-      MsgConnectionOpenTry result = buildPartial();
+    @java.lang.Override
+    public com.ibc.core.connection.v1.MsgConnectionOpenTry build() {
+      com.ibc.core.connection.v1.MsgConnectionOpenTry result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public MsgConnectionOpenTry buildPartial() {
-      MsgConnectionOpenTry result = new MsgConnectionOpenTry(this);
+    @java.lang.Override
+    public com.ibc.core.connection.v1.MsgConnectionOpenTry buildPartial() {
+      com.ibc.core.connection.v1.MsgConnectionOpenTry result = new com.ibc.core.connection.v1.MsgConnectionOpenTry(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(MsgConnectionOpenTry result) {
+    private void buildPartialRepeatedFields(com.ibc.core.connection.v1.MsgConnectionOpenTry result) {
       if (counterpartyVersionsBuilder_ == null) {
         if (((bitField0_ & 0x00000020) != 0)) {
           counterpartyVersions_ = java.util.Collections.unmodifiableList(counterpartyVersions_);
@@ -792,7 +792,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(MsgConnectionOpenTry result) {
+    private void buildPartial0(com.ibc.core.connection.v1.MsgConnectionOpenTry result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.clientId_ = clientId_;
@@ -837,50 +837,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof MsgConnectionOpenTry) {
-        return mergeFrom((MsgConnectionOpenTry)other);
+      if (other instanceof com.ibc.core.connection.v1.MsgConnectionOpenTry) {
+        return mergeFrom((com.ibc.core.connection.v1.MsgConnectionOpenTry)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(MsgConnectionOpenTry other) {
-      if (other == MsgConnectionOpenTry.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.core.connection.v1.MsgConnectionOpenTry other) {
+      if (other == com.ibc.core.connection.v1.MsgConnectionOpenTry.getDefaultInstance()) return this;
       if (!other.getClientId().isEmpty()) {
         clientId_ = other.clientId_;
         bitField0_ |= 0x00000001;
@@ -951,18 +951,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -1002,9 +1002,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 40
             case 50: {
-              Version m =
+              com.ibc.core.connection.v1.Version m =
                   input.readMessage(
-                      Version.parser(),
+                      com.ibc.core.connection.v1.Version.parser(),
                       extensionRegistry);
               if (counterpartyVersionsBuilder_ == null) {
                 ensureCounterpartyVersionsIsMutable();
@@ -1065,21 +1065,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object clientId_ = "";
+    private java.lang.Object clientId_ = "";
     /**
      * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
      * @return The clientId.
      */
-    public String getClientId() {
-      Object ref = clientId_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getClientId() {
+      java.lang.Object ref = clientId_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         clientId_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1088,11 +1088,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getClientIdBytes() {
-      Object ref = clientId_;
+      java.lang.Object ref = clientId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         clientId_ = b;
         return b;
       } else {
@@ -1105,7 +1105,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setClientId(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       clientId_ = value;
       bitField0_ |= 0x00000001;
@@ -1137,7 +1137,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object previousConnectionId_ = "";
+    private java.lang.Object previousConnectionId_ = "";
     /**
      * <pre>
      * in the case of crossing hello's, when both chains call OpenInit, we need
@@ -1147,16 +1147,16 @@ private static final long serialVersionUID = 0L;
      * <code>string previous_connection_id = 2 [json_name = "previousConnectionId", (.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
      * @return The previousConnectionId.
      */
-    public String getPreviousConnectionId() {
-      Object ref = previousConnectionId_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getPreviousConnectionId() {
+      java.lang.Object ref = previousConnectionId_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         previousConnectionId_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1170,11 +1170,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getPreviousConnectionIdBytes() {
-      Object ref = previousConnectionId_;
+      java.lang.Object ref = previousConnectionId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         previousConnectionId_ = b;
         return b;
       } else {
@@ -1192,7 +1192,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPreviousConnectionId(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       previousConnectionId_ = value;
       bitField0_ |= 0x00000002;
@@ -1353,9 +1353,9 @@ private static final long serialVersionUID = 0L;
       return clientStateBuilder_;
     }
 
-    private Counterparty counterparty_;
+    private com.ibc.core.connection.v1.Counterparty counterparty_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        Counterparty, Counterparty.Builder, CounterpartyOrBuilder> counterpartyBuilder_;
+        com.ibc.core.connection.v1.Counterparty, com.ibc.core.connection.v1.Counterparty.Builder, com.ibc.core.connection.v1.CounterpartyOrBuilder> counterpartyBuilder_;
     /**
      * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
      * @return Whether the counterparty field is set.
@@ -1367,9 +1367,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
      * @return The counterparty.
      */
-    public Counterparty getCounterparty() {
+    public com.ibc.core.connection.v1.Counterparty getCounterparty() {
       if (counterpartyBuilder_ == null) {
-        return counterparty_ == null ? Counterparty.getDefaultInstance() : counterparty_;
+        return counterparty_ == null ? com.ibc.core.connection.v1.Counterparty.getDefaultInstance() : counterparty_;
       } else {
         return counterpartyBuilder_.getMessage();
       }
@@ -1377,7 +1377,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setCounterparty(Counterparty value) {
+    public Builder setCounterparty(com.ibc.core.connection.v1.Counterparty value) {
       if (counterpartyBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1394,7 +1394,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
      */
     public Builder setCounterparty(
-        Counterparty.Builder builderForValue) {
+        com.ibc.core.connection.v1.Counterparty.Builder builderForValue) {
       if (counterpartyBuilder_ == null) {
         counterparty_ = builderForValue.build();
       } else {
@@ -1407,11 +1407,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeCounterparty(Counterparty value) {
+    public Builder mergeCounterparty(com.ibc.core.connection.v1.Counterparty value) {
       if (counterpartyBuilder_ == null) {
         if (((bitField0_ & 0x00000008) != 0) &&
           counterparty_ != null &&
-          counterparty_ != Counterparty.getDefaultInstance()) {
+          counterparty_ != com.ibc.core.connection.v1.Counterparty.getDefaultInstance()) {
           getCounterpartyBuilder().mergeFrom(value);
         } else {
           counterparty_ = value;
@@ -1439,7 +1439,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
      */
-    public Counterparty.Builder getCounterpartyBuilder() {
+    public com.ibc.core.connection.v1.Counterparty.Builder getCounterpartyBuilder() {
       bitField0_ |= 0x00000008;
       onChanged();
       return getCounterpartyFieldBuilder().getBuilder();
@@ -1447,23 +1447,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
      */
-    public CounterpartyOrBuilder getCounterpartyOrBuilder() {
+    public com.ibc.core.connection.v1.CounterpartyOrBuilder getCounterpartyOrBuilder() {
       if (counterpartyBuilder_ != null) {
         return counterpartyBuilder_.getMessageOrBuilder();
       } else {
         return counterparty_ == null ?
-            Counterparty.getDefaultInstance() : counterparty_;
+            com.ibc.core.connection.v1.Counterparty.getDefaultInstance() : counterparty_;
       }
     }
     /**
      * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Counterparty, Counterparty.Builder, CounterpartyOrBuilder>
+        com.ibc.core.connection.v1.Counterparty, com.ibc.core.connection.v1.Counterparty.Builder, com.ibc.core.connection.v1.CounterpartyOrBuilder> 
         getCounterpartyFieldBuilder() {
       if (counterpartyBuilder_ == null) {
         counterpartyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Counterparty, Counterparty.Builder, CounterpartyOrBuilder>(
+            com.ibc.core.connection.v1.Counterparty, com.ibc.core.connection.v1.Counterparty.Builder, com.ibc.core.connection.v1.CounterpartyOrBuilder>(
                 getCounterparty(),
                 getParentForChildren(),
                 isClean());
@@ -1477,7 +1477,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 delay_period = 5 [json_name = "delayPeriod", (.gogoproto.moretags) = "yaml:&#92;"delay_period&#92;""];</code>
      * @return The delayPeriod.
      */
-    @Override
+    @java.lang.Override
     public long getDelayPeriod() {
       return delayPeriod_;
     }
@@ -1504,22 +1504,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<Version> counterpartyVersions_ =
+    private java.util.List<com.ibc.core.connection.v1.Version> counterpartyVersions_ =
       java.util.Collections.emptyList();
     private void ensureCounterpartyVersionsIsMutable() {
       if (!((bitField0_ & 0x00000020) != 0)) {
-        counterpartyVersions_ = new java.util.ArrayList<Version>(counterpartyVersions_);
+        counterpartyVersions_ = new java.util.ArrayList<com.ibc.core.connection.v1.Version>(counterpartyVersions_);
         bitField0_ |= 0x00000020;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Version, Version.Builder, VersionOrBuilder> counterpartyVersionsBuilder_;
+        com.ibc.core.connection.v1.Version, com.ibc.core.connection.v1.Version.Builder, com.ibc.core.connection.v1.VersionOrBuilder> counterpartyVersionsBuilder_;
 
     /**
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
-    public java.util.List<Version> getCounterpartyVersionsList() {
+    public java.util.List<com.ibc.core.connection.v1.Version> getCounterpartyVersionsList() {
       if (counterpartyVersionsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(counterpartyVersions_);
       } else {
@@ -1539,7 +1539,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
-    public Version getCounterpartyVersions(int index) {
+    public com.ibc.core.connection.v1.Version getCounterpartyVersions(int index) {
       if (counterpartyVersionsBuilder_ == null) {
         return counterpartyVersions_.get(index);
       } else {
@@ -1550,7 +1550,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
     public Builder setCounterpartyVersions(
-        int index, Version value) {
+        int index, com.ibc.core.connection.v1.Version value) {
       if (counterpartyVersionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1567,7 +1567,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
     public Builder setCounterpartyVersions(
-        int index, Version.Builder builderForValue) {
+        int index, com.ibc.core.connection.v1.Version.Builder builderForValue) {
       if (counterpartyVersionsBuilder_ == null) {
         ensureCounterpartyVersionsIsMutable();
         counterpartyVersions_.set(index, builderForValue.build());
@@ -1580,7 +1580,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
-    public Builder addCounterpartyVersions(Version value) {
+    public Builder addCounterpartyVersions(com.ibc.core.connection.v1.Version value) {
       if (counterpartyVersionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1597,7 +1597,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
     public Builder addCounterpartyVersions(
-        int index, Version value) {
+        int index, com.ibc.core.connection.v1.Version value) {
       if (counterpartyVersionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1614,7 +1614,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
     public Builder addCounterpartyVersions(
-        Version.Builder builderForValue) {
+        com.ibc.core.connection.v1.Version.Builder builderForValue) {
       if (counterpartyVersionsBuilder_ == null) {
         ensureCounterpartyVersionsIsMutable();
         counterpartyVersions_.add(builderForValue.build());
@@ -1628,7 +1628,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
     public Builder addCounterpartyVersions(
-        int index, Version.Builder builderForValue) {
+        int index, com.ibc.core.connection.v1.Version.Builder builderForValue) {
       if (counterpartyVersionsBuilder_ == null) {
         ensureCounterpartyVersionsIsMutable();
         counterpartyVersions_.add(index, builderForValue.build());
@@ -1642,7 +1642,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
     public Builder addAllCounterpartyVersions(
-        Iterable<? extends Version> values) {
+        java.lang.Iterable<? extends com.ibc.core.connection.v1.Version> values) {
       if (counterpartyVersionsBuilder_ == null) {
         ensureCounterpartyVersionsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1682,14 +1682,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
-    public Version.Builder getCounterpartyVersionsBuilder(
+    public com.ibc.core.connection.v1.Version.Builder getCounterpartyVersionsBuilder(
         int index) {
       return getCounterpartyVersionsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
-    public VersionOrBuilder getCounterpartyVersionsOrBuilder(
+    public com.ibc.core.connection.v1.VersionOrBuilder getCounterpartyVersionsOrBuilder(
         int index) {
       if (counterpartyVersionsBuilder_ == null) {
         return counterpartyVersions_.get(index);  } else {
@@ -1699,7 +1699,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
-    public java.util.List<? extends VersionOrBuilder>
+    public java.util.List<? extends com.ibc.core.connection.v1.VersionOrBuilder> 
          getCounterpartyVersionsOrBuilderList() {
       if (counterpartyVersionsBuilder_ != null) {
         return counterpartyVersionsBuilder_.getMessageOrBuilderList();
@@ -1710,31 +1710,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
-    public Version.Builder addCounterpartyVersionsBuilder() {
+    public com.ibc.core.connection.v1.Version.Builder addCounterpartyVersionsBuilder() {
       return getCounterpartyVersionsFieldBuilder().addBuilder(
-          Version.getDefaultInstance());
+          com.ibc.core.connection.v1.Version.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
-    public Version.Builder addCounterpartyVersionsBuilder(
+    public com.ibc.core.connection.v1.Version.Builder addCounterpartyVersionsBuilder(
         int index) {
       return getCounterpartyVersionsFieldBuilder().addBuilder(
-          index, Version.getDefaultInstance());
+          index, com.ibc.core.connection.v1.Version.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
      */
-    public java.util.List<Version.Builder>
+    public java.util.List<com.ibc.core.connection.v1.Version.Builder> 
          getCounterpartyVersionsBuilderList() {
       return getCounterpartyVersionsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Version, Version.Builder, VersionOrBuilder>
+        com.ibc.core.connection.v1.Version, com.ibc.core.connection.v1.Version.Builder, com.ibc.core.connection.v1.VersionOrBuilder> 
         getCounterpartyVersionsFieldBuilder() {
       if (counterpartyVersionsBuilder_ == null) {
         counterpartyVersionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            Version, Version.Builder, VersionOrBuilder>(
+            com.ibc.core.connection.v1.Version, com.ibc.core.connection.v1.Version.Builder, com.ibc.core.connection.v1.VersionOrBuilder>(
                 counterpartyVersions_,
                 ((bitField0_ & 0x00000020) != 0),
                 getParentForChildren(),
@@ -1873,7 +1873,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes proof_init = 8 [json_name = "proofInit", (.gogoproto.moretags) = "yaml:&#92;"proof_init&#92;""];</code>
      * @return The proofInit.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getProofInit() {
       return proofInit_;
     }
@@ -1919,7 +1919,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes proof_client = 9 [json_name = "proofClient", (.gogoproto.moretags) = "yaml:&#92;"proof_client&#92;""];</code>
      * @return The proofClient.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getProofClient() {
       return proofClient_;
     }
@@ -1963,7 +1963,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes proof_consensus = 10 [json_name = "proofConsensus", (.gogoproto.moretags) = "yaml:&#92;"proof_consensus&#92;""];</code>
      * @return The proofConsensus.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getProofConsensus() {
       return proofConsensus_;
     }
@@ -2117,21 +2117,21 @@ private static final long serialVersionUID = 0L;
       return consensusHeightBuilder_;
     }
 
-    private Object signer_ = "";
+    private java.lang.Object signer_ = "";
     /**
      * <code>string signer = 12 [json_name = "signer"];</code>
      * @return The signer.
      */
-    public String getSigner() {
-      Object ref = signer_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getSigner() {
+      java.lang.Object ref = signer_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         signer_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -2140,11 +2140,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getSignerBytes() {
-      Object ref = signer_;
+      java.lang.Object ref = signer_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         signer_ = b;
         return b;
       } else {
@@ -2157,7 +2157,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSigner(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       signer_ = value;
       bitField0_ |= 0x00000800;
@@ -2188,13 +2188,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -2205,18 +2205,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.connection.v1.MsgConnectionOpenTry)
-  private static final MsgConnectionOpenTry DEFAULT_INSTANCE;
+  private static final com.ibc.core.connection.v1.MsgConnectionOpenTry DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new MsgConnectionOpenTry();
+    DEFAULT_INSTANCE = new com.ibc.core.connection.v1.MsgConnectionOpenTry();
   }
 
-  public static MsgConnectionOpenTry getDefaultInstance() {
+  public static com.ibc.core.connection.v1.MsgConnectionOpenTry getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgConnectionOpenTry>
       PARSER = new com.google.protobuf.AbstractParser<MsgConnectionOpenTry>() {
-    @Override
+    @java.lang.Override
     public MsgConnectionOpenTry parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2240,13 +2240,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<MsgConnectionOpenTry> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public MsgConnectionOpenTry getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.core.connection.v1.MsgConnectionOpenTry getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

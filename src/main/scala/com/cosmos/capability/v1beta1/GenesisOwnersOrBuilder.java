@@ -34,7 +34,7 @@ public interface GenesisOwnersOrBuilder extends
    * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
    * @return The indexOwners.
    */
-  CapabilityOwners getIndexOwners();
+  com.cosmos.capability.v1beta1.CapabilityOwners getIndexOwners();
   /**
    * <pre>
    * index_owners are the owners at the given index.
@@ -42,5 +42,5 @@ public interface GenesisOwnersOrBuilder extends
    *
    * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
    */
-  CapabilityOwnersOrBuilder getIndexOwnersOrBuilder();
+  com.cosmos.capability.v1beta1.CapabilityOwnersOrBuilder getIndexOwnersOrBuilder();
 }

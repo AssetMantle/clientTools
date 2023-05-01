@@ -23,7 +23,7 @@ public interface SignBytesOrBuilder extends
    * <code>string diversifier = 3 [json_name = "diversifier"];</code>
    * @return The diversifier.
    */
-  String getDiversifier();
+  java.lang.String getDiversifier();
   /**
    * <code>string diversifier = 3 [json_name = "diversifier"];</code>
    * @return The bytes for diversifier.
@@ -48,7 +48,7 @@ public interface SignBytesOrBuilder extends
    * <code>.ibc.lightclients.solomachine.v1.DataType data_type = 4 [json_name = "dataType", (.gogoproto.moretags) = "yaml:&#92;"data_type&#92;""];</code>
    * @return The dataType.
    */
-  DataType getDataType();
+  com.ibc.lightclients.solomachine.v1.DataType getDataType();
 
   /**
    * <pre>

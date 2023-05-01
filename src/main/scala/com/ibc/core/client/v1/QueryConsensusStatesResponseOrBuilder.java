@@ -14,7 +14,7 @@ public interface QueryConsensusStatesResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<ConsensusStateWithHeight>
+  java.util.List<com.ibc.core.client.v1.ConsensusStateWithHeight> 
       getConsensusStatesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryConsensusStatesResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
    */
-  ConsensusStateWithHeight getConsensusStates(int index);
+  com.ibc.core.client.v1.ConsensusStateWithHeight getConsensusStates(int index);
   /**
    * <pre>
    * consensus states associated with the identifier
@@ -39,7 +39,7 @@ public interface QueryConsensusStatesResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends ConsensusStateWithHeightOrBuilder>
+  java.util.List<? extends com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder> 
       getConsensusStatesOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryConsensusStatesResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ConsensusStateWithHeight consensus_states = 1 [json_name = "consensusStates", (.gogoproto.nullable) = false];</code>
    */
-  ConsensusStateWithHeightOrBuilder getConsensusStatesOrBuilder(
+  com.ibc.core.client.v1.ConsensusStateWithHeightOrBuilder getConsensusStatesOrBuilder(
       int index);
 
   /**

@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     minDeposit_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new DepositParams();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GovProto.internal_static_cosmos_gov_v1beta1_DepositParams_descriptor;
+    return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_DepositParams_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GovProto.internal_static_cosmos_gov_v1beta1_DepositParams_fieldAccessorTable
+    return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_DepositParams_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            DepositParams.class, Builder.class);
+            com.cosmos.gov.v1beta1.DepositParams.class, com.cosmos.gov.v1beta1.DepositParams.Builder.class);
   }
 
   public static final int MIN_DEPOSIT_FIELD_NUMBER = 1;
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin min_deposit = 1 [json_name = "minDeposit", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "min_deposit,omitempty", (.gogoproto.moretags) = "yaml:&#92;"min_deposit&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<com.cosmos.base.v1beta1.Coin> getMinDepositList() {
     return minDeposit_;
   }
@@ -64,7 +64,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin min_deposit = 1 [json_name = "minDeposit", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "min_deposit,omitempty", (.gogoproto.moretags) = "yaml:&#92;"min_deposit&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<? extends com.cosmos.base.v1beta1.CoinOrBuilder> 
       getMinDepositOrBuilderList() {
     return minDeposit_;
@@ -76,7 +76,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin min_deposit = 1 [json_name = "minDeposit", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "min_deposit,omitempty", (.gogoproto.moretags) = "yaml:&#92;"min_deposit&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getMinDepositCount() {
     return minDeposit_.size();
   }
@@ -87,7 +87,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin min_deposit = 1 [json_name = "minDeposit", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "min_deposit,omitempty", (.gogoproto.moretags) = "yaml:&#92;"min_deposit&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.Coin getMinDeposit(int index) {
     return minDeposit_.get(index);
   }
@@ -98,7 +98,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin min_deposit = 1 [json_name = "minDeposit", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "min_deposit,omitempty", (.gogoproto.moretags) = "yaml:&#92;"min_deposit&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.CoinOrBuilder getMinDepositOrBuilder(
       int index) {
     return minDeposit_.get(index);
@@ -115,7 +115,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration max_deposit_period = 2 [json_name = "maxDepositPeriod", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "max_deposit_period,omitempty", (.gogoproto.moretags) = "yaml:&#92;"max_deposit_period&#92;"", (.gogoproto.stdduration) = true];</code>
    * @return Whether the maxDepositPeriod field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasMaxDepositPeriod() {
     return maxDepositPeriod_ != null;
   }
@@ -128,7 +128,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration max_deposit_period = 2 [json_name = "maxDepositPeriod", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "max_deposit_period,omitempty", (.gogoproto.moretags) = "yaml:&#92;"max_deposit_period&#92;"", (.gogoproto.stdduration) = true];</code>
    * @return The maxDepositPeriod.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Duration getMaxDepositPeriod() {
     return maxDepositPeriod_ == null ? com.google.protobuf.Duration.getDefaultInstance() : maxDepositPeriod_;
   }
@@ -140,13 +140,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Duration max_deposit_period = 2 [json_name = "maxDepositPeriod", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "max_deposit_period,omitempty", (.gogoproto.moretags) = "yaml:&#92;"max_deposit_period&#92;"", (.gogoproto.stdduration) = true];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.DurationOrBuilder getMaxDepositPeriodOrBuilder() {
     return maxDepositPeriod_ == null ? com.google.protobuf.Duration.getDefaultInstance() : maxDepositPeriod_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -156,7 +156,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < minDeposit_.size(); i++) {
@@ -168,7 +168,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -187,15 +187,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof DepositParams)) {
+    if (!(obj instanceof com.cosmos.gov.v1beta1.DepositParams)) {
       return super.equals(obj);
     }
-    DepositParams other = (DepositParams) obj;
+    com.cosmos.gov.v1beta1.DepositParams other = (com.cosmos.gov.v1beta1.DepositParams) obj;
 
     if (!getMinDepositList()
         .equals(other.getMinDepositList())) return false;
@@ -208,7 +208,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -228,69 +228,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static DepositParams parseFrom(
+  public static com.cosmos.gov.v1beta1.DepositParams parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DepositParams parseFrom(
+  public static com.cosmos.gov.v1beta1.DepositParams parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DepositParams parseFrom(
+  public static com.cosmos.gov.v1beta1.DepositParams parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DepositParams parseFrom(
+  public static com.cosmos.gov.v1beta1.DepositParams parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DepositParams parseFrom(byte[] data)
+  public static com.cosmos.gov.v1beta1.DepositParams parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DepositParams parseFrom(
+  public static com.cosmos.gov.v1beta1.DepositParams parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DepositParams parseFrom(java.io.InputStream input)
+  public static com.cosmos.gov.v1beta1.DepositParams parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static DepositParams parseFrom(
+  public static com.cosmos.gov.v1beta1.DepositParams parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static DepositParams parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.gov.v1beta1.DepositParams parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static DepositParams parseDelimitedFrom(
+  public static com.cosmos.gov.v1beta1.DepositParams parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static DepositParams parseFrom(
+  public static com.cosmos.gov.v1beta1.DepositParams parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static DepositParams parseFrom(
+  public static com.cosmos.gov.v1beta1.DepositParams parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -298,23 +298,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(DepositParams prototype) {
+  public static Builder newBuilder(com.cosmos.gov.v1beta1.DepositParams prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -328,18 +328,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.gov.v1beta1.DepositParams)
-      DepositParamsOrBuilder {
+      com.cosmos.gov.v1beta1.DepositParamsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return GovProto.internal_static_cosmos_gov_v1beta1_DepositParams_descriptor;
+      return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_DepositParams_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return GovProto.internal_static_cosmos_gov_v1beta1_DepositParams_fieldAccessorTable
+      return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_DepositParams_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              DepositParams.class, Builder.class);
+              com.cosmos.gov.v1beta1.DepositParams.class, com.cosmos.gov.v1beta1.DepositParams.Builder.class);
     }
 
     // Construct using com.cosmos.gov.v1beta1.DepositParams.newBuilder()
@@ -348,11 +348,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -371,36 +371,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return GovProto.internal_static_cosmos_gov_v1beta1_DepositParams_descriptor;
+      return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_DepositParams_descriptor;
     }
 
-    @Override
-    public DepositParams getDefaultInstanceForType() {
-      return DepositParams.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.DepositParams getDefaultInstanceForType() {
+      return com.cosmos.gov.v1beta1.DepositParams.getDefaultInstance();
     }
 
-    @Override
-    public DepositParams build() {
-      DepositParams result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.DepositParams build() {
+      com.cosmos.gov.v1beta1.DepositParams result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public DepositParams buildPartial() {
-      DepositParams result = new DepositParams(this);
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.DepositParams buildPartial() {
+      com.cosmos.gov.v1beta1.DepositParams result = new com.cosmos.gov.v1beta1.DepositParams(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(DepositParams result) {
+    private void buildPartialRepeatedFields(com.cosmos.gov.v1beta1.DepositParams result) {
       if (minDepositBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           minDeposit_ = java.util.Collections.unmodifiableList(minDeposit_);
@@ -412,7 +412,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(DepositParams result) {
+    private void buildPartial0(com.cosmos.gov.v1beta1.DepositParams result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.maxDepositPeriod_ = maxDepositPeriodBuilder_ == null
@@ -421,50 +421,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof DepositParams) {
-        return mergeFrom((DepositParams)other);
+      if (other instanceof com.cosmos.gov.v1beta1.DepositParams) {
+        return mergeFrom((com.cosmos.gov.v1beta1.DepositParams)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(DepositParams other) {
-      if (other == DepositParams.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.gov.v1beta1.DepositParams other) {
+      if (other == com.cosmos.gov.v1beta1.DepositParams.getDefaultInstance()) return this;
       if (minDepositBuilder_ == null) {
         if (!other.minDeposit_.isEmpty()) {
           if (minDeposit_.isEmpty()) {
@@ -499,18 +499,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -735,7 +735,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.v1beta1.Coin min_deposit = 1 [json_name = "minDeposit", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "min_deposit,omitempty", (.gogoproto.moretags) = "yaml:&#92;"min_deposit&#92;"", (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
     public Builder addAllMinDeposit(
-        Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
+        java.lang.Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
       if (minDepositBuilder_ == null) {
         ensureMinDepositIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1032,13 +1032,13 @@ private static final long serialVersionUID = 0L;
       }
       return maxDepositPeriodBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1049,18 +1049,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.gov.v1beta1.DepositParams)
-  private static final DepositParams DEFAULT_INSTANCE;
+  private static final com.cosmos.gov.v1beta1.DepositParams DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new DepositParams();
+    DEFAULT_INSTANCE = new com.cosmos.gov.v1beta1.DepositParams();
   }
 
-  public static DepositParams getDefaultInstance() {
+  public static com.cosmos.gov.v1beta1.DepositParams getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<DepositParams>
       PARSER = new com.google.protobuf.AbstractParser<DepositParams>() {
-    @Override
+    @java.lang.Override
     public DepositParams parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1084,13 +1084,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<DepositParams> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public DepositParams getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.DepositParams getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

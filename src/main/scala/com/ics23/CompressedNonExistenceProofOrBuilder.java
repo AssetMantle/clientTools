@@ -26,11 +26,11 @@ public interface CompressedNonExistenceProofOrBuilder extends
    * <code>.ics23.CompressedExistenceProof left = 2 [json_name = "left"];</code>
    * @return The left.
    */
-  CompressedExistenceProof getLeft();
+  com.ics23.CompressedExistenceProof getLeft();
   /**
    * <code>.ics23.CompressedExistenceProof left = 2 [json_name = "left"];</code>
    */
-  CompressedExistenceProofOrBuilder getLeftOrBuilder();
+  com.ics23.CompressedExistenceProofOrBuilder getLeftOrBuilder();
 
   /**
    * <code>.ics23.CompressedExistenceProof right = 3 [json_name = "right"];</code>
@@ -41,9 +41,9 @@ public interface CompressedNonExistenceProofOrBuilder extends
    * <code>.ics23.CompressedExistenceProof right = 3 [json_name = "right"];</code>
    * @return The right.
    */
-  CompressedExistenceProof getRight();
+  com.ics23.CompressedExistenceProof getRight();
   /**
    * <code>.ics23.CompressedExistenceProof right = 3 [json_name = "right"];</code>
    */
-  CompressedExistenceProofOrBuilder getRightOrBuilder();
+  com.ics23.CompressedExistenceProofOrBuilder getRightOrBuilder();
 }

@@ -15,7 +15,7 @@ public interface GetTxsEventRequestOrBuilder extends
    * <code>repeated string events = 1 [json_name = "events"];</code>
    * @return A list containing the events.
    */
-  java.util.List<String>
+  java.util.List<java.lang.String>
       getEventsList();
   /**
    * <pre>
@@ -35,7 +35,7 @@ public interface GetTxsEventRequestOrBuilder extends
    * @param index The index of the element to return.
    * @return The events at the given index.
    */
-  String getEvents(int index);
+  java.lang.String getEvents(int index);
   /**
    * <pre>
    * events is the list of transaction event type.
@@ -84,5 +84,5 @@ public interface GetTxsEventRequestOrBuilder extends
    * <code>.cosmos.tx.v1beta1.OrderBy order_by = 3 [json_name = "orderBy"];</code>
    * @return The orderBy.
    */
-  OrderBy getOrderBy();
+  com.cosmos.tx.v1beta1.OrderBy getOrderBy();
 }

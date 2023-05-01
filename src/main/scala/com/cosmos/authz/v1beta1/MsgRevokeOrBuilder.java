@@ -11,7 +11,7 @@ public interface MsgRevokeOrBuilder extends
    * <code>string granter = 1 [json_name = "granter"];</code>
    * @return The granter.
    */
-  String getGranter();
+  java.lang.String getGranter();
   /**
    * <code>string granter = 1 [json_name = "granter"];</code>
    * @return The bytes for granter.
@@ -23,7 +23,7 @@ public interface MsgRevokeOrBuilder extends
    * <code>string grantee = 2 [json_name = "grantee"];</code>
    * @return The grantee.
    */
-  String getGrantee();
+  java.lang.String getGrantee();
   /**
    * <code>string grantee = 2 [json_name = "grantee"];</code>
    * @return The bytes for grantee.
@@ -35,7 +35,7 @@ public interface MsgRevokeOrBuilder extends
    * <code>string msg_type_url = 3 [json_name = "msgTypeUrl"];</code>
    * @return The msgTypeUrl.
    */
-  String getMsgTypeUrl();
+  java.lang.String getMsgTypeUrl();
   /**
    * <code>string msg_type_url = 3 [json_name = "msgTypeUrl"];</code>
    * @return The bytes for msgTypeUrl.

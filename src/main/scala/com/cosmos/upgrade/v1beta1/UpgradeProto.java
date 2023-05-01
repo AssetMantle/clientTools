@@ -42,7 +42,7 @@ public final class UpgradeProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n$cosmos/upgrade/v1beta1/upgrade.proto\022\026" +
       "cosmos.upgrade.v1beta1\032\031google/protobuf/" +
       "any.proto\032\024gogoproto/gogo.proto\032\037google/" +
@@ -81,25 +81,25 @@ public final class UpgradeProto {
     internal_static_cosmos_upgrade_v1beta1_Plan_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_Plan_descriptor,
-        new String[] { "Name", "Time", "Height", "Info", "UpgradedClientState", });
+        new java.lang.String[] { "Name", "Time", "Height", "Info", "UpgradedClientState", });
     internal_static_cosmos_upgrade_v1beta1_SoftwareUpgradeProposal_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_upgrade_v1beta1_SoftwareUpgradeProposal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_SoftwareUpgradeProposal_descriptor,
-        new String[] { "Title", "Description", "Plan", });
+        new java.lang.String[] { "Title", "Description", "Plan", });
     internal_static_cosmos_upgrade_v1beta1_CancelSoftwareUpgradeProposal_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_upgrade_v1beta1_CancelSoftwareUpgradeProposal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_CancelSoftwareUpgradeProposal_descriptor,
-        new String[] { "Title", "Description", });
+        new java.lang.String[] { "Title", "Description", });
     internal_static_cosmos_upgrade_v1beta1_ModuleVersion_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_upgrade_v1beta1_ModuleVersion_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_upgrade_v1beta1_ModuleVersion_descriptor,
-        new String[] { "Name", "Version", });
+        new java.lang.String[] { "Name", "Version", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.equal);

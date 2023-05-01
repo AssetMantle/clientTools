@@ -14,7 +14,7 @@ public interface QueryDenomsMetadataResponseOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Metadata metadatas = 1 [json_name = "metadatas", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<Metadata>
+  java.util.List<com.cosmos.bank.v1beta1.Metadata> 
       getMetadatasList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryDenomsMetadataResponseOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Metadata metadatas = 1 [json_name = "metadatas", (.gogoproto.nullable) = false];</code>
    */
-  Metadata getMetadatas(int index);
+  com.cosmos.bank.v1beta1.Metadata getMetadatas(int index);
   /**
    * <pre>
    * metadata provides the client information for all the registered tokens.
@@ -39,7 +39,7 @@ public interface QueryDenomsMetadataResponseOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Metadata metadatas = 1 [json_name = "metadatas", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends MetadataOrBuilder>
+  java.util.List<? extends com.cosmos.bank.v1beta1.MetadataOrBuilder> 
       getMetadatasOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryDenomsMetadataResponseOrBuilder extends
    *
    * <code>repeated .cosmos.bank.v1beta1.Metadata metadatas = 1 [json_name = "metadatas", (.gogoproto.nullable) = false];</code>
    */
-  MetadataOrBuilder getMetadatasOrBuilder(
+  com.cosmos.bank.v1beta1.MetadataOrBuilder getMetadatasOrBuilder(
       int index);
 
   /**

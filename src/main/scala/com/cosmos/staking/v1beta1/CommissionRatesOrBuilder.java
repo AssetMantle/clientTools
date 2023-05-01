@@ -15,7 +15,7 @@ public interface CommissionRatesOrBuilder extends
    * <code>string rate = 1 [json_name = "rate", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
    * @return The rate.
    */
-  String getRate();
+  java.lang.String getRate();
   /**
    * <pre>
    * rate is the commission rate charged to delegators, as a fraction.
@@ -35,7 +35,7 @@ public interface CommissionRatesOrBuilder extends
    * <code>string max_rate = 2 [json_name = "maxRate", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"max_rate&#92;""];</code>
    * @return The maxRate.
    */
-  String getMaxRate();
+  java.lang.String getMaxRate();
   /**
    * <pre>
    * max_rate defines the maximum commission rate which validator can ever charge, as a fraction.
@@ -55,7 +55,7 @@ public interface CommissionRatesOrBuilder extends
    * <code>string max_change_rate = 3 [json_name = "maxChangeRate", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"max_change_rate&#92;""];</code>
    * @return The maxChangeRate.
    */
-  String getMaxChangeRate();
+  java.lang.String getMaxChangeRate();
   /**
    * <pre>
    * max_change_rate defines the maximum daily increase of the validator commission, as a fraction.

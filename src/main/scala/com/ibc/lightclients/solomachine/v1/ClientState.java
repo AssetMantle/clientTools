@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
   private ClientState() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new ClientState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_ClientState_descriptor;
+    return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_ClientState_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_ClientState_fieldAccessorTable
+    return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_ClientState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            ClientState.class, Builder.class);
+            com.ibc.lightclients.solomachine.v1.ClientState.class, com.ibc.lightclients.solomachine.v1.ClientState.Builder.class);
   }
 
   public static final int SEQUENCE_FIELD_NUMBER = 1;
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 sequence = 1 [json_name = "sequence"];</code>
    * @return The sequence.
    */
-  @Override
+  @java.lang.Override
   public long getSequence() {
     return sequence_;
   }
@@ -68,18 +68,18 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 frozen_sequence = 2 [json_name = "frozenSequence", (.gogoproto.moretags) = "yaml:&#92;"frozen_sequence&#92;""];</code>
    * @return The frozenSequence.
    */
-  @Override
+  @java.lang.Override
   public long getFrozenSequence() {
     return frozenSequence_;
   }
 
   public static final int CONSENSUS_STATE_FIELD_NUMBER = 3;
-  private ConsensusState consensusState_;
+  private com.ibc.lightclients.solomachine.v1.ConsensusState consensusState_;
   /**
    * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
    * @return Whether the consensusState field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasConsensusState() {
     return consensusState_ != null;
   }
@@ -87,16 +87,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
    * @return The consensusState.
    */
-  @Override
-  public ConsensusState getConsensusState() {
-    return consensusState_ == null ? ConsensusState.getDefaultInstance() : consensusState_;
+  @java.lang.Override
+  public com.ibc.lightclients.solomachine.v1.ConsensusState getConsensusState() {
+    return consensusState_ == null ? com.ibc.lightclients.solomachine.v1.ConsensusState.getDefaultInstance() : consensusState_;
   }
   /**
    * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
    */
-  @Override
-  public ConsensusStateOrBuilder getConsensusStateOrBuilder() {
-    return consensusState_ == null ? ConsensusState.getDefaultInstance() : consensusState_;
+  @java.lang.Override
+  public com.ibc.lightclients.solomachine.v1.ConsensusStateOrBuilder getConsensusStateOrBuilder() {
+    return consensusState_ == null ? com.ibc.lightclients.solomachine.v1.ConsensusState.getDefaultInstance() : consensusState_;
   }
 
   public static final int ALLOW_UPDATE_AFTER_PROPOSAL_FIELD_NUMBER = 4;
@@ -110,13 +110,13 @@ private static final long serialVersionUID = 0L;
    * <code>bool allow_update_after_proposal = 4 [json_name = "allowUpdateAfterProposal", (.gogoproto.moretags) = "yaml:&#92;"allow_update_after_proposal&#92;""];</code>
    * @return The allowUpdateAfterProposal.
    */
-  @Override
+  @java.lang.Override
   public boolean getAllowUpdateAfterProposal() {
     return allowUpdateAfterProposal_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -126,7 +126,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (sequence_ != 0L) {
@@ -144,7 +144,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -171,15 +171,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof ClientState)) {
+    if (!(obj instanceof com.ibc.lightclients.solomachine.v1.ClientState)) {
       return super.equals(obj);
     }
-    ClientState other = (ClientState) obj;
+    com.ibc.lightclients.solomachine.v1.ClientState other = (com.ibc.lightclients.solomachine.v1.ClientState) obj;
 
     if (getSequence()
         != other.getSequence()) return false;
@@ -196,7 +196,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -221,69 +221,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ClientState parseFrom(byte[] data)
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ClientState parseFrom(java.io.InputStream input)
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ClientState parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static ClientState parseDelimitedFrom(
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.ClientState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -291,23 +291,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(ClientState prototype) {
+  public static Builder newBuilder(com.ibc.lightclients.solomachine.v1.ClientState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -322,18 +322,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.lightclients.solomachine.v1.ClientState)
-      ClientStateOrBuilder {
+      com.ibc.lightclients.solomachine.v1.ClientStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_ClientState_descriptor;
+      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_ClientState_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_ClientState_fieldAccessorTable
+      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_ClientState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ClientState.class, Builder.class);
+              com.ibc.lightclients.solomachine.v1.ClientState.class, com.ibc.lightclients.solomachine.v1.ClientState.Builder.class);
     }
 
     // Construct using com.ibc.lightclients.solomachine.v1.ClientState.newBuilder()
@@ -342,11 +342,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -361,35 +361,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_ClientState_descriptor;
+      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_ClientState_descriptor;
     }
 
-    @Override
-    public ClientState getDefaultInstanceForType() {
-      return ClientState.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.lightclients.solomachine.v1.ClientState getDefaultInstanceForType() {
+      return com.ibc.lightclients.solomachine.v1.ClientState.getDefaultInstance();
     }
 
-    @Override
-    public ClientState build() {
-      ClientState result = buildPartial();
+    @java.lang.Override
+    public com.ibc.lightclients.solomachine.v1.ClientState build() {
+      com.ibc.lightclients.solomachine.v1.ClientState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public ClientState buildPartial() {
-      ClientState result = new ClientState(this);
+    @java.lang.Override
+    public com.ibc.lightclients.solomachine.v1.ClientState buildPartial() {
+      com.ibc.lightclients.solomachine.v1.ClientState result = new com.ibc.lightclients.solomachine.v1.ClientState(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(ClientState result) {
+    private void buildPartial0(com.ibc.lightclients.solomachine.v1.ClientState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.sequence_ = sequence_;
@@ -407,50 +407,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof ClientState) {
-        return mergeFrom((ClientState)other);
+      if (other instanceof com.ibc.lightclients.solomachine.v1.ClientState) {
+        return mergeFrom((com.ibc.lightclients.solomachine.v1.ClientState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(ClientState other) {
-      if (other == ClientState.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.lightclients.solomachine.v1.ClientState other) {
+      if (other == com.ibc.lightclients.solomachine.v1.ClientState.getDefaultInstance()) return this;
       if (other.getSequence() != 0L) {
         setSequence(other.getSequence());
       }
@@ -468,18 +468,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -537,7 +537,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 sequence = 1 [json_name = "sequence"];</code>
      * @return The sequence.
      */
-    @Override
+    @java.lang.Override
     public long getSequence() {
       return sequence_;
     }
@@ -581,7 +581,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 frozen_sequence = 2 [json_name = "frozenSequence", (.gogoproto.moretags) = "yaml:&#92;"frozen_sequence&#92;""];</code>
      * @return The frozenSequence.
      */
-    @Override
+    @java.lang.Override
     public long getFrozenSequence() {
       return frozenSequence_;
     }
@@ -616,9 +616,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private ConsensusState consensusState_;
+    private com.ibc.lightclients.solomachine.v1.ConsensusState consensusState_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        ConsensusState, ConsensusState.Builder, ConsensusStateOrBuilder> consensusStateBuilder_;
+        com.ibc.lightclients.solomachine.v1.ConsensusState, com.ibc.lightclients.solomachine.v1.ConsensusState.Builder, com.ibc.lightclients.solomachine.v1.ConsensusStateOrBuilder> consensusStateBuilder_;
     /**
      * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      * @return Whether the consensusState field is set.
@@ -630,9 +630,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      * @return The consensusState.
      */
-    public ConsensusState getConsensusState() {
+    public com.ibc.lightclients.solomachine.v1.ConsensusState getConsensusState() {
       if (consensusStateBuilder_ == null) {
-        return consensusState_ == null ? ConsensusState.getDefaultInstance() : consensusState_;
+        return consensusState_ == null ? com.ibc.lightclients.solomachine.v1.ConsensusState.getDefaultInstance() : consensusState_;
       } else {
         return consensusStateBuilder_.getMessage();
       }
@@ -640,7 +640,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      */
-    public Builder setConsensusState(ConsensusState value) {
+    public Builder setConsensusState(com.ibc.lightclients.solomachine.v1.ConsensusState value) {
       if (consensusStateBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -657,7 +657,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      */
     public Builder setConsensusState(
-        ConsensusState.Builder builderForValue) {
+        com.ibc.lightclients.solomachine.v1.ConsensusState.Builder builderForValue) {
       if (consensusStateBuilder_ == null) {
         consensusState_ = builderForValue.build();
       } else {
@@ -670,11 +670,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      */
-    public Builder mergeConsensusState(ConsensusState value) {
+    public Builder mergeConsensusState(com.ibc.lightclients.solomachine.v1.ConsensusState value) {
       if (consensusStateBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0) &&
           consensusState_ != null &&
-          consensusState_ != ConsensusState.getDefaultInstance()) {
+          consensusState_ != com.ibc.lightclients.solomachine.v1.ConsensusState.getDefaultInstance()) {
           getConsensusStateBuilder().mergeFrom(value);
         } else {
           consensusState_ = value;
@@ -702,7 +702,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      */
-    public ConsensusState.Builder getConsensusStateBuilder() {
+    public com.ibc.lightclients.solomachine.v1.ConsensusState.Builder getConsensusStateBuilder() {
       bitField0_ |= 0x00000004;
       onChanged();
       return getConsensusStateFieldBuilder().getBuilder();
@@ -710,23 +710,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      */
-    public ConsensusStateOrBuilder getConsensusStateOrBuilder() {
+    public com.ibc.lightclients.solomachine.v1.ConsensusStateOrBuilder getConsensusStateOrBuilder() {
       if (consensusStateBuilder_ != null) {
         return consensusStateBuilder_.getMessageOrBuilder();
       } else {
         return consensusState_ == null ?
-            ConsensusState.getDefaultInstance() : consensusState_;
+            com.ibc.lightclients.solomachine.v1.ConsensusState.getDefaultInstance() : consensusState_;
       }
     }
     /**
      * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ConsensusState, ConsensusState.Builder, ConsensusStateOrBuilder>
+        com.ibc.lightclients.solomachine.v1.ConsensusState, com.ibc.lightclients.solomachine.v1.ConsensusState.Builder, com.ibc.lightclients.solomachine.v1.ConsensusStateOrBuilder> 
         getConsensusStateFieldBuilder() {
       if (consensusStateBuilder_ == null) {
         consensusStateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ConsensusState, ConsensusState.Builder, ConsensusStateOrBuilder>(
+            com.ibc.lightclients.solomachine.v1.ConsensusState, com.ibc.lightclients.solomachine.v1.ConsensusState.Builder, com.ibc.lightclients.solomachine.v1.ConsensusStateOrBuilder>(
                 getConsensusState(),
                 getParentForChildren(),
                 isClean());
@@ -745,7 +745,7 @@ private static final long serialVersionUID = 0L;
      * <code>bool allow_update_after_proposal = 4 [json_name = "allowUpdateAfterProposal", (.gogoproto.moretags) = "yaml:&#92;"allow_update_after_proposal&#92;""];</code>
      * @return The allowUpdateAfterProposal.
      */
-    @Override
+    @java.lang.Override
     public boolean getAllowUpdateAfterProposal() {
       return allowUpdateAfterProposal_;
     }
@@ -781,13 +781,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -798,18 +798,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.lightclients.solomachine.v1.ClientState)
-  private static final ClientState DEFAULT_INSTANCE;
+  private static final com.ibc.lightclients.solomachine.v1.ClientState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new ClientState();
+    DEFAULT_INSTANCE = new com.ibc.lightclients.solomachine.v1.ClientState();
   }
 
-  public static ClientState getDefaultInstance() {
+  public static com.ibc.lightclients.solomachine.v1.ClientState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ClientState>
       PARSER = new com.google.protobuf.AbstractParser<ClientState>() {
-    @Override
+    @java.lang.Override
     public ClientState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -833,13 +833,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<ClientState> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public ClientState getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.lightclients.solomachine.v1.ClientState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -11,7 +11,7 @@ public interface DominoOpOrBuilder extends
    * <code>string key = 1 [json_name = "key"];</code>
    * @return The key.
    */
-  String getKey();
+  java.lang.String getKey();
   /**
    * <code>string key = 1 [json_name = "key"];</code>
    * @return The bytes for key.
@@ -23,7 +23,7 @@ public interface DominoOpOrBuilder extends
    * <code>string input = 2 [json_name = "input"];</code>
    * @return The input.
    */
-  String getInput();
+  java.lang.String getInput();
   /**
    * <code>string input = 2 [json_name = "input"];</code>
    * @return The bytes for input.
@@ -35,7 +35,7 @@ public interface DominoOpOrBuilder extends
    * <code>string output = 3 [json_name = "output"];</code>
    * @return The output.
    */
-  String getOutput();
+  java.lang.String getOutput();
   /**
    * <code>string output = 3 [json_name = "output"];</code>
    * @return The bytes for output.

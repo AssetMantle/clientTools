@@ -25,29 +25,29 @@ private static final long serialVersionUID = 0L;
     total_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryDelegationTotalRewardsResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegationTotalRewardsResponse_descriptor;
+    return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegationTotalRewardsResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegationTotalRewardsResponse_fieldAccessorTable
+    return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegationTotalRewardsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryDelegationTotalRewardsResponse.class, Builder.class);
+            com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse.class, com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse.Builder.class);
   }
 
   public static final int REWARDS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<DelegationDelegatorReward> rewards_;
+  private java.util.List<com.cosmos.distribution.v1beta1.DelegationDelegatorReward> rewards_;
   /**
    * <pre>
    * rewards defines all the rewards accrued by a delegator.
@@ -55,8 +55,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<DelegationDelegatorReward> getRewardsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.distribution.v1beta1.DelegationDelegatorReward> getRewardsList() {
     return rewards_;
   }
   /**
@@ -66,8 +66,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends DelegationDelegatorRewardOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.distribution.v1beta1.DelegationDelegatorRewardOrBuilder> 
       getRewardsOrBuilderList() {
     return rewards_;
   }
@@ -78,7 +78,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getRewardsCount() {
     return rewards_.size();
   }
@@ -89,8 +89,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public DelegationDelegatorReward getRewards(int index) {
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.DelegationDelegatorReward getRewards(int index) {
     return rewards_.get(index);
   }
   /**
@@ -100,8 +100,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public DelegationDelegatorRewardOrBuilder getRewardsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.DelegationDelegatorRewardOrBuilder getRewardsOrBuilder(
       int index) {
     return rewards_.get(index);
   }
@@ -116,7 +116,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin total = 2 [json_name = "total", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<com.cosmos.base.v1beta1.DecCoin> getTotalList() {
     return total_;
   }
@@ -127,7 +127,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin total = 2 [json_name = "total", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<? extends com.cosmos.base.v1beta1.DecCoinOrBuilder> 
       getTotalOrBuilderList() {
     return total_;
@@ -139,7 +139,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin total = 2 [json_name = "total", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getTotalCount() {
     return total_.size();
   }
@@ -150,7 +150,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin total = 2 [json_name = "total", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.DecCoin getTotal(int index) {
     return total_.get(index);
   }
@@ -161,14 +161,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.DecCoin total = 2 [json_name = "total", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.DecCoinOrBuilder getTotalOrBuilder(
       int index) {
     return total_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -178,7 +178,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < rewards_.size(); i++) {
@@ -190,7 +190,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -209,15 +209,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryDelegationTotalRewardsResponse)) {
+    if (!(obj instanceof com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse)) {
       return super.equals(obj);
     }
-    QueryDelegationTotalRewardsResponse other = (QueryDelegationTotalRewardsResponse) obj;
+    com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse other = (com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse) obj;
 
     if (!getRewardsList()
         .equals(other.getRewardsList())) return false;
@@ -227,7 +227,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -247,69 +247,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryDelegationTotalRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDelegationTotalRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDelegationTotalRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDelegationTotalRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDelegationTotalRewardsResponse parseFrom(byte[] data)
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDelegationTotalRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDelegationTotalRewardsResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryDelegationTotalRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryDelegationTotalRewardsResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryDelegationTotalRewardsResponse parseDelimitedFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryDelegationTotalRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryDelegationTotalRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -317,23 +317,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryDelegationTotalRewardsResponse prototype) {
+  public static Builder newBuilder(com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -348,18 +348,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse)
-      QueryDelegationTotalRewardsResponseOrBuilder {
+      com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegationTotalRewardsResponse_descriptor;
+      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegationTotalRewardsResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegationTotalRewardsResponse_fieldAccessorTable
+      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegationTotalRewardsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryDelegationTotalRewardsResponse.class, Builder.class);
+              com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse.class, com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse.Builder.class);
     }
 
     // Construct using com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse.newBuilder()
@@ -368,11 +368,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -393,36 +393,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegationTotalRewardsResponse_descriptor;
+      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegationTotalRewardsResponse_descriptor;
     }
 
-    @Override
-    public QueryDelegationTotalRewardsResponse getDefaultInstanceForType() {
-      return QueryDelegationTotalRewardsResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse getDefaultInstanceForType() {
+      return com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryDelegationTotalRewardsResponse build() {
-      QueryDelegationTotalRewardsResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse build() {
+      com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryDelegationTotalRewardsResponse buildPartial() {
-      QueryDelegationTotalRewardsResponse result = new QueryDelegationTotalRewardsResponse(this);
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse buildPartial() {
+      com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse result = new com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(QueryDelegationTotalRewardsResponse result) {
+    private void buildPartialRepeatedFields(com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse result) {
       if (rewardsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           rewards_ = java.util.Collections.unmodifiableList(rewards_);
@@ -443,54 +443,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(QueryDelegationTotalRewardsResponse result) {
+    private void buildPartial0(com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryDelegationTotalRewardsResponse) {
-        return mergeFrom((QueryDelegationTotalRewardsResponse)other);
+      if (other instanceof com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse) {
+        return mergeFrom((com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryDelegationTotalRewardsResponse other) {
-      if (other == QueryDelegationTotalRewardsResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse other) {
+      if (other == com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse.getDefaultInstance()) return this;
       if (rewardsBuilder_ == null) {
         if (!other.rewards_.isEmpty()) {
           if (rewards_.isEmpty()) {
@@ -548,18 +548,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -570,9 +570,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              DelegationDelegatorReward m =
+              com.cosmos.distribution.v1beta1.DelegationDelegatorReward m =
                   input.readMessage(
-                      DelegationDelegatorReward.parser(),
+                      com.cosmos.distribution.v1beta1.DelegationDelegatorReward.parser(),
                       extensionRegistry);
               if (rewardsBuilder_ == null) {
                 ensureRewardsIsMutable();
@@ -612,17 +612,17 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<DelegationDelegatorReward> rewards_ =
+    private java.util.List<com.cosmos.distribution.v1beta1.DelegationDelegatorReward> rewards_ =
       java.util.Collections.emptyList();
     private void ensureRewardsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        rewards_ = new java.util.ArrayList<DelegationDelegatorReward>(rewards_);
+        rewards_ = new java.util.ArrayList<com.cosmos.distribution.v1beta1.DelegationDelegatorReward>(rewards_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        DelegationDelegatorReward, DelegationDelegatorReward.Builder, DelegationDelegatorRewardOrBuilder> rewardsBuilder_;
+        com.cosmos.distribution.v1beta1.DelegationDelegatorReward, com.cosmos.distribution.v1beta1.DelegationDelegatorReward.Builder, com.cosmos.distribution.v1beta1.DelegationDelegatorRewardOrBuilder> rewardsBuilder_;
 
     /**
      * <pre>
@@ -631,7 +631,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<DelegationDelegatorReward> getRewardsList() {
+    public java.util.List<com.cosmos.distribution.v1beta1.DelegationDelegatorReward> getRewardsList() {
       if (rewardsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(rewards_);
       } else {
@@ -659,7 +659,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public DelegationDelegatorReward getRewards(int index) {
+    public com.cosmos.distribution.v1beta1.DelegationDelegatorReward getRewards(int index) {
       if (rewardsBuilder_ == null) {
         return rewards_.get(index);
       } else {
@@ -674,7 +674,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
     public Builder setRewards(
-        int index, DelegationDelegatorReward value) {
+        int index, com.cosmos.distribution.v1beta1.DelegationDelegatorReward value) {
       if (rewardsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -695,7 +695,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
     public Builder setRewards(
-        int index, DelegationDelegatorReward.Builder builderForValue) {
+        int index, com.cosmos.distribution.v1beta1.DelegationDelegatorReward.Builder builderForValue) {
       if (rewardsBuilder_ == null) {
         ensureRewardsIsMutable();
         rewards_.set(index, builderForValue.build());
@@ -712,7 +712,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addRewards(DelegationDelegatorReward value) {
+    public Builder addRewards(com.cosmos.distribution.v1beta1.DelegationDelegatorReward value) {
       if (rewardsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -733,7 +733,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
     public Builder addRewards(
-        int index, DelegationDelegatorReward value) {
+        int index, com.cosmos.distribution.v1beta1.DelegationDelegatorReward value) {
       if (rewardsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -754,7 +754,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
     public Builder addRewards(
-        DelegationDelegatorReward.Builder builderForValue) {
+        com.cosmos.distribution.v1beta1.DelegationDelegatorReward.Builder builderForValue) {
       if (rewardsBuilder_ == null) {
         ensureRewardsIsMutable();
         rewards_.add(builderForValue.build());
@@ -772,7 +772,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
     public Builder addRewards(
-        int index, DelegationDelegatorReward.Builder builderForValue) {
+        int index, com.cosmos.distribution.v1beta1.DelegationDelegatorReward.Builder builderForValue) {
       if (rewardsBuilder_ == null) {
         ensureRewardsIsMutable();
         rewards_.add(index, builderForValue.build());
@@ -790,7 +790,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllRewards(
-        Iterable<? extends DelegationDelegatorReward> values) {
+        java.lang.Iterable<? extends com.cosmos.distribution.v1beta1.DelegationDelegatorReward> values) {
       if (rewardsBuilder_ == null) {
         ensureRewardsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -842,7 +842,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public DelegationDelegatorReward.Builder getRewardsBuilder(
+    public com.cosmos.distribution.v1beta1.DelegationDelegatorReward.Builder getRewardsBuilder(
         int index) {
       return getRewardsFieldBuilder().getBuilder(index);
     }
@@ -853,7 +853,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public DelegationDelegatorRewardOrBuilder getRewardsOrBuilder(
+    public com.cosmos.distribution.v1beta1.DelegationDelegatorRewardOrBuilder getRewardsOrBuilder(
         int index) {
       if (rewardsBuilder_ == null) {
         return rewards_.get(index);  } else {
@@ -867,7 +867,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends DelegationDelegatorRewardOrBuilder>
+    public java.util.List<? extends com.cosmos.distribution.v1beta1.DelegationDelegatorRewardOrBuilder> 
          getRewardsOrBuilderList() {
       if (rewardsBuilder_ != null) {
         return rewardsBuilder_.getMessageOrBuilderList();
@@ -882,9 +882,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public DelegationDelegatorReward.Builder addRewardsBuilder() {
+    public com.cosmos.distribution.v1beta1.DelegationDelegatorReward.Builder addRewardsBuilder() {
       return getRewardsFieldBuilder().addBuilder(
-          DelegationDelegatorReward.getDefaultInstance());
+          com.cosmos.distribution.v1beta1.DelegationDelegatorReward.getDefaultInstance());
     }
     /**
      * <pre>
@@ -893,10 +893,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public DelegationDelegatorReward.Builder addRewardsBuilder(
+    public com.cosmos.distribution.v1beta1.DelegationDelegatorReward.Builder addRewardsBuilder(
         int index) {
       return getRewardsFieldBuilder().addBuilder(
-          index, DelegationDelegatorReward.getDefaultInstance());
+          index, com.cosmos.distribution.v1beta1.DelegationDelegatorReward.getDefaultInstance());
     }
     /**
      * <pre>
@@ -905,16 +905,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.distribution.v1beta1.DelegationDelegatorReward rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<DelegationDelegatorReward.Builder>
+    public java.util.List<com.cosmos.distribution.v1beta1.DelegationDelegatorReward.Builder> 
          getRewardsBuilderList() {
       return getRewardsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        DelegationDelegatorReward, DelegationDelegatorReward.Builder, DelegationDelegatorRewardOrBuilder>
+        com.cosmos.distribution.v1beta1.DelegationDelegatorReward, com.cosmos.distribution.v1beta1.DelegationDelegatorReward.Builder, com.cosmos.distribution.v1beta1.DelegationDelegatorRewardOrBuilder> 
         getRewardsFieldBuilder() {
       if (rewardsBuilder_ == null) {
         rewardsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            DelegationDelegatorReward, DelegationDelegatorReward.Builder, DelegationDelegatorRewardOrBuilder>(
+            com.cosmos.distribution.v1beta1.DelegationDelegatorReward, com.cosmos.distribution.v1beta1.DelegationDelegatorReward.Builder, com.cosmos.distribution.v1beta1.DelegationDelegatorRewardOrBuilder>(
                 rewards_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -1102,7 +1102,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.v1beta1.DecCoin total = 2 [json_name = "total", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"];</code>
      */
     public Builder addAllTotal(
-        Iterable<? extends com.cosmos.base.v1beta1.DecCoin> values) {
+        java.lang.Iterable<? extends com.cosmos.base.v1beta1.DecCoin> values) {
       if (totalBuilder_ == null) {
         ensureTotalIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1235,13 +1235,13 @@ private static final long serialVersionUID = 0L;
       }
       return totalBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1252,18 +1252,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse)
-  private static final QueryDelegationTotalRewardsResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryDelegationTotalRewardsResponse();
+    DEFAULT_INSTANCE = new com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse();
   }
 
-  public static QueryDelegationTotalRewardsResponse getDefaultInstance() {
+  public static com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryDelegationTotalRewardsResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryDelegationTotalRewardsResponse>() {
-    @Override
+    @java.lang.Override
     public QueryDelegationTotalRewardsResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1287,13 +1287,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryDelegationTotalRewardsResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryDelegationTotalRewardsResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

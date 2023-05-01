@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     events_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new ABCIMessageLog();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return AbciProto.internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_descriptor;
+    return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return AbciProto.internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_fieldAccessorTable
+    return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            ABCIMessageLog.class, Builder.class);
+            com.cosmos.base.abci.v1beta1.ABCIMessageLog.class, com.cosmos.base.abci.v1beta1.ABCIMessageLog.Builder.class);
   }
 
   public static final int MSG_INDEX_FIELD_NUMBER = 1;
@@ -50,27 +50,27 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 msg_index = 1 [json_name = "msgIndex"];</code>
    * @return The msgIndex.
    */
-  @Override
+  @java.lang.Override
   public int getMsgIndex() {
     return msgIndex_;
   }
 
   public static final int LOG_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile Object log_ = "";
+  private volatile java.lang.Object log_ = "";
   /**
    * <code>string log = 2 [json_name = "log"];</code>
    * @return The log.
    */
-  @Override
-  public String getLog() {
-    Object ref = log_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getLog() {
+    java.lang.Object ref = log_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       log_ = s;
       return s;
     }
@@ -79,14 +79,14 @@ private static final long serialVersionUID = 0L;
    * <code>string log = 2 [json_name = "log"];</code>
    * @return The bytes for log.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getLogBytes() {
-    Object ref = log_;
-    if (ref instanceof String) {
+    java.lang.Object ref = log_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       log_ = b;
       return b;
     } else {
@@ -96,7 +96,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int EVENTS_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private java.util.List<StringEvent> events_;
+  private java.util.List<com.cosmos.base.abci.v1beta1.StringEvent> events_;
   /**
    * <pre>
    * Events contains a slice of Event objects that were emitted during some
@@ -105,8 +105,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
    */
-  @Override
-  public java.util.List<StringEvent> getEventsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.base.abci.v1beta1.StringEvent> getEventsList() {
     return events_;
   }
   /**
@@ -117,8 +117,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
    */
-  @Override
-  public java.util.List<? extends StringEventOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.base.abci.v1beta1.StringEventOrBuilder> 
       getEventsOrBuilderList() {
     return events_;
   }
@@ -130,7 +130,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getEventsCount() {
     return events_.size();
   }
@@ -142,8 +142,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
    */
-  @Override
-  public StringEvent getEvents(int index) {
+  @java.lang.Override
+  public com.cosmos.base.abci.v1beta1.StringEvent getEvents(int index) {
     return events_.get(index);
   }
   /**
@@ -154,14 +154,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
    */
-  @Override
-  public StringEventOrBuilder getEventsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.base.abci.v1beta1.StringEventOrBuilder getEventsOrBuilder(
       int index) {
     return events_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -171,7 +171,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (msgIndex_ != 0) {
@@ -186,7 +186,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -208,15 +208,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof ABCIMessageLog)) {
+    if (!(obj instanceof com.cosmos.base.abci.v1beta1.ABCIMessageLog)) {
       return super.equals(obj);
     }
-    ABCIMessageLog other = (ABCIMessageLog) obj;
+    com.cosmos.base.abci.v1beta1.ABCIMessageLog other = (com.cosmos.base.abci.v1beta1.ABCIMessageLog) obj;
 
     if (getMsgIndex()
         != other.getMsgIndex()) return false;
@@ -228,7 +228,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -248,69 +248,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static ABCIMessageLog parseFrom(
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ABCIMessageLog parseFrom(
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ABCIMessageLog parseFrom(
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ABCIMessageLog parseFrom(
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ABCIMessageLog parseFrom(byte[] data)
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ABCIMessageLog parseFrom(
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ABCIMessageLog parseFrom(java.io.InputStream input)
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ABCIMessageLog parseFrom(
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ABCIMessageLog parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static ABCIMessageLog parseDelimitedFrom(
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ABCIMessageLog parseFrom(
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ABCIMessageLog parseFrom(
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -318,23 +318,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(ABCIMessageLog prototype) {
+  public static Builder newBuilder(com.cosmos.base.abci.v1beta1.ABCIMessageLog prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -348,18 +348,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.abci.v1beta1.ABCIMessageLog)
-      ABCIMessageLogOrBuilder {
+      com.cosmos.base.abci.v1beta1.ABCIMessageLogOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return AbciProto.internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_descriptor;
+      return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return AbciProto.internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_fieldAccessorTable
+      return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ABCIMessageLog.class, Builder.class);
+              com.cosmos.base.abci.v1beta1.ABCIMessageLog.class, com.cosmos.base.abci.v1beta1.ABCIMessageLog.Builder.class);
     }
 
     // Construct using com.cosmos.base.abci.v1beta1.ABCIMessageLog.newBuilder()
@@ -368,11 +368,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -388,36 +388,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return AbciProto.internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_descriptor;
+      return com.cosmos.base.abci.v1beta1.AbciProto.internal_static_cosmos_base_abci_v1beta1_ABCIMessageLog_descriptor;
     }
 
-    @Override
-    public ABCIMessageLog getDefaultInstanceForType() {
-      return ABCIMessageLog.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.base.abci.v1beta1.ABCIMessageLog getDefaultInstanceForType() {
+      return com.cosmos.base.abci.v1beta1.ABCIMessageLog.getDefaultInstance();
     }
 
-    @Override
-    public ABCIMessageLog build() {
-      ABCIMessageLog result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.base.abci.v1beta1.ABCIMessageLog build() {
+      com.cosmos.base.abci.v1beta1.ABCIMessageLog result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public ABCIMessageLog buildPartial() {
-      ABCIMessageLog result = new ABCIMessageLog(this);
+    @java.lang.Override
+    public com.cosmos.base.abci.v1beta1.ABCIMessageLog buildPartial() {
+      com.cosmos.base.abci.v1beta1.ABCIMessageLog result = new com.cosmos.base.abci.v1beta1.ABCIMessageLog(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(ABCIMessageLog result) {
+    private void buildPartialRepeatedFields(com.cosmos.base.abci.v1beta1.ABCIMessageLog result) {
       if (eventsBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0)) {
           events_ = java.util.Collections.unmodifiableList(events_);
@@ -429,7 +429,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(ABCIMessageLog result) {
+    private void buildPartial0(com.cosmos.base.abci.v1beta1.ABCIMessageLog result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.msgIndex_ = msgIndex_;
@@ -439,50 +439,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof ABCIMessageLog) {
-        return mergeFrom((ABCIMessageLog)other);
+      if (other instanceof com.cosmos.base.abci.v1beta1.ABCIMessageLog) {
+        return mergeFrom((com.cosmos.base.abci.v1beta1.ABCIMessageLog)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(ABCIMessageLog other) {
-      if (other == ABCIMessageLog.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.base.abci.v1beta1.ABCIMessageLog other) {
+      if (other == com.cosmos.base.abci.v1beta1.ABCIMessageLog.getDefaultInstance()) return this;
       if (other.getMsgIndex() != 0) {
         setMsgIndex(other.getMsgIndex());
       }
@@ -522,18 +522,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -554,9 +554,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 18
             case 26: {
-              StringEvent m =
+              com.cosmos.base.abci.v1beta1.StringEvent m =
                   input.readMessage(
-                      StringEvent.parser(),
+                      com.cosmos.base.abci.v1beta1.StringEvent.parser(),
                       extensionRegistry);
               if (eventsBuilder_ == null) {
                 ensureEventsIsMutable();
@@ -588,7 +588,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 msg_index = 1 [json_name = "msgIndex"];</code>
      * @return The msgIndex.
      */
-    @Override
+    @java.lang.Override
     public int getMsgIndex() {
       return msgIndex_;
     }
@@ -615,21 +615,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object log_ = "";
+    private java.lang.Object log_ = "";
     /**
      * <code>string log = 2 [json_name = "log"];</code>
      * @return The log.
      */
-    public String getLog() {
-      Object ref = log_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getLog() {
+      java.lang.Object ref = log_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         log_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -638,11 +638,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getLogBytes() {
-      Object ref = log_;
+      java.lang.Object ref = log_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         log_ = b;
         return b;
       } else {
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setLog(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       log_ = value;
       bitField0_ |= 0x00000002;
@@ -687,17 +687,17 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<StringEvent> events_ =
+    private java.util.List<com.cosmos.base.abci.v1beta1.StringEvent> events_ =
       java.util.Collections.emptyList();
     private void ensureEventsIsMutable() {
       if (!((bitField0_ & 0x00000004) != 0)) {
-        events_ = new java.util.ArrayList<StringEvent>(events_);
+        events_ = new java.util.ArrayList<com.cosmos.base.abci.v1beta1.StringEvent>(events_);
         bitField0_ |= 0x00000004;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        StringEvent, StringEvent.Builder, StringEventOrBuilder> eventsBuilder_;
+        com.cosmos.base.abci.v1beta1.StringEvent, com.cosmos.base.abci.v1beta1.StringEvent.Builder, com.cosmos.base.abci.v1beta1.StringEventOrBuilder> eventsBuilder_;
 
     /**
      * <pre>
@@ -707,7 +707,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
-    public java.util.List<StringEvent> getEventsList() {
+    public java.util.List<com.cosmos.base.abci.v1beta1.StringEvent> getEventsList() {
       if (eventsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(events_);
       } else {
@@ -737,7 +737,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
-    public StringEvent getEvents(int index) {
+    public com.cosmos.base.abci.v1beta1.StringEvent getEvents(int index) {
       if (eventsBuilder_ == null) {
         return events_.get(index);
       } else {
@@ -753,7 +753,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
     public Builder setEvents(
-        int index, StringEvent value) {
+        int index, com.cosmos.base.abci.v1beta1.StringEvent value) {
       if (eventsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -775,7 +775,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
     public Builder setEvents(
-        int index, StringEvent.Builder builderForValue) {
+        int index, com.cosmos.base.abci.v1beta1.StringEvent.Builder builderForValue) {
       if (eventsBuilder_ == null) {
         ensureEventsIsMutable();
         events_.set(index, builderForValue.build());
@@ -793,7 +793,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
-    public Builder addEvents(StringEvent value) {
+    public Builder addEvents(com.cosmos.base.abci.v1beta1.StringEvent value) {
       if (eventsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -815,7 +815,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
     public Builder addEvents(
-        int index, StringEvent value) {
+        int index, com.cosmos.base.abci.v1beta1.StringEvent value) {
       if (eventsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -837,7 +837,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
     public Builder addEvents(
-        StringEvent.Builder builderForValue) {
+        com.cosmos.base.abci.v1beta1.StringEvent.Builder builderForValue) {
       if (eventsBuilder_ == null) {
         ensureEventsIsMutable();
         events_.add(builderForValue.build());
@@ -856,7 +856,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
     public Builder addEvents(
-        int index, StringEvent.Builder builderForValue) {
+        int index, com.cosmos.base.abci.v1beta1.StringEvent.Builder builderForValue) {
       if (eventsBuilder_ == null) {
         ensureEventsIsMutable();
         events_.add(index, builderForValue.build());
@@ -875,7 +875,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
     public Builder addAllEvents(
-        Iterable<? extends StringEvent> values) {
+        java.lang.Iterable<? extends com.cosmos.base.abci.v1beta1.StringEvent> values) {
       if (eventsBuilder_ == null) {
         ensureEventsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -930,7 +930,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
-    public StringEvent.Builder getEventsBuilder(
+    public com.cosmos.base.abci.v1beta1.StringEvent.Builder getEventsBuilder(
         int index) {
       return getEventsFieldBuilder().getBuilder(index);
     }
@@ -942,7 +942,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
-    public StringEventOrBuilder getEventsOrBuilder(
+    public com.cosmos.base.abci.v1beta1.StringEventOrBuilder getEventsOrBuilder(
         int index) {
       if (eventsBuilder_ == null) {
         return events_.get(index);  } else {
@@ -957,7 +957,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
-    public java.util.List<? extends StringEventOrBuilder>
+    public java.util.List<? extends com.cosmos.base.abci.v1beta1.StringEventOrBuilder> 
          getEventsOrBuilderList() {
       if (eventsBuilder_ != null) {
         return eventsBuilder_.getMessageOrBuilderList();
@@ -973,9 +973,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
-    public StringEvent.Builder addEventsBuilder() {
+    public com.cosmos.base.abci.v1beta1.StringEvent.Builder addEventsBuilder() {
       return getEventsFieldBuilder().addBuilder(
-          StringEvent.getDefaultInstance());
+          com.cosmos.base.abci.v1beta1.StringEvent.getDefaultInstance());
     }
     /**
      * <pre>
@@ -985,10 +985,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
-    public StringEvent.Builder addEventsBuilder(
+    public com.cosmos.base.abci.v1beta1.StringEvent.Builder addEventsBuilder(
         int index) {
       return getEventsFieldBuilder().addBuilder(
-          index, StringEvent.getDefaultInstance());
+          index, com.cosmos.base.abci.v1beta1.StringEvent.getDefaultInstance());
     }
     /**
      * <pre>
@@ -998,16 +998,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
      */
-    public java.util.List<StringEvent.Builder>
+    public java.util.List<com.cosmos.base.abci.v1beta1.StringEvent.Builder> 
          getEventsBuilderList() {
       return getEventsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        StringEvent, StringEvent.Builder, StringEventOrBuilder>
+        com.cosmos.base.abci.v1beta1.StringEvent, com.cosmos.base.abci.v1beta1.StringEvent.Builder, com.cosmos.base.abci.v1beta1.StringEventOrBuilder> 
         getEventsFieldBuilder() {
       if (eventsBuilder_ == null) {
         eventsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            StringEvent, StringEvent.Builder, StringEventOrBuilder>(
+            com.cosmos.base.abci.v1beta1.StringEvent, com.cosmos.base.abci.v1beta1.StringEvent.Builder, com.cosmos.base.abci.v1beta1.StringEventOrBuilder>(
                 events_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
@@ -1016,13 +1016,13 @@ private static final long serialVersionUID = 0L;
       }
       return eventsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1033,18 +1033,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.abci.v1beta1.ABCIMessageLog)
-  private static final ABCIMessageLog DEFAULT_INSTANCE;
+  private static final com.cosmos.base.abci.v1beta1.ABCIMessageLog DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new ABCIMessageLog();
+    DEFAULT_INSTANCE = new com.cosmos.base.abci.v1beta1.ABCIMessageLog();
   }
 
-  public static ABCIMessageLog getDefaultInstance() {
+  public static com.cosmos.base.abci.v1beta1.ABCIMessageLog getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ABCIMessageLog>
       PARSER = new com.google.protobuf.AbstractParser<ABCIMessageLog>() {
-    @Override
+    @java.lang.Override
     public ABCIMessageLog parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1068,13 +1068,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<ABCIMessageLog> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public ABCIMessageLog getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.base.abci.v1beta1.ABCIMessageLog getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

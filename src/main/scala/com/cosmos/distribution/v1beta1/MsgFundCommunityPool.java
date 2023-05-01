@@ -25,24 +25,24 @@ private static final long serialVersionUID = 0L;
     depositor_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgFundCommunityPool();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TxProto.internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_descriptor;
+    return com.cosmos.distribution.v1beta1.TxProto.internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TxProto.internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_fieldAccessorTable
+    return com.cosmos.distribution.v1beta1.TxProto.internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            MsgFundCommunityPool.class, Builder.class);
+            com.cosmos.distribution.v1beta1.MsgFundCommunityPool.class, com.cosmos.distribution.v1beta1.MsgFundCommunityPool.Builder.class);
   }
 
   public static final int AMOUNT_FIELD_NUMBER = 1;
@@ -51,14 +51,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin amount = 1 [json_name = "amount", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<com.cosmos.base.v1beta1.Coin> getAmountList() {
     return amount_;
   }
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin amount = 1 [json_name = "amount", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<? extends com.cosmos.base.v1beta1.CoinOrBuilder> 
       getAmountOrBuilderList() {
     return amount_;
@@ -66,21 +66,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin amount = 1 [json_name = "amount", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getAmountCount() {
     return amount_.size();
   }
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin amount = 1 [json_name = "amount", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.Coin getAmount(int index) {
     return amount_.get(index);
   }
   /**
    * <code>repeated .cosmos.base.v1beta1.Coin amount = 1 [json_name = "amount", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.CoinOrBuilder getAmountOrBuilder(
       int index) {
     return amount_.get(index);
@@ -88,20 +88,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int DEPOSITOR_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile Object depositor_ = "";
+  private volatile java.lang.Object depositor_ = "";
   /**
    * <code>string depositor = 2 [json_name = "depositor"];</code>
    * @return The depositor.
    */
-  @Override
-  public String getDepositor() {
-    Object ref = depositor_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getDepositor() {
+    java.lang.Object ref = depositor_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       depositor_ = s;
       return s;
     }
@@ -110,14 +110,14 @@ private static final long serialVersionUID = 0L;
    * <code>string depositor = 2 [json_name = "depositor"];</code>
    * @return The bytes for depositor.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDepositorBytes() {
-    Object ref = depositor_;
-    if (ref instanceof String) {
+    java.lang.Object ref = depositor_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       depositor_ = b;
       return b;
     } else {
@@ -126,7 +126,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -136,7 +136,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < amount_.size(); i++) {
@@ -148,7 +148,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -166,15 +166,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof MsgFundCommunityPool)) {
+    if (!(obj instanceof com.cosmos.distribution.v1beta1.MsgFundCommunityPool)) {
       return super.equals(obj);
     }
-    MsgFundCommunityPool other = (MsgFundCommunityPool) obj;
+    com.cosmos.distribution.v1beta1.MsgFundCommunityPool other = (com.cosmos.distribution.v1beta1.MsgFundCommunityPool) obj;
 
     if (!getAmountList()
         .equals(other.getAmountList())) return false;
@@ -184,7 +184,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -202,69 +202,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static MsgFundCommunityPool parseFrom(
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgFundCommunityPool parseFrom(
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgFundCommunityPool parseFrom(
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgFundCommunityPool parseFrom(
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgFundCommunityPool parseFrom(byte[] data)
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgFundCommunityPool parseFrom(
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgFundCommunityPool parseFrom(java.io.InputStream input)
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgFundCommunityPool parseFrom(
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgFundCommunityPool parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static MsgFundCommunityPool parseDelimitedFrom(
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgFundCommunityPool parseFrom(
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgFundCommunityPool parseFrom(
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -272,23 +272,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(MsgFundCommunityPool prototype) {
+  public static Builder newBuilder(com.cosmos.distribution.v1beta1.MsgFundCommunityPool prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -303,18 +303,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.distribution.v1beta1.MsgFundCommunityPool)
-      MsgFundCommunityPoolOrBuilder {
+      com.cosmos.distribution.v1beta1.MsgFundCommunityPoolOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_descriptor;
+      return com.cosmos.distribution.v1beta1.TxProto.internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_fieldAccessorTable
+      return com.cosmos.distribution.v1beta1.TxProto.internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MsgFundCommunityPool.class, Builder.class);
+              com.cosmos.distribution.v1beta1.MsgFundCommunityPool.class, com.cosmos.distribution.v1beta1.MsgFundCommunityPool.Builder.class);
     }
 
     // Construct using com.cosmos.distribution.v1beta1.MsgFundCommunityPool.newBuilder()
@@ -323,11 +323,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -342,36 +342,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TxProto.internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_descriptor;
+      return com.cosmos.distribution.v1beta1.TxProto.internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_descriptor;
     }
 
-    @Override
-    public MsgFundCommunityPool getDefaultInstanceForType() {
-      return MsgFundCommunityPool.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.MsgFundCommunityPool getDefaultInstanceForType() {
+      return com.cosmos.distribution.v1beta1.MsgFundCommunityPool.getDefaultInstance();
     }
 
-    @Override
-    public MsgFundCommunityPool build() {
-      MsgFundCommunityPool result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.MsgFundCommunityPool build() {
+      com.cosmos.distribution.v1beta1.MsgFundCommunityPool result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public MsgFundCommunityPool buildPartial() {
-      MsgFundCommunityPool result = new MsgFundCommunityPool(this);
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.MsgFundCommunityPool buildPartial() {
+      com.cosmos.distribution.v1beta1.MsgFundCommunityPool result = new com.cosmos.distribution.v1beta1.MsgFundCommunityPool(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(MsgFundCommunityPool result) {
+    private void buildPartialRepeatedFields(com.cosmos.distribution.v1beta1.MsgFundCommunityPool result) {
       if (amountBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           amount_ = java.util.Collections.unmodifiableList(amount_);
@@ -383,57 +383,57 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(MsgFundCommunityPool result) {
+    private void buildPartial0(com.cosmos.distribution.v1beta1.MsgFundCommunityPool result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.depositor_ = depositor_;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof MsgFundCommunityPool) {
-        return mergeFrom((MsgFundCommunityPool)other);
+      if (other instanceof com.cosmos.distribution.v1beta1.MsgFundCommunityPool) {
+        return mergeFrom((com.cosmos.distribution.v1beta1.MsgFundCommunityPool)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(MsgFundCommunityPool other) {
-      if (other == MsgFundCommunityPool.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.distribution.v1beta1.MsgFundCommunityPool other) {
+      if (other == com.cosmos.distribution.v1beta1.MsgFundCommunityPool.getDefaultInstance()) return this;
       if (amountBuilder_ == null) {
         if (!other.amount_.isEmpty()) {
           if (amount_.isEmpty()) {
@@ -470,18 +470,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -664,7 +664,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.v1beta1.Coin amount = 1 [json_name = "amount", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
     public Builder addAllAmount(
-        Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
+        java.lang.Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
       if (amountBuilder_ == null) {
         ensureAmountIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -766,21 +766,21 @@ private static final long serialVersionUID = 0L;
       return amountBuilder_;
     }
 
-    private Object depositor_ = "";
+    private java.lang.Object depositor_ = "";
     /**
      * <code>string depositor = 2 [json_name = "depositor"];</code>
      * @return The depositor.
      */
-    public String getDepositor() {
-      Object ref = depositor_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getDepositor() {
+      java.lang.Object ref = depositor_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         depositor_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -789,11 +789,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getDepositorBytes() {
-      Object ref = depositor_;
+      java.lang.Object ref = depositor_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         depositor_ = b;
         return b;
       } else {
@@ -806,7 +806,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDepositor(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       depositor_ = value;
       bitField0_ |= 0x00000002;
@@ -837,13 +837,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -854,18 +854,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.distribution.v1beta1.MsgFundCommunityPool)
-  private static final MsgFundCommunityPool DEFAULT_INSTANCE;
+  private static final com.cosmos.distribution.v1beta1.MsgFundCommunityPool DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new MsgFundCommunityPool();
+    DEFAULT_INSTANCE = new com.cosmos.distribution.v1beta1.MsgFundCommunityPool();
   }
 
-  public static MsgFundCommunityPool getDefaultInstance() {
+  public static com.cosmos.distribution.v1beta1.MsgFundCommunityPool getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgFundCommunityPool>
       PARSER = new com.google.protobuf.AbstractParser<MsgFundCommunityPool>() {
-    @Override
+    @java.lang.Override
     public MsgFundCommunityPool parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -889,13 +889,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<MsgFundCommunityPool> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public MsgFundCommunityPool getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.MsgFundCommunityPool getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

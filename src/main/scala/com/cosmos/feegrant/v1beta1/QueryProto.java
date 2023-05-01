@@ -52,7 +52,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n#cosmos/feegrant/v1beta1/query.proto\022\027c" +
       "osmos.feegrant.v1beta1\032&cosmos/feegrant/" +
       "v1beta1/feegrant.proto\032*cosmos/base/quer" +
@@ -101,7 +101,7 @@ public final class QueryProto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          FeegrantProto.getDescriptor(),
+          com.cosmos.feegrant.v1beta1.FeegrantProto.getDescriptor(),
           com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
         });
@@ -110,43 +110,43 @@ public final class QueryProto {
     internal_static_cosmos_feegrant_v1beta1_QueryAllowanceRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_QueryAllowanceRequest_descriptor,
-        new String[] { "Granter", "Grantee", });
+        new java.lang.String[] { "Granter", "Grantee", });
     internal_static_cosmos_feegrant_v1beta1_QueryAllowanceResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_feegrant_v1beta1_QueryAllowanceResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_QueryAllowanceResponse_descriptor,
-        new String[] { "Allowance", });
+        new java.lang.String[] { "Allowance", });
     internal_static_cosmos_feegrant_v1beta1_QueryAllowancesRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_feegrant_v1beta1_QueryAllowancesRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_QueryAllowancesRequest_descriptor,
-        new String[] { "Grantee", "Pagination", });
+        new java.lang.String[] { "Grantee", "Pagination", });
     internal_static_cosmos_feegrant_v1beta1_QueryAllowancesResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_feegrant_v1beta1_QueryAllowancesResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_QueryAllowancesResponse_descriptor,
-        new String[] { "Allowances", "Pagination", });
+        new java.lang.String[] { "Allowances", "Pagination", });
     internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_descriptor,
-        new String[] { "Granter", "Pagination", });
+        new java.lang.String[] { "Granter", "Pagination", });
     internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_descriptor,
-        new String[] { "Allowances", "Pagination", });
+        new java.lang.String[] { "Allowances", "Pagination", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.google.api.AnnotationsProto.http);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    FeegrantProto.getDescriptor();
+    com.cosmos.feegrant.v1beta1.FeegrantProto.getDescriptor();
     com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
   }

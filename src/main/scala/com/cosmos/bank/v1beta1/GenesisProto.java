@@ -32,7 +32,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n!cosmos/bank/v1beta1/genesis.proto\022\023cos" +
       "mos.bank.v1beta1\032\024gogoproto/gogo.proto\032\036" +
       "cosmos/base/v1beta1/coin.proto\032\036cosmos/b" +
@@ -61,20 +61,20 @@ public final class GenesisProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
           com.cosmos.base.v1beta1.CoinProto.getDescriptor(),
-          BankProto.getDescriptor(),
+          com.cosmos.bank.v1beta1.BankProto.getDescriptor(),
         });
     internal_static_cosmos_bank_v1beta1_GenesisState_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_bank_v1beta1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_GenesisState_descriptor,
-        new String[] { "Params", "Balances", "Supply", "DenomMetadata", });
+        new java.lang.String[] { "Params", "Balances", "Supply", "DenomMetadata", });
     internal_static_cosmos_bank_v1beta1_Balance_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_bank_v1beta1_Balance_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_Balance_descriptor,
-        new String[] { "Address", "Coins", });
+        new java.lang.String[] { "Address", "Coins", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);
@@ -86,7 +86,7 @@ public final class GenesisProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
     com.cosmos.base.v1beta1.CoinProto.getDescriptor();
-    BankProto.getDescriptor();
+    com.cosmos.bank.v1beta1.BankProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

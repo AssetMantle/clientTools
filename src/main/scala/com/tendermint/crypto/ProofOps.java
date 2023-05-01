@@ -23,69 +23,69 @@ private static final long serialVersionUID = 0L;
     ops_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new ProofOps();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return ProofProto.internal_static_tendermint_crypto_ProofOps_descriptor;
+    return com.tendermint.crypto.ProofProto.internal_static_tendermint_crypto_ProofOps_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return ProofProto.internal_static_tendermint_crypto_ProofOps_fieldAccessorTable
+    return com.tendermint.crypto.ProofProto.internal_static_tendermint_crypto_ProofOps_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            ProofOps.class, Builder.class);
+            com.tendermint.crypto.ProofOps.class, com.tendermint.crypto.ProofOps.Builder.class);
   }
 
   public static final int OPS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<ProofOp> ops_;
+  private java.util.List<com.tendermint.crypto.ProofOp> ops_;
   /**
    * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<ProofOp> getOpsList() {
+  @java.lang.Override
+  public java.util.List<com.tendermint.crypto.ProofOp> getOpsList() {
     return ops_;
   }
   /**
    * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends ProofOpOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.tendermint.crypto.ProofOpOrBuilder> 
       getOpsOrBuilderList() {
     return ops_;
   }
   /**
    * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getOpsCount() {
     return ops_.size();
   }
   /**
    * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public ProofOp getOps(int index) {
+  @java.lang.Override
+  public com.tendermint.crypto.ProofOp getOps(int index) {
     return ops_.get(index);
   }
   /**
    * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public ProofOpOrBuilder getOpsOrBuilder(
+  @java.lang.Override
+  public com.tendermint.crypto.ProofOpOrBuilder getOpsOrBuilder(
       int index) {
     return ops_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -95,7 +95,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < ops_.size(); i++) {
@@ -104,7 +104,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -119,15 +119,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof ProofOps)) {
+    if (!(obj instanceof com.tendermint.crypto.ProofOps)) {
       return super.equals(obj);
     }
-    ProofOps other = (ProofOps) obj;
+    com.tendermint.crypto.ProofOps other = (com.tendermint.crypto.ProofOps) obj;
 
     if (!getOpsList()
         .equals(other.getOpsList())) return false;
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static ProofOps parseFrom(
+  public static com.tendermint.crypto.ProofOps parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ProofOps parseFrom(
+  public static com.tendermint.crypto.ProofOps parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ProofOps parseFrom(
+  public static com.tendermint.crypto.ProofOps parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ProofOps parseFrom(
+  public static com.tendermint.crypto.ProofOps parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ProofOps parseFrom(byte[] data)
+  public static com.tendermint.crypto.ProofOps parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ProofOps parseFrom(
+  public static com.tendermint.crypto.ProofOps parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ProofOps parseFrom(java.io.InputStream input)
+  public static com.tendermint.crypto.ProofOps parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ProofOps parseFrom(
+  public static com.tendermint.crypto.ProofOps parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ProofOps parseDelimitedFrom(java.io.InputStream input)
+  public static com.tendermint.crypto.ProofOps parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static ProofOps parseDelimitedFrom(
+  public static com.tendermint.crypto.ProofOps parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ProofOps parseFrom(
+  public static com.tendermint.crypto.ProofOps parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ProofOps parseFrom(
+  public static com.tendermint.crypto.ProofOps parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(ProofOps prototype) {
+  public static Builder newBuilder(com.tendermint.crypto.ProofOps prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -251,18 +251,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.crypto.ProofOps)
-      ProofOpsOrBuilder {
+      com.tendermint.crypto.ProofOpsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ProofProto.internal_static_tendermint_crypto_ProofOps_descriptor;
+      return com.tendermint.crypto.ProofProto.internal_static_tendermint_crypto_ProofOps_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ProofProto.internal_static_tendermint_crypto_ProofOps_fieldAccessorTable
+      return com.tendermint.crypto.ProofProto.internal_static_tendermint_crypto_ProofOps_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ProofOps.class, Builder.class);
+              com.tendermint.crypto.ProofOps.class, com.tendermint.crypto.ProofOps.Builder.class);
     }
 
     // Construct using com.tendermint.crypto.ProofOps.newBuilder()
@@ -271,11 +271,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -289,36 +289,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return ProofProto.internal_static_tendermint_crypto_ProofOps_descriptor;
+      return com.tendermint.crypto.ProofProto.internal_static_tendermint_crypto_ProofOps_descriptor;
     }
 
-    @Override
-    public ProofOps getDefaultInstanceForType() {
-      return ProofOps.getDefaultInstance();
+    @java.lang.Override
+    public com.tendermint.crypto.ProofOps getDefaultInstanceForType() {
+      return com.tendermint.crypto.ProofOps.getDefaultInstance();
     }
 
-    @Override
-    public ProofOps build() {
-      ProofOps result = buildPartial();
+    @java.lang.Override
+    public com.tendermint.crypto.ProofOps build() {
+      com.tendermint.crypto.ProofOps result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public ProofOps buildPartial() {
-      ProofOps result = new ProofOps(this);
+    @java.lang.Override
+    public com.tendermint.crypto.ProofOps buildPartial() {
+      com.tendermint.crypto.ProofOps result = new com.tendermint.crypto.ProofOps(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(ProofOps result) {
+    private void buildPartialRepeatedFields(com.tendermint.crypto.ProofOps result) {
       if (opsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           ops_ = java.util.Collections.unmodifiableList(ops_);
@@ -330,54 +330,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(ProofOps result) {
+    private void buildPartial0(com.tendermint.crypto.ProofOps result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof ProofOps) {
-        return mergeFrom((ProofOps)other);
+      if (other instanceof com.tendermint.crypto.ProofOps) {
+        return mergeFrom((com.tendermint.crypto.ProofOps)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(ProofOps other) {
-      if (other == ProofOps.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.tendermint.crypto.ProofOps other) {
+      if (other == com.tendermint.crypto.ProofOps.getDefaultInstance()) return this;
       if (opsBuilder_ == null) {
         if (!other.ops_.isEmpty()) {
           if (ops_.isEmpty()) {
@@ -409,18 +409,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -431,9 +431,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              ProofOp m =
+              com.tendermint.crypto.ProofOp m =
                   input.readMessage(
-                      ProofOp.parser(),
+                      com.tendermint.crypto.ProofOp.parser(),
                       extensionRegistry);
               if (opsBuilder_ == null) {
                 ensureOpsIsMutable();
@@ -460,22 +460,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<ProofOp> ops_ =
+    private java.util.List<com.tendermint.crypto.ProofOp> ops_ =
       java.util.Collections.emptyList();
     private void ensureOpsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        ops_ = new java.util.ArrayList<ProofOp>(ops_);
+        ops_ = new java.util.ArrayList<com.tendermint.crypto.ProofOp>(ops_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        ProofOp, ProofOp.Builder, ProofOpOrBuilder> opsBuilder_;
+        com.tendermint.crypto.ProofOp, com.tendermint.crypto.ProofOp.Builder, com.tendermint.crypto.ProofOpOrBuilder> opsBuilder_;
 
     /**
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<ProofOp> getOpsList() {
+    public java.util.List<com.tendermint.crypto.ProofOp> getOpsList() {
       if (opsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(ops_);
       } else {
@@ -495,7 +495,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
-    public ProofOp getOps(int index) {
+    public com.tendermint.crypto.ProofOp getOps(int index) {
       if (opsBuilder_ == null) {
         return ops_.get(index);
       } else {
@@ -506,7 +506,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
     public Builder setOps(
-        int index, ProofOp value) {
+        int index, com.tendermint.crypto.ProofOp value) {
       if (opsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -523,7 +523,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
     public Builder setOps(
-        int index, ProofOp.Builder builderForValue) {
+        int index, com.tendermint.crypto.ProofOp.Builder builderForValue) {
       if (opsBuilder_ == null) {
         ensureOpsIsMutable();
         ops_.set(index, builderForValue.build());
@@ -536,7 +536,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addOps(ProofOp value) {
+    public Builder addOps(com.tendermint.crypto.ProofOp value) {
       if (opsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -553,7 +553,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOps(
-        int index, ProofOp value) {
+        int index, com.tendermint.crypto.ProofOp value) {
       if (opsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -570,7 +570,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOps(
-        ProofOp.Builder builderForValue) {
+        com.tendermint.crypto.ProofOp.Builder builderForValue) {
       if (opsBuilder_ == null) {
         ensureOpsIsMutable();
         ops_.add(builderForValue.build());
@@ -584,7 +584,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
     public Builder addOps(
-        int index, ProofOp.Builder builderForValue) {
+        int index, com.tendermint.crypto.ProofOp.Builder builderForValue) {
       if (opsBuilder_ == null) {
         ensureOpsIsMutable();
         ops_.add(index, builderForValue.build());
@@ -598,7 +598,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllOps(
-        Iterable<? extends ProofOp> values) {
+        java.lang.Iterable<? extends com.tendermint.crypto.ProofOp> values) {
       if (opsBuilder_ == null) {
         ensureOpsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -638,14 +638,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
-    public ProofOp.Builder getOpsBuilder(
+    public com.tendermint.crypto.ProofOp.Builder getOpsBuilder(
         int index) {
       return getOpsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
-    public ProofOpOrBuilder getOpsOrBuilder(
+    public com.tendermint.crypto.ProofOpOrBuilder getOpsOrBuilder(
         int index) {
       if (opsBuilder_ == null) {
         return ops_.get(index);  } else {
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends ProofOpOrBuilder>
+    public java.util.List<? extends com.tendermint.crypto.ProofOpOrBuilder> 
          getOpsOrBuilderList() {
       if (opsBuilder_ != null) {
         return opsBuilder_.getMessageOrBuilderList();
@@ -666,31 +666,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
-    public ProofOp.Builder addOpsBuilder() {
+    public com.tendermint.crypto.ProofOp.Builder addOpsBuilder() {
       return getOpsFieldBuilder().addBuilder(
-          ProofOp.getDefaultInstance());
+          com.tendermint.crypto.ProofOp.getDefaultInstance());
     }
     /**
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
-    public ProofOp.Builder addOpsBuilder(
+    public com.tendermint.crypto.ProofOp.Builder addOpsBuilder(
         int index) {
       return getOpsFieldBuilder().addBuilder(
-          index, ProofOp.getDefaultInstance());
+          index, com.tendermint.crypto.ProofOp.getDefaultInstance());
     }
     /**
      * <code>repeated .tendermint.crypto.ProofOp ops = 1 [json_name = "ops", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<ProofOp.Builder>
+    public java.util.List<com.tendermint.crypto.ProofOp.Builder> 
          getOpsBuilderList() {
       return getOpsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        ProofOp, ProofOp.Builder, ProofOpOrBuilder>
+        com.tendermint.crypto.ProofOp, com.tendermint.crypto.ProofOp.Builder, com.tendermint.crypto.ProofOpOrBuilder> 
         getOpsFieldBuilder() {
       if (opsBuilder_ == null) {
         opsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            ProofOp, ProofOp.Builder, ProofOpOrBuilder>(
+            com.tendermint.crypto.ProofOp, com.tendermint.crypto.ProofOp.Builder, com.tendermint.crypto.ProofOpOrBuilder>(
                 ops_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -699,13 +699,13 @@ private static final long serialVersionUID = 0L;
       }
       return opsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -716,18 +716,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.crypto.ProofOps)
-  private static final ProofOps DEFAULT_INSTANCE;
+  private static final com.tendermint.crypto.ProofOps DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new ProofOps();
+    DEFAULT_INSTANCE = new com.tendermint.crypto.ProofOps();
   }
 
-  public static ProofOps getDefaultInstance() {
+  public static com.tendermint.crypto.ProofOps getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ProofOps>
       PARSER = new com.google.protobuf.AbstractParser<ProofOps>() {
-    @Override
+    @java.lang.Override
     public ProofOps parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -751,13 +751,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<ProofOps> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public ProofOps getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.tendermint.crypto.ProofOps getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

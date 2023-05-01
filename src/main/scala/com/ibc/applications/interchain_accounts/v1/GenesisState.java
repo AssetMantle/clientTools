@@ -22,33 +22,33 @@ private static final long serialVersionUID = 0L;
   private GenesisState() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new GenesisState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_GenesisState_descriptor;
+    return com.ibc.applications.interchain_accounts.v1.GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_GenesisState_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_GenesisState_fieldAccessorTable
+    return com.ibc.applications.interchain_accounts.v1.GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_GenesisState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            GenesisState.class, Builder.class);
+            com.ibc.applications.interchain_accounts.v1.GenesisState.class, com.ibc.applications.interchain_accounts.v1.GenesisState.Builder.class);
   }
 
   public static final int CONTROLLER_GENESIS_STATE_FIELD_NUMBER = 1;
-  private ControllerGenesisState controllerGenesisState_;
+  private com.ibc.applications.interchain_accounts.v1.ControllerGenesisState controllerGenesisState_;
   /**
    * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
    * @return Whether the controllerGenesisState field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasControllerGenesisState() {
     return controllerGenesisState_ != null;
   }
@@ -56,25 +56,25 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
    * @return The controllerGenesisState.
    */
-  @Override
-  public ControllerGenesisState getControllerGenesisState() {
-    return controllerGenesisState_ == null ? ControllerGenesisState.getDefaultInstance() : controllerGenesisState_;
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.ControllerGenesisState getControllerGenesisState() {
+    return controllerGenesisState_ == null ? com.ibc.applications.interchain_accounts.v1.ControllerGenesisState.getDefaultInstance() : controllerGenesisState_;
   }
   /**
    * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
    */
-  @Override
-  public ControllerGenesisStateOrBuilder getControllerGenesisStateOrBuilder() {
-    return controllerGenesisState_ == null ? ControllerGenesisState.getDefaultInstance() : controllerGenesisState_;
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.ControllerGenesisStateOrBuilder getControllerGenesisStateOrBuilder() {
+    return controllerGenesisState_ == null ? com.ibc.applications.interchain_accounts.v1.ControllerGenesisState.getDefaultInstance() : controllerGenesisState_;
   }
 
   public static final int HOST_GENESIS_STATE_FIELD_NUMBER = 2;
-  private HostGenesisState hostGenesisState_;
+  private com.ibc.applications.interchain_accounts.v1.HostGenesisState hostGenesisState_;
   /**
    * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
    * @return Whether the hostGenesisState field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasHostGenesisState() {
     return hostGenesisState_ != null;
   }
@@ -82,20 +82,20 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
    * @return The hostGenesisState.
    */
-  @Override
-  public HostGenesisState getHostGenesisState() {
-    return hostGenesisState_ == null ? HostGenesisState.getDefaultInstance() : hostGenesisState_;
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.HostGenesisState getHostGenesisState() {
+    return hostGenesisState_ == null ? com.ibc.applications.interchain_accounts.v1.HostGenesisState.getDefaultInstance() : hostGenesisState_;
   }
   /**
    * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
    */
-  @Override
-  public HostGenesisStateOrBuilder getHostGenesisStateOrBuilder() {
-    return hostGenesisState_ == null ? HostGenesisState.getDefaultInstance() : hostGenesisState_;
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.HostGenesisStateOrBuilder getHostGenesisStateOrBuilder() {
+    return hostGenesisState_ == null ? com.ibc.applications.interchain_accounts.v1.HostGenesisState.getDefaultInstance() : hostGenesisState_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -105,7 +105,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (controllerGenesisState_ != null) {
@@ -117,7 +117,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -136,15 +136,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof GenesisState)) {
+    if (!(obj instanceof com.ibc.applications.interchain_accounts.v1.GenesisState)) {
       return super.equals(obj);
     }
-    GenesisState other = (GenesisState) obj;
+    com.ibc.applications.interchain_accounts.v1.GenesisState other = (com.ibc.applications.interchain_accounts.v1.GenesisState) obj;
 
     if (hasControllerGenesisState() != other.hasControllerGenesisState()) return false;
     if (hasControllerGenesisState()) {
@@ -160,7 +160,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -180,69 +180,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static GenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(byte[] data)
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(java.io.InputStream input)
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GenesisState parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static GenesisState parseDelimitedFrom(
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -250,23 +250,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(GenesisState prototype) {
+  public static Builder newBuilder(com.ibc.applications.interchain_accounts.v1.GenesisState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -280,18 +280,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.applications.interchain_accounts.v1.GenesisState)
-      GenesisStateOrBuilder {
+      com.ibc.applications.interchain_accounts.v1.GenesisStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_GenesisState_descriptor;
+      return com.ibc.applications.interchain_accounts.v1.GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_GenesisState_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_GenesisState_fieldAccessorTable
+      return com.ibc.applications.interchain_accounts.v1.GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_GenesisState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              GenesisState.class, Builder.class);
+              com.ibc.applications.interchain_accounts.v1.GenesisState.class, com.ibc.applications.interchain_accounts.v1.GenesisState.Builder.class);
     }
 
     // Construct using com.ibc.applications.interchain_accounts.v1.GenesisState.newBuilder()
@@ -300,11 +300,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -321,35 +321,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_GenesisState_descriptor;
+      return com.ibc.applications.interchain_accounts.v1.GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_GenesisState_descriptor;
     }
 
-    @Override
-    public GenesisState getDefaultInstanceForType() {
-      return GenesisState.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.applications.interchain_accounts.v1.GenesisState getDefaultInstanceForType() {
+      return com.ibc.applications.interchain_accounts.v1.GenesisState.getDefaultInstance();
     }
 
-    @Override
-    public GenesisState build() {
-      GenesisState result = buildPartial();
+    @java.lang.Override
+    public com.ibc.applications.interchain_accounts.v1.GenesisState build() {
+      com.ibc.applications.interchain_accounts.v1.GenesisState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public GenesisState buildPartial() {
-      GenesisState result = new GenesisState(this);
+    @java.lang.Override
+    public com.ibc.applications.interchain_accounts.v1.GenesisState buildPartial() {
+      com.ibc.applications.interchain_accounts.v1.GenesisState result = new com.ibc.applications.interchain_accounts.v1.GenesisState(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(GenesisState result) {
+    private void buildPartial0(com.ibc.applications.interchain_accounts.v1.GenesisState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.controllerGenesisState_ = controllerGenesisStateBuilder_ == null
@@ -363,50 +363,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof GenesisState) {
-        return mergeFrom((GenesisState)other);
+      if (other instanceof com.ibc.applications.interchain_accounts.v1.GenesisState) {
+        return mergeFrom((com.ibc.applications.interchain_accounts.v1.GenesisState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(GenesisState other) {
-      if (other == GenesisState.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.applications.interchain_accounts.v1.GenesisState other) {
+      if (other == com.ibc.applications.interchain_accounts.v1.GenesisState.getDefaultInstance()) return this;
       if (other.hasControllerGenesisState()) {
         mergeControllerGenesisState(other.getControllerGenesisState());
       }
@@ -418,18 +418,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -470,9 +470,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private ControllerGenesisState controllerGenesisState_;
+    private com.ibc.applications.interchain_accounts.v1.ControllerGenesisState controllerGenesisState_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        ControllerGenesisState, ControllerGenesisState.Builder, ControllerGenesisStateOrBuilder> controllerGenesisStateBuilder_;
+        com.ibc.applications.interchain_accounts.v1.ControllerGenesisState, com.ibc.applications.interchain_accounts.v1.ControllerGenesisState.Builder, com.ibc.applications.interchain_accounts.v1.ControllerGenesisStateOrBuilder> controllerGenesisStateBuilder_;
     /**
      * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
      * @return Whether the controllerGenesisState field is set.
@@ -484,9 +484,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
      * @return The controllerGenesisState.
      */
-    public ControllerGenesisState getControllerGenesisState() {
+    public com.ibc.applications.interchain_accounts.v1.ControllerGenesisState getControllerGenesisState() {
       if (controllerGenesisStateBuilder_ == null) {
-        return controllerGenesisState_ == null ? ControllerGenesisState.getDefaultInstance() : controllerGenesisState_;
+        return controllerGenesisState_ == null ? com.ibc.applications.interchain_accounts.v1.ControllerGenesisState.getDefaultInstance() : controllerGenesisState_;
       } else {
         return controllerGenesisStateBuilder_.getMessage();
       }
@@ -494,7 +494,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
      */
-    public Builder setControllerGenesisState(ControllerGenesisState value) {
+    public Builder setControllerGenesisState(com.ibc.applications.interchain_accounts.v1.ControllerGenesisState value) {
       if (controllerGenesisStateBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -511,7 +511,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
      */
     public Builder setControllerGenesisState(
-        ControllerGenesisState.Builder builderForValue) {
+        com.ibc.applications.interchain_accounts.v1.ControllerGenesisState.Builder builderForValue) {
       if (controllerGenesisStateBuilder_ == null) {
         controllerGenesisState_ = builderForValue.build();
       } else {
@@ -524,11 +524,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
      */
-    public Builder mergeControllerGenesisState(ControllerGenesisState value) {
+    public Builder mergeControllerGenesisState(com.ibc.applications.interchain_accounts.v1.ControllerGenesisState value) {
       if (controllerGenesisStateBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           controllerGenesisState_ != null &&
-          controllerGenesisState_ != ControllerGenesisState.getDefaultInstance()) {
+          controllerGenesisState_ != com.ibc.applications.interchain_accounts.v1.ControllerGenesisState.getDefaultInstance()) {
           getControllerGenesisStateBuilder().mergeFrom(value);
         } else {
           controllerGenesisState_ = value;
@@ -556,7 +556,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
      */
-    public ControllerGenesisState.Builder getControllerGenesisStateBuilder() {
+    public com.ibc.applications.interchain_accounts.v1.ControllerGenesisState.Builder getControllerGenesisStateBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getControllerGenesisStateFieldBuilder().getBuilder();
@@ -564,23 +564,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
      */
-    public ControllerGenesisStateOrBuilder getControllerGenesisStateOrBuilder() {
+    public com.ibc.applications.interchain_accounts.v1.ControllerGenesisStateOrBuilder getControllerGenesisStateOrBuilder() {
       if (controllerGenesisStateBuilder_ != null) {
         return controllerGenesisStateBuilder_.getMessageOrBuilder();
       } else {
         return controllerGenesisState_ == null ?
-            ControllerGenesisState.getDefaultInstance() : controllerGenesisState_;
+            com.ibc.applications.interchain_accounts.v1.ControllerGenesisState.getDefaultInstance() : controllerGenesisState_;
       }
     }
     /**
      * <code>.ibc.applications.interchain_accounts.v1.ControllerGenesisState controller_genesis_state = 1 [json_name = "controllerGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"controller_genesis_state&#92;""];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ControllerGenesisState, ControllerGenesisState.Builder, ControllerGenesisStateOrBuilder>
+        com.ibc.applications.interchain_accounts.v1.ControllerGenesisState, com.ibc.applications.interchain_accounts.v1.ControllerGenesisState.Builder, com.ibc.applications.interchain_accounts.v1.ControllerGenesisStateOrBuilder> 
         getControllerGenesisStateFieldBuilder() {
       if (controllerGenesisStateBuilder_ == null) {
         controllerGenesisStateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ControllerGenesisState, ControllerGenesisState.Builder, ControllerGenesisStateOrBuilder>(
+            com.ibc.applications.interchain_accounts.v1.ControllerGenesisState, com.ibc.applications.interchain_accounts.v1.ControllerGenesisState.Builder, com.ibc.applications.interchain_accounts.v1.ControllerGenesisStateOrBuilder>(
                 getControllerGenesisState(),
                 getParentForChildren(),
                 isClean());
@@ -589,9 +589,9 @@ private static final long serialVersionUID = 0L;
       return controllerGenesisStateBuilder_;
     }
 
-    private HostGenesisState hostGenesisState_;
+    private com.ibc.applications.interchain_accounts.v1.HostGenesisState hostGenesisState_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        HostGenesisState, HostGenesisState.Builder, HostGenesisStateOrBuilder> hostGenesisStateBuilder_;
+        com.ibc.applications.interchain_accounts.v1.HostGenesisState, com.ibc.applications.interchain_accounts.v1.HostGenesisState.Builder, com.ibc.applications.interchain_accounts.v1.HostGenesisStateOrBuilder> hostGenesisStateBuilder_;
     /**
      * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
      * @return Whether the hostGenesisState field is set.
@@ -603,9 +603,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
      * @return The hostGenesisState.
      */
-    public HostGenesisState getHostGenesisState() {
+    public com.ibc.applications.interchain_accounts.v1.HostGenesisState getHostGenesisState() {
       if (hostGenesisStateBuilder_ == null) {
-        return hostGenesisState_ == null ? HostGenesisState.getDefaultInstance() : hostGenesisState_;
+        return hostGenesisState_ == null ? com.ibc.applications.interchain_accounts.v1.HostGenesisState.getDefaultInstance() : hostGenesisState_;
       } else {
         return hostGenesisStateBuilder_.getMessage();
       }
@@ -613,7 +613,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
      */
-    public Builder setHostGenesisState(HostGenesisState value) {
+    public Builder setHostGenesisState(com.ibc.applications.interchain_accounts.v1.HostGenesisState value) {
       if (hostGenesisStateBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -630,7 +630,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
      */
     public Builder setHostGenesisState(
-        HostGenesisState.Builder builderForValue) {
+        com.ibc.applications.interchain_accounts.v1.HostGenesisState.Builder builderForValue) {
       if (hostGenesisStateBuilder_ == null) {
         hostGenesisState_ = builderForValue.build();
       } else {
@@ -643,11 +643,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
      */
-    public Builder mergeHostGenesisState(HostGenesisState value) {
+    public Builder mergeHostGenesisState(com.ibc.applications.interchain_accounts.v1.HostGenesisState value) {
       if (hostGenesisStateBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           hostGenesisState_ != null &&
-          hostGenesisState_ != HostGenesisState.getDefaultInstance()) {
+          hostGenesisState_ != com.ibc.applications.interchain_accounts.v1.HostGenesisState.getDefaultInstance()) {
           getHostGenesisStateBuilder().mergeFrom(value);
         } else {
           hostGenesisState_ = value;
@@ -675,7 +675,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
      */
-    public HostGenesisState.Builder getHostGenesisStateBuilder() {
+    public com.ibc.applications.interchain_accounts.v1.HostGenesisState.Builder getHostGenesisStateBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getHostGenesisStateFieldBuilder().getBuilder();
@@ -683,23 +683,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
      */
-    public HostGenesisStateOrBuilder getHostGenesisStateOrBuilder() {
+    public com.ibc.applications.interchain_accounts.v1.HostGenesisStateOrBuilder getHostGenesisStateOrBuilder() {
       if (hostGenesisStateBuilder_ != null) {
         return hostGenesisStateBuilder_.getMessageOrBuilder();
       } else {
         return hostGenesisState_ == null ?
-            HostGenesisState.getDefaultInstance() : hostGenesisState_;
+            com.ibc.applications.interchain_accounts.v1.HostGenesisState.getDefaultInstance() : hostGenesisState_;
       }
     }
     /**
      * <code>.ibc.applications.interchain_accounts.v1.HostGenesisState host_genesis_state = 2 [json_name = "hostGenesisState", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"host_genesis_state&#92;""];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        HostGenesisState, HostGenesisState.Builder, HostGenesisStateOrBuilder>
+        com.ibc.applications.interchain_accounts.v1.HostGenesisState, com.ibc.applications.interchain_accounts.v1.HostGenesisState.Builder, com.ibc.applications.interchain_accounts.v1.HostGenesisStateOrBuilder> 
         getHostGenesisStateFieldBuilder() {
       if (hostGenesisStateBuilder_ == null) {
         hostGenesisStateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            HostGenesisState, HostGenesisState.Builder, HostGenesisStateOrBuilder>(
+            com.ibc.applications.interchain_accounts.v1.HostGenesisState, com.ibc.applications.interchain_accounts.v1.HostGenesisState.Builder, com.ibc.applications.interchain_accounts.v1.HostGenesisStateOrBuilder>(
                 getHostGenesisState(),
                 getParentForChildren(),
                 isClean());
@@ -707,13 +707,13 @@ private static final long serialVersionUID = 0L;
       }
       return hostGenesisStateBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -724,18 +724,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.applications.interchain_accounts.v1.GenesisState)
-  private static final GenesisState DEFAULT_INSTANCE;
+  private static final com.ibc.applications.interchain_accounts.v1.GenesisState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new GenesisState();
+    DEFAULT_INSTANCE = new com.ibc.applications.interchain_accounts.v1.GenesisState();
   }
 
-  public static GenesisState getDefaultInstance() {
+  public static com.ibc.applications.interchain_accounts.v1.GenesisState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GenesisState>
       PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-    @Override
+    @java.lang.Override
     public GenesisState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -759,13 +759,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<GenesisState> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public GenesisState getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.GenesisState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

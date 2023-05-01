@@ -14,7 +14,7 @@ public interface QueryValidatorsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 1 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<Validator>
+  java.util.List<com.cosmos.staking.v1beta1.Validator> 
       getValidatorsList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryValidatorsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 1 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  Validator getValidators(int index);
+  com.cosmos.staking.v1beta1.Validator getValidators(int index);
   /**
    * <pre>
    * validators contains all the queried validators.
@@ -39,7 +39,7 @@ public interface QueryValidatorsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 1 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends ValidatorOrBuilder>
+  java.util.List<? extends com.cosmos.staking.v1beta1.ValidatorOrBuilder> 
       getValidatorsOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryValidatorsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.Validator validators = 1 [json_name = "validators", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorOrBuilder getValidatorsOrBuilder(
+  com.cosmos.staking.v1beta1.ValidatorOrBuilder getValidatorsOrBuilder(
       int index);
 
   /**

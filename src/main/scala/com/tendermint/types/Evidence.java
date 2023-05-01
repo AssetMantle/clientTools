@@ -18,32 +18,32 @@ private static final long serialVersionUID = 0L;
   private Evidence() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Evidence();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return EvidenceProto.internal_static_tendermint_types_Evidence_descriptor;
+    return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_Evidence_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return EvidenceProto.internal_static_tendermint_types_Evidence_fieldAccessorTable
+    return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_Evidence_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Evidence.class, Builder.class);
+            com.tendermint.types.Evidence.class, com.tendermint.types.Evidence.Builder.class);
   }
 
   private int sumCase_ = 0;
   @SuppressWarnings("serial")
-  private Object sum_;
+  private java.lang.Object sum_;
   public enum SumCase
       implements com.google.protobuf.Internal.EnumLite,
-          InternalOneOfEnum {
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     DUPLICATE_VOTE_EVIDENCE(1),
     LIGHT_CLIENT_ATTACK_EVIDENCE(2),
     SUM_NOT_SET(0);
@@ -56,7 +56,7 @@ private static final long serialVersionUID = 0L;
      * @return The enum associated with the given number.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static SumCase valueOf(int value) {
       return forNumber(value);
     }
@@ -85,7 +85,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
    * @return Whether the duplicateVoteEvidence field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasDuplicateVoteEvidence() {
     return sumCase_ == 1;
   }
@@ -93,22 +93,22 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
    * @return The duplicateVoteEvidence.
    */
-  @Override
-  public DuplicateVoteEvidence getDuplicateVoteEvidence() {
+  @java.lang.Override
+  public com.tendermint.types.DuplicateVoteEvidence getDuplicateVoteEvidence() {
     if (sumCase_ == 1) {
-       return (DuplicateVoteEvidence) sum_;
+       return (com.tendermint.types.DuplicateVoteEvidence) sum_;
     }
-    return DuplicateVoteEvidence.getDefaultInstance();
+    return com.tendermint.types.DuplicateVoteEvidence.getDefaultInstance();
   }
   /**
    * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
    */
-  @Override
-  public DuplicateVoteEvidenceOrBuilder getDuplicateVoteEvidenceOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.types.DuplicateVoteEvidenceOrBuilder getDuplicateVoteEvidenceOrBuilder() {
     if (sumCase_ == 1) {
-       return (DuplicateVoteEvidence) sum_;
+       return (com.tendermint.types.DuplicateVoteEvidence) sum_;
     }
-    return DuplicateVoteEvidence.getDefaultInstance();
+    return com.tendermint.types.DuplicateVoteEvidence.getDefaultInstance();
   }
 
   public static final int LIGHT_CLIENT_ATTACK_EVIDENCE_FIELD_NUMBER = 2;
@@ -116,7 +116,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
    * @return Whether the lightClientAttackEvidence field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasLightClientAttackEvidence() {
     return sumCase_ == 2;
   }
@@ -124,26 +124,26 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
    * @return The lightClientAttackEvidence.
    */
-  @Override
-  public LightClientAttackEvidence getLightClientAttackEvidence() {
+  @java.lang.Override
+  public com.tendermint.types.LightClientAttackEvidence getLightClientAttackEvidence() {
     if (sumCase_ == 2) {
-       return (LightClientAttackEvidence) sum_;
+       return (com.tendermint.types.LightClientAttackEvidence) sum_;
     }
-    return LightClientAttackEvidence.getDefaultInstance();
+    return com.tendermint.types.LightClientAttackEvidence.getDefaultInstance();
   }
   /**
    * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
    */
-  @Override
-  public LightClientAttackEvidenceOrBuilder getLightClientAttackEvidenceOrBuilder() {
+  @java.lang.Override
+  public com.tendermint.types.LightClientAttackEvidenceOrBuilder getLightClientAttackEvidenceOrBuilder() {
     if (sumCase_ == 2) {
-       return (LightClientAttackEvidence) sum_;
+       return (com.tendermint.types.LightClientAttackEvidence) sum_;
     }
-    return LightClientAttackEvidence.getDefaultInstance();
+    return com.tendermint.types.LightClientAttackEvidence.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -153,19 +153,19 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (sumCase_ == 1) {
-      output.writeMessage(1, (DuplicateVoteEvidence) sum_);
+      output.writeMessage(1, (com.tendermint.types.DuplicateVoteEvidence) sum_);
     }
     if (sumCase_ == 2) {
-      output.writeMessage(2, (LightClientAttackEvidence) sum_);
+      output.writeMessage(2, (com.tendermint.types.LightClientAttackEvidence) sum_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -173,26 +173,26 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (sumCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, (DuplicateVoteEvidence) sum_);
+        .computeMessageSize(1, (com.tendermint.types.DuplicateVoteEvidence) sum_);
     }
     if (sumCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (LightClientAttackEvidence) sum_);
+        .computeMessageSize(2, (com.tendermint.types.LightClientAttackEvidence) sum_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Evidence)) {
+    if (!(obj instanceof com.tendermint.types.Evidence)) {
       return super.equals(obj);
     }
-    Evidence other = (Evidence) obj;
+    com.tendermint.types.Evidence other = (com.tendermint.types.Evidence) obj;
 
     if (!getSumCase().equals(other.getSumCase())) return false;
     switch (sumCase_) {
@@ -211,7 +211,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -235,69 +235,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Evidence parseFrom(
+  public static com.tendermint.types.Evidence parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Evidence parseFrom(
+  public static com.tendermint.types.Evidence parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Evidence parseFrom(
+  public static com.tendermint.types.Evidence parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Evidence parseFrom(
+  public static com.tendermint.types.Evidence parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Evidence parseFrom(byte[] data)
+  public static com.tendermint.types.Evidence parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Evidence parseFrom(
+  public static com.tendermint.types.Evidence parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Evidence parseFrom(java.io.InputStream input)
+  public static com.tendermint.types.Evidence parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Evidence parseFrom(
+  public static com.tendermint.types.Evidence parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Evidence parseDelimitedFrom(java.io.InputStream input)
+  public static com.tendermint.types.Evidence parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Evidence parseDelimitedFrom(
+  public static com.tendermint.types.Evidence parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Evidence parseFrom(
+  public static com.tendermint.types.Evidence parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Evidence parseFrom(
+  public static com.tendermint.types.Evidence parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -305,23 +305,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Evidence prototype) {
+  public static Builder newBuilder(com.tendermint.types.Evidence prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -331,18 +331,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.types.Evidence)
-      EvidenceOrBuilder {
+      com.tendermint.types.EvidenceOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return EvidenceProto.internal_static_tendermint_types_Evidence_descriptor;
+      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_Evidence_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return EvidenceProto.internal_static_tendermint_types_Evidence_fieldAccessorTable
+      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_Evidence_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Evidence.class, Builder.class);
+              com.tendermint.types.Evidence.class, com.tendermint.types.Evidence.Builder.class);
     }
 
     // Construct using com.tendermint.types.Evidence.newBuilder()
@@ -351,11 +351,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -370,40 +370,40 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return EvidenceProto.internal_static_tendermint_types_Evidence_descriptor;
+      return com.tendermint.types.EvidenceProto.internal_static_tendermint_types_Evidence_descriptor;
     }
 
-    @Override
-    public Evidence getDefaultInstanceForType() {
-      return Evidence.getDefaultInstance();
+    @java.lang.Override
+    public com.tendermint.types.Evidence getDefaultInstanceForType() {
+      return com.tendermint.types.Evidence.getDefaultInstance();
     }
 
-    @Override
-    public Evidence build() {
-      Evidence result = buildPartial();
+    @java.lang.Override
+    public com.tendermint.types.Evidence build() {
+      com.tendermint.types.Evidence result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Evidence buildPartial() {
-      Evidence result = new Evidence(this);
+    @java.lang.Override
+    public com.tendermint.types.Evidence buildPartial() {
+      com.tendermint.types.Evidence result = new com.tendermint.types.Evidence(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       buildPartialOneofs(result);
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(Evidence result) {
+    private void buildPartial0(com.tendermint.types.Evidence result) {
       int from_bitField0_ = bitField0_;
     }
 
-    private void buildPartialOneofs(Evidence result) {
+    private void buildPartialOneofs(com.tendermint.types.Evidence result) {
       result.sumCase_ = sumCase_;
       result.sum_ = this.sum_;
       if (sumCase_ == 1 &&
@@ -416,50 +416,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Evidence) {
-        return mergeFrom((Evidence)other);
+      if (other instanceof com.tendermint.types.Evidence) {
+        return mergeFrom((com.tendermint.types.Evidence)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Evidence other) {
-      if (other == Evidence.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.tendermint.types.Evidence other) {
+      if (other == com.tendermint.types.Evidence.getDefaultInstance()) return this;
       switch (other.getSumCase()) {
         case DUPLICATE_VOTE_EVIDENCE: {
           mergeDuplicateVoteEvidence(other.getDuplicateVoteEvidence());
@@ -478,18 +478,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -529,7 +529,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int sumCase_ = 0;
-    private Object sum_;
+    private java.lang.Object sum_;
     public SumCase
         getSumCase() {
       return SumCase.forNumber(
@@ -546,12 +546,12 @@ private static final long serialVersionUID = 0L;
     private int bitField0_;
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        DuplicateVoteEvidence, DuplicateVoteEvidence.Builder, DuplicateVoteEvidenceOrBuilder> duplicateVoteEvidenceBuilder_;
+        com.tendermint.types.DuplicateVoteEvidence, com.tendermint.types.DuplicateVoteEvidence.Builder, com.tendermint.types.DuplicateVoteEvidenceOrBuilder> duplicateVoteEvidenceBuilder_;
     /**
      * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
      * @return Whether the duplicateVoteEvidence field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasDuplicateVoteEvidence() {
       return sumCase_ == 1;
     }
@@ -559,24 +559,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
      * @return The duplicateVoteEvidence.
      */
-    @Override
-    public DuplicateVoteEvidence getDuplicateVoteEvidence() {
+    @java.lang.Override
+    public com.tendermint.types.DuplicateVoteEvidence getDuplicateVoteEvidence() {
       if (duplicateVoteEvidenceBuilder_ == null) {
         if (sumCase_ == 1) {
-          return (DuplicateVoteEvidence) sum_;
+          return (com.tendermint.types.DuplicateVoteEvidence) sum_;
         }
-        return DuplicateVoteEvidence.getDefaultInstance();
+        return com.tendermint.types.DuplicateVoteEvidence.getDefaultInstance();
       } else {
         if (sumCase_ == 1) {
           return duplicateVoteEvidenceBuilder_.getMessage();
         }
-        return DuplicateVoteEvidence.getDefaultInstance();
+        return com.tendermint.types.DuplicateVoteEvidence.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
      */
-    public Builder setDuplicateVoteEvidence(DuplicateVoteEvidence value) {
+    public Builder setDuplicateVoteEvidence(com.tendermint.types.DuplicateVoteEvidence value) {
       if (duplicateVoteEvidenceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -593,7 +593,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
      */
     public Builder setDuplicateVoteEvidence(
-        DuplicateVoteEvidence.Builder builderForValue) {
+        com.tendermint.types.DuplicateVoteEvidence.Builder builderForValue) {
       if (duplicateVoteEvidenceBuilder_ == null) {
         sum_ = builderForValue.build();
         onChanged();
@@ -606,11 +606,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
      */
-    public Builder mergeDuplicateVoteEvidence(DuplicateVoteEvidence value) {
+    public Builder mergeDuplicateVoteEvidence(com.tendermint.types.DuplicateVoteEvidence value) {
       if (duplicateVoteEvidenceBuilder_ == null) {
         if (sumCase_ == 1 &&
-            sum_ != DuplicateVoteEvidence.getDefaultInstance()) {
-          sum_ = DuplicateVoteEvidence.newBuilder((DuplicateVoteEvidence) sum_)
+            sum_ != com.tendermint.types.DuplicateVoteEvidence.getDefaultInstance()) {
+          sum_ = com.tendermint.types.DuplicateVoteEvidence.newBuilder((com.tendermint.types.DuplicateVoteEvidence) sum_)
               .mergeFrom(value).buildPartial();
         } else {
           sum_ = value;
@@ -648,36 +648,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
      */
-    public DuplicateVoteEvidence.Builder getDuplicateVoteEvidenceBuilder() {
+    public com.tendermint.types.DuplicateVoteEvidence.Builder getDuplicateVoteEvidenceBuilder() {
       return getDuplicateVoteEvidenceFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
      */
-    @Override
-    public DuplicateVoteEvidenceOrBuilder getDuplicateVoteEvidenceOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.types.DuplicateVoteEvidenceOrBuilder getDuplicateVoteEvidenceOrBuilder() {
       if ((sumCase_ == 1) && (duplicateVoteEvidenceBuilder_ != null)) {
         return duplicateVoteEvidenceBuilder_.getMessageOrBuilder();
       } else {
         if (sumCase_ == 1) {
-          return (DuplicateVoteEvidence) sum_;
+          return (com.tendermint.types.DuplicateVoteEvidence) sum_;
         }
-        return DuplicateVoteEvidence.getDefaultInstance();
+        return com.tendermint.types.DuplicateVoteEvidence.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        DuplicateVoteEvidence, DuplicateVoteEvidence.Builder, DuplicateVoteEvidenceOrBuilder>
+        com.tendermint.types.DuplicateVoteEvidence, com.tendermint.types.DuplicateVoteEvidence.Builder, com.tendermint.types.DuplicateVoteEvidenceOrBuilder> 
         getDuplicateVoteEvidenceFieldBuilder() {
       if (duplicateVoteEvidenceBuilder_ == null) {
         if (!(sumCase_ == 1)) {
-          sum_ = DuplicateVoteEvidence.getDefaultInstance();
+          sum_ = com.tendermint.types.DuplicateVoteEvidence.getDefaultInstance();
         }
         duplicateVoteEvidenceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            DuplicateVoteEvidence, DuplicateVoteEvidence.Builder, DuplicateVoteEvidenceOrBuilder>(
-                (DuplicateVoteEvidence) sum_,
+            com.tendermint.types.DuplicateVoteEvidence, com.tendermint.types.DuplicateVoteEvidence.Builder, com.tendermint.types.DuplicateVoteEvidenceOrBuilder>(
+                (com.tendermint.types.DuplicateVoteEvidence) sum_,
                 getParentForChildren(),
                 isClean());
         sum_ = null;
@@ -688,12 +688,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        LightClientAttackEvidence, LightClientAttackEvidence.Builder, LightClientAttackEvidenceOrBuilder> lightClientAttackEvidenceBuilder_;
+        com.tendermint.types.LightClientAttackEvidence, com.tendermint.types.LightClientAttackEvidence.Builder, com.tendermint.types.LightClientAttackEvidenceOrBuilder> lightClientAttackEvidenceBuilder_;
     /**
      * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
      * @return Whether the lightClientAttackEvidence field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasLightClientAttackEvidence() {
       return sumCase_ == 2;
     }
@@ -701,24 +701,24 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
      * @return The lightClientAttackEvidence.
      */
-    @Override
-    public LightClientAttackEvidence getLightClientAttackEvidence() {
+    @java.lang.Override
+    public com.tendermint.types.LightClientAttackEvidence getLightClientAttackEvidence() {
       if (lightClientAttackEvidenceBuilder_ == null) {
         if (sumCase_ == 2) {
-          return (LightClientAttackEvidence) sum_;
+          return (com.tendermint.types.LightClientAttackEvidence) sum_;
         }
-        return LightClientAttackEvidence.getDefaultInstance();
+        return com.tendermint.types.LightClientAttackEvidence.getDefaultInstance();
       } else {
         if (sumCase_ == 2) {
           return lightClientAttackEvidenceBuilder_.getMessage();
         }
-        return LightClientAttackEvidence.getDefaultInstance();
+        return com.tendermint.types.LightClientAttackEvidence.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
      */
-    public Builder setLightClientAttackEvidence(LightClientAttackEvidence value) {
+    public Builder setLightClientAttackEvidence(com.tendermint.types.LightClientAttackEvidence value) {
       if (lightClientAttackEvidenceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -735,7 +735,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
      */
     public Builder setLightClientAttackEvidence(
-        LightClientAttackEvidence.Builder builderForValue) {
+        com.tendermint.types.LightClientAttackEvidence.Builder builderForValue) {
       if (lightClientAttackEvidenceBuilder_ == null) {
         sum_ = builderForValue.build();
         onChanged();
@@ -748,11 +748,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
      */
-    public Builder mergeLightClientAttackEvidence(LightClientAttackEvidence value) {
+    public Builder mergeLightClientAttackEvidence(com.tendermint.types.LightClientAttackEvidence value) {
       if (lightClientAttackEvidenceBuilder_ == null) {
         if (sumCase_ == 2 &&
-            sum_ != LightClientAttackEvidence.getDefaultInstance()) {
-          sum_ = LightClientAttackEvidence.newBuilder((LightClientAttackEvidence) sum_)
+            sum_ != com.tendermint.types.LightClientAttackEvidence.getDefaultInstance()) {
+          sum_ = com.tendermint.types.LightClientAttackEvidence.newBuilder((com.tendermint.types.LightClientAttackEvidence) sum_)
               .mergeFrom(value).buildPartial();
         } else {
           sum_ = value;
@@ -790,36 +790,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
      */
-    public LightClientAttackEvidence.Builder getLightClientAttackEvidenceBuilder() {
+    public com.tendermint.types.LightClientAttackEvidence.Builder getLightClientAttackEvidenceBuilder() {
       return getLightClientAttackEvidenceFieldBuilder().getBuilder();
     }
     /**
      * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
      */
-    @Override
-    public LightClientAttackEvidenceOrBuilder getLightClientAttackEvidenceOrBuilder() {
+    @java.lang.Override
+    public com.tendermint.types.LightClientAttackEvidenceOrBuilder getLightClientAttackEvidenceOrBuilder() {
       if ((sumCase_ == 2) && (lightClientAttackEvidenceBuilder_ != null)) {
         return lightClientAttackEvidenceBuilder_.getMessageOrBuilder();
       } else {
         if (sumCase_ == 2) {
-          return (LightClientAttackEvidence) sum_;
+          return (com.tendermint.types.LightClientAttackEvidence) sum_;
         }
-        return LightClientAttackEvidence.getDefaultInstance();
+        return com.tendermint.types.LightClientAttackEvidence.getDefaultInstance();
       }
     }
     /**
      * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        LightClientAttackEvidence, LightClientAttackEvidence.Builder, LightClientAttackEvidenceOrBuilder>
+        com.tendermint.types.LightClientAttackEvidence, com.tendermint.types.LightClientAttackEvidence.Builder, com.tendermint.types.LightClientAttackEvidenceOrBuilder> 
         getLightClientAttackEvidenceFieldBuilder() {
       if (lightClientAttackEvidenceBuilder_ == null) {
         if (!(sumCase_ == 2)) {
-          sum_ = LightClientAttackEvidence.getDefaultInstance();
+          sum_ = com.tendermint.types.LightClientAttackEvidence.getDefaultInstance();
         }
         lightClientAttackEvidenceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            LightClientAttackEvidence, LightClientAttackEvidence.Builder, LightClientAttackEvidenceOrBuilder>(
-                (LightClientAttackEvidence) sum_,
+            com.tendermint.types.LightClientAttackEvidence, com.tendermint.types.LightClientAttackEvidence.Builder, com.tendermint.types.LightClientAttackEvidenceOrBuilder>(
+                (com.tendermint.types.LightClientAttackEvidence) sum_,
                 getParentForChildren(),
                 isClean());
         sum_ = null;
@@ -828,13 +828,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return lightClientAttackEvidenceBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -845,18 +845,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.types.Evidence)
-  private static final Evidence DEFAULT_INSTANCE;
+  private static final com.tendermint.types.Evidence DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Evidence();
+    DEFAULT_INSTANCE = new com.tendermint.types.Evidence();
   }
 
-  public static Evidence getDefaultInstance() {
+  public static com.tendermint.types.Evidence getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Evidence>
       PARSER = new com.google.protobuf.AbstractParser<Evidence>() {
-    @Override
+    @java.lang.Override
     public Evidence parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -880,13 +880,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Evidence> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Evidence getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.tendermint.types.Evidence getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -32,7 +32,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n cosmos/evidence/v1beta1/tx.proto\022\027cosm" +
       "os.evidence.v1beta1\032\024gogoproto/gogo.prot" +
       "o\032\031google/protobuf/any.proto\032\031cosmos_pro" +
@@ -64,13 +64,13 @@ public final class TxProto {
     internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidence_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidence_descriptor,
-        new String[] { "Submitter", "Evidence", });
+        new java.lang.String[] { "Submitter", "Evidence", });
     internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_descriptor,
-        new String[] { "Hash", });
+        new java.lang.String[] { "Hash", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);

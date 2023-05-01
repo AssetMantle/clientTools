@@ -62,7 +62,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n$cosmos/distribution/v1beta1/tx.proto\022\033" +
       "cosmos.distribution.v1beta1\032\024gogoproto/g" +
       "ogo.proto\032\036cosmos/base/v1beta1/coin.prot" +
@@ -120,49 +120,49 @@ public final class TxProto {
     internal_static_cosmos_distribution_v1beta1_MsgSetWithdrawAddress_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_MsgSetWithdrawAddress_descriptor,
-        new String[] { "DelegatorAddress", "WithdrawAddress", });
+        new java.lang.String[] { "DelegatorAddress", "WithdrawAddress", });
     internal_static_cosmos_distribution_v1beta1_MsgSetWithdrawAddressResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_distribution_v1beta1_MsgSetWithdrawAddressResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_MsgSetWithdrawAddressResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_distribution_v1beta1_MsgWithdrawDelegatorReward_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_distribution_v1beta1_MsgWithdrawDelegatorReward_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_MsgWithdrawDelegatorReward_descriptor,
-        new String[] { "DelegatorAddress", "ValidatorAddress", });
+        new java.lang.String[] { "DelegatorAddress", "ValidatorAddress", });
     internal_static_cosmos_distribution_v1beta1_MsgWithdrawDelegatorRewardResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_distribution_v1beta1_MsgWithdrawDelegatorRewardResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_MsgWithdrawDelegatorRewardResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_distribution_v1beta1_MsgWithdrawValidatorCommission_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_distribution_v1beta1_MsgWithdrawValidatorCommission_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_MsgWithdrawValidatorCommission_descriptor,
-        new String[] { "ValidatorAddress", });
+        new java.lang.String[] { "ValidatorAddress", });
     internal_static_cosmos_distribution_v1beta1_MsgWithdrawValidatorCommissionResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_distribution_v1beta1_MsgWithdrawValidatorCommissionResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_MsgWithdrawValidatorCommissionResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPool_descriptor,
-        new String[] { "Amount", "Depositor", });
+        new java.lang.String[] { "Amount", "Depositor", });
     internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPoolResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPoolResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_distribution_v1beta1_MsgFundCommunityPoolResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);

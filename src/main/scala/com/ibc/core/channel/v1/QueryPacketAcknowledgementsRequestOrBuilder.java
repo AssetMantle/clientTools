@@ -15,7 +15,7 @@ public interface QueryPacketAcknowledgementsRequestOrBuilder extends
    * <code>string port_id = 1 [json_name = "portId"];</code>
    * @return The portId.
    */
-  String getPortId();
+  java.lang.String getPortId();
   /**
    * <pre>
    * port unique identifier
@@ -35,7 +35,7 @@ public interface QueryPacketAcknowledgementsRequestOrBuilder extends
    * <code>string channel_id = 2 [json_name = "channelId"];</code>
    * @return The channelId.
    */
-  String getChannelId();
+  java.lang.String getChannelId();
   /**
    * <pre>
    * channel unique identifier
@@ -82,7 +82,7 @@ public interface QueryPacketAcknowledgementsRequestOrBuilder extends
    * <code>repeated uint64 packet_commitment_sequences = 4 [json_name = "packetCommitmentSequences"];</code>
    * @return A list containing the packetCommitmentSequences.
    */
-  java.util.List<Long> getPacketCommitmentSequencesList();
+  java.util.List<java.lang.Long> getPacketCommitmentSequencesList();
   /**
    * <pre>
    * list of packet sequences

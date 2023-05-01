@@ -10,12 +10,12 @@ public interface QueryProposalsResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<Proposal>
+  java.util.List<com.cosmos.gov.v1beta1.Proposal> 
       getProposalsList();
   /**
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
    */
-  Proposal getProposals(int index);
+  com.cosmos.gov.v1beta1.Proposal getProposals(int index);
   /**
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
    */
@@ -23,12 +23,12 @@ public interface QueryProposalsResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends ProposalOrBuilder>
+  java.util.List<? extends com.cosmos.gov.v1beta1.ProposalOrBuilder> 
       getProposalsOrBuilderList();
   /**
    * <code>repeated .cosmos.gov.v1beta1.Proposal proposals = 1 [json_name = "proposals", (.gogoproto.nullable) = false];</code>
    */
-  ProposalOrBuilder getProposalsOrBuilder(
+  com.cosmos.gov.v1beta1.ProposalOrBuilder getProposalsOrBuilder(
       int index);
 
   /**

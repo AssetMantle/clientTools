@@ -36,11 +36,11 @@ public interface ClientStateOrBuilder extends
    * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
    * @return The consensusState.
    */
-  ConsensusState getConsensusState();
+  com.ibc.lightclients.solomachine.v1.ConsensusState getConsensusState();
   /**
    * <code>.ibc.lightclients.solomachine.v1.ConsensusState consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
    */
-  ConsensusStateOrBuilder getConsensusStateOrBuilder();
+  com.ibc.lightclients.solomachine.v1.ConsensusStateOrBuilder getConsensusStateOrBuilder();
 
   /**
    * <pre>

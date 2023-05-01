@@ -11,7 +11,7 @@ public interface ClientStateOrBuilder extends
    * <code>string chain_id = 1 [json_name = "chainId"];</code>
    * @return The chainId.
    */
-  String getChainId();
+  java.lang.String getChainId();
   /**
    * <code>string chain_id = 1 [json_name = "chainId"];</code>
    * @return The bytes for chainId.
@@ -28,11 +28,11 @@ public interface ClientStateOrBuilder extends
    * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
    * @return The trustLevel.
    */
-  Fraction getTrustLevel();
+  com.ibc.lightclients.tendermint.v1.Fraction getTrustLevel();
   /**
    * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
    */
-  FractionOrBuilder getTrustLevelOrBuilder();
+  com.ibc.lightclients.tendermint.v1.FractionOrBuilder getTrustLevelOrBuilder();
 
   /**
    * <pre>
@@ -230,7 +230,7 @@ public interface ClientStateOrBuilder extends
    * <code>repeated string upgrade_path = 9 [json_name = "upgradePath", (.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
    * @return A list containing the upgradePath.
    */
-  java.util.List<String>
+  java.util.List<java.lang.String>
       getUpgradePathList();
   /**
    * <pre>
@@ -262,7 +262,7 @@ public interface ClientStateOrBuilder extends
    * @param index The index of the element to return.
    * @return The upgradePath at the given index.
    */
-  String getUpgradePath(int index);
+  java.lang.String getUpgradePath(int index);
   /**
    * <pre>
    * Path at which next upgraded client will be committed.
@@ -291,7 +291,7 @@ public interface ClientStateOrBuilder extends
    *     See ibc/lightclients/tendermint/v1/tendermint.proto;l=55
    * @return The allowUpdateAfterExpiry.
    */
-  @Deprecated boolean getAllowUpdateAfterExpiry();
+  @java.lang.Deprecated boolean getAllowUpdateAfterExpiry();
 
   /**
    * <pre>
@@ -303,5 +303,5 @@ public interface ClientStateOrBuilder extends
    *     See ibc/lightclients/tendermint/v1/tendermint.proto;l=57
    * @return The allowUpdateAfterMisbehaviour.
    */
-  @Deprecated boolean getAllowUpdateAfterMisbehaviour();
+  @java.lang.Deprecated boolean getAllowUpdateAfterMisbehaviour();
 }

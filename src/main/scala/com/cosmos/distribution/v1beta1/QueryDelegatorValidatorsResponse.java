@@ -24,24 +24,24 @@ private static final long serialVersionUID = 0L;
     validators_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryDelegatorValidatorsResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorValidatorsResponse_descriptor;
+    return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorValidatorsResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorValidatorsResponse_fieldAccessorTable
+    return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorValidatorsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryDelegatorValidatorsResponse.class, Builder.class);
+            com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse.class, com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse.Builder.class);
   }
 
   public static final int VALIDATORS_FIELD_NUMBER = 1;
@@ -79,7 +79,7 @@ private static final long serialVersionUID = 0L;
    * @param index The index of the element to return.
    * @return The validators at the given index.
    */
-  public String getValidators(int index) {
+  public java.lang.String getValidators(int index) {
     return validators_.get(index);
   }
   /**
@@ -97,7 +97,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -107,7 +107,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < validators_.size(); i++) {
@@ -116,7 +116,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -135,15 +135,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryDelegatorValidatorsResponse)) {
+    if (!(obj instanceof com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse)) {
       return super.equals(obj);
     }
-    QueryDelegatorValidatorsResponse other = (QueryDelegatorValidatorsResponse) obj;
+    com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse other = (com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse) obj;
 
     if (!getValidatorsList()
         .equals(other.getValidatorsList())) return false;
@@ -151,7 +151,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -167,69 +167,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryDelegatorValidatorsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDelegatorValidatorsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDelegatorValidatorsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDelegatorValidatorsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDelegatorValidatorsResponse parseFrom(byte[] data)
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDelegatorValidatorsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDelegatorValidatorsResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryDelegatorValidatorsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryDelegatorValidatorsResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryDelegatorValidatorsResponse parseDelimitedFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryDelegatorValidatorsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryDelegatorValidatorsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -237,23 +237,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryDelegatorValidatorsResponse prototype) {
+  public static Builder newBuilder(com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -268,18 +268,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse)
-      QueryDelegatorValidatorsResponseOrBuilder {
+      com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorValidatorsResponse_descriptor;
+      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorValidatorsResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorValidatorsResponse_fieldAccessorTable
+      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorValidatorsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryDelegatorValidatorsResponse.class, Builder.class);
+              com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse.class, com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse.Builder.class);
     }
 
     // Construct using com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse.newBuilder()
@@ -288,11 +288,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -301,36 +301,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorValidatorsResponse_descriptor;
+      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryDelegatorValidatorsResponse_descriptor;
     }
 
-    @Override
-    public QueryDelegatorValidatorsResponse getDefaultInstanceForType() {
-      return QueryDelegatorValidatorsResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse getDefaultInstanceForType() {
+      return com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryDelegatorValidatorsResponse build() {
-      QueryDelegatorValidatorsResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse build() {
+      com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryDelegatorValidatorsResponse buildPartial() {
-      QueryDelegatorValidatorsResponse result = new QueryDelegatorValidatorsResponse(this);
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse buildPartial() {
+      com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse result = new com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(QueryDelegatorValidatorsResponse result) {
+    private void buildPartialRepeatedFields(com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse result) {
       if (((bitField0_ & 0x00000001) != 0)) {
         validators_ = validators_.getUnmodifiableView();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -338,54 +338,54 @@ private static final long serialVersionUID = 0L;
       result.validators_ = validators_;
     }
 
-    private void buildPartial0(QueryDelegatorValidatorsResponse result) {
+    private void buildPartial0(com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryDelegatorValidatorsResponse) {
-        return mergeFrom((QueryDelegatorValidatorsResponse)other);
+      if (other instanceof com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse) {
+        return mergeFrom((com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryDelegatorValidatorsResponse other) {
-      if (other == QueryDelegatorValidatorsResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse other) {
+      if (other == com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse.getDefaultInstance()) return this;
       if (!other.validators_.isEmpty()) {
         if (validators_.isEmpty()) {
           validators_ = other.validators_;
@@ -401,18 +401,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -423,7 +423,7 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
               ensureValidatorsIsMutable();
               validators_.add(s);
               break;
@@ -484,7 +484,7 @@ private static final long serialVersionUID = 0L;
      * @param index The index of the element to return.
      * @return The validators at the given index.
      */
-    public String getValidators(int index) {
+    public java.lang.String getValidators(int index) {
       return validators_.get(index);
     }
     /**
@@ -511,7 +511,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setValidators(
-        int index, String value) {
+        int index, java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       ensureValidatorsIsMutable();
       validators_.set(index, value);
@@ -528,7 +528,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addValidators(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       ensureValidatorsIsMutable();
       validators_.add(value);
@@ -545,7 +545,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addAllValidators(
-        Iterable<String> values) {
+        java.lang.Iterable<java.lang.String> values) {
       ensureValidatorsIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, validators_);
@@ -584,13 +584,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -601,18 +601,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse)
-  private static final QueryDelegatorValidatorsResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryDelegatorValidatorsResponse();
+    DEFAULT_INSTANCE = new com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse();
   }
 
-  public static QueryDelegatorValidatorsResponse getDefaultInstance() {
+  public static com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryDelegatorValidatorsResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryDelegatorValidatorsResponse>() {
-    @Override
+    @java.lang.Override
     public QueryDelegatorValidatorsResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -636,13 +636,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryDelegatorValidatorsResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryDelegatorValidatorsResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

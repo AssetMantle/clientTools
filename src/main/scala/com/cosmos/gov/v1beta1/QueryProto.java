@@ -102,7 +102,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\036cosmos/gov/v1beta1/query.proto\022\022cosmos" +
       ".gov.v1beta1\032*cosmos/base/query/v1beta1/" +
       "pagination.proto\032\024gogoproto/gogo.proto\032\034" +
@@ -199,104 +199,104 @@ public final class QueryProto {
           com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
-          GovProto.getDescriptor(),
+          com.cosmos.gov.v1beta1.GovProto.getDescriptor(),
         });
     internal_static_cosmos_gov_v1beta1_QueryProposalRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_gov_v1beta1_QueryProposalRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryProposalRequest_descriptor,
-        new String[] { "ProposalId", });
+        new java.lang.String[] { "ProposalId", });
     internal_static_cosmos_gov_v1beta1_QueryProposalResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_gov_v1beta1_QueryProposalResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryProposalResponse_descriptor,
-        new String[] { "Proposal", });
+        new java.lang.String[] { "Proposal", });
     internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryProposalsRequest_descriptor,
-        new String[] { "ProposalStatus", "Voter", "Depositor", "Pagination", });
+        new java.lang.String[] { "ProposalStatus", "Voter", "Depositor", "Pagination", });
     internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryProposalsResponse_descriptor,
-        new String[] { "Proposals", "Pagination", });
+        new java.lang.String[] { "Proposals", "Pagination", });
     internal_static_cosmos_gov_v1beta1_QueryVoteRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_gov_v1beta1_QueryVoteRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryVoteRequest_descriptor,
-        new String[] { "ProposalId", "Voter", });
+        new java.lang.String[] { "ProposalId", "Voter", });
     internal_static_cosmos_gov_v1beta1_QueryVoteResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_gov_v1beta1_QueryVoteResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryVoteResponse_descriptor,
-        new String[] { "Vote", });
+        new java.lang.String[] { "Vote", });
     internal_static_cosmos_gov_v1beta1_QueryVotesRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_gov_v1beta1_QueryVotesRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryVotesRequest_descriptor,
-        new String[] { "ProposalId", "Pagination", });
+        new java.lang.String[] { "ProposalId", "Pagination", });
     internal_static_cosmos_gov_v1beta1_QueryVotesResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_gov_v1beta1_QueryVotesResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryVotesResponse_descriptor,
-        new String[] { "Votes", "Pagination", });
+        new java.lang.String[] { "Votes", "Pagination", });
     internal_static_cosmos_gov_v1beta1_QueryParamsRequest_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_cosmos_gov_v1beta1_QueryParamsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryParamsRequest_descriptor,
-        new String[] { "ParamsType", });
+        new java.lang.String[] { "ParamsType", });
     internal_static_cosmos_gov_v1beta1_QueryParamsResponse_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_cosmos_gov_v1beta1_QueryParamsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryParamsResponse_descriptor,
-        new String[] { "VotingParams", "DepositParams", "TallyParams", });
+        new java.lang.String[] { "VotingParams", "DepositParams", "TallyParams", });
     internal_static_cosmos_gov_v1beta1_QueryDepositRequest_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_cosmos_gov_v1beta1_QueryDepositRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryDepositRequest_descriptor,
-        new String[] { "ProposalId", "Depositor", });
+        new java.lang.String[] { "ProposalId", "Depositor", });
     internal_static_cosmos_gov_v1beta1_QueryDepositResponse_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_cosmos_gov_v1beta1_QueryDepositResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryDepositResponse_descriptor,
-        new String[] { "Deposit", });
+        new java.lang.String[] { "Deposit", });
     internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryDepositsRequest_descriptor,
-        new String[] { "ProposalId", "Pagination", });
+        new java.lang.String[] { "ProposalId", "Pagination", });
     internal_static_cosmos_gov_v1beta1_QueryDepositsResponse_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_cosmos_gov_v1beta1_QueryDepositsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryDepositsResponse_descriptor,
-        new String[] { "Deposits", "Pagination", });
+        new java.lang.String[] { "Deposits", "Pagination", });
     internal_static_cosmos_gov_v1beta1_QueryTallyResultRequest_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_cosmos_gov_v1beta1_QueryTallyResultRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryTallyResultRequest_descriptor,
-        new String[] { "ProposalId", });
+        new java.lang.String[] { "ProposalId", });
     internal_static_cosmos_gov_v1beta1_QueryTallyResultResponse_descriptor =
       getDescriptor().getMessageTypes().get(15);
     internal_static_cosmos_gov_v1beta1_QueryTallyResultResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_QueryTallyResultResponse_descriptor,
-        new String[] { "Tally", });
+        new java.lang.String[] { "Tally", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.equal);
@@ -308,7 +308,7 @@ public final class QueryProto {
     com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
-    GovProto.getDescriptor();
+    com.cosmos.gov.v1beta1.GovProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -24,7 +24,7 @@ public interface QueryParamsResponseOrBuilder extends
    * <code>.cosmos.params.v1beta1.ParamChange param = 1 [json_name = "param", (.gogoproto.nullable) = false];</code>
    * @return The param.
    */
-  ParamChange getParam();
+  com.cosmos.params.v1beta1.ParamChange getParam();
   /**
    * <pre>
    * param defines the queried parameter.
@@ -32,5 +32,5 @@ public interface QueryParamsResponseOrBuilder extends
    *
    * <code>.cosmos.params.v1beta1.ParamChange param = 1 [json_name = "param", (.gogoproto.nullable) = false];</code>
    */
-  ParamChangeOrBuilder getParamOrBuilder();
+  com.cosmos.params.v1beta1.ParamChangeOrBuilder getParamOrBuilder();
 }

@@ -32,7 +32,7 @@ public final class AuthzProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\"cosmos/staking/v1beta1/authz.proto\022\026co" +
       "smos.staking.v1beta1\032\024gogoproto/gogo.pro" +
       "to\032\031cosmos_proto/cosmos.proto\032\036cosmos/ba" +
@@ -72,13 +72,13 @@ public final class AuthzProto {
     internal_static_cosmos_staking_v1beta1_StakeAuthorization_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_StakeAuthorization_descriptor,
-        new String[] { "MaxTokens", "AllowList", "DenyList", "AuthorizationType", "Validators", });
+        new java.lang.String[] { "MaxTokens", "AllowList", "DenyList", "AuthorizationType", "Validators", });
     internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_descriptor =
       internal_static_cosmos_staking_v1beta1_StakeAuthorization_descriptor.getNestedTypes().get(0);
     internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_StakeAuthorization_Validators_descriptor,
-        new String[] { "Address", });
+        new java.lang.String[] { "Address", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.implementsInterface);

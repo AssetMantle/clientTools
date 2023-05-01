@@ -15,7 +15,7 @@ public interface ClientStateOrBuilder extends
    * <code>string chain_id = 1 [json_name = "chainId", (.gogoproto.moretags) = "yaml:&#92;"chain_id&#92;""];</code>
    * @return The chainId.
    */
-  String getChainId();
+  java.lang.String getChainId();
   /**
    * <pre>
    * self chain ID

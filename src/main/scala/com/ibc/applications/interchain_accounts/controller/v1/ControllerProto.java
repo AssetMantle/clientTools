@@ -27,7 +27,7 @@ public final class ControllerProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\nCibc/applications/interchain_accounts/c" +
       "ontroller/v1/controller.proto\0222ibc.appli" +
       "cations.interchain_accounts.controller.v" +
@@ -56,7 +56,7 @@ public final class ControllerProto {
     internal_static_ibc_applications_interchain_accounts_controller_v1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_controller_v1_Params_descriptor,
-        new String[] { "ControllerEnabled", });
+        new java.lang.String[] { "ControllerEnabled", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.moretags);

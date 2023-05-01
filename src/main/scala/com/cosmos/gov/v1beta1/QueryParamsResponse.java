@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private QueryParamsResponse() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryParamsResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_gov_v1beta1_QueryParamsResponse_descriptor;
+    return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryParamsResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_gov_v1beta1_QueryParamsResponse_fieldAccessorTable
+    return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryParamsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryParamsResponse.class, Builder.class);
+            com.cosmos.gov.v1beta1.QueryParamsResponse.class, com.cosmos.gov.v1beta1.QueryParamsResponse.Builder.class);
   }
 
   public static final int VOTING_PARAMS_FIELD_NUMBER = 1;
-  private VotingParams votingParams_;
+  private com.cosmos.gov.v1beta1.VotingParams votingParams_;
   /**
    * <pre>
    * voting_params defines the parameters related to voting.
@@ -52,7 +52,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
    * @return Whether the votingParams field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasVotingParams() {
     return votingParams_ != null;
   }
@@ -64,9 +64,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
    * @return The votingParams.
    */
-  @Override
-  public VotingParams getVotingParams() {
-    return votingParams_ == null ? VotingParams.getDefaultInstance() : votingParams_;
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.VotingParams getVotingParams() {
+    return votingParams_ == null ? com.cosmos.gov.v1beta1.VotingParams.getDefaultInstance() : votingParams_;
   }
   /**
    * <pre>
@@ -75,13 +75,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public VotingParamsOrBuilder getVotingParamsOrBuilder() {
-    return votingParams_ == null ? VotingParams.getDefaultInstance() : votingParams_;
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.VotingParamsOrBuilder getVotingParamsOrBuilder() {
+    return votingParams_ == null ? com.cosmos.gov.v1beta1.VotingParams.getDefaultInstance() : votingParams_;
   }
 
   public static final int DEPOSIT_PARAMS_FIELD_NUMBER = 2;
-  private DepositParams depositParams_;
+  private com.cosmos.gov.v1beta1.DepositParams depositParams_;
   /**
    * <pre>
    * deposit_params defines the parameters related to deposit.
@@ -90,7 +90,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
    * @return Whether the depositParams field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasDepositParams() {
     return depositParams_ != null;
   }
@@ -102,9 +102,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
    * @return The depositParams.
    */
-  @Override
-  public DepositParams getDepositParams() {
-    return depositParams_ == null ? DepositParams.getDefaultInstance() : depositParams_;
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.DepositParams getDepositParams() {
+    return depositParams_ == null ? com.cosmos.gov.v1beta1.DepositParams.getDefaultInstance() : depositParams_;
   }
   /**
    * <pre>
@@ -113,13 +113,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public DepositParamsOrBuilder getDepositParamsOrBuilder() {
-    return depositParams_ == null ? DepositParams.getDefaultInstance() : depositParams_;
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.DepositParamsOrBuilder getDepositParamsOrBuilder() {
+    return depositParams_ == null ? com.cosmos.gov.v1beta1.DepositParams.getDefaultInstance() : depositParams_;
   }
 
   public static final int TALLY_PARAMS_FIELD_NUMBER = 3;
-  private TallyParams tallyParams_;
+  private com.cosmos.gov.v1beta1.TallyParams tallyParams_;
   /**
    * <pre>
    * tally_params defines the parameters related to tally.
@@ -128,7 +128,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
    * @return Whether the tallyParams field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasTallyParams() {
     return tallyParams_ != null;
   }
@@ -140,9 +140,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
    * @return The tallyParams.
    */
-  @Override
-  public TallyParams getTallyParams() {
-    return tallyParams_ == null ? TallyParams.getDefaultInstance() : tallyParams_;
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.TallyParams getTallyParams() {
+    return tallyParams_ == null ? com.cosmos.gov.v1beta1.TallyParams.getDefaultInstance() : tallyParams_;
   }
   /**
    * <pre>
@@ -151,13 +151,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public TallyParamsOrBuilder getTallyParamsOrBuilder() {
-    return tallyParams_ == null ? TallyParams.getDefaultInstance() : tallyParams_;
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.TallyParamsOrBuilder getTallyParamsOrBuilder() {
+    return tallyParams_ == null ? com.cosmos.gov.v1beta1.TallyParams.getDefaultInstance() : tallyParams_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -167,7 +167,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (votingParams_ != null) {
@@ -182,7 +182,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -205,15 +205,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryParamsResponse)) {
+    if (!(obj instanceof com.cosmos.gov.v1beta1.QueryParamsResponse)) {
       return super.equals(obj);
     }
-    QueryParamsResponse other = (QueryParamsResponse) obj;
+    com.cosmos.gov.v1beta1.QueryParamsResponse other = (com.cosmos.gov.v1beta1.QueryParamsResponse) obj;
 
     if (hasVotingParams() != other.hasVotingParams()) return false;
     if (hasVotingParams()) {
@@ -234,7 +234,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -258,69 +258,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryParamsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryParamsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryParamsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryParamsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryParamsResponse parseFrom(byte[] data)
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryParamsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryParamsResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryParamsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryParamsResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryParamsResponse parseDelimitedFrom(
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryParamsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryParamsResponse parseFrom(
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -328,23 +328,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryParamsResponse prototype) {
+  public static Builder newBuilder(com.cosmos.gov.v1beta1.QueryParamsResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -358,18 +358,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.gov.v1beta1.QueryParamsResponse)
-      QueryParamsResponseOrBuilder {
+      com.cosmos.gov.v1beta1.QueryParamsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryParamsResponse_descriptor;
+      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryParamsResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryParamsResponse_fieldAccessorTable
+      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryParamsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryParamsResponse.class, Builder.class);
+              com.cosmos.gov.v1beta1.QueryParamsResponse.class, com.cosmos.gov.v1beta1.QueryParamsResponse.Builder.class);
     }
 
     // Construct using com.cosmos.gov.v1beta1.QueryParamsResponse.newBuilder()
@@ -378,11 +378,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -404,35 +404,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_gov_v1beta1_QueryParamsResponse_descriptor;
+      return com.cosmos.gov.v1beta1.QueryProto.internal_static_cosmos_gov_v1beta1_QueryParamsResponse_descriptor;
     }
 
-    @Override
-    public QueryParamsResponse getDefaultInstanceForType() {
-      return QueryParamsResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.QueryParamsResponse getDefaultInstanceForType() {
+      return com.cosmos.gov.v1beta1.QueryParamsResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryParamsResponse build() {
-      QueryParamsResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.QueryParamsResponse build() {
+      com.cosmos.gov.v1beta1.QueryParamsResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryParamsResponse buildPartial() {
-      QueryParamsResponse result = new QueryParamsResponse(this);
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.QueryParamsResponse buildPartial() {
+      com.cosmos.gov.v1beta1.QueryParamsResponse result = new com.cosmos.gov.v1beta1.QueryParamsResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(QueryParamsResponse result) {
+    private void buildPartial0(com.cosmos.gov.v1beta1.QueryParamsResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.votingParams_ = votingParamsBuilder_ == null
@@ -451,50 +451,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryParamsResponse) {
-        return mergeFrom((QueryParamsResponse)other);
+      if (other instanceof com.cosmos.gov.v1beta1.QueryParamsResponse) {
+        return mergeFrom((com.cosmos.gov.v1beta1.QueryParamsResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryParamsResponse other) {
-      if (other == QueryParamsResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.gov.v1beta1.QueryParamsResponse other) {
+      if (other == com.cosmos.gov.v1beta1.QueryParamsResponse.getDefaultInstance()) return this;
       if (other.hasVotingParams()) {
         mergeVotingParams(other.getVotingParams());
       }
@@ -509,18 +509,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -568,9 +568,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private VotingParams votingParams_;
+    private com.cosmos.gov.v1beta1.VotingParams votingParams_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        VotingParams, VotingParams.Builder, VotingParamsOrBuilder> votingParamsBuilder_;
+        com.cosmos.gov.v1beta1.VotingParams, com.cosmos.gov.v1beta1.VotingParams.Builder, com.cosmos.gov.v1beta1.VotingParamsOrBuilder> votingParamsBuilder_;
     /**
      * <pre>
      * voting_params defines the parameters related to voting.
@@ -590,9 +590,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
      * @return The votingParams.
      */
-    public VotingParams getVotingParams() {
+    public com.cosmos.gov.v1beta1.VotingParams getVotingParams() {
       if (votingParamsBuilder_ == null) {
-        return votingParams_ == null ? VotingParams.getDefaultInstance() : votingParams_;
+        return votingParams_ == null ? com.cosmos.gov.v1beta1.VotingParams.getDefaultInstance() : votingParams_;
       } else {
         return votingParamsBuilder_.getMessage();
       }
@@ -604,7 +604,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setVotingParams(VotingParams value) {
+    public Builder setVotingParams(com.cosmos.gov.v1beta1.VotingParams value) {
       if (votingParamsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -625,7 +625,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
      */
     public Builder setVotingParams(
-        VotingParams.Builder builderForValue) {
+        com.cosmos.gov.v1beta1.VotingParams.Builder builderForValue) {
       if (votingParamsBuilder_ == null) {
         votingParams_ = builderForValue.build();
       } else {
@@ -642,11 +642,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeVotingParams(VotingParams value) {
+    public Builder mergeVotingParams(com.cosmos.gov.v1beta1.VotingParams value) {
       if (votingParamsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           votingParams_ != null &&
-          votingParams_ != VotingParams.getDefaultInstance()) {
+          votingParams_ != com.cosmos.gov.v1beta1.VotingParams.getDefaultInstance()) {
           getVotingParamsBuilder().mergeFrom(value);
         } else {
           votingParams_ = value;
@@ -682,7 +682,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
      */
-    public VotingParams.Builder getVotingParamsBuilder() {
+    public com.cosmos.gov.v1beta1.VotingParams.Builder getVotingParamsBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getVotingParamsFieldBuilder().getBuilder();
@@ -694,12 +694,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
      */
-    public VotingParamsOrBuilder getVotingParamsOrBuilder() {
+    public com.cosmos.gov.v1beta1.VotingParamsOrBuilder getVotingParamsOrBuilder() {
       if (votingParamsBuilder_ != null) {
         return votingParamsBuilder_.getMessageOrBuilder();
       } else {
         return votingParams_ == null ?
-            VotingParams.getDefaultInstance() : votingParams_;
+            com.cosmos.gov.v1beta1.VotingParams.getDefaultInstance() : votingParams_;
       }
     }
     /**
@@ -710,11 +710,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.VotingParams voting_params = 1 [json_name = "votingParams", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        VotingParams, VotingParams.Builder, VotingParamsOrBuilder>
+        com.cosmos.gov.v1beta1.VotingParams, com.cosmos.gov.v1beta1.VotingParams.Builder, com.cosmos.gov.v1beta1.VotingParamsOrBuilder> 
         getVotingParamsFieldBuilder() {
       if (votingParamsBuilder_ == null) {
         votingParamsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            VotingParams, VotingParams.Builder, VotingParamsOrBuilder>(
+            com.cosmos.gov.v1beta1.VotingParams, com.cosmos.gov.v1beta1.VotingParams.Builder, com.cosmos.gov.v1beta1.VotingParamsOrBuilder>(
                 getVotingParams(),
                 getParentForChildren(),
                 isClean());
@@ -723,9 +723,9 @@ private static final long serialVersionUID = 0L;
       return votingParamsBuilder_;
     }
 
-    private DepositParams depositParams_;
+    private com.cosmos.gov.v1beta1.DepositParams depositParams_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        DepositParams, DepositParams.Builder, DepositParamsOrBuilder> depositParamsBuilder_;
+        com.cosmos.gov.v1beta1.DepositParams, com.cosmos.gov.v1beta1.DepositParams.Builder, com.cosmos.gov.v1beta1.DepositParamsOrBuilder> depositParamsBuilder_;
     /**
      * <pre>
      * deposit_params defines the parameters related to deposit.
@@ -745,9 +745,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
      * @return The depositParams.
      */
-    public DepositParams getDepositParams() {
+    public com.cosmos.gov.v1beta1.DepositParams getDepositParams() {
       if (depositParamsBuilder_ == null) {
-        return depositParams_ == null ? DepositParams.getDefaultInstance() : depositParams_;
+        return depositParams_ == null ? com.cosmos.gov.v1beta1.DepositParams.getDefaultInstance() : depositParams_;
       } else {
         return depositParamsBuilder_.getMessage();
       }
@@ -759,7 +759,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setDepositParams(DepositParams value) {
+    public Builder setDepositParams(com.cosmos.gov.v1beta1.DepositParams value) {
       if (depositParamsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -780,7 +780,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
      */
     public Builder setDepositParams(
-        DepositParams.Builder builderForValue) {
+        com.cosmos.gov.v1beta1.DepositParams.Builder builderForValue) {
       if (depositParamsBuilder_ == null) {
         depositParams_ = builderForValue.build();
       } else {
@@ -797,11 +797,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeDepositParams(DepositParams value) {
+    public Builder mergeDepositParams(com.cosmos.gov.v1beta1.DepositParams value) {
       if (depositParamsBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           depositParams_ != null &&
-          depositParams_ != DepositParams.getDefaultInstance()) {
+          depositParams_ != com.cosmos.gov.v1beta1.DepositParams.getDefaultInstance()) {
           getDepositParamsBuilder().mergeFrom(value);
         } else {
           depositParams_ = value;
@@ -837,7 +837,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
      */
-    public DepositParams.Builder getDepositParamsBuilder() {
+    public com.cosmos.gov.v1beta1.DepositParams.Builder getDepositParamsBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getDepositParamsFieldBuilder().getBuilder();
@@ -849,12 +849,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
      */
-    public DepositParamsOrBuilder getDepositParamsOrBuilder() {
+    public com.cosmos.gov.v1beta1.DepositParamsOrBuilder getDepositParamsOrBuilder() {
       if (depositParamsBuilder_ != null) {
         return depositParamsBuilder_.getMessageOrBuilder();
       } else {
         return depositParams_ == null ?
-            DepositParams.getDefaultInstance() : depositParams_;
+            com.cosmos.gov.v1beta1.DepositParams.getDefaultInstance() : depositParams_;
       }
     }
     /**
@@ -865,11 +865,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.DepositParams deposit_params = 2 [json_name = "depositParams", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        DepositParams, DepositParams.Builder, DepositParamsOrBuilder>
+        com.cosmos.gov.v1beta1.DepositParams, com.cosmos.gov.v1beta1.DepositParams.Builder, com.cosmos.gov.v1beta1.DepositParamsOrBuilder> 
         getDepositParamsFieldBuilder() {
       if (depositParamsBuilder_ == null) {
         depositParamsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            DepositParams, DepositParams.Builder, DepositParamsOrBuilder>(
+            com.cosmos.gov.v1beta1.DepositParams, com.cosmos.gov.v1beta1.DepositParams.Builder, com.cosmos.gov.v1beta1.DepositParamsOrBuilder>(
                 getDepositParams(),
                 getParentForChildren(),
                 isClean());
@@ -878,9 +878,9 @@ private static final long serialVersionUID = 0L;
       return depositParamsBuilder_;
     }
 
-    private TallyParams tallyParams_;
+    private com.cosmos.gov.v1beta1.TallyParams tallyParams_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        TallyParams, TallyParams.Builder, TallyParamsOrBuilder> tallyParamsBuilder_;
+        com.cosmos.gov.v1beta1.TallyParams, com.cosmos.gov.v1beta1.TallyParams.Builder, com.cosmos.gov.v1beta1.TallyParamsOrBuilder> tallyParamsBuilder_;
     /**
      * <pre>
      * tally_params defines the parameters related to tally.
@@ -900,9 +900,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
      * @return The tallyParams.
      */
-    public TallyParams getTallyParams() {
+    public com.cosmos.gov.v1beta1.TallyParams getTallyParams() {
       if (tallyParamsBuilder_ == null) {
-        return tallyParams_ == null ? TallyParams.getDefaultInstance() : tallyParams_;
+        return tallyParams_ == null ? com.cosmos.gov.v1beta1.TallyParams.getDefaultInstance() : tallyParams_;
       } else {
         return tallyParamsBuilder_.getMessage();
       }
@@ -914,7 +914,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setTallyParams(TallyParams value) {
+    public Builder setTallyParams(com.cosmos.gov.v1beta1.TallyParams value) {
       if (tallyParamsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -935,7 +935,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
      */
     public Builder setTallyParams(
-        TallyParams.Builder builderForValue) {
+        com.cosmos.gov.v1beta1.TallyParams.Builder builderForValue) {
       if (tallyParamsBuilder_ == null) {
         tallyParams_ = builderForValue.build();
       } else {
@@ -952,11 +952,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeTallyParams(TallyParams value) {
+    public Builder mergeTallyParams(com.cosmos.gov.v1beta1.TallyParams value) {
       if (tallyParamsBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0) &&
           tallyParams_ != null &&
-          tallyParams_ != TallyParams.getDefaultInstance()) {
+          tallyParams_ != com.cosmos.gov.v1beta1.TallyParams.getDefaultInstance()) {
           getTallyParamsBuilder().mergeFrom(value);
         } else {
           tallyParams_ = value;
@@ -992,7 +992,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
      */
-    public TallyParams.Builder getTallyParamsBuilder() {
+    public com.cosmos.gov.v1beta1.TallyParams.Builder getTallyParamsBuilder() {
       bitField0_ |= 0x00000004;
       onChanged();
       return getTallyParamsFieldBuilder().getBuilder();
@@ -1004,12 +1004,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
      */
-    public TallyParamsOrBuilder getTallyParamsOrBuilder() {
+    public com.cosmos.gov.v1beta1.TallyParamsOrBuilder getTallyParamsOrBuilder() {
       if (tallyParamsBuilder_ != null) {
         return tallyParamsBuilder_.getMessageOrBuilder();
       } else {
         return tallyParams_ == null ?
-            TallyParams.getDefaultInstance() : tallyParams_;
+            com.cosmos.gov.v1beta1.TallyParams.getDefaultInstance() : tallyParams_;
       }
     }
     /**
@@ -1020,11 +1020,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.TallyParams tally_params = 3 [json_name = "tallyParams", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        TallyParams, TallyParams.Builder, TallyParamsOrBuilder>
+        com.cosmos.gov.v1beta1.TallyParams, com.cosmos.gov.v1beta1.TallyParams.Builder, com.cosmos.gov.v1beta1.TallyParamsOrBuilder> 
         getTallyParamsFieldBuilder() {
       if (tallyParamsBuilder_ == null) {
         tallyParamsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            TallyParams, TallyParams.Builder, TallyParamsOrBuilder>(
+            com.cosmos.gov.v1beta1.TallyParams, com.cosmos.gov.v1beta1.TallyParams.Builder, com.cosmos.gov.v1beta1.TallyParamsOrBuilder>(
                 getTallyParams(),
                 getParentForChildren(),
                 isClean());
@@ -1032,13 +1032,13 @@ private static final long serialVersionUID = 0L;
       }
       return tallyParamsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1049,18 +1049,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.gov.v1beta1.QueryParamsResponse)
-  private static final QueryParamsResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.gov.v1beta1.QueryParamsResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryParamsResponse();
+    DEFAULT_INSTANCE = new com.cosmos.gov.v1beta1.QueryParamsResponse();
   }
 
-  public static QueryParamsResponse getDefaultInstance() {
+  public static com.cosmos.gov.v1beta1.QueryParamsResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryParamsResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryParamsResponse>() {
-    @Override
+    @java.lang.Override
     public QueryParamsResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1084,13 +1084,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryParamsResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryParamsResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.QueryParamsResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

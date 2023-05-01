@@ -16,11 +16,11 @@ public interface VoteInfoOrBuilder extends
    * <code>.tendermint.abci.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    * @return The validator.
    */
-  Validator getValidator();
+  com.tendermint.abci.Validator getValidator();
   /**
    * <code>.tendermint.abci.Validator validator = 1 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorOrBuilder getValidatorOrBuilder();
+  com.tendermint.abci.ValidatorOrBuilder getValidatorOrBuilder();
 
   /**
    * <code>bool signed_last_block = 2 [json_name = "signedLastBlock"];</code>

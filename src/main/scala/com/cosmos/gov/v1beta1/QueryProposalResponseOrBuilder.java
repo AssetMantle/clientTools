@@ -16,9 +16,9 @@ public interface QueryProposalResponseOrBuilder extends
    * <code>.cosmos.gov.v1beta1.Proposal proposal = 1 [json_name = "proposal", (.gogoproto.nullable) = false];</code>
    * @return The proposal.
    */
-  Proposal getProposal();
+  com.cosmos.gov.v1beta1.Proposal getProposal();
   /**
    * <code>.cosmos.gov.v1beta1.Proposal proposal = 1 [json_name = "proposal", (.gogoproto.nullable) = false];</code>
    */
-  ProposalOrBuilder getProposalOrBuilder();
+  com.cosmos.gov.v1beta1.ProposalOrBuilder getProposalOrBuilder();
 }

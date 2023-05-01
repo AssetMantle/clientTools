@@ -22,32 +22,32 @@ private static final long serialVersionUID = 0L;
   private BatchEntry() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new BatchEntry();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return ProofsProto.internal_static_ics23_BatchEntry_descriptor;
+    return com.ics23.ProofsProto.internal_static_ics23_BatchEntry_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return ProofsProto.internal_static_ics23_BatchEntry_fieldAccessorTable
+    return com.ics23.ProofsProto.internal_static_ics23_BatchEntry_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            BatchEntry.class, Builder.class);
+            com.ics23.BatchEntry.class, com.ics23.BatchEntry.Builder.class);
   }
 
   private int proofCase_ = 0;
   @SuppressWarnings("serial")
-  private Object proof_;
+  private java.lang.Object proof_;
   public enum ProofCase
       implements com.google.protobuf.Internal.EnumLite,
-          InternalOneOfEnum {
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     EXIST(1),
     NONEXIST(2),
     PROOF_NOT_SET(0);
@@ -60,7 +60,7 @@ private static final long serialVersionUID = 0L;
      * @return The enum associated with the given number.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static ProofCase valueOf(int value) {
       return forNumber(value);
     }
@@ -89,7 +89,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
    * @return Whether the exist field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasExist() {
     return proofCase_ == 1;
   }
@@ -97,22 +97,22 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
    * @return The exist.
    */
-  @Override
-  public ExistenceProof getExist() {
+  @java.lang.Override
+  public com.ics23.ExistenceProof getExist() {
     if (proofCase_ == 1) {
-       return (ExistenceProof) proof_;
+       return (com.ics23.ExistenceProof) proof_;
     }
-    return ExistenceProof.getDefaultInstance();
+    return com.ics23.ExistenceProof.getDefaultInstance();
   }
   /**
    * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
    */
-  @Override
-  public ExistenceProofOrBuilder getExistOrBuilder() {
+  @java.lang.Override
+  public com.ics23.ExistenceProofOrBuilder getExistOrBuilder() {
     if (proofCase_ == 1) {
-       return (ExistenceProof) proof_;
+       return (com.ics23.ExistenceProof) proof_;
     }
-    return ExistenceProof.getDefaultInstance();
+    return com.ics23.ExistenceProof.getDefaultInstance();
   }
 
   public static final int NONEXIST_FIELD_NUMBER = 2;
@@ -120,7 +120,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
    * @return Whether the nonexist field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasNonexist() {
     return proofCase_ == 2;
   }
@@ -128,26 +128,26 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
    * @return The nonexist.
    */
-  @Override
-  public NonExistenceProof getNonexist() {
+  @java.lang.Override
+  public com.ics23.NonExistenceProof getNonexist() {
     if (proofCase_ == 2) {
-       return (NonExistenceProof) proof_;
+       return (com.ics23.NonExistenceProof) proof_;
     }
-    return NonExistenceProof.getDefaultInstance();
+    return com.ics23.NonExistenceProof.getDefaultInstance();
   }
   /**
    * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
    */
-  @Override
-  public NonExistenceProofOrBuilder getNonexistOrBuilder() {
+  @java.lang.Override
+  public com.ics23.NonExistenceProofOrBuilder getNonexistOrBuilder() {
     if (proofCase_ == 2) {
-       return (NonExistenceProof) proof_;
+       return (com.ics23.NonExistenceProof) proof_;
     }
-    return NonExistenceProof.getDefaultInstance();
+    return com.ics23.NonExistenceProof.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -157,19 +157,19 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (proofCase_ == 1) {
-      output.writeMessage(1, (ExistenceProof) proof_);
+      output.writeMessage(1, (com.ics23.ExistenceProof) proof_);
     }
     if (proofCase_ == 2) {
-      output.writeMessage(2, (NonExistenceProof) proof_);
+      output.writeMessage(2, (com.ics23.NonExistenceProof) proof_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -177,26 +177,26 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (proofCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, (ExistenceProof) proof_);
+        .computeMessageSize(1, (com.ics23.ExistenceProof) proof_);
     }
     if (proofCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (NonExistenceProof) proof_);
+        .computeMessageSize(2, (com.ics23.NonExistenceProof) proof_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof BatchEntry)) {
+    if (!(obj instanceof com.ics23.BatchEntry)) {
       return super.equals(obj);
     }
-    BatchEntry other = (BatchEntry) obj;
+    com.ics23.BatchEntry other = (com.ics23.BatchEntry) obj;
 
     if (!getProofCase().equals(other.getProofCase())) return false;
     switch (proofCase_) {
@@ -215,7 +215,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -239,69 +239,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static BatchEntry parseFrom(
+  public static com.ics23.BatchEntry parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static BatchEntry parseFrom(
+  public static com.ics23.BatchEntry parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static BatchEntry parseFrom(
+  public static com.ics23.BatchEntry parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static BatchEntry parseFrom(
+  public static com.ics23.BatchEntry parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static BatchEntry parseFrom(byte[] data)
+  public static com.ics23.BatchEntry parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static BatchEntry parseFrom(
+  public static com.ics23.BatchEntry parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static BatchEntry parseFrom(java.io.InputStream input)
+  public static com.ics23.BatchEntry parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static BatchEntry parseFrom(
+  public static com.ics23.BatchEntry parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static BatchEntry parseDelimitedFrom(java.io.InputStream input)
+  public static com.ics23.BatchEntry parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static BatchEntry parseDelimitedFrom(
+  public static com.ics23.BatchEntry parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static BatchEntry parseFrom(
+  public static com.ics23.BatchEntry parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static BatchEntry parseFrom(
+  public static com.ics23.BatchEntry parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -309,23 +309,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(BatchEntry prototype) {
+  public static Builder newBuilder(com.ics23.BatchEntry prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -339,18 +339,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ics23.BatchEntry)
-      BatchEntryOrBuilder {
+      com.ics23.BatchEntryOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ProofsProto.internal_static_ics23_BatchEntry_descriptor;
+      return com.ics23.ProofsProto.internal_static_ics23_BatchEntry_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ProofsProto.internal_static_ics23_BatchEntry_fieldAccessorTable
+      return com.ics23.ProofsProto.internal_static_ics23_BatchEntry_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              BatchEntry.class, Builder.class);
+              com.ics23.BatchEntry.class, com.ics23.BatchEntry.Builder.class);
     }
 
     // Construct using com.ics23.BatchEntry.newBuilder()
@@ -359,11 +359,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -378,40 +378,40 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return ProofsProto.internal_static_ics23_BatchEntry_descriptor;
+      return com.ics23.ProofsProto.internal_static_ics23_BatchEntry_descriptor;
     }
 
-    @Override
-    public BatchEntry getDefaultInstanceForType() {
-      return BatchEntry.getDefaultInstance();
+    @java.lang.Override
+    public com.ics23.BatchEntry getDefaultInstanceForType() {
+      return com.ics23.BatchEntry.getDefaultInstance();
     }
 
-    @Override
-    public BatchEntry build() {
-      BatchEntry result = buildPartial();
+    @java.lang.Override
+    public com.ics23.BatchEntry build() {
+      com.ics23.BatchEntry result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public BatchEntry buildPartial() {
-      BatchEntry result = new BatchEntry(this);
+    @java.lang.Override
+    public com.ics23.BatchEntry buildPartial() {
+      com.ics23.BatchEntry result = new com.ics23.BatchEntry(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       buildPartialOneofs(result);
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(BatchEntry result) {
+    private void buildPartial0(com.ics23.BatchEntry result) {
       int from_bitField0_ = bitField0_;
     }
 
-    private void buildPartialOneofs(BatchEntry result) {
+    private void buildPartialOneofs(com.ics23.BatchEntry result) {
       result.proofCase_ = proofCase_;
       result.proof_ = this.proof_;
       if (proofCase_ == 1 &&
@@ -424,50 +424,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof BatchEntry) {
-        return mergeFrom((BatchEntry)other);
+      if (other instanceof com.ics23.BatchEntry) {
+        return mergeFrom((com.ics23.BatchEntry)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(BatchEntry other) {
-      if (other == BatchEntry.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ics23.BatchEntry other) {
+      if (other == com.ics23.BatchEntry.getDefaultInstance()) return this;
       switch (other.getProofCase()) {
         case EXIST: {
           mergeExist(other.getExist());
@@ -486,18 +486,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -537,7 +537,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int proofCase_ = 0;
-    private Object proof_;
+    private java.lang.Object proof_;
     public ProofCase
         getProofCase() {
       return ProofCase.forNumber(
@@ -554,12 +554,12 @@ private static final long serialVersionUID = 0L;
     private int bitField0_;
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        ExistenceProof, ExistenceProof.Builder, ExistenceProofOrBuilder> existBuilder_;
+        com.ics23.ExistenceProof, com.ics23.ExistenceProof.Builder, com.ics23.ExistenceProofOrBuilder> existBuilder_;
     /**
      * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
      * @return Whether the exist field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasExist() {
       return proofCase_ == 1;
     }
@@ -567,24 +567,24 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
      * @return The exist.
      */
-    @Override
-    public ExistenceProof getExist() {
+    @java.lang.Override
+    public com.ics23.ExistenceProof getExist() {
       if (existBuilder_ == null) {
         if (proofCase_ == 1) {
-          return (ExistenceProof) proof_;
+          return (com.ics23.ExistenceProof) proof_;
         }
-        return ExistenceProof.getDefaultInstance();
+        return com.ics23.ExistenceProof.getDefaultInstance();
       } else {
         if (proofCase_ == 1) {
           return existBuilder_.getMessage();
         }
-        return ExistenceProof.getDefaultInstance();
+        return com.ics23.ExistenceProof.getDefaultInstance();
       }
     }
     /**
      * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
      */
-    public Builder setExist(ExistenceProof value) {
+    public Builder setExist(com.ics23.ExistenceProof value) {
       if (existBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -601,7 +601,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
      */
     public Builder setExist(
-        ExistenceProof.Builder builderForValue) {
+        com.ics23.ExistenceProof.Builder builderForValue) {
       if (existBuilder_ == null) {
         proof_ = builderForValue.build();
         onChanged();
@@ -614,11 +614,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
      */
-    public Builder mergeExist(ExistenceProof value) {
+    public Builder mergeExist(com.ics23.ExistenceProof value) {
       if (existBuilder_ == null) {
         if (proofCase_ == 1 &&
-            proof_ != ExistenceProof.getDefaultInstance()) {
-          proof_ = ExistenceProof.newBuilder((ExistenceProof) proof_)
+            proof_ != com.ics23.ExistenceProof.getDefaultInstance()) {
+          proof_ = com.ics23.ExistenceProof.newBuilder((com.ics23.ExistenceProof) proof_)
               .mergeFrom(value).buildPartial();
         } else {
           proof_ = value;
@@ -656,36 +656,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
      */
-    public ExistenceProof.Builder getExistBuilder() {
+    public com.ics23.ExistenceProof.Builder getExistBuilder() {
       return getExistFieldBuilder().getBuilder();
     }
     /**
      * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
      */
-    @Override
-    public ExistenceProofOrBuilder getExistOrBuilder() {
+    @java.lang.Override
+    public com.ics23.ExistenceProofOrBuilder getExistOrBuilder() {
       if ((proofCase_ == 1) && (existBuilder_ != null)) {
         return existBuilder_.getMessageOrBuilder();
       } else {
         if (proofCase_ == 1) {
-          return (ExistenceProof) proof_;
+          return (com.ics23.ExistenceProof) proof_;
         }
-        return ExistenceProof.getDefaultInstance();
+        return com.ics23.ExistenceProof.getDefaultInstance();
       }
     }
     /**
      * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ExistenceProof, ExistenceProof.Builder, ExistenceProofOrBuilder>
+        com.ics23.ExistenceProof, com.ics23.ExistenceProof.Builder, com.ics23.ExistenceProofOrBuilder> 
         getExistFieldBuilder() {
       if (existBuilder_ == null) {
         if (!(proofCase_ == 1)) {
-          proof_ = ExistenceProof.getDefaultInstance();
+          proof_ = com.ics23.ExistenceProof.getDefaultInstance();
         }
         existBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ExistenceProof, ExistenceProof.Builder, ExistenceProofOrBuilder>(
-                (ExistenceProof) proof_,
+            com.ics23.ExistenceProof, com.ics23.ExistenceProof.Builder, com.ics23.ExistenceProofOrBuilder>(
+                (com.ics23.ExistenceProof) proof_,
                 getParentForChildren(),
                 isClean());
         proof_ = null;
@@ -696,12 +696,12 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        NonExistenceProof, NonExistenceProof.Builder, NonExistenceProofOrBuilder> nonexistBuilder_;
+        com.ics23.NonExistenceProof, com.ics23.NonExistenceProof.Builder, com.ics23.NonExistenceProofOrBuilder> nonexistBuilder_;
     /**
      * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
      * @return Whether the nonexist field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasNonexist() {
       return proofCase_ == 2;
     }
@@ -709,24 +709,24 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
      * @return The nonexist.
      */
-    @Override
-    public NonExistenceProof getNonexist() {
+    @java.lang.Override
+    public com.ics23.NonExistenceProof getNonexist() {
       if (nonexistBuilder_ == null) {
         if (proofCase_ == 2) {
-          return (NonExistenceProof) proof_;
+          return (com.ics23.NonExistenceProof) proof_;
         }
-        return NonExistenceProof.getDefaultInstance();
+        return com.ics23.NonExistenceProof.getDefaultInstance();
       } else {
         if (proofCase_ == 2) {
           return nonexistBuilder_.getMessage();
         }
-        return NonExistenceProof.getDefaultInstance();
+        return com.ics23.NonExistenceProof.getDefaultInstance();
       }
     }
     /**
      * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
      */
-    public Builder setNonexist(NonExistenceProof value) {
+    public Builder setNonexist(com.ics23.NonExistenceProof value) {
       if (nonexistBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -743,7 +743,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
      */
     public Builder setNonexist(
-        NonExistenceProof.Builder builderForValue) {
+        com.ics23.NonExistenceProof.Builder builderForValue) {
       if (nonexistBuilder_ == null) {
         proof_ = builderForValue.build();
         onChanged();
@@ -756,11 +756,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
      */
-    public Builder mergeNonexist(NonExistenceProof value) {
+    public Builder mergeNonexist(com.ics23.NonExistenceProof value) {
       if (nonexistBuilder_ == null) {
         if (proofCase_ == 2 &&
-            proof_ != NonExistenceProof.getDefaultInstance()) {
-          proof_ = NonExistenceProof.newBuilder((NonExistenceProof) proof_)
+            proof_ != com.ics23.NonExistenceProof.getDefaultInstance()) {
+          proof_ = com.ics23.NonExistenceProof.newBuilder((com.ics23.NonExistenceProof) proof_)
               .mergeFrom(value).buildPartial();
         } else {
           proof_ = value;
@@ -798,36 +798,36 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
      */
-    public NonExistenceProof.Builder getNonexistBuilder() {
+    public com.ics23.NonExistenceProof.Builder getNonexistBuilder() {
       return getNonexistFieldBuilder().getBuilder();
     }
     /**
      * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
      */
-    @Override
-    public NonExistenceProofOrBuilder getNonexistOrBuilder() {
+    @java.lang.Override
+    public com.ics23.NonExistenceProofOrBuilder getNonexistOrBuilder() {
       if ((proofCase_ == 2) && (nonexistBuilder_ != null)) {
         return nonexistBuilder_.getMessageOrBuilder();
       } else {
         if (proofCase_ == 2) {
-          return (NonExistenceProof) proof_;
+          return (com.ics23.NonExistenceProof) proof_;
         }
-        return NonExistenceProof.getDefaultInstance();
+        return com.ics23.NonExistenceProof.getDefaultInstance();
       }
     }
     /**
      * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        NonExistenceProof, NonExistenceProof.Builder, NonExistenceProofOrBuilder>
+        com.ics23.NonExistenceProof, com.ics23.NonExistenceProof.Builder, com.ics23.NonExistenceProofOrBuilder> 
         getNonexistFieldBuilder() {
       if (nonexistBuilder_ == null) {
         if (!(proofCase_ == 2)) {
-          proof_ = NonExistenceProof.getDefaultInstance();
+          proof_ = com.ics23.NonExistenceProof.getDefaultInstance();
         }
         nonexistBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            NonExistenceProof, NonExistenceProof.Builder, NonExistenceProofOrBuilder>(
-                (NonExistenceProof) proof_,
+            com.ics23.NonExistenceProof, com.ics23.NonExistenceProof.Builder, com.ics23.NonExistenceProofOrBuilder>(
+                (com.ics23.NonExistenceProof) proof_,
                 getParentForChildren(),
                 isClean());
         proof_ = null;
@@ -836,13 +836,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return nonexistBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -853,18 +853,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ics23.BatchEntry)
-  private static final BatchEntry DEFAULT_INSTANCE;
+  private static final com.ics23.BatchEntry DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new BatchEntry();
+    DEFAULT_INSTANCE = new com.ics23.BatchEntry();
   }
 
-  public static BatchEntry getDefaultInstance() {
+  public static com.ics23.BatchEntry getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<BatchEntry>
       PARSER = new com.google.protobuf.AbstractParser<BatchEntry>() {
-    @Override
+    @java.lang.Override
     public BatchEntry parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -888,13 +888,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<BatchEntry> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public BatchEntry getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ics23.BatchEntry getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

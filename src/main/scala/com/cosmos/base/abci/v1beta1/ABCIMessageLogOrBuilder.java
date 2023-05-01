@@ -17,7 +17,7 @@ public interface ABCIMessageLogOrBuilder extends
    * <code>string log = 2 [json_name = "log"];</code>
    * @return The log.
    */
-  String getLog();
+  java.lang.String getLog();
   /**
    * <code>string log = 2 [json_name = "log"];</code>
    * @return The bytes for log.
@@ -33,7 +33,7 @@ public interface ABCIMessageLogOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
    */
-  java.util.List<StringEvent>
+  java.util.List<com.cosmos.base.abci.v1beta1.StringEvent> 
       getEventsList();
   /**
    * <pre>
@@ -43,7 +43,7 @@ public interface ABCIMessageLogOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
    */
-  StringEvent getEvents(int index);
+  com.cosmos.base.abci.v1beta1.StringEvent getEvents(int index);
   /**
    * <pre>
    * Events contains a slice of Event objects that were emitted during some
@@ -61,7 +61,7 @@ public interface ABCIMessageLogOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
    */
-  java.util.List<? extends StringEventOrBuilder>
+  java.util.List<? extends com.cosmos.base.abci.v1beta1.StringEventOrBuilder> 
       getEventsOrBuilderList();
   /**
    * <pre>
@@ -71,6 +71,6 @@ public interface ABCIMessageLogOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.StringEvent events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "StringEvents"];</code>
    */
-  StringEventOrBuilder getEventsOrBuilder(
+  com.cosmos.base.abci.v1beta1.StringEventOrBuilder getEventsOrBuilder(
       int index);
 }

@@ -11,7 +11,7 @@ public interface OwnerOrBuilder extends
    * <code>string module = 1 [json_name = "module", (.gogoproto.moretags) = "yaml:&#92;"module&#92;""];</code>
    * @return The module.
    */
-  String getModule();
+  java.lang.String getModule();
   /**
    * <code>string module = 1 [json_name = "module", (.gogoproto.moretags) = "yaml:&#92;"module&#92;""];</code>
    * @return The bytes for module.
@@ -23,7 +23,7 @@ public interface OwnerOrBuilder extends
    * <code>string name = 2 [json_name = "name", (.gogoproto.moretags) = "yaml:&#92;"name&#92;""];</code>
    * @return The name.
    */
-  String getName();
+  java.lang.String getName();
   /**
    * <code>string name = 2 [json_name = "name", (.gogoproto.moretags) = "yaml:&#92;"name&#92;""];</code>
    * @return The bytes for name.

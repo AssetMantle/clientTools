@@ -11,7 +11,7 @@ public interface ParameterChangeProposalOrBuilder extends
    * <code>string title = 1 [json_name = "title"];</code>
    * @return The title.
    */
-  String getTitle();
+  java.lang.String getTitle();
   /**
    * <code>string title = 1 [json_name = "title"];</code>
    * @return The bytes for title.
@@ -23,7 +23,7 @@ public interface ParameterChangeProposalOrBuilder extends
    * <code>string description = 2 [json_name = "description"];</code>
    * @return The description.
    */
-  String getDescription();
+  java.lang.String getDescription();
   /**
    * <code>string description = 2 [json_name = "description"];</code>
    * @return The bytes for description.
@@ -34,12 +34,12 @@ public interface ParameterChangeProposalOrBuilder extends
   /**
    * <code>repeated .cosmos.params.v1beta1.ParamChange changes = 3 [json_name = "changes", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<ParamChange>
+  java.util.List<com.cosmos.params.v1beta1.ParamChange> 
       getChangesList();
   /**
    * <code>repeated .cosmos.params.v1beta1.ParamChange changes = 3 [json_name = "changes", (.gogoproto.nullable) = false];</code>
    */
-  ParamChange getChanges(int index);
+  com.cosmos.params.v1beta1.ParamChange getChanges(int index);
   /**
    * <code>repeated .cosmos.params.v1beta1.ParamChange changes = 3 [json_name = "changes", (.gogoproto.nullable) = false];</code>
    */
@@ -47,11 +47,11 @@ public interface ParameterChangeProposalOrBuilder extends
   /**
    * <code>repeated .cosmos.params.v1beta1.ParamChange changes = 3 [json_name = "changes", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends ParamChangeOrBuilder>
+  java.util.List<? extends com.cosmos.params.v1beta1.ParamChangeOrBuilder> 
       getChangesOrBuilderList();
   /**
    * <code>repeated .cosmos.params.v1beta1.ParamChange changes = 3 [json_name = "changes", (.gogoproto.nullable) = false];</code>
    */
-  ParamChangeOrBuilder getChangesOrBuilder(
+  com.cosmos.params.v1beta1.ParamChangeOrBuilder getChangesOrBuilder(
       int index);
 }

@@ -14,7 +14,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedClientState clients = 1 [json_name = "clients", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "IdentifiedClientStates"];</code>
    */
-  java.util.List<IdentifiedClientState>
+  java.util.List<com.ibc.core.client.v1.IdentifiedClientState> 
       getClientsList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedClientState clients = 1 [json_name = "clients", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "IdentifiedClientStates"];</code>
    */
-  IdentifiedClientState getClients(int index);
+  com.ibc.core.client.v1.IdentifiedClientState getClients(int index);
   /**
    * <pre>
    * client states with their corresponding identifiers
@@ -39,7 +39,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedClientState clients = 1 [json_name = "clients", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "IdentifiedClientStates"];</code>
    */
-  java.util.List<? extends IdentifiedClientStateOrBuilder>
+  java.util.List<? extends com.ibc.core.client.v1.IdentifiedClientStateOrBuilder> 
       getClientsOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedClientState clients = 1 [json_name = "clients", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "IdentifiedClientStates"];</code>
    */
-  IdentifiedClientStateOrBuilder getClientsOrBuilder(
+  com.ibc.core.client.v1.IdentifiedClientStateOrBuilder getClientsOrBuilder(
       int index);
 
   /**
@@ -58,7 +58,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ClientConsensusStates clients_consensus = 2 [json_name = "clientsConsensus", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"clients_consensus&#92;"", (.gogoproto.castrepeated) = "ClientsConsensusStates"];</code>
    */
-  java.util.List<ClientConsensusStates>
+  java.util.List<com.ibc.core.client.v1.ClientConsensusStates> 
       getClientsConsensusList();
   /**
    * <pre>
@@ -67,7 +67,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ClientConsensusStates clients_consensus = 2 [json_name = "clientsConsensus", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"clients_consensus&#92;"", (.gogoproto.castrepeated) = "ClientsConsensusStates"];</code>
    */
-  ClientConsensusStates getClientsConsensus(int index);
+  com.ibc.core.client.v1.ClientConsensusStates getClientsConsensus(int index);
   /**
    * <pre>
    * consensus states from each client
@@ -83,7 +83,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ClientConsensusStates clients_consensus = 2 [json_name = "clientsConsensus", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"clients_consensus&#92;"", (.gogoproto.castrepeated) = "ClientsConsensusStates"];</code>
    */
-  java.util.List<? extends ClientConsensusStatesOrBuilder>
+  java.util.List<? extends com.ibc.core.client.v1.ClientConsensusStatesOrBuilder> 
       getClientsConsensusOrBuilderList();
   /**
    * <pre>
@@ -92,7 +92,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.ClientConsensusStates clients_consensus = 2 [json_name = "clientsConsensus", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"clients_consensus&#92;"", (.gogoproto.castrepeated) = "ClientsConsensusStates"];</code>
    */
-  ClientConsensusStatesOrBuilder getClientsConsensusOrBuilder(
+  com.ibc.core.client.v1.ClientConsensusStatesOrBuilder getClientsConsensusOrBuilder(
       int index);
 
   /**
@@ -102,7 +102,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedGenesisMetadata clients_metadata = 3 [json_name = "clientsMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"clients_metadata&#92;""];</code>
    */
-  java.util.List<IdentifiedGenesisMetadata>
+  java.util.List<com.ibc.core.client.v1.IdentifiedGenesisMetadata> 
       getClientsMetadataList();
   /**
    * <pre>
@@ -111,7 +111,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedGenesisMetadata clients_metadata = 3 [json_name = "clientsMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"clients_metadata&#92;""];</code>
    */
-  IdentifiedGenesisMetadata getClientsMetadata(int index);
+  com.ibc.core.client.v1.IdentifiedGenesisMetadata getClientsMetadata(int index);
   /**
    * <pre>
    * metadata from each client
@@ -127,7 +127,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedGenesisMetadata clients_metadata = 3 [json_name = "clientsMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"clients_metadata&#92;""];</code>
    */
-  java.util.List<? extends IdentifiedGenesisMetadataOrBuilder>
+  java.util.List<? extends com.ibc.core.client.v1.IdentifiedGenesisMetadataOrBuilder> 
       getClientsMetadataOrBuilderList();
   /**
    * <pre>
@@ -136,7 +136,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedGenesisMetadata clients_metadata = 3 [json_name = "clientsMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"clients_metadata&#92;""];</code>
    */
-  IdentifiedGenesisMetadataOrBuilder getClientsMetadataOrBuilder(
+  com.ibc.core.client.v1.IdentifiedGenesisMetadataOrBuilder getClientsMetadataOrBuilder(
       int index);
 
   /**
@@ -148,11 +148,11 @@ public interface GenesisStateOrBuilder extends
    * <code>.ibc.core.client.v1.Params params = 4 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  Params getParams();
+  com.ibc.core.client.v1.Params getParams();
   /**
    * <code>.ibc.core.client.v1.Params params = 4 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  ParamsOrBuilder getParamsOrBuilder();
+  com.ibc.core.client.v1.ParamsOrBuilder getParamsOrBuilder();
 
   /**
    * <pre>

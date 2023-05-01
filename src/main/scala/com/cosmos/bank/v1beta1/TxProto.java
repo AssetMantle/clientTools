@@ -42,7 +42,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\034cosmos/bank/v1beta1/tx.proto\022\023cosmos.b" +
       "ank.v1beta1\032\024gogoproto/gogo.proto\032\036cosmo" +
       "s/base/v1beta1/coin.proto\032\036cosmos/bank/v" +
@@ -73,32 +73,32 @@ public final class TxProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
           com.cosmos.base.v1beta1.CoinProto.getDescriptor(),
-          BankProto.getDescriptor(),
+          com.cosmos.bank.v1beta1.BankProto.getDescriptor(),
         });
     internal_static_cosmos_bank_v1beta1_MsgSend_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_bank_v1beta1_MsgSend_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_MsgSend_descriptor,
-        new String[] { "FromAddress", "ToAddress", "Amount", });
+        new java.lang.String[] { "FromAddress", "ToAddress", "Amount", });
     internal_static_cosmos_bank_v1beta1_MsgSendResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_bank_v1beta1_MsgSendResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_MsgSendResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_bank_v1beta1_MsgMultiSend_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_bank_v1beta1_MsgMultiSend_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_MsgMultiSend_descriptor,
-        new String[] { "Inputs", "Outputs", });
+        new java.lang.String[] { "Inputs", "Outputs", });
     internal_static_cosmos_bank_v1beta1_MsgMultiSendResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_bank_v1beta1_MsgMultiSendResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_MsgMultiSendResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);
@@ -110,7 +110,7 @@ public final class TxProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
     com.cosmos.base.v1beta1.CoinProto.getDescriptor();
-    BankProto.getDescriptor();
+    com.cosmos.bank.v1beta1.BankProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

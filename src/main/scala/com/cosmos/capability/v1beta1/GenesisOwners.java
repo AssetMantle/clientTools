@@ -22,24 +22,24 @@ private static final long serialVersionUID = 0L;
   private GenesisOwners() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new GenesisOwners();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisOwners_descriptor;
+    return com.cosmos.capability.v1beta1.GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisOwners_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisOwners_fieldAccessorTable
+    return com.cosmos.capability.v1beta1.GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisOwners_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            GenesisOwners.class, Builder.class);
+            com.cosmos.capability.v1beta1.GenesisOwners.class, com.cosmos.capability.v1beta1.GenesisOwners.Builder.class);
   }
 
   public static final int INDEX_FIELD_NUMBER = 1;
@@ -52,13 +52,13 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 index = 1 [json_name = "index"];</code>
    * @return The index.
    */
-  @Override
+  @java.lang.Override
   public long getIndex() {
     return index_;
   }
 
   public static final int INDEX_OWNERS_FIELD_NUMBER = 2;
-  private CapabilityOwners indexOwners_;
+  private com.cosmos.capability.v1beta1.CapabilityOwners indexOwners_;
   /**
    * <pre>
    * index_owners are the owners at the given index.
@@ -67,7 +67,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
    * @return Whether the indexOwners field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasIndexOwners() {
     return indexOwners_ != null;
   }
@@ -79,9 +79,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
    * @return The indexOwners.
    */
-  @Override
-  public CapabilityOwners getIndexOwners() {
-    return indexOwners_ == null ? CapabilityOwners.getDefaultInstance() : indexOwners_;
+  @java.lang.Override
+  public com.cosmos.capability.v1beta1.CapabilityOwners getIndexOwners() {
+    return indexOwners_ == null ? com.cosmos.capability.v1beta1.CapabilityOwners.getDefaultInstance() : indexOwners_;
   }
   /**
    * <pre>
@@ -90,13 +90,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
    */
-  @Override
-  public CapabilityOwnersOrBuilder getIndexOwnersOrBuilder() {
-    return indexOwners_ == null ? CapabilityOwners.getDefaultInstance() : indexOwners_;
+  @java.lang.Override
+  public com.cosmos.capability.v1beta1.CapabilityOwnersOrBuilder getIndexOwnersOrBuilder() {
+    return indexOwners_ == null ? com.cosmos.capability.v1beta1.CapabilityOwners.getDefaultInstance() : indexOwners_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -106,7 +106,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (index_ != 0L) {
@@ -118,7 +118,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -137,15 +137,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof GenesisOwners)) {
+    if (!(obj instanceof com.cosmos.capability.v1beta1.GenesisOwners)) {
       return super.equals(obj);
     }
-    GenesisOwners other = (GenesisOwners) obj;
+    com.cosmos.capability.v1beta1.GenesisOwners other = (com.cosmos.capability.v1beta1.GenesisOwners) obj;
 
     if (getIndex()
         != other.getIndex()) return false;
@@ -158,7 +158,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -177,69 +177,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static GenesisOwners parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisOwners parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisOwners parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisOwners parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisOwners parseFrom(byte[] data)
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisOwners parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisOwners parseFrom(java.io.InputStream input)
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GenesisOwners parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GenesisOwners parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static GenesisOwners parseDelimitedFrom(
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GenesisOwners parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GenesisOwners parseFrom(
+  public static com.cosmos.capability.v1beta1.GenesisOwners parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -247,23 +247,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(GenesisOwners prototype) {
+  public static Builder newBuilder(com.cosmos.capability.v1beta1.GenesisOwners prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -277,18 +277,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.capability.v1beta1.GenesisOwners)
-      GenesisOwnersOrBuilder {
+      com.cosmos.capability.v1beta1.GenesisOwnersOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisOwners_descriptor;
+      return com.cosmos.capability.v1beta1.GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisOwners_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisOwners_fieldAccessorTable
+      return com.cosmos.capability.v1beta1.GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisOwners_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              GenesisOwners.class, Builder.class);
+              com.cosmos.capability.v1beta1.GenesisOwners.class, com.cosmos.capability.v1beta1.GenesisOwners.Builder.class);
     }
 
     // Construct using com.cosmos.capability.v1beta1.GenesisOwners.newBuilder()
@@ -297,11 +297,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -314,35 +314,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisOwners_descriptor;
+      return com.cosmos.capability.v1beta1.GenesisProto.internal_static_cosmos_capability_v1beta1_GenesisOwners_descriptor;
     }
 
-    @Override
-    public GenesisOwners getDefaultInstanceForType() {
-      return GenesisOwners.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.capability.v1beta1.GenesisOwners getDefaultInstanceForType() {
+      return com.cosmos.capability.v1beta1.GenesisOwners.getDefaultInstance();
     }
 
-    @Override
-    public GenesisOwners build() {
-      GenesisOwners result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.capability.v1beta1.GenesisOwners build() {
+      com.cosmos.capability.v1beta1.GenesisOwners result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public GenesisOwners buildPartial() {
-      GenesisOwners result = new GenesisOwners(this);
+    @java.lang.Override
+    public com.cosmos.capability.v1beta1.GenesisOwners buildPartial() {
+      com.cosmos.capability.v1beta1.GenesisOwners result = new com.cosmos.capability.v1beta1.GenesisOwners(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(GenesisOwners result) {
+    private void buildPartial0(com.cosmos.capability.v1beta1.GenesisOwners result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.index_ = index_;
@@ -354,50 +354,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof GenesisOwners) {
-        return mergeFrom((GenesisOwners)other);
+      if (other instanceof com.cosmos.capability.v1beta1.GenesisOwners) {
+        return mergeFrom((com.cosmos.capability.v1beta1.GenesisOwners)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(GenesisOwners other) {
-      if (other == GenesisOwners.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.capability.v1beta1.GenesisOwners other) {
+      if (other == com.cosmos.capability.v1beta1.GenesisOwners.getDefaultInstance()) return this;
       if (other.getIndex() != 0L) {
         setIndex(other.getIndex());
       }
@@ -409,18 +409,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -468,7 +468,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 index = 1 [json_name = "index"];</code>
      * @return The index.
      */
-    @Override
+    @java.lang.Override
     public long getIndex() {
       return index_;
     }
@@ -503,9 +503,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private CapabilityOwners indexOwners_;
+    private com.cosmos.capability.v1beta1.CapabilityOwners indexOwners_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        CapabilityOwners, CapabilityOwners.Builder, CapabilityOwnersOrBuilder> indexOwnersBuilder_;
+        com.cosmos.capability.v1beta1.CapabilityOwners, com.cosmos.capability.v1beta1.CapabilityOwners.Builder, com.cosmos.capability.v1beta1.CapabilityOwnersOrBuilder> indexOwnersBuilder_;
     /**
      * <pre>
      * index_owners are the owners at the given index.
@@ -525,9 +525,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
      * @return The indexOwners.
      */
-    public CapabilityOwners getIndexOwners() {
+    public com.cosmos.capability.v1beta1.CapabilityOwners getIndexOwners() {
       if (indexOwnersBuilder_ == null) {
-        return indexOwners_ == null ? CapabilityOwners.getDefaultInstance() : indexOwners_;
+        return indexOwners_ == null ? com.cosmos.capability.v1beta1.CapabilityOwners.getDefaultInstance() : indexOwners_;
       } else {
         return indexOwnersBuilder_.getMessage();
       }
@@ -539,7 +539,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
      */
-    public Builder setIndexOwners(CapabilityOwners value) {
+    public Builder setIndexOwners(com.cosmos.capability.v1beta1.CapabilityOwners value) {
       if (indexOwnersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -560,7 +560,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
      */
     public Builder setIndexOwners(
-        CapabilityOwners.Builder builderForValue) {
+        com.cosmos.capability.v1beta1.CapabilityOwners.Builder builderForValue) {
       if (indexOwnersBuilder_ == null) {
         indexOwners_ = builderForValue.build();
       } else {
@@ -577,11 +577,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
      */
-    public Builder mergeIndexOwners(CapabilityOwners value) {
+    public Builder mergeIndexOwners(com.cosmos.capability.v1beta1.CapabilityOwners value) {
       if (indexOwnersBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           indexOwners_ != null &&
-          indexOwners_ != CapabilityOwners.getDefaultInstance()) {
+          indexOwners_ != com.cosmos.capability.v1beta1.CapabilityOwners.getDefaultInstance()) {
           getIndexOwnersBuilder().mergeFrom(value);
         } else {
           indexOwners_ = value;
@@ -617,7 +617,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
      */
-    public CapabilityOwners.Builder getIndexOwnersBuilder() {
+    public com.cosmos.capability.v1beta1.CapabilityOwners.Builder getIndexOwnersBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getIndexOwnersFieldBuilder().getBuilder();
@@ -629,12 +629,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
      */
-    public CapabilityOwnersOrBuilder getIndexOwnersOrBuilder() {
+    public com.cosmos.capability.v1beta1.CapabilityOwnersOrBuilder getIndexOwnersOrBuilder() {
       if (indexOwnersBuilder_ != null) {
         return indexOwnersBuilder_.getMessageOrBuilder();
       } else {
         return indexOwners_ == null ?
-            CapabilityOwners.getDefaultInstance() : indexOwners_;
+            com.cosmos.capability.v1beta1.CapabilityOwners.getDefaultInstance() : indexOwners_;
       }
     }
     /**
@@ -645,11 +645,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.capability.v1beta1.CapabilityOwners index_owners = 2 [json_name = "indexOwners", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"index_owners&#92;""];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        CapabilityOwners, CapabilityOwners.Builder, CapabilityOwnersOrBuilder>
+        com.cosmos.capability.v1beta1.CapabilityOwners, com.cosmos.capability.v1beta1.CapabilityOwners.Builder, com.cosmos.capability.v1beta1.CapabilityOwnersOrBuilder> 
         getIndexOwnersFieldBuilder() {
       if (indexOwnersBuilder_ == null) {
         indexOwnersBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            CapabilityOwners, CapabilityOwners.Builder, CapabilityOwnersOrBuilder>(
+            com.cosmos.capability.v1beta1.CapabilityOwners, com.cosmos.capability.v1beta1.CapabilityOwners.Builder, com.cosmos.capability.v1beta1.CapabilityOwnersOrBuilder>(
                 getIndexOwners(),
                 getParentForChildren(),
                 isClean());
@@ -657,13 +657,13 @@ private static final long serialVersionUID = 0L;
       }
       return indexOwnersBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -674,18 +674,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.capability.v1beta1.GenesisOwners)
-  private static final GenesisOwners DEFAULT_INSTANCE;
+  private static final com.cosmos.capability.v1beta1.GenesisOwners DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new GenesisOwners();
+    DEFAULT_INSTANCE = new com.cosmos.capability.v1beta1.GenesisOwners();
   }
 
-  public static GenesisOwners getDefaultInstance() {
+  public static com.cosmos.capability.v1beta1.GenesisOwners getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GenesisOwners>
       PARSER = new com.google.protobuf.AbstractParser<GenesisOwners>() {
-    @Override
+    @java.lang.Override
     public GenesisOwners parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -709,13 +709,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<GenesisOwners> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public GenesisOwners getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.capability.v1beta1.GenesisOwners getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

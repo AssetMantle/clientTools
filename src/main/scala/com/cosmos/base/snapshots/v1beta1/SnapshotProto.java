@@ -57,7 +57,7 @@ public final class SnapshotProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n,cosmos/base/snapshots/v1beta1/snapshot" +
       ".proto\022\035cosmos.base.snapshots.v1beta1\032\024g" +
       "ogoproto/gogo.proto\"\261\001\n\010Snapshot\022\026\n\006heig" +
@@ -101,43 +101,43 @@ public final class SnapshotProto {
     internal_static_cosmos_base_snapshots_v1beta1_Snapshot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_snapshots_v1beta1_Snapshot_descriptor,
-        new String[] { "Height", "Format", "Chunks", "Hash", "Metadata", });
+        new java.lang.String[] { "Height", "Format", "Chunks", "Hash", "Metadata", });
     internal_static_cosmos_base_snapshots_v1beta1_Metadata_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_base_snapshots_v1beta1_Metadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_snapshots_v1beta1_Metadata_descriptor,
-        new String[] { "ChunkHashes", });
+        new java.lang.String[] { "ChunkHashes", });
     internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_snapshots_v1beta1_SnapshotItem_descriptor,
-        new String[] { "Store", "Iavl", "Extension", "ExtensionPayload", "Item", });
+        new java.lang.String[] { "Store", "Iavl", "Extension", "ExtensionPayload", "Item", });
     internal_static_cosmos_base_snapshots_v1beta1_SnapshotStoreItem_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_base_snapshots_v1beta1_SnapshotStoreItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_snapshots_v1beta1_SnapshotStoreItem_descriptor,
-        new String[] { "Name", });
+        new java.lang.String[] { "Name", });
     internal_static_cosmos_base_snapshots_v1beta1_SnapshotIAVLItem_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_base_snapshots_v1beta1_SnapshotIAVLItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_snapshots_v1beta1_SnapshotIAVLItem_descriptor,
-        new String[] { "Key", "Value", "Version", "Height", });
+        new java.lang.String[] { "Key", "Value", "Version", "Height", });
     internal_static_cosmos_base_snapshots_v1beta1_SnapshotExtensionMeta_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_base_snapshots_v1beta1_SnapshotExtensionMeta_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_snapshots_v1beta1_SnapshotExtensionMeta_descriptor,
-        new String[] { "Name", "Format", });
+        new java.lang.String[] { "Name", "Format", });
     internal_static_cosmos_base_snapshots_v1beta1_SnapshotExtensionPayload_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_base_snapshots_v1beta1_SnapshotExtensionPayload_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_snapshots_v1beta1_SnapshotExtensionPayload_descriptor,
-        new String[] { "Payload", });
+        new java.lang.String[] { "Payload", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customname);

@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     hash_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgSubmitEvidenceResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TxProto.internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_descriptor;
+    return com.cosmos.evidence.v1beta1.TxProto.internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TxProto.internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_fieldAccessorTable
+    return com.cosmos.evidence.v1beta1.TxProto.internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            MsgSubmitEvidenceResponse.class, Builder.class);
+            com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse.class, com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse.Builder.class);
   }
 
   public static final int HASH_FIELD_NUMBER = 4;
@@ -53,13 +53,13 @@ private static final long serialVersionUID = 0L;
    * <code>bytes hash = 4 [json_name = "hash"];</code>
    * @return The hash.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getHash() {
     return hash_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -69,7 +69,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!hash_.isEmpty()) {
@@ -78,7 +78,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -93,15 +93,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof MsgSubmitEvidenceResponse)) {
+    if (!(obj instanceof com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse)) {
       return super.equals(obj);
     }
-    MsgSubmitEvidenceResponse other = (MsgSubmitEvidenceResponse) obj;
+    com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse other = (com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse) obj;
 
     if (!getHash()
         .equals(other.getHash())) return false;
@@ -109,7 +109,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -123,69 +123,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static MsgSubmitEvidenceResponse parseFrom(
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgSubmitEvidenceResponse parseFrom(
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgSubmitEvidenceResponse parseFrom(
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgSubmitEvidenceResponse parseFrom(
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgSubmitEvidenceResponse parseFrom(byte[] data)
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgSubmitEvidenceResponse parseFrom(
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgSubmitEvidenceResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgSubmitEvidenceResponse parseFrom(
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgSubmitEvidenceResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static MsgSubmitEvidenceResponse parseDelimitedFrom(
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgSubmitEvidenceResponse parseFrom(
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgSubmitEvidenceResponse parseFrom(
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -193,23 +193,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(MsgSubmitEvidenceResponse prototype) {
+  public static Builder newBuilder(com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -223,18 +223,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse)
-      MsgSubmitEvidenceResponseOrBuilder {
+      com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_descriptor;
+      return com.cosmos.evidence.v1beta1.TxProto.internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_fieldAccessorTable
+      return com.cosmos.evidence.v1beta1.TxProto.internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MsgSubmitEvidenceResponse.class, Builder.class);
+              com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse.class, com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse.Builder.class);
     }
 
     // Construct using com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse.newBuilder()
@@ -243,11 +243,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -255,85 +255,85 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TxProto.internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_descriptor;
+      return com.cosmos.evidence.v1beta1.TxProto.internal_static_cosmos_evidence_v1beta1_MsgSubmitEvidenceResponse_descriptor;
     }
 
-    @Override
-    public MsgSubmitEvidenceResponse getDefaultInstanceForType() {
-      return MsgSubmitEvidenceResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse getDefaultInstanceForType() {
+      return com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse.getDefaultInstance();
     }
 
-    @Override
-    public MsgSubmitEvidenceResponse build() {
-      MsgSubmitEvidenceResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse build() {
+      com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public MsgSubmitEvidenceResponse buildPartial() {
-      MsgSubmitEvidenceResponse result = new MsgSubmitEvidenceResponse(this);
+    @java.lang.Override
+    public com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse buildPartial() {
+      com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse result = new com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(MsgSubmitEvidenceResponse result) {
+    private void buildPartial0(com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.hash_ = hash_;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof MsgSubmitEvidenceResponse) {
-        return mergeFrom((MsgSubmitEvidenceResponse)other);
+      if (other instanceof com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse) {
+        return mergeFrom((com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(MsgSubmitEvidenceResponse other) {
-      if (other == MsgSubmitEvidenceResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse other) {
+      if (other == com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse.getDefaultInstance()) return this;
       if (other.getHash() != com.google.protobuf.ByteString.EMPTY) {
         setHash(other.getHash());
       }
@@ -342,18 +342,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -394,7 +394,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes hash = 4 [json_name = "hash"];</code>
      * @return The hash.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getHash() {
       return hash_;
     }
@@ -428,13 +428,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -445,18 +445,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse)
-  private static final MsgSubmitEvidenceResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new MsgSubmitEvidenceResponse();
+    DEFAULT_INSTANCE = new com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse();
   }
 
-  public static MsgSubmitEvidenceResponse getDefaultInstance() {
+  public static com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgSubmitEvidenceResponse>
       PARSER = new com.google.protobuf.AbstractParser<MsgSubmitEvidenceResponse>() {
-    @Override
+    @java.lang.Override
     public MsgSubmitEvidenceResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -480,13 +480,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<MsgSubmitEvidenceResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public MsgSubmitEvidenceResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

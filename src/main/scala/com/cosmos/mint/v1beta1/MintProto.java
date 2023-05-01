@@ -32,7 +32,7 @@ public final class MintProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\036cosmos/mint/v1beta1/mint.proto\022\023cosmos" +
       ".mint.v1beta1\032\024gogoproto/gogo.proto\"\317\001\n\006" +
       "Minter\022L\n\tinflation\030\001 \001(\tB.\310\336\037\000\332\336\037&githu" +
@@ -71,13 +71,13 @@ public final class MintProto {
     internal_static_cosmos_mint_v1beta1_Minter_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_mint_v1beta1_Minter_descriptor,
-        new String[] { "Inflation", "AnnualProvisions", });
+        new java.lang.String[] { "Inflation", "AnnualProvisions", });
     internal_static_cosmos_mint_v1beta1_Params_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_mint_v1beta1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_mint_v1beta1_Params_descriptor,
-        new String[] { "MintDenom", "InflationRateChange", "InflationMax", "InflationMin", "GoalBonded", "BlocksPerYear", });
+        new java.lang.String[] { "MintDenom", "InflationRateChange", "InflationMax", "InflationMin", "GoalBonded", "BlocksPerYear", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customtype);

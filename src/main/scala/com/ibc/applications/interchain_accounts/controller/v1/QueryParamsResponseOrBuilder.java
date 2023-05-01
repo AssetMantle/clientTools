@@ -24,7 +24,7 @@ public interface QueryParamsResponseOrBuilder extends
    * <code>.ibc.applications.interchain_accounts.controller.v1.Params params = 1 [json_name = "params"];</code>
    * @return The params.
    */
-  Params getParams();
+  com.ibc.applications.interchain_accounts.controller.v1.Params getParams();
   /**
    * <pre>
    * params defines the parameters of the module.
@@ -32,5 +32,5 @@ public interface QueryParamsResponseOrBuilder extends
    *
    * <code>.ibc.applications.interchain_accounts.controller.v1.Params params = 1 [json_name = "params"];</code>
    */
-  ParamsOrBuilder getParamsOrBuilder();
+  com.ibc.applications.interchain_accounts.controller.v1.ParamsOrBuilder getParamsOrBuilder();
 }

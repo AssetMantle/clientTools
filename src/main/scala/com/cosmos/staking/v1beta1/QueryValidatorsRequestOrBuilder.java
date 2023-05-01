@@ -15,7 +15,7 @@ public interface QueryValidatorsRequestOrBuilder extends
    * <code>string status = 1 [json_name = "status"];</code>
    * @return The status.
    */
-  String getStatus();
+  java.lang.String getStatus();
   /**
    * <pre>
    * status enables to query for validators matching a given status.

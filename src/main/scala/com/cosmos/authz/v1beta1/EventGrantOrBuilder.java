@@ -15,7 +15,7 @@ public interface EventGrantOrBuilder extends
    * <code>string msg_type_url = 2 [json_name = "msgTypeUrl"];</code>
    * @return The msgTypeUrl.
    */
-  String getMsgTypeUrl();
+  java.lang.String getMsgTypeUrl();
   /**
    * <pre>
    * Msg type URL for which an autorization is granted
@@ -35,7 +35,7 @@ public interface EventGrantOrBuilder extends
    * <code>string granter = 3 [json_name = "granter"];</code>
    * @return The granter.
    */
-  String getGranter();
+  java.lang.String getGranter();
   /**
    * <pre>
    * Granter account address
@@ -55,7 +55,7 @@ public interface EventGrantOrBuilder extends
    * <code>string grantee = 4 [json_name = "grantee"];</code>
    * @return The grantee.
    */
-  String getGrantee();
+  java.lang.String getGrantee();
   /**
    * <pre>
    * Grantee account address

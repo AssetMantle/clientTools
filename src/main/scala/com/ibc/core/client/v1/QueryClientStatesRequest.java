@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
   private QueryClientStatesRequest() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryClientStatesRequest();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_ibc_core_client_v1_QueryClientStatesRequest_descriptor;
+    return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryClientStatesRequest_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_ibc_core_client_v1_QueryClientStatesRequest_fieldAccessorTable
+    return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryClientStatesRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryClientStatesRequest.class, Builder.class);
+            com.ibc.core.client.v1.QueryClientStatesRequest.class, com.ibc.core.client.v1.QueryClientStatesRequest.Builder.class);
   }
 
   public static final int PAGINATION_FIELD_NUMBER = 1;
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -65,7 +65,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageRequest getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
@@ -76,13 +76,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1 [json_name = "pagination"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageRequestOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -92,7 +92,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (pagination_ != null) {
@@ -101,7 +101,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -116,15 +116,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryClientStatesRequest)) {
+    if (!(obj instanceof com.ibc.core.client.v1.QueryClientStatesRequest)) {
       return super.equals(obj);
     }
-    QueryClientStatesRequest other = (QueryClientStatesRequest) obj;
+    com.ibc.core.client.v1.QueryClientStatesRequest other = (com.ibc.core.client.v1.QueryClientStatesRequest) obj;
 
     if (hasPagination() != other.hasPagination()) return false;
     if (hasPagination()) {
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryClientStatesRequest parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryClientStatesRequest parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryClientStatesRequest parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryClientStatesRequest parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryClientStatesRequest parseFrom(byte[] data)
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryClientStatesRequest parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryClientStatesRequest parseFrom(java.io.InputStream input)
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryClientStatesRequest parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryClientStatesRequest parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryClientStatesRequest parseDelimitedFrom(
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryClientStatesRequest parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryClientStatesRequest parseFrom(
+  public static com.ibc.core.client.v1.QueryClientStatesRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryClientStatesRequest prototype) {
+  public static Builder newBuilder(com.ibc.core.client.v1.QueryClientStatesRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -252,18 +252,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.client.v1.QueryClientStatesRequest)
-      QueryClientStatesRequestOrBuilder {
+      com.ibc.core.client.v1.QueryClientStatesRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_ibc_core_client_v1_QueryClientStatesRequest_descriptor;
+      return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryClientStatesRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_ibc_core_client_v1_QueryClientStatesRequest_fieldAccessorTable
+      return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryClientStatesRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryClientStatesRequest.class, Builder.class);
+              com.ibc.core.client.v1.QueryClientStatesRequest.class, com.ibc.core.client.v1.QueryClientStatesRequest.Builder.class);
     }
 
     // Construct using com.ibc.core.client.v1.QueryClientStatesRequest.newBuilder()
@@ -272,11 +272,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -288,35 +288,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_ibc_core_client_v1_QueryClientStatesRequest_descriptor;
+      return com.ibc.core.client.v1.QueryProto.internal_static_ibc_core_client_v1_QueryClientStatesRequest_descriptor;
     }
 
-    @Override
-    public QueryClientStatesRequest getDefaultInstanceForType() {
-      return QueryClientStatesRequest.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.core.client.v1.QueryClientStatesRequest getDefaultInstanceForType() {
+      return com.ibc.core.client.v1.QueryClientStatesRequest.getDefaultInstance();
     }
 
-    @Override
-    public QueryClientStatesRequest build() {
-      QueryClientStatesRequest result = buildPartial();
+    @java.lang.Override
+    public com.ibc.core.client.v1.QueryClientStatesRequest build() {
+      com.ibc.core.client.v1.QueryClientStatesRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryClientStatesRequest buildPartial() {
-      QueryClientStatesRequest result = new QueryClientStatesRequest(this);
+    @java.lang.Override
+    public com.ibc.core.client.v1.QueryClientStatesRequest buildPartial() {
+      com.ibc.core.client.v1.QueryClientStatesRequest result = new com.ibc.core.client.v1.QueryClientStatesRequest(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(QueryClientStatesRequest result) {
+    private void buildPartial0(com.ibc.core.client.v1.QueryClientStatesRequest result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -325,50 +325,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryClientStatesRequest) {
-        return mergeFrom((QueryClientStatesRequest)other);
+      if (other instanceof com.ibc.core.client.v1.QueryClientStatesRequest) {
+        return mergeFrom((com.ibc.core.client.v1.QueryClientStatesRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryClientStatesRequest other) {
-      if (other == QueryClientStatesRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.core.client.v1.QueryClientStatesRequest other) {
+      if (other == com.ibc.core.client.v1.QueryClientStatesRequest.getDefaultInstance()) return this;
       if (other.hasPagination()) {
         mergePagination(other.getPagination());
       }
@@ -377,18 +377,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -576,13 +576,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -593,18 +593,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.client.v1.QueryClientStatesRequest)
-  private static final QueryClientStatesRequest DEFAULT_INSTANCE;
+  private static final com.ibc.core.client.v1.QueryClientStatesRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryClientStatesRequest();
+    DEFAULT_INSTANCE = new com.ibc.core.client.v1.QueryClientStatesRequest();
   }
 
-  public static QueryClientStatesRequest getDefaultInstance() {
+  public static com.ibc.core.client.v1.QueryClientStatesRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryClientStatesRequest>
       PARSER = new com.google.protobuf.AbstractParser<QueryClientStatesRequest>() {
-    @Override
+    @java.lang.Override
     public QueryClientStatesRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -628,13 +628,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryClientStatesRequest> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryClientStatesRequest getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.core.client.v1.QueryClientStatesRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

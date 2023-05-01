@@ -14,7 +14,7 @@ public interface CodecDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceDescriptor interfaces = 1 [json_name = "interfaces"];</code>
    */
-  java.util.List<InterfaceDescriptor>
+  java.util.List<com.cosmos.base.reflection.v2alpha1.InterfaceDescriptor> 
       getInterfacesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface CodecDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceDescriptor interfaces = 1 [json_name = "interfaces"];</code>
    */
-  InterfaceDescriptor getInterfaces(int index);
+  com.cosmos.base.reflection.v2alpha1.InterfaceDescriptor getInterfaces(int index);
   /**
    * <pre>
    * interfaces is a list of the registerted interfaces descriptors
@@ -39,7 +39,7 @@ public interface CodecDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceDescriptor interfaces = 1 [json_name = "interfaces"];</code>
    */
-  java.util.List<? extends InterfaceDescriptorOrBuilder>
+  java.util.List<? extends com.cosmos.base.reflection.v2alpha1.InterfaceDescriptorOrBuilder> 
       getInterfacesOrBuilderList();
   /**
    * <pre>
@@ -48,6 +48,6 @@ public interface CodecDescriptorOrBuilder extends
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.InterfaceDescriptor interfaces = 1 [json_name = "interfaces"];</code>
    */
-  InterfaceDescriptorOrBuilder getInterfacesOrBuilder(
+  com.cosmos.base.reflection.v2alpha1.InterfaceDescriptorOrBuilder getInterfacesOrBuilder(
       int index);
 }

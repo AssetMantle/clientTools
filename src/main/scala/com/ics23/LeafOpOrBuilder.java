@@ -16,7 +16,7 @@ public interface LeafOpOrBuilder extends
    * <code>.ics23.HashOp hash = 1 [json_name = "hash"];</code>
    * @return The hash.
    */
-  HashOp getHash();
+  com.ics23.HashOp getHash();
 
   /**
    * <code>.ics23.HashOp prehash_key = 2 [json_name = "prehashKey"];</code>
@@ -27,7 +27,7 @@ public interface LeafOpOrBuilder extends
    * <code>.ics23.HashOp prehash_key = 2 [json_name = "prehashKey"];</code>
    * @return The prehashKey.
    */
-  HashOp getPrehashKey();
+  com.ics23.HashOp getPrehashKey();
 
   /**
    * <code>.ics23.HashOp prehash_value = 3 [json_name = "prehashValue"];</code>
@@ -38,7 +38,7 @@ public interface LeafOpOrBuilder extends
    * <code>.ics23.HashOp prehash_value = 3 [json_name = "prehashValue"];</code>
    * @return The prehashValue.
    */
-  HashOp getPrehashValue();
+  com.ics23.HashOp getPrehashValue();
 
   /**
    * <code>.ics23.LengthOp length = 4 [json_name = "length"];</code>
@@ -49,7 +49,7 @@ public interface LeafOpOrBuilder extends
    * <code>.ics23.LengthOp length = 4 [json_name = "length"];</code>
    * @return The length.
    */
-  LengthOp getLength();
+  com.ics23.LengthOp getLength();
 
   /**
    * <pre>

@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private MsgConnectionOpenAckResponse() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgConnectionOpenAckResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenAckResponse_descriptor;
+    return com.ibc.core.connection.v1.TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenAckResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenAckResponse_fieldAccessorTable
+    return com.ibc.core.connection.v1.TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenAckResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            MsgConnectionOpenAckResponse.class, Builder.class);
+            com.ibc.core.connection.v1.MsgConnectionOpenAckResponse.class, com.ibc.core.connection.v1.MsgConnectionOpenAckResponse.Builder.class);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -53,13 +53,13 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -70,21 +70,21 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof MsgConnectionOpenAckResponse)) {
+    if (!(obj instanceof com.ibc.core.connection.v1.MsgConnectionOpenAckResponse)) {
       return super.equals(obj);
     }
-    MsgConnectionOpenAckResponse other = (MsgConnectionOpenAckResponse) obj;
+    com.ibc.core.connection.v1.MsgConnectionOpenAckResponse other = (com.ibc.core.connection.v1.MsgConnectionOpenAckResponse) obj;
 
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -96,69 +96,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static MsgConnectionOpenAckResponse parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgConnectionOpenAckResponse parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgConnectionOpenAckResponse parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgConnectionOpenAckResponse parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgConnectionOpenAckResponse parseFrom(byte[] data)
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgConnectionOpenAckResponse parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgConnectionOpenAckResponse parseFrom(java.io.InputStream input)
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgConnectionOpenAckResponse parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgConnectionOpenAckResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static MsgConnectionOpenAckResponse parseDelimitedFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgConnectionOpenAckResponse parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgConnectionOpenAckResponse parseFrom(
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -166,23 +166,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(MsgConnectionOpenAckResponse prototype) {
+  public static Builder newBuilder(com.ibc.core.connection.v1.MsgConnectionOpenAckResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -196,18 +196,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.connection.v1.MsgConnectionOpenAckResponse)
-      MsgConnectionOpenAckResponseOrBuilder {
+      com.ibc.core.connection.v1.MsgConnectionOpenAckResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenAckResponse_descriptor;
+      return com.ibc.core.connection.v1.TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenAckResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenAckResponse_fieldAccessorTable
+      return com.ibc.core.connection.v1.TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenAckResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MsgConnectionOpenAckResponse.class, Builder.class);
+              com.ibc.core.connection.v1.MsgConnectionOpenAckResponse.class, com.ibc.core.connection.v1.MsgConnectionOpenAckResponse.Builder.class);
     }
 
     // Construct using com.ibc.core.connection.v1.MsgConnectionOpenAckResponse.newBuilder()
@@ -216,104 +216,104 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenAckResponse_descriptor;
+      return com.ibc.core.connection.v1.TxProto.internal_static_ibc_core_connection_v1_MsgConnectionOpenAckResponse_descriptor;
     }
 
-    @Override
-    public MsgConnectionOpenAckResponse getDefaultInstanceForType() {
-      return MsgConnectionOpenAckResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.core.connection.v1.MsgConnectionOpenAckResponse getDefaultInstanceForType() {
+      return com.ibc.core.connection.v1.MsgConnectionOpenAckResponse.getDefaultInstance();
     }
 
-    @Override
-    public MsgConnectionOpenAckResponse build() {
-      MsgConnectionOpenAckResponse result = buildPartial();
+    @java.lang.Override
+    public com.ibc.core.connection.v1.MsgConnectionOpenAckResponse build() {
+      com.ibc.core.connection.v1.MsgConnectionOpenAckResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public MsgConnectionOpenAckResponse buildPartial() {
-      MsgConnectionOpenAckResponse result = new MsgConnectionOpenAckResponse(this);
+    @java.lang.Override
+    public com.ibc.core.connection.v1.MsgConnectionOpenAckResponse buildPartial() {
+      com.ibc.core.connection.v1.MsgConnectionOpenAckResponse result = new com.ibc.core.connection.v1.MsgConnectionOpenAckResponse(this);
       onBuilt();
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof MsgConnectionOpenAckResponse) {
-        return mergeFrom((MsgConnectionOpenAckResponse)other);
+      if (other instanceof com.ibc.core.connection.v1.MsgConnectionOpenAckResponse) {
+        return mergeFrom((com.ibc.core.connection.v1.MsgConnectionOpenAckResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(MsgConnectionOpenAckResponse other) {
-      if (other == MsgConnectionOpenAckResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.core.connection.v1.MsgConnectionOpenAckResponse other) {
+      if (other == com.ibc.core.connection.v1.MsgConnectionOpenAckResponse.getDefaultInstance()) return this;
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -338,13 +338,13 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -355,18 +355,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.connection.v1.MsgConnectionOpenAckResponse)
-  private static final MsgConnectionOpenAckResponse DEFAULT_INSTANCE;
+  private static final com.ibc.core.connection.v1.MsgConnectionOpenAckResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new MsgConnectionOpenAckResponse();
+    DEFAULT_INSTANCE = new com.ibc.core.connection.v1.MsgConnectionOpenAckResponse();
   }
 
-  public static MsgConnectionOpenAckResponse getDefaultInstance() {
+  public static com.ibc.core.connection.v1.MsgConnectionOpenAckResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgConnectionOpenAckResponse>
       PARSER = new com.google.protobuf.AbstractParser<MsgConnectionOpenAckResponse>() {
-    @Override
+    @java.lang.Override
     public MsgConnectionOpenAckResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -390,13 +390,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<MsgConnectionOpenAckResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public MsgConnectionOpenAckResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.core.connection.v1.MsgConnectionOpenAckResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

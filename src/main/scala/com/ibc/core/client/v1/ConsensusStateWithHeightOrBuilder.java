@@ -24,7 +24,7 @@ public interface ConsensusStateWithHeightOrBuilder extends
    * <code>.ibc.core.client.v1.Height height = 1 [json_name = "height", (.gogoproto.nullable) = false];</code>
    * @return The height.
    */
-  Height getHeight();
+  com.ibc.core.client.v1.Height getHeight();
   /**
    * <pre>
    * consensus state height
@@ -32,7 +32,7 @@ public interface ConsensusStateWithHeightOrBuilder extends
    *
    * <code>.ibc.core.client.v1.Height height = 1 [json_name = "height", (.gogoproto.nullable) = false];</code>
    */
-  HeightOrBuilder getHeightOrBuilder();
+  com.ibc.core.client.v1.HeightOrBuilder getHeightOrBuilder();
 
   /**
    * <pre>

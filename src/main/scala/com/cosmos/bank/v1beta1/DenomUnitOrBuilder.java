@@ -15,7 +15,7 @@ public interface DenomUnitOrBuilder extends
    * <code>string denom = 1 [json_name = "denom"];</code>
    * @return The denom.
    */
-  String getDenom();
+  java.lang.String getDenom();
   /**
    * <pre>
    * denom represents the string name of the given denom unit (e.g uatom).
@@ -49,7 +49,7 @@ public interface DenomUnitOrBuilder extends
    * <code>repeated string aliases = 3 [json_name = "aliases"];</code>
    * @return A list containing the aliases.
    */
-  java.util.List<String>
+  java.util.List<java.lang.String>
       getAliasesList();
   /**
    * <pre>
@@ -69,7 +69,7 @@ public interface DenomUnitOrBuilder extends
    * @param index The index of the element to return.
    * @return The aliases at the given index.
    */
-  String getAliases(int index);
+  java.lang.String getAliases(int index);
   /**
    * <pre>
    * aliases is a list of string aliases for the given denom

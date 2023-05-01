@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private MsgCreateVestingAccountResponse() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgCreateVestingAccountResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TxProto.internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_descriptor;
+    return com.cosmos.vesting.v1beta1.TxProto.internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TxProto.internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_fieldAccessorTable
+    return com.cosmos.vesting.v1beta1.TxProto.internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            MsgCreateVestingAccountResponse.class, Builder.class);
+            com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse.class, com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse.Builder.class);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -53,13 +53,13 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -70,21 +70,21 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof MsgCreateVestingAccountResponse)) {
+    if (!(obj instanceof com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse)) {
       return super.equals(obj);
     }
-    MsgCreateVestingAccountResponse other = (MsgCreateVestingAccountResponse) obj;
+    com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse other = (com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse) obj;
 
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -96,69 +96,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static MsgCreateVestingAccountResponse parseFrom(
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgCreateVestingAccountResponse parseFrom(
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgCreateVestingAccountResponse parseFrom(
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgCreateVestingAccountResponse parseFrom(
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgCreateVestingAccountResponse parseFrom(byte[] data)
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgCreateVestingAccountResponse parseFrom(
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgCreateVestingAccountResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgCreateVestingAccountResponse parseFrom(
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgCreateVestingAccountResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static MsgCreateVestingAccountResponse parseDelimitedFrom(
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgCreateVestingAccountResponse parseFrom(
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgCreateVestingAccountResponse parseFrom(
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -166,23 +166,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(MsgCreateVestingAccountResponse prototype) {
+  public static Builder newBuilder(com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -196,18 +196,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse)
-      MsgCreateVestingAccountResponseOrBuilder {
+      com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_descriptor;
+      return com.cosmos.vesting.v1beta1.TxProto.internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_fieldAccessorTable
+      return com.cosmos.vesting.v1beta1.TxProto.internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MsgCreateVestingAccountResponse.class, Builder.class);
+              com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse.class, com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse.Builder.class);
     }
 
     // Construct using com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse.newBuilder()
@@ -216,104 +216,104 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TxProto.internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_descriptor;
+      return com.cosmos.vesting.v1beta1.TxProto.internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_descriptor;
     }
 
-    @Override
-    public MsgCreateVestingAccountResponse getDefaultInstanceForType() {
-      return MsgCreateVestingAccountResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse getDefaultInstanceForType() {
+      return com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse.getDefaultInstance();
     }
 
-    @Override
-    public MsgCreateVestingAccountResponse build() {
-      MsgCreateVestingAccountResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse build() {
+      com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public MsgCreateVestingAccountResponse buildPartial() {
-      MsgCreateVestingAccountResponse result = new MsgCreateVestingAccountResponse(this);
+    @java.lang.Override
+    public com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse buildPartial() {
+      com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse result = new com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse(this);
       onBuilt();
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof MsgCreateVestingAccountResponse) {
-        return mergeFrom((MsgCreateVestingAccountResponse)other);
+      if (other instanceof com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse) {
+        return mergeFrom((com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(MsgCreateVestingAccountResponse other) {
-      if (other == MsgCreateVestingAccountResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse other) {
+      if (other == com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse.getDefaultInstance()) return this;
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -338,13 +338,13 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -355,18 +355,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse)
-  private static final MsgCreateVestingAccountResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new MsgCreateVestingAccountResponse();
+    DEFAULT_INSTANCE = new com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse();
   }
 
-  public static MsgCreateVestingAccountResponse getDefaultInstance() {
+  public static com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgCreateVestingAccountResponse>
       PARSER = new com.google.protobuf.AbstractParser<MsgCreateVestingAccountResponse>() {
-    @Override
+    @java.lang.Override
     public MsgCreateVestingAccountResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -390,13 +390,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<MsgCreateVestingAccountResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public MsgCreateVestingAccountResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

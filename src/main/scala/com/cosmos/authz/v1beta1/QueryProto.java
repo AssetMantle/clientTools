@@ -52,7 +52,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n cosmos/authz/v1beta1/query.proto\022\024cosm" +
       "os.authz.v1beta1\032\034google/api/annotations" +
       ".proto\032*cosmos/base/query/v1beta1/pagina" +
@@ -105,44 +105,44 @@ public final class QueryProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.api.AnnotationsProto.getDescriptor(),
           com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor(),
-          AuthzProto.getDescriptor(),
+          com.cosmos.authz.v1beta1.AuthzProto.getDescriptor(),
         });
     internal_static_cosmos_authz_v1beta1_QueryGrantsRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_authz_v1beta1_QueryGrantsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_QueryGrantsRequest_descriptor,
-        new String[] { "Granter", "Grantee", "MsgTypeUrl", "Pagination", });
+        new java.lang.String[] { "Granter", "Grantee", "MsgTypeUrl", "Pagination", });
     internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_QueryGrantsResponse_descriptor,
-        new String[] { "Grants", "Pagination", });
+        new java.lang.String[] { "Grants", "Pagination", });
     internal_static_cosmos_authz_v1beta1_QueryGranterGrantsRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_authz_v1beta1_QueryGranterGrantsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_QueryGranterGrantsRequest_descriptor,
-        new String[] { "Granter", "Pagination", });
+        new java.lang.String[] { "Granter", "Pagination", });
     internal_static_cosmos_authz_v1beta1_QueryGranterGrantsResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_authz_v1beta1_QueryGranterGrantsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_QueryGranterGrantsResponse_descriptor,
-        new String[] { "Grants", "Pagination", });
+        new java.lang.String[] { "Grants", "Pagination", });
     internal_static_cosmos_authz_v1beta1_QueryGranteeGrantsRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_authz_v1beta1_QueryGranteeGrantsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_QueryGranteeGrantsRequest_descriptor,
-        new String[] { "Grantee", "Pagination", });
+        new java.lang.String[] { "Grantee", "Pagination", });
     internal_static_cosmos_authz_v1beta1_QueryGranteeGrantsResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_authz_v1beta1_QueryGranteeGrantsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_authz_v1beta1_QueryGranteeGrantsResponse_descriptor,
-        new String[] { "Grants", "Pagination", });
+        new java.lang.String[] { "Grants", "Pagination", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.google.api.AnnotationsProto.http);
@@ -150,7 +150,7 @@ public final class QueryProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();
     com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor();
-    AuthzProto.getDescriptor();
+    com.cosmos.authz.v1beta1.AuthzProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

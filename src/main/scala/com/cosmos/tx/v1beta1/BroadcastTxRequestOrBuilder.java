@@ -26,5 +26,5 @@ public interface BroadcastTxRequestOrBuilder extends
    * <code>.cosmos.tx.v1beta1.BroadcastMode mode = 2 [json_name = "mode"];</code>
    * @return The mode.
    */
-  BroadcastMode getMode();
+  com.cosmos.tx.v1beta1.BroadcastMode getMode();
 }

@@ -16,11 +16,11 @@ public interface EvidenceOrBuilder extends
    * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
    * @return The duplicateVoteEvidence.
    */
-  DuplicateVoteEvidence getDuplicateVoteEvidence();
+  com.tendermint.types.DuplicateVoteEvidence getDuplicateVoteEvidence();
   /**
    * <code>.tendermint.types.DuplicateVoteEvidence duplicate_vote_evidence = 1 [json_name = "duplicateVoteEvidence"];</code>
    */
-  DuplicateVoteEvidenceOrBuilder getDuplicateVoteEvidenceOrBuilder();
+  com.tendermint.types.DuplicateVoteEvidenceOrBuilder getDuplicateVoteEvidenceOrBuilder();
 
   /**
    * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
@@ -31,11 +31,11 @@ public interface EvidenceOrBuilder extends
    * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
    * @return The lightClientAttackEvidence.
    */
-  LightClientAttackEvidence getLightClientAttackEvidence();
+  com.tendermint.types.LightClientAttackEvidence getLightClientAttackEvidence();
   /**
    * <code>.tendermint.types.LightClientAttackEvidence light_client_attack_evidence = 2 [json_name = "lightClientAttackEvidence"];</code>
    */
-  LightClientAttackEvidenceOrBuilder getLightClientAttackEvidenceOrBuilder();
+  com.tendermint.types.LightClientAttackEvidenceOrBuilder getLightClientAttackEvidenceOrBuilder();
 
-  Evidence.SumCase getSumCase();
+  com.tendermint.types.Evidence.SumCase getSumCase();
 }

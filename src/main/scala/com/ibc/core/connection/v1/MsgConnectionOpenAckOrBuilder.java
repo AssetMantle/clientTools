@@ -11,7 +11,7 @@ public interface MsgConnectionOpenAckOrBuilder extends
    * <code>string connection_id = 1 [json_name = "connectionId", (.gogoproto.moretags) = "yaml:&#92;"connection_id&#92;""];</code>
    * @return The connectionId.
    */
-  String getConnectionId();
+  java.lang.String getConnectionId();
   /**
    * <code>string connection_id = 1 [json_name = "connectionId", (.gogoproto.moretags) = "yaml:&#92;"connection_id&#92;""];</code>
    * @return The bytes for connectionId.
@@ -23,7 +23,7 @@ public interface MsgConnectionOpenAckOrBuilder extends
    * <code>string counterparty_connection_id = 2 [json_name = "counterpartyConnectionId", (.gogoproto.moretags) = "yaml:&#92;"counterparty_connection_id&#92;""];</code>
    * @return The counterpartyConnectionId.
    */
-  String getCounterpartyConnectionId();
+  java.lang.String getCounterpartyConnectionId();
   /**
    * <code>string counterparty_connection_id = 2 [json_name = "counterpartyConnectionId", (.gogoproto.moretags) = "yaml:&#92;"counterparty_connection_id&#92;""];</code>
    * @return The bytes for counterpartyConnectionId.
@@ -40,11 +40,11 @@ public interface MsgConnectionOpenAckOrBuilder extends
    * <code>.ibc.core.connection.v1.Version version = 3 [json_name = "version"];</code>
    * @return The version.
    */
-  Version getVersion();
+  com.ibc.core.connection.v1.Version getVersion();
   /**
    * <code>.ibc.core.connection.v1.Version version = 3 [json_name = "version"];</code>
    */
-  VersionOrBuilder getVersionOrBuilder();
+  com.ibc.core.connection.v1.VersionOrBuilder getVersionOrBuilder();
 
   /**
    * <code>.google.protobuf.Any client_state = 4 [json_name = "clientState", (.gogoproto.moretags) = "yaml:&#92;"client_state&#92;""];</code>
@@ -126,7 +126,7 @@ public interface MsgConnectionOpenAckOrBuilder extends
    * <code>string signer = 10 [json_name = "signer"];</code>
    * @return The signer.
    */
-  String getSigner();
+  java.lang.String getSigner();
   /**
    * <code>string signer = 10 [json_name = "signer"];</code>
    * @return The bytes for signer.

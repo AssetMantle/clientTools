@@ -14,7 +14,7 @@ public interface GetTxsEventResponseOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.Tx txs = 1 [json_name = "txs"];</code>
    */
-  java.util.List<Tx>
+  java.util.List<com.cosmos.tx.v1beta1.Tx> 
       getTxsList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface GetTxsEventResponseOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.Tx txs = 1 [json_name = "txs"];</code>
    */
-  Tx getTxs(int index);
+  com.cosmos.tx.v1beta1.Tx getTxs(int index);
   /**
    * <pre>
    * txs is the list of queried transactions.
@@ -39,7 +39,7 @@ public interface GetTxsEventResponseOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.Tx txs = 1 [json_name = "txs"];</code>
    */
-  java.util.List<? extends TxOrBuilder>
+  java.util.List<? extends com.cosmos.tx.v1beta1.TxOrBuilder> 
       getTxsOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface GetTxsEventResponseOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.Tx txs = 1 [json_name = "txs"];</code>
    */
-  TxOrBuilder getTxsOrBuilder(
+  com.cosmos.tx.v1beta1.TxOrBuilder getTxsOrBuilder(
       int index);
 
   /**

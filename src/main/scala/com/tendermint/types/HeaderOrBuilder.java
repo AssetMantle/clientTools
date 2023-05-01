@@ -38,7 +38,7 @@ public interface HeaderOrBuilder extends
    * <code>string chain_id = 2 [json_name = "chainId", (.gogoproto.customname) = "ChainID"];</code>
    * @return The chainId.
    */
-  String getChainId();
+  java.lang.String getChainId();
   /**
    * <code>string chain_id = 2 [json_name = "chainId", (.gogoproto.customname) = "ChainID"];</code>
    * @return The bytes for chainId.
@@ -84,7 +84,7 @@ public interface HeaderOrBuilder extends
    * <code>.tendermint.types.BlockID last_block_id = 5 [json_name = "lastBlockId", (.gogoproto.nullable) = false];</code>
    * @return The lastBlockId.
    */
-  BlockID getLastBlockId();
+  com.tendermint.types.BlockID getLastBlockId();
   /**
    * <pre>
    * prev block info
@@ -92,7 +92,7 @@ public interface HeaderOrBuilder extends
    *
    * <code>.tendermint.types.BlockID last_block_id = 5 [json_name = "lastBlockId", (.gogoproto.nullable) = false];</code>
    */
-  BlockIDOrBuilder getLastBlockIdOrBuilder();
+  com.tendermint.types.BlockIDOrBuilder getLastBlockIdOrBuilder();
 
   /**
    * <pre>

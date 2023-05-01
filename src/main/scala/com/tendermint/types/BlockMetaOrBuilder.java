@@ -16,11 +16,11 @@ public interface BlockMetaOrBuilder extends
    * <code>.tendermint.types.BlockID block_id = 1 [json_name = "blockId", (.gogoproto.nullable) = false, (.gogoproto.customname) = "BlockID"];</code>
    * @return The blockId.
    */
-  BlockID getBlockId();
+  com.tendermint.types.BlockID getBlockId();
   /**
    * <code>.tendermint.types.BlockID block_id = 1 [json_name = "blockId", (.gogoproto.nullable) = false, (.gogoproto.customname) = "BlockID"];</code>
    */
-  BlockIDOrBuilder getBlockIdOrBuilder();
+  com.tendermint.types.BlockIDOrBuilder getBlockIdOrBuilder();
 
   /**
    * <code>int64 block_size = 2 [json_name = "blockSize"];</code>
@@ -37,11 +37,11 @@ public interface BlockMetaOrBuilder extends
    * <code>.tendermint.types.Header header = 3 [json_name = "header", (.gogoproto.nullable) = false];</code>
    * @return The header.
    */
-  Header getHeader();
+  com.tendermint.types.Header getHeader();
   /**
    * <code>.tendermint.types.Header header = 3 [json_name = "header", (.gogoproto.nullable) = false];</code>
    */
-  HeaderOrBuilder getHeaderOrBuilder();
+  com.tendermint.types.HeaderOrBuilder getHeaderOrBuilder();
 
   /**
    * <code>int64 num_txs = 4 [json_name = "numTxs"];</code>

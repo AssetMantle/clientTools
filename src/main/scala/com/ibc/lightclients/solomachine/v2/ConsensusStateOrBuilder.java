@@ -44,7 +44,7 @@ public interface ConsensusStateOrBuilder extends
    * <code>string diversifier = 2 [json_name = "diversifier"];</code>
    * @return The diversifier.
    */
-  String getDiversifier();
+  java.lang.String getDiversifier();
   /**
    * <pre>
    * diversifier allows the same public key to be re-used across different solo

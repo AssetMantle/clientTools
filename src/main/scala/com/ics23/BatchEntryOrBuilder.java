@@ -16,11 +16,11 @@ public interface BatchEntryOrBuilder extends
    * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
    * @return The exist.
    */
-  ExistenceProof getExist();
+  com.ics23.ExistenceProof getExist();
   /**
    * <code>.ics23.ExistenceProof exist = 1 [json_name = "exist"];</code>
    */
-  ExistenceProofOrBuilder getExistOrBuilder();
+  com.ics23.ExistenceProofOrBuilder getExistOrBuilder();
 
   /**
    * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
@@ -31,11 +31,11 @@ public interface BatchEntryOrBuilder extends
    * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
    * @return The nonexist.
    */
-  NonExistenceProof getNonexist();
+  com.ics23.NonExistenceProof getNonexist();
   /**
    * <code>.ics23.NonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
    */
-  NonExistenceProofOrBuilder getNonexistOrBuilder();
+  com.ics23.NonExistenceProofOrBuilder getNonexistOrBuilder();
 
-  BatchEntry.ProofCase getProofCase();
+  com.ics23.BatchEntry.ProofCase getProofCase();
 }

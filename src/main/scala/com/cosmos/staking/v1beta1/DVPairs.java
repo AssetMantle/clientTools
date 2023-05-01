@@ -23,69 +23,69 @@ private static final long serialVersionUID = 0L;
     pairs_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new DVPairs();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return StakingProto.internal_static_cosmos_staking_v1beta1_DVPairs_descriptor;
+    return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_DVPairs_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return StakingProto.internal_static_cosmos_staking_v1beta1_DVPairs_fieldAccessorTable
+    return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_DVPairs_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            DVPairs.class, Builder.class);
+            com.cosmos.staking.v1beta1.DVPairs.class, com.cosmos.staking.v1beta1.DVPairs.Builder.class);
   }
 
   public static final int PAIRS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<DVPair> pairs_;
+  private java.util.List<com.cosmos.staking.v1beta1.DVPair> pairs_;
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<DVPair> getPairsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.staking.v1beta1.DVPair> getPairsList() {
     return pairs_;
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends DVPairOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.staking.v1beta1.DVPairOrBuilder> 
       getPairsOrBuilderList() {
     return pairs_;
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getPairsCount() {
     return pairs_.size();
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public DVPair getPairs(int index) {
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.DVPair getPairs(int index) {
     return pairs_.get(index);
   }
   /**
    * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public DVPairOrBuilder getPairsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.DVPairOrBuilder getPairsOrBuilder(
       int index) {
     return pairs_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -95,7 +95,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < pairs_.size(); i++) {
@@ -104,7 +104,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -119,15 +119,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof DVPairs)) {
+    if (!(obj instanceof com.cosmos.staking.v1beta1.DVPairs)) {
       return super.equals(obj);
     }
-    DVPairs other = (DVPairs) obj;
+    com.cosmos.staking.v1beta1.DVPairs other = (com.cosmos.staking.v1beta1.DVPairs) obj;
 
     if (!getPairsList()
         .equals(other.getPairsList())) return false;
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static DVPairs parseFrom(
+  public static com.cosmos.staking.v1beta1.DVPairs parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DVPairs parseFrom(
+  public static com.cosmos.staking.v1beta1.DVPairs parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DVPairs parseFrom(
+  public static com.cosmos.staking.v1beta1.DVPairs parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DVPairs parseFrom(
+  public static com.cosmos.staking.v1beta1.DVPairs parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DVPairs parseFrom(byte[] data)
+  public static com.cosmos.staking.v1beta1.DVPairs parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DVPairs parseFrom(
+  public static com.cosmos.staking.v1beta1.DVPairs parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DVPairs parseFrom(java.io.InputStream input)
+  public static com.cosmos.staking.v1beta1.DVPairs parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static DVPairs parseFrom(
+  public static com.cosmos.staking.v1beta1.DVPairs parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static DVPairs parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.staking.v1beta1.DVPairs parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static DVPairs parseDelimitedFrom(
+  public static com.cosmos.staking.v1beta1.DVPairs parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static DVPairs parseFrom(
+  public static com.cosmos.staking.v1beta1.DVPairs parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static DVPairs parseFrom(
+  public static com.cosmos.staking.v1beta1.DVPairs parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(DVPairs prototype) {
+  public static Builder newBuilder(com.cosmos.staking.v1beta1.DVPairs prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -251,18 +251,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.DVPairs)
-      DVPairsOrBuilder {
+      com.cosmos.staking.v1beta1.DVPairsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return StakingProto.internal_static_cosmos_staking_v1beta1_DVPairs_descriptor;
+      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_DVPairs_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return StakingProto.internal_static_cosmos_staking_v1beta1_DVPairs_fieldAccessorTable
+      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_DVPairs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              DVPairs.class, Builder.class);
+              com.cosmos.staking.v1beta1.DVPairs.class, com.cosmos.staking.v1beta1.DVPairs.Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.DVPairs.newBuilder()
@@ -271,11 +271,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -289,36 +289,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return StakingProto.internal_static_cosmos_staking_v1beta1_DVPairs_descriptor;
+      return com.cosmos.staking.v1beta1.StakingProto.internal_static_cosmos_staking_v1beta1_DVPairs_descriptor;
     }
 
-    @Override
-    public DVPairs getDefaultInstanceForType() {
-      return DVPairs.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.DVPairs getDefaultInstanceForType() {
+      return com.cosmos.staking.v1beta1.DVPairs.getDefaultInstance();
     }
 
-    @Override
-    public DVPairs build() {
-      DVPairs result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.DVPairs build() {
+      com.cosmos.staking.v1beta1.DVPairs result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public DVPairs buildPartial() {
-      DVPairs result = new DVPairs(this);
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.DVPairs buildPartial() {
+      com.cosmos.staking.v1beta1.DVPairs result = new com.cosmos.staking.v1beta1.DVPairs(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(DVPairs result) {
+    private void buildPartialRepeatedFields(com.cosmos.staking.v1beta1.DVPairs result) {
       if (pairsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           pairs_ = java.util.Collections.unmodifiableList(pairs_);
@@ -330,54 +330,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(DVPairs result) {
+    private void buildPartial0(com.cosmos.staking.v1beta1.DVPairs result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof DVPairs) {
-        return mergeFrom((DVPairs)other);
+      if (other instanceof com.cosmos.staking.v1beta1.DVPairs) {
+        return mergeFrom((com.cosmos.staking.v1beta1.DVPairs)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(DVPairs other) {
-      if (other == DVPairs.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.staking.v1beta1.DVPairs other) {
+      if (other == com.cosmos.staking.v1beta1.DVPairs.getDefaultInstance()) return this;
       if (pairsBuilder_ == null) {
         if (!other.pairs_.isEmpty()) {
           if (pairs_.isEmpty()) {
@@ -409,18 +409,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -431,9 +431,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              DVPair m =
+              com.cosmos.staking.v1beta1.DVPair m =
                   input.readMessage(
-                      DVPair.parser(),
+                      com.cosmos.staking.v1beta1.DVPair.parser(),
                       extensionRegistry);
               if (pairsBuilder_ == null) {
                 ensurePairsIsMutable();
@@ -460,22 +460,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<DVPair> pairs_ =
+    private java.util.List<com.cosmos.staking.v1beta1.DVPair> pairs_ =
       java.util.Collections.emptyList();
     private void ensurePairsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        pairs_ = new java.util.ArrayList<DVPair>(pairs_);
+        pairs_ = new java.util.ArrayList<com.cosmos.staking.v1beta1.DVPair>(pairs_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        DVPair, DVPair.Builder, DVPairOrBuilder> pairsBuilder_;
+        com.cosmos.staking.v1beta1.DVPair, com.cosmos.staking.v1beta1.DVPair.Builder, com.cosmos.staking.v1beta1.DVPairOrBuilder> pairsBuilder_;
 
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<DVPair> getPairsList() {
+    public java.util.List<com.cosmos.staking.v1beta1.DVPair> getPairsList() {
       if (pairsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(pairs_);
       } else {
@@ -495,7 +495,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public DVPair getPairs(int index) {
+    public com.cosmos.staking.v1beta1.DVPair getPairs(int index) {
       if (pairsBuilder_ == null) {
         return pairs_.get(index);
       } else {
@@ -506,7 +506,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder setPairs(
-        int index, DVPair value) {
+        int index, com.cosmos.staking.v1beta1.DVPair value) {
       if (pairsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -523,7 +523,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder setPairs(
-        int index, DVPair.Builder builderForValue) {
+        int index, com.cosmos.staking.v1beta1.DVPair.Builder builderForValue) {
       if (pairsBuilder_ == null) {
         ensurePairsIsMutable();
         pairs_.set(index, builderForValue.build());
@@ -536,7 +536,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addPairs(DVPair value) {
+    public Builder addPairs(com.cosmos.staking.v1beta1.DVPair value) {
       if (pairsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -553,7 +553,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addPairs(
-        int index, DVPair value) {
+        int index, com.cosmos.staking.v1beta1.DVPair value) {
       if (pairsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -570,7 +570,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addPairs(
-        DVPair.Builder builderForValue) {
+        com.cosmos.staking.v1beta1.DVPair.Builder builderForValue) {
       if (pairsBuilder_ == null) {
         ensurePairsIsMutable();
         pairs_.add(builderForValue.build());
@@ -584,7 +584,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addPairs(
-        int index, DVPair.Builder builderForValue) {
+        int index, com.cosmos.staking.v1beta1.DVPair.Builder builderForValue) {
       if (pairsBuilder_ == null) {
         ensurePairsIsMutable();
         pairs_.add(index, builderForValue.build());
@@ -598,7 +598,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllPairs(
-        Iterable<? extends DVPair> values) {
+        java.lang.Iterable<? extends com.cosmos.staking.v1beta1.DVPair> values) {
       if (pairsBuilder_ == null) {
         ensurePairsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -638,14 +638,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public DVPair.Builder getPairsBuilder(
+    public com.cosmos.staking.v1beta1.DVPair.Builder getPairsBuilder(
         int index) {
       return getPairsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public DVPairOrBuilder getPairsOrBuilder(
+    public com.cosmos.staking.v1beta1.DVPairOrBuilder getPairsOrBuilder(
         int index) {
       if (pairsBuilder_ == null) {
         return pairs_.get(index);  } else {
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends DVPairOrBuilder>
+    public java.util.List<? extends com.cosmos.staking.v1beta1.DVPairOrBuilder> 
          getPairsOrBuilderList() {
       if (pairsBuilder_ != null) {
         return pairsBuilder_.getMessageOrBuilderList();
@@ -666,31 +666,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public DVPair.Builder addPairsBuilder() {
+    public com.cosmos.staking.v1beta1.DVPair.Builder addPairsBuilder() {
       return getPairsFieldBuilder().addBuilder(
-          DVPair.getDefaultInstance());
+          com.cosmos.staking.v1beta1.DVPair.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public DVPair.Builder addPairsBuilder(
+    public com.cosmos.staking.v1beta1.DVPair.Builder addPairsBuilder(
         int index) {
       return getPairsFieldBuilder().addBuilder(
-          index, DVPair.getDefaultInstance());
+          index, com.cosmos.staking.v1beta1.DVPair.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.staking.v1beta1.DVPair pairs = 1 [json_name = "pairs", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<DVPair.Builder>
+    public java.util.List<com.cosmos.staking.v1beta1.DVPair.Builder> 
          getPairsBuilderList() {
       return getPairsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        DVPair, DVPair.Builder, DVPairOrBuilder>
+        com.cosmos.staking.v1beta1.DVPair, com.cosmos.staking.v1beta1.DVPair.Builder, com.cosmos.staking.v1beta1.DVPairOrBuilder> 
         getPairsFieldBuilder() {
       if (pairsBuilder_ == null) {
         pairsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            DVPair, DVPair.Builder, DVPairOrBuilder>(
+            com.cosmos.staking.v1beta1.DVPair, com.cosmos.staking.v1beta1.DVPair.Builder, com.cosmos.staking.v1beta1.DVPairOrBuilder>(
                 pairs_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -699,13 +699,13 @@ private static final long serialVersionUID = 0L;
       }
       return pairsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -716,18 +716,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.DVPairs)
-  private static final DVPairs DEFAULT_INSTANCE;
+  private static final com.cosmos.staking.v1beta1.DVPairs DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new DVPairs();
+    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.DVPairs();
   }
 
-  public static DVPairs getDefaultInstance() {
+  public static com.cosmos.staking.v1beta1.DVPairs getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<DVPairs>
       PARSER = new com.google.protobuf.AbstractParser<DVPairs>() {
-    @Override
+    @java.lang.Override
     public DVPairs parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -751,13 +751,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<DVPairs> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public DVPairs getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.DVPairs getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

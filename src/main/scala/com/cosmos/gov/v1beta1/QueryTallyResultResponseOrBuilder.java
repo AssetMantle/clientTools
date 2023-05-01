@@ -24,7 +24,7 @@ public interface QueryTallyResultResponseOrBuilder extends
    * <code>.cosmos.gov.v1beta1.TallyResult tally = 1 [json_name = "tally", (.gogoproto.nullable) = false];</code>
    * @return The tally.
    */
-  TallyResult getTally();
+  com.cosmos.gov.v1beta1.TallyResult getTally();
   /**
    * <pre>
    * tally defines the requested tally.
@@ -32,5 +32,5 @@ public interface QueryTallyResultResponseOrBuilder extends
    *
    * <code>.cosmos.gov.v1beta1.TallyResult tally = 1 [json_name = "tally", (.gogoproto.nullable) = false];</code>
    */
-  TallyResultOrBuilder getTallyOrBuilder();
+  com.cosmos.gov.v1beta1.TallyResultOrBuilder getTallyOrBuilder();
 }

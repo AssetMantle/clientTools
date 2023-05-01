@@ -32,7 +32,7 @@ public final class ParamsProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\"cosmos/params/v1beta1/params.proto\022\025co" +
       "smos.params.v1beta1\032\024gogoproto/gogo.prot" +
       "o\"\237\001\n\027ParameterChangeProposal\022\024\n\005title\030\001" +
@@ -59,13 +59,13 @@ public final class ParamsProto {
     internal_static_cosmos_params_v1beta1_ParameterChangeProposal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_params_v1beta1_ParameterChangeProposal_descriptor,
-        new String[] { "Title", "Description", "Changes", });
+        new java.lang.String[] { "Title", "Description", "Changes", });
     internal_static_cosmos_params_v1beta1_ParamChange_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_params_v1beta1_ParamChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_params_v1beta1_ParamChange_descriptor,
-        new String[] { "Subspace", "Key", "Value", });
+        new java.lang.String[] { "Subspace", "Key", "Value", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.equalAll);

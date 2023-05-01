@@ -23,69 +23,69 @@ private static final long serialVersionUID = 0L;
     allowances_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new GenesisState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GenesisProto.internal_static_cosmos_feegrant_v1beta1_GenesisState_descriptor;
+    return com.cosmos.feegrant.v1beta1.GenesisProto.internal_static_cosmos_feegrant_v1beta1_GenesisState_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GenesisProto.internal_static_cosmos_feegrant_v1beta1_GenesisState_fieldAccessorTable
+    return com.cosmos.feegrant.v1beta1.GenesisProto.internal_static_cosmos_feegrant_v1beta1_GenesisState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            GenesisState.class, Builder.class);
+            com.cosmos.feegrant.v1beta1.GenesisState.class, com.cosmos.feegrant.v1beta1.GenesisState.Builder.class);
   }
 
   public static final int ALLOWANCES_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<Grant> allowances_;
+  private java.util.List<com.cosmos.feegrant.v1beta1.Grant> allowances_;
   /**
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<Grant> getAllowancesList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.feegrant.v1beta1.Grant> getAllowancesList() {
     return allowances_;
   }
   /**
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public java.util.List<? extends GrantOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.feegrant.v1beta1.GrantOrBuilder> 
       getAllowancesOrBuilderList() {
     return allowances_;
   }
   /**
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public int getAllowancesCount() {
     return allowances_.size();
   }
   /**
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public Grant getAllowances(int index) {
+  @java.lang.Override
+  public com.cosmos.feegrant.v1beta1.Grant getAllowances(int index) {
     return allowances_.get(index);
   }
   /**
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public GrantOrBuilder getAllowancesOrBuilder(
+  @java.lang.Override
+  public com.cosmos.feegrant.v1beta1.GrantOrBuilder getAllowancesOrBuilder(
       int index) {
     return allowances_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -95,7 +95,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < allowances_.size(); i++) {
@@ -104,7 +104,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -119,15 +119,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof GenesisState)) {
+    if (!(obj instanceof com.cosmos.feegrant.v1beta1.GenesisState)) {
       return super.equals(obj);
     }
-    GenesisState other = (GenesisState) obj;
+    com.cosmos.feegrant.v1beta1.GenesisState other = (com.cosmos.feegrant.v1beta1.GenesisState) obj;
 
     if (!getAllowancesList()
         .equals(other.getAllowancesList())) return false;
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static GenesisState parseFrom(
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(byte[] data)
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GenesisState parseFrom(java.io.InputStream input)
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GenesisState parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static GenesisState parseDelimitedFrom(
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GenesisState parseFrom(
+  public static com.cosmos.feegrant.v1beta1.GenesisState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(GenesisState prototype) {
+  public static Builder newBuilder(com.cosmos.feegrant.v1beta1.GenesisState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -251,18 +251,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.feegrant.v1beta1.GenesisState)
-      GenesisStateOrBuilder {
+      com.cosmos.feegrant.v1beta1.GenesisStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return GenesisProto.internal_static_cosmos_feegrant_v1beta1_GenesisState_descriptor;
+      return com.cosmos.feegrant.v1beta1.GenesisProto.internal_static_cosmos_feegrant_v1beta1_GenesisState_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return GenesisProto.internal_static_cosmos_feegrant_v1beta1_GenesisState_fieldAccessorTable
+      return com.cosmos.feegrant.v1beta1.GenesisProto.internal_static_cosmos_feegrant_v1beta1_GenesisState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              GenesisState.class, Builder.class);
+              com.cosmos.feegrant.v1beta1.GenesisState.class, com.cosmos.feegrant.v1beta1.GenesisState.Builder.class);
     }
 
     // Construct using com.cosmos.feegrant.v1beta1.GenesisState.newBuilder()
@@ -271,11 +271,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -289,36 +289,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return GenesisProto.internal_static_cosmos_feegrant_v1beta1_GenesisState_descriptor;
+      return com.cosmos.feegrant.v1beta1.GenesisProto.internal_static_cosmos_feegrant_v1beta1_GenesisState_descriptor;
     }
 
-    @Override
-    public GenesisState getDefaultInstanceForType() {
-      return GenesisState.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.feegrant.v1beta1.GenesisState getDefaultInstanceForType() {
+      return com.cosmos.feegrant.v1beta1.GenesisState.getDefaultInstance();
     }
 
-    @Override
-    public GenesisState build() {
-      GenesisState result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.feegrant.v1beta1.GenesisState build() {
+      com.cosmos.feegrant.v1beta1.GenesisState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public GenesisState buildPartial() {
-      GenesisState result = new GenesisState(this);
+    @java.lang.Override
+    public com.cosmos.feegrant.v1beta1.GenesisState buildPartial() {
+      com.cosmos.feegrant.v1beta1.GenesisState result = new com.cosmos.feegrant.v1beta1.GenesisState(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(GenesisState result) {
+    private void buildPartialRepeatedFields(com.cosmos.feegrant.v1beta1.GenesisState result) {
       if (allowancesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           allowances_ = java.util.Collections.unmodifiableList(allowances_);
@@ -330,54 +330,54 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(GenesisState result) {
+    private void buildPartial0(com.cosmos.feegrant.v1beta1.GenesisState result) {
       int from_bitField0_ = bitField0_;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof GenesisState) {
-        return mergeFrom((GenesisState)other);
+      if (other instanceof com.cosmos.feegrant.v1beta1.GenesisState) {
+        return mergeFrom((com.cosmos.feegrant.v1beta1.GenesisState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(GenesisState other) {
-      if (other == GenesisState.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.feegrant.v1beta1.GenesisState other) {
+      if (other == com.cosmos.feegrant.v1beta1.GenesisState.getDefaultInstance()) return this;
       if (allowancesBuilder_ == null) {
         if (!other.allowances_.isEmpty()) {
           if (allowances_.isEmpty()) {
@@ -409,18 +409,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -431,9 +431,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              Grant m =
+              com.cosmos.feegrant.v1beta1.Grant m =
                   input.readMessage(
-                      Grant.parser(),
+                      com.cosmos.feegrant.v1beta1.Grant.parser(),
                       extensionRegistry);
               if (allowancesBuilder_ == null) {
                 ensureAllowancesIsMutable();
@@ -460,22 +460,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<Grant> allowances_ =
+    private java.util.List<com.cosmos.feegrant.v1beta1.Grant> allowances_ =
       java.util.Collections.emptyList();
     private void ensureAllowancesIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        allowances_ = new java.util.ArrayList<Grant>(allowances_);
+        allowances_ = new java.util.ArrayList<com.cosmos.feegrant.v1beta1.Grant>(allowances_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Grant, Grant.Builder, GrantOrBuilder> allowancesBuilder_;
+        com.cosmos.feegrant.v1beta1.Grant, com.cosmos.feegrant.v1beta1.Grant.Builder, com.cosmos.feegrant.v1beta1.GrantOrBuilder> allowancesBuilder_;
 
     /**
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<Grant> getAllowancesList() {
+    public java.util.List<com.cosmos.feegrant.v1beta1.Grant> getAllowancesList() {
       if (allowancesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(allowances_);
       } else {
@@ -495,7 +495,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
-    public Grant getAllowances(int index) {
+    public com.cosmos.feegrant.v1beta1.Grant getAllowances(int index) {
       if (allowancesBuilder_ == null) {
         return allowances_.get(index);
       } else {
@@ -506,7 +506,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
     public Builder setAllowances(
-        int index, Grant value) {
+        int index, com.cosmos.feegrant.v1beta1.Grant value) {
       if (allowancesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -523,7 +523,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
     public Builder setAllowances(
-        int index, Grant.Builder builderForValue) {
+        int index, com.cosmos.feegrant.v1beta1.Grant.Builder builderForValue) {
       if (allowancesBuilder_ == null) {
         ensureAllowancesIsMutable();
         allowances_.set(index, builderForValue.build());
@@ -536,7 +536,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
-    public Builder addAllowances(Grant value) {
+    public Builder addAllowances(com.cosmos.feegrant.v1beta1.Grant value) {
       if (allowancesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -553,7 +553,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllowances(
-        int index, Grant value) {
+        int index, com.cosmos.feegrant.v1beta1.Grant value) {
       if (allowancesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -570,7 +570,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllowances(
-        Grant.Builder builderForValue) {
+        com.cosmos.feegrant.v1beta1.Grant.Builder builderForValue) {
       if (allowancesBuilder_ == null) {
         ensureAllowancesIsMutable();
         allowances_.add(builderForValue.build());
@@ -584,7 +584,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllowances(
-        int index, Grant.Builder builderForValue) {
+        int index, com.cosmos.feegrant.v1beta1.Grant.Builder builderForValue) {
       if (allowancesBuilder_ == null) {
         ensureAllowancesIsMutable();
         allowances_.add(index, builderForValue.build());
@@ -598,7 +598,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
     public Builder addAllAllowances(
-        Iterable<? extends Grant> values) {
+        java.lang.Iterable<? extends com.cosmos.feegrant.v1beta1.Grant> values) {
       if (allowancesBuilder_ == null) {
         ensureAllowancesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -638,14 +638,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
-    public Grant.Builder getAllowancesBuilder(
+    public com.cosmos.feegrant.v1beta1.Grant.Builder getAllowancesBuilder(
         int index) {
       return getAllowancesFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
-    public GrantOrBuilder getAllowancesOrBuilder(
+    public com.cosmos.feegrant.v1beta1.GrantOrBuilder getAllowancesOrBuilder(
         int index) {
       if (allowancesBuilder_ == null) {
         return allowances_.get(index);  } else {
@@ -655,7 +655,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<? extends GrantOrBuilder>
+    public java.util.List<? extends com.cosmos.feegrant.v1beta1.GrantOrBuilder> 
          getAllowancesOrBuilderList() {
       if (allowancesBuilder_ != null) {
         return allowancesBuilder_.getMessageOrBuilderList();
@@ -666,31 +666,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
-    public Grant.Builder addAllowancesBuilder() {
+    public com.cosmos.feegrant.v1beta1.Grant.Builder addAllowancesBuilder() {
       return getAllowancesFieldBuilder().addBuilder(
-          Grant.getDefaultInstance());
+          com.cosmos.feegrant.v1beta1.Grant.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
-    public Grant.Builder addAllowancesBuilder(
+    public com.cosmos.feegrant.v1beta1.Grant.Builder addAllowancesBuilder(
         int index) {
       return getAllowancesFieldBuilder().addBuilder(
-          index, Grant.getDefaultInstance());
+          index, com.cosmos.feegrant.v1beta1.Grant.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances", (.gogoproto.nullable) = false];</code>
      */
-    public java.util.List<Grant.Builder>
+    public java.util.List<com.cosmos.feegrant.v1beta1.Grant.Builder> 
          getAllowancesBuilderList() {
       return getAllowancesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Grant, Grant.Builder, GrantOrBuilder>
+        com.cosmos.feegrant.v1beta1.Grant, com.cosmos.feegrant.v1beta1.Grant.Builder, com.cosmos.feegrant.v1beta1.GrantOrBuilder> 
         getAllowancesFieldBuilder() {
       if (allowancesBuilder_ == null) {
         allowancesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            Grant, Grant.Builder, GrantOrBuilder>(
+            com.cosmos.feegrant.v1beta1.Grant, com.cosmos.feegrant.v1beta1.Grant.Builder, com.cosmos.feegrant.v1beta1.GrantOrBuilder>(
                 allowances_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -699,13 +699,13 @@ private static final long serialVersionUID = 0L;
       }
       return allowancesBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -716,18 +716,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.feegrant.v1beta1.GenesisState)
-  private static final GenesisState DEFAULT_INSTANCE;
+  private static final com.cosmos.feegrant.v1beta1.GenesisState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new GenesisState();
+    DEFAULT_INSTANCE = new com.cosmos.feegrant.v1beta1.GenesisState();
   }
 
-  public static GenesisState getDefaultInstance() {
+  public static com.cosmos.feegrant.v1beta1.GenesisState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GenesisState>
       PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-    @Override
+    @java.lang.Override
     public GenesisState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -751,13 +751,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<GenesisState> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public GenesisState getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.feegrant.v1beta1.GenesisState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

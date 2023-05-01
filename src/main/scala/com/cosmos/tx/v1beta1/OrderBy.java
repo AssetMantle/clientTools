@@ -67,7 +67,7 @@ public enum OrderBy
 
   public final int getNumber() {
     if (this == UNRECOGNIZED) {
-      throw new IllegalArgumentException(
+      throw new java.lang.IllegalArgumentException(
           "Can't get the number of an unknown enum value.");
     }
     return value;
@@ -78,7 +78,7 @@ public enum OrderBy
    * @return The enum associated with the given numeric wire value.
    * @deprecated Use {@link #forNumber(int)} instead.
    */
-  @Deprecated
+  @java.lang.Deprecated
   public static OrderBy valueOf(int value) {
     return forNumber(value);
   }
@@ -111,7 +111,7 @@ public enum OrderBy
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
     if (this == UNRECOGNIZED) {
-      throw new IllegalStateException(
+      throw new java.lang.IllegalStateException(
           "Can't get the descriptor of an unrecognized enum value.");
     }
     return getDescriptor().getValues().get(ordinal());
@@ -122,7 +122,7 @@ public enum OrderBy
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return ServiceProto.getDescriptor().getEnumTypes().get(0);
+    return com.cosmos.tx.v1beta1.ServiceProto.getDescriptor().getEnumTypes().get(0);
   }
 
   private static final OrderBy[] VALUES = values();
@@ -130,7 +130,7 @@ public enum OrderBy
   public static OrderBy valueOf(
       com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
     if (desc.getType() != getDescriptor()) {
-      throw new IllegalArgumentException(
+      throw new java.lang.IllegalArgumentException(
         "EnumValueDescriptor is not for this type.");
     }
     if (desc.getIndex() == -1) {

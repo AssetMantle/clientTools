@@ -26,24 +26,24 @@ private static final long serialVersionUID = 0L;
     weight_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new WeightedVoteOption();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GovProto.internal_static_cosmos_gov_v1beta1_WeightedVoteOption_descriptor;
+    return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_WeightedVoteOption_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GovProto.internal_static_cosmos_gov_v1beta1_WeightedVoteOption_fieldAccessorTable
+    return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_WeightedVoteOption_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            WeightedVoteOption.class, Builder.class);
+            com.cosmos.gov.v1beta1.WeightedVoteOption.class, com.cosmos.gov.v1beta1.WeightedVoteOption.Builder.class);
   }
 
   public static final int OPTION_FIELD_NUMBER = 1;
@@ -52,34 +52,34 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.gov.v1beta1.VoteOption option = 1 [json_name = "option"];</code>
    * @return The enum numeric value on the wire for option.
    */
-  @Override public int getOptionValue() {
+  @java.lang.Override public int getOptionValue() {
     return option_;
   }
   /**
    * <code>.cosmos.gov.v1beta1.VoteOption option = 1 [json_name = "option"];</code>
    * @return The option.
    */
-  @Override public VoteOption getOption() {
-    VoteOption result = VoteOption.forNumber(option_);
-    return result == null ? VoteOption.UNRECOGNIZED : result;
+  @java.lang.Override public com.cosmos.gov.v1beta1.VoteOption getOption() {
+    com.cosmos.gov.v1beta1.VoteOption result = com.cosmos.gov.v1beta1.VoteOption.forNumber(option_);
+    return result == null ? com.cosmos.gov.v1beta1.VoteOption.UNRECOGNIZED : result;
   }
 
   public static final int WEIGHT_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile Object weight_ = "";
+  private volatile java.lang.Object weight_ = "";
   /**
    * <code>string weight = 2 [json_name = "weight", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"weight&#92;""];</code>
    * @return The weight.
    */
-  @Override
-  public String getWeight() {
-    Object ref = weight_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getWeight() {
+    java.lang.Object ref = weight_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       weight_ = s;
       return s;
     }
@@ -88,14 +88,14 @@ private static final long serialVersionUID = 0L;
    * <code>string weight = 2 [json_name = "weight", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"weight&#92;""];</code>
    * @return The bytes for weight.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getWeightBytes() {
-    Object ref = weight_;
-    if (ref instanceof String) {
+    java.lang.Object ref = weight_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       weight_ = b;
       return b;
     } else {
@@ -104,7 +104,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -114,10 +114,10 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (option_ != VoteOption.VOTE_OPTION_UNSPECIFIED.getNumber()) {
+    if (option_ != com.cosmos.gov.v1beta1.VoteOption.VOTE_OPTION_UNSPECIFIED.getNumber()) {
       output.writeEnum(1, option_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(weight_)) {
@@ -126,13 +126,13 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
-    if (option_ != VoteOption.VOTE_OPTION_UNSPECIFIED.getNumber()) {
+    if (option_ != com.cosmos.gov.v1beta1.VoteOption.VOTE_OPTION_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, option_);
     }
@@ -144,15 +144,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof WeightedVoteOption)) {
+    if (!(obj instanceof com.cosmos.gov.v1beta1.WeightedVoteOption)) {
       return super.equals(obj);
     }
-    WeightedVoteOption other = (WeightedVoteOption) obj;
+    com.cosmos.gov.v1beta1.WeightedVoteOption other = (com.cosmos.gov.v1beta1.WeightedVoteOption) obj;
 
     if (option_ != other.option_) return false;
     if (!getWeight()
@@ -161,7 +161,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -177,69 +177,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static WeightedVoteOption parseFrom(
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static WeightedVoteOption parseFrom(
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static WeightedVoteOption parseFrom(
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static WeightedVoteOption parseFrom(
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static WeightedVoteOption parseFrom(byte[] data)
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static WeightedVoteOption parseFrom(
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static WeightedVoteOption parseFrom(java.io.InputStream input)
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static WeightedVoteOption parseFrom(
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static WeightedVoteOption parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static WeightedVoteOption parseDelimitedFrom(
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static WeightedVoteOption parseFrom(
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static WeightedVoteOption parseFrom(
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -247,23 +247,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(WeightedVoteOption prototype) {
+  public static Builder newBuilder(com.cosmos.gov.v1beta1.WeightedVoteOption prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -279,18 +279,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.gov.v1beta1.WeightedVoteOption)
-      WeightedVoteOptionOrBuilder {
+      com.cosmos.gov.v1beta1.WeightedVoteOptionOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return GovProto.internal_static_cosmos_gov_v1beta1_WeightedVoteOption_descriptor;
+      return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_WeightedVoteOption_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return GovProto.internal_static_cosmos_gov_v1beta1_WeightedVoteOption_fieldAccessorTable
+      return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_WeightedVoteOption_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              WeightedVoteOption.class, Builder.class);
+              com.cosmos.gov.v1beta1.WeightedVoteOption.class, com.cosmos.gov.v1beta1.WeightedVoteOption.Builder.class);
     }
 
     // Construct using com.cosmos.gov.v1beta1.WeightedVoteOption.newBuilder()
@@ -299,11 +299,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -312,35 +312,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return GovProto.internal_static_cosmos_gov_v1beta1_WeightedVoteOption_descriptor;
+      return com.cosmos.gov.v1beta1.GovProto.internal_static_cosmos_gov_v1beta1_WeightedVoteOption_descriptor;
     }
 
-    @Override
-    public WeightedVoteOption getDefaultInstanceForType() {
-      return WeightedVoteOption.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.WeightedVoteOption getDefaultInstanceForType() {
+      return com.cosmos.gov.v1beta1.WeightedVoteOption.getDefaultInstance();
     }
 
-    @Override
-    public WeightedVoteOption build() {
-      WeightedVoteOption result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.WeightedVoteOption build() {
+      com.cosmos.gov.v1beta1.WeightedVoteOption result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public WeightedVoteOption buildPartial() {
-      WeightedVoteOption result = new WeightedVoteOption(this);
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.WeightedVoteOption buildPartial() {
+      com.cosmos.gov.v1beta1.WeightedVoteOption result = new com.cosmos.gov.v1beta1.WeightedVoteOption(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(WeightedVoteOption result) {
+    private void buildPartial0(com.cosmos.gov.v1beta1.WeightedVoteOption result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.option_ = option_;
@@ -350,50 +350,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof WeightedVoteOption) {
-        return mergeFrom((WeightedVoteOption)other);
+      if (other instanceof com.cosmos.gov.v1beta1.WeightedVoteOption) {
+        return mergeFrom((com.cosmos.gov.v1beta1.WeightedVoteOption)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(WeightedVoteOption other) {
-      if (other == WeightedVoteOption.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.gov.v1beta1.WeightedVoteOption other) {
+      if (other == com.cosmos.gov.v1beta1.WeightedVoteOption.getDefaultInstance()) return this;
       if (other.option_ != 0) {
         setOptionValue(other.getOptionValue());
       }
@@ -407,18 +407,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -460,7 +460,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.VoteOption option = 1 [json_name = "option"];</code>
      * @return The enum numeric value on the wire for option.
      */
-    @Override public int getOptionValue() {
+    @java.lang.Override public int getOptionValue() {
       return option_;
     }
     /**
@@ -478,17 +478,17 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.gov.v1beta1.VoteOption option = 1 [json_name = "option"];</code>
      * @return The option.
      */
-    @Override
-    public VoteOption getOption() {
-      VoteOption result = VoteOption.forNumber(option_);
-      return result == null ? VoteOption.UNRECOGNIZED : result;
+    @java.lang.Override
+    public com.cosmos.gov.v1beta1.VoteOption getOption() {
+      com.cosmos.gov.v1beta1.VoteOption result = com.cosmos.gov.v1beta1.VoteOption.forNumber(option_);
+      return result == null ? com.cosmos.gov.v1beta1.VoteOption.UNRECOGNIZED : result;
     }
     /**
      * <code>.cosmos.gov.v1beta1.VoteOption option = 1 [json_name = "option"];</code>
      * @param value The option to set.
      * @return This builder for chaining.
      */
-    public Builder setOption(VoteOption value) {
+    public Builder setOption(com.cosmos.gov.v1beta1.VoteOption value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -508,21 +508,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object weight_ = "";
+    private java.lang.Object weight_ = "";
     /**
      * <code>string weight = 2 [json_name = "weight", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"weight&#92;""];</code>
      * @return The weight.
      */
-    public String getWeight() {
-      Object ref = weight_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getWeight() {
+      java.lang.Object ref = weight_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         weight_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -531,11 +531,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getWeightBytes() {
-      Object ref = weight_;
+      java.lang.Object ref = weight_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         weight_ = b;
         return b;
       } else {
@@ -548,7 +548,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setWeight(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       weight_ = value;
       bitField0_ |= 0x00000002;
@@ -579,13 +579,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -596,18 +596,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.gov.v1beta1.WeightedVoteOption)
-  private static final WeightedVoteOption DEFAULT_INSTANCE;
+  private static final com.cosmos.gov.v1beta1.WeightedVoteOption DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new WeightedVoteOption();
+    DEFAULT_INSTANCE = new com.cosmos.gov.v1beta1.WeightedVoteOption();
   }
 
-  public static WeightedVoteOption getDefaultInstance() {
+  public static com.cosmos.gov.v1beta1.WeightedVoteOption getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<WeightedVoteOption>
       PARSER = new com.google.protobuf.AbstractParser<WeightedVoteOption>() {
-    @Override
+    @java.lang.Override
     public WeightedVoteOption parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -631,13 +631,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<WeightedVoteOption> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public WeightedVoteOption getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.gov.v1beta1.WeightedVoteOption getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

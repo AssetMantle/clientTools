@@ -1,21 +1,21 @@
 package schema.data.base
 
-import com.data.{AnyData, StringData => protoStringData}
+import com.assetmantle.schema.data.base.{AnyData, StringData => protoStringData}
 import schema.data.Data
 import schema.id.base.{DataID, HashID, StringID}
 
 case class StringData(value: String) extends Data {
-  def getType: StringID = constants.Data.StringDataTypeID
+  def getType: StringID = schema.constants.Data.StringDataTypeID
 
-  def getBondWeight: Int = constants.Data.StringDataWeight
+  def getBondWeight: Int = schema.constants.Data.StringDataWeight
 
-  def getDataID: DataID = DataID(typeID = constants.Data.StringDataTypeID, hashID = this.generateHashID)
+  def getDataID: DataID = DataID(typeID = schema.constants.Data.StringDataTypeID, hashID = this.generateHashID)
 
   def zeroValue: Data = StringData("")
 
   def getBytes: Array[Byte] = this.value.getBytes
 
-  def generateHashID: HashID = utilities.ID.generateHashID(this.getBytes)
+  def generateHashID: HashID = schema.utilities.ID.generateHashID(this.getBytes)
 
   def asProtoStringData: protoStringData = protoStringData.newBuilder().setValue(this.value).build()
 

@@ -15,7 +15,7 @@ public interface ValidatorOrBuilder extends
    * <code>string operator_address = 1 [json_name = "operatorAddress", (.gogoproto.moretags) = "yaml:&#92;"operator_address&#92;""];</code>
    * @return The operatorAddress.
    */
-  String getOperatorAddress();
+  java.lang.String getOperatorAddress();
   /**
    * <pre>
    * operator_address defines the address of the validator's operator; bech encoded in JSON.
@@ -81,7 +81,7 @@ public interface ValidatorOrBuilder extends
    * <code>.cosmos.staking.v1beta1.BondStatus status = 4 [json_name = "status"];</code>
    * @return The status.
    */
-  BondStatus getStatus();
+  com.cosmos.staking.v1beta1.BondStatus getStatus();
 
   /**
    * <pre>
@@ -91,7 +91,7 @@ public interface ValidatorOrBuilder extends
    * <code>string tokens = 5 [json_name = "tokens", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"];</code>
    * @return The tokens.
    */
-  String getTokens();
+  java.lang.String getTokens();
   /**
    * <pre>
    * tokens define the delegated tokens (incl. self-delegation).
@@ -111,7 +111,7 @@ public interface ValidatorOrBuilder extends
    * <code>string delegator_shares = 6 [json_name = "delegatorShares", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"delegator_shares&#92;""];</code>
    * @return The delegatorShares.
    */
-  String getDelegatorShares();
+  java.lang.String getDelegatorShares();
   /**
    * <pre>
    * delegator_shares defines total shares issued to a validator's delegators.
@@ -140,7 +140,7 @@ public interface ValidatorOrBuilder extends
    * <code>.cosmos.staking.v1beta1.Description description = 7 [json_name = "description", (.gogoproto.nullable) = false];</code>
    * @return The description.
    */
-  Description getDescription();
+  com.cosmos.staking.v1beta1.Description getDescription();
   /**
    * <pre>
    * description defines the description terms for the validator.
@@ -148,7 +148,7 @@ public interface ValidatorOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.Description description = 7 [json_name = "description", (.gogoproto.nullable) = false];</code>
    */
-  DescriptionOrBuilder getDescriptionOrBuilder();
+  com.cosmos.staking.v1beta1.DescriptionOrBuilder getDescriptionOrBuilder();
 
   /**
    * <pre>
@@ -204,7 +204,7 @@ public interface ValidatorOrBuilder extends
    * <code>.cosmos.staking.v1beta1.Commission commission = 10 [json_name = "commission", (.gogoproto.nullable) = false];</code>
    * @return The commission.
    */
-  Commission getCommission();
+  com.cosmos.staking.v1beta1.Commission getCommission();
   /**
    * <pre>
    * commission defines the commission parameters.
@@ -212,7 +212,7 @@ public interface ValidatorOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.Commission commission = 10 [json_name = "commission", (.gogoproto.nullable) = false];</code>
    */
-  CommissionOrBuilder getCommissionOrBuilder();
+  com.cosmos.staking.v1beta1.CommissionOrBuilder getCommissionOrBuilder();
 
   /**
    * <pre>
@@ -222,7 +222,7 @@ public interface ValidatorOrBuilder extends
    * <code>string min_self_delegation = 11 [json_name = "minSelfDelegation", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"min_self_delegation&#92;""];</code>
    * @return The minSelfDelegation.
    */
-  String getMinSelfDelegation();
+  java.lang.String getMinSelfDelegation();
   /**
    * <pre>
    * min_self_delegation is the validator's self declared minimum self delegation.

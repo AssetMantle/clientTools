@@ -42,7 +42,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n>ibc/applications/interchain_accounts/c" +
       "ontroller/v1/query.proto\0222ibc.applicatio" +
       "ns.interchain_accounts.controller.v1\032Cib" +
@@ -84,7 +84,7 @@ public final class QueryProto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          ControllerProto.getDescriptor(),
+          com.ibc.applications.interchain_accounts.controller.v1.ControllerProto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
         });
@@ -93,32 +93,32 @@ public final class QueryProto {
     internal_static_ibc_applications_interchain_accounts_controller_v1_QueryInterchainAccountRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_controller_v1_QueryInterchainAccountRequest_descriptor,
-        new String[] { "Owner", "ConnectionId", });
+        new java.lang.String[] { "Owner", "ConnectionId", });
     internal_static_ibc_applications_interchain_accounts_controller_v1_QueryInterchainAccountResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_applications_interchain_accounts_controller_v1_QueryInterchainAccountResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_controller_v1_QueryInterchainAccountResponse_descriptor,
-        new String[] { "Address", });
+        new java.lang.String[] { "Address", });
     internal_static_ibc_applications_interchain_accounts_controller_v1_QueryParamsRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_applications_interchain_accounts_controller_v1_QueryParamsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_controller_v1_QueryParamsRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_ibc_applications_interchain_accounts_controller_v1_QueryParamsResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_applications_interchain_accounts_controller_v1_QueryParamsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_controller_v1_QueryParamsResponse_descriptor,
-        new String[] { "Params", });
+        new java.lang.String[] { "Params", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.moretags);
     registry.add(com.google.api.AnnotationsProto.http);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    ControllerProto.getDescriptor();
+    com.ibc.applications.interchain_accounts.controller.v1.ControllerProto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
   }

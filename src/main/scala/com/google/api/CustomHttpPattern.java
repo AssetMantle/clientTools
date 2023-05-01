@@ -24,29 +24,29 @@ private static final long serialVersionUID = 0L;
     path_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new CustomHttpPattern();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return HttpProto.internal_static_google_api_CustomHttpPattern_descriptor;
+    return com.google.api.HttpProto.internal_static_google_api_CustomHttpPattern_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return HttpProto.internal_static_google_api_CustomHttpPattern_fieldAccessorTable
+    return com.google.api.HttpProto.internal_static_google_api_CustomHttpPattern_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            CustomHttpPattern.class, Builder.class);
+            com.google.api.CustomHttpPattern.class, com.google.api.CustomHttpPattern.Builder.class);
   }
 
   public static final int KIND_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object kind_ = "";
+  private volatile java.lang.Object kind_ = "";
   /**
    * <pre>
    * The name of this custom HTTP verb.
@@ -55,15 +55,15 @@ private static final long serialVersionUID = 0L;
    * <code>string kind = 1 [json_name = "kind"];</code>
    * @return The kind.
    */
-  @Override
-  public String getKind() {
-    Object ref = kind_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getKind() {
+    java.lang.Object ref = kind_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       kind_ = s;
       return s;
     }
@@ -76,14 +76,14 @@ private static final long serialVersionUID = 0L;
    * <code>string kind = 1 [json_name = "kind"];</code>
    * @return The bytes for kind.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getKindBytes() {
-    Object ref = kind_;
-    if (ref instanceof String) {
+    java.lang.Object ref = kind_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       kind_ = b;
       return b;
     } else {
@@ -93,7 +93,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int PATH_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile Object path_ = "";
+  private volatile java.lang.Object path_ = "";
   /**
    * <pre>
    * The path matched by this custom verb.
@@ -102,15 +102,15 @@ private static final long serialVersionUID = 0L;
    * <code>string path = 2 [json_name = "path"];</code>
    * @return The path.
    */
-  @Override
-  public String getPath() {
-    Object ref = path_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getPath() {
+    java.lang.Object ref = path_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       path_ = s;
       return s;
     }
@@ -123,14 +123,14 @@ private static final long serialVersionUID = 0L;
    * <code>string path = 2 [json_name = "path"];</code>
    * @return The bytes for path.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getPathBytes() {
-    Object ref = path_;
-    if (ref instanceof String) {
+    java.lang.Object ref = path_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       path_ = b;
       return b;
     } else {
@@ -139,7 +139,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -149,7 +149,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kind_)) {
@@ -161,7 +161,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -178,15 +178,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof CustomHttpPattern)) {
+    if (!(obj instanceof com.google.api.CustomHttpPattern)) {
       return super.equals(obj);
     }
-    CustomHttpPattern other = (CustomHttpPattern) obj;
+    com.google.api.CustomHttpPattern other = (com.google.api.CustomHttpPattern) obj;
 
     if (!getKind()
         .equals(other.getKind())) return false;
@@ -196,7 +196,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -212,69 +212,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static CustomHttpPattern parseFrom(
+  public static com.google.api.CustomHttpPattern parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CustomHttpPattern parseFrom(
+  public static com.google.api.CustomHttpPattern parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CustomHttpPattern parseFrom(
+  public static com.google.api.CustomHttpPattern parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CustomHttpPattern parseFrom(
+  public static com.google.api.CustomHttpPattern parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CustomHttpPattern parseFrom(byte[] data)
+  public static com.google.api.CustomHttpPattern parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static CustomHttpPattern parseFrom(
+  public static com.google.api.CustomHttpPattern parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static CustomHttpPattern parseFrom(java.io.InputStream input)
+  public static com.google.api.CustomHttpPattern parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static CustomHttpPattern parseFrom(
+  public static com.google.api.CustomHttpPattern parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static CustomHttpPattern parseDelimitedFrom(java.io.InputStream input)
+  public static com.google.api.CustomHttpPattern parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static CustomHttpPattern parseDelimitedFrom(
+  public static com.google.api.CustomHttpPattern parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static CustomHttpPattern parseFrom(
+  public static com.google.api.CustomHttpPattern parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static CustomHttpPattern parseFrom(
+  public static com.google.api.CustomHttpPattern parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -282,23 +282,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(CustomHttpPattern prototype) {
+  public static Builder newBuilder(com.google.api.CustomHttpPattern prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -312,18 +312,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:google.api.CustomHttpPattern)
-      CustomHttpPatternOrBuilder {
+      com.google.api.CustomHttpPatternOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return HttpProto.internal_static_google_api_CustomHttpPattern_descriptor;
+      return com.google.api.HttpProto.internal_static_google_api_CustomHttpPattern_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return HttpProto.internal_static_google_api_CustomHttpPattern_fieldAccessorTable
+      return com.google.api.HttpProto.internal_static_google_api_CustomHttpPattern_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              CustomHttpPattern.class, Builder.class);
+              com.google.api.CustomHttpPattern.class, com.google.api.CustomHttpPattern.Builder.class);
     }
 
     // Construct using com.google.api.CustomHttpPattern.newBuilder()
@@ -332,11 +332,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -345,35 +345,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return HttpProto.internal_static_google_api_CustomHttpPattern_descriptor;
+      return com.google.api.HttpProto.internal_static_google_api_CustomHttpPattern_descriptor;
     }
 
-    @Override
-    public CustomHttpPattern getDefaultInstanceForType() {
-      return CustomHttpPattern.getDefaultInstance();
+    @java.lang.Override
+    public com.google.api.CustomHttpPattern getDefaultInstanceForType() {
+      return com.google.api.CustomHttpPattern.getDefaultInstance();
     }
 
-    @Override
-    public CustomHttpPattern build() {
-      CustomHttpPattern result = buildPartial();
+    @java.lang.Override
+    public com.google.api.CustomHttpPattern build() {
+      com.google.api.CustomHttpPattern result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public CustomHttpPattern buildPartial() {
-      CustomHttpPattern result = new CustomHttpPattern(this);
+    @java.lang.Override
+    public com.google.api.CustomHttpPattern buildPartial() {
+      com.google.api.CustomHttpPattern result = new com.google.api.CustomHttpPattern(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(CustomHttpPattern result) {
+    private void buildPartial0(com.google.api.CustomHttpPattern result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.kind_ = kind_;
@@ -383,50 +383,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof CustomHttpPattern) {
-        return mergeFrom((CustomHttpPattern)other);
+      if (other instanceof com.google.api.CustomHttpPattern) {
+        return mergeFrom((com.google.api.CustomHttpPattern)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(CustomHttpPattern other) {
-      if (other == CustomHttpPattern.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.google.api.CustomHttpPattern other) {
+      if (other == com.google.api.CustomHttpPattern.getDefaultInstance()) return this;
       if (!other.getKind().isEmpty()) {
         kind_ = other.kind_;
         bitField0_ |= 0x00000001;
@@ -442,18 +442,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -490,7 +490,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object kind_ = "";
+    private java.lang.Object kind_ = "";
     /**
      * <pre>
      * The name of this custom HTTP verb.
@@ -499,16 +499,16 @@ private static final long serialVersionUID = 0L;
      * <code>string kind = 1 [json_name = "kind"];</code>
      * @return The kind.
      */
-    public String getKind() {
-      Object ref = kind_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getKind() {
+      java.lang.Object ref = kind_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         kind_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -521,11 +521,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getKindBytes() {
-      Object ref = kind_;
+      java.lang.Object ref = kind_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         kind_ = b;
         return b;
       } else {
@@ -542,7 +542,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setKind(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       kind_ = value;
       bitField0_ |= 0x00000001;
@@ -582,7 +582,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object path_ = "";
+    private java.lang.Object path_ = "";
     /**
      * <pre>
      * The path matched by this custom verb.
@@ -591,16 +591,16 @@ private static final long serialVersionUID = 0L;
      * <code>string path = 2 [json_name = "path"];</code>
      * @return The path.
      */
-    public String getPath() {
-      Object ref = path_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getPath() {
+      java.lang.Object ref = path_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         path_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -613,11 +613,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getPathBytes() {
-      Object ref = path_;
+      java.lang.Object ref = path_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         path_ = b;
         return b;
       } else {
@@ -634,7 +634,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPath(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       path_ = value;
       bitField0_ |= 0x00000002;
@@ -673,13 +673,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -690,18 +690,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:google.api.CustomHttpPattern)
-  private static final CustomHttpPattern DEFAULT_INSTANCE;
+  private static final com.google.api.CustomHttpPattern DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new CustomHttpPattern();
+    DEFAULT_INSTANCE = new com.google.api.CustomHttpPattern();
   }
 
-  public static CustomHttpPattern getDefaultInstance() {
+  public static com.google.api.CustomHttpPattern getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<CustomHttpPattern>
       PARSER = new com.google.protobuf.AbstractParser<CustomHttpPattern>() {
-    @Override
+    @java.lang.Override
     public CustomHttpPattern parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -725,13 +725,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<CustomHttpPattern> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public CustomHttpPattern getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.google.api.CustomHttpPattern getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

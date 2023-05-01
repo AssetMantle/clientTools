@@ -24,7 +24,7 @@ public interface GetConfigurationDescriptorResponseOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
    * @return The config.
    */
-  ConfigurationDescriptor getConfig();
+  com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor getConfig();
   /**
    * <pre>
    * config describes the application's sdk.Config
@@ -32,5 +32,5 @@ public interface GetConfigurationDescriptorResponseOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor config = 1 [json_name = "config"];</code>
    */
-  ConfigurationDescriptorOrBuilder getConfigOrBuilder();
+  com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder getConfigOrBuilder();
 }

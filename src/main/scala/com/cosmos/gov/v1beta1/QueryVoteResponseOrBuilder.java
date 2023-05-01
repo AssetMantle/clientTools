@@ -24,7 +24,7 @@ public interface QueryVoteResponseOrBuilder extends
    * <code>.cosmos.gov.v1beta1.Vote vote = 1 [json_name = "vote", (.gogoproto.nullable) = false];</code>
    * @return The vote.
    */
-  Vote getVote();
+  com.cosmos.gov.v1beta1.Vote getVote();
   /**
    * <pre>
    * vote defined the queried vote.
@@ -32,5 +32,5 @@ public interface QueryVoteResponseOrBuilder extends
    *
    * <code>.cosmos.gov.v1beta1.Vote vote = 1 [json_name = "vote", (.gogoproto.nullable) = false];</code>
    */
-  VoteOrBuilder getVoteOrBuilder();
+  com.cosmos.gov.v1beta1.VoteOrBuilder getVoteOrBuilder();
 }

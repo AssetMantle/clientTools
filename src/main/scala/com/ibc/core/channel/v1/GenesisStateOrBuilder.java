@@ -10,12 +10,12 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
    */
-  java.util.List<IdentifiedChannel>
+  java.util.List<com.ibc.core.channel.v1.IdentifiedChannel> 
       getChannelsList();
   /**
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
    */
-  IdentifiedChannel getChannels(int index);
+  com.ibc.core.channel.v1.IdentifiedChannel getChannels(int index);
   /**
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
    */
@@ -23,23 +23,23 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
    */
-  java.util.List<? extends IdentifiedChannelOrBuilder>
+  java.util.List<? extends com.ibc.core.channel.v1.IdentifiedChannelOrBuilder> 
       getChannelsOrBuilderList();
   /**
    * <code>repeated .ibc.core.channel.v1.IdentifiedChannel channels = 1 [json_name = "channels", (.gogoproto.nullable) = false, (.gogoproto.casttype) = "IdentifiedChannel"];</code>
    */
-  IdentifiedChannelOrBuilder getChannelsOrBuilder(
+  com.ibc.core.channel.v1.IdentifiedChannelOrBuilder getChannelsOrBuilder(
       int index);
 
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<PacketState>
+  java.util.List<com.ibc.core.channel.v1.PacketState> 
       getAcknowledgementsList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
    */
-  PacketState getAcknowledgements(int index);
+  com.ibc.core.channel.v1.PacketState getAcknowledgements(int index);
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
    */
@@ -47,23 +47,23 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends PacketStateOrBuilder>
+  java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
       getAcknowledgementsOrBuilderList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState acknowledgements = 2 [json_name = "acknowledgements", (.gogoproto.nullable) = false];</code>
    */
-  PacketStateOrBuilder getAcknowledgementsOrBuilder(
+  com.ibc.core.channel.v1.PacketStateOrBuilder getAcknowledgementsOrBuilder(
       int index);
 
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<PacketState>
+  java.util.List<com.ibc.core.channel.v1.PacketState> 
       getCommitmentsList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
    */
-  PacketState getCommitments(int index);
+  com.ibc.core.channel.v1.PacketState getCommitments(int index);
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
    */
@@ -71,23 +71,23 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends PacketStateOrBuilder>
+  java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
       getCommitmentsOrBuilderList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState commitments = 3 [json_name = "commitments", (.gogoproto.nullable) = false];</code>
    */
-  PacketStateOrBuilder getCommitmentsOrBuilder(
+  com.ibc.core.channel.v1.PacketStateOrBuilder getCommitmentsOrBuilder(
       int index);
 
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<PacketState>
+  java.util.List<com.ibc.core.channel.v1.PacketState> 
       getReceiptsList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
    */
-  PacketState getReceipts(int index);
+  com.ibc.core.channel.v1.PacketState getReceipts(int index);
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
    */
@@ -95,23 +95,23 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends PacketStateOrBuilder>
+  java.util.List<? extends com.ibc.core.channel.v1.PacketStateOrBuilder> 
       getReceiptsOrBuilderList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketState receipts = 4 [json_name = "receipts", (.gogoproto.nullable) = false];</code>
    */
-  PacketStateOrBuilder getReceiptsOrBuilder(
+  com.ibc.core.channel.v1.PacketStateOrBuilder getReceiptsOrBuilder(
       int index);
 
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
    */
-  java.util.List<PacketSequence>
+  java.util.List<com.ibc.core.channel.v1.PacketSequence> 
       getSendSequencesList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
    */
-  PacketSequence getSendSequences(int index);
+  com.ibc.core.channel.v1.PacketSequence getSendSequences(int index);
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
    */
@@ -119,23 +119,23 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
    */
-  java.util.List<? extends PacketSequenceOrBuilder>
+  java.util.List<? extends com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
       getSendSequencesOrBuilderList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence send_sequences = 5 [json_name = "sendSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"send_sequences&#92;""];</code>
    */
-  PacketSequenceOrBuilder getSendSequencesOrBuilder(
+  com.ibc.core.channel.v1.PacketSequenceOrBuilder getSendSequencesOrBuilder(
       int index);
 
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
    */
-  java.util.List<PacketSequence>
+  java.util.List<com.ibc.core.channel.v1.PacketSequence> 
       getRecvSequencesList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
    */
-  PacketSequence getRecvSequences(int index);
+  com.ibc.core.channel.v1.PacketSequence getRecvSequences(int index);
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
    */
@@ -143,23 +143,23 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
    */
-  java.util.List<? extends PacketSequenceOrBuilder>
+  java.util.List<? extends com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
       getRecvSequencesOrBuilderList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence recv_sequences = 6 [json_name = "recvSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"recv_sequences&#92;""];</code>
    */
-  PacketSequenceOrBuilder getRecvSequencesOrBuilder(
+  com.ibc.core.channel.v1.PacketSequenceOrBuilder getRecvSequencesOrBuilder(
       int index);
 
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
    */
-  java.util.List<PacketSequence>
+  java.util.List<com.ibc.core.channel.v1.PacketSequence> 
       getAckSequencesList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
    */
-  PacketSequence getAckSequences(int index);
+  com.ibc.core.channel.v1.PacketSequence getAckSequences(int index);
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
    */
@@ -167,12 +167,12 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
    */
-  java.util.List<? extends PacketSequenceOrBuilder>
+  java.util.List<? extends com.ibc.core.channel.v1.PacketSequenceOrBuilder> 
       getAckSequencesOrBuilderList();
   /**
    * <code>repeated .ibc.core.channel.v1.PacketSequence ack_sequences = 7 [json_name = "ackSequences", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"ack_sequences&#92;""];</code>
    */
-  PacketSequenceOrBuilder getAckSequencesOrBuilder(
+  com.ibc.core.channel.v1.PacketSequenceOrBuilder getAckSequencesOrBuilder(
       int index);
 
   /**

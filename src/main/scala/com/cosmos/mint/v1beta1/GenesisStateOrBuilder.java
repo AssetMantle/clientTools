@@ -24,7 +24,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.mint.v1beta1.Minter minter = 1 [json_name = "minter", (.gogoproto.nullable) = false];</code>
    * @return The minter.
    */
-  Minter getMinter();
+  com.cosmos.mint.v1beta1.Minter getMinter();
   /**
    * <pre>
    * minter is a space for holding current inflation information.
@@ -32,7 +32,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.mint.v1beta1.Minter minter = 1 [json_name = "minter", (.gogoproto.nullable) = false];</code>
    */
-  MinterOrBuilder getMinterOrBuilder();
+  com.cosmos.mint.v1beta1.MinterOrBuilder getMinterOrBuilder();
 
   /**
    * <pre>
@@ -51,7 +51,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.mint.v1beta1.Params params = 2 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  Params getParams();
+  com.cosmos.mint.v1beta1.Params getParams();
   /**
    * <pre>
    * params defines all the paramaters of the module.
@@ -59,5 +59,5 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.mint.v1beta1.Params params = 2 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  ParamsOrBuilder getParamsOrBuilder();
+  com.cosmos.mint.v1beta1.ParamsOrBuilder getParamsOrBuilder();
 }

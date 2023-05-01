@@ -15,7 +15,7 @@ public interface ConnectionEndOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  String getClientId();
+  java.lang.String getClientId();
   /**
    * <pre>
    * client associated with this connection.
@@ -35,7 +35,7 @@ public interface ConnectionEndOrBuilder extends
    *
    * <code>repeated .ibc.core.connection.v1.Version versions = 2 [json_name = "versions"];</code>
    */
-  java.util.List<Version>
+  java.util.List<com.ibc.core.connection.v1.Version> 
       getVersionsList();
   /**
    * <pre>
@@ -45,7 +45,7 @@ public interface ConnectionEndOrBuilder extends
    *
    * <code>repeated .ibc.core.connection.v1.Version versions = 2 [json_name = "versions"];</code>
    */
-  Version getVersions(int index);
+  com.ibc.core.connection.v1.Version getVersions(int index);
   /**
    * <pre>
    * IBC version which can be utilised to determine encodings or protocols for
@@ -63,7 +63,7 @@ public interface ConnectionEndOrBuilder extends
    *
    * <code>repeated .ibc.core.connection.v1.Version versions = 2 [json_name = "versions"];</code>
    */
-  java.util.List<? extends VersionOrBuilder>
+  java.util.List<? extends com.ibc.core.connection.v1.VersionOrBuilder> 
       getVersionsOrBuilderList();
   /**
    * <pre>
@@ -73,7 +73,7 @@ public interface ConnectionEndOrBuilder extends
    *
    * <code>repeated .ibc.core.connection.v1.Version versions = 2 [json_name = "versions"];</code>
    */
-  VersionOrBuilder getVersionsOrBuilder(
+  com.ibc.core.connection.v1.VersionOrBuilder getVersionsOrBuilder(
       int index);
 
   /**
@@ -93,7 +93,7 @@ public interface ConnectionEndOrBuilder extends
    * <code>.ibc.core.connection.v1.State state = 3 [json_name = "state"];</code>
    * @return The state.
    */
-  State getState();
+  com.ibc.core.connection.v1.State getState();
 
   /**
    * <pre>
@@ -112,7 +112,7 @@ public interface ConnectionEndOrBuilder extends
    * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    * @return The counterparty.
    */
-  Counterparty getCounterparty();
+  com.ibc.core.connection.v1.Counterparty getCounterparty();
   /**
    * <pre>
    * counterparty chain associated with this connection.
@@ -120,7 +120,7 @@ public interface ConnectionEndOrBuilder extends
    *
    * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    */
-  CounterpartyOrBuilder getCounterpartyOrBuilder();
+  com.ibc.core.connection.v1.CounterpartyOrBuilder getCounterpartyOrBuilder();
 
   /**
    * <pre>

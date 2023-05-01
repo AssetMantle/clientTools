@@ -57,7 +57,7 @@ public final class ConnectionProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\'ibc/core/connection/v1/connection.prot" +
       "o\022\026ibc.core.connection.v1\032\024gogoproto/gog" +
       "o.proto\032\'ibc/core/commitment/v1/commitme" +
@@ -114,43 +114,43 @@ public final class ConnectionProto {
     internal_static_ibc_core_connection_v1_ConnectionEnd_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_connection_v1_ConnectionEnd_descriptor,
-        new String[] { "ClientId", "Versions", "State", "Counterparty", "DelayPeriod", });
+        new java.lang.String[] { "ClientId", "Versions", "State", "Counterparty", "DelayPeriod", });
     internal_static_ibc_core_connection_v1_IdentifiedConnection_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_core_connection_v1_IdentifiedConnection_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_connection_v1_IdentifiedConnection_descriptor,
-        new String[] { "Id", "ClientId", "Versions", "State", "Counterparty", "DelayPeriod", });
+        new java.lang.String[] { "Id", "ClientId", "Versions", "State", "Counterparty", "DelayPeriod", });
     internal_static_ibc_core_connection_v1_Counterparty_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_core_connection_v1_Counterparty_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_connection_v1_Counterparty_descriptor,
-        new String[] { "ClientId", "ConnectionId", "Prefix", });
+        new java.lang.String[] { "ClientId", "ConnectionId", "Prefix", });
     internal_static_ibc_core_connection_v1_ClientPaths_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_core_connection_v1_ClientPaths_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_connection_v1_ClientPaths_descriptor,
-        new String[] { "Paths", });
+        new java.lang.String[] { "Paths", });
     internal_static_ibc_core_connection_v1_ConnectionPaths_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_core_connection_v1_ConnectionPaths_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_connection_v1_ConnectionPaths_descriptor,
-        new String[] { "ClientId", "Paths", });
+        new java.lang.String[] { "ClientId", "Paths", });
     internal_static_ibc_core_connection_v1_Version_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_ibc_core_connection_v1_Version_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_connection_v1_Version_descriptor,
-        new String[] { "Identifier", "Features", });
+        new java.lang.String[] { "Identifier", "Features", });
     internal_static_ibc_core_connection_v1_Params_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_ibc_core_connection_v1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_connection_v1_Params_descriptor,
-        new String[] { "MaxExpectedTimePerBlock", });
+        new java.lang.String[] { "MaxExpectedTimePerBlock", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.enumvalueCustomname);

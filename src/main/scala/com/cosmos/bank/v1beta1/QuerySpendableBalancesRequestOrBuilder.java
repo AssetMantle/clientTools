@@ -15,7 +15,7 @@ public interface QuerySpendableBalancesRequestOrBuilder extends
    * <code>string address = 1 [json_name = "address"];</code>
    * @return The address.
    */
-  String getAddress();
+  java.lang.String getAddress();
   /**
    * <pre>
    * address is the address to query spendable balances for.

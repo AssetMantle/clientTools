@@ -32,7 +32,7 @@ public final class MultisigProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n-cosmos/crypto/multisig/v1beta1/multisi" +
       "g.proto\022\036cosmos.crypto.multisig.v1beta1\032" +
       "\024gogoproto/gogo.proto\"6\n\016MultiSignature\022" +
@@ -58,13 +58,13 @@ public final class MultisigProto {
     internal_static_cosmos_crypto_multisig_v1beta1_MultiSignature_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_crypto_multisig_v1beta1_MultiSignature_descriptor,
-        new String[] { "Signatures", });
+        new java.lang.String[] { "Signatures", });
     internal_static_cosmos_crypto_multisig_v1beta1_CompactBitArray_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_crypto_multisig_v1beta1_CompactBitArray_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_crypto_multisig_v1beta1_CompactBitArray_descriptor,
-        new String[] { "ExtraBitsStored", "Elems", });
+        new java.lang.String[] { "ExtraBitsStored", "Elems", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoStringer);

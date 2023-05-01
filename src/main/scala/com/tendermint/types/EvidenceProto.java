@@ -42,7 +42,7 @@ public final class EvidenceProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\037tendermint/types/evidence.proto\022\020tende" +
       "rmint.types\032\024gogoproto/gogo.proto\032\037googl" +
       "e/protobuf/timestamp.proto\032\034tendermint/t" +
@@ -82,33 +82,33 @@ public final class EvidenceProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
           com.google.protobuf.TimestampProto.getDescriptor(),
-          TypesProto.getDescriptor(),
-          ValidatorProto.getDescriptor(),
+          com.tendermint.types.TypesProto.getDescriptor(),
+          com.tendermint.types.ValidatorProto.getDescriptor(),
         });
     internal_static_tendermint_types_Evidence_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_tendermint_types_Evidence_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_Evidence_descriptor,
-        new String[] { "DuplicateVoteEvidence", "LightClientAttackEvidence", "Sum", });
+        new java.lang.String[] { "DuplicateVoteEvidence", "LightClientAttackEvidence", "Sum", });
     internal_static_tendermint_types_DuplicateVoteEvidence_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_tendermint_types_DuplicateVoteEvidence_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_DuplicateVoteEvidence_descriptor,
-        new String[] { "VoteA", "VoteB", "TotalVotingPower", "ValidatorPower", "Timestamp", });
+        new java.lang.String[] { "VoteA", "VoteB", "TotalVotingPower", "ValidatorPower", "Timestamp", });
     internal_static_tendermint_types_LightClientAttackEvidence_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_tendermint_types_LightClientAttackEvidence_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_LightClientAttackEvidence_descriptor,
-        new String[] { "ConflictingBlock", "CommonHeight", "ByzantineValidators", "TotalVotingPower", "Timestamp", });
+        new java.lang.String[] { "ConflictingBlock", "CommonHeight", "ByzantineValidators", "TotalVotingPower", "Timestamp", });
     internal_static_tendermint_types_EvidenceList_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_tendermint_types_EvidenceList_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tendermint_types_EvidenceList_descriptor,
-        new String[] { "Evidence", });
+        new java.lang.String[] { "Evidence", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.nullable);
@@ -117,8 +117,8 @@ public final class EvidenceProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
     com.google.protobuf.TimestampProto.getDescriptor();
-    TypesProto.getDescriptor();
-    ValidatorProto.getDescriptor();
+    com.tendermint.types.TypesProto.getDescriptor();
+    com.tendermint.types.ValidatorProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

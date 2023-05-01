@@ -47,7 +47,7 @@ public final class TendermintProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n/ibc/lightclients/tendermint/v1/tenderm" +
       "int.proto\022\036ibc.lightclients.tendermint.v" +
       "1\032 tendermint/types/validator.proto\032\034ten" +
@@ -133,31 +133,31 @@ public final class TendermintProto {
     internal_static_ibc_lightclients_tendermint_v1_ClientState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_tendermint_v1_ClientState_descriptor,
-        new String[] { "ChainId", "TrustLevel", "TrustingPeriod", "UnbondingPeriod", "MaxClockDrift", "FrozenHeight", "LatestHeight", "ProofSpecs", "UpgradePath", "AllowUpdateAfterExpiry", "AllowUpdateAfterMisbehaviour", });
+        new java.lang.String[] { "ChainId", "TrustLevel", "TrustingPeriod", "UnbondingPeriod", "MaxClockDrift", "FrozenHeight", "LatestHeight", "ProofSpecs", "UpgradePath", "AllowUpdateAfterExpiry", "AllowUpdateAfterMisbehaviour", });
     internal_static_ibc_lightclients_tendermint_v1_ConsensusState_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_lightclients_tendermint_v1_ConsensusState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_tendermint_v1_ConsensusState_descriptor,
-        new String[] { "Timestamp", "Root", "NextValidatorsHash", });
+        new java.lang.String[] { "Timestamp", "Root", "NextValidatorsHash", });
     internal_static_ibc_lightclients_tendermint_v1_Misbehaviour_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_lightclients_tendermint_v1_Misbehaviour_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_tendermint_v1_Misbehaviour_descriptor,
-        new String[] { "ClientId", "Header1", "Header2", });
+        new java.lang.String[] { "ClientId", "Header1", "Header2", });
     internal_static_ibc_lightclients_tendermint_v1_Header_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_lightclients_tendermint_v1_Header_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_tendermint_v1_Header_descriptor,
-        new String[] { "SignedHeader", "ValidatorSet", "TrustedHeight", "TrustedValidators", });
+        new java.lang.String[] { "SignedHeader", "ValidatorSet", "TrustedHeight", "TrustedValidators", });
     internal_static_ibc_lightclients_tendermint_v1_Fraction_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_lightclients_tendermint_v1_Fraction_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_tendermint_v1_Fraction_descriptor,
-        new String[] { "Numerator", "Denominator", });
+        new java.lang.String[] { "Numerator", "Denominator", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.casttype);

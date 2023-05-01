@@ -15,7 +15,7 @@ public interface QueryParamsRequestOrBuilder extends
    * <code>string subspace = 1 [json_name = "subspace"];</code>
    * @return The subspace.
    */
-  String getSubspace();
+  java.lang.String getSubspace();
   /**
    * <pre>
    * subspace defines the module to query the parameter for.
@@ -35,7 +35,7 @@ public interface QueryParamsRequestOrBuilder extends
    * <code>string key = 2 [json_name = "key"];</code>
    * @return The key.
    */
-  String getKey();
+  java.lang.String getKey();
   /**
    * <pre>
    * key defines the key of the parameter in the subspace.

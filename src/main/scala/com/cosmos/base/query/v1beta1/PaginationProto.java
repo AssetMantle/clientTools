@@ -32,7 +32,7 @@ public final class PaginationProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n*cosmos/base/query/v1beta1/pagination.p" +
       "roto\022\031cosmos.base.query.v1beta1\"\210\001\n\013Page" +
       "Request\022\020\n\003key\030\001 \001(\014R\003key\022\026\n\006offset\030\002 \001(" +
@@ -57,13 +57,13 @@ public final class PaginationProto {
     internal_static_cosmos_base_query_v1beta1_PageRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_query_v1beta1_PageRequest_descriptor,
-        new String[] { "Key", "Offset", "Limit", "CountTotal", "Reverse", });
+        new java.lang.String[] { "Key", "Offset", "Limit", "CountTotal", "Reverse", });
     internal_static_cosmos_base_query_v1beta1_PageResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_base_query_v1beta1_PageResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_query_v1beta1_PageResponse_descriptor,
-        new String[] { "NextKey", "Total", });
+        new java.lang.String[] { "NextKey", "Total", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

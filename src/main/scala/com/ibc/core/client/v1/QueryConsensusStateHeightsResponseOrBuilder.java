@@ -14,7 +14,7 @@ public interface QueryConsensusStateHeightsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.Height consensus_state_heights = 1 [json_name = "consensusStateHeights", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<Height>
+  java.util.List<com.ibc.core.client.v1.Height> 
       getConsensusStateHeightsList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryConsensusStateHeightsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.Height consensus_state_heights = 1 [json_name = "consensusStateHeights", (.gogoproto.nullable) = false];</code>
    */
-  Height getConsensusStateHeights(int index);
+  com.ibc.core.client.v1.Height getConsensusStateHeights(int index);
   /**
    * <pre>
    * consensus state heights
@@ -39,7 +39,7 @@ public interface QueryConsensusStateHeightsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.Height consensus_state_heights = 1 [json_name = "consensusStateHeights", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends HeightOrBuilder>
+  java.util.List<? extends com.ibc.core.client.v1.HeightOrBuilder> 
       getConsensusStateHeightsOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryConsensusStateHeightsResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.Height consensus_state_heights = 1 [json_name = "consensusStateHeights", (.gogoproto.nullable) = false];</code>
    */
-  HeightOrBuilder getConsensusStateHeightsOrBuilder(
+  com.ibc.core.client.v1.HeightOrBuilder getConsensusStateHeightsOrBuilder(
       int index);
 
   /**

@@ -10,12 +10,12 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .cosmos.authz.v1beta1.GrantAuthorization authorization = 1 [json_name = "authorization", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<GrantAuthorization>
+  java.util.List<com.cosmos.authz.v1beta1.GrantAuthorization> 
       getAuthorizationList();
   /**
    * <code>repeated .cosmos.authz.v1beta1.GrantAuthorization authorization = 1 [json_name = "authorization", (.gogoproto.nullable) = false];</code>
    */
-  GrantAuthorization getAuthorization(int index);
+  com.cosmos.authz.v1beta1.GrantAuthorization getAuthorization(int index);
   /**
    * <code>repeated .cosmos.authz.v1beta1.GrantAuthorization authorization = 1 [json_name = "authorization", (.gogoproto.nullable) = false];</code>
    */
@@ -23,11 +23,11 @@ public interface GenesisStateOrBuilder extends
   /**
    * <code>repeated .cosmos.authz.v1beta1.GrantAuthorization authorization = 1 [json_name = "authorization", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends GrantAuthorizationOrBuilder>
+  java.util.List<? extends com.cosmos.authz.v1beta1.GrantAuthorizationOrBuilder> 
       getAuthorizationOrBuilderList();
   /**
    * <code>repeated .cosmos.authz.v1beta1.GrantAuthorization authorization = 1 [json_name = "authorization", (.gogoproto.nullable) = false];</code>
    */
-  GrantAuthorizationOrBuilder getAuthorizationOrBuilder(
+  com.cosmos.authz.v1beta1.GrantAuthorizationOrBuilder getAuthorizationOrBuilder(
       int index);
 }

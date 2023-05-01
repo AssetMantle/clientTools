@@ -15,7 +15,7 @@ public interface QueryDenomHashRequestOrBuilder extends
    * <code>string trace = 1 [json_name = "trace"];</code>
    * @return The trace.
    */
-  String getTrace();
+  java.lang.String getTrace();
   /**
    * <pre>
    * The denomination trace ([port_id]/[channel_id])+/[denom]

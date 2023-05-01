@@ -18,33 +18,33 @@ private static final long serialVersionUID = 0L;
   private LightBlock() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new LightBlock();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TypesProto.internal_static_tendermint_types_LightBlock_descriptor;
+    return com.tendermint.types.TypesProto.internal_static_tendermint_types_LightBlock_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TypesProto.internal_static_tendermint_types_LightBlock_fieldAccessorTable
+    return com.tendermint.types.TypesProto.internal_static_tendermint_types_LightBlock_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            LightBlock.class, Builder.class);
+            com.tendermint.types.LightBlock.class, com.tendermint.types.LightBlock.Builder.class);
   }
 
   public static final int SIGNED_HEADER_FIELD_NUMBER = 1;
-  private SignedHeader signedHeader_;
+  private com.tendermint.types.SignedHeader signedHeader_;
   /**
    * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
    * @return Whether the signedHeader field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasSignedHeader() {
     return signedHeader_ != null;
   }
@@ -52,25 +52,25 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
    * @return The signedHeader.
    */
-  @Override
-  public SignedHeader getSignedHeader() {
-    return signedHeader_ == null ? SignedHeader.getDefaultInstance() : signedHeader_;
+  @java.lang.Override
+  public com.tendermint.types.SignedHeader getSignedHeader() {
+    return signedHeader_ == null ? com.tendermint.types.SignedHeader.getDefaultInstance() : signedHeader_;
   }
   /**
    * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
    */
-  @Override
-  public SignedHeaderOrBuilder getSignedHeaderOrBuilder() {
-    return signedHeader_ == null ? SignedHeader.getDefaultInstance() : signedHeader_;
+  @java.lang.Override
+  public com.tendermint.types.SignedHeaderOrBuilder getSignedHeaderOrBuilder() {
+    return signedHeader_ == null ? com.tendermint.types.SignedHeader.getDefaultInstance() : signedHeader_;
   }
 
   public static final int VALIDATOR_SET_FIELD_NUMBER = 2;
-  private ValidatorSet validatorSet_;
+  private com.tendermint.types.ValidatorSet validatorSet_;
   /**
    * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
    * @return Whether the validatorSet field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasValidatorSet() {
     return validatorSet_ != null;
   }
@@ -78,20 +78,20 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
    * @return The validatorSet.
    */
-  @Override
-  public ValidatorSet getValidatorSet() {
-    return validatorSet_ == null ? ValidatorSet.getDefaultInstance() : validatorSet_;
+  @java.lang.Override
+  public com.tendermint.types.ValidatorSet getValidatorSet() {
+    return validatorSet_ == null ? com.tendermint.types.ValidatorSet.getDefaultInstance() : validatorSet_;
   }
   /**
    * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
    */
-  @Override
-  public ValidatorSetOrBuilder getValidatorSetOrBuilder() {
-    return validatorSet_ == null ? ValidatorSet.getDefaultInstance() : validatorSet_;
+  @java.lang.Override
+  public com.tendermint.types.ValidatorSetOrBuilder getValidatorSetOrBuilder() {
+    return validatorSet_ == null ? com.tendermint.types.ValidatorSet.getDefaultInstance() : validatorSet_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -101,7 +101,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (signedHeader_ != null) {
@@ -113,7 +113,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -132,15 +132,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof LightBlock)) {
+    if (!(obj instanceof com.tendermint.types.LightBlock)) {
       return super.equals(obj);
     }
-    LightBlock other = (LightBlock) obj;
+    com.tendermint.types.LightBlock other = (com.tendermint.types.LightBlock) obj;
 
     if (hasSignedHeader() != other.hasSignedHeader()) return false;
     if (hasSignedHeader()) {
@@ -156,7 +156,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -176,69 +176,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static LightBlock parseFrom(
+  public static com.tendermint.types.LightBlock parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static LightBlock parseFrom(
+  public static com.tendermint.types.LightBlock parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static LightBlock parseFrom(
+  public static com.tendermint.types.LightBlock parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static LightBlock parseFrom(
+  public static com.tendermint.types.LightBlock parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static LightBlock parseFrom(byte[] data)
+  public static com.tendermint.types.LightBlock parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static LightBlock parseFrom(
+  public static com.tendermint.types.LightBlock parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static LightBlock parseFrom(java.io.InputStream input)
+  public static com.tendermint.types.LightBlock parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static LightBlock parseFrom(
+  public static com.tendermint.types.LightBlock parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static LightBlock parseDelimitedFrom(java.io.InputStream input)
+  public static com.tendermint.types.LightBlock parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static LightBlock parseDelimitedFrom(
+  public static com.tendermint.types.LightBlock parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static LightBlock parseFrom(
+  public static com.tendermint.types.LightBlock parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static LightBlock parseFrom(
+  public static com.tendermint.types.LightBlock parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -246,23 +246,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(LightBlock prototype) {
+  public static Builder newBuilder(com.tendermint.types.LightBlock prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -272,18 +272,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.types.LightBlock)
-      LightBlockOrBuilder {
+      com.tendermint.types.LightBlockOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TypesProto.internal_static_tendermint_types_LightBlock_descriptor;
+      return com.tendermint.types.TypesProto.internal_static_tendermint_types_LightBlock_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TypesProto.internal_static_tendermint_types_LightBlock_fieldAccessorTable
+      return com.tendermint.types.TypesProto.internal_static_tendermint_types_LightBlock_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              LightBlock.class, Builder.class);
+              com.tendermint.types.LightBlock.class, com.tendermint.types.LightBlock.Builder.class);
     }
 
     // Construct using com.tendermint.types.LightBlock.newBuilder()
@@ -292,11 +292,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -313,35 +313,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TypesProto.internal_static_tendermint_types_LightBlock_descriptor;
+      return com.tendermint.types.TypesProto.internal_static_tendermint_types_LightBlock_descriptor;
     }
 
-    @Override
-    public LightBlock getDefaultInstanceForType() {
-      return LightBlock.getDefaultInstance();
+    @java.lang.Override
+    public com.tendermint.types.LightBlock getDefaultInstanceForType() {
+      return com.tendermint.types.LightBlock.getDefaultInstance();
     }
 
-    @Override
-    public LightBlock build() {
-      LightBlock result = buildPartial();
+    @java.lang.Override
+    public com.tendermint.types.LightBlock build() {
+      com.tendermint.types.LightBlock result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public LightBlock buildPartial() {
-      LightBlock result = new LightBlock(this);
+    @java.lang.Override
+    public com.tendermint.types.LightBlock buildPartial() {
+      com.tendermint.types.LightBlock result = new com.tendermint.types.LightBlock(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(LightBlock result) {
+    private void buildPartial0(com.tendermint.types.LightBlock result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.signedHeader_ = signedHeaderBuilder_ == null
@@ -355,50 +355,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof LightBlock) {
-        return mergeFrom((LightBlock)other);
+      if (other instanceof com.tendermint.types.LightBlock) {
+        return mergeFrom((com.tendermint.types.LightBlock)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(LightBlock other) {
-      if (other == LightBlock.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.tendermint.types.LightBlock other) {
+      if (other == com.tendermint.types.LightBlock.getDefaultInstance()) return this;
       if (other.hasSignedHeader()) {
         mergeSignedHeader(other.getSignedHeader());
       }
@@ -410,18 +410,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -462,9 +462,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private SignedHeader signedHeader_;
+    private com.tendermint.types.SignedHeader signedHeader_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        SignedHeader, SignedHeader.Builder, SignedHeaderOrBuilder> signedHeaderBuilder_;
+        com.tendermint.types.SignedHeader, com.tendermint.types.SignedHeader.Builder, com.tendermint.types.SignedHeaderOrBuilder> signedHeaderBuilder_;
     /**
      * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
      * @return Whether the signedHeader field is set.
@@ -476,9 +476,9 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
      * @return The signedHeader.
      */
-    public SignedHeader getSignedHeader() {
+    public com.tendermint.types.SignedHeader getSignedHeader() {
       if (signedHeaderBuilder_ == null) {
-        return signedHeader_ == null ? SignedHeader.getDefaultInstance() : signedHeader_;
+        return signedHeader_ == null ? com.tendermint.types.SignedHeader.getDefaultInstance() : signedHeader_;
       } else {
         return signedHeaderBuilder_.getMessage();
       }
@@ -486,7 +486,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
      */
-    public Builder setSignedHeader(SignedHeader value) {
+    public Builder setSignedHeader(com.tendermint.types.SignedHeader value) {
       if (signedHeaderBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -503,7 +503,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
      */
     public Builder setSignedHeader(
-        SignedHeader.Builder builderForValue) {
+        com.tendermint.types.SignedHeader.Builder builderForValue) {
       if (signedHeaderBuilder_ == null) {
         signedHeader_ = builderForValue.build();
       } else {
@@ -516,11 +516,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
      */
-    public Builder mergeSignedHeader(SignedHeader value) {
+    public Builder mergeSignedHeader(com.tendermint.types.SignedHeader value) {
       if (signedHeaderBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           signedHeader_ != null &&
-          signedHeader_ != SignedHeader.getDefaultInstance()) {
+          signedHeader_ != com.tendermint.types.SignedHeader.getDefaultInstance()) {
           getSignedHeaderBuilder().mergeFrom(value);
         } else {
           signedHeader_ = value;
@@ -548,7 +548,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
      */
-    public SignedHeader.Builder getSignedHeaderBuilder() {
+    public com.tendermint.types.SignedHeader.Builder getSignedHeaderBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getSignedHeaderFieldBuilder().getBuilder();
@@ -556,23 +556,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
      */
-    public SignedHeaderOrBuilder getSignedHeaderOrBuilder() {
+    public com.tendermint.types.SignedHeaderOrBuilder getSignedHeaderOrBuilder() {
       if (signedHeaderBuilder_ != null) {
         return signedHeaderBuilder_.getMessageOrBuilder();
       } else {
         return signedHeader_ == null ?
-            SignedHeader.getDefaultInstance() : signedHeader_;
+            com.tendermint.types.SignedHeader.getDefaultInstance() : signedHeader_;
       }
     }
     /**
      * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        SignedHeader, SignedHeader.Builder, SignedHeaderOrBuilder>
+        com.tendermint.types.SignedHeader, com.tendermint.types.SignedHeader.Builder, com.tendermint.types.SignedHeaderOrBuilder> 
         getSignedHeaderFieldBuilder() {
       if (signedHeaderBuilder_ == null) {
         signedHeaderBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            SignedHeader, SignedHeader.Builder, SignedHeaderOrBuilder>(
+            com.tendermint.types.SignedHeader, com.tendermint.types.SignedHeader.Builder, com.tendermint.types.SignedHeaderOrBuilder>(
                 getSignedHeader(),
                 getParentForChildren(),
                 isClean());
@@ -581,9 +581,9 @@ private static final long serialVersionUID = 0L;
       return signedHeaderBuilder_;
     }
 
-    private ValidatorSet validatorSet_;
+    private com.tendermint.types.ValidatorSet validatorSet_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        ValidatorSet, ValidatorSet.Builder, ValidatorSetOrBuilder> validatorSetBuilder_;
+        com.tendermint.types.ValidatorSet, com.tendermint.types.ValidatorSet.Builder, com.tendermint.types.ValidatorSetOrBuilder> validatorSetBuilder_;
     /**
      * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
      * @return Whether the validatorSet field is set.
@@ -595,9 +595,9 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
      * @return The validatorSet.
      */
-    public ValidatorSet getValidatorSet() {
+    public com.tendermint.types.ValidatorSet getValidatorSet() {
       if (validatorSetBuilder_ == null) {
-        return validatorSet_ == null ? ValidatorSet.getDefaultInstance() : validatorSet_;
+        return validatorSet_ == null ? com.tendermint.types.ValidatorSet.getDefaultInstance() : validatorSet_;
       } else {
         return validatorSetBuilder_.getMessage();
       }
@@ -605,7 +605,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
      */
-    public Builder setValidatorSet(ValidatorSet value) {
+    public Builder setValidatorSet(com.tendermint.types.ValidatorSet value) {
       if (validatorSetBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -622,7 +622,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
      */
     public Builder setValidatorSet(
-        ValidatorSet.Builder builderForValue) {
+        com.tendermint.types.ValidatorSet.Builder builderForValue) {
       if (validatorSetBuilder_ == null) {
         validatorSet_ = builderForValue.build();
       } else {
@@ -635,11 +635,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
      */
-    public Builder mergeValidatorSet(ValidatorSet value) {
+    public Builder mergeValidatorSet(com.tendermint.types.ValidatorSet value) {
       if (validatorSetBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           validatorSet_ != null &&
-          validatorSet_ != ValidatorSet.getDefaultInstance()) {
+          validatorSet_ != com.tendermint.types.ValidatorSet.getDefaultInstance()) {
           getValidatorSetBuilder().mergeFrom(value);
         } else {
           validatorSet_ = value;
@@ -667,7 +667,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
      */
-    public ValidatorSet.Builder getValidatorSetBuilder() {
+    public com.tendermint.types.ValidatorSet.Builder getValidatorSetBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getValidatorSetFieldBuilder().getBuilder();
@@ -675,23 +675,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
      */
-    public ValidatorSetOrBuilder getValidatorSetOrBuilder() {
+    public com.tendermint.types.ValidatorSetOrBuilder getValidatorSetOrBuilder() {
       if (validatorSetBuilder_ != null) {
         return validatorSetBuilder_.getMessageOrBuilder();
       } else {
         return validatorSet_ == null ?
-            ValidatorSet.getDefaultInstance() : validatorSet_;
+            com.tendermint.types.ValidatorSet.getDefaultInstance() : validatorSet_;
       }
     }
     /**
      * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ValidatorSet, ValidatorSet.Builder, ValidatorSetOrBuilder>
+        com.tendermint.types.ValidatorSet, com.tendermint.types.ValidatorSet.Builder, com.tendermint.types.ValidatorSetOrBuilder> 
         getValidatorSetFieldBuilder() {
       if (validatorSetBuilder_ == null) {
         validatorSetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ValidatorSet, ValidatorSet.Builder, ValidatorSetOrBuilder>(
+            com.tendermint.types.ValidatorSet, com.tendermint.types.ValidatorSet.Builder, com.tendermint.types.ValidatorSetOrBuilder>(
                 getValidatorSet(),
                 getParentForChildren(),
                 isClean());
@@ -699,13 +699,13 @@ private static final long serialVersionUID = 0L;
       }
       return validatorSetBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -716,18 +716,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.types.LightBlock)
-  private static final LightBlock DEFAULT_INSTANCE;
+  private static final com.tendermint.types.LightBlock DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new LightBlock();
+    DEFAULT_INSTANCE = new com.tendermint.types.LightBlock();
   }
 
-  public static LightBlock getDefaultInstance() {
+  public static com.tendermint.types.LightBlock getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<LightBlock>
       PARSER = new com.google.protobuf.AbstractParser<LightBlock>() {
-    @Override
+    @java.lang.Override
     public LightBlock parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -751,13 +751,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<LightBlock> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public LightBlock getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.tendermint.types.LightBlock getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

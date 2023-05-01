@@ -23,28 +23,28 @@ private static final long serialVersionUID = 0L;
   private QueryUnbondingDelegationResponse() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryUnbondingDelegationResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_staking_v1beta1_QueryUnbondingDelegationResponse_descriptor;
+    return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryUnbondingDelegationResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_staking_v1beta1_QueryUnbondingDelegationResponse_fieldAccessorTable
+    return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryUnbondingDelegationResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryUnbondingDelegationResponse.class, Builder.class);
+            com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse.class, com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse.Builder.class);
   }
 
   public static final int UNBOND_FIELD_NUMBER = 1;
-  private UnbondingDelegation unbond_;
+  private com.cosmos.staking.v1beta1.UnbondingDelegation unbond_;
   /**
    * <pre>
    * unbond defines the unbonding information of a delegation.
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
    * @return Whether the unbond field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasUnbond() {
     return unbond_ != null;
   }
@@ -65,9 +65,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
    * @return The unbond.
    */
-  @Override
-  public UnbondingDelegation getUnbond() {
-    return unbond_ == null ? UnbondingDelegation.getDefaultInstance() : unbond_;
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.UnbondingDelegation getUnbond() {
+    return unbond_ == null ? com.cosmos.staking.v1beta1.UnbondingDelegation.getDefaultInstance() : unbond_;
   }
   /**
    * <pre>
@@ -76,13 +76,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public UnbondingDelegationOrBuilder getUnbondOrBuilder() {
-    return unbond_ == null ? UnbondingDelegation.getDefaultInstance() : unbond_;
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder getUnbondOrBuilder() {
+    return unbond_ == null ? com.cosmos.staking.v1beta1.UnbondingDelegation.getDefaultInstance() : unbond_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -92,7 +92,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (unbond_ != null) {
@@ -101,7 +101,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -116,15 +116,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryUnbondingDelegationResponse)) {
+    if (!(obj instanceof com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse)) {
       return super.equals(obj);
     }
-    QueryUnbondingDelegationResponse other = (QueryUnbondingDelegationResponse) obj;
+    com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse other = (com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse) obj;
 
     if (hasUnbond() != other.hasUnbond()) return false;
     if (hasUnbond()) {
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryUnbondingDelegationResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryUnbondingDelegationResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryUnbondingDelegationResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryUnbondingDelegationResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryUnbondingDelegationResponse parseFrom(byte[] data)
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryUnbondingDelegationResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryUnbondingDelegationResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryUnbondingDelegationResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryUnbondingDelegationResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryUnbondingDelegationResponse parseDelimitedFrom(
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryUnbondingDelegationResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryUnbondingDelegationResponse parseFrom(
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryUnbondingDelegationResponse prototype) {
+  public static Builder newBuilder(com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -252,18 +252,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.QueryUnbondingDelegationResponse)
-      QueryUnbondingDelegationResponseOrBuilder {
+      com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_staking_v1beta1_QueryUnbondingDelegationResponse_descriptor;
+      return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryUnbondingDelegationResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_staking_v1beta1_QueryUnbondingDelegationResponse_fieldAccessorTable
+      return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryUnbondingDelegationResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryUnbondingDelegationResponse.class, Builder.class);
+              com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse.class, com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse.Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse.newBuilder()
@@ -272,11 +272,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -288,35 +288,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_staking_v1beta1_QueryUnbondingDelegationResponse_descriptor;
+      return com.cosmos.staking.v1beta1.QueryProto.internal_static_cosmos_staking_v1beta1_QueryUnbondingDelegationResponse_descriptor;
     }
 
-    @Override
-    public QueryUnbondingDelegationResponse getDefaultInstanceForType() {
-      return QueryUnbondingDelegationResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse getDefaultInstanceForType() {
+      return com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryUnbondingDelegationResponse build() {
-      QueryUnbondingDelegationResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse build() {
+      com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryUnbondingDelegationResponse buildPartial() {
-      QueryUnbondingDelegationResponse result = new QueryUnbondingDelegationResponse(this);
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse buildPartial() {
+      com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse result = new com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(QueryUnbondingDelegationResponse result) {
+    private void buildPartial0(com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.unbond_ = unbondBuilder_ == null
@@ -325,50 +325,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryUnbondingDelegationResponse) {
-        return mergeFrom((QueryUnbondingDelegationResponse)other);
+      if (other instanceof com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse) {
+        return mergeFrom((com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryUnbondingDelegationResponse other) {
-      if (other == QueryUnbondingDelegationResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse other) {
+      if (other == com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse.getDefaultInstance()) return this;
       if (other.hasUnbond()) {
         mergeUnbond(other.getUnbond());
       }
@@ -377,18 +377,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -422,9 +422,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private UnbondingDelegation unbond_;
+    private com.cosmos.staking.v1beta1.UnbondingDelegation unbond_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        UnbondingDelegation, UnbondingDelegation.Builder, UnbondingDelegationOrBuilder> unbondBuilder_;
+        com.cosmos.staking.v1beta1.UnbondingDelegation, com.cosmos.staking.v1beta1.UnbondingDelegation.Builder, com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder> unbondBuilder_;
     /**
      * <pre>
      * unbond defines the unbonding information of a delegation.
@@ -444,9 +444,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
      * @return The unbond.
      */
-    public UnbondingDelegation getUnbond() {
+    public com.cosmos.staking.v1beta1.UnbondingDelegation getUnbond() {
       if (unbondBuilder_ == null) {
-        return unbond_ == null ? UnbondingDelegation.getDefaultInstance() : unbond_;
+        return unbond_ == null ? com.cosmos.staking.v1beta1.UnbondingDelegation.getDefaultInstance() : unbond_;
       } else {
         return unbondBuilder_.getMessage();
       }
@@ -458,7 +458,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setUnbond(UnbondingDelegation value) {
+    public Builder setUnbond(com.cosmos.staking.v1beta1.UnbondingDelegation value) {
       if (unbondBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -479,7 +479,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
      */
     public Builder setUnbond(
-        UnbondingDelegation.Builder builderForValue) {
+        com.cosmos.staking.v1beta1.UnbondingDelegation.Builder builderForValue) {
       if (unbondBuilder_ == null) {
         unbond_ = builderForValue.build();
       } else {
@@ -496,11 +496,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeUnbond(UnbondingDelegation value) {
+    public Builder mergeUnbond(com.cosmos.staking.v1beta1.UnbondingDelegation value) {
       if (unbondBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           unbond_ != null &&
-          unbond_ != UnbondingDelegation.getDefaultInstance()) {
+          unbond_ != com.cosmos.staking.v1beta1.UnbondingDelegation.getDefaultInstance()) {
           getUnbondBuilder().mergeFrom(value);
         } else {
           unbond_ = value;
@@ -536,7 +536,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
      */
-    public UnbondingDelegation.Builder getUnbondBuilder() {
+    public com.cosmos.staking.v1beta1.UnbondingDelegation.Builder getUnbondBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getUnbondFieldBuilder().getBuilder();
@@ -548,12 +548,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
      */
-    public UnbondingDelegationOrBuilder getUnbondOrBuilder() {
+    public com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder getUnbondOrBuilder() {
       if (unbondBuilder_ != null) {
         return unbondBuilder_.getMessageOrBuilder();
       } else {
         return unbond_ == null ?
-            UnbondingDelegation.getDefaultInstance() : unbond_;
+            com.cosmos.staking.v1beta1.UnbondingDelegation.getDefaultInstance() : unbond_;
       }
     }
     /**
@@ -564,11 +564,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.UnbondingDelegation unbond = 1 [json_name = "unbond", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        UnbondingDelegation, UnbondingDelegation.Builder, UnbondingDelegationOrBuilder>
+        com.cosmos.staking.v1beta1.UnbondingDelegation, com.cosmos.staking.v1beta1.UnbondingDelegation.Builder, com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder> 
         getUnbondFieldBuilder() {
       if (unbondBuilder_ == null) {
         unbondBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            UnbondingDelegation, UnbondingDelegation.Builder, UnbondingDelegationOrBuilder>(
+            com.cosmos.staking.v1beta1.UnbondingDelegation, com.cosmos.staking.v1beta1.UnbondingDelegation.Builder, com.cosmos.staking.v1beta1.UnbondingDelegationOrBuilder>(
                 getUnbond(),
                 getParentForChildren(),
                 isClean());
@@ -576,13 +576,13 @@ private static final long serialVersionUID = 0L;
       }
       return unbondBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -593,18 +593,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.QueryUnbondingDelegationResponse)
-  private static final QueryUnbondingDelegationResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryUnbondingDelegationResponse();
+    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse();
   }
 
-  public static QueryUnbondingDelegationResponse getDefaultInstance() {
+  public static com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryUnbondingDelegationResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryUnbondingDelegationResponse>() {
-    @Override
+    @java.lang.Override
     public QueryUnbondingDelegationResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -628,13 +628,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryUnbondingDelegationResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryUnbondingDelegationResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.QueryUnbondingDelegationResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

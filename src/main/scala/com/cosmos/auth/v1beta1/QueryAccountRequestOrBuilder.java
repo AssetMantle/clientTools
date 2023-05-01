@@ -15,7 +15,7 @@ public interface QueryAccountRequestOrBuilder extends
    * <code>string address = 1 [json_name = "address"];</code>
    * @return The address.
    */
-  String getAddress();
+  java.lang.String getAddress();
   /**
    * <pre>
    * address defines the address to query for.

@@ -7,26 +7,25 @@ import schema.data.base._
 import schema.id.base.{PropertyID, StringID}
 import schema.property.base.{MesaProperty, MetaProperty}
 import schema.types.Height
-import utilities.AttoNumber
 
 class Define extends AnyFunSuite {
 
   val fromID = testConstants.setup.nubIdentityID
 
   val immutableMetaProperties: Seq[MetaProperty] = Seq(
-    MetaProperty(PropertyID(StringID("AssetIM1"), constants.Data.AccAddressDataTypeID), AccAddressData(Array[Byte]()).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetIM2"), constants.Data.BooleanDataTypeID), BooleanData(false).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetIM3"), constants.Data.DecDataTypeID), DecData(AttoNumber(0)).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetIM4"), constants.Data.HeightDataTypeID), HeightData(Height(-1)).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetIM5"), constants.Data.ListDataTypeID), ListData(Seq()).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetIM6"), constants.Data.NumberDataTypeID), NumberData(0).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetIM7"), constants.Data.StringDataTypeID), StringData("").toAnyData),
+    MetaProperty(PropertyID(StringID("AssetIM1"), constants.Data.AccAddressDataTypeID), AccAddressData(Array[Byte]())),
+    MetaProperty(PropertyID(StringID("AssetIM2"), constants.Data.BooleanDataTypeID), BooleanData(false)),
+    MetaProperty(PropertyID(StringID("AssetIM3"), constants.Data.DecDataTypeID), DecData("0")),
+    MetaProperty(PropertyID(StringID("AssetIM4"), constants.Data.HeightDataTypeID), HeightData(Height(-1))),
+    MetaProperty(PropertyID(StringID("AssetIM5"), constants.Data.ListDataTypeID), ListData(Seq())),
+    MetaProperty(PropertyID(StringID("AssetIM6"), constants.Data.NumberDataTypeID), NumberData(0)),
+    MetaProperty(PropertyID(StringID("AssetIM7"), constants.Data.StringDataTypeID), StringData("")),
   )
 
   val immutableProperties: Seq[MesaProperty] = Seq(
     MesaProperty(PropertyID(StringID("AssetI1"), constants.Data.AccAddressDataTypeID), AccAddressData(testConstants.setup.balanceAccount.address)),
     MesaProperty(PropertyID(StringID("AssetI2"), constants.Data.BooleanDataTypeID), BooleanData(false)),
-    MesaProperty(PropertyID(StringID("AssetI3"), constants.Data.DecDataTypeID), DecData(AttoNumber(0))),
+    MesaProperty(PropertyID(StringID("AssetI3"), constants.Data.DecDataTypeID), DecData("0")),
     MesaProperty(PropertyID(StringID("AssetI4"), constants.Data.HeightDataTypeID), HeightData(Height(-1))),
     MesaProperty(PropertyID(StringID("AssetI5"), constants.Data.ListDataTypeID), ListData(Seq())),
     MesaProperty(PropertyID(StringID("AssetI6"), constants.Data.NumberDataTypeID), NumberData(0)),
@@ -34,18 +33,18 @@ class Define extends AnyFunSuite {
   )
 
   val mutableMetaProperties: Seq[MetaProperty] = Seq(
-    MetaProperty(PropertyID(StringID("AssetMM1"), constants.Data.AccAddressDataTypeID), AccAddressData(testConstants.setup.balanceAccount.address).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetMM2"), constants.Data.BooleanDataTypeID), BooleanData(false).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetMM3"), constants.Data.DecDataTypeID), DecData(AttoNumber(0)).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetMM4"), constants.Data.HeightDataTypeID), HeightData(Height(-1)).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetMM5"), constants.Data.ListDataTypeID), ListData(Seq()).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetMM6"), constants.Data.NumberDataTypeID), NumberData(0).toAnyData),
-    MetaProperty(PropertyID(StringID("AssetMM7"), constants.Data.StringDataTypeID), StringData("").toAnyData),
+    MetaProperty(PropertyID(StringID("AssetMM1"), constants.Data.AccAddressDataTypeID), AccAddressData(testConstants.setup.balanceAccount.address)),
+    MetaProperty(PropertyID(StringID("AssetMM2"), constants.Data.BooleanDataTypeID), BooleanData(false)),
+    MetaProperty(PropertyID(StringID("AssetMM3"), constants.Data.DecDataTypeID), DecData("0")),
+    MetaProperty(PropertyID(StringID("AssetMM4"), constants.Data.HeightDataTypeID), HeightData(Height(-1))),
+    MetaProperty(PropertyID(StringID("AssetMM5"), constants.Data.ListDataTypeID), ListData(Seq())),
+    MetaProperty(PropertyID(StringID("AssetMM6"), constants.Data.NumberDataTypeID), NumberData(0)),
+    MetaProperty(PropertyID(StringID("AssetMM7"), constants.Data.StringDataTypeID), StringData("")),
   )
   val mutableProperties: Seq[MesaProperty] = Seq(
     MesaProperty(PropertyID(StringID("AssetM1"), constants.Data.AccAddressDataTypeID), AccAddressData(testConstants.setup.balanceAccount.address)),
     MesaProperty(PropertyID(StringID("AssetM2"), constants.Data.BooleanDataTypeID), BooleanData(false)),
-    MesaProperty(PropertyID(StringID("AssetM3"), constants.Data.DecDataTypeID), DecData(AttoNumber(0))),
+    MesaProperty(PropertyID(StringID("AssetM3"), constants.Data.DecDataTypeID), DecData("0")),
     MesaProperty(PropertyID(StringID("AssetM4"), constants.Data.HeightDataTypeID), HeightData(Height(-1))),
     MesaProperty(PropertyID(StringID("AssetM5"), constants.Data.ListDataTypeID), ListData(Seq())),
     MesaProperty(PropertyID(StringID("AssetM6"), constants.Data.NumberDataTypeID), NumberData(0)),

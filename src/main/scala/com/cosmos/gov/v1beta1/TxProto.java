@@ -62,7 +62,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\033cosmos/gov/v1beta1/tx.proto\022\022cosmos.go" +
       "v.v1beta1\032\036cosmos/base/v1beta1/coin.prot" +
       "o\032\034cosmos/gov/v1beta1/gov.proto\032\031cosmos_" +
@@ -114,7 +114,7 @@ public final class TxProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.cosmos.base.v1beta1.CoinProto.getDescriptor(),
-          GovProto.getDescriptor(),
+          com.cosmos.gov.v1beta1.GovProto.getDescriptor(),
           com.cosmos_proto.CosmosProto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
           com.google.protobuf.AnyProto.getDescriptor(),
@@ -124,49 +124,49 @@ public final class TxProto {
     internal_static_cosmos_gov_v1beta1_MsgSubmitProposal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_MsgSubmitProposal_descriptor,
-        new String[] { "Content", "InitialDeposit", "Proposer", });
+        new java.lang.String[] { "Content", "InitialDeposit", "Proposer", });
     internal_static_cosmos_gov_v1beta1_MsgSubmitProposalResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_gov_v1beta1_MsgSubmitProposalResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_MsgSubmitProposalResponse_descriptor,
-        new String[] { "ProposalId", });
+        new java.lang.String[] { "ProposalId", });
     internal_static_cosmos_gov_v1beta1_MsgVote_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_gov_v1beta1_MsgVote_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_MsgVote_descriptor,
-        new String[] { "ProposalId", "Voter", "Option", });
+        new java.lang.String[] { "ProposalId", "Voter", "Option", });
     internal_static_cosmos_gov_v1beta1_MsgVoteResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_gov_v1beta1_MsgVoteResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_MsgVoteResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_gov_v1beta1_MsgVoteWeighted_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_gov_v1beta1_MsgVoteWeighted_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_MsgVoteWeighted_descriptor,
-        new String[] { "ProposalId", "Voter", "Options", });
+        new java.lang.String[] { "ProposalId", "Voter", "Options", });
     internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_MsgVoteWeightedResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_gov_v1beta1_MsgDeposit_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_gov_v1beta1_MsgDeposit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_MsgDeposit_descriptor,
-        new String[] { "ProposalId", "Depositor", "Amount", });
+        new java.lang.String[] { "ProposalId", "Depositor", "Amount", });
     internal_static_cosmos_gov_v1beta1_MsgDepositResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_gov_v1beta1_MsgDepositResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_gov_v1beta1_MsgDepositResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);
@@ -181,7 +181,7 @@ public final class TxProto {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.cosmos.base.v1beta1.CoinProto.getDescriptor();
-    GovProto.getDescriptor();
+    com.cosmos.gov.v1beta1.GovProto.getDescriptor();
     com.cosmos_proto.CosmosProto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
     com.google.protobuf.AnyProto.getDescriptor();

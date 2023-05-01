@@ -15,7 +15,7 @@ public interface ClientUpdateProposalOrBuilder extends
    * <code>string title = 1 [json_name = "title"];</code>
    * @return The title.
    */
-  String getTitle();
+  java.lang.String getTitle();
   /**
    * <pre>
    * the title of the update proposal
@@ -35,7 +35,7 @@ public interface ClientUpdateProposalOrBuilder extends
    * <code>string description = 2 [json_name = "description"];</code>
    * @return The description.
    */
-  String getDescription();
+  java.lang.String getDescription();
   /**
    * <pre>
    * the description of the proposal
@@ -55,7 +55,7 @@ public interface ClientUpdateProposalOrBuilder extends
    * <code>string subject_client_id = 3 [json_name = "subjectClientId", (.gogoproto.moretags) = "yaml:&#92;"subject_client_id&#92;""];</code>
    * @return The subjectClientId.
    */
-  String getSubjectClientId();
+  java.lang.String getSubjectClientId();
   /**
    * <pre>
    * the client identifier for the client to be updated if the proposal passes
@@ -76,7 +76,7 @@ public interface ClientUpdateProposalOrBuilder extends
    * <code>string substitute_client_id = 4 [json_name = "substituteClientId", (.gogoproto.moretags) = "yaml:&#92;"substitute_client_id&#92;""];</code>
    * @return The substituteClientId.
    */
-  String getSubstituteClientId();
+  java.lang.String getSubstituteClientId();
   /**
    * <pre>
    * the substitute client identifier for the client standing in for the subject

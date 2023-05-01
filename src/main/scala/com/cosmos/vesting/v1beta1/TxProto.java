@@ -32,7 +32,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\037cosmos/vesting/v1beta1/tx.proto\022\026cosmo" +
       "s.vesting.v1beta1\032\024gogoproto/gogo.proto\032" +
       "\036cosmos/base/v1beta1/coin.proto\"\300\002\n\027MsgC" +
@@ -67,13 +67,13 @@ public final class TxProto {
     internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccount_descriptor,
-        new String[] { "FromAddress", "ToAddress", "Amount", "EndTime", "Delayed", });
+        new java.lang.String[] { "FromAddress", "ToAddress", "Amount", "EndTime", "Delayed", });
     internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_vesting_v1beta1_MsgCreateVestingAccountResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);

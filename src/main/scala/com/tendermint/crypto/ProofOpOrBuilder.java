@@ -11,7 +11,7 @@ public interface ProofOpOrBuilder extends
    * <code>string type = 1 [json_name = "type"];</code>
    * @return The type.
    */
-  String getType();
+  java.lang.String getType();
   /**
    * <code>string type = 1 [json_name = "type"];</code>
    * @return The bytes for type.

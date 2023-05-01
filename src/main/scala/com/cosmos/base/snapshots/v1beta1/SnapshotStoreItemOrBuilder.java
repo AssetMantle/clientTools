@@ -11,7 +11,7 @@ public interface SnapshotStoreItemOrBuilder extends
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  String getName();
+  java.lang.String getName();
   /**
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The bytes for name.

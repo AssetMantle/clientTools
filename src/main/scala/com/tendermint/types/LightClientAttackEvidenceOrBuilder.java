@@ -16,11 +16,11 @@ public interface LightClientAttackEvidenceOrBuilder extends
    * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
    * @return The conflictingBlock.
    */
-  LightBlock getConflictingBlock();
+  com.tendermint.types.LightBlock getConflictingBlock();
   /**
    * <code>.tendermint.types.LightBlock conflicting_block = 1 [json_name = "conflictingBlock"];</code>
    */
-  LightBlockOrBuilder getConflictingBlockOrBuilder();
+  com.tendermint.types.LightBlockOrBuilder getConflictingBlockOrBuilder();
 
   /**
    * <code>int64 common_height = 2 [json_name = "commonHeight"];</code>
@@ -31,12 +31,12 @@ public interface LightClientAttackEvidenceOrBuilder extends
   /**
    * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
    */
-  java.util.List<Validator>
+  java.util.List<com.tendermint.types.Validator> 
       getByzantineValidatorsList();
   /**
    * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
    */
-  Validator getByzantineValidators(int index);
+  com.tendermint.types.Validator getByzantineValidators(int index);
   /**
    * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
    */
@@ -44,12 +44,12 @@ public interface LightClientAttackEvidenceOrBuilder extends
   /**
    * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
    */
-  java.util.List<? extends ValidatorOrBuilder>
+  java.util.List<? extends com.tendermint.types.ValidatorOrBuilder> 
       getByzantineValidatorsOrBuilderList();
   /**
    * <code>repeated .tendermint.types.Validator byzantine_validators = 3 [json_name = "byzantineValidators"];</code>
    */
-  ValidatorOrBuilder getByzantineValidatorsOrBuilder(
+  com.tendermint.types.ValidatorOrBuilder getByzantineValidatorsOrBuilder(
       int index);
 
   /**

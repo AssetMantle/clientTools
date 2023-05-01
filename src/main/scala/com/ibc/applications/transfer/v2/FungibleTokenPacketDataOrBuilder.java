@@ -15,7 +15,7 @@ public interface FungibleTokenPacketDataOrBuilder extends
    * <code>string denom = 1 [json_name = "denom"];</code>
    * @return The denom.
    */
-  String getDenom();
+  java.lang.String getDenom();
   /**
    * <pre>
    * the token denomination to be transferred
@@ -35,7 +35,7 @@ public interface FungibleTokenPacketDataOrBuilder extends
    * <code>string amount = 2 [json_name = "amount"];</code>
    * @return The amount.
    */
-  String getAmount();
+  java.lang.String getAmount();
   /**
    * <pre>
    * the token amount to be transferred
@@ -55,7 +55,7 @@ public interface FungibleTokenPacketDataOrBuilder extends
    * <code>string sender = 3 [json_name = "sender"];</code>
    * @return The sender.
    */
-  String getSender();
+  java.lang.String getSender();
   /**
    * <pre>
    * the sender address
@@ -75,7 +75,7 @@ public interface FungibleTokenPacketDataOrBuilder extends
    * <code>string receiver = 4 [json_name = "receiver"];</code>
    * @return The receiver.
    */
-  String getReceiver();
+  java.lang.String getReceiver();
   /**
    * <pre>
    * the recipient address on the destination chain

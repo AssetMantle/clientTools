@@ -23,7 +23,7 @@ public interface RequestApplySnapshotChunkOrBuilder extends
    * <code>string sender = 3 [json_name = "sender"];</code>
    * @return The sender.
    */
-  String getSender();
+  java.lang.String getSender();
   /**
    * <code>string sender = 3 [json_name = "sender"];</code>
    * @return The bytes for sender.

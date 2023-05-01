@@ -32,7 +32,7 @@ public final class TxProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\036cosmos/crisis/v1beta1/tx.proto\022\025cosmos" +
       ".crisis.v1beta1\032\024gogoproto/gogo.proto\"\321\001" +
       "\n\022MsgVerifyInvariant\022\026\n\006sender\030\001 \001(\tR\006se" +
@@ -61,13 +61,13 @@ public final class TxProto {
     internal_static_cosmos_crisis_v1beta1_MsgVerifyInvariant_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_crisis_v1beta1_MsgVerifyInvariant_descriptor,
-        new String[] { "Sender", "InvariantModuleName", "InvariantRoute", });
+        new java.lang.String[] { "Sender", "InvariantModuleName", "InvariantRoute", });
     internal_static_cosmos_crisis_v1beta1_MsgVerifyInvariantResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_crisis_v1beta1_MsgVerifyInvariantResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_crisis_v1beta1_MsgVerifyInvariantResponse_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.equal);

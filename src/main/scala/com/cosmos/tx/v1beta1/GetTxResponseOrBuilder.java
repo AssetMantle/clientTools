@@ -24,7 +24,7 @@ public interface GetTxResponseOrBuilder extends
    * <code>.cosmos.tx.v1beta1.Tx tx = 1 [json_name = "tx"];</code>
    * @return The tx.
    */
-  Tx getTx();
+  com.cosmos.tx.v1beta1.Tx getTx();
   /**
    * <pre>
    * tx is the queried transaction.
@@ -32,7 +32,7 @@ public interface GetTxResponseOrBuilder extends
    *
    * <code>.cosmos.tx.v1beta1.Tx tx = 1 [json_name = "tx"];</code>
    */
-  TxOrBuilder getTxOrBuilder();
+  com.cosmos.tx.v1beta1.TxOrBuilder getTxOrBuilder();
 
   /**
    * <pre>

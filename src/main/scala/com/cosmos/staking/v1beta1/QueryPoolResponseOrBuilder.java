@@ -24,7 +24,7 @@ public interface QueryPoolResponseOrBuilder extends
    * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
    * @return The pool.
    */
-  Pool getPool();
+  com.cosmos.staking.v1beta1.Pool getPool();
   /**
    * <pre>
    * pool defines the pool info.
@@ -32,5 +32,5 @@ public interface QueryPoolResponseOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.Pool pool = 1 [json_name = "pool", (.gogoproto.nullable) = false];</code>
    */
-  PoolOrBuilder getPoolOrBuilder();
+  com.cosmos.staking.v1beta1.PoolOrBuilder getPoolOrBuilder();
 }

@@ -27,7 +27,7 @@ public final class MetadataProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n6ibc/applications/interchain_accounts/v" +
       "1/metadata.proto\022\'ibc.applications.inter" +
       "chain_accounts.v1\032\024gogoproto/gogo.proto\"" +
@@ -59,7 +59,7 @@ public final class MetadataProto {
     internal_static_ibc_applications_interchain_accounts_v1_Metadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_v1_Metadata_descriptor,
-        new String[] { "Version", "ControllerConnectionId", "HostConnectionId", "Address", "Encoding", "TxType", });
+        new java.lang.String[] { "Version", "ControllerConnectionId", "HostConnectionId", "Address", "Encoding", "TxType", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.moretags);

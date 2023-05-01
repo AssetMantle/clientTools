@@ -25,124 +25,124 @@ private static final long serialVersionUID = 0L;
     port_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new HostGenesisState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_descriptor;
+    return com.ibc.applications.interchain_accounts.v1.GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_fieldAccessorTable
+    return com.ibc.applications.interchain_accounts.v1.GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            HostGenesisState.class, Builder.class);
+            com.ibc.applications.interchain_accounts.v1.HostGenesisState.class, com.ibc.applications.interchain_accounts.v1.HostGenesisState.Builder.class);
   }
 
   public static final int ACTIVE_CHANNELS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<ActiveChannel> activeChannels_;
+  private java.util.List<com.ibc.applications.interchain_accounts.v1.ActiveChannel> activeChannels_;
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
    */
-  @Override
-  public java.util.List<ActiveChannel> getActiveChannelsList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.applications.interchain_accounts.v1.ActiveChannel> getActiveChannelsList() {
     return activeChannels_;
   }
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
    */
-  @Override
-  public java.util.List<? extends ActiveChannelOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.applications.interchain_accounts.v1.ActiveChannelOrBuilder> 
       getActiveChannelsOrBuilderList() {
     return activeChannels_;
   }
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public int getActiveChannelsCount() {
     return activeChannels_.size();
   }
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
    */
-  @Override
-  public ActiveChannel getActiveChannels(int index) {
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.ActiveChannel getActiveChannels(int index) {
     return activeChannels_.get(index);
   }
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
    */
-  @Override
-  public ActiveChannelOrBuilder getActiveChannelsOrBuilder(
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.ActiveChannelOrBuilder getActiveChannelsOrBuilder(
       int index) {
     return activeChannels_.get(index);
   }
 
   public static final int INTERCHAIN_ACCOUNTS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<RegisteredInterchainAccount> interchainAccounts_;
+  private java.util.List<com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount> interchainAccounts_;
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
    */
-  @Override
-  public java.util.List<RegisteredInterchainAccount> getInterchainAccountsList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount> getInterchainAccountsList() {
     return interchainAccounts_;
   }
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
    */
-  @Override
-  public java.util.List<? extends RegisteredInterchainAccountOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccountOrBuilder> 
       getInterchainAccountsOrBuilderList() {
     return interchainAccounts_;
   }
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public int getInterchainAccountsCount() {
     return interchainAccounts_.size();
   }
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
    */
-  @Override
-  public RegisteredInterchainAccount getInterchainAccounts(int index) {
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount getInterchainAccounts(int index) {
     return interchainAccounts_.get(index);
   }
   /**
    * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
    */
-  @Override
-  public RegisteredInterchainAccountOrBuilder getInterchainAccountsOrBuilder(
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccountOrBuilder getInterchainAccountsOrBuilder(
       int index) {
     return interchainAccounts_.get(index);
   }
 
   public static final int PORT_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile Object port_ = "";
+  private volatile java.lang.Object port_ = "";
   /**
    * <code>string port = 3 [json_name = "port"];</code>
    * @return The port.
    */
-  @Override
-  public String getPort() {
-    Object ref = port_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getPort() {
+    java.lang.Object ref = port_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       port_ = s;
       return s;
     }
@@ -151,14 +151,14 @@ private static final long serialVersionUID = 0L;
    * <code>string port = 3 [json_name = "port"];</code>
    * @return The bytes for port.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getPortBytes() {
-    Object ref = port_;
-    if (ref instanceof String) {
+    java.lang.Object ref = port_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       port_ = b;
       return b;
     } else {
@@ -172,7 +172,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.applications.interchain_accounts.host.v1.Params params = 4 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return Whether the params field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasParams() {
     return params_ != null;
   }
@@ -180,20 +180,20 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.applications.interchain_accounts.host.v1.Params params = 4 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  @Override
+  @java.lang.Override
   public com.ibc.applications.interchain_accounts.host.v1.Params getParams() {
     return params_ == null ? com.ibc.applications.interchain_accounts.host.v1.Params.getDefaultInstance() : params_;
   }
   /**
    * <code>.ibc.applications.interchain_accounts.host.v1.Params params = 4 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public com.ibc.applications.interchain_accounts.host.v1.ParamsOrBuilder getParamsOrBuilder() {
     return params_ == null ? com.ibc.applications.interchain_accounts.host.v1.Params.getDefaultInstance() : params_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -203,7 +203,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < activeChannels_.size(); i++) {
@@ -221,7 +221,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -247,15 +247,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof HostGenesisState)) {
+    if (!(obj instanceof com.ibc.applications.interchain_accounts.v1.HostGenesisState)) {
       return super.equals(obj);
     }
-    HostGenesisState other = (HostGenesisState) obj;
+    com.ibc.applications.interchain_accounts.v1.HostGenesisState other = (com.ibc.applications.interchain_accounts.v1.HostGenesisState) obj;
 
     if (!getActiveChannelsList()
         .equals(other.getActiveChannelsList())) return false;
@@ -272,7 +272,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -298,69 +298,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static HostGenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static HostGenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static HostGenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static HostGenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static HostGenesisState parseFrom(byte[] data)
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static HostGenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static HostGenesisState parseFrom(java.io.InputStream input)
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static HostGenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static HostGenesisState parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static HostGenesisState parseDelimitedFrom(
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static HostGenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static HostGenesisState parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -368,23 +368,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(HostGenesisState prototype) {
+  public static Builder newBuilder(com.ibc.applications.interchain_accounts.v1.HostGenesisState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -398,18 +398,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.applications.interchain_accounts.v1.HostGenesisState)
-      HostGenesisStateOrBuilder {
+      com.ibc.applications.interchain_accounts.v1.HostGenesisStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_descriptor;
+      return com.ibc.applications.interchain_accounts.v1.GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_fieldAccessorTable
+      return com.ibc.applications.interchain_accounts.v1.GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              HostGenesisState.class, Builder.class);
+              com.ibc.applications.interchain_accounts.v1.HostGenesisState.class, com.ibc.applications.interchain_accounts.v1.HostGenesisState.Builder.class);
     }
 
     // Construct using com.ibc.applications.interchain_accounts.v1.HostGenesisState.newBuilder()
@@ -418,11 +418,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -449,36 +449,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_descriptor;
+      return com.ibc.applications.interchain_accounts.v1.GenesisProto.internal_static_ibc_applications_interchain_accounts_v1_HostGenesisState_descriptor;
     }
 
-    @Override
-    public HostGenesisState getDefaultInstanceForType() {
-      return HostGenesisState.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.applications.interchain_accounts.v1.HostGenesisState getDefaultInstanceForType() {
+      return com.ibc.applications.interchain_accounts.v1.HostGenesisState.getDefaultInstance();
     }
 
-    @Override
-    public HostGenesisState build() {
-      HostGenesisState result = buildPartial();
+    @java.lang.Override
+    public com.ibc.applications.interchain_accounts.v1.HostGenesisState build() {
+      com.ibc.applications.interchain_accounts.v1.HostGenesisState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public HostGenesisState buildPartial() {
-      HostGenesisState result = new HostGenesisState(this);
+    @java.lang.Override
+    public com.ibc.applications.interchain_accounts.v1.HostGenesisState buildPartial() {
+      com.ibc.applications.interchain_accounts.v1.HostGenesisState result = new com.ibc.applications.interchain_accounts.v1.HostGenesisState(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(HostGenesisState result) {
+    private void buildPartialRepeatedFields(com.ibc.applications.interchain_accounts.v1.HostGenesisState result) {
       if (activeChannelsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           activeChannels_ = java.util.Collections.unmodifiableList(activeChannels_);
@@ -499,7 +499,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(HostGenesisState result) {
+    private void buildPartial0(com.ibc.applications.interchain_accounts.v1.HostGenesisState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000004) != 0)) {
         result.port_ = port_;
@@ -511,50 +511,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof HostGenesisState) {
-        return mergeFrom((HostGenesisState)other);
+      if (other instanceof com.ibc.applications.interchain_accounts.v1.HostGenesisState) {
+        return mergeFrom((com.ibc.applications.interchain_accounts.v1.HostGenesisState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(HostGenesisState other) {
-      if (other == HostGenesisState.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.applications.interchain_accounts.v1.HostGenesisState other) {
+      if (other == com.ibc.applications.interchain_accounts.v1.HostGenesisState.getDefaultInstance()) return this;
       if (activeChannelsBuilder_ == null) {
         if (!other.activeChannels_.isEmpty()) {
           if (activeChannels_.isEmpty()) {
@@ -620,18 +620,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -642,9 +642,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              ActiveChannel m =
+              com.ibc.applications.interchain_accounts.v1.ActiveChannel m =
                   input.readMessage(
-                      ActiveChannel.parser(),
+                      com.ibc.applications.interchain_accounts.v1.ActiveChannel.parser(),
                       extensionRegistry);
               if (activeChannelsBuilder_ == null) {
                 ensureActiveChannelsIsMutable();
@@ -655,9 +655,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              RegisteredInterchainAccount m =
+              com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount m =
                   input.readMessage(
-                      RegisteredInterchainAccount.parser(),
+                      com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.parser(),
                       extensionRegistry);
               if (interchainAccountsBuilder_ == null) {
                 ensureInterchainAccountsIsMutable();
@@ -696,22 +696,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<ActiveChannel> activeChannels_ =
+    private java.util.List<com.ibc.applications.interchain_accounts.v1.ActiveChannel> activeChannels_ =
       java.util.Collections.emptyList();
     private void ensureActiveChannelsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        activeChannels_ = new java.util.ArrayList<ActiveChannel>(activeChannels_);
+        activeChannels_ = new java.util.ArrayList<com.ibc.applications.interchain_accounts.v1.ActiveChannel>(activeChannels_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        ActiveChannel, ActiveChannel.Builder, ActiveChannelOrBuilder> activeChannelsBuilder_;
+        com.ibc.applications.interchain_accounts.v1.ActiveChannel, com.ibc.applications.interchain_accounts.v1.ActiveChannel.Builder, com.ibc.applications.interchain_accounts.v1.ActiveChannelOrBuilder> activeChannelsBuilder_;
 
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
-    public java.util.List<ActiveChannel> getActiveChannelsList() {
+    public java.util.List<com.ibc.applications.interchain_accounts.v1.ActiveChannel> getActiveChannelsList() {
       if (activeChannelsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(activeChannels_);
       } else {
@@ -731,7 +731,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
-    public ActiveChannel getActiveChannels(int index) {
+    public com.ibc.applications.interchain_accounts.v1.ActiveChannel getActiveChannels(int index) {
       if (activeChannelsBuilder_ == null) {
         return activeChannels_.get(index);
       } else {
@@ -742,7 +742,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
     public Builder setActiveChannels(
-        int index, ActiveChannel value) {
+        int index, com.ibc.applications.interchain_accounts.v1.ActiveChannel value) {
       if (activeChannelsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -759,7 +759,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
     public Builder setActiveChannels(
-        int index, ActiveChannel.Builder builderForValue) {
+        int index, com.ibc.applications.interchain_accounts.v1.ActiveChannel.Builder builderForValue) {
       if (activeChannelsBuilder_ == null) {
         ensureActiveChannelsIsMutable();
         activeChannels_.set(index, builderForValue.build());
@@ -772,7 +772,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
-    public Builder addActiveChannels(ActiveChannel value) {
+    public Builder addActiveChannels(com.ibc.applications.interchain_accounts.v1.ActiveChannel value) {
       if (activeChannelsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -789,7 +789,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
     public Builder addActiveChannels(
-        int index, ActiveChannel value) {
+        int index, com.ibc.applications.interchain_accounts.v1.ActiveChannel value) {
       if (activeChannelsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -806,7 +806,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
     public Builder addActiveChannels(
-        ActiveChannel.Builder builderForValue) {
+        com.ibc.applications.interchain_accounts.v1.ActiveChannel.Builder builderForValue) {
       if (activeChannelsBuilder_ == null) {
         ensureActiveChannelsIsMutable();
         activeChannels_.add(builderForValue.build());
@@ -820,7 +820,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
     public Builder addActiveChannels(
-        int index, ActiveChannel.Builder builderForValue) {
+        int index, com.ibc.applications.interchain_accounts.v1.ActiveChannel.Builder builderForValue) {
       if (activeChannelsBuilder_ == null) {
         ensureActiveChannelsIsMutable();
         activeChannels_.add(index, builderForValue.build());
@@ -834,7 +834,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
     public Builder addAllActiveChannels(
-        Iterable<? extends ActiveChannel> values) {
+        java.lang.Iterable<? extends com.ibc.applications.interchain_accounts.v1.ActiveChannel> values) {
       if (activeChannelsBuilder_ == null) {
         ensureActiveChannelsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -874,14 +874,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
-    public ActiveChannel.Builder getActiveChannelsBuilder(
+    public com.ibc.applications.interchain_accounts.v1.ActiveChannel.Builder getActiveChannelsBuilder(
         int index) {
       return getActiveChannelsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
-    public ActiveChannelOrBuilder getActiveChannelsOrBuilder(
+    public com.ibc.applications.interchain_accounts.v1.ActiveChannelOrBuilder getActiveChannelsOrBuilder(
         int index) {
       if (activeChannelsBuilder_ == null) {
         return activeChannels_.get(index);  } else {
@@ -891,7 +891,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
-    public java.util.List<? extends ActiveChannelOrBuilder>
+    public java.util.List<? extends com.ibc.applications.interchain_accounts.v1.ActiveChannelOrBuilder> 
          getActiveChannelsOrBuilderList() {
       if (activeChannelsBuilder_ != null) {
         return activeChannelsBuilder_.getMessageOrBuilderList();
@@ -902,31 +902,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
-    public ActiveChannel.Builder addActiveChannelsBuilder() {
+    public com.ibc.applications.interchain_accounts.v1.ActiveChannel.Builder addActiveChannelsBuilder() {
       return getActiveChannelsFieldBuilder().addBuilder(
-          ActiveChannel.getDefaultInstance());
+          com.ibc.applications.interchain_accounts.v1.ActiveChannel.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
-    public ActiveChannel.Builder addActiveChannelsBuilder(
+    public com.ibc.applications.interchain_accounts.v1.ActiveChannel.Builder addActiveChannelsBuilder(
         int index) {
       return getActiveChannelsFieldBuilder().addBuilder(
-          index, ActiveChannel.getDefaultInstance());
+          index, com.ibc.applications.interchain_accounts.v1.ActiveChannel.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.ActiveChannel active_channels = 1 [json_name = "activeChannels", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"active_channels&#92;""];</code>
      */
-    public java.util.List<ActiveChannel.Builder>
+    public java.util.List<com.ibc.applications.interchain_accounts.v1.ActiveChannel.Builder> 
          getActiveChannelsBuilderList() {
       return getActiveChannelsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        ActiveChannel, ActiveChannel.Builder, ActiveChannelOrBuilder>
+        com.ibc.applications.interchain_accounts.v1.ActiveChannel, com.ibc.applications.interchain_accounts.v1.ActiveChannel.Builder, com.ibc.applications.interchain_accounts.v1.ActiveChannelOrBuilder> 
         getActiveChannelsFieldBuilder() {
       if (activeChannelsBuilder_ == null) {
         activeChannelsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            ActiveChannel, ActiveChannel.Builder, ActiveChannelOrBuilder>(
+            com.ibc.applications.interchain_accounts.v1.ActiveChannel, com.ibc.applications.interchain_accounts.v1.ActiveChannel.Builder, com.ibc.applications.interchain_accounts.v1.ActiveChannelOrBuilder>(
                 activeChannels_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -936,22 +936,22 @@ private static final long serialVersionUID = 0L;
       return activeChannelsBuilder_;
     }
 
-    private java.util.List<RegisteredInterchainAccount> interchainAccounts_ =
+    private java.util.List<com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount> interchainAccounts_ =
       java.util.Collections.emptyList();
     private void ensureInterchainAccountsIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        interchainAccounts_ = new java.util.ArrayList<RegisteredInterchainAccount>(interchainAccounts_);
+        interchainAccounts_ = new java.util.ArrayList<com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount>(interchainAccounts_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        RegisteredInterchainAccount, RegisteredInterchainAccount.Builder, RegisteredInterchainAccountOrBuilder> interchainAccountsBuilder_;
+        com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.Builder, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccountOrBuilder> interchainAccountsBuilder_;
 
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
-    public java.util.List<RegisteredInterchainAccount> getInterchainAccountsList() {
+    public java.util.List<com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount> getInterchainAccountsList() {
       if (interchainAccountsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(interchainAccounts_);
       } else {
@@ -971,7 +971,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
-    public RegisteredInterchainAccount getInterchainAccounts(int index) {
+    public com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount getInterchainAccounts(int index) {
       if (interchainAccountsBuilder_ == null) {
         return interchainAccounts_.get(index);
       } else {
@@ -982,7 +982,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
     public Builder setInterchainAccounts(
-        int index, RegisteredInterchainAccount value) {
+        int index, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount value) {
       if (interchainAccountsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -999,7 +999,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
     public Builder setInterchainAccounts(
-        int index, RegisteredInterchainAccount.Builder builderForValue) {
+        int index, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.Builder builderForValue) {
       if (interchainAccountsBuilder_ == null) {
         ensureInterchainAccountsIsMutable();
         interchainAccounts_.set(index, builderForValue.build());
@@ -1012,7 +1012,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
-    public Builder addInterchainAccounts(RegisteredInterchainAccount value) {
+    public Builder addInterchainAccounts(com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount value) {
       if (interchainAccountsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1029,7 +1029,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
     public Builder addInterchainAccounts(
-        int index, RegisteredInterchainAccount value) {
+        int index, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount value) {
       if (interchainAccountsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1046,7 +1046,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
     public Builder addInterchainAccounts(
-        RegisteredInterchainAccount.Builder builderForValue) {
+        com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.Builder builderForValue) {
       if (interchainAccountsBuilder_ == null) {
         ensureInterchainAccountsIsMutable();
         interchainAccounts_.add(builderForValue.build());
@@ -1060,7 +1060,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
     public Builder addInterchainAccounts(
-        int index, RegisteredInterchainAccount.Builder builderForValue) {
+        int index, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.Builder builderForValue) {
       if (interchainAccountsBuilder_ == null) {
         ensureInterchainAccountsIsMutable();
         interchainAccounts_.add(index, builderForValue.build());
@@ -1074,7 +1074,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
     public Builder addAllInterchainAccounts(
-        Iterable<? extends RegisteredInterchainAccount> values) {
+        java.lang.Iterable<? extends com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount> values) {
       if (interchainAccountsBuilder_ == null) {
         ensureInterchainAccountsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1114,14 +1114,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
-    public RegisteredInterchainAccount.Builder getInterchainAccountsBuilder(
+    public com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.Builder getInterchainAccountsBuilder(
         int index) {
       return getInterchainAccountsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
-    public RegisteredInterchainAccountOrBuilder getInterchainAccountsOrBuilder(
+    public com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccountOrBuilder getInterchainAccountsOrBuilder(
         int index) {
       if (interchainAccountsBuilder_ == null) {
         return interchainAccounts_.get(index);  } else {
@@ -1131,7 +1131,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
-    public java.util.List<? extends RegisteredInterchainAccountOrBuilder>
+    public java.util.List<? extends com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccountOrBuilder> 
          getInterchainAccountsOrBuilderList() {
       if (interchainAccountsBuilder_ != null) {
         return interchainAccountsBuilder_.getMessageOrBuilderList();
@@ -1142,31 +1142,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
-    public RegisteredInterchainAccount.Builder addInterchainAccountsBuilder() {
+    public com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.Builder addInterchainAccountsBuilder() {
       return getInterchainAccountsFieldBuilder().addBuilder(
-          RegisteredInterchainAccount.getDefaultInstance());
+          com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
-    public RegisteredInterchainAccount.Builder addInterchainAccountsBuilder(
+    public com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.Builder addInterchainAccountsBuilder(
         int index) {
       return getInterchainAccountsFieldBuilder().addBuilder(
-          index, RegisteredInterchainAccount.getDefaultInstance());
+          index, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount interchain_accounts = 2 [json_name = "interchainAccounts", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"interchain_accounts&#92;""];</code>
      */
-    public java.util.List<RegisteredInterchainAccount.Builder>
+    public java.util.List<com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.Builder> 
          getInterchainAccountsBuilderList() {
       return getInterchainAccountsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        RegisteredInterchainAccount, RegisteredInterchainAccount.Builder, RegisteredInterchainAccountOrBuilder>
+        com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.Builder, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccountOrBuilder> 
         getInterchainAccountsFieldBuilder() {
       if (interchainAccountsBuilder_ == null) {
         interchainAccountsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            RegisteredInterchainAccount, RegisteredInterchainAccount.Builder, RegisteredInterchainAccountOrBuilder>(
+            com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccount.Builder, com.ibc.applications.interchain_accounts.v1.RegisteredInterchainAccountOrBuilder>(
                 interchainAccounts_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1176,21 +1176,21 @@ private static final long serialVersionUID = 0L;
       return interchainAccountsBuilder_;
     }
 
-    private Object port_ = "";
+    private java.lang.Object port_ = "";
     /**
      * <code>string port = 3 [json_name = "port"];</code>
      * @return The port.
      */
-    public String getPort() {
-      Object ref = port_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getPort() {
+      java.lang.Object ref = port_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         port_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1199,11 +1199,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getPortBytes() {
-      Object ref = port_;
+      java.lang.Object ref = port_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         port_ = b;
         return b;
       } else {
@@ -1216,7 +1216,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPort(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       port_ = value;
       bitField0_ |= 0x00000004;
@@ -1366,13 +1366,13 @@ private static final long serialVersionUID = 0L;
       }
       return paramsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1383,18 +1383,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.applications.interchain_accounts.v1.HostGenesisState)
-  private static final HostGenesisState DEFAULT_INSTANCE;
+  private static final com.ibc.applications.interchain_accounts.v1.HostGenesisState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new HostGenesisState();
+    DEFAULT_INSTANCE = new com.ibc.applications.interchain_accounts.v1.HostGenesisState();
   }
 
-  public static HostGenesisState getDefaultInstance() {
+  public static com.ibc.applications.interchain_accounts.v1.HostGenesisState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<HostGenesisState>
       PARSER = new com.google.protobuf.AbstractParser<HostGenesisState>() {
-    @Override
+    @java.lang.Override
     public HostGenesisState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1418,13 +1418,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<HostGenesisState> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public HostGenesisState getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.HostGenesisState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -14,7 +14,7 @@ public interface QueryValidatorSlashesResponseOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEvent slashes = 1 [json_name = "slashes", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<ValidatorSlashEvent>
+  java.util.List<com.cosmos.distribution.v1beta1.ValidatorSlashEvent> 
       getSlashesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryValidatorSlashesResponseOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEvent slashes = 1 [json_name = "slashes", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorSlashEvent getSlashes(int index);
+  com.cosmos.distribution.v1beta1.ValidatorSlashEvent getSlashes(int index);
   /**
    * <pre>
    * slashes defines the slashes the validator received.
@@ -39,7 +39,7 @@ public interface QueryValidatorSlashesResponseOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEvent slashes = 1 [json_name = "slashes", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends ValidatorSlashEventOrBuilder>
+  java.util.List<? extends com.cosmos.distribution.v1beta1.ValidatorSlashEventOrBuilder> 
       getSlashesOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryValidatorSlashesResponseOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEvent slashes = 1 [json_name = "slashes", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorSlashEventOrBuilder getSlashesOrBuilder(
+  com.cosmos.distribution.v1beta1.ValidatorSlashEventOrBuilder getSlashesOrBuilder(
       int index);
 
   /**

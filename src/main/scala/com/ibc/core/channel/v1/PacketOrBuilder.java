@@ -27,7 +27,7 @@ public interface PacketOrBuilder extends
    * <code>string source_port = 2 [json_name = "sourcePort", (.gogoproto.moretags) = "yaml:&#92;"source_port&#92;""];</code>
    * @return The sourcePort.
    */
-  String getSourcePort();
+  java.lang.String getSourcePort();
   /**
    * <pre>
    * identifies the port on the sending chain.
@@ -47,7 +47,7 @@ public interface PacketOrBuilder extends
    * <code>string source_channel = 3 [json_name = "sourceChannel", (.gogoproto.moretags) = "yaml:&#92;"source_channel&#92;""];</code>
    * @return The sourceChannel.
    */
-  String getSourceChannel();
+  java.lang.String getSourceChannel();
   /**
    * <pre>
    * identifies the channel end on the sending chain.
@@ -67,7 +67,7 @@ public interface PacketOrBuilder extends
    * <code>string destination_port = 4 [json_name = "destinationPort", (.gogoproto.moretags) = "yaml:&#92;"destination_port&#92;""];</code>
    * @return The destinationPort.
    */
-  String getDestinationPort();
+  java.lang.String getDestinationPort();
   /**
    * <pre>
    * identifies the port on the receiving chain.
@@ -87,7 +87,7 @@ public interface PacketOrBuilder extends
    * <code>string destination_channel = 5 [json_name = "destinationChannel", (.gogoproto.moretags) = "yaml:&#92;"destination_channel&#92;""];</code>
    * @return The destinationChannel.
    */
-  String getDestinationChannel();
+  java.lang.String getDestinationChannel();
   /**
    * <pre>
    * identifies the channel end on the receiving chain.

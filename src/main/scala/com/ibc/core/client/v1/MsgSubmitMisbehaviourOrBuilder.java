@@ -15,7 +15,7 @@ public interface MsgSubmitMisbehaviourOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  String getClientId();
+  java.lang.String getClientId();
   /**
    * <pre>
    * client unique identifier
@@ -62,7 +62,7 @@ public interface MsgSubmitMisbehaviourOrBuilder extends
    * <code>string signer = 3 [json_name = "signer"];</code>
    * @return The signer.
    */
-  String getSigner();
+  java.lang.String getSigner();
   /**
    * <pre>
    * signer address

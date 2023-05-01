@@ -57,7 +57,7 @@ public final class ClientProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\037ibc/core/client/v1/client.proto\022\022ibc.c" +
       "ore.client.v1\032\024gogoproto/gogo.proto\032\031goo" +
       "gle/protobuf/any.proto\032$cosmos/upgrade/v" +
@@ -115,43 +115,43 @@ public final class ClientProto {
     internal_static_ibc_core_client_v1_IdentifiedClientState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_IdentifiedClientState_descriptor,
-        new String[] { "ClientId", "ClientState", });
+        new java.lang.String[] { "ClientId", "ClientState", });
     internal_static_ibc_core_client_v1_ConsensusStateWithHeight_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_core_client_v1_ConsensusStateWithHeight_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_ConsensusStateWithHeight_descriptor,
-        new String[] { "Height", "ConsensusState", });
+        new java.lang.String[] { "Height", "ConsensusState", });
     internal_static_ibc_core_client_v1_ClientConsensusStates_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_core_client_v1_ClientConsensusStates_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_ClientConsensusStates_descriptor,
-        new String[] { "ClientId", "ConsensusStates", });
+        new java.lang.String[] { "ClientId", "ConsensusStates", });
     internal_static_ibc_core_client_v1_ClientUpdateProposal_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_core_client_v1_ClientUpdateProposal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_ClientUpdateProposal_descriptor,
-        new String[] { "Title", "Description", "SubjectClientId", "SubstituteClientId", });
+        new java.lang.String[] { "Title", "Description", "SubjectClientId", "SubstituteClientId", });
     internal_static_ibc_core_client_v1_UpgradeProposal_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_core_client_v1_UpgradeProposal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_UpgradeProposal_descriptor,
-        new String[] { "Title", "Description", "Plan", "UpgradedClientState", });
+        new java.lang.String[] { "Title", "Description", "Plan", "UpgradedClientState", });
     internal_static_ibc_core_client_v1_Height_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_ibc_core_client_v1_Height_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_Height_descriptor,
-        new String[] { "RevisionNumber", "RevisionHeight", });
+        new java.lang.String[] { "RevisionNumber", "RevisionHeight", });
     internal_static_ibc_core_client_v1_Params_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_ibc_core_client_v1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_Params_descriptor,
-        new String[] { "AllowedClients", });
+        new java.lang.String[] { "AllowedClients", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.implementsInterface);

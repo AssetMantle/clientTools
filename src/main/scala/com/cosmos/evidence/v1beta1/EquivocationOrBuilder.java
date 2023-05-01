@@ -38,7 +38,7 @@ public interface EquivocationOrBuilder extends
    * <code>string consensus_address = 4 [json_name = "consensusAddress", (.gogoproto.moretags) = "yaml:&#92;"consensus_address&#92;""];</code>
    * @return The consensusAddress.
    */
-  String getConsensusAddress();
+  java.lang.String getConsensusAddress();
   /**
    * <code>string consensus_address = 4 [json_name = "consensusAddress", (.gogoproto.moretags) = "yaml:&#92;"consensus_address&#92;""];</code>
    * @return The bytes for consensusAddress.

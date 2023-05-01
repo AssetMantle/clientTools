@@ -16,11 +16,11 @@ public interface LightBlockOrBuilder extends
    * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
    * @return The signedHeader.
    */
-  SignedHeader getSignedHeader();
+  com.tendermint.types.SignedHeader getSignedHeader();
   /**
    * <code>.tendermint.types.SignedHeader signed_header = 1 [json_name = "signedHeader"];</code>
    */
-  SignedHeaderOrBuilder getSignedHeaderOrBuilder();
+  com.tendermint.types.SignedHeaderOrBuilder getSignedHeaderOrBuilder();
 
   /**
    * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
@@ -31,9 +31,9 @@ public interface LightBlockOrBuilder extends
    * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
    * @return The validatorSet.
    */
-  ValidatorSet getValidatorSet();
+  com.tendermint.types.ValidatorSet getValidatorSet();
   /**
    * <code>.tendermint.types.ValidatorSet validator_set = 2 [json_name = "validatorSet"];</code>
    */
-  ValidatorSetOrBuilder getValidatorSetOrBuilder();
+  com.tendermint.types.ValidatorSetOrBuilder getValidatorSetOrBuilder();
 }

@@ -16,9 +16,9 @@ public interface QueryParamsResponseOrBuilder extends
    * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  Params getParams();
+  com.cosmos.slashing.v1beta1.Params getParams();
   /**
    * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  ParamsOrBuilder getParamsOrBuilder();
+  com.cosmos.slashing.v1beta1.ParamsOrBuilder getParamsOrBuilder();
 }

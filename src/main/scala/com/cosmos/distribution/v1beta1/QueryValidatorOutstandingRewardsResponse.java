@@ -23,33 +23,33 @@ private static final long serialVersionUID = 0L;
   private QueryValidatorOutstandingRewardsResponse() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryValidatorOutstandingRewardsResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryValidatorOutstandingRewardsResponse_descriptor;
+    return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryValidatorOutstandingRewardsResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryValidatorOutstandingRewardsResponse_fieldAccessorTable
+    return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryValidatorOutstandingRewardsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryValidatorOutstandingRewardsResponse.class, Builder.class);
+            com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse.class, com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse.Builder.class);
   }
 
   public static final int REWARDS_FIELD_NUMBER = 1;
-  private ValidatorOutstandingRewards rewards_;
+  private com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards_;
   /**
    * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    * @return Whether the rewards field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasRewards() {
     return rewards_ != null;
   }
@@ -57,20 +57,20 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    * @return The rewards.
    */
-  @Override
-  public ValidatorOutstandingRewards getRewards() {
-    return rewards_ == null ? ValidatorOutstandingRewards.getDefaultInstance() : rewards_;
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards getRewards() {
+    return rewards_ == null ? com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards.getDefaultInstance() : rewards_;
   }
   /**
    * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public ValidatorOutstandingRewardsOrBuilder getRewardsOrBuilder() {
-    return rewards_ == null ? ValidatorOutstandingRewards.getDefaultInstance() : rewards_;
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsOrBuilder getRewardsOrBuilder() {
+    return rewards_ == null ? com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards.getDefaultInstance() : rewards_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -80,7 +80,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (rewards_ != null) {
@@ -89,7 +89,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -104,15 +104,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryValidatorOutstandingRewardsResponse)) {
+    if (!(obj instanceof com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse)) {
       return super.equals(obj);
     }
-    QueryValidatorOutstandingRewardsResponse other = (QueryValidatorOutstandingRewardsResponse) obj;
+    com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse other = (com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse) obj;
 
     if (hasRewards() != other.hasRewards()) return false;
     if (hasRewards()) {
@@ -123,7 +123,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -139,69 +139,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryValidatorOutstandingRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseFrom(byte[] data)
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseDelimitedFrom(
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryValidatorOutstandingRewardsResponse parseFrom(
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -209,23 +209,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryValidatorOutstandingRewardsResponse prototype) {
+  public static Builder newBuilder(com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -240,18 +240,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse)
-      QueryValidatorOutstandingRewardsResponseOrBuilder {
+      com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryValidatorOutstandingRewardsResponse_descriptor;
+      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryValidatorOutstandingRewardsResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryValidatorOutstandingRewardsResponse_fieldAccessorTable
+      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryValidatorOutstandingRewardsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryValidatorOutstandingRewardsResponse.class, Builder.class);
+              com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse.class, com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse.Builder.class);
     }
 
     // Construct using com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse.newBuilder()
@@ -260,11 +260,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -276,35 +276,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_distribution_v1beta1_QueryValidatorOutstandingRewardsResponse_descriptor;
+      return com.cosmos.distribution.v1beta1.QueryProto.internal_static_cosmos_distribution_v1beta1_QueryValidatorOutstandingRewardsResponse_descriptor;
     }
 
-    @Override
-    public QueryValidatorOutstandingRewardsResponse getDefaultInstanceForType() {
-      return QueryValidatorOutstandingRewardsResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse getDefaultInstanceForType() {
+      return com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryValidatorOutstandingRewardsResponse build() {
-      QueryValidatorOutstandingRewardsResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse build() {
+      com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryValidatorOutstandingRewardsResponse buildPartial() {
-      QueryValidatorOutstandingRewardsResponse result = new QueryValidatorOutstandingRewardsResponse(this);
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse buildPartial() {
+      com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse result = new com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(QueryValidatorOutstandingRewardsResponse result) {
+    private void buildPartial0(com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.rewards_ = rewardsBuilder_ == null
@@ -313,50 +313,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryValidatorOutstandingRewardsResponse) {
-        return mergeFrom((QueryValidatorOutstandingRewardsResponse)other);
+      if (other instanceof com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse) {
+        return mergeFrom((com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryValidatorOutstandingRewardsResponse other) {
-      if (other == QueryValidatorOutstandingRewardsResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse other) {
+      if (other == com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse.getDefaultInstance()) return this;
       if (other.hasRewards()) {
         mergeRewards(other.getRewards());
       }
@@ -365,18 +365,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -410,9 +410,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private ValidatorOutstandingRewards rewards_;
+    private com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        ValidatorOutstandingRewards, ValidatorOutstandingRewards.Builder, ValidatorOutstandingRewardsOrBuilder> rewardsBuilder_;
+        com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards, com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards.Builder, com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsOrBuilder> rewardsBuilder_;
     /**
      * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      * @return Whether the rewards field is set.
@@ -424,9 +424,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      * @return The rewards.
      */
-    public ValidatorOutstandingRewards getRewards() {
+    public com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards getRewards() {
       if (rewardsBuilder_ == null) {
-        return rewards_ == null ? ValidatorOutstandingRewards.getDefaultInstance() : rewards_;
+        return rewards_ == null ? com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards.getDefaultInstance() : rewards_;
       } else {
         return rewardsBuilder_.getMessage();
       }
@@ -434,7 +434,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setRewards(ValidatorOutstandingRewards value) {
+    public Builder setRewards(com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards value) {
       if (rewardsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -451,7 +451,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
     public Builder setRewards(
-        ValidatorOutstandingRewards.Builder builderForValue) {
+        com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards.Builder builderForValue) {
       if (rewardsBuilder_ == null) {
         rewards_ = builderForValue.build();
       } else {
@@ -464,11 +464,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeRewards(ValidatorOutstandingRewards value) {
+    public Builder mergeRewards(com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards value) {
       if (rewardsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           rewards_ != null &&
-          rewards_ != ValidatorOutstandingRewards.getDefaultInstance()) {
+          rewards_ != com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards.getDefaultInstance()) {
           getRewardsBuilder().mergeFrom(value);
         } else {
           rewards_ = value;
@@ -496,7 +496,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public ValidatorOutstandingRewards.Builder getRewardsBuilder() {
+    public com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards.Builder getRewardsBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getRewardsFieldBuilder().getBuilder();
@@ -504,23 +504,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
-    public ValidatorOutstandingRewardsOrBuilder getRewardsOrBuilder() {
+    public com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsOrBuilder getRewardsOrBuilder() {
       if (rewardsBuilder_ != null) {
         return rewardsBuilder_.getMessageOrBuilder();
       } else {
         return rewards_ == null ?
-            ValidatorOutstandingRewards.getDefaultInstance() : rewards_;
+            com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards.getDefaultInstance() : rewards_;
       }
     }
     /**
      * <code>.cosmos.distribution.v1beta1.ValidatorOutstandingRewards rewards = 1 [json_name = "rewards", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ValidatorOutstandingRewards, ValidatorOutstandingRewards.Builder, ValidatorOutstandingRewardsOrBuilder>
+        com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards, com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards.Builder, com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsOrBuilder> 
         getRewardsFieldBuilder() {
       if (rewardsBuilder_ == null) {
         rewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ValidatorOutstandingRewards, ValidatorOutstandingRewards.Builder, ValidatorOutstandingRewardsOrBuilder>(
+            com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards, com.cosmos.distribution.v1beta1.ValidatorOutstandingRewards.Builder, com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsOrBuilder>(
                 getRewards(),
                 getParentForChildren(),
                 isClean());
@@ -528,13 +528,13 @@ private static final long serialVersionUID = 0L;
       }
       return rewardsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -545,18 +545,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse)
-  private static final QueryValidatorOutstandingRewardsResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryValidatorOutstandingRewardsResponse();
+    DEFAULT_INSTANCE = new com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse();
   }
 
-  public static QueryValidatorOutstandingRewardsResponse getDefaultInstance() {
+  public static com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryValidatorOutstandingRewardsResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryValidatorOutstandingRewardsResponse>() {
-    @Override
+    @java.lang.Override
     public QueryValidatorOutstandingRewardsResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -580,13 +580,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryValidatorOutstandingRewardsResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryValidatorOutstandingRewardsResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -15,7 +15,7 @@ public interface QueryDelegatorValidatorsRequestOrBuilder extends
    * <code>string delegator_addr = 1 [json_name = "delegatorAddr"];</code>
    * @return The delegatorAddr.
    */
-  String getDelegatorAddr();
+  java.lang.String getDelegatorAddr();
   /**
    * <pre>
    * delegator_addr defines the delegator address to query for.

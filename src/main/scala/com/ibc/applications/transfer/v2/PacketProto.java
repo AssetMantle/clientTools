@@ -27,7 +27,7 @@ public final class PacketProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n)ibc/applications/transfer/v2/packet.pr" +
       "oto\022\034ibc.applications.transfer.v2\"{\n\027Fun" +
       "gibleTokenPacketData\022\024\n\005denom\030\001 \001(\tR\005den" +
@@ -50,7 +50,7 @@ public final class PacketProto {
     internal_static_ibc_applications_transfer_v2_FungibleTokenPacketData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v2_FungibleTokenPacketData_descriptor,
-        new String[] { "Denom", "Amount", "Sender", "Receiver", });
+        new java.lang.String[] { "Denom", "Amount", "Sender", "Receiver", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

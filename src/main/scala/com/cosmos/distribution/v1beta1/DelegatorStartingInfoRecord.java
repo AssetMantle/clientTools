@@ -24,29 +24,29 @@ private static final long serialVersionUID = 0L;
     validatorAddress_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new DelegatorStartingInfoRecord();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GenesisProto.internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_descriptor;
+    return com.cosmos.distribution.v1beta1.GenesisProto.internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GenesisProto.internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_fieldAccessorTable
+    return com.cosmos.distribution.v1beta1.GenesisProto.internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            DelegatorStartingInfoRecord.class, Builder.class);
+            com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord.class, com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord.Builder.class);
   }
 
   public static final int DELEGATOR_ADDRESS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object delegatorAddress_ = "";
+  private volatile java.lang.Object delegatorAddress_ = "";
   /**
    * <pre>
    * delegator_address is the address of the delegator.
@@ -55,15 +55,15 @@ private static final long serialVersionUID = 0L;
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  @Override
-  public String getDelegatorAddress() {
-    Object ref = delegatorAddress_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getDelegatorAddress() {
+    java.lang.Object ref = delegatorAddress_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       delegatorAddress_ = s;
       return s;
     }
@@ -76,14 +76,14 @@ private static final long serialVersionUID = 0L;
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The bytes for delegatorAddress.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDelegatorAddressBytes() {
-    Object ref = delegatorAddress_;
-    if (ref instanceof String) {
+    java.lang.Object ref = delegatorAddress_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       delegatorAddress_ = b;
       return b;
     } else {
@@ -93,7 +93,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int VALIDATOR_ADDRESS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile Object validatorAddress_ = "";
+  private volatile java.lang.Object validatorAddress_ = "";
   /**
    * <pre>
    * validator_address is the address of the validator.
@@ -102,15 +102,15 @@ private static final long serialVersionUID = 0L;
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  @Override
-  public String getValidatorAddress() {
-    Object ref = validatorAddress_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getValidatorAddress() {
+    java.lang.Object ref = validatorAddress_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       validatorAddress_ = s;
       return s;
     }
@@ -123,14 +123,14 @@ private static final long serialVersionUID = 0L;
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The bytes for validatorAddress.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getValidatorAddressBytes() {
-    Object ref = validatorAddress_;
-    if (ref instanceof String) {
+    java.lang.Object ref = validatorAddress_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       validatorAddress_ = b;
       return b;
     } else {
@@ -139,7 +139,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int STARTING_INFO_FIELD_NUMBER = 3;
-  private DelegatorStartingInfo startingInfo_;
+  private com.cosmos.distribution.v1beta1.DelegatorStartingInfo startingInfo_;
   /**
    * <pre>
    * starting_info defines the starting info of a delegator.
@@ -148,7 +148,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
    * @return Whether the startingInfo field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasStartingInfo() {
     return startingInfo_ != null;
   }
@@ -160,9 +160,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
    * @return The startingInfo.
    */
-  @Override
-  public DelegatorStartingInfo getStartingInfo() {
-    return startingInfo_ == null ? DelegatorStartingInfo.getDefaultInstance() : startingInfo_;
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.DelegatorStartingInfo getStartingInfo() {
+    return startingInfo_ == null ? com.cosmos.distribution.v1beta1.DelegatorStartingInfo.getDefaultInstance() : startingInfo_;
   }
   /**
    * <pre>
@@ -171,13 +171,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
    */
-  @Override
-  public DelegatorStartingInfoOrBuilder getStartingInfoOrBuilder() {
-    return startingInfo_ == null ? DelegatorStartingInfo.getDefaultInstance() : startingInfo_;
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.DelegatorStartingInfoOrBuilder getStartingInfoOrBuilder() {
+    return startingInfo_ == null ? com.cosmos.distribution.v1beta1.DelegatorStartingInfo.getDefaultInstance() : startingInfo_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -187,7 +187,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(delegatorAddress_)) {
@@ -202,7 +202,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -223,15 +223,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof DelegatorStartingInfoRecord)) {
+    if (!(obj instanceof com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord)) {
       return super.equals(obj);
     }
-    DelegatorStartingInfoRecord other = (DelegatorStartingInfoRecord) obj;
+    com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord other = (com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord) obj;
 
     if (!getDelegatorAddress()
         .equals(other.getDelegatorAddress())) return false;
@@ -246,7 +246,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -266,69 +266,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static DelegatorStartingInfoRecord parseFrom(
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DelegatorStartingInfoRecord parseFrom(
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DelegatorStartingInfoRecord parseFrom(
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DelegatorStartingInfoRecord parseFrom(
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DelegatorStartingInfoRecord parseFrom(byte[] data)
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static DelegatorStartingInfoRecord parseFrom(
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static DelegatorStartingInfoRecord parseFrom(java.io.InputStream input)
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static DelegatorStartingInfoRecord parseFrom(
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static DelegatorStartingInfoRecord parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static DelegatorStartingInfoRecord parseDelimitedFrom(
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static DelegatorStartingInfoRecord parseFrom(
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static DelegatorStartingInfoRecord parseFrom(
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -336,23 +336,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(DelegatorStartingInfoRecord prototype) {
+  public static Builder newBuilder(com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -366,18 +366,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.distribution.v1beta1.DelegatorStartingInfoRecord)
-      DelegatorStartingInfoRecordOrBuilder {
+      com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecordOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return GenesisProto.internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_descriptor;
+      return com.cosmos.distribution.v1beta1.GenesisProto.internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return GenesisProto.internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_fieldAccessorTable
+      return com.cosmos.distribution.v1beta1.GenesisProto.internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              DelegatorStartingInfoRecord.class, Builder.class);
+              com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord.class, com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord.Builder.class);
     }
 
     // Construct using com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord.newBuilder()
@@ -386,11 +386,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -404,35 +404,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return GenesisProto.internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_descriptor;
+      return com.cosmos.distribution.v1beta1.GenesisProto.internal_static_cosmos_distribution_v1beta1_DelegatorStartingInfoRecord_descriptor;
     }
 
-    @Override
-    public DelegatorStartingInfoRecord getDefaultInstanceForType() {
-      return DelegatorStartingInfoRecord.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord getDefaultInstanceForType() {
+      return com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord.getDefaultInstance();
     }
 
-    @Override
-    public DelegatorStartingInfoRecord build() {
-      DelegatorStartingInfoRecord result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord build() {
+      com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public DelegatorStartingInfoRecord buildPartial() {
-      DelegatorStartingInfoRecord result = new DelegatorStartingInfoRecord(this);
+    @java.lang.Override
+    public com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord buildPartial() {
+      com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord result = new com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(DelegatorStartingInfoRecord result) {
+    private void buildPartial0(com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.delegatorAddress_ = delegatorAddress_;
@@ -447,50 +447,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof DelegatorStartingInfoRecord) {
-        return mergeFrom((DelegatorStartingInfoRecord)other);
+      if (other instanceof com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord) {
+        return mergeFrom((com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(DelegatorStartingInfoRecord other) {
-      if (other == DelegatorStartingInfoRecord.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord other) {
+      if (other == com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord.getDefaultInstance()) return this;
       if (!other.getDelegatorAddress().isEmpty()) {
         delegatorAddress_ = other.delegatorAddress_;
         bitField0_ |= 0x00000001;
@@ -509,18 +509,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -564,7 +564,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object delegatorAddress_ = "";
+    private java.lang.Object delegatorAddress_ = "";
     /**
      * <pre>
      * delegator_address is the address of the delegator.
@@ -573,16 +573,16 @@ private static final long serialVersionUID = 0L;
      * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
      * @return The delegatorAddress.
      */
-    public String getDelegatorAddress() {
-      Object ref = delegatorAddress_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getDelegatorAddress() {
+      java.lang.Object ref = delegatorAddress_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         delegatorAddress_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -595,11 +595,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getDelegatorAddressBytes() {
-      Object ref = delegatorAddress_;
+      java.lang.Object ref = delegatorAddress_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         delegatorAddress_ = b;
         return b;
       } else {
@@ -616,7 +616,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDelegatorAddress(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       delegatorAddress_ = value;
       bitField0_ |= 0x00000001;
@@ -656,7 +656,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object validatorAddress_ = "";
+    private java.lang.Object validatorAddress_ = "";
     /**
      * <pre>
      * validator_address is the address of the validator.
@@ -665,16 +665,16 @@ private static final long serialVersionUID = 0L;
      * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
      * @return The validatorAddress.
      */
-    public String getValidatorAddress() {
-      Object ref = validatorAddress_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getValidatorAddress() {
+      java.lang.Object ref = validatorAddress_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         validatorAddress_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -687,11 +687,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getValidatorAddressBytes() {
-      Object ref = validatorAddress_;
+      java.lang.Object ref = validatorAddress_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         validatorAddress_ = b;
         return b;
       } else {
@@ -708,7 +708,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setValidatorAddress(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       validatorAddress_ = value;
       bitField0_ |= 0x00000002;
@@ -748,9 +748,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private DelegatorStartingInfo startingInfo_;
+    private com.cosmos.distribution.v1beta1.DelegatorStartingInfo startingInfo_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        DelegatorStartingInfo, DelegatorStartingInfo.Builder, DelegatorStartingInfoOrBuilder> startingInfoBuilder_;
+        com.cosmos.distribution.v1beta1.DelegatorStartingInfo, com.cosmos.distribution.v1beta1.DelegatorStartingInfo.Builder, com.cosmos.distribution.v1beta1.DelegatorStartingInfoOrBuilder> startingInfoBuilder_;
     /**
      * <pre>
      * starting_info defines the starting info of a delegator.
@@ -770,9 +770,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
      * @return The startingInfo.
      */
-    public DelegatorStartingInfo getStartingInfo() {
+    public com.cosmos.distribution.v1beta1.DelegatorStartingInfo getStartingInfo() {
       if (startingInfoBuilder_ == null) {
-        return startingInfo_ == null ? DelegatorStartingInfo.getDefaultInstance() : startingInfo_;
+        return startingInfo_ == null ? com.cosmos.distribution.v1beta1.DelegatorStartingInfo.getDefaultInstance() : startingInfo_;
       } else {
         return startingInfoBuilder_.getMessage();
       }
@@ -784,7 +784,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
      */
-    public Builder setStartingInfo(DelegatorStartingInfo value) {
+    public Builder setStartingInfo(com.cosmos.distribution.v1beta1.DelegatorStartingInfo value) {
       if (startingInfoBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -805,7 +805,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
      */
     public Builder setStartingInfo(
-        DelegatorStartingInfo.Builder builderForValue) {
+        com.cosmos.distribution.v1beta1.DelegatorStartingInfo.Builder builderForValue) {
       if (startingInfoBuilder_ == null) {
         startingInfo_ = builderForValue.build();
       } else {
@@ -822,11 +822,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
      */
-    public Builder mergeStartingInfo(DelegatorStartingInfo value) {
+    public Builder mergeStartingInfo(com.cosmos.distribution.v1beta1.DelegatorStartingInfo value) {
       if (startingInfoBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0) &&
           startingInfo_ != null &&
-          startingInfo_ != DelegatorStartingInfo.getDefaultInstance()) {
+          startingInfo_ != com.cosmos.distribution.v1beta1.DelegatorStartingInfo.getDefaultInstance()) {
           getStartingInfoBuilder().mergeFrom(value);
         } else {
           startingInfo_ = value;
@@ -862,7 +862,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
      */
-    public DelegatorStartingInfo.Builder getStartingInfoBuilder() {
+    public com.cosmos.distribution.v1beta1.DelegatorStartingInfo.Builder getStartingInfoBuilder() {
       bitField0_ |= 0x00000004;
       onChanged();
       return getStartingInfoFieldBuilder().getBuilder();
@@ -874,12 +874,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
      */
-    public DelegatorStartingInfoOrBuilder getStartingInfoOrBuilder() {
+    public com.cosmos.distribution.v1beta1.DelegatorStartingInfoOrBuilder getStartingInfoOrBuilder() {
       if (startingInfoBuilder_ != null) {
         return startingInfoBuilder_.getMessageOrBuilder();
       } else {
         return startingInfo_ == null ?
-            DelegatorStartingInfo.getDefaultInstance() : startingInfo_;
+            com.cosmos.distribution.v1beta1.DelegatorStartingInfo.getDefaultInstance() : startingInfo_;
       }
     }
     /**
@@ -890,11 +890,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        DelegatorStartingInfo, DelegatorStartingInfo.Builder, DelegatorStartingInfoOrBuilder>
+        com.cosmos.distribution.v1beta1.DelegatorStartingInfo, com.cosmos.distribution.v1beta1.DelegatorStartingInfo.Builder, com.cosmos.distribution.v1beta1.DelegatorStartingInfoOrBuilder> 
         getStartingInfoFieldBuilder() {
       if (startingInfoBuilder_ == null) {
         startingInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            DelegatorStartingInfo, DelegatorStartingInfo.Builder, DelegatorStartingInfoOrBuilder>(
+            com.cosmos.distribution.v1beta1.DelegatorStartingInfo, com.cosmos.distribution.v1beta1.DelegatorStartingInfo.Builder, com.cosmos.distribution.v1beta1.DelegatorStartingInfoOrBuilder>(
                 getStartingInfo(),
                 getParentForChildren(),
                 isClean());
@@ -902,13 +902,13 @@ private static final long serialVersionUID = 0L;
       }
       return startingInfoBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -919,18 +919,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.distribution.v1beta1.DelegatorStartingInfoRecord)
-  private static final DelegatorStartingInfoRecord DEFAULT_INSTANCE;
+  private static final com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new DelegatorStartingInfoRecord();
+    DEFAULT_INSTANCE = new com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord();
   }
 
-  public static DelegatorStartingInfoRecord getDefaultInstance() {
+  public static com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<DelegatorStartingInfoRecord>
       PARSER = new com.google.protobuf.AbstractParser<DelegatorStartingInfoRecord>() {
-    @Override
+    @java.lang.Override
     public DelegatorStartingInfoRecord parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -954,13 +954,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<DelegatorStartingInfoRecord> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public DelegatorStartingInfoRecord getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

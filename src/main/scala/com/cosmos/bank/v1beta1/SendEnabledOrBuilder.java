@@ -11,7 +11,7 @@ public interface SendEnabledOrBuilder extends
    * <code>string denom = 1 [json_name = "denom"];</code>
    * @return The denom.
    */
-  String getDenom();
+  java.lang.String getDenom();
   /**
    * <code>string denom = 1 [json_name = "denom"];</code>
    * @return The bytes for denom.

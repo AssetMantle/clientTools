@@ -15,7 +15,7 @@ public interface QueryUnreceivedAcksResponseOrBuilder extends
    * <code>repeated uint64 sequences = 1 [json_name = "sequences"];</code>
    * @return A list containing the sequences.
    */
-  java.util.List<Long> getSequencesList();
+  java.util.List<java.lang.Long> getSequencesList();
   /**
    * <pre>
    * list of unreceived acknowledgement sequences

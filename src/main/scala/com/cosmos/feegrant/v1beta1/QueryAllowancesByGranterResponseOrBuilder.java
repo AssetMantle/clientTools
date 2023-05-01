@@ -14,7 +14,7 @@ public interface QueryAllowancesByGranterResponseOrBuilder extends
    *
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances"];</code>
    */
-  java.util.List<Grant>
+  java.util.List<com.cosmos.feegrant.v1beta1.Grant> 
       getAllowancesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryAllowancesByGranterResponseOrBuilder extends
    *
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances"];</code>
    */
-  Grant getAllowances(int index);
+  com.cosmos.feegrant.v1beta1.Grant getAllowances(int index);
   /**
    * <pre>
    * allowances that have been issued by the granter.
@@ -39,7 +39,7 @@ public interface QueryAllowancesByGranterResponseOrBuilder extends
    *
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances"];</code>
    */
-  java.util.List<? extends GrantOrBuilder>
+  java.util.List<? extends com.cosmos.feegrant.v1beta1.GrantOrBuilder> 
       getAllowancesOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryAllowancesByGranterResponseOrBuilder extends
    *
    * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1 [json_name = "allowances"];</code>
    */
-  GrantOrBuilder getAllowancesOrBuilder(
+  com.cosmos.feegrant.v1beta1.GrantOrBuilder getAllowancesOrBuilder(
       int index);
 
   /**

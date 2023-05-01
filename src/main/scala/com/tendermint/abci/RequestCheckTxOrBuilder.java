@@ -22,5 +22,5 @@ public interface RequestCheckTxOrBuilder extends
    * <code>.tendermint.abci.CheckTxType type = 2 [json_name = "type"];</code>
    * @return The type.
    */
-  CheckTxType getType();
+  com.tendermint.abci.CheckTxType getType();
 }

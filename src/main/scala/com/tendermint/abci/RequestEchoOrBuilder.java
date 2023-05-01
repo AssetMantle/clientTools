@@ -11,7 +11,7 @@ public interface RequestEchoOrBuilder extends
    * <code>string message = 1 [json_name = "message"];</code>
    * @return The message.
    */
-  String getMessage();
+  java.lang.String getMessage();
   /**
    * <code>string message = 1 [json_name = "message"];</code>
    * @return The bytes for message.

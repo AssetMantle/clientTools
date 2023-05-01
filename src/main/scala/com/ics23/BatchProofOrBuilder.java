@@ -10,12 +10,12 @@ public interface BatchProofOrBuilder extends
   /**
    * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  java.util.List<BatchEntry>
+  java.util.List<com.ics23.BatchEntry> 
       getEntriesList();
   /**
    * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  BatchEntry getEntries(int index);
+  com.ics23.BatchEntry getEntries(int index);
   /**
    * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
    */
@@ -23,11 +23,11 @@ public interface BatchProofOrBuilder extends
   /**
    * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  java.util.List<? extends BatchEntryOrBuilder>
+  java.util.List<? extends com.ics23.BatchEntryOrBuilder> 
       getEntriesOrBuilderList();
   /**
    * <code>repeated .ics23.BatchEntry entries = 1 [json_name = "entries"];</code>
    */
-  BatchEntryOrBuilder getEntriesOrBuilder(
+  com.ics23.BatchEntryOrBuilder getEntriesOrBuilder(
       int index);
 }

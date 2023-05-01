@@ -1,22 +1,22 @@
 package schema.data.base
 
-import com.data.{AnyData, AccAddressData => protoAccAddressData}
+import com.assetmantle.schema.data.base.{AnyData, AccAddressData => protoAccAddressData}
 import com.google.protobuf.ByteString
 import schema.data.Data
 import schema.id.base.{DataID, HashID, StringID}
 
 case class AccAddressData(value: Array[Byte]) extends Data {
-  def getType: StringID = constants.Data.AccAddressDataTypeID
+  def getType: StringID = schema.constants.Data.AccAddressDataTypeID
 
-  def getBondWeight: Int = constants.Data.AccAddressBondWeight
+  def getBondWeight: Int = schema.constants.Data.AccAddressBondWeight
 
-  def getDataID: DataID = DataID(typeID = constants.Data.AccAddressDataTypeID, hashID = this.generateHashID)
+  def getDataID: DataID = DataID(typeID = schema.constants.Data.AccAddressDataTypeID, hashID = this.generateHashID)
 
-  def zeroValue: Data = AccAddressData(new Array[Byte](0))
+  def zeroValue: AccAddressData = AccAddressData(Array[Byte]())
 
   def getBytes: Array[Byte] = this.value
 
-  def generateHashID: HashID = if (this.value.length == 0) utilities.ID.generateHashID() else utilities.ID.generateHashID(this.getBytes)
+  def generateHashID: HashID = if (this.value.length == 0) schema.utilities.ID.generateHashID() else schema.utilities.ID.generateHashID(this.getBytes)
 
   def toBech32Address: String = utilities.Crypto.convertAccAddressBytesToAddress(this.value)
 

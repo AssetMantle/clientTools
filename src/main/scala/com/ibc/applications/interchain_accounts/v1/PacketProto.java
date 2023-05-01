@@ -32,7 +32,7 @@ public final class PacketProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n4ibc/applications/interchain_accounts/v" +
       "1/packet.proto\022\'ibc.applications.interch" +
       "ain_accounts.v1\032\031google/protobuf/any.pro" +
@@ -65,13 +65,13 @@ public final class PacketProto {
     internal_static_ibc_applications_interchain_accounts_v1_InterchainAccountPacketData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_v1_InterchainAccountPacketData_descriptor,
-        new String[] { "Type", "Data", "Memo", });
+        new java.lang.String[] { "Type", "Data", "Memo", });
     internal_static_ibc_applications_interchain_accounts_v1_CosmosTx_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_applications_interchain_accounts_v1_CosmosTx_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_interchain_accounts_v1_CosmosTx_descriptor,
-        new String[] { "Messages", });
+        new java.lang.String[] { "Messages", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.enumvalueCustomname);

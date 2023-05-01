@@ -17,7 +17,7 @@ public interface MsgDepositOrBuilder extends
    * <code>string depositor = 2 [json_name = "depositor"];</code>
    * @return The depositor.
    */
-  String getDepositor();
+  java.lang.String getDepositor();
   /**
    * <code>string depositor = 2 [json_name = "depositor"];</code>
    * @return The bytes for depositor.

@@ -25,7 +25,7 @@ public interface QueryDepositRequestOrBuilder extends
    * <code>string depositor = 2 [json_name = "depositor"];</code>
    * @return The depositor.
    */
-  String getDepositor();
+  java.lang.String getDepositor();
   /**
    * <pre>
    * depositor defines the deposit addresses from the proposals.

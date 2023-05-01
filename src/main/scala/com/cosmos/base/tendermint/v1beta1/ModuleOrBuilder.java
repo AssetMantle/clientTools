@@ -15,7 +15,7 @@ public interface ModuleOrBuilder extends
    * <code>string path = 1 [json_name = "path"];</code>
    * @return The path.
    */
-  String getPath();
+  java.lang.String getPath();
   /**
    * <pre>
    * module path
@@ -35,7 +35,7 @@ public interface ModuleOrBuilder extends
    * <code>string version = 2 [json_name = "version"];</code>
    * @return The version.
    */
-  String getVersion();
+  java.lang.String getVersion();
   /**
    * <pre>
    * module version
@@ -55,7 +55,7 @@ public interface ModuleOrBuilder extends
    * <code>string sum = 3 [json_name = "sum"];</code>
    * @return The sum.
    */
-  String getSum();
+  java.lang.String getSum();
   /**
    * <pre>
    * checksum

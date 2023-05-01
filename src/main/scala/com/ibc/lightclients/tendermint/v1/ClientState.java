@@ -26,42 +26,42 @@ private static final long serialVersionUID = 0L;
     upgradePath_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new ClientState();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ClientState_descriptor;
+    return com.ibc.lightclients.tendermint.v1.TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ClientState_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ClientState_fieldAccessorTable
+    return com.ibc.lightclients.tendermint.v1.TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ClientState_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            ClientState.class, Builder.class);
+            com.ibc.lightclients.tendermint.v1.ClientState.class, com.ibc.lightclients.tendermint.v1.ClientState.Builder.class);
   }
 
   public static final int CHAIN_ID_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object chainId_ = "";
+  private volatile java.lang.Object chainId_ = "";
   /**
    * <code>string chain_id = 1 [json_name = "chainId"];</code>
    * @return The chainId.
    */
-  @Override
-  public String getChainId() {
-    Object ref = chainId_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getChainId() {
+    java.lang.Object ref = chainId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       chainId_ = s;
       return s;
     }
@@ -70,14 +70,14 @@ private static final long serialVersionUID = 0L;
    * <code>string chain_id = 1 [json_name = "chainId"];</code>
    * @return The bytes for chainId.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChainIdBytes() {
-    Object ref = chainId_;
-    if (ref instanceof String) {
+    java.lang.Object ref = chainId_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       chainId_ = b;
       return b;
     } else {
@@ -86,12 +86,12 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TRUST_LEVEL_FIELD_NUMBER = 2;
-  private Fraction trustLevel_;
+  private com.ibc.lightclients.tendermint.v1.Fraction trustLevel_;
   /**
    * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
    * @return Whether the trustLevel field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasTrustLevel() {
     return trustLevel_ != null;
   }
@@ -99,16 +99,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
    * @return The trustLevel.
    */
-  @Override
-  public Fraction getTrustLevel() {
-    return trustLevel_ == null ? Fraction.getDefaultInstance() : trustLevel_;
+  @java.lang.Override
+  public com.ibc.lightclients.tendermint.v1.Fraction getTrustLevel() {
+    return trustLevel_ == null ? com.ibc.lightclients.tendermint.v1.Fraction.getDefaultInstance() : trustLevel_;
   }
   /**
    * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
    */
-  @Override
-  public FractionOrBuilder getTrustLevelOrBuilder() {
-    return trustLevel_ == null ? Fraction.getDefaultInstance() : trustLevel_;
+  @java.lang.Override
+  public com.ibc.lightclients.tendermint.v1.FractionOrBuilder getTrustLevelOrBuilder() {
+    return trustLevel_ == null ? com.ibc.lightclients.tendermint.v1.Fraction.getDefaultInstance() : trustLevel_;
   }
 
   public static final int TRUSTING_PERIOD_FIELD_NUMBER = 3;
@@ -122,7 +122,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration trusting_period = 3 [json_name = "trustingPeriod", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trusting_period&#92;"", (.gogoproto.stdduration) = true];</code>
    * @return Whether the trustingPeriod field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasTrustingPeriod() {
     return trustingPeriod_ != null;
   }
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration trusting_period = 3 [json_name = "trustingPeriod", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trusting_period&#92;"", (.gogoproto.stdduration) = true];</code>
    * @return The trustingPeriod.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Duration getTrustingPeriod() {
     return trustingPeriod_ == null ? com.google.protobuf.Duration.getDefaultInstance() : trustingPeriod_;
   }
@@ -147,7 +147,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Duration trusting_period = 3 [json_name = "trustingPeriod", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trusting_period&#92;"", (.gogoproto.stdduration) = true];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.DurationOrBuilder getTrustingPeriodOrBuilder() {
     return trustingPeriod_ == null ? com.google.protobuf.Duration.getDefaultInstance() : trustingPeriod_;
   }
@@ -162,7 +162,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration unbonding_period = 4 [json_name = "unbondingPeriod", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_period&#92;"", (.gogoproto.stdduration) = true];</code>
    * @return Whether the unbondingPeriod field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasUnbondingPeriod() {
     return unbondingPeriod_ != null;
   }
@@ -174,7 +174,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration unbonding_period = 4 [json_name = "unbondingPeriod", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_period&#92;"", (.gogoproto.stdduration) = true];</code>
    * @return The unbondingPeriod.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Duration getUnbondingPeriod() {
     return unbondingPeriod_ == null ? com.google.protobuf.Duration.getDefaultInstance() : unbondingPeriod_;
   }
@@ -185,7 +185,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Duration unbonding_period = 4 [json_name = "unbondingPeriod", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"unbonding_period&#92;"", (.gogoproto.stdduration) = true];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.DurationOrBuilder getUnbondingPeriodOrBuilder() {
     return unbondingPeriod_ == null ? com.google.protobuf.Duration.getDefaultInstance() : unbondingPeriod_;
   }
@@ -200,7 +200,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration max_clock_drift = 5 [json_name = "maxClockDrift", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"max_clock_drift&#92;"", (.gogoproto.stdduration) = true];</code>
    * @return Whether the maxClockDrift field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasMaxClockDrift() {
     return maxClockDrift_ != null;
   }
@@ -212,7 +212,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration max_clock_drift = 5 [json_name = "maxClockDrift", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"max_clock_drift&#92;"", (.gogoproto.stdduration) = true];</code>
    * @return The maxClockDrift.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Duration getMaxClockDrift() {
     return maxClockDrift_ == null ? com.google.protobuf.Duration.getDefaultInstance() : maxClockDrift_;
   }
@@ -223,7 +223,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Duration max_clock_drift = 5 [json_name = "maxClockDrift", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"max_clock_drift&#92;"", (.gogoproto.stdduration) = true];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.DurationOrBuilder getMaxClockDriftOrBuilder() {
     return maxClockDrift_ == null ? com.google.protobuf.Duration.getDefaultInstance() : maxClockDrift_;
   }
@@ -238,7 +238,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height frozen_height = 6 [json_name = "frozenHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"frozen_height&#92;""];</code>
    * @return Whether the frozenHeight field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasFrozenHeight() {
     return frozenHeight_ != null;
   }
@@ -250,7 +250,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height frozen_height = 6 [json_name = "frozenHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"frozen_height&#92;""];</code>
    * @return The frozenHeight.
    */
-  @Override
+  @java.lang.Override
   public com.ibc.core.client.v1.Height getFrozenHeight() {
     return frozenHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : frozenHeight_;
   }
@@ -261,7 +261,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.client.v1.Height frozen_height = 6 [json_name = "frozenHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"frozen_height&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public com.ibc.core.client.v1.HeightOrBuilder getFrozenHeightOrBuilder() {
     return frozenHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : frozenHeight_;
   }
@@ -276,7 +276,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height latest_height = 7 [json_name = "latestHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"latest_height&#92;""];</code>
    * @return Whether the latestHeight field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasLatestHeight() {
     return latestHeight_ != null;
   }
@@ -288,7 +288,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height latest_height = 7 [json_name = "latestHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"latest_height&#92;""];</code>
    * @return The latestHeight.
    */
-  @Override
+  @java.lang.Override
   public com.ibc.core.client.v1.Height getLatestHeight() {
     return latestHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : latestHeight_;
   }
@@ -299,7 +299,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.client.v1.Height latest_height = 7 [json_name = "latestHeight", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"latest_height&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public com.ibc.core.client.v1.HeightOrBuilder getLatestHeightOrBuilder() {
     return latestHeight_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : latestHeight_;
   }
@@ -314,7 +314,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ics23.ProofSpec proof_specs = 8 [json_name = "proofSpecs", (.gogoproto.moretags) = "yaml:&#92;"proof_specs&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<com.ics23.ProofSpec> getProofSpecsList() {
     return proofSpecs_;
   }
@@ -325,7 +325,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ics23.ProofSpec proof_specs = 8 [json_name = "proofSpecs", (.gogoproto.moretags) = "yaml:&#92;"proof_specs&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<? extends com.ics23.ProofSpecOrBuilder> 
       getProofSpecsOrBuilderList() {
     return proofSpecs_;
@@ -337,7 +337,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ics23.ProofSpec proof_specs = 8 [json_name = "proofSpecs", (.gogoproto.moretags) = "yaml:&#92;"proof_specs&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public int getProofSpecsCount() {
     return proofSpecs_.size();
   }
@@ -348,7 +348,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ics23.ProofSpec proof_specs = 8 [json_name = "proofSpecs", (.gogoproto.moretags) = "yaml:&#92;"proof_specs&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public com.ics23.ProofSpec getProofSpecs(int index) {
     return proofSpecs_.get(index);
   }
@@ -359,7 +359,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ics23.ProofSpec proof_specs = 8 [json_name = "proofSpecs", (.gogoproto.moretags) = "yaml:&#92;"proof_specs&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public com.ics23.ProofSpecOrBuilder getProofSpecsOrBuilder(
       int index) {
     return proofSpecs_.get(index);
@@ -418,7 +418,7 @@ private static final long serialVersionUID = 0L;
    * @param index The index of the element to return.
    * @return The upgradePath at the given index.
    */
-  public String getUpgradePath(int index) {
+  public java.lang.String getUpgradePath(int index) {
     return upgradePath_.get(index);
   }
   /**
@@ -453,8 +453,8 @@ private static final long serialVersionUID = 0L;
    *     See ibc/lightclients/tendermint/v1/tendermint.proto;l=55
    * @return The allowUpdateAfterExpiry.
    */
-  @Override
-  @Deprecated public boolean getAllowUpdateAfterExpiry() {
+  @java.lang.Override
+  @java.lang.Deprecated public boolean getAllowUpdateAfterExpiry() {
     return allowUpdateAfterExpiry_;
   }
 
@@ -470,13 +470,13 @@ private static final long serialVersionUID = 0L;
    *     See ibc/lightclients/tendermint/v1/tendermint.proto;l=57
    * @return The allowUpdateAfterMisbehaviour.
    */
-  @Override
-  @Deprecated public boolean getAllowUpdateAfterMisbehaviour() {
+  @java.lang.Override
+  @java.lang.Deprecated public boolean getAllowUpdateAfterMisbehaviour() {
     return allowUpdateAfterMisbehaviour_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -486,7 +486,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(chainId_)) {
@@ -525,7 +525,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -583,15 +583,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof ClientState)) {
+    if (!(obj instanceof com.ibc.lightclients.tendermint.v1.ClientState)) {
       return super.equals(obj);
     }
-    ClientState other = (ClientState) obj;
+    com.ibc.lightclients.tendermint.v1.ClientState other = (com.ibc.lightclients.tendermint.v1.ClientState) obj;
 
     if (!getChainId()
         .equals(other.getChainId())) return false;
@@ -637,7 +637,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -689,69 +689,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ClientState parseFrom(byte[] data)
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ClientState parseFrom(java.io.InputStream input)
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ClientState parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static ClientState parseDelimitedFrom(
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ClientState parseFrom(
+  public static com.ibc.lightclients.tendermint.v1.ClientState parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -759,23 +759,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(ClientState prototype) {
+  public static Builder newBuilder(com.ibc.lightclients.tendermint.v1.ClientState prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -790,18 +790,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.lightclients.tendermint.v1.ClientState)
-      ClientStateOrBuilder {
+      com.ibc.lightclients.tendermint.v1.ClientStateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ClientState_descriptor;
+      return com.ibc.lightclients.tendermint.v1.TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ClientState_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ClientState_fieldAccessorTable
+      return com.ibc.lightclients.tendermint.v1.TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ClientState_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ClientState.class, Builder.class);
+              com.ibc.lightclients.tendermint.v1.ClientState.class, com.ibc.lightclients.tendermint.v1.ClientState.Builder.class);
     }
 
     // Construct using com.ibc.lightclients.tendermint.v1.ClientState.newBuilder()
@@ -810,11 +810,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -863,36 +863,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ClientState_descriptor;
+      return com.ibc.lightclients.tendermint.v1.TendermintProto.internal_static_ibc_lightclients_tendermint_v1_ClientState_descriptor;
     }
 
-    @Override
-    public ClientState getDefaultInstanceForType() {
-      return ClientState.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.lightclients.tendermint.v1.ClientState getDefaultInstanceForType() {
+      return com.ibc.lightclients.tendermint.v1.ClientState.getDefaultInstance();
     }
 
-    @Override
-    public ClientState build() {
-      ClientState result = buildPartial();
+    @java.lang.Override
+    public com.ibc.lightclients.tendermint.v1.ClientState build() {
+      com.ibc.lightclients.tendermint.v1.ClientState result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public ClientState buildPartial() {
-      ClientState result = new ClientState(this);
+    @java.lang.Override
+    public com.ibc.lightclients.tendermint.v1.ClientState buildPartial() {
+      com.ibc.lightclients.tendermint.v1.ClientState result = new com.ibc.lightclients.tendermint.v1.ClientState(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(ClientState result) {
+    private void buildPartialRepeatedFields(com.ibc.lightclients.tendermint.v1.ClientState result) {
       if (proofSpecsBuilder_ == null) {
         if (((bitField0_ & 0x00000080) != 0)) {
           proofSpecs_ = java.util.Collections.unmodifiableList(proofSpecs_);
@@ -909,7 +909,7 @@ private static final long serialVersionUID = 0L;
       result.upgradePath_ = upgradePath_;
     }
 
-    private void buildPartial0(ClientState result) {
+    private void buildPartial0(com.ibc.lightclients.tendermint.v1.ClientState result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.chainId_ = chainId_;
@@ -952,50 +952,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof ClientState) {
-        return mergeFrom((ClientState)other);
+      if (other instanceof com.ibc.lightclients.tendermint.v1.ClientState) {
+        return mergeFrom((com.ibc.lightclients.tendermint.v1.ClientState)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(ClientState other) {
-      if (other == ClientState.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.lightclients.tendermint.v1.ClientState other) {
+      if (other == com.ibc.lightclients.tendermint.v1.ClientState.getDefaultInstance()) return this;
       if (!other.getChainId().isEmpty()) {
         chainId_ = other.chainId_;
         bitField0_ |= 0x00000001;
@@ -1066,18 +1066,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -1148,7 +1148,7 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 66
             case 74: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
               ensureUpgradePathIsMutable();
               upgradePath_.add(s);
               break;
@@ -1180,21 +1180,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object chainId_ = "";
+    private java.lang.Object chainId_ = "";
     /**
      * <code>string chain_id = 1 [json_name = "chainId"];</code>
      * @return The chainId.
      */
-    public String getChainId() {
-      Object ref = chainId_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getChainId() {
+      java.lang.Object ref = chainId_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         chainId_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1203,11 +1203,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getChainIdBytes() {
-      Object ref = chainId_;
+      java.lang.Object ref = chainId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         chainId_ = b;
         return b;
       } else {
@@ -1220,7 +1220,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setChainId(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       chainId_ = value;
       bitField0_ |= 0x00000001;
@@ -1252,9 +1252,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Fraction trustLevel_;
+    private com.ibc.lightclients.tendermint.v1.Fraction trustLevel_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        Fraction, Fraction.Builder, FractionOrBuilder> trustLevelBuilder_;
+        com.ibc.lightclients.tendermint.v1.Fraction, com.ibc.lightclients.tendermint.v1.Fraction.Builder, com.ibc.lightclients.tendermint.v1.FractionOrBuilder> trustLevelBuilder_;
     /**
      * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
      * @return Whether the trustLevel field is set.
@@ -1266,9 +1266,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
      * @return The trustLevel.
      */
-    public Fraction getTrustLevel() {
+    public com.ibc.lightclients.tendermint.v1.Fraction getTrustLevel() {
       if (trustLevelBuilder_ == null) {
-        return trustLevel_ == null ? Fraction.getDefaultInstance() : trustLevel_;
+        return trustLevel_ == null ? com.ibc.lightclients.tendermint.v1.Fraction.getDefaultInstance() : trustLevel_;
       } else {
         return trustLevelBuilder_.getMessage();
       }
@@ -1276,7 +1276,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
      */
-    public Builder setTrustLevel(Fraction value) {
+    public Builder setTrustLevel(com.ibc.lightclients.tendermint.v1.Fraction value) {
       if (trustLevelBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1293,7 +1293,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
      */
     public Builder setTrustLevel(
-        Fraction.Builder builderForValue) {
+        com.ibc.lightclients.tendermint.v1.Fraction.Builder builderForValue) {
       if (trustLevelBuilder_ == null) {
         trustLevel_ = builderForValue.build();
       } else {
@@ -1306,11 +1306,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
      */
-    public Builder mergeTrustLevel(Fraction value) {
+    public Builder mergeTrustLevel(com.ibc.lightclients.tendermint.v1.Fraction value) {
       if (trustLevelBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           trustLevel_ != null &&
-          trustLevel_ != Fraction.getDefaultInstance()) {
+          trustLevel_ != com.ibc.lightclients.tendermint.v1.Fraction.getDefaultInstance()) {
           getTrustLevelBuilder().mergeFrom(value);
         } else {
           trustLevel_ = value;
@@ -1338,7 +1338,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
      */
-    public Fraction.Builder getTrustLevelBuilder() {
+    public com.ibc.lightclients.tendermint.v1.Fraction.Builder getTrustLevelBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getTrustLevelFieldBuilder().getBuilder();
@@ -1346,23 +1346,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
      */
-    public FractionOrBuilder getTrustLevelOrBuilder() {
+    public com.ibc.lightclients.tendermint.v1.FractionOrBuilder getTrustLevelOrBuilder() {
       if (trustLevelBuilder_ != null) {
         return trustLevelBuilder_.getMessageOrBuilder();
       } else {
         return trustLevel_ == null ?
-            Fraction.getDefaultInstance() : trustLevel_;
+            com.ibc.lightclients.tendermint.v1.Fraction.getDefaultInstance() : trustLevel_;
       }
     }
     /**
      * <code>.ibc.lightclients.tendermint.v1.Fraction trust_level = 2 [json_name = "trustLevel", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"trust_level&#92;""];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Fraction, Fraction.Builder, FractionOrBuilder>
+        com.ibc.lightclients.tendermint.v1.Fraction, com.ibc.lightclients.tendermint.v1.Fraction.Builder, com.ibc.lightclients.tendermint.v1.FractionOrBuilder> 
         getTrustLevelFieldBuilder() {
       if (trustLevelBuilder_ == null) {
         trustLevelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Fraction, Fraction.Builder, FractionOrBuilder>(
+            com.ibc.lightclients.tendermint.v1.Fraction, com.ibc.lightclients.tendermint.v1.Fraction.Builder, com.ibc.lightclients.tendermint.v1.FractionOrBuilder>(
                 getTrustLevel(),
                 getParentForChildren(),
                 isClean());
@@ -2333,7 +2333,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ics23.ProofSpec proof_specs = 8 [json_name = "proofSpecs", (.gogoproto.moretags) = "yaml:&#92;"proof_specs&#92;""];</code>
      */
     public Builder addAllProofSpecs(
-        Iterable<? extends com.ics23.ProofSpec> values) {
+        java.lang.Iterable<? extends com.ics23.ProofSpec> values) {
       if (proofSpecsBuilder_ == null) {
         ensureProofSpecsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2524,7 +2524,7 @@ private static final long serialVersionUID = 0L;
      * @param index The index of the element to return.
      * @return The upgradePath at the given index.
      */
-    public String getUpgradePath(int index) {
+    public java.lang.String getUpgradePath(int index) {
       return upgradePath_.get(index);
     }
     /**
@@ -2563,7 +2563,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setUpgradePath(
-        int index, String value) {
+        int index, java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       ensureUpgradePathIsMutable();
       upgradePath_.set(index, value);
@@ -2586,7 +2586,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addUpgradePath(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       ensureUpgradePathIsMutable();
       upgradePath_.add(value);
@@ -2609,7 +2609,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addAllUpgradePath(
-        Iterable<String> values) {
+        java.lang.Iterable<java.lang.String> values) {
       ensureUpgradePathIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, upgradePath_);
@@ -2672,8 +2672,8 @@ private static final long serialVersionUID = 0L;
      *     See ibc/lightclients/tendermint/v1/tendermint.proto;l=55
      * @return The allowUpdateAfterExpiry.
      */
-    @Override
-    @Deprecated public boolean getAllowUpdateAfterExpiry() {
+    @java.lang.Override
+    @java.lang.Deprecated public boolean getAllowUpdateAfterExpiry() {
       return allowUpdateAfterExpiry_;
     }
     /**
@@ -2687,7 +2687,7 @@ private static final long serialVersionUID = 0L;
      * @param value The allowUpdateAfterExpiry to set.
      * @return This builder for chaining.
      */
-    @Deprecated public Builder setAllowUpdateAfterExpiry(boolean value) {
+    @java.lang.Deprecated public Builder setAllowUpdateAfterExpiry(boolean value) {
 
       allowUpdateAfterExpiry_ = value;
       bitField0_ |= 0x00000200;
@@ -2704,7 +2704,7 @@ private static final long serialVersionUID = 0L;
      *     See ibc/lightclients/tendermint/v1/tendermint.proto;l=55
      * @return This builder for chaining.
      */
-    @Deprecated public Builder clearAllowUpdateAfterExpiry() {
+    @java.lang.Deprecated public Builder clearAllowUpdateAfterExpiry() {
       bitField0_ = (bitField0_ & ~0x00000200);
       allowUpdateAfterExpiry_ = false;
       onChanged();
@@ -2722,8 +2722,8 @@ private static final long serialVersionUID = 0L;
      *     See ibc/lightclients/tendermint/v1/tendermint.proto;l=57
      * @return The allowUpdateAfterMisbehaviour.
      */
-    @Override
-    @Deprecated public boolean getAllowUpdateAfterMisbehaviour() {
+    @java.lang.Override
+    @java.lang.Deprecated public boolean getAllowUpdateAfterMisbehaviour() {
       return allowUpdateAfterMisbehaviour_;
     }
     /**
@@ -2737,7 +2737,7 @@ private static final long serialVersionUID = 0L;
      * @param value The allowUpdateAfterMisbehaviour to set.
      * @return This builder for chaining.
      */
-    @Deprecated public Builder setAllowUpdateAfterMisbehaviour(boolean value) {
+    @java.lang.Deprecated public Builder setAllowUpdateAfterMisbehaviour(boolean value) {
 
       allowUpdateAfterMisbehaviour_ = value;
       bitField0_ |= 0x00000400;
@@ -2754,19 +2754,19 @@ private static final long serialVersionUID = 0L;
      *     See ibc/lightclients/tendermint/v1/tendermint.proto;l=57
      * @return This builder for chaining.
      */
-    @Deprecated public Builder clearAllowUpdateAfterMisbehaviour() {
+    @java.lang.Deprecated public Builder clearAllowUpdateAfterMisbehaviour() {
       bitField0_ = (bitField0_ & ~0x00000400);
       allowUpdateAfterMisbehaviour_ = false;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -2777,18 +2777,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.lightclients.tendermint.v1.ClientState)
-  private static final ClientState DEFAULT_INSTANCE;
+  private static final com.ibc.lightclients.tendermint.v1.ClientState DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new ClientState();
+    DEFAULT_INSTANCE = new com.ibc.lightclients.tendermint.v1.ClientState();
   }
 
-  public static ClientState getDefaultInstance() {
+  public static com.ibc.lightclients.tendermint.v1.ClientState getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ClientState>
       PARSER = new com.google.protobuf.AbstractParser<ClientState>() {
-    @Override
+    @java.lang.Override
     public ClientState parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2812,13 +2812,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<ClientState> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public ClientState getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.lightclients.tendermint.v1.ClientState getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

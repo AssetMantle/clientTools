@@ -24,7 +24,7 @@ public interface CommissionOrBuilder extends
    * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
    * @return The commissionRates.
    */
-  CommissionRates getCommissionRates();
+  com.cosmos.staking.v1beta1.CommissionRates getCommissionRates();
   /**
    * <pre>
    * commission_rates defines the initial commission rates to be used for creating a validator.
@@ -32,7 +32,7 @@ public interface CommissionOrBuilder extends
    *
    * <code>.cosmos.staking.v1beta1.CommissionRates commission_rates = 1 [json_name = "commissionRates", (.gogoproto.nullable) = false, (.gogoproto.embed) = true];</code>
    */
-  CommissionRatesOrBuilder getCommissionRatesOrBuilder();
+  com.cosmos.staking.v1beta1.CommissionRatesOrBuilder getCommissionRatesOrBuilder();
 
   /**
    * <pre>

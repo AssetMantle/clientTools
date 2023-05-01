@@ -72,7 +72,7 @@ public interface ParamsOrBuilder extends
    * <code>string bond_denom = 5 [json_name = "bondDenom", (.gogoproto.moretags) = "yaml:&#92;"bond_denom&#92;""];</code>
    * @return The bondDenom.
    */
-  String getBondDenom();
+  java.lang.String getBondDenom();
   /**
    * <pre>
    * bond_denom defines the bondable coin denomination.

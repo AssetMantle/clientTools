@@ -22,24 +22,24 @@ private static final long serialVersionUID = 0L;
   private ModeInfo() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new ModeInfo();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_descriptor;
+    return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_fieldAccessorTable
+    return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            ModeInfo.class, Builder.class);
+            com.cosmos.tx.v1beta1.ModeInfo.class, com.cosmos.tx.v1beta1.ModeInfo.Builder.class);
   }
 
   public interface SingleOrBuilder extends
@@ -87,24 +87,24 @@ private static final long serialVersionUID = 0L;
       mode_ = 0;
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new Single();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Single_descriptor;
+      return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Single_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Single_fieldAccessorTable
+      return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Single_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Single.class, Builder.class);
+              com.cosmos.tx.v1beta1.ModeInfo.Single.class, com.cosmos.tx.v1beta1.ModeInfo.Single.Builder.class);
     }
 
     public static final int MODE_FIELD_NUMBER = 1;
@@ -117,7 +117,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.signing.v1beta1.SignMode mode = 1 [json_name = "mode"];</code>
      * @return The enum numeric value on the wire for mode.
      */
-    @Override public int getModeValue() {
+    @java.lang.Override public int getModeValue() {
       return mode_;
     }
     /**
@@ -128,13 +128,13 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.signing.v1beta1.SignMode mode = 1 [json_name = "mode"];</code>
      * @return The mode.
      */
-    @Override public com.cosmos.tx.signing.v1beta1.SignMode getMode() {
+    @java.lang.Override public com.cosmos.tx.signing.v1beta1.SignMode getMode() {
       com.cosmos.tx.signing.v1beta1.SignMode result = com.cosmos.tx.signing.v1beta1.SignMode.forNumber(mode_);
       return result == null ? com.cosmos.tx.signing.v1beta1.SignMode.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -144,7 +144,7 @@ private static final long serialVersionUID = 0L;
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (mode_ != com.cosmos.tx.signing.v1beta1.SignMode.SIGN_MODE_UNSPECIFIED.getNumber()) {
@@ -153,7 +153,7 @@ private static final long serialVersionUID = 0L;
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -168,22 +168,22 @@ private static final long serialVersionUID = 0L;
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Single)) {
+      if (!(obj instanceof com.cosmos.tx.v1beta1.ModeInfo.Single)) {
         return super.equals(obj);
       }
-      Single other = (Single) obj;
+      com.cosmos.tx.v1beta1.ModeInfo.Single other = (com.cosmos.tx.v1beta1.ModeInfo.Single) obj;
 
       if (mode_ != other.mode_) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -197,69 +197,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static Single parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Single parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Single parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Single parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Single parseFrom(byte[] data)
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Single parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Single parseFrom(java.io.InputStream input)
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Single parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Single parseDelimitedFrom(java.io.InputStream input)
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Single parseDelimitedFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Single parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Single parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -267,23 +267,23 @@ private static final long serialVersionUID = 0L;
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Single prototype) {
+    public static Builder newBuilder(com.cosmos.tx.v1beta1.ModeInfo.Single prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -299,18 +299,18 @@ private static final long serialVersionUID = 0L;
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:cosmos.tx.v1beta1.ModeInfo.Single)
-        SingleOrBuilder {
+        com.cosmos.tx.v1beta1.ModeInfo.SingleOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Single_descriptor;
+        return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Single_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Single_fieldAccessorTable
+        return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Single_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Single.class, Builder.class);
+                com.cosmos.tx.v1beta1.ModeInfo.Single.class, com.cosmos.tx.v1beta1.ModeInfo.Single.Builder.class);
       }
 
       // Construct using com.cosmos.tx.v1beta1.ModeInfo.Single.newBuilder()
@@ -319,11 +319,11 @@ private static final long serialVersionUID = 0L;
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
@@ -331,85 +331,85 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Single_descriptor;
+        return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Single_descriptor;
       }
 
-      @Override
-      public Single getDefaultInstanceForType() {
-        return Single.getDefaultInstance();
+      @java.lang.Override
+      public com.cosmos.tx.v1beta1.ModeInfo.Single getDefaultInstanceForType() {
+        return com.cosmos.tx.v1beta1.ModeInfo.Single.getDefaultInstance();
       }
 
-      @Override
-      public Single build() {
-        Single result = buildPartial();
+      @java.lang.Override
+      public com.cosmos.tx.v1beta1.ModeInfo.Single build() {
+        com.cosmos.tx.v1beta1.ModeInfo.Single result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public Single buildPartial() {
-        Single result = new Single(this);
+      @java.lang.Override
+      public com.cosmos.tx.v1beta1.ModeInfo.Single buildPartial() {
+        com.cosmos.tx.v1beta1.ModeInfo.Single result = new com.cosmos.tx.v1beta1.ModeInfo.Single(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(Single result) {
+      private void buildPartial0(com.cosmos.tx.v1beta1.ModeInfo.Single result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.mode_ = mode_;
         }
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Single) {
-          return mergeFrom((Single)other);
+        if (other instanceof com.cosmos.tx.v1beta1.ModeInfo.Single) {
+          return mergeFrom((com.cosmos.tx.v1beta1.ModeInfo.Single)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Single other) {
-        if (other == Single.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.cosmos.tx.v1beta1.ModeInfo.Single other) {
+        if (other == com.cosmos.tx.v1beta1.ModeInfo.Single.getDefaultInstance()) return this;
         if (other.mode_ != 0) {
           setModeValue(other.getModeValue());
         }
@@ -418,18 +418,18 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -470,7 +470,7 @@ private static final long serialVersionUID = 0L;
        * <code>.cosmos.tx.signing.v1beta1.SignMode mode = 1 [json_name = "mode"];</code>
        * @return The enum numeric value on the wire for mode.
        */
-      @Override public int getModeValue() {
+      @java.lang.Override public int getModeValue() {
         return mode_;
       }
       /**
@@ -496,7 +496,7 @@ private static final long serialVersionUID = 0L;
        * <code>.cosmos.tx.signing.v1beta1.SignMode mode = 1 [json_name = "mode"];</code>
        * @return The mode.
        */
-      @Override
+      @java.lang.Override
       public com.cosmos.tx.signing.v1beta1.SignMode getMode() {
         com.cosmos.tx.signing.v1beta1.SignMode result = com.cosmos.tx.signing.v1beta1.SignMode.forNumber(mode_);
         return result == null ? com.cosmos.tx.signing.v1beta1.SignMode.UNRECOGNIZED : result;
@@ -533,13 +533,13 @@ private static final long serialVersionUID = 0L;
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -550,18 +550,18 @@ private static final long serialVersionUID = 0L;
     }
 
     // @@protoc_insertion_point(class_scope:cosmos.tx.v1beta1.ModeInfo.Single)
-    private static final Single DEFAULT_INSTANCE;
+    private static final com.cosmos.tx.v1beta1.ModeInfo.Single DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Single();
+      DEFAULT_INSTANCE = new com.cosmos.tx.v1beta1.ModeInfo.Single();
     }
 
-    public static Single getDefaultInstance() {
+    public static com.cosmos.tx.v1beta1.ModeInfo.Single getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Single>
         PARSER = new com.google.protobuf.AbstractParser<Single>() {
-      @Override
+      @java.lang.Override
       public Single parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -585,13 +585,13 @@ private static final long serialVersionUID = 0L;
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Single> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public Single getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfo.Single getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -636,7 +636,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
      */
-    java.util.List<ModeInfo>
+    java.util.List<com.cosmos.tx.v1beta1.ModeInfo> 
         getModeInfosList();
     /**
      * <pre>
@@ -646,7 +646,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
      */
-    ModeInfo getModeInfos(int index);
+    com.cosmos.tx.v1beta1.ModeInfo getModeInfos(int index);
     /**
      * <pre>
      * mode_infos is the corresponding modes of the signers of the multisig
@@ -664,7 +664,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
      */
-    java.util.List<? extends ModeInfoOrBuilder>
+    java.util.List<? extends com.cosmos.tx.v1beta1.ModeInfoOrBuilder> 
         getModeInfosOrBuilderList();
     /**
      * <pre>
@@ -674,7 +674,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
      */
-    ModeInfoOrBuilder getModeInfosOrBuilder(
+    com.cosmos.tx.v1beta1.ModeInfoOrBuilder getModeInfosOrBuilder(
         int index);
   }
   /**
@@ -697,24 +697,24 @@ private static final long serialVersionUID = 0L;
       modeInfos_ = java.util.Collections.emptyList();
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new Multi();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_descriptor;
+      return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_fieldAccessorTable
+      return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Multi.class, Builder.class);
+              com.cosmos.tx.v1beta1.ModeInfo.Multi.class, com.cosmos.tx.v1beta1.ModeInfo.Multi.Builder.class);
     }
 
     public static final int BITARRAY_FIELD_NUMBER = 1;
@@ -727,7 +727,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.crypto.multisig.v1beta1.CompactBitArray bitarray = 1 [json_name = "bitarray"];</code>
      * @return Whether the bitarray field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasBitarray() {
       return bitarray_ != null;
     }
@@ -739,7 +739,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.crypto.multisig.v1beta1.CompactBitArray bitarray = 1 [json_name = "bitarray"];</code>
      * @return The bitarray.
      */
-    @Override
+    @java.lang.Override
     public com.cosmos.crypto.multisig.v1beta1.CompactBitArray getBitarray() {
       return bitarray_ == null ? com.cosmos.crypto.multisig.v1beta1.CompactBitArray.getDefaultInstance() : bitarray_;
     }
@@ -750,14 +750,14 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.crypto.multisig.v1beta1.CompactBitArray bitarray = 1 [json_name = "bitarray"];</code>
      */
-    @Override
+    @java.lang.Override
     public com.cosmos.crypto.multisig.v1beta1.CompactBitArrayOrBuilder getBitarrayOrBuilder() {
       return bitarray_ == null ? com.cosmos.crypto.multisig.v1beta1.CompactBitArray.getDefaultInstance() : bitarray_;
     }
 
     public static final int MODE_INFOS_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
-    private java.util.List<ModeInfo> modeInfos_;
+    private java.util.List<com.cosmos.tx.v1beta1.ModeInfo> modeInfos_;
     /**
      * <pre>
      * mode_infos is the corresponding modes of the signers of the multisig
@@ -766,8 +766,8 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
      */
-    @Override
-    public java.util.List<ModeInfo> getModeInfosList() {
+    @java.lang.Override
+    public java.util.List<com.cosmos.tx.v1beta1.ModeInfo> getModeInfosList() {
       return modeInfos_;
     }
     /**
@@ -778,8 +778,8 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
      */
-    @Override
-    public java.util.List<? extends ModeInfoOrBuilder>
+    @java.lang.Override
+    public java.util.List<? extends com.cosmos.tx.v1beta1.ModeInfoOrBuilder> 
         getModeInfosOrBuilderList() {
       return modeInfos_;
     }
@@ -791,7 +791,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
      */
-    @Override
+    @java.lang.Override
     public int getModeInfosCount() {
       return modeInfos_.size();
     }
@@ -803,8 +803,8 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
      */
-    @Override
-    public ModeInfo getModeInfos(int index) {
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfo getModeInfos(int index) {
       return modeInfos_.get(index);
     }
     /**
@@ -815,14 +815,14 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
      */
-    @Override
-    public ModeInfoOrBuilder getModeInfosOrBuilder(
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfoOrBuilder getModeInfosOrBuilder(
         int index) {
       return modeInfos_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -832,7 +832,7 @@ private static final long serialVersionUID = 0L;
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bitarray_ != null) {
@@ -844,7 +844,7 @@ private static final long serialVersionUID = 0L;
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -863,15 +863,15 @@ private static final long serialVersionUID = 0L;
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Multi)) {
+      if (!(obj instanceof com.cosmos.tx.v1beta1.ModeInfo.Multi)) {
         return super.equals(obj);
       }
-      Multi other = (Multi) obj;
+      com.cosmos.tx.v1beta1.ModeInfo.Multi other = (com.cosmos.tx.v1beta1.ModeInfo.Multi) obj;
 
       if (hasBitarray() != other.hasBitarray()) return false;
       if (hasBitarray()) {
@@ -884,7 +884,7 @@ private static final long serialVersionUID = 0L;
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -904,69 +904,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static Multi parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Multi parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Multi parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Multi parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Multi parseFrom(byte[] data)
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Multi parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Multi parseFrom(java.io.InputStream input)
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Multi parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Multi parseDelimitedFrom(java.io.InputStream input)
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Multi parseDelimitedFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Multi parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Multi parseFrom(
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -974,23 +974,23 @@ private static final long serialVersionUID = 0L;
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Multi prototype) {
+    public static Builder newBuilder(com.cosmos.tx.v1beta1.ModeInfo.Multi prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1004,18 +1004,18 @@ private static final long serialVersionUID = 0L;
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:cosmos.tx.v1beta1.ModeInfo.Multi)
-        MultiOrBuilder {
+        com.cosmos.tx.v1beta1.ModeInfo.MultiOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_descriptor;
+        return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_fieldAccessorTable
+        return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Multi.class, Builder.class);
+                com.cosmos.tx.v1beta1.ModeInfo.Multi.class, com.cosmos.tx.v1beta1.ModeInfo.Multi.Builder.class);
       }
 
       // Construct using com.cosmos.tx.v1beta1.ModeInfo.Multi.newBuilder()
@@ -1024,11 +1024,11 @@ private static final long serialVersionUID = 0L;
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
@@ -1047,36 +1047,36 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_descriptor;
+        return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_Multi_descriptor;
       }
 
-      @Override
-      public Multi getDefaultInstanceForType() {
-        return Multi.getDefaultInstance();
+      @java.lang.Override
+      public com.cosmos.tx.v1beta1.ModeInfo.Multi getDefaultInstanceForType() {
+        return com.cosmos.tx.v1beta1.ModeInfo.Multi.getDefaultInstance();
       }
 
-      @Override
-      public Multi build() {
-        Multi result = buildPartial();
+      @java.lang.Override
+      public com.cosmos.tx.v1beta1.ModeInfo.Multi build() {
+        com.cosmos.tx.v1beta1.ModeInfo.Multi result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public Multi buildPartial() {
-        Multi result = new Multi(this);
+      @java.lang.Override
+      public com.cosmos.tx.v1beta1.ModeInfo.Multi buildPartial() {
+        com.cosmos.tx.v1beta1.ModeInfo.Multi result = new com.cosmos.tx.v1beta1.ModeInfo.Multi(this);
         buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartialRepeatedFields(Multi result) {
+      private void buildPartialRepeatedFields(com.cosmos.tx.v1beta1.ModeInfo.Multi result) {
         if (modeInfosBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             modeInfos_ = java.util.Collections.unmodifiableList(modeInfos_);
@@ -1088,7 +1088,7 @@ private static final long serialVersionUID = 0L;
         }
       }
 
-      private void buildPartial0(Multi result) {
+      private void buildPartial0(com.cosmos.tx.v1beta1.ModeInfo.Multi result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.bitarray_ = bitarrayBuilder_ == null
@@ -1097,50 +1097,50 @@ private static final long serialVersionUID = 0L;
         }
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Multi) {
-          return mergeFrom((Multi)other);
+        if (other instanceof com.cosmos.tx.v1beta1.ModeInfo.Multi) {
+          return mergeFrom((com.cosmos.tx.v1beta1.ModeInfo.Multi)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Multi other) {
-        if (other == Multi.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.cosmos.tx.v1beta1.ModeInfo.Multi other) {
+        if (other == com.cosmos.tx.v1beta1.ModeInfo.Multi.getDefaultInstance()) return this;
         if (other.hasBitarray()) {
           mergeBitarray(other.getBitarray());
         }
@@ -1175,18 +1175,18 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -1204,9 +1204,9 @@ private static final long serialVersionUID = 0L;
                 break;
               } // case 10
               case 18: {
-                ModeInfo m =
+                com.cosmos.tx.v1beta1.ModeInfo m =
                     input.readMessage(
-                        ModeInfo.parser(),
+                        com.cosmos.tx.v1beta1.ModeInfo.parser(),
                         extensionRegistry);
                 if (modeInfosBuilder_ == null) {
                   ensureModeInfosIsMutable();
@@ -1388,17 +1388,17 @@ private static final long serialVersionUID = 0L;
         return bitarrayBuilder_;
       }
 
-      private java.util.List<ModeInfo> modeInfos_ =
+      private java.util.List<com.cosmos.tx.v1beta1.ModeInfo> modeInfos_ =
         java.util.Collections.emptyList();
       private void ensureModeInfosIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          modeInfos_ = new java.util.ArrayList<ModeInfo>(modeInfos_);
+          modeInfos_ = new java.util.ArrayList<com.cosmos.tx.v1beta1.ModeInfo>(modeInfos_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          ModeInfo, ModeInfo.Builder, ModeInfoOrBuilder> modeInfosBuilder_;
+          com.cosmos.tx.v1beta1.ModeInfo, com.cosmos.tx.v1beta1.ModeInfo.Builder, com.cosmos.tx.v1beta1.ModeInfoOrBuilder> modeInfosBuilder_;
 
       /**
        * <pre>
@@ -1408,7 +1408,7 @@ private static final long serialVersionUID = 0L;
        *
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
-      public java.util.List<ModeInfo> getModeInfosList() {
+      public java.util.List<com.cosmos.tx.v1beta1.ModeInfo> getModeInfosList() {
         if (modeInfosBuilder_ == null) {
           return java.util.Collections.unmodifiableList(modeInfos_);
         } else {
@@ -1438,7 +1438,7 @@ private static final long serialVersionUID = 0L;
        *
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
-      public ModeInfo getModeInfos(int index) {
+      public com.cosmos.tx.v1beta1.ModeInfo getModeInfos(int index) {
         if (modeInfosBuilder_ == null) {
           return modeInfos_.get(index);
         } else {
@@ -1454,7 +1454,7 @@ private static final long serialVersionUID = 0L;
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
       public Builder setModeInfos(
-          int index, ModeInfo value) {
+          int index, com.cosmos.tx.v1beta1.ModeInfo value) {
         if (modeInfosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1476,7 +1476,7 @@ private static final long serialVersionUID = 0L;
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
       public Builder setModeInfos(
-          int index, ModeInfo.Builder builderForValue) {
+          int index, com.cosmos.tx.v1beta1.ModeInfo.Builder builderForValue) {
         if (modeInfosBuilder_ == null) {
           ensureModeInfosIsMutable();
           modeInfos_.set(index, builderForValue.build());
@@ -1494,7 +1494,7 @@ private static final long serialVersionUID = 0L;
        *
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
-      public Builder addModeInfos(ModeInfo value) {
+      public Builder addModeInfos(com.cosmos.tx.v1beta1.ModeInfo value) {
         if (modeInfosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1516,7 +1516,7 @@ private static final long serialVersionUID = 0L;
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
       public Builder addModeInfos(
-          int index, ModeInfo value) {
+          int index, com.cosmos.tx.v1beta1.ModeInfo value) {
         if (modeInfosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1538,7 +1538,7 @@ private static final long serialVersionUID = 0L;
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
       public Builder addModeInfos(
-          ModeInfo.Builder builderForValue) {
+          com.cosmos.tx.v1beta1.ModeInfo.Builder builderForValue) {
         if (modeInfosBuilder_ == null) {
           ensureModeInfosIsMutable();
           modeInfos_.add(builderForValue.build());
@@ -1557,7 +1557,7 @@ private static final long serialVersionUID = 0L;
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
       public Builder addModeInfos(
-          int index, ModeInfo.Builder builderForValue) {
+          int index, com.cosmos.tx.v1beta1.ModeInfo.Builder builderForValue) {
         if (modeInfosBuilder_ == null) {
           ensureModeInfosIsMutable();
           modeInfos_.add(index, builderForValue.build());
@@ -1576,7 +1576,7 @@ private static final long serialVersionUID = 0L;
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
       public Builder addAllModeInfos(
-          Iterable<? extends ModeInfo> values) {
+          java.lang.Iterable<? extends com.cosmos.tx.v1beta1.ModeInfo> values) {
         if (modeInfosBuilder_ == null) {
           ensureModeInfosIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1631,7 +1631,7 @@ private static final long serialVersionUID = 0L;
        *
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
-      public ModeInfo.Builder getModeInfosBuilder(
+      public com.cosmos.tx.v1beta1.ModeInfo.Builder getModeInfosBuilder(
           int index) {
         return getModeInfosFieldBuilder().getBuilder(index);
       }
@@ -1643,7 +1643,7 @@ private static final long serialVersionUID = 0L;
        *
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
-      public ModeInfoOrBuilder getModeInfosOrBuilder(
+      public com.cosmos.tx.v1beta1.ModeInfoOrBuilder getModeInfosOrBuilder(
           int index) {
         if (modeInfosBuilder_ == null) {
           return modeInfos_.get(index);  } else {
@@ -1658,7 +1658,7 @@ private static final long serialVersionUID = 0L;
        *
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
-      public java.util.List<? extends ModeInfoOrBuilder>
+      public java.util.List<? extends com.cosmos.tx.v1beta1.ModeInfoOrBuilder> 
            getModeInfosOrBuilderList() {
         if (modeInfosBuilder_ != null) {
           return modeInfosBuilder_.getMessageOrBuilderList();
@@ -1674,9 +1674,9 @@ private static final long serialVersionUID = 0L;
        *
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
-      public ModeInfo.Builder addModeInfosBuilder() {
+      public com.cosmos.tx.v1beta1.ModeInfo.Builder addModeInfosBuilder() {
         return getModeInfosFieldBuilder().addBuilder(
-            ModeInfo.getDefaultInstance());
+            com.cosmos.tx.v1beta1.ModeInfo.getDefaultInstance());
       }
       /**
        * <pre>
@@ -1686,10 +1686,10 @@ private static final long serialVersionUID = 0L;
        *
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
-      public ModeInfo.Builder addModeInfosBuilder(
+      public com.cosmos.tx.v1beta1.ModeInfo.Builder addModeInfosBuilder(
           int index) {
         return getModeInfosFieldBuilder().addBuilder(
-            index, ModeInfo.getDefaultInstance());
+            index, com.cosmos.tx.v1beta1.ModeInfo.getDefaultInstance());
       }
       /**
        * <pre>
@@ -1699,16 +1699,16 @@ private static final long serialVersionUID = 0L;
        *
        * <code>repeated .cosmos.tx.v1beta1.ModeInfo mode_infos = 2 [json_name = "modeInfos"];</code>
        */
-      public java.util.List<ModeInfo.Builder>
+      public java.util.List<com.cosmos.tx.v1beta1.ModeInfo.Builder> 
            getModeInfosBuilderList() {
         return getModeInfosFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          ModeInfo, ModeInfo.Builder, ModeInfoOrBuilder>
+          com.cosmos.tx.v1beta1.ModeInfo, com.cosmos.tx.v1beta1.ModeInfo.Builder, com.cosmos.tx.v1beta1.ModeInfoOrBuilder> 
           getModeInfosFieldBuilder() {
         if (modeInfosBuilder_ == null) {
           modeInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              ModeInfo, ModeInfo.Builder, ModeInfoOrBuilder>(
+              com.cosmos.tx.v1beta1.ModeInfo, com.cosmos.tx.v1beta1.ModeInfo.Builder, com.cosmos.tx.v1beta1.ModeInfoOrBuilder>(
                   modeInfos_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -1717,13 +1717,13 @@ private static final long serialVersionUID = 0L;
         }
         return modeInfosBuilder_;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1734,18 +1734,18 @@ private static final long serialVersionUID = 0L;
     }
 
     // @@protoc_insertion_point(class_scope:cosmos.tx.v1beta1.ModeInfo.Multi)
-    private static final Multi DEFAULT_INSTANCE;
+    private static final com.cosmos.tx.v1beta1.ModeInfo.Multi DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Multi();
+      DEFAULT_INSTANCE = new com.cosmos.tx.v1beta1.ModeInfo.Multi();
     }
 
-    public static Multi getDefaultInstance() {
+    public static com.cosmos.tx.v1beta1.ModeInfo.Multi getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Multi>
         PARSER = new com.google.protobuf.AbstractParser<Multi>() {
-      @Override
+      @java.lang.Override
       public Multi parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1769,13 +1769,13 @@ private static final long serialVersionUID = 0L;
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Multi> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public Multi getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfo.Multi getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1783,10 +1783,10 @@ private static final long serialVersionUID = 0L;
 
   private int sumCase_ = 0;
   @SuppressWarnings("serial")
-  private Object sum_;
+  private java.lang.Object sum_;
   public enum SumCase
       implements com.google.protobuf.Internal.EnumLite,
-          InternalOneOfEnum {
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     SINGLE(1),
     MULTI(2),
     SUM_NOT_SET(0);
@@ -1799,7 +1799,7 @@ private static final long serialVersionUID = 0L;
      * @return The enum associated with the given number.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static SumCase valueOf(int value) {
       return forNumber(value);
     }
@@ -1832,7 +1832,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
    * @return Whether the single field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasSingle() {
     return sumCase_ == 1;
   }
@@ -1844,12 +1844,12 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
    * @return The single.
    */
-  @Override
-  public Single getSingle() {
+  @java.lang.Override
+  public com.cosmos.tx.v1beta1.ModeInfo.Single getSingle() {
     if (sumCase_ == 1) {
-       return (Single) sum_;
+       return (com.cosmos.tx.v1beta1.ModeInfo.Single) sum_;
     }
-    return Single.getDefaultInstance();
+    return com.cosmos.tx.v1beta1.ModeInfo.Single.getDefaultInstance();
   }
   /**
    * <pre>
@@ -1858,12 +1858,12 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
    */
-  @Override
-  public SingleOrBuilder getSingleOrBuilder() {
+  @java.lang.Override
+  public com.cosmos.tx.v1beta1.ModeInfo.SingleOrBuilder getSingleOrBuilder() {
     if (sumCase_ == 1) {
-       return (Single) sum_;
+       return (com.cosmos.tx.v1beta1.ModeInfo.Single) sum_;
     }
-    return Single.getDefaultInstance();
+    return com.cosmos.tx.v1beta1.ModeInfo.Single.getDefaultInstance();
   }
 
   public static final int MULTI_FIELD_NUMBER = 2;
@@ -1875,7 +1875,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
    * @return Whether the multi field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasMulti() {
     return sumCase_ == 2;
   }
@@ -1887,12 +1887,12 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
    * @return The multi.
    */
-  @Override
-  public Multi getMulti() {
+  @java.lang.Override
+  public com.cosmos.tx.v1beta1.ModeInfo.Multi getMulti() {
     if (sumCase_ == 2) {
-       return (Multi) sum_;
+       return (com.cosmos.tx.v1beta1.ModeInfo.Multi) sum_;
     }
-    return Multi.getDefaultInstance();
+    return com.cosmos.tx.v1beta1.ModeInfo.Multi.getDefaultInstance();
   }
   /**
    * <pre>
@@ -1901,16 +1901,16 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
    */
-  @Override
-  public MultiOrBuilder getMultiOrBuilder() {
+  @java.lang.Override
+  public com.cosmos.tx.v1beta1.ModeInfo.MultiOrBuilder getMultiOrBuilder() {
     if (sumCase_ == 2) {
-       return (Multi) sum_;
+       return (com.cosmos.tx.v1beta1.ModeInfo.Multi) sum_;
     }
-    return Multi.getDefaultInstance();
+    return com.cosmos.tx.v1beta1.ModeInfo.Multi.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -1920,19 +1920,19 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (sumCase_ == 1) {
-      output.writeMessage(1, (Single) sum_);
+      output.writeMessage(1, (com.cosmos.tx.v1beta1.ModeInfo.Single) sum_);
     }
     if (sumCase_ == 2) {
-      output.writeMessage(2, (Multi) sum_);
+      output.writeMessage(2, (com.cosmos.tx.v1beta1.ModeInfo.Multi) sum_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -1940,26 +1940,26 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (sumCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, (Single) sum_);
+        .computeMessageSize(1, (com.cosmos.tx.v1beta1.ModeInfo.Single) sum_);
     }
     if (sumCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (Multi) sum_);
+        .computeMessageSize(2, (com.cosmos.tx.v1beta1.ModeInfo.Multi) sum_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof ModeInfo)) {
+    if (!(obj instanceof com.cosmos.tx.v1beta1.ModeInfo)) {
       return super.equals(obj);
     }
-    ModeInfo other = (ModeInfo) obj;
+    com.cosmos.tx.v1beta1.ModeInfo other = (com.cosmos.tx.v1beta1.ModeInfo) obj;
 
     if (!getSumCase().equals(other.getSumCase())) return false;
     switch (sumCase_) {
@@ -1978,7 +1978,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -2002,69 +2002,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static ModeInfo parseFrom(
+  public static com.cosmos.tx.v1beta1.ModeInfo parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ModeInfo parseFrom(
+  public static com.cosmos.tx.v1beta1.ModeInfo parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ModeInfo parseFrom(
+  public static com.cosmos.tx.v1beta1.ModeInfo parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ModeInfo parseFrom(
+  public static com.cosmos.tx.v1beta1.ModeInfo parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ModeInfo parseFrom(byte[] data)
+  public static com.cosmos.tx.v1beta1.ModeInfo parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ModeInfo parseFrom(
+  public static com.cosmos.tx.v1beta1.ModeInfo parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ModeInfo parseFrom(java.io.InputStream input)
+  public static com.cosmos.tx.v1beta1.ModeInfo parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ModeInfo parseFrom(
+  public static com.cosmos.tx.v1beta1.ModeInfo parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ModeInfo parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.tx.v1beta1.ModeInfo parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static ModeInfo parseDelimitedFrom(
+  public static com.cosmos.tx.v1beta1.ModeInfo parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ModeInfo parseFrom(
+  public static com.cosmos.tx.v1beta1.ModeInfo parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ModeInfo parseFrom(
+  public static com.cosmos.tx.v1beta1.ModeInfo parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -2072,23 +2072,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(ModeInfo prototype) {
+  public static Builder newBuilder(com.cosmos.tx.v1beta1.ModeInfo prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -2102,18 +2102,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.tx.v1beta1.ModeInfo)
-      ModeInfoOrBuilder {
+      com.cosmos.tx.v1beta1.ModeInfoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_descriptor;
+      return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_fieldAccessorTable
+      return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ModeInfo.class, Builder.class);
+              com.cosmos.tx.v1beta1.ModeInfo.class, com.cosmos.tx.v1beta1.ModeInfo.Builder.class);
     }
 
     // Construct using com.cosmos.tx.v1beta1.ModeInfo.newBuilder()
@@ -2122,11 +2122,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -2141,40 +2141,40 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_descriptor;
+      return com.cosmos.tx.v1beta1.TxProto.internal_static_cosmos_tx_v1beta1_ModeInfo_descriptor;
     }
 
-    @Override
-    public ModeInfo getDefaultInstanceForType() {
-      return ModeInfo.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfo getDefaultInstanceForType() {
+      return com.cosmos.tx.v1beta1.ModeInfo.getDefaultInstance();
     }
 
-    @Override
-    public ModeInfo build() {
-      ModeInfo result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfo build() {
+      com.cosmos.tx.v1beta1.ModeInfo result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public ModeInfo buildPartial() {
-      ModeInfo result = new ModeInfo(this);
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfo buildPartial() {
+      com.cosmos.tx.v1beta1.ModeInfo result = new com.cosmos.tx.v1beta1.ModeInfo(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       buildPartialOneofs(result);
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(ModeInfo result) {
+    private void buildPartial0(com.cosmos.tx.v1beta1.ModeInfo result) {
       int from_bitField0_ = bitField0_;
     }
 
-    private void buildPartialOneofs(ModeInfo result) {
+    private void buildPartialOneofs(com.cosmos.tx.v1beta1.ModeInfo result) {
       result.sumCase_ = sumCase_;
       result.sum_ = this.sum_;
       if (sumCase_ == 1 &&
@@ -2187,50 +2187,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof ModeInfo) {
-        return mergeFrom((ModeInfo)other);
+      if (other instanceof com.cosmos.tx.v1beta1.ModeInfo) {
+        return mergeFrom((com.cosmos.tx.v1beta1.ModeInfo)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(ModeInfo other) {
-      if (other == ModeInfo.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.tx.v1beta1.ModeInfo other) {
+      if (other == com.cosmos.tx.v1beta1.ModeInfo.getDefaultInstance()) return this;
       switch (other.getSumCase()) {
         case SINGLE: {
           mergeSingle(other.getSingle());
@@ -2249,18 +2249,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -2300,7 +2300,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int sumCase_ = 0;
-    private Object sum_;
+    private java.lang.Object sum_;
     public SumCase
         getSumCase() {
       return SumCase.forNumber(
@@ -2317,7 +2317,7 @@ private static final long serialVersionUID = 0L;
     private int bitField0_;
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        Single, Single.Builder, SingleOrBuilder> singleBuilder_;
+        com.cosmos.tx.v1beta1.ModeInfo.Single, com.cosmos.tx.v1beta1.ModeInfo.Single.Builder, com.cosmos.tx.v1beta1.ModeInfo.SingleOrBuilder> singleBuilder_;
     /**
      * <pre>
      * single represents a single signer
@@ -2326,7 +2326,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
      * @return Whether the single field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasSingle() {
       return sumCase_ == 1;
     }
@@ -2338,18 +2338,18 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
      * @return The single.
      */
-    @Override
-    public Single getSingle() {
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfo.Single getSingle() {
       if (singleBuilder_ == null) {
         if (sumCase_ == 1) {
-          return (Single) sum_;
+          return (com.cosmos.tx.v1beta1.ModeInfo.Single) sum_;
         }
-        return Single.getDefaultInstance();
+        return com.cosmos.tx.v1beta1.ModeInfo.Single.getDefaultInstance();
       } else {
         if (sumCase_ == 1) {
           return singleBuilder_.getMessage();
         }
-        return Single.getDefaultInstance();
+        return com.cosmos.tx.v1beta1.ModeInfo.Single.getDefaultInstance();
       }
     }
     /**
@@ -2359,7 +2359,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
      */
-    public Builder setSingle(Single value) {
+    public Builder setSingle(com.cosmos.tx.v1beta1.ModeInfo.Single value) {
       if (singleBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2380,7 +2380,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
      */
     public Builder setSingle(
-        Single.Builder builderForValue) {
+        com.cosmos.tx.v1beta1.ModeInfo.Single.Builder builderForValue) {
       if (singleBuilder_ == null) {
         sum_ = builderForValue.build();
         onChanged();
@@ -2397,11 +2397,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
      */
-    public Builder mergeSingle(Single value) {
+    public Builder mergeSingle(com.cosmos.tx.v1beta1.ModeInfo.Single value) {
       if (singleBuilder_ == null) {
         if (sumCase_ == 1 &&
-            sum_ != Single.getDefaultInstance()) {
-          sum_ = Single.newBuilder((Single) sum_)
+            sum_ != com.cosmos.tx.v1beta1.ModeInfo.Single.getDefaultInstance()) {
+          sum_ = com.cosmos.tx.v1beta1.ModeInfo.Single.newBuilder((com.cosmos.tx.v1beta1.ModeInfo.Single) sum_)
               .mergeFrom(value).buildPartial();
         } else {
           sum_ = value;
@@ -2447,7 +2447,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
      */
-    public Single.Builder getSingleBuilder() {
+    public com.cosmos.tx.v1beta1.ModeInfo.Single.Builder getSingleBuilder() {
       return getSingleFieldBuilder().getBuilder();
     }
     /**
@@ -2457,15 +2457,15 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
      */
-    @Override
-    public SingleOrBuilder getSingleOrBuilder() {
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfo.SingleOrBuilder getSingleOrBuilder() {
       if ((sumCase_ == 1) && (singleBuilder_ != null)) {
         return singleBuilder_.getMessageOrBuilder();
       } else {
         if (sumCase_ == 1) {
-          return (Single) sum_;
+          return (com.cosmos.tx.v1beta1.ModeInfo.Single) sum_;
         }
-        return Single.getDefaultInstance();
+        return com.cosmos.tx.v1beta1.ModeInfo.Single.getDefaultInstance();
       }
     }
     /**
@@ -2476,15 +2476,15 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Single, Single.Builder, SingleOrBuilder>
+        com.cosmos.tx.v1beta1.ModeInfo.Single, com.cosmos.tx.v1beta1.ModeInfo.Single.Builder, com.cosmos.tx.v1beta1.ModeInfo.SingleOrBuilder> 
         getSingleFieldBuilder() {
       if (singleBuilder_ == null) {
         if (!(sumCase_ == 1)) {
-          sum_ = Single.getDefaultInstance();
+          sum_ = com.cosmos.tx.v1beta1.ModeInfo.Single.getDefaultInstance();
         }
         singleBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Single, Single.Builder, SingleOrBuilder>(
-                (Single) sum_,
+            com.cosmos.tx.v1beta1.ModeInfo.Single, com.cosmos.tx.v1beta1.ModeInfo.Single.Builder, com.cosmos.tx.v1beta1.ModeInfo.SingleOrBuilder>(
+                (com.cosmos.tx.v1beta1.ModeInfo.Single) sum_,
                 getParentForChildren(),
                 isClean());
         sum_ = null;
@@ -2495,7 +2495,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        Multi, Multi.Builder, MultiOrBuilder> multiBuilder_;
+        com.cosmos.tx.v1beta1.ModeInfo.Multi, com.cosmos.tx.v1beta1.ModeInfo.Multi.Builder, com.cosmos.tx.v1beta1.ModeInfo.MultiOrBuilder> multiBuilder_;
     /**
      * <pre>
      * multi represents a nested multisig signer
@@ -2504,7 +2504,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
      * @return Whether the multi field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasMulti() {
       return sumCase_ == 2;
     }
@@ -2516,18 +2516,18 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
      * @return The multi.
      */
-    @Override
-    public Multi getMulti() {
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfo.Multi getMulti() {
       if (multiBuilder_ == null) {
         if (sumCase_ == 2) {
-          return (Multi) sum_;
+          return (com.cosmos.tx.v1beta1.ModeInfo.Multi) sum_;
         }
-        return Multi.getDefaultInstance();
+        return com.cosmos.tx.v1beta1.ModeInfo.Multi.getDefaultInstance();
       } else {
         if (sumCase_ == 2) {
           return multiBuilder_.getMessage();
         }
-        return Multi.getDefaultInstance();
+        return com.cosmos.tx.v1beta1.ModeInfo.Multi.getDefaultInstance();
       }
     }
     /**
@@ -2537,7 +2537,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
      */
-    public Builder setMulti(Multi value) {
+    public Builder setMulti(com.cosmos.tx.v1beta1.ModeInfo.Multi value) {
       if (multiBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2558,7 +2558,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
      */
     public Builder setMulti(
-        Multi.Builder builderForValue) {
+        com.cosmos.tx.v1beta1.ModeInfo.Multi.Builder builderForValue) {
       if (multiBuilder_ == null) {
         sum_ = builderForValue.build();
         onChanged();
@@ -2575,11 +2575,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
      */
-    public Builder mergeMulti(Multi value) {
+    public Builder mergeMulti(com.cosmos.tx.v1beta1.ModeInfo.Multi value) {
       if (multiBuilder_ == null) {
         if (sumCase_ == 2 &&
-            sum_ != Multi.getDefaultInstance()) {
-          sum_ = Multi.newBuilder((Multi) sum_)
+            sum_ != com.cosmos.tx.v1beta1.ModeInfo.Multi.getDefaultInstance()) {
+          sum_ = com.cosmos.tx.v1beta1.ModeInfo.Multi.newBuilder((com.cosmos.tx.v1beta1.ModeInfo.Multi) sum_)
               .mergeFrom(value).buildPartial();
         } else {
           sum_ = value;
@@ -2625,7 +2625,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
      */
-    public Multi.Builder getMultiBuilder() {
+    public com.cosmos.tx.v1beta1.ModeInfo.Multi.Builder getMultiBuilder() {
       return getMultiFieldBuilder().getBuilder();
     }
     /**
@@ -2635,15 +2635,15 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
      */
-    @Override
-    public MultiOrBuilder getMultiOrBuilder() {
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.ModeInfo.MultiOrBuilder getMultiOrBuilder() {
       if ((sumCase_ == 2) && (multiBuilder_ != null)) {
         return multiBuilder_.getMessageOrBuilder();
       } else {
         if (sumCase_ == 2) {
-          return (Multi) sum_;
+          return (com.cosmos.tx.v1beta1.ModeInfo.Multi) sum_;
         }
-        return Multi.getDefaultInstance();
+        return com.cosmos.tx.v1beta1.ModeInfo.Multi.getDefaultInstance();
       }
     }
     /**
@@ -2654,15 +2654,15 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Multi, Multi.Builder, MultiOrBuilder>
+        com.cosmos.tx.v1beta1.ModeInfo.Multi, com.cosmos.tx.v1beta1.ModeInfo.Multi.Builder, com.cosmos.tx.v1beta1.ModeInfo.MultiOrBuilder> 
         getMultiFieldBuilder() {
       if (multiBuilder_ == null) {
         if (!(sumCase_ == 2)) {
-          sum_ = Multi.getDefaultInstance();
+          sum_ = com.cosmos.tx.v1beta1.ModeInfo.Multi.getDefaultInstance();
         }
         multiBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Multi, Multi.Builder, MultiOrBuilder>(
-                (Multi) sum_,
+            com.cosmos.tx.v1beta1.ModeInfo.Multi, com.cosmos.tx.v1beta1.ModeInfo.Multi.Builder, com.cosmos.tx.v1beta1.ModeInfo.MultiOrBuilder>(
+                (com.cosmos.tx.v1beta1.ModeInfo.Multi) sum_,
                 getParentForChildren(),
                 isClean());
         sum_ = null;
@@ -2671,13 +2671,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return multiBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -2688,18 +2688,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.tx.v1beta1.ModeInfo)
-  private static final ModeInfo DEFAULT_INSTANCE;
+  private static final com.cosmos.tx.v1beta1.ModeInfo DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new ModeInfo();
+    DEFAULT_INSTANCE = new com.cosmos.tx.v1beta1.ModeInfo();
   }
 
-  public static ModeInfo getDefaultInstance() {
+  public static com.cosmos.tx.v1beta1.ModeInfo getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ModeInfo>
       PARSER = new com.google.protobuf.AbstractParser<ModeInfo>() {
-    @Override
+    @java.lang.Override
     public ModeInfo parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2723,13 +2723,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<ModeInfo> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public ModeInfo getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.tx.v1beta1.ModeInfo getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

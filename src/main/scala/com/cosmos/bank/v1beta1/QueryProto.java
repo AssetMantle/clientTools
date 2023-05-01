@@ -102,7 +102,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\037cosmos/bank/v1beta1/query.proto\022\023cosmo" +
       "s.bank.v1beta1\032*cosmos/base/query/v1beta" +
       "1/pagination.proto\032\024gogoproto/gogo.proto" +
@@ -199,104 +199,104 @@ public final class QueryProto {
           com.gogoproto.GogoProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
           com.cosmos.base.v1beta1.CoinProto.getDescriptor(),
-          BankProto.getDescriptor(),
+          com.cosmos.bank.v1beta1.BankProto.getDescriptor(),
         });
     internal_static_cosmos_bank_v1beta1_QueryBalanceRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_bank_v1beta1_QueryBalanceRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryBalanceRequest_descriptor,
-        new String[] { "Address", "Denom", });
+        new java.lang.String[] { "Address", "Denom", });
     internal_static_cosmos_bank_v1beta1_QueryBalanceResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_bank_v1beta1_QueryBalanceResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryBalanceResponse_descriptor,
-        new String[] { "Balance", });
+        new java.lang.String[] { "Balance", });
     internal_static_cosmos_bank_v1beta1_QueryAllBalancesRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_bank_v1beta1_QueryAllBalancesRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryAllBalancesRequest_descriptor,
-        new String[] { "Address", "Pagination", });
+        new java.lang.String[] { "Address", "Pagination", });
     internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryAllBalancesResponse_descriptor,
-        new String[] { "Balances", "Pagination", });
+        new java.lang.String[] { "Balances", "Pagination", });
     internal_static_cosmos_bank_v1beta1_QuerySpendableBalancesRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_bank_v1beta1_QuerySpendableBalancesRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QuerySpendableBalancesRequest_descriptor,
-        new String[] { "Address", "Pagination", });
+        new java.lang.String[] { "Address", "Pagination", });
     internal_static_cosmos_bank_v1beta1_QuerySpendableBalancesResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_bank_v1beta1_QuerySpendableBalancesResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QuerySpendableBalancesResponse_descriptor,
-        new String[] { "Balances", "Pagination", });
+        new java.lang.String[] { "Balances", "Pagination", });
     internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_descriptor,
-        new String[] { "Pagination", });
+        new java.lang.String[] { "Pagination", });
     internal_static_cosmos_bank_v1beta1_QueryTotalSupplyResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_bank_v1beta1_QueryTotalSupplyResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryTotalSupplyResponse_descriptor,
-        new String[] { "Supply", "Pagination", });
+        new java.lang.String[] { "Supply", "Pagination", });
     internal_static_cosmos_bank_v1beta1_QuerySupplyOfRequest_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_cosmos_bank_v1beta1_QuerySupplyOfRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QuerySupplyOfRequest_descriptor,
-        new String[] { "Denom", });
+        new java.lang.String[] { "Denom", });
     internal_static_cosmos_bank_v1beta1_QuerySupplyOfResponse_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_cosmos_bank_v1beta1_QuerySupplyOfResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QuerySupplyOfResponse_descriptor,
-        new String[] { "Amount", });
+        new java.lang.String[] { "Amount", });
     internal_static_cosmos_bank_v1beta1_QueryParamsRequest_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_cosmos_bank_v1beta1_QueryParamsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryParamsRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_bank_v1beta1_QueryParamsResponse_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_cosmos_bank_v1beta1_QueryParamsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryParamsResponse_descriptor,
-        new String[] { "Params", });
+        new java.lang.String[] { "Params", });
     internal_static_cosmos_bank_v1beta1_QueryDenomsMetadataRequest_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_cosmos_bank_v1beta1_QueryDenomsMetadataRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryDenomsMetadataRequest_descriptor,
-        new String[] { "Pagination", });
+        new java.lang.String[] { "Pagination", });
     internal_static_cosmos_bank_v1beta1_QueryDenomsMetadataResponse_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_cosmos_bank_v1beta1_QueryDenomsMetadataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryDenomsMetadataResponse_descriptor,
-        new String[] { "Metadatas", "Pagination", });
+        new java.lang.String[] { "Metadatas", "Pagination", });
     internal_static_cosmos_bank_v1beta1_QueryDenomMetadataRequest_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_cosmos_bank_v1beta1_QueryDenomMetadataRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryDenomMetadataRequest_descriptor,
-        new String[] { "Denom", });
+        new java.lang.String[] { "Denom", });
     internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_descriptor =
       getDescriptor().getMessageTypes().get(15);
     internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_descriptor,
-        new String[] { "Metadata", });
+        new java.lang.String[] { "Metadata", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);
@@ -310,7 +310,7 @@ public final class QueryProto {
     com.gogoproto.GogoProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
     com.cosmos.base.v1beta1.CoinProto.getDescriptor();
-    BankProto.getDescriptor();
+    com.cosmos.bank.v1beta1.BankProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

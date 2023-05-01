@@ -16,7 +16,7 @@ public interface QueryParamsRequestOrBuilder extends
    * <code>string params_type = 1 [json_name = "paramsType"];</code>
    * @return The paramsType.
    */
-  String getParamsType();
+  java.lang.String getParamsType();
   /**
    * <pre>
    * params_type defines which parameters to query for, can be one of "voting",

@@ -16,7 +16,7 @@ public interface CounterpartyOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  String getClientId();
+  java.lang.String getClientId();
   /**
    * <pre>
    * identifies the client on the counterparty chain associated with a given
@@ -38,7 +38,7 @@ public interface CounterpartyOrBuilder extends
    * <code>string connection_id = 2 [json_name = "connectionId", (.gogoproto.moretags) = "yaml:&#92;"connection_id&#92;""];</code>
    * @return The connectionId.
    */
-  String getConnectionId();
+  java.lang.String getConnectionId();
   /**
    * <pre>
    * identifies the connection end on the counterparty chain associated with a

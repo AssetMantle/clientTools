@@ -97,7 +97,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n*cosmos/base/tendermint/v1beta1/query.p" +
       "roto\022\036cosmos.base.tendermint.v1beta1\032\024go" +
       "goproto/gogo.proto\032\031google/protobuf/any." +
@@ -205,91 +205,91 @@ public final class QueryProto {
     internal_static_cosmos_base_tendermint_v1beta1_GetValidatorSetByHeightRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetValidatorSetByHeightRequest_descriptor,
-        new String[] { "Height", "Pagination", });
+        new java.lang.String[] { "Height", "Pagination", });
     internal_static_cosmos_base_tendermint_v1beta1_GetValidatorSetByHeightResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_base_tendermint_v1beta1_GetValidatorSetByHeightResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetValidatorSetByHeightResponse_descriptor,
-        new String[] { "BlockHeight", "Validators", "Pagination", });
+        new java.lang.String[] { "BlockHeight", "Validators", "Pagination", });
     internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetRequest_descriptor,
-        new String[] { "Pagination", });
+        new java.lang.String[] { "Pagination", });
     internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_descriptor,
-        new String[] { "BlockHeight", "Validators", "Pagination", });
+        new java.lang.String[] { "BlockHeight", "Validators", "Pagination", });
     internal_static_cosmos_base_tendermint_v1beta1_Validator_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_cosmos_base_tendermint_v1beta1_Validator_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_Validator_descriptor,
-        new String[] { "Address", "PubKey", "VotingPower", "ProposerPriority", });
+        new java.lang.String[] { "Address", "PubKey", "VotingPower", "ProposerPriority", });
     internal_static_cosmos_base_tendermint_v1beta1_GetBlockByHeightRequest_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_base_tendermint_v1beta1_GetBlockByHeightRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetBlockByHeightRequest_descriptor,
-        new String[] { "Height", });
+        new java.lang.String[] { "Height", });
     internal_static_cosmos_base_tendermint_v1beta1_GetBlockByHeightResponse_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_base_tendermint_v1beta1_GetBlockByHeightResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetBlockByHeightResponse_descriptor,
-        new String[] { "BlockId", "Block", });
+        new java.lang.String[] { "BlockId", "Block", });
     internal_static_cosmos_base_tendermint_v1beta1_GetLatestBlockRequest_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_cosmos_base_tendermint_v1beta1_GetLatestBlockRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetLatestBlockRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_base_tendermint_v1beta1_GetLatestBlockResponse_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_cosmos_base_tendermint_v1beta1_GetLatestBlockResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetLatestBlockResponse_descriptor,
-        new String[] { "BlockId", "Block", });
+        new java.lang.String[] { "BlockId", "Block", });
     internal_static_cosmos_base_tendermint_v1beta1_GetSyncingRequest_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_cosmos_base_tendermint_v1beta1_GetSyncingRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetSyncingRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_base_tendermint_v1beta1_GetSyncingResponse_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_cosmos_base_tendermint_v1beta1_GetSyncingResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetSyncingResponse_descriptor,
-        new String[] { "Syncing", });
+        new java.lang.String[] { "Syncing", });
     internal_static_cosmos_base_tendermint_v1beta1_GetNodeInfoRequest_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_cosmos_base_tendermint_v1beta1_GetNodeInfoRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetNodeInfoRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_cosmos_base_tendermint_v1beta1_GetNodeInfoResponse_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_cosmos_base_tendermint_v1beta1_GetNodeInfoResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_GetNodeInfoResponse_descriptor,
-        new String[] { "DefaultNodeInfo", "ApplicationVersion", });
+        new java.lang.String[] { "DefaultNodeInfo", "ApplicationVersion", });
     internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_VersionInfo_descriptor,
-        new String[] { "Name", "AppName", "Version", "GitCommit", "BuildTags", "GoVersion", "BuildDeps", "CosmosSdkVersion", });
+        new java.lang.String[] { "Name", "AppName", "Version", "GitCommit", "BuildTags", "GoVersion", "BuildDeps", "CosmosSdkVersion", });
     internal_static_cosmos_base_tendermint_v1beta1_Module_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_cosmos_base_tendermint_v1beta1_Module_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_base_tendermint_v1beta1_Module_descriptor,
-        new String[] { "Path", "Version", "Sum", });
+        new java.lang.String[] { "Path", "Version", "Sum", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.google.api.AnnotationsProto.http);

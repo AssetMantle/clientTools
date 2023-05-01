@@ -27,29 +27,29 @@ private static final long serialVersionUID = 0L;
     goalBonded_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Params();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return MintProto.internal_static_cosmos_mint_v1beta1_Params_descriptor;
+    return com.cosmos.mint.v1beta1.MintProto.internal_static_cosmos_mint_v1beta1_Params_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return MintProto.internal_static_cosmos_mint_v1beta1_Params_fieldAccessorTable
+    return com.cosmos.mint.v1beta1.MintProto.internal_static_cosmos_mint_v1beta1_Params_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Params.class, Builder.class);
+            com.cosmos.mint.v1beta1.Params.class, com.cosmos.mint.v1beta1.Params.Builder.class);
   }
 
   public static final int MINT_DENOM_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object mintDenom_ = "";
+  private volatile java.lang.Object mintDenom_ = "";
   /**
    * <pre>
    * type of coin to mint
@@ -58,15 +58,15 @@ private static final long serialVersionUID = 0L;
    * <code>string mint_denom = 1 [json_name = "mintDenom"];</code>
    * @return The mintDenom.
    */
-  @Override
-  public String getMintDenom() {
-    Object ref = mintDenom_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getMintDenom() {
+    java.lang.Object ref = mintDenom_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       mintDenom_ = s;
       return s;
     }
@@ -79,14 +79,14 @@ private static final long serialVersionUID = 0L;
    * <code>string mint_denom = 1 [json_name = "mintDenom"];</code>
    * @return The bytes for mintDenom.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getMintDenomBytes() {
-    Object ref = mintDenom_;
-    if (ref instanceof String) {
+    java.lang.Object ref = mintDenom_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       mintDenom_ = b;
       return b;
     } else {
@@ -96,7 +96,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int INFLATION_RATE_CHANGE_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile Object inflationRateChange_ = "";
+  private volatile java.lang.Object inflationRateChange_ = "";
   /**
    * <pre>
    * maximum annual change in inflation rate
@@ -105,15 +105,15 @@ private static final long serialVersionUID = 0L;
    * <code>string inflation_rate_change = 2 [json_name = "inflationRateChange", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_rate_change&#92;""];</code>
    * @return The inflationRateChange.
    */
-  @Override
-  public String getInflationRateChange() {
-    Object ref = inflationRateChange_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getInflationRateChange() {
+    java.lang.Object ref = inflationRateChange_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       inflationRateChange_ = s;
       return s;
     }
@@ -126,14 +126,14 @@ private static final long serialVersionUID = 0L;
    * <code>string inflation_rate_change = 2 [json_name = "inflationRateChange", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_rate_change&#92;""];</code>
    * @return The bytes for inflationRateChange.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getInflationRateChangeBytes() {
-    Object ref = inflationRateChange_;
-    if (ref instanceof String) {
+    java.lang.Object ref = inflationRateChange_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       inflationRateChange_ = b;
       return b;
     } else {
@@ -143,7 +143,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int INFLATION_MAX_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile Object inflationMax_ = "";
+  private volatile java.lang.Object inflationMax_ = "";
   /**
    * <pre>
    * maximum inflation rate
@@ -152,15 +152,15 @@ private static final long serialVersionUID = 0L;
    * <code>string inflation_max = 3 [json_name = "inflationMax", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_max&#92;""];</code>
    * @return The inflationMax.
    */
-  @Override
-  public String getInflationMax() {
-    Object ref = inflationMax_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getInflationMax() {
+    java.lang.Object ref = inflationMax_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       inflationMax_ = s;
       return s;
     }
@@ -173,14 +173,14 @@ private static final long serialVersionUID = 0L;
    * <code>string inflation_max = 3 [json_name = "inflationMax", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_max&#92;""];</code>
    * @return The bytes for inflationMax.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getInflationMaxBytes() {
-    Object ref = inflationMax_;
-    if (ref instanceof String) {
+    java.lang.Object ref = inflationMax_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       inflationMax_ = b;
       return b;
     } else {
@@ -190,7 +190,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int INFLATION_MIN_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile Object inflationMin_ = "";
+  private volatile java.lang.Object inflationMin_ = "";
   /**
    * <pre>
    * minimum inflation rate
@@ -199,15 +199,15 @@ private static final long serialVersionUID = 0L;
    * <code>string inflation_min = 4 [json_name = "inflationMin", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_min&#92;""];</code>
    * @return The inflationMin.
    */
-  @Override
-  public String getInflationMin() {
-    Object ref = inflationMin_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getInflationMin() {
+    java.lang.Object ref = inflationMin_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       inflationMin_ = s;
       return s;
     }
@@ -220,14 +220,14 @@ private static final long serialVersionUID = 0L;
    * <code>string inflation_min = 4 [json_name = "inflationMin", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_min&#92;""];</code>
    * @return The bytes for inflationMin.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getInflationMinBytes() {
-    Object ref = inflationMin_;
-    if (ref instanceof String) {
+    java.lang.Object ref = inflationMin_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       inflationMin_ = b;
       return b;
     } else {
@@ -237,7 +237,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int GOAL_BONDED_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private volatile Object goalBonded_ = "";
+  private volatile java.lang.Object goalBonded_ = "";
   /**
    * <pre>
    * goal of percent bonded atoms
@@ -246,15 +246,15 @@ private static final long serialVersionUID = 0L;
    * <code>string goal_bonded = 5 [json_name = "goalBonded", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"goal_bonded&#92;""];</code>
    * @return The goalBonded.
    */
-  @Override
-  public String getGoalBonded() {
-    Object ref = goalBonded_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getGoalBonded() {
+    java.lang.Object ref = goalBonded_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       goalBonded_ = s;
       return s;
     }
@@ -267,14 +267,14 @@ private static final long serialVersionUID = 0L;
    * <code>string goal_bonded = 5 [json_name = "goalBonded", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"goal_bonded&#92;""];</code>
    * @return The bytes for goalBonded.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getGoalBondedBytes() {
-    Object ref = goalBonded_;
-    if (ref instanceof String) {
+    java.lang.Object ref = goalBonded_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       goalBonded_ = b;
       return b;
     } else {
@@ -292,13 +292,13 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 blocks_per_year = 6 [json_name = "blocksPerYear", (.gogoproto.moretags) = "yaml:&#92;"blocks_per_year&#92;""];</code>
    * @return The blocksPerYear.
    */
-  @Override
+  @java.lang.Override
   public long getBlocksPerYear() {
     return blocksPerYear_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -308,7 +308,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mintDenom_)) {
@@ -332,7 +332,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -362,15 +362,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Params)) {
+    if (!(obj instanceof com.cosmos.mint.v1beta1.Params)) {
       return super.equals(obj);
     }
-    Params other = (Params) obj;
+    com.cosmos.mint.v1beta1.Params other = (com.cosmos.mint.v1beta1.Params) obj;
 
     if (!getMintDenom()
         .equals(other.getMintDenom())) return false;
@@ -388,7 +388,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -413,69 +413,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Params parseFrom(
+  public static com.cosmos.mint.v1beta1.Params parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Params parseFrom(
+  public static com.cosmos.mint.v1beta1.Params parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Params parseFrom(
+  public static com.cosmos.mint.v1beta1.Params parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Params parseFrom(
+  public static com.cosmos.mint.v1beta1.Params parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Params parseFrom(byte[] data)
+  public static com.cosmos.mint.v1beta1.Params parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Params parseFrom(
+  public static com.cosmos.mint.v1beta1.Params parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Params parseFrom(java.io.InputStream input)
+  public static com.cosmos.mint.v1beta1.Params parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Params parseFrom(
+  public static com.cosmos.mint.v1beta1.Params parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Params parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.mint.v1beta1.Params parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Params parseDelimitedFrom(
+  public static com.cosmos.mint.v1beta1.Params parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Params parseFrom(
+  public static com.cosmos.mint.v1beta1.Params parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Params parseFrom(
+  public static com.cosmos.mint.v1beta1.Params parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -483,23 +483,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Params prototype) {
+  public static Builder newBuilder(com.cosmos.mint.v1beta1.Params prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -513,18 +513,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.mint.v1beta1.Params)
-      ParamsOrBuilder {
+      com.cosmos.mint.v1beta1.ParamsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MintProto.internal_static_cosmos_mint_v1beta1_Params_descriptor;
+      return com.cosmos.mint.v1beta1.MintProto.internal_static_cosmos_mint_v1beta1_Params_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MintProto.internal_static_cosmos_mint_v1beta1_Params_fieldAccessorTable
+      return com.cosmos.mint.v1beta1.MintProto.internal_static_cosmos_mint_v1beta1_Params_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Params.class, Builder.class);
+              com.cosmos.mint.v1beta1.Params.class, com.cosmos.mint.v1beta1.Params.Builder.class);
     }
 
     // Construct using com.cosmos.mint.v1beta1.Params.newBuilder()
@@ -533,11 +533,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -550,35 +550,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return MintProto.internal_static_cosmos_mint_v1beta1_Params_descriptor;
+      return com.cosmos.mint.v1beta1.MintProto.internal_static_cosmos_mint_v1beta1_Params_descriptor;
     }
 
-    @Override
-    public Params getDefaultInstanceForType() {
-      return Params.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.mint.v1beta1.Params getDefaultInstanceForType() {
+      return com.cosmos.mint.v1beta1.Params.getDefaultInstance();
     }
 
-    @Override
-    public Params build() {
-      Params result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.mint.v1beta1.Params build() {
+      com.cosmos.mint.v1beta1.Params result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Params buildPartial() {
-      Params result = new Params(this);
+    @java.lang.Override
+    public com.cosmos.mint.v1beta1.Params buildPartial() {
+      com.cosmos.mint.v1beta1.Params result = new com.cosmos.mint.v1beta1.Params(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(Params result) {
+    private void buildPartial0(com.cosmos.mint.v1beta1.Params result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.mintDenom_ = mintDenom_;
@@ -600,50 +600,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Params) {
-        return mergeFrom((Params)other);
+      if (other instanceof com.cosmos.mint.v1beta1.Params) {
+        return mergeFrom((com.cosmos.mint.v1beta1.Params)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Params other) {
-      if (other == Params.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.mint.v1beta1.Params other) {
+      if (other == com.cosmos.mint.v1beta1.Params.getDefaultInstance()) return this;
       if (!other.getMintDenom().isEmpty()) {
         mintDenom_ = other.mintDenom_;
         bitField0_ |= 0x00000001;
@@ -677,18 +677,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -745,7 +745,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object mintDenom_ = "";
+    private java.lang.Object mintDenom_ = "";
     /**
      * <pre>
      * type of coin to mint
@@ -754,16 +754,16 @@ private static final long serialVersionUID = 0L;
      * <code>string mint_denom = 1 [json_name = "mintDenom"];</code>
      * @return The mintDenom.
      */
-    public String getMintDenom() {
-      Object ref = mintDenom_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getMintDenom() {
+      java.lang.Object ref = mintDenom_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         mintDenom_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -776,11 +776,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getMintDenomBytes() {
-      Object ref = mintDenom_;
+      java.lang.Object ref = mintDenom_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         mintDenom_ = b;
         return b;
       } else {
@@ -797,7 +797,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setMintDenom(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       mintDenom_ = value;
       bitField0_ |= 0x00000001;
@@ -837,7 +837,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object inflationRateChange_ = "";
+    private java.lang.Object inflationRateChange_ = "";
     /**
      * <pre>
      * maximum annual change in inflation rate
@@ -846,16 +846,16 @@ private static final long serialVersionUID = 0L;
      * <code>string inflation_rate_change = 2 [json_name = "inflationRateChange", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_rate_change&#92;""];</code>
      * @return The inflationRateChange.
      */
-    public String getInflationRateChange() {
-      Object ref = inflationRateChange_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getInflationRateChange() {
+      java.lang.Object ref = inflationRateChange_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         inflationRateChange_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -868,11 +868,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getInflationRateChangeBytes() {
-      Object ref = inflationRateChange_;
+      java.lang.Object ref = inflationRateChange_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         inflationRateChange_ = b;
         return b;
       } else {
@@ -889,7 +889,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setInflationRateChange(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       inflationRateChange_ = value;
       bitField0_ |= 0x00000002;
@@ -929,7 +929,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object inflationMax_ = "";
+    private java.lang.Object inflationMax_ = "";
     /**
      * <pre>
      * maximum inflation rate
@@ -938,16 +938,16 @@ private static final long serialVersionUID = 0L;
      * <code>string inflation_max = 3 [json_name = "inflationMax", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_max&#92;""];</code>
      * @return The inflationMax.
      */
-    public String getInflationMax() {
-      Object ref = inflationMax_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getInflationMax() {
+      java.lang.Object ref = inflationMax_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         inflationMax_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -960,11 +960,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getInflationMaxBytes() {
-      Object ref = inflationMax_;
+      java.lang.Object ref = inflationMax_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         inflationMax_ = b;
         return b;
       } else {
@@ -981,7 +981,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setInflationMax(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       inflationMax_ = value;
       bitField0_ |= 0x00000004;
@@ -1021,7 +1021,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object inflationMin_ = "";
+    private java.lang.Object inflationMin_ = "";
     /**
      * <pre>
      * minimum inflation rate
@@ -1030,16 +1030,16 @@ private static final long serialVersionUID = 0L;
      * <code>string inflation_min = 4 [json_name = "inflationMin", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"inflation_min&#92;""];</code>
      * @return The inflationMin.
      */
-    public String getInflationMin() {
-      Object ref = inflationMin_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getInflationMin() {
+      java.lang.Object ref = inflationMin_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         inflationMin_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1052,11 +1052,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getInflationMinBytes() {
-      Object ref = inflationMin_;
+      java.lang.Object ref = inflationMin_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         inflationMin_ = b;
         return b;
       } else {
@@ -1073,7 +1073,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setInflationMin(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       inflationMin_ = value;
       bitField0_ |= 0x00000008;
@@ -1113,7 +1113,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object goalBonded_ = "";
+    private java.lang.Object goalBonded_ = "";
     /**
      * <pre>
      * goal of percent bonded atoms
@@ -1122,16 +1122,16 @@ private static final long serialVersionUID = 0L;
      * <code>string goal_bonded = 5 [json_name = "goalBonded", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"goal_bonded&#92;""];</code>
      * @return The goalBonded.
      */
-    public String getGoalBonded() {
-      Object ref = goalBonded_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getGoalBonded() {
+      java.lang.Object ref = goalBonded_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         goalBonded_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1144,11 +1144,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getGoalBondedBytes() {
-      Object ref = goalBonded_;
+      java.lang.Object ref = goalBonded_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         goalBonded_ = b;
         return b;
       } else {
@@ -1165,7 +1165,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setGoalBonded(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       goalBonded_ = value;
       bitField0_ |= 0x00000010;
@@ -1214,7 +1214,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 blocks_per_year = 6 [json_name = "blocksPerYear", (.gogoproto.moretags) = "yaml:&#92;"blocks_per_year&#92;""];</code>
      * @return The blocksPerYear.
      */
-    @Override
+    @java.lang.Override
     public long getBlocksPerYear() {
       return blocksPerYear_;
     }
@@ -1248,13 +1248,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1265,18 +1265,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.mint.v1beta1.Params)
-  private static final Params DEFAULT_INSTANCE;
+  private static final com.cosmos.mint.v1beta1.Params DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Params();
+    DEFAULT_INSTANCE = new com.cosmos.mint.v1beta1.Params();
   }
 
-  public static Params getDefaultInstance() {
+  public static com.cosmos.mint.v1beta1.Params getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Params>
       PARSER = new com.google.protobuf.AbstractParser<Params>() {
-    @Override
+    @java.lang.Override
     public Params parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1300,13 +1300,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Params> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Params getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.mint.v1beta1.Params getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -23,28 +23,28 @@ private static final long serialVersionUID = 0L;
   private QueryDenomMetadataResponse() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryDenomMetadataResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_descriptor;
+    return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_fieldAccessorTable
+    return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryDenomMetadataResponse.class, Builder.class);
+            com.cosmos.bank.v1beta1.QueryDenomMetadataResponse.class, com.cosmos.bank.v1beta1.QueryDenomMetadataResponse.Builder.class);
   }
 
   public static final int METADATA_FIELD_NUMBER = 1;
-  private Metadata metadata_;
+  private com.cosmos.bank.v1beta1.Metadata metadata_;
   /**
    * <pre>
    * metadata describes and provides all the client information for the requested token.
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
    * @return Whether the metadata field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasMetadata() {
     return metadata_ != null;
   }
@@ -65,9 +65,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
    * @return The metadata.
    */
-  @Override
-  public Metadata getMetadata() {
-    return metadata_ == null ? Metadata.getDefaultInstance() : metadata_;
+  @java.lang.Override
+  public com.cosmos.bank.v1beta1.Metadata getMetadata() {
+    return metadata_ == null ? com.cosmos.bank.v1beta1.Metadata.getDefaultInstance() : metadata_;
   }
   /**
    * <pre>
@@ -76,13 +76,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public MetadataOrBuilder getMetadataOrBuilder() {
-    return metadata_ == null ? Metadata.getDefaultInstance() : metadata_;
+  @java.lang.Override
+  public com.cosmos.bank.v1beta1.MetadataOrBuilder getMetadataOrBuilder() {
+    return metadata_ == null ? com.cosmos.bank.v1beta1.Metadata.getDefaultInstance() : metadata_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -92,7 +92,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (metadata_ != null) {
@@ -101,7 +101,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -116,15 +116,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryDenomMetadataResponse)) {
+    if (!(obj instanceof com.cosmos.bank.v1beta1.QueryDenomMetadataResponse)) {
       return super.equals(obj);
     }
-    QueryDenomMetadataResponse other = (QueryDenomMetadataResponse) obj;
+    com.cosmos.bank.v1beta1.QueryDenomMetadataResponse other = (com.cosmos.bank.v1beta1.QueryDenomMetadataResponse) obj;
 
     if (hasMetadata() != other.hasMetadata()) return false;
     if (hasMetadata()) {
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -151,69 +151,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryDenomMetadataResponse parseFrom(
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDenomMetadataResponse parseFrom(
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDenomMetadataResponse parseFrom(
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDenomMetadataResponse parseFrom(
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDenomMetadataResponse parseFrom(byte[] data)
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryDenomMetadataResponse parseFrom(
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryDenomMetadataResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryDenomMetadataResponse parseFrom(
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryDenomMetadataResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryDenomMetadataResponse parseDelimitedFrom(
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryDenomMetadataResponse parseFrom(
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryDenomMetadataResponse parseFrom(
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,23 +221,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryDenomMetadataResponse prototype) {
+  public static Builder newBuilder(com.cosmos.bank.v1beta1.QueryDenomMetadataResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -252,18 +252,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.bank.v1beta1.QueryDenomMetadataResponse)
-      QueryDenomMetadataResponseOrBuilder {
+      com.cosmos.bank.v1beta1.QueryDenomMetadataResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_descriptor;
+      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_fieldAccessorTable
+      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryDenomMetadataResponse.class, Builder.class);
+              com.cosmos.bank.v1beta1.QueryDenomMetadataResponse.class, com.cosmos.bank.v1beta1.QueryDenomMetadataResponse.Builder.class);
     }
 
     // Construct using com.cosmos.bank.v1beta1.QueryDenomMetadataResponse.newBuilder()
@@ -272,11 +272,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -288,35 +288,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_descriptor;
+      return com.cosmos.bank.v1beta1.QueryProto.internal_static_cosmos_bank_v1beta1_QueryDenomMetadataResponse_descriptor;
     }
 
-    @Override
-    public QueryDenomMetadataResponse getDefaultInstanceForType() {
-      return QueryDenomMetadataResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.bank.v1beta1.QueryDenomMetadataResponse getDefaultInstanceForType() {
+      return com.cosmos.bank.v1beta1.QueryDenomMetadataResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryDenomMetadataResponse build() {
-      QueryDenomMetadataResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.bank.v1beta1.QueryDenomMetadataResponse build() {
+      com.cosmos.bank.v1beta1.QueryDenomMetadataResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryDenomMetadataResponse buildPartial() {
-      QueryDenomMetadataResponse result = new QueryDenomMetadataResponse(this);
+    @java.lang.Override
+    public com.cosmos.bank.v1beta1.QueryDenomMetadataResponse buildPartial() {
+      com.cosmos.bank.v1beta1.QueryDenomMetadataResponse result = new com.cosmos.bank.v1beta1.QueryDenomMetadataResponse(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(QueryDenomMetadataResponse result) {
+    private void buildPartial0(com.cosmos.bank.v1beta1.QueryDenomMetadataResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.metadata_ = metadataBuilder_ == null
@@ -325,50 +325,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryDenomMetadataResponse) {
-        return mergeFrom((QueryDenomMetadataResponse)other);
+      if (other instanceof com.cosmos.bank.v1beta1.QueryDenomMetadataResponse) {
+        return mergeFrom((com.cosmos.bank.v1beta1.QueryDenomMetadataResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryDenomMetadataResponse other) {
-      if (other == QueryDenomMetadataResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.bank.v1beta1.QueryDenomMetadataResponse other) {
+      if (other == com.cosmos.bank.v1beta1.QueryDenomMetadataResponse.getDefaultInstance()) return this;
       if (other.hasMetadata()) {
         mergeMetadata(other.getMetadata());
       }
@@ -377,18 +377,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -422,9 +422,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Metadata metadata_;
+    private com.cosmos.bank.v1beta1.Metadata metadata_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        Metadata, Metadata.Builder, MetadataOrBuilder> metadataBuilder_;
+        com.cosmos.bank.v1beta1.Metadata, com.cosmos.bank.v1beta1.Metadata.Builder, com.cosmos.bank.v1beta1.MetadataOrBuilder> metadataBuilder_;
     /**
      * <pre>
      * metadata describes and provides all the client information for the requested token.
@@ -444,9 +444,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
      * @return The metadata.
      */
-    public Metadata getMetadata() {
+    public com.cosmos.bank.v1beta1.Metadata getMetadata() {
       if (metadataBuilder_ == null) {
-        return metadata_ == null ? Metadata.getDefaultInstance() : metadata_;
+        return metadata_ == null ? com.cosmos.bank.v1beta1.Metadata.getDefaultInstance() : metadata_;
       } else {
         return metadataBuilder_.getMessage();
       }
@@ -458,7 +458,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setMetadata(Metadata value) {
+    public Builder setMetadata(com.cosmos.bank.v1beta1.Metadata value) {
       if (metadataBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -479,7 +479,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
      */
     public Builder setMetadata(
-        Metadata.Builder builderForValue) {
+        com.cosmos.bank.v1beta1.Metadata.Builder builderForValue) {
       if (metadataBuilder_ == null) {
         metadata_ = builderForValue.build();
       } else {
@@ -496,11 +496,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeMetadata(Metadata value) {
+    public Builder mergeMetadata(com.cosmos.bank.v1beta1.Metadata value) {
       if (metadataBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           metadata_ != null &&
-          metadata_ != Metadata.getDefaultInstance()) {
+          metadata_ != com.cosmos.bank.v1beta1.Metadata.getDefaultInstance()) {
           getMetadataBuilder().mergeFrom(value);
         } else {
           metadata_ = value;
@@ -536,7 +536,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
      */
-    public Metadata.Builder getMetadataBuilder() {
+    public com.cosmos.bank.v1beta1.Metadata.Builder getMetadataBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getMetadataFieldBuilder().getBuilder();
@@ -548,12 +548,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
      */
-    public MetadataOrBuilder getMetadataOrBuilder() {
+    public com.cosmos.bank.v1beta1.MetadataOrBuilder getMetadataOrBuilder() {
       if (metadataBuilder_ != null) {
         return metadataBuilder_.getMessageOrBuilder();
       } else {
         return metadata_ == null ?
-            Metadata.getDefaultInstance() : metadata_;
+            com.cosmos.bank.v1beta1.Metadata.getDefaultInstance() : metadata_;
       }
     }
     /**
@@ -564,11 +564,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [json_name = "metadata", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Metadata, Metadata.Builder, MetadataOrBuilder>
+        com.cosmos.bank.v1beta1.Metadata, com.cosmos.bank.v1beta1.Metadata.Builder, com.cosmos.bank.v1beta1.MetadataOrBuilder> 
         getMetadataFieldBuilder() {
       if (metadataBuilder_ == null) {
         metadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Metadata, Metadata.Builder, MetadataOrBuilder>(
+            com.cosmos.bank.v1beta1.Metadata, com.cosmos.bank.v1beta1.Metadata.Builder, com.cosmos.bank.v1beta1.MetadataOrBuilder>(
                 getMetadata(),
                 getParentForChildren(),
                 isClean());
@@ -576,13 +576,13 @@ private static final long serialVersionUID = 0L;
       }
       return metadataBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -593,18 +593,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.bank.v1beta1.QueryDenomMetadataResponse)
-  private static final QueryDenomMetadataResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.bank.v1beta1.QueryDenomMetadataResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryDenomMetadataResponse();
+    DEFAULT_INSTANCE = new com.cosmos.bank.v1beta1.QueryDenomMetadataResponse();
   }
 
-  public static QueryDenomMetadataResponse getDefaultInstance() {
+  public static com.cosmos.bank.v1beta1.QueryDenomMetadataResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryDenomMetadataResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryDenomMetadataResponse>() {
-    @Override
+    @java.lang.Override
     public QueryDenomMetadataResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -628,13 +628,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryDenomMetadataResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryDenomMetadataResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.bank.v1beta1.QueryDenomMetadataResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

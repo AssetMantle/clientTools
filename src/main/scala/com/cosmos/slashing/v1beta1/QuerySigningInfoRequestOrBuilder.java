@@ -15,7 +15,7 @@ public interface QuerySigningInfoRequestOrBuilder extends
    * <code>string cons_address = 1 [json_name = "consAddress"];</code>
    * @return The consAddress.
    */
-  String getConsAddress();
+  java.lang.String getConsAddress();
   /**
    * <pre>
    * cons_address is the address to query signing info of

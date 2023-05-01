@@ -11,7 +11,7 @@ public interface DecProtoOrBuilder extends
    * <code>string dec = 1 [json_name = "dec", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "Dec"];</code>
    * @return The dec.
    */
-  String getDec();
+  java.lang.String getDec();
   /**
    * <code>string dec = 1 [json_name = "dec", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "Dec"];</code>
    * @return The bytes for dec.

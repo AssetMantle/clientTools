@@ -27,7 +27,7 @@ public final class KeysProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n!cosmos/crypto/multisig/keys.proto\022\026cos" +
       "mos.crypto.multisig\032\024gogoproto/gogo.prot" +
       "o\032\031google/protobuf/any.proto\"\243\001\n\021LegacyA" +
@@ -53,7 +53,7 @@ public final class KeysProto {
     internal_static_cosmos_crypto_multisig_LegacyAminoPubKey_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_crypto_multisig_LegacyAminoPubKey_descriptor,
-        new String[] { "Threshold", "PublicKeys", });
+        new java.lang.String[] { "Threshold", "PublicKeys", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customname);

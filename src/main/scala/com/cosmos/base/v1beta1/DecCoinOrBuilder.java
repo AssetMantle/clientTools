@@ -11,7 +11,7 @@ public interface DecCoinOrBuilder extends
    * <code>string denom = 1 [json_name = "denom"];</code>
    * @return The denom.
    */
-  String getDenom();
+  java.lang.String getDenom();
   /**
    * <code>string denom = 1 [json_name = "denom"];</code>
    * @return The bytes for denom.
@@ -23,7 +23,7 @@ public interface DecCoinOrBuilder extends
    * <code>string amount = 2 [json_name = "amount", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "Dec"];</code>
    * @return The amount.
    */
-  String getAmount();
+  java.lang.String getAmount();
   /**
    * <code>string amount = 2 [json_name = "amount", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "Dec"];</code>
    * @return The bytes for amount.

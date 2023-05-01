@@ -25,28 +25,28 @@ private static final long serialVersionUID = 0L;
     periodCanSpend_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new PeriodicAllowance();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return FeegrantProto.internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_descriptor;
+    return com.cosmos.feegrant.v1beta1.FeegrantProto.internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return FeegrantProto.internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_fieldAccessorTable
+    return com.cosmos.feegrant.v1beta1.FeegrantProto.internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            PeriodicAllowance.class, Builder.class);
+            com.cosmos.feegrant.v1beta1.PeriodicAllowance.class, com.cosmos.feegrant.v1beta1.PeriodicAllowance.Builder.class);
   }
 
   public static final int BASIC_FIELD_NUMBER = 1;
-  private BasicAllowance basic_;
+  private com.cosmos.feegrant.v1beta1.BasicAllowance basic_;
   /**
    * <pre>
    * basic specifies a struct of `BasicAllowance`
@@ -55,7 +55,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
    * @return Whether the basic field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasBasic() {
     return basic_ != null;
   }
@@ -67,9 +67,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
    * @return The basic.
    */
-  @Override
-  public BasicAllowance getBasic() {
-    return basic_ == null ? BasicAllowance.getDefaultInstance() : basic_;
+  @java.lang.Override
+  public com.cosmos.feegrant.v1beta1.BasicAllowance getBasic() {
+    return basic_ == null ? com.cosmos.feegrant.v1beta1.BasicAllowance.getDefaultInstance() : basic_;
   }
   /**
    * <pre>
@@ -78,9 +78,9 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public BasicAllowanceOrBuilder getBasicOrBuilder() {
-    return basic_ == null ? BasicAllowance.getDefaultInstance() : basic_;
+  @java.lang.Override
+  public com.cosmos.feegrant.v1beta1.BasicAllowanceOrBuilder getBasicOrBuilder() {
+    return basic_ == null ? com.cosmos.feegrant.v1beta1.BasicAllowance.getDefaultInstance() : basic_;
   }
 
   public static final int PERIOD_FIELD_NUMBER = 2;
@@ -94,7 +94,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration period = 2 [json_name = "period", (.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];</code>
    * @return Whether the period field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasPeriod() {
     return period_ != null;
   }
@@ -107,7 +107,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Duration period = 2 [json_name = "period", (.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];</code>
    * @return The period.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Duration getPeriod() {
     return period_ == null ? com.google.protobuf.Duration.getDefaultInstance() : period_;
   }
@@ -119,7 +119,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Duration period = 2 [json_name = "period", (.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.DurationOrBuilder getPeriodOrBuilder() {
     return period_ == null ? com.google.protobuf.Duration.getDefaultInstance() : period_;
   }
@@ -135,7 +135,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin period_spend_limit = 3 [json_name = "periodSpendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<com.cosmos.base.v1beta1.Coin> getPeriodSpendLimitList() {
     return periodSpendLimit_;
   }
@@ -147,7 +147,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin period_spend_limit = 3 [json_name = "periodSpendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<? extends com.cosmos.base.v1beta1.CoinOrBuilder> 
       getPeriodSpendLimitOrBuilderList() {
     return periodSpendLimit_;
@@ -160,7 +160,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin period_spend_limit = 3 [json_name = "periodSpendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getPeriodSpendLimitCount() {
     return periodSpendLimit_.size();
   }
@@ -172,7 +172,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin period_spend_limit = 3 [json_name = "periodSpendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.Coin getPeriodSpendLimit(int index) {
     return periodSpendLimit_.get(index);
   }
@@ -184,7 +184,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin period_spend_limit = 3 [json_name = "periodSpendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.CoinOrBuilder getPeriodSpendLimitOrBuilder(
       int index) {
     return periodSpendLimit_.get(index);
@@ -200,7 +200,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin period_can_spend = 4 [json_name = "periodCanSpend", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<com.cosmos.base.v1beta1.Coin> getPeriodCanSpendList() {
     return periodCanSpend_;
   }
@@ -211,7 +211,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin period_can_spend = 4 [json_name = "periodCanSpend", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<? extends com.cosmos.base.v1beta1.CoinOrBuilder> 
       getPeriodCanSpendOrBuilderList() {
     return periodCanSpend_;
@@ -223,7 +223,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin period_can_spend = 4 [json_name = "periodCanSpend", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getPeriodCanSpendCount() {
     return periodCanSpend_.size();
   }
@@ -234,7 +234,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin period_can_spend = 4 [json_name = "periodCanSpend", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.Coin getPeriodCanSpend(int index) {
     return periodCanSpend_.get(index);
   }
@@ -245,7 +245,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.v1beta1.Coin period_can_spend = 4 [json_name = "periodCanSpend", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.CoinOrBuilder getPeriodCanSpendOrBuilder(
       int index) {
     return periodCanSpend_.get(index);
@@ -263,7 +263,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp period_reset = 5 [json_name = "periodReset", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return Whether the periodReset field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasPeriodReset() {
     return periodReset_ != null;
   }
@@ -277,7 +277,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Timestamp period_reset = 5 [json_name = "periodReset", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    * @return The periodReset.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Timestamp getPeriodReset() {
     return periodReset_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : periodReset_;
   }
@@ -290,13 +290,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Timestamp period_reset = 5 [json_name = "periodReset", (.gogoproto.nullable) = false, (.gogoproto.stdtime) = true];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getPeriodResetOrBuilder() {
     return periodReset_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : periodReset_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -306,7 +306,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (basic_ != null) {
@@ -327,7 +327,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -358,15 +358,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof PeriodicAllowance)) {
+    if (!(obj instanceof com.cosmos.feegrant.v1beta1.PeriodicAllowance)) {
       return super.equals(obj);
     }
-    PeriodicAllowance other = (PeriodicAllowance) obj;
+    com.cosmos.feegrant.v1beta1.PeriodicAllowance other = (com.cosmos.feegrant.v1beta1.PeriodicAllowance) obj;
 
     if (hasBasic() != other.hasBasic()) return false;
     if (hasBasic()) {
@@ -391,7 +391,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -423,69 +423,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static PeriodicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PeriodicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PeriodicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PeriodicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PeriodicAllowance parseFrom(byte[] data)
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PeriodicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PeriodicAllowance parseFrom(java.io.InputStream input)
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static PeriodicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static PeriodicAllowance parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static PeriodicAllowance parseDelimitedFrom(
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static PeriodicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static PeriodicAllowance parseFrom(
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -493,23 +493,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(PeriodicAllowance prototype) {
+  public static Builder newBuilder(com.cosmos.feegrant.v1beta1.PeriodicAllowance prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -524,18 +524,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.feegrant.v1beta1.PeriodicAllowance)
-      PeriodicAllowanceOrBuilder {
+      com.cosmos.feegrant.v1beta1.PeriodicAllowanceOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return FeegrantProto.internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_descriptor;
+      return com.cosmos.feegrant.v1beta1.FeegrantProto.internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return FeegrantProto.internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_fieldAccessorTable
+      return com.cosmos.feegrant.v1beta1.FeegrantProto.internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              PeriodicAllowance.class, Builder.class);
+              com.cosmos.feegrant.v1beta1.PeriodicAllowance.class, com.cosmos.feegrant.v1beta1.PeriodicAllowance.Builder.class);
     }
 
     // Construct using com.cosmos.feegrant.v1beta1.PeriodicAllowance.newBuilder()
@@ -544,11 +544,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -584,36 +584,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return FeegrantProto.internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_descriptor;
+      return com.cosmos.feegrant.v1beta1.FeegrantProto.internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_descriptor;
     }
 
-    @Override
-    public PeriodicAllowance getDefaultInstanceForType() {
-      return PeriodicAllowance.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.feegrant.v1beta1.PeriodicAllowance getDefaultInstanceForType() {
+      return com.cosmos.feegrant.v1beta1.PeriodicAllowance.getDefaultInstance();
     }
 
-    @Override
-    public PeriodicAllowance build() {
-      PeriodicAllowance result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.feegrant.v1beta1.PeriodicAllowance build() {
+      com.cosmos.feegrant.v1beta1.PeriodicAllowance result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public PeriodicAllowance buildPartial() {
-      PeriodicAllowance result = new PeriodicAllowance(this);
+    @java.lang.Override
+    public com.cosmos.feegrant.v1beta1.PeriodicAllowance buildPartial() {
+      com.cosmos.feegrant.v1beta1.PeriodicAllowance result = new com.cosmos.feegrant.v1beta1.PeriodicAllowance(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(PeriodicAllowance result) {
+    private void buildPartialRepeatedFields(com.cosmos.feegrant.v1beta1.PeriodicAllowance result) {
       if (periodSpendLimitBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0)) {
           periodSpendLimit_ = java.util.Collections.unmodifiableList(periodSpendLimit_);
@@ -634,7 +634,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(PeriodicAllowance result) {
+    private void buildPartial0(com.cosmos.feegrant.v1beta1.PeriodicAllowance result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.basic_ = basicBuilder_ == null
@@ -653,50 +653,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof PeriodicAllowance) {
-        return mergeFrom((PeriodicAllowance)other);
+      if (other instanceof com.cosmos.feegrant.v1beta1.PeriodicAllowance) {
+        return mergeFrom((com.cosmos.feegrant.v1beta1.PeriodicAllowance)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(PeriodicAllowance other) {
-      if (other == PeriodicAllowance.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.feegrant.v1beta1.PeriodicAllowance other) {
+      if (other == com.cosmos.feegrant.v1beta1.PeriodicAllowance.getDefaultInstance()) return this;
       if (other.hasBasic()) {
         mergeBasic(other.getBasic());
       }
@@ -763,18 +763,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -848,9 +848,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private BasicAllowance basic_;
+    private com.cosmos.feegrant.v1beta1.BasicAllowance basic_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        BasicAllowance, BasicAllowance.Builder, BasicAllowanceOrBuilder> basicBuilder_;
+        com.cosmos.feegrant.v1beta1.BasicAllowance, com.cosmos.feegrant.v1beta1.BasicAllowance.Builder, com.cosmos.feegrant.v1beta1.BasicAllowanceOrBuilder> basicBuilder_;
     /**
      * <pre>
      * basic specifies a struct of `BasicAllowance`
@@ -870,9 +870,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
      * @return The basic.
      */
-    public BasicAllowance getBasic() {
+    public com.cosmos.feegrant.v1beta1.BasicAllowance getBasic() {
       if (basicBuilder_ == null) {
-        return basic_ == null ? BasicAllowance.getDefaultInstance() : basic_;
+        return basic_ == null ? com.cosmos.feegrant.v1beta1.BasicAllowance.getDefaultInstance() : basic_;
       } else {
         return basicBuilder_.getMessage();
       }
@@ -884,7 +884,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setBasic(BasicAllowance value) {
+    public Builder setBasic(com.cosmos.feegrant.v1beta1.BasicAllowance value) {
       if (basicBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -905,7 +905,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
      */
     public Builder setBasic(
-        BasicAllowance.Builder builderForValue) {
+        com.cosmos.feegrant.v1beta1.BasicAllowance.Builder builderForValue) {
       if (basicBuilder_ == null) {
         basic_ = builderForValue.build();
       } else {
@@ -922,11 +922,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeBasic(BasicAllowance value) {
+    public Builder mergeBasic(com.cosmos.feegrant.v1beta1.BasicAllowance value) {
       if (basicBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           basic_ != null &&
-          basic_ != BasicAllowance.getDefaultInstance()) {
+          basic_ != com.cosmos.feegrant.v1beta1.BasicAllowance.getDefaultInstance()) {
           getBasicBuilder().mergeFrom(value);
         } else {
           basic_ = value;
@@ -962,7 +962,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
      */
-    public BasicAllowance.Builder getBasicBuilder() {
+    public com.cosmos.feegrant.v1beta1.BasicAllowance.Builder getBasicBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getBasicFieldBuilder().getBuilder();
@@ -974,12 +974,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
      */
-    public BasicAllowanceOrBuilder getBasicOrBuilder() {
+    public com.cosmos.feegrant.v1beta1.BasicAllowanceOrBuilder getBasicOrBuilder() {
       if (basicBuilder_ != null) {
         return basicBuilder_.getMessageOrBuilder();
       } else {
         return basic_ == null ?
-            BasicAllowance.getDefaultInstance() : basic_;
+            com.cosmos.feegrant.v1beta1.BasicAllowance.getDefaultInstance() : basic_;
       }
     }
     /**
@@ -990,11 +990,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.feegrant.v1beta1.BasicAllowance basic = 1 [json_name = "basic", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        BasicAllowance, BasicAllowance.Builder, BasicAllowanceOrBuilder>
+        com.cosmos.feegrant.v1beta1.BasicAllowance, com.cosmos.feegrant.v1beta1.BasicAllowance.Builder, com.cosmos.feegrant.v1beta1.BasicAllowanceOrBuilder> 
         getBasicFieldBuilder() {
       if (basicBuilder_ == null) {
         basicBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            BasicAllowance, BasicAllowance.Builder, BasicAllowanceOrBuilder>(
+            com.cosmos.feegrant.v1beta1.BasicAllowance, com.cosmos.feegrant.v1beta1.BasicAllowance.Builder, com.cosmos.feegrant.v1beta1.BasicAllowanceOrBuilder>(
                 getBasic(),
                 getParentForChildren(),
                 isClean());
@@ -1355,7 +1355,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.v1beta1.Coin period_spend_limit = 3 [json_name = "periodSpendLimit", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
     public Builder addAllPeriodSpendLimit(
-        Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
+        java.lang.Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
       if (periodSpendLimitBuilder_ == null) {
         ensurePeriodSpendLimitIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1675,7 +1675,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.v1beta1.Coin period_can_spend = 4 [json_name = "periodCanSpend", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
     public Builder addAllPeriodCanSpend(
-        Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
+        java.lang.Iterable<? extends com.cosmos.base.v1beta1.Coin> values) {
       if (periodCanSpendBuilder_ == null) {
         ensurePeriodCanSpendIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1981,13 +1981,13 @@ private static final long serialVersionUID = 0L;
       }
       return periodResetBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1998,18 +1998,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.feegrant.v1beta1.PeriodicAllowance)
-  private static final PeriodicAllowance DEFAULT_INSTANCE;
+  private static final com.cosmos.feegrant.v1beta1.PeriodicAllowance DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new PeriodicAllowance();
+    DEFAULT_INSTANCE = new com.cosmos.feegrant.v1beta1.PeriodicAllowance();
   }
 
-  public static PeriodicAllowance getDefaultInstance() {
+  public static com.cosmos.feegrant.v1beta1.PeriodicAllowance getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<PeriodicAllowance>
       PARSER = new com.google.protobuf.AbstractParser<PeriodicAllowance>() {
-    @Override
+    @java.lang.Override
     public PeriodicAllowance parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2033,13 +2033,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<PeriodicAllowance> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public PeriodicAllowance getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.feegrant.v1beta1.PeriodicAllowance getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

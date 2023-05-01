@@ -1,41 +1,41 @@
 package utilities
 
-import com.assets.transactions.burn.{Message => BurnAssetMessage}
-import com.assets.transactions.define.{Message => DefineAssetMessage}
-import com.assets.transactions.deputize.{Message => DeputizeAssetMessage}
-import com.assets.transactions.mint.{Message => MintAssetMessage}
-import com.assets.transactions.mutate.{Message => MutateAssetMessage}
-import com.assets.transactions.renumerate.{Message => RenumerateAssetMessage}
-import com.assets.transactions.revoke.{Message => RevokeAssetMessage}
+import com.assetmantle.modules.assets.transactions.burn.{Message => BurnAssetMessage}
+import com.assetmantle.modules.assets.transactions.define.{Message => DefineAssetMessage}
+import com.assetmantle.modules.assets.transactions.deputize.{Message => DeputizeAssetMessage}
+import com.assetmantle.modules.assets.transactions.mint.{Message => MintAssetMessage}
+import com.assetmantle.modules.assets.transactions.mutate.{Message => MutateAssetMessage}
+import com.assetmantle.modules.assets.transactions.renumerate.{Message => RenumerateAssetMessage}
+import com.assetmantle.modules.assets.transactions.revoke.{Message => RevokeAssetMessage}
+import com.assetmantle.modules.identities.transactions.define.{Message => DefineIDMessage}
+import com.assetmantle.modules.identities.transactions.deputize.{Message => DeputizeIDMessage}
+import com.assetmantle.modules.identities.transactions.issue.{Message => IssueIDMessage}
+import com.assetmantle.modules.identities.transactions.nub.{Message => NubIDMessage}
+import com.assetmantle.modules.identities.transactions.provision.{Message => ProvisionIDMessage}
+import com.assetmantle.modules.identities.transactions.quash.{Message => QuashIDMessage}
+import com.assetmantle.modules.identities.transactions.revoke.{Message => RevokeIDMessage}
+import com.assetmantle.modules.identities.transactions.unprovision.{Message => UnprovisionIDMessage}
+import com.assetmantle.modules.metas.transactions.reveal.{Message => MetasMessage}
+import com.assetmantle.modules.orders.transactions.cancel.{Message => CancelOrderMessage}
+import com.assetmantle.modules.orders.transactions.define.{Message => DefineOrderMessage}
+import com.assetmantle.modules.orders.transactions.deputize.{Message => DeputizeOrderMessage}
+import com.assetmantle.modules.orders.transactions.immediate.{Message => ImmediateOrderMessage}
+import com.assetmantle.modules.orders.transactions.make.{Message => MakeOrderMessage}
+import com.assetmantle.modules.orders.transactions.modify.{Message => ModifyOrderMessage}
+import com.assetmantle.modules.orders.transactions.revoke.{Message => RevokeOrderMessage}
+import com.assetmantle.modules.orders.transactions.take.{Message => TakeOrderMessage}
+import com.assetmantle.modules.splits.transactions.send.{Message => SendSplitMessage}
+import com.assetmantle.modules.splits.transactions.unwrap.{Message => UnwrapSplitMessage}
+import com.assetmantle.modules.splits.transactions.wrap.{Message => WrapSplitMessage}
+import com.assetmantle.schema.data.base.AnyData
+import com.assetmantle.schema.ids.base._
+import com.assetmantle.schema.lists.base.PropertyList
+import com.assetmantle.schema.types.base.Height
 import com.cosmos.bank.v1beta1.MsgSend
 import com.cosmos.base.v1beta1.Coin
 import com.cosmos.crypto.secp256k1
 import com.cosmos.tx.v1beta1._
-import com.data.AnyData
 import com.google.protobuf.{ByteString, Any => protoBufAny}
-import com.identities.transactions.define.{Message => DefineIDMessage}
-import com.identities.transactions.deputize.{Message => DeputizeIDMessage}
-import com.identities.transactions.issue.{Message => IssueIDMessage}
-import com.identities.transactions.nub.{Message => NubIDMessage}
-import com.identities.transactions.provision.{Message => ProvisionIDMessage}
-import com.identities.transactions.quash.{Message => QuashIDMessage}
-import com.identities.transactions.revoke.{Message => RevokeIDMessage}
-import com.identities.transactions.unprovision.{Message => UnprovisionIDMessage}
-import com.ids._
-import com.lists.PropertyList
-import com.metas.transactions.reveal.{Message => MetasMessage}
-import com.orders.transactions.cancel.{Message => CancelOrderMessage}
-import com.orders.transactions.define.{Message => DefineOrderMessage}
-import com.orders.transactions.deputize.{Message => DeputizeOrderMessage}
-import com.orders.transactions.immediate.{Message => ImmediateOrderMessage}
-import com.orders.transactions.make.{Message => MakeOrderMessage}
-import com.orders.transactions.modify.{Message => ModifyOrderMessage}
-import com.orders.transactions.revoke.{Message => RevokeOrderMessage}
-import com.orders.transactions.take.{Message => TakeOrderMessage}
-import com.splits.transactions.send.{Message => SendSplitMessage}
-import com.splits.transactions.unwrap.{Message => UnwrapSplitMessage}
-import com.splits.transactions.wrap.{Message => WrapSplitMessage}
-import com.types.Height
 import org.bitcoinj.core.ECKey
 import schema.list
 import schema.property.base.{MesaProperty, MetaProperty}

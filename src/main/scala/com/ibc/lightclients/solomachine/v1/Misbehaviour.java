@@ -24,42 +24,42 @@ private static final long serialVersionUID = 0L;
     clientId_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Misbehaviour();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_Misbehaviour_descriptor;
+    return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_Misbehaviour_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_Misbehaviour_fieldAccessorTable
+    return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_Misbehaviour_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Misbehaviour.class, Builder.class);
+            com.ibc.lightclients.solomachine.v1.Misbehaviour.class, com.ibc.lightclients.solomachine.v1.Misbehaviour.Builder.class);
   }
 
   public static final int CLIENT_ID_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object clientId_ = "";
+  private volatile java.lang.Object clientId_ = "";
   /**
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  @Override
-  public String getClientId() {
-    Object ref = clientId_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getClientId() {
+    java.lang.Object ref = clientId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       clientId_ = s;
       return s;
     }
@@ -68,14 +68,14 @@ private static final long serialVersionUID = 0L;
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The bytes for clientId.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getClientIdBytes() {
-    Object ref = clientId_;
-    if (ref instanceof String) {
+    java.lang.Object ref = clientId_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       clientId_ = b;
       return b;
     } else {
@@ -89,18 +89,18 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 sequence = 2 [json_name = "sequence"];</code>
    * @return The sequence.
    */
-  @Override
+  @java.lang.Override
   public long getSequence() {
     return sequence_;
   }
 
   public static final int SIGNATURE_ONE_FIELD_NUMBER = 3;
-  private SignatureAndData signatureOne_;
+  private com.ibc.lightclients.solomachine.v1.SignatureAndData signatureOne_;
   /**
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
    * @return Whether the signatureOne field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasSignatureOne() {
     return signatureOne_ != null;
   }
@@ -108,25 +108,25 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
    * @return The signatureOne.
    */
-  @Override
-  public SignatureAndData getSignatureOne() {
-    return signatureOne_ == null ? SignatureAndData.getDefaultInstance() : signatureOne_;
+  @java.lang.Override
+  public com.ibc.lightclients.solomachine.v1.SignatureAndData getSignatureOne() {
+    return signatureOne_ == null ? com.ibc.lightclients.solomachine.v1.SignatureAndData.getDefaultInstance() : signatureOne_;
   }
   /**
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
    */
-  @Override
-  public SignatureAndDataOrBuilder getSignatureOneOrBuilder() {
-    return signatureOne_ == null ? SignatureAndData.getDefaultInstance() : signatureOne_;
+  @java.lang.Override
+  public com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder getSignatureOneOrBuilder() {
+    return signatureOne_ == null ? com.ibc.lightclients.solomachine.v1.SignatureAndData.getDefaultInstance() : signatureOne_;
   }
 
   public static final int SIGNATURE_TWO_FIELD_NUMBER = 4;
-  private SignatureAndData signatureTwo_;
+  private com.ibc.lightclients.solomachine.v1.SignatureAndData signatureTwo_;
   /**
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
    * @return Whether the signatureTwo field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasSignatureTwo() {
     return signatureTwo_ != null;
   }
@@ -134,20 +134,20 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
    * @return The signatureTwo.
    */
-  @Override
-  public SignatureAndData getSignatureTwo() {
-    return signatureTwo_ == null ? SignatureAndData.getDefaultInstance() : signatureTwo_;
+  @java.lang.Override
+  public com.ibc.lightclients.solomachine.v1.SignatureAndData getSignatureTwo() {
+    return signatureTwo_ == null ? com.ibc.lightclients.solomachine.v1.SignatureAndData.getDefaultInstance() : signatureTwo_;
   }
   /**
    * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
    */
-  @Override
-  public SignatureAndDataOrBuilder getSignatureTwoOrBuilder() {
-    return signatureTwo_ == null ? SignatureAndData.getDefaultInstance() : signatureTwo_;
+  @java.lang.Override
+  public com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder getSignatureTwoOrBuilder() {
+    return signatureTwo_ == null ? com.ibc.lightclients.solomachine.v1.SignatureAndData.getDefaultInstance() : signatureTwo_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -157,7 +157,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientId_)) {
@@ -175,7 +175,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -201,15 +201,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Misbehaviour)) {
+    if (!(obj instanceof com.ibc.lightclients.solomachine.v1.Misbehaviour)) {
       return super.equals(obj);
     }
-    Misbehaviour other = (Misbehaviour) obj;
+    com.ibc.lightclients.solomachine.v1.Misbehaviour other = (com.ibc.lightclients.solomachine.v1.Misbehaviour) obj;
 
     if (!getClientId()
         .equals(other.getClientId())) return false;
@@ -229,7 +229,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -254,69 +254,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Misbehaviour parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Misbehaviour parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Misbehaviour parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Misbehaviour parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Misbehaviour parseFrom(byte[] data)
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Misbehaviour parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Misbehaviour parseFrom(java.io.InputStream input)
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Misbehaviour parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Misbehaviour parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Misbehaviour parseDelimitedFrom(
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Misbehaviour parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Misbehaviour parseFrom(
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -324,23 +324,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Misbehaviour prototype) {
+  public static Builder newBuilder(com.ibc.lightclients.solomachine.v1.Misbehaviour prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -355,18 +355,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.lightclients.solomachine.v1.Misbehaviour)
-      MisbehaviourOrBuilder {
+      com.ibc.lightclients.solomachine.v1.MisbehaviourOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_Misbehaviour_descriptor;
+      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_Misbehaviour_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_Misbehaviour_fieldAccessorTable
+      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_Misbehaviour_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Misbehaviour.class, Builder.class);
+              com.ibc.lightclients.solomachine.v1.Misbehaviour.class, com.ibc.lightclients.solomachine.v1.Misbehaviour.Builder.class);
     }
 
     // Construct using com.ibc.lightclients.solomachine.v1.Misbehaviour.newBuilder()
@@ -375,11 +375,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -398,35 +398,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_Misbehaviour_descriptor;
+      return com.ibc.lightclients.solomachine.v1.SolomachineProto.internal_static_ibc_lightclients_solomachine_v1_Misbehaviour_descriptor;
     }
 
-    @Override
-    public Misbehaviour getDefaultInstanceForType() {
-      return Misbehaviour.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.lightclients.solomachine.v1.Misbehaviour getDefaultInstanceForType() {
+      return com.ibc.lightclients.solomachine.v1.Misbehaviour.getDefaultInstance();
     }
 
-    @Override
-    public Misbehaviour build() {
-      Misbehaviour result = buildPartial();
+    @java.lang.Override
+    public com.ibc.lightclients.solomachine.v1.Misbehaviour build() {
+      com.ibc.lightclients.solomachine.v1.Misbehaviour result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Misbehaviour buildPartial() {
-      Misbehaviour result = new Misbehaviour(this);
+    @java.lang.Override
+    public com.ibc.lightclients.solomachine.v1.Misbehaviour buildPartial() {
+      com.ibc.lightclients.solomachine.v1.Misbehaviour result = new com.ibc.lightclients.solomachine.v1.Misbehaviour(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(Misbehaviour result) {
+    private void buildPartial0(com.ibc.lightclients.solomachine.v1.Misbehaviour result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.clientId_ = clientId_;
@@ -446,50 +446,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Misbehaviour) {
-        return mergeFrom((Misbehaviour)other);
+      if (other instanceof com.ibc.lightclients.solomachine.v1.Misbehaviour) {
+        return mergeFrom((com.ibc.lightclients.solomachine.v1.Misbehaviour)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Misbehaviour other) {
-      if (other == Misbehaviour.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.lightclients.solomachine.v1.Misbehaviour other) {
+      if (other == com.ibc.lightclients.solomachine.v1.Misbehaviour.getDefaultInstance()) return this;
       if (!other.getClientId().isEmpty()) {
         clientId_ = other.clientId_;
         bitField0_ |= 0x00000001;
@@ -509,18 +509,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -571,21 +571,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object clientId_ = "";
+    private java.lang.Object clientId_ = "";
     /**
      * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
      * @return The clientId.
      */
-    public String getClientId() {
-      Object ref = clientId_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getClientId() {
+      java.lang.Object ref = clientId_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         clientId_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -594,11 +594,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getClientIdBytes() {
-      Object ref = clientId_;
+      java.lang.Object ref = clientId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         clientId_ = b;
         return b;
       } else {
@@ -611,7 +611,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setClientId(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       clientId_ = value;
       bitField0_ |= 0x00000001;
@@ -648,7 +648,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 sequence = 2 [json_name = "sequence"];</code>
      * @return The sequence.
      */
-    @Override
+    @java.lang.Override
     public long getSequence() {
       return sequence_;
     }
@@ -675,9 +675,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private SignatureAndData signatureOne_;
+    private com.ibc.lightclients.solomachine.v1.SignatureAndData signatureOne_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        SignatureAndData, SignatureAndData.Builder, SignatureAndDataOrBuilder> signatureOneBuilder_;
+        com.ibc.lightclients.solomachine.v1.SignatureAndData, com.ibc.lightclients.solomachine.v1.SignatureAndData.Builder, com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder> signatureOneBuilder_;
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
      * @return Whether the signatureOne field is set.
@@ -689,9 +689,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
      * @return The signatureOne.
      */
-    public SignatureAndData getSignatureOne() {
+    public com.ibc.lightclients.solomachine.v1.SignatureAndData getSignatureOne() {
       if (signatureOneBuilder_ == null) {
-        return signatureOne_ == null ? SignatureAndData.getDefaultInstance() : signatureOne_;
+        return signatureOne_ == null ? com.ibc.lightclients.solomachine.v1.SignatureAndData.getDefaultInstance() : signatureOne_;
       } else {
         return signatureOneBuilder_.getMessage();
       }
@@ -699,7 +699,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
      */
-    public Builder setSignatureOne(SignatureAndData value) {
+    public Builder setSignatureOne(com.ibc.lightclients.solomachine.v1.SignatureAndData value) {
       if (signatureOneBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -716,7 +716,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
      */
     public Builder setSignatureOne(
-        SignatureAndData.Builder builderForValue) {
+        com.ibc.lightclients.solomachine.v1.SignatureAndData.Builder builderForValue) {
       if (signatureOneBuilder_ == null) {
         signatureOne_ = builderForValue.build();
       } else {
@@ -729,11 +729,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
      */
-    public Builder mergeSignatureOne(SignatureAndData value) {
+    public Builder mergeSignatureOne(com.ibc.lightclients.solomachine.v1.SignatureAndData value) {
       if (signatureOneBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0) &&
           signatureOne_ != null &&
-          signatureOne_ != SignatureAndData.getDefaultInstance()) {
+          signatureOne_ != com.ibc.lightclients.solomachine.v1.SignatureAndData.getDefaultInstance()) {
           getSignatureOneBuilder().mergeFrom(value);
         } else {
           signatureOne_ = value;
@@ -761,7 +761,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
      */
-    public SignatureAndData.Builder getSignatureOneBuilder() {
+    public com.ibc.lightclients.solomachine.v1.SignatureAndData.Builder getSignatureOneBuilder() {
       bitField0_ |= 0x00000004;
       onChanged();
       return getSignatureOneFieldBuilder().getBuilder();
@@ -769,23 +769,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
      */
-    public SignatureAndDataOrBuilder getSignatureOneOrBuilder() {
+    public com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder getSignatureOneOrBuilder() {
       if (signatureOneBuilder_ != null) {
         return signatureOneBuilder_.getMessageOrBuilder();
       } else {
         return signatureOne_ == null ?
-            SignatureAndData.getDefaultInstance() : signatureOne_;
+            com.ibc.lightclients.solomachine.v1.SignatureAndData.getDefaultInstance() : signatureOne_;
       }
     }
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_one = 3 [json_name = "signatureOne", (.gogoproto.moretags) = "yaml:&#92;"signature_one&#92;""];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        SignatureAndData, SignatureAndData.Builder, SignatureAndDataOrBuilder>
+        com.ibc.lightclients.solomachine.v1.SignatureAndData, com.ibc.lightclients.solomachine.v1.SignatureAndData.Builder, com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder> 
         getSignatureOneFieldBuilder() {
       if (signatureOneBuilder_ == null) {
         signatureOneBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            SignatureAndData, SignatureAndData.Builder, SignatureAndDataOrBuilder>(
+            com.ibc.lightclients.solomachine.v1.SignatureAndData, com.ibc.lightclients.solomachine.v1.SignatureAndData.Builder, com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder>(
                 getSignatureOne(),
                 getParentForChildren(),
                 isClean());
@@ -794,9 +794,9 @@ private static final long serialVersionUID = 0L;
       return signatureOneBuilder_;
     }
 
-    private SignatureAndData signatureTwo_;
+    private com.ibc.lightclients.solomachine.v1.SignatureAndData signatureTwo_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        SignatureAndData, SignatureAndData.Builder, SignatureAndDataOrBuilder> signatureTwoBuilder_;
+        com.ibc.lightclients.solomachine.v1.SignatureAndData, com.ibc.lightclients.solomachine.v1.SignatureAndData.Builder, com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder> signatureTwoBuilder_;
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
      * @return Whether the signatureTwo field is set.
@@ -808,9 +808,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
      * @return The signatureTwo.
      */
-    public SignatureAndData getSignatureTwo() {
+    public com.ibc.lightclients.solomachine.v1.SignatureAndData getSignatureTwo() {
       if (signatureTwoBuilder_ == null) {
-        return signatureTwo_ == null ? SignatureAndData.getDefaultInstance() : signatureTwo_;
+        return signatureTwo_ == null ? com.ibc.lightclients.solomachine.v1.SignatureAndData.getDefaultInstance() : signatureTwo_;
       } else {
         return signatureTwoBuilder_.getMessage();
       }
@@ -818,7 +818,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
      */
-    public Builder setSignatureTwo(SignatureAndData value) {
+    public Builder setSignatureTwo(com.ibc.lightclients.solomachine.v1.SignatureAndData value) {
       if (signatureTwoBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -835,7 +835,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
      */
     public Builder setSignatureTwo(
-        SignatureAndData.Builder builderForValue) {
+        com.ibc.lightclients.solomachine.v1.SignatureAndData.Builder builderForValue) {
       if (signatureTwoBuilder_ == null) {
         signatureTwo_ = builderForValue.build();
       } else {
@@ -848,11 +848,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
      */
-    public Builder mergeSignatureTwo(SignatureAndData value) {
+    public Builder mergeSignatureTwo(com.ibc.lightclients.solomachine.v1.SignatureAndData value) {
       if (signatureTwoBuilder_ == null) {
         if (((bitField0_ & 0x00000008) != 0) &&
           signatureTwo_ != null &&
-          signatureTwo_ != SignatureAndData.getDefaultInstance()) {
+          signatureTwo_ != com.ibc.lightclients.solomachine.v1.SignatureAndData.getDefaultInstance()) {
           getSignatureTwoBuilder().mergeFrom(value);
         } else {
           signatureTwo_ = value;
@@ -880,7 +880,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
      */
-    public SignatureAndData.Builder getSignatureTwoBuilder() {
+    public com.ibc.lightclients.solomachine.v1.SignatureAndData.Builder getSignatureTwoBuilder() {
       bitField0_ |= 0x00000008;
       onChanged();
       return getSignatureTwoFieldBuilder().getBuilder();
@@ -888,23 +888,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
      */
-    public SignatureAndDataOrBuilder getSignatureTwoOrBuilder() {
+    public com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder getSignatureTwoOrBuilder() {
       if (signatureTwoBuilder_ != null) {
         return signatureTwoBuilder_.getMessageOrBuilder();
       } else {
         return signatureTwo_ == null ?
-            SignatureAndData.getDefaultInstance() : signatureTwo_;
+            com.ibc.lightclients.solomachine.v1.SignatureAndData.getDefaultInstance() : signatureTwo_;
       }
     }
     /**
      * <code>.ibc.lightclients.solomachine.v1.SignatureAndData signature_two = 4 [json_name = "signatureTwo", (.gogoproto.moretags) = "yaml:&#92;"signature_two&#92;""];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        SignatureAndData, SignatureAndData.Builder, SignatureAndDataOrBuilder>
+        com.ibc.lightclients.solomachine.v1.SignatureAndData, com.ibc.lightclients.solomachine.v1.SignatureAndData.Builder, com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder> 
         getSignatureTwoFieldBuilder() {
       if (signatureTwoBuilder_ == null) {
         signatureTwoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            SignatureAndData, SignatureAndData.Builder, SignatureAndDataOrBuilder>(
+            com.ibc.lightclients.solomachine.v1.SignatureAndData, com.ibc.lightclients.solomachine.v1.SignatureAndData.Builder, com.ibc.lightclients.solomachine.v1.SignatureAndDataOrBuilder>(
                 getSignatureTwo(),
                 getParentForChildren(),
                 isClean());
@@ -912,13 +912,13 @@ private static final long serialVersionUID = 0L;
       }
       return signatureTwoBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -929,18 +929,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.lightclients.solomachine.v1.Misbehaviour)
-  private static final Misbehaviour DEFAULT_INSTANCE;
+  private static final com.ibc.lightclients.solomachine.v1.Misbehaviour DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Misbehaviour();
+    DEFAULT_INSTANCE = new com.ibc.lightclients.solomachine.v1.Misbehaviour();
   }
 
-  public static Misbehaviour getDefaultInstance() {
+  public static com.ibc.lightclients.solomachine.v1.Misbehaviour getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Misbehaviour>
       PARSER = new com.google.protobuf.AbstractParser<Misbehaviour>() {
-    @Override
+    @java.lang.Override
     public Misbehaviour parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -964,13 +964,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Misbehaviour> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Misbehaviour getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.lightclients.solomachine.v1.Misbehaviour getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

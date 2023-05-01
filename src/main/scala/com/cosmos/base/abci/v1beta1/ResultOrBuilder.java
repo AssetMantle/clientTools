@@ -26,7 +26,7 @@ public interface ResultOrBuilder extends
    * <code>string log = 2 [json_name = "log"];</code>
    * @return The log.
    */
-  String getLog();
+  java.lang.String getLog();
   /**
    * <pre>
    * Log contains the log information from message or handler execution.

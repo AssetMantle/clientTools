@@ -24,7 +24,7 @@ public interface IdentifiedChannelOrBuilder extends
    * <code>.ibc.core.channel.v1.State state = 1 [json_name = "state"];</code>
    * @return The state.
    */
-  State getState();
+  com.ibc.core.channel.v1.State getState();
 
   /**
    * <pre>
@@ -43,7 +43,7 @@ public interface IdentifiedChannelOrBuilder extends
    * <code>.ibc.core.channel.v1.Order ordering = 2 [json_name = "ordering"];</code>
    * @return The ordering.
    */
-  Order getOrdering();
+  com.ibc.core.channel.v1.Order getOrdering();
 
   /**
    * <pre>
@@ -62,7 +62,7 @@ public interface IdentifiedChannelOrBuilder extends
    * <code>.ibc.core.channel.v1.Counterparty counterparty = 3 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    * @return The counterparty.
    */
-  Counterparty getCounterparty();
+  com.ibc.core.channel.v1.Counterparty getCounterparty();
   /**
    * <pre>
    * counterparty channel end
@@ -70,7 +70,7 @@ public interface IdentifiedChannelOrBuilder extends
    *
    * <code>.ibc.core.channel.v1.Counterparty counterparty = 3 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    */
-  CounterpartyOrBuilder getCounterpartyOrBuilder();
+  com.ibc.core.channel.v1.CounterpartyOrBuilder getCounterpartyOrBuilder();
 
   /**
    * <pre>
@@ -81,7 +81,7 @@ public interface IdentifiedChannelOrBuilder extends
    * <code>repeated string connection_hops = 4 [json_name = "connectionHops", (.gogoproto.moretags) = "yaml:&#92;"connection_hops&#92;""];</code>
    * @return A list containing the connectionHops.
    */
-  java.util.List<String>
+  java.util.List<java.lang.String>
       getConnectionHopsList();
   /**
    * <pre>
@@ -103,7 +103,7 @@ public interface IdentifiedChannelOrBuilder extends
    * @param index The index of the element to return.
    * @return The connectionHops at the given index.
    */
-  String getConnectionHops(int index);
+  java.lang.String getConnectionHops(int index);
   /**
    * <pre>
    * list of connection identifiers, in order, along which packets sent on
@@ -125,7 +125,7 @@ public interface IdentifiedChannelOrBuilder extends
    * <code>string version = 5 [json_name = "version"];</code>
    * @return The version.
    */
-  String getVersion();
+  java.lang.String getVersion();
   /**
    * <pre>
    * opaque channel version, which is agreed upon during the handshake
@@ -145,7 +145,7 @@ public interface IdentifiedChannelOrBuilder extends
    * <code>string port_id = 6 [json_name = "portId"];</code>
    * @return The portId.
    */
-  String getPortId();
+  java.lang.String getPortId();
   /**
    * <pre>
    * port identifier
@@ -165,7 +165,7 @@ public interface IdentifiedChannelOrBuilder extends
    * <code>string channel_id = 7 [json_name = "channelId"];</code>
    * @return The channelId.
    */
-  String getChannelId();
+  java.lang.String getChannelId();
   /**
    * <pre>
    * channel identifier

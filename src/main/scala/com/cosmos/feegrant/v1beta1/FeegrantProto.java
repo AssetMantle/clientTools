@@ -42,7 +42,7 @@ public final class FeegrantProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n&cosmos/feegrant/v1beta1/feegrant.proto" +
       "\022\027cosmos.feegrant.v1beta1\032\024gogoproto/gog" +
       "o.proto\032\031google/protobuf/any.proto\032\031cosm" +
@@ -97,25 +97,25 @@ public final class FeegrantProto {
     internal_static_cosmos_feegrant_v1beta1_BasicAllowance_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_BasicAllowance_descriptor,
-        new String[] { "SpendLimit", "Expiration", });
+        new java.lang.String[] { "SpendLimit", "Expiration", });
     internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_PeriodicAllowance_descriptor,
-        new String[] { "Basic", "Period", "PeriodSpendLimit", "PeriodCanSpend", "PeriodReset", });
+        new java.lang.String[] { "Basic", "Period", "PeriodSpendLimit", "PeriodCanSpend", "PeriodReset", });
     internal_static_cosmos_feegrant_v1beta1_AllowedMsgAllowance_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_cosmos_feegrant_v1beta1_AllowedMsgAllowance_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_AllowedMsgAllowance_descriptor,
-        new String[] { "Allowance", "AllowedMessages", });
+        new java.lang.String[] { "Allowance", "AllowedMessages", });
     internal_static_cosmos_feegrant_v1beta1_Grant_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_cosmos_feegrant_v1beta1_Grant_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_Grant_descriptor,
-        new String[] { "Granter", "Grantee", "Allowance", });
+        new java.lang.String[] { "Granter", "Grantee", "Allowance", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.cosmos_proto.CosmosProto.acceptsInterface);

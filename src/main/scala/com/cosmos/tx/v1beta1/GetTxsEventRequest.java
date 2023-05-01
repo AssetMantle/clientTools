@@ -25,24 +25,24 @@ private static final long serialVersionUID = 0L;
     orderBy_ = 0;
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new GetTxsEventRequest();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return ServiceProto.internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_descriptor;
+    return com.cosmos.tx.v1beta1.ServiceProto.internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return ServiceProto.internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_fieldAccessorTable
+    return com.cosmos.tx.v1beta1.ServiceProto.internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            GetTxsEventRequest.class, Builder.class);
+            com.cosmos.tx.v1beta1.GetTxsEventRequest.class, com.cosmos.tx.v1beta1.GetTxsEventRequest.Builder.class);
   }
 
   public static final int EVENTS_FIELD_NUMBER = 1;
@@ -80,7 +80,7 @@ private static final long serialVersionUID = 0L;
    * @param index The index of the element to return.
    * @return The events at the given index.
    */
-  public String getEvents(int index) {
+  public java.lang.String getEvents(int index) {
     return events_.get(index);
   }
   /**
@@ -107,7 +107,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -119,7 +119,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageRequest getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
@@ -130,7 +130,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2 [json_name = "pagination"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageRequestOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageRequest.getDefaultInstance() : pagination_;
   }
@@ -141,20 +141,20 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.tx.v1beta1.OrderBy order_by = 3 [json_name = "orderBy"];</code>
    * @return The enum numeric value on the wire for orderBy.
    */
-  @Override public int getOrderByValue() {
+  @java.lang.Override public int getOrderByValue() {
     return orderBy_;
   }
   /**
    * <code>.cosmos.tx.v1beta1.OrderBy order_by = 3 [json_name = "orderBy"];</code>
    * @return The orderBy.
    */
-  @Override public OrderBy getOrderBy() {
-    OrderBy result = OrderBy.forNumber(orderBy_);
-    return result == null ? OrderBy.UNRECOGNIZED : result;
+  @java.lang.Override public com.cosmos.tx.v1beta1.OrderBy getOrderBy() {
+    com.cosmos.tx.v1beta1.OrderBy result = com.cosmos.tx.v1beta1.OrderBy.forNumber(orderBy_);
+    return result == null ? com.cosmos.tx.v1beta1.OrderBy.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -164,7 +164,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < events_.size(); i++) {
@@ -173,13 +173,13 @@ private static final long serialVersionUID = 0L;
     if (pagination_ != null) {
       output.writeMessage(2, getPagination());
     }
-    if (orderBy_ != OrderBy.ORDER_BY_UNSPECIFIED.getNumber()) {
+    if (orderBy_ != com.cosmos.tx.v1beta1.OrderBy.ORDER_BY_UNSPECIFIED.getNumber()) {
       output.writeEnum(3, orderBy_);
     }
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -197,7 +197,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getPagination());
     }
-    if (orderBy_ != OrderBy.ORDER_BY_UNSPECIFIED.getNumber()) {
+    if (orderBy_ != com.cosmos.tx.v1beta1.OrderBy.ORDER_BY_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, orderBy_);
     }
@@ -206,15 +206,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof GetTxsEventRequest)) {
+    if (!(obj instanceof com.cosmos.tx.v1beta1.GetTxsEventRequest)) {
       return super.equals(obj);
     }
-    GetTxsEventRequest other = (GetTxsEventRequest) obj;
+    com.cosmos.tx.v1beta1.GetTxsEventRequest other = (com.cosmos.tx.v1beta1.GetTxsEventRequest) obj;
 
     if (!getEventsList()
         .equals(other.getEventsList())) return false;
@@ -228,7 +228,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -250,69 +250,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static GetTxsEventRequest parseFrom(
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetTxsEventRequest parseFrom(
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetTxsEventRequest parseFrom(
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetTxsEventRequest parseFrom(
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetTxsEventRequest parseFrom(byte[] data)
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetTxsEventRequest parseFrom(
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetTxsEventRequest parseFrom(java.io.InputStream input)
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GetTxsEventRequest parseFrom(
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GetTxsEventRequest parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static GetTxsEventRequest parseDelimitedFrom(
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GetTxsEventRequest parseFrom(
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GetTxsEventRequest parseFrom(
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -320,23 +320,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(GetTxsEventRequest prototype) {
+  public static Builder newBuilder(com.cosmos.tx.v1beta1.GetTxsEventRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -351,18 +351,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.tx.v1beta1.GetTxsEventRequest)
-      GetTxsEventRequestOrBuilder {
+      com.cosmos.tx.v1beta1.GetTxsEventRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ServiceProto.internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_descriptor;
+      return com.cosmos.tx.v1beta1.ServiceProto.internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ServiceProto.internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_fieldAccessorTable
+      return com.cosmos.tx.v1beta1.ServiceProto.internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              GetTxsEventRequest.class, Builder.class);
+              com.cosmos.tx.v1beta1.GetTxsEventRequest.class, com.cosmos.tx.v1beta1.GetTxsEventRequest.Builder.class);
     }
 
     // Construct using com.cosmos.tx.v1beta1.GetTxsEventRequest.newBuilder()
@@ -371,11 +371,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -390,36 +390,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return ServiceProto.internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_descriptor;
+      return com.cosmos.tx.v1beta1.ServiceProto.internal_static_cosmos_tx_v1beta1_GetTxsEventRequest_descriptor;
     }
 
-    @Override
-    public GetTxsEventRequest getDefaultInstanceForType() {
-      return GetTxsEventRequest.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.GetTxsEventRequest getDefaultInstanceForType() {
+      return com.cosmos.tx.v1beta1.GetTxsEventRequest.getDefaultInstance();
     }
 
-    @Override
-    public GetTxsEventRequest build() {
-      GetTxsEventRequest result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.GetTxsEventRequest build() {
+      com.cosmos.tx.v1beta1.GetTxsEventRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public GetTxsEventRequest buildPartial() {
-      GetTxsEventRequest result = new GetTxsEventRequest(this);
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.GetTxsEventRequest buildPartial() {
+      com.cosmos.tx.v1beta1.GetTxsEventRequest result = new com.cosmos.tx.v1beta1.GetTxsEventRequest(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(GetTxsEventRequest result) {
+    private void buildPartialRepeatedFields(com.cosmos.tx.v1beta1.GetTxsEventRequest result) {
       if (((bitField0_ & 0x00000001) != 0)) {
         events_ = events_.getUnmodifiableView();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -427,7 +427,7 @@ private static final long serialVersionUID = 0L;
       result.events_ = events_;
     }
 
-    private void buildPartial0(GetTxsEventRequest result) {
+    private void buildPartial0(com.cosmos.tx.v1beta1.GetTxsEventRequest result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -439,50 +439,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof GetTxsEventRequest) {
-        return mergeFrom((GetTxsEventRequest)other);
+      if (other instanceof com.cosmos.tx.v1beta1.GetTxsEventRequest) {
+        return mergeFrom((com.cosmos.tx.v1beta1.GetTxsEventRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(GetTxsEventRequest other) {
-      if (other == GetTxsEventRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.tx.v1beta1.GetTxsEventRequest other) {
+      if (other == com.cosmos.tx.v1beta1.GetTxsEventRequest.getDefaultInstance()) return this;
       if (!other.events_.isEmpty()) {
         if (events_.isEmpty()) {
           events_ = other.events_;
@@ -504,18 +504,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -526,7 +526,7 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
               ensureEventsIsMutable();
               events_.add(s);
               break;
@@ -599,7 +599,7 @@ private static final long serialVersionUID = 0L;
      * @param index The index of the element to return.
      * @return The events at the given index.
      */
-    public String getEvents(int index) {
+    public java.lang.String getEvents(int index) {
       return events_.get(index);
     }
     /**
@@ -626,7 +626,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setEvents(
-        int index, String value) {
+        int index, java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       ensureEventsIsMutable();
       events_.set(index, value);
@@ -643,7 +643,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addEvents(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       ensureEventsIsMutable();
       events_.add(value);
@@ -660,7 +660,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addAllEvents(
-        Iterable<String> values) {
+        java.lang.Iterable<java.lang.String> values) {
       ensureEventsIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, events_);
@@ -860,7 +860,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.v1beta1.OrderBy order_by = 3 [json_name = "orderBy"];</code>
      * @return The enum numeric value on the wire for orderBy.
      */
-    @Override public int getOrderByValue() {
+    @java.lang.Override public int getOrderByValue() {
       return orderBy_;
     }
     /**
@@ -878,17 +878,17 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.tx.v1beta1.OrderBy order_by = 3 [json_name = "orderBy"];</code>
      * @return The orderBy.
      */
-    @Override
-    public OrderBy getOrderBy() {
-      OrderBy result = OrderBy.forNumber(orderBy_);
-      return result == null ? OrderBy.UNRECOGNIZED : result;
+    @java.lang.Override
+    public com.cosmos.tx.v1beta1.OrderBy getOrderBy() {
+      com.cosmos.tx.v1beta1.OrderBy result = com.cosmos.tx.v1beta1.OrderBy.forNumber(orderBy_);
+      return result == null ? com.cosmos.tx.v1beta1.OrderBy.UNRECOGNIZED : result;
     }
     /**
      * <code>.cosmos.tx.v1beta1.OrderBy order_by = 3 [json_name = "orderBy"];</code>
      * @param value The orderBy to set.
      * @return This builder for chaining.
      */
-    public Builder setOrderBy(OrderBy value) {
+    public Builder setOrderBy(com.cosmos.tx.v1beta1.OrderBy value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -907,13 +907,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -924,18 +924,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.tx.v1beta1.GetTxsEventRequest)
-  private static final GetTxsEventRequest DEFAULT_INSTANCE;
+  private static final com.cosmos.tx.v1beta1.GetTxsEventRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new GetTxsEventRequest();
+    DEFAULT_INSTANCE = new com.cosmos.tx.v1beta1.GetTxsEventRequest();
   }
 
-  public static GetTxsEventRequest getDefaultInstance() {
+  public static com.cosmos.tx.v1beta1.GetTxsEventRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GetTxsEventRequest>
       PARSER = new com.google.protobuf.AbstractParser<GetTxsEventRequest>() {
-    @Override
+    @java.lang.Override
     public GetTxsEventRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -959,13 +959,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<GetTxsEventRequest> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public GetTxsEventRequest getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.tx.v1beta1.GetTxsEventRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -24,7 +24,7 @@ public interface GetAuthnDescriptorResponseOrBuilder extends
    * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
    * @return The authn.
    */
-  AuthnDescriptor getAuthn();
+  com.cosmos.base.reflection.v2alpha1.AuthnDescriptor getAuthn();
   /**
    * <pre>
    * authn describes how to authenticate to the application when sending transactions
@@ -32,5 +32,5 @@ public interface GetAuthnDescriptorResponseOrBuilder extends
    *
    * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
    */
-  AuthnDescriptorOrBuilder getAuthnOrBuilder();
+  com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder getAuthnOrBuilder();
 }

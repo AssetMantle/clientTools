@@ -16,21 +16,21 @@ public interface RedelegationResponseOrBuilder extends
    * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
    * @return The redelegation.
    */
-  Redelegation getRedelegation();
+  com.cosmos.staking.v1beta1.Redelegation getRedelegation();
   /**
    * <code>.cosmos.staking.v1beta1.Redelegation redelegation = 1 [json_name = "redelegation", (.gogoproto.nullable) = false];</code>
    */
-  RedelegationOrBuilder getRedelegationOrBuilder();
+  com.cosmos.staking.v1beta1.RedelegationOrBuilder getRedelegationOrBuilder();
 
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<RedelegationEntryResponse>
+  java.util.List<com.cosmos.staking.v1beta1.RedelegationEntryResponse> 
       getEntriesList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  RedelegationEntryResponse getEntries(int index);
+  com.cosmos.staking.v1beta1.RedelegationEntryResponse getEntries(int index);
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
@@ -38,11 +38,11 @@ public interface RedelegationResponseOrBuilder extends
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends RedelegationEntryResponseOrBuilder>
+  java.util.List<? extends com.cosmos.staking.v1beta1.RedelegationEntryResponseOrBuilder> 
       getEntriesOrBuilderList();
   /**
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntryResponse entries = 2 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  RedelegationEntryResponseOrBuilder getEntriesOrBuilder(
+  com.cosmos.staking.v1beta1.RedelegationEntryResponseOrBuilder getEntriesOrBuilder(
       int index);
 }

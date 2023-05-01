@@ -14,7 +14,7 @@ public interface QueryModuleVersionsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.upgrade.v1beta1.ModuleVersion module_versions = 1 [json_name = "moduleVersions"];</code>
    */
-  java.util.List<ModuleVersion>
+  java.util.List<com.cosmos.upgrade.v1beta1.ModuleVersion> 
       getModuleVersionsList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryModuleVersionsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.upgrade.v1beta1.ModuleVersion module_versions = 1 [json_name = "moduleVersions"];</code>
    */
-  ModuleVersion getModuleVersions(int index);
+  com.cosmos.upgrade.v1beta1.ModuleVersion getModuleVersions(int index);
   /**
    * <pre>
    * module_versions is a list of module names with their consensus versions.
@@ -39,7 +39,7 @@ public interface QueryModuleVersionsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.upgrade.v1beta1.ModuleVersion module_versions = 1 [json_name = "moduleVersions"];</code>
    */
-  java.util.List<? extends ModuleVersionOrBuilder>
+  java.util.List<? extends com.cosmos.upgrade.v1beta1.ModuleVersionOrBuilder> 
       getModuleVersionsOrBuilderList();
   /**
    * <pre>
@@ -48,6 +48,6 @@ public interface QueryModuleVersionsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.upgrade.v1beta1.ModuleVersion module_versions = 1 [json_name = "moduleVersions"];</code>
    */
-  ModuleVersionOrBuilder getModuleVersionsOrBuilder(
+  com.cosmos.upgrade.v1beta1.ModuleVersionOrBuilder getModuleVersionsOrBuilder(
       int index);
 }

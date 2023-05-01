@@ -16,7 +16,7 @@ public interface EvidenceOrBuilder extends
    * <code>.tendermint.abci.EvidenceType type = 1 [json_name = "type"];</code>
    * @return The type.
    */
-  EvidenceType getType();
+  com.tendermint.abci.EvidenceType getType();
 
   /**
    * <pre>
@@ -35,7 +35,7 @@ public interface EvidenceOrBuilder extends
    * <code>.tendermint.abci.Validator validator = 2 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    * @return The validator.
    */
-  Validator getValidator();
+  com.tendermint.abci.Validator getValidator();
   /**
    * <pre>
    * The offending validator
@@ -43,7 +43,7 @@ public interface EvidenceOrBuilder extends
    *
    * <code>.tendermint.abci.Validator validator = 2 [json_name = "validator", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorOrBuilder getValidatorOrBuilder();
+  com.tendermint.abci.ValidatorOrBuilder getValidatorOrBuilder();
 
   /**
    * <pre>

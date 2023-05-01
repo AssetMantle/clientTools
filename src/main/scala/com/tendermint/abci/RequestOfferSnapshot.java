@@ -23,28 +23,28 @@ private static final long serialVersionUID = 0L;
     appHash_ = com.google.protobuf.ByteString.EMPTY;
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new RequestOfferSnapshot();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TypesProto.internal_static_tendermint_abci_RequestOfferSnapshot_descriptor;
+    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestOfferSnapshot_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TypesProto.internal_static_tendermint_abci_RequestOfferSnapshot_fieldAccessorTable
+    return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestOfferSnapshot_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            RequestOfferSnapshot.class, Builder.class);
+            com.tendermint.abci.RequestOfferSnapshot.class, com.tendermint.abci.RequestOfferSnapshot.Builder.class);
   }
 
   public static final int SNAPSHOT_FIELD_NUMBER = 1;
-  private Snapshot snapshot_;
+  private com.tendermint.abci.Snapshot snapshot_;
   /**
    * <pre>
    * snapshot offered by peers
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
    * @return Whether the snapshot field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasSnapshot() {
     return snapshot_ != null;
   }
@@ -65,9 +65,9 @@ private static final long serialVersionUID = 0L;
    * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
    * @return The snapshot.
    */
-  @Override
-  public Snapshot getSnapshot() {
-    return snapshot_ == null ? Snapshot.getDefaultInstance() : snapshot_;
+  @java.lang.Override
+  public com.tendermint.abci.Snapshot getSnapshot() {
+    return snapshot_ == null ? com.tendermint.abci.Snapshot.getDefaultInstance() : snapshot_;
   }
   /**
    * <pre>
@@ -76,9 +76,9 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
    */
-  @Override
-  public SnapshotOrBuilder getSnapshotOrBuilder() {
-    return snapshot_ == null ? Snapshot.getDefaultInstance() : snapshot_;
+  @java.lang.Override
+  public com.tendermint.abci.SnapshotOrBuilder getSnapshotOrBuilder() {
+    return snapshot_ == null ? com.tendermint.abci.Snapshot.getDefaultInstance() : snapshot_;
   }
 
   public static final int APP_HASH_FIELD_NUMBER = 2;
@@ -91,13 +91,13 @@ private static final long serialVersionUID = 0L;
    * <code>bytes app_hash = 2 [json_name = "appHash"];</code>
    * @return The appHash.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getAppHash() {
     return appHash_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -107,7 +107,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (snapshot_ != null) {
@@ -119,7 +119,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -138,15 +138,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof RequestOfferSnapshot)) {
+    if (!(obj instanceof com.tendermint.abci.RequestOfferSnapshot)) {
       return super.equals(obj);
     }
-    RequestOfferSnapshot other = (RequestOfferSnapshot) obj;
+    com.tendermint.abci.RequestOfferSnapshot other = (com.tendermint.abci.RequestOfferSnapshot) obj;
 
     if (hasSnapshot() != other.hasSnapshot()) return false;
     if (hasSnapshot()) {
@@ -159,7 +159,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -177,69 +177,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static RequestOfferSnapshot parseFrom(
+  public static com.tendermint.abci.RequestOfferSnapshot parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static RequestOfferSnapshot parseFrom(
+  public static com.tendermint.abci.RequestOfferSnapshot parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static RequestOfferSnapshot parseFrom(
+  public static com.tendermint.abci.RequestOfferSnapshot parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static RequestOfferSnapshot parseFrom(
+  public static com.tendermint.abci.RequestOfferSnapshot parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static RequestOfferSnapshot parseFrom(byte[] data)
+  public static com.tendermint.abci.RequestOfferSnapshot parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static RequestOfferSnapshot parseFrom(
+  public static com.tendermint.abci.RequestOfferSnapshot parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static RequestOfferSnapshot parseFrom(java.io.InputStream input)
+  public static com.tendermint.abci.RequestOfferSnapshot parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static RequestOfferSnapshot parseFrom(
+  public static com.tendermint.abci.RequestOfferSnapshot parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static RequestOfferSnapshot parseDelimitedFrom(java.io.InputStream input)
+  public static com.tendermint.abci.RequestOfferSnapshot parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static RequestOfferSnapshot parseDelimitedFrom(
+  public static com.tendermint.abci.RequestOfferSnapshot parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static RequestOfferSnapshot parseFrom(
+  public static com.tendermint.abci.RequestOfferSnapshot parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static RequestOfferSnapshot parseFrom(
+  public static com.tendermint.abci.RequestOfferSnapshot parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -247,23 +247,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(RequestOfferSnapshot prototype) {
+  public static Builder newBuilder(com.tendermint.abci.RequestOfferSnapshot prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -277,18 +277,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.abci.RequestOfferSnapshot)
-      RequestOfferSnapshotOrBuilder {
+      com.tendermint.abci.RequestOfferSnapshotOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TypesProto.internal_static_tendermint_abci_RequestOfferSnapshot_descriptor;
+      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestOfferSnapshot_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TypesProto.internal_static_tendermint_abci_RequestOfferSnapshot_fieldAccessorTable
+      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestOfferSnapshot_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              RequestOfferSnapshot.class, Builder.class);
+              com.tendermint.abci.RequestOfferSnapshot.class, com.tendermint.abci.RequestOfferSnapshot.Builder.class);
     }
 
     // Construct using com.tendermint.abci.RequestOfferSnapshot.newBuilder()
@@ -297,11 +297,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -314,35 +314,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TypesProto.internal_static_tendermint_abci_RequestOfferSnapshot_descriptor;
+      return com.tendermint.abci.TypesProto.internal_static_tendermint_abci_RequestOfferSnapshot_descriptor;
     }
 
-    @Override
-    public RequestOfferSnapshot getDefaultInstanceForType() {
-      return RequestOfferSnapshot.getDefaultInstance();
+    @java.lang.Override
+    public com.tendermint.abci.RequestOfferSnapshot getDefaultInstanceForType() {
+      return com.tendermint.abci.RequestOfferSnapshot.getDefaultInstance();
     }
 
-    @Override
-    public RequestOfferSnapshot build() {
-      RequestOfferSnapshot result = buildPartial();
+    @java.lang.Override
+    public com.tendermint.abci.RequestOfferSnapshot build() {
+      com.tendermint.abci.RequestOfferSnapshot result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public RequestOfferSnapshot buildPartial() {
-      RequestOfferSnapshot result = new RequestOfferSnapshot(this);
+    @java.lang.Override
+    public com.tendermint.abci.RequestOfferSnapshot buildPartial() {
+      com.tendermint.abci.RequestOfferSnapshot result = new com.tendermint.abci.RequestOfferSnapshot(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(RequestOfferSnapshot result) {
+    private void buildPartial0(com.tendermint.abci.RequestOfferSnapshot result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.snapshot_ = snapshotBuilder_ == null
@@ -354,50 +354,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof RequestOfferSnapshot) {
-        return mergeFrom((RequestOfferSnapshot)other);
+      if (other instanceof com.tendermint.abci.RequestOfferSnapshot) {
+        return mergeFrom((com.tendermint.abci.RequestOfferSnapshot)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(RequestOfferSnapshot other) {
-      if (other == RequestOfferSnapshot.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.tendermint.abci.RequestOfferSnapshot other) {
+      if (other == com.tendermint.abci.RequestOfferSnapshot.getDefaultInstance()) return this;
       if (other.hasSnapshot()) {
         mergeSnapshot(other.getSnapshot());
       }
@@ -409,18 +409,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -459,9 +459,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Snapshot snapshot_;
+    private com.tendermint.abci.Snapshot snapshot_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        Snapshot, Snapshot.Builder, SnapshotOrBuilder> snapshotBuilder_;
+        com.tendermint.abci.Snapshot, com.tendermint.abci.Snapshot.Builder, com.tendermint.abci.SnapshotOrBuilder> snapshotBuilder_;
     /**
      * <pre>
      * snapshot offered by peers
@@ -481,9 +481,9 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
      * @return The snapshot.
      */
-    public Snapshot getSnapshot() {
+    public com.tendermint.abci.Snapshot getSnapshot() {
       if (snapshotBuilder_ == null) {
-        return snapshot_ == null ? Snapshot.getDefaultInstance() : snapshot_;
+        return snapshot_ == null ? com.tendermint.abci.Snapshot.getDefaultInstance() : snapshot_;
       } else {
         return snapshotBuilder_.getMessage();
       }
@@ -495,7 +495,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
      */
-    public Builder setSnapshot(Snapshot value) {
+    public Builder setSnapshot(com.tendermint.abci.Snapshot value) {
       if (snapshotBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -516,7 +516,7 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
      */
     public Builder setSnapshot(
-        Snapshot.Builder builderForValue) {
+        com.tendermint.abci.Snapshot.Builder builderForValue) {
       if (snapshotBuilder_ == null) {
         snapshot_ = builderForValue.build();
       } else {
@@ -533,11 +533,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
      */
-    public Builder mergeSnapshot(Snapshot value) {
+    public Builder mergeSnapshot(com.tendermint.abci.Snapshot value) {
       if (snapshotBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           snapshot_ != null &&
-          snapshot_ != Snapshot.getDefaultInstance()) {
+          snapshot_ != com.tendermint.abci.Snapshot.getDefaultInstance()) {
           getSnapshotBuilder().mergeFrom(value);
         } else {
           snapshot_ = value;
@@ -573,7 +573,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
      */
-    public Snapshot.Builder getSnapshotBuilder() {
+    public com.tendermint.abci.Snapshot.Builder getSnapshotBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getSnapshotFieldBuilder().getBuilder();
@@ -585,12 +585,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
      */
-    public SnapshotOrBuilder getSnapshotOrBuilder() {
+    public com.tendermint.abci.SnapshotOrBuilder getSnapshotOrBuilder() {
       if (snapshotBuilder_ != null) {
         return snapshotBuilder_.getMessageOrBuilder();
       } else {
         return snapshot_ == null ?
-            Snapshot.getDefaultInstance() : snapshot_;
+            com.tendermint.abci.Snapshot.getDefaultInstance() : snapshot_;
       }
     }
     /**
@@ -601,11 +601,11 @@ private static final long serialVersionUID = 0L;
      * <code>.tendermint.abci.Snapshot snapshot = 1 [json_name = "snapshot"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Snapshot, Snapshot.Builder, SnapshotOrBuilder>
+        com.tendermint.abci.Snapshot, com.tendermint.abci.Snapshot.Builder, com.tendermint.abci.SnapshotOrBuilder> 
         getSnapshotFieldBuilder() {
       if (snapshotBuilder_ == null) {
         snapshotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Snapshot, Snapshot.Builder, SnapshotOrBuilder>(
+            com.tendermint.abci.Snapshot, com.tendermint.abci.Snapshot.Builder, com.tendermint.abci.SnapshotOrBuilder>(
                 getSnapshot(),
                 getParentForChildren(),
                 isClean());
@@ -623,7 +623,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes app_hash = 2 [json_name = "appHash"];</code>
      * @return The appHash.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getAppHash() {
       return appHash_;
     }
@@ -657,13 +657,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -674,18 +674,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.abci.RequestOfferSnapshot)
-  private static final RequestOfferSnapshot DEFAULT_INSTANCE;
+  private static final com.tendermint.abci.RequestOfferSnapshot DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new RequestOfferSnapshot();
+    DEFAULT_INSTANCE = new com.tendermint.abci.RequestOfferSnapshot();
   }
 
-  public static RequestOfferSnapshot getDefaultInstance() {
+  public static com.tendermint.abci.RequestOfferSnapshot getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<RequestOfferSnapshot>
       PARSER = new com.google.protobuf.AbstractParser<RequestOfferSnapshot>() {
-    @Override
+    @java.lang.Override
     public RequestOfferSnapshot parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -709,13 +709,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<RequestOfferSnapshot> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public RequestOfferSnapshot getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.tendermint.abci.RequestOfferSnapshot getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

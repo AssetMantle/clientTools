@@ -15,7 +15,7 @@ public interface QueryRedelegationsRequestOrBuilder extends
    * <code>string delegator_addr = 1 [json_name = "delegatorAddr"];</code>
    * @return The delegatorAddr.
    */
-  String getDelegatorAddr();
+  java.lang.String getDelegatorAddr();
   /**
    * <pre>
    * delegator_addr defines the delegator address to query for.
@@ -35,7 +35,7 @@ public interface QueryRedelegationsRequestOrBuilder extends
    * <code>string src_validator_addr = 2 [json_name = "srcValidatorAddr"];</code>
    * @return The srcValidatorAddr.
    */
-  String getSrcValidatorAddr();
+  java.lang.String getSrcValidatorAddr();
   /**
    * <pre>
    * src_validator_addr defines the validator address to redelegate from.
@@ -55,7 +55,7 @@ public interface QueryRedelegationsRequestOrBuilder extends
    * <code>string dst_validator_addr = 3 [json_name = "dstValidatorAddr"];</code>
    * @return The dstValidatorAddr.
    */
-  String getDstValidatorAddr();
+  java.lang.String getDstValidatorAddr();
   /**
    * <pre>
    * dst_validator_addr defines the validator address to redelegate to.

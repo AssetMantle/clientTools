@@ -15,7 +15,7 @@ public interface PacketStateOrBuilder extends
    * <code>string port_id = 1 [json_name = "portId", (.gogoproto.moretags) = "yaml:&#92;"port_id&#92;""];</code>
    * @return The portId.
    */
-  String getPortId();
+  java.lang.String getPortId();
   /**
    * <pre>
    * channel port identifier.
@@ -35,7 +35,7 @@ public interface PacketStateOrBuilder extends
    * <code>string channel_id = 2 [json_name = "channelId", (.gogoproto.moretags) = "yaml:&#92;"channel_id&#92;""];</code>
    * @return The channelId.
    */
-  String getChannelId();
+  java.lang.String getChannelId();
   /**
    * <pre>
    * channel unique identifier.

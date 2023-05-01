@@ -25,42 +25,42 @@ private static final long serialVersionUID = 0L;
     clientMetadata_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new IdentifiedGenesisMetadata();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return GenesisProto.internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_descriptor;
+    return com.ibc.core.client.v1.GenesisProto.internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return GenesisProto.internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_fieldAccessorTable
+    return com.ibc.core.client.v1.GenesisProto.internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            IdentifiedGenesisMetadata.class, Builder.class);
+            com.ibc.core.client.v1.IdentifiedGenesisMetadata.class, com.ibc.core.client.v1.IdentifiedGenesisMetadata.Builder.class);
   }
 
   public static final int CLIENT_ID_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object clientId_ = "";
+  private volatile java.lang.Object clientId_ = "";
   /**
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  @Override
-  public String getClientId() {
-    Object ref = clientId_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getClientId() {
+    java.lang.Object ref = clientId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       clientId_ = s;
       return s;
     }
@@ -69,14 +69,14 @@ private static final long serialVersionUID = 0L;
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The bytes for clientId.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getClientIdBytes() {
-    Object ref = clientId_;
-    if (ref instanceof String) {
+    java.lang.Object ref = clientId_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       clientId_ = b;
       return b;
     } else {
@@ -86,47 +86,47 @@ private static final long serialVersionUID = 0L;
 
   public static final int CLIENT_METADATA_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<GenesisMetadata> clientMetadata_;
+  private java.util.List<com.ibc.core.client.v1.GenesisMetadata> clientMetadata_;
   /**
    * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
    */
-  @Override
-  public java.util.List<GenesisMetadata> getClientMetadataList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.core.client.v1.GenesisMetadata> getClientMetadataList() {
     return clientMetadata_;
   }
   /**
    * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
    */
-  @Override
-  public java.util.List<? extends GenesisMetadataOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.core.client.v1.GenesisMetadataOrBuilder> 
       getClientMetadataOrBuilderList() {
     return clientMetadata_;
   }
   /**
    * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public int getClientMetadataCount() {
     return clientMetadata_.size();
   }
   /**
    * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
    */
-  @Override
-  public GenesisMetadata getClientMetadata(int index) {
+  @java.lang.Override
+  public com.ibc.core.client.v1.GenesisMetadata getClientMetadata(int index) {
     return clientMetadata_.get(index);
   }
   /**
    * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
    */
-  @Override
-  public GenesisMetadataOrBuilder getClientMetadataOrBuilder(
+  @java.lang.Override
+  public com.ibc.core.client.v1.GenesisMetadataOrBuilder getClientMetadataOrBuilder(
       int index) {
     return clientMetadata_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -136,7 +136,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientId_)) {
@@ -148,7 +148,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -166,15 +166,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof IdentifiedGenesisMetadata)) {
+    if (!(obj instanceof com.ibc.core.client.v1.IdentifiedGenesisMetadata)) {
       return super.equals(obj);
     }
-    IdentifiedGenesisMetadata other = (IdentifiedGenesisMetadata) obj;
+    com.ibc.core.client.v1.IdentifiedGenesisMetadata other = (com.ibc.core.client.v1.IdentifiedGenesisMetadata) obj;
 
     if (!getClientId()
         .equals(other.getClientId())) return false;
@@ -184,7 +184,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -202,69 +202,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static IdentifiedGenesisMetadata parseFrom(
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static IdentifiedGenesisMetadata parseFrom(
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static IdentifiedGenesisMetadata parseFrom(
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static IdentifiedGenesisMetadata parseFrom(
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static IdentifiedGenesisMetadata parseFrom(byte[] data)
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static IdentifiedGenesisMetadata parseFrom(
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static IdentifiedGenesisMetadata parseFrom(java.io.InputStream input)
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static IdentifiedGenesisMetadata parseFrom(
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static IdentifiedGenesisMetadata parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static IdentifiedGenesisMetadata parseDelimitedFrom(
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static IdentifiedGenesisMetadata parseFrom(
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static IdentifiedGenesisMetadata parseFrom(
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -272,23 +272,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(IdentifiedGenesisMetadata prototype) {
+  public static Builder newBuilder(com.ibc.core.client.v1.IdentifiedGenesisMetadata prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -303,18 +303,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.client.v1.IdentifiedGenesisMetadata)
-      IdentifiedGenesisMetadataOrBuilder {
+      com.ibc.core.client.v1.IdentifiedGenesisMetadataOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return GenesisProto.internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_descriptor;
+      return com.ibc.core.client.v1.GenesisProto.internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return GenesisProto.internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_fieldAccessorTable
+      return com.ibc.core.client.v1.GenesisProto.internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              IdentifiedGenesisMetadata.class, Builder.class);
+              com.ibc.core.client.v1.IdentifiedGenesisMetadata.class, com.ibc.core.client.v1.IdentifiedGenesisMetadata.Builder.class);
     }
 
     // Construct using com.ibc.core.client.v1.IdentifiedGenesisMetadata.newBuilder()
@@ -323,11 +323,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -342,36 +342,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return GenesisProto.internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_descriptor;
+      return com.ibc.core.client.v1.GenesisProto.internal_static_ibc_core_client_v1_IdentifiedGenesisMetadata_descriptor;
     }
 
-    @Override
-    public IdentifiedGenesisMetadata getDefaultInstanceForType() {
-      return IdentifiedGenesisMetadata.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.core.client.v1.IdentifiedGenesisMetadata getDefaultInstanceForType() {
+      return com.ibc.core.client.v1.IdentifiedGenesisMetadata.getDefaultInstance();
     }
 
-    @Override
-    public IdentifiedGenesisMetadata build() {
-      IdentifiedGenesisMetadata result = buildPartial();
+    @java.lang.Override
+    public com.ibc.core.client.v1.IdentifiedGenesisMetadata build() {
+      com.ibc.core.client.v1.IdentifiedGenesisMetadata result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public IdentifiedGenesisMetadata buildPartial() {
-      IdentifiedGenesisMetadata result = new IdentifiedGenesisMetadata(this);
+    @java.lang.Override
+    public com.ibc.core.client.v1.IdentifiedGenesisMetadata buildPartial() {
+      com.ibc.core.client.v1.IdentifiedGenesisMetadata result = new com.ibc.core.client.v1.IdentifiedGenesisMetadata(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(IdentifiedGenesisMetadata result) {
+    private void buildPartialRepeatedFields(com.ibc.core.client.v1.IdentifiedGenesisMetadata result) {
       if (clientMetadataBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           clientMetadata_ = java.util.Collections.unmodifiableList(clientMetadata_);
@@ -383,57 +383,57 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(IdentifiedGenesisMetadata result) {
+    private void buildPartial0(com.ibc.core.client.v1.IdentifiedGenesisMetadata result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.clientId_ = clientId_;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof IdentifiedGenesisMetadata) {
-        return mergeFrom((IdentifiedGenesisMetadata)other);
+      if (other instanceof com.ibc.core.client.v1.IdentifiedGenesisMetadata) {
+        return mergeFrom((com.ibc.core.client.v1.IdentifiedGenesisMetadata)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(IdentifiedGenesisMetadata other) {
-      if (other == IdentifiedGenesisMetadata.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.core.client.v1.IdentifiedGenesisMetadata other) {
+      if (other == com.ibc.core.client.v1.IdentifiedGenesisMetadata.getDefaultInstance()) return this;
       if (!other.getClientId().isEmpty()) {
         clientId_ = other.clientId_;
         bitField0_ |= 0x00000001;
@@ -470,18 +470,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -497,9 +497,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              GenesisMetadata m =
+              com.ibc.core.client.v1.GenesisMetadata m =
                   input.readMessage(
-                      GenesisMetadata.parser(),
+                      com.ibc.core.client.v1.GenesisMetadata.parser(),
                       extensionRegistry);
               if (clientMetadataBuilder_ == null) {
                 ensureClientMetadataIsMutable();
@@ -526,21 +526,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object clientId_ = "";
+    private java.lang.Object clientId_ = "";
     /**
      * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
      * @return The clientId.
      */
-    public String getClientId() {
-      Object ref = clientId_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getClientId() {
+      java.lang.Object ref = clientId_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         clientId_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -549,11 +549,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getClientIdBytes() {
-      Object ref = clientId_;
+      java.lang.Object ref = clientId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         clientId_ = b;
         return b;
       } else {
@@ -566,7 +566,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setClientId(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       clientId_ = value;
       bitField0_ |= 0x00000001;
@@ -598,22 +598,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<GenesisMetadata> clientMetadata_ =
+    private java.util.List<com.ibc.core.client.v1.GenesisMetadata> clientMetadata_ =
       java.util.Collections.emptyList();
     private void ensureClientMetadataIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        clientMetadata_ = new java.util.ArrayList<GenesisMetadata>(clientMetadata_);
+        clientMetadata_ = new java.util.ArrayList<com.ibc.core.client.v1.GenesisMetadata>(clientMetadata_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        GenesisMetadata, GenesisMetadata.Builder, GenesisMetadataOrBuilder> clientMetadataBuilder_;
+        com.ibc.core.client.v1.GenesisMetadata, com.ibc.core.client.v1.GenesisMetadata.Builder, com.ibc.core.client.v1.GenesisMetadataOrBuilder> clientMetadataBuilder_;
 
     /**
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
-    public java.util.List<GenesisMetadata> getClientMetadataList() {
+    public java.util.List<com.ibc.core.client.v1.GenesisMetadata> getClientMetadataList() {
       if (clientMetadataBuilder_ == null) {
         return java.util.Collections.unmodifiableList(clientMetadata_);
       } else {
@@ -633,7 +633,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
-    public GenesisMetadata getClientMetadata(int index) {
+    public com.ibc.core.client.v1.GenesisMetadata getClientMetadata(int index) {
       if (clientMetadataBuilder_ == null) {
         return clientMetadata_.get(index);
       } else {
@@ -644,7 +644,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
     public Builder setClientMetadata(
-        int index, GenesisMetadata value) {
+        int index, com.ibc.core.client.v1.GenesisMetadata value) {
       if (clientMetadataBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -661,7 +661,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
     public Builder setClientMetadata(
-        int index, GenesisMetadata.Builder builderForValue) {
+        int index, com.ibc.core.client.v1.GenesisMetadata.Builder builderForValue) {
       if (clientMetadataBuilder_ == null) {
         ensureClientMetadataIsMutable();
         clientMetadata_.set(index, builderForValue.build());
@@ -674,7 +674,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
-    public Builder addClientMetadata(GenesisMetadata value) {
+    public Builder addClientMetadata(com.ibc.core.client.v1.GenesisMetadata value) {
       if (clientMetadataBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -691,7 +691,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
     public Builder addClientMetadata(
-        int index, GenesisMetadata value) {
+        int index, com.ibc.core.client.v1.GenesisMetadata value) {
       if (clientMetadataBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -708,7 +708,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
     public Builder addClientMetadata(
-        GenesisMetadata.Builder builderForValue) {
+        com.ibc.core.client.v1.GenesisMetadata.Builder builderForValue) {
       if (clientMetadataBuilder_ == null) {
         ensureClientMetadataIsMutable();
         clientMetadata_.add(builderForValue.build());
@@ -722,7 +722,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
     public Builder addClientMetadata(
-        int index, GenesisMetadata.Builder builderForValue) {
+        int index, com.ibc.core.client.v1.GenesisMetadata.Builder builderForValue) {
       if (clientMetadataBuilder_ == null) {
         ensureClientMetadataIsMutable();
         clientMetadata_.add(index, builderForValue.build());
@@ -736,7 +736,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
     public Builder addAllClientMetadata(
-        Iterable<? extends GenesisMetadata> values) {
+        java.lang.Iterable<? extends com.ibc.core.client.v1.GenesisMetadata> values) {
       if (clientMetadataBuilder_ == null) {
         ensureClientMetadataIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -776,14 +776,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
-    public GenesisMetadata.Builder getClientMetadataBuilder(
+    public com.ibc.core.client.v1.GenesisMetadata.Builder getClientMetadataBuilder(
         int index) {
       return getClientMetadataFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
-    public GenesisMetadataOrBuilder getClientMetadataOrBuilder(
+    public com.ibc.core.client.v1.GenesisMetadataOrBuilder getClientMetadataOrBuilder(
         int index) {
       if (clientMetadataBuilder_ == null) {
         return clientMetadata_.get(index);  } else {
@@ -793,7 +793,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
-    public java.util.List<? extends GenesisMetadataOrBuilder>
+    public java.util.List<? extends com.ibc.core.client.v1.GenesisMetadataOrBuilder> 
          getClientMetadataOrBuilderList() {
       if (clientMetadataBuilder_ != null) {
         return clientMetadataBuilder_.getMessageOrBuilderList();
@@ -804,31 +804,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
-    public GenesisMetadata.Builder addClientMetadataBuilder() {
+    public com.ibc.core.client.v1.GenesisMetadata.Builder addClientMetadataBuilder() {
       return getClientMetadataFieldBuilder().addBuilder(
-          GenesisMetadata.getDefaultInstance());
+          com.ibc.core.client.v1.GenesisMetadata.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
-    public GenesisMetadata.Builder addClientMetadataBuilder(
+    public com.ibc.core.client.v1.GenesisMetadata.Builder addClientMetadataBuilder(
         int index) {
       return getClientMetadataFieldBuilder().addBuilder(
-          index, GenesisMetadata.getDefaultInstance());
+          index, com.ibc.core.client.v1.GenesisMetadata.getDefaultInstance());
     }
     /**
      * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
      */
-    public java.util.List<GenesisMetadata.Builder>
+    public java.util.List<com.ibc.core.client.v1.GenesisMetadata.Builder> 
          getClientMetadataBuilderList() {
       return getClientMetadataFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        GenesisMetadata, GenesisMetadata.Builder, GenesisMetadataOrBuilder>
+        com.ibc.core.client.v1.GenesisMetadata, com.ibc.core.client.v1.GenesisMetadata.Builder, com.ibc.core.client.v1.GenesisMetadataOrBuilder> 
         getClientMetadataFieldBuilder() {
       if (clientMetadataBuilder_ == null) {
         clientMetadataBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            GenesisMetadata, GenesisMetadata.Builder, GenesisMetadataOrBuilder>(
+            com.ibc.core.client.v1.GenesisMetadata, com.ibc.core.client.v1.GenesisMetadata.Builder, com.ibc.core.client.v1.GenesisMetadataOrBuilder>(
                 clientMetadata_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -837,13 +837,13 @@ private static final long serialVersionUID = 0L;
       }
       return clientMetadataBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -854,18 +854,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.client.v1.IdentifiedGenesisMetadata)
-  private static final IdentifiedGenesisMetadata DEFAULT_INSTANCE;
+  private static final com.ibc.core.client.v1.IdentifiedGenesisMetadata DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new IdentifiedGenesisMetadata();
+    DEFAULT_INSTANCE = new com.ibc.core.client.v1.IdentifiedGenesisMetadata();
   }
 
-  public static IdentifiedGenesisMetadata getDefaultInstance() {
+  public static com.ibc.core.client.v1.IdentifiedGenesisMetadata getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<IdentifiedGenesisMetadata>
       PARSER = new com.google.protobuf.AbstractParser<IdentifiedGenesisMetadata>() {
-    @Override
+    @java.lang.Override
     public IdentifiedGenesisMetadata parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -889,13 +889,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<IdentifiedGenesisMetadata> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public IdentifiedGenesisMetadata getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.core.client.v1.IdentifiedGenesisMetadata getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

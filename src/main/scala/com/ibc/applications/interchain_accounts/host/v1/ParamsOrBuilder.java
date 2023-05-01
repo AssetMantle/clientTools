@@ -25,7 +25,7 @@ public interface ParamsOrBuilder extends
    * <code>repeated string allow_messages = 2 [json_name = "allowMessages", (.gogoproto.moretags) = "yaml:&#92;"allow_messages&#92;""];</code>
    * @return A list containing the allowMessages.
    */
-  java.util.List<String>
+  java.util.List<java.lang.String>
       getAllowMessagesList();
   /**
    * <pre>
@@ -45,7 +45,7 @@ public interface ParamsOrBuilder extends
    * @param index The index of the element to return.
    * @return The allowMessages at the given index.
    */
-  String getAllowMessages(int index);
+  java.lang.String getAllowMessages(int index);
   /**
    * <pre>
    * allow_messages defines a list of sdk message typeURLs allowed to be executed on a host chain.

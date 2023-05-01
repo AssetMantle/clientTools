@@ -15,7 +15,7 @@ public interface MinterOrBuilder extends
    * <code>string inflation = 1 [json_name = "inflation", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
    * @return The inflation.
    */
-  String getInflation();
+  java.lang.String getInflation();
   /**
    * <pre>
    * current annual inflation rate
@@ -35,7 +35,7 @@ public interface MinterOrBuilder extends
    * <code>string annual_provisions = 2 [json_name = "annualProvisions", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"annual_provisions&#92;""];</code>
    * @return The annualProvisions.
    */
-  String getAnnualProvisions();
+  java.lang.String getAnnualProvisions();
   /**
    * <pre>
    * current annual expected provisions

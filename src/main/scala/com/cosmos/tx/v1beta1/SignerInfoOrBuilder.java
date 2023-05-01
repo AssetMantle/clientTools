@@ -59,7 +59,7 @@ public interface SignerInfoOrBuilder extends
    * <code>.cosmos.tx.v1beta1.ModeInfo mode_info = 2 [json_name = "modeInfo"];</code>
    * @return The modeInfo.
    */
-  ModeInfo getModeInfo();
+  com.cosmos.tx.v1beta1.ModeInfo getModeInfo();
   /**
    * <pre>
    * mode_info describes the signing mode of the signer and is a nested
@@ -68,7 +68,7 @@ public interface SignerInfoOrBuilder extends
    *
    * <code>.cosmos.tx.v1beta1.ModeInfo mode_info = 2 [json_name = "modeInfo"];</code>
    */
-  ModeInfoOrBuilder getModeInfoOrBuilder();
+  com.cosmos.tx.v1beta1.ModeInfoOrBuilder getModeInfoOrBuilder();
 
   /**
    * <pre>

@@ -17,7 +17,7 @@ public interface DelegatorStartingInfoOrBuilder extends
    * <code>string stake = 2 [json_name = "stake", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"stake&#92;""];</code>
    * @return The stake.
    */
-  String getStake();
+  java.lang.String getStake();
   /**
    * <code>string stake = 2 [json_name = "stake", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"stake&#92;""];</code>
    * @return The bytes for stake.

@@ -14,7 +14,7 @@ public interface QueryGrantsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
    */
-  java.util.List<Grant>
+  java.util.List<com.cosmos.authz.v1beta1.Grant> 
       getGrantsList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryGrantsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
    */
-  Grant getGrants(int index);
+  com.cosmos.authz.v1beta1.Grant getGrants(int index);
   /**
    * <pre>
    * authorizations is a list of grants granted for grantee by granter.
@@ -39,7 +39,7 @@ public interface QueryGrantsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
    */
-  java.util.List<? extends GrantOrBuilder>
+  java.util.List<? extends com.cosmos.authz.v1beta1.GrantOrBuilder> 
       getGrantsOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryGrantsResponseOrBuilder extends
    *
    * <code>repeated .cosmos.authz.v1beta1.Grant grants = 1 [json_name = "grants"];</code>
    */
-  GrantOrBuilder getGrantsOrBuilder(
+  com.cosmos.authz.v1beta1.GrantOrBuilder getGrantsOrBuilder(
       int index);
 
   /**

@@ -22,28 +22,28 @@ private static final long serialVersionUID = 0L;
   private AppDescriptor() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new AppDescriptor();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_descriptor;
+    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_fieldAccessorTable
+    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            AppDescriptor.class, Builder.class);
+            com.cosmos.base.reflection.v2alpha1.AppDescriptor.class, com.cosmos.base.reflection.v2alpha1.AppDescriptor.Builder.class);
   }
 
   public static final int AUTHN_FIELD_NUMBER = 1;
-  private AuthnDescriptor authn_;
+  private com.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn_;
   /**
    * <pre>
    * AuthnDescriptor provides information on how to authenticate transactions on the application
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
    * @return Whether the authn field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasAuthn() {
     return authn_ != null;
   }
@@ -66,9 +66,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
    * @return The authn.
    */
-  @Override
-  public AuthnDescriptor getAuthn() {
-    return authn_ == null ? AuthnDescriptor.getDefaultInstance() : authn_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.AuthnDescriptor getAuthn() {
+    return authn_ == null ? com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance() : authn_;
   }
   /**
    * <pre>
@@ -78,13 +78,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
    */
-  @Override
-  public AuthnDescriptorOrBuilder getAuthnOrBuilder() {
-    return authn_ == null ? AuthnDescriptor.getDefaultInstance() : authn_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder getAuthnOrBuilder() {
+    return authn_ == null ? com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance() : authn_;
   }
 
   public static final int CHAIN_FIELD_NUMBER = 2;
-  private ChainDescriptor chain_;
+  private com.cosmos.base.reflection.v2alpha1.ChainDescriptor chain_;
   /**
    * <pre>
    * chain provides the chain descriptor
@@ -93,7 +93,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
    * @return Whether the chain field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasChain() {
     return chain_ != null;
   }
@@ -105,9 +105,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
    * @return The chain.
    */
-  @Override
-  public ChainDescriptor getChain() {
-    return chain_ == null ? ChainDescriptor.getDefaultInstance() : chain_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.ChainDescriptor getChain() {
+    return chain_ == null ? com.cosmos.base.reflection.v2alpha1.ChainDescriptor.getDefaultInstance() : chain_;
   }
   /**
    * <pre>
@@ -116,13 +116,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
    */
-  @Override
-  public ChainDescriptorOrBuilder getChainOrBuilder() {
-    return chain_ == null ? ChainDescriptor.getDefaultInstance() : chain_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.ChainDescriptorOrBuilder getChainOrBuilder() {
+    return chain_ == null ? com.cosmos.base.reflection.v2alpha1.ChainDescriptor.getDefaultInstance() : chain_;
   }
 
   public static final int CODEC_FIELD_NUMBER = 3;
-  private CodecDescriptor codec_;
+  private com.cosmos.base.reflection.v2alpha1.CodecDescriptor codec_;
   /**
    * <pre>
    * codec provides metadata information regarding codec related types
@@ -131,7 +131,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
    * @return Whether the codec field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasCodec() {
     return codec_ != null;
   }
@@ -143,9 +143,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
    * @return The codec.
    */
-  @Override
-  public CodecDescriptor getCodec() {
-    return codec_ == null ? CodecDescriptor.getDefaultInstance() : codec_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.CodecDescriptor getCodec() {
+    return codec_ == null ? com.cosmos.base.reflection.v2alpha1.CodecDescriptor.getDefaultInstance() : codec_;
   }
   /**
    * <pre>
@@ -154,13 +154,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
    */
-  @Override
-  public CodecDescriptorOrBuilder getCodecOrBuilder() {
-    return codec_ == null ? CodecDescriptor.getDefaultInstance() : codec_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.CodecDescriptorOrBuilder getCodecOrBuilder() {
+    return codec_ == null ? com.cosmos.base.reflection.v2alpha1.CodecDescriptor.getDefaultInstance() : codec_;
   }
 
   public static final int CONFIGURATION_FIELD_NUMBER = 4;
-  private ConfigurationDescriptor configuration_;
+  private com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration_;
   /**
    * <pre>
    * configuration provides metadata information regarding the sdk.Config type
@@ -169,7 +169,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
    * @return Whether the configuration field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasConfiguration() {
     return configuration_ != null;
   }
@@ -181,9 +181,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
    * @return The configuration.
    */
-  @Override
-  public ConfigurationDescriptor getConfiguration() {
-    return configuration_ == null ? ConfigurationDescriptor.getDefaultInstance() : configuration_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor getConfiguration() {
+    return configuration_ == null ? com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.getDefaultInstance() : configuration_;
   }
   /**
    * <pre>
@@ -192,13 +192,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
    */
-  @Override
-  public ConfigurationDescriptorOrBuilder getConfigurationOrBuilder() {
-    return configuration_ == null ? ConfigurationDescriptor.getDefaultInstance() : configuration_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder getConfigurationOrBuilder() {
+    return configuration_ == null ? com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.getDefaultInstance() : configuration_;
   }
 
   public static final int QUERY_SERVICES_FIELD_NUMBER = 5;
-  private QueryServicesDescriptor queryServices_;
+  private com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor queryServices_;
   /**
    * <pre>
    * query_services provides metadata information regarding the available queriable endpoints
@@ -207,7 +207,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
    * @return Whether the queryServices field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasQueryServices() {
     return queryServices_ != null;
   }
@@ -219,9 +219,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
    * @return The queryServices.
    */
-  @Override
-  public QueryServicesDescriptor getQueryServices() {
-    return queryServices_ == null ? QueryServicesDescriptor.getDefaultInstance() : queryServices_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor getQueryServices() {
+    return queryServices_ == null ? com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.getDefaultInstance() : queryServices_;
   }
   /**
    * <pre>
@@ -230,13 +230,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
    */
-  @Override
-  public QueryServicesDescriptorOrBuilder getQueryServicesOrBuilder() {
-    return queryServices_ == null ? QueryServicesDescriptor.getDefaultInstance() : queryServices_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptorOrBuilder getQueryServicesOrBuilder() {
+    return queryServices_ == null ? com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.getDefaultInstance() : queryServices_;
   }
 
   public static final int TX_FIELD_NUMBER = 6;
-  private TxDescriptor tx_;
+  private com.cosmos.base.reflection.v2alpha1.TxDescriptor tx_;
   /**
    * <pre>
    * tx provides metadata information regarding how to send transactions to the given application
@@ -245,7 +245,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
    * @return Whether the tx field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasTx() {
     return tx_ != null;
   }
@@ -257,9 +257,9 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
    * @return The tx.
    */
-  @Override
-  public TxDescriptor getTx() {
-    return tx_ == null ? TxDescriptor.getDefaultInstance() : tx_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.TxDescriptor getTx() {
+    return tx_ == null ? com.cosmos.base.reflection.v2alpha1.TxDescriptor.getDefaultInstance() : tx_;
   }
   /**
    * <pre>
@@ -268,13 +268,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
    */
-  @Override
-  public TxDescriptorOrBuilder getTxOrBuilder() {
-    return tx_ == null ? TxDescriptor.getDefaultInstance() : tx_;
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.TxDescriptorOrBuilder getTxOrBuilder() {
+    return tx_ == null ? com.cosmos.base.reflection.v2alpha1.TxDescriptor.getDefaultInstance() : tx_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -284,7 +284,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (authn_ != null) {
@@ -308,7 +308,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -343,15 +343,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof AppDescriptor)) {
+    if (!(obj instanceof com.cosmos.base.reflection.v2alpha1.AppDescriptor)) {
       return super.equals(obj);
     }
-    AppDescriptor other = (AppDescriptor) obj;
+    com.cosmos.base.reflection.v2alpha1.AppDescriptor other = (com.cosmos.base.reflection.v2alpha1.AppDescriptor) obj;
 
     if (hasAuthn() != other.hasAuthn()) return false;
     if (hasAuthn()) {
@@ -387,7 +387,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -423,69 +423,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static AppDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static AppDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static AppDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static AppDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static AppDescriptor parseFrom(byte[] data)
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static AppDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static AppDescriptor parseFrom(java.io.InputStream input)
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static AppDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static AppDescriptor parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static AppDescriptor parseDelimitedFrom(
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static AppDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static AppDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -493,23 +493,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(AppDescriptor prototype) {
+  public static Builder newBuilder(com.cosmos.base.reflection.v2alpha1.AppDescriptor prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -523,18 +523,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.reflection.v2alpha1.AppDescriptor)
-      AppDescriptorOrBuilder {
+      com.cosmos.base.reflection.v2alpha1.AppDescriptorOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_descriptor;
+      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_fieldAccessorTable
+      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              AppDescriptor.class, Builder.class);
+              com.cosmos.base.reflection.v2alpha1.AppDescriptor.class, com.cosmos.base.reflection.v2alpha1.AppDescriptor.Builder.class);
     }
 
     // Construct using com.cosmos.base.reflection.v2alpha1.AppDescriptor.newBuilder()
@@ -543,11 +543,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -584,35 +584,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_descriptor;
+      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_AppDescriptor_descriptor;
     }
 
-    @Override
-    public AppDescriptor getDefaultInstanceForType() {
-      return AppDescriptor.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.base.reflection.v2alpha1.AppDescriptor getDefaultInstanceForType() {
+      return com.cosmos.base.reflection.v2alpha1.AppDescriptor.getDefaultInstance();
     }
 
-    @Override
-    public AppDescriptor build() {
-      AppDescriptor result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.base.reflection.v2alpha1.AppDescriptor build() {
+      com.cosmos.base.reflection.v2alpha1.AppDescriptor result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public AppDescriptor buildPartial() {
-      AppDescriptor result = new AppDescriptor(this);
+    @java.lang.Override
+    public com.cosmos.base.reflection.v2alpha1.AppDescriptor buildPartial() {
+      com.cosmos.base.reflection.v2alpha1.AppDescriptor result = new com.cosmos.base.reflection.v2alpha1.AppDescriptor(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(AppDescriptor result) {
+    private void buildPartial0(com.cosmos.base.reflection.v2alpha1.AppDescriptor result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.authn_ = authnBuilder_ == null
@@ -646,50 +646,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof AppDescriptor) {
-        return mergeFrom((AppDescriptor)other);
+      if (other instanceof com.cosmos.base.reflection.v2alpha1.AppDescriptor) {
+        return mergeFrom((com.cosmos.base.reflection.v2alpha1.AppDescriptor)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(AppDescriptor other) {
-      if (other == AppDescriptor.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.base.reflection.v2alpha1.AppDescriptor other) {
+      if (other == com.cosmos.base.reflection.v2alpha1.AppDescriptor.getDefaultInstance()) return this;
       if (other.hasAuthn()) {
         mergeAuthn(other.getAuthn());
       }
@@ -713,18 +713,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -793,9 +793,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private AuthnDescriptor authn_;
+    private com.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        AuthnDescriptor, AuthnDescriptor.Builder, AuthnDescriptorOrBuilder> authnBuilder_;
+        com.cosmos.base.reflection.v2alpha1.AuthnDescriptor, com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder> authnBuilder_;
     /**
      * <pre>
      * AuthnDescriptor provides information on how to authenticate transactions on the application
@@ -817,9 +817,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      * @return The authn.
      */
-    public AuthnDescriptor getAuthn() {
+    public com.cosmos.base.reflection.v2alpha1.AuthnDescriptor getAuthn() {
       if (authnBuilder_ == null) {
-        return authn_ == null ? AuthnDescriptor.getDefaultInstance() : authn_;
+        return authn_ == null ? com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance() : authn_;
       } else {
         return authnBuilder_.getMessage();
       }
@@ -832,7 +832,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
-    public Builder setAuthn(AuthnDescriptor value) {
+    public Builder setAuthn(com.cosmos.base.reflection.v2alpha1.AuthnDescriptor value) {
       if (authnBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -854,7 +854,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
     public Builder setAuthn(
-        AuthnDescriptor.Builder builderForValue) {
+        com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder builderForValue) {
       if (authnBuilder_ == null) {
         authn_ = builderForValue.build();
       } else {
@@ -872,11 +872,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
-    public Builder mergeAuthn(AuthnDescriptor value) {
+    public Builder mergeAuthn(com.cosmos.base.reflection.v2alpha1.AuthnDescriptor value) {
       if (authnBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           authn_ != null &&
-          authn_ != AuthnDescriptor.getDefaultInstance()) {
+          authn_ != com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance()) {
           getAuthnBuilder().mergeFrom(value);
         } else {
           authn_ = value;
@@ -914,7 +914,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
-    public AuthnDescriptor.Builder getAuthnBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder getAuthnBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getAuthnFieldBuilder().getBuilder();
@@ -927,12 +927,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
-    public AuthnDescriptorOrBuilder getAuthnOrBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder getAuthnOrBuilder() {
       if (authnBuilder_ != null) {
         return authnBuilder_.getMessageOrBuilder();
       } else {
         return authn_ == null ?
-            AuthnDescriptor.getDefaultInstance() : authn_;
+            com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.getDefaultInstance() : authn_;
       }
     }
     /**
@@ -944,11 +944,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.AuthnDescriptor authn = 1 [json_name = "authn"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        AuthnDescriptor, AuthnDescriptor.Builder, AuthnDescriptorOrBuilder>
+        com.cosmos.base.reflection.v2alpha1.AuthnDescriptor, com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder> 
         getAuthnFieldBuilder() {
       if (authnBuilder_ == null) {
         authnBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            AuthnDescriptor, AuthnDescriptor.Builder, AuthnDescriptorOrBuilder>(
+            com.cosmos.base.reflection.v2alpha1.AuthnDescriptor, com.cosmos.base.reflection.v2alpha1.AuthnDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.AuthnDescriptorOrBuilder>(
                 getAuthn(),
                 getParentForChildren(),
                 isClean());
@@ -957,9 +957,9 @@ private static final long serialVersionUID = 0L;
       return authnBuilder_;
     }
 
-    private ChainDescriptor chain_;
+    private com.cosmos.base.reflection.v2alpha1.ChainDescriptor chain_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        ChainDescriptor, ChainDescriptor.Builder, ChainDescriptorOrBuilder> chainBuilder_;
+        com.cosmos.base.reflection.v2alpha1.ChainDescriptor, com.cosmos.base.reflection.v2alpha1.ChainDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.ChainDescriptorOrBuilder> chainBuilder_;
     /**
      * <pre>
      * chain provides the chain descriptor
@@ -979,9 +979,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
      * @return The chain.
      */
-    public ChainDescriptor getChain() {
+    public com.cosmos.base.reflection.v2alpha1.ChainDescriptor getChain() {
       if (chainBuilder_ == null) {
-        return chain_ == null ? ChainDescriptor.getDefaultInstance() : chain_;
+        return chain_ == null ? com.cosmos.base.reflection.v2alpha1.ChainDescriptor.getDefaultInstance() : chain_;
       } else {
         return chainBuilder_.getMessage();
       }
@@ -993,7 +993,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
      */
-    public Builder setChain(ChainDescriptor value) {
+    public Builder setChain(com.cosmos.base.reflection.v2alpha1.ChainDescriptor value) {
       if (chainBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1014,7 +1014,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
      */
     public Builder setChain(
-        ChainDescriptor.Builder builderForValue) {
+        com.cosmos.base.reflection.v2alpha1.ChainDescriptor.Builder builderForValue) {
       if (chainBuilder_ == null) {
         chain_ = builderForValue.build();
       } else {
@@ -1031,11 +1031,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
      */
-    public Builder mergeChain(ChainDescriptor value) {
+    public Builder mergeChain(com.cosmos.base.reflection.v2alpha1.ChainDescriptor value) {
       if (chainBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           chain_ != null &&
-          chain_ != ChainDescriptor.getDefaultInstance()) {
+          chain_ != com.cosmos.base.reflection.v2alpha1.ChainDescriptor.getDefaultInstance()) {
           getChainBuilder().mergeFrom(value);
         } else {
           chain_ = value;
@@ -1071,7 +1071,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
      */
-    public ChainDescriptor.Builder getChainBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.ChainDescriptor.Builder getChainBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getChainFieldBuilder().getBuilder();
@@ -1083,12 +1083,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
      */
-    public ChainDescriptorOrBuilder getChainOrBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.ChainDescriptorOrBuilder getChainOrBuilder() {
       if (chainBuilder_ != null) {
         return chainBuilder_.getMessageOrBuilder();
       } else {
         return chain_ == null ?
-            ChainDescriptor.getDefaultInstance() : chain_;
+            com.cosmos.base.reflection.v2alpha1.ChainDescriptor.getDefaultInstance() : chain_;
       }
     }
     /**
@@ -1099,11 +1099,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.ChainDescriptor chain = 2 [json_name = "chain"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ChainDescriptor, ChainDescriptor.Builder, ChainDescriptorOrBuilder>
+        com.cosmos.base.reflection.v2alpha1.ChainDescriptor, com.cosmos.base.reflection.v2alpha1.ChainDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.ChainDescriptorOrBuilder> 
         getChainFieldBuilder() {
       if (chainBuilder_ == null) {
         chainBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ChainDescriptor, ChainDescriptor.Builder, ChainDescriptorOrBuilder>(
+            com.cosmos.base.reflection.v2alpha1.ChainDescriptor, com.cosmos.base.reflection.v2alpha1.ChainDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.ChainDescriptorOrBuilder>(
                 getChain(),
                 getParentForChildren(),
                 isClean());
@@ -1112,9 +1112,9 @@ private static final long serialVersionUID = 0L;
       return chainBuilder_;
     }
 
-    private CodecDescriptor codec_;
+    private com.cosmos.base.reflection.v2alpha1.CodecDescriptor codec_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        CodecDescriptor, CodecDescriptor.Builder, CodecDescriptorOrBuilder> codecBuilder_;
+        com.cosmos.base.reflection.v2alpha1.CodecDescriptor, com.cosmos.base.reflection.v2alpha1.CodecDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.CodecDescriptorOrBuilder> codecBuilder_;
     /**
      * <pre>
      * codec provides metadata information regarding codec related types
@@ -1134,9 +1134,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
      * @return The codec.
      */
-    public CodecDescriptor getCodec() {
+    public com.cosmos.base.reflection.v2alpha1.CodecDescriptor getCodec() {
       if (codecBuilder_ == null) {
-        return codec_ == null ? CodecDescriptor.getDefaultInstance() : codec_;
+        return codec_ == null ? com.cosmos.base.reflection.v2alpha1.CodecDescriptor.getDefaultInstance() : codec_;
       } else {
         return codecBuilder_.getMessage();
       }
@@ -1148,7 +1148,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
      */
-    public Builder setCodec(CodecDescriptor value) {
+    public Builder setCodec(com.cosmos.base.reflection.v2alpha1.CodecDescriptor value) {
       if (codecBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1169,7 +1169,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
      */
     public Builder setCodec(
-        CodecDescriptor.Builder builderForValue) {
+        com.cosmos.base.reflection.v2alpha1.CodecDescriptor.Builder builderForValue) {
       if (codecBuilder_ == null) {
         codec_ = builderForValue.build();
       } else {
@@ -1186,11 +1186,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
      */
-    public Builder mergeCodec(CodecDescriptor value) {
+    public Builder mergeCodec(com.cosmos.base.reflection.v2alpha1.CodecDescriptor value) {
       if (codecBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0) &&
           codec_ != null &&
-          codec_ != CodecDescriptor.getDefaultInstance()) {
+          codec_ != com.cosmos.base.reflection.v2alpha1.CodecDescriptor.getDefaultInstance()) {
           getCodecBuilder().mergeFrom(value);
         } else {
           codec_ = value;
@@ -1226,7 +1226,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
      */
-    public CodecDescriptor.Builder getCodecBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.CodecDescriptor.Builder getCodecBuilder() {
       bitField0_ |= 0x00000004;
       onChanged();
       return getCodecFieldBuilder().getBuilder();
@@ -1238,12 +1238,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
      */
-    public CodecDescriptorOrBuilder getCodecOrBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.CodecDescriptorOrBuilder getCodecOrBuilder() {
       if (codecBuilder_ != null) {
         return codecBuilder_.getMessageOrBuilder();
       } else {
         return codec_ == null ?
-            CodecDescriptor.getDefaultInstance() : codec_;
+            com.cosmos.base.reflection.v2alpha1.CodecDescriptor.getDefaultInstance() : codec_;
       }
     }
     /**
@@ -1254,11 +1254,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.CodecDescriptor codec = 3 [json_name = "codec"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        CodecDescriptor, CodecDescriptor.Builder, CodecDescriptorOrBuilder>
+        com.cosmos.base.reflection.v2alpha1.CodecDescriptor, com.cosmos.base.reflection.v2alpha1.CodecDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.CodecDescriptorOrBuilder> 
         getCodecFieldBuilder() {
       if (codecBuilder_ == null) {
         codecBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            CodecDescriptor, CodecDescriptor.Builder, CodecDescriptorOrBuilder>(
+            com.cosmos.base.reflection.v2alpha1.CodecDescriptor, com.cosmos.base.reflection.v2alpha1.CodecDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.CodecDescriptorOrBuilder>(
                 getCodec(),
                 getParentForChildren(),
                 isClean());
@@ -1267,9 +1267,9 @@ private static final long serialVersionUID = 0L;
       return codecBuilder_;
     }
 
-    private ConfigurationDescriptor configuration_;
+    private com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        ConfigurationDescriptor, ConfigurationDescriptor.Builder, ConfigurationDescriptorOrBuilder> configurationBuilder_;
+        com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder> configurationBuilder_;
     /**
      * <pre>
      * configuration provides metadata information regarding the sdk.Config type
@@ -1289,9 +1289,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
      * @return The configuration.
      */
-    public ConfigurationDescriptor getConfiguration() {
+    public com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor getConfiguration() {
       if (configurationBuilder_ == null) {
-        return configuration_ == null ? ConfigurationDescriptor.getDefaultInstance() : configuration_;
+        return configuration_ == null ? com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.getDefaultInstance() : configuration_;
       } else {
         return configurationBuilder_.getMessage();
       }
@@ -1303,7 +1303,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
      */
-    public Builder setConfiguration(ConfigurationDescriptor value) {
+    public Builder setConfiguration(com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor value) {
       if (configurationBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1324,7 +1324,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
      */
     public Builder setConfiguration(
-        ConfigurationDescriptor.Builder builderForValue) {
+        com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.Builder builderForValue) {
       if (configurationBuilder_ == null) {
         configuration_ = builderForValue.build();
       } else {
@@ -1341,11 +1341,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
      */
-    public Builder mergeConfiguration(ConfigurationDescriptor value) {
+    public Builder mergeConfiguration(com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor value) {
       if (configurationBuilder_ == null) {
         if (((bitField0_ & 0x00000008) != 0) &&
           configuration_ != null &&
-          configuration_ != ConfigurationDescriptor.getDefaultInstance()) {
+          configuration_ != com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.getDefaultInstance()) {
           getConfigurationBuilder().mergeFrom(value);
         } else {
           configuration_ = value;
@@ -1381,7 +1381,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
      */
-    public ConfigurationDescriptor.Builder getConfigurationBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.Builder getConfigurationBuilder() {
       bitField0_ |= 0x00000008;
       onChanged();
       return getConfigurationFieldBuilder().getBuilder();
@@ -1393,12 +1393,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
      */
-    public ConfigurationDescriptorOrBuilder getConfigurationOrBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder getConfigurationOrBuilder() {
       if (configurationBuilder_ != null) {
         return configurationBuilder_.getMessageOrBuilder();
       } else {
         return configuration_ == null ?
-            ConfigurationDescriptor.getDefaultInstance() : configuration_;
+            com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.getDefaultInstance() : configuration_;
       }
     }
     /**
@@ -1409,11 +1409,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor configuration = 4 [json_name = "configuration"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        ConfigurationDescriptor, ConfigurationDescriptor.Builder, ConfigurationDescriptorOrBuilder>
+        com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder> 
         getConfigurationFieldBuilder() {
       if (configurationBuilder_ == null) {
         configurationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            ConfigurationDescriptor, ConfigurationDescriptor.Builder, ConfigurationDescriptorOrBuilder>(
+            com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.ConfigurationDescriptorOrBuilder>(
                 getConfiguration(),
                 getParentForChildren(),
                 isClean());
@@ -1422,9 +1422,9 @@ private static final long serialVersionUID = 0L;
       return configurationBuilder_;
     }
 
-    private QueryServicesDescriptor queryServices_;
+    private com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor queryServices_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        QueryServicesDescriptor, QueryServicesDescriptor.Builder, QueryServicesDescriptorOrBuilder> queryServicesBuilder_;
+        com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor, com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptorOrBuilder> queryServicesBuilder_;
     /**
      * <pre>
      * query_services provides metadata information regarding the available queriable endpoints
@@ -1444,9 +1444,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
      * @return The queryServices.
      */
-    public QueryServicesDescriptor getQueryServices() {
+    public com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor getQueryServices() {
       if (queryServicesBuilder_ == null) {
-        return queryServices_ == null ? QueryServicesDescriptor.getDefaultInstance() : queryServices_;
+        return queryServices_ == null ? com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.getDefaultInstance() : queryServices_;
       } else {
         return queryServicesBuilder_.getMessage();
       }
@@ -1458,7 +1458,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
      */
-    public Builder setQueryServices(QueryServicesDescriptor value) {
+    public Builder setQueryServices(com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor value) {
       if (queryServicesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1479,7 +1479,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
      */
     public Builder setQueryServices(
-        QueryServicesDescriptor.Builder builderForValue) {
+        com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.Builder builderForValue) {
       if (queryServicesBuilder_ == null) {
         queryServices_ = builderForValue.build();
       } else {
@@ -1496,11 +1496,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
      */
-    public Builder mergeQueryServices(QueryServicesDescriptor value) {
+    public Builder mergeQueryServices(com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor value) {
       if (queryServicesBuilder_ == null) {
         if (((bitField0_ & 0x00000010) != 0) &&
           queryServices_ != null &&
-          queryServices_ != QueryServicesDescriptor.getDefaultInstance()) {
+          queryServices_ != com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.getDefaultInstance()) {
           getQueryServicesBuilder().mergeFrom(value);
         } else {
           queryServices_ = value;
@@ -1536,7 +1536,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
      */
-    public QueryServicesDescriptor.Builder getQueryServicesBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.Builder getQueryServicesBuilder() {
       bitField0_ |= 0x00000010;
       onChanged();
       return getQueryServicesFieldBuilder().getBuilder();
@@ -1548,12 +1548,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
      */
-    public QueryServicesDescriptorOrBuilder getQueryServicesOrBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptorOrBuilder getQueryServicesOrBuilder() {
       if (queryServicesBuilder_ != null) {
         return queryServicesBuilder_.getMessageOrBuilder();
       } else {
         return queryServices_ == null ?
-            QueryServicesDescriptor.getDefaultInstance() : queryServices_;
+            com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.getDefaultInstance() : queryServices_;
       }
     }
     /**
@@ -1564,11 +1564,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor query_services = 5 [json_name = "queryServices"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        QueryServicesDescriptor, QueryServicesDescriptor.Builder, QueryServicesDescriptorOrBuilder>
+        com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor, com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptorOrBuilder> 
         getQueryServicesFieldBuilder() {
       if (queryServicesBuilder_ == null) {
         queryServicesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            QueryServicesDescriptor, QueryServicesDescriptor.Builder, QueryServicesDescriptorOrBuilder>(
+            com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor, com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.QueryServicesDescriptorOrBuilder>(
                 getQueryServices(),
                 getParentForChildren(),
                 isClean());
@@ -1577,9 +1577,9 @@ private static final long serialVersionUID = 0L;
       return queryServicesBuilder_;
     }
 
-    private TxDescriptor tx_;
+    private com.cosmos.base.reflection.v2alpha1.TxDescriptor tx_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        TxDescriptor, TxDescriptor.Builder, TxDescriptorOrBuilder> txBuilder_;
+        com.cosmos.base.reflection.v2alpha1.TxDescriptor, com.cosmos.base.reflection.v2alpha1.TxDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.TxDescriptorOrBuilder> txBuilder_;
     /**
      * <pre>
      * tx provides metadata information regarding how to send transactions to the given application
@@ -1599,9 +1599,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
      * @return The tx.
      */
-    public TxDescriptor getTx() {
+    public com.cosmos.base.reflection.v2alpha1.TxDescriptor getTx() {
       if (txBuilder_ == null) {
-        return tx_ == null ? TxDescriptor.getDefaultInstance() : tx_;
+        return tx_ == null ? com.cosmos.base.reflection.v2alpha1.TxDescriptor.getDefaultInstance() : tx_;
       } else {
         return txBuilder_.getMessage();
       }
@@ -1613,7 +1613,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
      */
-    public Builder setTx(TxDescriptor value) {
+    public Builder setTx(com.cosmos.base.reflection.v2alpha1.TxDescriptor value) {
       if (txBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1634,7 +1634,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
      */
     public Builder setTx(
-        TxDescriptor.Builder builderForValue) {
+        com.cosmos.base.reflection.v2alpha1.TxDescriptor.Builder builderForValue) {
       if (txBuilder_ == null) {
         tx_ = builderForValue.build();
       } else {
@@ -1651,11 +1651,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
      */
-    public Builder mergeTx(TxDescriptor value) {
+    public Builder mergeTx(com.cosmos.base.reflection.v2alpha1.TxDescriptor value) {
       if (txBuilder_ == null) {
         if (((bitField0_ & 0x00000020) != 0) &&
           tx_ != null &&
-          tx_ != TxDescriptor.getDefaultInstance()) {
+          tx_ != com.cosmos.base.reflection.v2alpha1.TxDescriptor.getDefaultInstance()) {
           getTxBuilder().mergeFrom(value);
         } else {
           tx_ = value;
@@ -1691,7 +1691,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
      */
-    public TxDescriptor.Builder getTxBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.TxDescriptor.Builder getTxBuilder() {
       bitField0_ |= 0x00000020;
       onChanged();
       return getTxFieldBuilder().getBuilder();
@@ -1703,12 +1703,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
      */
-    public TxDescriptorOrBuilder getTxOrBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.TxDescriptorOrBuilder getTxOrBuilder() {
       if (txBuilder_ != null) {
         return txBuilder_.getMessageOrBuilder();
       } else {
         return tx_ == null ?
-            TxDescriptor.getDefaultInstance() : tx_;
+            com.cosmos.base.reflection.v2alpha1.TxDescriptor.getDefaultInstance() : tx_;
       }
     }
     /**
@@ -1719,11 +1719,11 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.base.reflection.v2alpha1.TxDescriptor tx = 6 [json_name = "tx"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        TxDescriptor, TxDescriptor.Builder, TxDescriptorOrBuilder>
+        com.cosmos.base.reflection.v2alpha1.TxDescriptor, com.cosmos.base.reflection.v2alpha1.TxDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.TxDescriptorOrBuilder> 
         getTxFieldBuilder() {
       if (txBuilder_ == null) {
         txBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            TxDescriptor, TxDescriptor.Builder, TxDescriptorOrBuilder>(
+            com.cosmos.base.reflection.v2alpha1.TxDescriptor, com.cosmos.base.reflection.v2alpha1.TxDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.TxDescriptorOrBuilder>(
                 getTx(),
                 getParentForChildren(),
                 isClean());
@@ -1731,13 +1731,13 @@ private static final long serialVersionUID = 0L;
       }
       return txBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1748,18 +1748,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.reflection.v2alpha1.AppDescriptor)
-  private static final AppDescriptor DEFAULT_INSTANCE;
+  private static final com.cosmos.base.reflection.v2alpha1.AppDescriptor DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new AppDescriptor();
+    DEFAULT_INSTANCE = new com.cosmos.base.reflection.v2alpha1.AppDescriptor();
   }
 
-  public static AppDescriptor getDefaultInstance() {
+  public static com.cosmos.base.reflection.v2alpha1.AppDescriptor getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<AppDescriptor>
       PARSER = new com.google.protobuf.AbstractParser<AppDescriptor>() {
-    @Override
+    @java.lang.Override
     public AppDescriptor parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1783,13 +1783,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<AppDescriptor> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public AppDescriptor getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.AppDescriptor getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

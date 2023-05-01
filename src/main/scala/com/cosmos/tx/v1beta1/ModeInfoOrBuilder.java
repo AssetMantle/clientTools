@@ -24,7 +24,7 @@ public interface ModeInfoOrBuilder extends
    * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
    * @return The single.
    */
-  ModeInfo.Single getSingle();
+  com.cosmos.tx.v1beta1.ModeInfo.Single getSingle();
   /**
    * <pre>
    * single represents a single signer
@@ -32,7 +32,7 @@ public interface ModeInfoOrBuilder extends
    *
    * <code>.cosmos.tx.v1beta1.ModeInfo.Single single = 1 [json_name = "single"];</code>
    */
-  ModeInfo.SingleOrBuilder getSingleOrBuilder();
+  com.cosmos.tx.v1beta1.ModeInfo.SingleOrBuilder getSingleOrBuilder();
 
   /**
    * <pre>
@@ -51,7 +51,7 @@ public interface ModeInfoOrBuilder extends
    * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
    * @return The multi.
    */
-  ModeInfo.Multi getMulti();
+  com.cosmos.tx.v1beta1.ModeInfo.Multi getMulti();
   /**
    * <pre>
    * multi represents a nested multisig signer
@@ -59,7 +59,7 @@ public interface ModeInfoOrBuilder extends
    *
    * <code>.cosmos.tx.v1beta1.ModeInfo.Multi multi = 2 [json_name = "multi"];</code>
    */
-  ModeInfo.MultiOrBuilder getMultiOrBuilder();
+  com.cosmos.tx.v1beta1.ModeInfo.MultiOrBuilder getMultiOrBuilder();
 
-  ModeInfo.SumCase getSumCase();
+  com.cosmos.tx.v1beta1.ModeInfo.SumCase getSumCase();
 }

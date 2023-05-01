@@ -1,7 +1,7 @@
 package utilities
 
 import com.google.protobuf.ByteString
-import com.ids.{HashID => protoHashID}
+import com.assetmantle.schema.ids.base.{HashID => protoHashID}
 import constants.DataTypeID._
 import org.slf4j.{Logger, LoggerFactory}
 import schema.data.Data

@@ -27,29 +27,29 @@ private static final long serialVersionUID = 0L;
     signer_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgUpgradeClient();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TxProto.internal_static_ibc_core_client_v1_MsgUpgradeClient_descriptor;
+    return com.ibc.core.client.v1.TxProto.internal_static_ibc_core_client_v1_MsgUpgradeClient_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TxProto.internal_static_ibc_core_client_v1_MsgUpgradeClient_fieldAccessorTable
+    return com.ibc.core.client.v1.TxProto.internal_static_ibc_core_client_v1_MsgUpgradeClient_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            MsgUpgradeClient.class, Builder.class);
+            com.ibc.core.client.v1.MsgUpgradeClient.class, com.ibc.core.client.v1.MsgUpgradeClient.Builder.class);
   }
 
   public static final int CLIENT_ID_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object clientId_ = "";
+  private volatile java.lang.Object clientId_ = "";
   /**
    * <pre>
    * client unique identifier
@@ -58,15 +58,15 @@ private static final long serialVersionUID = 0L;
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  @Override
-  public String getClientId() {
-    Object ref = clientId_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getClientId() {
+    java.lang.Object ref = clientId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       clientId_ = s;
       return s;
     }
@@ -79,14 +79,14 @@ private static final long serialVersionUID = 0L;
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The bytes for clientId.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getClientIdBytes() {
-    Object ref = clientId_;
-    if (ref instanceof String) {
+    java.lang.Object ref = clientId_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       clientId_ = b;
       return b;
     } else {
@@ -104,7 +104,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any client_state = 2 [json_name = "clientState", (.gogoproto.moretags) = "yaml:&#92;"client_state&#92;""];</code>
    * @return Whether the clientState field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasClientState() {
     return clientState_ != null;
   }
@@ -116,7 +116,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any client_state = 2 [json_name = "clientState", (.gogoproto.moretags) = "yaml:&#92;"client_state&#92;""];</code>
    * @return The clientState.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Any getClientState() {
     return clientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : clientState_;
   }
@@ -127,7 +127,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Any client_state = 2 [json_name = "clientState", (.gogoproto.moretags) = "yaml:&#92;"client_state&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.AnyOrBuilder getClientStateOrBuilder() {
     return clientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : clientState_;
   }
@@ -143,7 +143,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
    * @return Whether the consensusState field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasConsensusState() {
     return consensusState_ != null;
   }
@@ -156,7 +156,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
    * @return The consensusState.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Any getConsensusState() {
     return consensusState_ == null ? com.google.protobuf.Any.getDefaultInstance() : consensusState_;
   }
@@ -168,7 +168,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.google.protobuf.Any consensus_state = 3 [json_name = "consensusState", (.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.AnyOrBuilder getConsensusStateOrBuilder() {
     return consensusState_ == null ? com.google.protobuf.Any.getDefaultInstance() : consensusState_;
   }
@@ -183,7 +183,7 @@ private static final long serialVersionUID = 0L;
    * <code>bytes proof_upgrade_client = 4 [json_name = "proofUpgradeClient", (.gogoproto.moretags) = "yaml:&#92;"proof_upgrade_client&#92;""];</code>
    * @return The proofUpgradeClient.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getProofUpgradeClient() {
     return proofUpgradeClient_;
   }
@@ -198,14 +198,14 @@ private static final long serialVersionUID = 0L;
    * <code>bytes proof_upgrade_consensus_state = 5 [json_name = "proofUpgradeConsensusState", (.gogoproto.moretags) = "yaml:&#92;"proof_upgrade_consensus_state&#92;""];</code>
    * @return The proofUpgradeConsensusState.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString getProofUpgradeConsensusState() {
     return proofUpgradeConsensusState_;
   }
 
   public static final int SIGNER_FIELD_NUMBER = 6;
   @SuppressWarnings("serial")
-  private volatile Object signer_ = "";
+  private volatile java.lang.Object signer_ = "";
   /**
    * <pre>
    * signer address
@@ -214,15 +214,15 @@ private static final long serialVersionUID = 0L;
    * <code>string signer = 6 [json_name = "signer"];</code>
    * @return The signer.
    */
-  @Override
-  public String getSigner() {
-    Object ref = signer_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getSigner() {
+    java.lang.Object ref = signer_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       signer_ = s;
       return s;
     }
@@ -235,14 +235,14 @@ private static final long serialVersionUID = 0L;
    * <code>string signer = 6 [json_name = "signer"];</code>
    * @return The bytes for signer.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getSignerBytes() {
-    Object ref = signer_;
-    if (ref instanceof String) {
+    java.lang.Object ref = signer_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       signer_ = b;
       return b;
     } else {
@@ -251,7 +251,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -261,7 +261,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientId_)) {
@@ -285,7 +285,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -318,15 +318,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof MsgUpgradeClient)) {
+    if (!(obj instanceof com.ibc.core.client.v1.MsgUpgradeClient)) {
       return super.equals(obj);
     }
-    MsgUpgradeClient other = (MsgUpgradeClient) obj;
+    com.ibc.core.client.v1.MsgUpgradeClient other = (com.ibc.core.client.v1.MsgUpgradeClient) obj;
 
     if (!getClientId()
         .equals(other.getClientId())) return false;
@@ -350,7 +350,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -378,69 +378,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static MsgUpgradeClient parseFrom(
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgUpgradeClient parseFrom(
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgUpgradeClient parseFrom(
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgUpgradeClient parseFrom(
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgUpgradeClient parseFrom(byte[] data)
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgUpgradeClient parseFrom(
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgUpgradeClient parseFrom(java.io.InputStream input)
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgUpgradeClient parseFrom(
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgUpgradeClient parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static MsgUpgradeClient parseDelimitedFrom(
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgUpgradeClient parseFrom(
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgUpgradeClient parseFrom(
+  public static com.ibc.core.client.v1.MsgUpgradeClient parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -448,23 +448,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(MsgUpgradeClient prototype) {
+  public static Builder newBuilder(com.ibc.core.client.v1.MsgUpgradeClient prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -479,18 +479,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.client.v1.MsgUpgradeClient)
-      MsgUpgradeClientOrBuilder {
+      com.ibc.core.client.v1.MsgUpgradeClientOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_ibc_core_client_v1_MsgUpgradeClient_descriptor;
+      return com.ibc.core.client.v1.TxProto.internal_static_ibc_core_client_v1_MsgUpgradeClient_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_ibc_core_client_v1_MsgUpgradeClient_fieldAccessorTable
+      return com.ibc.core.client.v1.TxProto.internal_static_ibc_core_client_v1_MsgUpgradeClient_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MsgUpgradeClient.class, Builder.class);
+              com.ibc.core.client.v1.MsgUpgradeClient.class, com.ibc.core.client.v1.MsgUpgradeClient.Builder.class);
     }
 
     // Construct using com.ibc.core.client.v1.MsgUpgradeClient.newBuilder()
@@ -499,11 +499,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -524,35 +524,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TxProto.internal_static_ibc_core_client_v1_MsgUpgradeClient_descriptor;
+      return com.ibc.core.client.v1.TxProto.internal_static_ibc_core_client_v1_MsgUpgradeClient_descriptor;
     }
 
-    @Override
-    public MsgUpgradeClient getDefaultInstanceForType() {
-      return MsgUpgradeClient.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.core.client.v1.MsgUpgradeClient getDefaultInstanceForType() {
+      return com.ibc.core.client.v1.MsgUpgradeClient.getDefaultInstance();
     }
 
-    @Override
-    public MsgUpgradeClient build() {
-      MsgUpgradeClient result = buildPartial();
+    @java.lang.Override
+    public com.ibc.core.client.v1.MsgUpgradeClient build() {
+      com.ibc.core.client.v1.MsgUpgradeClient result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public MsgUpgradeClient buildPartial() {
-      MsgUpgradeClient result = new MsgUpgradeClient(this);
+    @java.lang.Override
+    public com.ibc.core.client.v1.MsgUpgradeClient buildPartial() {
+      com.ibc.core.client.v1.MsgUpgradeClient result = new com.ibc.core.client.v1.MsgUpgradeClient(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(MsgUpgradeClient result) {
+    private void buildPartial0(com.ibc.core.client.v1.MsgUpgradeClient result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.clientId_ = clientId_;
@@ -578,50 +578,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof MsgUpgradeClient) {
-        return mergeFrom((MsgUpgradeClient)other);
+      if (other instanceof com.ibc.core.client.v1.MsgUpgradeClient) {
+        return mergeFrom((com.ibc.core.client.v1.MsgUpgradeClient)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(MsgUpgradeClient other) {
-      if (other == MsgUpgradeClient.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.core.client.v1.MsgUpgradeClient other) {
+      if (other == com.ibc.core.client.v1.MsgUpgradeClient.getDefaultInstance()) return this;
       if (!other.getClientId().isEmpty()) {
         clientId_ = other.clientId_;
         bitField0_ |= 0x00000001;
@@ -649,18 +649,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -721,7 +721,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object clientId_ = "";
+    private java.lang.Object clientId_ = "";
     /**
      * <pre>
      * client unique identifier
@@ -730,16 +730,16 @@ private static final long serialVersionUID = 0L;
      * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
      * @return The clientId.
      */
-    public String getClientId() {
-      Object ref = clientId_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getClientId() {
+      java.lang.Object ref = clientId_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         clientId_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -752,11 +752,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getClientIdBytes() {
-      Object ref = clientId_;
+      java.lang.Object ref = clientId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         clientId_ = b;
         return b;
       } else {
@@ -773,7 +773,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setClientId(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       clientId_ = value;
       bitField0_ |= 0x00000001;
@@ -1141,7 +1141,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes proof_upgrade_client = 4 [json_name = "proofUpgradeClient", (.gogoproto.moretags) = "yaml:&#92;"proof_upgrade_client&#92;""];</code>
      * @return The proofUpgradeClient.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getProofUpgradeClient() {
       return proofUpgradeClient_;
     }
@@ -1185,7 +1185,7 @@ private static final long serialVersionUID = 0L;
      * <code>bytes proof_upgrade_consensus_state = 5 [json_name = "proofUpgradeConsensusState", (.gogoproto.moretags) = "yaml:&#92;"proof_upgrade_consensus_state&#92;""];</code>
      * @return The proofUpgradeConsensusState.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getProofUpgradeConsensusState() {
       return proofUpgradeConsensusState_;
     }
@@ -1220,7 +1220,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object signer_ = "";
+    private java.lang.Object signer_ = "";
     /**
      * <pre>
      * signer address
@@ -1229,16 +1229,16 @@ private static final long serialVersionUID = 0L;
      * <code>string signer = 6 [json_name = "signer"];</code>
      * @return The signer.
      */
-    public String getSigner() {
-      Object ref = signer_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getSigner() {
+      java.lang.Object ref = signer_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         signer_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1251,11 +1251,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getSignerBytes() {
-      Object ref = signer_;
+      java.lang.Object ref = signer_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         signer_ = b;
         return b;
       } else {
@@ -1272,7 +1272,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSigner(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       signer_ = value;
       bitField0_ |= 0x00000020;
@@ -1311,13 +1311,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1328,18 +1328,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.client.v1.MsgUpgradeClient)
-  private static final MsgUpgradeClient DEFAULT_INSTANCE;
+  private static final com.ibc.core.client.v1.MsgUpgradeClient DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new MsgUpgradeClient();
+    DEFAULT_INSTANCE = new com.ibc.core.client.v1.MsgUpgradeClient();
   }
 
-  public static MsgUpgradeClient getDefaultInstance() {
+  public static com.ibc.core.client.v1.MsgUpgradeClient getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgUpgradeClient>
       PARSER = new com.google.protobuf.AbstractParser<MsgUpgradeClient>() {
-    @Override
+    @java.lang.Override
     public MsgUpgradeClient parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1363,13 +1363,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<MsgUpgradeClient> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public MsgUpgradeClient getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.core.client.v1.MsgUpgradeClient getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

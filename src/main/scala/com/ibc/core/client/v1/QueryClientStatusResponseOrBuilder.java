@@ -11,7 +11,7 @@ public interface QueryClientStatusResponseOrBuilder extends
    * <code>string status = 1 [json_name = "status"];</code>
    * @return The status.
    */
-  String getStatus();
+  java.lang.String getStatus();
   /**
    * <code>string status = 1 [json_name = "status"];</code>
    * @return The bytes for status.

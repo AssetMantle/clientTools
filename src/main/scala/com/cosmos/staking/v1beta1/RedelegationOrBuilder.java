@@ -15,7 +15,7 @@ public interface RedelegationOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  String getDelegatorAddress();
+  java.lang.String getDelegatorAddress();
   /**
    * <pre>
    * delegator_address is the bech32-encoded address of the delegator.
@@ -35,7 +35,7 @@ public interface RedelegationOrBuilder extends
    * <code>string validator_src_address = 2 [json_name = "validatorSrcAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_src_address&#92;""];</code>
    * @return The validatorSrcAddress.
    */
-  String getValidatorSrcAddress();
+  java.lang.String getValidatorSrcAddress();
   /**
    * <pre>
    * validator_src_address is the validator redelegation source operator address.
@@ -55,7 +55,7 @@ public interface RedelegationOrBuilder extends
    * <code>string validator_dst_address = 3 [json_name = "validatorDstAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_dst_address&#92;""];</code>
    * @return The validatorDstAddress.
    */
-  String getValidatorDstAddress();
+  java.lang.String getValidatorDstAddress();
   /**
    * <pre>
    * validator_dst_address is the validator redelegation destination operator address.
@@ -74,7 +74,7 @@ public interface RedelegationOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntry entries = 4 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<RedelegationEntry>
+  java.util.List<com.cosmos.staking.v1beta1.RedelegationEntry> 
       getEntriesList();
   /**
    * <pre>
@@ -83,7 +83,7 @@ public interface RedelegationOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntry entries = 4 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  RedelegationEntry getEntries(int index);
+  com.cosmos.staking.v1beta1.RedelegationEntry getEntries(int index);
   /**
    * <pre>
    * entries are the redelegation entries.
@@ -99,7 +99,7 @@ public interface RedelegationOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntry entries = 4 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends RedelegationEntryOrBuilder>
+  java.util.List<? extends com.cosmos.staking.v1beta1.RedelegationEntryOrBuilder> 
       getEntriesOrBuilderList();
   /**
    * <pre>
@@ -108,6 +108,6 @@ public interface RedelegationOrBuilder extends
    *
    * <code>repeated .cosmos.staking.v1beta1.RedelegationEntry entries = 4 [json_name = "entries", (.gogoproto.nullable) = false];</code>
    */
-  RedelegationEntryOrBuilder getEntriesOrBuilder(
+  com.cosmos.staking.v1beta1.RedelegationEntryOrBuilder getEntriesOrBuilder(
       int index);
 }

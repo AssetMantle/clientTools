@@ -32,7 +32,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\'cosmos/capability/v1beta1/genesis.prot" +
       "o\022\031cosmos.capability.v1beta1\032\024gogoproto/" +
       "gogo.proto\032*cosmos/capability/v1beta1/ca" +
@@ -55,20 +55,20 @@ public final class GenesisProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
-          CapabilityProto.getDescriptor(),
+          com.cosmos.capability.v1beta1.CapabilityProto.getDescriptor(),
         });
     internal_static_cosmos_capability_v1beta1_GenesisOwners_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_capability_v1beta1_GenesisOwners_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_capability_v1beta1_GenesisOwners_descriptor,
-        new String[] { "Index", "IndexOwners", });
+        new java.lang.String[] { "Index", "IndexOwners", });
     internal_static_cosmos_capability_v1beta1_GenesisState_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_capability_v1beta1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_capability_v1beta1_GenesisState_descriptor,
-        new String[] { "Index", "Owners", });
+        new java.lang.String[] { "Index", "Owners", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.moretags);
@@ -76,7 +76,7 @@ public final class GenesisProto {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
-    CapabilityProto.getDescriptor();
+    com.cosmos.capability.v1beta1.CapabilityProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -17,7 +17,7 @@ public interface BitArrayOrBuilder extends
    * <code>repeated uint64 elems = 2 [json_name = "elems"];</code>
    * @return A list containing the elems.
    */
-  java.util.List<Long> getElemsList();
+  java.util.List<java.lang.Long> getElemsList();
   /**
    * <code>repeated uint64 elems = 2 [json_name = "elems"];</code>
    * @return The count of elems.

@@ -24,29 +24,29 @@ private static final long serialVersionUID = 0L;
     connections_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new QueryConnectionsResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_ibc_core_connection_v1_QueryConnectionsResponse_descriptor;
+    return com.ibc.core.connection.v1.QueryProto.internal_static_ibc_core_connection_v1_QueryConnectionsResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_ibc_core_connection_v1_QueryConnectionsResponse_fieldAccessorTable
+    return com.ibc.core.connection.v1.QueryProto.internal_static_ibc_core_connection_v1_QueryConnectionsResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            QueryConnectionsResponse.class, Builder.class);
+            com.ibc.core.connection.v1.QueryConnectionsResponse.class, com.ibc.core.connection.v1.QueryConnectionsResponse.Builder.class);
   }
 
   public static final int CONNECTIONS_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<IdentifiedConnection> connections_;
+  private java.util.List<com.ibc.core.connection.v1.IdentifiedConnection> connections_;
   /**
    * <pre>
    * list of stored connections of the chain.
@@ -54,8 +54,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
    */
-  @Override
-  public java.util.List<IdentifiedConnection> getConnectionsList() {
+  @java.lang.Override
+  public java.util.List<com.ibc.core.connection.v1.IdentifiedConnection> getConnectionsList() {
     return connections_;
   }
   /**
@@ -65,8 +65,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
    */
-  @Override
-  public java.util.List<? extends IdentifiedConnectionOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder> 
       getConnectionsOrBuilderList() {
     return connections_;
   }
@@ -77,7 +77,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getConnectionsCount() {
     return connections_.size();
   }
@@ -88,8 +88,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
    */
-  @Override
-  public IdentifiedConnection getConnections(int index) {
+  @java.lang.Override
+  public com.ibc.core.connection.v1.IdentifiedConnection getConnections(int index) {
     return connections_.get(index);
   }
   /**
@@ -99,8 +99,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
    */
-  @Override
-  public IdentifiedConnectionOrBuilder getConnectionsOrBuilder(
+  @java.lang.Override
+  public com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder getConnectionsOrBuilder(
       int index) {
     return connections_.get(index);
   }
@@ -115,7 +115,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -127,7 +127,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageResponse getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -138,7 +138,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2 [json_name = "pagination"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageResponseOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -153,7 +153,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height height = 3 [json_name = "height", (.gogoproto.nullable) = false];</code>
    * @return Whether the height field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasHeight() {
     return height_ != null;
   }
@@ -165,7 +165,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ibc.core.client.v1.Height height = 3 [json_name = "height", (.gogoproto.nullable) = false];</code>
    * @return The height.
    */
-  @Override
+  @java.lang.Override
   public com.ibc.core.client.v1.Height getHeight() {
     return height_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : height_;
   }
@@ -176,13 +176,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ibc.core.client.v1.Height height = 3 [json_name = "height", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public com.ibc.core.client.v1.HeightOrBuilder getHeightOrBuilder() {
     return height_ == null ? com.ibc.core.client.v1.Height.getDefaultInstance() : height_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -192,7 +192,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     for (int i = 0; i < connections_.size(); i++) {
@@ -207,7 +207,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -230,15 +230,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof QueryConnectionsResponse)) {
+    if (!(obj instanceof com.ibc.core.connection.v1.QueryConnectionsResponse)) {
       return super.equals(obj);
     }
-    QueryConnectionsResponse other = (QueryConnectionsResponse) obj;
+    com.ibc.core.connection.v1.QueryConnectionsResponse other = (com.ibc.core.connection.v1.QueryConnectionsResponse) obj;
 
     if (!getConnectionsList()
         .equals(other.getConnectionsList())) return false;
@@ -256,7 +256,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -280,69 +280,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static QueryConnectionsResponse parseFrom(
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryConnectionsResponse parseFrom(
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryConnectionsResponse parseFrom(
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryConnectionsResponse parseFrom(
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryConnectionsResponse parseFrom(byte[] data)
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static QueryConnectionsResponse parseFrom(
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static QueryConnectionsResponse parseFrom(java.io.InputStream input)
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryConnectionsResponse parseFrom(
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryConnectionsResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static QueryConnectionsResponse parseDelimitedFrom(
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static QueryConnectionsResponse parseFrom(
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static QueryConnectionsResponse parseFrom(
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -350,23 +350,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(QueryConnectionsResponse prototype) {
+  public static Builder newBuilder(com.ibc.core.connection.v1.QueryConnectionsResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -381,18 +381,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.core.connection.v1.QueryConnectionsResponse)
-      QueryConnectionsResponseOrBuilder {
+      com.ibc.core.connection.v1.QueryConnectionsResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_ibc_core_connection_v1_QueryConnectionsResponse_descriptor;
+      return com.ibc.core.connection.v1.QueryProto.internal_static_ibc_core_connection_v1_QueryConnectionsResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_ibc_core_connection_v1_QueryConnectionsResponse_fieldAccessorTable
+      return com.ibc.core.connection.v1.QueryProto.internal_static_ibc_core_connection_v1_QueryConnectionsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              QueryConnectionsResponse.class, Builder.class);
+              com.ibc.core.connection.v1.QueryConnectionsResponse.class, com.ibc.core.connection.v1.QueryConnectionsResponse.Builder.class);
     }
 
     // Construct using com.ibc.core.connection.v1.QueryConnectionsResponse.newBuilder()
@@ -401,11 +401,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -429,36 +429,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_ibc_core_connection_v1_QueryConnectionsResponse_descriptor;
+      return com.ibc.core.connection.v1.QueryProto.internal_static_ibc_core_connection_v1_QueryConnectionsResponse_descriptor;
     }
 
-    @Override
-    public QueryConnectionsResponse getDefaultInstanceForType() {
-      return QueryConnectionsResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.core.connection.v1.QueryConnectionsResponse getDefaultInstanceForType() {
+      return com.ibc.core.connection.v1.QueryConnectionsResponse.getDefaultInstance();
     }
 
-    @Override
-    public QueryConnectionsResponse build() {
-      QueryConnectionsResponse result = buildPartial();
+    @java.lang.Override
+    public com.ibc.core.connection.v1.QueryConnectionsResponse build() {
+      com.ibc.core.connection.v1.QueryConnectionsResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public QueryConnectionsResponse buildPartial() {
-      QueryConnectionsResponse result = new QueryConnectionsResponse(this);
+    @java.lang.Override
+    public com.ibc.core.connection.v1.QueryConnectionsResponse buildPartial() {
+      com.ibc.core.connection.v1.QueryConnectionsResponse result = new com.ibc.core.connection.v1.QueryConnectionsResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(QueryConnectionsResponse result) {
+    private void buildPartialRepeatedFields(com.ibc.core.connection.v1.QueryConnectionsResponse result) {
       if (connectionsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           connections_ = java.util.Collections.unmodifiableList(connections_);
@@ -470,7 +470,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(QueryConnectionsResponse result) {
+    private void buildPartial0(com.ibc.core.connection.v1.QueryConnectionsResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.pagination_ = paginationBuilder_ == null
@@ -484,50 +484,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof QueryConnectionsResponse) {
-        return mergeFrom((QueryConnectionsResponse)other);
+      if (other instanceof com.ibc.core.connection.v1.QueryConnectionsResponse) {
+        return mergeFrom((com.ibc.core.connection.v1.QueryConnectionsResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(QueryConnectionsResponse other) {
-      if (other == QueryConnectionsResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.core.connection.v1.QueryConnectionsResponse other) {
+      if (other == com.ibc.core.connection.v1.QueryConnectionsResponse.getDefaultInstance()) return this;
       if (connectionsBuilder_ == null) {
         if (!other.connections_.isEmpty()) {
           if (connections_.isEmpty()) {
@@ -565,18 +565,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -587,9 +587,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              IdentifiedConnection m =
+              com.ibc.core.connection.v1.IdentifiedConnection m =
                   input.readMessage(
-                      IdentifiedConnection.parser(),
+                      com.ibc.core.connection.v1.IdentifiedConnection.parser(),
                       extensionRegistry);
               if (connectionsBuilder_ == null) {
                 ensureConnectionsIsMutable();
@@ -630,17 +630,17 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<IdentifiedConnection> connections_ =
+    private java.util.List<com.ibc.core.connection.v1.IdentifiedConnection> connections_ =
       java.util.Collections.emptyList();
     private void ensureConnectionsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        connections_ = new java.util.ArrayList<IdentifiedConnection>(connections_);
+        connections_ = new java.util.ArrayList<com.ibc.core.connection.v1.IdentifiedConnection>(connections_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        IdentifiedConnection, IdentifiedConnection.Builder, IdentifiedConnectionOrBuilder> connectionsBuilder_;
+        com.ibc.core.connection.v1.IdentifiedConnection, com.ibc.core.connection.v1.IdentifiedConnection.Builder, com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder> connectionsBuilder_;
 
     /**
      * <pre>
@@ -649,7 +649,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
-    public java.util.List<IdentifiedConnection> getConnectionsList() {
+    public java.util.List<com.ibc.core.connection.v1.IdentifiedConnection> getConnectionsList() {
       if (connectionsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(connections_);
       } else {
@@ -677,7 +677,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
-    public IdentifiedConnection getConnections(int index) {
+    public com.ibc.core.connection.v1.IdentifiedConnection getConnections(int index) {
       if (connectionsBuilder_ == null) {
         return connections_.get(index);
       } else {
@@ -692,7 +692,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
     public Builder setConnections(
-        int index, IdentifiedConnection value) {
+        int index, com.ibc.core.connection.v1.IdentifiedConnection value) {
       if (connectionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -713,7 +713,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
     public Builder setConnections(
-        int index, IdentifiedConnection.Builder builderForValue) {
+        int index, com.ibc.core.connection.v1.IdentifiedConnection.Builder builderForValue) {
       if (connectionsBuilder_ == null) {
         ensureConnectionsIsMutable();
         connections_.set(index, builderForValue.build());
@@ -730,7 +730,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
-    public Builder addConnections(IdentifiedConnection value) {
+    public Builder addConnections(com.ibc.core.connection.v1.IdentifiedConnection value) {
       if (connectionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -751,7 +751,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
     public Builder addConnections(
-        int index, IdentifiedConnection value) {
+        int index, com.ibc.core.connection.v1.IdentifiedConnection value) {
       if (connectionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -772,7 +772,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
     public Builder addConnections(
-        IdentifiedConnection.Builder builderForValue) {
+        com.ibc.core.connection.v1.IdentifiedConnection.Builder builderForValue) {
       if (connectionsBuilder_ == null) {
         ensureConnectionsIsMutable();
         connections_.add(builderForValue.build());
@@ -790,7 +790,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
     public Builder addConnections(
-        int index, IdentifiedConnection.Builder builderForValue) {
+        int index, com.ibc.core.connection.v1.IdentifiedConnection.Builder builderForValue) {
       if (connectionsBuilder_ == null) {
         ensureConnectionsIsMutable();
         connections_.add(index, builderForValue.build());
@@ -808,7 +808,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
     public Builder addAllConnections(
-        Iterable<? extends IdentifiedConnection> values) {
+        java.lang.Iterable<? extends com.ibc.core.connection.v1.IdentifiedConnection> values) {
       if (connectionsBuilder_ == null) {
         ensureConnectionsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -860,7 +860,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
-    public IdentifiedConnection.Builder getConnectionsBuilder(
+    public com.ibc.core.connection.v1.IdentifiedConnection.Builder getConnectionsBuilder(
         int index) {
       return getConnectionsFieldBuilder().getBuilder(index);
     }
@@ -871,7 +871,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
-    public IdentifiedConnectionOrBuilder getConnectionsOrBuilder(
+    public com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder getConnectionsOrBuilder(
         int index) {
       if (connectionsBuilder_ == null) {
         return connections_.get(index);  } else {
@@ -885,7 +885,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
-    public java.util.List<? extends IdentifiedConnectionOrBuilder>
+    public java.util.List<? extends com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder> 
          getConnectionsOrBuilderList() {
       if (connectionsBuilder_ != null) {
         return connectionsBuilder_.getMessageOrBuilderList();
@@ -900,9 +900,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
-    public IdentifiedConnection.Builder addConnectionsBuilder() {
+    public com.ibc.core.connection.v1.IdentifiedConnection.Builder addConnectionsBuilder() {
       return getConnectionsFieldBuilder().addBuilder(
-          IdentifiedConnection.getDefaultInstance());
+          com.ibc.core.connection.v1.IdentifiedConnection.getDefaultInstance());
     }
     /**
      * <pre>
@@ -911,10 +911,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
-    public IdentifiedConnection.Builder addConnectionsBuilder(
+    public com.ibc.core.connection.v1.IdentifiedConnection.Builder addConnectionsBuilder(
         int index) {
       return getConnectionsFieldBuilder().addBuilder(
-          index, IdentifiedConnection.getDefaultInstance());
+          index, com.ibc.core.connection.v1.IdentifiedConnection.getDefaultInstance());
     }
     /**
      * <pre>
@@ -923,16 +923,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .ibc.core.connection.v1.IdentifiedConnection connections = 1 [json_name = "connections"];</code>
      */
-    public java.util.List<IdentifiedConnection.Builder>
+    public java.util.List<com.ibc.core.connection.v1.IdentifiedConnection.Builder> 
          getConnectionsBuilderList() {
       return getConnectionsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        IdentifiedConnection, IdentifiedConnection.Builder, IdentifiedConnectionOrBuilder>
+        com.ibc.core.connection.v1.IdentifiedConnection, com.ibc.core.connection.v1.IdentifiedConnection.Builder, com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder> 
         getConnectionsFieldBuilder() {
       if (connectionsBuilder_ == null) {
         connectionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            IdentifiedConnection, IdentifiedConnection.Builder, IdentifiedConnectionOrBuilder>(
+            com.ibc.core.connection.v1.IdentifiedConnection, com.ibc.core.connection.v1.IdentifiedConnection.Builder, com.ibc.core.connection.v1.IdentifiedConnectionOrBuilder>(
                 connections_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -1251,13 +1251,13 @@ private static final long serialVersionUID = 0L;
       }
       return heightBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1268,18 +1268,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.core.connection.v1.QueryConnectionsResponse)
-  private static final QueryConnectionsResponse DEFAULT_INSTANCE;
+  private static final com.ibc.core.connection.v1.QueryConnectionsResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new QueryConnectionsResponse();
+    DEFAULT_INSTANCE = new com.ibc.core.connection.v1.QueryConnectionsResponse();
   }
 
-  public static QueryConnectionsResponse getDefaultInstance() {
+  public static com.ibc.core.connection.v1.QueryConnectionsResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<QueryConnectionsResponse>
       PARSER = new com.google.protobuf.AbstractParser<QueryConnectionsResponse>() {
-    @Override
+    @java.lang.Override
     public QueryConnectionsResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1303,13 +1303,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<QueryConnectionsResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public QueryConnectionsResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.core.connection.v1.QueryConnectionsResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

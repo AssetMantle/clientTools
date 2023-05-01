@@ -15,7 +15,7 @@ public interface QueryConnectionChannelsRequestOrBuilder extends
    * <code>string connection = 1 [json_name = "connection"];</code>
    * @return The connection.
    */
-  String getConnection();
+  java.lang.String getConnection();
   /**
    * <pre>
    * connection unique identifier

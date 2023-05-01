@@ -14,7 +14,7 @@ public interface QueryClientStatesResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedClientState client_states = 1 [json_name = "clientStates", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "IdentifiedClientStates"];</code>
    */
-  java.util.List<IdentifiedClientState>
+  java.util.List<com.ibc.core.client.v1.IdentifiedClientState> 
       getClientStatesList();
   /**
    * <pre>
@@ -23,7 +23,7 @@ public interface QueryClientStatesResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedClientState client_states = 1 [json_name = "clientStates", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "IdentifiedClientStates"];</code>
    */
-  IdentifiedClientState getClientStates(int index);
+  com.ibc.core.client.v1.IdentifiedClientState getClientStates(int index);
   /**
    * <pre>
    * list of stored ClientStates of the chain.
@@ -39,7 +39,7 @@ public interface QueryClientStatesResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedClientState client_states = 1 [json_name = "clientStates", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "IdentifiedClientStates"];</code>
    */
-  java.util.List<? extends IdentifiedClientStateOrBuilder>
+  java.util.List<? extends com.ibc.core.client.v1.IdentifiedClientStateOrBuilder> 
       getClientStatesOrBuilderList();
   /**
    * <pre>
@@ -48,7 +48,7 @@ public interface QueryClientStatesResponseOrBuilder extends
    *
    * <code>repeated .ibc.core.client.v1.IdentifiedClientState client_states = 1 [json_name = "clientStates", (.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "IdentifiedClientStates"];</code>
    */
-  IdentifiedClientStateOrBuilder getClientStatesOrBuilder(
+  com.ibc.core.client.v1.IdentifiedClientStateOrBuilder getClientStatesOrBuilder(
       int index);
 
   /**

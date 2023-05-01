@@ -11,7 +11,7 @@ public interface IdentifiedGenesisMetadataOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  String getClientId();
+  java.lang.String getClientId();
   /**
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The bytes for clientId.
@@ -22,12 +22,12 @@ public interface IdentifiedGenesisMetadataOrBuilder extends
   /**
    * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
    */
-  java.util.List<GenesisMetadata>
+  java.util.List<com.ibc.core.client.v1.GenesisMetadata> 
       getClientMetadataList();
   /**
    * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
    */
-  GenesisMetadata getClientMetadata(int index);
+  com.ibc.core.client.v1.GenesisMetadata getClientMetadata(int index);
   /**
    * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
    */
@@ -35,11 +35,11 @@ public interface IdentifiedGenesisMetadataOrBuilder extends
   /**
    * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
    */
-  java.util.List<? extends GenesisMetadataOrBuilder>
+  java.util.List<? extends com.ibc.core.client.v1.GenesisMetadataOrBuilder> 
       getClientMetadataOrBuilderList();
   /**
    * <code>repeated .ibc.core.client.v1.GenesisMetadata client_metadata = 2 [json_name = "clientMetadata", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"client_metadata&#92;""];</code>
    */
-  GenesisMetadataOrBuilder getClientMetadataOrBuilder(
+  com.ibc.core.client.v1.GenesisMetadataOrBuilder getClientMetadataOrBuilder(
       int index);
 }

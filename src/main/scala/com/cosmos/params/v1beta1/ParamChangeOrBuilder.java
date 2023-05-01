@@ -11,7 +11,7 @@ public interface ParamChangeOrBuilder extends
    * <code>string subspace = 1 [json_name = "subspace"];</code>
    * @return The subspace.
    */
-  String getSubspace();
+  java.lang.String getSubspace();
   /**
    * <code>string subspace = 1 [json_name = "subspace"];</code>
    * @return The bytes for subspace.
@@ -23,7 +23,7 @@ public interface ParamChangeOrBuilder extends
    * <code>string key = 2 [json_name = "key"];</code>
    * @return The key.
    */
-  String getKey();
+  java.lang.String getKey();
   /**
    * <code>string key = 2 [json_name = "key"];</code>
    * @return The bytes for key.
@@ -35,7 +35,7 @@ public interface ParamChangeOrBuilder extends
    * <code>string value = 3 [json_name = "value"];</code>
    * @return The value.
    */
-  String getValue();
+  java.lang.String getValue();
   /**
    * <code>string value = 3 [json_name = "value"];</code>
    * @return The bytes for value.

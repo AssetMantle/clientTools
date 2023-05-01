@@ -72,7 +72,7 @@ public interface FeeOrBuilder extends
    * <code>string payer = 3 [json_name = "payer"];</code>
    * @return The payer.
    */
-  String getPayer();
+  java.lang.String getPayer();
   /**
    * <pre>
    * if unset, the first signer is responsible for paying the fees. If set, the specified account must pay the fees.
@@ -96,7 +96,7 @@ public interface FeeOrBuilder extends
    * <code>string granter = 4 [json_name = "granter"];</code>
    * @return The granter.
    */
-  String getGranter();
+  java.lang.String getGranter();
   /**
    * <pre>
    * if set, the fee payer (either the first signer or the value of the payer field) requests that a fee grant be used

@@ -22,24 +22,24 @@ private static final long serialVersionUID = 0L;
   private VersionParams() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new VersionParams();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return ParamsProto.internal_static_tendermint_types_VersionParams_descriptor;
+    return com.tendermint.types.ParamsProto.internal_static_tendermint_types_VersionParams_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return ParamsProto.internal_static_tendermint_types_VersionParams_fieldAccessorTable
+    return com.tendermint.types.ParamsProto.internal_static_tendermint_types_VersionParams_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            VersionParams.class, Builder.class);
+            com.tendermint.types.VersionParams.class, com.tendermint.types.VersionParams.Builder.class);
   }
 
   public static final int APP_VERSION_FIELD_NUMBER = 1;
@@ -48,13 +48,13 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 app_version = 1 [json_name = "appVersion"];</code>
    * @return The appVersion.
    */
-  @Override
+  @java.lang.Override
   public long getAppVersion() {
     return appVersion_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -64,7 +64,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (appVersion_ != 0L) {
@@ -73,7 +73,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -88,15 +88,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof VersionParams)) {
+    if (!(obj instanceof com.tendermint.types.VersionParams)) {
       return super.equals(obj);
     }
-    VersionParams other = (VersionParams) obj;
+    com.tendermint.types.VersionParams other = (com.tendermint.types.VersionParams) obj;
 
     if (getAppVersion()
         != other.getAppVersion()) return false;
@@ -104,7 +104,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -119,69 +119,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static VersionParams parseFrom(
+  public static com.tendermint.types.VersionParams parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static VersionParams parseFrom(
+  public static com.tendermint.types.VersionParams parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static VersionParams parseFrom(
+  public static com.tendermint.types.VersionParams parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static VersionParams parseFrom(
+  public static com.tendermint.types.VersionParams parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static VersionParams parseFrom(byte[] data)
+  public static com.tendermint.types.VersionParams parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static VersionParams parseFrom(
+  public static com.tendermint.types.VersionParams parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static VersionParams parseFrom(java.io.InputStream input)
+  public static com.tendermint.types.VersionParams parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static VersionParams parseFrom(
+  public static com.tendermint.types.VersionParams parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static VersionParams parseDelimitedFrom(java.io.InputStream input)
+  public static com.tendermint.types.VersionParams parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static VersionParams parseDelimitedFrom(
+  public static com.tendermint.types.VersionParams parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static VersionParams parseFrom(
+  public static com.tendermint.types.VersionParams parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static VersionParams parseFrom(
+  public static com.tendermint.types.VersionParams parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -189,23 +189,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(VersionParams prototype) {
+  public static Builder newBuilder(com.tendermint.types.VersionParams prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -219,18 +219,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:tendermint.types.VersionParams)
-      VersionParamsOrBuilder {
+      com.tendermint.types.VersionParamsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ParamsProto.internal_static_tendermint_types_VersionParams_descriptor;
+      return com.tendermint.types.ParamsProto.internal_static_tendermint_types_VersionParams_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ParamsProto.internal_static_tendermint_types_VersionParams_fieldAccessorTable
+      return com.tendermint.types.ParamsProto.internal_static_tendermint_types_VersionParams_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              VersionParams.class, Builder.class);
+              com.tendermint.types.VersionParams.class, com.tendermint.types.VersionParams.Builder.class);
     }
 
     // Construct using com.tendermint.types.VersionParams.newBuilder()
@@ -239,11 +239,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -251,85 +251,85 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return ParamsProto.internal_static_tendermint_types_VersionParams_descriptor;
+      return com.tendermint.types.ParamsProto.internal_static_tendermint_types_VersionParams_descriptor;
     }
 
-    @Override
-    public VersionParams getDefaultInstanceForType() {
-      return VersionParams.getDefaultInstance();
+    @java.lang.Override
+    public com.tendermint.types.VersionParams getDefaultInstanceForType() {
+      return com.tendermint.types.VersionParams.getDefaultInstance();
     }
 
-    @Override
-    public VersionParams build() {
-      VersionParams result = buildPartial();
+    @java.lang.Override
+    public com.tendermint.types.VersionParams build() {
+      com.tendermint.types.VersionParams result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public VersionParams buildPartial() {
-      VersionParams result = new VersionParams(this);
+    @java.lang.Override
+    public com.tendermint.types.VersionParams buildPartial() {
+      com.tendermint.types.VersionParams result = new com.tendermint.types.VersionParams(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(VersionParams result) {
+    private void buildPartial0(com.tendermint.types.VersionParams result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.appVersion_ = appVersion_;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof VersionParams) {
-        return mergeFrom((VersionParams)other);
+      if (other instanceof com.tendermint.types.VersionParams) {
+        return mergeFrom((com.tendermint.types.VersionParams)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(VersionParams other) {
-      if (other == VersionParams.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.tendermint.types.VersionParams other) {
+      if (other == com.tendermint.types.VersionParams.getDefaultInstance()) return this;
       if (other.getAppVersion() != 0L) {
         setAppVersion(other.getAppVersion());
       }
@@ -338,18 +338,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -386,7 +386,7 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 app_version = 1 [json_name = "appVersion"];</code>
      * @return The appVersion.
      */
-    @Override
+    @java.lang.Override
     public long getAppVersion() {
       return appVersion_;
     }
@@ -412,13 +412,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -429,18 +429,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:tendermint.types.VersionParams)
-  private static final VersionParams DEFAULT_INSTANCE;
+  private static final com.tendermint.types.VersionParams DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new VersionParams();
+    DEFAULT_INSTANCE = new com.tendermint.types.VersionParams();
   }
 
-  public static VersionParams getDefaultInstance() {
+  public static com.tendermint.types.VersionParams getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<VersionParams>
       PARSER = new com.google.protobuf.AbstractParser<VersionParams>() {
-    @Override
+    @java.lang.Override
     public VersionParams parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -464,13 +464,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<VersionParams> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public VersionParams getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.tendermint.types.VersionParams getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

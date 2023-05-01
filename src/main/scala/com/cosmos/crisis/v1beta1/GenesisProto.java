@@ -27,7 +27,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n#cosmos/crisis/v1beta1/genesis.proto\022\025c" +
       "osmos.crisis.v1beta1\032\024gogoproto/gogo.pro" +
       "to\032\036cosmos/base/v1beta1/coin.proto\"i\n\014Ge" +
@@ -52,7 +52,7 @@ public final class GenesisProto {
     internal_static_cosmos_crisis_v1beta1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_crisis_v1beta1_GenesisState_descriptor,
-        new String[] { "ConstantFee", });
+        new java.lang.String[] { "ConstantFee", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.moretags);

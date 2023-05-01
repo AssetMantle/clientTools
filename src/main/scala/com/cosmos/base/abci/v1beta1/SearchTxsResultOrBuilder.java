@@ -64,7 +64,7 @@ public interface SearchTxsResultOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
    */
-  java.util.List<TxResponse>
+  java.util.List<com.cosmos.base.abci.v1beta1.TxResponse> 
       getTxsList();
   /**
    * <pre>
@@ -73,7 +73,7 @@ public interface SearchTxsResultOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
    */
-  TxResponse getTxs(int index);
+  com.cosmos.base.abci.v1beta1.TxResponse getTxs(int index);
   /**
    * <pre>
    * List of txs in current page
@@ -89,7 +89,7 @@ public interface SearchTxsResultOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
    */
-  java.util.List<? extends TxResponseOrBuilder>
+  java.util.List<? extends com.cosmos.base.abci.v1beta1.TxResponseOrBuilder> 
       getTxsOrBuilderList();
   /**
    * <pre>
@@ -98,6 +98,6 @@ public interface SearchTxsResultOrBuilder extends
    *
    * <code>repeated .cosmos.base.abci.v1beta1.TxResponse txs = 6 [json_name = "txs"];</code>
    */
-  TxResponseOrBuilder getTxsOrBuilder(
+  com.cosmos.base.abci.v1beta1.TxResponseOrBuilder getTxsOrBuilder(
       int index);
 }

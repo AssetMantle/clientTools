@@ -26,42 +26,42 @@ private static final long serialVersionUID = 0L;
     msgs_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgExec();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TxProto.internal_static_cosmos_authz_v1beta1_MsgExec_descriptor;
+    return com.cosmos.authz.v1beta1.TxProto.internal_static_cosmos_authz_v1beta1_MsgExec_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TxProto.internal_static_cosmos_authz_v1beta1_MsgExec_fieldAccessorTable
+    return com.cosmos.authz.v1beta1.TxProto.internal_static_cosmos_authz_v1beta1_MsgExec_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            MsgExec.class, Builder.class);
+            com.cosmos.authz.v1beta1.MsgExec.class, com.cosmos.authz.v1beta1.MsgExec.Builder.class);
   }
 
   public static final int GRANTEE_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object grantee_ = "";
+  private volatile java.lang.Object grantee_ = "";
   /**
    * <code>string grantee = 1 [json_name = "grantee"];</code>
    * @return The grantee.
    */
-  @Override
-  public String getGrantee() {
-    Object ref = grantee_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getGrantee() {
+    java.lang.Object ref = grantee_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       grantee_ = s;
       return s;
     }
@@ -70,14 +70,14 @@ private static final long serialVersionUID = 0L;
    * <code>string grantee = 1 [json_name = "grantee"];</code>
    * @return The bytes for grantee.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getGranteeBytes() {
-    Object ref = grantee_;
-    if (ref instanceof String) {
+    java.lang.Object ref = grantee_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       grantee_ = b;
       return b;
     } else {
@@ -97,7 +97,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any msgs = 2 [json_name = "msgs", (.cosmos_proto.accepts_interface) = "sdk.Msg, authz.Authorization"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<com.google.protobuf.Any> getMsgsList() {
     return msgs_;
   }
@@ -110,7 +110,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any msgs = 2 [json_name = "msgs", (.cosmos_proto.accepts_interface) = "sdk.Msg, authz.Authorization"];</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<? extends com.google.protobuf.AnyOrBuilder> 
       getMsgsOrBuilderList() {
     return msgs_;
@@ -124,7 +124,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any msgs = 2 [json_name = "msgs", (.cosmos_proto.accepts_interface) = "sdk.Msg, authz.Authorization"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getMsgsCount() {
     return msgs_.size();
   }
@@ -137,7 +137,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any msgs = 2 [json_name = "msgs", (.cosmos_proto.accepts_interface) = "sdk.Msg, authz.Authorization"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Any getMsgs(int index) {
     return msgs_.get(index);
   }
@@ -150,14 +150,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .google.protobuf.Any msgs = 2 [json_name = "msgs", (.cosmos_proto.accepts_interface) = "sdk.Msg, authz.Authorization"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.AnyOrBuilder getMsgsOrBuilder(
       int index) {
     return msgs_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -167,7 +167,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(grantee_)) {
@@ -179,7 +179,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -197,15 +197,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof MsgExec)) {
+    if (!(obj instanceof com.cosmos.authz.v1beta1.MsgExec)) {
       return super.equals(obj);
     }
-    MsgExec other = (MsgExec) obj;
+    com.cosmos.authz.v1beta1.MsgExec other = (com.cosmos.authz.v1beta1.MsgExec) obj;
 
     if (!getGrantee()
         .equals(other.getGrantee())) return false;
@@ -215,7 +215,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -233,69 +233,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static MsgExec parseFrom(
+  public static com.cosmos.authz.v1beta1.MsgExec parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgExec parseFrom(
+  public static com.cosmos.authz.v1beta1.MsgExec parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgExec parseFrom(
+  public static com.cosmos.authz.v1beta1.MsgExec parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgExec parseFrom(
+  public static com.cosmos.authz.v1beta1.MsgExec parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgExec parseFrom(byte[] data)
+  public static com.cosmos.authz.v1beta1.MsgExec parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgExec parseFrom(
+  public static com.cosmos.authz.v1beta1.MsgExec parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgExec parseFrom(java.io.InputStream input)
+  public static com.cosmos.authz.v1beta1.MsgExec parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgExec parseFrom(
+  public static com.cosmos.authz.v1beta1.MsgExec parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgExec parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.authz.v1beta1.MsgExec parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static MsgExec parseDelimitedFrom(
+  public static com.cosmos.authz.v1beta1.MsgExec parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgExec parseFrom(
+  public static com.cosmos.authz.v1beta1.MsgExec parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgExec parseFrom(
+  public static com.cosmos.authz.v1beta1.MsgExec parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -303,23 +303,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(MsgExec prototype) {
+  public static Builder newBuilder(com.cosmos.authz.v1beta1.MsgExec prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -335,18 +335,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.authz.v1beta1.MsgExec)
-      MsgExecOrBuilder {
+      com.cosmos.authz.v1beta1.MsgExecOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_cosmos_authz_v1beta1_MsgExec_descriptor;
+      return com.cosmos.authz.v1beta1.TxProto.internal_static_cosmos_authz_v1beta1_MsgExec_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_cosmos_authz_v1beta1_MsgExec_fieldAccessorTable
+      return com.cosmos.authz.v1beta1.TxProto.internal_static_cosmos_authz_v1beta1_MsgExec_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MsgExec.class, Builder.class);
+              com.cosmos.authz.v1beta1.MsgExec.class, com.cosmos.authz.v1beta1.MsgExec.Builder.class);
     }
 
     // Construct using com.cosmos.authz.v1beta1.MsgExec.newBuilder()
@@ -355,11 +355,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -374,36 +374,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TxProto.internal_static_cosmos_authz_v1beta1_MsgExec_descriptor;
+      return com.cosmos.authz.v1beta1.TxProto.internal_static_cosmos_authz_v1beta1_MsgExec_descriptor;
     }
 
-    @Override
-    public MsgExec getDefaultInstanceForType() {
-      return MsgExec.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.authz.v1beta1.MsgExec getDefaultInstanceForType() {
+      return com.cosmos.authz.v1beta1.MsgExec.getDefaultInstance();
     }
 
-    @Override
-    public MsgExec build() {
-      MsgExec result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.authz.v1beta1.MsgExec build() {
+      com.cosmos.authz.v1beta1.MsgExec result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public MsgExec buildPartial() {
-      MsgExec result = new MsgExec(this);
+    @java.lang.Override
+    public com.cosmos.authz.v1beta1.MsgExec buildPartial() {
+      com.cosmos.authz.v1beta1.MsgExec result = new com.cosmos.authz.v1beta1.MsgExec(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(MsgExec result) {
+    private void buildPartialRepeatedFields(com.cosmos.authz.v1beta1.MsgExec result) {
       if (msgsBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           msgs_ = java.util.Collections.unmodifiableList(msgs_);
@@ -415,57 +415,57 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(MsgExec result) {
+    private void buildPartial0(com.cosmos.authz.v1beta1.MsgExec result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.grantee_ = grantee_;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof MsgExec) {
-        return mergeFrom((MsgExec)other);
+      if (other instanceof com.cosmos.authz.v1beta1.MsgExec) {
+        return mergeFrom((com.cosmos.authz.v1beta1.MsgExec)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(MsgExec other) {
-      if (other == MsgExec.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.authz.v1beta1.MsgExec other) {
+      if (other == com.cosmos.authz.v1beta1.MsgExec.getDefaultInstance()) return this;
       if (!other.getGrantee().isEmpty()) {
         grantee_ = other.grantee_;
         bitField0_ |= 0x00000001;
@@ -502,18 +502,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -558,21 +558,21 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object grantee_ = "";
+    private java.lang.Object grantee_ = "";
     /**
      * <code>string grantee = 1 [json_name = "grantee"];</code>
      * @return The grantee.
      */
-    public String getGrantee() {
-      Object ref = grantee_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getGrantee() {
+      java.lang.Object ref = grantee_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         grantee_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -581,11 +581,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getGranteeBytes() {
-      Object ref = grantee_;
+      java.lang.Object ref = grantee_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         grantee_ = b;
         return b;
       } else {
@@ -598,7 +598,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setGrantee(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       grantee_ = value;
       bitField0_ |= 0x00000001;
@@ -828,7 +828,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.protobuf.Any msgs = 2 [json_name = "msgs", (.cosmos_proto.accepts_interface) = "sdk.Msg, authz.Authorization"];</code>
      */
     public Builder addAllMsgs(
-        Iterable<? extends com.google.protobuf.Any> values) {
+        java.lang.Iterable<? extends com.google.protobuf.Any> values) {
       if (msgsBuilder_ == null) {
         ensureMsgsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -977,13 +977,13 @@ private static final long serialVersionUID = 0L;
       }
       return msgsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -994,18 +994,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.authz.v1beta1.MsgExec)
-  private static final MsgExec DEFAULT_INSTANCE;
+  private static final com.cosmos.authz.v1beta1.MsgExec DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new MsgExec();
+    DEFAULT_INSTANCE = new com.cosmos.authz.v1beta1.MsgExec();
   }
 
-  public static MsgExec getDefaultInstance() {
+  public static com.cosmos.authz.v1beta1.MsgExec getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgExec>
       PARSER = new com.google.protobuf.AbstractParser<MsgExec>() {
-    @Override
+    @java.lang.Override
     public MsgExec parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1029,13 +1029,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<MsgExec> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public MsgExec getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.authz.v1beta1.MsgExec getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

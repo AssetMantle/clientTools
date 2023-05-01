@@ -11,7 +11,7 @@ public interface ParamsOrBuilder extends
    * <code>string community_tax = 1 [json_name = "communityTax", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"community_tax&#92;""];</code>
    * @return The communityTax.
    */
-  String getCommunityTax();
+  java.lang.String getCommunityTax();
   /**
    * <code>string community_tax = 1 [json_name = "communityTax", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"community_tax&#92;""];</code>
    * @return The bytes for communityTax.
@@ -23,7 +23,7 @@ public interface ParamsOrBuilder extends
    * <code>string base_proposer_reward = 2 [json_name = "baseProposerReward", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"base_proposer_reward&#92;""];</code>
    * @return The baseProposerReward.
    */
-  String getBaseProposerReward();
+  java.lang.String getBaseProposerReward();
   /**
    * <code>string base_proposer_reward = 2 [json_name = "baseProposerReward", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"base_proposer_reward&#92;""];</code>
    * @return The bytes for baseProposerReward.
@@ -35,7 +35,7 @@ public interface ParamsOrBuilder extends
    * <code>string bonus_proposer_reward = 3 [json_name = "bonusProposerReward", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"bonus_proposer_reward&#92;""];</code>
    * @return The bonusProposerReward.
    */
-  String getBonusProposerReward();
+  java.lang.String getBonusProposerReward();
   /**
    * <code>string bonus_proposer_reward = 3 [json_name = "bonusProposerReward", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec", (.gogoproto.moretags) = "yaml:&#92;"bonus_proposer_reward&#92;""];</code>
    * @return The bytes for bonusProposerReward.

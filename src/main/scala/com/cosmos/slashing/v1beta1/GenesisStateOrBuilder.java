@@ -24,7 +24,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    * @return The params.
    */
-  Params getParams();
+  com.cosmos.slashing.v1beta1.Params getParams();
   /**
    * <pre>
    * params defines all the paramaters of related to deposit.
@@ -32,7 +32,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.slashing.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false];</code>
    */
-  ParamsOrBuilder getParamsOrBuilder();
+  com.cosmos.slashing.v1beta1.ParamsOrBuilder getParamsOrBuilder();
 
   /**
    * <pre>
@@ -42,7 +42,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
    */
-  java.util.List<SigningInfo>
+  java.util.List<com.cosmos.slashing.v1beta1.SigningInfo> 
       getSigningInfosList();
   /**
    * <pre>
@@ -52,7 +52,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
    */
-  SigningInfo getSigningInfos(int index);
+  com.cosmos.slashing.v1beta1.SigningInfo getSigningInfos(int index);
   /**
    * <pre>
    * signing_infos represents a map between validator addresses and their
@@ -70,7 +70,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
    */
-  java.util.List<? extends SigningInfoOrBuilder>
+  java.util.List<? extends com.cosmos.slashing.v1beta1.SigningInfoOrBuilder> 
       getSigningInfosOrBuilderList();
   /**
    * <pre>
@@ -80,7 +80,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.SigningInfo signing_infos = 2 [json_name = "signingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"signing_infos&#92;""];</code>
    */
-  SigningInfoOrBuilder getSigningInfosOrBuilder(
+  com.cosmos.slashing.v1beta1.SigningInfoOrBuilder getSigningInfosOrBuilder(
       int index);
 
   /**
@@ -91,7 +91,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  java.util.List<ValidatorMissedBlocks>
+  java.util.List<com.cosmos.slashing.v1beta1.ValidatorMissedBlocks> 
       getMissedBlocksList();
   /**
    * <pre>
@@ -101,7 +101,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  ValidatorMissedBlocks getMissedBlocks(int index);
+  com.cosmos.slashing.v1beta1.ValidatorMissedBlocks getMissedBlocks(int index);
   /**
    * <pre>
    * missed_blocks represents a map between validator addresses and their
@@ -119,7 +119,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  java.util.List<? extends ValidatorMissedBlocksOrBuilder>
+  java.util.List<? extends com.cosmos.slashing.v1beta1.ValidatorMissedBlocksOrBuilder> 
       getMissedBlocksOrBuilderList();
   /**
    * <pre>
@@ -129,6 +129,6 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.slashing.v1beta1.ValidatorMissedBlocks missed_blocks = 3 [json_name = "missedBlocks", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"missed_blocks&#92;""];</code>
    */
-  ValidatorMissedBlocksOrBuilder getMissedBlocksOrBuilder(
+  com.cosmos.slashing.v1beta1.ValidatorMissedBlocksOrBuilder getMissedBlocksOrBuilder(
       int index);
 }

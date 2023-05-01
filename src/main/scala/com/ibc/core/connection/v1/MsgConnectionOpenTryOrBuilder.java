@@ -11,7 +11,7 @@ public interface MsgConnectionOpenTryOrBuilder extends
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The clientId.
    */
-  String getClientId();
+  java.lang.String getClientId();
   /**
    * <code>string client_id = 1 [json_name = "clientId", (.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
    * @return The bytes for clientId.
@@ -28,7 +28,7 @@ public interface MsgConnectionOpenTryOrBuilder extends
    * <code>string previous_connection_id = 2 [json_name = "previousConnectionId", (.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
    * @return The previousConnectionId.
    */
-  String getPreviousConnectionId();
+  java.lang.String getPreviousConnectionId();
   /**
    * <pre>
    * in the case of crossing hello's, when both chains call OpenInit, we need
@@ -65,11 +65,11 @@ public interface MsgConnectionOpenTryOrBuilder extends
    * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    * @return The counterparty.
    */
-  Counterparty getCounterparty();
+  com.ibc.core.connection.v1.Counterparty getCounterparty();
   /**
    * <code>.ibc.core.connection.v1.Counterparty counterparty = 4 [json_name = "counterparty", (.gogoproto.nullable) = false];</code>
    */
-  CounterpartyOrBuilder getCounterpartyOrBuilder();
+  com.ibc.core.connection.v1.CounterpartyOrBuilder getCounterpartyOrBuilder();
 
   /**
    * <code>uint64 delay_period = 5 [json_name = "delayPeriod", (.gogoproto.moretags) = "yaml:&#92;"delay_period&#92;""];</code>
@@ -80,12 +80,12 @@ public interface MsgConnectionOpenTryOrBuilder extends
   /**
    * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
    */
-  java.util.List<Version>
+  java.util.List<com.ibc.core.connection.v1.Version> 
       getCounterpartyVersionsList();
   /**
    * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
    */
-  Version getCounterpartyVersions(int index);
+  com.ibc.core.connection.v1.Version getCounterpartyVersions(int index);
   /**
    * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
    */
@@ -93,12 +93,12 @@ public interface MsgConnectionOpenTryOrBuilder extends
   /**
    * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
    */
-  java.util.List<? extends VersionOrBuilder>
+  java.util.List<? extends com.ibc.core.connection.v1.VersionOrBuilder> 
       getCounterpartyVersionsOrBuilderList();
   /**
    * <code>repeated .ibc.core.connection.v1.Version counterparty_versions = 6 [json_name = "counterpartyVersions", (.gogoproto.moretags) = "yaml:&#92;"counterparty_versions&#92;""];</code>
    */
-  VersionOrBuilder getCounterpartyVersionsOrBuilder(
+  com.ibc.core.connection.v1.VersionOrBuilder getCounterpartyVersionsOrBuilder(
       int index);
 
   /**
@@ -166,7 +166,7 @@ public interface MsgConnectionOpenTryOrBuilder extends
    * <code>string signer = 12 [json_name = "signer"];</code>
    * @return The signer.
    */
-  String getSigner();
+  java.lang.String getSigner();
   /**
    * <code>string signer = 12 [json_name = "signer"];</code>
    * @return The bytes for signer.

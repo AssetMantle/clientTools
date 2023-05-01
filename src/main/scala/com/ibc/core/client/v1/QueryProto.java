@@ -112,7 +112,7 @@ public final class QueryProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\036ibc/core/client/v1/query.proto\022\022ibc.co" +
       "re.client.v1\032*cosmos/base/query/v1beta1/" +
       "pagination.proto\032\037ibc/core/client/v1/cli" +
@@ -222,7 +222,7 @@ public final class QueryProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor(),
-          ClientProto.getDescriptor(),
+          com.ibc.core.client.v1.ClientProto.getDescriptor(),
           com.google.protobuf.AnyProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
@@ -232,109 +232,109 @@ public final class QueryProto {
     internal_static_ibc_core_client_v1_QueryClientStateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryClientStateRequest_descriptor,
-        new String[] { "ClientId", });
+        new java.lang.String[] { "ClientId", });
     internal_static_ibc_core_client_v1_QueryClientStateResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_ibc_core_client_v1_QueryClientStateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryClientStateResponse_descriptor,
-        new String[] { "ClientState", "Proof", "ProofHeight", });
+        new java.lang.String[] { "ClientState", "Proof", "ProofHeight", });
     internal_static_ibc_core_client_v1_QueryClientStatesRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_ibc_core_client_v1_QueryClientStatesRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryClientStatesRequest_descriptor,
-        new String[] { "Pagination", });
+        new java.lang.String[] { "Pagination", });
     internal_static_ibc_core_client_v1_QueryClientStatesResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ibc_core_client_v1_QueryClientStatesResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryClientStatesResponse_descriptor,
-        new String[] { "ClientStates", "Pagination", });
+        new java.lang.String[] { "ClientStates", "Pagination", });
     internal_static_ibc_core_client_v1_QueryConsensusStateRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_ibc_core_client_v1_QueryConsensusStateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryConsensusStateRequest_descriptor,
-        new String[] { "ClientId", "RevisionNumber", "RevisionHeight", "LatestHeight", });
+        new java.lang.String[] { "ClientId", "RevisionNumber", "RevisionHeight", "LatestHeight", });
     internal_static_ibc_core_client_v1_QueryConsensusStateResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_ibc_core_client_v1_QueryConsensusStateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryConsensusStateResponse_descriptor,
-        new String[] { "ConsensusState", "Proof", "ProofHeight", });
+        new java.lang.String[] { "ConsensusState", "Proof", "ProofHeight", });
     internal_static_ibc_core_client_v1_QueryConsensusStatesRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_ibc_core_client_v1_QueryConsensusStatesRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryConsensusStatesRequest_descriptor,
-        new String[] { "ClientId", "Pagination", });
+        new java.lang.String[] { "ClientId", "Pagination", });
     internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryConsensusStatesResponse_descriptor,
-        new String[] { "ConsensusStates", "Pagination", });
+        new java.lang.String[] { "ConsensusStates", "Pagination", });
     internal_static_ibc_core_client_v1_QueryConsensusStateHeightsRequest_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_ibc_core_client_v1_QueryConsensusStateHeightsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryConsensusStateHeightsRequest_descriptor,
-        new String[] { "ClientId", "Pagination", });
+        new java.lang.String[] { "ClientId", "Pagination", });
     internal_static_ibc_core_client_v1_QueryConsensusStateHeightsResponse_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_ibc_core_client_v1_QueryConsensusStateHeightsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryConsensusStateHeightsResponse_descriptor,
-        new String[] { "ConsensusStateHeights", "Pagination", });
+        new java.lang.String[] { "ConsensusStateHeights", "Pagination", });
     internal_static_ibc_core_client_v1_QueryClientStatusRequest_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_ibc_core_client_v1_QueryClientStatusRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryClientStatusRequest_descriptor,
-        new String[] { "ClientId", });
+        new java.lang.String[] { "ClientId", });
     internal_static_ibc_core_client_v1_QueryClientStatusResponse_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_ibc_core_client_v1_QueryClientStatusResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryClientStatusResponse_descriptor,
-        new String[] { "Status", });
+        new java.lang.String[] { "Status", });
     internal_static_ibc_core_client_v1_QueryClientParamsRequest_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_ibc_core_client_v1_QueryClientParamsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryClientParamsRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_ibc_core_client_v1_QueryClientParamsResponse_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_ibc_core_client_v1_QueryClientParamsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryClientParamsResponse_descriptor,
-        new String[] { "Params", });
+        new java.lang.String[] { "Params", });
     internal_static_ibc_core_client_v1_QueryUpgradedClientStateRequest_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_ibc_core_client_v1_QueryUpgradedClientStateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryUpgradedClientStateRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_ibc_core_client_v1_QueryUpgradedClientStateResponse_descriptor =
       getDescriptor().getMessageTypes().get(15);
     internal_static_ibc_core_client_v1_QueryUpgradedClientStateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryUpgradedClientStateResponse_descriptor,
-        new String[] { "UpgradedClientState", });
+        new java.lang.String[] { "UpgradedClientState", });
     internal_static_ibc_core_client_v1_QueryUpgradedConsensusStateRequest_descriptor =
       getDescriptor().getMessageTypes().get(16);
     internal_static_ibc_core_client_v1_QueryUpgradedConsensusStateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryUpgradedConsensusStateRequest_descriptor,
-        new String[] { });
+        new java.lang.String[] { });
     internal_static_ibc_core_client_v1_QueryUpgradedConsensusStateResponse_descriptor =
       getDescriptor().getMessageTypes().get(17);
     internal_static_ibc_core_client_v1_QueryUpgradedConsensusStateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_QueryUpgradedConsensusStateResponse_descriptor,
-        new String[] { "UpgradedConsensusState", });
+        new java.lang.String[] { "UpgradedConsensusState", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);
@@ -343,7 +343,7 @@ public final class QueryProto {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.cosmos.base.query.v1beta1.PaginationProto.getDescriptor();
-    ClientProto.getDescriptor();
+    com.ibc.core.client.v1.ClientProto.getDescriptor();
     com.google.protobuf.AnyProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();

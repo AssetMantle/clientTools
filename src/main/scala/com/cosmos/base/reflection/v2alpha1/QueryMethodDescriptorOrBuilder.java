@@ -15,7 +15,7 @@ public interface QueryMethodDescriptorOrBuilder extends
    * <code>string name = 1 [json_name = "name"];</code>
    * @return The name.
    */
-  String getName();
+  java.lang.String getName();
   /**
    * <pre>
    * name is the protobuf name (not fullname) of the method
@@ -36,7 +36,7 @@ public interface QueryMethodDescriptorOrBuilder extends
    * <code>string full_query_path = 2 [json_name = "fullQueryPath"];</code>
    * @return The fullQueryPath.
    */
-  String getFullQueryPath();
+  java.lang.String getFullQueryPath();
   /**
    * <pre>
    * full_query_path is the path that can be used to query

@@ -10,12 +10,12 @@ public interface ResponseEndBlockOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validator_updates = 1 [json_name = "validatorUpdates", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<ValidatorUpdate>
+  java.util.List<com.tendermint.abci.ValidatorUpdate> 
       getValidatorUpdatesList();
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validator_updates = 1 [json_name = "validatorUpdates", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorUpdate getValidatorUpdates(int index);
+  com.tendermint.abci.ValidatorUpdate getValidatorUpdates(int index);
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validator_updates = 1 [json_name = "validatorUpdates", (.gogoproto.nullable) = false];</code>
    */
@@ -23,12 +23,12 @@ public interface ResponseEndBlockOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validator_updates = 1 [json_name = "validatorUpdates", (.gogoproto.nullable) = false];</code>
    */
-  java.util.List<? extends ValidatorUpdateOrBuilder>
+  java.util.List<? extends com.tendermint.abci.ValidatorUpdateOrBuilder> 
       getValidatorUpdatesOrBuilderList();
   /**
    * <code>repeated .tendermint.abci.ValidatorUpdate validator_updates = 1 [json_name = "validatorUpdates", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorUpdateOrBuilder getValidatorUpdatesOrBuilder(
+  com.tendermint.abci.ValidatorUpdateOrBuilder getValidatorUpdatesOrBuilder(
       int index);
 
   /**
@@ -40,21 +40,21 @@ public interface ResponseEndBlockOrBuilder extends
    * <code>.tendermint.abci.ConsensusParams consensus_param_updates = 2 [json_name = "consensusParamUpdates"];</code>
    * @return The consensusParamUpdates.
    */
-  ConsensusParams getConsensusParamUpdates();
+  com.tendermint.abci.ConsensusParams getConsensusParamUpdates();
   /**
    * <code>.tendermint.abci.ConsensusParams consensus_param_updates = 2 [json_name = "consensusParamUpdates"];</code>
    */
-  ConsensusParamsOrBuilder getConsensusParamUpdatesOrBuilder();
+  com.tendermint.abci.ConsensusParamsOrBuilder getConsensusParamUpdatesOrBuilder();
 
   /**
    * <code>repeated .tendermint.abci.Event events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  java.util.List<Event>
+  java.util.List<com.tendermint.abci.Event> 
       getEventsList();
   /**
    * <code>repeated .tendermint.abci.Event events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  Event getEvents(int index);
+  com.tendermint.abci.Event getEvents(int index);
   /**
    * <code>repeated .tendermint.abci.Event events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
@@ -62,11 +62,11 @@ public interface ResponseEndBlockOrBuilder extends
   /**
    * <code>repeated .tendermint.abci.Event events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  java.util.List<? extends EventOrBuilder>
+  java.util.List<? extends com.tendermint.abci.EventOrBuilder> 
       getEventsOrBuilderList();
   /**
    * <code>repeated .tendermint.abci.Event events = 3 [json_name = "events", (.gogoproto.nullable) = false, (.gogoproto.jsontag) = "events,omitempty"];</code>
    */
-  EventOrBuilder getEventsOrBuilder(
+  com.tendermint.abci.EventOrBuilder getEventsOrBuilder(
       int index);
 }

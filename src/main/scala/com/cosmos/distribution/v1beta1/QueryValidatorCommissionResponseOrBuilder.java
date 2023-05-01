@@ -24,7 +24,7 @@ public interface QueryValidatorCommissionResponseOrBuilder extends
    * <code>.cosmos.distribution.v1beta1.ValidatorAccumulatedCommission commission = 1 [json_name = "commission", (.gogoproto.nullable) = false];</code>
    * @return The commission.
    */
-  ValidatorAccumulatedCommission getCommission();
+  com.cosmos.distribution.v1beta1.ValidatorAccumulatedCommission getCommission();
   /**
    * <pre>
    * commission defines the commision the validator received.
@@ -32,5 +32,5 @@ public interface QueryValidatorCommissionResponseOrBuilder extends
    *
    * <code>.cosmos.distribution.v1beta1.ValidatorAccumulatedCommission commission = 1 [json_name = "commission", (.gogoproto.nullable) = false];</code>
    */
-  ValidatorAccumulatedCommissionOrBuilder getCommissionOrBuilder();
+  com.cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionOrBuilder getCommissionOrBuilder();
 }

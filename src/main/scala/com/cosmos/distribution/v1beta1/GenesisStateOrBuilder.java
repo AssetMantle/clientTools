@@ -24,7 +24,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.distribution.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"params&#92;""];</code>
    * @return The params.
    */
-  Params getParams();
+  com.cosmos.distribution.v1beta1.Params getParams();
   /**
    * <pre>
    * params defines all the paramaters of the module.
@@ -32,7 +32,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.distribution.v1beta1.Params params = 1 [json_name = "params", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"params&#92;""];</code>
    */
-  ParamsOrBuilder getParamsOrBuilder();
+  com.cosmos.distribution.v1beta1.ParamsOrBuilder getParamsOrBuilder();
 
   /**
    * <pre>
@@ -51,7 +51,7 @@ public interface GenesisStateOrBuilder extends
    * <code>.cosmos.distribution.v1beta1.FeePool fee_pool = 2 [json_name = "feePool", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"fee_pool&#92;""];</code>
    * @return The feePool.
    */
-  FeePool getFeePool();
+  com.cosmos.distribution.v1beta1.FeePool getFeePool();
   /**
    * <pre>
    * fee_pool defines the fee pool at genesis.
@@ -59,7 +59,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>.cosmos.distribution.v1beta1.FeePool fee_pool = 2 [json_name = "feePool", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"fee_pool&#92;""];</code>
    */
-  FeePoolOrBuilder getFeePoolOrBuilder();
+  com.cosmos.distribution.v1beta1.FeePoolOrBuilder getFeePoolOrBuilder();
 
   /**
    * <pre>
@@ -68,7 +68,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegatorWithdrawInfo delegator_withdraw_infos = 3 [json_name = "delegatorWithdrawInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"delegator_withdraw_infos&#92;""];</code>
    */
-  java.util.List<DelegatorWithdrawInfo>
+  java.util.List<com.cosmos.distribution.v1beta1.DelegatorWithdrawInfo> 
       getDelegatorWithdrawInfosList();
   /**
    * <pre>
@@ -77,7 +77,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegatorWithdrawInfo delegator_withdraw_infos = 3 [json_name = "delegatorWithdrawInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"delegator_withdraw_infos&#92;""];</code>
    */
-  DelegatorWithdrawInfo getDelegatorWithdrawInfos(int index);
+  com.cosmos.distribution.v1beta1.DelegatorWithdrawInfo getDelegatorWithdrawInfos(int index);
   /**
    * <pre>
    * fee_pool defines the delegator withdraw infos at genesis.
@@ -93,7 +93,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegatorWithdrawInfo delegator_withdraw_infos = 3 [json_name = "delegatorWithdrawInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"delegator_withdraw_infos&#92;""];</code>
    */
-  java.util.List<? extends DelegatorWithdrawInfoOrBuilder>
+  java.util.List<? extends com.cosmos.distribution.v1beta1.DelegatorWithdrawInfoOrBuilder> 
       getDelegatorWithdrawInfosOrBuilderList();
   /**
    * <pre>
@@ -102,7 +102,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegatorWithdrawInfo delegator_withdraw_infos = 3 [json_name = "delegatorWithdrawInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"delegator_withdraw_infos&#92;""];</code>
    */
-  DelegatorWithdrawInfoOrBuilder getDelegatorWithdrawInfosOrBuilder(
+  com.cosmos.distribution.v1beta1.DelegatorWithdrawInfoOrBuilder getDelegatorWithdrawInfosOrBuilder(
       int index);
 
   /**
@@ -113,7 +113,7 @@ public interface GenesisStateOrBuilder extends
    * <code>string previous_proposer = 4 [json_name = "previousProposer", (.gogoproto.moretags) = "yaml:&#92;"previous_proposer&#92;""];</code>
    * @return The previousProposer.
    */
-  String getPreviousProposer();
+  java.lang.String getPreviousProposer();
   /**
    * <pre>
    * fee_pool defines the previous proposer at genesis.
@@ -132,7 +132,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord outstanding_rewards = 5 [json_name = "outstandingRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"outstanding_rewards&#92;""];</code>
    */
-  java.util.List<ValidatorOutstandingRewardsRecord>
+  java.util.List<com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord> 
       getOutstandingRewardsList();
   /**
    * <pre>
@@ -141,7 +141,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord outstanding_rewards = 5 [json_name = "outstandingRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"outstanding_rewards&#92;""];</code>
    */
-  ValidatorOutstandingRewardsRecord getOutstandingRewards(int index);
+  com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord getOutstandingRewards(int index);
   /**
    * <pre>
    * fee_pool defines the outstanding rewards of all validators at genesis.
@@ -157,7 +157,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord outstanding_rewards = 5 [json_name = "outstandingRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"outstanding_rewards&#92;""];</code>
    */
-  java.util.List<? extends ValidatorOutstandingRewardsRecordOrBuilder>
+  java.util.List<? extends com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecordOrBuilder> 
       getOutstandingRewardsOrBuilderList();
   /**
    * <pre>
@@ -166,7 +166,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord outstanding_rewards = 5 [json_name = "outstandingRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"outstanding_rewards&#92;""];</code>
    */
-  ValidatorOutstandingRewardsRecordOrBuilder getOutstandingRewardsOrBuilder(
+  com.cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecordOrBuilder getOutstandingRewardsOrBuilder(
       int index);
 
   /**
@@ -176,7 +176,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionRecord validator_accumulated_commissions = 6 [json_name = "validatorAccumulatedCommissions", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_accumulated_commissions&#92;""];</code>
    */
-  java.util.List<ValidatorAccumulatedCommissionRecord>
+  java.util.List<com.cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionRecord> 
       getValidatorAccumulatedCommissionsList();
   /**
    * <pre>
@@ -185,7 +185,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionRecord validator_accumulated_commissions = 6 [json_name = "validatorAccumulatedCommissions", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_accumulated_commissions&#92;""];</code>
    */
-  ValidatorAccumulatedCommissionRecord getValidatorAccumulatedCommissions(int index);
+  com.cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionRecord getValidatorAccumulatedCommissions(int index);
   /**
    * <pre>
    * fee_pool defines the accumulated commisions of all validators at genesis.
@@ -201,7 +201,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionRecord validator_accumulated_commissions = 6 [json_name = "validatorAccumulatedCommissions", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_accumulated_commissions&#92;""];</code>
    */
-  java.util.List<? extends ValidatorAccumulatedCommissionRecordOrBuilder>
+  java.util.List<? extends com.cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionRecordOrBuilder> 
       getValidatorAccumulatedCommissionsOrBuilderList();
   /**
    * <pre>
@@ -210,7 +210,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionRecord validator_accumulated_commissions = 6 [json_name = "validatorAccumulatedCommissions", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_accumulated_commissions&#92;""];</code>
    */
-  ValidatorAccumulatedCommissionRecordOrBuilder getValidatorAccumulatedCommissionsOrBuilder(
+  com.cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionRecordOrBuilder getValidatorAccumulatedCommissionsOrBuilder(
       int index);
 
   /**
@@ -220,7 +220,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorHistoricalRewardsRecord validator_historical_rewards = 7 [json_name = "validatorHistoricalRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_historical_rewards&#92;""];</code>
    */
-  java.util.List<ValidatorHistoricalRewardsRecord>
+  java.util.List<com.cosmos.distribution.v1beta1.ValidatorHistoricalRewardsRecord> 
       getValidatorHistoricalRewardsList();
   /**
    * <pre>
@@ -229,7 +229,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorHistoricalRewardsRecord validator_historical_rewards = 7 [json_name = "validatorHistoricalRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_historical_rewards&#92;""];</code>
    */
-  ValidatorHistoricalRewardsRecord getValidatorHistoricalRewards(int index);
+  com.cosmos.distribution.v1beta1.ValidatorHistoricalRewardsRecord getValidatorHistoricalRewards(int index);
   /**
    * <pre>
    * fee_pool defines the historical rewards of all validators at genesis.
@@ -245,7 +245,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorHistoricalRewardsRecord validator_historical_rewards = 7 [json_name = "validatorHistoricalRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_historical_rewards&#92;""];</code>
    */
-  java.util.List<? extends ValidatorHistoricalRewardsRecordOrBuilder>
+  java.util.List<? extends com.cosmos.distribution.v1beta1.ValidatorHistoricalRewardsRecordOrBuilder> 
       getValidatorHistoricalRewardsOrBuilderList();
   /**
    * <pre>
@@ -254,7 +254,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorHistoricalRewardsRecord validator_historical_rewards = 7 [json_name = "validatorHistoricalRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_historical_rewards&#92;""];</code>
    */
-  ValidatorHistoricalRewardsRecordOrBuilder getValidatorHistoricalRewardsOrBuilder(
+  com.cosmos.distribution.v1beta1.ValidatorHistoricalRewardsRecordOrBuilder getValidatorHistoricalRewardsOrBuilder(
       int index);
 
   /**
@@ -264,7 +264,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorCurrentRewardsRecord validator_current_rewards = 8 [json_name = "validatorCurrentRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_current_rewards&#92;""];</code>
    */
-  java.util.List<ValidatorCurrentRewardsRecord>
+  java.util.List<com.cosmos.distribution.v1beta1.ValidatorCurrentRewardsRecord> 
       getValidatorCurrentRewardsList();
   /**
    * <pre>
@@ -273,7 +273,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorCurrentRewardsRecord validator_current_rewards = 8 [json_name = "validatorCurrentRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_current_rewards&#92;""];</code>
    */
-  ValidatorCurrentRewardsRecord getValidatorCurrentRewards(int index);
+  com.cosmos.distribution.v1beta1.ValidatorCurrentRewardsRecord getValidatorCurrentRewards(int index);
   /**
    * <pre>
    * fee_pool defines the current rewards of all validators at genesis.
@@ -289,7 +289,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorCurrentRewardsRecord validator_current_rewards = 8 [json_name = "validatorCurrentRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_current_rewards&#92;""];</code>
    */
-  java.util.List<? extends ValidatorCurrentRewardsRecordOrBuilder>
+  java.util.List<? extends com.cosmos.distribution.v1beta1.ValidatorCurrentRewardsRecordOrBuilder> 
       getValidatorCurrentRewardsOrBuilderList();
   /**
    * <pre>
@@ -298,7 +298,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorCurrentRewardsRecord validator_current_rewards = 8 [json_name = "validatorCurrentRewards", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_current_rewards&#92;""];</code>
    */
-  ValidatorCurrentRewardsRecordOrBuilder getValidatorCurrentRewardsOrBuilder(
+  com.cosmos.distribution.v1beta1.ValidatorCurrentRewardsRecordOrBuilder getValidatorCurrentRewardsOrBuilder(
       int index);
 
   /**
@@ -308,7 +308,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegatorStartingInfoRecord delegator_starting_infos = 9 [json_name = "delegatorStartingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"delegator_starting_infos&#92;""];</code>
    */
-  java.util.List<DelegatorStartingInfoRecord>
+  java.util.List<com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord> 
       getDelegatorStartingInfosList();
   /**
    * <pre>
@@ -317,7 +317,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegatorStartingInfoRecord delegator_starting_infos = 9 [json_name = "delegatorStartingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"delegator_starting_infos&#92;""];</code>
    */
-  DelegatorStartingInfoRecord getDelegatorStartingInfos(int index);
+  com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecord getDelegatorStartingInfos(int index);
   /**
    * <pre>
    * fee_pool defines the delegator starting infos at genesis.
@@ -333,7 +333,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegatorStartingInfoRecord delegator_starting_infos = 9 [json_name = "delegatorStartingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"delegator_starting_infos&#92;""];</code>
    */
-  java.util.List<? extends DelegatorStartingInfoRecordOrBuilder>
+  java.util.List<? extends com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecordOrBuilder> 
       getDelegatorStartingInfosOrBuilderList();
   /**
    * <pre>
@@ -342,7 +342,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.DelegatorStartingInfoRecord delegator_starting_infos = 9 [json_name = "delegatorStartingInfos", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"delegator_starting_infos&#92;""];</code>
    */
-  DelegatorStartingInfoRecordOrBuilder getDelegatorStartingInfosOrBuilder(
+  com.cosmos.distribution.v1beta1.DelegatorStartingInfoRecordOrBuilder getDelegatorStartingInfosOrBuilder(
       int index);
 
   /**
@@ -352,7 +352,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEventRecord validator_slash_events = 10 [json_name = "validatorSlashEvents", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_slash_events&#92;""];</code>
    */
-  java.util.List<ValidatorSlashEventRecord>
+  java.util.List<com.cosmos.distribution.v1beta1.ValidatorSlashEventRecord> 
       getValidatorSlashEventsList();
   /**
    * <pre>
@@ -361,7 +361,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEventRecord validator_slash_events = 10 [json_name = "validatorSlashEvents", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_slash_events&#92;""];</code>
    */
-  ValidatorSlashEventRecord getValidatorSlashEvents(int index);
+  com.cosmos.distribution.v1beta1.ValidatorSlashEventRecord getValidatorSlashEvents(int index);
   /**
    * <pre>
    * fee_pool defines the validator slash events at genesis.
@@ -377,7 +377,7 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEventRecord validator_slash_events = 10 [json_name = "validatorSlashEvents", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_slash_events&#92;""];</code>
    */
-  java.util.List<? extends ValidatorSlashEventRecordOrBuilder>
+  java.util.List<? extends com.cosmos.distribution.v1beta1.ValidatorSlashEventRecordOrBuilder> 
       getValidatorSlashEventsOrBuilderList();
   /**
    * <pre>
@@ -386,6 +386,6 @@ public interface GenesisStateOrBuilder extends
    *
    * <code>repeated .cosmos.distribution.v1beta1.ValidatorSlashEventRecord validator_slash_events = 10 [json_name = "validatorSlashEvents", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"validator_slash_events&#92;""];</code>
    */
-  ValidatorSlashEventRecordOrBuilder getValidatorSlashEventsOrBuilder(
+  com.cosmos.distribution.v1beta1.ValidatorSlashEventRecordOrBuilder getValidatorSlashEventsOrBuilder(
       int index);
 }

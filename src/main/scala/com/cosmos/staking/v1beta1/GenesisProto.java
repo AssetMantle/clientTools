@@ -32,7 +32,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n$cosmos/staking/v1beta1/genesis.proto\022\026" +
       "cosmos.staking.v1beta1\032\024gogoproto/gogo.p" +
       "roto\032$cosmos/staking/v1beta1/staking.pro" +
@@ -68,20 +68,20 @@ public final class GenesisProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.gogoproto.GogoProto.getDescriptor(),
-          StakingProto.getDescriptor(),
+          com.cosmos.staking.v1beta1.StakingProto.getDescriptor(),
         });
     internal_static_cosmos_staking_v1beta1_GenesisState_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_cosmos_staking_v1beta1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_GenesisState_descriptor,
-        new String[] { "Params", "LastTotalPower", "LastValidatorPowers", "Validators", "Delegations", "UnbondingDelegations", "Redelegations", "Exported", });
+        new java.lang.String[] { "Params", "LastTotalPower", "LastValidatorPowers", "Validators", "Delegations", "UnbondingDelegations", "Redelegations", "Exported", });
     internal_static_cosmos_staking_v1beta1_LastValidatorPower_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_staking_v1beta1_LastValidatorPower_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_staking_v1beta1_LastValidatorPower_descriptor,
-        new String[] { "Address", "Power", });
+        new java.lang.String[] { "Address", "Power", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customtype);
@@ -92,7 +92,7 @@ public final class GenesisProto {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.gogoproto.GogoProto.getDescriptor();
-    StakingProto.getDescriptor();
+    com.cosmos.staking.v1beta1.StakingProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

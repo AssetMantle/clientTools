@@ -17,7 +17,7 @@ public interface AuthInfoOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.SignerInfo signer_infos = 1 [json_name = "signerInfos"];</code>
    */
-  java.util.List<SignerInfo>
+  java.util.List<com.cosmos.tx.v1beta1.SignerInfo> 
       getSignerInfosList();
   /**
    * <pre>
@@ -29,7 +29,7 @@ public interface AuthInfoOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.SignerInfo signer_infos = 1 [json_name = "signerInfos"];</code>
    */
-  SignerInfo getSignerInfos(int index);
+  com.cosmos.tx.v1beta1.SignerInfo getSignerInfos(int index);
   /**
    * <pre>
    * signer_infos defines the signing modes for the required signers. The number
@@ -51,7 +51,7 @@ public interface AuthInfoOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.SignerInfo signer_infos = 1 [json_name = "signerInfos"];</code>
    */
-  java.util.List<? extends SignerInfoOrBuilder>
+  java.util.List<? extends com.cosmos.tx.v1beta1.SignerInfoOrBuilder> 
       getSignerInfosOrBuilderList();
   /**
    * <pre>
@@ -63,7 +63,7 @@ public interface AuthInfoOrBuilder extends
    *
    * <code>repeated .cosmos.tx.v1beta1.SignerInfo signer_infos = 1 [json_name = "signerInfos"];</code>
    */
-  SignerInfoOrBuilder getSignerInfosOrBuilder(
+  com.cosmos.tx.v1beta1.SignerInfoOrBuilder getSignerInfosOrBuilder(
       int index);
 
   /**
@@ -89,7 +89,7 @@ public interface AuthInfoOrBuilder extends
    * <code>.cosmos.tx.v1beta1.Fee fee = 2 [json_name = "fee"];</code>
    * @return The fee.
    */
-  Fee getFee();
+  com.cosmos.tx.v1beta1.Fee getFee();
   /**
    * <pre>
    * Fee is the fee and gas limit for the transaction. The first signer is the
@@ -100,5 +100,5 @@ public interface AuthInfoOrBuilder extends
    *
    * <code>.cosmos.tx.v1beta1.Fee fee = 2 [json_name = "fee"];</code>
    */
-  FeeOrBuilder getFeeOrBuilder();
+  com.cosmos.tx.v1beta1.FeeOrBuilder getFeeOrBuilder();
 }

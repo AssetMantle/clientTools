@@ -16,11 +16,11 @@ public interface CompressedBatchEntryOrBuilder extends
    * <code>.ics23.CompressedExistenceProof exist = 1 [json_name = "exist"];</code>
    * @return The exist.
    */
-  CompressedExistenceProof getExist();
+  com.ics23.CompressedExistenceProof getExist();
   /**
    * <code>.ics23.CompressedExistenceProof exist = 1 [json_name = "exist"];</code>
    */
-  CompressedExistenceProofOrBuilder getExistOrBuilder();
+  com.ics23.CompressedExistenceProofOrBuilder getExistOrBuilder();
 
   /**
    * <code>.ics23.CompressedNonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
@@ -31,11 +31,11 @@ public interface CompressedBatchEntryOrBuilder extends
    * <code>.ics23.CompressedNonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
    * @return The nonexist.
    */
-  CompressedNonExistenceProof getNonexist();
+  com.ics23.CompressedNonExistenceProof getNonexist();
   /**
    * <code>.ics23.CompressedNonExistenceProof nonexist = 2 [json_name = "nonexist"];</code>
    */
-  CompressedNonExistenceProofOrBuilder getNonexistOrBuilder();
+  com.ics23.CompressedNonExistenceProofOrBuilder getNonexistOrBuilder();
 
-  CompressedBatchEntry.ProofCase getProofCase();
+  com.ics23.CompressedBatchEntry.ProofCase getProofCase();
 }

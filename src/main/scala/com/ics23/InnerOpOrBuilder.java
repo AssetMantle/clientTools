@@ -16,7 +16,7 @@ public interface InnerOpOrBuilder extends
    * <code>.ics23.HashOp hash = 1 [json_name = "hash"];</code>
    * @return The hash.
    */
-  HashOp getHash();
+  com.ics23.HashOp getHash();
 
   /**
    * <code>bytes prefix = 2 [json_name = "prefix"];</code>

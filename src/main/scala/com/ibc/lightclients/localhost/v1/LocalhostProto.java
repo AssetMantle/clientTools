@@ -27,7 +27,7 @@ public final class LocalhostProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n-ibc/lightclients/localhost/v1/localhos" +
       "t.proto\022\035ibc.lightclients.localhost.v1\032\024" +
       "gogoproto/gogo.proto\032\037ibc/core/client/v1" +
@@ -54,7 +54,7 @@ public final class LocalhostProto {
     internal_static_ibc_lightclients_localhost_v1_ClientState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_lightclients_localhost_v1_ClientState_descriptor,
-        new String[] { "ChainId", "Height", });
+        new java.lang.String[] { "ChainId", "Height", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.goprotoGetters);

@@ -15,7 +15,7 @@ public interface DelegatorStartingInfoRecordOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  String getDelegatorAddress();
+  java.lang.String getDelegatorAddress();
   /**
    * <pre>
    * delegator_address is the address of the delegator.
@@ -35,7 +35,7 @@ public interface DelegatorStartingInfoRecordOrBuilder extends
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  String getValidatorAddress();
+  java.lang.String getValidatorAddress();
   /**
    * <pre>
    * validator_address is the address of the validator.
@@ -64,7 +64,7 @@ public interface DelegatorStartingInfoRecordOrBuilder extends
    * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
    * @return The startingInfo.
    */
-  DelegatorStartingInfo getStartingInfo();
+  com.cosmos.distribution.v1beta1.DelegatorStartingInfo getStartingInfo();
   /**
    * <pre>
    * starting_info defines the starting info of a delegator.
@@ -72,5 +72,5 @@ public interface DelegatorStartingInfoRecordOrBuilder extends
    *
    * <code>.cosmos.distribution.v1beta1.DelegatorStartingInfo starting_info = 3 [json_name = "startingInfo", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"starting_info&#92;""];</code>
    */
-  DelegatorStartingInfoOrBuilder getStartingInfoOrBuilder();
+  com.cosmos.distribution.v1beta1.DelegatorStartingInfoOrBuilder getStartingInfoOrBuilder();
 }

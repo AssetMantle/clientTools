@@ -32,7 +32,7 @@ public final class SlashingProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n&cosmos/slashing/v1beta1/slashing.proto" +
       "\022\027cosmos.slashing.v1beta1\032\024gogoproto/gog" +
       "o.proto\032\036google/protobuf/duration.proto\032" +
@@ -82,13 +82,13 @@ public final class SlashingProto {
     internal_static_cosmos_slashing_v1beta1_ValidatorSigningInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_ValidatorSigningInfo_descriptor,
-        new String[] { "Address", "StartHeight", "IndexOffset", "JailedUntil", "Tombstoned", "MissedBlocksCounter", });
+        new java.lang.String[] { "Address", "StartHeight", "IndexOffset", "JailedUntil", "Tombstoned", "MissedBlocksCounter", });
     internal_static_cosmos_slashing_v1beta1_Params_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_cosmos_slashing_v1beta1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_slashing_v1beta1_Params_descriptor,
-        new String[] { "SignedBlocksWindow", "MinSignedPerWindow", "DowntimeJailDuration", "SlashFractionDoubleSign", "SlashFractionDowntime", });
+        new java.lang.String[] { "SignedBlocksWindow", "MinSignedPerWindow", "DowntimeJailDuration", "SlashFractionDoubleSign", "SlashFractionDowntime", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.customtype);

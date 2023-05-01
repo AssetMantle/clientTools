@@ -15,7 +15,7 @@ public interface QueryDenomTraceRequestOrBuilder extends
    * <code>string hash = 1 [json_name = "hash"];</code>
    * @return The hash.
    */
-  String getHash();
+  java.lang.String getHash();
   /**
    * <pre>
    * hash (in hex format) or denom (full denom with ibc prefix) of the denomination trace information.

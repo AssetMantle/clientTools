@@ -25,33 +25,33 @@ private static final long serialVersionUID = 0L;
     validatorAddress_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new MsgCreateValidator();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return TxProto.internal_static_cosmos_staking_v1beta1_MsgCreateValidator_descriptor;
+    return com.cosmos.staking.v1beta1.TxProto.internal_static_cosmos_staking_v1beta1_MsgCreateValidator_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return TxProto.internal_static_cosmos_staking_v1beta1_MsgCreateValidator_fieldAccessorTable
+    return com.cosmos.staking.v1beta1.TxProto.internal_static_cosmos_staking_v1beta1_MsgCreateValidator_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            MsgCreateValidator.class, Builder.class);
+            com.cosmos.staking.v1beta1.MsgCreateValidator.class, com.cosmos.staking.v1beta1.MsgCreateValidator.Builder.class);
   }
 
   public static final int DESCRIPTION_FIELD_NUMBER = 1;
-  private Description description_;
+  private com.cosmos.staking.v1beta1.Description description_;
   /**
    * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
    * @return Whether the description field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasDescription() {
     return description_ != null;
   }
@@ -59,25 +59,25 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
    * @return The description.
    */
-  @Override
-  public Description getDescription() {
-    return description_ == null ? Description.getDefaultInstance() : description_;
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.Description getDescription() {
+    return description_ == null ? com.cosmos.staking.v1beta1.Description.getDefaultInstance() : description_;
   }
   /**
    * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public DescriptionOrBuilder getDescriptionOrBuilder() {
-    return description_ == null ? Description.getDefaultInstance() : description_;
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.DescriptionOrBuilder getDescriptionOrBuilder() {
+    return description_ == null ? com.cosmos.staking.v1beta1.Description.getDefaultInstance() : description_;
   }
 
   public static final int COMMISSION_FIELD_NUMBER = 2;
-  private CommissionRates commission_;
+  private com.cosmos.staking.v1beta1.CommissionRates commission_;
   /**
    * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
    * @return Whether the commission field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasCommission() {
     return commission_ != null;
   }
@@ -85,34 +85,34 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
    * @return The commission.
    */
-  @Override
-  public CommissionRates getCommission() {
-    return commission_ == null ? CommissionRates.getDefaultInstance() : commission_;
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.CommissionRates getCommission() {
+    return commission_ == null ? com.cosmos.staking.v1beta1.CommissionRates.getDefaultInstance() : commission_;
   }
   /**
    * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
    */
-  @Override
-  public CommissionRatesOrBuilder getCommissionOrBuilder() {
-    return commission_ == null ? CommissionRates.getDefaultInstance() : commission_;
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.CommissionRatesOrBuilder getCommissionOrBuilder() {
+    return commission_ == null ? com.cosmos.staking.v1beta1.CommissionRates.getDefaultInstance() : commission_;
   }
 
   public static final int MIN_SELF_DELEGATION_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile Object minSelfDelegation_ = "";
+  private volatile java.lang.Object minSelfDelegation_ = "";
   /**
    * <code>string min_self_delegation = 3 [json_name = "minSelfDelegation", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"min_self_delegation&#92;""];</code>
    * @return The minSelfDelegation.
    */
-  @Override
-  public String getMinSelfDelegation() {
-    Object ref = minSelfDelegation_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getMinSelfDelegation() {
+    java.lang.Object ref = minSelfDelegation_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       minSelfDelegation_ = s;
       return s;
     }
@@ -121,14 +121,14 @@ private static final long serialVersionUID = 0L;
    * <code>string min_self_delegation = 3 [json_name = "minSelfDelegation", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"min_self_delegation&#92;""];</code>
    * @return The bytes for minSelfDelegation.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getMinSelfDelegationBytes() {
-    Object ref = minSelfDelegation_;
-    if (ref instanceof String) {
+    java.lang.Object ref = minSelfDelegation_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       minSelfDelegation_ = b;
       return b;
     } else {
@@ -138,20 +138,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int DELEGATOR_ADDRESS_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile Object delegatorAddress_ = "";
+  private volatile java.lang.Object delegatorAddress_ = "";
   /**
    * <code>string delegator_address = 4 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  @Override
-  public String getDelegatorAddress() {
-    Object ref = delegatorAddress_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getDelegatorAddress() {
+    java.lang.Object ref = delegatorAddress_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       delegatorAddress_ = s;
       return s;
     }
@@ -160,14 +160,14 @@ private static final long serialVersionUID = 0L;
    * <code>string delegator_address = 4 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The bytes for delegatorAddress.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDelegatorAddressBytes() {
-    Object ref = delegatorAddress_;
-    if (ref instanceof String) {
+    java.lang.Object ref = delegatorAddress_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       delegatorAddress_ = b;
       return b;
     } else {
@@ -177,20 +177,20 @@ private static final long serialVersionUID = 0L;
 
   public static final int VALIDATOR_ADDRESS_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private volatile Object validatorAddress_ = "";
+  private volatile java.lang.Object validatorAddress_ = "";
   /**
    * <code>string validator_address = 5 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  @Override
-  public String getValidatorAddress() {
-    Object ref = validatorAddress_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getValidatorAddress() {
+    java.lang.Object ref = validatorAddress_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       validatorAddress_ = s;
       return s;
     }
@@ -199,14 +199,14 @@ private static final long serialVersionUID = 0L;
    * <code>string validator_address = 5 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The bytes for validatorAddress.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getValidatorAddressBytes() {
-    Object ref = validatorAddress_;
-    if (ref instanceof String) {
+    java.lang.Object ref = validatorAddress_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       validatorAddress_ = b;
       return b;
     } else {
@@ -220,7 +220,7 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any pubkey = 6 [json_name = "pubkey", (.cosmos_proto.accepts_interface) = "cosmos.crypto.PubKey"];</code>
    * @return Whether the pubkey field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasPubkey() {
     return pubkey_ != null;
   }
@@ -228,14 +228,14 @@ private static final long serialVersionUID = 0L;
    * <code>.google.protobuf.Any pubkey = 6 [json_name = "pubkey", (.cosmos_proto.accepts_interface) = "cosmos.crypto.PubKey"];</code>
    * @return The pubkey.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Any getPubkey() {
     return pubkey_ == null ? com.google.protobuf.Any.getDefaultInstance() : pubkey_;
   }
   /**
    * <code>.google.protobuf.Any pubkey = 6 [json_name = "pubkey", (.cosmos_proto.accepts_interface) = "cosmos.crypto.PubKey"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.AnyOrBuilder getPubkeyOrBuilder() {
     return pubkey_ == null ? com.google.protobuf.Any.getDefaultInstance() : pubkey_;
   }
@@ -246,7 +246,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.v1beta1.Coin value = 7 [json_name = "value", (.gogoproto.nullable) = false];</code>
    * @return Whether the value field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasValue() {
     return value_ != null;
   }
@@ -254,20 +254,20 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.v1beta1.Coin value = 7 [json_name = "value", (.gogoproto.nullable) = false];</code>
    * @return The value.
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.Coin getValue() {
     return value_ == null ? com.cosmos.base.v1beta1.Coin.getDefaultInstance() : value_;
   }
   /**
    * <code>.cosmos.base.v1beta1.Coin value = 7 [json_name = "value", (.gogoproto.nullable) = false];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.v1beta1.CoinOrBuilder getValueOrBuilder() {
     return value_ == null ? com.cosmos.base.v1beta1.Coin.getDefaultInstance() : value_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -277,7 +277,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (description_ != null) {
@@ -304,7 +304,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -340,15 +340,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof MsgCreateValidator)) {
+    if (!(obj instanceof com.cosmos.staking.v1beta1.MsgCreateValidator)) {
       return super.equals(obj);
     }
-    MsgCreateValidator other = (MsgCreateValidator) obj;
+    com.cosmos.staking.v1beta1.MsgCreateValidator other = (com.cosmos.staking.v1beta1.MsgCreateValidator) obj;
 
     if (hasDescription() != other.hasDescription()) return false;
     if (hasDescription()) {
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -414,69 +414,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static MsgCreateValidator parseFrom(
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgCreateValidator parseFrom(
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgCreateValidator parseFrom(
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgCreateValidator parseFrom(
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgCreateValidator parseFrom(byte[] data)
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static MsgCreateValidator parseFrom(
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static MsgCreateValidator parseFrom(java.io.InputStream input)
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgCreateValidator parseFrom(
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgCreateValidator parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static MsgCreateValidator parseDelimitedFrom(
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static MsgCreateValidator parseFrom(
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static MsgCreateValidator parseFrom(
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -484,23 +484,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(MsgCreateValidator prototype) {
+  public static Builder newBuilder(com.cosmos.staking.v1beta1.MsgCreateValidator prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -514,18 +514,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.staking.v1beta1.MsgCreateValidator)
-      MsgCreateValidatorOrBuilder {
+      com.cosmos.staking.v1beta1.MsgCreateValidatorOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return TxProto.internal_static_cosmos_staking_v1beta1_MsgCreateValidator_descriptor;
+      return com.cosmos.staking.v1beta1.TxProto.internal_static_cosmos_staking_v1beta1_MsgCreateValidator_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return TxProto.internal_static_cosmos_staking_v1beta1_MsgCreateValidator_fieldAccessorTable
+      return com.cosmos.staking.v1beta1.TxProto.internal_static_cosmos_staking_v1beta1_MsgCreateValidator_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MsgCreateValidator.class, Builder.class);
+              com.cosmos.staking.v1beta1.MsgCreateValidator.class, com.cosmos.staking.v1beta1.MsgCreateValidator.Builder.class);
     }
 
     // Construct using com.cosmos.staking.v1beta1.MsgCreateValidator.newBuilder()
@@ -534,11 +534,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -568,35 +568,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return TxProto.internal_static_cosmos_staking_v1beta1_MsgCreateValidator_descriptor;
+      return com.cosmos.staking.v1beta1.TxProto.internal_static_cosmos_staking_v1beta1_MsgCreateValidator_descriptor;
     }
 
-    @Override
-    public MsgCreateValidator getDefaultInstanceForType() {
-      return MsgCreateValidator.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.MsgCreateValidator getDefaultInstanceForType() {
+      return com.cosmos.staking.v1beta1.MsgCreateValidator.getDefaultInstance();
     }
 
-    @Override
-    public MsgCreateValidator build() {
-      MsgCreateValidator result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.MsgCreateValidator build() {
+      com.cosmos.staking.v1beta1.MsgCreateValidator result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public MsgCreateValidator buildPartial() {
-      MsgCreateValidator result = new MsgCreateValidator(this);
+    @java.lang.Override
+    public com.cosmos.staking.v1beta1.MsgCreateValidator buildPartial() {
+      com.cosmos.staking.v1beta1.MsgCreateValidator result = new com.cosmos.staking.v1beta1.MsgCreateValidator(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(MsgCreateValidator result) {
+    private void buildPartial0(com.cosmos.staking.v1beta1.MsgCreateValidator result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.description_ = descriptionBuilder_ == null
@@ -629,50 +629,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof MsgCreateValidator) {
-        return mergeFrom((MsgCreateValidator)other);
+      if (other instanceof com.cosmos.staking.v1beta1.MsgCreateValidator) {
+        return mergeFrom((com.cosmos.staking.v1beta1.MsgCreateValidator)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(MsgCreateValidator other) {
-      if (other == MsgCreateValidator.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.staking.v1beta1.MsgCreateValidator other) {
+      if (other == com.cosmos.staking.v1beta1.MsgCreateValidator.getDefaultInstance()) return this;
       if (other.hasDescription()) {
         mergeDescription(other.getDescription());
       }
@@ -705,18 +705,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -786,9 +786,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Description description_;
+    private com.cosmos.staking.v1beta1.Description description_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        Description, Description.Builder, DescriptionOrBuilder> descriptionBuilder_;
+        com.cosmos.staking.v1beta1.Description, com.cosmos.staking.v1beta1.Description.Builder, com.cosmos.staking.v1beta1.DescriptionOrBuilder> descriptionBuilder_;
     /**
      * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
      * @return Whether the description field is set.
@@ -800,9 +800,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
      * @return The description.
      */
-    public Description getDescription() {
+    public com.cosmos.staking.v1beta1.Description getDescription() {
       if (descriptionBuilder_ == null) {
-        return description_ == null ? Description.getDefaultInstance() : description_;
+        return description_ == null ? com.cosmos.staking.v1beta1.Description.getDefaultInstance() : description_;
       } else {
         return descriptionBuilder_.getMessage();
       }
@@ -810,7 +810,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setDescription(Description value) {
+    public Builder setDescription(com.cosmos.staking.v1beta1.Description value) {
       if (descriptionBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -827,7 +827,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
      */
     public Builder setDescription(
-        Description.Builder builderForValue) {
+        com.cosmos.staking.v1beta1.Description.Builder builderForValue) {
       if (descriptionBuilder_ == null) {
         description_ = builderForValue.build();
       } else {
@@ -840,11 +840,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeDescription(Description value) {
+    public Builder mergeDescription(com.cosmos.staking.v1beta1.Description value) {
       if (descriptionBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           description_ != null &&
-          description_ != Description.getDefaultInstance()) {
+          description_ != com.cosmos.staking.v1beta1.Description.getDefaultInstance()) {
           getDescriptionBuilder().mergeFrom(value);
         } else {
           description_ = value;
@@ -872,7 +872,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
      */
-    public Description.Builder getDescriptionBuilder() {
+    public com.cosmos.staking.v1beta1.Description.Builder getDescriptionBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getDescriptionFieldBuilder().getBuilder();
@@ -880,23 +880,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
      */
-    public DescriptionOrBuilder getDescriptionOrBuilder() {
+    public com.cosmos.staking.v1beta1.DescriptionOrBuilder getDescriptionOrBuilder() {
       if (descriptionBuilder_ != null) {
         return descriptionBuilder_.getMessageOrBuilder();
       } else {
         return description_ == null ?
-            Description.getDefaultInstance() : description_;
+            com.cosmos.staking.v1beta1.Description.getDefaultInstance() : description_;
       }
     }
     /**
      * <code>.cosmos.staking.v1beta1.Description description = 1 [json_name = "description", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        Description, Description.Builder, DescriptionOrBuilder>
+        com.cosmos.staking.v1beta1.Description, com.cosmos.staking.v1beta1.Description.Builder, com.cosmos.staking.v1beta1.DescriptionOrBuilder> 
         getDescriptionFieldBuilder() {
       if (descriptionBuilder_ == null) {
         descriptionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            Description, Description.Builder, DescriptionOrBuilder>(
+            com.cosmos.staking.v1beta1.Description, com.cosmos.staking.v1beta1.Description.Builder, com.cosmos.staking.v1beta1.DescriptionOrBuilder>(
                 getDescription(),
                 getParentForChildren(),
                 isClean());
@@ -905,9 +905,9 @@ private static final long serialVersionUID = 0L;
       return descriptionBuilder_;
     }
 
-    private CommissionRates commission_;
+    private com.cosmos.staking.v1beta1.CommissionRates commission_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        CommissionRates, CommissionRates.Builder, CommissionRatesOrBuilder> commissionBuilder_;
+        com.cosmos.staking.v1beta1.CommissionRates, com.cosmos.staking.v1beta1.CommissionRates.Builder, com.cosmos.staking.v1beta1.CommissionRatesOrBuilder> commissionBuilder_;
     /**
      * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
      * @return Whether the commission field is set.
@@ -919,9 +919,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
      * @return The commission.
      */
-    public CommissionRates getCommission() {
+    public com.cosmos.staking.v1beta1.CommissionRates getCommission() {
       if (commissionBuilder_ == null) {
-        return commission_ == null ? CommissionRates.getDefaultInstance() : commission_;
+        return commission_ == null ? com.cosmos.staking.v1beta1.CommissionRates.getDefaultInstance() : commission_;
       } else {
         return commissionBuilder_.getMessage();
       }
@@ -929,7 +929,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
      */
-    public Builder setCommission(CommissionRates value) {
+    public Builder setCommission(com.cosmos.staking.v1beta1.CommissionRates value) {
       if (commissionBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -946,7 +946,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
      */
     public Builder setCommission(
-        CommissionRates.Builder builderForValue) {
+        com.cosmos.staking.v1beta1.CommissionRates.Builder builderForValue) {
       if (commissionBuilder_ == null) {
         commission_ = builderForValue.build();
       } else {
@@ -959,11 +959,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
      */
-    public Builder mergeCommission(CommissionRates value) {
+    public Builder mergeCommission(com.cosmos.staking.v1beta1.CommissionRates value) {
       if (commissionBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           commission_ != null &&
-          commission_ != CommissionRates.getDefaultInstance()) {
+          commission_ != com.cosmos.staking.v1beta1.CommissionRates.getDefaultInstance()) {
           getCommissionBuilder().mergeFrom(value);
         } else {
           commission_ = value;
@@ -991,7 +991,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
      */
-    public CommissionRates.Builder getCommissionBuilder() {
+    public com.cosmos.staking.v1beta1.CommissionRates.Builder getCommissionBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getCommissionFieldBuilder().getBuilder();
@@ -999,23 +999,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
      */
-    public CommissionRatesOrBuilder getCommissionOrBuilder() {
+    public com.cosmos.staking.v1beta1.CommissionRatesOrBuilder getCommissionOrBuilder() {
       if (commissionBuilder_ != null) {
         return commissionBuilder_.getMessageOrBuilder();
       } else {
         return commission_ == null ?
-            CommissionRates.getDefaultInstance() : commission_;
+            com.cosmos.staking.v1beta1.CommissionRates.getDefaultInstance() : commission_;
       }
     }
     /**
      * <code>.cosmos.staking.v1beta1.CommissionRates commission = 2 [json_name = "commission", (.gogoproto.nullable) = false];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        CommissionRates, CommissionRates.Builder, CommissionRatesOrBuilder>
+        com.cosmos.staking.v1beta1.CommissionRates, com.cosmos.staking.v1beta1.CommissionRates.Builder, com.cosmos.staking.v1beta1.CommissionRatesOrBuilder> 
         getCommissionFieldBuilder() {
       if (commissionBuilder_ == null) {
         commissionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            CommissionRates, CommissionRates.Builder, CommissionRatesOrBuilder>(
+            com.cosmos.staking.v1beta1.CommissionRates, com.cosmos.staking.v1beta1.CommissionRates.Builder, com.cosmos.staking.v1beta1.CommissionRatesOrBuilder>(
                 getCommission(),
                 getParentForChildren(),
                 isClean());
@@ -1024,21 +1024,21 @@ private static final long serialVersionUID = 0L;
       return commissionBuilder_;
     }
 
-    private Object minSelfDelegation_ = "";
+    private java.lang.Object minSelfDelegation_ = "";
     /**
      * <code>string min_self_delegation = 3 [json_name = "minSelfDelegation", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (.gogoproto.moretags) = "yaml:&#92;"min_self_delegation&#92;""];</code>
      * @return The minSelfDelegation.
      */
-    public String getMinSelfDelegation() {
-      Object ref = minSelfDelegation_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getMinSelfDelegation() {
+      java.lang.Object ref = minSelfDelegation_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         minSelfDelegation_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1047,11 +1047,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getMinSelfDelegationBytes() {
-      Object ref = minSelfDelegation_;
+      java.lang.Object ref = minSelfDelegation_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         minSelfDelegation_ = b;
         return b;
       } else {
@@ -1064,7 +1064,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setMinSelfDelegation(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       minSelfDelegation_ = value;
       bitField0_ |= 0x00000004;
@@ -1096,21 +1096,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object delegatorAddress_ = "";
+    private java.lang.Object delegatorAddress_ = "";
     /**
      * <code>string delegator_address = 4 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
      * @return The delegatorAddress.
      */
-    public String getDelegatorAddress() {
-      Object ref = delegatorAddress_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getDelegatorAddress() {
+      java.lang.Object ref = delegatorAddress_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         delegatorAddress_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1119,11 +1119,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getDelegatorAddressBytes() {
-      Object ref = delegatorAddress_;
+      java.lang.Object ref = delegatorAddress_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         delegatorAddress_ = b;
         return b;
       } else {
@@ -1136,7 +1136,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDelegatorAddress(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       delegatorAddress_ = value;
       bitField0_ |= 0x00000008;
@@ -1168,21 +1168,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object validatorAddress_ = "";
+    private java.lang.Object validatorAddress_ = "";
     /**
      * <code>string validator_address = 5 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
      * @return The validatorAddress.
      */
-    public String getValidatorAddress() {
-      Object ref = validatorAddress_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getValidatorAddress() {
+      java.lang.Object ref = validatorAddress_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         validatorAddress_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1191,11 +1191,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getValidatorAddressBytes() {
-      Object ref = validatorAddress_;
+      java.lang.Object ref = validatorAddress_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         validatorAddress_ = b;
         return b;
       } else {
@@ -1208,7 +1208,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setValidatorAddress(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       validatorAddress_ = value;
       bitField0_ |= 0x00000010;
@@ -1477,13 +1477,13 @@ private static final long serialVersionUID = 0L;
       }
       return valueBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1494,18 +1494,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.staking.v1beta1.MsgCreateValidator)
-  private static final MsgCreateValidator DEFAULT_INSTANCE;
+  private static final com.cosmos.staking.v1beta1.MsgCreateValidator DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new MsgCreateValidator();
+    DEFAULT_INSTANCE = new com.cosmos.staking.v1beta1.MsgCreateValidator();
   }
 
-  public static MsgCreateValidator getDefaultInstance() {
+  public static com.cosmos.staking.v1beta1.MsgCreateValidator getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<MsgCreateValidator>
       PARSER = new com.google.protobuf.AbstractParser<MsgCreateValidator>() {
-    @Override
+    @java.lang.Override
     public MsgCreateValidator parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1529,13 +1529,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<MsgCreateValidator> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public MsgCreateValidator getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.staking.v1beta1.MsgCreateValidator getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

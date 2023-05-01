@@ -32,28 +32,28 @@ private static final long serialVersionUID = 0L;
   private ProofSpec() {
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new ProofSpec();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return ProofsProto.internal_static_ics23_ProofSpec_descriptor;
+    return com.ics23.ProofsProto.internal_static_ics23_ProofSpec_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return ProofsProto.internal_static_ics23_ProofSpec_fieldAccessorTable
+    return com.ics23.ProofsProto.internal_static_ics23_ProofSpec_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            ProofSpec.class, Builder.class);
+            com.ics23.ProofSpec.class, com.ics23.ProofSpec.Builder.class);
   }
 
   public static final int LEAF_SPEC_FIELD_NUMBER = 1;
-  private LeafOp leafSpec_;
+  private com.ics23.LeafOp leafSpec_;
   /**
    * <pre>
    * any field in the ExistenceProof must be the same as in this spec.
@@ -63,7 +63,7 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
    * @return Whether the leafSpec field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasLeafSpec() {
     return leafSpec_ != null;
   }
@@ -76,9 +76,9 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
    * @return The leafSpec.
    */
-  @Override
-  public LeafOp getLeafSpec() {
-    return leafSpec_ == null ? LeafOp.getDefaultInstance() : leafSpec_;
+  @java.lang.Override
+  public com.ics23.LeafOp getLeafSpec() {
+    return leafSpec_ == null ? com.ics23.LeafOp.getDefaultInstance() : leafSpec_;
   }
   /**
    * <pre>
@@ -88,18 +88,18 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
    */
-  @Override
-  public LeafOpOrBuilder getLeafSpecOrBuilder() {
-    return leafSpec_ == null ? LeafOp.getDefaultInstance() : leafSpec_;
+  @java.lang.Override
+  public com.ics23.LeafOpOrBuilder getLeafSpecOrBuilder() {
+    return leafSpec_ == null ? com.ics23.LeafOp.getDefaultInstance() : leafSpec_;
   }
 
   public static final int INNER_SPEC_FIELD_NUMBER = 2;
-  private InnerSpec innerSpec_;
+  private com.ics23.InnerSpec innerSpec_;
   /**
    * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
    * @return Whether the innerSpec field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasInnerSpec() {
     return innerSpec_ != null;
   }
@@ -107,16 +107,16 @@ private static final long serialVersionUID = 0L;
    * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
    * @return The innerSpec.
    */
-  @Override
-  public InnerSpec getInnerSpec() {
-    return innerSpec_ == null ? InnerSpec.getDefaultInstance() : innerSpec_;
+  @java.lang.Override
+  public com.ics23.InnerSpec getInnerSpec() {
+    return innerSpec_ == null ? com.ics23.InnerSpec.getDefaultInstance() : innerSpec_;
   }
   /**
    * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
    */
-  @Override
-  public InnerSpecOrBuilder getInnerSpecOrBuilder() {
-    return innerSpec_ == null ? InnerSpec.getDefaultInstance() : innerSpec_;
+  @java.lang.Override
+  public com.ics23.InnerSpecOrBuilder getInnerSpecOrBuilder() {
+    return innerSpec_ == null ? com.ics23.InnerSpec.getDefaultInstance() : innerSpec_;
   }
 
   public static final int MAX_DEPTH_FIELD_NUMBER = 3;
@@ -129,7 +129,7 @@ private static final long serialVersionUID = 0L;
    * <code>int32 max_depth = 3 [json_name = "maxDepth"];</code>
    * @return The maxDepth.
    */
-  @Override
+  @java.lang.Override
   public int getMaxDepth() {
     return maxDepth_;
   }
@@ -144,13 +144,13 @@ private static final long serialVersionUID = 0L;
    * <code>int32 min_depth = 4 [json_name = "minDepth"];</code>
    * @return The minDepth.
    */
-  @Override
+  @java.lang.Override
   public int getMinDepth() {
     return minDepth_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -160,7 +160,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (leafSpec_ != null) {
@@ -178,7 +178,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -205,15 +205,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof ProofSpec)) {
+    if (!(obj instanceof com.ics23.ProofSpec)) {
       return super.equals(obj);
     }
-    ProofSpec other = (ProofSpec) obj;
+    com.ics23.ProofSpec other = (com.ics23.ProofSpec) obj;
 
     if (hasLeafSpec() != other.hasLeafSpec()) return false;
     if (hasLeafSpec()) {
@@ -233,7 +233,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -257,69 +257,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static ProofSpec parseFrom(
+  public static com.ics23.ProofSpec parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ProofSpec parseFrom(
+  public static com.ics23.ProofSpec parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ProofSpec parseFrom(
+  public static com.ics23.ProofSpec parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ProofSpec parseFrom(
+  public static com.ics23.ProofSpec parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ProofSpec parseFrom(byte[] data)
+  public static com.ics23.ProofSpec parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static ProofSpec parseFrom(
+  public static com.ics23.ProofSpec parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static ProofSpec parseFrom(java.io.InputStream input)
+  public static com.ics23.ProofSpec parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ProofSpec parseFrom(
+  public static com.ics23.ProofSpec parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ProofSpec parseDelimitedFrom(java.io.InputStream input)
+  public static com.ics23.ProofSpec parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static ProofSpec parseDelimitedFrom(
+  public static com.ics23.ProofSpec parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static ProofSpec parseFrom(
+  public static com.ics23.ProofSpec parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static ProofSpec parseFrom(
+  public static com.ics23.ProofSpec parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -327,23 +327,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(ProofSpec prototype) {
+  public static Builder newBuilder(com.ics23.ProofSpec prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -367,18 +367,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ics23.ProofSpec)
-      ProofSpecOrBuilder {
+      com.ics23.ProofSpecOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ProofsProto.internal_static_ics23_ProofSpec_descriptor;
+      return com.ics23.ProofsProto.internal_static_ics23_ProofSpec_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ProofsProto.internal_static_ics23_ProofSpec_fieldAccessorTable
+      return com.ics23.ProofsProto.internal_static_ics23_ProofSpec_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ProofSpec.class, Builder.class);
+              com.ics23.ProofSpec.class, com.ics23.ProofSpec.Builder.class);
     }
 
     // Construct using com.ics23.ProofSpec.newBuilder()
@@ -387,11 +387,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -410,35 +410,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return ProofsProto.internal_static_ics23_ProofSpec_descriptor;
+      return com.ics23.ProofsProto.internal_static_ics23_ProofSpec_descriptor;
     }
 
-    @Override
-    public ProofSpec getDefaultInstanceForType() {
-      return ProofSpec.getDefaultInstance();
+    @java.lang.Override
+    public com.ics23.ProofSpec getDefaultInstanceForType() {
+      return com.ics23.ProofSpec.getDefaultInstance();
     }
 
-    @Override
-    public ProofSpec build() {
-      ProofSpec result = buildPartial();
+    @java.lang.Override
+    public com.ics23.ProofSpec build() {
+      com.ics23.ProofSpec result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public ProofSpec buildPartial() {
-      ProofSpec result = new ProofSpec(this);
+    @java.lang.Override
+    public com.ics23.ProofSpec buildPartial() {
+      com.ics23.ProofSpec result = new com.ics23.ProofSpec(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(ProofSpec result) {
+    private void buildPartial0(com.ics23.ProofSpec result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.leafSpec_ = leafSpecBuilder_ == null
@@ -458,50 +458,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof ProofSpec) {
-        return mergeFrom((ProofSpec)other);
+      if (other instanceof com.ics23.ProofSpec) {
+        return mergeFrom((com.ics23.ProofSpec)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(ProofSpec other) {
-      if (other == ProofSpec.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ics23.ProofSpec other) {
+      if (other == com.ics23.ProofSpec.getDefaultInstance()) return this;
       if (other.hasLeafSpec()) {
         mergeLeafSpec(other.getLeafSpec());
       }
@@ -519,18 +519,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -581,9 +581,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private LeafOp leafSpec_;
+    private com.ics23.LeafOp leafSpec_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        LeafOp, LeafOp.Builder, LeafOpOrBuilder> leafSpecBuilder_;
+        com.ics23.LeafOp, com.ics23.LeafOp.Builder, com.ics23.LeafOpOrBuilder> leafSpecBuilder_;
     /**
      * <pre>
      * any field in the ExistenceProof must be the same as in this spec.
@@ -605,9 +605,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
      * @return The leafSpec.
      */
-    public LeafOp getLeafSpec() {
+    public com.ics23.LeafOp getLeafSpec() {
       if (leafSpecBuilder_ == null) {
-        return leafSpec_ == null ? LeafOp.getDefaultInstance() : leafSpec_;
+        return leafSpec_ == null ? com.ics23.LeafOp.getDefaultInstance() : leafSpec_;
       } else {
         return leafSpecBuilder_.getMessage();
       }
@@ -620,7 +620,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
      */
-    public Builder setLeafSpec(LeafOp value) {
+    public Builder setLeafSpec(com.ics23.LeafOp value) {
       if (leafSpecBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -642,7 +642,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
      */
     public Builder setLeafSpec(
-        LeafOp.Builder builderForValue) {
+        com.ics23.LeafOp.Builder builderForValue) {
       if (leafSpecBuilder_ == null) {
         leafSpec_ = builderForValue.build();
       } else {
@@ -660,11 +660,11 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
      */
-    public Builder mergeLeafSpec(LeafOp value) {
+    public Builder mergeLeafSpec(com.ics23.LeafOp value) {
       if (leafSpecBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           leafSpec_ != null &&
-          leafSpec_ != LeafOp.getDefaultInstance()) {
+          leafSpec_ != com.ics23.LeafOp.getDefaultInstance()) {
           getLeafSpecBuilder().mergeFrom(value);
         } else {
           leafSpec_ = value;
@@ -702,7 +702,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
      */
-    public LeafOp.Builder getLeafSpecBuilder() {
+    public com.ics23.LeafOp.Builder getLeafSpecBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getLeafSpecFieldBuilder().getBuilder();
@@ -715,12 +715,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
      */
-    public LeafOpOrBuilder getLeafSpecOrBuilder() {
+    public com.ics23.LeafOpOrBuilder getLeafSpecOrBuilder() {
       if (leafSpecBuilder_ != null) {
         return leafSpecBuilder_.getMessageOrBuilder();
       } else {
         return leafSpec_ == null ?
-            LeafOp.getDefaultInstance() : leafSpec_;
+            com.ics23.LeafOp.getDefaultInstance() : leafSpec_;
       }
     }
     /**
@@ -732,11 +732,11 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.LeafOp leaf_spec = 1 [json_name = "leafSpec"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        LeafOp, LeafOp.Builder, LeafOpOrBuilder>
+        com.ics23.LeafOp, com.ics23.LeafOp.Builder, com.ics23.LeafOpOrBuilder> 
         getLeafSpecFieldBuilder() {
       if (leafSpecBuilder_ == null) {
         leafSpecBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            LeafOp, LeafOp.Builder, LeafOpOrBuilder>(
+            com.ics23.LeafOp, com.ics23.LeafOp.Builder, com.ics23.LeafOpOrBuilder>(
                 getLeafSpec(),
                 getParentForChildren(),
                 isClean());
@@ -745,9 +745,9 @@ private static final long serialVersionUID = 0L;
       return leafSpecBuilder_;
     }
 
-    private InnerSpec innerSpec_;
+    private com.ics23.InnerSpec innerSpec_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        InnerSpec, InnerSpec.Builder, InnerSpecOrBuilder> innerSpecBuilder_;
+        com.ics23.InnerSpec, com.ics23.InnerSpec.Builder, com.ics23.InnerSpecOrBuilder> innerSpecBuilder_;
     /**
      * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
      * @return Whether the innerSpec field is set.
@@ -759,9 +759,9 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
      * @return The innerSpec.
      */
-    public InnerSpec getInnerSpec() {
+    public com.ics23.InnerSpec getInnerSpec() {
       if (innerSpecBuilder_ == null) {
-        return innerSpec_ == null ? InnerSpec.getDefaultInstance() : innerSpec_;
+        return innerSpec_ == null ? com.ics23.InnerSpec.getDefaultInstance() : innerSpec_;
       } else {
         return innerSpecBuilder_.getMessage();
       }
@@ -769,7 +769,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
      */
-    public Builder setInnerSpec(InnerSpec value) {
+    public Builder setInnerSpec(com.ics23.InnerSpec value) {
       if (innerSpecBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -786,7 +786,7 @@ private static final long serialVersionUID = 0L;
      * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
      */
     public Builder setInnerSpec(
-        InnerSpec.Builder builderForValue) {
+        com.ics23.InnerSpec.Builder builderForValue) {
       if (innerSpecBuilder_ == null) {
         innerSpec_ = builderForValue.build();
       } else {
@@ -799,11 +799,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
      */
-    public Builder mergeInnerSpec(InnerSpec value) {
+    public Builder mergeInnerSpec(com.ics23.InnerSpec value) {
       if (innerSpecBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0) &&
           innerSpec_ != null &&
-          innerSpec_ != InnerSpec.getDefaultInstance()) {
+          innerSpec_ != com.ics23.InnerSpec.getDefaultInstance()) {
           getInnerSpecBuilder().mergeFrom(value);
         } else {
           innerSpec_ = value;
@@ -831,7 +831,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
      */
-    public InnerSpec.Builder getInnerSpecBuilder() {
+    public com.ics23.InnerSpec.Builder getInnerSpecBuilder() {
       bitField0_ |= 0x00000002;
       onChanged();
       return getInnerSpecFieldBuilder().getBuilder();
@@ -839,23 +839,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
      */
-    public InnerSpecOrBuilder getInnerSpecOrBuilder() {
+    public com.ics23.InnerSpecOrBuilder getInnerSpecOrBuilder() {
       if (innerSpecBuilder_ != null) {
         return innerSpecBuilder_.getMessageOrBuilder();
       } else {
         return innerSpec_ == null ?
-            InnerSpec.getDefaultInstance() : innerSpec_;
+            com.ics23.InnerSpec.getDefaultInstance() : innerSpec_;
       }
     }
     /**
      * <code>.ics23.InnerSpec inner_spec = 2 [json_name = "innerSpec"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        InnerSpec, InnerSpec.Builder, InnerSpecOrBuilder>
+        com.ics23.InnerSpec, com.ics23.InnerSpec.Builder, com.ics23.InnerSpecOrBuilder> 
         getInnerSpecFieldBuilder() {
       if (innerSpecBuilder_ == null) {
         innerSpecBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            InnerSpec, InnerSpec.Builder, InnerSpecOrBuilder>(
+            com.ics23.InnerSpec, com.ics23.InnerSpec.Builder, com.ics23.InnerSpecOrBuilder>(
                 getInnerSpec(),
                 getParentForChildren(),
                 isClean());
@@ -873,7 +873,7 @@ private static final long serialVersionUID = 0L;
      * <code>int32 max_depth = 3 [json_name = "maxDepth"];</code>
      * @return The maxDepth.
      */
-    @Override
+    @java.lang.Override
     public int getMaxDepth() {
       return maxDepth_;
     }
@@ -917,7 +917,7 @@ private static final long serialVersionUID = 0L;
      * <code>int32 min_depth = 4 [json_name = "minDepth"];</code>
      * @return The minDepth.
      */
-    @Override
+    @java.lang.Override
     public int getMinDepth() {
       return minDepth_;
     }
@@ -951,13 +951,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -968,18 +968,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ics23.ProofSpec)
-  private static final ProofSpec DEFAULT_INSTANCE;
+  private static final com.ics23.ProofSpec DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new ProofSpec();
+    DEFAULT_INSTANCE = new com.ics23.ProofSpec();
   }
 
-  public static ProofSpec getDefaultInstance() {
+  public static com.ics23.ProofSpec getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<ProofSpec>
       PARSER = new com.google.protobuf.AbstractParser<ProofSpec>() {
-    @Override
+    @java.lang.Override
     public ProofSpec parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1003,13 +1003,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<ProofSpec> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public ProofSpec getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ics23.ProofSpec getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

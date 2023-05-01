@@ -23,24 +23,24 @@ private static final long serialVersionUID = 0L;
     validators_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new GetLatestValidatorSetResponse();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return QueryProto.internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_descriptor;
+    return com.cosmos.base.tendermint.v1beta1.QueryProto.internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return QueryProto.internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_fieldAccessorTable
+    return com.cosmos.base.tendermint.v1beta1.QueryProto.internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            GetLatestValidatorSetResponse.class, Builder.class);
+            com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse.class, com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse.Builder.class);
   }
 
   public static final int BLOCK_HEIGHT_FIELD_NUMBER = 1;
@@ -49,48 +49,48 @@ private static final long serialVersionUID = 0L;
    * <code>int64 block_height = 1 [json_name = "blockHeight"];</code>
    * @return The blockHeight.
    */
-  @Override
+  @java.lang.Override
   public long getBlockHeight() {
     return blockHeight_;
   }
 
   public static final int VALIDATORS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<Validator> validators_;
+  private java.util.List<com.cosmos.base.tendermint.v1beta1.Validator> validators_;
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
    */
-  @Override
-  public java.util.List<Validator> getValidatorsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.base.tendermint.v1beta1.Validator> getValidatorsList() {
     return validators_;
   }
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
    */
-  @Override
-  public java.util.List<? extends ValidatorOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.base.tendermint.v1beta1.ValidatorOrBuilder> 
       getValidatorsOrBuilderList() {
     return validators_;
   }
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getValidatorsCount() {
     return validators_.size();
   }
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
    */
-  @Override
-  public Validator getValidators(int index) {
+  @java.lang.Override
+  public com.cosmos.base.tendermint.v1beta1.Validator getValidators(int index) {
     return validators_.get(index);
   }
   /**
    * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
    */
-  @Override
-  public ValidatorOrBuilder getValidatorsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.base.tendermint.v1beta1.ValidatorOrBuilder getValidatorsOrBuilder(
       int index) {
     return validators_.get(index);
   }
@@ -105,7 +105,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3 [json_name = "pagination"];</code>
    * @return Whether the pagination field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasPagination() {
     return pagination_ != null;
   }
@@ -117,7 +117,7 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3 [json_name = "pagination"];</code>
    * @return The pagination.
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageResponse getPagination() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
@@ -128,13 +128,13 @@ private static final long serialVersionUID = 0L;
    *
    * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3 [json_name = "pagination"];</code>
    */
-  @Override
+  @java.lang.Override
   public com.cosmos.base.query.v1beta1.PageResponseOrBuilder getPaginationOrBuilder() {
     return pagination_ == null ? com.cosmos.base.query.v1beta1.PageResponse.getDefaultInstance() : pagination_;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -144,7 +144,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (blockHeight_ != 0L) {
@@ -159,7 +159,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -182,15 +182,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof GetLatestValidatorSetResponse)) {
+    if (!(obj instanceof com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse)) {
       return super.equals(obj);
     }
-    GetLatestValidatorSetResponse other = (GetLatestValidatorSetResponse) obj;
+    com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse other = (com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse) obj;
 
     if (getBlockHeight()
         != other.getBlockHeight()) return false;
@@ -205,7 +205,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -228,69 +228,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static GetLatestValidatorSetResponse parseFrom(
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetLatestValidatorSetResponse parseFrom(
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetLatestValidatorSetResponse parseFrom(
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetLatestValidatorSetResponse parseFrom(
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetLatestValidatorSetResponse parseFrom(byte[] data)
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetLatestValidatorSetResponse parseFrom(
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetLatestValidatorSetResponse parseFrom(java.io.InputStream input)
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GetLatestValidatorSetResponse parseFrom(
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GetLatestValidatorSetResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static GetLatestValidatorSetResponse parseDelimitedFrom(
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GetLatestValidatorSetResponse parseFrom(
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GetLatestValidatorSetResponse parseFrom(
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -298,23 +298,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(GetLatestValidatorSetResponse prototype) {
+  public static Builder newBuilder(com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -328,18 +328,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse)
-      GetLatestValidatorSetResponseOrBuilder {
+      com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return QueryProto.internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_descriptor;
+      return com.cosmos.base.tendermint.v1beta1.QueryProto.internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return QueryProto.internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_fieldAccessorTable
+      return com.cosmos.base.tendermint.v1beta1.QueryProto.internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              GetLatestValidatorSetResponse.class, Builder.class);
+              com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse.class, com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse.Builder.class);
     }
 
     // Construct using com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse.newBuilder()
@@ -348,11 +348,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -372,36 +372,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return QueryProto.internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_descriptor;
+      return com.cosmos.base.tendermint.v1beta1.QueryProto.internal_static_cosmos_base_tendermint_v1beta1_GetLatestValidatorSetResponse_descriptor;
     }
 
-    @Override
-    public GetLatestValidatorSetResponse getDefaultInstanceForType() {
-      return GetLatestValidatorSetResponse.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse getDefaultInstanceForType() {
+      return com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse.getDefaultInstance();
     }
 
-    @Override
-    public GetLatestValidatorSetResponse build() {
-      GetLatestValidatorSetResponse result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse build() {
+      com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public GetLatestValidatorSetResponse buildPartial() {
-      GetLatestValidatorSetResponse result = new GetLatestValidatorSetResponse(this);
+    @java.lang.Override
+    public com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse buildPartial() {
+      com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse result = new com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(GetLatestValidatorSetResponse result) {
+    private void buildPartialRepeatedFields(com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse result) {
       if (validatorsBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           validators_ = java.util.Collections.unmodifiableList(validators_);
@@ -413,7 +413,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(GetLatestValidatorSetResponse result) {
+    private void buildPartial0(com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.blockHeight_ = blockHeight_;
@@ -425,50 +425,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof GetLatestValidatorSetResponse) {
-        return mergeFrom((GetLatestValidatorSetResponse)other);
+      if (other instanceof com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse) {
+        return mergeFrom((com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(GetLatestValidatorSetResponse other) {
-      if (other == GetLatestValidatorSetResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse other) {
+      if (other == com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse.getDefaultInstance()) return this;
       if (other.getBlockHeight() != 0L) {
         setBlockHeight(other.getBlockHeight());
       }
@@ -506,18 +506,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -533,9 +533,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 8
             case 18: {
-              Validator m =
+              com.cosmos.base.tendermint.v1beta1.Validator m =
                   input.readMessage(
-                      Validator.parser(),
+                      com.cosmos.base.tendermint.v1beta1.Validator.parser(),
                       extensionRegistry);
               if (validatorsBuilder_ == null) {
                 ensureValidatorsIsMutable();
@@ -574,7 +574,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 block_height = 1 [json_name = "blockHeight"];</code>
      * @return The blockHeight.
      */
-    @Override
+    @java.lang.Override
     public long getBlockHeight() {
       return blockHeight_;
     }
@@ -601,22 +601,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<Validator> validators_ =
+    private java.util.List<com.cosmos.base.tendermint.v1beta1.Validator> validators_ =
       java.util.Collections.emptyList();
     private void ensureValidatorsIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        validators_ = new java.util.ArrayList<Validator>(validators_);
+        validators_ = new java.util.ArrayList<com.cosmos.base.tendermint.v1beta1.Validator>(validators_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Validator, Validator.Builder, ValidatorOrBuilder> validatorsBuilder_;
+        com.cosmos.base.tendermint.v1beta1.Validator, com.cosmos.base.tendermint.v1beta1.Validator.Builder, com.cosmos.base.tendermint.v1beta1.ValidatorOrBuilder> validatorsBuilder_;
 
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
-    public java.util.List<Validator> getValidatorsList() {
+    public java.util.List<com.cosmos.base.tendermint.v1beta1.Validator> getValidatorsList() {
       if (validatorsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(validators_);
       } else {
@@ -636,7 +636,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
-    public Validator getValidators(int index) {
+    public com.cosmos.base.tendermint.v1beta1.Validator getValidators(int index) {
       if (validatorsBuilder_ == null) {
         return validators_.get(index);
       } else {
@@ -647,7 +647,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
     public Builder setValidators(
-        int index, Validator value) {
+        int index, com.cosmos.base.tendermint.v1beta1.Validator value) {
       if (validatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -664,7 +664,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
     public Builder setValidators(
-        int index, Validator.Builder builderForValue) {
+        int index, com.cosmos.base.tendermint.v1beta1.Validator.Builder builderForValue) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         validators_.set(index, builderForValue.build());
@@ -677,7 +677,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
-    public Builder addValidators(Validator value) {
+    public Builder addValidators(com.cosmos.base.tendermint.v1beta1.Validator value) {
       if (validatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -694,7 +694,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
     public Builder addValidators(
-        int index, Validator value) {
+        int index, com.cosmos.base.tendermint.v1beta1.Validator value) {
       if (validatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -711,7 +711,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
     public Builder addValidators(
-        Validator.Builder builderForValue) {
+        com.cosmos.base.tendermint.v1beta1.Validator.Builder builderForValue) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         validators_.add(builderForValue.build());
@@ -725,7 +725,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
     public Builder addValidators(
-        int index, Validator.Builder builderForValue) {
+        int index, com.cosmos.base.tendermint.v1beta1.Validator.Builder builderForValue) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         validators_.add(index, builderForValue.build());
@@ -739,7 +739,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
     public Builder addAllValidators(
-        Iterable<? extends Validator> values) {
+        java.lang.Iterable<? extends com.cosmos.base.tendermint.v1beta1.Validator> values) {
       if (validatorsBuilder_ == null) {
         ensureValidatorsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -779,14 +779,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
-    public Validator.Builder getValidatorsBuilder(
+    public com.cosmos.base.tendermint.v1beta1.Validator.Builder getValidatorsBuilder(
         int index) {
       return getValidatorsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
-    public ValidatorOrBuilder getValidatorsOrBuilder(
+    public com.cosmos.base.tendermint.v1beta1.ValidatorOrBuilder getValidatorsOrBuilder(
         int index) {
       if (validatorsBuilder_ == null) {
         return validators_.get(index);  } else {
@@ -796,7 +796,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
-    public java.util.List<? extends ValidatorOrBuilder>
+    public java.util.List<? extends com.cosmos.base.tendermint.v1beta1.ValidatorOrBuilder> 
          getValidatorsOrBuilderList() {
       if (validatorsBuilder_ != null) {
         return validatorsBuilder_.getMessageOrBuilderList();
@@ -807,31 +807,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
-    public Validator.Builder addValidatorsBuilder() {
+    public com.cosmos.base.tendermint.v1beta1.Validator.Builder addValidatorsBuilder() {
       return getValidatorsFieldBuilder().addBuilder(
-          Validator.getDefaultInstance());
+          com.cosmos.base.tendermint.v1beta1.Validator.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
-    public Validator.Builder addValidatorsBuilder(
+    public com.cosmos.base.tendermint.v1beta1.Validator.Builder addValidatorsBuilder(
         int index) {
       return getValidatorsFieldBuilder().addBuilder(
-          index, Validator.getDefaultInstance());
+          index, com.cosmos.base.tendermint.v1beta1.Validator.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2 [json_name = "validators"];</code>
      */
-    public java.util.List<Validator.Builder>
+    public java.util.List<com.cosmos.base.tendermint.v1beta1.Validator.Builder> 
          getValidatorsBuilderList() {
       return getValidatorsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Validator, Validator.Builder, ValidatorOrBuilder>
+        com.cosmos.base.tendermint.v1beta1.Validator, com.cosmos.base.tendermint.v1beta1.Validator.Builder, com.cosmos.base.tendermint.v1beta1.ValidatorOrBuilder> 
         getValidatorsFieldBuilder() {
       if (validatorsBuilder_ == null) {
         validatorsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            Validator, Validator.Builder, ValidatorOrBuilder>(
+            com.cosmos.base.tendermint.v1beta1.Validator, com.cosmos.base.tendermint.v1beta1.Validator.Builder, com.cosmos.base.tendermint.v1beta1.ValidatorOrBuilder>(
                 validators_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -995,13 +995,13 @@ private static final long serialVersionUID = 0L;
       }
       return paginationBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1012,18 +1012,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse)
-  private static final GetLatestValidatorSetResponse DEFAULT_INSTANCE;
+  private static final com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new GetLatestValidatorSetResponse();
+    DEFAULT_INSTANCE = new com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse();
   }
 
-  public static GetLatestValidatorSetResponse getDefaultInstance() {
+  public static com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GetLatestValidatorSetResponse>
       PARSER = new com.google.protobuf.AbstractParser<GetLatestValidatorSetResponse>() {
-    @Override
+    @java.lang.Override
     public GetLatestValidatorSetResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1047,13 +1047,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<GetLatestValidatorSetResponse> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public GetLatestValidatorSetResponse getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

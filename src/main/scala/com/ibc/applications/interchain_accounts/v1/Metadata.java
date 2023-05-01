@@ -29,29 +29,29 @@ private static final long serialVersionUID = 0L;
     txType_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new Metadata();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return MetadataProto.internal_static_ibc_applications_interchain_accounts_v1_Metadata_descriptor;
+    return com.ibc.applications.interchain_accounts.v1.MetadataProto.internal_static_ibc_applications_interchain_accounts_v1_Metadata_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return MetadataProto.internal_static_ibc_applications_interchain_accounts_v1_Metadata_fieldAccessorTable
+    return com.ibc.applications.interchain_accounts.v1.MetadataProto.internal_static_ibc_applications_interchain_accounts_v1_Metadata_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            Metadata.class, Builder.class);
+            com.ibc.applications.interchain_accounts.v1.Metadata.class, com.ibc.applications.interchain_accounts.v1.Metadata.Builder.class);
   }
 
   public static final int VERSION_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object version_ = "";
+  private volatile java.lang.Object version_ = "";
   /**
    * <pre>
    * version defines the ICS27 protocol version
@@ -60,15 +60,15 @@ private static final long serialVersionUID = 0L;
    * <code>string version = 1 [json_name = "version"];</code>
    * @return The version.
    */
-  @Override
-  public String getVersion() {
-    Object ref = version_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getVersion() {
+    java.lang.Object ref = version_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       version_ = s;
       return s;
     }
@@ -81,14 +81,14 @@ private static final long serialVersionUID = 0L;
    * <code>string version = 1 [json_name = "version"];</code>
    * @return The bytes for version.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getVersionBytes() {
-    Object ref = version_;
-    if (ref instanceof String) {
+    java.lang.Object ref = version_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       version_ = b;
       return b;
     } else {
@@ -98,7 +98,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int CONTROLLER_CONNECTION_ID_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private volatile Object controllerConnectionId_ = "";
+  private volatile java.lang.Object controllerConnectionId_ = "";
   /**
    * <pre>
    * controller_connection_id is the connection identifier associated with the controller chain
@@ -107,15 +107,15 @@ private static final long serialVersionUID = 0L;
    * <code>string controller_connection_id = 2 [json_name = "controllerConnectionId", (.gogoproto.moretags) = "yaml:&#92;"controller_connection_id&#92;""];</code>
    * @return The controllerConnectionId.
    */
-  @Override
-  public String getControllerConnectionId() {
-    Object ref = controllerConnectionId_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getControllerConnectionId() {
+    java.lang.Object ref = controllerConnectionId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       controllerConnectionId_ = s;
       return s;
     }
@@ -128,14 +128,14 @@ private static final long serialVersionUID = 0L;
    * <code>string controller_connection_id = 2 [json_name = "controllerConnectionId", (.gogoproto.moretags) = "yaml:&#92;"controller_connection_id&#92;""];</code>
    * @return The bytes for controllerConnectionId.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getControllerConnectionIdBytes() {
-    Object ref = controllerConnectionId_;
-    if (ref instanceof String) {
+    java.lang.Object ref = controllerConnectionId_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       controllerConnectionId_ = b;
       return b;
     } else {
@@ -145,7 +145,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int HOST_CONNECTION_ID_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private volatile Object hostConnectionId_ = "";
+  private volatile java.lang.Object hostConnectionId_ = "";
   /**
    * <pre>
    * host_connection_id is the connection identifier associated with the host chain
@@ -154,15 +154,15 @@ private static final long serialVersionUID = 0L;
    * <code>string host_connection_id = 3 [json_name = "hostConnectionId", (.gogoproto.moretags) = "yaml:&#92;"host_connection_id&#92;""];</code>
    * @return The hostConnectionId.
    */
-  @Override
-  public String getHostConnectionId() {
-    Object ref = hostConnectionId_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getHostConnectionId() {
+    java.lang.Object ref = hostConnectionId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       hostConnectionId_ = s;
       return s;
     }
@@ -175,14 +175,14 @@ private static final long serialVersionUID = 0L;
    * <code>string host_connection_id = 3 [json_name = "hostConnectionId", (.gogoproto.moretags) = "yaml:&#92;"host_connection_id&#92;""];</code>
    * @return The bytes for hostConnectionId.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getHostConnectionIdBytes() {
-    Object ref = hostConnectionId_;
-    if (ref instanceof String) {
+    java.lang.Object ref = hostConnectionId_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       hostConnectionId_ = b;
       return b;
     } else {
@@ -192,7 +192,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int ADDRESS_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private volatile Object address_ = "";
+  private volatile java.lang.Object address_ = "";
   /**
    * <pre>
    * address defines the interchain account address to be fulfilled upon the OnChanOpenTry handshake step
@@ -202,15 +202,15 @@ private static final long serialVersionUID = 0L;
    * <code>string address = 4 [json_name = "address"];</code>
    * @return The address.
    */
-  @Override
-  public String getAddress() {
-    Object ref = address_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getAddress() {
+    java.lang.Object ref = address_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       address_ = s;
       return s;
     }
@@ -224,14 +224,14 @@ private static final long serialVersionUID = 0L;
    * <code>string address = 4 [json_name = "address"];</code>
    * @return The bytes for address.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getAddressBytes() {
-    Object ref = address_;
-    if (ref instanceof String) {
+    java.lang.Object ref = address_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       address_ = b;
       return b;
     } else {
@@ -241,7 +241,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int ENCODING_FIELD_NUMBER = 5;
   @SuppressWarnings("serial")
-  private volatile Object encoding_ = "";
+  private volatile java.lang.Object encoding_ = "";
   /**
    * <pre>
    * encoding defines the supported codec format
@@ -250,15 +250,15 @@ private static final long serialVersionUID = 0L;
    * <code>string encoding = 5 [json_name = "encoding"];</code>
    * @return The encoding.
    */
-  @Override
-  public String getEncoding() {
-    Object ref = encoding_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getEncoding() {
+    java.lang.Object ref = encoding_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       encoding_ = s;
       return s;
     }
@@ -271,14 +271,14 @@ private static final long serialVersionUID = 0L;
    * <code>string encoding = 5 [json_name = "encoding"];</code>
    * @return The bytes for encoding.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getEncodingBytes() {
-    Object ref = encoding_;
-    if (ref instanceof String) {
+    java.lang.Object ref = encoding_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       encoding_ = b;
       return b;
     } else {
@@ -288,7 +288,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int TX_TYPE_FIELD_NUMBER = 6;
   @SuppressWarnings("serial")
-  private volatile Object txType_ = "";
+  private volatile java.lang.Object txType_ = "";
   /**
    * <pre>
    * tx_type defines the type of transactions the interchain account can execute
@@ -297,15 +297,15 @@ private static final long serialVersionUID = 0L;
    * <code>string tx_type = 6 [json_name = "txType"];</code>
    * @return The txType.
    */
-  @Override
-  public String getTxType() {
-    Object ref = txType_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getTxType() {
+    java.lang.Object ref = txType_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       txType_ = s;
       return s;
     }
@@ -318,14 +318,14 @@ private static final long serialVersionUID = 0L;
    * <code>string tx_type = 6 [json_name = "txType"];</code>
    * @return The bytes for txType.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getTxTypeBytes() {
-    Object ref = txType_;
-    if (ref instanceof String) {
+    java.lang.Object ref = txType_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       txType_ = b;
       return b;
     } else {
@@ -334,7 +334,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -344,7 +344,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(version_)) {
@@ -368,7 +368,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -397,15 +397,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof Metadata)) {
+    if (!(obj instanceof com.ibc.applications.interchain_accounts.v1.Metadata)) {
       return super.equals(obj);
     }
-    Metadata other = (Metadata) obj;
+    com.ibc.applications.interchain_accounts.v1.Metadata other = (com.ibc.applications.interchain_accounts.v1.Metadata) obj;
 
     if (!getVersion()
         .equals(other.getVersion())) return false;
@@ -423,7 +423,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -447,69 +447,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static Metadata parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Metadata parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Metadata parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Metadata parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Metadata parseFrom(byte[] data)
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static Metadata parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static Metadata parseFrom(java.io.InputStream input)
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Metadata parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Metadata parseDelimitedFrom(java.io.InputStream input)
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static Metadata parseDelimitedFrom(
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static Metadata parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static Metadata parseFrom(
+  public static com.ibc.applications.interchain_accounts.v1.Metadata parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -517,23 +517,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(Metadata prototype) {
+  public static Builder newBuilder(com.ibc.applications.interchain_accounts.v1.Metadata prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -548,18 +548,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ibc.applications.interchain_accounts.v1.Metadata)
-      MetadataOrBuilder {
+      com.ibc.applications.interchain_accounts.v1.MetadataOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MetadataProto.internal_static_ibc_applications_interchain_accounts_v1_Metadata_descriptor;
+      return com.ibc.applications.interchain_accounts.v1.MetadataProto.internal_static_ibc_applications_interchain_accounts_v1_Metadata_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MetadataProto.internal_static_ibc_applications_interchain_accounts_v1_Metadata_fieldAccessorTable
+      return com.ibc.applications.interchain_accounts.v1.MetadataProto.internal_static_ibc_applications_interchain_accounts_v1_Metadata_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Metadata.class, Builder.class);
+              com.ibc.applications.interchain_accounts.v1.Metadata.class, com.ibc.applications.interchain_accounts.v1.Metadata.Builder.class);
     }
 
     // Construct using com.ibc.applications.interchain_accounts.v1.Metadata.newBuilder()
@@ -568,11 +568,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -585,35 +585,35 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return MetadataProto.internal_static_ibc_applications_interchain_accounts_v1_Metadata_descriptor;
+      return com.ibc.applications.interchain_accounts.v1.MetadataProto.internal_static_ibc_applications_interchain_accounts_v1_Metadata_descriptor;
     }
 
-    @Override
-    public Metadata getDefaultInstanceForType() {
-      return Metadata.getDefaultInstance();
+    @java.lang.Override
+    public com.ibc.applications.interchain_accounts.v1.Metadata getDefaultInstanceForType() {
+      return com.ibc.applications.interchain_accounts.v1.Metadata.getDefaultInstance();
     }
 
-    @Override
-    public Metadata build() {
-      Metadata result = buildPartial();
+    @java.lang.Override
+    public com.ibc.applications.interchain_accounts.v1.Metadata build() {
+      com.ibc.applications.interchain_accounts.v1.Metadata result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public Metadata buildPartial() {
-      Metadata result = new Metadata(this);
+    @java.lang.Override
+    public com.ibc.applications.interchain_accounts.v1.Metadata buildPartial() {
+      com.ibc.applications.interchain_accounts.v1.Metadata result = new com.ibc.applications.interchain_accounts.v1.Metadata(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(Metadata result) {
+    private void buildPartial0(com.ibc.applications.interchain_accounts.v1.Metadata result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.version_ = version_;
@@ -635,50 +635,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof Metadata) {
-        return mergeFrom((Metadata)other);
+      if (other instanceof com.ibc.applications.interchain_accounts.v1.Metadata) {
+        return mergeFrom((com.ibc.applications.interchain_accounts.v1.Metadata)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(Metadata other) {
-      if (other == Metadata.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.ibc.applications.interchain_accounts.v1.Metadata other) {
+      if (other == com.ibc.applications.interchain_accounts.v1.Metadata.getDefaultInstance()) return this;
       if (!other.getVersion().isEmpty()) {
         version_ = other.version_;
         bitField0_ |= 0x00000001;
@@ -714,18 +714,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -782,7 +782,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object version_ = "";
+    private java.lang.Object version_ = "";
     /**
      * <pre>
      * version defines the ICS27 protocol version
@@ -791,16 +791,16 @@ private static final long serialVersionUID = 0L;
      * <code>string version = 1 [json_name = "version"];</code>
      * @return The version.
      */
-    public String getVersion() {
-      Object ref = version_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getVersion() {
+      java.lang.Object ref = version_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         version_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -813,11 +813,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getVersionBytes() {
-      Object ref = version_;
+      java.lang.Object ref = version_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         version_ = b;
         return b;
       } else {
@@ -834,7 +834,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setVersion(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       version_ = value;
       bitField0_ |= 0x00000001;
@@ -874,7 +874,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object controllerConnectionId_ = "";
+    private java.lang.Object controllerConnectionId_ = "";
     /**
      * <pre>
      * controller_connection_id is the connection identifier associated with the controller chain
@@ -883,16 +883,16 @@ private static final long serialVersionUID = 0L;
      * <code>string controller_connection_id = 2 [json_name = "controllerConnectionId", (.gogoproto.moretags) = "yaml:&#92;"controller_connection_id&#92;""];</code>
      * @return The controllerConnectionId.
      */
-    public String getControllerConnectionId() {
-      Object ref = controllerConnectionId_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getControllerConnectionId() {
+      java.lang.Object ref = controllerConnectionId_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         controllerConnectionId_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -905,11 +905,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getControllerConnectionIdBytes() {
-      Object ref = controllerConnectionId_;
+      java.lang.Object ref = controllerConnectionId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         controllerConnectionId_ = b;
         return b;
       } else {
@@ -926,7 +926,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setControllerConnectionId(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       controllerConnectionId_ = value;
       bitField0_ |= 0x00000002;
@@ -966,7 +966,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object hostConnectionId_ = "";
+    private java.lang.Object hostConnectionId_ = "";
     /**
      * <pre>
      * host_connection_id is the connection identifier associated with the host chain
@@ -975,16 +975,16 @@ private static final long serialVersionUID = 0L;
      * <code>string host_connection_id = 3 [json_name = "hostConnectionId", (.gogoproto.moretags) = "yaml:&#92;"host_connection_id&#92;""];</code>
      * @return The hostConnectionId.
      */
-    public String getHostConnectionId() {
-      Object ref = hostConnectionId_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getHostConnectionId() {
+      java.lang.Object ref = hostConnectionId_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         hostConnectionId_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -997,11 +997,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getHostConnectionIdBytes() {
-      Object ref = hostConnectionId_;
+      java.lang.Object ref = hostConnectionId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         hostConnectionId_ = b;
         return b;
       } else {
@@ -1018,7 +1018,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setHostConnectionId(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       hostConnectionId_ = value;
       bitField0_ |= 0x00000004;
@@ -1058,7 +1058,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object address_ = "";
+    private java.lang.Object address_ = "";
     /**
      * <pre>
      * address defines the interchain account address to be fulfilled upon the OnChanOpenTry handshake step
@@ -1068,16 +1068,16 @@ private static final long serialVersionUID = 0L;
      * <code>string address = 4 [json_name = "address"];</code>
      * @return The address.
      */
-    public String getAddress() {
-      Object ref = address_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getAddress() {
+      java.lang.Object ref = address_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         address_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1091,11 +1091,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getAddressBytes() {
-      Object ref = address_;
+      java.lang.Object ref = address_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         address_ = b;
         return b;
       } else {
@@ -1113,7 +1113,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setAddress(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       address_ = value;
       bitField0_ |= 0x00000008;
@@ -1155,7 +1155,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object encoding_ = "";
+    private java.lang.Object encoding_ = "";
     /**
      * <pre>
      * encoding defines the supported codec format
@@ -1164,16 +1164,16 @@ private static final long serialVersionUID = 0L;
      * <code>string encoding = 5 [json_name = "encoding"];</code>
      * @return The encoding.
      */
-    public String getEncoding() {
-      Object ref = encoding_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getEncoding() {
+      java.lang.Object ref = encoding_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         encoding_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1186,11 +1186,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getEncodingBytes() {
-      Object ref = encoding_;
+      java.lang.Object ref = encoding_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         encoding_ = b;
         return b;
       } else {
@@ -1207,7 +1207,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setEncoding(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       encoding_ = value;
       bitField0_ |= 0x00000010;
@@ -1247,7 +1247,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object txType_ = "";
+    private java.lang.Object txType_ = "";
     /**
      * <pre>
      * tx_type defines the type of transactions the interchain account can execute
@@ -1256,16 +1256,16 @@ private static final long serialVersionUID = 0L;
      * <code>string tx_type = 6 [json_name = "txType"];</code>
      * @return The txType.
      */
-    public String getTxType() {
-      Object ref = txType_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getTxType() {
+      java.lang.Object ref = txType_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         txType_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1278,11 +1278,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getTxTypeBytes() {
-      Object ref = txType_;
+      java.lang.Object ref = txType_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         txType_ = b;
         return b;
       } else {
@@ -1299,7 +1299,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setTxType(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       txType_ = value;
       bitField0_ |= 0x00000020;
@@ -1338,13 +1338,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1355,18 +1355,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ibc.applications.interchain_accounts.v1.Metadata)
-  private static final Metadata DEFAULT_INSTANCE;
+  private static final com.ibc.applications.interchain_accounts.v1.Metadata DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new Metadata();
+    DEFAULT_INSTANCE = new com.ibc.applications.interchain_accounts.v1.Metadata();
   }
 
-  public static Metadata getDefaultInstance() {
+  public static com.ibc.applications.interchain_accounts.v1.Metadata getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<Metadata>
       PARSER = new com.google.protobuf.AbstractParser<Metadata>() {
-    @Override
+    @java.lang.Override
     public Metadata parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1390,13 +1390,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<Metadata> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public Metadata getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.ibc.applications.interchain_accounts.v1.Metadata getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

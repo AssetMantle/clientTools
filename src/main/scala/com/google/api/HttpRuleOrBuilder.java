@@ -17,7 +17,7 @@ public interface HttpRuleOrBuilder extends
    * <code>string selector = 1 [json_name = "selector"];</code>
    * @return The selector.
    */
-  String getSelector();
+  java.lang.String getSelector();
   /**
    * <pre>
    * Selects methods to which this rule applies.
@@ -48,7 +48,7 @@ public interface HttpRuleOrBuilder extends
    * <code>string get = 2 [json_name = "get"];</code>
    * @return The get.
    */
-  String getGet();
+  java.lang.String getGet();
   /**
    * <pre>
    * Used for listing and getting information about resources.
@@ -77,7 +77,7 @@ public interface HttpRuleOrBuilder extends
    * <code>string put = 3 [json_name = "put"];</code>
    * @return The put.
    */
-  String getPut();
+  java.lang.String getPut();
   /**
    * <pre>
    * Used for updating a resource.
@@ -106,7 +106,7 @@ public interface HttpRuleOrBuilder extends
    * <code>string post = 4 [json_name = "post"];</code>
    * @return The post.
    */
-  String getPost();
+  java.lang.String getPost();
   /**
    * <pre>
    * Used for creating a resource.
@@ -135,7 +135,7 @@ public interface HttpRuleOrBuilder extends
    * <code>string delete = 5 [json_name = "delete"];</code>
    * @return The delete.
    */
-  String getDelete();
+  java.lang.String getDelete();
   /**
    * <pre>
    * Used for deleting a resource.
@@ -164,7 +164,7 @@ public interface HttpRuleOrBuilder extends
    * <code>string patch = 6 [json_name = "patch"];</code>
    * @return The patch.
    */
-  String getPatch();
+  java.lang.String getPatch();
   /**
    * <pre>
    * Used for updating a resource.
@@ -199,7 +199,7 @@ public interface HttpRuleOrBuilder extends
    * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
    * @return The custom.
    */
-  CustomHttpPattern getCustom();
+  com.google.api.CustomHttpPattern getCustom();
   /**
    * <pre>
    * The custom pattern is used for specifying an HTTP method that is not
@@ -210,7 +210,7 @@ public interface HttpRuleOrBuilder extends
    *
    * <code>.google.api.CustomHttpPattern custom = 8 [json_name = "custom"];</code>
    */
-  CustomHttpPatternOrBuilder getCustomOrBuilder();
+  com.google.api.CustomHttpPatternOrBuilder getCustomOrBuilder();
 
   /**
    * <pre>
@@ -223,7 +223,7 @@ public interface HttpRuleOrBuilder extends
    * <code>string body = 7 [json_name = "body"];</code>
    * @return The body.
    */
-  String getBody();
+  java.lang.String getBody();
   /**
    * <pre>
    * The name of the request field whose value is mapped to the HTTP body, or
@@ -248,7 +248,7 @@ public interface HttpRuleOrBuilder extends
    * <code>string response_body = 12 [json_name = "responseBody"];</code>
    * @return The responseBody.
    */
-  String getResponseBody();
+  java.lang.String getResponseBody();
   /**
    * <pre>
    * Optional. The name of the response field whose value is mapped to the HTTP
@@ -271,7 +271,7 @@ public interface HttpRuleOrBuilder extends
    *
    * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
    */
-  java.util.List<HttpRule>
+  java.util.List<com.google.api.HttpRule> 
       getAdditionalBindingsList();
   /**
    * <pre>
@@ -282,7 +282,7 @@ public interface HttpRuleOrBuilder extends
    *
    * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
    */
-  HttpRule getAdditionalBindings(int index);
+  com.google.api.HttpRule getAdditionalBindings(int index);
   /**
    * <pre>
    * Additional HTTP bindings for the selector. Nested bindings must
@@ -302,7 +302,7 @@ public interface HttpRuleOrBuilder extends
    *
    * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
    */
-  java.util.List<? extends HttpRuleOrBuilder>
+  java.util.List<? extends com.google.api.HttpRuleOrBuilder> 
       getAdditionalBindingsOrBuilderList();
   /**
    * <pre>
@@ -313,8 +313,8 @@ public interface HttpRuleOrBuilder extends
    *
    * <code>repeated .google.api.HttpRule additional_bindings = 11 [json_name = "additionalBindings"];</code>
    */
-  HttpRuleOrBuilder getAdditionalBindingsOrBuilder(
+  com.google.api.HttpRuleOrBuilder getAdditionalBindingsOrBuilder(
       int index);
 
-  HttpRule.PatternCase getPatternCase();
+  com.google.api.HttpRule.PatternCase getPatternCase();
 }

@@ -24,29 +24,29 @@ private static final long serialVersionUID = 0L;
     msgs_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new TxDescriptor();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_descriptor;
+    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_fieldAccessorTable
+    return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            TxDescriptor.class, Builder.class);
+            com.cosmos.base.reflection.v2alpha1.TxDescriptor.class, com.cosmos.base.reflection.v2alpha1.TxDescriptor.Builder.class);
   }
 
   public static final int FULLNAME_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile Object fullname_ = "";
+  private volatile java.lang.Object fullname_ = "";
   /**
    * <pre>
    * fullname is the protobuf fullname of the raw transaction type (for instance the tx.Tx type)
@@ -57,15 +57,15 @@ private static final long serialVersionUID = 0L;
    * <code>string fullname = 1 [json_name = "fullname"];</code>
    * @return The fullname.
    */
-  @Override
-  public String getFullname() {
-    Object ref = fullname_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getFullname() {
+    java.lang.Object ref = fullname_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       fullname_ = s;
       return s;
     }
@@ -80,14 +80,14 @@ private static final long serialVersionUID = 0L;
    * <code>string fullname = 1 [json_name = "fullname"];</code>
    * @return The bytes for fullname.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getFullnameBytes() {
-    Object ref = fullname_;
-    if (ref instanceof String) {
+    java.lang.Object ref = fullname_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       fullname_ = b;
       return b;
     } else {
@@ -97,7 +97,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int MSGS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private java.util.List<MsgDescriptor> msgs_;
+  private java.util.List<com.cosmos.base.reflection.v2alpha1.MsgDescriptor> msgs_;
   /**
    * <pre>
    * msgs lists the accepted application messages (sdk.Msg)
@@ -105,8 +105,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
    */
-  @Override
-  public java.util.List<MsgDescriptor> getMsgsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.base.reflection.v2alpha1.MsgDescriptor> getMsgsList() {
     return msgs_;
   }
   /**
@@ -116,8 +116,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
    */
-  @Override
-  public java.util.List<? extends MsgDescriptorOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.base.reflection.v2alpha1.MsgDescriptorOrBuilder> 
       getMsgsOrBuilderList() {
     return msgs_;
   }
@@ -128,7 +128,7 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
    */
-  @Override
+  @java.lang.Override
   public int getMsgsCount() {
     return msgs_.size();
   }
@@ -139,8 +139,8 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
    */
-  @Override
-  public MsgDescriptor getMsgs(int index) {
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.MsgDescriptor getMsgs(int index) {
     return msgs_.get(index);
   }
   /**
@@ -150,14 +150,14 @@ private static final long serialVersionUID = 0L;
    *
    * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
    */
-  @Override
-  public MsgDescriptorOrBuilder getMsgsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.MsgDescriptorOrBuilder getMsgsOrBuilder(
       int index) {
     return msgs_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -167,7 +167,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fullname_)) {
@@ -179,7 +179,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -197,15 +197,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof TxDescriptor)) {
+    if (!(obj instanceof com.cosmos.base.reflection.v2alpha1.TxDescriptor)) {
       return super.equals(obj);
     }
-    TxDescriptor other = (TxDescriptor) obj;
+    com.cosmos.base.reflection.v2alpha1.TxDescriptor other = (com.cosmos.base.reflection.v2alpha1.TxDescriptor) obj;
 
     if (!getFullname()
         .equals(other.getFullname())) return false;
@@ -215,7 +215,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -233,69 +233,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static TxDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static TxDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static TxDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static TxDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static TxDescriptor parseFrom(byte[] data)
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static TxDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static TxDescriptor parseFrom(java.io.InputStream input)
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static TxDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static TxDescriptor parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static TxDescriptor parseDelimitedFrom(
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static TxDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static TxDescriptor parseFrom(
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -303,23 +303,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(TxDescriptor prototype) {
+  public static Builder newBuilder(com.cosmos.base.reflection.v2alpha1.TxDescriptor prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -333,18 +333,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.base.reflection.v2alpha1.TxDescriptor)
-      TxDescriptorOrBuilder {
+      com.cosmos.base.reflection.v2alpha1.TxDescriptorOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_descriptor;
+      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_fieldAccessorTable
+      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              TxDescriptor.class, Builder.class);
+              com.cosmos.base.reflection.v2alpha1.TxDescriptor.class, com.cosmos.base.reflection.v2alpha1.TxDescriptor.Builder.class);
     }
 
     // Construct using com.cosmos.base.reflection.v2alpha1.TxDescriptor.newBuilder()
@@ -353,11 +353,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -372,36 +372,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_descriptor;
+      return com.cosmos.base.reflection.v2alpha1.ReflectionProto.internal_static_cosmos_base_reflection_v2alpha1_TxDescriptor_descriptor;
     }
 
-    @Override
-    public TxDescriptor getDefaultInstanceForType() {
-      return TxDescriptor.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.base.reflection.v2alpha1.TxDescriptor getDefaultInstanceForType() {
+      return com.cosmos.base.reflection.v2alpha1.TxDescriptor.getDefaultInstance();
     }
 
-    @Override
-    public TxDescriptor build() {
-      TxDescriptor result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.base.reflection.v2alpha1.TxDescriptor build() {
+      com.cosmos.base.reflection.v2alpha1.TxDescriptor result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public TxDescriptor buildPartial() {
-      TxDescriptor result = new TxDescriptor(this);
+    @java.lang.Override
+    public com.cosmos.base.reflection.v2alpha1.TxDescriptor buildPartial() {
+      com.cosmos.base.reflection.v2alpha1.TxDescriptor result = new com.cosmos.base.reflection.v2alpha1.TxDescriptor(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(TxDescriptor result) {
+    private void buildPartialRepeatedFields(com.cosmos.base.reflection.v2alpha1.TxDescriptor result) {
       if (msgsBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
           msgs_ = java.util.Collections.unmodifiableList(msgs_);
@@ -413,57 +413,57 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(TxDescriptor result) {
+    private void buildPartial0(com.cosmos.base.reflection.v2alpha1.TxDescriptor result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.fullname_ = fullname_;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof TxDescriptor) {
-        return mergeFrom((TxDescriptor)other);
+      if (other instanceof com.cosmos.base.reflection.v2alpha1.TxDescriptor) {
+        return mergeFrom((com.cosmos.base.reflection.v2alpha1.TxDescriptor)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(TxDescriptor other) {
-      if (other == TxDescriptor.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.base.reflection.v2alpha1.TxDescriptor other) {
+      if (other == com.cosmos.base.reflection.v2alpha1.TxDescriptor.getDefaultInstance()) return this;
       if (!other.getFullname().isEmpty()) {
         fullname_ = other.fullname_;
         bitField0_ |= 0x00000001;
@@ -500,18 +500,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -527,9 +527,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 10
             case 18: {
-              MsgDescriptor m =
+              com.cosmos.base.reflection.v2alpha1.MsgDescriptor m =
                   input.readMessage(
-                      MsgDescriptor.parser(),
+                      com.cosmos.base.reflection.v2alpha1.MsgDescriptor.parser(),
                       extensionRegistry);
               if (msgsBuilder_ == null) {
                 ensureMsgsIsMutable();
@@ -556,7 +556,7 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private Object fullname_ = "";
+    private java.lang.Object fullname_ = "";
     /**
      * <pre>
      * fullname is the protobuf fullname of the raw transaction type (for instance the tx.Tx type)
@@ -567,16 +567,16 @@ private static final long serialVersionUID = 0L;
      * <code>string fullname = 1 [json_name = "fullname"];</code>
      * @return The fullname.
      */
-    public String getFullname() {
-      Object ref = fullname_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getFullname() {
+      java.lang.Object ref = fullname_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         fullname_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -591,11 +591,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getFullnameBytes() {
-      Object ref = fullname_;
+      java.lang.Object ref = fullname_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         fullname_ = b;
         return b;
       } else {
@@ -614,7 +614,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setFullname(
-        String value) {
+        java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       fullname_ = value;
       bitField0_ |= 0x00000001;
@@ -658,17 +658,17 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<MsgDescriptor> msgs_ =
+    private java.util.List<com.cosmos.base.reflection.v2alpha1.MsgDescriptor> msgs_ =
       java.util.Collections.emptyList();
     private void ensureMsgsIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        msgs_ = new java.util.ArrayList<MsgDescriptor>(msgs_);
+        msgs_ = new java.util.ArrayList<com.cosmos.base.reflection.v2alpha1.MsgDescriptor>(msgs_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        MsgDescriptor, MsgDescriptor.Builder, MsgDescriptorOrBuilder> msgsBuilder_;
+        com.cosmos.base.reflection.v2alpha1.MsgDescriptor, com.cosmos.base.reflection.v2alpha1.MsgDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.MsgDescriptorOrBuilder> msgsBuilder_;
 
     /**
      * <pre>
@@ -677,7 +677,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
-    public java.util.List<MsgDescriptor> getMsgsList() {
+    public java.util.List<com.cosmos.base.reflection.v2alpha1.MsgDescriptor> getMsgsList() {
       if (msgsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(msgs_);
       } else {
@@ -705,7 +705,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
-    public MsgDescriptor getMsgs(int index) {
+    public com.cosmos.base.reflection.v2alpha1.MsgDescriptor getMsgs(int index) {
       if (msgsBuilder_ == null) {
         return msgs_.get(index);
       } else {
@@ -720,7 +720,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
     public Builder setMsgs(
-        int index, MsgDescriptor value) {
+        int index, com.cosmos.base.reflection.v2alpha1.MsgDescriptor value) {
       if (msgsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -741,7 +741,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
     public Builder setMsgs(
-        int index, MsgDescriptor.Builder builderForValue) {
+        int index, com.cosmos.base.reflection.v2alpha1.MsgDescriptor.Builder builderForValue) {
       if (msgsBuilder_ == null) {
         ensureMsgsIsMutable();
         msgs_.set(index, builderForValue.build());
@@ -758,7 +758,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
-    public Builder addMsgs(MsgDescriptor value) {
+    public Builder addMsgs(com.cosmos.base.reflection.v2alpha1.MsgDescriptor value) {
       if (msgsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -779,7 +779,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
     public Builder addMsgs(
-        int index, MsgDescriptor value) {
+        int index, com.cosmos.base.reflection.v2alpha1.MsgDescriptor value) {
       if (msgsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -800,7 +800,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
     public Builder addMsgs(
-        MsgDescriptor.Builder builderForValue) {
+        com.cosmos.base.reflection.v2alpha1.MsgDescriptor.Builder builderForValue) {
       if (msgsBuilder_ == null) {
         ensureMsgsIsMutable();
         msgs_.add(builderForValue.build());
@@ -818,7 +818,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
     public Builder addMsgs(
-        int index, MsgDescriptor.Builder builderForValue) {
+        int index, com.cosmos.base.reflection.v2alpha1.MsgDescriptor.Builder builderForValue) {
       if (msgsBuilder_ == null) {
         ensureMsgsIsMutable();
         msgs_.add(index, builderForValue.build());
@@ -836,7 +836,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
     public Builder addAllMsgs(
-        Iterable<? extends MsgDescriptor> values) {
+        java.lang.Iterable<? extends com.cosmos.base.reflection.v2alpha1.MsgDescriptor> values) {
       if (msgsBuilder_ == null) {
         ensureMsgsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -888,7 +888,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
-    public MsgDescriptor.Builder getMsgsBuilder(
+    public com.cosmos.base.reflection.v2alpha1.MsgDescriptor.Builder getMsgsBuilder(
         int index) {
       return getMsgsFieldBuilder().getBuilder(index);
     }
@@ -899,7 +899,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
-    public MsgDescriptorOrBuilder getMsgsOrBuilder(
+    public com.cosmos.base.reflection.v2alpha1.MsgDescriptorOrBuilder getMsgsOrBuilder(
         int index) {
       if (msgsBuilder_ == null) {
         return msgs_.get(index);  } else {
@@ -913,7 +913,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
-    public java.util.List<? extends MsgDescriptorOrBuilder>
+    public java.util.List<? extends com.cosmos.base.reflection.v2alpha1.MsgDescriptorOrBuilder> 
          getMsgsOrBuilderList() {
       if (msgsBuilder_ != null) {
         return msgsBuilder_.getMessageOrBuilderList();
@@ -928,9 +928,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
-    public MsgDescriptor.Builder addMsgsBuilder() {
+    public com.cosmos.base.reflection.v2alpha1.MsgDescriptor.Builder addMsgsBuilder() {
       return getMsgsFieldBuilder().addBuilder(
-          MsgDescriptor.getDefaultInstance());
+          com.cosmos.base.reflection.v2alpha1.MsgDescriptor.getDefaultInstance());
     }
     /**
      * <pre>
@@ -939,10 +939,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
-    public MsgDescriptor.Builder addMsgsBuilder(
+    public com.cosmos.base.reflection.v2alpha1.MsgDescriptor.Builder addMsgsBuilder(
         int index) {
       return getMsgsFieldBuilder().addBuilder(
-          index, MsgDescriptor.getDefaultInstance());
+          index, com.cosmos.base.reflection.v2alpha1.MsgDescriptor.getDefaultInstance());
     }
     /**
      * <pre>
@@ -951,16 +951,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .cosmos.base.reflection.v2alpha1.MsgDescriptor msgs = 2 [json_name = "msgs"];</code>
      */
-    public java.util.List<MsgDescriptor.Builder>
+    public java.util.List<com.cosmos.base.reflection.v2alpha1.MsgDescriptor.Builder> 
          getMsgsBuilderList() {
       return getMsgsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        MsgDescriptor, MsgDescriptor.Builder, MsgDescriptorOrBuilder>
+        com.cosmos.base.reflection.v2alpha1.MsgDescriptor, com.cosmos.base.reflection.v2alpha1.MsgDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.MsgDescriptorOrBuilder> 
         getMsgsFieldBuilder() {
       if (msgsBuilder_ == null) {
         msgsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            MsgDescriptor, MsgDescriptor.Builder, MsgDescriptorOrBuilder>(
+            com.cosmos.base.reflection.v2alpha1.MsgDescriptor, com.cosmos.base.reflection.v2alpha1.MsgDescriptor.Builder, com.cosmos.base.reflection.v2alpha1.MsgDescriptorOrBuilder>(
                 msgs_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -969,13 +969,13 @@ private static final long serialVersionUID = 0L;
       }
       return msgsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -986,18 +986,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.base.reflection.v2alpha1.TxDescriptor)
-  private static final TxDescriptor DEFAULT_INSTANCE;
+  private static final com.cosmos.base.reflection.v2alpha1.TxDescriptor DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new TxDescriptor();
+    DEFAULT_INSTANCE = new com.cosmos.base.reflection.v2alpha1.TxDescriptor();
   }
 
-  public static TxDescriptor getDefaultInstance() {
+  public static com.cosmos.base.reflection.v2alpha1.TxDescriptor getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<TxDescriptor>
       PARSER = new com.google.protobuf.AbstractParser<TxDescriptor>() {
-    @Override
+    @java.lang.Override
     public TxDescriptor parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1021,13 +1021,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<TxDescriptor> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public TxDescriptor getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.base.reflection.v2alpha1.TxDescriptor getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

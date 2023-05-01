@@ -3,7 +3,7 @@
 
 package com.cosmos.upgrade.v1beta1;
 
-@Deprecated public interface QueryUpgradedConsensusStateResponseOrBuilder extends
+@java.lang.Deprecated public interface QueryUpgradedConsensusStateResponseOrBuilder extends
     // @@protoc_insertion_point(interface_extends:cosmos.upgrade.v1beta1.QueryUpgradedConsensusStateResponse)
     com.google.protobuf.MessageOrBuilder {
 

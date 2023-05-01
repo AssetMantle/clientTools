@@ -28,21 +28,21 @@ public interface ExistenceProofOrBuilder extends
    * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
    * @return The leaf.
    */
-  LeafOp getLeaf();
+  com.ics23.LeafOp getLeaf();
   /**
    * <code>.ics23.LeafOp leaf = 3 [json_name = "leaf"];</code>
    */
-  LeafOpOrBuilder getLeafOrBuilder();
+  com.ics23.LeafOpOrBuilder getLeafOrBuilder();
 
   /**
    * <code>repeated .ics23.InnerOp path = 4 [json_name = "path"];</code>
    */
-  java.util.List<InnerOp>
+  java.util.List<com.ics23.InnerOp> 
       getPathList();
   /**
    * <code>repeated .ics23.InnerOp path = 4 [json_name = "path"];</code>
    */
-  InnerOp getPath(int index);
+  com.ics23.InnerOp getPath(int index);
   /**
    * <code>repeated .ics23.InnerOp path = 4 [json_name = "path"];</code>
    */
@@ -50,11 +50,11 @@ public interface ExistenceProofOrBuilder extends
   /**
    * <code>repeated .ics23.InnerOp path = 4 [json_name = "path"];</code>
    */
-  java.util.List<? extends InnerOpOrBuilder>
+  java.util.List<? extends com.ics23.InnerOpOrBuilder> 
       getPathOrBuilderList();
   /**
    * <code>repeated .ics23.InnerOp path = 4 [json_name = "path"];</code>
    */
-  InnerOpOrBuilder getPathOrBuilder(
+  com.ics23.InnerOpOrBuilder getPathOrBuilder(
       int index);
 }

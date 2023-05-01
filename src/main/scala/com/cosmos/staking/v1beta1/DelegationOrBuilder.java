@@ -15,7 +15,7 @@ public interface DelegationOrBuilder extends
    * <code>string delegator_address = 1 [json_name = "delegatorAddress", (.gogoproto.moretags) = "yaml:&#92;"delegator_address&#92;""];</code>
    * @return The delegatorAddress.
    */
-  String getDelegatorAddress();
+  java.lang.String getDelegatorAddress();
   /**
    * <pre>
    * delegator_address is the bech32-encoded address of the delegator.
@@ -35,7 +35,7 @@ public interface DelegationOrBuilder extends
    * <code>string validator_address = 2 [json_name = "validatorAddress", (.gogoproto.moretags) = "yaml:&#92;"validator_address&#92;""];</code>
    * @return The validatorAddress.
    */
-  String getValidatorAddress();
+  java.lang.String getValidatorAddress();
   /**
    * <pre>
    * validator_address is the bech32-encoded address of the validator.
@@ -55,7 +55,7 @@ public interface DelegationOrBuilder extends
    * <code>string shares = 3 [json_name = "shares", (.gogoproto.nullable) = false, (.gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec"];</code>
    * @return The shares.
    */
-  String getShares();
+  java.lang.String getShares();
   /**
    * <pre>
    * shares define the delegation shares received.

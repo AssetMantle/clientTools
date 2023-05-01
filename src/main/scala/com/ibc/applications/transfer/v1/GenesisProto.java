@@ -27,7 +27,7 @@ public final class GenesisProto {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n*ibc/applications/transfer/v1/genesis.p" +
       "roto\022\034ibc.applications.transfer.v1\032+ibc/" +
       "applications/transfer/v1/transfer.proto\032" +
@@ -49,7 +49,7 @@ public final class GenesisProto {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          TransferProto.getDescriptor(),
+          com.ibc.applications.transfer.v1.TransferProto.getDescriptor(),
           com.gogoproto.GogoProto.getDescriptor(),
         });
     internal_static_ibc_applications_transfer_v1_GenesisState_descriptor =
@@ -57,7 +57,7 @@ public final class GenesisProto {
     internal_static_ibc_applications_transfer_v1_GenesisState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_applications_transfer_v1_GenesisState_descriptor,
-        new String[] { "PortId", "DenomTraces", "Params", });
+        new java.lang.String[] { "PortId", "DenomTraces", "Params", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.gogoproto.GogoProto.castrepeated);
@@ -65,7 +65,7 @@ public final class GenesisProto {
     registry.add(com.gogoproto.GogoProto.nullable);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
-    TransferProto.getDescriptor();
+    com.ibc.applications.transfer.v1.TransferProto.getDescriptor();
     com.gogoproto.GogoProto.getDescriptor();
   }
 

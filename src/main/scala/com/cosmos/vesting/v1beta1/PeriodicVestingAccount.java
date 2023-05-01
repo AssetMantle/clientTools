@@ -24,33 +24,33 @@ private static final long serialVersionUID = 0L;
     vestingPeriods_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new PeriodicVestingAccount();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return VestingProto.internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_descriptor;
+    return com.cosmos.vesting.v1beta1.VestingProto.internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return VestingProto.internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_fieldAccessorTable
+    return com.cosmos.vesting.v1beta1.VestingProto.internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            PeriodicVestingAccount.class, Builder.class);
+            com.cosmos.vesting.v1beta1.PeriodicVestingAccount.class, com.cosmos.vesting.v1beta1.PeriodicVestingAccount.Builder.class);
   }
 
   public static final int BASE_VESTING_ACCOUNT_FIELD_NUMBER = 1;
-  private BaseVestingAccount baseVestingAccount_;
+  private com.cosmos.vesting.v1beta1.BaseVestingAccount baseVestingAccount_;
   /**
    * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
    * @return Whether the baseVestingAccount field is set.
    */
-  @Override
+  @java.lang.Override
   public boolean hasBaseVestingAccount() {
     return baseVestingAccount_ != null;
   }
@@ -58,16 +58,16 @@ private static final long serialVersionUID = 0L;
    * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
    * @return The baseVestingAccount.
    */
-  @Override
-  public BaseVestingAccount getBaseVestingAccount() {
-    return baseVestingAccount_ == null ? BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
+  @java.lang.Override
+  public com.cosmos.vesting.v1beta1.BaseVestingAccount getBaseVestingAccount() {
+    return baseVestingAccount_ == null ? com.cosmos.vesting.v1beta1.BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
   }
   /**
    * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
    */
-  @Override
-  public BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder() {
-    return baseVestingAccount_ == null ? BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
+  @java.lang.Override
+  public com.cosmos.vesting.v1beta1.BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder() {
+    return baseVestingAccount_ == null ? com.cosmos.vesting.v1beta1.BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
   }
 
   public static final int START_TIME_FIELD_NUMBER = 2;
@@ -76,54 +76,54 @@ private static final long serialVersionUID = 0L;
    * <code>int64 start_time = 2 [json_name = "startTime", (.gogoproto.moretags) = "yaml:&#92;"start_time&#92;""];</code>
    * @return The startTime.
    */
-  @Override
+  @java.lang.Override
   public long getStartTime() {
     return startTime_;
   }
 
   public static final int VESTING_PERIODS_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private java.util.List<Period> vestingPeriods_;
+  private java.util.List<com.cosmos.vesting.v1beta1.Period> vestingPeriods_;
   /**
    * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
    */
-  @Override
-  public java.util.List<Period> getVestingPeriodsList() {
+  @java.lang.Override
+  public java.util.List<com.cosmos.vesting.v1beta1.Period> getVestingPeriodsList() {
     return vestingPeriods_;
   }
   /**
    * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
    */
-  @Override
-  public java.util.List<? extends PeriodOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.cosmos.vesting.v1beta1.PeriodOrBuilder> 
       getVestingPeriodsOrBuilderList() {
     return vestingPeriods_;
   }
   /**
    * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
    */
-  @Override
+  @java.lang.Override
   public int getVestingPeriodsCount() {
     return vestingPeriods_.size();
   }
   /**
    * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
    */
-  @Override
-  public Period getVestingPeriods(int index) {
+  @java.lang.Override
+  public com.cosmos.vesting.v1beta1.Period getVestingPeriods(int index) {
     return vestingPeriods_.get(index);
   }
   /**
    * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
    */
-  @Override
-  public PeriodOrBuilder getVestingPeriodsOrBuilder(
+  @java.lang.Override
+  public com.cosmos.vesting.v1beta1.PeriodOrBuilder getVestingPeriodsOrBuilder(
       int index) {
     return vestingPeriods_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -133,7 +133,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (baseVestingAccount_ != null) {
@@ -148,7 +148,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields().writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -171,15 +171,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof PeriodicVestingAccount)) {
+    if (!(obj instanceof com.cosmos.vesting.v1beta1.PeriodicVestingAccount)) {
       return super.equals(obj);
     }
-    PeriodicVestingAccount other = (PeriodicVestingAccount) obj;
+    com.cosmos.vesting.v1beta1.PeriodicVestingAccount other = (com.cosmos.vesting.v1beta1.PeriodicVestingAccount) obj;
 
     if (hasBaseVestingAccount() != other.hasBaseVestingAccount()) return false;
     if (hasBaseVestingAccount()) {
@@ -194,7 +194,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -217,69 +217,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static PeriodicVestingAccount parseFrom(
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PeriodicVestingAccount parseFrom(
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PeriodicVestingAccount parseFrom(
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PeriodicVestingAccount parseFrom(
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PeriodicVestingAccount parseFrom(byte[] data)
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PeriodicVestingAccount parseFrom(
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PeriodicVestingAccount parseFrom(java.io.InputStream input)
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static PeriodicVestingAccount parseFrom(
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static PeriodicVestingAccount parseDelimitedFrom(java.io.InputStream input)
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static PeriodicVestingAccount parseDelimitedFrom(
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static PeriodicVestingAccount parseFrom(
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static PeriodicVestingAccount parseFrom(
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -287,23 +287,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(PeriodicVestingAccount prototype) {
+  public static Builder newBuilder(com.cosmos.vesting.v1beta1.PeriodicVestingAccount prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -318,18 +318,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:cosmos.vesting.v1beta1.PeriodicVestingAccount)
-      PeriodicVestingAccountOrBuilder {
+      com.cosmos.vesting.v1beta1.PeriodicVestingAccountOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return VestingProto.internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_descriptor;
+      return com.cosmos.vesting.v1beta1.VestingProto.internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return VestingProto.internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_fieldAccessorTable
+      return com.cosmos.vesting.v1beta1.VestingProto.internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              PeriodicVestingAccount.class, Builder.class);
+              com.cosmos.vesting.v1beta1.PeriodicVestingAccount.class, com.cosmos.vesting.v1beta1.PeriodicVestingAccount.Builder.class);
     }
 
     // Construct using com.cosmos.vesting.v1beta1.PeriodicVestingAccount.newBuilder()
@@ -338,11 +338,11 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
 
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
@@ -362,36 +362,36 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return VestingProto.internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_descriptor;
+      return com.cosmos.vesting.v1beta1.VestingProto.internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_descriptor;
     }
 
-    @Override
-    public PeriodicVestingAccount getDefaultInstanceForType() {
-      return PeriodicVestingAccount.getDefaultInstance();
+    @java.lang.Override
+    public com.cosmos.vesting.v1beta1.PeriodicVestingAccount getDefaultInstanceForType() {
+      return com.cosmos.vesting.v1beta1.PeriodicVestingAccount.getDefaultInstance();
     }
 
-    @Override
-    public PeriodicVestingAccount build() {
-      PeriodicVestingAccount result = buildPartial();
+    @java.lang.Override
+    public com.cosmos.vesting.v1beta1.PeriodicVestingAccount build() {
+      com.cosmos.vesting.v1beta1.PeriodicVestingAccount result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public PeriodicVestingAccount buildPartial() {
-      PeriodicVestingAccount result = new PeriodicVestingAccount(this);
+    @java.lang.Override
+    public com.cosmos.vesting.v1beta1.PeriodicVestingAccount buildPartial() {
+      com.cosmos.vesting.v1beta1.PeriodicVestingAccount result = new com.cosmos.vesting.v1beta1.PeriodicVestingAccount(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(PeriodicVestingAccount result) {
+    private void buildPartialRepeatedFields(com.cosmos.vesting.v1beta1.PeriodicVestingAccount result) {
       if (vestingPeriodsBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0)) {
           vestingPeriods_ = java.util.Collections.unmodifiableList(vestingPeriods_);
@@ -403,7 +403,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(PeriodicVestingAccount result) {
+    private void buildPartial0(com.cosmos.vesting.v1beta1.PeriodicVestingAccount result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.baseVestingAccount_ = baseVestingAccountBuilder_ == null
@@ -415,50 +415,50 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof PeriodicVestingAccount) {
-        return mergeFrom((PeriodicVestingAccount)other);
+      if (other instanceof com.cosmos.vesting.v1beta1.PeriodicVestingAccount) {
+        return mergeFrom((com.cosmos.vesting.v1beta1.PeriodicVestingAccount)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(PeriodicVestingAccount other) {
-      if (other == PeriodicVestingAccount.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.cosmos.vesting.v1beta1.PeriodicVestingAccount other) {
+      if (other == com.cosmos.vesting.v1beta1.PeriodicVestingAccount.getDefaultInstance()) return this;
       if (other.hasBaseVestingAccount()) {
         mergeBaseVestingAccount(other.getBaseVestingAccount());
       }
@@ -496,18 +496,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       try {
         boolean done = false;
@@ -530,9 +530,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 16
             case 26: {
-              Period m =
+              com.cosmos.vesting.v1beta1.Period m =
                   input.readMessage(
-                      Period.parser(),
+                      com.cosmos.vesting.v1beta1.Period.parser(),
                       extensionRegistry);
               if (vestingPeriodsBuilder_ == null) {
                 ensureVestingPeriodsIsMutable();
@@ -559,9 +559,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private BaseVestingAccount baseVestingAccount_;
+    private com.cosmos.vesting.v1beta1.BaseVestingAccount baseVestingAccount_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        BaseVestingAccount, BaseVestingAccount.Builder, BaseVestingAccountOrBuilder> baseVestingAccountBuilder_;
+        com.cosmos.vesting.v1beta1.BaseVestingAccount, com.cosmos.vesting.v1beta1.BaseVestingAccount.Builder, com.cosmos.vesting.v1beta1.BaseVestingAccountOrBuilder> baseVestingAccountBuilder_;
     /**
      * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
      * @return Whether the baseVestingAccount field is set.
@@ -573,9 +573,9 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
      * @return The baseVestingAccount.
      */
-    public BaseVestingAccount getBaseVestingAccount() {
+    public com.cosmos.vesting.v1beta1.BaseVestingAccount getBaseVestingAccount() {
       if (baseVestingAccountBuilder_ == null) {
-        return baseVestingAccount_ == null ? BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
+        return baseVestingAccount_ == null ? com.cosmos.vesting.v1beta1.BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
       } else {
         return baseVestingAccountBuilder_.getMessage();
       }
@@ -583,7 +583,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
      */
-    public Builder setBaseVestingAccount(BaseVestingAccount value) {
+    public Builder setBaseVestingAccount(com.cosmos.vesting.v1beta1.BaseVestingAccount value) {
       if (baseVestingAccountBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -600,7 +600,7 @@ private static final long serialVersionUID = 0L;
      * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
      */
     public Builder setBaseVestingAccount(
-        BaseVestingAccount.Builder builderForValue) {
+        com.cosmos.vesting.v1beta1.BaseVestingAccount.Builder builderForValue) {
       if (baseVestingAccountBuilder_ == null) {
         baseVestingAccount_ = builderForValue.build();
       } else {
@@ -613,11 +613,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
      */
-    public Builder mergeBaseVestingAccount(BaseVestingAccount value) {
+    public Builder mergeBaseVestingAccount(com.cosmos.vesting.v1beta1.BaseVestingAccount value) {
       if (baseVestingAccountBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           baseVestingAccount_ != null &&
-          baseVestingAccount_ != BaseVestingAccount.getDefaultInstance()) {
+          baseVestingAccount_ != com.cosmos.vesting.v1beta1.BaseVestingAccount.getDefaultInstance()) {
           getBaseVestingAccountBuilder().mergeFrom(value);
         } else {
           baseVestingAccount_ = value;
@@ -645,7 +645,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
      */
-    public BaseVestingAccount.Builder getBaseVestingAccountBuilder() {
+    public com.cosmos.vesting.v1beta1.BaseVestingAccount.Builder getBaseVestingAccountBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return getBaseVestingAccountFieldBuilder().getBuilder();
@@ -653,23 +653,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
      */
-    public BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder() {
+    public com.cosmos.vesting.v1beta1.BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder() {
       if (baseVestingAccountBuilder_ != null) {
         return baseVestingAccountBuilder_.getMessageOrBuilder();
       } else {
         return baseVestingAccount_ == null ?
-            BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
+            com.cosmos.vesting.v1beta1.BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
       }
     }
     /**
      * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [json_name = "baseVestingAccount", (.gogoproto.embed) = true];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        BaseVestingAccount, BaseVestingAccount.Builder, BaseVestingAccountOrBuilder>
+        com.cosmos.vesting.v1beta1.BaseVestingAccount, com.cosmos.vesting.v1beta1.BaseVestingAccount.Builder, com.cosmos.vesting.v1beta1.BaseVestingAccountOrBuilder> 
         getBaseVestingAccountFieldBuilder() {
       if (baseVestingAccountBuilder_ == null) {
         baseVestingAccountBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            BaseVestingAccount, BaseVestingAccount.Builder, BaseVestingAccountOrBuilder>(
+            com.cosmos.vesting.v1beta1.BaseVestingAccount, com.cosmos.vesting.v1beta1.BaseVestingAccount.Builder, com.cosmos.vesting.v1beta1.BaseVestingAccountOrBuilder>(
                 getBaseVestingAccount(),
                 getParentForChildren(),
                 isClean());
@@ -683,7 +683,7 @@ private static final long serialVersionUID = 0L;
      * <code>int64 start_time = 2 [json_name = "startTime", (.gogoproto.moretags) = "yaml:&#92;"start_time&#92;""];</code>
      * @return The startTime.
      */
-    @Override
+    @java.lang.Override
     public long getStartTime() {
       return startTime_;
     }
@@ -710,22 +710,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<Period> vestingPeriods_ =
+    private java.util.List<com.cosmos.vesting.v1beta1.Period> vestingPeriods_ =
       java.util.Collections.emptyList();
     private void ensureVestingPeriodsIsMutable() {
       if (!((bitField0_ & 0x00000004) != 0)) {
-        vestingPeriods_ = new java.util.ArrayList<Period>(vestingPeriods_);
+        vestingPeriods_ = new java.util.ArrayList<com.cosmos.vesting.v1beta1.Period>(vestingPeriods_);
         bitField0_ |= 0x00000004;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Period, Period.Builder, PeriodOrBuilder> vestingPeriodsBuilder_;
+        com.cosmos.vesting.v1beta1.Period, com.cosmos.vesting.v1beta1.Period.Builder, com.cosmos.vesting.v1beta1.PeriodOrBuilder> vestingPeriodsBuilder_;
 
     /**
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
-    public java.util.List<Period> getVestingPeriodsList() {
+    public java.util.List<com.cosmos.vesting.v1beta1.Period> getVestingPeriodsList() {
       if (vestingPeriodsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(vestingPeriods_);
       } else {
@@ -745,7 +745,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
-    public Period getVestingPeriods(int index) {
+    public com.cosmos.vesting.v1beta1.Period getVestingPeriods(int index) {
       if (vestingPeriodsBuilder_ == null) {
         return vestingPeriods_.get(index);
       } else {
@@ -756,7 +756,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
     public Builder setVestingPeriods(
-        int index, Period value) {
+        int index, com.cosmos.vesting.v1beta1.Period value) {
       if (vestingPeriodsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -773,7 +773,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
     public Builder setVestingPeriods(
-        int index, Period.Builder builderForValue) {
+        int index, com.cosmos.vesting.v1beta1.Period.Builder builderForValue) {
       if (vestingPeriodsBuilder_ == null) {
         ensureVestingPeriodsIsMutable();
         vestingPeriods_.set(index, builderForValue.build());
@@ -786,7 +786,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
-    public Builder addVestingPeriods(Period value) {
+    public Builder addVestingPeriods(com.cosmos.vesting.v1beta1.Period value) {
       if (vestingPeriodsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -803,7 +803,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
     public Builder addVestingPeriods(
-        int index, Period value) {
+        int index, com.cosmos.vesting.v1beta1.Period value) {
       if (vestingPeriodsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -820,7 +820,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
     public Builder addVestingPeriods(
-        Period.Builder builderForValue) {
+        com.cosmos.vesting.v1beta1.Period.Builder builderForValue) {
       if (vestingPeriodsBuilder_ == null) {
         ensureVestingPeriodsIsMutable();
         vestingPeriods_.add(builderForValue.build());
@@ -834,7 +834,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
     public Builder addVestingPeriods(
-        int index, Period.Builder builderForValue) {
+        int index, com.cosmos.vesting.v1beta1.Period.Builder builderForValue) {
       if (vestingPeriodsBuilder_ == null) {
         ensureVestingPeriodsIsMutable();
         vestingPeriods_.add(index, builderForValue.build());
@@ -848,7 +848,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
     public Builder addAllVestingPeriods(
-        Iterable<? extends Period> values) {
+        java.lang.Iterable<? extends com.cosmos.vesting.v1beta1.Period> values) {
       if (vestingPeriodsBuilder_ == null) {
         ensureVestingPeriodsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -888,14 +888,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
-    public Period.Builder getVestingPeriodsBuilder(
+    public com.cosmos.vesting.v1beta1.Period.Builder getVestingPeriodsBuilder(
         int index) {
       return getVestingPeriodsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
-    public PeriodOrBuilder getVestingPeriodsOrBuilder(
+    public com.cosmos.vesting.v1beta1.PeriodOrBuilder getVestingPeriodsOrBuilder(
         int index) {
       if (vestingPeriodsBuilder_ == null) {
         return vestingPeriods_.get(index);  } else {
@@ -905,7 +905,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
-    public java.util.List<? extends PeriodOrBuilder>
+    public java.util.List<? extends com.cosmos.vesting.v1beta1.PeriodOrBuilder> 
          getVestingPeriodsOrBuilderList() {
       if (vestingPeriodsBuilder_ != null) {
         return vestingPeriodsBuilder_.getMessageOrBuilderList();
@@ -916,31 +916,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
-    public Period.Builder addVestingPeriodsBuilder() {
+    public com.cosmos.vesting.v1beta1.Period.Builder addVestingPeriodsBuilder() {
       return getVestingPeriodsFieldBuilder().addBuilder(
-          Period.getDefaultInstance());
+          com.cosmos.vesting.v1beta1.Period.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
-    public Period.Builder addVestingPeriodsBuilder(
+    public com.cosmos.vesting.v1beta1.Period.Builder addVestingPeriodsBuilder(
         int index) {
       return getVestingPeriodsFieldBuilder().addBuilder(
-          index, Period.getDefaultInstance());
+          index, com.cosmos.vesting.v1beta1.Period.getDefaultInstance());
     }
     /**
      * <code>repeated .cosmos.vesting.v1beta1.Period vesting_periods = 3 [json_name = "vestingPeriods", (.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"vesting_periods&#92;""];</code>
      */
-    public java.util.List<Period.Builder>
+    public java.util.List<com.cosmos.vesting.v1beta1.Period.Builder> 
          getVestingPeriodsBuilderList() {
       return getVestingPeriodsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        Period, Period.Builder, PeriodOrBuilder>
+        com.cosmos.vesting.v1beta1.Period, com.cosmos.vesting.v1beta1.Period.Builder, com.cosmos.vesting.v1beta1.PeriodOrBuilder> 
         getVestingPeriodsFieldBuilder() {
       if (vestingPeriodsBuilder_ == null) {
         vestingPeriodsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            Period, Period.Builder, PeriodOrBuilder>(
+            com.cosmos.vesting.v1beta1.Period, com.cosmos.vesting.v1beta1.Period.Builder, com.cosmos.vesting.v1beta1.PeriodOrBuilder>(
                 vestingPeriods_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
@@ -949,13 +949,13 @@ private static final long serialVersionUID = 0L;
       }
       return vestingPeriodsBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -966,18 +966,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:cosmos.vesting.v1beta1.PeriodicVestingAccount)
-  private static final PeriodicVestingAccount DEFAULT_INSTANCE;
+  private static final com.cosmos.vesting.v1beta1.PeriodicVestingAccount DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new PeriodicVestingAccount();
+    DEFAULT_INSTANCE = new com.cosmos.vesting.v1beta1.PeriodicVestingAccount();
   }
 
-  public static PeriodicVestingAccount getDefaultInstance() {
+  public static com.cosmos.vesting.v1beta1.PeriodicVestingAccount getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<PeriodicVestingAccount>
       PARSER = new com.google.protobuf.AbstractParser<PeriodicVestingAccount>() {
-    @Override
+    @java.lang.Override
     public PeriodicVestingAccount parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1001,13 +1001,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<PeriodicVestingAccount> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public PeriodicVestingAccount getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.cosmos.vesting.v1beta1.PeriodicVestingAccount getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 
