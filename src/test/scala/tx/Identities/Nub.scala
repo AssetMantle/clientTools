@@ -1,4 +1,4 @@
-package schema.Identities
+package tx.Identities
 
 import org.bitcoinj.core.ECKey
 import org.scalatest.funsuite.AnyFunSuite

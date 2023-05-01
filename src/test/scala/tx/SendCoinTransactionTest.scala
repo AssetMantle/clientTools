@@ -1,4 +1,4 @@
-package schema
+package tx
 
 import com.google.protobuf
 import org.bitcoinj.core.ECKey

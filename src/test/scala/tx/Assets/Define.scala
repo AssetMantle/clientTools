@@ -1,8 +1,9 @@
-package schema.Assets
+package tx.Assets
 
 import com.google.protobuf
 import org.bitcoinj.core.ECKey
 import org.scalatest.funsuite.AnyFunSuite
+import schema.constants
 import schema.data.base._
 import schema.id.base.{PropertyID, StringID}
 import schema.property.base.{MesaProperty, MetaProperty}

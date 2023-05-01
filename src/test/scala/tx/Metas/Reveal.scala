@@ -1,4 +1,4 @@
-package schema.Metas
+package tx.Metas
 
 import com.google.protobuf
 import org.bitcoinj.core.ECKey

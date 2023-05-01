@@ -1,4 +1,4 @@
-package schema.TestData
+package tx
 
 import utilities.ID.getClassificationID
 import org.scalatest.funsuite.AnyFunSuite

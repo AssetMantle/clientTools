@@ -1,9 +1,10 @@
-package schema.TestData
+package tx
 
 import org.scalatest.funsuite.AnyFunSuite
 
+import java.math.BigInteger
 
-class BooleanDataTest extends AnyFunSuite {
+class DecDataTest extends AnyFunSuite {
 
 //  val testData1: DecData = DecData(AttoNumber("123.2345"))
 //  val testData2: DecData = DecData(AttoNumber("-123.2345"))

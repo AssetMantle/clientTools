@@ -2,20 +2,19 @@ package testConstants
 
 import schema.data.base._
 import schema.types.Height
-import utilities.AttoNumber
 
 object Data {
 
   val listData: ListData = ListData(Seq(
     AccAddressData(testConstants.setup.balanceAccount.address),
     BooleanData(true),
-    DecData(AttoNumber(0.002)),
+    DecData(0.002),
     HeightData(Height(99)),
-    IDData(testConstants.setup.nubIdentityID.toAnyID),
+    IDData(testConstants.setup.nubIdentityID),
     NumberData(95),
     StringData("listDataString"),
-    IDData(testConstants.setup.assetID.toAnyID),
-    IDData(testConstants.setup.identityClassificationID.toAnyID),
-    IDData(testConstants.setup.assetClassificationID.toAnyID)
-  ).map(_.toAnyData))
+    IDData(testConstants.setup.assetID),
+    IDData(testConstants.setup.identityClassificationID),
+    IDData(testConstants.setup.assetClassificationID)
+  ))
 }

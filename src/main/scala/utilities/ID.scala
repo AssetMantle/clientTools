@@ -4,12 +4,6 @@ import com.google.protobuf.ByteString
 import com.assetmantle.schema.ids.base.{HashID => protoHashID}
 import constants.DataTypeID._
 import org.slf4j.{Logger, LoggerFactory}
-import schema.data.Data
-import schema.id.OwnableID
-import schema.id.base._
-import schema.property.Property
-import schema.qualified.{Immutables, Mutables}
-import schema.types.Split
 
 import java.math.BigInteger
 import scala.util.Random

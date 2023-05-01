@@ -1,8 +1,9 @@
-package schema.Identities
+package tx.Identities
 
 import com.google.protobuf
 import org.bitcoinj.core.ECKey
 import org.scalatest.funsuite.AnyFunSuite
+import schema.constants
 import schema.data.base._
 import schema.id.base.{PropertyID, StringID}
 import schema.list.PropertyList

@@ -1,7 +1,7 @@
 package testConstants
 
 import com.cosmos.base.v1beta1.Coin
-import schema.id.base.{AssetID, ClassificationID, HashID, IdentityID}
+import schema.id.base._
 import utilities.Wallet
 
 object setup {

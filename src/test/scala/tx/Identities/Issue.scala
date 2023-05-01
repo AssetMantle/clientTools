@@ -1,8 +1,9 @@
-package schema.Identities
+package tx.Identities
 
 import com.assetmantle.schema.ids.base.ClassificationID
 import org.bitcoinj.core.ECKey
 import org.scalatest.funsuite.AnyFunSuite
+import schema.constants
 import schema.data.base._
 import schema.id.base.{IdentityID, PropertyID, StringID}
 import schema.list.PropertyList

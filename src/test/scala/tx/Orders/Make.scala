@@ -1,7 +1,8 @@
-package schema.Orders
+package tx.Orders
 
 import org.bitcoinj.core.ECKey
 import org.scalatest.funsuite.AnyFunSuite
+import schema.constants
 import schema.data.base._
 import schema.id.base._
 import schema.list.PropertyList
@@ -65,7 +66,7 @@ class Make extends AnyFunSuite {
     testConstants.setup.assetID.toAnyOwnableID,
     CoinID(StringID("umntl")).toAnyOwnableID,
     Height(43200).asProtoHeight,
-    makerOwnableSplit = fullFormat.format(BigDecimal(1) / BigDecimal.factor),
+    makerOwnableSplit = 1.toString,
     takerOwnableSplit = "100",
     PropertyList(immutableMetaProperties).asProtoPropertyList,
     PropertyList(immutableProperties).asProtoPropertyList,

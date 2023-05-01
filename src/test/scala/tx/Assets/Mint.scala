@@ -1,7 +1,8 @@
-package schema.Assets
+package tx.Assets
 
 import org.bitcoinj.core.ECKey
 import org.scalatest.funsuite.AnyFunSuite
+import schema.constants
 import schema.data.base._
 import schema.id.base.{PropertyID, StringID}
 import schema.list.PropertyList
