@@ -53,7 +53,7 @@ class Mint extends AnyFunSuite {
     MesaProperty(PropertyID(StringID("AssetM6"), constants.Data.NumberDataTypeID), NumberData(utilities.Random.getRandomAbsLong)),
     MesaProperty(PropertyID(StringID("AssetM7"), constants.Data.StringDataTypeID), StringData(utilities.Random.getRandomString)),
   )
-  val seq = 3
+  val seq = 8
   val assetMintMsg = utilities.BlockchainTransaction.getMintAssetMsgAsAny(testConstants.setup.balanceAccount.address, fromID.asProtoIdentityID, fromID.asProtoIdentityID, classificationID, PropertyList(immutableMetaProperties).asProtoPropertyList, PropertyList(immutableProperties).asProtoPropertyList, PropertyList(mutableMetaProperties).asProtoPropertyList, PropertyList(mutableProperties).asProtoPropertyList)
   val txRawBytes: Array[Byte] = utilities.BlockchainTransaction.getTxRawBytes(messages = Seq(assetMintMsg), fee = testConstants.setup.amount, gasLimit = 1000000, accountNumber = testConstants.setup.accountNumber, sequence = seq, ecKey = ECKey.fromPrivate(testConstants.setup.balanceAccount.privateKey), chainID = testConstants.setup.chainId)
   utilities.Tx.doTx(txRawBytes)

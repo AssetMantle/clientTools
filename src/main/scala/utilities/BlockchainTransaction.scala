@@ -79,7 +79,7 @@ object BlockchainTransaction {
 
   //BANK
   def getSendCoinMsgAsAny(fromAddress: String, toAddress: String, amount: Seq[Coin]): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.SEND_COIN)
+    .setTypeUrl(schema.constants.Messages.SEND_COIN)
     .setValue(MsgSend.newBuilder()
       .setFromAddress(fromAddress)
       .setToAddress(toAddress)
@@ -88,7 +88,7 @@ object BlockchainTransaction {
     .build()
 
   def getMintMsgAsAny(fromAddress: String, fromId: String, toId: String, classificationId: String): protoBufAny = protoBufAny.newBuilder()
-    //    .setTypeUrl(constants.Blockchain.TransactionMessage.MINT)
+    //    .setTypeUrl(schema.constants.Messages.MINT)
     //    .setValue(Tx
     //      .MsgSend.newBuilder()
     //      .setFromAddress(fromAddress)
@@ -99,7 +99,7 @@ object BlockchainTransaction {
 
   //ASSETS
   def getDefineAssetMsg(fromAddress: String, fromID: IdentityID, immutableMetas: Seq[MetaProperty], immutables: Seq[MesaProperty], mutableMetas: Seq[MetaProperty], mutables: Seq[MesaProperty]): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ASSET_DEFINE)
+    .setTypeUrl(schema.constants.Messages.ASSET_DEFINE)
     .setValue(DefineAssetMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -111,7 +111,7 @@ object BlockchainTransaction {
     .build()
 
   def getBurnAssetMsgAsAny(fromAddress: String, fromID: IdentityID, assetID: AssetID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ASSET_BURN)
+    .setTypeUrl(schema.constants.Messages.ASSET_BURN)
     .setValue(BurnAssetMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -120,7 +120,7 @@ object BlockchainTransaction {
     .build()
 
   def getDeputizeAssetMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID, maintainedProperties: PropertyList, canMintAsset: Boolean, canBurnAsset: Boolean, canRenumerateAsset: Boolean, canAddMaintainer: Boolean, canRemoveMaintainer: Boolean, canMutateMaintainer: Boolean): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ASSET_DEPUTIZE)
+    .setTypeUrl(schema.constants.Messages.ASSET_DEPUTIZE)
     .setValue(DeputizeAssetMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -137,7 +137,7 @@ object BlockchainTransaction {
     .build()
 
   def getMintAssetMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ASSET_MINT)
+    .setTypeUrl(schema.constants.Messages.ASSET_MINT)
     .setValue(MintAssetMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -151,7 +151,7 @@ object BlockchainTransaction {
     .build()
 
   def getMutateAssetMsgAsAny(fromAddress: String, fromID: IdentityID, assetID: AssetID, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ASSET_MUTATE)
+    .setTypeUrl(schema.constants.Messages.ASSET_MUTATE)
     .setValue(MutateAssetMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -162,7 +162,7 @@ object BlockchainTransaction {
     .build()
 
   def getRenumerateAssetMsgAsAny(fromAddress: String, fromID: IdentityID, assetID: AssetID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ASSET_RENUMERATE)
+    .setTypeUrl(schema.constants.Messages.ASSET_RENUMERATE)
     .setValue(RenumerateAssetMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -171,7 +171,7 @@ object BlockchainTransaction {
     .build()
 
   def getRevokeAssetMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ASSET_REVOKE)
+    .setTypeUrl(schema.constants.Messages.ASSET_REVOKE)
     .setValue(RevokeAssetMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -183,7 +183,7 @@ object BlockchainTransaction {
 
   //IDENTITIES
   def getDefineIdentityMsgAsAny(fromAddress: String, fromID: IdentityID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.IDENTITY_DEFINE)
+    .setTypeUrl(schema.constants.Messages.IDENTITY_DEFINE)
     .setValue(DefineIDMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -195,7 +195,7 @@ object BlockchainTransaction {
     .build()
 
   def getDeputizeIdentityMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID, maintainedProperties: PropertyList, canMintAsset: Boolean, canBurnAsset: Boolean, canRenumerateAsset: Boolean, canAddMaintainer: Boolean, canRemoveMaintainer: Boolean, canMutateMaintainer: Boolean): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.IDENTITY_DEPUTIZE)
+    .setTypeUrl(schema.constants.Messages.IDENTITY_DEPUTIZE)
     .setValue(DeputizeIDMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -212,7 +212,7 @@ object BlockchainTransaction {
     .build()
 
   def getIssueIdentityMsgAsAny(fromAddress: String, fromID: IdentityID, toAddress: String, classificationID: ClassificationID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.IDENTITY_ISSUE)
+    .setTypeUrl(schema.constants.Messages.IDENTITY_ISSUE)
     .setValue(IssueIDMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -226,7 +226,7 @@ object BlockchainTransaction {
     .build()
 
   def getProvisionIdentityMsgAsAny(fromAddress: String, toAddress: String, identityID: IdentityID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.IDENTITY_PROVISION)
+    .setTypeUrl(schema.constants.Messages.IDENTITY_PROVISION)
     .setValue(ProvisionIDMessage.newBuilder()
       .setFrom(fromAddress)
       .setTo(toAddress)
@@ -235,7 +235,7 @@ object BlockchainTransaction {
     .build()
 
   def getQuashIdentityMsgAsAny(fromAddress: String, fromID: IdentityID, identityID: IdentityID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.IDENTITY_QUASH)
+    .setTypeUrl(schema.constants.Messages.IDENTITY_QUASH)
     .setValue(QuashIDMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -244,7 +244,7 @@ object BlockchainTransaction {
     .build()
 
   def getRevokeIdentityMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.IDENTITY_REVOKE)
+    .setTypeUrl(schema.constants.Messages.IDENTITY_REVOKE)
     .setValue(RevokeIDMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -254,7 +254,7 @@ object BlockchainTransaction {
     .build()
 
   def getUnprovisionIdentityMsgAsAny(fromAddress: String, toAddress: String, identityID: IdentityID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.IDENTITY_UNPROVISION)
+    .setTypeUrl(schema.constants.Messages.IDENTITY_UNPROVISION)
     .setValue(UnprovisionIDMessage.newBuilder()
       .setFrom(fromAddress)
       .setTo(toAddress)
@@ -263,7 +263,7 @@ object BlockchainTransaction {
     .build()
 
   def getNubIdentityMsgAsAny(fromAddress: String, nubID: StringID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.IDENTITY_NUB)
+    .setTypeUrl(schema.constants.Messages.IDENTITY_NUB)
     .setValue(NubIDMessage.newBuilder()
       .setFrom(fromAddress)
       .setNubID(nubID)
@@ -272,7 +272,7 @@ object BlockchainTransaction {
 
   //METAS
   def getRevealMsgAsAny(fromAddress: String, anyData: AnyData): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.META_REVEAL)
+    .setTypeUrl(schema.constants.Messages.META_REVEAL)
     .setValue(MetasMessage.newBuilder()
       .setFrom(fromAddress)
       .setData(anyData)
@@ -282,7 +282,7 @@ object BlockchainTransaction {
   //ORDERS
 
   def getDefineOrderMsg(fromAddress: String, fromID: IdentityID, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ORDER_DEFINE)
+    .setTypeUrl(schema.constants.Messages.ORDER_DEFINE)
     .setValue(DefineOrderMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -294,7 +294,7 @@ object BlockchainTransaction {
     .build()
 
   def getCancelOrderMsgAsAny(fromAddress: String, fromID: IdentityID, orderID: OrderID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ORDER_CANCEL)
+    .setTypeUrl(schema.constants.Messages.ORDER_CANCEL)
     .setValue(CancelOrderMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -303,7 +303,7 @@ object BlockchainTransaction {
     .build()
 
   def getDeputizeOrderMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID, maintainedProperties: PropertyList, canMintAsset: Boolean, canBurnAsset: Boolean, canRenumerateAsset: Boolean, canAddMaintainer: Boolean, canRemoveMaintainer: Boolean, canMutateMaintainer: Boolean): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ORDER_DEPUTIZE)
+    .setTypeUrl(schema.constants.Messages.ORDER_DEPUTIZE)
     .setValue(DeputizeOrderMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -320,7 +320,7 @@ object BlockchainTransaction {
     .build()
 
   def getMakeOrderMsgAsAny(fromAddress: String, fromID: IdentityID, classificationID: ClassificationID, takerID: IdentityID, makerOwnableID: AnyOwnableID, takerOwnableID: AnyOwnableID, expires: Height, makerOwnableSplit: String, takerOwnableSplit: String, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ORDER_MAKE)
+    .setTypeUrl(schema.constants.Messages.ORDER_MAKE)
     .setValue(MakeOrderMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -339,7 +339,7 @@ object BlockchainTransaction {
     .build()
 
   def getImmediateOrderMsgAsAny(fromAddress: String, fromID: IdentityID, classificationID: ClassificationID, takerID: IdentityID, makerOwnableID: AnyOwnableID, takerOwnableID: AnyOwnableID, expires: Height, makerOwnableSplit: String, takerOwnableSplit: String, immutableMetaProperties: PropertyList, immutableProperties: PropertyList, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ORDER_IMMEDIATE)
+    .setTypeUrl(schema.constants.Messages.ORDER_IMMEDIATE)
     .setValue(ImmediateOrderMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -358,7 +358,7 @@ object BlockchainTransaction {
     .build()
 
   def getModifyOrderMsgAsAny(fromAddress: String, fromID: IdentityID, orderID: OrderID, makerOwnableSplit: String, takerOwnableSplit: String, expires: Height, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ORDER_MODIFY)
+    .setTypeUrl(schema.constants.Messages.ORDER_MODIFY)
     .setValue(ModifyOrderMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -372,7 +372,7 @@ object BlockchainTransaction {
     .build()
 
   def getRevokeOrdertMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, classificationID: ClassificationID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ORDER_REVOKE)
+    .setTypeUrl(schema.constants.Messages.ORDER_REVOKE)
     .setValue(RevokeOrderMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -382,7 +382,7 @@ object BlockchainTransaction {
     .build()
 
   def getTakeOrderMsgAsAny(fromAddress: String, fromID: IdentityID, takerOwnableSplit: String, orderID: OrderID): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.ORDER_TAKE)
+    .setTypeUrl(schema.constants.Messages.ORDER_TAKE)
     .setValue(TakeOrderMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -394,7 +394,7 @@ object BlockchainTransaction {
   //SPLITS
 
   def getSendSplitMsgAsAny(fromAddress: String, fromID: IdentityID, toID: IdentityID, ownableID: AnyOwnableID, value: String): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.SPLIT_SEND)
+    .setTypeUrl(schema.constants.Messages.SPLIT_SEND)
     .setValue(SendSplitMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -405,7 +405,7 @@ object BlockchainTransaction {
     .build()
 
   def getWrapSplitMsgAsAny(fromAddress: String, fromID: IdentityID, coins: Iterable[Coin]): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.SPLIT_WRAP)
+    .setTypeUrl(schema.constants.Messages.SPLIT_WRAP)
     .setValue(WrapSplitMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)
@@ -414,7 +414,7 @@ object BlockchainTransaction {
     .build()
 
   def getUnwrapSplitMsgAsAny(fromAddress: String, fromID: IdentityID, ownableID: AnyOwnableID, value: String): protoBufAny = protoBufAny.newBuilder()
-    .setTypeUrl(constants.Blockchain.TransactionMessage.SPLIT_UNWRAP)
+    .setTypeUrl(schema.constants.Messages.SPLIT_UNWRAP)
     .setValue(UnwrapSplitMessage.newBuilder()
       .setFrom(fromAddress)
       .setFromID(fromID)

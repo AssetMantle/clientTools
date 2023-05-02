@@ -25,7 +25,7 @@ class Reveal extends AnyFunSuite {
     StringData("testnetData"))
 
   val metasRevealMsgs: Seq[protobuf.Any] = dataTypes.map(x => utilities.BlockchainTransaction.getRevealMsgAsAny(testConstants.setup.balanceAccount.address, x.toAnyData))
-  val seq = 0
+  val seq = 2
   val txRawBytes: Array[Byte] = utilities.BlockchainTransaction.getTxRawBytes(messages = metasRevealMsgs, fee = testConstants.setup.amount, gasLimit = 1000000, accountNumber = testConstants.setup.accountNumber, sequence = seq, ecKey = ECKey.fromPrivate(testConstants.setup.balanceAccount.privateKey), chainID = testConstants.setup.chainId)
   utilities.Tx.doTx(txRawBytes)
 

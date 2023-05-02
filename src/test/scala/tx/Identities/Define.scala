@@ -13,7 +13,7 @@ import schema.types.Height
 class Define extends AnyFunSuite {
 
   val immutableMetaProperties: Seq[MetaProperty] = Seq(
-    MetaProperty(PropertyID(StringID("IdentityIM1"), constants.Data.AccAddressDataTypeID), AccAddressData(Array[Byte]())),
+    MetaProperty(PropertyID(StringID("IdentityIM1"), constants.Data.AccAddressDataTypeID), AccAddressData(testConstants.setup.balanceAccount.address)),
     MetaProperty(PropertyID(StringID("IdentityIM2"), constants.Data.BooleanDataTypeID), BooleanData(false)),
     MetaProperty(PropertyID(StringID("IdentityIM3"), constants.Data.DecDataTypeID), DecData("0")),
     MetaProperty(PropertyID(StringID("IdentityIM4"), constants.Data.HeightDataTypeID), HeightData(Height(-1))),
@@ -52,7 +52,7 @@ class Define extends AnyFunSuite {
   )
   val identitiesDefineMsg: protobuf.Any = utilities.BlockchainTransaction.getDefineIdentityMsgAsAny(testConstants.setup.balanceAccount.address, testConstants.setup.nubIdentityID.asProtoIdentityID, PropertyList(immutableMetaProperties).asProtoPropertyList, PropertyList(immutableProperties).asProtoPropertyList, PropertyList(mutableMetaProperties).asProtoPropertyList, PropertyList(mutableProperties).asProtoPropertyList)
 
-  val seq = 15
+  val seq = 4
   val txRawBytes: Array[Byte] = utilities.BlockchainTransaction.getTxRawBytes(messages = Seq(identitiesDefineMsg), fee = testConstants.setup.amount, gasLimit = 1000000, accountNumber = testConstants.setup.accountNumber, sequence = seq, ecKey = ECKey.fromPrivate(testConstants.setup.balanceAccount.privateKey), chainID = testConstants.setup.chainId)
 
   println(utilities.Tx.doTx(txRawBytes))

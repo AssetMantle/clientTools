@@ -54,7 +54,7 @@ class Issue extends AnyFunSuite {
     MesaProperty(PropertyID(StringID("IdentityM6"), constants.Data.NumberDataTypeID), NumberData(utilities.Random.getRandomAbsLong)),
     MesaProperty(PropertyID(StringID("IdentityM7"), constants.Data.StringDataTypeID), StringData(utilities.Random.getRandomString)),
   )
-  val seq = 4
+  val seq = 6
   val issueMsg = utilities.BlockchainTransaction.getIssueIdentityMsgAsAny(testConstants.setup.balanceAccount.address, fromID.asProtoIdentityID, utilities.Wallet.getRandomWallet.address, classificationID, PropertyList(immutableMetaProperties).asProtoPropertyList, PropertyList(immutableProperties).asProtoPropertyList, PropertyList(mutableMetaProperties).asProtoPropertyList, PropertyList(mutableProperties).asProtoPropertyList)
   val txRawBytes: Array[Byte] = utilities.BlockchainTransaction.getTxRawBytes(messages = Seq(issueMsg), fee = testConstants.setup.amount, gasLimit = 1000000, accountNumber = testConstants.setup.accountNumber, sequence = seq, ecKey = ECKey.fromPrivate(testConstants.setup.balanceAccount.privateKey), chainID = testConstants.setup.chainId)
   utilities.Tx.doTx(txRawBytes)

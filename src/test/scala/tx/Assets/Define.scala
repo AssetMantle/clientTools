@@ -14,7 +14,7 @@ class Define extends AnyFunSuite {
   val fromID = testConstants.setup.nubIdentityID
 
   val immutableMetaProperties: Seq[MetaProperty] = Seq(
-    MetaProperty(PropertyID(StringID("AssetIM1"), constants.Data.AccAddressDataTypeID), AccAddressData(Array[Byte]())),
+    MetaProperty(PropertyID(StringID("AssetIM1"), constants.Data.AccAddressDataTypeID), AccAddressData(testConstants.setup.balanceAccount.address)),
     MetaProperty(PropertyID(StringID("AssetIM2"), constants.Data.BooleanDataTypeID), BooleanData(false)),
     MetaProperty(PropertyID(StringID("AssetIM3"), constants.Data.DecDataTypeID), DecData("0")),
     MetaProperty(PropertyID(StringID("AssetIM4"), constants.Data.HeightDataTypeID), HeightData(Height(-1))),
@@ -54,7 +54,7 @@ class Define extends AnyFunSuite {
 
   val assetDefineMsg: protobuf.Any = utilities.BlockchainTransaction.getDefineAssetMsg(testConstants.setup.balanceAccount.address, fromID.asProtoIdentityID, immutableMetaProperties, immutableProperties, mutableMetaProperties, mutableProperties)
 
-  val seq = 3
+  val seq = 7
   val txRawBytes: Array[Byte] = utilities.BlockchainTransaction.getTxRawBytes(messages = Seq(assetDefineMsg), fee = testConstants.setup.amount, gasLimit = 1000000, accountNumber = testConstants.setup.accountNumber, sequence = seq, ecKey = ECKey.fromPrivate(testConstants.setup.balanceAccount.privateKey), chainID = testConstants.setup.chainId)
   println(utilities.Tx.doTx(txRawBytes))
 }
