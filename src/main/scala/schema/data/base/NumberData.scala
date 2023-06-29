@@ -1,15 +1,15 @@
 package schema.data.base
 
-import com.assetmantle.schema.data.base.{AnyData, NumberData => protoNumberData}
-import schema.data.Data
+import com.assetmantle.schema.data.base.{AnyData, AnyListableData, NumberData => protoNumberData}
+import schema.data._
 import schema.id.base.{DataID, HashID, StringID}
 
-case class NumberData(value: BigInt) extends Data {
-  def getType: StringID = schema.constants.Data.NumberDataTypeID
+case class NumberData(value: BigInt) extends ListableData {
+  def getType: StringID = constants.NumberDataTypeID
 
-  def getBondWeight: Int = schema.constants.Data.NumberDataWeight
+  def getBondWeight: Int = constants.NumberDataWeight
 
-  def getDataID: DataID = DataID(typeID = schema.constants.Data.NumberDataTypeID, hashID = this.generateHashID)
+  def getDataID: DataID = DataID(typeID = constants.NumberDataTypeID, hashID = this.generateHashID)
 
   def zeroValue: Data = NumberData(0)
 
@@ -21,9 +21,11 @@ case class NumberData(value: BigInt) extends Data {
 
   def toAnyData: AnyData = AnyData.newBuilder().setNumberData(this.asProtoNumberData).build()
 
+  def toAnyListableData: AnyListableData = AnyListableData.newBuilder().setNumberData(this.asProtoNumberData).build()
+
   def getProtoBytes: Array[Byte] = this.asProtoNumberData.toByteString.toByteArray
 
-  def viewString: String = this.value.toString
+  def viewString: String = "Number: " + this.value.toString
 }
 
 object NumberData {

@@ -1,15 +1,15 @@
 package schema.data.base
 
-import com.assetmantle.schema.data.base.{AnyData, StringData => protoStringData}
-import schema.data.Data
+import com.assetmantle.schema.data.base.{AnyData, AnyListableData, StringData => protoStringData}
+import schema.data._
 import schema.id.base.{DataID, HashID, StringID}
 
-case class StringData(value: String) extends Data {
-  def getType: StringID = schema.constants.Data.StringDataTypeID
+case class StringData(value: String) extends ListableData {
+  def getType: StringID = constants.StringDataTypeID
 
-  def getBondWeight: Int = schema.constants.Data.StringDataWeight
+  def getBondWeight: Int = constants.StringDataWeight
 
-  def getDataID: DataID = DataID(typeID = schema.constants.Data.StringDataTypeID, hashID = this.generateHashID)
+  def getDataID: DataID = DataID(typeID = constants.StringDataTypeID, hashID = this.generateHashID)
 
   def zeroValue: Data = StringData("")
 
@@ -21,9 +21,11 @@ case class StringData(value: String) extends Data {
 
   def toAnyData: AnyData = AnyData.newBuilder().setStringData(this.asProtoStringData).build()
 
+  def toAnyListableData: AnyListableData = AnyListableData.newBuilder().setStringData(this.asProtoStringData).build()
+
   def getProtoBytes: Array[Byte] = this.asProtoStringData.toByteString.toByteArray
 
-  def viewString: String = this.value
+  def viewString: String = "String: " + this.value
 }
 
 object StringData {

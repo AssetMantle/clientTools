@@ -1,7 +1,6 @@
 package schema.id
 
 import com.assetmantle.schema.ids.base.AnyID
-import org.slf4j.{Logger, LoggerFactory}
 import schema.id.base._
 
 abstract class ID {
@@ -20,10 +19,6 @@ abstract class ID {
 
 object ID {
 
-  private implicit val module: String = constants.Module.SCHEMA_ID
-
-  private implicit val logger: Logger = LoggerFactory.getLogger(this.getClass)
-
   def apply(anyID: AnyID): ID = anyID.getImplCase.getNumber match {
     case 1 => AssetID(anyID.getAssetID)
     case 2 => ClassificationID(anyID.getClassificationID)
@@ -37,7 +32,7 @@ object ID {
     case 10 => PropertyID(anyID.getPropertyID)
     case 11 => SplitID(anyID.getSplitID)
     case 12 => StringID(anyID.getStringID)
-    case _ => throw new IllegalArgumentException("UNKNOWN_ID_TYPE")
+    case _ => throw new IllegalArgumentException("UNKNOWN_ID_IMPL_CASE_NUMBER: " + anyID.getImplCase.getNumber.toString)
   }
 
   def apply(protoBytes: Array[Byte]): ID = ID(AnyID.parseFrom(protoBytes))

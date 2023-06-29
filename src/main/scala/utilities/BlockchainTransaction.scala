@@ -10,6 +10,7 @@ import com.assetmantle.modules.assets.transactions.revoke.{Message => RevokeAsse
 import com.assetmantle.modules.identities.transactions.define.{Message => DefineIDMessage}
 import com.assetmantle.modules.identities.transactions.deputize.{Message => DeputizeIDMessage}
 import com.assetmantle.modules.identities.transactions.issue.{Message => IssueIDMessage}
+import com.assetmantle.modules.identities.transactions.mutate.{Message => MutateIdentityMessage}
 import com.assetmantle.modules.identities.transactions.nub.{Message => NubIDMessage}
 import com.assetmantle.modules.identities.transactions.provision.{Message => ProvisionIDMessage}
 import com.assetmantle.modules.identities.transactions.quash.{Message => QuashIDMessage}
@@ -220,6 +221,17 @@ object BlockchainTransaction {
       .setClassificationID(classificationID)
       .setImmutableMetaProperties(immutableMetaProperties)
       .setImmutableProperties(immutableProperties)
+      .setMutableMetaProperties(mutableMetaProperties)
+      .setMutableProperties(mutableProperties)
+      .build().toByteString)
+    .build()
+
+  def getMutateIdentityMsgAsAny(fromAddress: String, fromID: IdentityID, identityID: IdentityID, mutableMetaProperties: PropertyList, mutableProperties: PropertyList): protoBufAny = protoBufAny.newBuilder()
+    .setTypeUrl(schema.constants.Messages.IDENTITY_MUTATE)
+    .setValue(MutateIdentityMessage.newBuilder()
+      .setFrom(fromAddress)
+      .setFromID(fromID)
+      .setIdentityID(identityID)
       .setMutableMetaProperties(mutableMetaProperties)
       .setMutableProperties(mutableProperties)
       .build().toByteString)
