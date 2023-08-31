@@ -12,7 +12,7 @@ import schema.types.Height
 class Mutate extends AnyFunSuite {
 
   val fromID: IdentityID = testConstants.setup.nubIdentityID
-  val seq = 13
+  val seq = 6
   val mutableMetaProperties: Seq[MetaProperty] = Seq(
     MetaProperty(PropertyID(StringID("IdentityMM1"), dataConstants.AccAddressDataTypeID), AccAddressData(utilities.Wallet.getRandomWallet.address)),
     MetaProperty(PropertyID(StringID("IdentityMM2"), dataConstants.BooleanDataTypeID), BooleanData(true)),

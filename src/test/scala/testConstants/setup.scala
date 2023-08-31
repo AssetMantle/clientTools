@@ -11,14 +11,14 @@ object setup {
   val balanceSeeds: Array[String] = "april lady army royal budget exhibit rapid inhale detect autumn suffer grit fatigue gate minimum omit digital bind woman mix idea rapid turkey monkey".split(" ")
   val chainId = "test"
   val balanceAccount: Wallet = utilities.Wallet.getWallet(balanceSeeds)
-  val accountNumber = 8
+  val accountNumber = 5
   val wallet1: Wallet = utilities.Wallet.getRandomWallet
   val wallet2: Wallet = utilities.Wallet.getRandomWallet
   val amount: Coin = Coin.newBuilder().setDenom(denom).setAmount("1000").build()
-  val nubIdentityID: IdentityID = IdentityID("YJu7-vpLARPfNs5_yiuDLb8xkKcNYjqH6Yq4IfqubTY=")
+  val nubIdentityID: IdentityID = IdentityID("c6WzHvjypRC174CBVgAKaedhcQ_XjCHA4ELSsbuaJ8E=")
 
   val identityClassificationID: ClassificationID = ClassificationID(HashID(utilities.Secrets.base64URLDecode("pDnfxVwBl0jjS1m-spl6wIOFSNi_v1xD9DRo1j3kyn0=")))
-  val issuedIdentityID: IdentityID = IdentityID("W0p4YzyXwR5KT_q6RE_xUTMYe1b5cnKSG5tmUYwm61I=")
+  val issuedIdentityID: IdentityID = IdentityID("dwl0msFmje6lCEh_dN1Oyj9xB7EE8q_Z4mVRUw4hz-c=")
 
   val assetClassificationID: ClassificationID = ClassificationID(HashID(utilities.Secrets.base64URLDecode("jbjL_4o9eLgMuw0nrFebUs_ClhitVxdFytC_TkPBuYA=")))
   val assetID: AssetID = AssetID("TdsUrqD8gum-6yIE6InQ9XvT-y2v3IJEzz7GEOVbRMA=")

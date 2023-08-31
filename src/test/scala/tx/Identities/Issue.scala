@@ -14,7 +14,7 @@ import schema.types.Height
 class Issue extends AnyFunSuite {
 
   val fromID: IdentityID = testConstants.setup.nubIdentityID
-  val seq = 20
+  val seq = 4
   val classificationID: ClassificationID = testConstants.setup.identityClassificationID.asProtoClassificationID
 
   val immutableMetaProperties: Seq[MetaProperty] = Seq(

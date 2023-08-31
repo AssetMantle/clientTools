@@ -13,7 +13,7 @@ import schema.types.Height
 
 class Define extends AnyFunSuite {
 
-  val seq = 16
+  val seq = 3
   val immutableMetaProperties: Seq[MetaProperty] = Seq(
     MetaProperty(PropertyID(StringID("IdentityIM1"), dataConstants.AccAddressDataTypeID), AccAddressData(Array[Byte]())),
     MetaProperty(PropertyID(StringID("IdentityIM2"), dataConstants.BooleanDataTypeID), BooleanData(false)),
