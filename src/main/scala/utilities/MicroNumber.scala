@@ -179,7 +179,7 @@ class MicroNumber(val value: BigInt) extends ScalaNumber with ScalaNumericConver
 
 object MicroNumber {
 
-  private val module: String = constants.Module.COMMON_UTILITIES_MICRO_NUMBER
+  private val module: String = constants.Module.MICRO_NUMBER
 
   private val logger: Logger = LoggerFactory.getLogger(this.getClass)
 

@@ -25,5 +25,5 @@ object AssetID {
 
   def apply(value: Array[Byte]): AssetID = AssetID(HashID(value))
 
-  def apply(value: String): AssetID = AssetID(HashID(utilities.Secrets.base64URLDecode(value)))
+  def apply(value: String): AssetID = AssetID(HashID(utilities.Encoding.base64URLDecode(value)))
 }

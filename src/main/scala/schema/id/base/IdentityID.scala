@@ -26,6 +26,6 @@ object IdentityID {
 
   def apply(value: Array[Byte]): IdentityID = IdentityID(HashID(value))
 
-  def apply(value: String): IdentityID = IdentityID(HashID(utilities.Secrets.base64URLDecode(value)))
+  def apply(value: String): IdentityID = IdentityID(HashID(utilities.Encoding.base64URLDecode(value)))
 
 }

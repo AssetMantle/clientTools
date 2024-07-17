@@ -14,8 +14,8 @@ object Data {
     IDData(testConstants.setup.nubIdentityID),
     NumberData(95),
     StringData("listDataString"),
-    IDData(AssetID(HashID(utilities.Secrets.base64URLDecode("oTn0Pr8s890NR_orVP9__pdS0Nlsg_C7OA1FscRsKMw=")))),
-    IDData(ClassificationID(HashID(utilities.Secrets.base64URLDecode("GnhwGkCKgvMft2Zk3a82J7UEe_qi9CrTfsmT589TCpA=")))),
-    IDData(ClassificationID(HashID(utilities.Secrets.base64URLDecode("jbjL_4o9eLgMuw0nrFebUs_ClhitVxdFytC_TkPBuYA=")))),
+    IDData(AssetID(HashID(utilities.Encoding.base64URLDecode("oTn0Pr8s890NR_orVP9__pdS0Nlsg_C7OA1FscRsKMw=")))),
+    IDData(ClassificationID(HashID(utilities.Encoding.base64URLDecode("GnhwGkCKgvMft2Zk3a82J7UEe_qi9CrTfsmT589TCpA=")))),
+    IDData(ClassificationID(HashID(utilities.Encoding.base64URLDecode("jbjL_4o9eLgMuw0nrFebUs_ClhitVxdFytC_TkPBuYA=")))),
   ))
 }

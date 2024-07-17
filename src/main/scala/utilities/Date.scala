@@ -10,7 +10,7 @@ import java.util.{Date => javaDate}
 
 object Date {
 
-  private implicit val module: String = constants.Module.COMMON_UTILITIES_DATE
+  private implicit val module: String = constants.Module.DATE
 
   private implicit val logger: Logger = LoggerFactory.getLogger(this.getClass)
 

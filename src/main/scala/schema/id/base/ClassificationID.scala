@@ -26,5 +26,5 @@ object ClassificationID {
 
   def apply(value: Array[Byte]): ClassificationID = ClassificationID(HashID(value))
 
-  def apply(value: String): ClassificationID = ClassificationID(HashID(utilities.Secrets.base64URLDecode(value)))
+  def apply(value: String): ClassificationID = ClassificationID(HashID(utilities.Encoding.base64URLDecode(value)))
 }

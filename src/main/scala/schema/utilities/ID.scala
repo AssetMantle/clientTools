@@ -13,13 +13,13 @@ object ID {
 
   def generateHashID(bytesList: Array[Byte]*): HashID = if (bytesList.exists(_.length != 0)) {
     HashID(protoHashID.newBuilder().setIDBytes(ByteString.copyFrom(
-      utilities.Secrets.sha256Hash(bytesList.filter(_.length != 0).sortWith((x, y) => byteArraysCompare(x, y) < 0).flatten.toArray)
+      utilities.Encoding.sha256Hash(bytesList.filter(_.length != 0).sortWith((x, y) => byteArraysCompare(x, y) < 0).flatten.toArray)
     )).build())
   } else HashID(value = Array[Byte]())
 
   def generateHashIDFromList(bytesList: Seq[Array[Byte]]): HashID = if (bytesList.exists(_.length != 0)) {
     HashID(protoHashID.newBuilder().setIDBytes(ByteString.copyFrom(
-      utilities.Secrets.sha256Hash(bytesList.filter(_.length != 0).sortWith((x, y) => byteArraysCompare(x, y) < 0).flatten.toArray)
+      utilities.Encoding.sha256Hash(bytesList.filter(_.length != 0).sortWith((x, y) => byteArraysCompare(x, y) < 0).flatten.toArray)
     )).build())
   } else HashID(value = Array[Byte]())
 

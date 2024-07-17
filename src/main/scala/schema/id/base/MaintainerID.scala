@@ -26,5 +26,5 @@ object MaintainerID {
 
   def apply(value: Array[Byte]): MaintainerID = MaintainerID(HashID(value))
 
-  def apply(value: String): MaintainerID = MaintainerID(HashID(utilities.Secrets.base64URLDecode(value)))
+  def apply(value: String): MaintainerID = MaintainerID(HashID(utilities.Encoding.base64URLDecode(value)))
 }

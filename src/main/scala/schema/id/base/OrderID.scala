@@ -26,5 +26,5 @@ object OrderID {
 
   def apply(value: Array[Byte]): OrderID = OrderID(HashID(value))
 
-  def apply(value: String): OrderID = OrderID(HashID(utilities.Secrets.base64URLDecode(value)))
+  def apply(value: String): OrderID = OrderID(HashID(utilities.Encoding.base64URLDecode(value)))
 }

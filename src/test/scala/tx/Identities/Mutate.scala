@@ -33,7 +33,7 @@ class Mutate extends AnyFunSuite {
     MesaProperty(PropertyID(StringID("IdentityM7"), dataConstants.StringDataTypeID), StringData(utilities.Random.getRandomString)),
     MesaProperty(PropertyID(StringID("IdentityM8"), schema.id.constants.StringIDType), IDData(StringID(utilities.Random.getRandomString))),
   )
-  val msg = utilities.BlockchainTransaction.getMutateIdentityMsgAsAny(testConstants.setup.balanceAccount.address, fromID.asProtoIdentityID, testConstants.setup.issuedIdentityID.asProtoIdentityID, PropertyList(mutableMetaProperties).asProtoPropertyList, PropertyList(mutableProperties).asProtoPropertyList)
+  val msg = utilities.BlockchainTransaction.getUpdateIdentityMsgAsAny(testConstants.setup.balanceAccount.address, fromID.asProtoIdentityID, testConstants.setup.issuedIdentityID.asProtoIdentityID, PropertyList(mutableMetaProperties).asProtoPropertyList, PropertyList(mutableProperties).asProtoPropertyList)
   val txRawBytes: Array[Byte] = utilities.BlockchainTransaction.getTxRawBytes(messages = Seq(msg), fee = testConstants.setup.amount, gasLimit = 1000000, accountNumber = testConstants.setup.accountNumber, sequence = seq, ecKey = ECKey.fromPrivate(testConstants.setup.balanceAccount.privateKey), chainID = testConstants.setup.chainId)
   utilities.Tx.doTx(txRawBytes)
 }
